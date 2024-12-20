@@ -1,0 +1,169 @@
+\doxysection{Référence de la classe numpy.\+\_\+core.\+records.\+format\+\_\+parser}
+\hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser}{}\label{classnumpy_1_1__core_1_1records_1_1format__parser}\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_a11307d8772db300b0b04a1f11466ebdb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, formats, names, titles, aligned=False, byteorder=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_a304b9f7d768a6c30c95b2b35aaf406da}{dtype}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_a1f27550918fd7ce22b5466f3058625ae}{\+\_\+parse\+Formats}} (self, formats, aligned=False)
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_a51a814792b195acaafc9b5b6fe7a1d09}{\+\_\+setfieldnames}} (self, names, titles)
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_a7b5b1a87c147dced5dc94d6a40007803}{\+\_\+createdtype}} (self, byteorder)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_adcdff8cdebff517b2b498e5c7ee98932}{\+\_\+f\+\_\+formats}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_adf495fe2ae7199b8ff73dd625d2ca87b}{\+\_\+offsets}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_a7e2064aa7bb5b61c16211e60e417d54f}{\+\_\+nfields}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_a2857c8f3329eea83318b9d90a0a7fd7c}{\+\_\+names}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1records_1_1format__parser_a531200845ab5f99b1bafd3c4b8aeb5ad}{\+\_\+titles}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Class to convert formats, names, titles description to a dtype.
+
+After constructing the format_parser object, the dtype attribute is
+the converted data-type:
+``dtype = format_parser(formats, names, titles).dtype``
+
+Attributes
+----------
+dtype : dtype
+    The converted data-type.
+
+Parameters
+----------
+formats : str or list of str
+    The format description, either specified as a string with
+    comma-separated format descriptions in the form ``'f8, i4, S5'``, or
+    a list of format description strings  in the form
+    ``['f8', 'i4', 'S5']``.
+names : str or list/tuple of str
+    The field names, either specified as a comma-separated string in the
+    form ``'col1, col2, col3'``, or as a list or tuple of strings in the
+    form ``['col1', 'col2', 'col3']``.
+    An empty list can be used, in that case default field names
+    ('f0', 'f1', ...) are used.
+titles : sequence
+    Sequence of title strings. An empty list can be used to leave titles
+    out.
+aligned : bool, optional
+    If True, align the fields by padding as the C-compiler would.
+    Default is False.
+byteorder : str, optional
+    If specified, all the fields will be changed to the
+    provided byte-order.  Otherwise, the default byte-order is
+    used. For all available string specifiers, see `dtype.newbyteorder`.
+
+See Also
+--------
+numpy.dtype, numpy.typename
+
+Examples
+--------
+>>> import numpy as np
+>>> np.rec.format_parser(['<f8', '<i4'], ['col1', 'col2'],
+...                      ['T1', 'T2']).dtype
+dtype([(('T1', 'col1'), '<f8'), (('T2', 'col2'), '<i4')])
+
+`names` and/or `titles` can be empty lists. If `titles` is an empty list,
+titles will simply not appear. If `names` is empty, default field names
+will be used.
+
+>>> np.rec.format_parser(['f8', 'i4', 'a5'], ['col1', 'col2', 'col3'],
+...                      []).dtype
+dtype([('col1', '<f8'), ('col2', '<i4'), ('col3', '<S5')])
+>>> np.rec.format_parser(['<f8', '<i4', '<a5'], [], []).dtype
+dtype([('f0', '<f8'), ('f1', '<i4'), ('f2', 'S5')])\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_a11307d8772db300b0b04a1f11466ebdb}\label{classnumpy_1_1__core_1_1records_1_1format__parser_a11307d8772db300b0b04a1f11466ebdb} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{formats,  }\item[{}]{names,  }\item[{}]{titles,  }\item[{}]{aligned = {\ttfamily False},  }\item[{}]{byteorder = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_a7b5b1a87c147dced5dc94d6a40007803}\label{classnumpy_1_1__core_1_1records_1_1format__parser_a7b5b1a87c147dced5dc94d6a40007803} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_createdtype@{\_createdtype}}
+\index{\_createdtype@{\_createdtype}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_createdtype()}{\_createdtype()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+createdtype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{byteorder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_a1f27550918fd7ce22b5466f3058625ae}\label{classnumpy_1_1__core_1_1records_1_1format__parser_a1f27550918fd7ce22b5466f3058625ae} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_parseFormats@{\_parseFormats}}
+\index{\_parseFormats@{\_parseFormats}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_parseFormats()}{\_parseFormats()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+parse\+Formats (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{formats,  }\item[{}]{aligned = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Parse the field formats \end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_a51a814792b195acaafc9b5b6fe7a1d09}\label{classnumpy_1_1__core_1_1records_1_1format__parser_a51a814792b195acaafc9b5b6fe7a1d09} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_setfieldnames@{\_setfieldnames}}
+\index{\_setfieldnames@{\_setfieldnames}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_setfieldnames()}{\_setfieldnames()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+setfieldnames (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{names,  }\item[{}]{titles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}convert input field names into a list and assign to the _names
+attribute \end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_adcdff8cdebff517b2b498e5c7ee98932}\label{classnumpy_1_1__core_1_1records_1_1format__parser_adcdff8cdebff517b2b498e5c7ee98932} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_f\_formats@{\_f\_formats}}
+\index{\_f\_formats@{\_f\_formats}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_f\_formats}{\_f\_formats}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+f\+\_\+formats\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_a2857c8f3329eea83318b9d90a0a7fd7c}\label{classnumpy_1_1__core_1_1records_1_1format__parser_a2857c8f3329eea83318b9d90a0a7fd7c} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_names@{\_names}}
+\index{\_names@{\_names}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_names}{\_names}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+names\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_a7e2064aa7bb5b61c16211e60e417d54f}\label{classnumpy_1_1__core_1_1records_1_1format__parser_a7e2064aa7bb5b61c16211e60e417d54f} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_nfields@{\_nfields}}
+\index{\_nfields@{\_nfields}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_nfields}{\_nfields}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+nfields\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_adf495fe2ae7199b8ff73dd625d2ca87b}\label{classnumpy_1_1__core_1_1records_1_1format__parser_adf495fe2ae7199b8ff73dd625d2ca87b} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_offsets@{\_offsets}}
+\index{\_offsets@{\_offsets}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_offsets}{\_offsets}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+offsets\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_a531200845ab5f99b1bafd3c4b8aeb5ad}\label{classnumpy_1_1__core_1_1records_1_1format__parser_a531200845ab5f99b1bafd3c4b8aeb5ad} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!\_titles@{\_titles}}
+\index{\_titles@{\_titles}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{\_titles}{\_titles}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+\_\+titles\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1records_1_1format__parser_a304b9f7d768a6c30c95b2b35aaf406da}\label{classnumpy_1_1__core_1_1records_1_1format__parser_a304b9f7d768a6c30c95b2b35aaf406da} 
+\index{numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}!dtype@{dtype}}
+\index{dtype@{dtype}!numpy.\_core.records.format\_parser@{numpy.\_core.records.format\_parser}}
+\doxysubsubsection{\texorpdfstring{dtype}{dtype}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+records.\+format\+\_\+parser.\+dtype}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/\mbox{\hyperlink{__core_2records_8py}{records.\+py}}\end{DoxyCompactItemize}

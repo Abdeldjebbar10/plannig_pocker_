@@ -1,0 +1,114 @@
+\doxysection{Référence de la classe pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer}
+\hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter}{}\label{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter}\index{pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a2ff40f8c41fc0fd367ff6b82236a5115}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1SeriesInfo}{Series\+Info}} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a7e0686288db5f761b71362ff51a0bc4f}{info}}, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a9f3331a68cb088bc782d1dbb64c4f6f4}{verbose}}=None, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_acf5321f17040792b7e8c7c7234d0ca2b}{show\+\_\+counts}}=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__InfoPrinterAbstract}{pandas.\+io.\+formats.\+info.\+\_\+\+Info\+Printer\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__InfoPrinterAbstract_a5aa6f91ec57fe09fb8f6855ea92ca525}{to\+\_\+buffer}} (self, \mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None buf=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a7e0686288db5f761b71362ff51a0bc4f}{info}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_aa2ed116636ff14e843f3eb9d55bf4af3}{data}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a9f3331a68cb088bc782d1dbb64c4f6f4}{verbose}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_acf5321f17040792b7e8c7c7234d0ca2b}{show\+\_\+counts}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesTableBuilder}{\+\_\+\+Series\+Table\+Builder}} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a496f124bd0df62bcd39946d34e34a5bc}{\+\_\+create\+\_\+table\+\_\+builder}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a508539994db0b8ecab28f75c131fa56c}{\+\_\+initialize\+\_\+show\+\_\+counts}} (self, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_acf5321f17040792b7e8c7c7234d0ca2b}{show\+\_\+counts}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Class for printing series info.
+
+Parameters
+----------
+info : SeriesInfo
+    Instance of SeriesInfo.
+verbose : bool, optional
+    Whether to print the full summary.
+show_counts : bool, optional
+    Whether to show the non-null counts.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a2ff40f8c41fc0fd367ff6b82236a5115}\label{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a2ff40f8c41fc0fd367ff6b82236a5115} 
+\index{pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1SeriesInfo}{Series\+Info}}}]{info,  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{verbose = {\ttfamily None},  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{show\+\_\+counts = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a496f124bd0df62bcd39946d34e34a5bc}\label{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a496f124bd0df62bcd39946d34e34a5bc} 
+\index{pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}!\_create\_table\_builder@{\_create\_table\_builder}}
+\index{\_create\_table\_builder@{\_create\_table\_builder}!pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}}
+\doxysubsubsection{\texorpdfstring{\_create\_table\_builder()}{\_create\_table\_builder()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesTableBuilder}{\+\_\+\+Series\+Table\+Builder}} pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer.\+\_\+create\+\_\+table\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create instance of table builder based on verbosity.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__InfoPrinterAbstract_adea32d1515dba68dd474e977938f6714}{pandas.\+io.\+formats.\+info.\+\_\+\+Info\+Printer\+Abstract}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a508539994db0b8ecab28f75c131fa56c}\label{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a508539994db0b8ecab28f75c131fa56c} 
+\index{pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}!\_initialize\_show\_counts@{\_initialize\_show\_counts}}
+\index{\_initialize\_show\_counts@{\_initialize\_show\_counts}!pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}}
+\doxysubsubsection{\texorpdfstring{\_initialize\_show\_counts()}{\_initialize\_show\_counts()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer.\+\_\+initialize\+\_\+show\+\_\+counts (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool \texorpdfstring{$\vert$}{|} None}]{show\+\_\+counts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_aa2ed116636ff14e843f3eb9d55bf4af3}\label{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_aa2ed116636ff14e843f3eb9d55bf4af3} 
+\index{pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}!data@{data}}
+\index{data@{data}!pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer.\+data}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a7e0686288db5f761b71362ff51a0bc4f}\label{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a7e0686288db5f761b71362ff51a0bc4f} 
+\index{pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}!info@{info}}
+\index{info@{info}!pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer.\+info}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_acf5321f17040792b7e8c7c7234d0ca2b}\label{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_acf5321f17040792b7e8c7c7234d0ca2b} 
+\index{pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}!show\_counts@{show\_counts}}
+\index{show\_counts@{show\_counts}!pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}}
+\doxysubsubsection{\texorpdfstring{show\_counts}{show\_counts}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer.\+show\+\_\+counts}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a9f3331a68cb088bc782d1dbb64c4f6f4}\label{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesInfoPrinter_a9f3331a68cb088bc782d1dbb64c4f6f4} 
+\index{pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}!verbose@{verbose}}
+\index{verbose@{verbose}!pandas.io.formats.info.\_SeriesInfoPrinter@{pandas.io.formats.info.\_SeriesInfoPrinter}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Info\+Printer.\+verbose}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/formats/\mbox{\hyperlink{info_8py}{info.\+py}}\end{DoxyCompactItemize}

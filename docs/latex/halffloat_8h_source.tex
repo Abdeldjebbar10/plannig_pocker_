@@ -1,0 +1,76 @@
+\doxysection{halffloat.\+h}
+\hypertarget{halffloat_8h_source}{}\label{halffloat_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/halffloat.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/halffloat.h}}
+\mbox{\hyperlink{halffloat_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_HALFFLOAT\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_HALFFLOAT\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <Python.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{npy__math_8h}{numpy/npy\_math.h}}>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ Half-\/precision\ routines}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{/*\ Conversions\ */}}
+\DoxyCodeLine{00016\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{halffloat_8h_aac8b1560f3a9de23b8e26be5701bac32}{npy\_half\_to\_float}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h);}
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{halffloat_8h_a102cce0a8d96a2780d308921d407b32f}{npy\_half\_to\_double}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h);}
+\DoxyCodeLine{00018\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ \mbox{\hyperlink{halffloat_8h_a6cd896f1e32701cc2ee99421cd9b6b67}{npy\_float\_to\_half}}(\textcolor{keywordtype}{float}\ f);}
+\DoxyCodeLine{00019\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ \mbox{\hyperlink{halffloat_8h_a8213fe700ed77675d0cbe40d904068c4}{npy\_double\_to\_half}}(\textcolor{keywordtype}{double}\ d);}
+\DoxyCodeLine{00020\ \textcolor{comment}{/*\ Comparisons\ */}}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_ab9f4ad1a600d0998ccc6c14cdeffee65}{npy\_half\_eq}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_a15f4b0af492de5407fab42d5dcee9687}{npy\_half\_ne}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_a85633929e0af27192054d218dc3ffc8f}{npy\_half\_le}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_a1d75a9238ff562b3511795cd1b77c69b}{npy\_half\_lt}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_addcb11b1d834ff7b1df8d2e1d47e8fa8}{npy\_half\_ge}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_a278cf09fe71d41c1157a913f96bd96c6}{npy\_half\_gt}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00027\ \textcolor{comment}{/*\ faster\ *\_nonan\ variants\ for\ when\ you\ know\ h1\ and\ h2\ are\ not\ NaN\ */}}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_afab778c75ce0842c1ff3396d10e5812f}{npy\_half\_eq\_nonan}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_abd970b1a84eaac045bc721752a4fcee0}{npy\_half\_lt\_nonan}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_ac9a17c95b2e9826fc85188d43120972b}{npy\_half\_le\_nonan}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h1,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h2);}
+\DoxyCodeLine{00031\ \textcolor{comment}{/*\ Miscellaneous\ functions\ */}}
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_a28e33b4ad72097baf25102bb4ec7a0e6}{npy\_half\_iszero}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h);}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_a205fad9151265856460b69a47ff884ac}{npy\_half\_isnan}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h);}
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_a576a18c24248af5bb585b16106de866f}{npy\_half\_isinf}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h);}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_ae46004ec0f498c04da421683fe31e260}{npy\_half\_isfinite}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h);}
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{halffloat_8h_a3fc4fe744f9924d56b7eec3f33f8367f}{npy\_half\_signbit}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h);}
+\DoxyCodeLine{00037\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ \mbox{\hyperlink{halffloat_8h_aa93c8b02e15766fc9a40f4cf2bf95bd0}{npy\_half\_copysign}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ x,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ y);}
+\DoxyCodeLine{00038\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ \mbox{\hyperlink{halffloat_8h_ade12a8a595bfff86a1048b1cfd1ef9e9}{npy\_half\_spacing}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ h);}
+\DoxyCodeLine{00039\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ \mbox{\hyperlink{halffloat_8h_a7f5fb946ad9608b0c36395c3c832e3eb}{npy\_half\_nextafter}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ x,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ y);}
+\DoxyCodeLine{00040\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ \mbox{\hyperlink{halffloat_8h_ab179a6f28cacdbe16e77994560dc3dbd}{npy\_half\_divmod}}(\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ x,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ y,\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ *modulus);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ *\ Half-\/precision\ constants}}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_ZERO\ \ \ (0x0000u)}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_PZERO\ \ (0x0000u)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_NZERO\ \ (0x8000u)}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_ONE\ \ \ \ (0x3c00u)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_NEGONE\ (0xbc00u)}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_PINF\ \ \ (0x7c00u)}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_NINF\ \ \ (0xfc00u)}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_NAN\ \ \ \ (0x7e00u)}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_HALF\ \ \ \ (0x7bffu)}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00058\ \textcolor{comment}{\ *\ Bit-\/level\ conversions}}
+\DoxyCodeLine{00059\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ npy\_uint16\ \mbox{\hyperlink{halffloat_8h_afebe97be77f8eaf8d3068f7d3bfb7634}{npy\_floatbits\_to\_halfbits}}(npy\_uint32\ f);}
+\DoxyCodeLine{00062\ npy\_uint16\ \mbox{\hyperlink{halffloat_8h_a2316c9775010bb8d2fa30fe360a43408}{npy\_doublebits\_to\_halfbits}}(npy\_uint64\ d);}
+\DoxyCodeLine{00063\ npy\_uint32\ \mbox{\hyperlink{halffloat_8h_a70d7bd635ae875f5465516f30e3b7e45}{npy\_halfbits\_to\_floatbits}}(npy\_uint16\ h);}
+\DoxyCodeLine{00064\ npy\_uint64\ \mbox{\hyperlink{halffloat_8h_a98c4896f92ecd432c2749964e11842a6}{npy\_halfbits\_to\_doublebits}}(npy\_uint16\ h);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00067\ \}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_HALFFLOAT\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

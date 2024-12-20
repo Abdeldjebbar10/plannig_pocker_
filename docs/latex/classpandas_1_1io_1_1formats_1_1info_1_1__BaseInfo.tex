@@ -1,0 +1,150 @@
+\doxysection{Référence de la classe pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info}
+\hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo}{}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo}\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+Iterable\mbox{[}Dtype\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a5e16607722f50e8b7134638a19ff8b87}{dtypes}} (self)
+\item 
+Mapping\mbox{[}str, int\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a782d3b911ec2aca0898b8a15dbbf37bd}{dtype\+\_\+counts}} (self)
+\item 
+Sequence\mbox{[}int\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_adcc5d7c497a01287433fc940fe4a3be5}{non\+\_\+null\+\_\+counts}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a66af18c5979c6f7f91e9ae36f547dfcc}{memory\+\_\+usage\+\_\+bytes}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a03d59017555069a2bc1cc897734e2337}{memory\+\_\+usage\+\_\+string}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_ae0ef88fc7a618a3a550e7a535ee4dc8d}{size\+\_\+qualifier}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_ab86fb8d468e11fa2d604f7060fb0b7c1}{render}} (self, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None buf, int\texorpdfstring{$\vert$}{|}None max\+\_\+cols, bool\texorpdfstring{$\vert$}{|}None verbose, bool\texorpdfstring{$\vert$}{|}None show\+\_\+counts)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_afe87abcfbc6fe94f9f556507427f760a}{data}} \texorpdfstring{$\vert$}{|} Series
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_aa687711d930eabee71a516cdc6c3763d}{memory\+\_\+usage}} \texorpdfstring{$\vert$}{|} str
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Base class for DataFrameInfo and SeriesInfo.
+
+Parameters
+----------
+data : DataFrame or Series
+    Either dataframe or series.
+memory_usage : bool or str, optional
+    If "deep", introspect the data deeply by interrogating object dtypes
+    for system-level memory consumption, and include it in the returned
+    values.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a782d3b911ec2aca0898b8a15dbbf37bd}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a782d3b911ec2aca0898b8a15dbbf37bd} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!dtype\_counts@{dtype\_counts}}
+\index{dtype\_counts@{dtype\_counts}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{dtype\_counts()}{dtype\_counts()}}
+{\footnotesize\ttfamily  Mapping\mbox{[}str, int\mbox{]} pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+dtype\+\_\+counts (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Mapping dtype - number of counts.\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1DataFrameInfo_a69c904b224e525d104448989c60c1e3e}{pandas.\+io.\+formats.\+info.\+Data\+Frame\+Info}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1SeriesInfo_a059b8c618622a9437b5cbf38161cb11d}{pandas.\+io.\+formats.\+info.\+Series\+Info}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a5e16607722f50e8b7134638a19ff8b87}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a5e16607722f50e8b7134638a19ff8b87} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!dtypes@{dtypes}}
+\index{dtypes@{dtypes}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{dtypes()}{dtypes()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}Dtype\mbox{]} pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+dtypes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dtypes.
+
+Returns
+-------
+dtypes : sequence
+    Dtype of each of the DataFrame's columns (or one series column).
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1DataFrameInfo_a354f7acc4c97da2fdd2a8ecc82b57809}{pandas.\+io.\+formats.\+info.\+Data\+Frame\+Info}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1SeriesInfo_a61ce1bdd9c4c46cb1a1c89bab3b15a48}{pandas.\+io.\+formats.\+info.\+Series\+Info}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a66af18c5979c6f7f91e9ae36f547dfcc}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a66af18c5979c6f7f91e9ae36f547dfcc} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!memory\_usage\_bytes@{memory\_usage\_bytes}}
+\index{memory\_usage\_bytes@{memory\_usage\_bytes}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{memory\_usage\_bytes()}{memory\_usage\_bytes()}}
+{\footnotesize\ttfamily  int pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+memory\+\_\+usage\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Memory usage in bytes.
+
+Returns
+-------
+memory_usage_bytes : int
+    Object's total memory usage in bytes.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1DataFrameInfo_a9acc4ed908312891f0c0ded8a353895f}{pandas.\+io.\+formats.\+info.\+Data\+Frame\+Info}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1SeriesInfo_ad7741f7adcf19efea4921387f209fe1b}{pandas.\+io.\+formats.\+info.\+Series\+Info}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a03d59017555069a2bc1cc897734e2337}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_a03d59017555069a2bc1cc897734e2337} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!memory\_usage\_string@{memory\_usage\_string}}
+\index{memory\_usage\_string@{memory\_usage\_string}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{memory\_usage\_string()}{memory\_usage\_string()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+memory\+\_\+usage\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Memory usage in a form of human readable string.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_adcc5d7c497a01287433fc940fe4a3be5}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_adcc5d7c497a01287433fc940fe4a3be5} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!non\_null\_counts@{non\_null\_counts}}
+\index{non\_null\_counts@{non\_null\_counts}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{non\_null\_counts()}{non\_null\_counts()}}
+{\footnotesize\ttfamily  Sequence\mbox{[}int\mbox{]} pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+non\+\_\+null\+\_\+counts (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sequence of non-null counts for all columns or column (if series).\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1DataFrameInfo_a90c465af95465289770ce9e413200b63}{pandas.\+io.\+formats.\+info.\+Data\+Frame\+Info}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1SeriesInfo_a30dbba17a57c5f780e6a93be22bb8c11}{pandas.\+io.\+formats.\+info.\+Series\+Info}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_ab86fb8d468e11fa2d604f7060fb0b7c1}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_ab86fb8d468e11fa2d604f7060fb0b7c1} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!render@{render}}
+\index{render@{render}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+render (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None}]{buf,  }\item[{int \texorpdfstring{$\vert$}{|} None}]{max\+\_\+cols,  }\item[{bool \texorpdfstring{$\vert$}{|} None}]{verbose,  }\item[{bool \texorpdfstring{$\vert$}{|} None}]{show\+\_\+counts }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1DataFrameInfo_a412107a48dfcb46045a1acd56e25f6c8}{pandas.\+io.\+formats.\+info.\+Data\+Frame\+Info}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1SeriesInfo_a656eacbc45ad6bda51ca0023001f9899}{pandas.\+io.\+formats.\+info.\+Series\+Info}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_ae0ef88fc7a618a3a550e7a535ee4dc8d}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_ae0ef88fc7a618a3a550e7a535ee4dc8d} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!size\_qualifier@{size\_qualifier}}
+\index{size\_qualifier@{size\_qualifier}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{size\_qualifier()}{size\_qualifier()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+size\+\_\+qualifier (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_afe87abcfbc6fe94f9f556507427f760a}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_afe87abcfbc6fe94f9f556507427f760a} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!data@{data}}
+\index{data@{data}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily Data\+Frame pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+data \texorpdfstring{$\vert$}{|} Series\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_aa687711d930eabee71a516cdc6c3763d}\label{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo_aa687711d930eabee71a516cdc6c3763d} 
+\index{pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}!memory\_usage@{memory\_usage}}
+\index{memory\_usage@{memory\_usage}!pandas.io.formats.info.\_BaseInfo@{pandas.io.formats.info.\_BaseInfo}}
+\doxysubsubsection{\texorpdfstring{memory\_usage}{memory\_usage}}
+{\footnotesize\ttfamily bool pandas.\+io.\+formats.\+info.\+\_\+\+Base\+Info.\+memory\+\_\+usage \texorpdfstring{$\vert$}{|} str\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/formats/\mbox{\hyperlink{info_8py}{info.\+py}}\end{DoxyCompactItemize}

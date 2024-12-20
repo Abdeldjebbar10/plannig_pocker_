@@ -1,0 +1,51 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+lib.\+\_\+array\+\_\+utils\+\_\+impl}
+\hypertarget{namespacenumpy_1_1lib_1_1__array__utils__impl}{}\label{namespacenumpy_1_1lib_1_1__array__utils__impl}\index{numpy.lib.\_array\_utils\_impl@{numpy.lib.\_array\_utils\_impl}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__array__utils__impl_aaabe7ebd0ac93a435302c3dc883f71f6}{byte\+\_\+bounds}} (a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Miscellaneous utils.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1lib_1_1__array__utils__impl_aaabe7ebd0ac93a435302c3dc883f71f6}\label{namespacenumpy_1_1lib_1_1__array__utils__impl_aaabe7ebd0ac93a435302c3dc883f71f6} 
+\index{numpy.lib.\_array\_utils\_impl@{numpy.lib.\_array\_utils\_impl}!byte\_bounds@{byte\_bounds}}
+\index{byte\_bounds@{byte\_bounds}!numpy.lib.\_array\_utils\_impl@{numpy.lib.\_array\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{byte\_bounds()}{byte\_bounds()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+array\+\_\+utils\+\_\+impl.\+byte\+\_\+bounds (\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns pointers to the end-points of an array.
+
+Parameters
+----------
+a : ndarray
+    Input array. It must conform to the Python-side of the array
+    interface.
+
+Returns
+-------
+(low, high) : tuple of 2 integers
+    The first integer is the first byte of the array, the second
+    integer is just past the last byte of the array.  If `a` is not
+    contiguous it will not use every byte between the (`low`, `high`)
+    values.
+
+Examples
+--------
+>>> import numpy as np
+>>> I = np.eye(2, dtype='f'); I.dtype
+dtype('float32')
+>>> low, high = np.lib.array_utils.byte_bounds(I)
+>>> high - low == I.size*I.itemsize
+True
+>>> I = np.eye(2); I.dtype
+dtype('float64')
+>>> low, high = np.lib.array_utils.byte_bounds(I)
+>>> high - low == I.size*I.itemsize
+True\end{DoxyVerb}
+ 

@@ -1,0 +1,83 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Abstract\+Method\+Error}
+\hypertarget{classpandas_1_1errors_1_1AbstractMethodError}{}\label{classpandas_1_1errors_1_1AbstractMethodError}\index{pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Abstract\+Method\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Abstract\+Method\+Error\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1errors_1_1AbstractMethodError_a7a74f1e71bd7e0264d6180e7f77df014}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1errors_1_1AbstractMethodError_a7bea04eee9e967f8165dc4beac24af72}{class\+\_\+instance}}, str \mbox{\hyperlink{classpandas_1_1errors_1_1AbstractMethodError_a891309667aa3a12adf0e3b351918f427}{methodtype}}="{}method"{})
+\item 
+str \mbox{\hyperlink{classpandas_1_1errors_1_1AbstractMethodError_a0b421667adf61650959aaf51857e465d}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1errors_1_1AbstractMethodError_a891309667aa3a12adf0e3b351918f427}{methodtype}}
+\item 
+\mbox{\hyperlink{classpandas_1_1errors_1_1AbstractMethodError_a7bea04eee9e967f8165dc4beac24af72}{class\+\_\+instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Raise this error instead of NotImplementedError for abstract methods.
+
+Examples
+--------
+>>> class Foo:
+...     @classmethod
+...     def classmethod(cls):
+...         raise pd.errors.AbstractMethodError(cls, methodtype="classmethod")
+...     def method(self):
+...         raise pd.errors.AbstractMethodError(self)
+>>> test = Foo.classmethod()
+Traceback (most recent call last):
+AbstractMethodError: This classmethod must be defined in the concrete class Foo
+
+>>> test2 = Foo().method()
+Traceback (most recent call last):
+AbstractMethodError: This classmethod must be defined in the concrete class Foo
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1errors_1_1AbstractMethodError_a7a74f1e71bd7e0264d6180e7f77df014}\label{classpandas_1_1errors_1_1AbstractMethodError_a7a74f1e71bd7e0264d6180e7f77df014} 
+\index{pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+errors.\+Abstract\+Method\+Error.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{class\+\_\+instance,  }\item[{str }]{methodtype = {\ttfamily "{}method"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1errors_1_1AbstractMethodError_a0b421667adf61650959aaf51857e465d}\label{classpandas_1_1errors_1_1AbstractMethodError_a0b421667adf61650959aaf51857e465d} 
+\index{pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+errors.\+Abstract\+Method\+Error.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1errors_1_1AbstractMethodError_a7bea04eee9e967f8165dc4beac24af72}\label{classpandas_1_1errors_1_1AbstractMethodError_a7bea04eee9e967f8165dc4beac24af72} 
+\index{pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}!class\_instance@{class\_instance}}
+\index{class\_instance@{class\_instance}!pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}}
+\doxysubsubsection{\texorpdfstring{class\_instance}{class\_instance}}
+{\footnotesize\ttfamily pandas.\+errors.\+Abstract\+Method\+Error.\+class\+\_\+instance}
+
+\Hypertarget{classpandas_1_1errors_1_1AbstractMethodError_a891309667aa3a12adf0e3b351918f427}\label{classpandas_1_1errors_1_1AbstractMethodError_a891309667aa3a12adf0e3b351918f427} 
+\index{pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}!methodtype@{methodtype}}
+\index{methodtype@{methodtype}!pandas.errors.AbstractMethodError@{pandas.errors.AbstractMethodError}}
+\doxysubsubsection{\texorpdfstring{methodtype}{methodtype}}
+{\footnotesize\ttfamily pandas.\+errors.\+Abstract\+Method\+Error.\+methodtype}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

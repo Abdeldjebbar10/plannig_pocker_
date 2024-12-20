@@ -1,0 +1,380 @@
+\doxysection{npy\+\_\+3kcompat.\+h}
+\hypertarget{npy__3kcompat_8h_source}{}\label{npy__3kcompat_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_3kcompat.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_3kcompat.h}}
+\mbox{\hyperlink{npy__3kcompat_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ This\ is\ a\ convenience\ header\ file\ providing\ compatibility\ utilities}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ for\ supporting\ different\ minor\ versions\ of\ Python\ 3.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ It\ was\ originally\ used\ to\ support\ the\ transition\ from\ Python\ 2,}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ hence\ the\ "{}3k"{}\ naming.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ If\ you\ want\ to\ use\ this\ for\ your\ own\ projects,\ it's\ recommended\ to\ make\ a}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ copy\ of\ it.\ We\ don't\ provide\ backwards\ compatibility\ guarantees.}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_3KCOMPAT\_H\_}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_3KCOMPAT\_H\_}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <Python.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{npy__common_8h}{npy\_common.h}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{comment}{/*\ Python13\ removes\ \_PyLong\_AsInt\ */}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00025\ Npy\_\_PyLong\_AsInt(PyObject\ *obj)}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1color_a476a8b85e3bb6853492ac9e8bd3e598f}{overflow}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1prompt_ae8c100ce7b4b02ef7ce94d7581f2ac82}{result}}\ =\ PyLong\_AsLongAndOverflow(obj,\ \&overflow);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{/*\ INT\_MAX\ and\ INT\_MIN\ are\ defined\ in\ Python.h\ */}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{if}\ (overflow\ ||\ result\ >\ INT\_MAX\ ||\ result\ <\ \mbox{\hyperlink{npy__common_8h_a21658776274b3d146c674318b635a334}{INT\_MIN}})\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ XXX:\ could\ be\ cute\ and\ give\ a\ different}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ message\ for\ overflow\ ==\ -\/1\ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_OverflowError,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Python\ int\ too\ large\ to\ convert\ to\ C\ int"{}});}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{int})\mbox{\hyperlink{namespacepip_1_1__vendor_1_1rich_1_1prompt_ae8c100ce7b4b02ef7ce94d7581f2ac82}{result}};}
+\DoxyCodeLine{00039\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#if\ defined\ \_MSC\_VER\ \&\&\ \_MSC\_VER\ >=\ 1900}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00046\ \textcolor{comment}{\ *\ Macros\ to\ protect\ CRT\ calls\ against\ instant\ termination\ when\ passed\ an}}
+\DoxyCodeLine{00047\ \textcolor{comment}{\ *\ invalid\ parameter\ (https://bugs.python.org/issue23524).}}
+\DoxyCodeLine{00048\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00049\ \textcolor{keyword}{extern}\ \_invalid\_parameter\_handler\ \_Py\_silent\_invalid\_parameter\_handler;}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ NPY\_BEGIN\_SUPPRESS\_IPH\ \{\ \_invalid\_parameter\_handler\ \_Py\_old\_handler\ =\ \(\backslash\)}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\ \ \ \ \_set\_thread\_local\_invalid\_parameter\_handler(\_Py\_silent\_invalid\_parameter\_handler);}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ NPY\_END\_SUPPRESS\_IPH\ \_set\_thread\_local\_invalid\_parameter\_handler(\_Py\_old\_handler);\ \}}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ NPY\_BEGIN\_SUPPRESS\_IPH}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ NPY\_END\_SUPPRESS\_IPH}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_MSC\_VER\ >=\ 1900\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00062\ \textcolor{comment}{\ *\ PyFile\_*\ compatibility}}
+\DoxyCodeLine{00063\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00066\ \textcolor{comment}{\ *\ Get\ a\ FILE*\ handle\ to\ the\ file\ represented\ by\ the\ Python\ object}}
+\DoxyCodeLine{00067\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00068\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ FILE*}
+\DoxyCodeLine{00069\ npy\_PyFile\_Dup2(PyObject\ *file,\ \textcolor{keywordtype}{char}\ *mode,\ \mbox{\hyperlink{npy__common_8h_a6331835f6c44e91726875e641ea8ec26}{npy\_off\_t}}\ *orig\_pos)}
+\DoxyCodeLine{00070\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ fd,\ fd2,\ unbuf;}
+\DoxyCodeLine{00072\ \ \ \ \ Py\_ssize\_t\ fd2\_tmp;}
+\DoxyCodeLine{00073\ \ \ \ \ PyObject\ *ret,\ *os,\ *io,\ *io\_raw;}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a6331835f6c44e91726875e641ea8ec26}{npy\_off\_t}}\ pos;}
+\DoxyCodeLine{00075\ \ \ \ \ FILE\ *handle;}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{/*\ Flush\ first\ to\ ensure\ things\ end\ up\ in\ the\ file\ in\ the\ correct\ order\ */}}
+\DoxyCodeLine{00078\ \ \ \ \ ret\ =\ PyObject\_CallMethod(file,\ \textcolor{stringliteral}{"{}flush"{}},\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{if}\ (ret\ ==\ NULL)\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ Py\_DECREF(ret);}
+\DoxyCodeLine{00083\ \ \ \ \ fd\ =\ PyObject\_AsFileDescriptor(file);}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{if}\ (fd\ ==\ -\/1)\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00089\ \textcolor{comment}{\ \ \ \ \ *\ The\ handle\ needs\ to\ be\ dup'd\ because\ we\ have\ to\ call\ fclose}}
+\DoxyCodeLine{00090\ \textcolor{comment}{\ \ \ \ \ *\ at\ the\ end}}
+\DoxyCodeLine{00091\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00092\ \ \ \ \ os\ =\ PyImport\_ImportModule(\textcolor{stringliteral}{"{}os"{}});}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordflow}{if}\ (os\ ==\ NULL)\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+\DoxyCodeLine{00096\ \ \ \ \ ret\ =\ PyObject\_CallMethod(os,\ \textcolor{stringliteral}{"{}dup"{}},\ \textcolor{stringliteral}{"{}i"{}},\ fd);}
+\DoxyCodeLine{00097\ \ \ \ \ Py\_DECREF(os);}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{if}\ (ret\ ==\ NULL)\ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00100\ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ \ fd2\_tmp\ =\ PyNumber\_AsSsize\_t(ret,\ PyExc\_IOError);}
+\DoxyCodeLine{00102\ \ \ \ \ Py\_DECREF(ret);}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordflow}{if}\ (fd2\_tmp\ ==\ -\/1\ \&\&\ PyErr\_Occurred())\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordflow}{if}\ (fd2\_tmp\ <\ INT\_MIN\ ||\ fd2\_tmp\ >\ INT\_MAX)\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_IOError,}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Getting\ an\ 'int'\ from\ os.dup()\ failed"{}});}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00110\ \ \ \ \ \}}
+\DoxyCodeLine{00111\ \ \ \ \ fd2\ =\ (int)fd2\_tmp;}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{comment}{/*\ Convert\ to\ FILE*\ handle\ */}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{npy__3kcompat_8h_aa4b74bae72534052ff7097eae6750571}{NPY\_BEGIN\_SUPPRESS\_IPH}}}
+\DoxyCodeLine{00116\ \ \ \ \ handle\ =\ \_fdopen(fd2,\ mode);}
+\DoxyCodeLine{00117\ \ \ \ \ \mbox{\hyperlink{npy__3kcompat_8h_a4fca9be2502996947657be4ed0f48e7b}{NPY\_END\_SUPPRESS\_IPH}}}
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00119\ \ \ \ \ handle\ =\ fdopen(fd2,\ mode);}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordflow}{if}\ (handle\ ==\ NULL)\ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_IOError,}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Getting\ a\ FILE*\ from\ a\ Python\ file\ object\ via\ "{}}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_fdopen\ failed.\ If\ you\ built\ NumPy,\ you\ probably\ "{}}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}linked\ with\ the\ wrong\ debug/release\ runtime"{}});}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00127\ \ \ \ \ \}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{/*\ Record\ the\ original\ raw\ file\ handle\ position\ */}}
+\DoxyCodeLine{00130\ \ \ \ \ *orig\_pos\ =\ \mbox{\hyperlink{npy__common_8h_adf95a2c8b6a04975fe5ed42fcd9ebc3f}{npy\_ftell}}(handle);}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordflow}{if}\ (*orig\_pos\ ==\ -\/1)\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ The\ io\ module\ is\ needed\ to\ determine\ if\ buffering\ is\ used\ */}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ io\ =\ PyImport\_ImportModule(\textcolor{stringliteral}{"{}io"{}});}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (io\ ==\ NULL)\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ fclose(handle);}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ File\ object\ instances\ of\ RawIOBase\ are\ unbuffered\ */}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ io\_raw\ =\ PyObject\_GetAttrString(io,\ \textcolor{stringliteral}{"{}RawIOBase"{}});}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ Py\_DECREF(io);}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (io\_raw\ ==\ NULL)\ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ fclose(handle);}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ unbuf\ =\ PyObject\_IsInstance(file,\ io\_raw);}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ Py\_DECREF(io\_raw);}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (unbuf\ ==\ 1)\ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Succeed\ if\ the\ IO\ is\ unbuffered\ */}}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ handle;}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_IOError,\ \textcolor{stringliteral}{"{}obtaining\ file\ position\ failed"{}});}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ fclose(handle);}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00156\ \ \ \ \ \}}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{comment}{/*\ Seek\ raw\ handle\ to\ the\ Python-\/side\ position\ */}}
+\DoxyCodeLine{00159\ \ \ \ \ ret\ =\ PyObject\_CallMethod(file,\ \textcolor{stringliteral}{"{}tell"{}},\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordflow}{if}\ (ret\ ==\ NULL)\ \{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ fclose(handle);}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00163\ \ \ \ \ \}}
+\DoxyCodeLine{00164\ \ \ \ \ pos\ =\ PyLong\_AsLongLong(ret);}
+\DoxyCodeLine{00165\ \ \ \ \ Py\_DECREF(ret);}
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordflow}{if}\ (PyErr\_Occurred())\ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ fclose(handle);}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00169\ \ \ \ \ \}}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{npy__common_8h_aa35ae2cf96048df4cf705f11e5b39a4d}{npy\_fseek}}(handle,\ pos,\ SEEK\_SET)\ ==\ -\/1)\ \{}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_IOError,\ \textcolor{stringliteral}{"{}seeking\ file\ failed"{}});}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ fclose(handle);}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00174\ \ \ \ \ \}}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordflow}{return}\ handle;}
+\DoxyCodeLine{00176\ \}}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00179\ \textcolor{comment}{\ *\ Close\ the\ dup-\/ed\ file\ handle,\ and\ seek\ the\ Python\ one\ to\ the\ current\ position}}
+\DoxyCodeLine{00180\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00181\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00182\ npy\_PyFile\_DupClose2(PyObject\ *file,\ FILE*\ handle,\ \mbox{\hyperlink{npy__common_8h_a6331835f6c44e91726875e641ea8ec26}{npy\_off\_t}}\ orig\_pos)}
+\DoxyCodeLine{00183\ \{}
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keywordtype}{int}\ fd,\ unbuf;}
+\DoxyCodeLine{00185\ \ \ \ \ PyObject\ *ret,\ *io,\ *io\_raw;}
+\DoxyCodeLine{00186\ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a6331835f6c44e91726875e641ea8ec26}{npy\_off\_t}}\ position;}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ position\ =\ \mbox{\hyperlink{npy__common_8h_adf95a2c8b6a04975fe5ed42fcd9ebc3f}{npy\_ftell}}(handle);}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{comment}{/*\ Close\ the\ FILE*\ handle\ */}}
+\DoxyCodeLine{00191\ \ \ \ \ fclose(handle);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00194\ \textcolor{comment}{\ \ \ \ \ *\ Restore\ original\ file\ handle\ position,\ in\ order\ to\ not\ confuse}}
+\DoxyCodeLine{00195\ \textcolor{comment}{\ \ \ \ \ *\ Python-\/side\ data\ structures}}
+\DoxyCodeLine{00196\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00197\ \ \ \ \ fd\ =\ PyObject\_AsFileDescriptor(file);}
+\DoxyCodeLine{00198\ \ \ \ \ \textcolor{keywordflow}{if}\ (fd\ ==\ -\/1)\ \{}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00200\ \ \ \ \ \}}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{npy__common_8h_a0c73b77289e9040154c9fe1a7ccb4c7a}{npy\_lseek}}(fd,\ orig\_pos,\ SEEK\_SET)\ ==\ -\/1)\ \{}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ The\ io\ module\ is\ needed\ to\ determine\ if\ buffering\ is\ used\ */}}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ io\ =\ PyImport\_ImportModule(\textcolor{stringliteral}{"{}io"{}});}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (io\ ==\ NULL)\ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ File\ object\ instances\ of\ RawIOBase\ are\ unbuffered\ */}}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ io\_raw\ =\ PyObject\_GetAttrString(io,\ \textcolor{stringliteral}{"{}RawIOBase"{}});}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ Py\_DECREF(io);}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (io\_raw\ ==\ NULL)\ \{}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ unbuf\ =\ PyObject\_IsInstance(file,\ io\_raw);}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ Py\_DECREF(io\_raw);}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (unbuf\ ==\ 1)\ \{}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Succeed\ if\ the\ IO\ is\ unbuffered\ */}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_IOError,\ \textcolor{stringliteral}{"{}seeking\ file\ failed"{}});}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00225\ \ \ \ \ \}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keywordflow}{if}\ (position\ ==\ -\/1)\ \{}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_IOError,\ \textcolor{stringliteral}{"{}obtaining\ file\ position\ failed"{}});}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00230\ \ \ \ \ \}}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{comment}{/*\ Seek\ Python-\/side\ handle\ to\ the\ FILE*\ handle\ position\ */}}
+\DoxyCodeLine{00233\ \ \ \ \ ret\ =\ PyObject\_CallMethod(file,\ \textcolor{stringliteral}{"{}seek"{}},\ \mbox{\hyperlink{npy__common_8h_a2c334df626cc5e8f0cc231c82d8f1e31}{NPY\_OFF\_T\_PYFMT}}\ \textcolor{stringliteral}{"{}i"{}},\ position,\ 0);}
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordflow}{if}\ (ret\ ==\ NULL)\ \{}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00236\ \ \ \ \ \}}
+\DoxyCodeLine{00237\ \ \ \ \ Py\_DECREF(ret);}
+\DoxyCodeLine{00238\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00239\ \}}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ PyObject*}
+\DoxyCodeLine{00242\ npy\_PyFile\_OpenFile(PyObject\ *filename,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *mode)}
+\DoxyCodeLine{00243\ \{}
+\DoxyCodeLine{00244\ \ \ \ \ PyObject\ *\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__datasource_a84bc14ce937b5fc390808614265dd6aa}{open}};}
+\DoxyCodeLine{00245\ \ \ \ \ \mbox{\hyperlink{namespacenumpy_1_1lib_1_1__datasource_a84bc14ce937b5fc390808614265dd6aa}{open}}\ =\ PyDict\_GetItemString(PyEval\_GetBuiltins(),\ \textcolor{stringliteral}{"{}open"{}});}
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keywordflow}{if}\ (open\ ==\ NULL)\ \{}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ NULL;}
+\DoxyCodeLine{00248\ \ \ \ \ \}}
+\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keywordflow}{return}\ PyObject\_CallFunction(open,\ \textcolor{stringliteral}{"{}Os"{}},\ filename,\ mode);}
+\DoxyCodeLine{00250\ \}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00253\ npy\_PyFile\_CloseFile(PyObject\ *file)}
+\DoxyCodeLine{00254\ \{}
+\DoxyCodeLine{00255\ \ \ \ \ PyObject\ *ret;}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \ \ \ \ ret\ =\ PyObject\_CallMethod(file,\ \textcolor{stringliteral}{"{}close"{}},\ NULL);}
+\DoxyCodeLine{00258\ \ \ \ \ \textcolor{keywordflow}{if}\ (ret\ ==\ NULL)\ \{}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00260\ \ \ \ \ \}}
+\DoxyCodeLine{00261\ \ \ \ \ Py\_DECREF(ret);}
+\DoxyCodeLine{00262\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00263\ \}}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \textcolor{comment}{/*\ This\ is\ a\ copy\ of\ \_PyErr\_ChainExceptions,\ which}}
+\DoxyCodeLine{00266\ \textcolor{comment}{\ *\ \ is\ no\ longer\ exported\ from\ Python3.12}}
+\DoxyCodeLine{00267\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00268\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00269\ npy\_PyErr\_ChainExceptions(PyObject\ *exc,\ PyObject\ *val,\ PyObject\ *tb)}
+\DoxyCodeLine{00270\ \{}
+\DoxyCodeLine{00271\ \ \ \ \ \textcolor{keywordflow}{if}\ (exc\ ==\ NULL)}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00274\ \ \ \ \ \textcolor{keywordflow}{if}\ (PyErr\_Occurred())\ \{}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ PyObject\ *exc2,\ *val2,\ *tb2;}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ PyErr\_Fetch(\&exc2,\ \&val2,\ \&tb2);}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ PyErr\_NormalizeException(\&exc,\ \&val,\ \&tb);}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tb\ !=\ NULL)\ \{}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \ \ \ \ PyException\_SetTraceback(val,\ tb);}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \ \ Py\_DECREF(tb);}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ Py\_DECREF(exc);}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ PyErr\_NormalizeException(\&exc2,\ \&val2,\ \&tb2);}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ PyException\_SetContext(val2,\ val);}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ PyErr\_Restore(exc2,\ val2,\ tb2);}
+\DoxyCodeLine{00286\ \ \ \ \ \}}
+\DoxyCodeLine{00287\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ PyErr\_Restore(exc,\ val,\ tb);}
+\DoxyCodeLine{00289\ \ \ \ \ \}}
+\DoxyCodeLine{00290\ \}}
+\DoxyCodeLine{00291\ }
+\DoxyCodeLine{00292\ \textcolor{comment}{/*\ This\ is\ a\ copy\ of\ \_PyErr\_ChainExceptions,\ with:}}
+\DoxyCodeLine{00293\ \textcolor{comment}{\ *\ \ \_\_cause\_\_\ used\ instead\ of\ \_\_context\_\_}}
+\DoxyCodeLine{00294\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00295\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00296\ npy\_PyErr\_ChainExceptionsCause(PyObject\ *exc,\ PyObject\ *val,\ PyObject\ *tb)}
+\DoxyCodeLine{00297\ \{}
+\DoxyCodeLine{00298\ \ \ \ \ \textcolor{keywordflow}{if}\ (exc\ ==\ NULL)}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00300\ }
+\DoxyCodeLine{00301\ \ \ \ \ \textcolor{keywordflow}{if}\ (PyErr\_Occurred())\ \{}
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ PyObject\ *exc2,\ *val2,\ *tb2;}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ PyErr\_Fetch(\&exc2,\ \&val2,\ \&tb2);}
+\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ PyErr\_NormalizeException(\&exc,\ \&val,\ \&tb);}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tb\ !=\ NULL)\ \{}
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ \ \ \ \ PyException\_SetTraceback(val,\ tb);}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \ \ \ \ Py\_DECREF(tb);}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ Py\_DECREF(exc);}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ PyErr\_NormalizeException(\&exc2,\ \&val2,\ \&tb2);}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ PyException\_SetCause(val2,\ val);}
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ PyErr\_Restore(exc2,\ val2,\ tb2);}
+\DoxyCodeLine{00313\ \ \ \ \ \}}
+\DoxyCodeLine{00314\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ PyErr\_Restore(exc,\ val,\ tb);}
+\DoxyCodeLine{00316\ \ \ \ \ \}}
+\DoxyCodeLine{00317\ \}}
+\DoxyCodeLine{00318\ }
+\DoxyCodeLine{00319\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00320\ \textcolor{comment}{\ *\ PyCObject\ functions\ adapted\ to\ PyCapsules.}}
+\DoxyCodeLine{00321\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00322\ \textcolor{comment}{\ *\ The\ main\ job\ here\ is\ to\ get\ rid\ of\ the\ improved\ error\ handling}}
+\DoxyCodeLine{00323\ \textcolor{comment}{\ *\ of\ PyCapsules.\ It's\ a\ shame...}}
+\DoxyCodeLine{00324\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00325\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ PyObject\ *}
+\DoxyCodeLine{00326\ NpyCapsule\_FromVoidPtr(\textcolor{keywordtype}{void}\ *ptr,\ \textcolor{keywordtype}{void}\ (*dtor)(PyObject\ *))}
+\DoxyCodeLine{00327\ \{}
+\DoxyCodeLine{00328\ \ \ \ \ PyObject\ *ret\ =\ PyCapsule\_New(ptr,\ NULL,\ dtor);}
+\DoxyCodeLine{00329\ \ \ \ \ \textcolor{keywordflow}{if}\ (ret\ ==\ NULL)\ \{}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ PyErr\_Clear();}
+\DoxyCodeLine{00331\ \ \ \ \ \}}
+\DoxyCodeLine{00332\ \ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{00333\ \}}
+\DoxyCodeLine{00334\ }
+\DoxyCodeLine{00335\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ PyObject\ *}
+\DoxyCodeLine{00336\ NpyCapsule\_FromVoidPtrAndDesc(\textcolor{keywordtype}{void}\ *ptr,\ \textcolor{keywordtype}{void}*\ context,\ \textcolor{keywordtype}{void}\ (*dtor)(PyObject\ *))}
+\DoxyCodeLine{00337\ \{}
+\DoxyCodeLine{00338\ \ \ \ \ PyObject\ *ret\ =\ NpyCapsule\_FromVoidPtr(ptr,\ dtor);}
+\DoxyCodeLine{00339\ \ \ \ \ \textcolor{keywordflow}{if}\ (ret\ !=\ NULL\ \&\&\ PyCapsule\_SetContext(ret,\ context)\ !=\ 0)\ \{}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ PyErr\_Clear();}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ Py\_DECREF(ret);}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ ret\ =\ NULL;}
+\DoxyCodeLine{00343\ \ \ \ \ \}}
+\DoxyCodeLine{00344\ \ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{00345\ \}}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00347\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ *}
+\DoxyCodeLine{00348\ NpyCapsule\_AsVoidPtr(PyObject\ *obj)}
+\DoxyCodeLine{00349\ \{}
+\DoxyCodeLine{00350\ \ \ \ \ \textcolor{keywordtype}{void}\ *ret\ =\ PyCapsule\_GetPointer(obj,\ NULL);}
+\DoxyCodeLine{00351\ \ \ \ \ \textcolor{keywordflow}{if}\ (ret\ ==\ NULL)\ \{}
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ PyErr\_Clear();}
+\DoxyCodeLine{00353\ \ \ \ \ \}}
+\DoxyCodeLine{00354\ \ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{00355\ \}}
+\DoxyCodeLine{00356\ }
+\DoxyCodeLine{00357\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ *}
+\DoxyCodeLine{00358\ NpyCapsule\_GetDesc(PyObject\ *obj)}
+\DoxyCodeLine{00359\ \{}
+\DoxyCodeLine{00360\ \ \ \ \ \textcolor{keywordflow}{return}\ PyCapsule\_GetContext(obj);}
+\DoxyCodeLine{00361\ \}}
+\DoxyCodeLine{00362\ }
+\DoxyCodeLine{00363\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00364\ NpyCapsule\_Check(PyObject\ *ptr)}
+\DoxyCodeLine{00365\ \{}
+\DoxyCodeLine{00366\ \ \ \ \ \textcolor{keywordflow}{return}\ PyCapsule\_CheckExact(ptr);}
+\DoxyCodeLine{00367\ \}}
+\DoxyCodeLine{00368\ }
+\DoxyCodeLine{00369\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00370\ \}}
+\DoxyCodeLine{00371\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00372\ }
+\DoxyCodeLine{00373\ }
+\DoxyCodeLine{00374\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_3KCOMPAT\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

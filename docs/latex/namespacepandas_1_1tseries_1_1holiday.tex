@@ -1,0 +1,275 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+tseries.\+holiday}
+\hypertarget{namespacepandas_1_1tseries_1_1holiday}{}\label{namespacepandas_1_1tseries_1_1holiday}\index{pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar}{Abstract\+Holiday\+Calendar}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1Holiday}{Holiday}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1HolidayCalendarMetaClass}{Holiday\+Calendar\+Meta\+Class}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1USFederalHolidayCalendar}{USFederal\+Holiday\+Calendar}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a688e33ac6703d5d28876f7c6de9cffee}{next\+\_\+monday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a0693f7e174319ee2713d4cc18c80637b}{next\+\_\+monday\+\_\+or\+\_\+tuesday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a6f75419abd8f4347583ebc4a14e0842e}{previous\+\_\+friday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a6c563141249a5fe5d7bfdfad814ae3a4}{sunday\+\_\+to\+\_\+monday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_ad646945a68f05c38fb20bc641e300f22}{weekend\+\_\+to\+\_\+monday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_ad4c6c0711efe426945d8918acb139a02}{nearest\+\_\+workday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_ab9b09330a645682aa47cd5ddbb6d8671}{next\+\_\+workday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_aa642363bd96b11c31fb2bc5a31d2e694}{previous\+\_\+workday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a57673c331c4f264da135ea485304b674}{before\+\_\+nearest\+\_\+workday}} (datetime dt)
+\item 
+datetime \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a92397acb0051dab8aa442d1431728278}{after\+\_\+nearest\+\_\+workday}} (datetime dt)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a75c4600baf0b730f1dc9cdefb0a4a86f}{register}} (cls)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_aa04fc3f3bfc0fad61f9b8847fa8f13ca}{get\+\_\+calendar}} (str name)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a18a866d2484f5a70320f9a9651803e4a}{Holiday\+Calendar\+Factory}} (str name, base, other, base\+\_\+class=\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar}{Abstract\+Holiday\+Calendar}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a8963b160c5db4559de35c063bd01d8ea}{holiday\+\_\+calendars}} = \{\}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_acd38aa68fc9bd131a1c7cc2c5e0e7344}{USMemorial\+Day}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_ae5444ddb14265fa3854e3315590b93ca}{USLabor\+Day}} = \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1Holiday}{Holiday}}("{}Labor Day"{}, month=9, day=1, offset=Date\+Offset(weekday=MO(1)))
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_a2811a194bc75848778750f38925b88c0}{USColumbus\+Day}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_aec1b0f5e4513cf99cd80e1fe378b3e04}{USThanksgiving\+Day}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_ae7f60660b95beb10cf187f07285b4ea1}{USMartin\+Luther\+King\+Jr}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_ad36abd8a2ec64165fec7ac149b16dfc1}{USPresidents\+Day}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_af3ddd20a84f9d4d667b383d81fbe11d4}{Good\+Friday}} = \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1Holiday}{Holiday}}("{}Good Friday"{}, month=1, day=1, offset=\mbox{[}Easter(), Day(-\/2)\mbox{]})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tseries_1_1holiday_aae6f1e05365e369652974848542265e3}{Easter\+Monday}} = \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1Holiday}{Holiday}}("{}Easter Monday"{}, month=1, day=1, offset=\mbox{[}Easter(), Day(1)\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_a92397acb0051dab8aa442d1431728278}\label{namespacepandas_1_1tseries_1_1holiday_a92397acb0051dab8aa442d1431728278} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!after\_nearest\_workday@{after\_nearest\_workday}}
+\index{after\_nearest\_workday@{after\_nearest\_workday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{after\_nearest\_workday()}{after\_nearest\_workday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+after\+\_\+nearest\+\_\+workday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns next workday after nearest workday
+needed for Boxing day or multiple holidays in a series
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_a57673c331c4f264da135ea485304b674}\label{namespacepandas_1_1tseries_1_1holiday_a57673c331c4f264da135ea485304b674} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!before\_nearest\_workday@{before\_nearest\_workday}}
+\index{before\_nearest\_workday@{before\_nearest\_workday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{before\_nearest\_workday()}{before\_nearest\_workday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+before\+\_\+nearest\+\_\+workday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns previous workday after nearest workday
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_aa04fc3f3bfc0fad61f9b8847fa8f13ca}\label{namespacepandas_1_1tseries_1_1holiday_aa04fc3f3bfc0fad61f9b8847fa8f13ca} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!get\_calendar@{get\_calendar}}
+\index{get\_calendar@{get\_calendar}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{get\_calendar()}{get\_calendar()}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+get\+\_\+calendar (\begin{DoxyParamCaption}\item[{str}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an instance of a calendar based on its name.
+
+Parameters
+----------
+name : str
+    Calendar name to return an instance of
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_a18a866d2484f5a70320f9a9651803e4a}\label{namespacepandas_1_1tseries_1_1holiday_a18a866d2484f5a70320f9a9651803e4a} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!HolidayCalendarFactory@{HolidayCalendarFactory}}
+\index{HolidayCalendarFactory@{HolidayCalendarFactory}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{HolidayCalendarFactory()}{HolidayCalendarFactory()}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Holiday\+Calendar\+Factory (\begin{DoxyParamCaption}\item[{str}]{name,  }\item[{}]{base,  }\item[{}]{other,  }\item[{}]{base\+\_\+class = {\ttfamily \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar}{Abstract\+Holiday\+Calendar}}} }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_ad4c6c0711efe426945d8918acb139a02}\label{namespacepandas_1_1tseries_1_1holiday_ad4c6c0711efe426945d8918acb139a02} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!nearest\_workday@{nearest\_workday}}
+\index{nearest\_workday@{nearest\_workday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{nearest\_workday()}{nearest\_workday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+nearest\+\_\+workday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If holiday falls on Saturday, use day before (Friday) instead;
+if holiday falls on Sunday, use day thereafter (Monday) instead.
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_a688e33ac6703d5d28876f7c6de9cffee}\label{namespacepandas_1_1tseries_1_1holiday_a688e33ac6703d5d28876f7c6de9cffee} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!next\_monday@{next\_monday}}
+\index{next\_monday@{next\_monday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{next\_monday()}{next\_monday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+next\+\_\+monday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If holiday falls on Saturday, use following Monday instead;
+if holiday falls on Sunday, use Monday instead
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_a0693f7e174319ee2713d4cc18c80637b}\label{namespacepandas_1_1tseries_1_1holiday_a0693f7e174319ee2713d4cc18c80637b} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!next\_monday\_or\_tuesday@{next\_monday\_or\_tuesday}}
+\index{next\_monday\_or\_tuesday@{next\_monday\_or\_tuesday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{next\_monday\_or\_tuesday()}{next\_monday\_or\_tuesday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+next\+\_\+monday\+\_\+or\+\_\+tuesday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For second holiday of two adjacent ones!
+If holiday falls on Saturday, use following Monday instead;
+if holiday falls on Sunday or Monday, use following Tuesday instead
+(because Monday is already taken by adjacent holiday on the day before)
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_ab9b09330a645682aa47cd5ddbb6d8671}\label{namespacepandas_1_1tseries_1_1holiday_ab9b09330a645682aa47cd5ddbb6d8671} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!next\_workday@{next\_workday}}
+\index{next\_workday@{next\_workday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{next\_workday()}{next\_workday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+next\+\_\+workday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns next weekday used for observances
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_a6f75419abd8f4347583ebc4a14e0842e}\label{namespacepandas_1_1tseries_1_1holiday_a6f75419abd8f4347583ebc4a14e0842e} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!previous\_friday@{previous\_friday}}
+\index{previous\_friday@{previous\_friday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{previous\_friday()}{previous\_friday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+previous\+\_\+friday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If holiday falls on Saturday or Sunday, use previous Friday instead.
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_aa642363bd96b11c31fb2bc5a31d2e694}\label{namespacepandas_1_1tseries_1_1holiday_aa642363bd96b11c31fb2bc5a31d2e694} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!previous\_workday@{previous\_workday}}
+\index{previous\_workday@{previous\_workday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{previous\_workday()}{previous\_workday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+previous\+\_\+workday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}returns previous weekday used for observances
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_a75c4600baf0b730f1dc9cdefb0a4a86f}\label{namespacepandas_1_1tseries_1_1holiday_a75c4600baf0b730f1dc9cdefb0a4a86f} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!register@{register}}
+\index{register@{register}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily  None pandas.\+tseries.\+holiday.\+register (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_a6c563141249a5fe5d7bfdfad814ae3a4}\label{namespacepandas_1_1tseries_1_1holiday_a6c563141249a5fe5d7bfdfad814ae3a4} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!sunday\_to\_monday@{sunday\_to\_monday}}
+\index{sunday\_to\_monday@{sunday\_to\_monday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{sunday\_to\_monday()}{sunday\_to\_monday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+sunday\+\_\+to\+\_\+monday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If holiday falls on Sunday, use day thereafter (Monday) instead.
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tseries_1_1holiday_ad646945a68f05c38fb20bc641e300f22}\label{namespacepandas_1_1tseries_1_1holiday_ad646945a68f05c38fb20bc641e300f22} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!weekend\_to\_monday@{weekend\_to\_monday}}
+\index{weekend\_to\_monday@{weekend\_to\_monday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{weekend\_to\_monday()}{weekend\_to\_monday()}}
+{\footnotesize\ttfamily  datetime pandas.\+tseries.\+holiday.\+weekend\+\_\+to\+\_\+monday (\begin{DoxyParamCaption}\item[{datetime}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If holiday falls on Sunday or Saturday,
+use day thereafter (Monday) instead.
+Needed for holidays such as Christmas observation in Europe
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_aae6f1e05365e369652974848542265e3}\label{namespacepandas_1_1tseries_1_1holiday_aae6f1e05365e369652974848542265e3} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!EasterMonday@{EasterMonday}}
+\index{EasterMonday@{EasterMonday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{EasterMonday}{EasterMonday}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Easter\+Monday = \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1Holiday}{Holiday}}("{}Easter Monday"{}, month=1, day=1, offset=\mbox{[}Easter(), Day(1)\mbox{]})}
+
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_af3ddd20a84f9d4d667b383d81fbe11d4}\label{namespacepandas_1_1tseries_1_1holiday_af3ddd20a84f9d4d667b383d81fbe11d4} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!GoodFriday@{GoodFriday}}
+\index{GoodFriday@{GoodFriday}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{GoodFriday}{GoodFriday}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Good\+Friday = \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1Holiday}{Holiday}}("{}Good Friday"{}, month=1, day=1, offset=\mbox{[}Easter(), Day(-\/2)\mbox{]})}
+
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_a8963b160c5db4559de35c063bd01d8ea}\label{namespacepandas_1_1tseries_1_1holiday_a8963b160c5db4559de35c063bd01d8ea} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!holiday\_calendars@{holiday\_calendars}}
+\index{holiday\_calendars@{holiday\_calendars}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{holiday\_calendars}{holiday\_calendars}}
+{\footnotesize\ttfamily dict pandas.\+tseries.\+holiday.\+holiday\+\_\+calendars = \{\}}
+
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_a2811a194bc75848778750f38925b88c0}\label{namespacepandas_1_1tseries_1_1holiday_a2811a194bc75848778750f38925b88c0} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!USColumbusDay@{USColumbusDay}}
+\index{USColumbusDay@{USColumbusDay}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{USColumbusDay}{USColumbusDay}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+USColumbus\+Day}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Holiday(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}Columbus\ Day"{}},\ month=10,\ day=1,\ offset=DateOffset(weekday=MO(2))}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_ae5444ddb14265fa3854e3315590b93ca}\label{namespacepandas_1_1tseries_1_1holiday_ae5444ddb14265fa3854e3315590b93ca} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!USLaborDay@{USLaborDay}}
+\index{USLaborDay@{USLaborDay}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{USLaborDay}{USLaborDay}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+USLabor\+Day = \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1Holiday}{Holiday}}("{}Labor Day"{}, month=9, day=1, offset=Date\+Offset(weekday=MO(1)))}
+
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_ae7f60660b95beb10cf187f07285b4ea1}\label{namespacepandas_1_1tseries_1_1holiday_ae7f60660b95beb10cf187f07285b4ea1} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!USMartinLutherKingJr@{USMartinLutherKingJr}}
+\index{USMartinLutherKingJr@{USMartinLutherKingJr}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{USMartinLutherKingJr}{USMartinLutherKingJr}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+USMartin\+Luther\+King\+Jr}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Holiday(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}Birthday\ of\ Martin\ Luther\ King,\ Jr."{}},}
+\DoxyCodeLine{00003\ \ \ \ \ start\_date=\mbox{\hyperlink{namespacedatetime}{datetime}}(1986,\ 1,\ 1),}
+\DoxyCodeLine{00004\ \ \ \ \ month=1,}
+\DoxyCodeLine{00005\ \ \ \ \ day=1,}
+\DoxyCodeLine{00006\ \ \ \ \ offset=DateOffset(weekday=MO(3)),}
+\DoxyCodeLine{00007\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_acd38aa68fc9bd131a1c7cc2c5e0e7344}\label{namespacepandas_1_1tseries_1_1holiday_acd38aa68fc9bd131a1c7cc2c5e0e7344} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!USMemorialDay@{USMemorialDay}}
+\index{USMemorialDay@{USMemorialDay}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{USMemorialDay}{USMemorialDay}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+USMemorial\+Day}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Holiday(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}Memorial\ Day"{}},\ month=5,\ day=31,\ offset=DateOffset(weekday=MO(-\/1))}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_ad36abd8a2ec64165fec7ac149b16dfc1}\label{namespacepandas_1_1tseries_1_1holiday_ad36abd8a2ec64165fec7ac149b16dfc1} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!USPresidentsDay@{USPresidentsDay}}
+\index{USPresidentsDay@{USPresidentsDay}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{USPresidentsDay}{USPresidentsDay}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+USPresidents\+Day}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Holiday(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}Washington's\ Birthday"{}},\ month=2,\ day=1,\ offset=DateOffset(weekday=MO(3))}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacepandas_1_1tseries_1_1holiday_aec1b0f5e4513cf99cd80e1fe378b3e04}\label{namespacepandas_1_1tseries_1_1holiday_aec1b0f5e4513cf99cd80e1fe378b3e04} 
+\index{pandas.tseries.holiday@{pandas.tseries.holiday}!USThanksgivingDay@{USThanksgivingDay}}
+\index{USThanksgivingDay@{USThanksgivingDay}!pandas.tseries.holiday@{pandas.tseries.holiday}}
+\doxysubsubsection{\texorpdfstring{USThanksgivingDay}{USThanksgivingDay}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+USThanksgiving\+Day}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Holiday(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}Thanksgiving\ Day"{}},\ month=11,\ day=1,\ offset=DateOffset(weekday=TH(4))}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

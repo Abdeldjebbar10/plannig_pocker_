@@ -1,0 +1,43 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+core.\+serializers.\+python}
+\hypertarget{namespacedjango_1_1core_1_1serializers_1_1python}{}\label{namespacedjango_1_1core_1_1serializers_1_1python}\index{django.core.serializers.python@{django.core.serializers.python}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1python_1_1Serializer}{Serializer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1serializers_1_1python_a8d7030cef2cc6d70b1c81d788e89f544}{Deserializer}} (object\+\_\+list, \texorpdfstring{$\ast$}{*}using=DEFAULT\+\_\+\+DB\+\_\+\+ALIAS, ignorenonexistent=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1serializers_1_1python_a623331d37e33313865633a34d09f3441}{\+\_\+get\+\_\+model}} (model\+\_\+identifier)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A Python "serializer". Doesn't do much serializing per se -- just converts to
+and from basic Python data types (lists, dicts, strings, etc.). Useful as a basis for
+other serializers.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1core_1_1serializers_1_1python_a623331d37e33313865633a34d09f3441}\label{namespacedjango_1_1core_1_1serializers_1_1python_a623331d37e33313865633a34d09f3441} 
+\index{django.core.serializers.python@{django.core.serializers.python}!\_get\_model@{\_get\_model}}
+\index{\_get\_model@{\_get\_model}!django.core.serializers.python@{django.core.serializers.python}}
+\doxysubsubsection{\texorpdfstring{\_get\_model()}{\_get\_model()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+python.\+\_\+get\+\_\+model (\begin{DoxyParamCaption}\item[{}]{model\+\_\+identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Look up a model from an "app_label.model_name" string.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1serializers_1_1python_a8d7030cef2cc6d70b1c81d788e89f544}\label{namespacedjango_1_1core_1_1serializers_1_1python_a8d7030cef2cc6d70b1c81d788e89f544} 
+\index{django.core.serializers.python@{django.core.serializers.python}!Deserializer@{Deserializer}}
+\index{Deserializer@{Deserializer}!django.core.serializers.python@{django.core.serializers.python}}
+\doxysubsubsection{\texorpdfstring{Deserializer()}{Deserializer()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+python.\+Deserializer (\begin{DoxyParamCaption}\item[{}]{object\+\_\+list,  }\item[{\texorpdfstring{$\ast$}{*}}]{using = {\ttfamily DEFAULT\+\_\+DB\+\_\+ALIAS},  }\item[{}]{ignorenonexistent = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deserialize simple Python objects back into Django ORM instances.
+
+It's expected that you pass the Python objects themselves (instead of a
+stream or a string) to the constructor
+\end{DoxyVerb}
+ 

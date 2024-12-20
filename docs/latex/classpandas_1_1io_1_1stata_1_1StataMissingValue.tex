@@ -1,0 +1,278 @@
+\doxysection{Référence de la classe pandas.\+io.\+stata.\+Stata\+Missing\+Value}
+\hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue}{}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue}\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+
+
+Graphe de collaboration de pandas.\+io.\+stata.\+Stata\+Missing\+Value\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac03f7ece4579811f44ef7b02f119945c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a127162cd9b2807a1b4a8a5ccd1792f49}{value}})
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a1dbabc927b68f5b1d93235a050a8b8d9}{string}} (self)
+\item 
+float \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_acd0656b4c7eb4f666376159f4878f85a}{value}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a39f1e53246742828648d5ae9e7c8cfbd}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a8b3741fd4e1d293bda485b34bf6ba027}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a017674e448c3ed77abe33d2de308a4ae}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+float \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac649dee212f228bd7ecfde27b740cc23}{get\+\_\+base\+\_\+missing\+\_\+value}} (cls, np.\+dtype dtype)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a1de050d4f60074e4d704c3083d51abc5}{string}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a127162cd9b2807a1b4a8a5ccd1792f49}{value}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_af7bf2e5a9a74491872ce8d39585e177d}{MISSING\+\_\+\+VALUES}} = \{\}
+\item 
+tuple \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a24171f28d4509f14a16e522f33053d11}{bases}} = (101, 32741, 2147483621)
+\item 
+bytes \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac3f27bca1c0e3161b47f3a7f825689ce}{float32\+\_\+base}} = b"{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x7f"{}
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa1444102be6a813dee617af35e8d6649}{increment\+\_\+32}} = struct.\+unpack("{}$<$i"{}, b"{}\textbackslash{}x00\textbackslash{}x08\textbackslash{}x00\textbackslash{}x00"{})\mbox{[}0\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ad4d238e53ac69f9b8b599e670e00a480}{key}} = struct.\+unpack("{}$<$f"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac3f27bca1c0e3161b47f3a7f825689ce}{float32\+\_\+base}})\mbox{[}0\mbox{]}
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa0412395b54f047f5473b68f96c95d7f}{int\+\_\+value}} = struct.\+unpack("{}$<$i"{}, struct.\+pack("{}$<$f"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ad4d238e53ac69f9b8b599e670e00a480}{key}}))\mbox{[}0\mbox{]} + \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa1444102be6a813dee617af35e8d6649}{increment\+\_\+32}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a13e299bd33824dad3fe7b23b9fd1c0bf}{float32\+\_\+base}} = struct.\+pack("{}$<$i"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa0412395b54f047f5473b68f96c95d7f}{int\+\_\+value}})
+\item 
+bytes \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_af645d066470a39e6cdbf44d054510300}{float64\+\_\+base}} = b"{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}xe0\textbackslash{}x7f"{}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a9675c0358d28bf351f56d09999ac452c}{increment\+\_\+64}} = struct.\+unpack("{}q"{}, b"{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x00\textbackslash{}x00"{})\mbox{[}0\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_af1e7126dea1abdec95f617004298913c}{int\+\_\+value}} = struct.\+unpack("{}q"{}, struct.\+pack("{}$<$d"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ad4d238e53ac69f9b8b599e670e00a480}{key}}))\mbox{[}0\mbox{]} + \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a9675c0358d28bf351f56d09999ac452c}{increment\+\_\+64}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a6250f5a1258c86303565c604436b96a7}{float64\+\_\+base}} = struct.\+pack("{}q"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa0412395b54f047f5473b68f96c95d7f}{int\+\_\+value}})
+\item 
+dict \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a27a826d2b08e1c490b39555c674cb88c}{BASE\+\_\+\+MISSING\+\_\+\+VALUES}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a66effeb3af3a6f877267d6a02ac38ad4}{\+\_\+value}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a8537364f6e25cd8db3a401926306d270}{\+\_\+str}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An observation's missing value.
+
+Parameters
+----------
+value : {int, float}
+    The Stata missing value code
+
+Notes
+-----
+More information: <https://www.stata.com/help.cgi?missing>
+
+Integer missing values make the code '.', '.a', ..., '.z' to the ranges
+101 ... 127 (for int8), 32741 ... 32767  (for int16) and 2147483621 ...
+2147483647 (for int32).  Missing values for floating point data types are
+more complex but the pattern is simple to discern from the following table.
+
+np.float32 missing values (float in Stata)
+0000007f    .
+0008007f    .a
+0010007f    .b
+...
+00c0007f    .x
+00c8007f    .y
+00d0007f    .z
+
+np.float64 missing values (double in Stata)
+000000000000e07f    .
+000000000001e07f    .a
+000000000002e07f    .b
+...
+000000000018e07f    .x
+000000000019e07f    .y
+00000000001ae07f    .z
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac03f7ece4579811f44ef7b02f119945c}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac03f7ece4579811f44ef7b02f119945c} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a017674e448c3ed77abe33d2de308a4ae}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a017674e448c3ed77abe33d2de308a4ae} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{object}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a8b3741fd4e1d293bda485b34bf6ba027}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a8b3741fd4e1d293bda485b34bf6ba027} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a39f1e53246742828648d5ae9e7c8cfbd}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a39f1e53246742828648d5ae9e7c8cfbd} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac649dee212f228bd7ecfde27b740cc23}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac649dee212f228bd7ecfde27b740cc23} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!get\_base\_missing\_value@{get\_base\_missing\_value}}
+\index{get\_base\_missing\_value@{get\_base\_missing\_value}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{get\_base\_missing\_value()}{get\_base\_missing\_value()}}
+{\footnotesize\ttfamily  float pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+get\+\_\+base\+\_\+missing\+\_\+value (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{np.\+dtype}]{dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a1dbabc927b68f5b1d93235a050a8b8d9}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a1dbabc927b68f5b1d93235a050a8b8d9} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!string@{string}}
+\index{string@{string}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{string()}{string()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+string (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Stata representation of the missing value: '.', '.a'..'.z'
+
+Returns
+-------
+str
+    The representation of the missing value.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_acd0656b4c7eb4f666376159f4878f85a}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_acd0656b4c7eb4f666376159f4878f85a} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!value@{value}}
+\index{value@{value}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily  float pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+value (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The binary representation of the missing value.
+
+Returns
+-------
+{int, float}
+    The binary representation of the missing value.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a8537364f6e25cd8db3a401926306d270}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a8537364f6e25cd8db3a401926306d270} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!\_str@{\_str}}
+\index{\_str@{\_str}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{\_str}{\_str}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+\_\+str\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a66effeb3af3a6f877267d6a02ac38ad4}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a66effeb3af3a6f877267d6a02ac38ad4} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!\_value@{\_value}}
+\index{\_value@{\_value}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{\_value}{\_value}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+\_\+value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a27a826d2b08e1c490b39555c674cb88c}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a27a826d2b08e1c490b39555c674cb88c} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!BASE\_MISSING\_VALUES@{BASE\_MISSING\_VALUES}}
+\index{BASE\_MISSING\_VALUES@{BASE\_MISSING\_VALUES}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{BASE\_MISSING\_VALUES}{BASE\_MISSING\_VALUES}}
+{\footnotesize\ttfamily dict pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+BASE\+\_\+\+MISSING\+\_\+\+VALUES\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}int8"{}}:\ 101,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}int16"{}}:\ 32741,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}int32"{}}:\ 2147483621,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}float32"{}}:\ struct.unpack(\textcolor{stringliteral}{"{}<f"{}},\ float32\_base)[0],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}float64"{}}:\ struct.unpack(\textcolor{stringliteral}{"{}<d"{}},\ float64\_base)[0],}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a24171f28d4509f14a16e522f33053d11}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a24171f28d4509f14a16e522f33053d11} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!bases@{bases}}
+\index{bases@{bases}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{bases}{bases}}
+{\footnotesize\ttfamily tuple pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+bases = (101, 32741, 2147483621)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac3f27bca1c0e3161b47f3a7f825689ce}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac3f27bca1c0e3161b47f3a7f825689ce} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!float32\_base@{float32\_base}}
+\index{float32\_base@{float32\_base}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{float32\_base}{float32\_base}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bytes pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+float32\+\_\+base = b"{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x7f"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a13e299bd33824dad3fe7b23b9fd1c0bf}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a13e299bd33824dad3fe7b23b9fd1c0bf} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!float32\_base@{float32\_base}}
+\index{float32\_base@{float32\_base}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{float32\_base}{float32\_base}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+float32\+\_\+base = struct.\+pack("{}$<$i"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa0412395b54f047f5473b68f96c95d7f}{int\+\_\+value}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_af645d066470a39e6cdbf44d054510300}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_af645d066470a39e6cdbf44d054510300} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!float64\_base@{float64\_base}}
+\index{float64\_base@{float64\_base}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{float64\_base}{float64\_base}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bytes pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+float64\+\_\+base = b"{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}xe0\textbackslash{}x7f"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a6250f5a1258c86303565c604436b96a7}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a6250f5a1258c86303565c604436b96a7} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!float64\_base@{float64\_base}}
+\index{float64\_base@{float64\_base}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{float64\_base}{float64\_base}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+float64\+\_\+base = struct.\+pack("{}q"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa0412395b54f047f5473b68f96c95d7f}{int\+\_\+value}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa1444102be6a813dee617af35e8d6649}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa1444102be6a813dee617af35e8d6649} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!increment\_32@{increment\_32}}
+\index{increment\_32@{increment\_32}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{increment\_32}{increment\_32}}
+{\footnotesize\ttfamily int pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+increment\+\_\+32 = struct.\+unpack("{}$<$i"{}, b"{}\textbackslash{}x00\textbackslash{}x08\textbackslash{}x00\textbackslash{}x00"{})\mbox{[}0\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a9675c0358d28bf351f56d09999ac452c}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a9675c0358d28bf351f56d09999ac452c} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!increment\_64@{increment\_64}}
+\index{increment\_64@{increment\_64}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{increment\_64}{increment\_64}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+increment\+\_\+64 = struct.\+unpack("{}q"{}, b"{}\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x01\textbackslash{}x00\textbackslash{}x00"{})\mbox{[}0\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa0412395b54f047f5473b68f96c95d7f}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa0412395b54f047f5473b68f96c95d7f} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!int\_value@{int\_value}}
+\index{int\_value@{int\_value}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{int\_value}{int\_value}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+int\+\_\+value = struct.\+unpack("{}$<$i"{}, struct.\+pack("{}$<$f"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ad4d238e53ac69f9b8b599e670e00a480}{key}}))\mbox{[}0\mbox{]} + \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_aa1444102be6a813dee617af35e8d6649}{increment\+\_\+32}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_af1e7126dea1abdec95f617004298913c}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_af1e7126dea1abdec95f617004298913c} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!int\_value@{int\_value}}
+\index{int\_value@{int\_value}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{int\_value}{int\_value}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+int\+\_\+value = struct.\+unpack("{}q"{}, struct.\+pack("{}$<$d"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ad4d238e53ac69f9b8b599e670e00a480}{key}}))\mbox{[}0\mbox{]} + \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_a9675c0358d28bf351f56d09999ac452c}{increment\+\_\+64}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_ad4d238e53ac69f9b8b599e670e00a480}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_ad4d238e53ac69f9b8b599e670e00a480} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!key@{key}}
+\index{key@{key}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+key = struct.\+unpack("{}$<$f"{}, \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataMissingValue_ac3f27bca1c0e3161b47f3a7f825689ce}{float32\+\_\+base}})\mbox{[}0\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_af7bf2e5a9a74491872ce8d39585e177d}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_af7bf2e5a9a74491872ce8d39585e177d} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!MISSING\_VALUES@{MISSING\_VALUES}}
+\index{MISSING\_VALUES@{MISSING\_VALUES}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{MISSING\_VALUES}{MISSING\_VALUES}}
+{\footnotesize\ttfamily dict pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+MISSING\+\_\+\+VALUES = \{\}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a1de050d4f60074e4d704c3083d51abc5}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a1de050d4f60074e4d704c3083d51abc5} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!string@{string}}
+\index{string@{string}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+string}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataMissingValue_a127162cd9b2807a1b4a8a5ccd1792f49}\label{classpandas_1_1io_1_1stata_1_1StataMissingValue_a127162cd9b2807a1b4a8a5ccd1792f49} 
+\index{pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}!value@{value}}
+\index{value@{value}!pandas.io.stata.StataMissingValue@{pandas.io.stata.StataMissingValue}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Missing\+Value.\+value}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/\mbox{\hyperlink{stata_8py}{stata.\+py}}\end{DoxyCompactItemize}

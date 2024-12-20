@@ -1,0 +1,111 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict}
+\hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict}{}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict}\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a7c998517e51ef26bdc3fb04699a65c04}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_aa2ed40ef4131a024e407b1f42ac598e4}{serializer}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a49959453712f969f3c8855b29e04e244}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, field)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a1ae59dd951edb79208fb3e2b49ae1001}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a49e008f8f39efb22ef066e0a07e55f43}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_ac857aec4597fcb62e1a6e4acce97445d}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_aea823e5bb5b6d541aaab428a15617ea9}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a89b4cfe15960e72edff9958c4ecff151}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_aa2ed40ef4131a024e407b1f42ac598e4}{serializer}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_ac1dddaf17ec936d600849e3c610d1094}{fields}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This dict-like object is used to store fields on a serializer.
+
+This ensures that whenever fields are added to the serializer we call
+`field.bind()` so that the `field_name` and `parent` attributes
+can be set correctly.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a7c998517e51ef26bdc3fb04699a65c04}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a7c998517e51ef26bdc3fb04699a65c04} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{serializer }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a49e008f8f39efb22ef066e0a07e55f43}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a49e008f8f39efb22ef066e0a07e55f43} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a1ae59dd951edb79208fb3e2b49ae1001}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a1ae59dd951edb79208fb3e2b49ae1001} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_ac857aec4597fcb62e1a6e4acce97445d}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_ac857aec4597fcb62e1a6e4acce97445d} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_aea823e5bb5b6d541aaab428a15617ea9}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_aea823e5bb5b6d541aaab428a15617ea9} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a89b4cfe15960e72edff9958c4ecff151}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a89b4cfe15960e72edff9958c4ecff151} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a49959453712f969f3c8855b29e04e244}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_a49959453712f969f3c8855b29e04e244} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{field }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_ac1dddaf17ec936d600849e3c610d1094}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_ac1dddaf17ec936d600849e3c610d1094} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!fields@{fields}}
+\index{fields@{fields}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{fields}{fields}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+fields}
+
+\Hypertarget{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_aa2ed40ef4131a024e407b1f42ac598e4}\label{classrest__framework_1_1utils_1_1serializer__helpers_1_1BindingDict_aa2ed40ef4131a024e407b1f42ac598e4} 
+\index{rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}!serializer@{serializer}}
+\index{serializer@{serializer}!rest\_framework.utils.serializer\_helpers.BindingDict@{rest\_framework.utils.serializer\_helpers.BindingDict}}
+\doxysubsubsection{\texorpdfstring{serializer}{serializer}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+serializer\+\_\+helpers.\+Binding\+Dict.\+serializer}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/utils/\mbox{\hyperlink{serializer__helpers_8py}{serializer\+\_\+helpers.\+py}}\end{DoxyCompactItemize}

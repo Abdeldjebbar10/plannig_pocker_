@@ -1,0 +1,120 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype}
+\hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype}{}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype}\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae11be63309478777e6631a0b9c442f8f}{test\+\_\+astype\+\_\+single\+\_\+dtype}} (using\+\_\+copy\+\_\+on\+\_\+write)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a8f1394e0ddf9186f05448caa874ffcd5}{test\+\_\+astype\+\_\+avoids\+\_\+copy}} (using\+\_\+copy\+\_\+on\+\_\+write, dtype, new\+\_\+dtype)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae5abc49b1e63beb46540b52aae199a3b}{test\+\_\+astype\+\_\+different\+\_\+target\+\_\+dtype}} (using\+\_\+copy\+\_\+on\+\_\+write, dtype)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a4f6b0ddccde8ee4588f4d87d9f7785cf}{test\+\_\+astype\+\_\+numpy\+\_\+to\+\_\+ea}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ad714b98b856b5c63663dd24c8d84c35b}{test\+\_\+astype\+\_\+string\+\_\+and\+\_\+object}} (using\+\_\+copy\+\_\+on\+\_\+write, dtype, new\+\_\+dtype)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a0bd5ed850242061f87996ed66457d933}{test\+\_\+astype\+\_\+string\+\_\+and\+\_\+object\+\_\+update\+\_\+original}} (using\+\_\+copy\+\_\+on\+\_\+write, dtype, new\+\_\+dtype)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a2e121860ed902345b7cdf276c7a271d8}{test\+\_\+astype\+\_\+string\+\_\+copy\+\_\+on\+\_\+pickle\+\_\+roundrip}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ac057f7bc68214ee5424c87584ec01a0c}{test\+\_\+astype\+\_\+dict\+\_\+dtypes}} (using\+\_\+copy\+\_\+on\+\_\+write)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae44f739a2cf2c83e4b046119964ceb3c}{test\+\_\+astype\+\_\+different\+\_\+datetime\+\_\+resos}} (using\+\_\+copy\+\_\+on\+\_\+write)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a67cf5799f7dc73b64d81cbab50fbdc83}{test\+\_\+astype\+\_\+different\+\_\+timezones}} (using\+\_\+copy\+\_\+on\+\_\+write)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a254ffeaef5c03f0862050bf32b77ec9b}{test\+\_\+astype\+\_\+different\+\_\+timezones\+\_\+different\+\_\+reso}} (using\+\_\+copy\+\_\+on\+\_\+write)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a2c6907a131caa3ddd7fb05dcc7892f54}{test\+\_\+astype\+\_\+arrow\+\_\+timestamp}} (using\+\_\+copy\+\_\+on\+\_\+write)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae53634de28e5f8245352f7d64277f7cd}{test\+\_\+convert\+\_\+dtypes\+\_\+infer\+\_\+objects}} (using\+\_\+copy\+\_\+on\+\_\+write)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ac3c89e09ad3c9dc0cd2361718bb583b4}{test\+\_\+convert\+\_\+dtypes}} (using\+\_\+copy\+\_\+on\+\_\+write)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a2c6907a131caa3ddd7fb05dcc7892f54}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a2c6907a131caa3ddd7fb05dcc7892f54} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_arrow\_timestamp@{test\_astype\_arrow\_timestamp}}
+\index{test\_astype\_arrow\_timestamp@{test\_astype\_arrow\_timestamp}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_arrow\_timestamp()}{test\_astype\_arrow\_timestamp()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+arrow\+\_\+timestamp (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a8f1394e0ddf9186f05448caa874ffcd5}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a8f1394e0ddf9186f05448caa874ffcd5} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_avoids\_copy@{test\_astype\_avoids\_copy}}
+\index{test\_astype\_avoids\_copy@{test\_astype\_avoids\_copy}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_avoids\_copy()}{test\_astype\_avoids\_copy()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+avoids\+\_\+copy (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write,  }\item[{}]{dtype,  }\item[{}]{new\+\_\+dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ac057f7bc68214ee5424c87584ec01a0c}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ac057f7bc68214ee5424c87584ec01a0c} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_dict\_dtypes@{test\_astype\_dict\_dtypes}}
+\index{test\_astype\_dict\_dtypes@{test\_astype\_dict\_dtypes}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_dict\_dtypes()}{test\_astype\_dict\_dtypes()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+dict\+\_\+dtypes (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae44f739a2cf2c83e4b046119964ceb3c}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae44f739a2cf2c83e4b046119964ceb3c} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_different\_datetime\_resos@{test\_astype\_different\_datetime\_resos}}
+\index{test\_astype\_different\_datetime\_resos@{test\_astype\_different\_datetime\_resos}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_different\_datetime\_resos()}{test\_astype\_different\_datetime\_resos()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+different\+\_\+datetime\+\_\+resos (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae5abc49b1e63beb46540b52aae199a3b}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae5abc49b1e63beb46540b52aae199a3b} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_different\_target\_dtype@{test\_astype\_different\_target\_dtype}}
+\index{test\_astype\_different\_target\_dtype@{test\_astype\_different\_target\_dtype}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_different\_target\_dtype()}{test\_astype\_different\_target\_dtype()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+different\+\_\+target\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write,  }\item[{}]{dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a67cf5799f7dc73b64d81cbab50fbdc83}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a67cf5799f7dc73b64d81cbab50fbdc83} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_different\_timezones@{test\_astype\_different\_timezones}}
+\index{test\_astype\_different\_timezones@{test\_astype\_different\_timezones}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_different\_timezones()}{test\_astype\_different\_timezones()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+different\+\_\+timezones (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a254ffeaef5c03f0862050bf32b77ec9b}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a254ffeaef5c03f0862050bf32b77ec9b} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_different\_timezones\_different\_reso@{test\_astype\_different\_timezones\_different\_reso}}
+\index{test\_astype\_different\_timezones\_different\_reso@{test\_astype\_different\_timezones\_different\_reso}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_different\_timezones\_different\_reso()}{test\_astype\_different\_timezones\_different\_reso()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+different\+\_\+timezones\+\_\+different\+\_\+reso (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a4f6b0ddccde8ee4588f4d87d9f7785cf}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a4f6b0ddccde8ee4588f4d87d9f7785cf} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_numpy\_to\_ea@{test\_astype\_numpy\_to\_ea}}
+\index{test\_astype\_numpy\_to\_ea@{test\_astype\_numpy\_to\_ea}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_numpy\_to\_ea()}{test\_astype\_numpy\_to\_ea()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+numpy\+\_\+to\+\_\+ea (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae11be63309478777e6631a0b9c442f8f}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae11be63309478777e6631a0b9c442f8f} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_single\_dtype@{test\_astype\_single\_dtype}}
+\index{test\_astype\_single\_dtype@{test\_astype\_single\_dtype}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_single\_dtype()}{test\_astype\_single\_dtype()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+single\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ad714b98b856b5c63663dd24c8d84c35b}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ad714b98b856b5c63663dd24c8d84c35b} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_string\_and\_object@{test\_astype\_string\_and\_object}}
+\index{test\_astype\_string\_and\_object@{test\_astype\_string\_and\_object}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_string\_and\_object()}{test\_astype\_string\_and\_object()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+string\+\_\+and\+\_\+object (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write,  }\item[{}]{dtype,  }\item[{}]{new\+\_\+dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a0bd5ed850242061f87996ed66457d933}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a0bd5ed850242061f87996ed66457d933} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_string\_and\_object\_update\_original@{test\_astype\_string\_and\_object\_update\_original}}
+\index{test\_astype\_string\_and\_object\_update\_original@{test\_astype\_string\_and\_object\_update\_original}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_string\_and\_object\_update\_original()}{test\_astype\_string\_and\_object\_update\_original()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+string\+\_\+and\+\_\+object\+\_\+update\+\_\+original (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write,  }\item[{}]{dtype,  }\item[{}]{new\+\_\+dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a2e121860ed902345b7cdf276c7a271d8}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_a2e121860ed902345b7cdf276c7a271d8} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_astype\_string\_copy\_on\_pickle\_roundrip@{test\_astype\_string\_copy\_on\_pickle\_roundrip}}
+\index{test\_astype\_string\_copy\_on\_pickle\_roundrip@{test\_astype\_string\_copy\_on\_pickle\_roundrip}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_astype\_string\_copy\_on\_pickle\_roundrip()}{test\_astype\_string\_copy\_on\_pickle\_roundrip()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+astype\+\_\+string\+\_\+copy\+\_\+on\+\_\+pickle\+\_\+roundrip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ac3c89e09ad3c9dc0cd2361718bb583b4}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ac3c89e09ad3c9dc0cd2361718bb583b4} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_convert\_dtypes@{test\_convert\_dtypes}}
+\index{test\_convert\_dtypes@{test\_convert\_dtypes}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_convert\_dtypes()}{test\_convert\_dtypes()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+convert\+\_\+dtypes (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae53634de28e5f8245352f7d64277f7cd}\label{namespacepandas_1_1tests_1_1copy__view_1_1test__astype_ae53634de28e5f8245352f7d64277f7cd} 
+\index{pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}!test\_convert\_dtypes\_infer\_objects@{test\_convert\_dtypes\_infer\_objects}}
+\index{test\_convert\_dtypes\_infer\_objects@{test\_convert\_dtypes\_infer\_objects}!pandas.tests.copy\_view.test\_astype@{pandas.tests.copy\_view.test\_astype}}
+\doxysubsubsection{\texorpdfstring{test\_convert\_dtypes\_infer\_objects()}{test\_convert\_dtypes\_infer\_objects()}}
+{\footnotesize\ttfamily pandas.\+tests.\+copy\+\_\+view.\+test\+\_\+astype.\+test\+\_\+convert\+\_\+dtypes\+\_\+infer\+\_\+objects (\begin{DoxyParamCaption}\item[{}]{using\+\_\+copy\+\_\+on\+\_\+write }\end{DoxyParamCaption})}
+

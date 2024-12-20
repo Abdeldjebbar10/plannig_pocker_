@@ -1,0 +1,82 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+authentication.\+Basic\+Authentication}
+\hypertarget{classrest__framework_1_1authentication_1_1BasicAuthentication}{}\label{classrest__framework_1_1authentication_1_1BasicAuthentication}\index{rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+authentication.\+Basic\+Authentication\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+authentication.\+Basic\+Authentication\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1BasicAuthentication_a83f9d2b45cb9589112f00fb6bb6370a2}{authenticate}} (self, request)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1BasicAuthentication_ac091c4a57e61169c1e0f2988bf6c0854}{authenticate\+\_\+credentials}} (self, userid, password, request=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1BasicAuthentication_addc6dde321da95fdf1080cfe4903d7f9}{authenticate\+\_\+header}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BasicAuthentication_ad89ce08b44f3d2130f996554438c588d}{www\+\_\+authenticate\+\_\+realm}} = \textquotesingle{}api\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}HTTP Basic authentication against username/password.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1authentication_1_1BasicAuthentication_a83f9d2b45cb9589112f00fb6bb6370a2}\label{classrest__framework_1_1authentication_1_1BasicAuthentication_a83f9d2b45cb9589112f00fb6bb6370a2} 
+\index{rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+Basic\+Authentication.\+authenticate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a `User` if a correct username and password have been supplied
+using HTTP Basic authentication.  Otherwise returns `None`.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication_ae3bb4add98312b6937c33b263feae691}{rest\+\_\+framework.\+authentication.\+Base\+Authentication}}.
+
+\Hypertarget{classrest__framework_1_1authentication_1_1BasicAuthentication_ac091c4a57e61169c1e0f2988bf6c0854}\label{classrest__framework_1_1authentication_1_1BasicAuthentication_ac091c4a57e61169c1e0f2988bf6c0854} 
+\index{rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}!authenticate\_credentials@{authenticate\_credentials}}
+\index{authenticate\_credentials@{authenticate\_credentials}!rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}}
+\doxysubsubsection{\texorpdfstring{authenticate\_credentials()}{authenticate\_credentials()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+Basic\+Authentication.\+authenticate\+\_\+credentials (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{userid,  }\item[{}]{password,  }\item[{}]{request = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Authenticate the userid and password against username and password
+with optional request for context.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1authentication_1_1BasicAuthentication_addc6dde321da95fdf1080cfe4903d7f9}\label{classrest__framework_1_1authentication_1_1BasicAuthentication_addc6dde321da95fdf1080cfe4903d7f9} 
+\index{rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}!authenticate\_header@{authenticate\_header}}
+\index{authenticate\_header@{authenticate\_header}!rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}}
+\doxysubsubsection{\texorpdfstring{authenticate\_header()}{authenticate\_header()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+Basic\+Authentication.\+authenticate\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string to be used as the value of the `WWW-Authenticate`
+header in a `401 Unauthenticated` response, or `None` if the
+authentication scheme should return `403 Permission Denied` responses.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication_a9bca2891f519f47ceeecad0d1c02333a}{rest\+\_\+framework.\+authentication.\+Base\+Authentication}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1authentication_1_1BasicAuthentication_ad89ce08b44f3d2130f996554438c588d}\label{classrest__framework_1_1authentication_1_1BasicAuthentication_ad89ce08b44f3d2130f996554438c588d} 
+\index{rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}!www\_authenticate\_realm@{www\_authenticate\_realm}}
+\index{www\_authenticate\_realm@{www\_authenticate\_realm}!rest\_framework.authentication.BasicAuthentication@{rest\_framework.authentication.BasicAuthentication}}
+\doxysubsubsection{\texorpdfstring{www\_authenticate\_realm}{www\_authenticate\_realm}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+authentication.\+Basic\+Authentication.\+www\+\_\+authenticate\+\_\+realm = \textquotesingle{}api\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{authentication_8py}{authentication.\+py}}\end{DoxyCompactItemize}

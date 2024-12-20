@@ -1,0 +1,35 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Attribute\+Conflict\+Warning}
+\hypertarget{classpandas_1_1errors_1_1AttributeConflictWarning}{}\label{classpandas_1_1errors_1_1AttributeConflictWarning}\index{pandas.errors.AttributeConflictWarning@{pandas.errors.AttributeConflictWarning}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Attribute\+Conflict\+Warning\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Attribute\+Conflict\+Warning\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Warning raised when index attributes conflict when using HDFStore.
+
+Occurs when attempting to append an index with a different
+name than the existing index on an HDFStore or attempting to append an index with a
+different frequency than the existing index on an HDFStore.
+
+Examples
+--------
+>>> idx1 = pd.Index(['a', 'b'], name='name1')
+>>> df1 = pd.DataFrame([[1, 2], [3, 4]], index=idx1)
+>>> df1.to_hdf('file', 'data', 'w', append=True)  # doctest: +SKIP
+>>> idx2 = pd.Index(['c', 'd'], name='name2')
+>>> df2 = pd.DataFrame([[5, 6], [7, 8]], index=idx2)
+>>> df2.to_hdf('file', 'data', 'a', append=True)  # doctest: +SKIP
+AttributeConflictWarning: the [index_name] attribute of the existing index is
+[name1] which conflicts with the new [name2]...
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

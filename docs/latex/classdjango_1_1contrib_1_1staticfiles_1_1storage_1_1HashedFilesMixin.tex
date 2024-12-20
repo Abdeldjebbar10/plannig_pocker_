@@ -1,0 +1,325 @@
+\doxysection{Référence de la classe django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin}
+\hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin}{}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin}\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab17311918e7281f7ab97cde09b8fcaf5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a02fe41eb2b970de0ff9b82eed020df1f}{file\+\_\+hash}} (self, name, content=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_aa30283e5d1a2177cf975b44ae95e45e4}{hashed\+\_\+name}} (self, name, content=None, filename=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a81f974c7dd835781c0da370a9b83c70e}{url}} (self, name, force=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a67047dabcbef318414a8e974dde62d53}{url\+\_\+converter}} (self, name, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab5ca8559d533f00c52061e4affde909a}{hashed\+\_\+files}}, template=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a2814ba00e1311ca7b3dc381da1b31c8f}{post\+\_\+process}} (self, paths, dry\+\_\+run=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_abf91fd053c6a1e5af9d0f4ea23b4ed5a}{clean\+\_\+name}} (self, name)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a883a7047387b85a0fd00e04ce18d7324}{hash\+\_\+key}} (self, name)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a6da945cdca5e4771dfed263cf935da64}{stored\+\_\+name}} (self, name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab5ca8559d533f00c52061e4affde909a}{hashed\+\_\+files}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a6819458bbf80bfeb49563eee5a4a75c7}{stored\+\_\+name}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a34a7221f9f2b652fe773e74cdf1cc677}{max\+\_\+post\+\_\+process\+\_\+passes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab98396278c0257a2bf8f9368e275b510}{default\+\_\+template}} = "{}"{}"{}url("{}\%(url)s"{})"{}"{}"{}
+\item 
+int \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a301cb6aae432a555b08a4a2628dc2e28}{max\+\_\+post\+\_\+process\+\_\+passes}} = 5
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a1b698657df59a7a38903cbca84606d81}{support\+\_\+js\+\_\+module\+\_\+import\+\_\+aggregation}} = False
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ad3cf39715decdeee4d5a64c43fe57789}{patterns}}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a21e95b2f25085a6aacccd41cc4996732}{keep\+\_\+intermediate\+\_\+files}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a998d69b32b054ac5726f5036e7dfbdf3}{\+\_\+url}} (self, hashed\+\_\+name\+\_\+func, name, force=False, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab5ca8559d533f00c52061e4affde909a}{hashed\+\_\+files}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_aa0c820223a4e686edd5d2c333d5a9336}{\+\_\+post\+\_\+process}} (self, paths, adjustable\+\_\+paths, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab5ca8559d533f00c52061e4affde909a}{hashed\+\_\+files}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a392ae5fa08fbbf3e360450edc663386a}{\+\_\+stored\+\_\+name}} (self, name, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab5ca8559d533f00c52061e4affde909a}{hashed\+\_\+files}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a9c42d326ce1c82375d2e0a18d0398d55}{\+\_\+patterns}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ac4ec47eb53eba0ba687a4403936c2c50}{\+\_\+stored\+\_\+name}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a7b2cff78ebcd14dbd5e6f640d6e68a8d}{\+\_\+js\+\_\+module\+\_\+import\+\_\+aggregation\+\_\+patterns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab17311918e7281f7ab97cde09b8fcaf5}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab17311918e7281f7ab97cde09b8fcaf5} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1ManifestFilesMixin_a87e22f9bbcdda0134d99b4cf45e8d2c0}{django.\+contrib.\+staticfiles.\+storage.\+Manifest\+Files\+Mixin}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_aa0c820223a4e686edd5d2c333d5a9336}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_aa0c820223a4e686edd5d2c333d5a9336} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!\_post\_process@{\_post\_process}}
+\index{\_post\_process@{\_post\_process}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{\_post\_process()}{\_post\_process()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+\_\+post\+\_\+process (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{paths,  }\item[{}]{adjustable\+\_\+paths,  }\item[{}]{hashed\+\_\+files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a392ae5fa08fbbf3e360450edc663386a}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a392ae5fa08fbbf3e360450edc663386a} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!\_stored\_name@{\_stored\_name}}
+\index{\_stored\_name@{\_stored\_name}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{\_stored\_name()}{\_stored\_name()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+\_\+stored\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{hashed\+\_\+files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a998d69b32b054ac5726f5036e7dfbdf3}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a998d69b32b054ac5726f5036e7dfbdf3} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!\_url@{\_url}}
+\index{\_url@{\_url}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{\_url()}{\_url()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{hashed\+\_\+name\+\_\+func,  }\item[{}]{name,  }\item[{}]{force = {\ttfamily False},  }\item[{}]{hashed\+\_\+files = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the non-hashed URL in DEBUG mode.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_abf91fd053c6a1e5af9d0f4ea23b4ed5a}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_abf91fd053c6a1e5af9d0f4ea23b4ed5a} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!clean\_name@{clean\_name}}
+\index{clean\_name@{clean\_name}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{clean\_name()}{clean\_name()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+clean\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a02fe41eb2b970de0ff9b82eed020df1f}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a02fe41eb2b970de0ff9b82eed020df1f} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!file\_hash@{file\_hash}}
+\index{file\_hash@{file\_hash}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{file\_hash()}{file\_hash()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+file\+\_\+hash (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{content = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a hash of the file with the given name and optional content.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a883a7047387b85a0fd00e04ce18d7324}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a883a7047387b85a0fd00e04ce18d7324} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!hash\_key@{hash\_key}}
+\index{hash\_key@{hash\_key}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{hash\_key()}{hash\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+hash\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_aa30283e5d1a2177cf975b44ae95e45e4}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_aa30283e5d1a2177cf975b44ae95e45e4} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!hashed\_name@{hashed\_name}}
+\index{hashed\_name@{hashed\_name}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{hashed\_name()}{hashed\_name()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+hashed\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{content = {\ttfamily None},  }\item[{}]{filename = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a2814ba00e1311ca7b3dc381da1b31c8f}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a2814ba00e1311ca7b3dc381da1b31c8f} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!post\_process@{post\_process}}
+\index{post\_process@{post\_process}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{post\_process()}{post\_process()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+post\+\_\+process (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{paths,  }\item[{}]{dry\+\_\+run = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Post process the given dictionary of files (called from collectstatic).
+
+Processing is actually two separate operations:
+
+1. renaming files to include a hash of their content for cache-busting,
+   and copying those files to the target storage.
+2. adjusting files which contain references to other files so they
+   refer to the cache-busting filenames.
+
+If either of these are performed on a file, then that file is considered
+post-processed.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1ManifestFilesMixin_a4420707c4ced656dde4ecd848e6c1ec7}{django.\+contrib.\+staticfiles.\+storage.\+Manifest\+Files\+Mixin}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a6da945cdca5e4771dfed263cf935da64}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a6da945cdca5e4771dfed263cf935da64} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!stored\_name@{stored\_name}}
+\index{stored\_name@{stored\_name}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{stored\_name()}{stored\_name()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+stored\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1ManifestFilesMixin_ad4c0e8430e2a96c5c086a661d02dd452}{django.\+contrib.\+staticfiles.\+storage.\+Manifest\+Files\+Mixin}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a81f974c7dd835781c0da370a9b83c70e}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a81f974c7dd835781c0da370a9b83c70e} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!url@{url}}
+\index{url@{url}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{force = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the non-hashed URL in DEBUG mode.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a67047dabcbef318414a8e974dde62d53}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a67047dabcbef318414a8e974dde62d53} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!url\_converter@{url\_converter}}
+\index{url\_converter@{url\_converter}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{url\_converter()}{url\_converter()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+url\+\_\+converter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{hashed\+\_\+files,  }\item[{}]{template = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the custom URL converter for the given file name.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a7b2cff78ebcd14dbd5e6f640d6e68a8d}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a7b2cff78ebcd14dbd5e6f640d6e68a8d} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!\_js\_module\_import\_aggregation\_patterns@{\_js\_module\_import\_aggregation\_patterns}}
+\index{\_js\_module\_import\_aggregation\_patterns@{\_js\_module\_import\_aggregation\_patterns}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{\_js\_module\_import\_aggregation\_patterns}{\_js\_module\_import\_aggregation\_patterns}}
+{\footnotesize\ttfamily tuple django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+\_\+js\+\_\+module\+\_\+import\+\_\+aggregation\+\_\+patterns\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}*.js"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a9c42d326ce1c82375d2e0a18d0398d55}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a9c42d326ce1c82375d2e0a18d0398d55} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!\_patterns@{\_patterns}}
+\index{\_patterns@{\_patterns}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{\_patterns}{\_patterns}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+\_\+patterns\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ac4ec47eb53eba0ba687a4403936c2c50}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ac4ec47eb53eba0ba687a4403936c2c50} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!\_stored\_name@{\_stored\_name}}
+\index{\_stored\_name@{\_stored\_name}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{\_stored\_name}{\_stored\_name}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+\_\+stored\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab98396278c0257a2bf8f9368e275b510}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab98396278c0257a2bf8f9368e275b510} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!default\_template@{default\_template}}
+\index{default\_template@{default\_template}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{default\_template}{default\_template}}
+{\footnotesize\ttfamily str django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+default\+\_\+template = "{}"{}"{}url("{}\%(url)s"{})"{}"{}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab5ca8559d533f00c52061e4affde909a}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ab5ca8559d533f00c52061e4affde909a} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!hashed\_files@{hashed\_files}}
+\index{hashed\_files@{hashed\_files}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{hashed\_files}{hashed\_files}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+hashed\+\_\+files}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a21e95b2f25085a6aacccd41cc4996732}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a21e95b2f25085a6aacccd41cc4996732} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!keep\_intermediate\_files@{keep\_intermediate\_files}}
+\index{keep\_intermediate\_files@{keep\_intermediate\_files}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{keep\_intermediate\_files}{keep\_intermediate\_files}}
+{\footnotesize\ttfamily bool django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+keep\+\_\+intermediate\+\_\+files = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a301cb6aae432a555b08a4a2628dc2e28}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a301cb6aae432a555b08a4a2628dc2e28} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!max\_post\_process\_passes@{max\_post\_process\_passes}}
+\index{max\_post\_process\_passes@{max\_post\_process\_passes}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{max\_post\_process\_passes}{max\_post\_process\_passes}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+max\+\_\+post\+\_\+process\+\_\+passes = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a34a7221f9f2b652fe773e74cdf1cc677}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a34a7221f9f2b652fe773e74cdf1cc677} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!max\_post\_process\_passes@{max\_post\_process\_passes}}
+\index{max\_post\_process\_passes@{max\_post\_process\_passes}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{max\_post\_process\_passes}{max\_post\_process\_passes}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+max\+\_\+post\+\_\+process\+\_\+passes}
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ad3cf39715decdeee4d5a64c43fe57789}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_ad3cf39715decdeee4d5a64c43fe57789} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!patterns@{patterns}}
+\index{patterns@{patterns}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{patterns}{patterns}}
+{\footnotesize\ttfamily tuple django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+patterns\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}*.css"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(?m)\string^(?P<matched>/\(\backslash\)*\#[\ \(\backslash\)t]"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(?-\/i:sourceMappingURL)=(?P<url>.*)[\ \(\backslash\)t]*\(\backslash\)*/)\$"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}/*\#\ sourceMappingURL=\%(url)s\ */"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}*.js"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(?m)\string^(?P<matched>//\#\ (?-\/i:sourceMappingURL)=(?P<url>.*))\$"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}//\#\ sourceMappingURL=\%(url)s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a6819458bbf80bfeb49563eee5a4a75c7}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a6819458bbf80bfeb49563eee5a4a75c7} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!stored\_name@{stored\_name}}
+\index{stored\_name@{stored\_name}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{stored\_name}{stored\_name}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+stored\+\_\+name}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1ManifestFilesMixin_ad4c0e8430e2a96c5c086a661d02dd452}{django.\+contrib.\+staticfiles.\+storage.\+Manifest\+Files\+Mixin}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a1b698657df59a7a38903cbca84606d81}\label{classdjango_1_1contrib_1_1staticfiles_1_1storage_1_1HashedFilesMixin_a1b698657df59a7a38903cbca84606d81} 
+\index{django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}!support\_js\_module\_import\_aggregation@{support\_js\_module\_import\_aggregation}}
+\index{support\_js\_module\_import\_aggregation@{support\_js\_module\_import\_aggregation}!django.contrib.staticfiles.storage.HashedFilesMixin@{django.contrib.staticfiles.storage.HashedFilesMixin}}
+\doxysubsubsection{\texorpdfstring{support\_js\_module\_import\_aggregation}{support\_js\_module\_import\_aggregation}}
+{\footnotesize\ttfamily bool django.\+contrib.\+staticfiles.\+storage.\+Hashed\+Files\+Mixin.\+support\+\_\+js\+\_\+module\+\_\+import\+\_\+aggregation = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/staticfiles/\mbox{\hyperlink{storage_8py}{storage.\+py}}\end{DoxyCompactItemize}

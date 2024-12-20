@@ -1,0 +1,119 @@
+\doxysection{Référence de la classe pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer}
+\hypertarget{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber}{}\label{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber}\index{pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a4b6fffe8e50e67b9e9852d43ec72239e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_af61b1793b5ee04d9fb0c69fbf819f92d}{obj}}, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}Sequence\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a2b52e4d4640793af735ad5d0099eec12}{include}}, str\texorpdfstring{$\vert$}{|}Sequence\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a45239c62dcd6d3f4343ef33f6a41f4d0}{exclude}})
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a4532c46768f5f2a13338da0b6513a90e}{describe}} (self, Sequence\mbox{[}float\mbox{]}\texorpdfstring{$\vert$}{|}np.\+ndarray percentiles)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a2b52e4d4640793af735ad5d0099eec12}{include}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a45239c62dcd6d3f4343ef33f6a41f4d0}{exclude}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1NDFrameDescriberAbstract}{pandas.\+core.\+methods.\+describe.\+NDFrame\+Describer\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1NDFrameDescriberAbstract_af92805672d21f1ab70b311c842f3ff4e}{obj}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_af61b1793b5ee04d9fb0c69fbf819f92d}{obj}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a11fd4d6fac253bb93d358af9252395cc}{\+\_\+select\+\_\+data}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Class responsible for creating dataobj description.
+
+Parameters
+----------
+obj : DataFrame
+    DataFrame to be described.
+include : 'all', list-like of dtypes or None
+    A white list of data types to include in the result.
+exclude : list-like of dtypes or None
+    A black list of data types to omit from the result.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a4b6fffe8e50e67b9e9852d43ec72239e}\label{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a4b6fffe8e50e67b9e9852d43ec72239e} 
+\index{pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Data\+Frame}]{obj,  }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} Sequence\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None}]{include,  }\item[{str \texorpdfstring{$\vert$}{|} Sequence\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None}]{exclude }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1NDFrameDescriberAbstract_ab88e935d35f9e486302c099c0d664942}{pandas.\+core.\+methods.\+describe.\+NDFrame\+Describer\+Abstract}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a11fd4d6fac253bb93d358af9252395cc}\label{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a11fd4d6fac253bb93d358af9252395cc} 
+\index{pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}!\_select\_data@{\_select\_data}}
+\index{\_select\_data@{\_select\_data}!pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}}
+\doxysubsubsection{\texorpdfstring{\_select\_data()}{\_select\_data()}}
+{\footnotesize\ttfamily  Data\+Frame pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer.\+\_\+select\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Select columns to be described.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a4532c46768f5f2a13338da0b6513a90e}\label{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a4532c46768f5f2a13338da0b6513a90e} 
+\index{pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}!describe@{describe}}
+\index{describe@{describe}!pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}}
+\doxysubsubsection{\texorpdfstring{describe()}{describe()}}
+{\footnotesize\ttfamily  Data\+Frame pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer.\+describe (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Sequence\mbox{[}float\mbox{]} \texorpdfstring{$\vert$}{|} np.\+ndarray}]{percentiles }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do describe either series or dataframe.
+
+Parameters
+----------
+percentiles : list-like of numbers
+    The percentiles to include in the output.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1methods_1_1describe_1_1NDFrameDescriberAbstract_ab7150b5c109997adb2039b14706d1c38}{pandas.\+core.\+methods.\+describe.\+NDFrame\+Describer\+Abstract}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a45239c62dcd6d3f4343ef33f6a41f4d0}\label{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a45239c62dcd6d3f4343ef33f6a41f4d0} 
+\index{pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}!exclude@{exclude}}
+\index{exclude@{exclude}!pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}}
+\doxysubsubsection{\texorpdfstring{exclude}{exclude}}
+{\footnotesize\ttfamily pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer.\+exclude}
+
+\Hypertarget{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a2b52e4d4640793af735ad5d0099eec12}\label{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_a2b52e4d4640793af735ad5d0099eec12} 
+\index{pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}!include@{include}}
+\index{include@{include}!pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}}
+\doxysubsubsection{\texorpdfstring{include}{include}}
+{\footnotesize\ttfamily pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer.\+include}
+
+\Hypertarget{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_af61b1793b5ee04d9fb0c69fbf819f92d}\label{classpandas_1_1core_1_1methods_1_1describe_1_1DataFrameDescriber_af61b1793b5ee04d9fb0c69fbf819f92d} 
+\index{pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}!obj@{obj}}
+\index{obj@{obj}!pandas.core.methods.describe.DataFrameDescriber@{pandas.core.methods.describe.DataFrameDescriber}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}}
+{\footnotesize\ttfamily Data\+Frame pandas.\+core.\+methods.\+describe.\+Data\+Frame\+Describer.\+obj\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/methods/\mbox{\hyperlink{describe_8py}{describe.\+py}}\end{DoxyCompactItemize}

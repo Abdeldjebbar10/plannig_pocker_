@@ -1,0 +1,48 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+\_\+globals}
+\hypertarget{namespacenumpy_1_1__globals}{}\label{namespacenumpy_1_1__globals}\index{numpy.\_globals@{numpy.\_globals}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__globals_1_1__CopyMode}{\+\_\+\+Copy\+Mode}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__globals_1_1__NoValueType}{\+\_\+\+No\+Value\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacenumpy_1_1__globals_aad8cef218607d979888572a5bef10669}{\+\_\+is\+\_\+loaded}} = True
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__globals_a1383d4cfbba8cbac85c4e20a45bb1705}{\+\_\+\+No\+Value}} = \mbox{\hyperlink{classnumpy_1_1__globals_1_1__NoValueType}{\+\_\+\+No\+Value\+Type}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Module defining global singleton classes.
+
+This module raises a RuntimeError if an attempt to reload it is made. In that
+way the identities of the classes defined here are fixed and will remain so
+even if numpy itself is reloaded. In particular, a function like the following
+will still work correctly after numpy is reloaded::
+
+    def foo(arg=np._NoValue):
+        if arg is np._NoValue:
+            ...
+
+That was not the case when the singleton classes were defined in the numpy
+``__init__.py`` file. See gh-7844 for a discussion of the reload problem that
+motivated this module.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1__globals_aad8cef218607d979888572a5bef10669}\label{namespacenumpy_1_1__globals_aad8cef218607d979888572a5bef10669} 
+\index{numpy.\_globals@{numpy.\_globals}!\_is\_loaded@{\_is\_loaded}}
+\index{\_is\_loaded@{\_is\_loaded}!numpy.\_globals@{numpy.\_globals}}
+\doxysubsubsection{\texorpdfstring{\_is\_loaded}{\_is\_loaded}}
+{\footnotesize\ttfamily bool numpy.\+\_\+globals.\+\_\+is\+\_\+loaded = True\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1__globals_a1383d4cfbba8cbac85c4e20a45bb1705}\label{namespacenumpy_1_1__globals_a1383d4cfbba8cbac85c4e20a45bb1705} 
+\index{numpy.\_globals@{numpy.\_globals}!\_NoValue@{\_NoValue}}
+\index{\_NoValue@{\_NoValue}!numpy.\_globals@{numpy.\_globals}}
+\doxysubsubsection{\texorpdfstring{\_NoValue}{\_NoValue}}
+{\footnotesize\ttfamily numpy.\+\_\+globals.\+\_\+\+No\+Value = \mbox{\hyperlink{classnumpy_1_1__globals_1_1__NoValueType}{\+\_\+\+No\+Value\+Type}}()\hspace{0.3cm}{\ttfamily [protected]}}
+

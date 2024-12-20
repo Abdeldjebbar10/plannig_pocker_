@@ -1,0 +1,36 @@
+\doxysection{Référence de la classe django.\+db.\+backends.\+postgresql.\+base.\+Server\+Side\+Cursor}
+\hypertarget{classdjango_1_1db_1_1backends_1_1postgresql_1_1base_1_1ServerSideCursor}{}\label{classdjango_1_1db_1_1backends_1_1postgresql_1_1base_1_1ServerSideCursor}\index{django.db.backends.postgresql.base.ServerSideCursor@{django.db.backends.postgresql.base.ServerSideCursor}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+backends.\+postgresql.\+base.\+Server\+Side\+Cursor\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+db.\+backends.\+postgresql.\+base.\+Server\+Side\+Cursor\+:
+% FIG 1
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1base_1_1CursorMixin}{django.\+db.\+backends.\+postgresql.\+base.\+Cursor\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1postgresql_1_1base_1_1CursorMixin_a47ae60510118aff959f7ee3bc049cdcd}{callproc}} (self, name, args=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}psycopg >= 3 forces the usage of server-side bindings when using named
+cursors but the ORM doesn't yet support the systematic generation of
+prepareable SQL (#20516).
+
+ClientCursorMixin forces the usage of client-side bindings while
+ServerCursor implements the logic required to declare and scroll
+through named cursors.
+
+Mixing ClientCursorMixin in wouldn't be necessary if Cursor allowed to
+specify how parameters should be bound instead, which ServerCursor
+would inherit, but that's not the case.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/backends/postgresql/\mbox{\hyperlink{django_2db_2backends_2postgresql_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

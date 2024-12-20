@@ -1,0 +1,868 @@
+\doxysection{Référence de la classe pandas.\+core.\+arrays.\+period.\+Period\+Array}
+\hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray}{}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray}\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+arrays.\+period.\+Period\+Array\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+arrays.\+period.\+Period\+Array\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a5c8f3be2b769902f5902ca7153c0a8b2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, values, Dtype\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce}{dtype}}=None, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782}{freq}}=None, bool copy=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype}{Period\+Dtype}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a61c9f8cbf36d582b9dd61318d0a208dc}{dtype}} (self)
+\item 
+Base\+Offset \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0b0ef473d23af2882010c766dd06d7b6}{freq}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4baa1ee7fb6a5fc1f35c0516d7c758d9}{freqstr}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae61176c397b11c4ce9675b169d812363}{\+\_\+\+\_\+array\+\_\+\+\_\+}} (self, Np\+Dtype\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce}{dtype}}=None, bool\texorpdfstring{$\vert$}{|}None copy=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae680809ae5304c934b1f1e8fdfccf529}{\+\_\+\+\_\+arrow\+\_\+array\+\_\+\+\_\+}} (self, type=None)
+\item 
+npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aaf388cd95e8ac852f864f1a60b018d4b}{is\+\_\+leap\+\_\+year}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray}{Datetime\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a8e7976955af48ab1b16c15d481c118cc}{to\+\_\+timestamp}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782}{freq}}=None, str how="{}start"{})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3782fdc48d4cf4bcfa3b9d6c72cd8d69}{asfreq}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782}{freq}}=None, str how="{}E"{})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ad97a92113130c51c5329de90717e5e10}{astype}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce}{dtype}}, bool copy=True)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\texorpdfstring{$\vert$}{|}np.\+intp \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af56e3ae4b9f7390ebd681430d0760edd}{searchsorted}} (self, Numpy\+Value\+Array\+Like\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} value, Literal\mbox{[}"{}left"{}, "{}right"{}\mbox{]} side="{}left"{}, Numpy\+Sorter\texorpdfstring{$\vert$}{|}None sorter=None)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa7e33ff5fb06dbe079b19cd98f8593d5}{fillna}} (self, value=None, method=None, int\texorpdfstring{$\vert$}{|}None limit=None, bool copy=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782}{freq}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a8a753a27e80edda7c467cb672098d1dc}{asi8}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce}{dtype}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ade2e0895b98d389dfd799fd986813b28}{year}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0c29d65ccdf56ada3d61e0dac8e15bc6}{month}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a60841ab045244217ac28a498a450f0e4}{day}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae4d53479969b32f8ff30453177481c31}{hour}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aee73de949836ed0d73a9bec770279523}{minute}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_adc5bde0b3d623d4bcbd141fa414390c0}{second}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aec5dce52a1ddf3edc2add76e84a80b52}{weekofyear}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac605173907b29c08136c0713a1ced1aa}{week}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aec5dce52a1ddf3edc2add76e84a80b52}{weekofyear}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a167e05ce73c0509083895eb853fd5139}{day\+\_\+of\+\_\+week}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aff4c7266a4695fed85a2e4e292fc4301}{dayofweek}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a167e05ce73c0509083895eb853fd5139}{day\+\_\+of\+\_\+week}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a229fdf5b57e894ecf2fe0347cd2c6260}{weekday}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aff4c7266a4695fed85a2e4e292fc4301}{dayofweek}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a5ec5c16cdcd163a54425b7dd985b176c}{dayofyear}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4409e60b7ad7c545c56ca6824b302a30}{quarter}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aecc0f9eb276281e442e70c9b2de17563}{qyear}} = \mbox{\hyperlink{namespacepandas_1_1core_1_1arrays_1_1period_ad147a25def7da46a7f7434bfcf104cd6}{\+\_\+field\+\_\+accessor}}("{}qyear"{})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a37c00bf8bf1f643cade932c53d8ed21b}{days\+\_\+in\+\_\+month}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a24c0e0ebcad455c45923afc0cc69cf5b}{daysinmonth}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a37c00bf8bf1f643cade932c53d8ed21b}{days\+\_\+in\+\_\+month}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+type\mbox{[}Period\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a9e81df78025aedca50c6b9705173807b}{\+\_\+scalar\+\_\+type}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a53728fef37f490e3832d12b738245669}{\+\_\+simple\+\_\+new}} (cls, npt.\+NDArray\mbox{[}np.\+int64\mbox{]} values, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype}{Period\+Dtype}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce}{dtype}})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa2ab0638013a8a7053466871d2c633da}{\+\_\+from\+\_\+sequence}} (cls, scalars, \texorpdfstring{$\ast$}{*}Dtype\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce}{dtype}}=None, bool copy=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af4a57571d7a663980016cd4bee8a7f3e}{\+\_\+from\+\_\+sequence\+\_\+of\+\_\+strings}} (cls, strings, \texorpdfstring{$\ast$}{*}Dtype\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce}{dtype}}=None, bool copy=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4507f91765e4157ab59324974ef3718f}{\+\_\+from\+\_\+datetime64}} (cls, data, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782}{freq}}, tz=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac529e8ca58d180366f4c6f7d1d58744d}{\+\_\+generate\+\_\+range}} (cls, start, end, periods, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782}{freq}})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ad48652f1f82e9750cea6de1c49d302eb}{\+\_\+from\+\_\+fields}} (cls, \texorpdfstring{$\ast$}{*}dict fields, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782}{freq}})
+\item 
+np.\+int64 \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af6bf33b27c500c486ec63a0b9bded833}{\+\_\+unbox\+\_\+scalar}} (self, Period\texorpdfstring{$\vert$}{|}Na\+TType value)
+\item 
+Period \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0a4a46bea4e23ee2a20c9acda1660ef9}{\+\_\+scalar\+\_\+from\+\_\+string}} (self, str value)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aab1bb923303c59462d83553b40cc9dbd}{\+\_\+check\+\_\+compatible\+\_\+with}} (self, Period\texorpdfstring{$\vert$}{|}Na\+TType\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray}{Period\+Array}} other)
+\item 
+Period\texorpdfstring{$\vert$}{|}Na\+TType \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a26d0ff1a5788fce0db033b03bdd66c2a}{\+\_\+box\+\_\+func}} (self, x)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a2ce963defb91f185475fce5532843f61}{\+\_\+formatter}} (self, bool boxed=False)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_acbb3e0e8f59e1734d55adde775a1268d}{\+\_\+format\+\_\+native\+\_\+types}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}float na\+\_\+rep="{}Na\+T"{}, date\+\_\+format=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0f7a42d94a32b02be70f376d808be821}{\+\_\+pad\+\_\+or\+\_\+backfill}} (self, \texorpdfstring{$\ast$}{*}Fillna\+Options method, int\texorpdfstring{$\vert$}{|}None limit=None, Literal\mbox{[}"{}inside"{}, "{}outside"{}\mbox{]}\texorpdfstring{$\vert$}{|}None limit\+\_\+area=None, bool copy=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0d303ebaa9ef98227256e1f831de944b}{\+\_\+addsub\+\_\+int\+\_\+array\+\_\+or\+\_\+scalar}} (self, np.\+ndarray\texorpdfstring{$\vert$}{|}int other, Callable\mbox{[}\mbox{[}Any, Any\mbox{]}, Any\mbox{]} op)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa1c5a6a373464040363490b65eecb93f}{\+\_\+add\+\_\+offset}} (self, Base\+Offset other)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3f86fc63fb6ed954039f78422ea96f72}{\+\_\+add\+\_\+timedeltalike\+\_\+scalar}} (self, other)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac35c5b573a3f1059c8cb9d58173d734d}{\+\_\+add\+\_\+timedelta\+\_\+arraylike}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1timedeltas_1_1TimedeltaArray}{Timedelta\+Array}}\texorpdfstring{$\vert$}{|}npt.\+NDArray\mbox{[}np.\+timedelta64\mbox{]} other)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1ea6c4142b157c40ff3e082c0760a71f}{\+\_\+check\+\_\+timedeltalike\+\_\+freq\+\_\+compat}} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a81d95a157a22b239833b3f166905ff7b}{\+\_\+scalar\+\_\+type}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a06d3f5cf4edaa853c852f9c4b75db4c7}{\+\_\+ndarray}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa33930cea5cee182874ffe4ffb35caf0}{\+\_\+typ}} = "{}periodarray"{}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1888f86b4c53b58a036240d15ce8999d}{\+\_\+internal\+\_\+fill\+\_\+value}} = np.\+int64(i\+NaT)
+\item 
+tuple \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae7fe9e855e9c2a6afcaec0ce45bf212e}{\+\_\+recognized\+\_\+scalars}} = (Period,)
+\item 
+isinstance \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4c834931c7e279cfbbb131228d535d7e}{\+\_\+is\+\_\+recognized\+\_\+dtype}}
+\item 
+tuple \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a880c505cc11e92a19ea059746b1adac9}{\+\_\+infer\+\_\+matches}} = ("{}period"{},)
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a61a3a9a906f1b2984f0cbcb72688888a}{\+\_\+other\+\_\+ops}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0d908b6b70ecec7fe01203bc90193dc1}{\+\_\+bool\+\_\+ops}} = \mbox{[}"{}is\+\_\+leap\+\_\+year"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3f16c57a10f1c88ce1a6aaab69b7fb3c}{\+\_\+object\+\_\+ops}} = \mbox{[}"{}start\+\_\+time"{}, "{}end\+\_\+time"{}, "{}freq"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac4c53ce1d7a4186abadb29abdbefae44}{\+\_\+field\+\_\+ops}}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1330784c335b65d49889e53026de179d}{\+\_\+datetimelike\+\_\+ops}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac4c53ce1d7a4186abadb29abdbefae44}{\+\_\+field\+\_\+ops}} + \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3f16c57a10f1c88ce1a6aaab69b7fb3c}{\+\_\+object\+\_\+ops}} + \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0d908b6b70ecec7fe01203bc90193dc1}{\+\_\+bool\+\_\+ops}}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a41deec438ae5b2912e1fec7ea26301c0}{\+\_\+datetimelike\+\_\+methods}} = \mbox{[}"{}strftime"{}, "{}to\+\_\+timestamp"{}, "{}asfreq"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype}{Period\+Dtype}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa66cb179e801a1a7080500208edb5b8f}{\+\_\+dtype}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Pandas ExtensionArray for storing Period data.
+
+Users should use :func:`~pandas.array` to create new instances.
+
+Parameters
+----------
+values : Union[PeriodArray, Series[period], ndarray[int], PeriodIndex]
+    The data to store. These should be arrays that can be directly
+    converted to ordinals without inference or copy (PeriodArray,
+    ndarray[int64]), or a box around such an array (Series[period],
+    PeriodIndex).
+dtype : PeriodDtype, optional
+    A PeriodDtype instance from which to extract a `freq`. If both
+    `freq` and `dtype` are specified, then the frequencies must match.
+freq : str or DateOffset
+    The `freq` to use for the array. Mostly applicable when `values`
+    is an ndarray of integers, when `freq` is required. When `values`
+    is a PeriodArray (or box around), it's checked that ``values.freq``
+    matches `freq`.
+copy : bool, default False
+    Whether to copy the ordinals before storing.
+
+Attributes
+----------
+None
+
+Methods
+-------
+None
+
+See Also
+--------
+Period: Represents a period of time.
+PeriodIndex : Immutable Index for period data.
+period_range: Create a fixed-frequency PeriodArray.
+array: Construct a pandas array.
+
+Notes
+-----
+There are two components to a PeriodArray
+
+- ordinals : integer ndarray
+- freq : pd.tseries.offsets.Offset
+
+The values are physically stored as a 1-D ndarray of integers. These are
+called "ordinals" and represent some kind of offset from a base.
+
+The `freq` indicates the span covered by each element of the array.
+All elements in the PeriodArray have the same `freq`.
+
+Examples
+--------
+>>> pd.arrays.PeriodArray(pd.PeriodIndex(['2023-01-01',
+...                                       '2023-01-02'], freq='D'))
+<PeriodArray>
+['2023-01-01', '2023-01-02']
+Length: 2, dtype: period[D]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a5c8f3be2b769902f5902ca7153c0a8b2}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a5c8f3be2b769902f5902ca7153c0a8b2} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{values,  }\item[{Dtype \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None},  }\item[{}]{freq = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae61176c397b11c4ce9675b169d812363}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae61176c397b11c4ce9675b169d812363} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_\_array\_\_@{\_\_array\_\_}}
+\index{\_\_array\_\_@{\_\_array\_\_}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_\_array\_\_()}{\_\_array\_\_()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+\+\_\+array\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Np\+Dtype \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None},  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{copy = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae680809ae5304c934b1f1e8fdfccf529}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae680809ae5304c934b1f1e8fdfccf529} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_\_arrow\_array\_\_@{\_\_arrow\_array\_\_}}
+\index{\_\_arrow\_array\_\_@{\_\_arrow\_array\_\_}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_\_arrow\_array\_\_()}{\_\_arrow\_array\_\_()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+\+\_\+arrow\+\_\+array\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{type = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert myself into a pyarrow Array.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa1c5a6a373464040363490b65eecb93f}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa1c5a6a373464040363490b65eecb93f} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_add\_offset@{\_add\_offset}}
+\index{\_add\_offset@{\_add\_offset}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_add\_offset()}{\_add\_offset()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+add\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Base\+Offset}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac35c5b573a3f1059c8cb9d58173d734d}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac35c5b573a3f1059c8cb9d58173d734d} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_add\_timedelta\_arraylike@{\_add\_timedelta\_arraylike}}
+\index{\_add\_timedelta\_arraylike@{\_add\_timedelta\_arraylike}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_add\_timedelta\_arraylike()}{\_add\_timedelta\_arraylike()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+add\+\_\+timedelta\+\_\+arraylike (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1timedeltas_1_1TimedeltaArray}{Timedelta\+Array}} \texorpdfstring{$\vert$}{|} npt.\+NDArray\mbox{[}np.\+timedelta64\mbox{]}     }]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parameters
+----------
+other : TimedeltaArray or ndarray[timedelta64]
+
+Returns
+-------
+PeriodArray
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3f86fc63fb6ed954039f78422ea96f72}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3f86fc63fb6ed954039f78422ea96f72} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_add\_timedeltalike\_scalar@{\_add\_timedeltalike\_scalar}}
+\index{\_add\_timedeltalike\_scalar@{\_add\_timedeltalike\_scalar}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_add\_timedeltalike\_scalar()}{\_add\_timedeltalike\_scalar()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+add\+\_\+timedeltalike\+\_\+scalar (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parameters
+----------
+other : timedelta, Tick, np.timedelta64
+
+Returns
+-------
+PeriodArray
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0d303ebaa9ef98227256e1f831de944b}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0d303ebaa9ef98227256e1f831de944b} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_addsub\_int\_array\_or\_scalar@{\_addsub\_int\_array\_or\_scalar}}
+\index{\_addsub\_int\_array\_or\_scalar@{\_addsub\_int\_array\_or\_scalar}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_addsub\_int\_array\_or\_scalar()}{\_addsub\_int\_array\_or\_scalar()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+addsub\+\_\+int\+\_\+array\+\_\+or\+\_\+scalar (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+ndarray \texorpdfstring{$\vert$}{|} int}]{other,  }\item[{Callable\mbox{[}\mbox{[}Any, Any\mbox{]}, Any\mbox{]}     }]{op }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Add or subtract array of integers.
+
+Parameters
+----------
+other : np.ndarray[int64] or int
+op : {operator.add, operator.sub}
+
+Returns
+-------
+result : PeriodArray
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a26d0ff1a5788fce0db033b03bdd66c2a}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a26d0ff1a5788fce0db033b03bdd66c2a} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_box\_func@{\_box\_func}}
+\index{\_box\_func@{\_box\_func}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_box\_func()}{\_box\_func()}}
+{\footnotesize\ttfamily  Period \texorpdfstring{$\vert$}{|} Na\+TType pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+box\+\_\+func (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aab1bb923303c59462d83553b40cc9dbd}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aab1bb923303c59462d83553b40cc9dbd} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_check\_compatible\_with@{\_check\_compatible\_with}}
+\index{\_check\_compatible\_with@{\_check\_compatible\_with}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_check\_compatible\_with()}{\_check\_compatible\_with()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+check\+\_\+compatible\+\_\+with (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Period \texorpdfstring{$\vert$}{|} Na\+TType \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray}{Period\+Array}}}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1ea6c4142b157c40ff3e082c0760a71f}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1ea6c4142b157c40ff3e082c0760a71f} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_check\_timedeltalike\_freq\_compat@{\_check\_timedeltalike\_freq\_compat}}
+\index{\_check\_timedeltalike\_freq\_compat@{\_check\_timedeltalike\_freq\_compat}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_check\_timedeltalike\_freq\_compat()}{\_check\_timedeltalike\_freq\_compat()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+check\+\_\+timedeltalike\+\_\+freq\+\_\+compat (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Arithmetic operations with timedelta-like scalars or array `other`
+are only valid if `other` is an integer multiple of `self.freq`.
+If the operation is valid, find that integer multiple.  Otherwise,
+raise because the operation is invalid.
+
+Parameters
+----------
+other : timedelta, np.timedelta64, Tick,
+        ndarray[timedelta64], TimedeltaArray, TimedeltaIndex
+
+Returns
+-------
+multiple : int or ndarray[int64]
+
+Raises
+------
+IncompatibleFrequency
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_acbb3e0e8f59e1734d55adde775a1268d}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_acbb3e0e8f59e1734d55adde775a1268d} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_format\_native\_types@{\_format\_native\_types}}
+\index{\_format\_native\_types@{\_format\_native\_types}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_format\_native\_types()}{\_format\_native\_types()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+format\+\_\+native\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} float }]{na\+\_\+rep = {\ttfamily "{}NaT"{}},  }\item[{}]{date\+\_\+format = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}actually format my specific types
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a2ce963defb91f185475fce5532843f61}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a2ce963defb91f185475fce5532843f61} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_formatter@{\_formatter}}
+\index{\_formatter@{\_formatter}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_formatter()}{\_formatter()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+formatter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{boxed = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4507f91765e4157ab59324974ef3718f}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4507f91765e4157ab59324974ef3718f} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_from\_datetime64@{\_from\_datetime64}}
+\index{\_from\_datetime64@{\_from\_datetime64}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_datetime64()}{\_from\_datetime64()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+from\+\_\+datetime64 (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{data,  }\item[{}]{freq,  }\item[{}]{tz = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Construct a PeriodArray from a datetime64 array
+
+Parameters
+----------
+data : ndarray[datetime64[ns], datetime64[ns, tz]]
+freq : str or Tick
+tz : tzinfo, optional
+
+Returns
+-------
+PeriodArray[freq]
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ad48652f1f82e9750cea6de1c49d302eb}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ad48652f1f82e9750cea6de1c49d302eb} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_from\_fields@{\_from\_fields}}
+\index{\_from\_fields@{\_from\_fields}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_fields()}{\_from\_fields()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+from\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{\texorpdfstring{$\ast$}{*}dict}]{fields,  }\item[{}]{freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa2ab0638013a8a7053466871d2c633da}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa2ab0638013a8a7053466871d2c633da} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_from\_sequence@{\_from\_sequence}}
+\index{\_from\_sequence@{\_from\_sequence}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_sequence()}{\_from\_sequence()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+from\+\_\+sequence (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{scalars,  }\item[{\texorpdfstring{$\ast$}{*}Dtype \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af4a57571d7a663980016cd4bee8a7f3e}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af4a57571d7a663980016cd4bee8a7f3e} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_from\_sequence\_of\_strings@{\_from\_sequence\_of\_strings}}
+\index{\_from\_sequence\_of\_strings@{\_from\_sequence\_of\_strings}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_sequence\_of\_strings()}{\_from\_sequence\_of\_strings()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+from\+\_\+sequence\+\_\+of\+\_\+strings (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{strings,  }\item[{\texorpdfstring{$\ast$}{*}Dtype \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac529e8ca58d180366f4c6f7d1d58744d}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac529e8ca58d180366f4c6f7d1d58744d} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_generate\_range@{\_generate\_range}}
+\index{\_generate\_range@{\_generate\_range}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_generate\_range()}{\_generate\_range()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+generate\+\_\+range (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{start,  }\item[{}]{end,  }\item[{}]{periods,  }\item[{}]{freq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0f7a42d94a32b02be70f376d808be821}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0f7a42d94a32b02be70f376d808be821} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_pad\_or\_backfill@{\_pad\_or\_backfill}}
+\index{\_pad\_or\_backfill@{\_pad\_or\_backfill}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_pad\_or\_backfill()}{\_pad\_or\_backfill()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+pad\+\_\+or\+\_\+backfill (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}Fillna\+Options}]{method,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None},  }\item[{Literal\mbox{[}"{}inside"{}, "{}outside"{}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{limit\+\_\+area = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0a4a46bea4e23ee2a20c9acda1660ef9}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0a4a46bea4e23ee2a20c9acda1660ef9} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_scalar\_from\_string@{\_scalar\_from\_string}}
+\index{\_scalar\_from\_string@{\_scalar\_from\_string}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_scalar\_from\_string()}{\_scalar\_from\_string()}}
+{\footnotesize\ttfamily  Period pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+scalar\+\_\+from\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a9e81df78025aedca50c6b9705173807b}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a9e81df78025aedca50c6b9705173807b} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_scalar\_type@{\_scalar\_type}}
+\index{\_scalar\_type@{\_scalar\_type}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_scalar\_type()}{\_scalar\_type()}}
+{\footnotesize\ttfamily  type\mbox{[}Period\mbox{]} pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+scalar\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a53728fef37f490e3832d12b738245669}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a53728fef37f490e3832d12b738245669} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_simple\_new@{\_simple\_new}}
+\index{\_simple\_new@{\_simple\_new}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_simple\_new()}{\_simple\_new()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+simple\+\_\+new (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{npt.\+NDArray\mbox{[}np.\+int64\mbox{]}}]{values,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype}{Period\+Dtype}}}]{dtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af6bf33b27c500c486ec63a0b9bded833}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af6bf33b27c500c486ec63a0b9bded833} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_unbox\_scalar@{\_unbox\_scalar}}
+\index{\_unbox\_scalar@{\_unbox\_scalar}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_unbox\_scalar()}{\_unbox\_scalar()}}
+{\footnotesize\ttfamily  np.\+int64 pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+unbox\+\_\+scalar (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Period \texorpdfstring{$\vert$}{|} Na\+TType}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3782fdc48d4cf4bcfa3b9d6c72cd8d69}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3782fdc48d4cf4bcfa3b9d6c72cd8d69} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!asfreq@{asfreq}}
+\index{asfreq@{asfreq}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{asfreq()}{asfreq()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+asfreq (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{freq = {\ttfamily None},  }\item[{str }]{how = {\ttfamily "{}E"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the {klass} to the specified frequency `freq`.
+
+Equivalent to applying :meth:`pandas.Period.asfreq` with the given arguments
+to each :class:`~pandas.Period` in this {klass}.
+
+Parameters
+----------
+freq : str
+    A frequency.
+how : str {{'E', 'S'}}, default 'E'
+    Whether the elements should be aligned to the end
+    or start within pa period.
+
+    * 'E', 'END', or 'FINISH' for end,
+    * 'S', 'START', or 'BEGIN' for start.
+
+    January 31st ('END') vs. January 1st ('START') for example.
+
+Returns
+-------
+{klass}
+    The transformed {klass} with the new frequency.
+
+See Also
+--------
+{other}.asfreq: Convert each Period in a {other_name} to the given frequency.
+Period.asfreq : Convert a :class:`~pandas.Period` object to the given frequency.
+
+Examples
+--------
+>>> pidx = pd.period_range('2010-01-01', '2015-01-01', freq='Y')
+>>> pidx
+PeriodIndex(['2010', '2011', '2012', '2013', '2014', '2015'],
+dtype='period[Y-DEC]')
+
+>>> pidx.asfreq('M')
+PeriodIndex(['2010-12', '2011-12', '2012-12', '2013-12', '2014-12',
+'2015-12'], dtype='period[M]')
+
+>>> pidx.asfreq('M', how='S')
+PeriodIndex(['2010-01', '2011-01', '2012-01', '2013-01', '2014-01',
+'2015-01'], dtype='period[M]')
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ad97a92113130c51c5329de90717e5e10}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ad97a92113130c51c5329de90717e5e10} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!astype@{astype}}
+\index{astype@{astype}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{astype()}{astype()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+astype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype,  }\item[{bool }]{copy = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a61c9f8cbf36d582b9dd61318d0a208dc}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a61c9f8cbf36d582b9dd61318d0a208dc} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!dtype@{dtype}}
+\index{dtype@{dtype}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{dtype()}{dtype()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype}{Period\+Dtype}} pandas.\+core.\+arrays.\+period.\+Period\+Array.\+dtype (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa7e33ff5fb06dbe079b19cd98f8593d5}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa7e33ff5fb06dbe079b19cd98f8593d5} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!fillna@{fillna}}
+\index{fillna@{fillna}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{fillna()}{fillna()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+period.\+Period\+Array.\+fillna (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value = {\ttfamily None},  }\item[{}]{method = {\ttfamily None},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0b0ef473d23af2882010c766dd06d7b6}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0b0ef473d23af2882010c766dd06d7b6} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!freq@{freq}}
+\index{freq@{freq}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{freq()}{freq()}}
+{\footnotesize\ttfamily  Base\+Offset pandas.\+core.\+arrays.\+period.\+Period\+Array.\+freq (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the frequency object for this PeriodArray.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4baa1ee7fb6a5fc1f35c0516d7c758d9}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4baa1ee7fb6a5fc1f35c0516d7c758d9} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!freqstr@{freqstr}}
+\index{freqstr@{freqstr}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{freqstr()}{freqstr()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+arrays.\+period.\+Period\+Array.\+freqstr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aaf388cd95e8ac852f864f1a60b018d4b}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aaf388cd95e8ac852f864f1a60b018d4b} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!is\_leap\_year@{is\_leap\_year}}
+\index{is\_leap\_year@{is\_leap\_year}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{is\_leap\_year()}{is\_leap\_year()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} pandas.\+core.\+arrays.\+period.\+Period\+Array.\+is\+\_\+leap\+\_\+year (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Logical indicating if the date belongs to a leap year.
+
+Examples
+--------
+>>> idx = pd.PeriodIndex(["2023", "2024", "2025"], freq="Y")
+>>> idx.is_leap_year
+array([False,  True, False])
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af56e3ae4b9f7390ebd681430d0760edd}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_af56e3ae4b9f7390ebd681430d0760edd} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!searchsorted@{searchsorted}}
+\index{searchsorted@{searchsorted}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{searchsorted()}{searchsorted()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \texorpdfstring{$\vert$}{|} np.\+intp pandas.\+core.\+arrays.\+period.\+Period\+Array.\+searchsorted (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Numpy\+Value\+Array\+Like \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}}]{value,  }\item[{Literal\mbox{[}"{}left"{}, "{}right"{}\mbox{]} }]{side = {\ttfamily "{}left"{}},  }\item[{Numpy\+Sorter \texorpdfstring{$\vert$}{|} None }]{sorter = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a8e7976955af48ab1b16c15d481c118cc}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a8e7976955af48ab1b16c15d481c118cc} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!to\_timestamp@{to\_timestamp}}
+\index{to\_timestamp@{to\_timestamp}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{to\_timestamp()}{to\_timestamp()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray}{Datetime\+Array}} pandas.\+core.\+arrays.\+period.\+Period\+Array.\+to\+\_\+timestamp (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{freq = {\ttfamily None},  }\item[{str }]{how = {\ttfamily "{}start"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cast to DatetimeArray/Index.
+
+Parameters
+----------
+freq : str or DateOffset, optional
+    Target frequency. The default is 'D' for week or longer,
+    's' otherwise.
+how : {'s', 'e', 'start', 'end'}
+    Whether to use the start or end of the time period being converted.
+
+Returns
+-------
+DatetimeArray/Index
+
+Examples
+--------
+>>> idx = pd.PeriodIndex(["2023-01", "2023-02", "2023-03"], freq="M")
+>>> idx.to_timestamp()
+DatetimeIndex(['2023-01-01', '2023-02-01', '2023-03-01'],
+dtype='datetime64[ns]', freq='MS')
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0d908b6b70ecec7fe01203bc90193dc1}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0d908b6b70ecec7fe01203bc90193dc1} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_bool\_ops@{\_bool\_ops}}
+\index{\_bool\_ops@{\_bool\_ops}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_bool\_ops}{\_bool\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+bool\+\_\+ops = \mbox{[}"{}is\+\_\+leap\+\_\+year"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a41deec438ae5b2912e1fec7ea26301c0}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a41deec438ae5b2912e1fec7ea26301c0} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_datetimelike\_methods@{\_datetimelike\_methods}}
+\index{\_datetimelike\_methods@{\_datetimelike\_methods}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_datetimelike\_methods}{\_datetimelike\_methods}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+datetimelike\+\_\+methods = \mbox{[}"{}strftime"{}, "{}to\+\_\+timestamp"{}, "{}asfreq"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1330784c335b65d49889e53026de179d}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1330784c335b65d49889e53026de179d} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_datetimelike\_ops@{\_datetimelike\_ops}}
+\index{\_datetimelike\_ops@{\_datetimelike\_ops}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_datetimelike\_ops}{\_datetimelike\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+datetimelike\+\_\+ops = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac4c53ce1d7a4186abadb29abdbefae44}{\+\_\+field\+\_\+ops}} + \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3f16c57a10f1c88ce1a6aaab69b7fb3c}{\+\_\+object\+\_\+ops}} + \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0d908b6b70ecec7fe01203bc90193dc1}{\+\_\+bool\+\_\+ops}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa66cb179e801a1a7080500208edb5b8f}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa66cb179e801a1a7080500208edb5b8f} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_dtype@{\_dtype}}
+\index{\_dtype@{\_dtype}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_dtype}{\_dtype}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype}{Period\+Dtype}} pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+dtype\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac4c53ce1d7a4186abadb29abdbefae44}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac4c53ce1d7a4186abadb29abdbefae44} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_field\_ops@{\_field\_ops}}
+\index{\_field\_ops@{\_field\_ops}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_field\_ops}{\_field\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+field\+\_\+ops\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}month"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hour"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}minute"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}second"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}weekofyear"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}weekday"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}week"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dayofweek"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day\_of\_week"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dayofyear"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day\_of\_year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}quarter"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}qyear"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}days\_in\_month"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}daysinmonth"{}},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a880c505cc11e92a19ea059746b1adac9}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a880c505cc11e92a19ea059746b1adac9} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_infer\_matches@{\_infer\_matches}}
+\index{\_infer\_matches@{\_infer\_matches}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_infer\_matches}{\_infer\_matches}}
+{\footnotesize\ttfamily tuple pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+infer\+\_\+matches = ("{}period"{},)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1888f86b4c53b58a036240d15ce8999d}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a1888f86b4c53b58a036240d15ce8999d} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_internal\_fill\_value@{\_internal\_fill\_value}}
+\index{\_internal\_fill\_value@{\_internal\_fill\_value}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_internal\_fill\_value}{\_internal\_fill\_value}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+internal\+\_\+fill\+\_\+value = np.\+int64(i\+NaT)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4c834931c7e279cfbbb131228d535d7e}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4c834931c7e279cfbbb131228d535d7e} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_is\_recognized\_dtype@{\_is\_recognized\_dtype}}
+\index{\_is\_recognized\_dtype@{\_is\_recognized\_dtype}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_is\_recognized\_dtype}{\_is\_recognized\_dtype}}
+{\footnotesize\ttfamily isinstance pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+is\+\_\+recognized\+\_\+dtype\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{keyword}{lambda}\ x(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ x,\ PeriodDtype}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a06d3f5cf4edaa853c852f9c4b75db4c7}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a06d3f5cf4edaa853c852f9c4b75db4c7} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_ndarray@{\_ndarray}}
+\index{\_ndarray@{\_ndarray}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_ndarray}{\_ndarray}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+ndarray\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3f16c57a10f1c88ce1a6aaab69b7fb3c}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a3f16c57a10f1c88ce1a6aaab69b7fb3c} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_object\_ops@{\_object\_ops}}
+\index{\_object\_ops@{\_object\_ops}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_object\_ops}{\_object\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+object\+\_\+ops = \mbox{[}"{}start\+\_\+time"{}, "{}end\+\_\+time"{}, "{}freq"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a61a3a9a906f1b2984f0cbcb72688888a}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a61a3a9a906f1b2984f0cbcb72688888a} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_other\_ops@{\_other\_ops}}
+\index{\_other\_ops@{\_other\_ops}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_other\_ops}{\_other\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+other\+\_\+ops = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae7fe9e855e9c2a6afcaec0ce45bf212e}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae7fe9e855e9c2a6afcaec0ce45bf212e} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_recognized\_scalars@{\_recognized\_scalars}}
+\index{\_recognized\_scalars@{\_recognized\_scalars}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_recognized\_scalars}{\_recognized\_scalars}}
+{\footnotesize\ttfamily tuple pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+recognized\+\_\+scalars = (Period,)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a81d95a157a22b239833b3f166905ff7b}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a81d95a157a22b239833b3f166905ff7b} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_scalar\_type@{\_scalar\_type}}
+\index{\_scalar\_type@{\_scalar\_type}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_scalar\_type}{\_scalar\_type}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+scalar\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa33930cea5cee182874ffe4ffb35caf0}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aa33930cea5cee182874ffe4ffb35caf0} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!\_typ@{\_typ}}
+\index{\_typ@{\_typ}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{\_typ}{\_typ}}
+{\footnotesize\ttfamily str pandas.\+core.\+arrays.\+period.\+Period\+Array.\+\_\+typ = "{}periodarray"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a8a753a27e80edda7c467cb672098d1dc}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a8a753a27e80edda7c467cb672098d1dc} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!asi8@{asi8}}
+\index{asi8@{asi8}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{asi8}{asi8}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+asi8}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a60841ab045244217ac28a498a450f0e4}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a60841ab045244217ac28a498a450f0e4} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!day@{day}}
+\index{day@{day}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+day\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a167e05ce73c0509083895eb853fd5139}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a167e05ce73c0509083895eb853fd5139} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!day\_of\_week@{day\_of\_week}}
+\index{day\_of\_week@{day\_of\_week}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{day\_of\_week}{day\_of\_week}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+day\+\_\+of\+\_\+week\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day\_of\_week"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aff4c7266a4695fed85a2e4e292fc4301}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aff4c7266a4695fed85a2e4e292fc4301} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!dayofweek@{dayofweek}}
+\index{dayofweek@{dayofweek}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{dayofweek}{dayofweek}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+dayofweek = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a167e05ce73c0509083895eb853fd5139}{day\+\_\+of\+\_\+week}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a5ec5c16cdcd163a54425b7dd985b176c}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a5ec5c16cdcd163a54425b7dd985b176c} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!dayofyear@{dayofyear}}
+\index{dayofyear@{dayofyear}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{dayofyear}{dayofyear}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+dayofyear\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day\_of\_year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a37c00bf8bf1f643cade932c53d8ed21b}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a37c00bf8bf1f643cade932c53d8ed21b} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!days\_in\_month@{days\_in\_month}}
+\index{days\_in\_month@{days\_in\_month}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{days\_in\_month}{days\_in\_month}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+days\+\_\+in\+\_\+month\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}days\_in\_month"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a24c0e0ebcad455c45923afc0cc69cf5b}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a24c0e0ebcad455c45923afc0cc69cf5b} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!daysinmonth@{daysinmonth}}
+\index{daysinmonth@{daysinmonth}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{daysinmonth}{daysinmonth}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+daysinmonth = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a37c00bf8bf1f643cade932c53d8ed21b}{days\+\_\+in\+\_\+month}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae730975fe404c37467a9228b076e35ce} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!dtype@{dtype}}
+\index{dtype@{dtype}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{dtype}{dtype}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+dtype}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a995756330fa64915e692d8b0f0b37782} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!freq@{freq}}
+\index{freq@{freq}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{freq}{freq}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+freq}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae4d53479969b32f8ff30453177481c31}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ae4d53479969b32f8ff30453177481c31} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!hour@{hour}}
+\index{hour@{hour}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+hour\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hour"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aee73de949836ed0d73a9bec770279523}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aee73de949836ed0d73a9bec770279523} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!minute@{minute}}
+\index{minute@{minute}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{minute}{minute}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+minute\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}minute"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0c29d65ccdf56ada3d61e0dac8e15bc6}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a0c29d65ccdf56ada3d61e0dac8e15bc6} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!month@{month}}
+\index{month@{month}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+month\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}month"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4409e60b7ad7c545c56ca6824b302a30}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a4409e60b7ad7c545c56ca6824b302a30} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!quarter@{quarter}}
+\index{quarter@{quarter}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{quarter}{quarter}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+quarter\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}quarter"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aecc0f9eb276281e442e70c9b2de17563}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aecc0f9eb276281e442e70c9b2de17563} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!qyear@{qyear}}
+\index{qyear@{qyear}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{qyear}{qyear}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+qyear = \mbox{\hyperlink{namespacepandas_1_1core_1_1arrays_1_1period_ad147a25def7da46a7f7434bfcf104cd6}{\+\_\+field\+\_\+accessor}}("{}qyear"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_adc5bde0b3d623d4bcbd141fa414390c0}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_adc5bde0b3d623d4bcbd141fa414390c0} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!second@{second}}
+\index{second@{second}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{second}{second}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+second\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}second"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac605173907b29c08136c0713a1ced1aa}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ac605173907b29c08136c0713a1ced1aa} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!week@{week}}
+\index{week@{week}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{week}{week}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+week = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aec5dce52a1ddf3edc2add76e84a80b52}{weekofyear}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a229fdf5b57e894ecf2fe0347cd2c6260}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_a229fdf5b57e894ecf2fe0347cd2c6260} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!weekday@{weekday}}
+\index{weekday@{weekday}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{weekday}{weekday}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+weekday = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aff4c7266a4695fed85a2e4e292fc4301}{dayofweek}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aec5dce52a1ddf3edc2add76e84a80b52}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_aec5dce52a1ddf3edc2add76e84a80b52} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!weekofyear@{weekofyear}}
+\index{weekofyear@{weekofyear}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{weekofyear}{weekofyear}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+weekofyear\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}week"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ade2e0895b98d389dfd799fd986813b28}\label{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray_ade2e0895b98d389dfd799fd986813b28} 
+\index{pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}!year@{year}}
+\index{year@{year}!pandas.core.arrays.period.PeriodArray@{pandas.core.arrays.period.PeriodArray}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+period.\+Period\+Array.\+year\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/arrays/\mbox{\hyperlink{arrays_2period_8py}{period.\+py}}\end{DoxyCompactItemize}

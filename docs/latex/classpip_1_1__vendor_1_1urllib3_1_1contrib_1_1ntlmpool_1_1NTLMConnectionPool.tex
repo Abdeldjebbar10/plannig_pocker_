@@ -1,0 +1,133 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool}
+\hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool}{}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool}\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_abb4a77d672e35a63e0f7178862f3cf7d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aaa51ccd7ff0b8bd7a15bd36ecfca4822}{user}}, \mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a81b09c363fdf7f3f7ab54cd9228458db}{pw}}, \mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a952bffabd8ee2bd4a9e62a0bd41f137f}{authurl}}, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a4e07ae213fb8d0141b3bc675fe8e0c98}{urlopen}} (self, method, url, body=None, headers=None, retries=3, redirect=True, assert\+\_\+same\+\_\+host=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a952bffabd8ee2bd4a9e62a0bd41f137f}{authurl}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a2228dfc9385864dcc54b389e7ad7eb97}{rawuser}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_ab7ba116622276593074fcd979872d166}{domain}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aaa51ccd7ff0b8bd7a15bd36ecfca4822}{user}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a81b09c363fdf7f3f7ab54cd9228458db}{pw}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a3b8f257a09b3555505655f1fdb12ff81}{num\+\_\+connections}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a1f05923042131106ca75a067af0de792}{host}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a3971eb573945c5c93684bfe2529e59e2}{scheme}} = "{}https"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_af188e32347dff664d569f8284cdd18c3}{\+\_\+new\+\_\+conn}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Implements an NTLM authentication version of an urllib3 connection pool
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_abb4a77d672e35a63e0f7178862f3cf7d}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_abb4a77d672e35a63e0f7178862f3cf7d} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user,  }\item[{}]{pw,  }\item[{}]{authurl,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}authurl is a random URL on the server that is protected by NTLM.
+user is the Windows user, probably in the DOMAIN\\username format.
+pw is the password for the user.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_af188e32347dff664d569f8284cdd18c3}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_af188e32347dff664d569f8284cdd18c3} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!\_new\_conn@{\_new\_conn}}
+\index{\_new\_conn@{\_new\_conn}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{\_new\_conn()}{\_new\_conn()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+\_\+new\+\_\+conn (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a4e07ae213fb8d0141b3bc675fe8e0c98}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a4e07ae213fb8d0141b3bc675fe8e0c98} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!urlopen@{urlopen}}
+\index{urlopen@{urlopen}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{urlopen()}{urlopen()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+urlopen (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{url,  }\item[{}]{body = {\ttfamily None},  }\item[{}]{headers = {\ttfamily None},  }\item[{}]{retries = {\ttfamily 3},  }\item[{}]{redirect = {\ttfamily True},  }\item[{}]{assert\+\_\+same\+\_\+host = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a952bffabd8ee2bd4a9e62a0bd41f137f}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a952bffabd8ee2bd4a9e62a0bd41f137f} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!authurl@{authurl}}
+\index{authurl@{authurl}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{authurl}{authurl}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+authurl}
+
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_ab7ba116622276593074fcd979872d166}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_ab7ba116622276593074fcd979872d166} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!domain@{domain}}
+\index{domain@{domain}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{domain}{domain}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+domain}
+
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a1f05923042131106ca75a067af0de792}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a1f05923042131106ca75a067af0de792} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!host@{host}}
+\index{host@{host}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+host}
+
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a3b8f257a09b3555505655f1fdb12ff81}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a3b8f257a09b3555505655f1fdb12ff81} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!num\_connections@{num\_connections}}
+\index{num\_connections@{num\_connections}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{num\_connections}{num\_connections}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+num\+\_\+connections}
+
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a81b09c363fdf7f3f7ab54cd9228458db}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a81b09c363fdf7f3f7ab54cd9228458db} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!pw@{pw}}
+\index{pw@{pw}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{pw}{pw}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+pw}
+
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a2228dfc9385864dcc54b389e7ad7eb97}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a2228dfc9385864dcc54b389e7ad7eb97} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!rawuser@{rawuser}}
+\index{rawuser@{rawuser}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{rawuser}{rawuser}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+rawuser}
+
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a3971eb573945c5c93684bfe2529e59e2}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_a3971eb573945c5c93684bfe2529e59e2} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!scheme@{scheme}}
+\index{scheme@{scheme}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{scheme}{scheme}}
+{\footnotesize\ttfamily str pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+scheme = "{}https"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aaa51ccd7ff0b8bd7a15bd36ecfca4822}\label{classpip_1_1__vendor_1_1urllib3_1_1contrib_1_1ntlmpool_1_1NTLMConnectionPool_aaa51ccd7ff0b8bd7a15bd36ecfca4822} 
+\index{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}!user@{user}}
+\index{user@{user}!pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool@{pip.\_vendor.urllib3.contrib.ntlmpool.NTLMConnectionPool}}
+\doxysubsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+urllib3.\+contrib.\+ntlmpool.\+NTLMConnection\+Pool.\+user}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/urllib3/contrib/\mbox{\hyperlink{ntlmpool_8py}{ntlmpool.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Specification\+Error}
+\hypertarget{classpandas_1_1errors_1_1SpecificationError}{}\label{classpandas_1_1errors_1_1SpecificationError}\index{pandas.errors.SpecificationError@{pandas.errors.SpecificationError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Specification\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Specification\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exception raised by ``agg`` when the functions are ill-specified.
+
+The exception raised in two scenarios.
+
+The first way is calling ``agg`` on a
+Dataframe or Series using a nested renamer (dict-of-dict).
+
+The second way is calling ``agg`` on a Dataframe with duplicated functions
+names without assigning column name.
+
+Examples
+--------
+>>> df = pd.DataFrame({'A': [1, 1, 1, 2, 2],
+...                    'B': range(5),
+...                    'C': range(5)})
+>>> df.groupby('A').B.agg({'foo': 'count'}) # doctest: +SKIP
+... # SpecificationError: nested renamer is not supported
+
+>>> df.groupby('A').agg({'B': {'foo': ['sum', 'max']}}) # doctest: +SKIP
+... # SpecificationError: nested renamer is not supported
+
+>>> df.groupby('A').agg(['min', 'min']) # doctest: +SKIP
+... # SpecificationError: nested renamer is not supported
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

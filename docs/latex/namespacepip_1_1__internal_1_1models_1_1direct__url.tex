@@ -1,0 +1,97 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pip.\+\_\+internal.\+models.\+direct\+\_\+url}
+\hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url}{}\label{namespacepip_1_1__internal_1_1models_1_1direct__url}\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1ArchiveInfo}{Archive\+Info}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1DirectUrl}{Direct\+Url}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1DirectUrlValidationError}{Direct\+Url\+Validation\+Error}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1DirInfo}{Dir\+Info}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1VcsInfo}{Vcs\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a14e82966035e26dc97390b9d036f99af}{\+\_\+get}} (Dict\mbox{[}str, Any\mbox{]} d, Type\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]} expected\+\_\+type, str key, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]} default=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}} \mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_acc80f6c74c88a305af8213f163d87cbe}{\+\_\+get\+\_\+required}} (Dict\mbox{[}str, Any\mbox{]} d, Type\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]} expected\+\_\+type, str key, Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]} default=None)
+\item 
+"{}Info\+Type"{} \mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_ac267af29f1f06738b48ed74b579bc061}{\+\_\+exactly\+\_\+one\+\_\+of}} (Iterable\mbox{[}Optional\mbox{[}"{}Info\+Type"{}\mbox{]}\mbox{]} infos)
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_aa1b162aff46cde5e5c4e0c280fe2f19b}{\+\_\+filter\+\_\+none}} (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}} = Type\+Var("{}T"{})
+\item 
+str \mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_ac6bcb92f4fb691f020120310f7eb1ff3}{DIRECT\+\_\+\+URL\+\_\+\+METADATA\+\_\+\+NAME}} = "{}direct\+\_\+url.\+json"{}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_afd37aa9d87fd2a3ecf9ee158693e98e6}{ENV\+\_\+\+VAR\+\_\+\+RE}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\$\textbackslash{}\{\mbox{[}A-\/Za-\/z0-\/9-\/\+\_\+\mbox{]}+\textbackslash{}\}(\+:\textbackslash{}\$\textbackslash{}\{\mbox{[}A-\/Za-\/z0-\/9-\/\+\_\+\mbox{]}+\textbackslash{}\})?\$"{})
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a844c1d615f2cd943e2b0e207efe042c5}{Info\+Type}} = Union\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1ArchiveInfo}{Archive\+Info}}, \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1DirInfo}{Dir\+Info}}, \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1VcsInfo}{Vcs\+Info}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb} PEP 610 \end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url_ac267af29f1f06738b48ed74b579bc061}\label{namespacepip_1_1__internal_1_1models_1_1direct__url_ac267af29f1f06738b48ed74b579bc061} 
+\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}!\_exactly\_one\_of@{\_exactly\_one\_of}}
+\index{\_exactly\_one\_of@{\_exactly\_one\_of}!pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection{\texorpdfstring{\_exactly\_one\_of()}{\_exactly\_one\_of()}}
+{\footnotesize\ttfamily  "{}Info\+Type"{} pip.\+\_\+internal.\+models.\+direct\+\_\+url.\+\_\+exactly\+\_\+one\+\_\+of (\begin{DoxyParamCaption}\item[{Iterable\mbox{[}Optional\mbox{[}"{}Info\+Type"{}\mbox{]}\mbox{]}}]{infos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url_aa1b162aff46cde5e5c4e0c280fe2f19b}\label{namespacepip_1_1__internal_1_1models_1_1direct__url_aa1b162aff46cde5e5c4e0c280fe2f19b} 
+\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}!\_filter\_none@{\_filter\_none}}
+\index{\_filter\_none@{\_filter\_none}!pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection{\texorpdfstring{\_filter\_none()}{\_filter\_none()}}
+{\footnotesize\ttfamily  Dict\mbox{[}str, Any\mbox{]} pip.\+\_\+internal.\+models.\+direct\+\_\+url.\+\_\+filter\+\_\+none (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Make dict excluding None values.\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url_a14e82966035e26dc97390b9d036f99af}\label{namespacepip_1_1__internal_1_1models_1_1direct__url_a14e82966035e26dc97390b9d036f99af} 
+\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}!\_get@{\_get}}
+\index{\_get@{\_get}!pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection{\texorpdfstring{\_get()}{\_get()}}
+{\footnotesize\ttfamily  Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]} pip.\+\_\+internal.\+models.\+direct\+\_\+url.\+\_\+get (\begin{DoxyParamCaption}\item[{Dict\mbox{[}str, Any\mbox{]}}]{d,  }\item[{Type\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]}}]{expected\+\_\+type,  }\item[{str}]{key,  }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]} }]{default = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get value from dictionary and verify expected type.\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url_acc80f6c74c88a305af8213f163d87cbe}\label{namespacepip_1_1__internal_1_1models_1_1direct__url_acc80f6c74c88a305af8213f163d87cbe} 
+\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}!\_get\_required@{\_get\_required}}
+\index{\_get\_required@{\_get\_required}!pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection{\texorpdfstring{\_get\_required()}{\_get\_required()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}} pip.\+\_\+internal.\+models.\+direct\+\_\+url.\+\_\+get\+\_\+required (\begin{DoxyParamCaption}\item[{Dict\mbox{[}str, Any\mbox{]}}]{d,  }\item[{Type\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]}}]{expected\+\_\+type,  }\item[{str}]{key,  }\item[{Optional\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}{T}}\mbox{]} }]{default = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url_ac6bcb92f4fb691f020120310f7eb1ff3}\label{namespacepip_1_1__internal_1_1models_1_1direct__url_ac6bcb92f4fb691f020120310f7eb1ff3} 
+\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}!DIRECT\_URL\_METADATA\_NAME@{DIRECT\_URL\_METADATA\_NAME}}
+\index{DIRECT\_URL\_METADATA\_NAME@{DIRECT\_URL\_METADATA\_NAME}!pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection{\texorpdfstring{DIRECT\_URL\_METADATA\_NAME}{DIRECT\_URL\_METADATA\_NAME}}
+{\footnotesize\ttfamily str pip.\+\_\+internal.\+models.\+direct\+\_\+url.\+DIRECT\+\_\+\+URL\+\_\+\+METADATA\+\_\+\+NAME = "{}direct\+\_\+url.\+json"{}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url_afd37aa9d87fd2a3ecf9ee158693e98e6}\label{namespacepip_1_1__internal_1_1models_1_1direct__url_afd37aa9d87fd2a3ecf9ee158693e98e6} 
+\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}!ENV\_VAR\_RE@{ENV\_VAR\_RE}}
+\index{ENV\_VAR\_RE@{ENV\_VAR\_RE}!pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection{\texorpdfstring{ENV\_VAR\_RE}{ENV\_VAR\_RE}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+models.\+direct\+\_\+url.\+ENV\+\_\+\+VAR\+\_\+\+RE = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\$\textbackslash{}\{\mbox{[}A-\/Za-\/z0-\/9-\/\+\_\+\mbox{]}+\textbackslash{}\}(\+:\textbackslash{}\$\textbackslash{}\{\mbox{[}A-\/Za-\/z0-\/9-\/\+\_\+\mbox{]}+\textbackslash{}\})?\$"{})}
+
+\Hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url_a844c1d615f2cd943e2b0e207efe042c5}\label{namespacepip_1_1__internal_1_1models_1_1direct__url_a844c1d615f2cd943e2b0e207efe042c5} 
+\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}!InfoType@{InfoType}}
+\index{InfoType@{InfoType}!pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection{\texorpdfstring{InfoType}{InfoType}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+models.\+direct\+\_\+url.\+Info\+Type = Union\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1ArchiveInfo}{Archive\+Info}}, \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1DirInfo}{Dir\+Info}}, \mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1direct__url_1_1VcsInfo}{Vcs\+Info}}\mbox{]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c}\label{namespacepip_1_1__internal_1_1models_1_1direct__url_a13ec100096d1304624926be2d82dce7c} 
+\index{pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}!T@{T}}
+\index{T@{T}!pip.\_internal.models.direct\_url@{pip.\_internal.models.direct\_url}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+models.\+direct\+\_\+url.\+T = Type\+Var("{}T"{})}
+

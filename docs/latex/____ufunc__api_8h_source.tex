@@ -1,0 +1,346 @@
+\doxysection{\+\_\+\+\_\+ufunc\+\_\+api.\+h}
+\hypertarget{____ufunc__api_8h_source}{}\label{____ufunc__api_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/\_\_ufunc\_api.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/\_\_ufunc\_api.h}}
+\mbox{\hyperlink{____ufunc__api_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifdef\ \_UMATHMODULE}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ PyTypeObject\ \mbox{\hyperlink{____ufunc__api_8h_aab0ff057532f9a6b5a5504aea3dff9c2}{PyUFunc\_Type}};}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ PyTypeObject\ \mbox{\hyperlink{____ufunc__api_8h_aab0ff057532f9a6b5a5504aea3dff9c2}{PyUFunc\_Type}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ PyObject\ *\ \mbox{\hyperlink{____ufunc__api_8h_ad46deff2f97eb868fb4afeb6ea1ffd0e}{PyUFunc\_FromFuncAndData}}\ \(\backslash\)}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ (\mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{PyUFuncGenericFunction}}\ *,\ \textcolor{keywordtype}{void}\ *\textcolor{keyword}{const}\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}});}
+\DoxyCodeLine{00010\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_a0471c147d3bb82fd4220e7f52eb58a1b}{PyUFunc\_RegisterLoopForType}}\ \(\backslash\)}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ (\mbox{\hyperlink{struct__tagPyUFuncObject}{PyUFuncObject}}\ *,\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{PyUFuncGenericFunction}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00012\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_accdaccafd4c4d0d55274b2f4fe3cc004}{PyUFunc\_f\_f\_As\_d\_d}}\ \(\backslash\)}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00014\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_af7bda1a2763d781b0ed00ad9a03aca7e}{PyUFunc\_d\_d}}\ \(\backslash\)}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00016\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a57d841d6e63e2312d3efc0b085b18c4c}{PyUFunc\_f\_f}}\ \(\backslash\)}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00018\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_aec84474ba153c56acaa5b8565264ed18}{PyUFunc\_g\_g}}\ \(\backslash\)}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00020\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_aa65ffec95dc668858cfebf89133e1d64}{PyUFunc\_F\_F\_As\_D\_D}}\ \(\backslash\)}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00022\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a86619317647e88966129c4ab0d320f44}{PyUFunc\_F\_F}}\ \(\backslash\)}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00024\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_ab9fc39d37829b4cab75fcac6f417aa5f}{PyUFunc\_D\_D}}\ \(\backslash\)}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00026\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a29ec1f16af91d3010502f31334735a85}{PyUFunc\_G\_G}}\ \(\backslash\)}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00028\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a2864f22ad8adb443de6b9963a8497961}{PyUFunc\_O\_O}}\ \(\backslash\)}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00030\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_aac43dfefd2e7e46dcb9b0a01a1385e46}{PyUFunc\_ff\_f\_As\_dd\_d}}\ \(\backslash\)}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00032\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a520c0a1088f8bcdde26af1342a6ad857}{PyUFunc\_ff\_f}}\ \(\backslash\)}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00034\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_aef52d06c3b6ad9fb12ebac5acad490b0}{PyUFunc\_dd\_d}}\ \(\backslash\)}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00036\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a84d6fc39324a2a67cc4b254087fd12df}{PyUFunc\_gg\_g}}\ \(\backslash\)}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00038\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a088b1ea402ad7be445c069ba52664e0a}{PyUFunc\_FF\_F\_As\_DD\_D}}\ \(\backslash\)}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00040\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_ac324446984a1272df379beee25dad38d}{PyUFunc\_DD\_D}}\ \(\backslash\)}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00042\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a648826608ab69b8d1d7d194fb917a7ce}{PyUFunc\_FF\_F}}\ \(\backslash\)}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00044\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a4204ca5ca1f43ead6fdfa88a6f01f5a6}{PyUFunc\_GG\_G}}\ \(\backslash\)}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00046\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a71a329d45a341db508f8d622c8e6d59b}{PyUFunc\_OO\_O}}\ \(\backslash\)}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00048\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a35a29a57b9e708fa6863c078ff0ffe81}{PyUFunc\_O\_O\_method}}\ \(\backslash\)}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00050\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_af63a63dbb87d77ab2bda5942bbc4eea2}{PyUFunc\_OO\_O\_method}}\ \(\backslash\)}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00052\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_ab976bbc2aa7c4561dc14579e85bba7a1}{PyUFunc\_On\_Om}}\ \(\backslash\)}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00054\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_aa8287842bb144406fe3a5f7357547c55}{PyUFunc\_clearfperr}}\ \(\backslash\)}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ (\mbox{\hyperlink{namespacendarray__misc_aba354d1683c46f1c46e2bf98a7452595}{void}});}
+\DoxyCodeLine{00056\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_aaa7e342c64f27bd1897c9dce0f832d3b}{PyUFunc\_getfperr}}\ \(\backslash\)}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ (\mbox{\hyperlink{namespacendarray__misc_aba354d1683c46f1c46e2bf98a7452595}{void}});}
+\DoxyCodeLine{00058\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_ac990a524bce2cf2f83e73cd21c60f7bb}{PyUFunc\_ReplaceLoopBySignature}}\ \(\backslash\)}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ (\mbox{\hyperlink{struct__tagPyUFuncObject}{PyUFuncObject}}\ *,\ \mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{PyUFuncGenericFunction}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ *,\ \mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{PyUFuncGenericFunction}}\ *);}
+\DoxyCodeLine{00060\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ PyObject\ *\ \mbox{\hyperlink{____ufunc__api_8h_a463256b03b98518d4ceb4a04407362ff}{PyUFunc\_FromFuncAndDataAndSignature}}\ \(\backslash\)}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ (\mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{PyUFuncGenericFunction}}\ *,\ \textcolor{keywordtype}{void}\ *\textcolor{keyword}{const}\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *);}
+\DoxyCodeLine{00062\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a1daefa1cbcb0639dcd7cfad7335a740a}{PyUFunc\_e\_e}}\ \(\backslash\)}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00064\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a1e5412ba240ed98fca796495ca7ecafb}{PyUFunc\_e\_e\_As\_f\_f}}\ \(\backslash\)}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00066\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a82ab525d4fa5b3c0128f819a8b3ba4b7}{PyUFunc\_e\_e\_As\_d\_d}}\ \(\backslash\)}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00068\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_a61286e7ce41b02713efdfc5050f3fd72}{PyUFunc\_ee\_e}}\ \(\backslash\)}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00070\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_aed78de912e1beb5f1a2fdad7c13d4f74}{PyUFunc\_ee\_e\_As\_ff\_f}}\ \(\backslash\)}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00072\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{____ufunc__api_8h_ae535d99ec0c2bc7c83a4ab27bdfb530c}{PyUFunc\_ee\_e\_As\_dd\_d}}\ \(\backslash\)}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ (\textcolor{keywordtype}{char}\ **,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \textcolor{keyword}{const}\ *,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00074\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_ab68e6a7470215882041a41a521f83587}{PyUFunc\_DefaultTypeResolver}}\ \(\backslash\)}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ (\mbox{\hyperlink{struct__tagPyUFuncObject}{PyUFuncObject}}\ *,\ \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\_CASTING}},\ \mbox{\hyperlink{structtagPyArrayObject__fields}{PyArrayObject}}\ **,\ PyObject\ *,\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ **);}
+\DoxyCodeLine{00076\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_ada3e1850563befbe192da47a7ee71ddf}{PyUFunc\_ValidateCasting}}\ \(\backslash\)}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ (\mbox{\hyperlink{struct__tagPyUFuncObject}{PyUFuncObject}}\ *,\ \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\_CASTING}},\ \mbox{\hyperlink{structtagPyArrayObject__fields}{PyArrayObject}}\ **,\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\textcolor{keyword}{const}\ *);}
+\DoxyCodeLine{00078\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_a598f9309a3e82859fc68b09b04024f52}{PyUFunc\_RegisterLoopForDescr}}\ \(\backslash\)}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ (\mbox{\hyperlink{struct__tagPyUFuncObject}{PyUFuncObject}}\ *,\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *,\ \mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{PyUFuncGenericFunction}},\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ **,\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00080\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ PyObject\ *\ \mbox{\hyperlink{____ufunc__api_8h_a260cf4f4cf72901746239db5c61874ff}{PyUFunc\_FromFuncAndDataAndSignatureAndIdentity}}\ \(\backslash\)}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ (\mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{PyUFuncGenericFunction}}\ *,\ \textcolor{keywordtype}{void}\ *\textcolor{keyword}{const}\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ PyObject\ *);}
+\DoxyCodeLine{00082\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_afa6dca1c698e76c94fc5ab4d80bdda9a}{PyUFunc\_AddLoopFromSpec}}\ \(\backslash\)}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ (PyObject\ *,\ \mbox{\hyperlink{structPyArrayMethod__Spec}{PyArrayMethod\_Spec}}\ *);}
+\DoxyCodeLine{00084\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_a094978ad65a60f18a35d4c87e87e274b}{PyUFunc\_AddPromoter}}\ \(\backslash\)}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ (PyObject\ *,\ PyObject\ *,\ PyObject\ *);}
+\DoxyCodeLine{00086\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_a6bdc0b73af1835e719f76371f91b8017}{PyUFunc\_AddWrappingLoop}}\ \(\backslash\)}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ (PyObject\ *,\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *new\_dtypes[],\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *wrapped\_dtypes[],\ \mbox{\hyperlink{dtype__api_8h_a27d156457ca038d4db70a07836176a08}{PyArrayMethod\_TranslateGivenDescriptors}}\ *,\ \mbox{\hyperlink{dtype__api_8h_a3bbfe8c6f10b87cc265d26b512d1d2e5}{PyArrayMethod\_TranslateLoopDescriptors}}\ *);}
+\DoxyCodeLine{00088\ \mbox{\hyperlink{ndarraytypes_8h_a7918658ec330f36e8c35a5e134733dd9}{NPY\_NO\_EXPORT}}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{____ufunc__api_8h_a48d283c141b7c0754d2a116ab84c93fc}{PyUFunc\_GiveFloatingpointErrors}}\ \(\backslash\)}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *,\ \mbox{\hyperlink{namespaceeinsumfunc_abca69d67e43bb6c0b6417aae551c75bd}{int}});}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#if\ defined(PY\_UFUNC\_UNIQUE\_SYMBOL)}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#define\ PyUFunc\_API\ PY\_UFUNC\_UNIQUE\_SYMBOL}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{comment}{/*\ By\ default\ do\ not\ export\ API\ in\ an\ .so\ (was\ never\ the\ case\ on\ windows)\ */}}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#ifndef\ NPY\_API\_SYMBOL\_ATTRIBUTE}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_API\_SYMBOL\_ATTRIBUTE\ NPY\_VISIBILITY\_HIDDEN}}
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#if\ defined(NO\_IMPORT)\ ||\ defined(NO\_IMPORT\_UFUNC)}}
+\DoxyCodeLine{00103\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{____ufunc__api_8h_ae77a60a0ec8a86385459c2b155260f64}{NPY\_API\_SYMBOL\_ATTRIBUTE}}\ \textcolor{keywordtype}{void}\ **\mbox{\hyperlink{____ufunc__api_8c_a59dde78286e8ab37d82153ee42cb5332}{PyUFunc\_API}};}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#if\ defined(PY\_UFUNC\_UNIQUE\_SYMBOL)}}
+\DoxyCodeLine{00106\ \mbox{\hyperlink{____ufunc__api_8h_ae77a60a0ec8a86385459c2b155260f64}{NPY\_API\_SYMBOL\_ATTRIBUTE}}\ \textcolor{keywordtype}{void}\ **\mbox{\hyperlink{____ufunc__api_8c_a59dde78286e8ab37d82153ee42cb5332}{PyUFunc\_API}};}
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00108\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ **\mbox{\hyperlink{____ufunc__api_8c_a59dde78286e8ab37d82153ee42cb5332}{PyUFunc\_API}}=NULL;}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#define\ PyUFunc\_Type\ (*(PyTypeObject\ *)PyUFunc\_API[0])}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#define\ PyUFunc\_FromFuncAndData\ \(\backslash\)}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(PyObject\ *\ (*)(PyUFuncGenericFunction\ *,\ void\ *const\ *,\ const\ char\ *,\ int,\ int,\ int,\ int,\ const\ char\ *,\ const\ char\ *,\ int))\ \(\backslash\)}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[1])}}
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#define\ PyUFunc\_RegisterLoopForType\ \(\backslash\)}}
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(PyUFuncObject\ *,\ int,\ PyUFuncGenericFunction,\ const\ int\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[2])}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#define\ PyUFunc\_f\_f\_As\_d\_d\ \(\backslash\)}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[4])}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#define\ PyUFunc\_d\_d\ \(\backslash\)}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[5])}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#define\ PyUFunc\_f\_f\ \(\backslash\)}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[6])}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#define\ PyUFunc\_g\_g\ \(\backslash\)}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[7])}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#define\ PyUFunc\_F\_F\_As\_D\_D\ \(\backslash\)}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[8])}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#define\ PyUFunc\_F\_F\ \(\backslash\)}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[9])}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#define\ PyUFunc\_D\_D\ \(\backslash\)}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[10])}}
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#define\ PyUFunc\_G\_G\ \(\backslash\)}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[11])}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#define\ PyUFunc\_O\_O\ \(\backslash\)}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[12])}}
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#define\ PyUFunc\_ff\_f\_As\_dd\_d\ \(\backslash\)}}
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[13])}}
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#define\ PyUFunc\_ff\_f\ \(\backslash\)}}
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[14])}}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\#define\ PyUFunc\_dd\_d\ \(\backslash\)}}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[15])}}
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\#define\ PyUFunc\_gg\_g\ \(\backslash\)}}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[16])}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#define\ PyUFunc\_FF\_F\_As\_DD\_D\ \(\backslash\)}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[17])}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\#define\ PyUFunc\_DD\_D\ \(\backslash\)}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[18])}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#define\ PyUFunc\_FF\_F\ \(\backslash\)}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[19])}}
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\#define\ PyUFunc\_GG\_G\ \(\backslash\)}}
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[20])}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#define\ PyUFunc\_OO\_O\ \(\backslash\)}}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[21])}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#define\ PyUFunc\_O\_O\_method\ \(\backslash\)}}
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[22])}}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#define\ PyUFunc\_OO\_O\_method\ \(\backslash\)}}
+\DoxyCodeLine{00177\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[23])}}
+\DoxyCodeLine{00179\ \textcolor{preprocessor}{\#define\ PyUFunc\_On\_Om\ \(\backslash\)}}
+\DoxyCodeLine{00180\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[24])}}
+\DoxyCodeLine{00182\ \textcolor{preprocessor}{\#define\ PyUFunc\_clearfperr\ \(\backslash\)}}
+\DoxyCodeLine{00183\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(void))\ \(\backslash\)}}
+\DoxyCodeLine{00184\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[27])}}
+\DoxyCodeLine{00185\ \textcolor{preprocessor}{\#define\ PyUFunc\_getfperr\ \(\backslash\)}}
+\DoxyCodeLine{00186\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(void))\ \(\backslash\)}}
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[28])}}
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#define\ PyUFunc\_ReplaceLoopBySignature\ \(\backslash\)}}
+\DoxyCodeLine{00189\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(PyUFuncObject\ *,\ PyUFuncGenericFunction,\ const\ int\ *,\ PyUFuncGenericFunction\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[30])}}
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\#define\ PyUFunc\_FromFuncAndDataAndSignature\ \(\backslash\)}}
+\DoxyCodeLine{00192\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(PyObject\ *\ (*)(PyUFuncGenericFunction\ *,\ void\ *const\ *,\ const\ char\ *,\ int,\ int,\ int,\ int,\ const\ char\ *,\ const\ char\ *,\ int,\ const\ char\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00193\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[31])}}
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\#define\ PyUFunc\_e\_e\ \(\backslash\)}}
+\DoxyCodeLine{00195\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00196\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[33])}}
+\DoxyCodeLine{00197\ \textcolor{preprocessor}{\#define\ PyUFunc\_e\_e\_As\_f\_f\ \(\backslash\)}}
+\DoxyCodeLine{00198\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00199\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[34])}}
+\DoxyCodeLine{00200\ \textcolor{preprocessor}{\#define\ PyUFunc\_e\_e\_As\_d\_d\ \(\backslash\)}}
+\DoxyCodeLine{00201\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00202\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[35])}}
+\DoxyCodeLine{00203\ \textcolor{preprocessor}{\#define\ PyUFunc\_ee\_e\ \(\backslash\)}}
+\DoxyCodeLine{00204\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00205\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[36])}}
+\DoxyCodeLine{00206\ \textcolor{preprocessor}{\#define\ PyUFunc\_ee\_e\_As\_ff\_f\ \(\backslash\)}}
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00208\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[37])}}
+\DoxyCodeLine{00209\ \textcolor{preprocessor}{\#define\ PyUFunc\_ee\_e\_As\_dd\_d\ \(\backslash\)}}
+\DoxyCodeLine{00210\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(void\ (*)(char\ **,\ npy\_intp\ const\ *,\ npy\_intp\ const\ *,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00211\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[38])}}
+\DoxyCodeLine{00212\ \textcolor{preprocessor}{\#define\ PyUFunc\_DefaultTypeResolver\ \(\backslash\)}}
+\DoxyCodeLine{00213\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(PyUFuncObject\ *,\ NPY\_CASTING,\ PyArrayObject\ **,\ PyObject\ *,\ PyArray\_Descr\ **))\ \(\backslash\)}}
+\DoxyCodeLine{00214\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[39])}}
+\DoxyCodeLine{00215\ \textcolor{preprocessor}{\#define\ PyUFunc\_ValidateCasting\ \(\backslash\)}}
+\DoxyCodeLine{00216\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(PyUFuncObject\ *,\ NPY\_CASTING,\ PyArrayObject\ **,\ PyArray\_Descr\ *const\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00217\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[40])}}
+\DoxyCodeLine{00218\ \textcolor{preprocessor}{\#define\ PyUFunc\_RegisterLoopForDescr\ \(\backslash\)}}
+\DoxyCodeLine{00219\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(PyUFuncObject\ *,\ PyArray\_Descr\ *,\ PyUFuncGenericFunction,\ PyArray\_Descr\ **,\ void\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00220\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[41])}}
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00222\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_1\_16\_API\_VERSION}}
+\DoxyCodeLine{00223\ \textcolor{preprocessor}{\#define\ PyUFunc\_FromFuncAndDataAndSignatureAndIdentity\ \(\backslash\)}}
+\DoxyCodeLine{00224\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(PyObject\ *\ (*)(PyUFuncGenericFunction\ *,\ void\ *const\ *,\ const\ char\ *,\ int,\ int,\ int,\ int,\ const\ char\ *,\ const\ char\ *,\ const\ int,\ const\ char\ *,\ PyObject\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00225\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[42])}}
+\DoxyCodeLine{00226\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00229\ \textcolor{preprocessor}{\#define\ PyUFunc\_AddLoopFromSpec\ \(\backslash\)}}
+\DoxyCodeLine{00230\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(PyObject\ *,\ PyArrayMethod\_Spec\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00231\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[43])}}
+\DoxyCodeLine{00232\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00234\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00235\ \textcolor{preprocessor}{\#define\ PyUFunc\_AddPromoter\ \(\backslash\)}}
+\DoxyCodeLine{00236\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(PyObject\ *,\ PyObject\ *,\ PyObject\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00237\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[44])}}
+\DoxyCodeLine{00238\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00240\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00241\ \textcolor{preprocessor}{\#define\ PyUFunc\_AddWrappingLoop\ \(\backslash\)}}
+\DoxyCodeLine{00242\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(PyObject\ *,\ PyArray\_DTypeMeta\ *new\_dtypes[],\ PyArray\_DTypeMeta\ *wrapped\_dtypes[],\ PyArrayMethod\_TranslateGivenDescriptors\ *,\ PyArrayMethod\_TranslateLoopDescriptors\ *))\ \(\backslash\)}}
+\DoxyCodeLine{00243\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[45])}}
+\DoxyCodeLine{00244\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00247\ \textcolor{preprocessor}{\#define\ PyUFunc\_GiveFloatingpointErrors\ \(\backslash\)}}
+\DoxyCodeLine{00248\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (*(int\ (*)(const\ char\ *,\ int))\ \(\backslash\)}}
+\DoxyCodeLine{00249\ \textcolor{preprocessor}{\ \ \ \ PyUFunc\_API[46])}}
+\DoxyCodeLine{00250\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00253\ \_import\_umath(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00254\ \{}
+\DoxyCodeLine{00255\ \ \ PyObject\ *\mbox{\hyperlink{namespacenumpy}{numpy}}\ =\ PyImport\_ImportModule(\textcolor{stringliteral}{"{}numpy.\_core.\_multiarray\_umath"{}});}
+\DoxyCodeLine{00256\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespacenumpy}{numpy}}\ ==\ NULL\ \&\&\ PyErr\_ExceptionMatches(PyExc\_ModuleNotFoundError))\ \{}
+\DoxyCodeLine{00257\ \ \ \ \ PyErr\_Clear();}
+\DoxyCodeLine{00258\ \ \ \ \ \mbox{\hyperlink{namespacenumpy}{numpy}}\ =\ PyImport\_ImportModule(\textcolor{stringliteral}{"{}numpy.core.\_multiarray\_umath"{}});}
+\DoxyCodeLine{00259\ \ \ \}}
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00261\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespacenumpy}{numpy}}\ ==\ NULL)\ \{}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ PyErr\_SetString(PyExc\_ImportError,}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\_multiarray\_umath\ failed\ to\ import"{}});}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00265\ \ \ \}}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ \ \ PyObject\ *c\_api\ =\ PyObject\_GetAttrString(\mbox{\hyperlink{namespacenumpy}{numpy}},\ \textcolor{stringliteral}{"{}\_UFUNC\_API"{}});}
+\DoxyCodeLine{00268\ \ \ Py\_DECREF(\mbox{\hyperlink{namespacenumpy}{numpy}});}
+\DoxyCodeLine{00269\ \ \ \textcolor{keywordflow}{if}\ (c\_api\ ==\ NULL)\ \{}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ PyErr\_SetString(PyExc\_AttributeError,\ \textcolor{stringliteral}{"{}\_UFUNC\_API\ not\ found"{}});}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00272\ \ \ \}}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00274\ \ \ \textcolor{keywordflow}{if}\ (!PyCapsule\_CheckExact(c\_api))\ \{}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ PyErr\_SetString(PyExc\_RuntimeError,\ \textcolor{stringliteral}{"{}\_UFUNC\_API\ is\ not\ PyCapsule\ object"{}});}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ Py\_DECREF(c\_api);}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00278\ \ \ \}}
+\DoxyCodeLine{00279\ \ \ \mbox{\hyperlink{____ufunc__api_8c_a59dde78286e8ab37d82153ee42cb5332}{PyUFunc\_API}}\ =\ (\textcolor{keywordtype}{void}\ **)PyCapsule\_GetPointer(c\_api,\ NULL);}
+\DoxyCodeLine{00280\ \ \ Py\_DECREF(c\_api);}
+\DoxyCodeLine{00281\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{____ufunc__api_8c_a59dde78286e8ab37d82153ee42cb5332}{PyUFunc\_API}}\ ==\ NULL)\ \{}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ PyErr\_SetString(PyExc\_RuntimeError,\ \textcolor{stringliteral}{"{}\_UFUNC\_API\ is\ NULL\ pointer"{}});}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00284\ \ \ \}}
+\DoxyCodeLine{00285\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00286\ \}}
+\DoxyCodeLine{00287\ }
+\DoxyCodeLine{00288\ \textcolor{preprocessor}{\#define\ import\_umath()\ \(\backslash\)}}
+\DoxyCodeLine{00289\ \textcolor{preprocessor}{\ \ \ \ do\ \{\(\backslash\)}}
+\DoxyCodeLine{00290\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ UFUNC\_NOFPE\(\backslash\)}}
+\DoxyCodeLine{00291\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ if\ (\_import\_umath()\ <\ 0)\ \{\(\backslash\)}}
+\DoxyCodeLine{00292\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ PyErr\_Print();\(\backslash\)}}
+\DoxyCodeLine{00293\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_ImportError,\(\backslash\)}}
+\DoxyCodeLine{00294\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}numpy.\_core.umath\ failed\ to\ import"{});\(\backslash\)}}
+\DoxyCodeLine{00295\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ return\ NULL;\(\backslash\)}}
+\DoxyCodeLine{00296\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\(\backslash\)}}
+\DoxyCodeLine{00297\ \textcolor{preprocessor}{\ \ \ \ \}\ while(0)}}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00299\ \textcolor{preprocessor}{\#define\ import\_umath1(ret)\ \(\backslash\)}}
+\DoxyCodeLine{00300\ \textcolor{preprocessor}{\ \ \ \ do\ \{\(\backslash\)}}
+\DoxyCodeLine{00301\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ UFUNC\_NOFPE\(\backslash\)}}
+\DoxyCodeLine{00302\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ if\ (\_import\_umath()\ <\ 0)\ \{\(\backslash\)}}
+\DoxyCodeLine{00303\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ PyErr\_Print();\(\backslash\)}}
+\DoxyCodeLine{00304\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_ImportError,\(\backslash\)}}
+\DoxyCodeLine{00305\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}numpy.\_core.umath\ failed\ to\ import"{});\(\backslash\)}}
+\DoxyCodeLine{00306\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ return\ ret;\(\backslash\)}}
+\DoxyCodeLine{00307\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\(\backslash\)}}
+\DoxyCodeLine{00308\ \textcolor{preprocessor}{\ \ \ \ \}\ while(0)}}
+\DoxyCodeLine{00309\ }
+\DoxyCodeLine{00310\ \textcolor{preprocessor}{\#define\ import\_umath2(ret,\ msg)\ \(\backslash\)}}
+\DoxyCodeLine{00311\ \textcolor{preprocessor}{\ \ \ \ do\ \{\(\backslash\)}}
+\DoxyCodeLine{00312\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ UFUNC\_NOFPE\(\backslash\)}}
+\DoxyCodeLine{00313\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ if\ (\_import\_umath()\ <\ 0)\ \{\(\backslash\)}}
+\DoxyCodeLine{00314\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ PyErr\_Print();\(\backslash\)}}
+\DoxyCodeLine{00315\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_ImportError,\ msg);\(\backslash\)}}
+\DoxyCodeLine{00316\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ return\ ret;\(\backslash\)}}
+\DoxyCodeLine{00317\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\(\backslash\)}}
+\DoxyCodeLine{00318\ \textcolor{preprocessor}{\ \ \ \ \}\ while(0)}}
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00320\ \textcolor{preprocessor}{\#define\ import\_ufunc()\ \(\backslash\)}}
+\DoxyCodeLine{00321\ \textcolor{preprocessor}{\ \ \ \ do\ \{\(\backslash\)}}
+\DoxyCodeLine{00322\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ UFUNC\_NOFPE\(\backslash\)}}
+\DoxyCodeLine{00323\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ if\ (\_import\_umath()\ <\ 0)\ \{\(\backslash\)}}
+\DoxyCodeLine{00324\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ PyErr\_Print();\(\backslash\)}}
+\DoxyCodeLine{00325\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ PyErr\_SetString(PyExc\_ImportError,\(\backslash\)}}
+\DoxyCodeLine{00326\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}numpy.\_core.umath\ failed\ to\ import"{});\(\backslash\)}}
+\DoxyCodeLine{00327\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}\(\backslash\)}}
+\DoxyCodeLine{00328\ \textcolor{preprocessor}{\ \ \ \ \}\ while(0)}}
+\DoxyCodeLine{00329\ }
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00331\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00332\ PyUFunc\_ImportUFuncAPI()}
+\DoxyCodeLine{00333\ \{}
+\DoxyCodeLine{00334\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{npy__common_8h_afe6ea5cd1976681172cfee558bbd2001}{NPY\_UNLIKELY}}(\mbox{\hyperlink{____ufunc__api_8c_a59dde78286e8ab37d82153ee42cb5332}{PyUFunc\_API}}\ ==\ NULL))\ \{}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{____ufunc__api_8h_a270db5f23f6bd9a279aa0be9ae57bd63}{import\_umath1}}(-\/1);}
+\DoxyCodeLine{00336\ \ \ \ \ \}}
+\DoxyCodeLine{00337\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00338\ \}}
+\DoxyCodeLine{00339\ }
+\DoxyCodeLine{00340\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

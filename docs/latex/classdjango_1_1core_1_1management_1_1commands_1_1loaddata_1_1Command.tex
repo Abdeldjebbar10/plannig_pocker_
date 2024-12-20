@@ -1,0 +1,348 @@
+\doxysection{Référence de la classe django.\+core.\+management.\+commands.\+loaddata.\+Command}
+\hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command}{}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command}\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+core.\+management.\+commands.\+loaddata.\+Command\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+core.\+management.\+commands.\+loaddata.\+Command\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a6dd4b35eb4f4052c1980566a478e4567}{add\+\_\+arguments}} (self, parser)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a72ede845c482467e0484e2fdeebc4a42}{handle}} (self, \texorpdfstring{$\ast$}{*}fixture\+\_\+labels, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_afe9cb82ed36c74407f84fb89c60a66e3}{compression\+\_\+formats}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a31ca1697f6ccb49f1f20b45fd19eee90}{reset\+\_\+sequences}} (self, connection, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_af00994b3e773c5a6c1d1b7c5096e37bd}{models}})
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a20036418a6bc0270cc7db18de2e057a0}{loaddata}} (self, fixture\+\_\+labels)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad26cf5cf488e06a65e4f72d1814884cf}{save\+\_\+obj}} (self, obj)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a94197296f84aacd90df47924a21709f7}{load\+\_\+label}} (self, fixture\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a4f667757bd61b05dc08ae3cb4b13be14}{get\+\_\+fixture\+\_\+name\+\_\+and\+\_\+dirs}} (self, fixture\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a79defb81adc24bd940c1146c5b4daea4}{get\+\_\+targets}} (self, fixture\+\_\+name, ser\+\_\+fmt, cmp\+\_\+fmt)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad7e93cc05677f44a99e996e17a8ddaeb}{find\+\_\+fixture\+\_\+files\+\_\+in\+\_\+dir}} (self, fixture\+\_\+dir, fixture\+\_\+name, targets)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae13127621bcc44cf1fdc0029ed204022}{find\+\_\+fixtures}} (self, fixture\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a2d263f592dc48232783e96a26ace95a0}{fixture\+\_\+dirs}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_aac6fd16700a70d972d7cafd0bcf5d5aa}{parse\+\_\+name}} (self, fixture\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a9695953f0be8c6f8c6d1ef34d7ea5d49}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a5f0c98535677240304448f75e4f2d63d}{stdout}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}}=None, no\+\_\+color=False, force\+\_\+color=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_ad1a0ff17727df93596c37baec5368461}{get\+\_\+version}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_ae878e488f18d67acf1037a7e2db5b478}{create\+\_\+parser}} (self, prog\+\_\+name, subcommand, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_ae1a4dc5642d9d1f21301d519f3221e84}{add\+\_\+base\+\_\+argument}} (self, parser, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a9f81b6c52db3a2b0a123ca7bdd0ee819}{print\+\_\+help}} (self, prog\+\_\+name, subcommand)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a6c1cc5fc9ec35d268e45ebaadd2ac4a7}{run\+\_\+from\+\_\+argv}} (self, argv)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a5621c1fb51be6a2deff6777d90c25ee0}{execute}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a0ff1b562b3f6e68600b828fce3cf09b6}{check}} (self, app\+\_\+configs=None, tags=None, display\+\_\+num\+\_\+errors=False, include\+\_\+deployment\+\_\+checks=False, fail\+\_\+level=checks.\+ERROR, databases=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a163d7c2584c28d8775107140aa16237b}{check\+\_\+migrations}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae3d6e866db873b5259ff7899bf7fb6bc}{ignore}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ac090e51068a109d42915ee17abc3056c}{using}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a5116b3c11e7c7d6f6cf3071b024f5ede}{app\+\_\+label}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad04ef22874710161626d2c5024aae7a3}{verbosity}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_abf89678b7b33ac2625bdc0858d67c9ff}{excluded\+\_\+models}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a938c9dafd3ea0f9017727c18d876907c}{excluded\+\_\+apps}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae94d48d3fbc55a864653c829251faf1b}{format}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_aa743dc094494e79f421c66089a32a58a}{fixture\+\_\+count}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a165f5cbf13703485baf396105d62a300}{loaded\+\_\+object\+\_\+count}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a1ed174f8f2210b086324a348c275e64d}{fixture\+\_\+object\+\_\+count}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_af00994b3e773c5a6c1d1b7c5096e37bd}{models}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a6428feec569c30c5195781fd0594bb3a}{serialization\+\_\+formats}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_acfdf8a3b9272c25a2b83ef10543f83a5}{objs\+\_\+with\+\_\+deferred\+\_\+fields}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a5f0c98535677240304448f75e4f2d63d}{stdout}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_aef08e0cb4ab9bbe3d747f25c311fee26}{stderr}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_ad6d1595308e72c47dffa375715cbad81}{style}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_aba2da6354253ce03349947d947e49993}{requires\+\_\+system\+\_\+checks}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad6fef91146cf1286fb9cce840b080057}{help}} = "{}Installs the named fixture(s) in the database."{}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a04bd7ba1ee84df42a4646d7f18d4d969}{missing\+\_\+args\+\_\+message}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a5251899eaa230e9dc39d6f13bfb7738b}{help}} = "{}"{}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_afa4724a6b9eaa88dc153bcf618638984}{output\+\_\+transaction}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_af863dc49e813257bcc3f5ab2adbe1133}{requires\+\_\+migrations\+\_\+checks}} = False
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_af2682731b71f261f100d31645ba13ab3}{requires\+\_\+system\+\_\+checks}} = "{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a792d54d83b488928d57a8c6d06651b93}{base\+\_\+stealth\+\_\+options}} = ("{}stderr"{}, "{}stdout"{})
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a0ae78baa0f34d38dada61deb73b45650}{stealth\+\_\+options}} = ()
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a26536fa90d5c93dbc2e0d3218d1ae1dc}{suppressed\+\_\+base\+\_\+arguments}} = set()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_ace92d901d841affdff3dff0c24ae204e}{\+\_\+called\+\_\+from\+\_\+command\+\_\+line}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand}{django.\+core.\+management.\+base.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_ac73d933ceec032782fbcbec37d6c8ebb}{\+\_\+called\+\_\+from\+\_\+command\+\_\+line}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a6dd4b35eb4f4052c1980566a478e4567}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a6dd4b35eb4f4052c1980566a478e4567} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!add\_arguments@{add\_arguments}}
+\index{add\_arguments@{add\_arguments}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{add\_arguments()}{add\_arguments()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+add\+\_\+arguments (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parser }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Entry point for subclassed commands to add custom arguments.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a00539c5da3157007e2485338da279887}{django.\+core.\+management.\+base.\+Base\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_afe9cb82ed36c74407f84fb89c60a66e3}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_afe9cb82ed36c74407f84fb89c60a66e3} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!compression\_formats@{compression\_formats}}
+\index{compression\_formats@{compression\_formats}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{compression\_formats()}{compression\_formats()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+compression\+\_\+formats (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A dict mapping format names to (open function, mode arg) tuples.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad7e93cc05677f44a99e996e17a8ddaeb}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad7e93cc05677f44a99e996e17a8ddaeb} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!find\_fixture\_files\_in\_dir@{find\_fixture\_files\_in\_dir}}
+\index{find\_fixture\_files\_in\_dir@{find\_fixture\_files\_in\_dir}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{find\_fixture\_files\_in\_dir()}{find\_fixture\_files\_in\_dir()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+find\+\_\+fixture\+\_\+files\+\_\+in\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fixture\+\_\+dir,  }\item[{}]{fixture\+\_\+name,  }\item[{}]{targets }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae13127621bcc44cf1fdc0029ed204022}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae13127621bcc44cf1fdc0029ed204022} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!find\_fixtures@{find\_fixtures}}
+\index{find\_fixtures@{find\_fixtures}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{find\_fixtures()}{find\_fixtures()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+find\+\_\+fixtures (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fixture\+\_\+label }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find fixture files for a given label.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a2d263f592dc48232783e96a26ace95a0}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a2d263f592dc48232783e96a26ace95a0} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!fixture\_dirs@{fixture\_dirs}}
+\index{fixture\_dirs@{fixture\_dirs}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{fixture\_dirs()}{fixture\_dirs()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+fixture\+\_\+dirs (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of fixture directories.
+
+The list contains the 'fixtures' subdirectory of each installed
+application, if it exists, the directories in FIXTURE_DIRS, and the
+current directory.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a4f667757bd61b05dc08ae3cb4b13be14}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a4f667757bd61b05dc08ae3cb4b13be14} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!get\_fixture\_name\_and\_dirs@{get\_fixture\_name\_and\_dirs}}
+\index{get\_fixture\_name\_and\_dirs@{get\_fixture\_name\_and\_dirs}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{get\_fixture\_name\_and\_dirs()}{get\_fixture\_name\_and\_dirs()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+get\+\_\+fixture\+\_\+name\+\_\+and\+\_\+dirs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fixture\+\_\+name }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a79defb81adc24bd940c1146c5b4daea4}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a79defb81adc24bd940c1146c5b4daea4} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!get\_targets@{get\_targets}}
+\index{get\_targets@{get\_targets}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{get\_targets()}{get\_targets()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+get\+\_\+targets (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fixture\+\_\+name,  }\item[{}]{ser\+\_\+fmt,  }\item[{}]{cmp\+\_\+fmt }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a72ede845c482467e0484e2fdeebc4a42}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a72ede845c482467e0484e2fdeebc4a42} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!handle@{handle}}
+\index{handle@{handle}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+handle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The actual logic of the command. Subclasses must implement
+this method.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand_a52656ddf33d25f682f484c5d505a811d}{django.\+core.\+management.\+base.\+Base\+Command}}.
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a94197296f84aacd90df47924a21709f7}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a94197296f84aacd90df47924a21709f7} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!load\_label@{load\_label}}
+\index{load\_label@{load\_label}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{load\_label()}{load\_label()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+load\+\_\+label (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fixture\+\_\+label }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load fixtures files for a given label.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a20036418a6bc0270cc7db18de2e057a0}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a20036418a6bc0270cc7db18de2e057a0} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!loaddata@{loaddata}}
+\index{loaddata@{loaddata}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{loaddata()}{loaddata()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+loaddata (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fixture\+\_\+labels }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_aac6fd16700a70d972d7cafd0bcf5d5aa}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_aac6fd16700a70d972d7cafd0bcf5d5aa} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!parse\_name@{parse\_name}}
+\index{parse\_name@{parse\_name}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{parse\_name()}{parse\_name()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+parse\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fixture\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split fixture name in name, serialization format, compression format.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a31ca1697f6ccb49f1f20b45fd19eee90}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a31ca1697f6ccb49f1f20b45fd19eee90} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!reset\_sequences@{reset\_sequences}}
+\index{reset\_sequences@{reset\_sequences}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{reset\_sequences()}{reset\_sequences()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+reset\+\_\+sequences (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{connection,  }\item[{}]{models }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset database sequences for the given connection and models.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad26cf5cf488e06a65e4f72d1814884cf}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad26cf5cf488e06a65e4f72d1814884cf} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!save\_obj@{save\_obj}}
+\index{save\_obj@{save\_obj}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{save\_obj()}{save\_obj()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+save\+\_\+obj (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save an object if permitted.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a5116b3c11e7c7d6f6cf3071b024f5ede}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a5116b3c11e7c7d6f6cf3071b024f5ede} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!app\_label@{app\_label}}
+\index{app\_label@{app\_label}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{app\_label}{app\_label}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+app\+\_\+label}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a938c9dafd3ea0f9017727c18d876907c}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a938c9dafd3ea0f9017727c18d876907c} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!excluded\_apps@{excluded\_apps}}
+\index{excluded\_apps@{excluded\_apps}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{excluded\_apps}{excluded\_apps}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+excluded\+\_\+apps}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_abf89678b7b33ac2625bdc0858d67c9ff}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_abf89678b7b33ac2625bdc0858d67c9ff} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!excluded\_models@{excluded\_models}}
+\index{excluded\_models@{excluded\_models}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{excluded\_models}{excluded\_models}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+excluded\+\_\+models}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_aa743dc094494e79f421c66089a32a58a}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_aa743dc094494e79f421c66089a32a58a} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!fixture\_count@{fixture\_count}}
+\index{fixture\_count@{fixture\_count}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{fixture\_count}{fixture\_count}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+fixture\+\_\+count}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a1ed174f8f2210b086324a348c275e64d}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a1ed174f8f2210b086324a348c275e64d} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!fixture\_object\_count@{fixture\_object\_count}}
+\index{fixture\_object\_count@{fixture\_object\_count}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{fixture\_object\_count}{fixture\_object\_count}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+fixture\+\_\+object\+\_\+count}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae94d48d3fbc55a864653c829251faf1b}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae94d48d3fbc55a864653c829251faf1b} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!format@{format}}
+\index{format@{format}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+format}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad6fef91146cf1286fb9cce840b080057}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad6fef91146cf1286fb9cce840b080057} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!help@{help}}
+\index{help@{help}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily str django.\+core.\+management.\+commands.\+loaddata.\+Command.\+help = "{}Installs the named fixture(s) in the database."{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae3d6e866db873b5259ff7899bf7fb6bc}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ae3d6e866db873b5259ff7899bf7fb6bc} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!ignore@{ignore}}
+\index{ignore@{ignore}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{ignore}{ignore}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+ignore}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a165f5cbf13703485baf396105d62a300}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a165f5cbf13703485baf396105d62a300} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!loaded\_object\_count@{loaded\_object\_count}}
+\index{loaded\_object\_count@{loaded\_object\_count}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{loaded\_object\_count}{loaded\_object\_count}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+loaded\+\_\+object\+\_\+count}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a04bd7ba1ee84df42a4646d7f18d4d969}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a04bd7ba1ee84df42a4646d7f18d4d969} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!missing\_args\_message@{missing\_args\_message}}
+\index{missing\_args\_message@{missing\_args\_message}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{missing\_args\_message}{missing\_args\_message}}
+{\footnotesize\ttfamily tuple django.\+core.\+management.\+commands.\+loaddata.\+Command.\+missing\+\_\+args\+\_\+message\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}No\ database\ fixture\ specified.\ Please\ provide\ the\ path\ of\ at\ least\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}one\ fixture\ in\ the\ command\ line."{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_af00994b3e773c5a6c1d1b7c5096e37bd}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_af00994b3e773c5a6c1d1b7c5096e37bd} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!models@{models}}
+\index{models@{models}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{models}{models}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+models}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_acfdf8a3b9272c25a2b83ef10543f83a5}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_acfdf8a3b9272c25a2b83ef10543f83a5} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!objs\_with\_deferred\_fields@{objs\_with\_deferred\_fields}}
+\index{objs\_with\_deferred\_fields@{objs\_with\_deferred\_fields}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{objs\_with\_deferred\_fields}{objs\_with\_deferred\_fields}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+objs\+\_\+with\+\_\+deferred\+\_\+fields}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a6428feec569c30c5195781fd0594bb3a}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_a6428feec569c30c5195781fd0594bb3a} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!serialization\_formats@{serialization\_formats}}
+\index{serialization\_formats@{serialization\_formats}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{serialization\_formats}{serialization\_formats}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+serialization\+\_\+formats}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ac090e51068a109d42915ee17abc3056c}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ac090e51068a109d42915ee17abc3056c} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!using@{using}}
+\index{using@{using}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{using}{using}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+using}
+
+\Hypertarget{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad04ef22874710161626d2c5024aae7a3}\label{classdjango_1_1core_1_1management_1_1commands_1_1loaddata_1_1Command_ad04ef22874710161626d2c5024aae7a3} 
+\index{django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}!verbosity@{verbosity}}
+\index{verbosity@{verbosity}!django.core.management.commands.loaddata.Command@{django.core.management.commands.loaddata.Command}}
+\doxysubsubsection{\texorpdfstring{verbosity}{verbosity}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+loaddata.\+Command.\+verbosity}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/core/management/commands/\mbox{\hyperlink{loaddata_8py}{loaddata.\+py}}\end{DoxyCompactItemize}

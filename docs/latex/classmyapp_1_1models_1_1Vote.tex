@@ -1,0 +1,144 @@
+\doxysection{Référence de la classe myapp.\+models.\+Vote}
+\hypertarget{classmyapp_1_1models_1_1Vote}{}\label{classmyapp_1_1models_1_1Vote}\index{myapp.models.Vote@{myapp.models.Vote}}
+
+
+Graphe d\textquotesingle{}héritage de myapp.\+models.\+Vote\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classmyapp_1_1models_1_1Vote__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de myapp.\+models.\+Vote\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classmyapp_1_1models_1_1Vote__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_abece71da9616c143ec7b3fc43611d257}{save}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_ac9a63fc750aaa78f6fff37a248eb7710}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_a3104cb0f19cb3cfb0edab759ecc09ccd}{est\+\_\+unanime}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classmyapp_1_1models_1_1Vote_a26881b52af8d2c0428eb48dd126cf02f}{PARTIE\+\_\+\+CHOICES}}
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_adcbf9b611527c295d8e1b2d1995e89db}{participant}} = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Participant}{Participant}}, on\+\_\+delete=models.\+CASCADE)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_a05fa529ddeb601ee737bb6fe97054dde}{fonctionnalite}} = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Fonctionnalite}{Fonctionnalite}}, on\+\_\+delete=models.\+CASCADE)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_a598ebe37cd4994adf1ec25cc3317ebfa}{partie}} = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Partie}{Partie}}, on\+\_\+delete=models.\+CASCADE)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_a852e1b9be90b83891b5fddd9dec44276}{vote}} = models.\+Char\+Field(max\+\_\+length=20)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_af42ab98fd490ca7481346a4c8ee3e369}{mode\+\_\+jeu}} = models.\+Char\+Field(max\+\_\+length=20, choices=\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_a26881b52af8d2c0428eb48dd126cf02f}{PARTIE\+\_\+\+CHOICES}})
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_a48203beeea9c7d5a63c3e65430c3b68f}{fonctionnalite\+\_\+valide}} = models.\+Boolean\+Field(default=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}@class Vote
+@brief Modèle pour représenter un vote.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classmyapp_1_1models_1_1Vote_ac9a63fc750aaa78f6fff37a248eb7710}\label{classmyapp_1_1models_1_1Vote_ac9a63fc750aaa78f6fff37a248eb7710} 
+\index{myapp.models.Vote@{myapp.models.Vote}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Retourne une représentation textuelle du vote.
+@return Une chaîne décrivant le vote.
+\end{DoxyVerb}
+ \Hypertarget{classmyapp_1_1models_1_1Vote_a3104cb0f19cb3cfb0edab759ecc09ccd}\label{classmyapp_1_1models_1_1Vote_a3104cb0f19cb3cfb0edab759ecc09ccd} 
+\index{myapp.models.Vote@{myapp.models.Vote}!est\_unanime@{est\_unanime}}
+\index{est\_unanime@{est\_unanime}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{est\_unanime()}{est\_unanime()}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+est\+\_\+unanime (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Vérifie si tous les joueurs ont voté de manière unanime dans le mode strict.
+@return True si tous les votes sont identiques, sinon False.
+\end{DoxyVerb}
+ \Hypertarget{classmyapp_1_1models_1_1Vote_abece71da9616c143ec7b3fc43611d257}\label{classmyapp_1_1models_1_1Vote_abece71da9616c143ec7b3fc43611d257} 
+\index{myapp.models.Vote@{myapp.models.Vote}!save@{save}}
+\index{save@{save}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Sauvegarde le vote et met à jour l'état de la fonctionnalité.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classmyapp_1_1models_1_1Vote_a05fa529ddeb601ee737bb6fe97054dde}\label{classmyapp_1_1models_1_1Vote_a05fa529ddeb601ee737bb6fe97054dde} 
+\index{myapp.models.Vote@{myapp.models.Vote}!fonctionnalite@{fonctionnalite}}
+\index{fonctionnalite@{fonctionnalite}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{fonctionnalite}{fonctionnalite}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+fonctionnalite = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Fonctionnalite}{Fonctionnalite}}, on\+\_\+delete=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Vote_a48203beeea9c7d5a63c3e65430c3b68f}\label{classmyapp_1_1models_1_1Vote_a48203beeea9c7d5a63c3e65430c3b68f} 
+\index{myapp.models.Vote@{myapp.models.Vote}!fonctionnalite\_valide@{fonctionnalite\_valide}}
+\index{fonctionnalite\_valide@{fonctionnalite\_valide}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{fonctionnalite\_valide}{fonctionnalite\_valide}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+fonctionnalite\+\_\+valide = models.\+Boolean\+Field(default=False)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Vote_af42ab98fd490ca7481346a4c8ee3e369}\label{classmyapp_1_1models_1_1Vote_af42ab98fd490ca7481346a4c8ee3e369} 
+\index{myapp.models.Vote@{myapp.models.Vote}!mode\_jeu@{mode\_jeu}}
+\index{mode\_jeu@{mode\_jeu}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{mode\_jeu}{mode\_jeu}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+mode\+\_\+jeu = models.\+Char\+Field(max\+\_\+length=20, choices=\mbox{\hyperlink{classmyapp_1_1models_1_1Vote_a26881b52af8d2c0428eb48dd126cf02f}{PARTIE\+\_\+\+CHOICES}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Vote_adcbf9b611527c295d8e1b2d1995e89db}\label{classmyapp_1_1models_1_1Vote_adcbf9b611527c295d8e1b2d1995e89db} 
+\index{myapp.models.Vote@{myapp.models.Vote}!participant@{participant}}
+\index{participant@{participant}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{participant}{participant}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+participant = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Participant}{Participant}}, on\+\_\+delete=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Vote_a598ebe37cd4994adf1ec25cc3317ebfa}\label{classmyapp_1_1models_1_1Vote_a598ebe37cd4994adf1ec25cc3317ebfa} 
+\index{myapp.models.Vote@{myapp.models.Vote}!partie@{partie}}
+\index{partie@{partie}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{partie}{partie}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+partie = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Partie}{Partie}}, on\+\_\+delete=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Vote_a26881b52af8d2c0428eb48dd126cf02f}\label{classmyapp_1_1models_1_1Vote_a26881b52af8d2c0428eb48dd126cf02f} 
+\index{myapp.models.Vote@{myapp.models.Vote}!PARTIE\_CHOICES@{PARTIE\_CHOICES}}
+\index{PARTIE\_CHOICES@{PARTIE\_CHOICES}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{PARTIE\_CHOICES}{PARTIE\_CHOICES}}
+{\footnotesize\ttfamily list myapp.\+models.\+Vote.\+PARTIE\+\_\+\+CHOICES\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'strict'},\ \textcolor{stringliteral}{'Strict'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'moyenne'},\ \textcolor{stringliteral}{'Moyenne'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'mediane'},\ \textcolor{stringliteral}{'Médiane'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'majorite\_absolue'},\ \textcolor{stringliteral}{'Majorité\ absolue'}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'majorite\_relative'},\ \textcolor{stringliteral}{'Majorité\ relative'}),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classmyapp_1_1models_1_1Vote_a852e1b9be90b83891b5fddd9dec44276}\label{classmyapp_1_1models_1_1Vote_a852e1b9be90b83891b5fddd9dec44276} 
+\index{myapp.models.Vote@{myapp.models.Vote}!vote@{vote}}
+\index{vote@{vote}!myapp.models.Vote@{myapp.models.Vote}}
+\doxysubsubsection{\texorpdfstring{vote}{vote}}
+{\footnotesize\ttfamily myapp.\+models.\+Vote.\+vote = models.\+Char\+Field(max\+\_\+length=20)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+myapp/\mbox{\hyperlink{models_8py}{models.\+py}}\end{DoxyCompactItemize}

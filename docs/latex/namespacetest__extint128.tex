@@ -1,0 +1,226 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage test\+\_\+extint128}
+\hypertarget{namespacetest__extint128}{}\label{namespacetest__extint128}\index{test\_extint128@{test\_extint128}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a7554711037e54502532e627b376c4e66}{exc\+\_\+iter}} (\texorpdfstring{$\ast$}{*}args)
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a8bb942cd410e577041c1fe495002eb33}{test\+\_\+safe\+\_\+binop}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a3093760aabdf3f77b1937ce3ed943d99}{test\+\_\+to\+\_\+128}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_acda27fbe36d5945ed3d0f89764b2b1eb}{test\+\_\+to\+\_\+64}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a350b2487e5712874dd2ee2b51dbf4d18}{test\+\_\+mul\+\_\+64\+\_\+64}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_aef1c06dc03d697b42d873e7e2c519056}{test\+\_\+add\+\_\+128}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a9f22d03b18d3c21d43425a8577155a01}{test\+\_\+sub\+\_\+128}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a362b7e1dfb5ec6546c27c2d991557061}{test\+\_\+neg\+\_\+128}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_addf9e5f1909927431b633822b0193549}{test\+\_\+shl\+\_\+128}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a1bba70e2b0a50ba20766b0ed438edbd8}{test\+\_\+shr\+\_\+128}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_aceb665affd72a802621b144177aa2976}{test\+\_\+gt\+\_\+128}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a820dcf824a77386421f8e6f5448bdd73}{test\+\_\+divmod\+\_\+128\+\_\+64}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_aa8ed756850ee41fc988d1e5c1d8a2497}{test\+\_\+floordiv\+\_\+128\+\_\+64}} ()
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a3d38081a11e3d978c7f0908a917f701a}{test\+\_\+ceildiv\+\_\+128\+\_\+64}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__extint128_a7ec35d620e4696f6afbb57ee88eb011b}{INT64\+\_\+\+MAX}} = np.\+iinfo(np.\+int64).max
+\item 
+\mbox{\hyperlink{namespacetest__extint128_af2f398617ed7a6b7d4b7293c84695519}{INT64\+\_\+\+MIN}} = np.\+iinfo(np.\+int64).min
+\item 
+int \mbox{\hyperlink{namespacetest__extint128_a21bd4a0e68dab7dbac1c50cc1d0b12c5}{INT64\+\_\+\+MID}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}32
+\item 
+int \mbox{\hyperlink{namespacetest__extint128_a12f2c822df22aacbc53eb71c23d52cc6}{INT128\+\_\+\+MAX}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}128 -\/ 1
+\item 
+int \mbox{\hyperlink{namespacetest__extint128_a185681a4e642a61e2460a379a39c2dee}{INT128\+\_\+\+MIN}} = -\/\mbox{\hyperlink{namespacetest__extint128_a12f2c822df22aacbc53eb71c23d52cc6}{INT128\+\_\+\+MAX}}
+\item 
+int \mbox{\hyperlink{namespacetest__extint128_a25b18c848246275a52d9686278ba7e72}{INT128\+\_\+\+MID}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}64
+\item 
+tuple \mbox{\hyperlink{namespacetest__extint128_af95308c4cada9f818dbfb8c198bb3d3b}{INT64\+\_\+\+VALUES}}
+\item 
+tuple \mbox{\hyperlink{namespacetest__extint128_a861f88cfd903db145a70445078ae7d38}{INT128\+\_\+\+VALUES}}
+\item 
+list \mbox{\hyperlink{namespacetest__extint128_a0bd5342334cb65e43a9fdb9b9ec03509}{INT64\+\_\+\+POS\+\_\+\+VALUES}} = \mbox{[}x for x in \mbox{\hyperlink{namespacetest__extint128_af95308c4cada9f818dbfb8c198bb3d3b}{INT64\+\_\+\+VALUES}} if x $>$ 0\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacetest__extint128_a7554711037e54502532e627b376c4e66}\label{namespacetest__extint128_a7554711037e54502532e627b376c4e66} 
+\index{test\_extint128@{test\_extint128}!exc\_iter@{exc\_iter}}
+\index{exc\_iter@{exc\_iter}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{exc\_iter()}{exc\_iter()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+exc\+\_\+iter (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over Cartesian product of *args, and if an exception is raised,
+add information of the current iterate.
+\end{DoxyVerb}
+ \Hypertarget{namespacetest__extint128_aef1c06dc03d697b42d873e7e2c519056}\label{namespacetest__extint128_aef1c06dc03d697b42d873e7e2c519056} 
+\index{test\_extint128@{test\_extint128}!test\_add\_128@{test\_add\_128}}
+\index{test\_add\_128@{test\_add\_128}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_add\_128()}{test\_add\_128()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+add\+\_\+128 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_a3d38081a11e3d978c7f0908a917f701a}\label{namespacetest__extint128_a3d38081a11e3d978c7f0908a917f701a} 
+\index{test\_extint128@{test\_extint128}!test\_ceildiv\_128\_64@{test\_ceildiv\_128\_64}}
+\index{test\_ceildiv\_128\_64@{test\_ceildiv\_128\_64}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_ceildiv\_128\_64()}{test\_ceildiv\_128\_64()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+ceildiv\+\_\+128\+\_\+64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_a820dcf824a77386421f8e6f5448bdd73}\label{namespacetest__extint128_a820dcf824a77386421f8e6f5448bdd73} 
+\index{test\_extint128@{test\_extint128}!test\_divmod\_128\_64@{test\_divmod\_128\_64}}
+\index{test\_divmod\_128\_64@{test\_divmod\_128\_64}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_divmod\_128\_64()}{test\_divmod\_128\_64()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+divmod\+\_\+128\+\_\+64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_aa8ed756850ee41fc988d1e5c1d8a2497}\label{namespacetest__extint128_aa8ed756850ee41fc988d1e5c1d8a2497} 
+\index{test\_extint128@{test\_extint128}!test\_floordiv\_128\_64@{test\_floordiv\_128\_64}}
+\index{test\_floordiv\_128\_64@{test\_floordiv\_128\_64}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_floordiv\_128\_64()}{test\_floordiv\_128\_64()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+floordiv\+\_\+128\+\_\+64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_aceb665affd72a802621b144177aa2976}\label{namespacetest__extint128_aceb665affd72a802621b144177aa2976} 
+\index{test\_extint128@{test\_extint128}!test\_gt\_128@{test\_gt\_128}}
+\index{test\_gt\_128@{test\_gt\_128}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_gt\_128()}{test\_gt\_128()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+gt\+\_\+128 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_a350b2487e5712874dd2ee2b51dbf4d18}\label{namespacetest__extint128_a350b2487e5712874dd2ee2b51dbf4d18} 
+\index{test\_extint128@{test\_extint128}!test\_mul\_64\_64@{test\_mul\_64\_64}}
+\index{test\_mul\_64\_64@{test\_mul\_64\_64}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_mul\_64\_64()}{test\_mul\_64\_64()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+mul\+\_\+64\+\_\+64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_a362b7e1dfb5ec6546c27c2d991557061}\label{namespacetest__extint128_a362b7e1dfb5ec6546c27c2d991557061} 
+\index{test\_extint128@{test\_extint128}!test\_neg\_128@{test\_neg\_128}}
+\index{test\_neg\_128@{test\_neg\_128}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_neg\_128()}{test\_neg\_128()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+neg\+\_\+128 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_a8bb942cd410e577041c1fe495002eb33}\label{namespacetest__extint128_a8bb942cd410e577041c1fe495002eb33} 
+\index{test\_extint128@{test\_extint128}!test\_safe\_binop@{test\_safe\_binop}}
+\index{test\_safe\_binop@{test\_safe\_binop}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_safe\_binop()}{test\_safe\_binop()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+safe\+\_\+binop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_addf9e5f1909927431b633822b0193549}\label{namespacetest__extint128_addf9e5f1909927431b633822b0193549} 
+\index{test\_extint128@{test\_extint128}!test\_shl\_128@{test\_shl\_128}}
+\index{test\_shl\_128@{test\_shl\_128}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_shl\_128()}{test\_shl\_128()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+shl\+\_\+128 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_a1bba70e2b0a50ba20766b0ed438edbd8}\label{namespacetest__extint128_a1bba70e2b0a50ba20766b0ed438edbd8} 
+\index{test\_extint128@{test\_extint128}!test\_shr\_128@{test\_shr\_128}}
+\index{test\_shr\_128@{test\_shr\_128}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_shr\_128()}{test\_shr\_128()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+shr\+\_\+128 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_a9f22d03b18d3c21d43425a8577155a01}\label{namespacetest__extint128_a9f22d03b18d3c21d43425a8577155a01} 
+\index{test\_extint128@{test\_extint128}!test\_sub\_128@{test\_sub\_128}}
+\index{test\_sub\_128@{test\_sub\_128}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_sub\_128()}{test\_sub\_128()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+sub\+\_\+128 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_a3093760aabdf3f77b1937ce3ed943d99}\label{namespacetest__extint128_a3093760aabdf3f77b1937ce3ed943d99} 
+\index{test\_extint128@{test\_extint128}!test\_to\_128@{test\_to\_128}}
+\index{test\_to\_128@{test\_to\_128}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_to\_128()}{test\_to\_128()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+to\+\_\+128 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__extint128_acda27fbe36d5945ed3d0f89764b2b1eb}\label{namespacetest__extint128_acda27fbe36d5945ed3d0f89764b2b1eb} 
+\index{test\_extint128@{test\_extint128}!test\_to\_64@{test\_to\_64}}
+\index{test\_to\_64@{test\_to\_64}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{test\_to\_64()}{test\_to\_64()}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+test\+\_\+to\+\_\+64 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacetest__extint128_a12f2c822df22aacbc53eb71c23d52cc6}\label{namespacetest__extint128_a12f2c822df22aacbc53eb71c23d52cc6} 
+\index{test\_extint128@{test\_extint128}!INT128\_MAX@{INT128\_MAX}}
+\index{INT128\_MAX@{INT128\_MAX}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT128\_MAX}{INT128\_MAX}}
+{\footnotesize\ttfamily int test\+\_\+extint128.\+INT128\+\_\+\+MAX = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}128 -\/ 1}
+
+\Hypertarget{namespacetest__extint128_a25b18c848246275a52d9686278ba7e72}\label{namespacetest__extint128_a25b18c848246275a52d9686278ba7e72} 
+\index{test\_extint128@{test\_extint128}!INT128\_MID@{INT128\_MID}}
+\index{INT128\_MID@{INT128\_MID}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT128\_MID}{INT128\_MID}}
+{\footnotesize\ttfamily int test\+\_\+extint128.\+INT128\+\_\+\+MID = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}64}
+
+\Hypertarget{namespacetest__extint128_a185681a4e642a61e2460a379a39c2dee}\label{namespacetest__extint128_a185681a4e642a61e2460a379a39c2dee} 
+\index{test\_extint128@{test\_extint128}!INT128\_MIN@{INT128\_MIN}}
+\index{INT128\_MIN@{INT128\_MIN}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT128\_MIN}{INT128\_MIN}}
+{\footnotesize\ttfamily int test\+\_\+extint128.\+INT128\+\_\+\+MIN = -\/\mbox{\hyperlink{namespacetest__extint128_a12f2c822df22aacbc53eb71c23d52cc6}{INT128\+\_\+\+MAX}}}
+
+\Hypertarget{namespacetest__extint128_a861f88cfd903db145a70445078ae7d38}\label{namespacetest__extint128_a861f88cfd903db145a70445078ae7d38} 
+\index{test\_extint128@{test\_extint128}!INT128\_VALUES@{INT128\_VALUES}}
+\index{INT128\_VALUES@{INT128\_VALUES}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT128\_VALUES}{INT128\_VALUES}}
+{\footnotesize\ttfamily tuple test\+\_\+extint128.\+INT128\+\_\+\+VALUES}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ [INT128\_MIN\ +\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(20)]\ +}
+\DoxyCodeLine{00003\ \ \ \ \ [INT128\_MAX\ -\/\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(20)]\ +}
+\DoxyCodeLine{00004\ \ \ \ \ [INT128\_MID\ +\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(-\/20,\ 20)]\ +}
+\DoxyCodeLine{00005\ \ \ \ \ [2*INT128\_MID\ +\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(-\/20,\ 20)]\ +}
+\DoxyCodeLine{00006\ \ \ \ \ [INT128\_MID//2\ +\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(-\/20,\ 20)]\ +}
+\DoxyCodeLine{00007\ \ \ \ \ list(range(-\/70,\ 70))\ +}
+\DoxyCodeLine{00008\ \ \ \ \ [\textcolor{keyword}{False}]\ \ \textcolor{comment}{\#\ negative\ zero}}
+\DoxyCodeLine{00009\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacetest__extint128_a7ec35d620e4696f6afbb57ee88eb011b}\label{namespacetest__extint128_a7ec35d620e4696f6afbb57ee88eb011b} 
+\index{test\_extint128@{test\_extint128}!INT64\_MAX@{INT64\_MAX}}
+\index{INT64\_MAX@{INT64\_MAX}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT64\_MAX}{INT64\_MAX}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+INT64\+\_\+\+MAX = np.\+iinfo(np.\+int64).max}
+
+\Hypertarget{namespacetest__extint128_a21bd4a0e68dab7dbac1c50cc1d0b12c5}\label{namespacetest__extint128_a21bd4a0e68dab7dbac1c50cc1d0b12c5} 
+\index{test\_extint128@{test\_extint128}!INT64\_MID@{INT64\_MID}}
+\index{INT64\_MID@{INT64\_MID}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT64\_MID}{INT64\_MID}}
+{\footnotesize\ttfamily int test\+\_\+extint128.\+INT64\+\_\+\+MID = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}32}
+
+\Hypertarget{namespacetest__extint128_af2f398617ed7a6b7d4b7293c84695519}\label{namespacetest__extint128_af2f398617ed7a6b7d4b7293c84695519} 
+\index{test\_extint128@{test\_extint128}!INT64\_MIN@{INT64\_MIN}}
+\index{INT64\_MIN@{INT64\_MIN}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT64\_MIN}{INT64\_MIN}}
+{\footnotesize\ttfamily test\+\_\+extint128.\+INT64\+\_\+\+MIN = np.\+iinfo(np.\+int64).min}
+
+\Hypertarget{namespacetest__extint128_a0bd5342334cb65e43a9fdb9b9ec03509}\label{namespacetest__extint128_a0bd5342334cb65e43a9fdb9b9ec03509} 
+\index{test\_extint128@{test\_extint128}!INT64\_POS\_VALUES@{INT64\_POS\_VALUES}}
+\index{INT64\_POS\_VALUES@{INT64\_POS\_VALUES}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT64\_POS\_VALUES}{INT64\_POS\_VALUES}}
+{\footnotesize\ttfamily list test\+\_\+extint128.\+INT64\+\_\+\+POS\+\_\+\+VALUES = \mbox{[}x for x in \mbox{\hyperlink{namespacetest__extint128_af95308c4cada9f818dbfb8c198bb3d3b}{INT64\+\_\+\+VALUES}} if x $>$ 0\mbox{]}}
+
+\Hypertarget{namespacetest__extint128_af95308c4cada9f818dbfb8c198bb3d3b}\label{namespacetest__extint128_af95308c4cada9f818dbfb8c198bb3d3b} 
+\index{test\_extint128@{test\_extint128}!INT64\_VALUES@{INT64\_VALUES}}
+\index{INT64\_VALUES@{INT64\_VALUES}!test\_extint128@{test\_extint128}}
+\doxysubsubsection{\texorpdfstring{INT64\_VALUES}{INT64\_VALUES}}
+{\footnotesize\ttfamily tuple test\+\_\+extint128.\+INT64\+\_\+\+VALUES}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ [INT64\_MIN\ +\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(20)]\ +}
+\DoxyCodeLine{00003\ \ \ \ \ [INT64\_MAX\ -\/\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(20)]\ +}
+\DoxyCodeLine{00004\ \ \ \ \ [INT64\_MID\ +\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(-\/20,\ 20)]\ +}
+\DoxyCodeLine{00005\ \ \ \ \ [2*INT64\_MID\ +\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(-\/20,\ 20)]\ +}
+\DoxyCodeLine{00006\ \ \ \ \ [INT64\_MID//2\ +\ j\ \textcolor{keywordflow}{for}\ j\ \textcolor{keywordflow}{in}\ range(-\/20,\ 20)]\ +}
+\DoxyCodeLine{00007\ \ \ \ \ list(range(-\/70,\ 70))}
+\DoxyCodeLine{00008\ )}
+
+\end{DoxyCode}

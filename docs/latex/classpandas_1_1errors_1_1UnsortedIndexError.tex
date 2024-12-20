@@ -1,0 +1,41 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Unsorted\+Index\+Error}
+\hypertarget{classpandas_1_1errors_1_1UnsortedIndexError}{}\label{classpandas_1_1errors_1_1UnsortedIndexError}\index{pandas.errors.UnsortedIndexError@{pandas.errors.UnsortedIndexError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Unsorted\+Index\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Unsorted\+Index\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Error raised when slicing a MultiIndex which has not been lexsorted.
+
+Subclass of `KeyError`.
+
+Examples
+--------
+>>> df = pd.DataFrame({"cat": [0, 0, 1, 1],
+...                    "color": ["white", "white", "brown", "black"],
+...                    "lives": [4, 4, 3, 7]},
+...                   )
+>>> df = df.set_index(["cat", "color"])
+>>> df
+            lives
+cat  color
+0    white    4
+     white    4
+1    brown    3
+     black    7
+>>> df.loc[(0, "black"):(1, "white")]
+Traceback (most recent call last):
+UnsortedIndexError: 'Key length (2) was greater
+than MultiIndex lexsort depth (1)'
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

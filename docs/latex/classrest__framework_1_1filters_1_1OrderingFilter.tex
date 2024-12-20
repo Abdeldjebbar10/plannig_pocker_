@@ -1,0 +1,167 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+filters.\+Ordering\+Filter}
+\hypertarget{classrest__framework_1_1filters_1_1OrderingFilter}{}\label{classrest__framework_1_1filters_1_1OrderingFilter}\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+filters.\+Ordering\+Filter\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+filters.\+Ordering\+Filter\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_aff934ddc9354335409325dfae95b6166}{get\+\_\+ordering}} (self, request, queryset, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a93c26273676c3b024d130f0dc2437d14}{get\+\_\+default\+\_\+ordering}} (self, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a86f337ac273d44d60751dc19ca67d724}{get\+\_\+default\+\_\+valid\+\_\+fields}} (self, queryset, view, context=\{\})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a1b466b6a68f1b596fb31f268c0efa845}{get\+\_\+valid\+\_\+fields}} (self, queryset, view, context=\{\})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a7ebb45177d5897d28d8ee7f27b4b303a}{remove\+\_\+invalid\+\_\+fields}} (self, queryset, fields, view, request)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a3dfc23cfb80aeb4b56d8082e391f2371}{filter\+\_\+queryset}} (self, request, queryset, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_ae8eb43afb87d3260a355a66fc23c0a94}{get\+\_\+template\+\_\+context}} (self, request, queryset, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a8793ecb1cc680c39770a57473bb8993b}{to\+\_\+html}} (self, request, queryset, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a7b35b309c3213f9d542fc80a887185d0}{get\+\_\+schema\+\_\+fields}} (self, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_ac3ad5001fe05ed495cb18a7eed1b068c}{get\+\_\+schema\+\_\+operation\+\_\+parameters}} (self, view)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_af69bda2368118b944bf5c263e1187126}{ordering\+\_\+param}} = api\+\_\+settings.\+ORDERING\+\_\+\+PARAM
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_af751f510adfe395d8bb9d9c3b01eb015}{ordering\+\_\+fields}} = None
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_acd0a78b0cb19052f4c502d6643ac9929}{ordering\+\_\+title}} = \+\_\+(\textquotesingle{}Ordering\textquotesingle{})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a6f9756601a6c251fa2d773546779ee8c}{ordering\+\_\+description}} = \+\_\+(\textquotesingle{}Which field to use when ordering the results.\textquotesingle{})
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1filters_1_1OrderingFilter_a9512f7b0aa542e8fc2c5bd0be2472e84}{template}} = \textquotesingle{}rest\+\_\+framework/filters/ordering.\+html\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a3dfc23cfb80aeb4b56d8082e391f2371}\label{classrest__framework_1_1filters_1_1OrderingFilter_a3dfc23cfb80aeb4b56d8082e391f2371} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!filter\_queryset@{filter\_queryset}}
+\index{filter\_queryset@{filter\_queryset}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{filter\_queryset()}{filter\_queryset()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+filter\+\_\+queryset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{queryset,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a filtered queryset.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1filters_1_1BaseFilterBackend_a9d3627a2fe9ddb17e70fb8446b06948e}{rest\+\_\+framework.\+filters.\+Base\+Filter\+Backend}}.
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a93c26273676c3b024d130f0dc2437d14}\label{classrest__framework_1_1filters_1_1OrderingFilter_a93c26273676c3b024d130f0dc2437d14} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!get\_default\_ordering@{get\_default\_ordering}}
+\index{get\_default\_ordering@{get\_default\_ordering}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{get\_default\_ordering()}{get\_default\_ordering()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+get\+\_\+default\+\_\+ordering (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a86f337ac273d44d60751dc19ca67d724}\label{classrest__framework_1_1filters_1_1OrderingFilter_a86f337ac273d44d60751dc19ca67d724} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!get\_default\_valid\_fields@{get\_default\_valid\_fields}}
+\index{get\_default\_valid\_fields@{get\_default\_valid\_fields}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{get\_default\_valid\_fields()}{get\_default\_valid\_fields()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+get\+\_\+default\+\_\+valid\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{queryset,  }\item[{}]{view,  }\item[{}]{context = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_aff934ddc9354335409325dfae95b6166}\label{classrest__framework_1_1filters_1_1OrderingFilter_aff934ddc9354335409325dfae95b6166} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!get\_ordering@{get\_ordering}}
+\index{get\_ordering@{get\_ordering}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{get\_ordering()}{get\_ordering()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+get\+\_\+ordering (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{queryset,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ordering is set by a comma delimited ?ordering=... query parameter.
+
+The `ordering` query parameter can be overridden by setting
+the `ordering_param` value on the OrderingFilter or by
+specifying an `ORDERING_PARAM` value in the API settings.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a7b35b309c3213f9d542fc80a887185d0}\label{classrest__framework_1_1filters_1_1OrderingFilter_a7b35b309c3213f9d542fc80a887185d0} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!get\_schema\_fields@{get\_schema\_fields}}
+\index{get\_schema\_fields@{get\_schema\_fields}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{get\_schema\_fields()}{get\_schema\_fields()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+get\+\_\+schema\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1filters_1_1BaseFilterBackend_a7b1dcf3f99a99fa326be3c63e97c50fa}{rest\+\_\+framework.\+filters.\+Base\+Filter\+Backend}}.
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_ac3ad5001fe05ed495cb18a7eed1b068c}\label{classrest__framework_1_1filters_1_1OrderingFilter_ac3ad5001fe05ed495cb18a7eed1b068c} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!get\_schema\_operation\_parameters@{get\_schema\_operation\_parameters}}
+\index{get\_schema\_operation\_parameters@{get\_schema\_operation\_parameters}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{get\_schema\_operation\_parameters()}{get\_schema\_operation\_parameters()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+get\+\_\+schema\+\_\+operation\+\_\+parameters (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1filters_1_1BaseFilterBackend_a8f1d54e0c6d7737fa83a54bf63ff0d3f}{rest\+\_\+framework.\+filters.\+Base\+Filter\+Backend}}.
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_ae8eb43afb87d3260a355a66fc23c0a94}\label{classrest__framework_1_1filters_1_1OrderingFilter_ae8eb43afb87d3260a355a66fc23c0a94} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!get\_template\_context@{get\_template\_context}}
+\index{get\_template\_context@{get\_template\_context}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{get\_template\_context()}{get\_template\_context()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+get\+\_\+template\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{queryset,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a1b466b6a68f1b596fb31f268c0efa845}\label{classrest__framework_1_1filters_1_1OrderingFilter_a1b466b6a68f1b596fb31f268c0efa845} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!get\_valid\_fields@{get\_valid\_fields}}
+\index{get\_valid\_fields@{get\_valid\_fields}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{get\_valid\_fields()}{get\_valid\_fields()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+get\+\_\+valid\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{queryset,  }\item[{}]{view,  }\item[{}]{context = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a7ebb45177d5897d28d8ee7f27b4b303a}\label{classrest__framework_1_1filters_1_1OrderingFilter_a7ebb45177d5897d28d8ee7f27b4b303a} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!remove\_invalid\_fields@{remove\_invalid\_fields}}
+\index{remove\_invalid\_fields@{remove\_invalid\_fields}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{remove\_invalid\_fields()}{remove\_invalid\_fields()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+remove\+\_\+invalid\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{queryset,  }\item[{}]{fields,  }\item[{}]{view,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a8793ecb1cc680c39770a57473bb8993b}\label{classrest__framework_1_1filters_1_1OrderingFilter_a8793ecb1cc680c39770a57473bb8993b} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!to\_html@{to\_html}}
+\index{to\_html@{to\_html}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{to\_html()}{to\_html()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+to\+\_\+html (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{queryset,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a6f9756601a6c251fa2d773546779ee8c}\label{classrest__framework_1_1filters_1_1OrderingFilter_a6f9756601a6c251fa2d773546779ee8c} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!ordering\_description@{ordering\_description}}
+\index{ordering\_description@{ordering\_description}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{ordering\_description}{ordering\_description}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+ordering\+\_\+description = \+\_\+(\textquotesingle{}Which field to use when ordering the results.\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_af751f510adfe395d8bb9d9c3b01eb015}\label{classrest__framework_1_1filters_1_1OrderingFilter_af751f510adfe395d8bb9d9c3b01eb015} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!ordering\_fields@{ordering\_fields}}
+\index{ordering\_fields@{ordering\_fields}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{ordering\_fields}{ordering\_fields}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+ordering\+\_\+fields = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_af69bda2368118b944bf5c263e1187126}\label{classrest__framework_1_1filters_1_1OrderingFilter_af69bda2368118b944bf5c263e1187126} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!ordering\_param@{ordering\_param}}
+\index{ordering\_param@{ordering\_param}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{ordering\_param}{ordering\_param}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+ordering\+\_\+param = api\+\_\+settings.\+ORDERING\+\_\+\+PARAM\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_acd0a78b0cb19052f4c502d6643ac9929}\label{classrest__framework_1_1filters_1_1OrderingFilter_acd0a78b0cb19052f4c502d6643ac9929} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!ordering\_title@{ordering\_title}}
+\index{ordering\_title@{ordering\_title}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{ordering\_title}{ordering\_title}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+ordering\+\_\+title = \+\_\+(\textquotesingle{}Ordering\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1filters_1_1OrderingFilter_a9512f7b0aa542e8fc2c5bd0be2472e84}\label{classrest__framework_1_1filters_1_1OrderingFilter_a9512f7b0aa542e8fc2c5bd0be2472e84} 
+\index{rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}!template@{template}}
+\index{template@{template}!rest\_framework.filters.OrderingFilter@{rest\_framework.filters.OrderingFilter}}
+\doxysubsubsection{\texorpdfstring{template}{template}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+filters.\+Ordering\+Filter.\+template = \textquotesingle{}rest\+\_\+framework/filters/ordering.\+html\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2filters_8py}{filters.\+py}}\end{DoxyCompactItemize}

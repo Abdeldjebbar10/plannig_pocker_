@@ -1,0 +1,277 @@
+\doxysection{Référence de la classe pandas.\+core.\+computation.\+scope.\+Scope}
+\hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope}{}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope}\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+
+
+Graphe de collaboration de pandas.\+core.\+computation.\+scope.\+Scope\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a9eef9fb141b5d1123dc30c2deff34a0d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a42087467981fb2d7f0f01276b38c482d}{level}}, global\+\_\+dict=None, local\+\_\+dict=None, \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a3ae2dce170ad43cf816770ffee3a57ab}{resolvers}}=(), \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a968ffddd5d5d629ede4d943978cb5f72}{target}}=None)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a06d1fd252b2df0eca1f3e8a35bf161eb}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_acccc5f84f66857b813f8f1dc02068510}{has\+\_\+resolvers}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a60be9aa99e6f603e8307eea1ce4a8a43}{resolve}} (self, str key, bool is\+\_\+local)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a8712b660e155c5f4789ae92e8ea42f70}{swapkey}} (self, str old\+\_\+key, str new\+\_\+key, new\+\_\+value=None)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ac782ae018851dbf475511c967f1344b2}{add\+\_\+tmp}} (self, value)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a05e80248648f5c82761706b3ac8b1449}{ntemps}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1DeepChainMap}{Deep\+Chain\+Map}} \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_aa69a7d09589dfcf71600b9b5a6dc85c0}{full\+\_\+scope}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ac5fbb94a803eb05ab55143a55dff3ccc}{level}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a011eabcda8f74a80a2bf8195683b22cb}{scope}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a968ffddd5d5d629ede4d943978cb5f72}{target}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a82a453033cd4e04eea042ea51641caf9}{resolvers}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a2cf285341263785240a93c57e0724f19}{temps}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a42087467981fb2d7f0f01276b38c482d}{level}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1DeepChainMap}{Deep\+Chain\+Map}} \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ade4ee71014d6855938811dc840468025}{scope}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1DeepChainMap}{Deep\+Chain\+Map}} \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a3ae2dce170ad43cf816770ffee3a57ab}{resolvers}}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ad422764b13e67fe51c6e876ba4cb9489}{temps}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_af545fcf236997d6e899a520720fa6c26}{\+\_\+get\+\_\+vars}} (self, stack, list\mbox{[}str\mbox{]} scopes)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a489c986e95ded7e49a3b9411cf0dd90a}{\+\_\+update}} (self, int \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a42087467981fb2d7f0f01276b38c482d}{level}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Object to hold scope, with a few bells to deal with some custom syntax
+and contexts added by pandas.
+
+Parameters
+----------
+level : int
+global_dict : dict or None, optional, default None
+local_dict : dict or Scope or None, optional, default None
+resolvers : list-like or None, optional, default None
+target : object
+
+Attributes
+----------
+level : int
+scope : DeepChainMap
+target : object
+temps : dict
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a9eef9fb141b5d1123dc30c2deff34a0d}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a9eef9fb141b5d1123dc30c2deff34a0d} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+computation.\+scope.\+Scope.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{level,  }\item[{}]{global\+\_\+dict = {\ttfamily None},  }\item[{}]{local\+\_\+dict = {\ttfamily None},  }\item[{}]{resolvers = {\ttfamily ()},  }\item[{}]{target = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a06d1fd252b2df0eca1f3e8a35bf161eb}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a06d1fd252b2df0eca1f3e8a35bf161eb} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+computation.\+scope.\+Scope.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_af545fcf236997d6e899a520720fa6c26}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_af545fcf236997d6e899a520720fa6c26} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!\_get\_vars@{\_get\_vars}}
+\index{\_get\_vars@{\_get\_vars}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{\_get\_vars()}{\_get\_vars()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+computation.\+scope.\+Scope.\+\_\+get\+\_\+vars (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stack,  }\item[{list\mbox{[}str\mbox{]}}]{scopes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get specifically scoped variables from a list of stack frames.
+
+Parameters
+----------
+stack : list
+    A list of stack frames as returned by ``inspect.stack()``
+scopes : sequence of strings
+    A sequence containing valid stack frame attribute names that
+    evaluate to a dictionary. For example, ('locals', 'globals')
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a489c986e95ded7e49a3b9411cf0dd90a}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a489c986e95ded7e49a3b9411cf0dd90a} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!\_update@{\_update}}
+\index{\_update@{\_update}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{\_update()}{\_update()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+computation.\+scope.\+Scope.\+\_\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Update the current scope by going back `level` levels.
+
+Parameters
+----------
+level : int
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ac782ae018851dbf475511c967f1344b2}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ac782ae018851dbf475511c967f1344b2} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!add\_tmp@{add\_tmp}}
+\index{add\_tmp@{add\_tmp}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{add\_tmp()}{add\_tmp()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+computation.\+scope.\+Scope.\+add\+\_\+tmp (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a temporary variable to the scope.
+
+Parameters
+----------
+value : object
+    An arbitrary object to be assigned to a temporary variable.
+
+Returns
+-------
+str
+    The name of the temporary variable created.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_aa69a7d09589dfcf71600b9b5a6dc85c0}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_aa69a7d09589dfcf71600b9b5a6dc85c0} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!full\_scope@{full\_scope}}
+\index{full\_scope@{full\_scope}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{full\_scope()}{full\_scope()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1DeepChainMap}{Deep\+Chain\+Map}} pandas.\+core.\+computation.\+scope.\+Scope.\+full\+\_\+scope (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the full scope for use with passing to engines transparently
+as a mapping.
+
+Returns
+-------
+vars : DeepChainMap
+    All variables in this scope.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_acccc5f84f66857b813f8f1dc02068510}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_acccc5f84f66857b813f8f1dc02068510} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!has\_resolvers@{has\_resolvers}}
+\index{has\_resolvers@{has\_resolvers}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{has\_resolvers()}{has\_resolvers()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+computation.\+scope.\+Scope.\+has\+\_\+resolvers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether we have any extra scope.
+
+For example, DataFrames pass Their columns as resolvers during calls to
+``DataFrame.eval()`` and ``DataFrame.query()``.
+
+Returns
+-------
+hr : bool
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a05e80248648f5c82761706b3ac8b1449}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a05e80248648f5c82761706b3ac8b1449} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!ntemps@{ntemps}}
+\index{ntemps@{ntemps}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{ntemps()}{ntemps()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+computation.\+scope.\+Scope.\+ntemps (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The number of temporary variables in this scope\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a60be9aa99e6f603e8307eea1ce4a8a43}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a60be9aa99e6f603e8307eea1ce4a8a43} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!resolve@{resolve}}
+\index{resolve@{resolve}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+scope.\+Scope.\+resolve (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key,  }\item[{bool}]{is\+\_\+local }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve a variable name in a possibly local context.
+
+Parameters
+----------
+key : str
+    A variable name
+is_local : bool
+    Flag indicating whether the variable is local or not (prefixed with
+    the '@' symbol)
+
+Returns
+-------
+value : object
+    The value of a particular variable
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a8712b660e155c5f4789ae92e8ea42f70}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a8712b660e155c5f4789ae92e8ea42f70} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!swapkey@{swapkey}}
+\index{swapkey@{swapkey}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{swapkey()}{swapkey()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+computation.\+scope.\+Scope.\+swapkey (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{old\+\_\+key,  }\item[{str}]{new\+\_\+key,  }\item[{}]{new\+\_\+value = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace a variable name, with a potentially new value.
+
+Parameters
+----------
+old_key : str
+    Current variable name to replace
+new_key : str
+    New variable name to replace `old_key` with
+new_value : object
+    Value to be replaced along with the possible renaming
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a42087467981fb2d7f0f01276b38c482d}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a42087467981fb2d7f0f01276b38c482d} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!level@{level}}
+\index{level@{level}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{level}{level}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int pandas.\+core.\+computation.\+scope.\+Scope.\+level\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ac5fbb94a803eb05ab55143a55dff3ccc}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ac5fbb94a803eb05ab55143a55dff3ccc} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!level@{level}}
+\index{level@{level}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{level}{level}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+scope.\+Scope.\+level}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a3ae2dce170ad43cf816770ffee3a57ab}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a3ae2dce170ad43cf816770ffee3a57ab} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!resolvers@{resolvers}}
+\index{resolvers@{resolvers}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{resolvers}{resolvers}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1DeepChainMap}{Deep\+Chain\+Map}} pandas.\+core.\+computation.\+scope.\+Scope.\+resolvers\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a82a453033cd4e04eea042ea51641caf9}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a82a453033cd4e04eea042ea51641caf9} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!resolvers@{resolvers}}
+\index{resolvers@{resolvers}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{resolvers}{resolvers}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+scope.\+Scope.\+resolvers}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ade4ee71014d6855938811dc840468025}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ade4ee71014d6855938811dc840468025} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!scope@{scope}}
+\index{scope@{scope}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{scope}{scope}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1DeepChainMap}{Deep\+Chain\+Map}} pandas.\+core.\+computation.\+scope.\+Scope.\+scope\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a011eabcda8f74a80a2bf8195683b22cb}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a011eabcda8f74a80a2bf8195683b22cb} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!scope@{scope}}
+\index{scope@{scope}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{scope}{scope}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+scope.\+Scope.\+scope}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a968ffddd5d5d629ede4d943978cb5f72}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a968ffddd5d5d629ede4d943978cb5f72} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!target@{target}}
+\index{target@{target}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+scope.\+Scope.\+target}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ad422764b13e67fe51c6e876ba4cb9489}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_ad422764b13e67fe51c6e876ba4cb9489} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!temps@{temps}}
+\index{temps@{temps}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{temps}{temps}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily dict pandas.\+core.\+computation.\+scope.\+Scope.\+temps\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a2cf285341263785240a93c57e0724f19}\label{classpandas_1_1core_1_1computation_1_1scope_1_1Scope_a2cf285341263785240a93c57e0724f19} 
+\index{pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}!temps@{temps}}
+\index{temps@{temps}!pandas.core.computation.scope.Scope@{pandas.core.computation.scope.Scope}}
+\doxysubsubsection{\texorpdfstring{temps}{temps}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+scope.\+Scope.\+temps}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/computation/\mbox{\hyperlink{pandas_2core_2computation_2scope_8py}{scope.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,1584 @@
+\doxysection{Référence de la classe pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array}
+\hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray}{}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray}\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+np.\+dtype\mbox{[}np.\+datetime64\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype}{Datetime\+TZDtype}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a59d755679c2ad4eb1150796d793bc7dd}{dtype}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac0022e5850125c1dbfc426d2fe4a2a73}{tzinfo}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af87ca50a104aa1ad34052d9a373e974d}{tz}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae7aba6c9fae03b0c10c8cf95ccc1150a}{tz}} (self, value)
+\item 
+tzinfo\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a96afc994acfd6a80bd19245161d01ea8}{tzinfo}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a38a125170aac27f65098c1f339183252}{is\+\_\+normalized}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_acc744e57736d97eecc047010b10028e4}{\+\_\+\+\_\+array\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}=None, copy=None)
+\item 
+Iterator \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ad81c5395bc6c0a692dc3d7ae8c584ca5}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a31aa5eb3d23336db864d955ae72199fb}{astype}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}, bool copy=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a0fdae4ed8f8c0374aeb61021793c817b}{tz\+\_\+convert}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a57173eba9f978331f47307f97bcb7a76}{tz}})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a188f9281ee7938c03216958b510ab7d3}{tz\+\_\+localize}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a57173eba9f978331f47307f97bcb7a76}{tz}}, Time\+Ambiguous ambiguous="{}raise"{}, Time\+Nonexistent nonexistent="{}raise"{})
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a580d351aefaf667a02af495ef93bbaed}{to\+\_\+pydatetime}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab43e071802d784c5171b633311233682}{normalize}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray}{Period\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac53331cb9378b416cf2d4d054a673599}{to\+\_\+period}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae8c33ae35386e235e1ca235f0860e5cd}{freq}}=None)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab2bf88d313de8b2a5b2483cbfd8ce10f}{month\+\_\+name}} (self, locale=None)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a581f29272ebc3dc4c2e362b140641330}{day\+\_\+name}} (self, locale=None)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5422d317a2095ed72795df59e7bd9892}{time}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1aa42a8faca53fdd82f27bb2f61bfafd}{timetz}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a33c0a1960914db08dda1cc9a2a244264}{date}} (self)
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aec7fea9773cd72a7cbf267cd51237905}{isocalendar}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+float64\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac4307bb7aad4f036402cfd6ef7823e98}{to\+\_\+julian\+\_\+date}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af88ce4f11d94e9ad0350865c48c65c89}{std}} (self, axis=None, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}=None, out=None, int ddof=1, bool keepdims=False, bool skipna=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9df532fbce71a3049511d6455c6c6812}{unit}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac4c0ea32e59b94fc13e73bafa6221407}{asi8}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a57173eba9f978331f47307f97bcb7a76}{tz}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac0022e5850125c1dbfc426d2fe4a2a73}{tzinfo}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae8c33ae35386e235e1ca235f0860e5cd}{freq}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae782715005892eb5ee9e3e2bf567a8c1}{year}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab5503482f142e4f1cafd4be6ed750ad0}{month}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a279def0f190fc0072c57b60d3a8a446a}{day}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aa572e1baf78ab969320e9caab7fd0889}{hour}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5077765990f8266de0323062bc303ea7}{minute}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a31185809b2b7d8b4478f2d40d5ca7316}{second}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a762e700a8bf789b2cdedd4d1a3df8c24}{microsecond}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a3f1438c8077132612516c24315d10d7c}{nanosecond}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aae3eab2fe8dc5497f2a6bb6111bdeac4}{day\+\_\+of\+\_\+week}} = \mbox{\hyperlink{namespacepandas_1_1core_1_1arrays_1_1datetimes_ac208d548a21ff6d8791b70d1a8445445}{\+\_\+field\+\_\+accessor}}("{}day\+\_\+of\+\_\+week"{}, "{}dow"{}, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab9b25bde5067c0f45e1548a8a45a5a3d}{\+\_\+dayofweek\+\_\+doc}})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8f621e642bcf4a94ae6fccc225c8cc3b}{dayofweek}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aae3eab2fe8dc5497f2a6bb6111bdeac4}{day\+\_\+of\+\_\+week}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a35aa40a5f33174fcdb094142fe2df324}{weekday}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aae3eab2fe8dc5497f2a6bb6111bdeac4}{day\+\_\+of\+\_\+week}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ad3b24019062af61a345bfc51d8573954}{day\+\_\+of\+\_\+year}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a76c5855168ffc13bf388108ae7c3faa5}{dayofyear}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ad3b24019062af61a345bfc51d8573954}{day\+\_\+of\+\_\+year}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aa256016af0a9755bda9ed1456d46182d}{quarter}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a233680368075bb68b66d98f0e8e663e9}{days\+\_\+in\+\_\+month}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1bb290ef07e8e13754382b186d40311e}{daysinmonth}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a233680368075bb68b66d98f0e8e663e9}{days\+\_\+in\+\_\+month}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8ce927adf901698beee50ba885bc2f45}{is\+\_\+month\+\_\+start}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8d33ac3ebb579ceca7eb234f4b2c38c2}{is\+\_\+month\+\_\+end}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_adb8bdd2895944faebaf2186caefdcddc}{is\+\_\+quarter\+\_\+start}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a02c469ea2aa6272fe353d517087a9956}{is\+\_\+quarter\+\_\+end}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aad11495feced457022140337b26a33ec}{is\+\_\+year\+\_\+start}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a163206770a14f07f63a7bd9b9bee8756}{is\+\_\+year\+\_\+end}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a92e8a5698a7cd38103f073447c0e203c}{is\+\_\+leap\+\_\+year}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+type\mbox{[}Timestamp\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6f56e94ea84857a549c9b5879099a4dd}{\+\_\+scalar\+\_\+type}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a61f6f659233fa320281410be126a8c21}{\+\_\+from\+\_\+scalars}} (cls, scalars, \texorpdfstring{$\ast$}{*}Dtype\+Obj \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a624cc821c579ccfe80208ca2cdf58602}{\+\_\+validate\+\_\+dtype}} (cls, values, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac821c09e3771d56647ab5b4b8e5414a5}{\+\_\+simple\+\_\+new}} (cls, npt.\+NDArray\mbox{[}np.\+datetime64\mbox{]} values, Base\+Offset\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae8c33ae35386e235e1ca235f0860e5cd}{freq}}=None, np.\+dtype\mbox{[}np.\+datetime64\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype}{Datetime\+TZDtype}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}=DT64\+NS\+\_\+\+DTYPE)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a46445467884bc7b1e8c72018082167ff}{\+\_\+from\+\_\+sequence}} (cls, scalars, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}=None, bool copy=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a404ca2c5a028e08800d2437a57b691fd}{\+\_\+from\+\_\+sequence\+\_\+not\+\_\+strict}} (cls, data, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}=None, bool copy=False, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a57173eba9f978331f47307f97bcb7a76}{tz}}=lib.\+no\+\_\+default, str\texorpdfstring{$\vert$}{|}Base\+Offset\texorpdfstring{$\vert$}{|}lib.\+No\+Default\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae8c33ae35386e235e1ca235f0860e5cd}{freq}}=lib.\+no\+\_\+default, bool dayfirst=False, bool yearfirst=False, Time\+Ambiguous ambiguous="{}raise"{})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a750729ca94b867175ab7680cf33dc89b}{\+\_\+generate\+\_\+range}} (cls, start, end, int\texorpdfstring{$\vert$}{|}None periods, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae8c33ae35386e235e1ca235f0860e5cd}{freq}}, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a57173eba9f978331f47307f97bcb7a76}{tz}}=None, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab43e071802d784c5171b633311233682}{normalize}}=False, Time\+Ambiguous ambiguous="{}raise"{}, Time\+Nonexistent nonexistent="{}raise"{}, Interval\+Closed\+Type inclusive="{}both"{}, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9df532fbce71a3049511d6455c6c6812}{unit}}=None)
+\item 
+np.\+datetime64 \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9ff7d02eb809f7f9752de708709074cc}{\+\_\+unbox\+\_\+scalar}} (self, value)
+\item 
+Timestamp\texorpdfstring{$\vert$}{|}Na\+TType \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5dd136b57afe9fa203723d15d636308f}{\+\_\+scalar\+\_\+from\+\_\+string}} (self, value)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a832e431b6d291bb9a6161060c6c01855}{\+\_\+check\+\_\+compatible\+\_\+with}} (self, other)
+\item 
+Timestamp\texorpdfstring{$\vert$}{|}Na\+TType \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_adac9350dace96574ca199ecaf5ddee72}{\+\_\+box\+\_\+func}} (self, np.\+datetime64 x)
+\item 
+Resolution \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af43a981a719ccbbbb7a82acca560607f}{\+\_\+resolution\+\_\+obj}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae7d4795653c3c58598a7a18a98ca3f2e}{\+\_\+format\+\_\+native\+\_\+types}} (self, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}float na\+\_\+rep="{}Na\+T"{}, date\+\_\+format=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab110c066c11ff66927d26f4866e459d1}{\+\_\+has\+\_\+same\+\_\+tz}} (self, other)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab70f461e1782624f36135753cd7a87b4}{\+\_\+assert\+\_\+tzawareness\+\_\+compat}} (self, other)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a02205aaeda4cb8004c633653cf6156e6}{\+\_\+add\+\_\+offset}} (self, Base\+Offset offset)
+\item 
+npt.\+NDArray\mbox{[}np.\+int64\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6c17dc8cbe6a9c253b42adf70bf81ee8}{\+\_\+local\+\_\+timestamps}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aec25521b5519856fcf50dd4544b4531c}{\+\_\+scalar\+\_\+type}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a135c52b4dc943069cc13b205504e6c73}{\+\_\+ndarray}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a3903838bccc7d43da1778ac6db89ace2}{\+\_\+typ}} = "{}datetimearray"{}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8e1c8c834f5782264a6a01fa063a8740}{\+\_\+internal\+\_\+fill\+\_\+value}} = np.\+datetime64("{}Na\+T"{}, "{}ns"{})
+\item 
+tuple \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a17ca30a8aeec3bdda3bac829d93bfd8d}{\+\_\+recognized\+\_\+scalars}} = (datetime, np.\+datetime64)
+\item 
+lib \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9898b8e5dd5c3f6ee67e9e3da04af1af}{\+\_\+is\+\_\+recognized\+\_\+dtype}}
+\item 
+tuple \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aacc290af061253073dd5db27987eac2f}{\+\_\+infer\+\_\+matches}} = ("{}datetime"{}, "{}datetime64"{}, "{}date"{})
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a2a29a42638a41254aed06fb03dcbbb75}{\+\_\+bool\+\_\+ops}}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a71f23e7dd080338b09ba4a8d8d4f384f}{\+\_\+object\+\_\+ops}} = \mbox{[}"{}freq"{}, "{}tz"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1bb93dc0dfbb2bdd7e883541a37532a3}{\+\_\+field\+\_\+ops}}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af23a12eb8293e8f8d0dc5b7e236c9e4e}{\+\_\+other\+\_\+ops}} = \mbox{[}"{}date"{}, "{}time"{}, "{}timetz"{}\mbox{]}
+\item 
+tuple \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6e73c35176933cca855c8957ca7d93ee}{\+\_\+datetimelike\+\_\+ops}}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a114b11d1bd024376e216ff21a099add5}{\+\_\+datetimelike\+\_\+methods}}
+\item 
+np \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a564bdd67c3605a5054d5c0bdd21fcaab}{\+\_\+dtype}} .\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}\mbox{[}np.\+datetime64\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype}{Datetime\+TZDtype}}
+\item 
+Base\+Offset \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a836a4541d857eae69d5bc2d65589c03b}{\+\_\+freq}} = None
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a866ba490cb9aeb0bd0c247d7d6561303}{\+\_\+default\+\_\+dtype}} = DT64\+NS\+\_\+\+DTYPE
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab9b25bde5067c0f45e1548a8a45a5a3d}{\+\_\+dayofweek\+\_\+doc}}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a817cd3fcb299c959232b529b2152a9fb}{\+\_\+is\+\_\+month\+\_\+doc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Pandas ExtensionArray for tz-naive or tz-aware datetime data.
+
+.. warning::
+
+   DatetimeArray is currently experimental, and its API may change
+   without warning. In particular, :attr:`DatetimeArray.dtype` is
+   expected to change to always be an instance of an ``ExtensionDtype``
+   subclass.
+
+Parameters
+----------
+values : Series, Index, DatetimeArray, ndarray
+    The datetime data.
+
+    For DatetimeArray `values` (or a Series or Index boxing one),
+    `dtype` and `freq` will be extracted from `values`.
+
+dtype : numpy.dtype or DatetimeTZDtype
+    Note that the only NumPy dtype allowed is 'datetime64[ns]'.
+freq : str or Offset, optional
+    The frequency.
+copy : bool, default False
+    Whether to copy the underlying array of values.
+
+Attributes
+----------
+None
+
+Methods
+-------
+None
+
+Examples
+--------
+>>> pd.arrays.DatetimeArray._from_sequence(
+...    pd.DatetimeIndex(['2023-01-01', '2023-01-02'], freq='D'))
+<DatetimeArray>
+['2023-01-01 00:00:00', '2023-01-02 00:00:00']
+Length: 2, dtype: datetime64[ns]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_acc744e57736d97eecc047010b10028e4}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_acc744e57736d97eecc047010b10028e4} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_\_array\_\_@{\_\_array\_\_}}
+\index{\_\_array\_\_@{\_\_array\_\_}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_\_array\_\_()}{\_\_array\_\_()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+\+\_\+array\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype = {\ttfamily None},  }\item[{}]{copy = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ad81c5395bc6c0a692dc3d7ae8c584ca5}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ad81c5395bc6c0a692dc3d7ae8c584ca5} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily  Iterator pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator over the boxed values
+
+Yields
+------
+tstamp : Timestamp
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a02205aaeda4cb8004c633653cf6156e6}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a02205aaeda4cb8004c633653cf6156e6} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_add\_offset@{\_add\_offset}}
+\index{\_add\_offset@{\_add\_offset}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_add\_offset()}{\_add\_offset()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+add\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Base\+Offset}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab70f461e1782624f36135753cd7a87b4}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab70f461e1782624f36135753cd7a87b4} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_assert\_tzawareness\_compat@{\_assert\_tzawareness\_compat}}
+\index{\_assert\_tzawareness\_compat@{\_assert\_tzawareness\_compat}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_assert\_tzawareness\_compat()}{\_assert\_tzawareness\_compat()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+assert\+\_\+tzawareness\+\_\+compat (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_adac9350dace96574ca199ecaf5ddee72}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_adac9350dace96574ca199ecaf5ddee72} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_box\_func@{\_box\_func}}
+\index{\_box\_func@{\_box\_func}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_box\_func()}{\_box\_func()}}
+{\footnotesize\ttfamily  Timestamp \texorpdfstring{$\vert$}{|} Na\+TType pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+box\+\_\+func (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+datetime64}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a832e431b6d291bb9a6161060c6c01855}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a832e431b6d291bb9a6161060c6c01855} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_check\_compatible\_with@{\_check\_compatible\_with}}
+\index{\_check\_compatible\_with@{\_check\_compatible\_with}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_check\_compatible\_with()}{\_check\_compatible\_with()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+check\+\_\+compatible\+\_\+with (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae7d4795653c3c58598a7a18a98ca3f2e}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae7d4795653c3c58598a7a18a98ca3f2e} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_format\_native\_types@{\_format\_native\_types}}
+\index{\_format\_native\_types@{\_format\_native\_types}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_format\_native\_types()}{\_format\_native\_types()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+format\+\_\+native\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} float }]{na\+\_\+rep = {\ttfamily "{}NaT"{}},  }\item[{}]{date\+\_\+format = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a61f6f659233fa320281410be126a8c21}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a61f6f659233fa320281410be126a8c21} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_from\_scalars@{\_from\_scalars}}
+\index{\_from\_scalars@{\_from\_scalars}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_scalars()}{\_from\_scalars()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+from\+\_\+scalars (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{scalars,  }\item[{\texorpdfstring{$\ast$}{*}Dtype\+Obj}]{dtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a46445467884bc7b1e8c72018082167ff}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a46445467884bc7b1e8c72018082167ff} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_from\_sequence@{\_from\_sequence}}
+\index{\_from\_sequence@{\_from\_sequence}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_sequence()}{\_from\_sequence()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+from\+\_\+sequence (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{scalars,  }\item[{\texorpdfstring{$\ast$}{*}}]{dtype = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a404ca2c5a028e08800d2437a57b691fd}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a404ca2c5a028e08800d2437a57b691fd} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_from\_sequence\_not\_strict@{\_from\_sequence\_not\_strict}}
+\index{\_from\_sequence\_not\_strict@{\_from\_sequence\_not\_strict}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_sequence\_not\_strict()}{\_from\_sequence\_not\_strict()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+from\+\_\+sequence\+\_\+not\+\_\+strict (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{data,  }\item[{\texorpdfstring{$\ast$}{*}}]{dtype = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily False},  }\item[{}]{tz = {\ttfamily lib.no\+\_\+default},  }\item[{str \texorpdfstring{$\vert$}{|} Base\+Offset \texorpdfstring{$\vert$}{|} lib.\+No\+Default \texorpdfstring{$\vert$}{|} None }]{freq = {\ttfamily lib.no\+\_\+default},  }\item[{bool }]{dayfirst = {\ttfamily False},  }\item[{bool }]{yearfirst = {\ttfamily False},  }\item[{Time\+Ambiguous }]{ambiguous = {\ttfamily "{}raise"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}A non-strict version of _from_sequence, called from DatetimeIndex.__new__.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a750729ca94b867175ab7680cf33dc89b}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a750729ca94b867175ab7680cf33dc89b} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_generate\_range@{\_generate\_range}}
+\index{\_generate\_range@{\_generate\_range}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_generate\_range()}{\_generate\_range()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+generate\+\_\+range (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{start,  }\item[{}]{end,  }\item[{int \texorpdfstring{$\vert$}{|} None}]{periods,  }\item[{}]{freq,  }\item[{}]{tz = {\ttfamily None},  }\item[{bool }]{normalize = {\ttfamily False},  }\item[{Time\+Ambiguous }]{ambiguous = {\ttfamily "{}raise"{}},  }\item[{Time\+Nonexistent }]{nonexistent = {\ttfamily "{}raise"{}},  }\item[{Interval\+Closed\+Type }]{inclusive = {\ttfamily "{}both"{}},  }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} None }]{unit = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab110c066c11ff66927d26f4866e459d1}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab110c066c11ff66927d26f4866e459d1} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_has\_same\_tz@{\_has\_same\_tz}}
+\index{\_has\_same\_tz@{\_has\_same\_tz}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_has\_same\_tz()}{\_has\_same\_tz()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+has\+\_\+same\+\_\+tz (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6c17dc8cbe6a9c253b42adf70bf81ee8}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6c17dc8cbe6a9c253b42adf70bf81ee8} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_local\_timestamps@{\_local\_timestamps}}
+\index{\_local\_timestamps@{\_local\_timestamps}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_local\_timestamps()}{\_local\_timestamps()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+int64\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+local\+\_\+timestamps (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Convert to an i8 (unix-like nanosecond timestamp) representation
+while keeping the local timezone and not using UTC.
+This is used to calculate time-of-day information as if the timestamps
+were timezone-naive.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af43a981a719ccbbbb7a82acca560607f}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af43a981a719ccbbbb7a82acca560607f} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_resolution\_obj@{\_resolution\_obj}}
+\index{\_resolution\_obj@{\_resolution\_obj}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_resolution\_obj()}{\_resolution\_obj()}}
+{\footnotesize\ttfamily  Resolution pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+resolution\+\_\+obj (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5dd136b57afe9fa203723d15d636308f}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5dd136b57afe9fa203723d15d636308f} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_scalar\_from\_string@{\_scalar\_from\_string}}
+\index{\_scalar\_from\_string@{\_scalar\_from\_string}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_scalar\_from\_string()}{\_scalar\_from\_string()}}
+{\footnotesize\ttfamily  Timestamp \texorpdfstring{$\vert$}{|} Na\+TType pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+scalar\+\_\+from\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6f56e94ea84857a549c9b5879099a4dd}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6f56e94ea84857a549c9b5879099a4dd} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_scalar\_type@{\_scalar\_type}}
+\index{\_scalar\_type@{\_scalar\_type}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_scalar\_type()}{\_scalar\_type()}}
+{\footnotesize\ttfamily  type\mbox{[}Timestamp\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+scalar\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac821c09e3771d56647ab5b4b8e5414a5}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac821c09e3771d56647ab5b4b8e5414a5} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_simple\_new@{\_simple\_new}}
+\index{\_simple\_new@{\_simple\_new}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_simple\_new()}{\_simple\_new()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+simple\+\_\+new (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{npt.\+NDArray\mbox{[}np.\+datetime64\mbox{]}}]{values,  }\item[{Base\+Offset \texorpdfstring{$\vert$}{|} None }]{freq = {\ttfamily None},  }\item[{np.\+dtype\mbox{[}np.\+datetime64\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype}{Datetime\+TZDtype}} }]{dtype = {\ttfamily DT64NS\+\_\+DTYPE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9ff7d02eb809f7f9752de708709074cc}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9ff7d02eb809f7f9752de708709074cc} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_unbox\_scalar@{\_unbox\_scalar}}
+\index{\_unbox\_scalar@{\_unbox\_scalar}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_unbox\_scalar()}{\_unbox\_scalar()}}
+{\footnotesize\ttfamily  np.\+datetime64 pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+unbox\+\_\+scalar (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a624cc821c579ccfe80208ca2cdf58602}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a624cc821c579ccfe80208ca2cdf58602} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_validate\_dtype@{\_validate\_dtype}}
+\index{\_validate\_dtype@{\_validate\_dtype}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_validate\_dtype()}{\_validate\_dtype()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+validate\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{values,  }\item[{}]{dtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a31aa5eb3d23336db864d955ae72199fb}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a31aa5eb3d23336db864d955ae72199fb} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!astype@{astype}}
+\index{astype@{astype}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{astype()}{astype()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+astype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype,  }\item[{bool }]{copy = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a33c0a1960914db08dda1cc9a2a244264}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a33c0a1960914db08dda1cc9a2a244264} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!date@{date}}
+\index{date@{date}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+date (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns numpy array of python :class:`datetime.date` objects.
+
+Namely, the date part of Timestamps without time and
+timezone information.
+
+Examples
+--------
+For Series:
+
+>>> s = pd.Series(["1/1/2020 10:00:00+00:00", "2/1/2020 11:00:00+00:00"])
+>>> s = pd.to_datetime(s)
+>>> s
+0   2020-01-01 10:00:00+00:00
+1   2020-02-01 11:00:00+00:00
+dtype: datetime64[ns, UTC]
+>>> s.dt.date
+0    2020-01-01
+1    2020-02-01
+dtype: object
+
+For DatetimeIndex:
+
+>>> idx = pd.DatetimeIndex(["1/1/2020 10:00:00+00:00",
+...                         "2/1/2020 11:00:00+00:00"])
+>>> idx.date
+array([datetime.date(2020, 1, 1), datetime.date(2020, 2, 1)], dtype=object)
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a581f29272ebc3dc4c2e362b140641330}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a581f29272ebc3dc4c2e362b140641330} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!day\_name@{day\_name}}
+\index{day\_name@{day\_name}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{day\_name()}{day\_name()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+day\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{locale = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the day names with specified locale.
+
+Parameters
+----------
+locale : str, optional
+    Locale determining the language in which to return the day name.
+    Default is English locale (``'en_US.utf8'``). Use the command
+    ``locale -a`` on your terminal on Unix systems to find your locale
+    language code.
+
+Returns
+-------
+Series or Index
+    Series or Index of day names.
+
+Examples
+--------
+>>> s = pd.Series(pd.date_range(start='2018-01-01', freq='D', periods=3))
+>>> s
+0   2018-01-01
+1   2018-01-02
+2   2018-01-03
+dtype: datetime64[ns]
+>>> s.dt.day_name()
+0       Monday
+1      Tuesday
+2    Wednesday
+dtype: object
+
+>>> idx = pd.date_range(start='2018-01-01', freq='D', periods=3)
+>>> idx
+DatetimeIndex(['2018-01-01', '2018-01-02', '2018-01-03'],
+              dtype='datetime64[ns]', freq='D')
+>>> idx.day_name()
+Index(['Monday', 'Tuesday', 'Wednesday'], dtype='object')
+
+Using the ``locale`` parameter you can set a different locale language,
+for example: ``idx.day_name(locale='pt_BR.utf8')`` will return day
+names in Brazilian Portuguese language.
+
+>>> idx = pd.date_range(start='2018-01-01', freq='D', periods=3)
+>>> idx
+DatetimeIndex(['2018-01-01', '2018-01-02', '2018-01-03'],
+              dtype='datetime64[ns]', freq='D')
+>>> idx.day_name(locale='pt_BR.utf8') # doctest: +SKIP
+Index(['Segunda', 'Terça', 'Quarta'], dtype='object')
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a59d755679c2ad4eb1150796d793bc7dd}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a59d755679c2ad4eb1150796d793bc7dd} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!dtype@{dtype}}
+\index{dtype@{dtype}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{dtype()}{dtype()}}
+{\footnotesize\ttfamily  np.\+dtype\mbox{[}np.\+datetime64\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype}{Datetime\+TZDtype}} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+dtype (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The dtype for the DatetimeArray.
+
+.. warning::
+
+   A future version of pandas will change dtype to never be a
+   ``numpy.dtype``. Instead, :attr:`DatetimeArray.dtype` will
+   always be an instance of an ``ExtensionDtype`` subclass.
+
+Returns
+-------
+numpy.dtype or DatetimeTZDtype
+    If the values are tz-naive, then ``np.dtype('datetime64[ns]')``
+    is returned.
+
+    If the values are tz-aware, then the ``DatetimeTZDtype``
+    is returned.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a38a125170aac27f65098c1f339183252}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a38a125170aac27f65098c1f339183252} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!is\_normalized@{is\_normalized}}
+\index{is\_normalized@{is\_normalized}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{is\_normalized()}{is\_normalized()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+is\+\_\+normalized (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if all of the dates are at midnight ("no time")
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aec7fea9773cd72a7cbf267cd51237905}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aec7fea9773cd72a7cbf267cd51237905} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!isocalendar@{isocalendar}}
+\index{isocalendar@{isocalendar}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{isocalendar()}{isocalendar()}}
+{\footnotesize\ttfamily  Data\+Frame pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+isocalendar (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate year, week, and day according to the ISO 8601 standard.
+
+Returns
+-------
+DataFrame
+    With columns year, week and day.
+
+See Also
+--------
+Timestamp.isocalendar : Function return a 3-tuple containing ISO year,
+    week number, and weekday for the given Timestamp object.
+datetime.date.isocalendar : Return a named tuple object with
+    three components: year, week and weekday.
+
+Examples
+--------
+>>> idx = pd.date_range(start='2019-12-29', freq='D', periods=4)
+>>> idx.isocalendar()
+            year  week  day
+2019-12-29  2019    52    7
+2019-12-30  2020     1    1
+2019-12-31  2020     1    2
+2020-01-01  2020     1    3
+>>> idx.isocalendar().week
+2019-12-29    52
+2019-12-30     1
+2019-12-31     1
+2020-01-01     1
+Freq: D, Name: week, dtype: UInt32
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab2bf88d313de8b2a5b2483cbfd8ce10f}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab2bf88d313de8b2a5b2483cbfd8ce10f} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!month\_name@{month\_name}}
+\index{month\_name@{month\_name}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{month\_name()}{month\_name()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+month\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{locale = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the month names with specified locale.
+
+Parameters
+----------
+locale : str, optional
+    Locale determining the language in which to return the month name.
+    Default is English locale (``'en_US.utf8'``). Use the command
+    ``locale -a`` on your terminal on Unix systems to find your locale
+    language code.
+
+Returns
+-------
+Series or Index
+    Series or Index of month names.
+
+Examples
+--------
+>>> s = pd.Series(pd.date_range(start='2018-01', freq='ME', periods=3))
+>>> s
+0   2018-01-31
+1   2018-02-28
+2   2018-03-31
+dtype: datetime64[ns]
+>>> s.dt.month_name()
+0     January
+1    February
+2       March
+dtype: object
+
+>>> idx = pd.date_range(start='2018-01', freq='ME', periods=3)
+>>> idx
+DatetimeIndex(['2018-01-31', '2018-02-28', '2018-03-31'],
+              dtype='datetime64[ns]', freq='ME')
+>>> idx.month_name()
+Index(['January', 'February', 'March'], dtype='object')
+
+Using the ``locale`` parameter you can set a different locale language,
+for example: ``idx.month_name(locale='pt_BR.utf8')`` will return month
+names in Brazilian Portuguese language.
+
+>>> idx = pd.date_range(start='2018-01', freq='ME', periods=3)
+>>> idx
+DatetimeIndex(['2018-01-31', '2018-02-28', '2018-03-31'],
+              dtype='datetime64[ns]', freq='ME')
+>>> idx.month_name(locale='pt_BR.utf8')  # doctest: +SKIP
+Index(['Janeiro', 'Fevereiro', 'Março'], dtype='object')
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab43e071802d784c5171b633311233682}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab43e071802d784c5171b633311233682} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!normalize@{normalize}}
+\index{normalize@{normalize}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+normalize (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert times to midnight.
+
+The time component of the date-time is converted to midnight i.e.
+00:00:00. This is useful in cases, when the time does not matter.
+Length is unaltered. The timezones are unaffected.
+
+This method is available on Series with datetime values under
+the ``.dt`` accessor, and directly on Datetime Array/Index.
+
+Returns
+-------
+DatetimeArray, DatetimeIndex or Series
+    The same type as the original data. Series will have the same
+    name and index. DatetimeIndex will have the same name.
+
+See Also
+--------
+floor : Floor the datetimes to the specified freq.
+ceil : Ceil the datetimes to the specified freq.
+round : Round the datetimes to the specified freq.
+
+Examples
+--------
+>>> idx = pd.date_range(start='2014-08-01 10:00', freq='h',
+...                     periods=3, tz='Asia/Calcutta')
+>>> idx
+DatetimeIndex(['2014-08-01 10:00:00+05:30',
+               '2014-08-01 11:00:00+05:30',
+               '2014-08-01 12:00:00+05:30'],
+                dtype='datetime64[ns, Asia/Calcutta]', freq='h')
+>>> idx.normalize()
+DatetimeIndex(['2014-08-01 00:00:00+05:30',
+               '2014-08-01 00:00:00+05:30',
+               '2014-08-01 00:00:00+05:30'],
+               dtype='datetime64[ns, Asia/Calcutta]', freq=None)
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af88ce4f11d94e9ad0350865c48c65c89}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af88ce4f11d94e9ad0350865c48c65c89} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!std@{std}}
+\index{std@{std}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{std()}{std()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+std (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{axis = {\ttfamily None},  }\item[{}]{dtype = {\ttfamily None},  }\item[{}]{out = {\ttfamily None},  }\item[{int }]{ddof = {\ttfamily 1},  }\item[{bool }]{keepdims = {\ttfamily False},  }\item[{bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return sample standard deviation over requested axis.
+
+Normalized by `N-1` by default. This can be changed using ``ddof``.
+
+Parameters
+----------
+axis : int, optional
+    Axis for the function to be applied on. For :class:`pandas.Series`
+    this parameter is unused and defaults to ``None``.
+ddof : int, default 1
+    Degrees of Freedom. The divisor used in calculations is `N - ddof`,
+    where `N` represents the number of elements.
+skipna : bool, default True
+    Exclude NA/null values. If an entire row/column is ``NA``, the result
+    will be ``NA``.
+
+Returns
+-------
+Timedelta
+
+See Also
+--------
+numpy.ndarray.std : Returns the standard deviation of the array elements
+    along given axis.
+Series.std : Return sample standard deviation over requested axis.
+
+Examples
+--------
+For :class:`pandas.DatetimeIndex`:
+
+>>> idx = pd.date_range('2001-01-01 00:00', periods=3)
+>>> idx
+DatetimeIndex(['2001-01-01', '2001-01-02', '2001-01-03'],
+              dtype='datetime64[ns]', freq='D')
+>>> idx.std()
+Timedelta('1 days 00:00:00')
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5422d317a2095ed72795df59e7bd9892}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5422d317a2095ed72795df59e7bd9892} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!time@{time}}
+\index{time@{time}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+time (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns numpy array of :class:`datetime.time` objects.
+
+The time part of the Timestamps.
+
+Examples
+--------
+For Series:
+
+>>> s = pd.Series(["1/1/2020 10:00:00+00:00", "2/1/2020 11:00:00+00:00"])
+>>> s = pd.to_datetime(s)
+>>> s
+0   2020-01-01 10:00:00+00:00
+1   2020-02-01 11:00:00+00:00
+dtype: datetime64[ns, UTC]
+>>> s.dt.time
+0    10:00:00
+1    11:00:00
+dtype: object
+
+For DatetimeIndex:
+
+>>> idx = pd.DatetimeIndex(["1/1/2020 10:00:00+00:00",
+...                         "2/1/2020 11:00:00+00:00"])
+>>> idx.time
+array([datetime.time(10, 0), datetime.time(11, 0)], dtype=object)
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1aa42a8faca53fdd82f27bb2f61bfafd}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1aa42a8faca53fdd82f27bb2f61bfafd} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!timetz@{timetz}}
+\index{timetz@{timetz}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{timetz()}{timetz()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+timetz (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns numpy array of :class:`datetime.time` objects with timezones.
+
+The time part of the Timestamps.
+
+Examples
+--------
+For Series:
+
+>>> s = pd.Series(["1/1/2020 10:00:00+00:00", "2/1/2020 11:00:00+00:00"])
+>>> s = pd.to_datetime(s)
+>>> s
+0   2020-01-01 10:00:00+00:00
+1   2020-02-01 11:00:00+00:00
+dtype: datetime64[ns, UTC]
+>>> s.dt.timetz
+0    10:00:00+00:00
+1    11:00:00+00:00
+dtype: object
+
+For DatetimeIndex:
+
+>>> idx = pd.DatetimeIndex(["1/1/2020 10:00:00+00:00",
+...                         "2/1/2020 11:00:00+00:00"])
+>>> idx.timetz
+array([datetime.time(10, 0, tzinfo=datetime.timezone.utc),
+datetime.time(11, 0, tzinfo=datetime.timezone.utc)], dtype=object)
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac4307bb7aad4f036402cfd6ef7823e98}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac4307bb7aad4f036402cfd6ef7823e98} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!to\_julian\_date@{to\_julian\_date}}
+\index{to\_julian\_date@{to\_julian\_date}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{to\_julian\_date()}{to\_julian\_date()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+float64\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+to\+\_\+julian\+\_\+date (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert Datetime Array to float64 ndarray of Julian Dates.
+0 Julian date is noon January 1, 4713 BC.
+https://en.wikipedia.org/wiki/Julian_day
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac53331cb9378b416cf2d4d054a673599}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac53331cb9378b416cf2d4d054a673599} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!to\_period@{to\_period}}
+\index{to\_period@{to\_period}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{to\_period()}{to\_period()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1period_1_1PeriodArray}{Period\+Array}} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+to\+\_\+period (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{freq = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cast to PeriodArray/PeriodIndex at a particular frequency.
+
+Converts DatetimeArray/Index to PeriodArray/PeriodIndex.
+
+Parameters
+----------
+freq : str or Period, optional
+    One of pandas' :ref:`period aliases <timeseries.period_aliases>`
+    or an Period object. Will be inferred by default.
+
+Returns
+-------
+PeriodArray/PeriodIndex
+
+Raises
+------
+ValueError
+    When converting a DatetimeArray/Index with non-regular values,
+    so that a frequency cannot be inferred.
+
+See Also
+--------
+PeriodIndex: Immutable ndarray holding ordinal values.
+DatetimeIndex.to_pydatetime: Return DatetimeIndex as object.
+
+Examples
+--------
+>>> df = pd.DataFrame({"y": [1, 2, 3]},
+...                   index=pd.to_datetime(["2000-03-31 00:00:00",
+...                                         "2000-05-31 00:00:00",
+...                                         "2000-08-31 00:00:00"]))
+>>> df.index.to_period("M")
+PeriodIndex(['2000-03', '2000-05', '2000-08'],
+            dtype='period[M]')
+
+Infer the daily frequency
+
+>>> idx = pd.date_range("2017-01-01", periods=2)
+>>> idx.to_period()
+PeriodIndex(['2017-01-01', '2017-01-02'],
+            dtype='period[D]')
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a580d351aefaf667a02af495ef93bbaed}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a580d351aefaf667a02af495ef93bbaed} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!to\_pydatetime@{to\_pydatetime}}
+\index{to\_pydatetime@{to\_pydatetime}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{to\_pydatetime()}{to\_pydatetime()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+to\+\_\+pydatetime (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an ndarray of ``datetime.datetime`` objects.
+
+Returns
+-------
+numpy.ndarray
+
+Examples
+--------
+>>> idx = pd.date_range('2018-02-27', periods=3)
+>>> idx.to_pydatetime()
+array([datetime.datetime(2018, 2, 27, 0, 0),
+       datetime.datetime(2018, 2, 28, 0, 0),
+       datetime.datetime(2018, 3, 1, 0, 0)], dtype=object)
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af87ca50a104aa1ad34052d9a373e974d}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af87ca50a104aa1ad34052d9a373e974d} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!tz@{tz}}
+\index{tz@{tz}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{tz()}{tz()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac0022e5850125c1dbfc426d2fe4a2a73}{tzinfo}} \texorpdfstring{$\vert$}{|} None pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+tz (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the timezone.
+
+Returns
+-------
+datetime.tzinfo, pytz.tzinfo.BaseTZInfo, dateutil.tz.tz.tzfile, or None
+    Returns None when the array is tz-naive.
+
+Examples
+--------
+For Series:
+
+>>> s = pd.Series(["1/1/2020 10:00:00+00:00", "2/1/2020 11:00:00+00:00"])
+>>> s = pd.to_datetime(s)
+>>> s
+0   2020-01-01 10:00:00+00:00
+1   2020-02-01 11:00:00+00:00
+dtype: datetime64[ns, UTC]
+>>> s.dt.tz
+datetime.timezone.utc
+
+For DatetimeIndex:
+
+>>> idx = pd.DatetimeIndex(["1/1/2020 10:00:00+00:00",
+...                         "2/1/2020 11:00:00+00:00"])
+>>> idx.tz
+datetime.timezone.utc
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae7aba6c9fae03b0c10c8cf95ccc1150a}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae7aba6c9fae03b0c10c8cf95ccc1150a} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!tz@{tz}}
+\index{tz@{tz}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{tz()}{tz()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+tz (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a0fdae4ed8f8c0374aeb61021793c817b}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a0fdae4ed8f8c0374aeb61021793c817b} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!tz\_convert@{tz\_convert}}
+\index{tz\_convert@{tz\_convert}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{tz\_convert()}{tz\_convert()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+tz\+\_\+convert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tz }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert tz-aware Datetime Array/Index from one time zone to another.
+
+Parameters
+----------
+tz : str, pytz.timezone, dateutil.tz.tzfile, datetime.tzinfo or None
+    Time zone for time. Corresponding timestamps would be converted
+    to this time zone of the Datetime Array/Index. A `tz` of None will
+    convert to UTC and remove the timezone information.
+
+Returns
+-------
+Array or Index
+
+Raises
+------
+TypeError
+    If Datetime Array/Index is tz-naive.
+
+See Also
+--------
+DatetimeIndex.tz : A timezone that has a variable offset from UTC.
+DatetimeIndex.tz_localize : Localize tz-naive DatetimeIndex to a
+    given time zone, or remove timezone from a tz-aware DatetimeIndex.
+
+Examples
+--------
+With the `tz` parameter, we can change the DatetimeIndex
+to other time zones:
+
+>>> dti = pd.date_range(start='2014-08-01 09:00',
+...                     freq='h', periods=3, tz='Europe/Berlin')
+
+>>> dti
+DatetimeIndex(['2014-08-01 09:00:00+02:00',
+               '2014-08-01 10:00:00+02:00',
+               '2014-08-01 11:00:00+02:00'],
+              dtype='datetime64[ns, Europe/Berlin]', freq='h')
+
+>>> dti.tz_convert('US/Central')
+DatetimeIndex(['2014-08-01 02:00:00-05:00',
+               '2014-08-01 03:00:00-05:00',
+               '2014-08-01 04:00:00-05:00'],
+              dtype='datetime64[ns, US/Central]', freq='h')
+
+With the ``tz=None``, we can remove the timezone (after converting
+to UTC if necessary):
+
+>>> dti = pd.date_range(start='2014-08-01 09:00', freq='h',
+...                     periods=3, tz='Europe/Berlin')
+
+>>> dti
+DatetimeIndex(['2014-08-01 09:00:00+02:00',
+               '2014-08-01 10:00:00+02:00',
+               '2014-08-01 11:00:00+02:00'],
+                dtype='datetime64[ns, Europe/Berlin]', freq='h')
+
+>>> dti.tz_convert(None)
+DatetimeIndex(['2014-08-01 07:00:00',
+               '2014-08-01 08:00:00',
+               '2014-08-01 09:00:00'],
+                dtype='datetime64[ns]', freq='h')
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a188f9281ee7938c03216958b510ab7d3}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a188f9281ee7938c03216958b510ab7d3} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!tz\_localize@{tz\_localize}}
+\index{tz\_localize@{tz\_localize}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{tz\_localize()}{tz\_localize()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+tz\+\_\+localize (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tz,  }\item[{Time\+Ambiguous }]{ambiguous = {\ttfamily "{}raise"{}},  }\item[{Time\+Nonexistent }]{nonexistent = {\ttfamily "{}raise"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Localize tz-naive Datetime Array/Index to tz-aware Datetime Array/Index.
+
+This method takes a time zone (tz) naive Datetime Array/Index object
+and makes this time zone aware. It does not move the time to another
+time zone.
+
+This method can also be used to do the inverse -- to create a time
+zone unaware object from an aware object. To that end, pass `tz=None`.
+
+Parameters
+----------
+tz : str, pytz.timezone, dateutil.tz.tzfile, datetime.tzinfo or None
+    Time zone to convert timestamps to. Passing ``None`` will
+    remove the time zone information preserving local time.
+ambiguous : 'infer', 'NaT', bool array, default 'raise'
+    When clocks moved backward due to DST, ambiguous times may arise.
+    For example in Central European Time (UTC+01), when going from
+    03:00 DST to 02:00 non-DST, 02:30:00 local time occurs both at
+    00:30:00 UTC and at 01:30:00 UTC. In such a situation, the
+    `ambiguous` parameter dictates how ambiguous times should be
+    handled.
+
+    - 'infer' will attempt to infer fall dst-transition hours based on
+      order
+    - bool-ndarray where True signifies a DST time, False signifies a
+      non-DST time (note that this flag is only applicable for
+      ambiguous times)
+    - 'NaT' will return NaT where there are ambiguous times
+    - 'raise' will raise an AmbiguousTimeError if there are ambiguous
+      times.
+
+nonexistent : 'shift_forward', 'shift_backward, 'NaT', timedelta, \
+default 'raise'
+    A nonexistent time does not exist in a particular timezone
+    where clocks moved forward due to DST.
+
+    - 'shift_forward' will shift the nonexistent time forward to the
+      closest existing time
+    - 'shift_backward' will shift the nonexistent time backward to the
+      closest existing time
+    - 'NaT' will return NaT where there are nonexistent times
+    - timedelta objects will shift nonexistent times by the timedelta
+    - 'raise' will raise an NonExistentTimeError if there are
+      nonexistent times.
+
+Returns
+-------
+Same type as self
+    Array/Index converted to the specified time zone.
+
+Raises
+------
+TypeError
+    If the Datetime Array/Index is tz-aware and tz is not None.
+
+See Also
+--------
+DatetimeIndex.tz_convert : Convert tz-aware DatetimeIndex from
+    one time zone to another.
+
+Examples
+--------
+>>> tz_naive = pd.date_range('2018-03-01 09:00', periods=3)
+>>> tz_naive
+DatetimeIndex(['2018-03-01 09:00:00', '2018-03-02 09:00:00',
+               '2018-03-03 09:00:00'],
+              dtype='datetime64[ns]', freq='D')
+
+Localize DatetimeIndex in US/Eastern time zone:
+
+>>> tz_aware = tz_naive.tz_localize(tz='US/Eastern')
+>>> tz_aware
+DatetimeIndex(['2018-03-01 09:00:00-05:00',
+               '2018-03-02 09:00:00-05:00',
+               '2018-03-03 09:00:00-05:00'],
+              dtype='datetime64[ns, US/Eastern]', freq=None)
+
+With the ``tz=None``, we can remove the time zone information
+while keeping the local time (not converted to UTC):
+
+>>> tz_aware.tz_localize(None)
+DatetimeIndex(['2018-03-01 09:00:00', '2018-03-02 09:00:00',
+               '2018-03-03 09:00:00'],
+              dtype='datetime64[ns]', freq=None)
+
+Be careful with DST changes. When there is sequential data, pandas can
+infer the DST time:
+
+>>> s = pd.to_datetime(pd.Series(['2018-10-28 01:30:00',
+...                               '2018-10-28 02:00:00',
+...                               '2018-10-28 02:30:00',
+...                               '2018-10-28 02:00:00',
+...                               '2018-10-28 02:30:00',
+...                               '2018-10-28 03:00:00',
+...                               '2018-10-28 03:30:00']))
+>>> s.dt.tz_localize('CET', ambiguous='infer')
+0   2018-10-28 01:30:00+02:00
+1   2018-10-28 02:00:00+02:00
+2   2018-10-28 02:30:00+02:00
+3   2018-10-28 02:00:00+01:00
+4   2018-10-28 02:30:00+01:00
+5   2018-10-28 03:00:00+01:00
+6   2018-10-28 03:30:00+01:00
+dtype: datetime64[ns, CET]
+
+In some cases, inferring the DST is impossible. In such cases, you can
+pass an ndarray to the ambiguous parameter to set the DST explicitly
+
+>>> s = pd.to_datetime(pd.Series(['2018-10-28 01:20:00',
+...                               '2018-10-28 02:36:00',
+...                               '2018-10-28 03:46:00']))
+>>> s.dt.tz_localize('CET', ambiguous=np.array([True, True, False]))
+0   2018-10-28 01:20:00+02:00
+1   2018-10-28 02:36:00+02:00
+2   2018-10-28 03:46:00+01:00
+dtype: datetime64[ns, CET]
+
+If the DST transition causes nonexistent times, you can shift these
+dates forward or backwards with a timedelta object or `'shift_forward'`
+or `'shift_backwards'`.
+
+>>> s = pd.to_datetime(pd.Series(['2015-03-29 02:30:00',
+...                               '2015-03-29 03:30:00']))
+>>> s.dt.tz_localize('Europe/Warsaw', nonexistent='shift_forward')
+0   2015-03-29 03:00:00+02:00
+1   2015-03-29 03:30:00+02:00
+dtype: datetime64[ns, Europe/Warsaw]
+
+>>> s.dt.tz_localize('Europe/Warsaw', nonexistent='shift_backward')
+0   2015-03-29 01:59:59.999999999+01:00
+1   2015-03-29 03:30:00+02:00
+dtype: datetime64[ns, Europe/Warsaw]
+
+>>> s.dt.tz_localize('Europe/Warsaw', nonexistent=pd.Timedelta('1h'))
+0   2015-03-29 03:30:00+02:00
+1   2015-03-29 03:30:00+02:00
+dtype: datetime64[ns, Europe/Warsaw]
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a96afc994acfd6a80bd19245161d01ea8}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a96afc994acfd6a80bd19245161d01ea8} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!tzinfo@{tzinfo}}
+\index{tzinfo@{tzinfo}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{tzinfo()}{tzinfo()}}
+{\footnotesize\ttfamily  tzinfo \texorpdfstring{$\vert$}{|} None pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+tzinfo (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Alias for tz attribute
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a2a29a42638a41254aed06fb03dcbbb75}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a2a29a42638a41254aed06fb03dcbbb75} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_bool\_ops@{\_bool\_ops}}
+\index{\_bool\_ops@{\_bool\_ops}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_bool\_ops}{\_bool\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+bool\+\_\+ops\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_month\_start"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_month\_end"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_quarter\_start"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_quarter\_end"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_year\_start"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_year\_end"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_leap\_year"{}},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a114b11d1bd024376e216ff21a099add5}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a114b11d1bd024376e216ff21a099add5} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_datetimelike\_methods@{\_datetimelike\_methods}}
+\index{\_datetimelike\_methods@{\_datetimelike\_methods}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_datetimelike\_methods}{\_datetimelike\_methods}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+datetimelike\+\_\+methods\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}to\_period"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}tz\_localize"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}tz\_convert"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}normalize"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}strftime"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}round"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}floor"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}ceil"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}month\_name"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day\_name"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}as\_unit"{}},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6e73c35176933cca855c8957ca7d93ee}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a6e73c35176933cca855c8957ca7d93ee} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_datetimelike\_ops@{\_datetimelike\_ops}}
+\index{\_datetimelike\_ops@{\_datetimelike\_ops}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_datetimelike\_ops}{\_datetimelike\_ops}}
+{\footnotesize\ttfamily tuple pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+datetimelike\+\_\+ops\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \_field\_ops\ +\ \_object\_ops\ +\ \_bool\_ops\ +\ \_other\_ops\ +\ [\textcolor{stringliteral}{"{}unit"{}}]}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab9b25bde5067c0f45e1548a8a45a5a3d}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab9b25bde5067c0f45e1548a8a45a5a3d} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_dayofweek\_doc@{\_dayofweek\_doc}}
+\index{\_dayofweek\_doc@{\_dayofweek\_doc}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_dayofweek\_doc}{\_dayofweek\_doc}}
+{\footnotesize\ttfamily str pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+dayofweek\+\_\+doc\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a866ba490cb9aeb0bd0c247d7d6561303}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a866ba490cb9aeb0bd0c247d7d6561303} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_default\_dtype@{\_default\_dtype}}
+\index{\_default\_dtype@{\_default\_dtype}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_default\_dtype}{\_default\_dtype}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+default\+\_\+dtype = DT64\+NS\+\_\+\+DTYPE\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a564bdd67c3605a5054d5c0bdd21fcaab}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a564bdd67c3605a5054d5c0bdd21fcaab} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_dtype@{\_dtype}}
+\index{\_dtype@{\_dtype}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_dtype}{\_dtype}}
+{\footnotesize\ttfamily np pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+dtype .\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}{dtype}}\mbox{[}np.\+datetime64\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype}{Datetime\+TZDtype}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1bb93dc0dfbb2bdd7e883541a37532a3}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1bb93dc0dfbb2bdd7e883541a37532a3} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_field\_ops@{\_field\_ops}}
+\index{\_field\_ops@{\_field\_ops}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_field\_ops}{\_field\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+field\+\_\+ops\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}month"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hour"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}minute"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}second"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}weekday"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dayofweek"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day\_of\_week"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dayofyear"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day\_of\_year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}quarter"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}days\_in\_month"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}daysinmonth"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}microsecond"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}nanosecond"{}},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a836a4541d857eae69d5bc2d65589c03b}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a836a4541d857eae69d5bc2d65589c03b} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_freq@{\_freq}}
+\index{\_freq@{\_freq}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_freq}{\_freq}}
+{\footnotesize\ttfamily Base\+Offset pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+freq = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aacc290af061253073dd5db27987eac2f}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aacc290af061253073dd5db27987eac2f} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_infer\_matches@{\_infer\_matches}}
+\index{\_infer\_matches@{\_infer\_matches}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_infer\_matches}{\_infer\_matches}}
+{\footnotesize\ttfamily tuple pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+infer\+\_\+matches = ("{}datetime"{}, "{}datetime64"{}, "{}date"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8e1c8c834f5782264a6a01fa063a8740}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8e1c8c834f5782264a6a01fa063a8740} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_internal\_fill\_value@{\_internal\_fill\_value}}
+\index{\_internal\_fill\_value@{\_internal\_fill\_value}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_internal\_fill\_value}{\_internal\_fill\_value}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+internal\+\_\+fill\+\_\+value = np.\+datetime64("{}Na\+T"{}, "{}ns"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a817cd3fcb299c959232b529b2152a9fb}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a817cd3fcb299c959232b529b2152a9fb} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_is\_month\_doc@{\_is\_month\_doc}}
+\index{\_is\_month\_doc@{\_is\_month\_doc}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_is\_month\_doc}{\_is\_month\_doc}}
+{\footnotesize\ttfamily str pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+is\+\_\+month\+\_\+doc\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9898b8e5dd5c3f6ee67e9e3da04af1af}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9898b8e5dd5c3f6ee67e9e3da04af1af} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_is\_recognized\_dtype@{\_is\_recognized\_dtype}}
+\index{\_is\_recognized\_dtype@{\_is\_recognized\_dtype}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_is\_recognized\_dtype}{\_is\_recognized\_dtype}}
+{\footnotesize\ttfamily lib pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+is\+\_\+recognized\+\_\+dtype\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{keyword}{lambda}\ x.is\_np\_dtype(x,\ \textcolor{stringliteral}{"{}M"{}})\ \textcolor{keywordflow}{or}\ isinstance(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ x,\ DatetimeTZDtype}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a135c52b4dc943069cc13b205504e6c73}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a135c52b4dc943069cc13b205504e6c73} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_ndarray@{\_ndarray}}
+\index{\_ndarray@{\_ndarray}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_ndarray}{\_ndarray}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+ndarray\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a71f23e7dd080338b09ba4a8d8d4f384f}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a71f23e7dd080338b09ba4a8d8d4f384f} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_object\_ops@{\_object\_ops}}
+\index{\_object\_ops@{\_object\_ops}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_object\_ops}{\_object\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+object\+\_\+ops = \mbox{[}"{}freq"{}, "{}tz"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af23a12eb8293e8f8d0dc5b7e236c9e4e}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_af23a12eb8293e8f8d0dc5b7e236c9e4e} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_other\_ops@{\_other\_ops}}
+\index{\_other\_ops@{\_other\_ops}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_other\_ops}{\_other\_ops}}
+{\footnotesize\ttfamily list pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+other\+\_\+ops = \mbox{[}"{}date"{}, "{}time"{}, "{}timetz"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a17ca30a8aeec3bdda3bac829d93bfd8d}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a17ca30a8aeec3bdda3bac829d93bfd8d} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_recognized\_scalars@{\_recognized\_scalars}}
+\index{\_recognized\_scalars@{\_recognized\_scalars}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_recognized\_scalars}{\_recognized\_scalars}}
+{\footnotesize\ttfamily tuple pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+recognized\+\_\+scalars = (datetime, np.\+datetime64)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aec25521b5519856fcf50dd4544b4531c}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aec25521b5519856fcf50dd4544b4531c} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_scalar\_type@{\_scalar\_type}}
+\index{\_scalar\_type@{\_scalar\_type}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_scalar\_type}{\_scalar\_type}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+scalar\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a3903838bccc7d43da1778ac6db89ace2}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a3903838bccc7d43da1778ac6db89ace2} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!\_typ@{\_typ}}
+\index{\_typ@{\_typ}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{\_typ}{\_typ}}
+{\footnotesize\ttfamily str pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+\_\+typ = "{}datetimearray"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac4c0ea32e59b94fc13e73bafa6221407}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac4c0ea32e59b94fc13e73bafa6221407} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!asi8@{asi8}}
+\index{asi8@{asi8}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{asi8}{asi8}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+asi8}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a279def0f190fc0072c57b60d3a8a446a}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a279def0f190fc0072c57b60d3a8a446a} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!day@{day}}
+\index{day@{day}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+day\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}D"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aae3eab2fe8dc5497f2a6bb6111bdeac4}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aae3eab2fe8dc5497f2a6bb6111bdeac4} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!day\_of\_week@{day\_of\_week}}
+\index{day\_of\_week@{day\_of\_week}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{day\_of\_week}{day\_of\_week}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+day\+\_\+of\+\_\+week = \mbox{\hyperlink{namespacepandas_1_1core_1_1arrays_1_1datetimes_ac208d548a21ff6d8791b70d1a8445445}{\+\_\+field\+\_\+accessor}}("{}day\+\_\+of\+\_\+week"{}, "{}dow"{}, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab9b25bde5067c0f45e1548a8a45a5a3d}{\+\_\+dayofweek\+\_\+doc}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ad3b24019062af61a345bfc51d8573954}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ad3b24019062af61a345bfc51d8573954} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!day\_of\_year@{day\_of\_year}}
+\index{day\_of\_year@{day\_of\_year}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{day\_of\_year}{day\_of\_year}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+day\+\_\+of\+\_\+year\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dayofyear"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}doy"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8f621e642bcf4a94ae6fccc225c8cc3b}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8f621e642bcf4a94ae6fccc225c8cc3b} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!dayofweek@{dayofweek}}
+\index{dayofweek@{dayofweek}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{dayofweek}{dayofweek}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+dayofweek = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aae3eab2fe8dc5497f2a6bb6111bdeac4}{day\+\_\+of\+\_\+week}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a76c5855168ffc13bf388108ae7c3faa5}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a76c5855168ffc13bf388108ae7c3faa5} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!dayofyear@{dayofyear}}
+\index{dayofyear@{dayofyear}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{dayofyear}{dayofyear}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+dayofyear = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ad3b24019062af61a345bfc51d8573954}{day\+\_\+of\+\_\+year}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a233680368075bb68b66d98f0e8e663e9}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a233680368075bb68b66d98f0e8e663e9} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!days\_in\_month@{days\_in\_month}}
+\index{days\_in\_month@{days\_in\_month}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{days\_in\_month}{days\_in\_month}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+days\+\_\+in\+\_\+month\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}days\_in\_month"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dim"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1bb290ef07e8e13754382b186d40311e}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a1bb290ef07e8e13754382b186d40311e} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!daysinmonth@{daysinmonth}}
+\index{daysinmonth@{daysinmonth}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{daysinmonth}{daysinmonth}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+daysinmonth = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a233680368075bb68b66d98f0e8e663e9}{days\+\_\+in\+\_\+month}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a74bcbe3d14cbadc62b06d4a06e26cf94} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!dtype@{dtype}}
+\index{dtype@{dtype}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{dtype}{dtype}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+dtype}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae8c33ae35386e235e1ca235f0860e5cd}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae8c33ae35386e235e1ca235f0860e5cd} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!freq@{freq}}
+\index{freq@{freq}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{freq}{freq}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+freq}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aa572e1baf78ab969320e9caab7fd0889}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aa572e1baf78ab969320e9caab7fd0889} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!hour@{hour}}
+\index{hour@{hour}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+hour\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hour"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}h"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a92e8a5698a7cd38103f073447c0e203c}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a92e8a5698a7cd38103f073447c0e203c} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!is\_leap\_year@{is\_leap\_year}}
+\index{is\_leap\_year@{is\_leap\_year}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{is\_leap\_year}{is\_leap\_year}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+is\+\_\+leap\+\_\+year\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_leap\_year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_leap\_year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8d33ac3ebb579ceca7eb234f4b2c38c2}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8d33ac3ebb579ceca7eb234f4b2c38c2} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!is\_month\_end@{is\_month\_end}}
+\index{is\_month\_end@{is\_month\_end}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{is\_month\_end}{is\_month\_end}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+is\+\_\+month\+\_\+end\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_month\_end"{}},\ \textcolor{stringliteral}{"{}is\_month\_end"{}},\ \_is\_month\_doc.format(first\_or\_last=\textcolor{stringliteral}{"{}last"{}})}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8ce927adf901698beee50ba885bc2f45}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a8ce927adf901698beee50ba885bc2f45} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!is\_month\_start@{is\_month\_start}}
+\index{is\_month\_start@{is\_month\_start}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{is\_month\_start}{is\_month\_start}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+is\+\_\+month\+\_\+start\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_month\_start"{}},\ \textcolor{stringliteral}{"{}is\_month\_start"{}},\ \_is\_month\_doc.format(first\_or\_last=\textcolor{stringliteral}{"{}first"{}})}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a02c469ea2aa6272fe353d517087a9956}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a02c469ea2aa6272fe353d517087a9956} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!is\_quarter\_end@{is\_quarter\_end}}
+\index{is\_quarter\_end@{is\_quarter\_end}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{is\_quarter\_end}{is\_quarter\_end}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+is\+\_\+quarter\+\_\+end\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_quarter\_end"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_quarter\_end"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_adb8bdd2895944faebaf2186caefdcddc}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_adb8bdd2895944faebaf2186caefdcddc} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!is\_quarter\_start@{is\_quarter\_start}}
+\index{is\_quarter\_start@{is\_quarter\_start}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{is\_quarter\_start}{is\_quarter\_start}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+is\+\_\+quarter\+\_\+start\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_quarter\_start"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_quarter\_start"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a163206770a14f07f63a7bd9b9bee8756}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a163206770a14f07f63a7bd9b9bee8756} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!is\_year\_end@{is\_year\_end}}
+\index{is\_year\_end@{is\_year\_end}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{is\_year\_end}{is\_year\_end}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+is\+\_\+year\+\_\+end\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_year\_end"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_year\_end"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aad11495feced457022140337b26a33ec}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aad11495feced457022140337b26a33ec} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!is\_year\_start@{is\_year\_start}}
+\index{is\_year\_start@{is\_year\_start}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{is\_year\_start}{is\_year\_start}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+is\+\_\+year\+\_\+start\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_year\_start"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}is\_year\_start"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a762e700a8bf789b2cdedd4d1a3df8c24}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a762e700a8bf789b2cdedd4d1a3df8c24} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!microsecond@{microsecond}}
+\index{microsecond@{microsecond}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{microsecond}{microsecond}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+microsecond\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}microsecond"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}us"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5077765990f8266de0323062bc303ea7}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a5077765990f8266de0323062bc303ea7} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!minute@{minute}}
+\index{minute@{minute}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{minute}{minute}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+minute\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}minute"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}m"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab5503482f142e4f1cafd4be6ed750ad0}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ab5503482f142e4f1cafd4be6ed750ad0} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!month@{month}}
+\index{month@{month}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+month\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}month"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}M"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a3f1438c8077132612516c24315d10d7c}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a3f1438c8077132612516c24315d10d7c} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!nanosecond@{nanosecond}}
+\index{nanosecond@{nanosecond}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{nanosecond}{nanosecond}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+nanosecond\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}nanosecond"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}ns"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aa256016af0a9755bda9ed1456d46182d}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aa256016af0a9755bda9ed1456d46182d} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!quarter@{quarter}}
+\index{quarter@{quarter}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{quarter}{quarter}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+quarter\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}quarter"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}q"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a31185809b2b7d8b4478f2d40d5ca7316}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a31185809b2b7d8b4478f2d40d5ca7316} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!second@{second}}
+\index{second@{second}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{second}{second}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+second\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}second"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}s"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a57173eba9f978331f47307f97bcb7a76}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a57173eba9f978331f47307f97bcb7a76} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!tz@{tz}}
+\index{tz@{tz}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{tz}{tz}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+tz}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac0022e5850125c1dbfc426d2fe4a2a73}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ac0022e5850125c1dbfc426d2fe4a2a73} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!tzinfo@{tzinfo}}
+\index{tzinfo@{tzinfo}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{tzinfo}{tzinfo}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+tzinfo}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9df532fbce71a3049511d6455c6c6812}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a9df532fbce71a3049511d6455c6c6812} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!unit@{unit}}
+\index{unit@{unit}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{unit}{unit}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+unit}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a35aa40a5f33174fcdb094142fe2df324}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_a35aa40a5f33174fcdb094142fe2df324} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!weekday@{weekday}}
+\index{weekday@{weekday}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{weekday}{weekday}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+weekday = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_aae3eab2fe8dc5497f2a6bb6111bdeac4}{day\+\_\+of\+\_\+week}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae782715005892eb5ee9e3e2bf567a8c1}\label{classpandas_1_1core_1_1arrays_1_1datetimes_1_1DatetimeArray_ae782715005892eb5ee9e3e2bf567a8c1} 
+\index{pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}!year@{year}}
+\index{year@{year}!pandas.core.arrays.datetimes.DatetimeArray@{pandas.core.arrays.datetimes.DatetimeArray}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+datetimes.\+Datetime\+Array.\+year\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_field\_accessor(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}year"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Y"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/arrays/\mbox{\hyperlink{arrays_2datetimes_8py}{datetimes.\+py}}\end{DoxyCompactItemize}

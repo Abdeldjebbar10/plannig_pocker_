@@ -1,0 +1,73 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+tests.\+io.\+pytables.\+common}
+\hypertarget{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common}{}\label{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common}\index{pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_aebca68f9301e55e08c635cfd4327d447}{safe\+\_\+close}} (store)
+\item 
+Generator\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1pytables_1_1HDFStore}{HDFStore}}, None, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_abecdfe8ca371d9fe0ab802963645aca6}{ensure\+\_\+clean\+\_\+store}} (path, mode="{}a"{}, complevel=None, complib=None, fletcher32=False)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a33322bf7b6b4196612b26ef81dd1dd09}{\+\_\+maybe\+\_\+remove}} (store, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a061f85574a3792db393c06e4f80c1566}{tables}} = pytest.\+importorskip("{}tables"{})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a5287dcc3e9e7e54522d8106b77ab174b}{MAX\+\_\+\+NUMEXPR\+\_\+\+THREADS}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_ac8d1dc2b61bbaa6c8d551e9e84841766}{MAX\+\_\+\+BLOSC\+\_\+\+THREADS}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a225bec20948a336ae79365ff2c05232c}{MAX\+\_\+\+THREADS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a33322bf7b6b4196612b26ef81dd1dd09}\label{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a33322bf7b6b4196612b26ef81dd1dd09} 
+\index{pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}!\_maybe\_remove@{\_maybe\_remove}}
+\index{\_maybe\_remove@{\_maybe\_remove}!pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}}
+\doxysubsubsection{\texorpdfstring{\_maybe\_remove()}{\_maybe\_remove()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+pytables.\+common.\+\_\+maybe\+\_\+remove (\begin{DoxyParamCaption}\item[{}]{store,  }\item[{}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}For tests using tables, try removing the table to be sure there is
+no content from previous tests using the same table name.
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_abecdfe8ca371d9fe0ab802963645aca6}\label{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_abecdfe8ca371d9fe0ab802963645aca6} 
+\index{pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}!ensure\_clean\_store@{ensure\_clean\_store}}
+\index{ensure\_clean\_store@{ensure\_clean\_store}!pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}}
+\doxysubsubsection{\texorpdfstring{ensure\_clean\_store()}{ensure\_clean\_store()}}
+{\footnotesize\ttfamily  Generator\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1pytables_1_1HDFStore}{HDFStore}}, None, None\mbox{]} pandas.\+tests.\+io.\+pytables.\+common.\+ensure\+\_\+clean\+\_\+store (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{mode = {\ttfamily "{}a"{}},  }\item[{}]{complevel = {\ttfamily None},  }\item[{}]{complib = {\ttfamily None},  }\item[{}]{fletcher32 = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_aebca68f9301e55e08c635cfd4327d447}\label{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_aebca68f9301e55e08c635cfd4327d447} 
+\index{pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}!safe\_close@{safe\_close}}
+\index{safe\_close@{safe\_close}!pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}}
+\doxysubsubsection{\texorpdfstring{safe\_close()}{safe\_close()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+pytables.\+common.\+safe\+\_\+close (\begin{DoxyParamCaption}\item[{}]{store }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_ac8d1dc2b61bbaa6c8d551e9e84841766}\label{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_ac8d1dc2b61bbaa6c8d551e9e84841766} 
+\index{pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}!MAX\_BLOSC\_THREADS@{MAX\_BLOSC\_THREADS}}
+\index{MAX\_BLOSC\_THREADS@{MAX\_BLOSC\_THREADS}!pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}}
+\doxysubsubsection{\texorpdfstring{MAX\_BLOSC\_THREADS}{MAX\_BLOSC\_THREADS}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+pytables.\+common.\+MAX\+\_\+\+BLOSC\+\_\+\+THREADS}
+
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a5287dcc3e9e7e54522d8106b77ab174b}\label{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a5287dcc3e9e7e54522d8106b77ab174b} 
+\index{pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}!MAX\_NUMEXPR\_THREADS@{MAX\_NUMEXPR\_THREADS}}
+\index{MAX\_NUMEXPR\_THREADS@{MAX\_NUMEXPR\_THREADS}!pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}}
+\doxysubsubsection{\texorpdfstring{MAX\_NUMEXPR\_THREADS}{MAX\_NUMEXPR\_THREADS}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+pytables.\+common.\+MAX\+\_\+\+NUMEXPR\+\_\+\+THREADS}
+
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a225bec20948a336ae79365ff2c05232c}\label{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a225bec20948a336ae79365ff2c05232c} 
+\index{pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}!MAX\_THREADS@{MAX\_THREADS}}
+\index{MAX\_THREADS@{MAX\_THREADS}!pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}}
+\doxysubsubsection{\texorpdfstring{MAX\_THREADS}{MAX\_THREADS}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+pytables.\+common.\+MAX\+\_\+\+THREADS}
+
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a061f85574a3792db393c06e4f80c1566}\label{namespacepandas_1_1tests_1_1io_1_1pytables_1_1common_a061f85574a3792db393c06e4f80c1566} 
+\index{pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}!tables@{tables}}
+\index{tables@{tables}!pandas.tests.io.pytables.common@{pandas.tests.io.pytables.common}}
+\doxysubsubsection{\texorpdfstring{tables}{tables}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+pytables.\+common.\+tables = pytest.\+importorskip("{}tables"{})}
+

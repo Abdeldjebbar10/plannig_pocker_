@@ -1,0 +1,96 @@
+\doxysection{Référence de la classe numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+MGrid\+Class}
+\hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1MGridClass}{}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1MGridClass}\index{numpy.lib.\_index\_tricks\_impl.MGridClass@{numpy.lib.\_index\_tricks\_impl.MGridClass}}
+
+
+Graphe d\textquotesingle{}héritage de numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+MGrid\+Class\+:
+% FIG 0
+
+
+Graphe de collaboration de numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+MGrid\+Class\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1MGridClass_aade001d7c6d746306bdfe823dc946eec}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1nd__grid}{numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+nd\+\_\+grid}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1nd__grid_a0e2c49375dcfcf55417d3a6b978afeea}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1nd__grid}{numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+nd\+\_\+grid}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1nd__grid_ae9ea9215c7ba61d383f8c11dcb2e7e46}{sparse}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An instance which returns a dense multi-dimensional "meshgrid".
+
+An instance which returns a dense (or fleshed out) mesh-grid
+when indexed, so that each returned argument has the same shape.
+The dimensions and number of the output arrays are equal to the
+number of indexing dimensions.  If the step length is not a complex
+number, then the stop is not inclusive.
+
+However, if the step length is a **complex number** (e.g. 5j), then
+the integer part of its magnitude is interpreted as specifying the
+number of points to create between the start and stop values, where
+the stop value **is inclusive**.
+
+Returns
+-------
+mesh-grid : ndarray
+    A single array, containing a set of `ndarray`\\ s all of the same
+    dimensions. stacked along the first axis.
+
+See Also
+--------
+ogrid : like `mgrid` but returns open (not fleshed out) mesh grids
+meshgrid: return coordinate matrices from coordinate vectors
+r_ : array concatenator
+:ref:`how-to-partition`
+
+Examples
+--------
+>>> import numpy as np
+>>> np.mgrid[0:5, 0:5]
+array([[[0, 0, 0, 0, 0],
+        [1, 1, 1, 1, 1],
+        [2, 2, 2, 2, 2],
+        [3, 3, 3, 3, 3],
+        [4, 4, 4, 4, 4]],
+       [[0, 1, 2, 3, 4],
+        [0, 1, 2, 3, 4],
+        [0, 1, 2, 3, 4],
+        [0, 1, 2, 3, 4],
+        [0, 1, 2, 3, 4]]])
+>>> np.mgrid[-1:1:5j]
+array([-1. , -0.5,  0. ,  0.5,  1. ])
+
+>>> np.mgrid[0:4].shape
+(4,)
+>>> np.mgrid[0:4, 0:5].shape
+(2, 4, 5)
+>>> np.mgrid[0:4, 0:5, 0:6].shape
+(3, 4, 5, 6)\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1MGridClass_aade001d7c6d746306bdfe823dc946eec}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1MGridClass_aade001d7c6d746306bdfe823dc946eec} 
+\index{numpy.lib.\_index\_tricks\_impl.MGridClass@{numpy.lib.\_index\_tricks\_impl.MGridClass}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.lib.\_index\_tricks\_impl.MGridClass@{numpy.lib.\_index\_tricks\_impl.MGridClass}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+MGrid\+Class.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1nd__grid_a359e67304191463bda95adbd6bbaedd8}{numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+nd\+\_\+grid}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/lib/\mbox{\hyperlink{__index__tricks__impl_8py}{\+\_\+index\+\_\+tricks\+\_\+impl.\+py}}\end{DoxyCompactItemize}

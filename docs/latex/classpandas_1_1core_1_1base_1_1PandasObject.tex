@@ -1,0 +1,111 @@
+\doxysection{Référence de la classe pandas.\+core.\+base.\+Pandas\+Object}
+\hypertarget{classpandas_1_1core_1_1base_1_1PandasObject}{}\label{classpandas_1_1core_1_1base_1_1PandasObject}\index{pandas.core.base.PandasObject@{pandas.core.base.PandasObject}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+base.\+Pandas\+Object\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+base.\+Pandas\+Object\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a417b85c7fda9b57f893ad25a764fcf36}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_ad5b15e942fb2d2dcfb12fa1667404aeb}{\+\_\+\+\_\+sizeof\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_ac86361dc5b262c58dcdf818d410136e4}{\+\_\+\+\_\+dir\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a7b5112b72a8bafe13b1fa732bf1ea30d}{\+\_\+constructor}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a8a2b95a9e1e4befc5ad3cba09c3f3e68}{\+\_\+reset\+\_\+cache}} (self, str\texorpdfstring{$\vert$}{|}None key=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a3151f76f1b53042e9d13da3d3ef3cb92}{\+\_\+dir\+\_\+deletions}} (self)
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a8183d13494a720c8d4cc996826fd7323}{\+\_\+dir\+\_\+additions}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a3972565a4ab5ff072118eda20364cd2c}{\+\_\+cache}} \mbox{[}str, Any\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a1e3f9f50e3532c77c3610c4b8fe27e6f}{\+\_\+accessors}} = set()
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a7b9c1894b79d330020bdc71ddc7126f0}{\+\_\+hidden\+\_\+attrs}} = frozenset()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Baseclass for various pandas objects.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1base_1_1PandasObject_a417b85c7fda9b57f893ad25a764fcf36}\label{classpandas_1_1core_1_1base_1_1PandasObject_a417b85c7fda9b57f893ad25a764fcf36} 
+\index{pandas.core.base.PandasObject@{pandas.core.base.PandasObject}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pandas.core.base.PandasObject@{pandas.core.base.PandasObject}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+base.\+Pandas\+Object.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string representation for a particular object.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1categorical_1_1Categorical_ab6a7be74b198570038c2a8bb34305e53}{pandas.\+core.\+arrays.\+categorical.\+Categorical}}, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1sparse_1_1array_1_1SparseArray_a74d1398f4f02b70a644e38a918186690}{pandas.\+core.\+arrays.\+sparse.\+array.\+Sparse\+Array}}, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame_a355d238ac98be2c041b1626c55e8b76e}{pandas.\+core.\+frame.\+Data\+Frame}}, \mbox{\hyperlink{classpandas_1_1core_1_1generic_1_1NDFrame_a981e5bb6f70585b4c7adc4f1da588b44}{pandas.\+core.\+generic.\+NDFrame}}, \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8b952c92d9fdda32cdcd7b6db3eb3fa8}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index_afe4df78e1853b3851a41a2e404d2cba7}{pandas.\+core.\+indexes.\+base.\+Index}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1frozen_1_1FrozenList_accfce51a6b9e70ad3d08f1b6a22b877b}{pandas.\+core.\+indexes.\+frozen.\+Frozen\+List}}, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ae8a1fb85b65bd17be13907bca76fed02}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager}}, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9a3cb1ba533c66cb426c8975e5eacfa7}{pandas.\+core.\+internals.\+blocks.\+Block}}, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager_a1ec2b8dd91f7de50fdfaf4300ad22e15}{pandas.\+core.\+internals.\+managers.\+Base\+Block\+Manager}}, et \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series_a9d6cf38a9fd6425d18dada28086106b4}{pandas.\+core.\+series.\+Series}}.
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1PandasObject_ad5b15e942fb2d2dcfb12fa1667404aeb}\label{classpandas_1_1core_1_1base_1_1PandasObject_ad5b15e942fb2d2dcfb12fa1667404aeb} 
+\index{pandas.core.base.PandasObject@{pandas.core.base.PandasObject}!\_\_sizeof\_\_@{\_\_sizeof\_\_}}
+\index{\_\_sizeof\_\_@{\_\_sizeof\_\_}!pandas.core.base.PandasObject@{pandas.core.base.PandasObject}}
+\doxysubsubsection{\texorpdfstring{\_\_sizeof\_\_()}{\_\_sizeof\_\_()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+base.\+Pandas\+Object.\+\_\+\+\_\+sizeof\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generates the total memory usage for an object that returns
+either a value or Series of values
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1base_1_1PandasObject_a7b5112b72a8bafe13b1fa732bf1ea30d}\label{classpandas_1_1core_1_1base_1_1PandasObject_a7b5112b72a8bafe13b1fa732bf1ea30d} 
+\index{pandas.core.base.PandasObject@{pandas.core.base.PandasObject}!\_constructor@{\_constructor}}
+\index{\_constructor@{\_constructor}!pandas.core.base.PandasObject@{pandas.core.base.PandasObject}}
+\doxysubsubsection{\texorpdfstring{\_constructor()}{\_constructor()}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Pandas\+Object.\+\_\+constructor (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Class constructor (for this class it's just `__class__`).
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame_a8b1992af5a0057ce5c4f3b555ef5668a}{pandas.\+core.\+frame.\+Data\+Frame}}, \mbox{\hyperlink{classpandas_1_1core_1_1generic_1_1NDFrame_a1662a1104313ca767e775d699a32a48f}{pandas.\+core.\+generic.\+NDFrame}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index_a04d8ddd41e318fb7a05b0b2d475e077c}{pandas.\+core.\+indexes.\+base.\+Index}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndex_a168d36175ea87452e6b4545710cbd8ca}{pandas.\+core.\+indexes.\+multi.\+Multi\+Index}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1range_1_1RangeIndex_aa602e166bea25ccd028a0b9926be94fe}{pandas.\+core.\+indexes.\+range.\+Range\+Index}}, et \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series_a370dfa2860954e84459305cdb4c5e9b8}{pandas.\+core.\+series.\+Series}}.
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1PandasObject_a8a2b95a9e1e4befc5ad3cba09c3f3e68}\label{classpandas_1_1core_1_1base_1_1PandasObject_a8a2b95a9e1e4befc5ad3cba09c3f3e68} 
+\index{pandas.core.base.PandasObject@{pandas.core.base.PandasObject}!\_reset\_cache@{\_reset\_cache}}
+\index{\_reset\_cache@{\_reset\_cache}!pandas.core.base.PandasObject@{pandas.core.base.PandasObject}}
+\doxysubsubsection{\texorpdfstring{\_reset\_cache()}{\_reset\_cache()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+base.\+Pandas\+Object.\+\_\+reset\+\_\+cache (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str \texorpdfstring{$\vert$}{|} None }]{key = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Reset cached properties. If ``key`` is passed, only clears that key.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1base_1_1PandasObject_a3972565a4ab5ff072118eda20364cd2c}\label{classpandas_1_1core_1_1base_1_1PandasObject_a3972565a4ab5ff072118eda20364cd2c} 
+\index{pandas.core.base.PandasObject@{pandas.core.base.PandasObject}!\_cache@{\_cache}}
+\index{\_cache@{\_cache}!pandas.core.base.PandasObject@{pandas.core.base.PandasObject}}
+\doxysubsubsection{\texorpdfstring{\_cache}{\_cache}}
+{\footnotesize\ttfamily dict pandas.\+core.\+base.\+Pandas\+Object.\+\_\+cache \mbox{[}str, Any\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/\mbox{\hyperlink{pandas_2core_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

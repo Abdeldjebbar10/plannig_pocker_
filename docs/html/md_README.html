@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Poker_Project: Application Web Planning Poker</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Poker_Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Application Web Planning Poker</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md10"></a> Cette application permet de jouer au <b>Planning Poker</b> en ligne, permettant à plusieurs participants d'estimer la difficulté des fonctionnalités d'un projet. Les règles sont flexibles (strict, moyenne, médiane, etc.) et l'application génère un fichier JSON avec les résultats à la fin.</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Fonctionnalités</h1>
+<ul>
+<li><b>Création de joueurs</b> : Permet de définir des joueurs avec des rôles (admin ou non).</li>
+<li><b>Création de parties</b> : Sélection des participants et de l'admin pour chaque partie.</li>
+<li><b>Vote de fonctionnalités</b> : Chaque joueur vote avec une carte, et les votes sont validés selon les règles choisies.</li>
+<li><b>Mode de jeu</b> : Strict, moyenne, médiane, etc.</li>
+<li><b>Gestion des parties</b> : Suivi de l'état des parties (en cours, terminé, non commencé).</li>
+<li><b>Export JSON</b> : Sauvegarde des résultats des votes et des fonctionnalités dans un fichier JSON.</li>
+<li><b>Reprise de la partie</b> : Reprise d'une partie en cours à partir d'un fichier JSON sauvegardé.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md12"></a>
+Installation</h1>
+<h2><a class="anchor" id="autotoc_md13"></a>
+Prérequis</h2>
+<p>Avant de démarrer le projet, assurez-vous d'avoir les éléments suivants installés :</p>
+<ul>
+<li>Python 3.x</li>
+<li>pip (gestionnaire de paquets Python)</li>
+<li>Node.js (pour le frontend React)</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Étapes d'installation</h2>
+<ol type="1">
+<li>Clonez ce projet : ```bash git clone <a href="https://votre-repository-url.git">https://votre-repository-url.git</a> cd nom_du_dossier</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md15"></a>
+Technologies</h1>
+<ul>
+<li><b>Backend</b> : Django, Django REST Framework</li>
+<li><b>Frontend</b> : React, Axios</li>
+<li><b>Base de données</b> : PostgreSQL</li>
+<li><b>Autres</b> : Docker, CORS</li>
+</ul>
+<p>Activer l'environnement virtuel :</p>
+<p>Sous Linux/Mac :</p>
+<p>source env/bin/activate Sous Windows :</p>
+<p>.\env\Scripts\activate Une fois activé, tu devrais voir (env) devant ton invite de commande.</p>
+<p>Installer Django :</p>
+<p>Dans ton environnement virtuel activé, installe Django :</p>
+<p>pip install django Installer d'autres dépendances nécessaires :</p>
+<p>Pour ton projet, nous aurons besoin de Django REST Framework (pour créer des API) et django-cors-headers (pour gérer les requêtes du frontend).</p>
+<p>pip install djangorestframework django-cors-headers</p>
+<p>Créer un projet Django :</p>
+<p>Dans ton terminal, exécute cette commande pour créer un nouveau projet Django :</p>
+<p>django-admin startproject <a class="el" href="namespaceplanning__poker.html">planning_poker</a> .</p>
+<p>Vérifier le projet :</p>
+<p>Lance le serveur Django pour t'assurer que tout fonctionne correctement.</p>
+<p>python <a class="el" href="manage_8py.html">manage.py</a> runserver Tu devrais voir un message indiquant que le serveur est en cours d'exécution, généralement à l'adresse <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>.</p>
+<p>Ouvre ton navigateur et va à l'adresse <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>. Si tu vois la page d'accueil Django, cela signifie que tout est correctement installé.</p>
+<p>pip install django-widget-tweaks</p>
+<p>python <a class="el" href="manage_8py.html">manage.py</a> collectstatic </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

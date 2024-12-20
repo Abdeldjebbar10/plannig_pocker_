@@ -1,0 +1,115 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+core.\+mail.\+message}
+\hypertarget{namespacedjango_1_1core_1_1mail_1_1message}{}\label{namespacedjango_1_1core_1_1mail_1_1message}\index{django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1BadHeaderError}{Bad\+Header\+Error}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1EmailMessage}{Email\+Message}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1EmailMultiAlternatives}{Email\+Multi\+Alternatives}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin}{MIMEMixin}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1SafeMIMEMessage}{Safe\+MIMEMessage}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1SafeMIMEMultipart}{Safe\+MIMEMultipart}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1SafeMIMEText}{Safe\+MIMEText}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message_abd6937ee24e93cbd69f4c487d3a1a7f7}{forbid\+\_\+multi\+\_\+line\+\_\+headers}} (name, val, encoding)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message_ac220dc8ef04a87de502652c286d0b8de}{sanitize\+\_\+address}} (addr, encoding)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message_a6e330d3b95d7b7d804b1493ed9c8b5ab}{utf8\+\_\+charset}} = Charset.\+Charset("{}utf-\/8"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message_ab5ce912f0111bc57f92202b978194621}{body\+\_\+encoding}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message_a2aa593bd6a4e92c64d62b9a7f8c991b6}{utf8\+\_\+charset\+\_\+qp}} = Charset.\+Charset("{}utf-\/8"{})
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message_a4d3eaf4bde578e6102dd620f0ffa03e2}{DEFAULT\+\_\+\+ATTACHMENT\+\_\+\+MIME\+\_\+\+TYPE}} = "{}application/octet-\/stream"{}
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message_a6ebcd9b14f63efd301e38ca0111f5860}{RFC5322\+\_\+\+EMAIL\+\_\+\+LINE\+\_\+\+LENGTH\+\_\+\+LIMIT}} = 998
+\item 
+dict \mbox{\hyperlink{namespacedjango_1_1core_1_1mail_1_1message_adc121db45db45d3b12d71aeaf841f229}{ADDRESS\+\_\+\+HEADERS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1core_1_1mail_1_1message_abd6937ee24e93cbd69f4c487d3a1a7f7}\label{namespacedjango_1_1core_1_1mail_1_1message_abd6937ee24e93cbd69f4c487d3a1a7f7} 
+\index{django.core.mail.message@{django.core.mail.message}!forbid\_multi\_line\_headers@{forbid\_multi\_line\_headers}}
+\index{forbid\_multi\_line\_headers@{forbid\_multi\_line\_headers}!django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection{\texorpdfstring{forbid\_multi\_line\_headers()}{forbid\_multi\_line\_headers()}}
+{\footnotesize\ttfamily django.\+core.\+mail.\+message.\+forbid\+\_\+multi\+\_\+line\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{val,  }\item[{}]{encoding }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forbid multi-line headers to prevent header injection.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1mail_1_1message_ac220dc8ef04a87de502652c286d0b8de}\label{namespacedjango_1_1core_1_1mail_1_1message_ac220dc8ef04a87de502652c286d0b8de} 
+\index{django.core.mail.message@{django.core.mail.message}!sanitize\_address@{sanitize\_address}}
+\index{sanitize\_address@{sanitize\_address}!django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection{\texorpdfstring{sanitize\_address()}{sanitize\_address()}}
+{\footnotesize\ttfamily django.\+core.\+mail.\+message.\+sanitize\+\_\+address (\begin{DoxyParamCaption}\item[{}]{addr,  }\item[{}]{encoding }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format a pair of (name, address) or an email address string.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1core_1_1mail_1_1message_adc121db45db45d3b12d71aeaf841f229}\label{namespacedjango_1_1core_1_1mail_1_1message_adc121db45db45d3b12d71aeaf841f229} 
+\index{django.core.mail.message@{django.core.mail.message}!ADDRESS\_HEADERS@{ADDRESS\_HEADERS}}
+\index{ADDRESS\_HEADERS@{ADDRESS\_HEADERS}!django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection{\texorpdfstring{ADDRESS\_HEADERS}{ADDRESS\_HEADERS}}
+{\footnotesize\ttfamily dict django.\+core.\+mail.\+message.\+ADDRESS\+\_\+\+HEADERS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}from"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}sender"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}reply-\/to"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}to"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}cc"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}bcc"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}resent-\/from"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}resent-\/sender"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}resent-\/to"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}resent-\/cc"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}resent-\/bcc"{}},}
+\DoxyCodeLine{00013\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1core_1_1mail_1_1message_ab5ce912f0111bc57f92202b978194621}\label{namespacedjango_1_1core_1_1mail_1_1message_ab5ce912f0111bc57f92202b978194621} 
+\index{django.core.mail.message@{django.core.mail.message}!body\_encoding@{body\_encoding}}
+\index{body\_encoding@{body\_encoding}!django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection{\texorpdfstring{body\_encoding}{body\_encoding}}
+{\footnotesize\ttfamily django.\+core.\+mail.\+message.\+body\+\_\+encoding}
+
+\Hypertarget{namespacedjango_1_1core_1_1mail_1_1message_a4d3eaf4bde578e6102dd620f0ffa03e2}\label{namespacedjango_1_1core_1_1mail_1_1message_a4d3eaf4bde578e6102dd620f0ffa03e2} 
+\index{django.core.mail.message@{django.core.mail.message}!DEFAULT\_ATTACHMENT\_MIME\_TYPE@{DEFAULT\_ATTACHMENT\_MIME\_TYPE}}
+\index{DEFAULT\_ATTACHMENT\_MIME\_TYPE@{DEFAULT\_ATTACHMENT\_MIME\_TYPE}!django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ATTACHMENT\_MIME\_TYPE}{DEFAULT\_ATTACHMENT\_MIME\_TYPE}}
+{\footnotesize\ttfamily str django.\+core.\+mail.\+message.\+DEFAULT\+\_\+\+ATTACHMENT\+\_\+\+MIME\+\_\+\+TYPE = "{}application/octet-\/stream"{}}
+
+\Hypertarget{namespacedjango_1_1core_1_1mail_1_1message_a6ebcd9b14f63efd301e38ca0111f5860}\label{namespacedjango_1_1core_1_1mail_1_1message_a6ebcd9b14f63efd301e38ca0111f5860} 
+\index{django.core.mail.message@{django.core.mail.message}!RFC5322\_EMAIL\_LINE\_LENGTH\_LIMIT@{RFC5322\_EMAIL\_LINE\_LENGTH\_LIMIT}}
+\index{RFC5322\_EMAIL\_LINE\_LENGTH\_LIMIT@{RFC5322\_EMAIL\_LINE\_LENGTH\_LIMIT}!django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection{\texorpdfstring{RFC5322\_EMAIL\_LINE\_LENGTH\_LIMIT}{RFC5322\_EMAIL\_LINE\_LENGTH\_LIMIT}}
+{\footnotesize\ttfamily int django.\+core.\+mail.\+message.\+RFC5322\+\_\+\+EMAIL\+\_\+\+LINE\+\_\+\+LENGTH\+\_\+\+LIMIT = 998}
+
+\Hypertarget{namespacedjango_1_1core_1_1mail_1_1message_a6e330d3b95d7b7d804b1493ed9c8b5ab}\label{namespacedjango_1_1core_1_1mail_1_1message_a6e330d3b95d7b7d804b1493ed9c8b5ab} 
+\index{django.core.mail.message@{django.core.mail.message}!utf8\_charset@{utf8\_charset}}
+\index{utf8\_charset@{utf8\_charset}!django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection{\texorpdfstring{utf8\_charset}{utf8\_charset}}
+{\footnotesize\ttfamily django.\+core.\+mail.\+message.\+utf8\+\_\+charset = Charset.\+Charset("{}utf-\/8"{})}
+
+\Hypertarget{namespacedjango_1_1core_1_1mail_1_1message_a2aa593bd6a4e92c64d62b9a7f8c991b6}\label{namespacedjango_1_1core_1_1mail_1_1message_a2aa593bd6a4e92c64d62b9a7f8c991b6} 
+\index{django.core.mail.message@{django.core.mail.message}!utf8\_charset\_qp@{utf8\_charset\_qp}}
+\index{utf8\_charset\_qp@{utf8\_charset\_qp}!django.core.mail.message@{django.core.mail.message}}
+\doxysubsubsection{\texorpdfstring{utf8\_charset\_qp}{utf8\_charset\_qp}}
+{\footnotesize\ttfamily django.\+core.\+mail.\+message.\+utf8\+\_\+charset\+\_\+qp = Charset.\+Charset("{}utf-\/8"{})}
+

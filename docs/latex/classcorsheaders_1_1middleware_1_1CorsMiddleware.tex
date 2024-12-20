@@ -1,0 +1,148 @@
+\doxysection{Référence de la classe corsheaders.\+middleware.\+Cors\+Middleware}
+\hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware}{}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware}\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+
+
+Graphe de collaboration de corsheaders.\+middleware.\+Cors\+Middleware\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a9ec3d173c2ce6a818e0cd046e9008aa3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self,(Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}\mbox{]}, \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}\mbox{]}\texorpdfstring{$\vert$}{|}Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}\mbox{]}\mbox{]}) \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a2aba206dc98ad678ced09a10dc5f159a}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}\texorpdfstring{$\vert$}{|}Awaitable\mbox{[}\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}\mbox{]} \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a0af50aea5284ba3b2326809cba47972f}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}} request)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}} \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a31b6a3588472be4460462eb6dc72daa1}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}} request)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a3ce8e57a16eeba5c6d4c30464bf1134d}{check\+\_\+preflight}} (self, \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}} request)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}} \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae7d85e3173899a2177d34bbc0d9ba224}{add\+\_\+response\+\_\+headers}} (self, \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}} request, \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}} response)
+\item 
+bool \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a5edc875aa29a14709d12071d010148ed}{origin\+\_\+found\+\_\+in\+\_\+white\+\_\+lists}} (self, str origin, Split\+Result url)
+\item 
+bool \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae3e6d618bba414c134d05440f02a87f4}{regex\+\_\+domain\+\_\+match}} (self, str origin)
+\item 
+bool \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae800cb16a4fb84b5b03cc9b3f7f7cfd7}{is\+\_\+enabled}} (self, \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}} request)
+\item 
+bool \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_af6f769352ed607b05375e00f2fe057bf}{check\+\_\+signal}} (self, \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}} request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a2aba206dc98ad678ced09a10dc5f159a}{get\+\_\+response}}
+\item 
+\mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a0c4433f886f5a5d1bd9133020d3aa990}{async\+\_\+mode}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a47c5434623a1d7b97fdd26199a4f2ca9}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_a69c6825636f1bd86dd45f621a3e412f8}{async\+\_\+capable}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classcorsheaders_1_1middleware_1_1CorsMiddleware_aa332e1abbfc9d1283de29fe715363373}{\+\_\+url\+\_\+in\+\_\+whitelist}} (self, Split\+Result url)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a9ec3d173c2ce6a818e0cd046e9008aa3}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a9ec3d173c2ce6a818e0cd046e9008aa3} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None corsheaders.\+middleware.\+Cors\+Middleware.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{(             Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}\mbox{]}, \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}\mbox{]}             \texorpdfstring{$\vert$}{|} Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}\mbox{]}, Awaitable\mbox{[}\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}\mbox{]}\mbox{]}         )}]{get\+\_\+response }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a31b6a3588472be4460462eb6dc72daa1}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a31b6a3588472be4460462eb6dc72daa1} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!\_\_acall\_\_@{\_\_acall\_\_}}
+\index{\_\_acall\_\_@{\_\_acall\_\_}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_acall\_\_()}{\_\_acall\_\_()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}} corsheaders.\+middleware.\+Cors\+Middleware.\+\_\+\+\_\+acall\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}}]{request }\end{DoxyParamCaption})}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a0af50aea5284ba3b2326809cba47972f}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a0af50aea5284ba3b2326809cba47972f} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}} \texorpdfstring{$\vert$}{|} Awaitable\mbox{[}\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}\mbox{]} corsheaders.\+middleware.\+Cors\+Middleware.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}     }]{request }\end{DoxyParamCaption})}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_aa332e1abbfc9d1283de29fe715363373}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_aa332e1abbfc9d1283de29fe715363373} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!\_url\_in\_whitelist@{\_url\_in\_whitelist}}
+\index{\_url\_in\_whitelist@{\_url\_in\_whitelist}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_url\_in\_whitelist()}{\_url\_in\_whitelist()}}
+{\footnotesize\ttfamily  bool corsheaders.\+middleware.\+Cors\+Middleware.\+\_\+url\+\_\+in\+\_\+whitelist (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Split\+Result}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae7d85e3173899a2177d34bbc0d9ba224}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae7d85e3173899a2177d34bbc0d9ba224} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!add\_response\_headers@{add\_response\_headers}}
+\index{add\_response\_headers@{add\_response\_headers}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{add\_response\_headers()}{add\_response\_headers()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}} corsheaders.\+middleware.\+Cors\+Middleware.\+add\+\_\+response\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}}]{request,  }\item[{\mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}}     }]{response }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add the respective CORS headers
+\end{DoxyVerb}
+ \Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a3ce8e57a16eeba5c6d4c30464bf1134d}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a3ce8e57a16eeba5c6d4c30464bf1134d} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!check\_preflight@{check\_preflight}}
+\index{check\_preflight@{check\_preflight}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{check\_preflight()}{check\_preflight()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseBase}{Http\+Response\+Base}} \texorpdfstring{$\vert$}{|} None corsheaders.\+middleware.\+Cors\+Middleware.\+check\+\_\+preflight (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate a response for CORS preflight requests.
+\end{DoxyVerb}
+ \Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_af6f769352ed607b05375e00f2fe057bf}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_af6f769352ed607b05375e00f2fe057bf} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!check\_signal@{check\_signal}}
+\index{check\_signal@{check\_signal}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{check\_signal()}{check\_signal()}}
+{\footnotesize\ttfamily  bool corsheaders.\+middleware.\+Cors\+Middleware.\+check\+\_\+signal (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}}]{request }\end{DoxyParamCaption})}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae800cb16a4fb84b5b03cc9b3f7f7cfd7}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae800cb16a4fb84b5b03cc9b3f7f7cfd7} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!is\_enabled@{is\_enabled}}
+\index{is\_enabled@{is\_enabled}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{is\_enabled()}{is\_enabled()}}
+{\footnotesize\ttfamily  bool corsheaders.\+middleware.\+Cors\+Middleware.\+is\+\_\+enabled (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest}{Http\+Request}}}]{request }\end{DoxyParamCaption})}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a5edc875aa29a14709d12071d010148ed}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a5edc875aa29a14709d12071d010148ed} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!origin\_found\_in\_white\_lists@{origin\_found\_in\_white\_lists}}
+\index{origin\_found\_in\_white\_lists@{origin\_found\_in\_white\_lists}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{origin\_found\_in\_white\_lists()}{origin\_found\_in\_white\_lists()}}
+{\footnotesize\ttfamily  bool corsheaders.\+middleware.\+Cors\+Middleware.\+origin\+\_\+found\+\_\+in\+\_\+white\+\_\+lists (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{origin,  }\item[{Split\+Result}]{url }\end{DoxyParamCaption})}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae3e6d618bba414c134d05440f02a87f4}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_ae3e6d618bba414c134d05440f02a87f4} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!regex\_domain\_match@{regex\_domain\_match}}
+\index{regex\_domain\_match@{regex\_domain\_match}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{regex\_domain\_match()}{regex\_domain\_match()}}
+{\footnotesize\ttfamily  bool corsheaders.\+middleware.\+Cors\+Middleware.\+regex\+\_\+domain\+\_\+match (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{origin }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a69c6825636f1bd86dd45f621a3e412f8}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a69c6825636f1bd86dd45f621a3e412f8} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!async\_capable@{async\_capable}}
+\index{async\_capable@{async\_capable}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{async\_capable}{async\_capable}}
+{\footnotesize\ttfamily bool corsheaders.\+middleware.\+Cors\+Middleware.\+async\+\_\+capable = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a0c4433f886f5a5d1bd9133020d3aa990}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a0c4433f886f5a5d1bd9133020d3aa990} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!async\_mode@{async\_mode}}
+\index{async\_mode@{async\_mode}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{async\_mode}{async\_mode}}
+{\footnotesize\ttfamily corsheaders.\+middleware.\+Cors\+Middleware.\+async\+\_\+mode}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a2aba206dc98ad678ced09a10dc5f159a}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a2aba206dc98ad678ced09a10dc5f159a} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{get\_response}{get\_response}}
+{\footnotesize\ttfamily corsheaders.\+middleware.\+Cors\+Middleware.\+get\+\_\+response}
+
+\Hypertarget{classcorsheaders_1_1middleware_1_1CorsMiddleware_a47c5434623a1d7b97fdd26199a4f2ca9}\label{classcorsheaders_1_1middleware_1_1CorsMiddleware_a47c5434623a1d7b97fdd26199a4f2ca9} 
+\index{corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}!sync\_capable@{sync\_capable}}
+\index{sync\_capable@{sync\_capable}!corsheaders.middleware.CorsMiddleware@{corsheaders.middleware.CorsMiddleware}}
+\doxysubsubsection{\texorpdfstring{sync\_capable}{sync\_capable}}
+{\footnotesize\ttfamily bool corsheaders.\+middleware.\+Cors\+Middleware.\+sync\+\_\+capable = True\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/corsheaders/\mbox{\hyperlink{corsheaders_2middleware_8py}{middleware.\+py}}\end{DoxyCompactItemize}

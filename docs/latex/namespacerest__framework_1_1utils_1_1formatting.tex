@@ -1,0 +1,66 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+utils.\+formatting}
+\hypertarget{namespacerest__framework_1_1utils_1_1formatting}{}\label{namespacerest__framework_1_1utils_1_1formatting}\index{rest\_framework.utils.formatting@{rest\_framework.utils.formatting}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1utils_1_1formatting_1_1lazy__format}{lazy\+\_\+format}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1formatting_ab9cdc130fcea6e17b0234d6bbf9e3c62}{remove\+\_\+trailing\+\_\+string}} (content, trailing)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1formatting_a62d179b9f200c4378f4ad725cb4cd90d}{dedent}} (content)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1formatting_a100ade0037bb7d6ed83672cc7b9c3bd0}{camelcase\+\_\+to\+\_\+spaces}} (content)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1formatting_a7fd9953cfdd63d74351365cedf4e7a3d}{markup\+\_\+description}} (description)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Utility functions to return a formatted name and description for a given view.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1utils_1_1formatting_a100ade0037bb7d6ed83672cc7b9c3bd0}\label{namespacerest__framework_1_1utils_1_1formatting_a100ade0037bb7d6ed83672cc7b9c3bd0} 
+\index{rest\_framework.utils.formatting@{rest\_framework.utils.formatting}!camelcase\_to\_spaces@{camelcase\_to\_spaces}}
+\index{camelcase\_to\_spaces@{camelcase\_to\_spaces}!rest\_framework.utils.formatting@{rest\_framework.utils.formatting}}
+\doxysubsubsection{\texorpdfstring{camelcase\_to\_spaces()}{camelcase\_to\_spaces()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+formatting.\+camelcase\+\_\+to\+\_\+spaces (\begin{DoxyParamCaption}\item[{}]{content }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Translate 'CamelCaseNames' to 'Camel Case Names'.
+Used when generating names from view classes.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1formatting_a62d179b9f200c4378f4ad725cb4cd90d}\label{namespacerest__framework_1_1utils_1_1formatting_a62d179b9f200c4378f4ad725cb4cd90d} 
+\index{rest\_framework.utils.formatting@{rest\_framework.utils.formatting}!dedent@{dedent}}
+\index{dedent@{dedent}!rest\_framework.utils.formatting@{rest\_framework.utils.formatting}}
+\doxysubsubsection{\texorpdfstring{dedent()}{dedent()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+formatting.\+dedent (\begin{DoxyParamCaption}\item[{}]{content }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove leading indent from a block of text.
+Used when generating descriptions from docstrings.
+
+Note that python's `textwrap.dedent` doesn't quite cut it,
+as it fails to dedent multiline docstrings that include
+unindented text on the initial line.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1formatting_a7fd9953cfdd63d74351365cedf4e7a3d}\label{namespacerest__framework_1_1utils_1_1formatting_a7fd9953cfdd63d74351365cedf4e7a3d} 
+\index{rest\_framework.utils.formatting@{rest\_framework.utils.formatting}!markup\_description@{markup\_description}}
+\index{markup\_description@{markup\_description}!rest\_framework.utils.formatting@{rest\_framework.utils.formatting}}
+\doxysubsubsection{\texorpdfstring{markup\_description()}{markup\_description()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+formatting.\+markup\+\_\+description (\begin{DoxyParamCaption}\item[{}]{description }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply HTML markup to the given description.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1formatting_ab9cdc130fcea6e17b0234d6bbf9e3c62}\label{namespacerest__framework_1_1utils_1_1formatting_ab9cdc130fcea6e17b0234d6bbf9e3c62} 
+\index{rest\_framework.utils.formatting@{rest\_framework.utils.formatting}!remove\_trailing\_string@{remove\_trailing\_string}}
+\index{remove\_trailing\_string@{remove\_trailing\_string}!rest\_framework.utils.formatting@{rest\_framework.utils.formatting}}
+\doxysubsubsection{\texorpdfstring{remove\_trailing\_string()}{remove\_trailing\_string()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+formatting.\+remove\+\_\+trailing\+\_\+string (\begin{DoxyParamCaption}\item[{}]{content,  }\item[{}]{trailing }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Strip trailing component `trailing` from `content` if it exists.
+Used when generating names from view classes.
+\end{DoxyVerb}
+ 

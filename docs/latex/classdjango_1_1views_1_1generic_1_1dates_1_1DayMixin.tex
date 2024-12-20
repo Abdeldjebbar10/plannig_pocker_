@@ -1,0 +1,109 @@
+\doxysection{Référence de la classe django.\+views.\+generic.\+dates.\+Day\+Mixin}
+\hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin}{}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin}\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+views.\+generic.\+dates.\+Day\+Mixin\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+views.\+generic.\+dates.\+Day\+Mixin\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_aaf4335b347fbca8eb579d231442a64b7}{get\+\_\+day\+\_\+format}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a410db285b705518118df478a63fc572a}{get\+\_\+day}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_ab96ead55eed8cb0bf913a17e2852e0df}{get\+\_\+next\+\_\+day}} (self, date)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a43e97197abc9557d7689496b754b089e}{get\+\_\+previous\+\_\+day}} (self, date)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_aa458a16f8edf5b5bb1dad1e0d73e7403}{day\+\_\+format}} = "{}\%d"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a4590e1644cab210553fe7a720d0a45d7}{day}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a9b8d316ef11adb39eba10ecbe6124fd3}{\+\_\+get\+\_\+next\+\_\+day}} (self, date)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a122e445a2fbceb3f96a0682f56b47d1d}{\+\_\+get\+\_\+current\+\_\+day}} (self, date)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Mixin for views manipulating day-based data.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a122e445a2fbceb3f96a0682f56b47d1d}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a122e445a2fbceb3f96a0682f56b47d1d} 
+\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}!\_get\_current\_day@{\_get\_current\_day}}
+\index{\_get\_current\_day@{\_get\_current\_day}!django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_current\_day()}{\_get\_current\_day()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Day\+Mixin.\+\_\+get\+\_\+current\+\_\+day (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the start date of the current interval.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a9b8d316ef11adb39eba10ecbe6124fd3}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a9b8d316ef11adb39eba10ecbe6124fd3} 
+\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}!\_get\_next\_day@{\_get\_next\_day}}
+\index{\_get\_next\_day@{\_get\_next\_day}!django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_next\_day()}{\_get\_next\_day()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Day\+Mixin.\+\_\+get\+\_\+next\+\_\+day (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the start date of the next interval.
+
+The interval is defined by start date <= item date < next start date.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a410db285b705518118df478a63fc572a}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a410db285b705518118df478a63fc572a} 
+\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}!get\_day@{get\_day}}
+\index{get\_day@{get\_day}!django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+\doxysubsubsection{\texorpdfstring{get\_day()}{get\_day()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Day\+Mixin.\+get\+\_\+day (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the day for which this view should display data.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_aaf4335b347fbca8eb579d231442a64b7}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_aaf4335b347fbca8eb579d231442a64b7} 
+\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}!get\_day\_format@{get\_day\_format}}
+\index{get\_day\_format@{get\_day\_format}!django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+\doxysubsubsection{\texorpdfstring{get\_day\_format()}{get\_day\_format()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Day\+Mixin.\+get\+\_\+day\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a day format string in strptime syntax to be used to parse the day
+from url variables.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_ab96ead55eed8cb0bf913a17e2852e0df}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_ab96ead55eed8cb0bf913a17e2852e0df} 
+\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}!get\_next\_day@{get\_next\_day}}
+\index{get\_next\_day@{get\_next\_day}!django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+\doxysubsubsection{\texorpdfstring{get\_next\_day()}{get\_next\_day()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Day\+Mixin.\+get\+\_\+next\+\_\+day (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{date }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the next valid day.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a43e97197abc9557d7689496b754b089e}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a43e97197abc9557d7689496b754b089e} 
+\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}!get\_previous\_day@{get\_previous\_day}}
+\index{get\_previous\_day@{get\_previous\_day}!django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+\doxysubsubsection{\texorpdfstring{get\_previous\_day()}{get\_previous\_day()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Day\+Mixin.\+get\+\_\+previous\+\_\+day (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{date }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the previous valid day.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a4590e1644cab210553fe7a720d0a45d7}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_a4590e1644cab210553fe7a720d0a45d7} 
+\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}!day@{day}}
+\index{day@{day}!django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+\doxysubsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Day\+Mixin.\+day = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_aa458a16f8edf5b5bb1dad1e0d73e7403}\label{classdjango_1_1views_1_1generic_1_1dates_1_1DayMixin_aa458a16f8edf5b5bb1dad1e0d73e7403} 
+\index{django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}!day\_format@{day\_format}}
+\index{day\_format@{day\_format}!django.views.generic.dates.DayMixin@{django.views.generic.dates.DayMixin}}
+\doxysubsubsection{\texorpdfstring{day\_format}{day\_format}}
+{\footnotesize\ttfamily str django.\+views.\+generic.\+dates.\+Day\+Mixin.\+day\+\_\+format = "{}\%d"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/views/generic/\mbox{\hyperlink{django_2views_2generic_2dates_8py}{dates.\+py}}\end{DoxyCompactItemize}

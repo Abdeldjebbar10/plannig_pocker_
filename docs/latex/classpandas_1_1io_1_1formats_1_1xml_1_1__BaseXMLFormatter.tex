@@ -1,0 +1,408 @@
+\doxysection{Référence de la classe pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter}
+\hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter}{}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter}\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a4ee57a12a6b8888d73700fa15838a646}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Data\+Frame \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a9bb09f0ed0802920ea754b7b5e466afe}{frame}}, File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a158496531b4a25a762b83e9dcc8ee291}{path\+\_\+or\+\_\+buffer}}=None, bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a6c7143aba09fff694ac8863d2d3a159e}{index}}=True, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a28e3d21365f5824a0f50e8bc7a1b34c0}{root\+\_\+name}}="{}data"{}, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a82f5c763248f0ca3d7f3dd3ab0a45719}{row\+\_\+name}}="{}row"{}, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a782532f5d05e36b1e824a066bcd85f23}{na\+\_\+rep}}=None, list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_abd0082c73c25a90652717626f1b50f68}{attr\+\_\+cols}}=None, list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a80f33e3783c89e3f7093f0889e587ff3}{elem\+\_\+cols}}=None, dict\mbox{[}str\texorpdfstring{$\vert$}{|}None, str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_af5784d0e5f9316ef98bbce0e4b2da763}{namespaces}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a626e90adcf97ba5fc26d79a532e77a59}{prefix}}=None, str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a87a80222ade8b3759398d315fbba1382}{encoding}}="{}utf-\/8"{}, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_abd345729cd3a2dff18ea10a169315a06}{xml\+\_\+declaration}}=True, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aaa2d8172d9deb45ad7411166d070ee7b}{pretty\+\_\+print}}=True, File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aca622eff98ecb837856a3e101d9cc9b6}{stylesheet}}=None, Compression\+Options compression="{}infer"{}, Storage\+Options\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a99521893e0ed5f9a765d2c4cbedfe1b7}{storage\+\_\+options}}=None)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_adea9dc507888efd1915c81ad100461df}{write\+\_\+output}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a9bb09f0ed0802920ea754b7b5e466afe}{frame}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a158496531b4a25a762b83e9dcc8ee291}{path\+\_\+or\+\_\+buffer}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a6c7143aba09fff694ac8863d2d3a159e}{index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a28e3d21365f5824a0f50e8bc7a1b34c0}{root\+\_\+name}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a82f5c763248f0ca3d7f3dd3ab0a45719}{row\+\_\+name}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a782532f5d05e36b1e824a066bcd85f23}{na\+\_\+rep}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_abd0082c73c25a90652717626f1b50f68}{attr\+\_\+cols}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a80f33e3783c89e3f7093f0889e587ff3}{elem\+\_\+cols}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_af5784d0e5f9316ef98bbce0e4b2da763}{namespaces}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a626e90adcf97ba5fc26d79a532e77a59}{prefix}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a87a80222ade8b3759398d315fbba1382}{encoding}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_abd345729cd3a2dff18ea10a169315a06}{xml\+\_\+declaration}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aaa2d8172d9deb45ad7411166d070ee7b}{pretty\+\_\+print}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aca622eff98ecb837856a3e101d9cc9b6}{stylesheet}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a99521893e0ed5f9a765d2c4cbedfe1b7}{storage\+\_\+options}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aa65370a3cee466a1c2ae1ccb1263fa55}{orig\+\_\+cols}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a795ebcd0812953a49a74e891fa52f832}{frame\+\_\+dicts}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a6654f11275be6100474778468d1750d5}{prefix\+\_\+uri}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a999de8ded560f01fff9f72b400829c39}{\+\_\+build\+\_\+tree}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ab2ff63c93ab5be61483f401014a0dd27}{\+\_\+validate\+\_\+columns}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a69b98de1ddd8edd2abe40104fc95ca8a}{\+\_\+validate\+\_\+encoding}} (self)
+\item 
+dict\mbox{[}int\texorpdfstring{$\vert$}{|}str, dict\mbox{[}str, Any\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aec7dedf51074fec8101d68970f794c11}{\+\_\+process\+\_\+dataframe}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a3393aca001410f3613e49401f182bd6d}{\+\_\+handle\+\_\+indexes}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ab7e910a12a4e63ded98b65264e0fae84}{\+\_\+get\+\_\+prefix\+\_\+uri}} (self)
+\item 
+dict \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aa7daba3717092b542dee2b224fcae63d}{\+\_\+other\+\_\+namespaces}} (self)
+\item 
+Any \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ad8e2f6d45087ee9df07ee2edca8f72d3}{\+\_\+build\+\_\+attribs}} (self, dict\mbox{[}str, Any\mbox{]} d, Any elem\+\_\+row)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a43865e1f80db9363bc1e1aeef67595ef}{\+\_\+get\+\_\+flat\+\_\+col\+\_\+name}} (self, str\texorpdfstring{$\vert$}{|}tuple col)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a1ac8e8b02bd03cfc2366bac906f54251}{\+\_\+sub\+\_\+element\+\_\+cls}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_affe87f7cf2389c0128fc7cdd969a0008}{\+\_\+build\+\_\+elems}} (self, dict\mbox{[}str, Any\mbox{]} d, Any elem\+\_\+row)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Subclass for formatting data in XML.
+
+Parameters
+----------
+path_or_buffer : str or file-like
+    This can be either a string of raw XML, a valid URL,
+    file or file-like object.
+
+index : bool
+    Whether to include index in xml document.
+
+row_name : str
+    Name for root of xml document. Default is 'data'.
+
+root_name : str
+    Name for row elements of xml document. Default is 'row'.
+
+na_rep : str
+    Missing data representation.
+
+attrs_cols : list
+    List of columns to write as attributes in row element.
+
+elem_cols : list
+    List of columns to write as children in row element.
+
+namespaces : dict
+    The namespaces to define in XML document as dicts with key
+    being namespace and value the URI.
+
+prefix : str
+    The prefix for each element in XML document including root.
+
+encoding : str
+    Encoding of xml object or document.
+
+xml_declaration : bool
+    Whether to include xml declaration at top line item in xml.
+
+pretty_print : bool
+    Whether to write xml document with line breaks and indentation.
+
+stylesheet : str or file-like
+    A URL, file, file-like object, or a raw string containing XSLT.
+
+{compression_options}
+
+    .. versionchanged:: 1.4.0 Zstandard support.
+
+{storage_options}
+
+See also
+--------
+pandas.io.formats.xml.EtreeXMLFormatter
+pandas.io.formats.xml.LxmlXMLFormatter\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a4ee57a12a6b8888d73700fa15838a646}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a4ee57a12a6b8888d73700fa15838a646} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Data\+Frame}]{frame,  }\item[{File\+Path \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{path\+\_\+or\+\_\+buffer = {\ttfamily None},  }\item[{bool }]{index = {\ttfamily True},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{root\+\_\+name = {\ttfamily "{}data"{}},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{row\+\_\+name = {\ttfamily "{}row"{}},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{na\+\_\+rep = {\ttfamily None},  }\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{attr\+\_\+cols = {\ttfamily None},  }\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{elem\+\_\+cols = {\ttfamily None},  }\item[{dict\mbox{[}str \texorpdfstring{$\vert$}{|} None, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{namespaces = {\ttfamily None},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{prefix = {\ttfamily None},  }\item[{str }]{encoding = {\ttfamily "{}utf-\/8"{}},  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{xml\+\_\+declaration = {\ttfamily True},  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{pretty\+\_\+print = {\ttfamily True},  }\item[{File\+Path \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}bytes\mbox{]} \texorpdfstring{$\vert$}{|} None }]{stylesheet = {\ttfamily None},  }\item[{Compression\+Options }]{compression = {\ttfamily "{}infer"{}},  }\item[{Storage\+Options \texorpdfstring{$\vert$}{|} None }]{storage\+\_\+options = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1LxmlXMLFormatter_a683342666f07a09adfebea47370ca6e4}{pandas.\+io.\+formats.\+xml.\+Lxml\+XMLFormatter}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ad8e2f6d45087ee9df07ee2edca8f72d3}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ad8e2f6d45087ee9df07ee2edca8f72d3} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_build\_attribs@{\_build\_attribs}}
+\index{\_build\_attribs@{\_build\_attribs}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_build\_attribs()}{\_build\_attribs()}}
+{\footnotesize\ttfamily  Any pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+build\+\_\+attribs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{dict\mbox{[}str, Any\mbox{]}}]{d,  }\item[{Any}]{elem\+\_\+row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create attributes of row.
+
+This method adds attributes using attr_cols to row element and
+works with tuples for multindex or hierarchical columns.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_affe87f7cf2389c0128fc7cdd969a0008}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_affe87f7cf2389c0128fc7cdd969a0008} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_build\_elems@{\_build\_elems}}
+\index{\_build\_elems@{\_build\_elems}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_build\_elems()}{\_build\_elems()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+build\+\_\+elems (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{dict\mbox{[}str, Any\mbox{]}}]{d,  }\item[{Any}]{elem\+\_\+row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create child elements of row.
+
+This method adds child elements using elem_cols to row element and
+works with tuples for multindex or hierarchical columns.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a999de8ded560f01fff9f72b400829c39}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a999de8ded560f01fff9f72b400829c39} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_build\_tree@{\_build\_tree}}
+\index{\_build\_tree@{\_build\_tree}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_build\_tree()}{\_build\_tree()}}
+{\footnotesize\ttfamily  bytes pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+build\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Build tree from  data.
+
+This method initializes the root and builds attributes and elements
+with optional namespaces.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1EtreeXMLFormatter_a981e0894c7847b0b2f288fdc9ddeea9d}{pandas.\+io.\+formats.\+xml.\+Etree\+XMLFormatter}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1LxmlXMLFormatter_a0fd102b90c25ffad8c740b67dfd85cb8}{pandas.\+io.\+formats.\+xml.\+Lxml\+XMLFormatter}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a43865e1f80db9363bc1e1aeef67595ef}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a43865e1f80db9363bc1e1aeef67595ef} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_get\_flat\_col\_name@{\_get\_flat\_col\_name}}
+\index{\_get\_flat\_col\_name@{\_get\_flat\_col\_name}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_get\_flat\_col\_name()}{\_get\_flat\_col\_name()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+get\+\_\+flat\+\_\+col\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str \texorpdfstring{$\vert$}{|} tuple}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ab7e910a12a4e63ded98b65264e0fae84}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ab7e910a12a4e63ded98b65264e0fae84} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_get\_prefix\_uri@{\_get\_prefix\_uri}}
+\index{\_get\_prefix\_uri@{\_get\_prefix\_uri}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_get\_prefix\_uri()}{\_get\_prefix\_uri()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+get\+\_\+prefix\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get uri of namespace prefix.
+
+This method retrieves corresponding URI to prefix in namespaces.
+
+Raises
+------
+KeyError
+    *If prefix is not included in namespace dict.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1EtreeXMLFormatter_ae9eef52019e62b8586bd2ee5e9f86061}{pandas.\+io.\+formats.\+xml.\+Etree\+XMLFormatter}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1LxmlXMLFormatter_acf3b09d616633439148e8af3ab5403da}{pandas.\+io.\+formats.\+xml.\+Lxml\+XMLFormatter}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a3393aca001410f3613e49401f182bd6d}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a3393aca001410f3613e49401f182bd6d} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_handle\_indexes@{\_handle\_indexes}}
+\index{\_handle\_indexes@{\_handle\_indexes}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_handle\_indexes()}{\_handle\_indexes()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+handle\+\_\+indexes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Handle indexes.
+
+This method will add indexes into attr_cols or elem_cols.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aa7daba3717092b542dee2b224fcae63d}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aa7daba3717092b542dee2b224fcae63d} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_other\_namespaces@{\_other\_namespaces}}
+\index{\_other\_namespaces@{\_other\_namespaces}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_other\_namespaces()}{\_other\_namespaces()}}
+{\footnotesize\ttfamily  dict pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+other\+\_\+namespaces (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Define other namespaces.
+
+This method will build dictionary of namespaces attributes
+for root element, conditionally with optional namespaces and
+prefix.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aec7dedf51074fec8101d68970f794c11}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aec7dedf51074fec8101d68970f794c11} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_process\_dataframe@{\_process\_dataframe}}
+\index{\_process\_dataframe@{\_process\_dataframe}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_process\_dataframe()}{\_process\_dataframe()}}
+{\footnotesize\ttfamily  dict\mbox{[}int \texorpdfstring{$\vert$}{|} str, dict\mbox{[}str, Any\mbox{]}\mbox{]} pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+process\+\_\+dataframe (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Adjust Data Frame to fit xml output.
+
+This method will adjust underlying data frame for xml output,
+including optionally replacing missing values and including indexes.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a1ac8e8b02bd03cfc2366bac906f54251}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a1ac8e8b02bd03cfc2366bac906f54251} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_sub\_element\_cls@{\_sub\_element\_cls}}
+\index{\_sub\_element\_cls@{\_sub\_element\_cls}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_sub\_element\_cls()}{\_sub\_element\_cls()}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+sub\+\_\+element\+\_\+cls (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1EtreeXMLFormatter_a8da920e61a6dc0445eb86e0041ea60ab}{pandas.\+io.\+formats.\+xml.\+Etree\+XMLFormatter}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1xml_1_1LxmlXMLFormatter_a956946c974c486db97cecaa3735ff444}{pandas.\+io.\+formats.\+xml.\+Lxml\+XMLFormatter}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ab2ff63c93ab5be61483f401014a0dd27}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_ab2ff63c93ab5be61483f401014a0dd27} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_validate\_columns@{\_validate\_columns}}
+\index{\_validate\_columns@{\_validate\_columns}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_validate\_columns()}{\_validate\_columns()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+validate\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Validate elems_cols and attrs_cols.
+
+This method will check if columns is list-like.
+
+Raises
+------
+ValueError
+    * If value is not a list and less then length of nodes.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a69b98de1ddd8edd2abe40104fc95ca8a}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a69b98de1ddd8edd2abe40104fc95ca8a} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!\_validate\_encoding@{\_validate\_encoding}}
+\index{\_validate\_encoding@{\_validate\_encoding}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{\_validate\_encoding()}{\_validate\_encoding()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+\_\+validate\+\_\+encoding (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Validate encoding.
+
+This method will check if encoding is among listed under codecs.
+
+Raises
+------
+LookupError
+    * If encoding is not available in codecs.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_adea9dc507888efd1915c81ad100461df}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_adea9dc507888efd1915c81ad100461df} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!write\_output@{write\_output}}
+\index{write\_output@{write\_output}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{write\_output()}{write\_output()}}
+{\footnotesize\ttfamily  str \texorpdfstring{$\vert$}{|} None pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+write\+\_\+output (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_abd0082c73c25a90652717626f1b50f68}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_abd0082c73c25a90652717626f1b50f68} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!attr\_cols@{attr\_cols}}
+\index{attr\_cols@{attr\_cols}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{attr\_cols}{attr\_cols}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+attr\+\_\+cols}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a80f33e3783c89e3f7093f0889e587ff3}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a80f33e3783c89e3f7093f0889e587ff3} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!elem\_cols@{elem\_cols}}
+\index{elem\_cols@{elem\_cols}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{elem\_cols}{elem\_cols}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+elem\+\_\+cols}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a87a80222ade8b3759398d315fbba1382}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a87a80222ade8b3759398d315fbba1382} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!encoding@{encoding}}
+\index{encoding@{encoding}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+encoding}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a9bb09f0ed0802920ea754b7b5e466afe}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a9bb09f0ed0802920ea754b7b5e466afe} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!frame@{frame}}
+\index{frame@{frame}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+frame}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a795ebcd0812953a49a74e891fa52f832}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a795ebcd0812953a49a74e891fa52f832} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!frame\_dicts@{frame\_dicts}}
+\index{frame\_dicts@{frame\_dicts}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{frame\_dicts}{frame\_dicts}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+frame\+\_\+dicts}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a6c7143aba09fff694ac8863d2d3a159e}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a6c7143aba09fff694ac8863d2d3a159e} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!index@{index}}
+\index{index@{index}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+index}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a782532f5d05e36b1e824a066bcd85f23}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a782532f5d05e36b1e824a066bcd85f23} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!na\_rep@{na\_rep}}
+\index{na\_rep@{na\_rep}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{na\_rep}{na\_rep}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+na\+\_\+rep}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_af5784d0e5f9316ef98bbce0e4b2da763}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_af5784d0e5f9316ef98bbce0e4b2da763} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!namespaces@{namespaces}}
+\index{namespaces@{namespaces}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{namespaces}{namespaces}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+namespaces}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aa65370a3cee466a1c2ae1ccb1263fa55}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aa65370a3cee466a1c2ae1ccb1263fa55} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!orig\_cols@{orig\_cols}}
+\index{orig\_cols@{orig\_cols}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{orig\_cols}{orig\_cols}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+orig\+\_\+cols}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a158496531b4a25a762b83e9dcc8ee291}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a158496531b4a25a762b83e9dcc8ee291} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!path\_or\_buffer@{path\_or\_buffer}}
+\index{path\_or\_buffer@{path\_or\_buffer}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{path\_or\_buffer}{path\_or\_buffer}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+path\+\_\+or\+\_\+buffer}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a626e90adcf97ba5fc26d79a532e77a59}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a626e90adcf97ba5fc26d79a532e77a59} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!prefix@{prefix}}
+\index{prefix@{prefix}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+prefix}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a6654f11275be6100474778468d1750d5}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a6654f11275be6100474778468d1750d5} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!prefix\_uri@{prefix\_uri}}
+\index{prefix\_uri@{prefix\_uri}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{prefix\_uri}{prefix\_uri}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+prefix\+\_\+uri}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aaa2d8172d9deb45ad7411166d070ee7b}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aaa2d8172d9deb45ad7411166d070ee7b} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{pretty\_print}{pretty\_print}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+pretty\+\_\+print}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a28e3d21365f5824a0f50e8bc7a1b34c0}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a28e3d21365f5824a0f50e8bc7a1b34c0} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!root\_name@{root\_name}}
+\index{root\_name@{root\_name}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{root\_name}{root\_name}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+root\+\_\+name}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a82f5c763248f0ca3d7f3dd3ab0a45719}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a82f5c763248f0ca3d7f3dd3ab0a45719} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!row\_name@{row\_name}}
+\index{row\_name@{row\_name}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{row\_name}{row\_name}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+row\+\_\+name}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a99521893e0ed5f9a765d2c4cbedfe1b7}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_a99521893e0ed5f9a765d2c4cbedfe1b7} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!storage\_options@{storage\_options}}
+\index{storage\_options@{storage\_options}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{storage\_options}{storage\_options}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+storage\+\_\+options}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aca622eff98ecb837856a3e101d9cc9b6}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_aca622eff98ecb837856a3e101d9cc9b6} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!stylesheet@{stylesheet}}
+\index{stylesheet@{stylesheet}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{stylesheet}{stylesheet}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+stylesheet}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_abd345729cd3a2dff18ea10a169315a06}\label{classpandas_1_1io_1_1formats_1_1xml_1_1__BaseXMLFormatter_abd345729cd3a2dff18ea10a169315a06} 
+\index{pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}!xml\_declaration@{xml\_declaration}}
+\index{xml\_declaration@{xml\_declaration}!pandas.io.formats.xml.\_BaseXMLFormatter@{pandas.io.formats.xml.\_BaseXMLFormatter}}
+\doxysubsubsection{\texorpdfstring{xml\_declaration}{xml\_declaration}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+xml.\+\_\+\+Base\+XMLFormatter.\+xml\+\_\+declaration}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/formats/\mbox{\hyperlink{formats_2xml_8py}{xml.\+py}}\end{DoxyCompactItemize}

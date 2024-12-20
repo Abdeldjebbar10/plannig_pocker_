@@ -1,0 +1,1016 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Poker_Project: Référence de la classe django.db.models.fields.related.RelatedField</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Poker_Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacedjango.html">django</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1db.html">db</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1db_1_1models.html">models</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1db_1_1models_1_1fields.html">fields</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1db_1_1models_1_1fields_1_1related.html">related</a></li><li class="navelem"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html">RelatedField</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pub-static-attribs">Attributs publics statiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe django.db.models.fields.related.RelatedField</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Graphe d'héritage de django.db.models.fields.related.RelatedField:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField__inherit__graph.png" border="0" usemap="#adjango_8db_8models_8fields_8related_8RelatedField_inherit__map" alt="Inheritance graph"/></div>
+<map name="adjango_8db_8models_8fields_8related_8RelatedField_inherit__map" id="adjango_8db_8models_8fields_8related_8RelatedField_inherit__map">
+<area shape="rect" title=" " alt="" coords="283,37,513,77"/>
+<area shape="rect" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignObject.html" title=" " alt="" coords="561,5,792,45"/>
+<area shape="poly" title=" " alt="" coords="527,40,561,36,561,41,527,45"/>
+<area shape="rect" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ManyToManyField.html" title=" " alt="" coords="561,69,792,109"/>
+<area shape="poly" title=" " alt="" coords="527,69,561,73,561,79,527,75"/>
+<area shape="rect" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html" title=" " alt="" coords="5,8,235,48"/>
+<area shape="poly" title=" " alt="" coords="249,39,283,43,282,48,248,44"/>
+<area shape="rect" title=" " alt="" coords="93,73,147,98"/>
+<area shape="poly" title=" " alt="" coords="160,79,282,66,283,72,161,84"/>
+<area shape="rect" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignKey.html" title=" " alt="" coords="840,5,1071,45"/>
+<area shape="poly" title=" " alt="" coords="806,23,840,23,840,28,806,28"/>
+<area shape="rect" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1OneToOneField.html" title=" " alt="" coords="1119,5,1349,45"/>
+<area shape="poly" title=" " alt="" coords="1084,23,1119,23,1119,28,1084,28"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de django.db.models.fields.related.RelatedField:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField__coll__graph.png" border="0" usemap="#adjango_8db_8models_8fields_8related_8RelatedField_coll__map" alt="Collaboration graph"/></div>
+<map name="adjango_8db_8models_8fields_8related_8RelatedField_coll__map" id="adjango_8db_8models_8fields_8related_8RelatedField_coll__map">
+<area shape="rect" title=" " alt="" coords="170,152,401,192"/>
+<area shape="rect" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html" title=" " alt="" coords="5,5,235,45"/>
+<area shape="poly" title=" " alt="" coords="154,53,265,150,262,154,150,57"/>
+<area shape="rect" title=" " alt="" coords="259,13,312,38"/>
+<area shape="poly" title=" " alt="" coords="288,52,288,152,283,152,283,52"/>
+<area shape="rect" title=" " alt="" coords="336,13,387,38"/>
+<area shape="poly" title=" " alt="" coords="351,52,298,153,293,150,346,49"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a7a55b909b79e672fabfd308d447c0dd3" id="r_a7a55b909b79e672fabfd308d447c0dd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a7a55b909b79e672fabfd308d447c0dd3">__init__</a> (self, related_name=None, <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#ad456fc46c403d08b777b8529e9586d72">related_query_name</a>=None, limit_choices_to=None, **kwargs)</td></tr>
+<tr class="separator:a7a55b909b79e672fabfd308d447c0dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e90b7791fec1debd6c4438140f4fab5" id="r_a8e90b7791fec1debd6c4438140f4fab5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a8e90b7791fec1debd6c4438140f4fab5">related_model</a> (self)</td></tr>
+<tr class="separator:a8e90b7791fec1debd6c4438140f4fab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6b770cf843d11a02a7eb2ed80bc434" id="r_a0a6b770cf843d11a02a7eb2ed80bc434"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a0a6b770cf843d11a02a7eb2ed80bc434">check</a> (self, **kwargs)</td></tr>
+<tr class="separator:a0a6b770cf843d11a02a7eb2ed80bc434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded055b081591859cc0099ed13ad2e50" id="r_aded055b081591859cc0099ed13ad2e50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#aded055b081591859cc0099ed13ad2e50">db_type</a> (self, connection)</td></tr>
+<tr class="separator:aded055b081591859cc0099ed13ad2e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389b5088b9998669416a1c330380f9c0" id="r_a389b5088b9998669416a1c330380f9c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a389b5088b9998669416a1c330380f9c0">contribute_to_class</a> (self, cls, <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a15a8527f053d149fdcdc97a0516c264f">name</a>, private_only=False, **kwargs)</td></tr>
+<tr class="separator:a389b5088b9998669416a1c330380f9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7136de4e9d55100386f6c658a2739ef0" id="r_a7136de4e9d55100386f6c658a2739ef0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a7136de4e9d55100386f6c658a2739ef0">deconstruct</a> (self)</td></tr>
+<tr class="separator:a7136de4e9d55100386f6c658a2739ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5199daf9a1ca863cb58708bd45360a" id="r_a7e5199daf9a1ca863cb58708bd45360a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a7e5199daf9a1ca863cb58708bd45360a">get_forward_related_filter</a> (self, obj)</td></tr>
+<tr class="separator:a7e5199daf9a1ca863cb58708bd45360a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a6ac0eab60cdd247540c4ed635a119" id="r_a35a6ac0eab60cdd247540c4ed635a119"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a35a6ac0eab60cdd247540c4ed635a119">get_reverse_related_filter</a> (self, obj)</td></tr>
+<tr class="separator:a35a6ac0eab60cdd247540c4ed635a119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717cefa9651f3f3e07503f3bb1854ea4" id="r_a717cefa9651f3f3e07503f3bb1854ea4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a717cefa9651f3f3e07503f3bb1854ea4">swappable_setting</a> (self)</td></tr>
+<tr class="separator:a717cefa9651f3f3e07503f3bb1854ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0af9e9b9c8ca34aa5d78921bcf4360" id="r_a5c0af9e9b9c8ca34aa5d78921bcf4360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a5c0af9e9b9c8ca34aa5d78921bcf4360">set_attributes_from_rel</a> (self)</td></tr>
+<tr class="separator:a5c0af9e9b9c8ca34aa5d78921bcf4360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bea17d425f21b93de9d4a39d6749b92" id="r_a9bea17d425f21b93de9d4a39d6749b92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a9bea17d425f21b93de9d4a39d6749b92">do_related_class</a> (self, other, cls)</td></tr>
+<tr class="separator:a9bea17d425f21b93de9d4a39d6749b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef8aa2484ad014166ff1553a5b7419a" id="r_a6ef8aa2484ad014166ff1553a5b7419a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a6ef8aa2484ad014166ff1553a5b7419a">get_limit_choices_to</a> (self)</td></tr>
+<tr class="separator:a6ef8aa2484ad014166ff1553a5b7419a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd9d97b8f76df65814704377e2d907e0" id="r_acd9d97b8f76df65814704377e2d907e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#acd9d97b8f76df65814704377e2d907e0">formfield</a> (self, **kwargs)</td></tr>
+<tr class="separator:acd9d97b8f76df65814704377e2d907e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad456fc46c403d08b777b8529e9586d72" id="r_ad456fc46c403d08b777b8529e9586d72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#ad456fc46c403d08b777b8529e9586d72">related_query_name</a> (self)</td></tr>
+<tr class="separator:ad456fc46c403d08b777b8529e9586d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029cbf99ddd23283da034c80861467df" id="r_a029cbf99ddd23283da034c80861467df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a029cbf99ddd23283da034c80861467df">target_field</a> (self)</td></tr>
+<tr class="separator:a029cbf99ddd23283da034c80861467df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62562cd00aa087cbaa8ec396ecc35249" id="r_a62562cd00aa087cbaa8ec396ecc35249"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a62562cd00aa087cbaa8ec396ecc35249">cache_name</a> (self)</td></tr>
+<tr class="separator:a62562cd00aa087cbaa8ec396ecc35249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html">django.db.models.fields.mixins.FieldCacheMixin</a></td></tr>
+<tr class="memitem:afec8116613cd756c6b9ef1dfc0a170a5 inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin" id="r_afec8116613cd756c6b9ef1dfc0a170a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html#afec8116613cd756c6b9ef1dfc0a170a5">get_cache_name</a> (self)</td></tr>
+<tr class="separator:afec8116613cd756c6b9ef1dfc0a170a5 inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65351bef708d80dd2e17b6ffd986daca inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin" id="r_a65351bef708d80dd2e17b6ffd986daca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html#a65351bef708d80dd2e17b6ffd986daca">get_cached_value</a> (self, instance, default=<a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1NOT__PROVIDED.html">NOT_PROVIDED</a>)</td></tr>
+<tr class="separator:a65351bef708d80dd2e17b6ffd986daca inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56a717e5cc2cfa34a83040b25e350b7 inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin" id="r_ac56a717e5cc2cfa34a83040b25e350b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html#ac56a717e5cc2cfa34a83040b25e350b7">is_cached</a> (self, instance)</td></tr>
+<tr class="separator:ac56a717e5cc2cfa34a83040b25e350b7 inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3d46ea7bacc6edbefd699ad7315c23 inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin" id="r_acc3d46ea7bacc6edbefd699ad7315c23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html#acc3d46ea7bacc6edbefd699ad7315c23">set_cached_value</a> (self, instance, value)</td></tr>
+<tr class="separator:acc3d46ea7bacc6edbefd699ad7315c23 inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a547e06e85e149d7987d79b78051da706 inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin" id="r_a547e06e85e149d7987d79b78051da706"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html#a547e06e85e149d7987d79b78051da706">delete_cached_value</a> (self, instance)</td></tr>
+<tr class="separator:a547e06e85e149d7987d79b78051da706 inherit pub_methods_classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:a15a8527f053d149fdcdc97a0516c264f" id="r_a15a8527f053d149fdcdc97a0516c264f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a15a8527f053d149fdcdc97a0516c264f">name</a></td></tr>
+<tr class="separator:a15a8527f053d149fdcdc97a0516c264f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de2fdd05d9071a2eb9141800c4a87d4" id="r_a4de2fdd05d9071a2eb9141800c4a87d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a4de2fdd05d9071a2eb9141800c4a87d4">opts</a></td></tr>
+<tr class="separator:a4de2fdd05d9071a2eb9141800c4a87d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a763b3ab6ca63e4494860a138c3b4d" id="r_ae7a763b3ab6ca63e4494860a138c3b4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#ae7a763b3ab6ca63e4494860a138c3b4d">verbose_name</a></td></tr>
+<tr class="separator:ae7a763b3ab6ca63e4494860a138c3b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab004f879d973fa4947561db3b0108919" id="r_ab004f879d973fa4947561db3b0108919"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#ab004f879d973fa4947561db3b0108919">remote_field</a></td></tr>
+<tr class="separator:ab004f879d973fa4947561db3b0108919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Attributs publics statiques</h2></td></tr>
+<tr class="memitem:a7bfaad6e796c1f43fef666fd1164c356" id="r_a7bfaad6e796c1f43fef666fd1164c356"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a7bfaad6e796c1f43fef666fd1164c356">one_to_many</a> = False</td></tr>
+<tr class="separator:a7bfaad6e796c1f43fef666fd1164c356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5bd8e5aa6157df9a27e6c222f86735" id="r_adb5bd8e5aa6157df9a27e6c222f86735"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#adb5bd8e5aa6157df9a27e6c222f86735">one_to_one</a> = False</td></tr>
+<tr class="separator:adb5bd8e5aa6157df9a27e6c222f86735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d4223cf089b3dd14f198ca82bc3b67" id="r_a26d4223cf089b3dd14f198ca82bc3b67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a26d4223cf089b3dd14f198ca82bc3b67">many_to_many</a> = False</td></tr>
+<tr class="separator:a26d4223cf089b3dd14f198ca82bc3b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49ec83af8c839c8e5851dac121e1403" id="r_aa49ec83af8c839c8e5851dac121e1403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#aa49ec83af8c839c8e5851dac121e1403">many_to_one</a> = False</td></tr>
+<tr class="separator:aa49ec83af8c839c8e5851dac121e1403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:a05485d59bb3f587f840f7e67f31c89e7" id="r_a05485d59bb3f587f840f7e67f31c89e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a05485d59bb3f587f840f7e67f31c89e7">_check_related_name_is_valid</a> (self)</td></tr>
+<tr class="separator:a05485d59bb3f587f840f7e67f31c89e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83ee86288ab41e27d1f83987fbd63ed" id="r_af83ee86288ab41e27d1f83987fbd63ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#af83ee86288ab41e27d1f83987fbd63ed">_check_related_query_name_is_valid</a> (self)</td></tr>
+<tr class="separator:af83ee86288ab41e27d1f83987fbd63ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bbc5164c165a9314355966ec65df01" id="r_ae2bbc5164c165a9314355966ec65df01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#ae2bbc5164c165a9314355966ec65df01">_check_relation_model_exists</a> (self)</td></tr>
+<tr class="separator:ae2bbc5164c165a9314355966ec65df01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8c8bb4c3be8121ecd448574b5dfd3e" id="r_abc8c8bb4c3be8121ecd448574b5dfd3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#abc8c8bb4c3be8121ecd448574b5dfd3e">_check_referencing_to_swapped_model</a> (self)</td></tr>
+<tr class="separator:abc8c8bb4c3be8121ecd448574b5dfd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4abb06fa874e01ce7efabf0208c527e" id="r_ac4abb06fa874e01ce7efabf0208c527e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#ac4abb06fa874e01ce7efabf0208c527e">_check_clashes</a> (self)</td></tr>
+<tr class="separator:ac4abb06fa874e01ce7efabf0208c527e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:a9ca745261fdad68b8f2ec0d31523e689" id="r_a9ca745261fdad68b8f2ec0d31523e689"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#a9ca745261fdad68b8f2ec0d31523e689">_related_name</a></td></tr>
+<tr class="separator:a9ca745261fdad68b8f2ec0d31523e689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1962f78c9b7e37641abd5b3993288c9" id="r_ab1962f78c9b7e37641abd5b3993288c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#ab1962f78c9b7e37641abd5b3993288c9">_related_query_name</a></td></tr>
+<tr class="separator:ab1962f78c9b7e37641abd5b3993288c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa3f11713098d9d2c3240d1a6cf4d180" id="r_aaa3f11713098d9d2c3240d1a6cf4d180"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField.html#aaa3f11713098d9d2c3240d1a6cf4d180">_limit_choices_to</a></td></tr>
+<tr class="separator:aaa3f11713098d9d2c3240d1a6cf4d180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><pre class="fragment">Base class that all relational fields inherit from.</pre> </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a7a55b909b79e672fabfd308d447c0dd3" name="a7a55b909b79e672fabfd308d447c0dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a55b909b79e672fabfd308d447c0dd3">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>related_name</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>related_query_name</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>limit_choices_to</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**&#160;</td>
+          <td class="paramname"><em>kwargs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignObject.html#ad8d917367339ea920354905c447c1e6e">django.db.models.fields.related.ForeignObject</a>, <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignKey.html#a9a1e9d6d30fe9cecf4308091d579b782">django.db.models.fields.related.ForeignKey</a>, <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1OneToOneField.html#a66c4ee053a542dbdb7da4007f4dcf77b">django.db.models.fields.related.OneToOneField</a>, et <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ManyToManyField.html#ab116e4bb6e2c8e6a60b55a53c7459de4">django.db.models.fields.related.ManyToManyField</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="ac4abb06fa874e01ce7efabf0208c527e" name="ac4abb06fa874e01ce7efabf0208c527e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4abb06fa874e01ce7efabf0208c527e">&#9670;&#160;</a></span>_check_clashes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField._check_clashes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Check accessor and reverse query name clashes.</pre> 
+</div>
+</div>
+<a id="abc8c8bb4c3be8121ecd448574b5dfd3e" name="abc8c8bb4c3be8121ecd448574b5dfd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc8c8bb4c3be8121ecd448574b5dfd3e">&#9670;&#160;</a></span>_check_referencing_to_swapped_model()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField._check_referencing_to_swapped_model </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05485d59bb3f587f840f7e67f31c89e7" name="a05485d59bb3f587f840f7e67f31c89e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05485d59bb3f587f840f7e67f31c89e7">&#9670;&#160;</a></span>_check_related_name_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField._check_related_name_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af83ee86288ab41e27d1f83987fbd63ed" name="af83ee86288ab41e27d1f83987fbd63ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af83ee86288ab41e27d1f83987fbd63ed">&#9670;&#160;</a></span>_check_related_query_name_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField._check_related_query_name_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2bbc5164c165a9314355966ec65df01" name="ae2bbc5164c165a9314355966ec65df01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2bbc5164c165a9314355966ec65df01">&#9670;&#160;</a></span>_check_relation_model_exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField._check_relation_model_exists </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62562cd00aa087cbaa8ec396ecc35249" name="a62562cd00aa087cbaa8ec396ecc35249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62562cd00aa087cbaa8ec396ecc35249">&#9670;&#160;</a></span>cache_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.cache_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée à partir de <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin.html#a9c64c6b6944f928ee9d7ccf42a26f9b0">django.db.models.fields.mixins.FieldCacheMixin</a>.</p>
+
+</div>
+</div>
+<a id="a0a6b770cf843d11a02a7eb2ed80bc434" name="a0a6b770cf843d11a02a7eb2ed80bc434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6b770cf843d11a02a7eb2ed80bc434">&#9670;&#160;</a></span>check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.check </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**&#160;</td>
+          <td class="paramname"><em>kwargs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignObject.html#a3f86b34db6a0c837940fd06a738f8874">django.db.models.fields.related.ForeignObject</a>, <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignKey.html#a4f1f9779dfed8a2ecc2ef8e7c763ac2e">django.db.models.fields.related.ForeignKey</a>, et <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ManyToManyField.html#a27fb55abc0248b438349aaff84762a70">django.db.models.fields.related.ManyToManyField</a>.</p>
+
+</div>
+</div>
+<a id="a389b5088b9998669416a1c330380f9c0" name="a389b5088b9998669416a1c330380f9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389b5088b9998669416a1c330380f9c0">&#9670;&#160;</a></span>contribute_to_class()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.contribute_to_class </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>private_only</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**&#160;</td>
+          <td class="paramname"><em>kwargs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ManyToManyField.html#a37a20190260523ec4507cbed4858955e">django.db.models.fields.related.ManyToManyField</a>, et <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignObject.html#a3941022e5071d78d1372e35c1fa01256">django.db.models.fields.related.ForeignObject</a>.</p>
+
+</div>
+</div>
+<a id="aded055b081591859cc0099ed13ad2e50" name="aded055b081591859cc0099ed13ad2e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded055b081591859cc0099ed13ad2e50">&#9670;&#160;</a></span>db_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.db_type </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>connection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignKey.html#ae18f933ab8dbe059650fbfeb19ceff97">django.db.models.fields.related.ForeignKey</a>, et <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ManyToManyField.html#ac66d6aecfe61bdb51f46a706a78eb85e">django.db.models.fields.related.ManyToManyField</a>.</p>
+
+</div>
+</div>
+<a id="a7136de4e9d55100386f6c658a2739ef0" name="a7136de4e9d55100386f6c658a2739ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7136de4e9d55100386f6c658a2739ef0">&#9670;&#160;</a></span>deconstruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.deconstruct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignObject.html#aef032fdab3a63bf21efb229af805c155">django.db.models.fields.related.ForeignObject</a>, <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignKey.html#a6225c36cc233e09d3364a253125a16a2">django.db.models.fields.related.ForeignKey</a>, <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1OneToOneField.html#a1bef08e45d4bf2d211a8dfbc11e9c86a">django.db.models.fields.related.OneToOneField</a>, et <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ManyToManyField.html#a21c8a771868d0cc57e46b4ca75233174">django.db.models.fields.related.ManyToManyField</a>.</p>
+
+</div>
+</div>
+<a id="a9bea17d425f21b93de9d4a39d6749b92" name="a9bea17d425f21b93de9d4a39d6749b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bea17d425f21b93de9d4a39d6749b92">&#9670;&#160;</a></span>do_related_class()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.do_related_class </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd9d97b8f76df65814704377e2d907e0" name="acd9d97b8f76df65814704377e2d907e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd9d97b8f76df65814704377e2d907e0">&#9670;&#160;</a></span>formfield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.formfield </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">**&#160;</td>
+          <td class="paramname"><em>kwargs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Pass ``limit_choices_to`` to the field being constructed.
+
+Only passes it if there is a type that supports related fields.
+This is a similar strategy used to pass the ``queryset`` to the field
+being constructed.
+</pre> 
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1OneToOneField.html#a64e389b7d914aae2652fd1ae87dfbd59">django.db.models.fields.related.OneToOneField</a>, <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignKey.html#a0e17a6cd028ef7283771581dd11bce9c">django.db.models.fields.related.ForeignKey</a>, et <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ManyToManyField.html#aa25510fd25603bfa20fc6d67c1977a7f">django.db.models.fields.related.ManyToManyField</a>.</p>
+
+</div>
+</div>
+<a id="a7e5199daf9a1ca863cb58708bd45360a" name="a7e5199daf9a1ca863cb58708bd45360a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e5199daf9a1ca863cb58708bd45360a">&#9670;&#160;</a></span>get_forward_related_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.get_forward_related_filter </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the keyword arguments that when supplied to
+self.model.object.filter(), would select all instances related through
+this field to the remote obj. This is used to build the querysets
+returned by related descriptors. obj is an instance of
+self.related_field.model.
+</pre> 
+</div>
+</div>
+<a id="a6ef8aa2484ad014166ff1553a5b7419a" name="a6ef8aa2484ad014166ff1553a5b7419a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef8aa2484ad014166ff1553a5b7419a">&#9670;&#160;</a></span>get_limit_choices_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.get_limit_choices_to </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return ``limit_choices_to`` for this model field.
+
+If it is a callable, it will be invoked and the result will be
+returned.
+</pre> 
+</div>
+</div>
+<a id="a35a6ac0eab60cdd247540c4ed635a119" name="a35a6ac0eab60cdd247540c4ed635a119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a6ac0eab60cdd247540c4ed635a119">&#9670;&#160;</a></span>get_reverse_related_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.get_reverse_related_filter </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Complement to get_forward_related_filter(). Return the keyword
+arguments that when passed to self.related_field.model.object.filter()
+select all instances of self.related_field.model related through
+this field to obj. obj is an instance of self.model.
+</pre> 
+</div>
+</div>
+<a id="a8e90b7791fec1debd6c4438140f4fab5" name="a8e90b7791fec1debd6c4438140f4fab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e90b7791fec1debd6c4438140f4fab5">&#9670;&#160;</a></span>related_model()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.related_model </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad456fc46c403d08b777b8529e9586d72" name="ad456fc46c403d08b777b8529e9586d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad456fc46c403d08b777b8529e9586d72">&#9670;&#160;</a></span>related_query_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.related_query_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Define the name that can be used to identify this related object in a
+table-spanning query.
+</pre> 
+</div>
+</div>
+<a id="a5c0af9e9b9c8ca34aa5d78921bcf4360" name="a5c0af9e9b9c8ca34aa5d78921bcf4360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0af9e9b9c8ca34aa5d78921bcf4360">&#9670;&#160;</a></span>set_attributes_from_rel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.set_attributes_from_rel </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ManyToManyField.html#ad633f945a75ea81a351179ef87ccd8e8">django.db.models.fields.related.ManyToManyField</a>.</p>
+
+</div>
+</div>
+<a id="a717cefa9651f3f3e07503f3bb1854ea4" name="a717cefa9651f3f3e07503f3bb1854ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717cefa9651f3f3e07503f3bb1854ea4">&#9670;&#160;</a></span>swappable_setting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.swappable_setting </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Get the setting that this is powered from for swapping, or None
+if it's not swapped in / marked with swappable=False.
+</pre> 
+</div>
+</div>
+<a id="a029cbf99ddd23283da034c80861467df" name="a029cbf99ddd23283da034c80861467df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a029cbf99ddd23283da034c80861467df">&#9670;&#160;</a></span>target_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.target_field </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">When filtering against this relation, return the field on the remote
+model against which the filtering should happen.
+</pre> 
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1db_1_1models_1_1fields_1_1related_1_1ForeignKey.html#a7e98ceb17ffd4d2e7db7204947ecf3f4">django.db.models.fields.related.ForeignKey</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="aaa3f11713098d9d2c3240d1a6cf4d180" name="aaa3f11713098d9d2c3240d1a6cf4d180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3f11713098d9d2c3240d1a6cf4d180">&#9670;&#160;</a></span>_limit_choices_to</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField._limit_choices_to</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ca745261fdad68b8f2ec0d31523e689" name="a9ca745261fdad68b8f2ec0d31523e689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca745261fdad68b8f2ec0d31523e689">&#9670;&#160;</a></span>_related_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField._related_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1962f78c9b7e37641abd5b3993288c9" name="ab1962f78c9b7e37641abd5b3993288c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1962f78c9b7e37641abd5b3993288c9">&#9670;&#160;</a></span>_related_query_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField._related_query_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26d4223cf089b3dd14f198ca82bc3b67" name="a26d4223cf089b3dd14f198ca82bc3b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d4223cf089b3dd14f198ca82bc3b67">&#9670;&#160;</a></span>many_to_many</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.db.models.fields.related.RelatedField.many_to_many = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa49ec83af8c839c8e5851dac121e1403" name="aa49ec83af8c839c8e5851dac121e1403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49ec83af8c839c8e5851dac121e1403">&#9670;&#160;</a></span>many_to_one</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.db.models.fields.related.RelatedField.many_to_one = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15a8527f053d149fdcdc97a0516c264f" name="a15a8527f053d149fdcdc97a0516c264f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a8527f053d149fdcdc97a0516c264f">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bfaad6e796c1f43fef666fd1164c356" name="a7bfaad6e796c1f43fef666fd1164c356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bfaad6e796c1f43fef666fd1164c356">&#9670;&#160;</a></span>one_to_many</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.db.models.fields.related.RelatedField.one_to_many = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb5bd8e5aa6157df9a27e6c222f86735" name="adb5bd8e5aa6157df9a27e6c222f86735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5bd8e5aa6157df9a27e6c222f86735">&#9670;&#160;</a></span>one_to_one</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.db.models.fields.related.RelatedField.one_to_one = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4de2fdd05d9071a2eb9141800c4a87d4" name="a4de2fdd05d9071a2eb9141800c4a87d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de2fdd05d9071a2eb9141800c4a87d4">&#9670;&#160;</a></span>opts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.opts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab004f879d973fa4947561db3b0108919" name="ab004f879d973fa4947561db3b0108919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab004f879d973fa4947561db3b0108919">&#9670;&#160;</a></span>remote_field</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.remote_field</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7a763b3ab6ca63e4494860a138c3b4d" name="ae7a763b3ab6ca63e4494860a138c3b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a763b3ab6ca63e4494860a138c3b4d">&#9670;&#160;</a></span>verbose_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.db.models.fields.related.RelatedField.verbose_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>env/lib/python3.12/site-packages/django/db/models/fields/<a class="el" href="related_8py.html">related.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

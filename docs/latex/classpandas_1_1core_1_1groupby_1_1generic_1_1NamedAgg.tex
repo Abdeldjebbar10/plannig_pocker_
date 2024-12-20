@@ -1,0 +1,63 @@
+\doxysection{Référence de la classe pandas.\+core.\+groupby.\+generic.\+Named\+Agg}
+\hypertarget{classpandas_1_1core_1_1groupby_1_1generic_1_1NamedAgg}{}\label{classpandas_1_1core_1_1groupby_1_1generic_1_1NamedAgg}\index{pandas.core.groupby.generic.NamedAgg@{pandas.core.groupby.generic.NamedAgg}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+groupby.\+generic.\+Named\+Agg\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+groupby.\+generic.\+Named\+Agg\+:
+% FIG 1
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+Hashable \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1generic_1_1NamedAgg_a7799348f6e2440dd190ff3740f8a56be}{column}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1groupby_1_1generic_aa2e68e1735c640e1e50a285a51756a22}{Agg\+Scalar}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1generic_1_1NamedAgg_a3f06ebac6c2ed814fcaf609be9c39581}{aggfunc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Helper for column specific aggregation with control over output column names.
+
+Subclass of typing.NamedTuple.
+
+Parameters
+----------
+column : Hashable
+    Column label in the DataFrame to apply aggfunc.
+aggfunc : function or str
+    Function to apply to the provided column. If string, the name of a built-in
+    pandas function.
+
+Examples
+--------
+>>> df = pd.DataFrame({"key": [1, 1, 2], "a": [-1, 0, 1], 1: [10, 11, 12]})
+>>> agg_a = pd.NamedAgg(column="a", aggfunc="min")
+>>> agg_1 = pd.NamedAgg(column=1, aggfunc=lambda x: np.mean(x))
+>>> df.groupby("key").agg(result_a=agg_a, result_1=agg_1)
+     result_a  result_1
+key
+1          -1      10.5
+2           1      12.0
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1generic_1_1NamedAgg_a3f06ebac6c2ed814fcaf609be9c39581}\label{classpandas_1_1core_1_1groupby_1_1generic_1_1NamedAgg_a3f06ebac6c2ed814fcaf609be9c39581} 
+\index{pandas.core.groupby.generic.NamedAgg@{pandas.core.groupby.generic.NamedAgg}!aggfunc@{aggfunc}}
+\index{aggfunc@{aggfunc}!pandas.core.groupby.generic.NamedAgg@{pandas.core.groupby.generic.NamedAgg}}
+\doxysubsubsection{\texorpdfstring{aggfunc}{aggfunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepandas_1_1core_1_1groupby_1_1generic_aa2e68e1735c640e1e50a285a51756a22}{Agg\+Scalar}} pandas.\+core.\+groupby.\+generic.\+Named\+Agg.\+aggfunc\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1generic_1_1NamedAgg_a7799348f6e2440dd190ff3740f8a56be}\label{classpandas_1_1core_1_1groupby_1_1generic_1_1NamedAgg_a7799348f6e2440dd190ff3740f8a56be} 
+\index{pandas.core.groupby.generic.NamedAgg@{pandas.core.groupby.generic.NamedAgg}!column@{column}}
+\index{column@{column}!pandas.core.groupby.generic.NamedAgg@{pandas.core.groupby.generic.NamedAgg}}
+\doxysubsubsection{\texorpdfstring{column}{column}}
+{\footnotesize\ttfamily Hashable pandas.\+core.\+groupby.\+generic.\+Named\+Agg.\+column\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/groupby/\mbox{\hyperlink{groupby_2generic_8py}{generic.\+py}}\end{DoxyCompactItemize}

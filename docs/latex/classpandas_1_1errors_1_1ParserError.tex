@@ -1,0 +1,39 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Parser\+Error}
+\hypertarget{classpandas_1_1errors_1_1ParserError}{}\label{classpandas_1_1errors_1_1ParserError}\index{pandas.errors.ParserError@{pandas.errors.ParserError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Parser\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Parser\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exception that is raised by an error encountered in parsing file contents.
+
+This is a generic error raised for errors encountered when functions like
+`read_csv` or `read_html` are parsing contents of a file.
+
+See Also
+--------
+read_csv : Read CSV (comma-separated) file into a DataFrame.
+read_html : Read HTML table into a DataFrame.
+
+Examples
+--------
+>>> data = '''a,b,c
+... cat,foo,bar
+... dog,foo,"baz'''
+>>> from io import StringIO
+>>> pd.read_csv(StringIO(data), skipfooter=1, engine='python')
+Traceback (most recent call last):
+ParserError: ',' expected after '"'. Error could possibly be due
+to parsing errors in the skipped footer rows
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

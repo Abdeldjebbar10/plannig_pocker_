@@ -1,0 +1,489 @@
+\doxysection{Référence de la classe pandas.\+core.\+groupby.\+ops.\+Base\+Grouper}
+\hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}{}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+groupby.\+ops.\+Base\+Grouper\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+groupby.\+ops.\+Base\+Grouper\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7adfab31c861f8175606c18f07e4fb77}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Index \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7025c381e8471d9a14440094217aeb87}{axis}}, Sequence\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1grouper_1_1Grouping}{grouper.\+Grouping}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7287acac77f88c780269b21a05463041}{groupings}}, bool sort=True, bool \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a6f2cac847283cd2e0717501b7fc34960}{dropna}}=True)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1grouper_1_1Grouping}{grouper.\+Grouping}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a31239fa8d51a62c781a251394f3a844d}{groupings}} (self)
+\item 
+Shape \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a3cc74d673d93c3eb3295355ab51413c7}{shape}} (self)
+\item 
+Iterator\mbox{[}Hashable\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a578b1cf8fdd11ff986d5dcb2993351c5}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1ea178cec99cbb8f630ee54fa063fbc8}{nkeys}} (self)
+\item 
+Iterator\mbox{[}tuple\mbox{[}Hashable, NDFrameT\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9bcc8b578f39e7fed950c4cd570dc93b}{get\+\_\+iterator}} (self, NDFrameT data, Axis\+Int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7025c381e8471d9a14440094217aeb87}{axis}}=0)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a4b1773f0b04e2be42a173fe4616be483}{group\+\_\+keys\+\_\+seq}} (self)
+\item 
+dict\mbox{[}Hashable, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1c98abfaafeb4960b4b7818337e08857}{indices}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ad7b1decdcc59f85f7bf6daa01c20faef}{result\+\_\+ilocs}} (self)
+\item 
+list\mbox{[}npt.\+NDArray\mbox{[}np.\+signedinteger\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a79de73aca685e8714361b2eb358eed22}{codes}} (self)
+\item 
+list\mbox{[}Index\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_af0b6cee566d9cdf1831e007ea0876d3d}{levels}} (self)
+\item 
+list\mbox{[}Hashable\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a08a97ef1f454fd324cc593d20aa84dff}{names}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9b27f593d297c790dd660cd39975a209}{size}} (self)
+\item 
+dict\mbox{[}Hashable, np.\+ndarray\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a6e0333cce44dcf0d32d3af3ca95997c2}{groups}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_adc5c3dd9a66535ccdb782fcc01f2158e}{is\+\_\+monotonic}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9f2572011096e9084378ddfcef4fa139}{has\+\_\+dropped\+\_\+na}} (self)
+\item 
+tuple\mbox{[}npt.\+NDArray\mbox{[}np.\+intp\mbox{]}, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}, int\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0b7dca21a8f046f77508aadfab590c89}{group\+\_\+info}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abd8ef77ff059eceb85d18f375e1d255c}{codes\+\_\+info}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_afea9ac21aeba197d6188de63b57e1cf8}{ngroups}} (self)
+\item 
+list\mbox{[}npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_aac4b2c5bd121bc065ebc24c3ca44591e}{reconstructed\+\_\+codes}} (self)
+\item 
+Index \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a614d391dd0e505deb584d51f65570c5f}{result\+\_\+index}} (self)
+\item 
+list\mbox{[}Array\+Like\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ab2cc514590cbbf860233fd1418f54000}{get\+\_\+group\+\_\+levels}} (self)
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0d17136807bf89f03133df24305feea3}{agg\+\_\+series}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} obj, Callable func, bool preserve\+\_\+dtype=False)
+\item 
+tuple\mbox{[}list, bool\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1e363a569f3738f348ae9d1115ac1673}{apply\+\_\+groupwise}} (self, Callable f, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} data, Axis\+Int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7025c381e8471d9a14440094217aeb87}{axis}}=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a14211088f14e608aec3928bc472c8fa1}{axis}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a6f2cac847283cd2e0717501b7fc34960}{dropna}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7287acac77f88c780269b21a05463041}{groupings}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_af20e78f40c811bf281bbc73a3fa99d5f}{indices}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_acf29c2b1e40ea6954a38ee389baa462f}{levels}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_aa5aa69c8710e5e7553a6a78c4f8c561b}{codes}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a39be0f12fbb74c036d48d5bf121c95a2}{shape}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ada8939468534f420f0bc6839df0d768e}{result\+\_\+index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a376cc1b57eb14009e57a88a0c20ca2db}{reconstructed\+\_\+codes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+Index \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7025c381e8471d9a14440094217aeb87}{axis}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1DataSplitter}{Data\+Splitter}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a159faf91a7fdbfa1f47cf45b07ac98dc}{\+\_\+get\+\_\+splitter}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1generic_1_1NDFrame}{NDFrame}} data, Axis\+Int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7025c381e8471d9a14440094217aeb87}{axis}}=0)
+\item 
+tuple\mbox{[}npt.\+NDArray\mbox{[}np.\+signedinteger\mbox{]}, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abda633b5a491bf1d0d632e4e3b7e1444}{\+\_\+get\+\_\+compressed\+\_\+codes}} (self)
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0231d57db3c40481854adf9ffd7d5288}{\+\_\+cython\+\_\+operation}} (self, str kind, values, str how, Axis\+Int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7025c381e8471d9a14440094217aeb87}{axis}}, int min\+\_\+count=-\/1, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a8115519ae42e5454627a1d6ffed90dc7}{\+\_\+aggregate\+\_\+series\+\_\+pure\+\_\+python}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} obj, Callable func)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a51a11d52113b30fa24f0c6cf6d4f1560}{\+\_\+sort\+\_\+idx}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ac5d27ad0a3aa484c4ee80ad91c64a05d}{\+\_\+sorted\+\_\+ids}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ac1dbc532ab392f28578e22c0ebefb02c}{\+\_\+sort}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abd64c3b6322da55a17c33e386371ccd4}{\+\_\+sort\+\_\+idx}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This is an internal Grouper class, which actually holds
+the generated groups
+
+Parameters
+----------
+axis : Index
+groupings : Sequence[Grouping]
+    all the grouping instances to handle in this grouper
+    for example for grouper list to groupby, need to pass the list
+sort : bool, default True
+    whether this grouper will give sorted result or not\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7adfab31c861f8175606c18f07e4fb77}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7adfab31c861f8175606c18f07e4fb77} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Index}]{axis,  }\item[{Sequence\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1grouper_1_1Grouping}{grouper.\+Grouping}}\mbox{]}}]{groupings,  }\item[{bool }]{sort = {\ttfamily True},  }\item[{bool }]{dropna = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a6fa6dabb09e936133369f7403746f09d}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a578b1cf8fdd11ff986d5dcb2993351c5}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a578b1cf8fdd11ff986d5dcb2993351c5} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily  Iterator\mbox{[}Hashable\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a8115519ae42e5454627a1d6ffed90dc7}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a8115519ae42e5454627a1d6ffed90dc7} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_aggregate\_series\_pure\_python@{\_aggregate\_series\_pure\_python}}
+\index{\_aggregate\_series\_pure\_python@{\_aggregate\_series\_pure\_python}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_aggregate\_series\_pure\_python()}{\_aggregate\_series\_pure\_python()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+aggregate\+\_\+series\+\_\+pure\+\_\+python (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}}}]{obj,  }\item[{Callable     }]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0231d57db3c40481854adf9ffd7d5288}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0231d57db3c40481854adf9ffd7d5288} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_cython\_operation@{\_cython\_operation}}
+\index{\_cython\_operation@{\_cython\_operation}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_cython\_operation()}{\_cython\_operation()}}
+{\footnotesize\ttfamily  Array\+Like pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+cython\+\_\+operation (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{kind,  }\item[{}]{values,  }\item[{str}]{how,  }\item[{Axis\+Int}]{axis,  }\item[{int }]{min\+\_\+count = {\ttfamily -\/1},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns the values of a cython operation.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abda633b5a491bf1d0d632e4e3b7e1444}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abda633b5a491bf1d0d632e4e3b7e1444} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_get\_compressed\_codes@{\_get\_compressed\_codes}}
+\index{\_get\_compressed\_codes@{\_get\_compressed\_codes}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_get\_compressed\_codes()}{\_get\_compressed\_codes()}}
+{\footnotesize\ttfamily  tuple\mbox{[}npt.\+NDArray\mbox{[}np.\+signedinteger\mbox{]}, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+get\+\_\+compressed\+\_\+codes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a159faf91a7fdbfa1f47cf45b07ac98dc}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a159faf91a7fdbfa1f47cf45b07ac98dc} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_get\_splitter@{\_get\_splitter}}
+\index{\_get\_splitter@{\_get\_splitter}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_get\_splitter()}{\_get\_splitter()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1DataSplitter}{Data\+Splitter}} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+get\+\_\+splitter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1generic_1_1NDFrame}{NDFrame}}}]{data,  }\item[{Axis\+Int }]{axis = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns
+-------
+Generator yielding subsetted objects
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a51a11d52113b30fa24f0c6cf6d4f1560}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a51a11d52113b30fa24f0c6cf6d4f1560} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_sort\_idx@{\_sort\_idx}}
+\index{\_sort\_idx@{\_sort\_idx}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_sort\_idx()}{\_sort\_idx()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+intp\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+sort\+\_\+idx (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ac5d27ad0a3aa484c4ee80ad91c64a05d}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ac5d27ad0a3aa484c4ee80ad91c64a05d} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_sorted\_ids@{\_sorted\_ids}}
+\index{\_sorted\_ids@{\_sorted\_ids}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_sorted\_ids()}{\_sorted\_ids()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+intp\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+sorted\+\_\+ids (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0d17136807bf89f03133df24305feea3}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0d17136807bf89f03133df24305feea3} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!agg\_series@{agg\_series}}
+\index{agg\_series@{agg\_series}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{agg\_series()}{agg\_series()}}
+{\footnotesize\ttfamily  Array\+Like pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+agg\+\_\+series (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}}}]{obj,  }\item[{Callable}]{func,  }\item[{bool }]{preserve\+\_\+dtype = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parameters
+----------
+obj : Series
+func : function taking a Series and returning a scalar-like
+preserve_dtype : bool
+    Whether the aggregation is known to be dtype-preserving.
+
+Returns
+-------
+np.ndarray or ExtensionArray
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1e363a569f3738f348ae9d1115ac1673}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1e363a569f3738f348ae9d1115ac1673} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!apply\_groupwise@{apply\_groupwise}}
+\index{apply\_groupwise@{apply\_groupwise}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{apply\_groupwise()}{apply\_groupwise()}}
+{\footnotesize\ttfamily  tuple\mbox{[}list, bool\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+apply\+\_\+groupwise (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Callable}]{f,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}}}]{data,  }\item[{Axis\+Int }]{axis = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a79de73aca685e8714361b2eb358eed22}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a79de73aca685e8714361b2eb358eed22} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!codes@{codes}}
+\index{codes@{codes}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{codes()}{codes()}}
+{\footnotesize\ttfamily  list\mbox{[}npt.\+NDArray\mbox{[}np.\+signedinteger\mbox{]}\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+codes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abd8ef77ff059eceb85d18f375e1d255c}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abd8ef77ff059eceb85d18f375e1d255c} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!codes\_info@{codes\_info}}
+\index{codes\_info@{codes\_info}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{codes\_info()}{codes\_info()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+intp\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+codes\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a25945c020542b7562fb16d081d60d24a}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ab2cc514590cbbf860233fd1418f54000}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ab2cc514590cbbf860233fd1418f54000} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!get\_group\_levels@{get\_group\_levels}}
+\index{get\_group\_levels@{get\_group\_levels}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{get\_group\_levels()}{get\_group\_levels()}}
+{\footnotesize\ttfamily  list\mbox{[}Array\+Like\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+get\+\_\+group\+\_\+levels (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9bcc8b578f39e7fed950c4cd570dc93b}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9bcc8b578f39e7fed950c4cd570dc93b} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!get\_iterator@{get\_iterator}}
+\index{get\_iterator@{get\_iterator}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{get\_iterator()}{get\_iterator()}}
+{\footnotesize\ttfamily  Iterator\mbox{[}tuple\mbox{[}Hashable, NDFrameT\mbox{]}\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+get\+\_\+iterator (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{NDFrameT}]{data,  }\item[{Axis\+Int }]{axis = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Groupby iterator
+
+Returns
+-------
+Generator yielding sequence of (name, subsetted object)
+for each group
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a16db18cee792bfd147bd6dd2407146d5}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0b7dca21a8f046f77508aadfab590c89}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a0b7dca21a8f046f77508aadfab590c89} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!group\_info@{group\_info}}
+\index{group\_info@{group\_info}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{group\_info()}{group\_info()}}
+{\footnotesize\ttfamily  tuple\mbox{[}npt.\+NDArray\mbox{[}np.\+intp\mbox{]}, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}, int\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+group\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a8a09a5b3c7ac8fa1e355c9a0639c5252}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a4b1773f0b04e2be42a173fe4616be483}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a4b1773f0b04e2be42a173fe4616be483} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!group\_keys\_seq@{group\_keys\_seq}}
+\index{group\_keys\_seq@{group\_keys\_seq}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{group\_keys\_seq()}{group\_keys\_seq()}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+group\+\_\+keys\+\_\+seq (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a31239fa8d51a62c781a251394f3a844d}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a31239fa8d51a62c781a251394f3a844d} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!groupings@{groupings}}
+\index{groupings@{groupings}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{groupings()}{groupings()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1grouper_1_1Grouping}{grouper.\+Grouping}}\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+groupings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a9c9a8fb90d57d538d72d4d88017f4add}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a6e0333cce44dcf0d32d3af3ca95997c2}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a6e0333cce44dcf0d32d3af3ca95997c2} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!groups@{groups}}
+\index{groups@{groups}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{groups()}{groups()}}
+{\footnotesize\ttfamily  dict\mbox{[}Hashable, np.\+ndarray\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+groups (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}dict {group name -> group labels}\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a3cfec18af0a784434bbbd8bf1fda074c}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9f2572011096e9084378ddfcef4fa139}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9f2572011096e9084378ddfcef4fa139} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!has\_dropped\_na@{has\_dropped\_na}}
+\index{has\_dropped\_na@{has\_dropped\_na}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{has\_dropped\_na()}{has\_dropped\_na()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+has\+\_\+dropped\+\_\+na (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether grouper has null value(s) that are dropped.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1c98abfaafeb4960b4b7818337e08857}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1c98abfaafeb4960b4b7818337e08857} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!indices@{indices}}
+\index{indices@{indices}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{indices()}{indices()}}
+{\footnotesize\ttfamily  dict\mbox{[}Hashable, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+indices (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}dict {group name -> group indices}\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_abf31173e22d808fc0a9dc9fc3c811917}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_adc5c3dd9a66535ccdb782fcc01f2158e}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_adc5c3dd9a66535ccdb782fcc01f2158e} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!is\_monotonic@{is\_monotonic}}
+\index{is\_monotonic@{is\_monotonic}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{is\_monotonic()}{is\_monotonic()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+is\+\_\+monotonic (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_af0b6cee566d9cdf1831e007ea0876d3d}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_af0b6cee566d9cdf1831e007ea0876d3d} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!levels@{levels}}
+\index{levels@{levels}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{levels()}{levels()}}
+{\footnotesize\ttfamily  list\mbox{[}Index\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+levels (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a19e5a7fe220ffd6783d21acd3e8c57ce}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a08a97ef1f454fd324cc593d20aa84dff}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a08a97ef1f454fd324cc593d20aa84dff} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!names@{names}}
+\index{names@{names}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{names()}{names()}}
+{\footnotesize\ttfamily  list\mbox{[}Hashable\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_ae4b9d998120e7460f12c031c8e4a804c}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_afea9ac21aeba197d6188de63b57e1cf8}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_afea9ac21aeba197d6188de63b57e1cf8} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!ngroups@{ngroups}}
+\index{ngroups@{ngroups}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{ngroups()}{ngroups()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+ngroups (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1ea178cec99cbb8f630ee54fa063fbc8}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a1ea178cec99cbb8f630ee54fa063fbc8} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!nkeys@{nkeys}}
+\index{nkeys@{nkeys}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{nkeys()}{nkeys()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+nkeys (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_ab0abd5d45c7e64130729595adca620ef}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_aac4b2c5bd121bc065ebc24c3ca44591e}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_aac4b2c5bd121bc065ebc24c3ca44591e} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!reconstructed\_codes@{reconstructed\_codes}}
+\index{reconstructed\_codes@{reconstructed\_codes}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{reconstructed\_codes()}{reconstructed\_codes()}}
+{\footnotesize\ttfamily  list\mbox{[}npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+reconstructed\+\_\+codes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_ae29e1575c43c281db8dde459b58d1dd1}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ad7b1decdcc59f85f7bf6daa01c20faef}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ad7b1decdcc59f85f7bf6daa01c20faef} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!result\_ilocs@{result\_ilocs}}
+\index{result\_ilocs@{result\_ilocs}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{result\_ilocs()}{result\_ilocs()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+intp\mbox{]} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+result\+\_\+ilocs (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the original integer locations of result_index in the input.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a614d391dd0e505deb584d51f65570c5f}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a614d391dd0e505deb584d51f65570c5f} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!result\_index@{result\_index}}
+\index{result\_index@{result\_index}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{result\_index()}{result\_index()}}
+{\footnotesize\ttfamily  Index pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+result\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_aac5c2a65eea6807be924b94e013e065a}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a3cc74d673d93c3eb3295355ab51413c7}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a3cc74d673d93c3eb3295355ab51413c7} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!shape@{shape}}
+\index{shape@{shape}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily  Shape pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+shape (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9b27f593d297c790dd660cd39975a209}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a9b27f593d297c790dd660cd39975a209} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!size@{size}}
+\index{size@{size}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+size (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute group sizes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ac1dbc532ab392f28578e22c0ebefb02c}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ac1dbc532ab392f28578e22c0ebefb02c} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_sort@{\_sort}}
+\index{\_sort@{\_sort}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_sort}{\_sort}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+sort\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abd64c3b6322da55a17c33e386371ccd4}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_abd64c3b6322da55a17c33e386371ccd4} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!\_sort\_idx@{\_sort\_idx}}
+\index{\_sort\_idx@{\_sort\_idx}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{\_sort\_idx}{\_sort\_idx}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+\_\+sort\+\_\+idx\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7025c381e8471d9a14440094217aeb87}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7025c381e8471d9a14440094217aeb87} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!axis@{axis}}
+\index{axis@{axis}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{axis}{axis}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Index pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+axis\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a14211088f14e608aec3928bc472c8fa1}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a14211088f14e608aec3928bc472c8fa1} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!axis@{axis}}
+\index{axis@{axis}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{axis}{axis}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+axis}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_aa5aa69c8710e5e7553a6a78c4f8c561b}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_aa5aa69c8710e5e7553a6a78c4f8c561b} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!codes@{codes}}
+\index{codes@{codes}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{codes}{codes}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+codes}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a6f2cac847283cd2e0717501b7fc34960}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a6f2cac847283cd2e0717501b7fc34960} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!dropna@{dropna}}
+\index{dropna@{dropna}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{dropna}{dropna}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+dropna}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7287acac77f88c780269b21a05463041}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a7287acac77f88c780269b21a05463041} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!groupings@{groupings}}
+\index{groupings@{groupings}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{groupings}{groupings}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+groupings}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a9c9a8fb90d57d538d72d4d88017f4add}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_af20e78f40c811bf281bbc73a3fa99d5f}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_af20e78f40c811bf281bbc73a3fa99d5f} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!indices@{indices}}
+\index{indices@{indices}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{indices}{indices}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+indices}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_abf31173e22d808fc0a9dc9fc3c811917}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_acf29c2b1e40ea6954a38ee389baa462f}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_acf29c2b1e40ea6954a38ee389baa462f} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!levels@{levels}}
+\index{levels@{levels}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{levels}{levels}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+levels}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_a19e5a7fe220ffd6783d21acd3e8c57ce}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a376cc1b57eb14009e57a88a0c20ca2db}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a376cc1b57eb14009e57a88a0c20ca2db} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!reconstructed\_codes@{reconstructed\_codes}}
+\index{reconstructed\_codes@{reconstructed\_codes}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{reconstructed\_codes}{reconstructed\_codes}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+reconstructed\+\_\+codes}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_ae29e1575c43c281db8dde459b58d1dd1}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ada8939468534f420f0bc6839df0d768e}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_ada8939468534f420f0bc6839df0d768e} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!result\_index@{result\_index}}
+\index{result\_index@{result\_index}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{result\_index}{result\_index}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+result\+\_\+index}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper_aac5c2a65eea6807be924b94e013e065a}{pandas.\+core.\+groupby.\+ops.\+Bin\+Grouper}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a39be0f12fbb74c036d48d5bf121c95a2}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper_a39be0f12fbb74c036d48d5bf121c95a2} 
+\index{pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}!shape@{shape}}
+\index{shape@{shape}!pandas.core.groupby.ops.BaseGrouper@{pandas.core.groupby.ops.BaseGrouper}}
+\doxysubsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Base\+Grouper.\+shape}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/groupby/\mbox{\hyperlink{core_2groupby_2ops_8py}{ops.\+py}}\end{DoxyCompactItemize}

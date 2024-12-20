@@ -1,0 +1,91 @@
+\doxysection{Référence de la classe asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor}
+\hypertarget{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor}{}\label{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor}\index{asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}}
+
+
+Graphe d\textquotesingle{}héritage de asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor\+:
+% FIG 0
+
+
+Graphe de collaboration de asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a6ae17f432206af15d44eaad3d3910273}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a74bea1c731a7087e7a786a2acd15012d}{run\+\_\+until\+\_\+future}} (self, "{}Future\mbox{[}Any\mbox{]}"{} future)
+\item 
+\mbox{\hyperlink{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a5a3e90b0405bf2dd3416eb9a9466dba9}{submit}} (self, fn, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+"{}Future\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1current__thread__executor_a6dc91c6888705abffe59feffe87b0de1}{\+\_\+R}}\mbox{]}"{} \mbox{\hyperlink{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a7730dccb2bc590c67673895fe996d741}{\+\_\+submit}} (self, Callable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1current__thread__executor_a554b7c121063992a80214a84711885ff}{\+\_\+P}}, \mbox{\hyperlink{namespaceasgiref_1_1current__thread__executor_a6dc91c6888705abffe59feffe87b0de1}{\+\_\+R}}\mbox{]} fn, \texorpdfstring{$\ast$}{*}\+\_\+\+P.\+args args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+\_\+\+P.\+kwargs kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a402e986641194a0be14bb4deabc6daec}{\+\_\+work\+\_\+thread}}
+\item 
+\mbox{\hyperlink{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a416055211d5bc197aa73da770b8537bf}{\+\_\+broken}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An Executor that actually runs code in the thread it is instantiated in.
+Passed to other threads running async code, so they can run sync code in
+the thread they came from.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a6ae17f432206af15d44eaad3d3910273}\label{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a6ae17f432206af15d44eaad3d3910273} 
+\index{asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a7730dccb2bc590c67673895fe996d741}\label{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a7730dccb2bc590c67673895fe996d741} 
+\index{asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}!\_submit@{\_submit}}
+\index{\_submit@{\_submit}!asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}}
+\doxysubsubsection{\texorpdfstring{\_submit()}{\_submit()}}
+{\footnotesize\ttfamily  "{}Future\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1current__thread__executor_a6dc91c6888705abffe59feffe87b0de1}{\+\_\+R}}\mbox{]}"{} asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor.\+\_\+submit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Callable\mbox{[}\mbox{\hyperlink{namespaceasgiref_1_1current__thread__executor_a554b7c121063992a80214a84711885ff}{\+\_\+P}}, \mbox{\hyperlink{namespaceasgiref_1_1current__thread__executor_a6dc91c6888705abffe59feffe87b0de1}{\+\_\+R}}\mbox{]}}]{fn,  }\item[{\texorpdfstring{$\ast$}{*}\+\_\+\+P.\+args}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+\_\+\+P.\+kwargs}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a74bea1c731a7087e7a786a2acd15012d}\label{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a74bea1c731a7087e7a786a2acd15012d} 
+\index{asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}!run\_until\_future@{run\_until\_future}}
+\index{run\_until\_future@{run\_until\_future}!asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}}
+\doxysubsubsection{\texorpdfstring{run\_until\_future()}{run\_until\_future()}}
+{\footnotesize\ttfamily  None asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor.\+run\+\_\+until\+\_\+future (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{"{}Future\mbox{[}Any\mbox{]}"{}}]{future }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs the code in the work queue until a result is available from the future.
+Should be run from the thread the executor is initialised in.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a5a3e90b0405bf2dd3416eb9a9466dba9}\label{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a5a3e90b0405bf2dd3416eb9a9466dba9} 
+\index{asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}!submit@{submit}}
+\index{submit@{submit}!asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor.\+submit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fn,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a416055211d5bc197aa73da770b8537bf}\label{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a416055211d5bc197aa73da770b8537bf} 
+\index{asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}!\_broken@{\_broken}}
+\index{\_broken@{\_broken}!asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}}
+\doxysubsubsection{\texorpdfstring{\_broken}{\_broken}}
+{\footnotesize\ttfamily asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor.\+\_\+broken\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a402e986641194a0be14bb4deabc6daec}\label{classasgiref_1_1current__thread__executor_1_1CurrentThreadExecutor_a402e986641194a0be14bb4deabc6daec} 
+\index{asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}!\_work\_thread@{\_work\_thread}}
+\index{\_work\_thread@{\_work\_thread}!asgiref.current\_thread\_executor.CurrentThreadExecutor@{asgiref.current\_thread\_executor.CurrentThreadExecutor}}
+\doxysubsubsection{\texorpdfstring{\_work\_thread}{\_work\_thread}}
+{\footnotesize\ttfamily asgiref.\+current\+\_\+thread\+\_\+executor.\+Current\+Thread\+Executor.\+\_\+work\+\_\+thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/asgiref/\mbox{\hyperlink{current__thread__executor_8py}{current\+\_\+thread\+\_\+executor.\+py}}\end{DoxyCompactItemize}

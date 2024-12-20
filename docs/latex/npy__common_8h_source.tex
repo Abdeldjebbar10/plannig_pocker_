@@ -1,0 +1,1076 @@
+\doxysection{npy\+\_\+common.\+h}
+\hypertarget{npy__common_8h_source}{}\label{npy__common_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_common.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_common.h}}
+\mbox{\hyperlink{npy__common_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_COMMON\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_COMMON\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{/*\ need\ Python.h\ for\ npy\_intp,\ npy\_uintp\ */}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <Python.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ numpconfig.h\ is\ auto-\/generated\ */}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{numpyconfig_8h}{numpyconfig.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifdef\ HAVE\_NPY\_CONFIG\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <npy\_config.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ using\ static\ inline\ modifiers\ when\ defining\ npy\_math\ functions}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ allows\ the\ compiler\ to\ make\ optimizations\ when\ possible}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifndef\ NPY\_INLINE\_MATH}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#if\ defined(NPY\_INTERNAL\_BUILD)\ \&\&\ NPY\_INTERNAL\_BUILD}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_INLINE\_MATH\ 1}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_INLINE\_MATH\ 0}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ gcc\ does\ not\ unroll\ even\ with\ -\/O3}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ use\ with\ care,\ unrolling\ on\ modern\ cpus\ rarely\ speeds\ things\ up}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#ifdef\ HAVE\_ATTRIBUTE\_OPTIMIZE\_UNROLL\_LOOPS}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ NPY\_GCC\_UNROLL\_LOOPS\ \(\backslash\)}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\ \ \ \ \_\_attribute\_\_((optimize("{}unroll-\/loops"{})))}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ NPY\_GCC\_UNROLL\_LOOPS}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{comment}{/*\ highest\ gcc\ optimization\ level,\ enabled\ autovectorizer\ */}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#ifdef\ HAVE\_ATTRIBUTE\_OPTIMIZE\_OPT\_3}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ NPY\_GCC\_OPT\_3\ \_\_attribute\_\_((optimize("{}O3"{})))}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ NPY\_GCC\_OPT\_3}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ *\ mark\ an\ argument\ (starting\ from\ 1)\ that\ must\ not\ be\ NULL\ and\ is\ not\ checked}}
+\DoxyCodeLine{00045\ \textcolor{comment}{\ *\ DO\ NOT\ USE\ IF\ FUNCTION\ CHECKS\ FOR\ NULL!!\ the\ compiler\ will\ remove\ the\ check}}
+\DoxyCodeLine{00046\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#ifdef\ HAVE\_ATTRIBUTE\_NONNULL}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ NPY\_GCC\_NONNULL(n)\ \_\_attribute\_\_((nonnull(n)))}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ NPY\_GCC\_NONNULL(n)}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00054\ \textcolor{comment}{\ *\ give\ a\ hint\ to\ the\ compiler\ which\ branch\ is\ more\ likely\ or\ unlikely}}
+\DoxyCodeLine{00055\ \textcolor{comment}{\ *\ to\ occur,\ e.g.\ rare\ error\ cases:}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ *\ if\ (NPY\_UNLIKELY(failure\ ==\ 0))}}
+\DoxyCodeLine{00058\ \textcolor{comment}{\ *\ \ \ \ return\ NULL;}}
+\DoxyCodeLine{00059\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00060\ \textcolor{comment}{\ *\ the\ double\ !!\ is\ to\ cast\ the\ expression\ (e.g.\ NULL)\ to\ a\ boolean\ required\ by}}
+\DoxyCodeLine{00061\ \textcolor{comment}{\ *\ the\ intrinsic}}
+\DoxyCodeLine{00062\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#ifdef\ HAVE\_\_\_BUILTIN\_EXPECT}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#define\ NPY\_LIKELY(x)\ \_\_builtin\_expect(!!(x),\ 1)}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ NPY\_UNLIKELY(x)\ \_\_builtin\_expect(!!(x),\ 0)}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ NPY\_LIKELY(x)\ (x)}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ NPY\_UNLIKELY(x)\ (x)}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#ifdef\ HAVE\_\_\_BUILTIN\_PREFETCH}}
+\DoxyCodeLine{00072\ \textcolor{comment}{/*\ unlike\ \_mm\_prefetch\ also\ works\ on\ non-\/x86\ */}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ NPY\_PREFETCH(x,\ rw,\ loc)\ \_\_builtin\_prefetch((x),\ (rw),\ (loc))}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#ifdef\ NPY\_HAVE\_SSE}}
+\DoxyCodeLine{00076\ \textcolor{comment}{/*\ \_MM\_HINT\_ET[01]\ (rw\ =\ 1)\ unsupported,\ only\ available\ in\ gcc\ >=\ 4.9\ */}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ NPY\_PREFETCH(x,\ rw,\ loc)\ \_mm\_prefetch((x),\ loc\ ==\ 0\ ?\ \_MM\_HINT\_NTA\ :\ \(\backslash\)}}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (loc\ ==\ 1\ ?\ \_MM\_HINT\_T2\ :\ \(\backslash\)}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (loc\ ==\ 2\ ?\ \_MM\_HINT\_T1\ :\ \(\backslash\)}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (loc\ ==\ 3\ ?\ \_MM\_HINT\_T0\ :\ -\/1))))}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ NPY\_PREFETCH(x,\ rw,loc)}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{comment}{/*\ \`{}NPY\_INLINE`\ kept\ for\ backwards\ compatibility;\ use\ \`{}inline`\ instead\ */}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#if\ defined(\_MSC\_VER)\ \&\&\ !defined(\_\_clang\_\_)}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_INLINE\ \_\_inline}}
+\DoxyCodeLine{00089\ \textcolor{comment}{/*\ clang\ included\ here\ to\ handle\ clang-\/cl\ on\ Windows\ */}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#elif\ defined(\_\_GNUC\_\_)\ ||\ defined(\_\_clang\_\_)}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\ \ \ \ \#if\ defined(\_\_STRICT\_ANSI\_\_)}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \#define\ NPY\_INLINE\ \_\_inline\_\_}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \#define\ NPY\_INLINE\ inline}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_INLINE}}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#ifdef\ \_MSC\_VER}}
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FINLINE\ static\ \_\_forceinline}}
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#elif\ defined(\_\_GNUC\_\_)}}
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FINLINE\ static\ inline\ \_\_attribute\_\_((always\_inline))}}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FINLINE\ static}}
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#if\ defined(\_MSC\_VER)}}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_NOINLINE\ static\ \_\_declspec(noinline)}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#elif\ defined(\_\_GNUC\_\_)\ ||\ defined(\_\_clang\_\_)}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_NOINLINE\ static\ \_\_attribute\_\_((noinline))}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_NOINLINE\ static}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_TLS\ thread\_local}}
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#elif\ defined(HAVE\_THREAD\_LOCAL)}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_TLS\ thread\_local}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#elif\ defined(HAVE\_\_THREAD\_LOCAL)}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_TLS\ \_Thread\_local}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#elif\ defined(HAVE\_\_\_THREAD)}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_TLS\ \_\_thread}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#elif\ defined(HAVE\_\_\_DECLSPEC\_THREAD\_)}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_TLS\ \_\_declspec(thread)}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_TLS}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#ifdef\ WITH\_CPYCHECKER\_RETURNS\_BORROWED\_REF\_ATTRIBUTE}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\ \ \#define\ NPY\_RETURNS\_BORROWED\_REF\ \(\backslash\)}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\ \ \ \ \_\_attribute\_\_((cpychecker\_returns\_borrowed\_ref))}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\ \ \#define\ NPY\_RETURNS\_BORROWED\_REF}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#ifdef\ WITH\_CPYCHECKER\_STEALS\_REFERENCE\_TO\_ARG\_ATTRIBUTE}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\ \ \#define\ NPY\_STEALS\_REF\_TO\_ARG(n)\ \(\backslash\)}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\ \ \ \_\_attribute\_\_((cpychecker\_steals\_reference\_to\_arg(n)))}}
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\ \#define\ NPY\_STEALS\_REF\_TO\_ARG(n)}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \textcolor{comment}{/*\ 64\ bit\ file\ position\ support,\ also\ on\ win-\/amd64.\ Issue\ gh-\/2256\ */}}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#if\ defined(\_MSC\_VER)\ \&\&\ defined(\_WIN64)\ \&\&\ (\_MSC\_VER\ >\ 1400)\ ||\ \(\backslash\)}}
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\ \ \ \ defined(\_\_MINGW32\_\_)\ ||\ defined(\_\_MINGW64\_\_)}}
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\ \ \ \ \#include\ <io.h>}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_fseek\ \_fseeki64}}
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_ftell\ \_ftelli64}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_lseek\ \_lseeki64}}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_off\_t\ npy\_int64}}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\ \ \ \ \#if\ NPY\_SIZEOF\_INT\ ==\ 8}}
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OFF\_T\_PYFMT\ "{}i"{}}}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\ \ \ \ \#elif\ NPY\_SIZEOF\_LONG\ ==\ 8}}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OFF\_T\_PYFMT\ "{}l"{}}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\ \ \ \ \#elif\ NPY\_SIZEOF\_LONGLONG\ ==\ 8}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OFF\_T\_PYFMT\ "{}L"{}}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#error\ Unsupported\ size\ for\ type\ off\_t}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#ifdef\ HAVE\_FSEEKO}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_fseek\ fseeko}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_fseek\ fseek}}
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#ifdef\ HAVE\_FTELLO}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_ftell\ ftello}}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_ftell\ ftell}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\ \ \ \ \#include\ <sys/types.h>}}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\ \ \ \ \#ifndef\ \_WIN32}}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#include\ <unistd.h>}}
+\DoxyCodeLine{00177\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_lseek\ lseek}}
+\DoxyCodeLine{00179\ \textcolor{preprocessor}{\ \ \ \ \#define\ npy\_off\_t\ off\_t}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\ \ \ \ \#if\ NPY\_SIZEOF\_OFF\_T\ ==\ NPY\_SIZEOF\_SHORT}}
+\DoxyCodeLine{00182\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OFF\_T\_PYFMT\ "{}h"{}}}
+\DoxyCodeLine{00183\ \textcolor{preprocessor}{\ \ \ \ \#elif\ NPY\_SIZEOF\_OFF\_T\ ==\ NPY\_SIZEOF\_INT}}
+\DoxyCodeLine{00184\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OFF\_T\_PYFMT\ "{}i"{}}}
+\DoxyCodeLine{00185\ \textcolor{preprocessor}{\ \ \ \ \#elif\ NPY\_SIZEOF\_OFF\_T\ ==\ NPY\_SIZEOF\_LONG}}
+\DoxyCodeLine{00186\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OFF\_T\_PYFMT\ "{}l"{}}}
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\ \ \ \ \#elif\ NPY\_SIZEOF\_OFF\_T\ ==\ NPY\_SIZEOF\_LONGLONG}}
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OFF\_T\_PYFMT\ "{}L"{}}}
+\DoxyCodeLine{00189\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#error\ Unsupported\ size\ for\ type\ off\_t}}
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00192\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \textcolor{comment}{/*\ enums\ for\ detected\ endianness\ */}}
+\DoxyCodeLine{00195\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a948c37bbd7bba691292c792be93464eb}{NPY\_CPU\_UNKNOWN\_ENDIAN}},}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a58970ab57b982f090c7160a36b5e95ec}{NPY\_CPU\_LITTLE}},}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a062359f8fdb2cecf9de5fd24d25680b2}{NPY\_CPU\_BIG}}}
+\DoxyCodeLine{00199\ \};}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00202\ \textcolor{comment}{\ *\ This\ is\ to\ typedef\ npy\_intp\ to\ the\ appropriate\ size\ for\ Py\_ssize\_t.}}
+\DoxyCodeLine{00203\ \textcolor{comment}{\ *\ (Before\ NumPy\ 2.0\ we\ used\ Py\_intptr\_t\ and\ Py\_uintptr\_t\ from\ \`{}pyport.h`.)}}
+\DoxyCodeLine{00204\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00205\ \textcolor{keyword}{typedef}\ Py\_ssize\_t\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}};}
+\DoxyCodeLine{00206\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{npy__common_8h_a8e60b20d57b3d6104defffd697ec49b3}{npy\_uintp}};}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00209\ \textcolor{comment}{\ *\ Define\ sizes\ that\ were\ not\ defined\ in\ numpyconfig.h.}}
+\DoxyCodeLine{00210\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00211\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_CHAR\ 1}}
+\DoxyCodeLine{00212\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_BYTE\ 1}}
+\DoxyCodeLine{00213\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_DATETIME\ 8}}
+\DoxyCodeLine{00214\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_TIMEDELTA\ 8}}
+\DoxyCodeLine{00215\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_HALF\ 2}}
+\DoxyCodeLine{00216\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_CFLOAT\ NPY\_SIZEOF\_COMPLEX\_FLOAT}}
+\DoxyCodeLine{00217\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_CDOUBLE\ NPY\_SIZEOF\_COMPLEX\_DOUBLE}}
+\DoxyCodeLine{00218\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_CLONGDOUBLE\ NPY\_SIZEOF\_COMPLEX\_LONGDOUBLE}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{preprocessor}{\#ifdef\ constchar}}
+\DoxyCodeLine{00221\ \textcolor{preprocessor}{\#undef\ constchar}}
+\DoxyCodeLine{00222\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \textcolor{preprocessor}{\#define\ NPY\_SSIZE\_T\_PYFMT\ "{}n"{}}}
+\DoxyCodeLine{00225\ \textcolor{preprocessor}{\#define\ constchar\ char}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \textcolor{comment}{/*\ NPY\_INTP\_FMT\ Note:}}
+\DoxyCodeLine{00228\ \textcolor{comment}{\ *\ \ \ \ \ \ Unlike\ the\ other\ NPY\_*\_FMT\ macros,\ which\ are\ used\ with\ PyOS\_snprintf,}}
+\DoxyCodeLine{00229\ \textcolor{comment}{\ *\ \ \ \ \ \ NPY\_INTP\_FMT\ is\ used\ with\ PyErr\_Format\ and\ PyUnicode\_FromFormat.\ Those}}
+\DoxyCodeLine{00230\ \textcolor{comment}{\ *\ \ \ \ \ \ functions\ use\ different\ formatting\ codes\ that\ are\ portably\ specified}}
+\DoxyCodeLine{00231\ \textcolor{comment}{\ *\ \ \ \ \ \ according\ to\ the\ Python\ documentation.\ See\ issue\ gh-\/2388.}}
+\DoxyCodeLine{00232\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00233\ \textcolor{preprocessor}{\#if\ NPY\_SIZEOF\_INTP\ ==\ NPY\_SIZEOF\_LONG}}
+\DoxyCodeLine{00234\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_INTP\ NPY\_LONG}}
+\DoxyCodeLine{00235\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_UINTP\ NPY\_ULONG}}
+\DoxyCodeLine{00236\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ PyIntpArrType\_Type\ PyLongArrType\_Type}}
+\DoxyCodeLine{00237\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ PyUIntpArrType\_Type\ PyULongArrType\_Type}}
+\DoxyCodeLine{00238\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MAX\_INTP\ NPY\_MAX\_LONG}}
+\DoxyCodeLine{00239\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MIN\_INTP\ NPY\_MIN\_LONG}}
+\DoxyCodeLine{00240\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MAX\_UINTP\ NPY\_MAX\_ULONG}}
+\DoxyCodeLine{00241\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_INTP\_FMT\ "{}ld"{}}}
+\DoxyCodeLine{00242\ \textcolor{preprocessor}{\#elif\ NPY\_SIZEOF\_INTP\ ==\ NPY\_SIZEOF\_INT}}
+\DoxyCodeLine{00243\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_INTP\ NPY\_INT}}
+\DoxyCodeLine{00244\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_UINTP\ NPY\_UINT}}
+\DoxyCodeLine{00245\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ PyIntpArrType\_Type\ PyIntArrType\_Type}}
+\DoxyCodeLine{00246\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ PyUIntpArrType\_Type\ PyUIntArrType\_Type}}
+\DoxyCodeLine{00247\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MAX\_INTP\ NPY\_MAX\_INT}}
+\DoxyCodeLine{00248\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MIN\_INTP\ NPY\_MIN\_INT}}
+\DoxyCodeLine{00249\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MAX\_UINTP\ NPY\_MAX\_UINT}}
+\DoxyCodeLine{00250\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_INTP\_FMT\ "{}d"{}}}
+\DoxyCodeLine{00251\ \textcolor{preprocessor}{\#elif\ defined(PY\_LONG\_LONG)\ \&\&\ (NPY\_SIZEOF\_INTP\ ==\ NPY\_SIZEOF\_LONGLONG)}}
+\DoxyCodeLine{00252\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_INTP\ NPY\_LONGLONG}}
+\DoxyCodeLine{00253\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_UINTP\ NPY\_ULONGLONG}}
+\DoxyCodeLine{00254\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ PyIntpArrType\_Type\ PyLongLongArrType\_Type}}
+\DoxyCodeLine{00255\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ PyUIntpArrType\_Type\ PyULongLongArrType\_Type}}
+\DoxyCodeLine{00256\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MAX\_INTP\ NPY\_MAX\_LONGLONG}}
+\DoxyCodeLine{00257\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MIN\_INTP\ NPY\_MIN\_LONGLONG}}
+\DoxyCodeLine{00258\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_MAX\_UINTP\ NPY\_MAX\_ULONGLONG}}
+\DoxyCodeLine{00259\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_INTP\_FMT\ "{}lld"{}}}
+\DoxyCodeLine{00260\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00261\ \textcolor{preprocessor}{\ \ \ \ \#error\ "{}Failed\ to\ correctly\ define\ NPY\_INTP\ and\ NPY\_UINTP"{}}}
+\DoxyCodeLine{00262\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00263\ }
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00266\ \textcolor{comment}{\ *\ Some\ platforms\ don't\ define\ bool,\ long\ long,\ or\ long\ double.}}
+\DoxyCodeLine{00267\ \textcolor{comment}{\ *\ Handle\ that\ here.}}
+\DoxyCodeLine{00268\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00269\ \textcolor{preprocessor}{\#define\ NPY\_BYTE\_FMT\ "{}hhd"{}}}
+\DoxyCodeLine{00270\ \textcolor{preprocessor}{\#define\ NPY\_UBYTE\_FMT\ "{}hhu"{}}}
+\DoxyCodeLine{00271\ \textcolor{preprocessor}{\#define\ NPY\_SHORT\_FMT\ "{}hd"{}}}
+\DoxyCodeLine{00272\ \textcolor{preprocessor}{\#define\ NPY\_USHORT\_FMT\ "{}hu"{}}}
+\DoxyCodeLine{00273\ \textcolor{preprocessor}{\#define\ NPY\_INT\_FMT\ "{}d"{}}}
+\DoxyCodeLine{00274\ \textcolor{preprocessor}{\#define\ NPY\_UINT\_FMT\ "{}u"{}}}
+\DoxyCodeLine{00275\ \textcolor{preprocessor}{\#define\ NPY\_LONG\_FMT\ "{}ld"{}}}
+\DoxyCodeLine{00276\ \textcolor{preprocessor}{\#define\ NPY\_ULONG\_FMT\ "{}lu"{}}}
+\DoxyCodeLine{00277\ \textcolor{preprocessor}{\#define\ NPY\_HALF\_FMT\ "{}g"{}}}
+\DoxyCodeLine{00278\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT\_FMT\ "{}g"{}}}
+\DoxyCodeLine{00279\ \textcolor{preprocessor}{\#define\ NPY\_DOUBLE\_FMT\ "{}g"{}}}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ }
+\DoxyCodeLine{00282\ \textcolor{preprocessor}{\#ifdef\ PY\_LONG\_LONG}}
+\DoxyCodeLine{00283\ \textcolor{keyword}{typedef}\ PY\_LONG\_LONG\ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}};}
+\DoxyCodeLine{00284\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ PY\_LONG\_LONG\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}};}
+\DoxyCodeLine{00285\ \textcolor{preprocessor}{\#\ \ ifdef\ \_MSC\_VER}}
+\DoxyCodeLine{00286\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_LONGLONG\_FMT\ \ \ \ \ \ \ \ \ "{}I64d"{}}}
+\DoxyCodeLine{00287\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_ULONGLONG\_FMT\ \ \ \ \ \ \ \ "{}I64u"{}}}
+\DoxyCodeLine{00288\ \textcolor{preprocessor}{\#\ \ else}}
+\DoxyCodeLine{00289\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_LONGLONG\_FMT\ \ \ \ \ \ \ \ \ "{}lld"{}}}
+\DoxyCodeLine{00290\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_ULONGLONG\_FMT\ \ \ \ \ \ \ \ "{}llu"{}}}
+\DoxyCodeLine{00291\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00292\ \textcolor{preprocessor}{\#\ \ ifdef\ \_MSC\_VER}}
+\DoxyCodeLine{00293\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_LONGLONG\_SUFFIX(x)\ \ \ (x\#\#i64)}}
+\DoxyCodeLine{00294\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_ULONGLONG\_SUFFIX(x)\ \ (x\#\#Ui64)}}
+\DoxyCodeLine{00295\ \textcolor{preprocessor}{\#\ \ else}}
+\DoxyCodeLine{00296\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_LONGLONG\_SUFFIX(x)\ \ \ (x\#\#LL)}}
+\DoxyCodeLine{00297\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_ULONGLONG\_SUFFIX(x)\ \ (x\#\#ULL)}}
+\DoxyCodeLine{00298\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00299\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00300\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}};}
+\DoxyCodeLine{00301\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}};}
+\DoxyCodeLine{00302\ \textcolor{preprocessor}{\#\ \ define\ NPY\_LONGLONG\_SUFFIX(x)\ \ (x\#\#L)}}
+\DoxyCodeLine{00303\ \textcolor{preprocessor}{\#\ \ define\ NPY\_ULONGLONG\_SUFFIX(x)\ (x\#\#UL)}}
+\DoxyCodeLine{00304\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00305\ }
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00307\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}};}
+\DoxyCodeLine{00308\ \textcolor{preprocessor}{\#define\ NPY\_FALSE\ 0}}
+\DoxyCodeLine{00309\ \textcolor{preprocessor}{\#define\ NPY\_TRUE\ 1}}
+\DoxyCodeLine{00310\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00311\ \textcolor{comment}{\ *\ \`{}NPY\_SIZEOF\_LONGDOUBLE`\ isn't\ usually\ equal\ to\ sizeof(long\ double).}}
+\DoxyCodeLine{00312\ \textcolor{comment}{\ *\ In\ some\ certain\ cases,\ it\ may\ forced\ to\ be\ equal\ to\ sizeof(double)}}
+\DoxyCodeLine{00313\ \textcolor{comment}{\ *\ even\ against\ the\ compiler\ implementation\ and\ the\ same\ goes\ for}}
+\DoxyCodeLine{00314\ \textcolor{comment}{\ *\ \`{}complex\ long\ double`.}}
+\DoxyCodeLine{00315\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00316\ \textcolor{comment}{\ *\ Therefore,\ avoid\ \`{}long\ double`,\ use\ \`{}npy\_longdouble`\ instead,}}
+\DoxyCodeLine{00317\ \textcolor{comment}{\ *\ and\ when\ it\ comes\ to\ standard\ math\ functions\ make\ sure\ of\ using}}
+\DoxyCodeLine{00318\ \textcolor{comment}{\ *\ the\ double\ version\ when\ \`{}NPY\_SIZEOF\_LONGDOUBLE`\ ==\ \`{}NPY\_SIZEOF\_DOUBLE`.}}
+\DoxyCodeLine{00319\ \textcolor{comment}{\ *\ For\ example:}}
+\DoxyCodeLine{00320\ \textcolor{comment}{\ *\ \ \ npy\_longdouble\ *ptr,\ x;}}
+\DoxyCodeLine{00321\ \textcolor{comment}{\ *\ \ \ \#if\ NPY\_SIZEOF\_LONGDOUBLE\ ==\ NPY\_SIZEOF\_DOUBLE}}
+\DoxyCodeLine{00322\ \textcolor{comment}{\ *\ \ \ \ \ \ \ npy\_longdouble\ r\ =\ modf(x,\ ptr);}}
+\DoxyCodeLine{00323\ \textcolor{comment}{\ *\ \ \ \#else}}
+\DoxyCodeLine{00324\ \textcolor{comment}{\ *\ \ \ \ \ \ \ npy\_longdouble\ r\ =\ modfl(x,\ ptr);}}
+\DoxyCodeLine{00325\ \textcolor{comment}{\ *\ \ \ \#endif}}
+\DoxyCodeLine{00326\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00327\ \textcolor{comment}{\ *\ See\ https://github.com/numpy/numpy/issues/20348}}
+\DoxyCodeLine{00328\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00329\ \textcolor{preprocessor}{\#if\ NPY\_SIZEOF\_LONGDOUBLE\ ==\ NPY\_SIZEOF\_DOUBLE}}
+\DoxyCodeLine{00330\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_LONGDOUBLE\_FMT\ "{}g"{}}}
+\DoxyCodeLine{00331\ \textcolor{preprocessor}{\ \ \ \ \#define\ longdouble\_t\ double}}
+\DoxyCodeLine{00332\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}};}
+\DoxyCodeLine{00333\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00334\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_LONGDOUBLE\_FMT\ "{}Lg"{}}}
+\DoxyCodeLine{00335\ \textcolor{preprocessor}{\ \ \ \ \#define\ longdouble\_t\ long\ double}}
+\DoxyCodeLine{00336\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}};}
+\DoxyCodeLine{00337\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00338\ }
+\DoxyCodeLine{00339\ \textcolor{preprocessor}{\#ifndef\ Py\_USING\_UNICODE}}
+\DoxyCodeLine{00340\ \textcolor{preprocessor}{\#error\ Must\ use\ Python\ with\ unicode\ enabled.}}
+\DoxyCodeLine{00341\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00342\ }
+\DoxyCodeLine{00343\ }
+\DoxyCodeLine{00344\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{npy__common_8h_a7c32d9fb5de5c653356ab8a16d17df0c}{npy\_byte}};}
+\DoxyCodeLine{00345\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{npy__common_8h_af34f2c87eebcdb73e4e2df6a48059bcc}{npy\_ubyte}};}
+\DoxyCodeLine{00346\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{npy__common_8h_acdbe6a86372d5fcb5e0c406535e418ae}{npy\_ushort}};}
+\DoxyCodeLine{00347\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{npy__common_8h_ae5708d3e6443a009e9fbed0ebc5c36f0}{npy\_uint}};}
+\DoxyCodeLine{00348\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{npy__common_8h_ab298757dfcc9aae2e4b7b741d8f302db}{npy\_ulong}};}
+\DoxyCodeLine{00349\ }
+\DoxyCodeLine{00350\ \textcolor{comment}{/*\ These\ are\ for\ completeness\ */}}
+\DoxyCodeLine{00351\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{npy__common_8h_a2bea94c86e38a39d14d325fdf76a12b5}{npy\_char}};}
+\DoxyCodeLine{00352\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{npy__common_8h_ad8967d29d649f64194e9e9fc1ae89e13}{npy\_short}};}
+\DoxyCodeLine{00353\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{npy__common_8h_a9dc06ece12b0e1ecf7c2f14642e301ce}{npy\_int}};}
+\DoxyCodeLine{00354\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{npy__common_8h_a8fa5103df1ff2ae9c06f5554d59994c2}{npy\_long}};}
+\DoxyCodeLine{00355\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{npy__common_8h_accf4b4138e3ad7733f72c9d807523960}{npy\_float}};}
+\DoxyCodeLine{00356\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{npy__common_8h_a3da6390b6404eca157c556043bc3535c}{npy\_double}};}
+\DoxyCodeLine{00357\ }
+\DoxyCodeLine{00358\ \textcolor{keyword}{typedef}\ Py\_hash\_t\ \mbox{\hyperlink{npy__common_8h_a8e19510dec13243663db068bf658112c}{npy\_hash\_t}};}
+\DoxyCodeLine{00359\ \textcolor{preprocessor}{\#define\ NPY\_SIZEOF\_HASH\_T\ NPY\_SIZEOF\_INTP}}
+\DoxyCodeLine{00360\ }
+\DoxyCodeLine{00361\ \textcolor{preprocessor}{\#if\ defined(\_\_cplusplus)}}
+\DoxyCodeLine{00362\ }
+\DoxyCodeLine{00363\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00364\ \{}
+\DoxyCodeLine{00365\ \ \ \ \ \textcolor{keywordtype}{double}\ \_Val[2];}
+\DoxyCodeLine{00366\ \}\ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}};}
+\DoxyCodeLine{00367\ }
+\DoxyCodeLine{00368\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00369\ \{}
+\DoxyCodeLine{00370\ \ \ \ \ \textcolor{keywordtype}{float}\ \_Val[2];}
+\DoxyCodeLine{00371\ \}\ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}};}
+\DoxyCodeLine{00372\ }
+\DoxyCodeLine{00373\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00374\ \{}
+\DoxyCodeLine{00375\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ \_Val[2];}
+\DoxyCodeLine{00376\ \}\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}};}
+\DoxyCodeLine{00377\ }
+\DoxyCodeLine{00378\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00379\ }
+\DoxyCodeLine{00380\ \textcolor{preprocessor}{\#include\ <complex.h>}}
+\DoxyCodeLine{00381\ }
+\DoxyCodeLine{00382\ }
+\DoxyCodeLine{00383\ \textcolor{preprocessor}{\#if\ defined(\_MSC\_VER)\ \&\&\ !defined(\_\_INTEL\_COMPILER)}}
+\DoxyCodeLine{00384\ \textcolor{keyword}{typedef}\ \_Dcomplex\ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}};}
+\DoxyCodeLine{00385\ \textcolor{keyword}{typedef}\ \_Fcomplex\ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}};}
+\DoxyCodeLine{00386\ \textcolor{keyword}{typedef}\ \_Lcomplex\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}};}
+\DoxyCodeLine{00387\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{/*\ !defined(\_MSC\_VER)\ ||\ defined(\_\_INTEL\_COMPILER)\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00388\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{double}\ \_Complex\ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}};}
+\DoxyCodeLine{00389\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{float}\ \_Complex\ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}};}
+\DoxyCodeLine{00390\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a39faf3438c1d3a8f3d3f0b85ed700734}{longdouble\_t}}\ \_Complex\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}};}
+\DoxyCodeLine{00391\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00392\ }
+\DoxyCodeLine{00393\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00394\ }
+\DoxyCodeLine{00395\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00396\ \textcolor{comment}{\ *\ numarray-\/style\ bit-\/width\ typedefs}}
+\DoxyCodeLine{00397\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00398\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_INT8\ 127}}
+\DoxyCodeLine{00399\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_INT8\ -\/128}}
+\DoxyCodeLine{00400\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_UINT8\ 255}}
+\DoxyCodeLine{00401\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_INT16\ 32767}}
+\DoxyCodeLine{00402\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_INT16\ -\/32768}}
+\DoxyCodeLine{00403\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_UINT16\ 65535}}
+\DoxyCodeLine{00404\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_INT32\ 2147483647}}
+\DoxyCodeLine{00405\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_INT32\ (-\/NPY\_MAX\_INT32\ -\/\ 1)}}
+\DoxyCodeLine{00406\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_UINT32\ 4294967295U}}
+\DoxyCodeLine{00407\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_INT64\ NPY\_LONGLONG\_SUFFIX(9223372036854775807)}}
+\DoxyCodeLine{00408\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_INT64\ (-\/NPY\_MAX\_INT64\ -\/\ NPY\_LONGLONG\_SUFFIX(1))}}
+\DoxyCodeLine{00409\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_UINT64\ NPY\_ULONGLONG\_SUFFIX(18446744073709551615)}}
+\DoxyCodeLine{00410\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_INT128\ NPY\_LONGLONG\_SUFFIX(85070591730234615865843651857942052864)}}
+\DoxyCodeLine{00411\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_INT128\ (-\/NPY\_MAX\_INT128\ -\/\ NPY\_LONGLONG\_SUFFIX(1))}}
+\DoxyCodeLine{00412\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_UINT128\ NPY\_ULONGLONG\_SUFFIX(170141183460469231731687303715884105728)}}
+\DoxyCodeLine{00413\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_INT256\ NPY\_LONGLONG\_SUFFIX(57896044618658097711785492504343953926634992332820282019728792003956564819967)}}
+\DoxyCodeLine{00414\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_INT256\ (-\/NPY\_MAX\_INT256\ -\/\ NPY\_LONGLONG\_SUFFIX(1))}}
+\DoxyCodeLine{00415\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_UINT256\ NPY\_ULONGLONG\_SUFFIX(115792089237316195423570985008687907853269984665640564039457584007913129639935)}}
+\DoxyCodeLine{00416\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_DATETIME\ NPY\_MIN\_INT64}}
+\DoxyCodeLine{00417\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_DATETIME\ NPY\_MAX\_INT64}}
+\DoxyCodeLine{00418\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_TIMEDELTA\ NPY\_MIN\_INT64}}
+\DoxyCodeLine{00419\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_TIMEDELTA\ NPY\_MAX\_INT64}}
+\DoxyCodeLine{00420\ }
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Need\ to\ find\ the\ number\ of\ bits\ for\ each\ type\ and}}
+\DoxyCodeLine{00422\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ make\ definitions\ accordingly.}}
+\DoxyCodeLine{00423\ \textcolor{comment}{}}
+\DoxyCodeLine{00424\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ C\ states\ that\ sizeof(char)\ ==\ 1\ by\ definition}}
+\DoxyCodeLine{00425\ \textcolor{comment}{}}
+\DoxyCodeLine{00426\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ So,\ just\ using\ the\ sizeof\ keyword\ won't\ help.}}
+\DoxyCodeLine{00427\ \textcolor{comment}{}}
+\DoxyCodeLine{00428\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ It\ also\ looks\ like\ Python\ itself\ uses\ sizeof(char)\ quite\ a}}
+\DoxyCodeLine{00429\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ bit,\ which\ by\ definition\ should\ be\ 1\ all\ the\ time.}}
+\DoxyCodeLine{00430\ \textcolor{comment}{}}
+\DoxyCodeLine{00431\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ Idea:\ Make\ Use\ of\ CHAR\_BIT\ which\ should\ tell\ us\ how\ many}}
+\DoxyCodeLine{00432\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ BITS\ per\ CHARACTER}}
+\DoxyCodeLine{00433\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00434\ }
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Include\ platform\ definitions\ -\/-\/\ These\ are\ in\ the\ C89/90\ standard\ */}}
+\DoxyCodeLine{00436\ \textcolor{preprocessor}{\#include\ <limits.h>}}
+\DoxyCodeLine{00437\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_BYTE\ SCHAR\_MAX}}
+\DoxyCodeLine{00438\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_BYTE\ SCHAR\_MIN}}
+\DoxyCodeLine{00439\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_UBYTE\ UCHAR\_MAX}}
+\DoxyCodeLine{00440\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_SHORT\ SHRT\_MAX}}
+\DoxyCodeLine{00441\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_SHORT\ SHRT\_MIN}}
+\DoxyCodeLine{00442\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_USHORT\ USHRT\_MAX}}
+\DoxyCodeLine{00443\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_INT\ \ \ INT\_MAX}}
+\DoxyCodeLine{00444\ \textcolor{preprocessor}{\#ifndef\ INT\_MIN}}
+\DoxyCodeLine{00445\ \textcolor{preprocessor}{\#define\ INT\_MIN\ (-\/INT\_MAX\ -\/\ 1)}}
+\DoxyCodeLine{00446\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00447\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_INT\ \ \ INT\_MIN}}
+\DoxyCodeLine{00448\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_UINT\ \ UINT\_MAX}}
+\DoxyCodeLine{00449\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_LONG\ \ LONG\_MAX}}
+\DoxyCodeLine{00450\ \textcolor{preprocessor}{\#define\ NPY\_MIN\_LONG\ \ LONG\_MIN}}
+\DoxyCodeLine{00451\ \textcolor{preprocessor}{\#define\ NPY\_MAX\_ULONG\ \ ULONG\_MAX}}
+\DoxyCodeLine{00452\ }
+\DoxyCodeLine{00453\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_BOOL\ (sizeof(npy\_bool)\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00454\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_CHAR\ CHAR\_BIT}}
+\DoxyCodeLine{00455\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_BYTE\ (NPY\_SIZEOF\_BYTE\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00456\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_SHORT\ (NPY\_SIZEOF\_SHORT\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00457\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_INT\ (NPY\_SIZEOF\_INT\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00458\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_LONG\ (NPY\_SIZEOF\_LONG\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00459\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_LONGLONG\ (NPY\_SIZEOF\_LONGLONG\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00460\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_INTP\ (NPY\_SIZEOF\_INTP\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00461\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_HALF\ (NPY\_SIZEOF\_HALF\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00462\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_FLOAT\ (NPY\_SIZEOF\_FLOAT\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00463\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_DOUBLE\ (NPY\_SIZEOF\_DOUBLE\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00464\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_LONGDOUBLE\ (NPY\_SIZEOF\_LONGDOUBLE\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00465\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_CFLOAT\ (NPY\_SIZEOF\_CFLOAT\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00466\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_CDOUBLE\ (NPY\_SIZEOF\_CDOUBLE\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00467\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_CLONGDOUBLE\ (NPY\_SIZEOF\_CLONGDOUBLE\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00468\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_DATETIME\ (NPY\_SIZEOF\_DATETIME\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00469\ \textcolor{preprocessor}{\#define\ NPY\_BITSOF\_TIMEDELTA\ (NPY\_SIZEOF\_TIMEDELTA\ *\ CHAR\_BIT)}}
+\DoxyCodeLine{00470\ }
+\DoxyCodeLine{00471\ \textcolor{preprocessor}{\#if\ NPY\_BITSOF\_LONG\ ==\ 8}}
+\DoxyCodeLine{00472\ \textcolor{preprocessor}{\#define\ NPY\_INT8\ NPY\_LONG}}
+\DoxyCodeLine{00473\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\ NPY\_ULONG}}
+\DoxyCodeLine{00474\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ npy\_int8;}
+\DoxyCodeLine{00475\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ npy\_uint8;}
+\DoxyCodeLine{00476\ \textcolor{preprocessor}{\#define\ PyInt8ScalarObject\ PyLongScalarObject}}
+\DoxyCodeLine{00477\ \textcolor{preprocessor}{\#define\ PyInt8ArrType\_Type\ PyLongArrType\_Type}}
+\DoxyCodeLine{00478\ \textcolor{preprocessor}{\#define\ PyUInt8ScalarObject\ PyULongScalarObject}}
+\DoxyCodeLine{00479\ \textcolor{preprocessor}{\#define\ PyUInt8ArrType\_Type\ PyULongArrType\_Type}}
+\DoxyCodeLine{00480\ \textcolor{preprocessor}{\#define\ NPY\_INT8\_FMT\ NPY\_LONG\_FMT}}
+\DoxyCodeLine{00481\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\_FMT\ NPY\_ULONG\_FMT}}
+\DoxyCodeLine{00482\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONG\ ==\ 16}}
+\DoxyCodeLine{00483\ \textcolor{preprocessor}{\#define\ NPY\_INT16\ NPY\_LONG}}
+\DoxyCodeLine{00484\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\ NPY\_ULONG}}
+\DoxyCodeLine{00485\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ npy\_int16;}
+\DoxyCodeLine{00486\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ npy\_uint16;}
+\DoxyCodeLine{00487\ \textcolor{preprocessor}{\#define\ PyInt16ScalarObject\ PyLongScalarObject}}
+\DoxyCodeLine{00488\ \textcolor{preprocessor}{\#define\ PyInt16ArrType\_Type\ PyLongArrType\_Type}}
+\DoxyCodeLine{00489\ \textcolor{preprocessor}{\#define\ PyUInt16ScalarObject\ PyULongScalarObject}}
+\DoxyCodeLine{00490\ \textcolor{preprocessor}{\#define\ PyUInt16ArrType\_Type\ PyULongArrType\_Type}}
+\DoxyCodeLine{00491\ \textcolor{preprocessor}{\#define\ NPY\_INT16\_FMT\ NPY\_LONG\_FMT}}
+\DoxyCodeLine{00492\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\_FMT\ NPY\_ULONG\_FMT}}
+\DoxyCodeLine{00493\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONG\ ==\ 32}}
+\DoxyCodeLine{00494\ \textcolor{preprocessor}{\#define\ NPY\_INT32\ NPY\_LONG}}
+\DoxyCodeLine{00495\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\ NPY\_ULONG}}
+\DoxyCodeLine{00496\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ npy\_int32;}
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ npy\_uint32;}
+\DoxyCodeLine{00498\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ npy\_ucs4;}
+\DoxyCodeLine{00499\ \textcolor{preprocessor}{\#define\ PyInt32ScalarObject\ PyLongScalarObject}}
+\DoxyCodeLine{00500\ \textcolor{preprocessor}{\#define\ PyInt32ArrType\_Type\ PyLongArrType\_Type}}
+\DoxyCodeLine{00501\ \textcolor{preprocessor}{\#define\ PyUInt32ScalarObject\ PyULongScalarObject}}
+\DoxyCodeLine{00502\ \textcolor{preprocessor}{\#define\ PyUInt32ArrType\_Type\ PyULongArrType\_Type}}
+\DoxyCodeLine{00503\ \textcolor{preprocessor}{\#define\ NPY\_INT32\_FMT\ NPY\_LONG\_FMT}}
+\DoxyCodeLine{00504\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\_FMT\ NPY\_ULONG\_FMT}}
+\DoxyCodeLine{00505\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONG\ ==\ 64}}
+\DoxyCodeLine{00506\ \textcolor{preprocessor}{\#define\ NPY\_INT64\ NPY\_LONG}}
+\DoxyCodeLine{00507\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\ NPY\_ULONG}}
+\DoxyCodeLine{00508\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ npy\_int64;}
+\DoxyCodeLine{00509\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ npy\_uint64;}
+\DoxyCodeLine{00510\ \textcolor{preprocessor}{\#define\ PyInt64ScalarObject\ PyLongScalarObject}}
+\DoxyCodeLine{00511\ \textcolor{preprocessor}{\#define\ PyInt64ArrType\_Type\ PyLongArrType\_Type}}
+\DoxyCodeLine{00512\ \textcolor{preprocessor}{\#define\ PyUInt64ScalarObject\ PyULongScalarObject}}
+\DoxyCodeLine{00513\ \textcolor{preprocessor}{\#define\ PyUInt64ArrType\_Type\ PyULongArrType\_Type}}
+\DoxyCodeLine{00514\ \textcolor{preprocessor}{\#define\ NPY\_INT64\_FMT\ NPY\_LONG\_FMT}}
+\DoxyCodeLine{00515\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\_FMT\ NPY\_ULONG\_FMT}}
+\DoxyCodeLine{00516\ \textcolor{preprocessor}{\#define\ MyPyLong\_FromInt64\ PyLong\_FromLong}}
+\DoxyCodeLine{00517\ \textcolor{preprocessor}{\#define\ MyPyLong\_AsInt64\ PyLong\_AsLong}}
+\DoxyCodeLine{00518\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONG\ ==\ 128}}
+\DoxyCodeLine{00519\ \textcolor{preprocessor}{\#define\ NPY\_INT128\ NPY\_LONG}}
+\DoxyCodeLine{00520\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\ NPY\_ULONG}}
+\DoxyCodeLine{00521\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ npy\_int128;}
+\DoxyCodeLine{00522\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ npy\_uint128;}
+\DoxyCodeLine{00523\ \textcolor{preprocessor}{\#define\ PyInt128ScalarObject\ PyLongScalarObject}}
+\DoxyCodeLine{00524\ \textcolor{preprocessor}{\#define\ PyInt128ArrType\_Type\ PyLongArrType\_Type}}
+\DoxyCodeLine{00525\ \textcolor{preprocessor}{\#define\ PyUInt128ScalarObject\ PyULongScalarObject}}
+\DoxyCodeLine{00526\ \textcolor{preprocessor}{\#define\ PyUInt128ArrType\_Type\ PyULongArrType\_Type}}
+\DoxyCodeLine{00527\ \textcolor{preprocessor}{\#define\ NPY\_INT128\_FMT\ NPY\_LONG\_FMT}}
+\DoxyCodeLine{00528\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\_FMT\ NPY\_ULONG\_FMT}}
+\DoxyCodeLine{00529\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00530\ }
+\DoxyCodeLine{00531\ \textcolor{preprocessor}{\#if\ NPY\_BITSOF\_LONGLONG\ ==\ 8}}
+\DoxyCodeLine{00532\ \textcolor{preprocessor}{\#\ \ ifndef\ NPY\_INT8}}
+\DoxyCodeLine{00533\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_INT8\ NPY\_LONGLONG}}
+\DoxyCodeLine{00534\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_UINT8\ NPY\_ULONGLONG}}
+\DoxyCodeLine{00535\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}}\ npy\_int8;}
+\DoxyCodeLine{00536\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}}\ npy\_uint8;}
+\DoxyCodeLine{00537\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt8ScalarObject\ PyLongLongScalarObject}}
+\DoxyCodeLine{00538\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt8ArrType\_Type\ PyLongLongArrType\_Type}}
+\DoxyCodeLine{00539\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt8ScalarObject\ PyULongLongScalarObject}}
+\DoxyCodeLine{00540\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt8ArrType\_Type\ PyULongLongArrType\_Type}}
+\DoxyCodeLine{00541\ \textcolor{preprocessor}{\#define\ NPY\_INT8\_FMT\ NPY\_LONGLONG\_FMT}}
+\DoxyCodeLine{00542\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\_FMT\ NPY\_ULONGLONG\_FMT}}
+\DoxyCodeLine{00543\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00544\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_LONGLONG\ NPY\_MAX\_INT8}}
+\DoxyCodeLine{00545\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MIN\_LONGLONG\ NPY\_MIN\_INT8}}
+\DoxyCodeLine{00546\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_ULONGLONG\ NPY\_MAX\_UINT8}}
+\DoxyCodeLine{00547\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGLONG\ ==\ 16}}
+\DoxyCodeLine{00548\ \textcolor{preprocessor}{\#\ \ ifndef\ NPY\_INT16}}
+\DoxyCodeLine{00549\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_INT16\ NPY\_LONGLONG}}
+\DoxyCodeLine{00550\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_UINT16\ NPY\_ULONGLONG}}
+\DoxyCodeLine{00551\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}}\ npy\_int16;}
+\DoxyCodeLine{00552\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}}\ npy\_uint16;}
+\DoxyCodeLine{00553\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt16ScalarObject\ PyLongLongScalarObject}}
+\DoxyCodeLine{00554\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt16ArrType\_Type\ PyLongLongArrType\_Type}}
+\DoxyCodeLine{00555\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt16ScalarObject\ PyULongLongScalarObject}}
+\DoxyCodeLine{00556\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt16ArrType\_Type\ PyULongLongArrType\_Type}}
+\DoxyCodeLine{00557\ \textcolor{preprocessor}{\#define\ NPY\_INT16\_FMT\ NPY\_LONGLONG\_FMT}}
+\DoxyCodeLine{00558\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\_FMT\ NPY\_ULONGLONG\_FMT}}
+\DoxyCodeLine{00559\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00560\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_LONGLONG\ NPY\_MAX\_INT16}}
+\DoxyCodeLine{00561\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MIN\_LONGLONG\ NPY\_MIN\_INT16}}
+\DoxyCodeLine{00562\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_ULONGLONG\ NPY\_MAX\_UINT16}}
+\DoxyCodeLine{00563\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGLONG\ ==\ 32}}
+\DoxyCodeLine{00564\ \textcolor{preprocessor}{\#\ \ ifndef\ NPY\_INT32}}
+\DoxyCodeLine{00565\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_INT32\ NPY\_LONGLONG}}
+\DoxyCodeLine{00566\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_UINT32\ NPY\_ULONGLONG}}
+\DoxyCodeLine{00567\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}}\ npy\_int32;}
+\DoxyCodeLine{00568\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}}\ npy\_uint32;}
+\DoxyCodeLine{00569\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}}\ npy\_ucs4;}
+\DoxyCodeLine{00570\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt32ScalarObject\ PyLongLongScalarObject}}
+\DoxyCodeLine{00571\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt32ArrType\_Type\ PyLongLongArrType\_Type}}
+\DoxyCodeLine{00572\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt32ScalarObject\ PyULongLongScalarObject}}
+\DoxyCodeLine{00573\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt32ArrType\_Type\ PyULongLongArrType\_Type}}
+\DoxyCodeLine{00574\ \textcolor{preprocessor}{\#define\ NPY\_INT32\_FMT\ NPY\_LONGLONG\_FMT}}
+\DoxyCodeLine{00575\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\_FMT\ NPY\_ULONGLONG\_FMT}}
+\DoxyCodeLine{00576\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00577\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_LONGLONG\ NPY\_MAX\_INT32}}
+\DoxyCodeLine{00578\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MIN\_LONGLONG\ NPY\_MIN\_INT32}}
+\DoxyCodeLine{00579\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_ULONGLONG\ NPY\_MAX\_UINT32}}
+\DoxyCodeLine{00580\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGLONG\ ==\ 64}}
+\DoxyCodeLine{00581\ \textcolor{preprocessor}{\#\ \ ifndef\ NPY\_INT64}}
+\DoxyCodeLine{00582\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_INT64\ NPY\_LONGLONG}}
+\DoxyCodeLine{00583\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_UINT64\ NPY\_ULONGLONG}}
+\DoxyCodeLine{00584\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}}\ npy\_int64;}
+\DoxyCodeLine{00585\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}}\ npy\_uint64;}
+\DoxyCodeLine{00586\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt64ScalarObject\ PyLongLongScalarObject}}
+\DoxyCodeLine{00587\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt64ArrType\_Type\ PyLongLongArrType\_Type}}
+\DoxyCodeLine{00588\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt64ScalarObject\ PyULongLongScalarObject}}
+\DoxyCodeLine{00589\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt64ArrType\_Type\ PyULongLongArrType\_Type}}
+\DoxyCodeLine{00590\ \textcolor{preprocessor}{\#define\ NPY\_INT64\_FMT\ NPY\_LONGLONG\_FMT}}
+\DoxyCodeLine{00591\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\_FMT\ NPY\_ULONGLONG\_FMT}}
+\DoxyCodeLine{00592\ \textcolor{preprocessor}{\#\ \ \ \ define\ MyPyLong\_FromInt64\ PyLong\_FromLongLong}}
+\DoxyCodeLine{00593\ \textcolor{preprocessor}{\#\ \ \ \ define\ MyPyLong\_AsInt64\ PyLong\_AsLongLong}}
+\DoxyCodeLine{00594\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00595\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_LONGLONG\ NPY\_MAX\_INT64}}
+\DoxyCodeLine{00596\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MIN\_LONGLONG\ NPY\_MIN\_INT64}}
+\DoxyCodeLine{00597\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_ULONGLONG\ NPY\_MAX\_UINT64}}
+\DoxyCodeLine{00598\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGLONG\ ==\ 128}}
+\DoxyCodeLine{00599\ \textcolor{preprocessor}{\#\ \ ifndef\ NPY\_INT128}}
+\DoxyCodeLine{00600\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_INT128\ NPY\_LONGLONG}}
+\DoxyCodeLine{00601\ \textcolor{preprocessor}{\#\ \ \ \ define\ NPY\_UINT128\ NPY\_ULONGLONG}}
+\DoxyCodeLine{00602\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}}\ npy\_int128;}
+\DoxyCodeLine{00603\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}}\ npy\_uint128;}
+\DoxyCodeLine{00604\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt128ScalarObject\ PyLongLongScalarObject}}
+\DoxyCodeLine{00605\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt128ArrType\_Type\ PyLongLongArrType\_Type}}
+\DoxyCodeLine{00606\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt128ScalarObject\ PyULongLongScalarObject}}
+\DoxyCodeLine{00607\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt128ArrType\_Type\ PyULongLongArrType\_Type}}
+\DoxyCodeLine{00608\ \textcolor{preprocessor}{\#define\ NPY\_INT128\_FMT\ NPY\_LONGLONG\_FMT}}
+\DoxyCodeLine{00609\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\_FMT\ NPY\_ULONGLONG\_FMT}}
+\DoxyCodeLine{00610\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00611\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_LONGLONG\ NPY\_MAX\_INT128}}
+\DoxyCodeLine{00612\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MIN\_LONGLONG\ NPY\_MIN\_INT128}}
+\DoxyCodeLine{00613\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_ULONGLONG\ NPY\_MAX\_UINT128}}
+\DoxyCodeLine{00614\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGLONG\ ==\ 256}}
+\DoxyCodeLine{00615\ \textcolor{preprocessor}{\#\ \ define\ NPY\_INT256\ NPY\_LONGLONG}}
+\DoxyCodeLine{00616\ \textcolor{preprocessor}{\#\ \ define\ NPY\_UINT256\ NPY\_ULONGLONG}}
+\DoxyCodeLine{00617\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}}\ npy\_int256;}
+\DoxyCodeLine{00618\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}}\ npy\_uint256;}
+\DoxyCodeLine{00619\ \textcolor{preprocessor}{\#\ \ define\ PyInt256ScalarObject\ PyLongLongScalarObject}}
+\DoxyCodeLine{00620\ \textcolor{preprocessor}{\#\ \ define\ PyInt256ArrType\_Type\ PyLongLongArrType\_Type}}
+\DoxyCodeLine{00621\ \textcolor{preprocessor}{\#\ \ define\ PyUInt256ScalarObject\ PyULongLongScalarObject}}
+\DoxyCodeLine{00622\ \textcolor{preprocessor}{\#\ \ define\ PyUInt256ArrType\_Type\ PyULongLongArrType\_Type}}
+\DoxyCodeLine{00623\ \textcolor{preprocessor}{\#define\ NPY\_INT256\_FMT\ NPY\_LONGLONG\_FMT}}
+\DoxyCodeLine{00624\ \textcolor{preprocessor}{\#define\ NPY\_UINT256\_FMT\ NPY\_ULONGLONG\_FMT}}
+\DoxyCodeLine{00625\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_LONGLONG\ NPY\_MAX\_INT256}}
+\DoxyCodeLine{00626\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MIN\_LONGLONG\ NPY\_MIN\_INT256}}
+\DoxyCodeLine{00627\ \textcolor{preprocessor}{\#\ \ define\ NPY\_MAX\_ULONGLONG\ NPY\_MAX\_UINT256}}
+\DoxyCodeLine{00628\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00629\ }
+\DoxyCodeLine{00630\ \textcolor{preprocessor}{\#if\ NPY\_BITSOF\_INT\ ==\ 8}}
+\DoxyCodeLine{00631\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT8}}
+\DoxyCodeLine{00632\ \textcolor{preprocessor}{\#define\ NPY\_INT8\ NPY\_INT}}
+\DoxyCodeLine{00633\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\ NPY\_UINT}}
+\DoxyCodeLine{00634\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{int}\ npy\_int8;}
+\DoxyCodeLine{00635\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ npy\_uint8;}
+\DoxyCodeLine{00636\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt8ScalarObject\ PyIntScalarObject}}
+\DoxyCodeLine{00637\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt8ArrType\_Type\ PyIntArrType\_Type}}
+\DoxyCodeLine{00638\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt8ScalarObject\ PyUIntScalarObject}}
+\DoxyCodeLine{00639\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt8ArrType\_Type\ PyUIntArrType\_Type}}
+\DoxyCodeLine{00640\ \textcolor{preprocessor}{\#define\ NPY\_INT8\_FMT\ NPY\_INT\_FMT}}
+\DoxyCodeLine{00641\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\_FMT\ NPY\_UINT\_FMT}}
+\DoxyCodeLine{00642\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00643\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_INT\ ==\ 16}}
+\DoxyCodeLine{00644\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT16}}
+\DoxyCodeLine{00645\ \textcolor{preprocessor}{\#define\ NPY\_INT16\ NPY\_INT}}
+\DoxyCodeLine{00646\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\ NPY\_UINT}}
+\DoxyCodeLine{00647\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{int}\ npy\_int16;}
+\DoxyCodeLine{00648\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ npy\_uint16;}
+\DoxyCodeLine{00649\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt16ScalarObject\ PyIntScalarObject}}
+\DoxyCodeLine{00650\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt16ArrType\_Type\ PyIntArrType\_Type}}
+\DoxyCodeLine{00651\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt16ScalarObject\ PyIntUScalarObject}}
+\DoxyCodeLine{00652\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt16ArrType\_Type\ PyIntUArrType\_Type}}
+\DoxyCodeLine{00653\ \textcolor{preprocessor}{\#define\ NPY\_INT16\_FMT\ NPY\_INT\_FMT}}
+\DoxyCodeLine{00654\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\_FMT\ NPY\_UINT\_FMT}}
+\DoxyCodeLine{00655\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00656\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_INT\ ==\ 32}}
+\DoxyCodeLine{00657\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT32}}
+\DoxyCodeLine{00658\ \textcolor{preprocessor}{\#define\ NPY\_INT32\ NPY\_INT}}
+\DoxyCodeLine{00659\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\ NPY\_UINT}}
+\DoxyCodeLine{00660\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{int}\ npy\_int32;}
+\DoxyCodeLine{00661\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ npy\_uint32;}
+\DoxyCodeLine{00662\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ npy\_ucs4;}
+\DoxyCodeLine{00663\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt32ScalarObject\ PyIntScalarObject}}
+\DoxyCodeLine{00664\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt32ArrType\_Type\ PyIntArrType\_Type}}
+\DoxyCodeLine{00665\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt32ScalarObject\ PyUIntScalarObject}}
+\DoxyCodeLine{00666\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt32ArrType\_Type\ PyUIntArrType\_Type}}
+\DoxyCodeLine{00667\ \textcolor{preprocessor}{\#define\ NPY\_INT32\_FMT\ NPY\_INT\_FMT}}
+\DoxyCodeLine{00668\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\_FMT\ NPY\_UINT\_FMT}}
+\DoxyCodeLine{00669\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00670\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_INT\ ==\ 64}}
+\DoxyCodeLine{00671\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT64}}
+\DoxyCodeLine{00672\ \textcolor{preprocessor}{\#define\ NPY\_INT64\ NPY\_INT}}
+\DoxyCodeLine{00673\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\ NPY\_UINT}}
+\DoxyCodeLine{00674\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{int}\ npy\_int64;}
+\DoxyCodeLine{00675\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ npy\_uint64;}
+\DoxyCodeLine{00676\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt64ScalarObject\ PyIntScalarObject}}
+\DoxyCodeLine{00677\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt64ArrType\_Type\ PyIntArrType\_Type}}
+\DoxyCodeLine{00678\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt64ScalarObject\ PyUIntScalarObject}}
+\DoxyCodeLine{00679\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt64ArrType\_Type\ PyUIntArrType\_Type}}
+\DoxyCodeLine{00680\ \textcolor{preprocessor}{\#define\ NPY\_INT64\_FMT\ NPY\_INT\_FMT}}
+\DoxyCodeLine{00681\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\_FMT\ NPY\_UINT\_FMT}}
+\DoxyCodeLine{00682\ \textcolor{preprocessor}{\#\ \ \ \ define\ MyPyLong\_FromInt64\ PyLong\_FromLong}}
+\DoxyCodeLine{00683\ \textcolor{preprocessor}{\#\ \ \ \ define\ MyPyLong\_AsInt64\ PyLong\_AsLong}}
+\DoxyCodeLine{00684\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00685\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_INT\ ==\ 128}}
+\DoxyCodeLine{00686\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT128}}
+\DoxyCodeLine{00687\ \textcolor{preprocessor}{\#define\ NPY\_INT128\ NPY\_INT}}
+\DoxyCodeLine{00688\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\ NPY\_UINT}}
+\DoxyCodeLine{00689\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{int}\ npy\_int128;}
+\DoxyCodeLine{00690\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ npy\_uint128;}
+\DoxyCodeLine{00691\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt128ScalarObject\ PyIntScalarObject}}
+\DoxyCodeLine{00692\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt128ArrType\_Type\ PyIntArrType\_Type}}
+\DoxyCodeLine{00693\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt128ScalarObject\ PyUIntScalarObject}}
+\DoxyCodeLine{00694\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt128ArrType\_Type\ PyUIntArrType\_Type}}
+\DoxyCodeLine{00695\ \textcolor{preprocessor}{\#define\ NPY\_INT128\_FMT\ NPY\_INT\_FMT}}
+\DoxyCodeLine{00696\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\_FMT\ NPY\_UINT\_FMT}}
+\DoxyCodeLine{00697\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00698\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00699\ }
+\DoxyCodeLine{00700\ \textcolor{preprocessor}{\#if\ NPY\_BITSOF\_SHORT\ ==\ 8}}
+\DoxyCodeLine{00701\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT8}}
+\DoxyCodeLine{00702\ \textcolor{preprocessor}{\#define\ NPY\_INT8\ NPY\_SHORT}}
+\DoxyCodeLine{00703\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\ NPY\_USHORT}}
+\DoxyCodeLine{00704\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{short}\ npy\_int8;}
+\DoxyCodeLine{00705\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ npy\_uint8;}
+\DoxyCodeLine{00706\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt8ScalarObject\ PyShortScalarObject}}
+\DoxyCodeLine{00707\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt8ArrType\_Type\ PyShortArrType\_Type}}
+\DoxyCodeLine{00708\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt8ScalarObject\ PyUShortScalarObject}}
+\DoxyCodeLine{00709\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt8ArrType\_Type\ PyUShortArrType\_Type}}
+\DoxyCodeLine{00710\ \textcolor{preprocessor}{\#define\ NPY\_INT8\_FMT\ NPY\_SHORT\_FMT}}
+\DoxyCodeLine{00711\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\_FMT\ NPY\_USHORT\_FMT}}
+\DoxyCodeLine{00712\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00713\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_SHORT\ ==\ 16}}
+\DoxyCodeLine{00714\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT16}}
+\DoxyCodeLine{00715\ \textcolor{preprocessor}{\#define\ NPY\_INT16\ NPY\_SHORT}}
+\DoxyCodeLine{00716\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\ NPY\_USHORT}}
+\DoxyCodeLine{00717\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{short}\ npy\_int16;}
+\DoxyCodeLine{00718\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ npy\_uint16;}
+\DoxyCodeLine{00719\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt16ScalarObject\ PyShortScalarObject}}
+\DoxyCodeLine{00720\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt16ArrType\_Type\ PyShortArrType\_Type}}
+\DoxyCodeLine{00721\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt16ScalarObject\ PyUShortScalarObject}}
+\DoxyCodeLine{00722\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt16ArrType\_Type\ PyUShortArrType\_Type}}
+\DoxyCodeLine{00723\ \textcolor{preprocessor}{\#define\ NPY\_INT16\_FMT\ NPY\_SHORT\_FMT}}
+\DoxyCodeLine{00724\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\_FMT\ NPY\_USHORT\_FMT}}
+\DoxyCodeLine{00725\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00726\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_SHORT\ ==\ 32}}
+\DoxyCodeLine{00727\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT32}}
+\DoxyCodeLine{00728\ \textcolor{preprocessor}{\#define\ NPY\_INT32\ NPY\_SHORT}}
+\DoxyCodeLine{00729\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\ NPY\_USHORT}}
+\DoxyCodeLine{00730\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{short}\ npy\_int32;}
+\DoxyCodeLine{00731\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ npy\_uint32;}
+\DoxyCodeLine{00732\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ npy\_ucs4;}
+\DoxyCodeLine{00733\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt32ScalarObject\ PyShortScalarObject}}
+\DoxyCodeLine{00734\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt32ArrType\_Type\ PyShortArrType\_Type}}
+\DoxyCodeLine{00735\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt32ScalarObject\ PyUShortScalarObject}}
+\DoxyCodeLine{00736\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt32ArrType\_Type\ PyUShortArrType\_Type}}
+\DoxyCodeLine{00737\ \textcolor{preprocessor}{\#define\ NPY\_INT32\_FMT\ NPY\_SHORT\_FMT}}
+\DoxyCodeLine{00738\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\_FMT\ NPY\_USHORT\_FMT}}
+\DoxyCodeLine{00739\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00740\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_SHORT\ ==\ 64}}
+\DoxyCodeLine{00741\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT64}}
+\DoxyCodeLine{00742\ \textcolor{preprocessor}{\#define\ NPY\_INT64\ NPY\_SHORT}}
+\DoxyCodeLine{00743\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\ NPY\_USHORT}}
+\DoxyCodeLine{00744\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{short}\ npy\_int64;}
+\DoxyCodeLine{00745\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ npy\_uint64;}
+\DoxyCodeLine{00746\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt64ScalarObject\ PyShortScalarObject}}
+\DoxyCodeLine{00747\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt64ArrType\_Type\ PyShortArrType\_Type}}
+\DoxyCodeLine{00748\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt64ScalarObject\ PyUShortScalarObject}}
+\DoxyCodeLine{00749\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt64ArrType\_Type\ PyUShortArrType\_Type}}
+\DoxyCodeLine{00750\ \textcolor{preprocessor}{\#define\ NPY\_INT64\_FMT\ NPY\_SHORT\_FMT}}
+\DoxyCodeLine{00751\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\_FMT\ NPY\_USHORT\_FMT}}
+\DoxyCodeLine{00752\ \textcolor{preprocessor}{\#\ \ \ \ define\ MyPyLong\_FromInt64\ PyLong\_FromLong}}
+\DoxyCodeLine{00753\ \textcolor{preprocessor}{\#\ \ \ \ define\ MyPyLong\_AsInt64\ PyLong\_AsLong}}
+\DoxyCodeLine{00754\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00755\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_SHORT\ ==\ 128}}
+\DoxyCodeLine{00756\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT128}}
+\DoxyCodeLine{00757\ \textcolor{preprocessor}{\#define\ NPY\_INT128\ NPY\_SHORT}}
+\DoxyCodeLine{00758\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\ NPY\_USHORT}}
+\DoxyCodeLine{00759\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{short}\ npy\_int128;}
+\DoxyCodeLine{00760\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ npy\_uint128;}
+\DoxyCodeLine{00761\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt128ScalarObject\ PyShortScalarObject}}
+\DoxyCodeLine{00762\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt128ArrType\_Type\ PyShortArrType\_Type}}
+\DoxyCodeLine{00763\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt128ScalarObject\ PyUShortScalarObject}}
+\DoxyCodeLine{00764\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt128ArrType\_Type\ PyUShortArrType\_Type}}
+\DoxyCodeLine{00765\ \textcolor{preprocessor}{\#define\ NPY\_INT128\_FMT\ NPY\_SHORT\_FMT}}
+\DoxyCodeLine{00766\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\_FMT\ NPY\_USHORT\_FMT}}
+\DoxyCodeLine{00767\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00768\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00769\ }
+\DoxyCodeLine{00770\ }
+\DoxyCodeLine{00771\ \textcolor{preprocessor}{\#if\ NPY\_BITSOF\_CHAR\ ==\ 8}}
+\DoxyCodeLine{00772\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT8}}
+\DoxyCodeLine{00773\ \textcolor{preprocessor}{\#define\ NPY\_INT8\ NPY\_BYTE}}
+\DoxyCodeLine{00774\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\ NPY\_UBYTE}}
+\DoxyCodeLine{00775\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ npy\_int8;}
+\DoxyCodeLine{00776\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ npy\_uint8;}
+\DoxyCodeLine{00777\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt8ScalarObject\ PyByteScalarObject}}
+\DoxyCodeLine{00778\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt8ArrType\_Type\ PyByteArrType\_Type}}
+\DoxyCodeLine{00779\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt8ScalarObject\ PyUByteScalarObject}}
+\DoxyCodeLine{00780\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt8ArrType\_Type\ PyUByteArrType\_Type}}
+\DoxyCodeLine{00781\ \textcolor{preprocessor}{\#define\ NPY\_INT8\_FMT\ NPY\_BYTE\_FMT}}
+\DoxyCodeLine{00782\ \textcolor{preprocessor}{\#define\ NPY\_UINT8\_FMT\ NPY\_UBYTE\_FMT}}
+\DoxyCodeLine{00783\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00784\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_CHAR\ ==\ 16}}
+\DoxyCodeLine{00785\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT16}}
+\DoxyCodeLine{00786\ \textcolor{preprocessor}{\#define\ NPY\_INT16\ NPY\_BYTE}}
+\DoxyCodeLine{00787\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\ NPY\_UBYTE}}
+\DoxyCodeLine{00788\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ npy\_int16;}
+\DoxyCodeLine{00789\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ npy\_uint16;}
+\DoxyCodeLine{00790\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt16ScalarObject\ PyByteScalarObject}}
+\DoxyCodeLine{00791\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt16ArrType\_Type\ PyByteArrType\_Type}}
+\DoxyCodeLine{00792\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt16ScalarObject\ PyUByteScalarObject}}
+\DoxyCodeLine{00793\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt16ArrType\_Type\ PyUByteArrType\_Type}}
+\DoxyCodeLine{00794\ \textcolor{preprocessor}{\#define\ NPY\_INT16\_FMT\ NPY\_BYTE\_FMT}}
+\DoxyCodeLine{00795\ \textcolor{preprocessor}{\#define\ NPY\_UINT16\_FMT\ NPY\_UBYTE\_FMT}}
+\DoxyCodeLine{00796\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00797\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_CHAR\ ==\ 32}}
+\DoxyCodeLine{00798\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT32}}
+\DoxyCodeLine{00799\ \textcolor{preprocessor}{\#define\ NPY\_INT32\ NPY\_BYTE}}
+\DoxyCodeLine{00800\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\ NPY\_UBYTE}}
+\DoxyCodeLine{00801\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ npy\_int32;}
+\DoxyCodeLine{00802\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ npy\_uint32;}
+\DoxyCodeLine{00803\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ npy\_ucs4;}
+\DoxyCodeLine{00804\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt32ScalarObject\ PyByteScalarObject}}
+\DoxyCodeLine{00805\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt32ArrType\_Type\ PyByteArrType\_Type}}
+\DoxyCodeLine{00806\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt32ScalarObject\ PyUByteScalarObject}}
+\DoxyCodeLine{00807\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt32ArrType\_Type\ PyUByteArrType\_Type}}
+\DoxyCodeLine{00808\ \textcolor{preprocessor}{\#define\ NPY\_INT32\_FMT\ NPY\_BYTE\_FMT}}
+\DoxyCodeLine{00809\ \textcolor{preprocessor}{\#define\ NPY\_UINT32\_FMT\ NPY\_UBYTE\_FMT}}
+\DoxyCodeLine{00810\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00811\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_CHAR\ ==\ 64}}
+\DoxyCodeLine{00812\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT64}}
+\DoxyCodeLine{00813\ \textcolor{preprocessor}{\#define\ NPY\_INT64\ NPY\_BYTE}}
+\DoxyCodeLine{00814\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\ NPY\_UBYTE}}
+\DoxyCodeLine{00815\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ npy\_int64;}
+\DoxyCodeLine{00816\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ npy\_uint64;}
+\DoxyCodeLine{00817\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt64ScalarObject\ PyByteScalarObject}}
+\DoxyCodeLine{00818\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt64ArrType\_Type\ PyByteArrType\_Type}}
+\DoxyCodeLine{00819\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt64ScalarObject\ PyUByteScalarObject}}
+\DoxyCodeLine{00820\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt64ArrType\_Type\ PyUByteArrType\_Type}}
+\DoxyCodeLine{00821\ \textcolor{preprocessor}{\#define\ NPY\_INT64\_FMT\ NPY\_BYTE\_FMT}}
+\DoxyCodeLine{00822\ \textcolor{preprocessor}{\#define\ NPY\_UINT64\_FMT\ NPY\_UBYTE\_FMT}}
+\DoxyCodeLine{00823\ \textcolor{preprocessor}{\#\ \ \ \ define\ MyPyLong\_FromInt64\ PyLong\_FromLong}}
+\DoxyCodeLine{00824\ \textcolor{preprocessor}{\#\ \ \ \ define\ MyPyLong\_AsInt64\ PyLong\_AsLong}}
+\DoxyCodeLine{00825\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00826\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_CHAR\ ==\ 128}}
+\DoxyCodeLine{00827\ \textcolor{preprocessor}{\#ifndef\ NPY\_INT128}}
+\DoxyCodeLine{00828\ \textcolor{preprocessor}{\#define\ NPY\_INT128\ NPY\_BYTE}}
+\DoxyCodeLine{00829\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\ NPY\_UBYTE}}
+\DoxyCodeLine{00830\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ npy\_int128;}
+\DoxyCodeLine{00831\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ npy\_uint128;}
+\DoxyCodeLine{00832\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt128ScalarObject\ PyByteScalarObject}}
+\DoxyCodeLine{00833\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyInt128ArrType\_Type\ PyByteArrType\_Type}}
+\DoxyCodeLine{00834\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt128ScalarObject\ PyUByteScalarObject}}
+\DoxyCodeLine{00835\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyUInt128ArrType\_Type\ PyUByteArrType\_Type}}
+\DoxyCodeLine{00836\ \textcolor{preprocessor}{\#define\ NPY\_INT128\_FMT\ NPY\_BYTE\_FMT}}
+\DoxyCodeLine{00837\ \textcolor{preprocessor}{\#define\ NPY\_UINT128\_FMT\ NPY\_UBYTE\_FMT}}
+\DoxyCodeLine{00838\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00839\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00840\ }
+\DoxyCodeLine{00841\ }
+\DoxyCodeLine{00842\ }
+\DoxyCodeLine{00843\ \textcolor{preprocessor}{\#if\ NPY\_BITSOF\_DOUBLE\ ==\ 32}}
+\DoxyCodeLine{00844\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT32}}
+\DoxyCodeLine{00845\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT32\ NPY\_DOUBLE}}
+\DoxyCodeLine{00846\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX64\ NPY\_CDOUBLE}}
+\DoxyCodeLine{00847\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{double}\ npy\_float32;}
+\DoxyCodeLine{00848\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}}\ npy\_complex64;}
+\DoxyCodeLine{00849\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat32ScalarObject\ PyDoubleScalarObject}}
+\DoxyCodeLine{00850\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex64ScalarObject\ PyCDoubleScalarObject}}
+\DoxyCodeLine{00851\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat32ArrType\_Type\ PyDoubleArrType\_Type}}
+\DoxyCodeLine{00852\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex64ArrType\_Type\ PyCDoubleArrType\_Type}}
+\DoxyCodeLine{00853\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT32\_FMT\ NPY\_DOUBLE\_FMT}}
+\DoxyCodeLine{00854\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX64\_FMT\ NPY\_CDOUBLE\_FMT}}
+\DoxyCodeLine{00855\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00856\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_DOUBLE\ ==\ 64}}
+\DoxyCodeLine{00857\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT64}}
+\DoxyCodeLine{00858\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT64\ NPY\_DOUBLE}}
+\DoxyCodeLine{00859\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX128\ NPY\_CDOUBLE}}
+\DoxyCodeLine{00860\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{double}\ npy\_float64;}
+\DoxyCodeLine{00861\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}}\ npy\_complex128;}
+\DoxyCodeLine{00862\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat64ScalarObject\ PyDoubleScalarObject}}
+\DoxyCodeLine{00863\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex128ScalarObject\ PyCDoubleScalarObject}}
+\DoxyCodeLine{00864\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat64ArrType\_Type\ PyDoubleArrType\_Type}}
+\DoxyCodeLine{00865\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex128ArrType\_Type\ PyCDoubleArrType\_Type}}
+\DoxyCodeLine{00866\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT64\_FMT\ NPY\_DOUBLE\_FMT}}
+\DoxyCodeLine{00867\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX128\_FMT\ NPY\_CDOUBLE\_FMT}}
+\DoxyCodeLine{00868\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00869\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_DOUBLE\ ==\ 80}}
+\DoxyCodeLine{00870\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT80}}
+\DoxyCodeLine{00871\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT80\ NPY\_DOUBLE}}
+\DoxyCodeLine{00872\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX160\ NPY\_CDOUBLE}}
+\DoxyCodeLine{00873\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{double}\ npy\_float80;}
+\DoxyCodeLine{00874\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}}\ npy\_complex160;}
+\DoxyCodeLine{00875\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat80ScalarObject\ PyDoubleScalarObject}}
+\DoxyCodeLine{00876\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex160ScalarObject\ PyCDoubleScalarObject}}
+\DoxyCodeLine{00877\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat80ArrType\_Type\ PyDoubleArrType\_Type}}
+\DoxyCodeLine{00878\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex160ArrType\_Type\ PyCDoubleArrType\_Type}}
+\DoxyCodeLine{00879\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT80\_FMT\ NPY\_DOUBLE\_FMT}}
+\DoxyCodeLine{00880\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX160\_FMT\ NPY\_CDOUBLE\_FMT}}
+\DoxyCodeLine{00881\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00882\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_DOUBLE\ ==\ 96}}
+\DoxyCodeLine{00883\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT96}}
+\DoxyCodeLine{00884\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT96\ NPY\_DOUBLE}}
+\DoxyCodeLine{00885\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX192\ NPY\_CDOUBLE}}
+\DoxyCodeLine{00886\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{double}\ npy\_float96;}
+\DoxyCodeLine{00887\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}}\ npy\_complex192;}
+\DoxyCodeLine{00888\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat96ScalarObject\ PyDoubleScalarObject}}
+\DoxyCodeLine{00889\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex192ScalarObject\ PyCDoubleScalarObject}}
+\DoxyCodeLine{00890\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat96ArrType\_Type\ PyDoubleArrType\_Type}}
+\DoxyCodeLine{00891\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex192ArrType\_Type\ PyCDoubleArrType\_Type}}
+\DoxyCodeLine{00892\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT96\_FMT\ NPY\_DOUBLE\_FMT}}
+\DoxyCodeLine{00893\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX192\_FMT\ NPY\_CDOUBLE\_FMT}}
+\DoxyCodeLine{00894\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00895\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_DOUBLE\ ==\ 128}}
+\DoxyCodeLine{00896\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT128}}
+\DoxyCodeLine{00897\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT128\ NPY\_DOUBLE}}
+\DoxyCodeLine{00898\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX256\ NPY\_CDOUBLE}}
+\DoxyCodeLine{00899\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{double}\ npy\_float128;}
+\DoxyCodeLine{00900\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}}\ npy\_complex256;}
+\DoxyCodeLine{00901\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat128ScalarObject\ PyDoubleScalarObject}}
+\DoxyCodeLine{00902\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex256ScalarObject\ PyCDoubleScalarObject}}
+\DoxyCodeLine{00903\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat128ArrType\_Type\ PyDoubleArrType\_Type}}
+\DoxyCodeLine{00904\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex256ArrType\_Type\ PyCDoubleArrType\_Type}}
+\DoxyCodeLine{00905\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT128\_FMT\ NPY\_DOUBLE\_FMT}}
+\DoxyCodeLine{00906\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX256\_FMT\ NPY\_CDOUBLE\_FMT}}
+\DoxyCodeLine{00907\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00908\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00909\ }
+\DoxyCodeLine{00910\ }
+\DoxyCodeLine{00911\ }
+\DoxyCodeLine{00912\ \textcolor{preprocessor}{\#if\ NPY\_BITSOF\_FLOAT\ ==\ 32}}
+\DoxyCodeLine{00913\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT32}}
+\DoxyCodeLine{00914\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT32\ NPY\_FLOAT}}
+\DoxyCodeLine{00915\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX64\ NPY\_CFLOAT}}
+\DoxyCodeLine{00916\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{float}\ npy\_float32;}
+\DoxyCodeLine{00917\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}}\ npy\_complex64;}
+\DoxyCodeLine{00918\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat32ScalarObject\ PyFloatScalarObject}}
+\DoxyCodeLine{00919\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex64ScalarObject\ PyCFloatScalarObject}}
+\DoxyCodeLine{00920\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat32ArrType\_Type\ PyFloatArrType\_Type}}
+\DoxyCodeLine{00921\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex64ArrType\_Type\ PyCFloatArrType\_Type}}
+\DoxyCodeLine{00922\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT32\_FMT\ NPY\_FLOAT\_FMT}}
+\DoxyCodeLine{00923\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX64\_FMT\ NPY\_CFLOAT\_FMT}}
+\DoxyCodeLine{00924\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00925\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_FLOAT\ ==\ 64}}
+\DoxyCodeLine{00926\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT64}}
+\DoxyCodeLine{00927\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT64\ NPY\_FLOAT}}
+\DoxyCodeLine{00928\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX128\ NPY\_CFLOAT}}
+\DoxyCodeLine{00929\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{float}\ npy\_float64;}
+\DoxyCodeLine{00930\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}}\ npy\_complex128;}
+\DoxyCodeLine{00931\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat64ScalarObject\ PyFloatScalarObject}}
+\DoxyCodeLine{00932\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex128ScalarObject\ PyCFloatScalarObject}}
+\DoxyCodeLine{00933\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat64ArrType\_Type\ PyFloatArrType\_Type}}
+\DoxyCodeLine{00934\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex128ArrType\_Type\ PyCFloatArrType\_Type}}
+\DoxyCodeLine{00935\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT64\_FMT\ NPY\_FLOAT\_FMT}}
+\DoxyCodeLine{00936\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX128\_FMT\ NPY\_CFLOAT\_FMT}}
+\DoxyCodeLine{00937\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00938\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_FLOAT\ ==\ 80}}
+\DoxyCodeLine{00939\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT80}}
+\DoxyCodeLine{00940\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT80\ NPY\_FLOAT}}
+\DoxyCodeLine{00941\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX160\ NPY\_CFLOAT}}
+\DoxyCodeLine{00942\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{float}\ npy\_float80;}
+\DoxyCodeLine{00943\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}}\ npy\_complex160;}
+\DoxyCodeLine{00944\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat80ScalarObject\ PyFloatScalarObject}}
+\DoxyCodeLine{00945\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex160ScalarObject\ PyCFloatScalarObject}}
+\DoxyCodeLine{00946\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat80ArrType\_Type\ PyFloatArrType\_Type}}
+\DoxyCodeLine{00947\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex160ArrType\_Type\ PyCFloatArrType\_Type}}
+\DoxyCodeLine{00948\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT80\_FMT\ NPY\_FLOAT\_FMT}}
+\DoxyCodeLine{00949\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX160\_FMT\ NPY\_CFLOAT\_FMT}}
+\DoxyCodeLine{00950\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00951\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_FLOAT\ ==\ 96}}
+\DoxyCodeLine{00952\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT96}}
+\DoxyCodeLine{00953\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT96\ NPY\_FLOAT}}
+\DoxyCodeLine{00954\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX192\ NPY\_CFLOAT}}
+\DoxyCodeLine{00955\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{float}\ npy\_float96;}
+\DoxyCodeLine{00956\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}}\ npy\_complex192;}
+\DoxyCodeLine{00957\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat96ScalarObject\ PyFloatScalarObject}}
+\DoxyCodeLine{00958\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex192ScalarObject\ PyCFloatScalarObject}}
+\DoxyCodeLine{00959\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat96ArrType\_Type\ PyFloatArrType\_Type}}
+\DoxyCodeLine{00960\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex192ArrType\_Type\ PyCFloatArrType\_Type}}
+\DoxyCodeLine{00961\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT96\_FMT\ NPY\_FLOAT\_FMT}}
+\DoxyCodeLine{00962\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX192\_FMT\ NPY\_CFLOAT\_FMT}}
+\DoxyCodeLine{00963\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00964\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_FLOAT\ ==\ 128}}
+\DoxyCodeLine{00965\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT128}}
+\DoxyCodeLine{00966\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT128\ NPY\_FLOAT}}
+\DoxyCodeLine{00967\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX256\ NPY\_CFLOAT}}
+\DoxyCodeLine{00968\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{float}\ npy\_float128;}
+\DoxyCodeLine{00969\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}}\ npy\_complex256;}
+\DoxyCodeLine{00970\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat128ScalarObject\ PyFloatScalarObject}}
+\DoxyCodeLine{00971\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex256ScalarObject\ PyCFloatScalarObject}}
+\DoxyCodeLine{00972\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat128ArrType\_Type\ PyFloatArrType\_Type}}
+\DoxyCodeLine{00973\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex256ArrType\_Type\ PyCFloatArrType\_Type}}
+\DoxyCodeLine{00974\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT128\_FMT\ NPY\_FLOAT\_FMT}}
+\DoxyCodeLine{00975\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX256\_FMT\ NPY\_CFLOAT\_FMT}}
+\DoxyCodeLine{00976\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00977\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00978\ }
+\DoxyCodeLine{00979\ \textcolor{comment}{/*\ half/float16\ isn't\ a\ floating-\/point\ type\ in\ C\ */}}
+\DoxyCodeLine{00980\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT16\ NPY\_HALF}}
+\DoxyCodeLine{00981\ \textcolor{keyword}{typedef}\ npy\_uint16\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}};}
+\DoxyCodeLine{00982\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ \mbox{\hyperlink{npy__common_8h_ab18340bd2dbf6badd67c7e8030b4f516}{npy\_float16}};}
+\DoxyCodeLine{00983\ }
+\DoxyCodeLine{00984\ \textcolor{preprocessor}{\#if\ NPY\_BITSOF\_LONGDOUBLE\ ==\ 32}}
+\DoxyCodeLine{00985\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT32}}
+\DoxyCodeLine{00986\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT32\ NPY\_LONGDOUBLE}}
+\DoxyCodeLine{00987\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX64\ NPY\_CLONGDOUBLE}}
+\DoxyCodeLine{00988\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}}\ npy\_float32;}
+\DoxyCodeLine{00989\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}}\ npy\_complex64;}
+\DoxyCodeLine{00990\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat32ScalarObject\ PyLongDoubleScalarObject}}
+\DoxyCodeLine{00991\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex64ScalarObject\ PyCLongDoubleScalarObject}}
+\DoxyCodeLine{00992\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat32ArrType\_Type\ PyLongDoubleArrType\_Type}}
+\DoxyCodeLine{00993\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex64ArrType\_Type\ PyCLongDoubleArrType\_Type}}
+\DoxyCodeLine{00994\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT32\_FMT\ NPY\_LONGDOUBLE\_FMT}}
+\DoxyCodeLine{00995\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX64\_FMT\ NPY\_CLONGDOUBLE\_FMT}}
+\DoxyCodeLine{00996\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00997\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGDOUBLE\ ==\ 64}}
+\DoxyCodeLine{00998\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT64}}
+\DoxyCodeLine{00999\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT64\ NPY\_LONGDOUBLE}}
+\DoxyCodeLine{01000\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX128\ NPY\_CLONGDOUBLE}}
+\DoxyCodeLine{01001\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}}\ npy\_float64;}
+\DoxyCodeLine{01002\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}}\ npy\_complex128;}
+\DoxyCodeLine{01003\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat64ScalarObject\ PyLongDoubleScalarObject}}
+\DoxyCodeLine{01004\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex128ScalarObject\ PyCLongDoubleScalarObject}}
+\DoxyCodeLine{01005\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat64ArrType\_Type\ PyLongDoubleArrType\_Type}}
+\DoxyCodeLine{01006\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex128ArrType\_Type\ PyCLongDoubleArrType\_Type}}
+\DoxyCodeLine{01007\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT64\_FMT\ NPY\_LONGDOUBLE\_FMT}}
+\DoxyCodeLine{01008\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX128\_FMT\ NPY\_CLONGDOUBLE\_FMT}}
+\DoxyCodeLine{01009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{01010\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGDOUBLE\ ==\ 80}}
+\DoxyCodeLine{01011\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT80}}
+\DoxyCodeLine{01012\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT80\ NPY\_LONGDOUBLE}}
+\DoxyCodeLine{01013\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX160\ NPY\_CLONGDOUBLE}}
+\DoxyCodeLine{01014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}}\ npy\_float80;}
+\DoxyCodeLine{01015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}}\ npy\_complex160;}
+\DoxyCodeLine{01016\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat80ScalarObject\ PyLongDoubleScalarObject}}
+\DoxyCodeLine{01017\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex160ScalarObject\ PyCLongDoubleScalarObject}}
+\DoxyCodeLine{01018\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat80ArrType\_Type\ PyLongDoubleArrType\_Type}}
+\DoxyCodeLine{01019\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex160ArrType\_Type\ PyCLongDoubleArrType\_Type}}
+\DoxyCodeLine{01020\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT80\_FMT\ NPY\_LONGDOUBLE\_FMT}}
+\DoxyCodeLine{01021\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX160\_FMT\ NPY\_CLONGDOUBLE\_FMT}}
+\DoxyCodeLine{01022\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{01023\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGDOUBLE\ ==\ 96}}
+\DoxyCodeLine{01024\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT96}}
+\DoxyCodeLine{01025\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT96\ NPY\_LONGDOUBLE}}
+\DoxyCodeLine{01026\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX192\ NPY\_CLONGDOUBLE}}
+\DoxyCodeLine{01027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}}\ npy\_float96;}
+\DoxyCodeLine{01028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}}\ npy\_complex192;}
+\DoxyCodeLine{01029\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat96ScalarObject\ PyLongDoubleScalarObject}}
+\DoxyCodeLine{01030\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex192ScalarObject\ PyCLongDoubleScalarObject}}
+\DoxyCodeLine{01031\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat96ArrType\_Type\ PyLongDoubleArrType\_Type}}
+\DoxyCodeLine{01032\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex192ArrType\_Type\ PyCLongDoubleArrType\_Type}}
+\DoxyCodeLine{01033\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT96\_FMT\ NPY\_LONGDOUBLE\_FMT}}
+\DoxyCodeLine{01034\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX192\_FMT\ NPY\_CLONGDOUBLE\_FMT}}
+\DoxyCodeLine{01035\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{01036\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGDOUBLE\ ==\ 128}}
+\DoxyCodeLine{01037\ \textcolor{preprocessor}{\#ifndef\ NPY\_FLOAT128}}
+\DoxyCodeLine{01038\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT128\ NPY\_LONGDOUBLE}}
+\DoxyCodeLine{01039\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX256\ NPY\_CLONGDOUBLE}}
+\DoxyCodeLine{01040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}}\ npy\_float128;}
+\DoxyCodeLine{01041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}}\ npy\_complex256;}
+\DoxyCodeLine{01042\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat128ScalarObject\ PyLongDoubleScalarObject}}
+\DoxyCodeLine{01043\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex256ScalarObject\ PyCLongDoubleScalarObject}}
+\DoxyCodeLine{01044\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat128ArrType\_Type\ PyLongDoubleArrType\_Type}}
+\DoxyCodeLine{01045\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex256ArrType\_Type\ PyCLongDoubleArrType\_Type}}
+\DoxyCodeLine{01046\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT128\_FMT\ NPY\_LONGDOUBLE\_FMT}}
+\DoxyCodeLine{01047\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX256\_FMT\ NPY\_CLONGDOUBLE\_FMT}}
+\DoxyCodeLine{01048\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{01049\ \textcolor{preprocessor}{\#elif\ NPY\_BITSOF\_LONGDOUBLE\ ==\ 256}}
+\DoxyCodeLine{01050\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT256\ NPY\_LONGDOUBLE}}
+\DoxyCodeLine{01051\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX512\ NPY\_CLONGDOUBLE}}
+\DoxyCodeLine{01052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}}\ npy\_float256;}
+\DoxyCodeLine{01053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}}\ npy\_complex512;}
+\DoxyCodeLine{01054\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat256ScalarObject\ PyLongDoubleScalarObject}}
+\DoxyCodeLine{01055\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex512ScalarObject\ PyCLongDoubleScalarObject}}
+\DoxyCodeLine{01056\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyFloat256ArrType\_Type\ PyLongDoubleArrType\_Type}}
+\DoxyCodeLine{01057\ \textcolor{preprocessor}{\#\ \ \ \ define\ PyComplex512ArrType\_Type\ PyCLongDoubleArrType\_Type}}
+\DoxyCodeLine{01058\ \textcolor{preprocessor}{\#define\ NPY\_FLOAT256\_FMT\ NPY\_LONGDOUBLE\_FMT}}
+\DoxyCodeLine{01059\ \textcolor{preprocessor}{\#define\ NPY\_COMPLEX512\_FMT\ NPY\_CLONGDOUBLE\_FMT}}
+\DoxyCodeLine{01060\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{01061\ }
+\DoxyCodeLine{01062\ \textcolor{comment}{/*\ datetime\ typedefs\ */}}
+\DoxyCodeLine{01063\ \textcolor{keyword}{typedef}\ npy\_int64\ \mbox{\hyperlink{npy__common_8h_a37d0380d114c93c437279e4ed3e8fdf8}{npy\_timedelta}};}
+\DoxyCodeLine{01064\ \textcolor{keyword}{typedef}\ npy\_int64\ \mbox{\hyperlink{npy__common_8h_a346c4c4fa39422a1cb2137423d407bbb}{npy\_datetime}};}
+\DoxyCodeLine{01065\ \textcolor{preprocessor}{\#define\ NPY\_DATETIME\_FMT\ NPY\_INT64\_FMT}}
+\DoxyCodeLine{01066\ \textcolor{preprocessor}{\#define\ NPY\_TIMEDELTA\_FMT\ NPY\_INT64\_FMT}}
+\DoxyCodeLine{01067\ }
+\DoxyCodeLine{01068\ \textcolor{comment}{/*\ End\ of\ typedefs\ for\ numarray\ style\ bit-\/width\ names\ */}}
+\DoxyCodeLine{01069\ }
+\DoxyCodeLine{01070\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_COMMON\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

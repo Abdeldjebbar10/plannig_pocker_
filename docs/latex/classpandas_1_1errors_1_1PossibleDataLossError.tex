@@ -1,0 +1,26 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Possible\+Data\+Loss\+Error}
+\hypertarget{classpandas_1_1errors_1_1PossibleDataLossError}{}\label{classpandas_1_1errors_1_1PossibleDataLossError}\index{pandas.errors.PossibleDataLossError@{pandas.errors.PossibleDataLossError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Possible\+Data\+Loss\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Possible\+Data\+Loss\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exception raised when trying to open a HDFStore file when already opened.
+
+Examples
+--------
+>>> store = pd.HDFStore('my-store', 'a') # doctest: +SKIP
+>>> store.open("w") # doctest: +SKIP
+... # PossibleDataLossError: Re-opening the file [my-store] with mode [a]...
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

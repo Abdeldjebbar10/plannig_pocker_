@@ -1,0 +1,147 @@
+\doxysection{Référence de la classe myapp.\+models.\+Partie}
+\hypertarget{classmyapp_1_1models_1_1Partie}{}\label{classmyapp_1_1models_1_1Partie}\index{myapp.models.Partie@{myapp.models.Partie}}
+
+
+Graphe d\textquotesingle{}héritage de myapp.\+models.\+Partie\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classmyapp_1_1models_1_1Partie__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de myapp.\+models.\+Partie\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classmyapp_1_1models_1_1Partie__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_a5109aa59d8493fc36b51b9dabf3a4116}{sauvegarder\+\_\+backlog}} (self)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_a1ead394fec8c6f806ae24a22f64777a8}{calculer\+\_\+moyenne\+\_\+votes}} (self, votes)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_ae8d4acaf46464e838e879f3342c2045c}{sauvegarder\+\_\+etat\+\_\+partie}} (self)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_a20735f1f82d2abbaa40b9a07237d4611}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_a3a99cc00d14da61e2f6c535eac55c1bc}{nom}} = models.\+Char\+Field(max\+\_\+length=200, unique=True)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_a5730dbdde6362f21b8bb349c92056b20}{admin}} = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Participant}{Participant}}, on\+\_\+delete=models.\+SET\+\_\+\+NULL, null=True, related\+\_\+name=\textquotesingle{}parties\+\_\+gerees\textquotesingle{})
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_a46c1f29d7b83f7d1fdb6fe7f449210d4}{participants}} = models.\+Many\+To\+Many\+Field(\mbox{\hyperlink{classmyapp_1_1models_1_1Participant}{Participant}}, related\+\_\+name=\textquotesingle{}parties\textquotesingle{})
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_ac75d6d88173c309e87ca20ecb15c638e}{statut}} = models.\+Char\+Field(max\+\_\+length=20, default="{}new"{})
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_a9f0a7a5d68d6b2a36a3e8c1b830ba64c}{mode\+\_\+jeu}}
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1Partie_af3abe71adc4b2e4d9233ee02091c0aaa}{fonctionnalites}} = models.\+Many\+To\+Many\+Field(\mbox{\hyperlink{classmyapp_1_1models_1_1Fonctionnalite}{Fonctionnalite}}, related\+\_\+name=\textquotesingle{}parties\textquotesingle{}, blank=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}@class Partie
+@brief Modèle pour représenter une partie.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classmyapp_1_1models_1_1Partie_a20735f1f82d2abbaa40b9a07237d4611}\label{classmyapp_1_1models_1_1Partie_a20735f1f82d2abbaa40b9a07237d4611} 
+\index{myapp.models.Partie@{myapp.models.Partie}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Retourne le nom de la partie.
+@return Le nom de la partie.
+\end{DoxyVerb}
+ \Hypertarget{classmyapp_1_1models_1_1Partie_a1ead394fec8c6f806ae24a22f64777a8}\label{classmyapp_1_1models_1_1Partie_a1ead394fec8c6f806ae24a22f64777a8} 
+\index{myapp.models.Partie@{myapp.models.Partie}!calculer\_moyenne\_votes@{calculer\_moyenne\_votes}}
+\index{calculer\_moyenne\_votes@{calculer\_moyenne\_votes}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{calculer\_moyenne\_votes()}{calculer\_moyenne\_votes()}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+calculer\+\_\+moyenne\+\_\+votes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{votes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Calcule la moyenne des votes.
+@param votes Liste des votes.
+@return La moyenne des votes.
+\end{DoxyVerb}
+ \Hypertarget{classmyapp_1_1models_1_1Partie_a5109aa59d8493fc36b51b9dabf3a4116}\label{classmyapp_1_1models_1_1Partie_a5109aa59d8493fc36b51b9dabf3a4116} 
+\index{myapp.models.Partie@{myapp.models.Partie}!sauvegarder\_backlog@{sauvegarder\_backlog}}
+\index{sauvegarder\_backlog@{sauvegarder\_backlog}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{sauvegarder\_backlog()}{sauvegarder\_backlog()}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+sauvegarder\+\_\+backlog (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Sauvegarde le backlog validé dans un fichier JSON.
+@return Le chemin du fichier JSON sauvegardé.
+\end{DoxyVerb}
+ \Hypertarget{classmyapp_1_1models_1_1Partie_ae8d4acaf46464e838e879f3342c2045c}\label{classmyapp_1_1models_1_1Partie_ae8d4acaf46464e838e879f3342c2045c} 
+\index{myapp.models.Partie@{myapp.models.Partie}!sauvegarder\_etat\_partie@{sauvegarder\_etat\_partie}}
+\index{sauvegarder\_etat\_partie@{sauvegarder\_etat\_partie}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{sauvegarder\_etat\_partie()}{sauvegarder\_etat\_partie()}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+sauvegarder\+\_\+etat\+\_\+partie (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Sauvegarde l'état complet de la partie dans un fichier JSON, y compris les votes précédents.
+@return Le chemin du fichier JSON sauvegardé.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classmyapp_1_1models_1_1Partie_a5730dbdde6362f21b8bb349c92056b20}\label{classmyapp_1_1models_1_1Partie_a5730dbdde6362f21b8bb349c92056b20} 
+\index{myapp.models.Partie@{myapp.models.Partie}!admin@{admin}}
+\index{admin@{admin}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{admin}{admin}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+admin = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Participant}{Participant}}, on\+\_\+delete=models.\+SET\+\_\+\+NULL, null=True, related\+\_\+name=\textquotesingle{}parties\+\_\+gerees\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Partie_af3abe71adc4b2e4d9233ee02091c0aaa}\label{classmyapp_1_1models_1_1Partie_af3abe71adc4b2e4d9233ee02091c0aaa} 
+\index{myapp.models.Partie@{myapp.models.Partie}!fonctionnalites@{fonctionnalites}}
+\index{fonctionnalites@{fonctionnalites}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{fonctionnalites}{fonctionnalites}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+fonctionnalites = models.\+Many\+To\+Many\+Field(\mbox{\hyperlink{classmyapp_1_1models_1_1Fonctionnalite}{Fonctionnalite}}, related\+\_\+name=\textquotesingle{}parties\textquotesingle{}, blank=True)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Partie_a9f0a7a5d68d6b2a36a3e8c1b830ba64c}\label{classmyapp_1_1models_1_1Partie_a9f0a7a5d68d6b2a36a3e8c1b830ba64c} 
+\index{myapp.models.Partie@{myapp.models.Partie}!mode\_jeu@{mode\_jeu}}
+\index{mode\_jeu@{mode\_jeu}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{mode\_jeu}{mode\_jeu}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+mode\+\_\+jeu\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ models.CharField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ max\_length=50,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ choices=[(\textcolor{stringliteral}{'strict'},\ \textcolor{stringliteral}{'Strict'}),\ (\textcolor{stringliteral}{'moyenne'},\ \textcolor{stringliteral}{'Moyenne'})],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ default=\textcolor{stringliteral}{'strict'}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classmyapp_1_1models_1_1Partie_a3a99cc00d14da61e2f6c535eac55c1bc}\label{classmyapp_1_1models_1_1Partie_a3a99cc00d14da61e2f6c535eac55c1bc} 
+\index{myapp.models.Partie@{myapp.models.Partie}!nom@{nom}}
+\index{nom@{nom}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+nom = models.\+Char\+Field(max\+\_\+length=200, unique=True)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Partie_a46c1f29d7b83f7d1fdb6fe7f449210d4}\label{classmyapp_1_1models_1_1Partie_a46c1f29d7b83f7d1fdb6fe7f449210d4} 
+\index{myapp.models.Partie@{myapp.models.Partie}!participants@{participants}}
+\index{participants@{participants}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{participants}{participants}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+participants = models.\+Many\+To\+Many\+Field(\mbox{\hyperlink{classmyapp_1_1models_1_1Participant}{Participant}}, related\+\_\+name=\textquotesingle{}parties\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1Partie_ac75d6d88173c309e87ca20ecb15c638e}\label{classmyapp_1_1models_1_1Partie_ac75d6d88173c309e87ca20ecb15c638e} 
+\index{myapp.models.Partie@{myapp.models.Partie}!statut@{statut}}
+\index{statut@{statut}!myapp.models.Partie@{myapp.models.Partie}}
+\doxysubsubsection{\texorpdfstring{statut}{statut}}
+{\footnotesize\ttfamily myapp.\+models.\+Partie.\+statut = models.\+Char\+Field(max\+\_\+length=20, default="{}new"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+myapp/\mbox{\hyperlink{models_8py}{models.\+py}}\end{DoxyCompactItemize}

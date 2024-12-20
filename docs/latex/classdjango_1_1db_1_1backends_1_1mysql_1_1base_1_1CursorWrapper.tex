@@ -1,0 +1,100 @@
+\doxysection{Référence de la classe django.\+db.\+backends.\+mysql.\+base.\+Cursor\+Wrapper}
+\hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper}{}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper}\index{django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a40ae9b0233a9f2e116dac8d1b9eaefdc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_abd52e7069f4ddba3438531ee41b3ad40}{cursor}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a6b2d41b73d7c215224f1e994aad6ad60}{execute}} (self, query, args=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a4a604c94db88520050ceef7ddec74f34}{executemany}} (self, query, args)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a20e21ec52fae5babdedf2c700be36024}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, attr)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a96860984e3e955165a7742343527ec31}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_abd52e7069f4ddba3438531ee41b3ad40}{cursor}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a9723002bbd98763fc8d72d7ccbbaceb1}{codes\+\_\+for\+\_\+integrityerror}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A thin wrapper around MySQLdb's normal cursor class that catches particular
+exception instances and reraises them with the correct types.
+
+Implemented as a wrapper, rather than a subclass, so that it isn't stuck
+to the particular underlying representation returned by Connection.cursor().
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a40ae9b0233a9f2e116dac8d1b9eaefdc}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a40ae9b0233a9f2e116dac8d1b9eaefdc} 
+\index{django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+base.\+Cursor\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cursor }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a20e21ec52fae5babdedf2c700be36024}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a20e21ec52fae5babdedf2c700be36024} 
+\index{django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+base.\+Cursor\+Wrapper.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{attr }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a96860984e3e955165a7742343527ec31}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a96860984e3e955165a7742343527ec31} 
+\index{django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+base.\+Cursor\+Wrapper.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a6b2d41b73d7c215224f1e994aad6ad60}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a6b2d41b73d7c215224f1e994aad6ad60} 
+\index{django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}!execute@{execute}}
+\index{execute@{execute}!django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+base.\+Cursor\+Wrapper.\+execute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{query,  }\item[{}]{args = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a4a604c94db88520050ceef7ddec74f34}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a4a604c94db88520050ceef7ddec74f34} 
+\index{django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}!executemany@{executemany}}
+\index{executemany@{executemany}!django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{executemany()}{executemany()}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+base.\+Cursor\+Wrapper.\+executemany (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{query,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a9723002bbd98763fc8d72d7ccbbaceb1}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_a9723002bbd98763fc8d72d7ccbbaceb1} 
+\index{django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}!codes\_for\_integrityerror@{codes\_for\_integrityerror}}
+\index{codes\_for\_integrityerror@{codes\_for\_integrityerror}!django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{codes\_for\_integrityerror}{codes\_for\_integrityerror}}
+{\footnotesize\ttfamily tuple django.\+db.\+backends.\+mysql.\+base.\+Cursor\+Wrapper.\+codes\+\_\+for\+\_\+integrityerror\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1048,\ \ \textcolor{comment}{\#\ Column\ cannot\ be\ null}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1690,\ \ \textcolor{comment}{\#\ BIGINT\ UNSIGNED\ value\ is\ out\ of\ range}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3819,\ \ \textcolor{comment}{\#\ CHECK\ constraint\ is\ violated}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4025,\ \ \textcolor{comment}{\#\ CHECK\ constraint\ failed}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_abd52e7069f4ddba3438531ee41b3ad40}\label{classdjango_1_1db_1_1backends_1_1mysql_1_1base_1_1CursorWrapper_abd52e7069f4ddba3438531ee41b3ad40} 
+\index{django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}!cursor@{cursor}}
+\index{cursor@{cursor}!django.db.backends.mysql.base.CursorWrapper@{django.db.backends.mysql.base.CursorWrapper}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+base.\+Cursor\+Wrapper.\+cursor}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/backends/mysql/\mbox{\hyperlink{django_2db_2backends_2mysql_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,235 @@
+\doxysection{Référence de la classe django.\+db.\+models.\+query\+\_\+utils.\+Q}
+\hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q}{}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q}\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+models.\+query\+\_\+utils.\+Q\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+db.\+models.\+query\+\_\+utils.\+Q\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aca96a3bfbd21cdad5cf5514d8846addd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \+\_\+connector=None, \+\_\+negated=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a914926c472cb689128ada35b7e458b7a}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a4717fdf2200a4f91d00d80cd1a20623c}{\+\_\+\+\_\+and\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a965b3600bd6c22d25dbd9cff6a776197}{\+\_\+\+\_\+xor\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aaeda3970880cceb191cb640593f80bdf}{\+\_\+\+\_\+invert\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a5a7246eccafe0fea3e675587b04bb38b}{resolve\+\_\+expression}} (self, query=None, allow\+\_\+joins=True, reuse=None, summarize=False, for\+\_\+save=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a0a5546b5663301fffe109d5869ba7edf}{flatten}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a4636baa2ce17e41774ff3dbc101b8282}{check}} (self, against, using=DEFAULT\+\_\+\+DB\+\_\+\+ALIAS)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ac606e6b94b4af8af0edbd144709ff4d9}{deconstruct}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a63129a45cd7e8fa8b4789ce076f445a3}{identity}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aa83c3e0a1d5257be65a946fcc4baf58a}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a48140f9a25f88d108f4c0e038790fbba}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a85e461071ecba60f1b949bcb4445f201}{referenced\+\_\+base\+\_\+fields}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ac976b0a3dbbe954b2058588cc1d7eb3b}{OR}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6a6b61db124526a67002a528872e6d16}{AND}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6a4ddeb9117f3f5f382757f3ab02e177}{XOR}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a53eb8c8a4429e721a408efccbec06790}{identity}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a5fa934b9eb3c9a164a0cf8279a2dcc61}{AND}} = "{}AND"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a3e51343d222bc972fd365af6d6522355}{OR}} = "{}OR"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a2f09f576a61fe23198cdcce502fc1949}{XOR}} = "{}XOR"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6f6c5d80bd8dc6244366963062f1d935}{default}} = \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a5fa934b9eb3c9a164a0cf8279a2dcc61}{AND}}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a1280fb31a67ce319f2a8364ee2d1d50f}{conditional}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ade621b98231b73615e1aa3a726560c55}{\+\_\+combine}} (self, other, conn)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Encapsulate filters as objects that can then be combined logically (using
+`&` and `|`).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aca96a3bfbd21cdad5cf5514d8846addd}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aca96a3bfbd21cdad5cf5514d8846addd} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{}]{\+\_\+connector = {\ttfamily None},  }\item[{}]{\+\_\+negated = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a4717fdf2200a4f91d00d80cd1a20623c}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a4717fdf2200a4f91d00d80cd1a20623c} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!\_\_and\_\_@{\_\_and\_\_}}
+\index{\_\_and\_\_@{\_\_and\_\_}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{\_\_and\_\_()}{\_\_and\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+\_\+\+\_\+and\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aa83c3e0a1d5257be65a946fcc4baf58a}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aa83c3e0a1d5257be65a946fcc4baf58a} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a48140f9a25f88d108f4c0e038790fbba}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a48140f9a25f88d108f4c0e038790fbba} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aaeda3970880cceb191cb640593f80bdf}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_aaeda3970880cceb191cb640593f80bdf} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!\_\_invert\_\_@{\_\_invert\_\_}}
+\index{\_\_invert\_\_@{\_\_invert\_\_}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{\_\_invert\_\_()}{\_\_invert\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+\_\+\+\_\+invert\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a914926c472cb689128ada35b7e458b7a}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a914926c472cb689128ada35b7e458b7a} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!\_\_or\_\_@{\_\_or\_\_}}
+\index{\_\_or\_\_@{\_\_or\_\_}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{\_\_or\_\_()}{\_\_or\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+\_\+\+\_\+or\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a965b3600bd6c22d25dbd9cff6a776197}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a965b3600bd6c22d25dbd9cff6a776197} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!\_\_xor\_\_@{\_\_xor\_\_}}
+\index{\_\_xor\_\_@{\_\_xor\_\_}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{\_\_xor\_\_()}{\_\_xor\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+\_\+\+\_\+xor\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ade621b98231b73615e1aa3a726560c55}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ade621b98231b73615e1aa3a726560c55} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!\_combine@{\_combine}}
+\index{\_combine@{\_combine}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{\_combine()}{\_combine()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+\_\+combine (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other,  }\item[{}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a4636baa2ce17e41774ff3dbc101b8282}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a4636baa2ce17e41774ff3dbc101b8282} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!check@{check}}
+\index{check@{check}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+check (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{against,  }\item[{}]{using = {\ttfamily DEFAULT\+\_\+DB\+\_\+ALIAS} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do a database query to check if the expressions of the Q instance
+matches against the expressions.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ac606e6b94b4af8af0edbd144709ff4d9}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ac606e6b94b4af8af0edbd144709ff4d9} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!deconstruct@{deconstruct}}
+\index{deconstruct@{deconstruct}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{deconstruct()}{deconstruct()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+deconstruct (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a0a5546b5663301fffe109d5869ba7edf}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a0a5546b5663301fffe109d5869ba7edf} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!flatten@{flatten}}
+\index{flatten@{flatten}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+flatten (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recursively yield this Q object and all subexpressions, in depth-first
+order.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a63129a45cd7e8fa8b4789ce076f445a3}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a63129a45cd7e8fa8b4789ce076f445a3} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!identity@{identity}}
+\index{identity@{identity}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{identity()}{identity()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+identity (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a85e461071ecba60f1b949bcb4445f201}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a85e461071ecba60f1b949bcb4445f201} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!referenced\_base\_fields@{referenced\_base\_fields}}
+\index{referenced\_base\_fields@{referenced\_base\_fields}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{referenced\_base\_fields()}{referenced\_base\_fields()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+referenced\+\_\+base\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve all base fields referenced directly or through F expressions
+excluding any fields referenced through joins.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a5a7246eccafe0fea3e675587b04bb38b}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a5a7246eccafe0fea3e675587b04bb38b} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!resolve\_expression@{resolve\_expression}}
+\index{resolve\_expression@{resolve\_expression}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{resolve\_expression()}{resolve\_expression()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+resolve\+\_\+expression (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{query = {\ttfamily None},  }\item[{}]{allow\+\_\+joins = {\ttfamily True},  }\item[{}]{reuse = {\ttfamily None},  }\item[{}]{summarize = {\ttfamily False},  }\item[{}]{for\+\_\+save = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a5fa934b9eb3c9a164a0cf8279a2dcc61}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a5fa934b9eb3c9a164a0cf8279a2dcc61} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!AND@{AND}}
+\index{AND@{AND}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{AND}{AND}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str django.\+db.\+models.\+query\+\_\+utils.\+Q.\+AND = "{}AND"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6a6b61db124526a67002a528872e6d16}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6a6b61db124526a67002a528872e6d16} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!AND@{AND}}
+\index{AND@{AND}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{AND}{AND}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+AND}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a1280fb31a67ce319f2a8364ee2d1d50f}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a1280fb31a67ce319f2a8364ee2d1d50f} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!conditional@{conditional}}
+\index{conditional@{conditional}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{conditional}{conditional}}
+{\footnotesize\ttfamily bool django.\+db.\+models.\+query\+\_\+utils.\+Q.\+conditional = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6f6c5d80bd8dc6244366963062f1d935}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6f6c5d80bd8dc6244366963062f1d935} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!default@{default}}
+\index{default@{default}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily str django.\+db.\+models.\+query\+\_\+utils.\+Q.\+default = \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a5fa934b9eb3c9a164a0cf8279a2dcc61}{AND}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a53eb8c8a4429e721a408efccbec06790}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a53eb8c8a4429e721a408efccbec06790} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!identity@{identity}}
+\index{identity@{identity}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{identity}{identity}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+identity}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a3e51343d222bc972fd365af6d6522355}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a3e51343d222bc972fd365af6d6522355} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!OR@{OR}}
+\index{OR@{OR}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{OR}{OR}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str django.\+db.\+models.\+query\+\_\+utils.\+Q.\+OR = "{}OR"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ac976b0a3dbbe954b2058588cc1d7eb3b}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_ac976b0a3dbbe954b2058588cc1d7eb3b} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!OR@{OR}}
+\index{OR@{OR}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{OR}{OR}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+OR}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a2f09f576a61fe23198cdcce502fc1949}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a2f09f576a61fe23198cdcce502fc1949} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!XOR@{XOR}}
+\index{XOR@{XOR}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{XOR}{XOR}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str django.\+db.\+models.\+query\+\_\+utils.\+Q.\+XOR = "{}XOR"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6a4ddeb9117f3f5f382757f3ab02e177}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1Q_a6a4ddeb9117f3f5f382757f3ab02e177} 
+\index{django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}!XOR@{XOR}}
+\index{XOR@{XOR}!django.db.models.query\_utils.Q@{django.db.models.query\_utils.Q}}
+\doxysubsubsection{\texorpdfstring{XOR}{XOR}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Q.\+XOR}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/models/\mbox{\hyperlink{query__utils_8py}{query\+\_\+utils.\+py}}\end{DoxyCompactItemize}

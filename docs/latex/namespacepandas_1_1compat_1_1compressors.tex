@@ -1,0 +1,55 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+compat.\+compressors}
+\hypertarget{namespacepandas_1_1compat_1_1compressors}{}\label{namespacepandas_1_1compat_1_1compressors}\index{pandas.compat.compressors@{pandas.compat.compressors}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1compat_1_1compressors_1_1BZ2File}{BZ2\+File}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1compat_1_1compressors_1_1LZMAFile}{LZMAFile}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}memoryview \mbox{\hyperlink{namespacepandas_1_1compat_1_1compressors_af8e854112fb9a1f3a2c300480d8e0bfe}{flatten\+\_\+buffer}} (bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}memoryview\texorpdfstring{$\vert$}{|}Pickle\+Buffer b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1compat_1_1compressors_aff29c83902747e1f9a06c9c5236ef0d2}{has\+\_\+bz2}} = True
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1compat_1_1compressors_a9b9b0ff7620c657f48f58e4e71e9ef12}{has\+\_\+lzma}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Patched ``BZ2File`` and ``LZMAFile`` to handle pickle protocol 5.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1compat_1_1compressors_af8e854112fb9a1f3a2c300480d8e0bfe}\label{namespacepandas_1_1compat_1_1compressors_af8e854112fb9a1f3a2c300480d8e0bfe} 
+\index{pandas.compat.compressors@{pandas.compat.compressors}!flatten\_buffer@{flatten\_buffer}}
+\index{flatten\_buffer@{flatten\_buffer}!pandas.compat.compressors@{pandas.compat.compressors}}
+\doxysubsubsection{\texorpdfstring{flatten\_buffer()}{flatten\_buffer()}}
+{\footnotesize\ttfamily  bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} memoryview pandas.\+compat.\+compressors.\+flatten\+\_\+buffer (\begin{DoxyParamCaption}\item[{bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} memoryview \texorpdfstring{$\vert$}{|} Pickle\+Buffer}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return some 1-D `uint8` typed buffer.
+
+Coerces anything that does not match that description to one that does
+without copying if possible (otherwise will copy).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepandas_1_1compat_1_1compressors_aff29c83902747e1f9a06c9c5236ef0d2}\label{namespacepandas_1_1compat_1_1compressors_aff29c83902747e1f9a06c9c5236ef0d2} 
+\index{pandas.compat.compressors@{pandas.compat.compressors}!has\_bz2@{has\_bz2}}
+\index{has\_bz2@{has\_bz2}!pandas.compat.compressors@{pandas.compat.compressors}}
+\doxysubsubsection{\texorpdfstring{has\_bz2}{has\_bz2}}
+{\footnotesize\ttfamily bool pandas.\+compat.\+compressors.\+has\+\_\+bz2 = True}
+
+\Hypertarget{namespacepandas_1_1compat_1_1compressors_a9b9b0ff7620c657f48f58e4e71e9ef12}\label{namespacepandas_1_1compat_1_1compressors_a9b9b0ff7620c657f48f58e4e71e9ef12} 
+\index{pandas.compat.compressors@{pandas.compat.compressors}!has\_lzma@{has\_lzma}}
+\index{has\_lzma@{has\_lzma}!pandas.compat.compressors@{pandas.compat.compressors}}
+\doxysubsubsection{\texorpdfstring{has\_lzma}{has\_lzma}}
+{\footnotesize\ttfamily bool pandas.\+compat.\+compressors.\+has\+\_\+lzma = True}
+

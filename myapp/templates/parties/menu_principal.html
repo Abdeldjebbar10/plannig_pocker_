@@ -1,0 +1,69 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Menu Principal</h1>
+
+    <div class="row">
+        <!-- Gestion des Participants -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h3>Gestion des Participants</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="{% url 'creer_participant' %}" class="btn btn-link">Créer un participant</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{% url 'lister_participants' %}" class="btn btn-link">Lister les participants</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gestion des Parties -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-success text-white">
+                    <h3>Gestion des Parties</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="{% url 'creer_partie' %}" class="btn btn-link">Créer une partie</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{% url 'lister_parties' %}" class="btn btn-link">Lister les parties</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reprendre une Partie (désactivé pour l'instant) -->
+    <!-- <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-warning text-dark">
+                    <h3>Reprendre une Partie</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        {% for partie in parties_en_cours %}
+                            <li class="list-group-item">
+                                <a href="{% url 'reprendre_partie' partie.id %}" class="btn btn-link">
+                                    Reprendre la partie {{ partie.nom }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
+{% endblock %}

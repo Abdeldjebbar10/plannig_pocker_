@@ -1,0 +1,847 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Poker_Project: Référence de la classe pandas.core.reshape.concat._Concatenator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Poker_Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacepandas.html">pandas</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1core.html">core</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1core_1_1reshape.html">reshape</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1core_1_1reshape_1_1concat.html">concat</a></li><li class="navelem"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html">_Concatenator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pub-static-attribs">Attributs publics statiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe pandas.core.reshape.concat._Concatenator</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Graphe de collaboration de pandas.core.reshape.concat._Concatenator:</div>
+<div class="dyncontent">
+<div class="center"><img src="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator__coll__graph.png" border="0" usemap="#apandas_8core_8reshape_8concat_8__Concatenator_coll__map" alt="Collaboration graph"/></div>
+<map name="apandas_8core_8reshape_8concat_8__Concatenator_coll__map" id="apandas_8core_8reshape_8concat_8__Concatenator_coll__map">
+<area shape="rect" title=" " alt="" coords="5,93,213,133"/>
+<area shape="rect" title=" " alt="" coords="84,5,135,31"/>
+<area shape="poly" title=" " alt="" coords="112,44,112,93,107,93,107,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a24f3780f3ac14c20bcda3d121c016230" id="r_a24f3780f3ac14c20bcda3d121c016230"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a24f3780f3ac14c20bcda3d121c016230">__init__</a> (self, Iterable[Series|DataFrame]|Mapping[HashableT, Series|DataFrame] <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3d6309fa8eec9e4e6412cd4c598bd7e3">objs</a>, Axis <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a4496af09f8ec207d43e6168de6e7d1ff">axis</a>=0, str join=&quot;outer&quot;, Iterable[Hashable]|None <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aba12c8c6a2d13ca3666a3641a759a271">keys</a>=None, <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a8c7562219ee8c72240196fd82e149bc7">levels</a>=None, list[HashableT]|None <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aebe91d3223fbd20ba282d2bb82363cee">names</a>=None, bool <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#ac709e1db68d8083a20bc406c3d2ed160">ignore_index</a>=False, bool <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3a158e625199de6c94308fd2ae80546e">verify_integrity</a>=False, bool <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#af7b0a59d432888e6866622dbb1002b2c">copy</a>=True, bool <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a847016a0662b1a56f81a83746f4bd187">sort</a>=False)</td></tr>
+<tr class="separator:a24f3780f3ac14c20bcda3d121c016230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b121ee76be6e1941ba8f08ae57840c" id="r_a88b121ee76be6e1941ba8f08ae57840c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a88b121ee76be6e1941ba8f08ae57840c">get_result</a> (self)</td></tr>
+<tr class="separator:a88b121ee76be6e1941ba8f08ae57840c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a2963a40778d364424828440532623" id="r_aa3a2963a40778d364424828440532623"><td class="memItemLeft" align="right" valign="top">list[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aa3a2963a40778d364424828440532623">new_axes</a> (self)</td></tr>
+<tr class="separator:aa3a2963a40778d364424828440532623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:a5d1eecc426dff8726aac73639efe4172" id="r_a5d1eecc426dff8726aac73639efe4172"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a5d1eecc426dff8726aac73639efe4172">intersect</a></td></tr>
+<tr class="separator:a5d1eecc426dff8726aac73639efe4172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa287b25105c5f0b6c3696e875a02e3b0" id="r_aa287b25105c5f0b6c3696e875a02e3b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aa287b25105c5f0b6c3696e875a02e3b0">sort</a></td></tr>
+<tr class="separator:aa287b25105c5f0b6c3696e875a02e3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac709e1db68d8083a20bc406c3d2ed160" id="r_ac709e1db68d8083a20bc406c3d2ed160"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#ac709e1db68d8083a20bc406c3d2ed160">ignore_index</a></td></tr>
+<tr class="separator:ac709e1db68d8083a20bc406c3d2ed160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a158e625199de6c94308fd2ae80546e" id="r_a3a158e625199de6c94308fd2ae80546e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3a158e625199de6c94308fd2ae80546e">verify_integrity</a></td></tr>
+<tr class="separator:a3a158e625199de6c94308fd2ae80546e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b0a59d432888e6866622dbb1002b2c" id="r_af7b0a59d432888e6866622dbb1002b2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#af7b0a59d432888e6866622dbb1002b2c">copy</a></td></tr>
+<tr class="separator:af7b0a59d432888e6866622dbb1002b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6309fa8eec9e4e6412cd4c598bd7e3" id="r_a3d6309fa8eec9e4e6412cd4c598bd7e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3d6309fa8eec9e4e6412cd4c598bd7e3">objs</a></td></tr>
+<tr class="separator:a3d6309fa8eec9e4e6412cd4c598bd7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16dc9af32d4eca97db0c7157f552ee0e" id="r_a16dc9af32d4eca97db0c7157f552ee0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a16dc9af32d4eca97db0c7157f552ee0e">bm_axis</a></td></tr>
+<tr class="separator:a16dc9af32d4eca97db0c7157f552ee0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4496af09f8ec207d43e6168de6e7d1ff" id="r_a4496af09f8ec207d43e6168de6e7d1ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a4496af09f8ec207d43e6168de6e7d1ff">axis</a></td></tr>
+<tr class="separator:a4496af09f8ec207d43e6168de6e7d1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba12c8c6a2d13ca3666a3641a759a271" id="r_aba12c8c6a2d13ca3666a3641a759a271"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aba12c8c6a2d13ca3666a3641a759a271">keys</a></td></tr>
+<tr class="separator:aba12c8c6a2d13ca3666a3641a759a271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe91d3223fbd20ba282d2bb82363cee" id="r_aebe91d3223fbd20ba282d2bb82363cee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aebe91d3223fbd20ba282d2bb82363cee">names</a></td></tr>
+<tr class="separator:aebe91d3223fbd20ba282d2bb82363cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7562219ee8c72240196fd82e149bc7" id="r_a8c7562219ee8c72240196fd82e149bc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a8c7562219ee8c72240196fd82e149bc7">levels</a></td></tr>
+<tr class="separator:a8c7562219ee8c72240196fd82e149bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235cd138f4bfeacb41afac73e4cb39db" id="r_a235cd138f4bfeacb41afac73e4cb39db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a235cd138f4bfeacb41afac73e4cb39db">new_axes</a></td></tr>
+<tr class="separator:a235cd138f4bfeacb41afac73e4cb39db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Attributs publics statiques</h2></td></tr>
+<tr class="memitem:a847016a0662b1a56f81a83746f4bd187" id="r_a847016a0662b1a56f81a83746f4bd187"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a847016a0662b1a56f81a83746f4bd187">sort</a></td></tr>
+<tr class="separator:a847016a0662b1a56f81a83746f4bd187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:a5d83ea9ecee43d720c07ab3e0e58b730" id="r_a5d83ea9ecee43d720c07ab3e0e58b730"><td class="memItemLeft" align="right" valign="top">set[int]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a5d83ea9ecee43d720c07ab3e0e58b730">_get_ndims</a> (self, list[Series|DataFrame] <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3d6309fa8eec9e4e6412cd4c598bd7e3">objs</a>)</td></tr>
+<tr class="separator:a5d83ea9ecee43d720c07ab3e0e58b730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88423c736172098b665efa53c686c361" id="r_a88423c736172098b665efa53c686c361"><td class="memItemLeft" align="right" valign="top">tuple[list[Series|DataFrame], <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>|None]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a88423c736172098b665efa53c686c361">_clean_keys_and_objs</a> (self, Iterable[Series|DataFrame]|Mapping[HashableT, Series|DataFrame] <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3d6309fa8eec9e4e6412cd4c598bd7e3">objs</a>, <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aba12c8c6a2d13ca3666a3641a759a271">keys</a>)</td></tr>
+<tr class="separator:a88423c736172098b665efa53c686c361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2feeb305a2d7d5a9fdfa82463e21e2a9" id="r_a2feeb305a2d7d5a9fdfa82463e21e2a9"><td class="memItemLeft" align="right" valign="top">tuple[Series|DataFrame, list[Series|DataFrame]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a2feeb305a2d7d5a9fdfa82463e21e2a9">_get_sample_object</a> (self, list[Series|DataFrame] <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3d6309fa8eec9e4e6412cd4c598bd7e3">objs</a>, set[int] ndims, <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aba12c8c6a2d13ca3666a3641a759a271">keys</a>, <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#aebe91d3223fbd20ba282d2bb82363cee">names</a>, <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a8c7562219ee8c72240196fd82e149bc7">levels</a>)</td></tr>
+<tr class="separator:a2feeb305a2d7d5a9fdfa82463e21e2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f29758d3383a83fcfca7d3dddb1404" id="r_ab4f29758d3383a83fcfca7d3dddb1404"><td class="memItemLeft" align="right" valign="top">list[Series|DataFrame]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#ab4f29758d3383a83fcfca7d3dddb1404">_sanitize_mixed_ndim</a> (self, list[Series|DataFrame] <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3d6309fa8eec9e4e6412cd4c598bd7e3">objs</a>, Series|DataFrame sample, bool <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#ac709e1db68d8083a20bc406c3d2ed160">ignore_index</a>, AxisInt <a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a4496af09f8ec207d43e6168de6e7d1ff">axis</a>)</td></tr>
+<tr class="separator:ab4f29758d3383a83fcfca7d3dddb1404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1fa345e89f4bf549ecc2b5c002cd1f5" id="r_ac1fa345e89f4bf549ecc2b5c002cd1f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#ac1fa345e89f4bf549ecc2b5c002cd1f5">_get_result_dim</a> (self)</td></tr>
+<tr class="separator:ac1fa345e89f4bf549ecc2b5c002cd1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab565a7b92061827dfadbf3af2ca4d87b" id="r_ab565a7b92061827dfadbf3af2ca4d87b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#ab565a7b92061827dfadbf3af2ca4d87b">_get_comb_axis</a> (self, AxisInt i)</td></tr>
+<tr class="separator:ab565a7b92061827dfadbf3af2ca4d87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3944c506f5269c35fbe565c715416418" id="r_a3944c506f5269c35fbe565c715416418"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a3944c506f5269c35fbe565c715416418">_get_concat_axis</a> (self)</td></tr>
+<tr class="separator:a3944c506f5269c35fbe565c715416418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf4b78b9bf35789a1c177ff76ef029b" id="r_accf4b78b9bf35789a1c177ff76ef029b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#accf4b78b9bf35789a1c177ff76ef029b">_maybe_check_integrity</a> (self, <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> concat_index)</td></tr>
+<tr class="separator:accf4b78b9bf35789a1c177ff76ef029b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:a9fedb6a7efa5c5787bf9e23bf3f3b8e7" id="r_a9fedb6a7efa5c5787bf9e23bf3f3b8e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a9fedb6a7efa5c5787bf9e23bf3f3b8e7">_is_frame</a></td></tr>
+<tr class="separator:a9fedb6a7efa5c5787bf9e23bf3f3b8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628435c85a3e62d71cf18bfe1b6f5906" id="r_a628435c85a3e62d71cf18bfe1b6f5906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1reshape_1_1concat_1_1__Concatenator.html#a628435c85a3e62d71cf18bfe1b6f5906">_is_series</a></td></tr>
+<tr class="separator:a628435c85a3e62d71cf18bfe1b6f5906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><pre class="fragment">Orchestrates a concatenation operation for BlockManagers
+</pre> </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a24f3780f3ac14c20bcda3d121c016230" name="a24f3780f3ac14c20bcda3d121c016230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f3780f3ac14c20bcda3d121c016230">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.reshape.concat._Concatenator.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterable[Series | DataFrame] | Mapping[HashableT, Series | DataFrame]&#160;</td>
+          <td class="paramname"><em>objs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Axis &#160;</td>
+          <td class="paramname"><em>axis</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str &#160;</td>
+          <td class="paramname"><em>join</em> = <code>&quot;outer&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterable[Hashable] | None &#160;</td>
+          <td class="paramname"><em>keys</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>levels</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[HashableT] | None &#160;</td>
+          <td class="paramname"><em>names</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>ignore_index</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>verify_integrity</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>copy</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>sort</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a88423c736172098b665efa53c686c361" name="a88423c736172098b665efa53c686c361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88423c736172098b665efa53c686c361">&#9670;&#160;</a></span>_clean_keys_and_objs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> tuple[list[Series | DataFrame], <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> | None] pandas.core.reshape.concat._Concatenator._clean_keys_and_objs </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterable[Series | DataFrame] | Mapping[HashableT, Series | DataFrame]&#160;</td>
+          <td class="paramname"><em>objs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>keys</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab565a7b92061827dfadbf3af2ca4d87b" name="ab565a7b92061827dfadbf3af2ca4d87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab565a7b92061827dfadbf3af2ca4d87b">&#9670;&#160;</a></span>_get_comb_axis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> pandas.core.reshape.concat._Concatenator._get_comb_axis </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AxisInt&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3944c506f5269c35fbe565c715416418" name="a3944c506f5269c35fbe565c715416418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3944c506f5269c35fbe565c715416418">&#9670;&#160;</a></span>_get_concat_axis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> pandas.core.reshape.concat._Concatenator._get_concat_axis </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Return index to be used along concatenation axis.
+</pre> 
+</div>
+</div>
+<a id="a5d83ea9ecee43d720c07ab3e0e58b730" name="a5d83ea9ecee43d720c07ab3e0e58b730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d83ea9ecee43d720c07ab3e0e58b730">&#9670;&#160;</a></span>_get_ndims()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> set[int] pandas.core.reshape.concat._Concatenator._get_ndims </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[Series | DataFrame]&#160;</td>
+          <td class="paramname"><em>objs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1fa345e89f4bf549ecc2b5c002cd1f5" name="ac1fa345e89f4bf549ecc2b5c002cd1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1fa345e89f4bf549ecc2b5c002cd1f5">&#9670;&#160;</a></span>_get_result_dim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int pandas.core.reshape.concat._Concatenator._get_result_dim </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2feeb305a2d7d5a9fdfa82463e21e2a9" name="a2feeb305a2d7d5a9fdfa82463e21e2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2feeb305a2d7d5a9fdfa82463e21e2a9">&#9670;&#160;</a></span>_get_sample_object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> tuple[Series | DataFrame, list[Series | DataFrame]] pandas.core.reshape.concat._Concatenator._get_sample_object </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[Series | DataFrame]&#160;</td>
+          <td class="paramname"><em>objs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">set[int]&#160;</td>
+          <td class="paramname"><em>ndims</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>keys</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>names</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>levels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accf4b78b9bf35789a1c177ff76ef029b" name="accf4b78b9bf35789a1c177ff76ef029b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf4b78b9bf35789a1c177ff76ef029b">&#9670;&#160;</a></span>_maybe_check_integrity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator._maybe_check_integrity </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>&#160;</td>
+          <td class="paramname"><em>concat_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4f29758d3383a83fcfca7d3dddb1404" name="ab4f29758d3383a83fcfca7d3dddb1404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f29758d3383a83fcfca7d3dddb1404">&#9670;&#160;</a></span>_sanitize_mixed_ndim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[Series | DataFrame] pandas.core.reshape.concat._Concatenator._sanitize_mixed_ndim </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[Series | DataFrame]&#160;</td>
+          <td class="paramname"><em>objs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Series | DataFrame&#160;</td>
+          <td class="paramname"><em>sample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AxisInt&#160;</td>
+          <td class="paramname"><em>axis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88b121ee76be6e1941ba8f08ae57840c" name="a88b121ee76be6e1941ba8f08ae57840c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b121ee76be6e1941ba8f08ae57840c">&#9670;&#160;</a></span>get_result()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.get_result </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3a2963a40778d364424828440532623" name="aa3a2963a40778d364424828440532623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a2963a40778d364424828440532623">&#9670;&#160;</a></span>new_axes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>] pandas.core.reshape.concat._Concatenator.new_axes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a9fedb6a7efa5c5787bf9e23bf3f3b8e7" name="a9fedb6a7efa5c5787bf9e23bf3f3b8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fedb6a7efa5c5787bf9e23bf3f3b8e7">&#9670;&#160;</a></span>_is_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator._is_frame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a628435c85a3e62d71cf18bfe1b6f5906" name="a628435c85a3e62d71cf18bfe1b6f5906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628435c85a3e62d71cf18bfe1b6f5906">&#9670;&#160;</a></span>_is_series</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator._is_series</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4496af09f8ec207d43e6168de6e7d1ff" name="a4496af09f8ec207d43e6168de6e7d1ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4496af09f8ec207d43e6168de6e7d1ff">&#9670;&#160;</a></span>axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.axis</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16dc9af32d4eca97db0c7157f552ee0e" name="a16dc9af32d4eca97db0c7157f552ee0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16dc9af32d4eca97db0c7157f552ee0e">&#9670;&#160;</a></span>bm_axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.bm_axis</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7b0a59d432888e6866622dbb1002b2c" name="af7b0a59d432888e6866622dbb1002b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b0a59d432888e6866622dbb1002b2c">&#9670;&#160;</a></span>copy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.copy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac709e1db68d8083a20bc406c3d2ed160" name="ac709e1db68d8083a20bc406c3d2ed160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac709e1db68d8083a20bc406c3d2ed160">&#9670;&#160;</a></span>ignore_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.ignore_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d1eecc426dff8726aac73639efe4172" name="a5d1eecc426dff8726aac73639efe4172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1eecc426dff8726aac73639efe4172">&#9670;&#160;</a></span>intersect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.intersect</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba12c8c6a2d13ca3666a3641a759a271" name="aba12c8c6a2d13ca3666a3641a759a271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba12c8c6a2d13ca3666a3641a759a271">&#9670;&#160;</a></span>keys</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.keys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c7562219ee8c72240196fd82e149bc7" name="a8c7562219ee8c72240196fd82e149bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c7562219ee8c72240196fd82e149bc7">&#9670;&#160;</a></span>levels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.levels</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebe91d3223fbd20ba282d2bb82363cee" name="aebe91d3223fbd20ba282d2bb82363cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebe91d3223fbd20ba282d2bb82363cee">&#9670;&#160;</a></span>names</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.names</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a235cd138f4bfeacb41afac73e4cb39db" name="a235cd138f4bfeacb41afac73e4cb39db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a235cd138f4bfeacb41afac73e4cb39db">&#9670;&#160;</a></span>new_axes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.new_axes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d6309fa8eec9e4e6412cd4c598bd7e3" name="a3d6309fa8eec9e4e6412cd4c598bd7e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6309fa8eec9e4e6412cd4c598bd7e3">&#9670;&#160;</a></span>objs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.objs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a847016a0662b1a56f81a83746f4bd187" name="a847016a0662b1a56f81a83746f4bd187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847016a0662b1a56f81a83746f4bd187">&#9670;&#160;</a></span>sort <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pandas.core.reshape.concat._Concatenator.sort</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa287b25105c5f0b6c3696e875a02e3b0" name="aa287b25105c5f0b6c3696e875a02e3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa287b25105c5f0b6c3696e875a02e3b0">&#9670;&#160;</a></span>sort <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.sort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a158e625199de6c94308fd2ae80546e" name="a3a158e625199de6c94308fd2ae80546e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a158e625199de6c94308fd2ae80546e">&#9670;&#160;</a></span>verify_integrity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.reshape.concat._Concatenator.verify_integrity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>env/lib/python3.12/site-packages/pandas/core/reshape/<a class="el" href="reshape_2concat_8py.html">concat.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,554 @@
+\doxysection{Référence de la classe pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype}
+\hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype}{}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype}\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ad0366a7e21bfaac5ede012f9032d863e}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a2188e85bfe79551508bfaa37d14d62d0}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_afb6cb0c0cf348e3887467cd8c2df8872}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ad64814dc5756aa3a637ec1e38002041e}{\+\_\+\+\_\+ne\+\_\+\+\_\+}} (self, object other)
+\item 
+object \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a32d347e2a019ab40b8ef8907a422ba16}{na\+\_\+value}} (self)
+\item 
+type\+\_\+t\mbox{[}Any\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ac886886a70925a2d53076df876b446a5}{type}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ac7cfcaae40ef7d7790c05b676ce9a474}{kind}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a00f8955503e325f4e67725f2797e711c}{name}} (self)
+\item 
+list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_abdaab63c8570ad2078f4906b95b4e68e}{names}} (self)
+\item 
+type\+\_\+t\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a274579ee419e22915144ae8a16919d62}{construct\+\_\+array\+\_\+type}} (cls)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a76bd07a8f116c825e6cb81f14ce14b46}{empty}} (self, Shape shape)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a29ddf33cb12e3c1f97f0ddd8fd0f6017}{construct\+\_\+from\+\_\+string}} (cls, str string)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a5766cfc6f2449cb6228abaf102d8d8d8}{is\+\_\+dtype}} (cls, object dtype)
+\item 
+type\+\_\+t\mbox{[}Index\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ab2babf27357e9f166dd376811cf774bb}{index\+\_\+class}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a10b74f90c6d1579fde4f633a884ce6a9}{name}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_acd3a772909023ed509516d22cfab78cf}{\+\_\+is\+\_\+numeric}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3df6b34fb908832585ffb3808beaace7}{\+\_\+is\+\_\+boolean}} (self)
+\item 
+Dtype\+Obj\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a4f9f0b6a9aede985486092976a9d965f}{\+\_\+get\+\_\+common\+\_\+dtype}} (self, list\mbox{[}Dtype\+Obj\mbox{]} dtypes)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a44399e06827945705f553a12884570d3}{\+\_\+can\+\_\+hold\+\_\+na}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a9868b5adf9d8fbe286524412e00f0a49}{\+\_\+is\+\_\+immutable}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3a4611cadd51ea4c5cfabc17fb61208e}{\+\_\+supports\+\_\+2d}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a9f8a606f5fdc2db9f7294f6c16889042}{\+\_\+can\+\_\+fast\+\_\+transpose}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3d0f2e10d71ed6f895fa3014ad9b3e09}{\+\_\+metadata}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a923d2f2aba9ad4b7fcba31595924a189}{\+\_\+metadata}} = ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A custom data type, to be paired with an ExtensionArray.
+
+See Also
+--------
+extensions.register_extension_dtype: Register an ExtensionType
+    with pandas as class decorator.
+extensions.ExtensionArray: Abstract base class for custom 1-D array types.
+
+Notes
+-----
+The interface includes the following abstract methods that must
+be implemented by subclasses:
+
+* type
+* name
+* construct_array_type
+
+The following attributes and methods influence the behavior of the dtype in
+pandas operations
+
+* _is_numeric
+* _is_boolean
+* _get_common_dtype
+
+The `na_value` class attribute can be used to set the default NA value
+for this type. :attr:`numpy.nan` is used by default.
+
+ExtensionDtypes are required to be hashable. The base class provides
+a default implementation, which relies on the ``_metadata`` class
+attribute. ``_metadata`` should be a tuple containing the strings
+that define your data type. For example, with ``PeriodDtype`` that's
+the ``freq`` attribute.
+
+**If you have a parametrized dtype you should set the ``_metadata``
+class property**.
+
+Ideally, the attributes in ``_metadata`` will match the
+parameters to your ``ExtensionDtype.__init__`` (if any). If any of
+the attributes in ``_metadata`` don't implement the standard
+``__eq__`` or ``__hash__``, the default implementations here will not
+work.
+
+Examples
+--------
+
+For interaction with Apache Arrow (pyarrow), a ``__from_arrow__`` method
+can be implemented: this method receives a pyarrow Array or ChunkedArray
+as only argument and is expected to return the appropriate pandas
+ExtensionArray for this dtype and the passed values:
+
+>>> import pyarrow
+>>> from pandas.api.extensions import ExtensionArray
+>>> class ExtensionDtype:
+...     def __from_arrow__(
+...         self,
+...         array: pyarrow.Array | pyarrow.ChunkedArray
+...     ) -> ExtensionArray:
+...         ...
+
+This class does not inherit from 'abc.ABCMeta' for performance reasons.
+Methods and properties required by the interface raise
+``pandas.errors.AbstractMethodError`` and no ``register`` method is
+provided for registering virtual subclasses.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a2188e85bfe79551508bfaa37d14d62d0}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a2188e85bfe79551508bfaa37d14d62d0} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{object}]{other }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether 'other' is equal to self.
+
+By default, 'other' is considered equal if either
+
+* it's a string matching 'self.name'.
+* it's an instance of this type and all of the attributes
+  in ``self._metadata`` are equal between `self` and `other`.
+
+Parameters
+----------
+other : Any
+
+Returns
+-------
+bool
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1StorageExtensionDtype_ad3378d10a6706113f65a8eacb9122c6e}{pandas.\+core.\+dtypes.\+base.\+Storage\+Extension\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1CategoricalDtype_affe10fe637445fda0bf0eeb1464abc88}{pandas.\+core.\+dtypes.\+dtypes.\+Categorical\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a1d292e5f7514adc011986c47a8a2d510}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_a328a53331ca44638bec514d717dfd37e}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_aa61ca958d593d6b6bdfbd1abdb1fc84f}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_ade99186c43399af4cfa8803178faaab6}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_add114a87e0da3836f3a7aa5a55c9cb7f}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_afb6cb0c0cf348e3887467cd8c2df8872}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_afb6cb0c0cf348e3887467cd8c2df8872} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1StorageExtensionDtype_abfcf8ac641490abf34d3a714413c0f5f}{pandas.\+core.\+dtypes.\+base.\+Storage\+Extension\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PandasExtensionDtype_af4b15604b3af9a87bfe97c2c6f1749b3}{pandas.\+core.\+dtypes.\+dtypes.\+Pandas\+Extension\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1CategoricalDtype_aff725f1b6f35f97e8c32eeb801582fa4}{pandas.\+core.\+dtypes.\+dtypes.\+Categorical\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_aba2fa33cd7302cb435beca52eb83c42a}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_ab34dd126dace9512d49d85182f412296}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_afd68a09dfdf9d46ddfc59ded40dadb26}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_ae6f4f9c46f130cd65973bd0dae4dfe04}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ad64814dc5756aa3a637ec1e38002041e}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ad64814dc5756aa3a637ec1e38002041e} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_\_ne\_\_@{\_\_ne\_\_}}
+\index{\_\_ne\_\_@{\_\_ne\_\_}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_\_ne\_\_()}{\_\_ne\_\_()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+\+\_\+ne\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{object}]{other }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_a2b4a99cab1c80d7a7eecb273844f3c17}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ad0366a7e21bfaac5ede012f9032d863e}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ad0366a7e21bfaac5ede012f9032d863e} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1StorageExtensionDtype_a9859ca179e786171d7ef5ab8ea476a61}{pandas.\+core.\+dtypes.\+base.\+Storage\+Extension\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a13e5354980795921d39c5fb4cfec0394}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_adbd50ad49a797f2e6b529a740d171d2e}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_ad8dc726f4fd7f79eca70594f70451e20}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a9f8a606f5fdc2db9f7294f6c16889042}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a9f8a606f5fdc2db9f7294f6c16889042} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_can\_fast\_transpose@{\_can\_fast\_transpose}}
+\index{\_can\_fast\_transpose@{\_can\_fast\_transpose}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_can\_fast\_transpose()}{\_can\_fast\_transpose()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+can\+\_\+fast\+\_\+transpose (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Is transposing an array with this dtype zero-copy?
+
+Only relevant for cases where _supports_2d is True.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a44399e06827945705f553a12884570d3}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a44399e06827945705f553a12884570d3} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_can\_hold\_na@{\_can\_hold\_na}}
+\index{\_can\_hold\_na@{\_can\_hold\_na}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_can\_hold\_na()}{\_can\_hold\_na()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+can\+\_\+hold\+\_\+na (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Can arrays of this dtype hold NA values?
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_a8afb7a368022501dd79df9ae1312ed1c}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a4f9f0b6a9aede985486092976a9d965f}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a4f9f0b6a9aede985486092976a9d965f} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_get\_common\_dtype@{\_get\_common\_dtype}}
+\index{\_get\_common\_dtype@{\_get\_common\_dtype}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_get\_common\_dtype()}{\_get\_common\_dtype()}}
+{\footnotesize\ttfamily  Dtype\+Obj \texorpdfstring{$\vert$}{|} None pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+get\+\_\+common\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list\mbox{[}Dtype\+Obj\mbox{]}}]{dtypes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the common dtype, if one exists.
+
+Used in `find_common_type` implementation. This is for example used
+to determine the resulting dtype in a concat operation.
+
+If no common dtype exists, return None (which gives the other dtypes
+the chance to determine a common dtype). If all dtypes in the list
+return None, then the common dtype will be "object" dtype (this means
+it is never needed to return "object" dtype from this method itself).
+
+Parameters
+----------
+dtypes : list of dtypes
+    The dtypes for which to determine a common dtype. This is a list
+    of np.dtype or ExtensionDtype instances.
+
+Returns
+-------
+Common dtype (np.dtype or ExtensionDtype) or None
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1CategoricalDtype_a2bf94ce93ca5944d0699bd7cbfb7da6d}{pandas.\+core.\+dtypes.\+dtypes.\+Categorical\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a05877706528677abf00d66336e16eb9d}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_a2b9e768a9a102b174ab3e724bb5a7d95}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1BaseMaskedDtype_aed0b3699dd2a1415c2741f44873fbd82}{pandas.\+core.\+dtypes.\+dtypes.\+Base\+Masked\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_aa66bf89c7ca3ec1427bb7dce6204303e}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_ae5b77218d61146014b29097d1b23cfae}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3df6b34fb908832585ffb3808beaace7}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3df6b34fb908832585ffb3808beaace7} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_is\_boolean@{\_is\_boolean}}
+\index{\_is\_boolean@{\_is\_boolean}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_is\_boolean()}{\_is\_boolean()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+is\+\_\+boolean (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Whether this dtype should be considered boolean.
+
+By default, ExtensionDtypes are assumed to be non-numeric.
+Setting this to True will affect the behavior of several places,
+e.g.
+
+* is_bool
+* boolean indexing
+
+Returns
+-------
+bool
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1CategoricalDtype_ae92e5a208aade67165c5cb7c6edc6efa}{pandas.\+core.\+dtypes.\+dtypes.\+Categorical\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1NumpyEADtype_a4323bcaf03c1aa3076fb26c9067243a7}{pandas.\+core.\+dtypes.\+dtypes.\+Numpy\+EADtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_aa3a110683ead094046743fded56c6b57}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_a7132c5151492db4724379ae1caae538a}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a9868b5adf9d8fbe286524412e00f0a49}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a9868b5adf9d8fbe286524412e00f0a49} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_is\_immutable@{\_is\_immutable}}
+\index{\_is\_immutable@{\_is\_immutable}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_is\_immutable()}{\_is\_immutable()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+is\+\_\+immutable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Can arrays with this dtype be modified with __setitem__? If not, return
+True.
+
+Immutable arrays are expected to raise TypeError on __setitem__ calls.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_acd3a772909023ed509516d22cfab78cf}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_acd3a772909023ed509516d22cfab78cf} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_is\_numeric@{\_is\_numeric}}
+\index{\_is\_numeric@{\_is\_numeric}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_is\_numeric()}{\_is\_numeric()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+is\+\_\+numeric (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Whether columns with this dtype should be considered numeric.
+
+By default ExtensionDtypes are assumed to be non-numeric.
+They'll be excluded from operations that exclude non-numeric
+columns, like (groupby) reductions, plotting, etc.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1numeric_1_1NumericDtype_a21b884e315afb69be7a8771cd6245f19}{pandas.\+core.\+arrays.\+numeric.\+Numeric\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1NumpyEADtype_a9e38fa898f7fc93817c7582b268d4225}{pandas.\+core.\+dtypes.\+dtypes.\+Numpy\+EADtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_ae50c72c1dd5c76c1e5aba33b19ae6a79}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_a521341ce32319f3536cb569a90deac25}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1decimal_1_1array_1_1DecimalDtype_a738d1c59e94df04b4c81f394cc334f75}{pandas.\+tests.\+extension.\+decimal.\+array.\+Decimal\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1tests_1_1frame_1_1methods_1_1test__select__dtypes_1_1DummyDtype_aefc19fbd47d042f7dcd63427d4c7c978}{pandas.\+tests.\+frame.\+methods.\+test\+\_\+select\+\_\+dtypes.\+Dummy\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3a4611cadd51ea4c5cfabc17fb61208e}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3a4611cadd51ea4c5cfabc17fb61208e} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_supports\_2d@{\_supports\_2d}}
+\index{\_supports\_2d@{\_supports\_2d}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_supports\_2d()}{\_supports\_2d()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+supports\+\_\+2d (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Do ExtensionArrays with this dtype support 2D arrays?
+
+Historically ExtensionArrays were limited to 1D. By returning True here,
+authors can indicate that their arrays support 2D instances. This can
+improve performance in some cases, particularly operations with `axis=1`.
+
+Arrays that support 2D values should:
+
+    - implement Array.reshape
+    - subclass the Dim2CompatTests in tests.extension.base
+    - _concat_same_type should support `axis` keyword
+    - _reduce and reductions should support `axis` keyword
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a274579ee419e22915144ae8a16919d62}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a274579ee419e22915144ae8a16919d62} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!construct\_array\_type@{construct\_array\_type}}
+\index{construct\_array\_type@{construct\_array\_type}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{construct\_array\_type()}{construct\_array\_type()}}
+{\footnotesize\ttfamily  type\+\_\+t\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}\mbox{]} pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+construct\+\_\+array\+\_\+type (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the array type associated with this dtype.
+
+Returns
+-------
+type
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1floating_1_1FloatingDtype_ae44faff8c021007b58d9dda351975da9}{pandas.\+core.\+arrays.\+floating.\+Floating\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1integer_1_1IntegerDtype_a50d63068becbc0993abafb2ddca77f5f}{pandas.\+core.\+arrays.\+integer.\+Integer\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1CategoricalDtype_a125a96451648e449ca9a4384d695f274}{pandas.\+core.\+dtypes.\+dtypes.\+Categorical\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a31727ac3fadb009e113b620085360371}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_a3c81cdd2e110c1e96b4aace233f78bf2}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_a6bb000563a128ad231a40b075986e9b2}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1NumpyEADtype_ae4b76f6d1add742636c3816eb03caabb}{pandas.\+core.\+dtypes.\+dtypes.\+Numpy\+EADtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1BaseMaskedDtype_a4dfbbc18a47bc0c6e617370922edd954}{pandas.\+core.\+dtypes.\+dtypes.\+Base\+Masked\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_a55aebfcd1e09e2cc63bd7e6bb4ac5303}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_a96cccd6554c1aae2ecba0b4741d49d8d}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1arrays_1_1test__array_1_1DecimalDtype2_a2f8dcb41ec384bb5b73dfca909cf8c0b}{pandas.\+tests.\+arrays.\+test\+\_\+array.\+Decimal\+Dtype2}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1array__with__attr_1_1array_1_1FloatAttrDtype_ad81db3700b63c91a29b1a948ff4bc74e}{pandas.\+tests.\+extension.\+array\+\_\+with\+\_\+attr.\+array.\+Float\+Attr\+Dtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1date_1_1array_1_1DateDtype_aec982e54acb2e3601a07d12b4e82cd2e}{pandas.\+tests.\+extension.\+date.\+array.\+Date\+Dtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1decimal_1_1array_1_1DecimalDtype_a72f99e5830b9434dbf92333c4a8fed1a}{pandas.\+tests.\+extension.\+decimal.\+array.\+Decimal\+Dtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1json_1_1array_1_1JSONDtype_acd003f8c73967de215f20cb50f30e689}{pandas.\+tests.\+extension.\+json.\+array.\+JSONDtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1list_1_1array_1_1ListDtype_a51698f2693e67252e2a8fab7786459bd}{pandas.\+tests.\+extension.\+list.\+array.\+List\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringDtype_ad0e013830987fe61de83043a53040cf0}{pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a29ddf33cb12e3c1f97f0ddd8fd0f6017}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a29ddf33cb12e3c1f97f0ddd8fd0f6017} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!construct\_from\_string@{construct\_from\_string}}
+\index{construct\_from\_string@{construct\_from\_string}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{construct\_from\_string()}{construct\_from\_string()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+construct\+\_\+from\+\_\+string (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{str}]{string }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Construct this type from a string.
+
+    This is useful mainly for data types that accept parameters.
+    For example, a period dtype accepts a frequency parameter that
+    can be set as ``period[h]`` (where H means hourly frequency).
+
+    By default, in the abstract class, just the name of the type is
+    expected. But subclasses can overwrite this method to accept
+    parameters.
+
+    Parameters
+    ----------
+    string : str
+        The name of the type, for example ``category``.
+
+    Returns
+    -------
+    ExtensionDtype
+        Instance of the dtype.
+
+    Raises
+    ------
+    TypeError
+        If a class cannot be constructed from this 'string'.
+
+    Examples
+    --------
+    For extension dtypes with arguments the following may be an
+    adequate implementation.
+
+    >>> import re
+    >>> @classmethod
+    ... def construct_from_string(cls, string):
+    ...     pattern = re.compile(r"^my_type\[(?P<arg_name>.+)\]$")
+    ...     match = pattern.match(string)
+    ...     if match:
+    ...         return cls(**match.groupdict())
+    ...     else:
+    ...         raise TypeError(
+    ...             f"Cannot construct a '{cls.__name__}' from '{string}'"
+    ...         )\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1NumpyEADtype_a6fe2f36663c27c290eb8fe1e8b85357e}{pandas.\+core.\+dtypes.\+dtypes.\+Numpy\+EADtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_a20944f96aba8b9572d8e9b4c81a74cce}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_a7410619ca420264025a3b966717402cd}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1date_1_1array_1_1DateDtype_ad15b90182d23830f2bc740ce786aeba0}{pandas.\+tests.\+extension.\+date.\+array.\+Date\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1CategoricalDtype_a3a548d7e320035abf5acbcfc75b6e39c}{pandas.\+core.\+dtypes.\+dtypes.\+Categorical\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a2d6bb326d378bed559663120a8cd83b3}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_a96f018410d5402d6b408881e5191a4bf}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_a23ff42a959b744b66873f9f50706849b}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringDtype_a3ab7d5594b729d523e9914124f7a3369}{pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a76bd07a8f116c825e6cb81f14ce14b46}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a76bd07a8f116c825e6cb81f14ce14b46} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!empty@{empty}}
+\index{empty@{empty}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+empty (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Shape}]{shape }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct an ExtensionArray of this dtype with the given shape.
+
+Analogous to numpy.empty.
+
+Parameters
+----------
+shape : int or tuple[int]
+
+Returns
+-------
+ExtensionArray
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ab2babf27357e9f166dd376811cf774bb}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ab2babf27357e9f166dd376811cf774bb} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!index\_class@{index\_class}}
+\index{index\_class@{index\_class}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{index\_class()}{index\_class()}}
+{\footnotesize\ttfamily  type\+\_\+t\mbox{[}Index\mbox{]} pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+index\+\_\+class (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Index subclass to return from Index.__new__ when this dtype is
+encountered.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1CategoricalDtype_ae7c876653853852fd0e4934ff02041c1}{pandas.\+core.\+dtypes.\+dtypes.\+Categorical\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a132eb524c8e56a964f4bb296830d8c93}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_af526e5291ea56d2766a2a771d5255bfd}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_aad289fbf3ec11748fec29dbc6783a438}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a5766cfc6f2449cb6228abaf102d8d8d8}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a5766cfc6f2449cb6228abaf102d8d8d8} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!is\_dtype@{is\_dtype}}
+\index{is\_dtype@{is\_dtype}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{is\_dtype()}{is\_dtype()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+is\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{object}]{dtype }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if we match 'dtype'.
+
+Parameters
+----------
+dtype : object
+    The object to check.
+
+Returns
+-------
+bool
+
+Notes
+-----
+The default implementation is True if
+
+1. ``cls.construct_from_string(dtype)`` is an instance
+   of ``cls``.
+2. ``dtype`` is an object and is an instance of ``cls``
+3. ``dtype`` has a ``dtype`` attribute, and any of the above
+   conditions is true for ``dtype.dtype``.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_a7e9f726e2d4ea9e744fde78886a371aa}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_ae2f917b83884e163dcc65927f4436a83}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_a61ba9d59c1f490e4e6fa4be8a70680e2}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ac7cfcaae40ef7d7790c05b676ce9a474}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ac7cfcaae40ef7d7790c05b676ce9a474} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!kind@{kind}}
+\index{kind@{kind}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+kind (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A character code (one of 'biufcmMOSUV'), default 'O'
+
+This should match the NumPy dtype used when the array is
+converted to an ndarray, which is probably 'O' for object if
+the extension type cannot be represented as a built-in NumPy
+type.
+
+See Also
+--------
+numpy.dtype.kind
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1NumpyEADtype_aa4490eeb262b0a2e5cd390ec8766da86}{pandas.\+core.\+dtypes.\+dtypes.\+Numpy\+EADtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1BaseMaskedDtype_a9151dedbd4c0508458224ccba415ed54}{pandas.\+core.\+dtypes.\+dtypes.\+Base\+Masked\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_ad2236edaf16773b17ac9856ba3b4f9c8}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_ab7f9cfa9ced497a15ffa3aa478f45edf}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a32d347e2a019ab40b8ef8907a422ba16}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a32d347e2a019ab40b8ef8907a422ba16} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!na\_value@{na\_value}}
+\index{na\_value@{na\_value}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{na\_value()}{na\_value()}}
+{\footnotesize\ttfamily  object pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+na\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Default NA value to use for this type.
+
+This is used in e.g. ExtensionArray.take. This should be the
+user-facing "boxed" version of the NA value, not the physical NA value
+for storage.  e.g. for JSONArray, this is an empty dictionary.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringDtype_a798d44005f232909b52f3cd1ce059ddf}{pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1base_1_1StorageExtensionDtype_a410a5d8579262e668aef83d297f825de}{pandas.\+core.\+dtypes.\+base.\+Storage\+Extension\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a78ce73e50c2390ab418954b3a81ae3be}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_a9feae7cc0bb4869b3ca482c33f8ff30d}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1BaseMaskedDtype_ad271b3223f5d88fa40271d42717d2605}{pandas.\+core.\+dtypes.\+dtypes.\+Base\+Masked\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1date_1_1array_1_1DateDtype_a82d41fdf760ffaedfe3e040efd839aa6}{pandas.\+tests.\+extension.\+date.\+array.\+Date\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a00f8955503e325f4e67725f2797e711c}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a00f8955503e325f4e67725f2797e711c} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!name@{name}}
+\index{name@{name}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A string identifying the data type.
+
+Will be used for display in, e.g. ``Series.dtype``
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a771bc54aa6a0950a9f51fc0082626934}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_ab241bee39f6704ea9bd646931b54b103}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1NumpyEADtype_a201462c4bb813ad6b5474f89f61236f7}{pandas.\+core.\+dtypes.\+dtypes.\+Numpy\+EADtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_a219ab1dcb0bbfde1dd56c4183a44256d}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_aca86730b2cc220eb20e57521b431ef0f}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1date_1_1array_1_1DateDtype_ab2b70386a3a0ef0d2f98b35375f1a9cf}{pandas.\+tests.\+extension.\+date.\+array.\+Date\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1tests_1_1frame_1_1methods_1_1test__select__dtypes_1_1DummyDtype_a6465b168cf771d0073428842cca32985}{pandas.\+tests.\+frame.\+methods.\+test\+\_\+select\+\_\+dtypes.\+Dummy\+Dtype}}.
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_abdaab63c8570ad2078f4906b95b4e68e}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_abdaab63c8570ad2078f4906b95b4e68e} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!names@{names}}
+\index{names@{names}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{names()}{names()}}
+{\footnotesize\ttfamily  list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ordered list of field names, or None if there are no fields.
+
+This is for compatibility with NumPy arrays, and may be removed in the
+future.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ac886886a70925a2d53076df876b446a5}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_ac886886a70925a2d53076df876b446a5} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!type@{type}}
+\index{type@{type}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily  type\+\_\+t\mbox{[}Any\mbox{]} pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The scalar type for the array, e.g. ``int``
+
+It's expected ``ExtensionArray[item]`` returns an instance
+of ``ExtensionDtype.type`` for scalar ``item``, assuming
+that value is valid (not NA). NA values do not need to be
+instances of `type`.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringDtype_adbb8f81a9a460464d08fd4ec1f95d702}{pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1IntervalDtype_a6040d9342ee9b99124071bcd6d31198a}{pandas.\+core.\+dtypes.\+dtypes.\+Interval\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1NumpyEADtype_ab1bed1a7de367eda1d8a0451ce82f462}{pandas.\+core.\+dtypes.\+dtypes.\+Numpy\+EADtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_ae22b5362097429da5dcf39ffc22931bd}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_ad3c83176cc2c7a4ee710040ebc3e879f}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1date_1_1array_1_1DateDtype_a646dd140342512a6cfb893c7019790e2}{pandas.\+tests.\+extension.\+date.\+array.\+Date\+Dtype}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a923d2f2aba9ad4b7fcba31595924a189}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a923d2f2aba9ad4b7fcba31595924a189} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_metadata@{\_metadata}}
+\index{\_metadata@{\_metadata}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_metadata}{\_metadata}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily tuple pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+metadata = ()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3d0f2e10d71ed6f895fa3014ad9b3e09}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a3d0f2e10d71ed6f895fa3014ad9b3e09} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!\_metadata@{\_metadata}}
+\index{\_metadata@{\_metadata}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{\_metadata}{\_metadata}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+\_\+metadata\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a10b74f90c6d1579fde4f633a884ce6a9}\label{classpandas_1_1core_1_1dtypes_1_1base_1_1ExtensionDtype_a10b74f90c6d1579fde4f633a884ce6a9} 
+\index{pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}!name@{name}}
+\index{name@{name}!pandas.core.dtypes.base.ExtensionDtype@{pandas.core.dtypes.base.ExtensionDtype}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily pandas.\+core.\+dtypes.\+base.\+Extension\+Dtype.\+name}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1DatetimeTZDtype_a771bc54aa6a0950a9f51fc0082626934}{pandas.\+core.\+dtypes.\+dtypes.\+Datetime\+TZDtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1PeriodDtype_ab241bee39f6704ea9bd646931b54b103}{pandas.\+core.\+dtypes.\+dtypes.\+Period\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1NumpyEADtype_a201462c4bb813ad6b5474f89f61236f7}{pandas.\+core.\+dtypes.\+dtypes.\+Numpy\+EADtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1SparseDtype_a219ab1dcb0bbfde1dd56c4183a44256d}{pandas.\+core.\+dtypes.\+dtypes.\+Sparse\+Dtype}}, \mbox{\hyperlink{classpandas_1_1core_1_1dtypes_1_1dtypes_1_1ArrowDtype_aca86730b2cc220eb20e57521b431ef0f}{pandas.\+core.\+dtypes.\+dtypes.\+Arrow\+Dtype}}, \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1date_1_1array_1_1DateDtype_ab2b70386a3a0ef0d2f98b35375f1a9cf}{pandas.\+tests.\+extension.\+date.\+array.\+Date\+Dtype}}, et \mbox{\hyperlink{classpandas_1_1tests_1_1frame_1_1methods_1_1test__select__dtypes_1_1DummyDtype_a6465b168cf771d0073428842cca32985}{pandas.\+tests.\+frame.\+methods.\+test\+\_\+select\+\_\+dtypes.\+Dummy\+Dtype}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/dtypes/\mbox{\hyperlink{pandas_2core_2dtypes_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

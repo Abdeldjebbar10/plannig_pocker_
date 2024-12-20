@@ -1,0 +1,104 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+typing\+\_\+extensions.\+deprecated}
+\hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated}{}\label{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated}\index{pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_ac05339933cb4e580c43d0987241fee44}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_a02c8a9e4c737a3b99364adc3656820fd}{message}}, \texorpdfstring{$\ast$}{*}typing.\+Optional\mbox{[}typing.\+Type\mbox{[}Warning\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_aa1adea329a7f9ea0ca082f4c50f62319}{category}}=Deprecation\+Warning, int \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_ac2e36674db4508f1731d441b0ea62d72}{stacklevel}}=1)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a4ef40fd3345bad9008e2e0439d08301f}{\+\_\+T}} \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_a88347d868f2fa4ac537b64bf3cde92fa}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a4ef40fd3345bad9008e2e0439d08301f}{\+\_\+T}} arg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_a02c8a9e4c737a3b99364adc3656820fd}{message}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_aa1adea329a7f9ea0ca082f4c50f62319}{category}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_ac2e36674db4508f1731d441b0ea62d72}{stacklevel}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Indicate that a class, function or overload is deprecated.
+
+When this decorator is applied to an object, the type checker
+will generate a diagnostic on usage of the deprecated object.
+
+Usage:
+
+    @deprecated("Use B instead")
+    class A:
+        pass
+
+    @deprecated("Use g instead")
+    def f():
+        pass
+
+    @overload
+    @deprecated("int support is deprecated")
+    def g(x: int) -> int: ...
+    @overload
+    def g(x: str) -> int: ...
+
+The warning specified by *category* will be emitted at runtime
+on use of deprecated objects. For functions, that happens on calls;
+for classes, on instantiation and on creation of subclasses.
+If the *category* is ``None``, no warning is emitted at runtime.
+The *stacklevel* determines where the
+warning is emitted. If it is ``1`` (the default), the warning
+is emitted at the direct caller of the deprecated object; if it
+is higher, it is emitted further up the stack.
+Static type checker behavior is not affected by the *category*
+and *stacklevel* arguments.
+
+The deprecation message passed to the decorator is saved in the
+``__deprecated__`` attribute on the decorated object.
+If applied to an overload, the decorator
+must be after the ``@overload`` decorator for the attribute to
+exist on the overload as returned by ``get_overloads()``.
+
+See PEP 702 for details.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_ac05339933cb4e580c43d0987241fee44}\label{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_ac05339933cb4e580c43d0987241fee44} 
+\index{pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+typing\+\_\+extensions.\+deprecated.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{message,  }\item[{\texorpdfstring{$\ast$}{*}typing.\+Optional\mbox{[}typing.\+Type\mbox{[}Warning\mbox{]}\mbox{]} }]{category = {\ttfamily DeprecationWarning},  }\item[{int }]{stacklevel = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_a88347d868f2fa4ac537b64bf3cde92fa}\label{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_a88347d868f2fa4ac537b64bf3cde92fa} 
+\index{pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a4ef40fd3345bad9008e2e0439d08301f}{\+\_\+T}} pip.\+\_\+vendor.\+typing\+\_\+extensions.\+deprecated.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a4ef40fd3345bad9008e2e0439d08301f}{\+\_\+T}}}]{arg }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_aa1adea329a7f9ea0ca082f4c50f62319}\label{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_aa1adea329a7f9ea0ca082f4c50f62319} 
+\index{pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}!category@{category}}
+\index{category@{category}!pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}}
+\doxysubsubsection{\texorpdfstring{category}{category}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+deprecated.\+category}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_a02c8a9e4c737a3b99364adc3656820fd}\label{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_a02c8a9e4c737a3b99364adc3656820fd} 
+\index{pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}!message@{message}}
+\index{message@{message}!pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+deprecated.\+message}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_ac2e36674db4508f1731d441b0ea62d72}\label{classpip_1_1__vendor_1_1typing__extensions_1_1deprecated_ac2e36674db4508f1731d441b0ea62d72} 
+\index{pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}!stacklevel@{stacklevel}}
+\index{stacklevel@{stacklevel}!pip.\_vendor.typing\_extensions.deprecated@{pip.\_vendor.typing\_extensions.deprecated}}
+\doxysubsubsection{\texorpdfstring{stacklevel}{stacklevel}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+deprecated.\+stacklevel}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/\mbox{\hyperlink{typing__extensions_8py}{typing\+\_\+extensions.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\doxysection{Référence de la classe django.\+views.\+generic.\+base.\+Template\+Response\+Mixin}
+\hypertarget{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin}{}\label{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin}\index{django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+views.\+generic.\+base.\+Template\+Response\+Mixin\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_acb779fab0e9d87e1ae49b9b4ad4e4492}{render\+\_\+to\+\_\+response}} (self, context, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}response\+\_\+kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a01e86f80f6149ac9356850cbeba9bd22}{get\+\_\+template\+\_\+names}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a203af2f64354c5223cea755d99dfe483}{template\+\_\+name}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_aabffc27d67e1201218ffe8dc2c8720ec}{template\+\_\+engine}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a59c7ed2c6969f34356114af4462544e9}{response\+\_\+class}} = \mbox{\hyperlink{classdjango_1_1template_1_1response_1_1TemplateResponse}{Template\+Response}}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_ac1c20ee7dbee798ca478d705f8096226}{content\+\_\+type}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A mixin that can be used to render a template.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a01e86f80f6149ac9356850cbeba9bd22}\label{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a01e86f80f6149ac9356850cbeba9bd22} 
+\index{django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}!get\_template\_names@{get\_template\_names}}
+\index{get\_template\_names@{get\_template\_names}!django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{get\_template\_names()}{get\_template\_names()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+base.\+Template\+Response\+Mixin.\+get\+\_\+template\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of template names to be used for the request. Must return
+a list. May not be called if render_to_response() is overridden.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1detail_1_1SingleObjectTemplateResponseMixin_a50aa80c706b326590422e7c624ebba77}{django.\+views.\+generic.\+detail.\+Single\+Object\+Template\+Response\+Mixin}}, et \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1list_1_1MultipleObjectTemplateResponseMixin_ae48801020449f564d211de23956e6a06}{django.\+views.\+generic.\+list.\+Multiple\+Object\+Template\+Response\+Mixin}}.
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_acb779fab0e9d87e1ae49b9b4ad4e4492}\label{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_acb779fab0e9d87e1ae49b9b4ad4e4492} 
+\index{django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}!render\_to\_response@{render\_to\_response}}
+\index{render\_to\_response@{render\_to\_response}!django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{render\_to\_response()}{render\_to\_response()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+base.\+Template\+Response\+Mixin.\+render\+\_\+to\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{context,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{response\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a response, using the `response_class` for this view, with a
+template rendered with the given context.
+
+Pass response_kwargs to the constructor of the response class.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_ac1c20ee7dbee798ca478d705f8096226}\label{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_ac1c20ee7dbee798ca478d705f8096226} 
+\index{django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{content\_type}{content\_type}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+base.\+Template\+Response\+Mixin.\+content\+\_\+type = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a59c7ed2c6969f34356114af4462544e9}\label{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a59c7ed2c6969f34356114af4462544e9} 
+\index{django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}!response\_class@{response\_class}}
+\index{response\_class@{response\_class}!django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{response\_class}{response\_class}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+base.\+Template\+Response\+Mixin.\+response\+\_\+class = \mbox{\hyperlink{classdjango_1_1template_1_1response_1_1TemplateResponse}{Template\+Response}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_aabffc27d67e1201218ffe8dc2c8720ec}\label{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_aabffc27d67e1201218ffe8dc2c8720ec} 
+\index{django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}!template\_engine@{template\_engine}}
+\index{template\_engine@{template\_engine}!django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{template\_engine}{template\_engine}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+base.\+Template\+Response\+Mixin.\+template\+\_\+engine = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a203af2f64354c5223cea755d99dfe483}\label{classdjango_1_1views_1_1generic_1_1base_1_1TemplateResponseMixin_a203af2f64354c5223cea755d99dfe483} 
+\index{django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}!template\_name@{template\_name}}
+\index{template\_name@{template\_name}!django.views.generic.base.TemplateResponseMixin@{django.views.generic.base.TemplateResponseMixin}}
+\doxysubsubsection{\texorpdfstring{template\_name}{template\_name}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+base.\+Template\+Response\+Mixin.\+template\+\_\+name = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/views/generic/\mbox{\hyperlink{django_2views_2generic_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

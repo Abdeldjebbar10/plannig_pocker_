@@ -1,0 +1,79 @@
+\doxysection{Référence de la classe django.\+db.\+models.\+fields.\+Auto\+Field\+Meta}
+\hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta}{}\label{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta}\index{django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+models.\+fields.\+Auto\+Field\+Meta\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+db.\+models.\+fields.\+Auto\+Field\+Meta\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a23c626d6b15df5de35672868ccbaf830}{\+\_\+\+\_\+instancecheck\+\_\+\+\_\+}} (self, instance)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a6fc5a18c2a2455a18690db74d344be0c}{\+\_\+\+\_\+subclasscheck\+\_\+\+\_\+}} (self, subclass)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a17c5db395aaf26a17e5e6fa2b4813f2a}{\+\_\+subclasses}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a54003536f3202a31ad126b5c1dace949}{\+\_\+subclasses}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Metaclass to maintain backward inheritance compatibility for AutoField.
+
+It is intended that AutoFieldMixin become public API when it is possible to
+create a non-integer automatically-generated field using column defaults
+stored in the database.
+
+In many areas Django also relies on using isinstance() to check for an
+automatically-generated field as a subclass of AutoField. A new flag needs
+to be implemented on Field to be used instead.
+
+When these issues have been addressed, this metaclass could be used to
+deprecate inheritance from AutoField and use of isinstance() with AutoField
+for detecting automatically-generated fields.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a23c626d6b15df5de35672868ccbaf830}\label{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a23c626d6b15df5de35672868ccbaf830} 
+\index{django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}!\_\_instancecheck\_\_@{\_\_instancecheck\_\_}}
+\index{\_\_instancecheck\_\_@{\_\_instancecheck\_\_}!django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}}
+\doxysubsubsection{\texorpdfstring{\_\_instancecheck\_\_()}{\_\_instancecheck\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Auto\+Field\+Meta.\+\_\+\+\_\+instancecheck\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a6fc5a18c2a2455a18690db74d344be0c}\label{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a6fc5a18c2a2455a18690db74d344be0c} 
+\index{django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}!\_\_subclasscheck\_\_@{\_\_subclasscheck\_\_}}
+\index{\_\_subclasscheck\_\_@{\_\_subclasscheck\_\_}!django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}}
+\doxysubsubsection{\texorpdfstring{\_\_subclasscheck\_\_()}{\_\_subclasscheck\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Auto\+Field\+Meta.\+\_\+\+\_\+subclasscheck\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{subclass }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a17c5db395aaf26a17e5e6fa2b4813f2a}\label{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a17c5db395aaf26a17e5e6fa2b4813f2a} 
+\index{django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}!\_subclasses@{\_subclasses}}
+\index{\_subclasses@{\_subclasses}!django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}}
+\doxysubsubsection{\texorpdfstring{\_subclasses()}{\_subclasses()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Auto\+Field\+Meta.\+\_\+subclasses (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a54003536f3202a31ad126b5c1dace949}\label{classdjango_1_1db_1_1models_1_1fields_1_1AutoFieldMeta_a54003536f3202a31ad126b5c1dace949} 
+\index{django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}!\_subclasses@{\_subclasses}}
+\index{\_subclasses@{\_subclasses}!django.db.models.fields.AutoFieldMeta@{django.db.models.fields.AutoFieldMeta}}
+\doxysubsubsection{\texorpdfstring{\_subclasses}{\_subclasses}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Auto\+Field\+Meta.\+\_\+subclasses\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/models/fields/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2django_2db_2models_2fields_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

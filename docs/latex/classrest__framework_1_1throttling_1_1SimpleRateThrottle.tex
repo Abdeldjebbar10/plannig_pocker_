@@ -1,0 +1,245 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle}
+\hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle}{}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle}\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a2dee1d1de33e8da88d92139883b5b643}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a55c994ef06a772e477669ed7b7fc7587}{get\+\_\+cache\+\_\+key}} (self, request, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a0b148f48ecc497b917d860c4bdd07761}{get\+\_\+rate}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9597c80764b7c7c3817af2707f4fd0a6}{parse\+\_\+rate}} (self, \mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a98a55b5b954d253f39b9d4f33600e0d4}{rate}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a5625c445eb86931df5a6e79b8d44fbb6}{allow\+\_\+request}} (self, request, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a2281eafb8adcd6ea5bd8a2f992b320bd}{throttle\+\_\+success}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9fe56749fa02071dbbd4b9e2b72fd2b6}{throttle\+\_\+failure}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9650bbced4ad828d89252fecf8b65544}{wait}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1throttling_1_1BaseThrottle}{rest\+\_\+framework.\+throttling.\+Base\+Throttle}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1BaseThrottle_a11bd4cabe5a620a88c69e0b89eda0bb0}{get\+\_\+ident}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a98a55b5b954d253f39b9d4f33600e0d4}{rate}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_abdfe3c2ddd5ff056847daa7053b2e499}{num\+\_\+requests}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ac95c5da969638503dcabfe7552d849b2}{duration}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_aebd91839e1802e68f810aa507ede519a}{key}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a248c8b874cf5c41cf29efc79b2513d1d}{history}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a1fae4d258161e0bdc2c52df1bf4fde01}{now}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ad2dbf682309009cc28bd804238e5c831}{cache}} = default\+\_\+cache
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9db0c413f5a346cbde5a041d00c0f8fa}{timer}} = time.\+time
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ad47d477408c5c9ce60b47c73c982de58}{cache\+\_\+format}} = \textquotesingle{}throttle\+\_\+\%(\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a6299dcfca6fff76252c397c242eaf927}{scope}})s\+\_\+\%(ident)s\textquotesingle{}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a6299dcfca6fff76252c397c242eaf927}{scope}} = None
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ac9c5ce51ce71f8345c26672400c5c5f3}{THROTTLE\+\_\+\+RATES}} = api\+\_\+settings.\+DEFAULT\+\_\+\+THROTTLE\+\_\+\+RATES
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A simple cache implementation, that only requires `.get_cache_key()`
+to be overridden.
+
+The rate (requests / seconds) is set by a `rate` attribute on the Throttle
+class.  The attribute is a string of the form 'number_of_requests/period'.
+
+Period should be one of: ('s', 'sec', 'm', 'min', 'h', 'hour', 'd', 'day')
+
+Previous request information used for throttling is stored in the cache.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a2dee1d1de33e8da88d92139883b5b643}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a2dee1d1de33e8da88d92139883b5b643} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1throttling_1_1ScopedRateThrottle_a8531c7281e94bbb021a0f2e221821212}{rest\+\_\+framework.\+throttling.\+Scoped\+Rate\+Throttle}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a5625c445eb86931df5a6e79b8d44fbb6}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a5625c445eb86931df5a6e79b8d44fbb6} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!allow\_request@{allow\_request}}
+\index{allow\_request@{allow\_request}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{allow\_request()}{allow\_request()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+allow\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implement the check to see if the request should be throttled.
+
+On success calls `throttle_success`.
+On failure calls `throttle_failure`.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1throttling_1_1BaseThrottle_a5248b8c89b2b927e53d55573de712d76}{rest\+\_\+framework.\+throttling.\+Base\+Throttle}}.
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1throttling_1_1ScopedRateThrottle_a29691987e63bfeb0b1dbe7b75f3ebdfb}{rest\+\_\+framework.\+throttling.\+Scoped\+Rate\+Throttle}}.
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a55c994ef06a772e477669ed7b7fc7587}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a55c994ef06a772e477669ed7b7fc7587} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!get\_cache\_key@{get\_cache\_key}}
+\index{get\_cache\_key@{get\_cache\_key}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{get\_cache\_key()}{get\_cache\_key()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+get\+\_\+cache\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Should return a unique cache-key which can be used for throttling.
+Must be overridden.
+
+May return `None` if the request should not be throttled.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1throttling_1_1AnonRateThrottle_a9b9b5620f49ebe95e75d9052d6439155}{rest\+\_\+framework.\+throttling.\+Anon\+Rate\+Throttle}}, \mbox{\hyperlink{classrest__framework_1_1throttling_1_1UserRateThrottle_a01efea75e5499c81b462d4c645412158}{rest\+\_\+framework.\+throttling.\+User\+Rate\+Throttle}}, et \mbox{\hyperlink{classrest__framework_1_1throttling_1_1ScopedRateThrottle_a19c7ac6aaf779c16b32be0a6fc6cf799}{rest\+\_\+framework.\+throttling.\+Scoped\+Rate\+Throttle}}.
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a0b148f48ecc497b917d860c4bdd07761}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a0b148f48ecc497b917d860c4bdd07761} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!get\_rate@{get\_rate}}
+\index{get\_rate@{get\_rate}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{get\_rate()}{get\_rate()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+get\+\_\+rate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine the string representation of the allowed request rate.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9597c80764b7c7c3817af2707f4fd0a6}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9597c80764b7c7c3817af2707f4fd0a6} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!parse\_rate@{parse\_rate}}
+\index{parse\_rate@{parse\_rate}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{parse\_rate()}{parse\_rate()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+parse\+\_\+rate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rate }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given the request rate string, return a two tuple of:
+<allowed number of requests>, <period of time in seconds>
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9fe56749fa02071dbbd4b9e2b72fd2b6}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9fe56749fa02071dbbd4b9e2b72fd2b6} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!throttle\_failure@{throttle\_failure}}
+\index{throttle\_failure@{throttle\_failure}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{throttle\_failure()}{throttle\_failure()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+throttle\+\_\+failure (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called when a request to the API has failed due to throttling.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a2281eafb8adcd6ea5bd8a2f992b320bd}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a2281eafb8adcd6ea5bd8a2f992b320bd} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!throttle\_success@{throttle\_success}}
+\index{throttle\_success@{throttle\_success}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{throttle\_success()}{throttle\_success()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+throttle\+\_\+success (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inserts the current request's timestamp along with the key
+into the cache.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9650bbced4ad828d89252fecf8b65544}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9650bbced4ad828d89252fecf8b65544} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!wait@{wait}}
+\index{wait@{wait}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+wait (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the recommended next request time in seconds.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1throttling_1_1BaseThrottle_a455737b32e1aa740572507aa5aa1f408}{rest\+\_\+framework.\+throttling.\+Base\+Throttle}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ad2dbf682309009cc28bd804238e5c831}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ad2dbf682309009cc28bd804238e5c831} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!cache@{cache}}
+\index{cache@{cache}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{cache}{cache}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+cache = default\+\_\+cache\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ad47d477408c5c9ce60b47c73c982de58}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ad47d477408c5c9ce60b47c73c982de58} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!cache\_format@{cache\_format}}
+\index{cache\_format@{cache\_format}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{cache\_format}{cache\_format}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+cache\+\_\+format = \textquotesingle{}throttle\+\_\+\%(\mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a6299dcfca6fff76252c397c242eaf927}{scope}})s\+\_\+\%(ident)s\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ac95c5da969638503dcabfe7552d849b2}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ac95c5da969638503dcabfe7552d849b2} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!duration@{duration}}
+\index{duration@{duration}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+duration}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a248c8b874cf5c41cf29efc79b2513d1d}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a248c8b874cf5c41cf29efc79b2513d1d} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!history@{history}}
+\index{history@{history}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{history}{history}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+history}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_aebd91839e1802e68f810aa507ede519a}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_aebd91839e1802e68f810aa507ede519a} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!key@{key}}
+\index{key@{key}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+key}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a1fae4d258161e0bdc2c52df1bf4fde01}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a1fae4d258161e0bdc2c52df1bf4fde01} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!now@{now}}
+\index{now@{now}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{now}{now}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+now}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_abdfe3c2ddd5ff056847daa7053b2e499}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_abdfe3c2ddd5ff056847daa7053b2e499} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!num\_requests@{num\_requests}}
+\index{num\_requests@{num\_requests}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{num\_requests}{num\_requests}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+num\+\_\+requests}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a98a55b5b954d253f39b9d4f33600e0d4}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a98a55b5b954d253f39b9d4f33600e0d4} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!rate@{rate}}
+\index{rate@{rate}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{rate}{rate}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+rate}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a6299dcfca6fff76252c397c242eaf927}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a6299dcfca6fff76252c397c242eaf927} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!scope@{scope}}
+\index{scope@{scope}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+scope = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ac9c5ce51ce71f8345c26672400c5c5f3}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_ac9c5ce51ce71f8345c26672400c5c5f3} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!THROTTLE\_RATES@{THROTTLE\_RATES}}
+\index{THROTTLE\_RATES@{THROTTLE\_RATES}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{THROTTLE\_RATES}{THROTTLE\_RATES}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+THROTTLE\+\_\+\+RATES = api\+\_\+settings.\+DEFAULT\+\_\+\+THROTTLE\+\_\+\+RATES\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9db0c413f5a346cbde5a041d00c0f8fa}\label{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9db0c413f5a346cbde5a041d00c0f8fa} 
+\index{rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}!timer@{timer}}
+\index{timer@{timer}!rest\_framework.throttling.SimpleRateThrottle@{rest\_framework.throttling.SimpleRateThrottle}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle.\+timer = time.\+time\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{throttling_8py}{throttling.\+py}}\end{DoxyCompactItemize}

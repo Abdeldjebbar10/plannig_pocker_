@@ -1,0 +1,47 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+urls}
+\hypertarget{namespacerest__framework_1_1urls}{}\label{namespacerest__framework_1_1urls}\index{rest\_framework.urls@{rest\_framework.urls}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacerest__framework_1_1urls_ac6918bcd706baf03206f956eab0ded4f}{app\+\_\+name}} = \textquotesingle{}rest\+\_\+framework\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacerest__framework_1_1urls_a81ce46796989a01ffd6ce6e49edefde2}{urlpatterns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Login and logout views for the browsable API.
+
+Add these to your root URLconf if you're using the browsable API and
+your API requires authentication:
+
+    urlpatterns = [
+        ...
+        path('auth/', include('rest_framework.urls'))
+    ]
+
+You should make sure your authentication settings include `SessionAuthentication`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1urls_ac6918bcd706baf03206f956eab0ded4f}\label{namespacerest__framework_1_1urls_ac6918bcd706baf03206f956eab0ded4f} 
+\index{rest\_framework.urls@{rest\_framework.urls}!app\_name@{app\_name}}
+\index{app\_name@{app\_name}!rest\_framework.urls@{rest\_framework.urls}}
+\doxysubsubsection{\texorpdfstring{app\_name}{app\_name}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+urls.\+app\+\_\+name = \textquotesingle{}rest\+\_\+framework\textquotesingle{}}
+
+\Hypertarget{namespacerest__framework_1_1urls_a81ce46796989a01ffd6ce6e49edefde2}\label{namespacerest__framework_1_1urls_a81ce46796989a01ffd6ce6e49edefde2} 
+\index{rest\_framework.urls@{rest\_framework.urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!rest\_framework.urls@{rest\_framework.urls}}
+\doxysubsubsection{\texorpdfstring{urlpatterns}{urlpatterns}}
+{\footnotesize\ttfamily list rest\+\_\+framework.\+urls.\+urlpatterns}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ path(\textcolor{stringliteral}{'login/'},\ views.LoginView.as\_view(template\_name=\textcolor{stringliteral}{'rest\_framework/login.html'}),\ name=\textcolor{stringliteral}{'login'}),}
+\DoxyCodeLine{00003\ \ \ \ \ path(\textcolor{stringliteral}{'logout/'},\ views.LogoutView.as\_view(),\ name=\textcolor{stringliteral}{'logout'}),}
+\DoxyCodeLine{00004\ ]}
+
+\end{DoxyCode}

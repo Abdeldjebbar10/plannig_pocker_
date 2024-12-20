@@ -1,0 +1,79 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+\_\+core.\+\_\+dtype\+\_\+ctypes}
+\hypertarget{namespacenumpy_1_1__core_1_1__dtype__ctypes}{}\label{namespacenumpy_1_1__core_1_1__dtype__ctypes}\index{numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__dtype__ctypes_abae6b3f5197a4147bb9cfcd28bc03098}{\+\_\+from\+\_\+ctypes\+\_\+array}} (\mbox{\hyperlink{callback_2foo_8f_a50e16bc59be823d9ec58240a76a1a971}{t}})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__dtype__ctypes_a92258f7044cbb2acca4eaf0dd66b5986}{\+\_\+from\+\_\+ctypes\+\_\+structure}} (\mbox{\hyperlink{callback_2foo_8f_a50e16bc59be823d9ec58240a76a1a971}{t}})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__dtype__ctypes_ad7c68d3760180eaf82c98f699de5a5d2}{\+\_\+from\+\_\+ctypes\+\_\+scalar}} (\mbox{\hyperlink{callback_2foo_8f_a50e16bc59be823d9ec58240a76a1a971}{t}})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__dtype__ctypes_a5c14ef3aa8a28417d6b4618cc6ff0888}{\+\_\+from\+\_\+ctypes\+\_\+union}} (\mbox{\hyperlink{callback_2foo_8f_a50e16bc59be823d9ec58240a76a1a971}{t}})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__dtype__ctypes_af2884988a9e537f90b8eff844959525b}{dtype\+\_\+from\+\_\+ctypes\+\_\+type}} (\mbox{\hyperlink{callback_2foo_8f_a50e16bc59be823d9ec58240a76a1a971}{t}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Conversion from ctypes to dtype.
+
+In an ideal world, we could achieve this through the PEP3118 buffer protocol,
+something like::
+
+    def dtype_from_ctypes_type(t):
+        # needed to ensure that the shape of `t` is within memoryview.format
+        class DummyStruct(ctypes.Structure):
+            _fields_ = [('a', t)]
+
+        # empty to avoid memory allocation
+        ctype_0 = (DummyStruct * 0)()
+        mv = memoryview(ctype_0)
+
+        # convert the struct, and slice back out the field
+        return _dtype_from_pep3118(mv.format)['a']
+
+Unfortunately, this fails because:
+
+* ctypes cannot handle length-0 arrays with PEP3118 (bpo-32782)
+* PEP3118 cannot represent unions, but both numpy and ctypes can
+* ctypes cannot handle big-endian structs with PEP3118 (bpo-32780)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1__core_1_1__dtype__ctypes_abae6b3f5197a4147bb9cfcd28bc03098}\label{namespacenumpy_1_1__core_1_1__dtype__ctypes_abae6b3f5197a4147bb9cfcd28bc03098} 
+\index{numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}!\_from\_ctypes\_array@{\_from\_ctypes\_array}}
+\index{\_from\_ctypes\_array@{\_from\_ctypes\_array}!numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}}
+\doxysubsubsection{\texorpdfstring{\_from\_ctypes\_array()}{\_from\_ctypes\_array()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+dtype\+\_\+ctypes.\+\_\+from\+\_\+ctypes\+\_\+array (\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__dtype__ctypes_ad7c68d3760180eaf82c98f699de5a5d2}\label{namespacenumpy_1_1__core_1_1__dtype__ctypes_ad7c68d3760180eaf82c98f699de5a5d2} 
+\index{numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}!\_from\_ctypes\_scalar@{\_from\_ctypes\_scalar}}
+\index{\_from\_ctypes\_scalar@{\_from\_ctypes\_scalar}!numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}}
+\doxysubsubsection{\texorpdfstring{\_from\_ctypes\_scalar()}{\_from\_ctypes\_scalar()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+dtype\+\_\+ctypes.\+\_\+from\+\_\+ctypes\+\_\+scalar (\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the dtype type with endianness included if it's the case
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1__core_1_1__dtype__ctypes_a92258f7044cbb2acca4eaf0dd66b5986}\label{namespacenumpy_1_1__core_1_1__dtype__ctypes_a92258f7044cbb2acca4eaf0dd66b5986} 
+\index{numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}!\_from\_ctypes\_structure@{\_from\_ctypes\_structure}}
+\index{\_from\_ctypes\_structure@{\_from\_ctypes\_structure}!numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}}
+\doxysubsubsection{\texorpdfstring{\_from\_ctypes\_structure()}{\_from\_ctypes\_structure()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+dtype\+\_\+ctypes.\+\_\+from\+\_\+ctypes\+\_\+structure (\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__dtype__ctypes_a5c14ef3aa8a28417d6b4618cc6ff0888}\label{namespacenumpy_1_1__core_1_1__dtype__ctypes_a5c14ef3aa8a28417d6b4618cc6ff0888} 
+\index{numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}!\_from\_ctypes\_union@{\_from\_ctypes\_union}}
+\index{\_from\_ctypes\_union@{\_from\_ctypes\_union}!numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}}
+\doxysubsubsection{\texorpdfstring{\_from\_ctypes\_union()}{\_from\_ctypes\_union()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+dtype\+\_\+ctypes.\+\_\+from\+\_\+ctypes\+\_\+union (\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__dtype__ctypes_af2884988a9e537f90b8eff844959525b}\label{namespacenumpy_1_1__core_1_1__dtype__ctypes_af2884988a9e537f90b8eff844959525b} 
+\index{numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}!dtype\_from\_ctypes\_type@{dtype\_from\_ctypes\_type}}
+\index{dtype\_from\_ctypes\_type@{dtype\_from\_ctypes\_type}!numpy.\_core.\_dtype\_ctypes@{numpy.\_core.\_dtype\_ctypes}}
+\doxysubsubsection{\texorpdfstring{dtype\_from\_ctypes\_type()}{dtype\_from\_ctypes\_type()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+dtype\+\_\+ctypes.\+dtype\+\_\+from\+\_\+ctypes\+\_\+type (\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct a dtype object from a ctypes type
+\end{DoxyVerb}
+ 

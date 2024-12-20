@@ -1,0 +1,218 @@
+\doxysection{Référence de la classe pandas.\+core.\+base.\+Selection\+Mixin}
+\hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin}{}\label{classpandas_1_1core_1_1base_1_1SelectionMixin}\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+base.\+Selection\+Mixin\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+base.\+Selection\+Mixin\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}{ndim}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_aad3c986de316f6c45ec1d2f161b001a1}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}{aggregate}} (self, func, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a5207a79fc68d7810cc3a907a49eaf556}{obj}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a740e931e362229a193cc2b827ac039e7}{exclusions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a35b32ba83d07b2d612b80a3bb8b54c40}{obj}}
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a1eee2f6959c9fcab6d8b57d166c81d45}{exclusions}} \mbox{[}Hashable\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a1f3539bc11e3abeff5e0f5a31bfbc5c7}{agg}} = \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}{aggregate}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a84ab5b21406fb07629293d56ffc9f98a}{\+\_\+selection\+\_\+list}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ac8332a4cf2bbb0823e6f917d796f51a0}{\+\_\+selected\+\_\+obj}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_acd6785b162f9f2a0f0a8a279201346db}{\+\_\+obj\+\_\+with\+\_\+exclusions}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a9f3d118b3cd8f40293932a1487962d18}{\+\_\+gotitem}} (self, key, int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}{ndim}}, subset=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ad1591a6bbb00dfcef714413e1389278c}{\+\_\+infer\+\_\+selection}} (self, key, Series\texorpdfstring{$\vert$}{|}Data\+Frame subset)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a4b377ecea0956413cc4e45a77d887ac5}{\+\_\+selection}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a8690d2c7cd02cf083a1e6bafa899eab6}{\+\_\+selection\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+Index\+Label \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_aa329bea9aae5a514a109fd19b39e4d51}{\+\_\+selection}} = None
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}} = \mbox{[}"{}\+\_\+cache"{}, "{}\+\_\+\+\_\+setstate\+\_\+\+\_\+"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a4df1b01fd09955430d448bf0a173a2f5}{\+\_\+internal\+\_\+names\+\_\+set}} = set(\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}mixin implementing the selection & aggregation interface on a group-like
+object sub-classes need to define: obj, exclusions
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_aad3c986de316f6c45ec1d2f161b001a1}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_aad3c986de316f6c45ec1d2f161b001a1} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1generic_1_1DataFrameGroupBy_a3dcaaa470b372a7d3d99e9e4f01e6437}{pandas.\+core.\+groupby.\+generic.\+Data\+Frame\+Group\+By}}.
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a9f3d118b3cd8f40293932a1487962d18}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a9f3d118b3cd8f40293932a1487962d18} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_gotitem@{\_gotitem}}
+\index{\_gotitem@{\_gotitem}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_gotitem()}{\_gotitem()}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+gotitem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{int}]{ndim,  }\item[{}]{subset = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}sub-classes to define
+return a sliced object
+
+Parameters
+----------
+key : str / list of selections
+ndim : {1, 2}
+    requested ndim of result
+subset : object, default None
+    subset to act on
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1generic_1_1DataFrameGroupBy_ab92db5a0d8b1747989ae63274d04faab}{pandas.\+core.\+groupby.\+generic.\+Data\+Frame\+Group\+By}}, \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aa4494de6abea74ed158352e6ff4c8cac}{pandas.\+core.\+resample.\+Resampler}}, \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1__GroupByMixin_a2977a4ac4f37cc634fff24b6456a7f91}{pandas.\+core.\+resample.\+\_\+\+Group\+By\+Mixin}}, \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a0420ee0a4969c9f5f9c5791441bda586}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}, et \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a06f64e9229f26b758ef413ab3243ce2c}{pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby}}.
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_ad1591a6bbb00dfcef714413e1389278c}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_ad1591a6bbb00dfcef714413e1389278c} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_infer\_selection@{\_infer\_selection}}
+\index{\_infer\_selection@{\_infer\_selection}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_infer\_selection()}{\_infer\_selection()}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+infer\+\_\+selection (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{Series \texorpdfstring{$\vert$}{|} Data\+Frame}]{subset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Infer the `selection` to pass to our constructor in _gotitem.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_acd6785b162f9f2a0f0a8a279201346db}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_acd6785b162f9f2a0f0a8a279201346db} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_obj\_with\_exclusions@{\_obj\_with\_exclusions}}
+\index{\_obj\_with\_exclusions@{\_obj\_with\_exclusions}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_obj\_with\_exclusions()}{\_obj\_with\_exclusions()}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+obj\+\_\+with\+\_\+exclusions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_ac8332a4cf2bbb0823e6f917d796f51a0}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_ac8332a4cf2bbb0823e6f917d796f51a0} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_selected\_obj@{\_selected\_obj}}
+\index{\_selected\_obj@{\_selected\_obj}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_selected\_obj()}{\_selected\_obj()}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+selected\+\_\+obj (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aa8d7f37c3e7e01e9a624bfcdb9ca795f}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}.
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a84ab5b21406fb07629293d56ffc9f98a}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a84ab5b21406fb07629293d56ffc9f98a} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_selection\_list@{\_selection\_list}}
+\index{\_selection\_list@{\_selection\_list}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_selection\_list()}{\_selection\_list()}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+selection\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!aggregate@{aggregate}}
+\index{aggregate@{aggregate}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{aggregate()}{aggregate()}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+aggregate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1ewm_1_1ExponentialMovingWindow_a761e22b28bd504453036aa8c0c061a6d}{pandas.\+core.\+window.\+ewm.\+Exponential\+Moving\+Window}}, \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1ewm_1_1OnlineExponentialMovingWindow_a1016e321300599b4973a92c1b11c3fcd}{pandas.\+core.\+window.\+ewm.\+Online\+Exponential\+Moving\+Window}}, \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1expanding_1_1Expanding_a2be5ccc40c6c0fa280358672b16a2754}{pandas.\+core.\+window.\+expanding.\+Expanding}}, \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a4fbb45f0ce06aa1fcd54ab488819d1ab}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}, \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1Window_a98d2a96c52df5a573fe170a9772e55e7}{pandas.\+core.\+window.\+rolling.\+Window}}, \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1Rolling_a386d5e7918acc2189961ba5a2a9462d5}{pandas.\+core.\+window.\+rolling.\+Rolling}}, \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1ff1448c5b8b5b187fe859fa9af69dc3}{pandas.\+core.\+resample.\+Resampler}}, \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1generic_1_1SeriesGroupBy_a6a6b5595d547d1967d097ee3bdb8e148}{pandas.\+core.\+groupby.\+generic.\+Series\+Group\+By}}, et \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1generic_1_1DataFrameGroupBy_a94b8fef21857bfa6ac86bb38b6db990c}{pandas.\+core.\+groupby.\+generic.\+Data\+Frame\+Group\+By}}.
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!ndim@{ndim}}
+\index{ndim@{ndim}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{ndim()}{ndim()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+base.\+Selection\+Mixin.\+ndim (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_internal\_names@{\_internal\_names}}
+\index{\_internal\_names@{\_internal\_names}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_internal\_names}{\_internal\_names}}
+{\footnotesize\ttfamily list pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+internal\+\_\+names = \mbox{[}"{}\+\_\+cache"{}, "{}\+\_\+\+\_\+setstate\+\_\+\+\_\+"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a4df1b01fd09955430d448bf0a173a2f5}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a4df1b01fd09955430d448bf0a173a2f5} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_internal\_names\_set@{\_internal\_names\_set}}
+\index{\_internal\_names\_set@{\_internal\_names\_set}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_internal\_names\_set}{\_internal\_names\_set}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+internal\+\_\+names\+\_\+set = set(\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_aa329bea9aae5a514a109fd19b39e4d51}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_aa329bea9aae5a514a109fd19b39e4d51} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_selection@{\_selection}}
+\index{\_selection@{\_selection}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_selection}{\_selection}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Index\+Label pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+selection = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a4b377ecea0956413cc4e45a77d887ac5}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a4b377ecea0956413cc4e45a77d887ac5} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_selection@{\_selection}}
+\index{\_selection@{\_selection}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_selection}{\_selection}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+selection\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a8690d2c7cd02cf083a1e6bafa899eab6}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a8690d2c7cd02cf083a1e6bafa899eab6} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!\_selection\_list@{\_selection\_list}}
+\index{\_selection\_list@{\_selection\_list}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{\_selection\_list}{\_selection\_list}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+\_\+selection\+\_\+list\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a1f3539bc11e3abeff5e0f5a31bfbc5c7}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a1f3539bc11e3abeff5e0f5a31bfbc5c7} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!agg@{agg}}
+\index{agg@{agg}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{agg}{agg}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+agg = \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}{aggregate}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a1eee2f6959c9fcab6d8b57d166c81d45}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a1eee2f6959c9fcab6d8b57d166c81d45} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!exclusions@{exclusions}}
+\index{exclusions@{exclusions}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{exclusions}{exclusions}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily frozenset pandas.\+core.\+base.\+Selection\+Mixin.\+exclusions \mbox{[}Hashable\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a740e931e362229a193cc2b827ac039e7}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a740e931e362229a193cc2b827ac039e7} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!exclusions@{exclusions}}
+\index{exclusions@{exclusions}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{exclusions}{exclusions}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+exclusions}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a35b32ba83d07b2d612b80a3bb8b54c40}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a35b32ba83d07b2d612b80a3bb8b54c40} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!obj@{obj}}
+\index{obj@{obj}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily NDFrameT pandas.\+core.\+base.\+Selection\+Mixin.\+obj\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1base_1_1SelectionMixin_a5207a79fc68d7810cc3a907a49eaf556}\label{classpandas_1_1core_1_1base_1_1SelectionMixin_a5207a79fc68d7810cc3a907a49eaf556} 
+\index{pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}!obj@{obj}}
+\index{obj@{obj}!pandas.core.base.SelectionMixin@{pandas.core.base.SelectionMixin}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+base.\+Selection\+Mixin.\+obj}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/\mbox{\hyperlink{pandas_2core_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

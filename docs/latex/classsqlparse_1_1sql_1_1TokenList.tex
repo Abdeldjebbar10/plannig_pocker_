@@ -1,0 +1,375 @@
+\doxysection{Référence de la classe sqlparse.\+sql.\+Token\+List}
+\hypertarget{classsqlparse_1_1sql_1_1TokenList}{}\label{classsqlparse_1_1sql_1_1TokenList}\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+
+
+Graphe d\textquotesingle{}héritage de sqlparse.\+sql.\+Token\+List\+:
+% FIG 0
+
+
+Graphe de collaboration de sqlparse.\+sql.\+Token\+List\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a5ec1d42e8e0f736335509f97ce9d7547}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a4bf9bb224cfb285410fb79bc01a8c888}{tokens}}=None)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_ae250ef1a7ec7501f79d94cf48c870fdd}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_ae223852b2e9cbfe7f5ae58bf3d441b35}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a6c17da2b1abf08f573f121db3ab0245a}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, item)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a51734d18175ea3c7aca59d2fa503b599}{get\+\_\+token\+\_\+at\+\_\+offset}} (self, offset)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_ac1da1e2ae1dd5bee400b6b2c5f54620b}{flatten}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a4c3810c9126338e5f89df682c72620c7}{get\+\_\+sublists}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_aebd2f2f70737ed142c7fa763a2163bf0}{token\+\_\+first}} (self, skip\+\_\+ws=True, skip\+\_\+cm=False)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_acb7f06b0c3968bc76d455ab7ab5a5e9c}{token\+\_\+next\+\_\+by}} (self, i=None, m=None, \mbox{\hyperlink{callback_2foo_8f_a50e16bc59be823d9ec58240a76a1a971}{t}}=None, idx=-\/1, end=None)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a050887b87a012926c2aba6accda9b712}{token\+\_\+not\+\_\+matching}} (self, funcs, idx)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_aa55414a560ac4bf114599892b2d0c6aa}{token\+\_\+matching}} (self, funcs, idx)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a7da1c9c37df740011a27389d95317473}{token\+\_\+prev}} (self, idx, skip\+\_\+ws=True, skip\+\_\+cm=False)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_ae4b0ce2db24e8bb9d5d9e6a2b7a3a6c4}{token\+\_\+next}} (self, idx, skip\+\_\+ws=True, skip\+\_\+cm=False, \+\_\+reverse=False)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a876f22e209009d9f0a4413ed4496d80e}{token\+\_\+index}} (self, token, start=0)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a35051bc592a3da41c2f13bfbdec862d4}{group\+\_\+tokens}} (self, grp\+\_\+cls, start, end, include\+\_\+end=True, extend=False)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a6efd8de6d576c0f78dd829e80e0b6920}{insert\+\_\+before}} (self, where, token)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_af21dcadd5125242db86b1825b32e1d12}{insert\+\_\+after}} (self, where, token, skip\+\_\+ws=True)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a23b65ab54151a86cca1c101bb305b9e3}{has\+\_\+alias}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a26d478431418d2f2e539706aab491440}{get\+\_\+alias}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_ab28a83bf9edb942c709ca904abd57034}{get\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_af151feec6a1cdfa17b447d5d4ee61d5d}{get\+\_\+real\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_ae87f3c173e69ab16f476de85fb449115}{get\+\_\+parent\+\_\+name}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classsqlparse_1_1sql_1_1Token}{sqlparse.\+sql.\+Token}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_aa4473650aade69408afca25ee085a207}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a99576902d56f24d156687daa57a81845}{match}} (self, \mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a342489b24eeeb1b0cf12b5a6235ac219}{ttype}}, values, regex=False)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a75ba96fcee19efa8b15e655a4cb944af}{within}} (self, group\+\_\+cls)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_ae04d0ecadbbc7bcf902bf1ca1b33f1ef}{is\+\_\+child\+\_\+of}} (self, other)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_af3cd2df823fa565662405abd0d575fdc}{has\+\_\+ancestor}} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a4bf9bb224cfb285410fb79bc01a8c888}{tokens}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a899fc9a824a62752291c79f887ede0f9}{is\+\_\+group}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classsqlparse_1_1sql_1_1Token}{sqlparse.\+sql.\+Token}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a1e91e4a89910e5de2bfc0a2f895cf9f5}{value}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a342489b24eeeb1b0cf12b5a6235ac219}{ttype}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_ae1b3dd727d343b692dbf207382fb3df6}{parent}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_ab20aba6230467233403420f5047f0468}{is\+\_\+group}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a33ae00e63eb5e26e60f64887561c9661}{is\+\_\+keyword}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a788ddb45099a48296ce1a02ad540b7d0}{is\+\_\+whitespace}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a56751d54675420964858cbe7fa33a5a7}{is\+\_\+newline}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a7f071fcc655e78eb803454017522e45a}{normalized}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a85ee7d8d6cd9ec410eaa928c1038ce3c}{\+\_\+get\+\_\+repr\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a512313754eda9ff0dc1b36dd5d10c6c6}{\+\_\+pprint\+\_\+tree}} (self, max\+\_\+depth=None, depth=0, f=None, \+\_\+pre=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_ada69f10ee1d11a3eb60d66e6b2b3217b}{\+\_\+groupable\+\_\+tokens}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_aacc350e74a48e538d5deeaeba4eb5ebd}{\+\_\+token\+\_\+matching}} (self, funcs, start=0, end=None, reverse=False)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1TokenList_a31cfa0f49f610e20fa0510b2e2e403e0}{\+\_\+get\+\_\+first\+\_\+name}} (self, idx=None, reverse=False, keywords=False, real\+\_\+name=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classsqlparse_1_1sql_1_1Token}{sqlparse.\+sql.\+Token}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_abf73217201714be147e81113d8551c91}{\+\_\+get\+\_\+repr\+\_\+value}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A group of tokens.
+
+It has an additional instance attribute ``tokens`` which holds a
+list of child-tokens.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a5ec1d42e8e0f736335509f97ce9d7547}\label{classsqlparse_1_1sql_1_1TokenList_a5ec1d42e8e0f736335509f97ce9d7547} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tokens = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_adfcc42783e5ec43a34919155f48d7bc8}{sqlparse.\+sql.\+Token}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a6c17da2b1abf08f573f121db3ab0245a}\label{classsqlparse_1_1sql_1_1TokenList_a6c17da2b1abf08f573f121db3ab0245a} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_ae223852b2e9cbfe7f5ae58bf3d441b35}\label{classsqlparse_1_1sql_1_1TokenList_ae223852b2e9cbfe7f5ae58bf3d441b35} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_ae250ef1a7ec7501f79d94cf48c870fdd}\label{classsqlparse_1_1sql_1_1TokenList_ae250ef1a7ec7501f79d94cf48c870fdd} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a256bde9f3e5675c64ead73d8d2d9dede}{sqlparse.\+sql.\+Token}}.
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a31cfa0f49f610e20fa0510b2e2e403e0}\label{classsqlparse_1_1sql_1_1TokenList_a31cfa0f49f610e20fa0510b2e2e403e0} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_get\_first\_name@{\_get\_first\_name}}
+\index{\_get\_first\_name@{\_get\_first\_name}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_get\_first\_name()}{\_get\_first\_name()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+get\+\_\+first\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{idx = {\ttfamily None},  }\item[{}]{reverse = {\ttfamily False},  }\item[{}]{keywords = {\ttfamily False},  }\item[{}]{real\+\_\+name = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns the name of the first token with a name\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_a85ee7d8d6cd9ec410eaa928c1038ce3c}\label{classsqlparse_1_1sql_1_1TokenList_a85ee7d8d6cd9ec410eaa928c1038ce3c} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_get\_repr\_name@{\_get\_repr\_name}}
+\index{\_get\_repr\_name@{\_get\_repr\_name}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_get\_repr\_name()}{\_get\_repr\_name()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+get\+\_\+repr\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a5d29e1cd22dcc891031b8a874a1f21e2}{sqlparse.\+sql.\+Token}}.
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_ada69f10ee1d11a3eb60d66e6b2b3217b}\label{classsqlparse_1_1sql_1_1TokenList_ada69f10ee1d11a3eb60d66e6b2b3217b} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_groupable\_tokens@{\_groupable\_tokens}}
+\index{\_groupable\_tokens@{\_groupable\_tokens}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_groupable\_tokens()}{\_groupable\_tokens()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+groupable\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classsqlparse_1_1sql_1_1Parenthesis_a86058a110d35c95732448ce9b96e78ed}{sqlparse.\+sql.\+Parenthesis}}, et \mbox{\hyperlink{classsqlparse_1_1sql_1_1SquareBrackets_a3aaf5d71bf16e5938a5fbe0fb9a198b8}{sqlparse.\+sql.\+Square\+Brackets}}.
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a512313754eda9ff0dc1b36dd5d10c6c6}\label{classsqlparse_1_1sql_1_1TokenList_a512313754eda9ff0dc1b36dd5d10c6c6} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_pprint\_tree@{\_pprint\_tree}}
+\index{\_pprint\_tree@{\_pprint\_tree}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_pprint\_tree()}{\_pprint\_tree()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+pprint\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{max\+\_\+depth = {\ttfamily None},  }\item[{}]{depth = {\ttfamily 0},  }\item[{}]{f = {\ttfamily None},  }\item[{}]{\+\_\+pre = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Pretty-print the object tree.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_aacc350e74a48e538d5deeaeba4eb5ebd}\label{classsqlparse_1_1sql_1_1TokenList_aacc350e74a48e538d5deeaeba4eb5ebd} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!\_token\_matching@{\_token\_matching}}
+\index{\_token\_matching@{\_token\_matching}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{\_token\_matching()}{\_token\_matching()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+\_\+token\+\_\+matching (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{funcs,  }\item[{}]{start = {\ttfamily 0},  }\item[{}]{end = {\ttfamily None},  }\item[{}]{reverse = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}next token that match functions\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_ac1da1e2ae1dd5bee400b6b2c5f54620b}\label{classsqlparse_1_1sql_1_1TokenList_ac1da1e2ae1dd5bee400b6b2c5f54620b} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!flatten@{flatten}}
+\index{flatten@{flatten}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+flatten (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generator yielding ungrouped tokens.
+
+This method is recursively called for all child tokens.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classsqlparse_1_1sql_1_1Token_a019eea74d15a2c208080325402791bca}{sqlparse.\+sql.\+Token}}.
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a26d478431418d2f2e539706aab491440}\label{classsqlparse_1_1sql_1_1TokenList_a26d478431418d2f2e539706aab491440} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!get\_alias@{get\_alias}}
+\index{get\_alias@{get\_alias}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{get\_alias()}{get\_alias()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+get\+\_\+alias (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the alias for this identifier or ``None``.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_ab28a83bf9edb942c709ca904abd57034}\label{classsqlparse_1_1sql_1_1TokenList_ab28a83bf9edb942c709ca904abd57034} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+get\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the name of this identifier.
+
+This is either it's alias or it's real name. The returned valued can
+be considered as the name under which the object corresponding to
+this identifier is known within the current statement.
+\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_ae87f3c173e69ab16f476de85fb449115}\label{classsqlparse_1_1sql_1_1TokenList_ae87f3c173e69ab16f476de85fb449115} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!get\_parent\_name@{get\_parent\_name}}
+\index{get\_parent\_name@{get\_parent\_name}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{get\_parent\_name()}{get\_parent\_name()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+get\+\_\+parent\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return name of the parent object if any.
+
+A parent object is identified by the first occurring dot.
+\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_af151feec6a1cdfa17b447d5d4ee61d5d}\label{classsqlparse_1_1sql_1_1TokenList_af151feec6a1cdfa17b447d5d4ee61d5d} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!get\_real\_name@{get\_real\_name}}
+\index{get\_real\_name@{get\_real\_name}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{get\_real\_name()}{get\_real\_name()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+get\+\_\+real\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the real name (object name) of this identifier.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_a4c3810c9126338e5f89df682c72620c7}\label{classsqlparse_1_1sql_1_1TokenList_a4c3810c9126338e5f89df682c72620c7} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!get\_sublists@{get\_sublists}}
+\index{get\_sublists@{get\_sublists}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{get\_sublists()}{get\_sublists()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+get\+\_\+sublists (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a51734d18175ea3c7aca59d2fa503b599}\label{classsqlparse_1_1sql_1_1TokenList_a51734d18175ea3c7aca59d2fa503b599} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!get\_token\_at\_offset@{get\_token\_at\_offset}}
+\index{get\_token\_at\_offset@{get\_token\_at\_offset}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{get\_token\_at\_offset()}{get\_token\_at\_offset()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+get\+\_\+token\+\_\+at\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{offset }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the token that is on position offset.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_a35051bc592a3da41c2f13bfbdec862d4}\label{classsqlparse_1_1sql_1_1TokenList_a35051bc592a3da41c2f13bfbdec862d4} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!group\_tokens@{group\_tokens}}
+\index{group\_tokens@{group\_tokens}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{group\_tokens()}{group\_tokens()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+group\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{grp\+\_\+cls,  }\item[{}]{start,  }\item[{}]{end,  }\item[{}]{include\+\_\+end = {\ttfamily True},  }\item[{}]{extend = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace tokens by an instance of *grp_cls*.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_a23b65ab54151a86cca1c101bb305b9e3}\label{classsqlparse_1_1sql_1_1TokenList_a23b65ab54151a86cca1c101bb305b9e3} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!has\_alias@{has\_alias}}
+\index{has\_alias@{has\_alias}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{has\_alias()}{has\_alias()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+has\+\_\+alias (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns ``True`` if an alias is present.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_af21dcadd5125242db86b1825b32e1d12}\label{classsqlparse_1_1sql_1_1TokenList_af21dcadd5125242db86b1825b32e1d12} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!insert\_after@{insert\_after}}
+\index{insert\_after@{insert\_after}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{insert\_after()}{insert\_after()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+insert\+\_\+after (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{where,  }\item[{}]{token,  }\item[{}]{skip\+\_\+ws = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inserts *token* after *where*.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_a6efd8de6d576c0f78dd829e80e0b6920}\label{classsqlparse_1_1sql_1_1TokenList_a6efd8de6d576c0f78dd829e80e0b6920} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!insert\_before@{insert\_before}}
+\index{insert\_before@{insert\_before}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{insert\_before()}{insert\_before()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+insert\+\_\+before (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{where,  }\item[{}]{token }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inserts *token* before *where*.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_aebd2f2f70737ed142c7fa763a2163bf0}\label{classsqlparse_1_1sql_1_1TokenList_aebd2f2f70737ed142c7fa763a2163bf0} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!token\_first@{token\_first}}
+\index{token\_first@{token\_first}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{token\_first()}{token\_first()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+token\+\_\+first (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{skip\+\_\+ws = {\ttfamily True},  }\item[{}]{skip\+\_\+cm = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the first child token.
+
+If *skip_ws* is ``True`` (the default), whitespace
+tokens are ignored.
+
+if *skip_cm* is ``True`` (default: ``False``), comments are
+ignored too.
+\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_a876f22e209009d9f0a4413ed4496d80e}\label{classsqlparse_1_1sql_1_1TokenList_a876f22e209009d9f0a4413ed4496d80e} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!token\_index@{token\_index}}
+\index{token\_index@{token\_index}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{token\_index()}{token\_index()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+token\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{token,  }\item[{}]{start = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return list index of token.\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_aa55414a560ac4bf114599892b2d0c6aa}\label{classsqlparse_1_1sql_1_1TokenList_aa55414a560ac4bf114599892b2d0c6aa} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!token\_matching@{token\_matching}}
+\index{token\_matching@{token\_matching}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{token\_matching()}{token\_matching()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+token\+\_\+matching (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{funcs,  }\item[{}]{idx }\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_ae4b0ce2db24e8bb9d5d9e6a2b7a3a6c4}\label{classsqlparse_1_1sql_1_1TokenList_ae4b0ce2db24e8bb9d5d9e6a2b7a3a6c4} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!token\_next@{token\_next}}
+\index{token\_next@{token\_next}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{token\_next()}{token\_next()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+token\+\_\+next (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{idx,  }\item[{}]{skip\+\_\+ws = {\ttfamily True},  }\item[{}]{skip\+\_\+cm = {\ttfamily False},  }\item[{}]{\+\_\+reverse = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the next token relative to *idx*.
+
+If *skip_ws* is ``True`` (the default) whitespace tokens are ignored.
+If *skip_cm* is ``True`` comments are ignored.
+``None`` is returned if there's no next token.
+\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1sql_1_1TokenList_acb7f06b0c3968bc76d455ab7ab5a5e9c}\label{classsqlparse_1_1sql_1_1TokenList_acb7f06b0c3968bc76d455ab7ab5a5e9c} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!token\_next\_by@{token\_next\_by}}
+\index{token\_next\_by@{token\_next\_by}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{token\_next\_by()}{token\_next\_by()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+token\+\_\+next\+\_\+by (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i = {\ttfamily None},  }\item[{}]{m = {\ttfamily None},  }\item[{}]{t = {\ttfamily None},  }\item[{}]{idx = {\ttfamily -\/1},  }\item[{}]{end = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a050887b87a012926c2aba6accda9b712}\label{classsqlparse_1_1sql_1_1TokenList_a050887b87a012926c2aba6accda9b712} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!token\_not\_matching@{token\_not\_matching}}
+\index{token\_not\_matching@{token\_not\_matching}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{token\_not\_matching()}{token\_not\_matching()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+token\+\_\+not\+\_\+matching (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{funcs,  }\item[{}]{idx }\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a7da1c9c37df740011a27389d95317473}\label{classsqlparse_1_1sql_1_1TokenList_a7da1c9c37df740011a27389d95317473} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!token\_prev@{token\_prev}}
+\index{token\_prev@{token\_prev}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{token\_prev()}{token\_prev()}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+token\+\_\+prev (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{idx,  }\item[{}]{skip\+\_\+ws = {\ttfamily True},  }\item[{}]{skip\+\_\+cm = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the previous token relative to *idx*.
+
+If *skip_ws* is ``True`` (the default) whitespace tokens are ignored.
+If *skip_cm* is ``True`` comments are ignored.
+``None`` is returned if there's no previous token.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a899fc9a824a62752291c79f887ede0f9}\label{classsqlparse_1_1sql_1_1TokenList_a899fc9a824a62752291c79f887ede0f9} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!is\_group@{is\_group}}
+\index{is\_group@{is\_group}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{is\_group}{is\_group}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+is\+\_\+group}
+
+\Hypertarget{classsqlparse_1_1sql_1_1TokenList_a4bf9bb224cfb285410fb79bc01a8c888}\label{classsqlparse_1_1sql_1_1TokenList_a4bf9bb224cfb285410fb79bc01a8c888} 
+\index{sqlparse.sql.TokenList@{sqlparse.sql.TokenList}!tokens@{tokens}}
+\index{tokens@{tokens}!sqlparse.sql.TokenList@{sqlparse.sql.TokenList}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily sqlparse.\+sql.\+Token\+List.\+tokens}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/sqlparse/\mbox{\hyperlink{sqlparse_2sql_8py}{sql.\+py}}\end{DoxyCompactItemize}

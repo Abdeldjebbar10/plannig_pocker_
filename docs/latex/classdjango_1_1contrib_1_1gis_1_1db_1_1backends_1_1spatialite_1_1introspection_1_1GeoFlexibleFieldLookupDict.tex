@@ -1,0 +1,60 @@
+\doxysection{Référence de la classe django.\+contrib.\+gis.\+db.\+backends.\+spatialite.\+introspection.\+Geo\+Flexible\+Field\+Lookup\+Dict}
+\hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1GeoFlexibleFieldLookupDict}{}\label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1GeoFlexibleFieldLookupDict}\index{django.contrib.gis.db.backends.spatialite.introspection.GeoFlexibleFieldLookupDict@{django.contrib.gis.db.backends.spatialite.introspection.GeoFlexibleFieldLookupDict}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+gis.\+db.\+backends.\+spatialite.\+introspection.\+Geo\+Flexible\+Field\+Lookup\+Dict\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+gis.\+db.\+backends.\+spatialite.\+introspection.\+Geo\+Flexible\+Field\+Lookup\+Dict\+:
+% FIG 1
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1GeoFlexibleFieldLookupDict_a5789fe796b709b990865bf7f01768d72}{base\+\_\+data\+\_\+types\+\_\+reverse}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_1_1FlexibleFieldLookupDict}{django.\+db.\+backends.\+sqlite3.\+introspection.\+Flexible\+Field\+Lookup\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_1_1FlexibleFieldLookupDict_a5962d896ec00d2b9157bfb2bcb190471}{base\+\_\+data\+\_\+types\+\_\+reverse}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_1_1FlexibleFieldLookupDict}{django.\+db.\+backends.\+sqlite3.\+introspection.\+Flexible\+Field\+Lookup\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1sqlite3_1_1introspection_1_1FlexibleFieldLookupDict_a596ffe94347bce72c4c1b3bdd62097c0}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Subclass that includes updates the `base_data_types_reverse` dict
+for geometry field types.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1GeoFlexibleFieldLookupDict_a5789fe796b709b990865bf7f01768d72}\label{classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1introspection_1_1GeoFlexibleFieldLookupDict_a5789fe796b709b990865bf7f01768d72} 
+\index{django.contrib.gis.db.backends.spatialite.introspection.GeoFlexibleFieldLookupDict@{django.contrib.gis.db.backends.spatialite.introspection.GeoFlexibleFieldLookupDict}!base\_data\_types\_reverse@{base\_data\_types\_reverse}}
+\index{base\_data\_types\_reverse@{base\_data\_types\_reverse}!django.contrib.gis.db.backends.spatialite.introspection.GeoFlexibleFieldLookupDict@{django.contrib.gis.db.backends.spatialite.introspection.GeoFlexibleFieldLookupDict}}
+\doxysubsubsection{\texorpdfstring{base\_data\_types\_reverse}{base\_data\_types\_reverse}}
+{\footnotesize\ttfamily dict django.\+contrib.\+gis.\+db.\+backends.\+spatialite.\+introspection.\+Geo\+Flexible\+Field\+Lookup\+Dict.\+base\+\_\+data\+\_\+types\+\_\+reverse\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ **FlexibleFieldLookupDict.base\_data\_types\_reverse,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}point"{}}:\ \textcolor{stringliteral}{"{}GeometryField"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}linestring"{}}:\ \textcolor{stringliteral}{"{}GeometryField"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}polygon"{}}:\ \textcolor{stringliteral}{"{}GeometryField"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}multipoint"{}}:\ \textcolor{stringliteral}{"{}GeometryField"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}multilinestring"{}}:\ \textcolor{stringliteral}{"{}GeometryField"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}multipolygon"{}}:\ \textcolor{stringliteral}{"{}GeometryField"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}geometrycollection"{}}:\ \textcolor{stringliteral}{"{}GeometryField"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/gis/db/backends/spatialite/\mbox{\hyperlink{contrib_2gis_2db_2backends_2spatialite_2introspection_8py}{introspection.\+py}}\end{DoxyCompactItemize}

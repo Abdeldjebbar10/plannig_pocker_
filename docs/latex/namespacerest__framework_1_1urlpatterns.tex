@@ -1,0 +1,47 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+urlpatterns}
+\hypertarget{namespacerest__framework_1_1urlpatterns}{}\label{namespacerest__framework_1_1urlpatterns}\index{rest\_framework.urlpatterns@{rest\_framework.urlpatterns}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1urlpatterns_a255ebe05b2f2d56ecedbb510fd8fb472}{\+\_\+get\+\_\+format\+\_\+path\+\_\+converter}} (suffix\+\_\+kwarg, allowed)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1urlpatterns_a5a10a6fbcbefedb7f4291476e6df3bc4}{apply\+\_\+suffix\+\_\+patterns}} (urlpatterns, suffix\+\_\+pattern, suffix\+\_\+required, suffix\+\_\+route=None)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1urlpatterns_af4922b4022eec4e6ba0da219cd100e15}{format\+\_\+suffix\+\_\+patterns}} (urlpatterns, suffix\+\_\+required=False, allowed=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1urlpatterns_a255ebe05b2f2d56ecedbb510fd8fb472}\label{namespacerest__framework_1_1urlpatterns_a255ebe05b2f2d56ecedbb510fd8fb472} 
+\index{rest\_framework.urlpatterns@{rest\_framework.urlpatterns}!\_get\_format\_path\_converter@{\_get\_format\_path\_converter}}
+\index{\_get\_format\_path\_converter@{\_get\_format\_path\_converter}!rest\_framework.urlpatterns@{rest\_framework.urlpatterns}}
+\doxysubsubsection{\texorpdfstring{\_get\_format\_path\_converter()}{\_get\_format\_path\_converter()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+urlpatterns.\+\_\+get\+\_\+format\+\_\+path\+\_\+converter (\begin{DoxyParamCaption}\item[{}]{suffix\+\_\+kwarg,  }\item[{}]{allowed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerest__framework_1_1urlpatterns_a5a10a6fbcbefedb7f4291476e6df3bc4}\label{namespacerest__framework_1_1urlpatterns_a5a10a6fbcbefedb7f4291476e6df3bc4} 
+\index{rest\_framework.urlpatterns@{rest\_framework.urlpatterns}!apply\_suffix\_patterns@{apply\_suffix\_patterns}}
+\index{apply\_suffix\_patterns@{apply\_suffix\_patterns}!rest\_framework.urlpatterns@{rest\_framework.urlpatterns}}
+\doxysubsubsection{\texorpdfstring{apply\_suffix\_patterns()}{apply\_suffix\_patterns()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+urlpatterns.\+apply\+\_\+suffix\+\_\+patterns (\begin{DoxyParamCaption}\item[{}]{urlpatterns,  }\item[{}]{suffix\+\_\+pattern,  }\item[{}]{suffix\+\_\+required,  }\item[{}]{suffix\+\_\+route = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1urlpatterns_af4922b4022eec4e6ba0da219cd100e15}\label{namespacerest__framework_1_1urlpatterns_af4922b4022eec4e6ba0da219cd100e15} 
+\index{rest\_framework.urlpatterns@{rest\_framework.urlpatterns}!format\_suffix\_patterns@{format\_suffix\_patterns}}
+\index{format\_suffix\_patterns@{format\_suffix\_patterns}!rest\_framework.urlpatterns@{rest\_framework.urlpatterns}}
+\doxysubsubsection{\texorpdfstring{format\_suffix\_patterns()}{format\_suffix\_patterns()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+urlpatterns.\+format\+\_\+suffix\+\_\+patterns (\begin{DoxyParamCaption}\item[{}]{urlpatterns,  }\item[{}]{suffix\+\_\+required = {\ttfamily False},  }\item[{}]{allowed = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Supplement existing urlpatterns with corresponding patterns that also
+include a '.format' suffix.  Retains urlpattern ordering.
+
+urlpatterns:
+    A list of URL patterns.
+
+suffix_required:
+    If `True`, only suffixed URLs will be generated, and non-suffixed
+    URLs will not be used.  Defaults to `False`.
+
+allowed:
+    An optional tuple/list of allowed suffixes.  eg ['json', 'api']
+    Defaults to `None`, which allows any suffix.
+\end{DoxyVerb}
+ 

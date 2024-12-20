@@ -1,0 +1,68 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+views}
+\hypertarget{namespacerest__framework_1_1views}{}\label{namespacerest__framework_1_1views}\index{rest\_framework.views@{rest\_framework.views}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView}{APIView}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1views_a444cfcd82e414d6448160e72c5867f83}{get\+\_\+view\+\_\+name}} (view)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1views_af81916d32492f0007f7ee841c49c7545}{get\+\_\+view\+\_\+description}} (view, html=False)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1views_a863bc2bfebc4ff6512fa42234be443d4}{set\+\_\+rollback}} ()
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1views_ab894edebb015ac7d7282df5843c6c86f}{exception\+\_\+handler}} (exc, context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Provides an APIView class that is the base of all views in REST framework.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1views_ab894edebb015ac7d7282df5843c6c86f}\label{namespacerest__framework_1_1views_ab894edebb015ac7d7282df5843c6c86f} 
+\index{rest\_framework.views@{rest\_framework.views}!exception\_handler@{exception\_handler}}
+\index{exception\_handler@{exception\_handler}!rest\_framework.views@{rest\_framework.views}}
+\doxysubsubsection{\texorpdfstring{exception\_handler()}{exception\_handler()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+exception\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{exc,  }\item[{}]{context }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the response that should be used for any given exception.
+
+By default we handle the REST framework `APIException`, and also
+Django's built-in `Http404` and `PermissionDenied` exceptions.
+
+Any unhandled exceptions may return `None`, which will cause a 500 error
+to be raised.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1views_af81916d32492f0007f7ee841c49c7545}\label{namespacerest__framework_1_1views_af81916d32492f0007f7ee841c49c7545} 
+\index{rest\_framework.views@{rest\_framework.views}!get\_view\_description@{get\_view\_description}}
+\index{get\_view\_description@{get\_view\_description}!rest\_framework.views@{rest\_framework.views}}
+\doxysubsubsection{\texorpdfstring{get\_view\_description()}{get\_view\_description()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+get\+\_\+view\+\_\+description (\begin{DoxyParamCaption}\item[{}]{view,  }\item[{}]{html = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a view instance, return a textual description to represent the view.
+This name is used in the browsable API, and in OPTIONS responses.
+
+This function is the default for the `VIEW_DESCRIPTION_FUNCTION` setting.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1views_a444cfcd82e414d6448160e72c5867f83}\label{namespacerest__framework_1_1views_a444cfcd82e414d6448160e72c5867f83} 
+\index{rest\_framework.views@{rest\_framework.views}!get\_view\_name@{get\_view\_name}}
+\index{get\_view\_name@{get\_view\_name}!rest\_framework.views@{rest\_framework.views}}
+\doxysubsubsection{\texorpdfstring{get\_view\_name()}{get\_view\_name()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+get\+\_\+view\+\_\+name (\begin{DoxyParamCaption}\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a view instance, return a textual name to represent the view.
+This name is used in the browsable API, and in OPTIONS responses.
+
+This function is the default for the `VIEW_NAME_FUNCTION` setting.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1views_a863bc2bfebc4ff6512fa42234be443d4}\label{namespacerest__framework_1_1views_a863bc2bfebc4ff6512fa42234be443d4} 
+\index{rest\_framework.views@{rest\_framework.views}!set\_rollback@{set\_rollback}}
+\index{set\_rollback@{set\_rollback}!rest\_framework.views@{rest\_framework.views}}
+\doxysubsubsection{\texorpdfstring{set\_rollback()}{set\_rollback()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+set\+\_\+rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

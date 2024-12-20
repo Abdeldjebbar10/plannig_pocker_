@@ -1,0 +1,62 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/core/internals/construction.py}
+\hypertarget{internals_2construction_8py}{}\label{internals_2construction_8py}\index{env/lib/python3.12/site-\/packages/pandas/core/internals/construction.py@{env/lib/python3.12/site-\/packages/pandas/core/internals/construction.py}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core}{pandas.\+core}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core_1_1internals}{pandas.\+core.\+internals}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction}{pandas.\+core.\+internals.\+construction}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+Manager \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_ab54b3e97cad31be8581a2eddf861d7c2}{pandas.\+core.\+internals.\+construction.\+arrays\+\_\+to\+\_\+mgr}} (arrays, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} columns, index, \texorpdfstring{$\ast$}{*}Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype=None, bool verify\+\_\+integrity=True, str\texorpdfstring{$\vert$}{|}None typ=None, bool consolidate=True)
+\item 
+Manager \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a8ea8927e181834fb797233f35fff0798}{pandas.\+core.\+internals.\+construction.\+rec\+\_\+array\+\_\+to\+\_\+mgr}} (np.\+rec.\+recarray\texorpdfstring{$\vert$}{|}np.\+ndarray data, index, columns, Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype, bool copy, str typ)
+\item 
+Manager \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a3d0d4f71581c1be33482010d9d71f667}{pandas.\+core.\+internals.\+construction.\+mgr\+\_\+to\+\_\+mgr}} (mgr, str typ, bool copy=True)
+\item 
+Manager \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a62011fb65c08ce89f5dce901103c24e0}{pandas.\+core.\+internals.\+construction.\+ndarray\+\_\+to\+\_\+mgr}} (values, index, columns, Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype, bool copy, str typ)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_acce9388318f8993075621c6ae6bbd55f}{pandas.\+core.\+internals.\+construction.\+\_\+check\+\_\+values\+\_\+indices\+\_\+shape\+\_\+match}} (np.\+ndarray values, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} index, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} columns)
+\item 
+Manager \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_acdded4becb227492e3a5de07d6870d14}{pandas.\+core.\+internals.\+construction.\+dict\+\_\+to\+\_\+mgr}} (dict data, index, columns, \texorpdfstring{$\ast$}{*}Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype=None, str typ="{}block"{}, bool copy=True)
+\item 
+tuple\mbox{[}list\mbox{[}Array\+Like\mbox{]}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_af2f1dc034849741daac0470a06288fba}{pandas.\+core.\+internals.\+construction.\+nested\+\_\+data\+\_\+to\+\_\+arrays}} (Sequence data, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None columns, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None index, Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a5d845a2ac836aae83d0674113df3852b}{pandas.\+core.\+internals.\+construction.\+treat\+\_\+as\+\_\+nested}} (data)
+\item 
+np.\+ndarray \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a3938a9865d3ba0cfe87e934ee61640bf}{pandas.\+core.\+internals.\+construction.\+\_\+prep\+\_\+ndarraylike}} (values, bool copy=True)
+\item 
+np.\+ndarray \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_ac47f24410d4195290ce277bcba7d1400}{pandas.\+core.\+internals.\+construction.\+\_\+ensure\+\_\+2d}} (np.\+ndarray values)
+\item 
+tuple\mbox{[}list\mbox{[}Array\+Like\mbox{]}, list\mbox{[}Any\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_aebda96c5c61453cf6b4c892acd92b67a}{pandas.\+core.\+internals.\+construction.\+\_\+homogenize}} (data, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} index, Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a1be31e7a5e7724e6ba591911dd6d6646}{pandas.\+core.\+internals.\+construction.\+\_\+extract\+\_\+index}} (data)
+\item 
+tuple\mbox{[}list\mbox{[}Array\+Like\mbox{]}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_af95fc72046e98455559cc772a16304a0}{pandas.\+core.\+internals.\+construction.\+reorder\+\_\+arrays}} (list\mbox{[}Array\+Like\mbox{]} arrays, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} arr\+\_\+columns, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None columns, int length)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_aec25c063d48e16e9c6c0a83aa9b850a4}{pandas.\+core.\+internals.\+construction.\+\_\+get\+\_\+names\+\_\+from\+\_\+index}} (data)
+\item 
+tuple\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a2c98562b37c1476ee999369d5b556d65}{pandas.\+core.\+internals.\+construction.\+\_\+get\+\_\+axes}} (int N, int K, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None index, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None columns)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a49e7e0e852b86cd317df5288aa3355ab}{pandas.\+core.\+internals.\+construction.\+dataclasses\+\_\+to\+\_\+dicts}} (data)
+\item 
+tuple\mbox{[}list\mbox{[}Array\+Like\mbox{]}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a0b47f441d0f23dd61149c697a67c023a}{pandas.\+core.\+internals.\+construction.\+to\+\_\+arrays}} (data, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None columns, Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype=None)
+\item 
+np.\+ndarray \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a57ec09127148b868bb0cb30cd210c7d1}{pandas.\+core.\+internals.\+construction.\+\_\+list\+\_\+to\+\_\+arrays}} (list\mbox{[}tuple\texorpdfstring{$\vert$}{|}list\mbox{]} data)
+\item 
+tuple\mbox{[}np.\+ndarray, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_acd25251d004924e458c4a2f162c2621c}{pandas.\+core.\+internals.\+construction.\+\_\+list\+\_\+of\+\_\+series\+\_\+to\+\_\+arrays}} (list data, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None columns)
+\item 
+tuple\mbox{[}np.\+ndarray, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a26ecfb557b635cb083fbdb4721b9398b}{pandas.\+core.\+internals.\+construction.\+\_\+list\+\_\+of\+\_\+dict\+\_\+to\+\_\+arrays}} (list\mbox{[}dict\mbox{]} data, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None columns)
+\item 
+tuple\mbox{[}list\mbox{[}Array\+Like\mbox{]}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a2afc8a9782f4a51544b4ab7f2a398d65}{pandas.\+core.\+internals.\+construction.\+\_\+finalize\+\_\+columns\+\_\+and\+\_\+data}} (np.\+ndarray content, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None columns, Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a663d24a3ba678b360c5a19abbd54a6c0}{pandas.\+core.\+internals.\+construction.\+\_\+validate\+\_\+or\+\_\+indexify\+\_\+columns}} (list\mbox{[}np.\+ndarray\mbox{]} content, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}None columns)
+\item 
+list\mbox{[}Array\+Like\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1construction_a33157133b009bada19843611a00ab171}{pandas.\+core.\+internals.\+construction.\+convert\+\_\+object\+\_\+array}} (list\mbox{[}npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]}\mbox{]} content, Dtype\+Obj\texorpdfstring{$\vert$}{|}None dtype, str dtype\+\_\+backend="{}numpy"{}, bool coerce\+\_\+float=False)
+\end{DoxyCompactItemize}

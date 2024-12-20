@@ -1,0 +1,92 @@
+\doxysection{Référence de la classe django.\+middleware.\+locale.\+Locale\+Middleware}
+\hypertarget{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware}{}\label{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware}\index{django.middleware.locale.LocaleMiddleware@{django.middleware.locale.LocaleMiddleware}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+middleware.\+locale.\+Locale\+Middleware\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+middleware.\+locale.\+Locale\+Middleware\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_a97a106a0dae44c7569604d95ef52ff82}{process\+\_\+request}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_abf119bda93ddd06098b9d70732946602}{process\+\_\+response}} (self, request, response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_af9a244ed255c796c1c58a80dc67e4885}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a64f13ae6e5dd3d9df63d75d994b729ae}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a7d9fe62fd0c073a7c43189eede078db5}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a42b3ff600ff2b1e403a5b25fc6d1bbd7}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_a1b5fdcd0c7256221051597546b181edf}{response\+\_\+redirect\+\_\+class}} = \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseRedirect}{Http\+Response\+Redirect}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a94f14adc0a9ab43e39794903fd0ce8d8}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_ab0f1eb2f91f83acdf0655a20e0f277af}{async\+\_\+capable}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_acc62ec82889232ae5413c3b9c919c03b}{async\+\_\+mode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Parse a request and decide what translation object to install in the
+current thread context. This allows pages to be dynamically translated to
+the language the user desires (if the language is available).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_a97a106a0dae44c7569604d95ef52ff82}\label{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_a97a106a0dae44c7569604d95ef52ff82} 
+\index{django.middleware.locale.LocaleMiddleware@{django.middleware.locale.LocaleMiddleware}!process\_request@{process\_request}}
+\index{process\_request@{process\_request}!django.middleware.locale.LocaleMiddleware@{django.middleware.locale.LocaleMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_request()}{process\_request()}}
+{\footnotesize\ttfamily django.\+middleware.\+locale.\+Locale\+Middleware.\+process\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a35f7a3f08af1e0be61e235354d12e038}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}.
+
+\Hypertarget{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_abf119bda93ddd06098b9d70732946602}\label{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_abf119bda93ddd06098b9d70732946602} 
+\index{django.middleware.locale.LocaleMiddleware@{django.middleware.locale.LocaleMiddleware}!process\_response@{process\_response}}
+\index{process\_response@{process\_response}!django.middleware.locale.LocaleMiddleware@{django.middleware.locale.LocaleMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_response()}{process\_response()}}
+{\footnotesize\ttfamily django.\+middleware.\+locale.\+Locale\+Middleware.\+process\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a3873eda3e7ccef4087b100268d60f9f7}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_a1b5fdcd0c7256221051597546b181edf}\label{classdjango_1_1middleware_1_1locale_1_1LocaleMiddleware_a1b5fdcd0c7256221051597546b181edf} 
+\index{django.middleware.locale.LocaleMiddleware@{django.middleware.locale.LocaleMiddleware}!response\_redirect\_class@{response\_redirect\_class}}
+\index{response\_redirect\_class@{response\_redirect\_class}!django.middleware.locale.LocaleMiddleware@{django.middleware.locale.LocaleMiddleware}}
+\doxysubsubsection{\texorpdfstring{response\_redirect\_class}{response\_redirect\_class}}
+{\footnotesize\ttfamily django.\+middleware.\+locale.\+Locale\+Middleware.\+response\+\_\+redirect\+\_\+class = \mbox{\hyperlink{classdjango_1_1http_1_1response_1_1HttpResponseRedirect}{Http\+Response\+Redirect}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/middleware/\mbox{\hyperlink{locale_8py}{locale.\+py}}\end{DoxyCompactItemize}

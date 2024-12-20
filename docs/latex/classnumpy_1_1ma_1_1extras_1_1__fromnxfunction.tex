@@ -1,0 +1,77 @@
+\doxysection{Référence de la classe numpy.\+ma.\+extras.\+\_\+fromnxfunction}
+\hypertarget{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction}{}\label{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction}\index{numpy.ma.extras.\_fromnxfunction@{numpy.ma.extras.\_fromnxfunction}}
+
+
+Graphe d\textquotesingle{}héritage de numpy.\+ma.\+extras.\+\_\+fromnxfunction\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_a19b3e993a711d043006a1e3518859caa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, funcname)
+\item 
+\mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_ab9479d7775714f0622bee825c46c6f37}{getdoc}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_a4c9af166f5ea7d52ed0161a59b0e3228}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}params)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\DoxyHorRuler{0}
+ \hypertarget{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_autotoc_md2}{}\doxysubsubsection{\texorpdfstring{-\/— — Standard functions —}{-— — Standard functions —}}\label{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_autotoc_md2}
+\begin{DoxyVerb}Defines a wrapper to adapt NumPy functions to masked arrays.
+
+
+An instance of `_fromnxfunction` can be called with the same parameters
+as the wrapped NumPy function. The docstring of `newfunc` is adapted from
+the wrapped function as well, see `getdoc`.
+
+This class should not be used directly. Instead, one of its extensions that
+provides support for a specific type of input should be used.
+
+Parameters
+----------
+funcname : str
+    The name of the function to be adapted. The function should be
+    in the NumPy namespace (i.e. ``np.funcname``).\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_a19b3e993a711d043006a1e3518859caa}\label{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_a19b3e993a711d043006a1e3518859caa} 
+\index{numpy.ma.extras.\_fromnxfunction@{numpy.ma.extras.\_fromnxfunction}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.ma.extras.\_fromnxfunction@{numpy.ma.extras.\_fromnxfunction}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+ma.\+extras.\+\_\+fromnxfunction.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{funcname }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_a4c9af166f5ea7d52ed0161a59b0e3228}\label{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_a4c9af166f5ea7d52ed0161a59b0e3228} 
+\index{numpy.ma.extras.\_fromnxfunction@{numpy.ma.extras.\_fromnxfunction}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!numpy.ma.extras.\_fromnxfunction@{numpy.ma.extras.\_fromnxfunction}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily numpy.\+ma.\+extras.\+\_\+fromnxfunction.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{params }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction__args_a4f6157e6e45b63f0aed2564256b72fff}{numpy.\+ma.\+extras.\+\_\+fromnxfunction\+\_\+args}}, \mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction__allargs_a36ca7ad6c49fd4fb35055c3a40fc2183}{numpy.\+ma.\+extras.\+\_\+fromnxfunction\+\_\+allargs}}, \mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction__single_a79fe848c2a52c397cd14948d0fe1ef61}{numpy.\+ma.\+extras.\+\_\+fromnxfunction\+\_\+single}}, et \mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction__seq_a127e340afcae313cac8f3730c4994c0c}{numpy.\+ma.\+extras.\+\_\+fromnxfunction\+\_\+seq}}.
+
+\Hypertarget{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_ab9479d7775714f0622bee825c46c6f37}\label{classnumpy_1_1ma_1_1extras_1_1__fromnxfunction_ab9479d7775714f0622bee825c46c6f37} 
+\index{numpy.ma.extras.\_fromnxfunction@{numpy.ma.extras.\_fromnxfunction}!getdoc@{getdoc}}
+\index{getdoc@{getdoc}!numpy.ma.extras.\_fromnxfunction@{numpy.ma.extras.\_fromnxfunction}}
+\doxysubsubsection{\texorpdfstring{getdoc()}{getdoc()}}
+{\footnotesize\ttfamily numpy.\+ma.\+extras.\+\_\+fromnxfunction.\+getdoc (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the docstring and signature from the function.
+
+The ``__doc__`` attribute of the function is used as the docstring for
+the new masked array version of the function. A note on application
+of the function to the mask is appended.
+
+Parameters
+----------
+None\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/ma/\mbox{\hyperlink{extras_8py}{extras.\+py}}\end{DoxyCompactItemize}

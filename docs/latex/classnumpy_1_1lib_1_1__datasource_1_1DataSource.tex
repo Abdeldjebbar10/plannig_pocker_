@@ -1,0 +1,312 @@
+\doxysection{Référence de la classe numpy.\+lib.\+\_\+datasource.\+Data\+Source}
+\hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource}{}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource}\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+
+
+Graphe d\textquotesingle{}héritage de numpy.\+lib.\+\_\+datasource.\+Data\+Source\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_aa65c46081855d374b5dcc12761aec9f7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, destpath=os.\+curdir)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a6a2400a788cfef9596c985e5394ce7b6}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ae1469a24e9303f078fe91fc550352740}{abspath}} (self, path)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a465f04cb8d568b805c78b73bae39b89a}{exists}} (self, path)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_abf03a9ee2142c6fcd1a0537b371d9006}{open}} (self, path, mode=\textquotesingle{}r\textquotesingle{}, encoding=None, newline=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ae6e0dd94bb399c7df965daec355b7e79}{\+\_\+iszip}} (self, filename)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a16534c87d67d27d9d61cb219643452ac}{\+\_\+iswritemode}} (self, mode)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_afce8e8f196c53ab688ce3716c210d54d}{\+\_\+splitzipext}} (self, filename)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a668b67cb5ecbdd2cf06f1b21958bd4c3}{\+\_\+possible\+\_\+names}} (self, filename)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a8f6e7221e6e15f41475c3b4fdcef3a80}{\+\_\+isurl}} (self, path)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a8c3307ce746e9f1f1e8561409a5adf7b}{\+\_\+cache}} (self, path)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ad242f6e78d27b4c9d3a21985b7140b7a}{\+\_\+findfile}} (self, path)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a3fd6371c2f82e15d237a5e4cd1d08a22}{\+\_\+sanitize\+\_\+relative\+\_\+path}} (self, path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_aeee4353a413ab78e98801b0e676ccebe}{\+\_\+destpath}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a84a936576d9f343a2d3d54a4a93b8b17}{\+\_\+istmpdest}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}DataSource(destpath='.')
+
+A generic data source file (file, http, ftp, ...).
+
+DataSources can be local files or remote files/URLs.  The files may
+also be compressed or uncompressed. DataSource hides some of the
+low-level details of downloading the file, allowing you to simply pass
+in a valid file path (or URL) and obtain a file object.
+
+Parameters
+----------
+destpath : str or None, optional
+    Path to the directory where the source file gets downloaded to for
+    use.  If `destpath` is None, a temporary directory will be created.
+    The default path is the current directory.
+
+Notes
+-----
+URLs require a scheme string (``http://``) to be used, without it they
+will fail::
+
+    >>> repos = np.lib.npyio.DataSource()
+    >>> repos.exists('www.google.com/index.html')
+    False
+    >>> repos.exists('http://www.google.com/index.html')
+    True
+
+Temporary directories are deleted when the DataSource is deleted.
+
+Examples
+--------
+::
+
+    >>> ds = np.lib.npyio.DataSource('/home/guido')
+    >>> urlname = 'http://www.google.com/'
+    >>> gfile = ds.open('http://www.google.com/')
+    >>> ds.abspath(urlname)
+    '/home/guido/www.google.com/index.html'
+
+    >>> ds = np.lib.npyio.DataSource(None)  # use with temporary file
+    >>> ds.open('/home/guido/foobar.txt')
+    <open file '/home/guido.foobar.txt', mode 'r' at 0x91d4430>
+    >>> ds.abspath('/home/guido/foobar.txt')
+    '/tmp/.../home/guido/foobar.txt'\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_aa65c46081855d374b5dcc12761aec9f7}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_aa65c46081855d374b5dcc12761aec9f7} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{destpath = {\ttfamily os.curdir} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a DataSource with a local path at destpath.\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1Repository_a17355272b36547988b232ee58992e73d}{numpy.\+lib.\+\_\+datasource.\+Repository}}.
+
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a6a2400a788cfef9596c985e5394ce7b6}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a6a2400a788cfef9596c985e5394ce7b6} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1Repository_a1779942cace9881047d4b7de18c90bdc}{numpy.\+lib.\+\_\+datasource.\+Repository}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a8c3307ce746e9f1f1e8561409a5adf7b}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a8c3307ce746e9f1f1e8561409a5adf7b} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_cache@{\_cache}}
+\index{\_cache@{\_cache}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_cache()}{\_cache()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+cache (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Cache the file specified by path.
+
+Creates a copy of the file in the datasource cache.\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ad242f6e78d27b4c9d3a21985b7140b7a}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ad242f6e78d27b4c9d3a21985b7140b7a} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_findfile@{\_findfile}}
+\index{\_findfile@{\_findfile}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_findfile()}{\_findfile()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+findfile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Searches for ``path`` and returns full path if found.
+
+If path is an URL, _findfile will cache a local copy and return the
+path to the cached file.  If path is a local file, _findfile will
+return a path to that local file.
+
+The search will include possible compressed versions of the file
+and return the first occurrence found.\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1Repository_a2919ac2398b906f49696211f433a859e}{numpy.\+lib.\+\_\+datasource.\+Repository}}.
+
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a8f6e7221e6e15f41475c3b4fdcef3a80}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a8f6e7221e6e15f41475c3b4fdcef3a80} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_isurl@{\_isurl}}
+\index{\_isurl@{\_isurl}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_isurl()}{\_isurl()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+isurl (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Test if path is a net location.  Tests the scheme and netloc.\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a16534c87d67d27d9d61cb219643452ac}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a16534c87d67d27d9d61cb219643452ac} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_iswritemode@{\_iswritemode}}
+\index{\_iswritemode@{\_iswritemode}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_iswritemode()}{\_iswritemode()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+iswritemode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Test if the given mode will open a file for writing.\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ae6e0dd94bb399c7df965daec355b7e79}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ae6e0dd94bb399c7df965daec355b7e79} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_iszip@{\_iszip}}
+\index{\_iszip@{\_iszip}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_iszip()}{\_iszip()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+iszip (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Test if the filename is a zip file by looking at the file extension.\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a668b67cb5ecbdd2cf06f1b21958bd4c3}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a668b67cb5ecbdd2cf06f1b21958bd4c3} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_possible\_names@{\_possible\_names}}
+\index{\_possible\_names@{\_possible\_names}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_possible\_names()}{\_possible\_names()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+possible\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a tuple containing compressed filename variations.\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a3fd6371c2f82e15d237a5e4cd1d08a22}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a3fd6371c2f82e15d237a5e4cd1d08a22} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_sanitize\_relative\_path@{\_sanitize\_relative\_path}}
+\index{\_sanitize\_relative\_path@{\_sanitize\_relative\_path}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_sanitize\_relative\_path()}{\_sanitize\_relative\_path()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+sanitize\+\_\+relative\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a sanitised relative path for which
+os.path.abspath(os.path.join(base, path)).startswith(base)
+\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_afce8e8f196c53ab688ce3716c210d54d}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_afce8e8f196c53ab688ce3716c210d54d} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_splitzipext@{\_splitzipext}}
+\index{\_splitzipext@{\_splitzipext}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_splitzipext()}{\_splitzipext()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+splitzipext (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Split zip extension from filename and return filename.
+
+Returns
+-------
+base, zip_ext : {tuple}\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ae1469a24e9303f078fe91fc550352740}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_ae1469a24e9303f078fe91fc550352740} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!abspath@{abspath}}
+\index{abspath@{abspath}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{abspath()}{abspath()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+abspath (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return absolute path of file in the DataSource directory.
+
+If `path` is an URL, then `abspath` will return either the location
+the file exists locally or the location it would exist when opened
+using the `open` method.
+
+Parameters
+----------
+path : str or pathlib.Path
+    Can be a local file or a remote URL.
+
+Returns
+-------
+out : str
+    Complete path, including the `DataSource` destination directory.
+
+Notes
+-----
+The functionality is based on `os.path.abspath`.\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1Repository_a7463a67b3bff34dd23c7cf7f02ba98cf}{numpy.\+lib.\+\_\+datasource.\+Repository}}.
+
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a465f04cb8d568b805c78b73bae39b89a}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a465f04cb8d568b805c78b73bae39b89a} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!exists@{exists}}
+\index{exists@{exists}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+exists (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Test if path exists.
+
+Test if `path` exists as (and in this order):
+
+- a local file.
+- a remote URL that has been downloaded and stored locally in the
+  `DataSource` directory.
+- a remote URL that has not been downloaded, but is valid and
+  accessible.
+
+Parameters
+----------
+path : str or pathlib.Path
+    Can be a local file or a remote URL.
+
+Returns
+-------
+out : bool
+    True if `path` exists.
+
+Notes
+-----
+When `path` is an URL, `exists` will return True if it's either
+stored locally in the `DataSource` directory, or is a valid remote
+URL.  `DataSource` does not discriminate between the two, the file
+is accessible if it exists in either location.\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1Repository_a03ac29fa2f793b396ddffb1a182d1087}{numpy.\+lib.\+\_\+datasource.\+Repository}}.
+
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_abf03a9ee2142c6fcd1a0537b371d9006}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_abf03a9ee2142c6fcd1a0537b371d9006} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!open@{open}}
+\index{open@{open}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+open (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{mode = {\ttfamily \textquotesingle{}r\textquotesingle{}},  }\item[{}]{encoding = {\ttfamily None},  }\item[{}]{newline = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open and return file-like object.
+
+If `path` is an URL, it will be downloaded, stored in the
+`DataSource` directory and opened from there.
+
+Parameters
+----------
+path : str or pathlib.Path
+    Local file path or URL to open.
+mode : {'r', 'w', 'a'}, optional
+    Mode to open `path`.  Mode 'r' for reading, 'w' for writing,
+    'a' to append. Available modes depend on the type of object
+    specified by `path`. Default is 'r'.
+encoding : {None, str}, optional
+    Open text file with given encoding. The default encoding will be
+    what `open` uses.
+newline : {None, str}, optional
+    Newline to use when reading text file.
+
+Returns
+-------
+out : file object
+    File object.\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1Repository_ab909a527ee103829f9ed339e60dad997}{numpy.\+lib.\+\_\+datasource.\+Repository}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_aeee4353a413ab78e98801b0e676ccebe}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_aeee4353a413ab78e98801b0e676ccebe} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_destpath@{\_destpath}}
+\index{\_destpath@{\_destpath}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_destpath}{\_destpath}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+destpath\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a84a936576d9f343a2d3d54a4a93b8b17}\label{classnumpy_1_1lib_1_1__datasource_1_1DataSource_a84a936576d9f343a2d3d54a4a93b8b17} 
+\index{numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}!\_istmpdest@{\_istmpdest}}
+\index{\_istmpdest@{\_istmpdest}!numpy.lib.\_datasource.DataSource@{numpy.lib.\_datasource.DataSource}}
+\doxysubsubsection{\texorpdfstring{\_istmpdest}{\_istmpdest}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+Data\+Source.\+\_\+istmpdest\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/lib/\mbox{\hyperlink{__datasource_8py}{\+\_\+datasource.\+py}}\end{DoxyCompactItemize}

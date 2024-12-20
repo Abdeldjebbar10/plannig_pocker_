@@ -1,0 +1,99 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage sqlparse}
+\hypertarget{namespacesqlparse}{}\label{namespacesqlparse}\index{sqlparse@{sqlparse}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1____main____}{\+\_\+\+\_\+main\+\_\+\+\_\+}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1cli}{cli}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1engine}{engine}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1exceptions}{exceptions}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1filters}{filters}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1formatter}{formatter}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1keywords}{keywords}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1lexer}{lexer}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1sql}{sql}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1tokens}{tokens}}
+\item 
+namespace \mbox{\hyperlink{namespacesqlparse_1_1utils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesqlparse_af6eb69b9ebd7fcaf9cf66cfd45ac3d1a}{parse}} (sql, encoding=None)
+\item 
+\mbox{\hyperlink{namespacesqlparse_a1fd4e5436874b6c268a4a74dc0dacfcf}{parsestream}} (stream, encoding=None)
+\item 
+\mbox{\hyperlink{namespacesqlparse_a9a84102508ace6260828e72fcf007dea}{format}} (sql, encoding=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{namespacesqlparse_a18a5c6eb8af8b57ddd0bc33dd1c712bd}{split}} (sql, encoding=None, strip\+\_\+semicolon=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Parse SQL statements.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacesqlparse_a9a84102508ace6260828e72fcf007dea}\label{namespacesqlparse_a9a84102508ace6260828e72fcf007dea} 
+\index{sqlparse@{sqlparse}!format@{format}}
+\index{format@{format}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily sqlparse.\+format (\begin{DoxyParamCaption}\item[{}]{sql,  }\item[{}]{encoding = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format *sql* according to *options*.
+
+Available options are documented in :ref:`formatting`.
+
+In addition to the formatting options this function accepts the
+keyword "encoding" which determines the encoding of the statement.
+
+:returns: The formatted SQL statement as string.
+\end{DoxyVerb}
+ \Hypertarget{namespacesqlparse_af6eb69b9ebd7fcaf9cf66cfd45ac3d1a}\label{namespacesqlparse_af6eb69b9ebd7fcaf9cf66cfd45ac3d1a} 
+\index{sqlparse@{sqlparse}!parse@{parse}}
+\index{parse@{parse}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily sqlparse.\+parse (\begin{DoxyParamCaption}\item[{}]{sql,  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse sql and return a list of statements.
+
+:param sql: A string containing one or more SQL statements.
+:param encoding: The encoding of the statement (optional).
+:returns: A tuple of :class:`~sqlparse.sql.Statement` instances.
+\end{DoxyVerb}
+ \Hypertarget{namespacesqlparse_a1fd4e5436874b6c268a4a74dc0dacfcf}\label{namespacesqlparse_a1fd4e5436874b6c268a4a74dc0dacfcf} 
+\index{sqlparse@{sqlparse}!parsestream@{parsestream}}
+\index{parsestream@{parsestream}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{parsestream()}{parsestream()}}
+{\footnotesize\ttfamily sqlparse.\+parsestream (\begin{DoxyParamCaption}\item[{}]{stream,  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses sql statements from file-like object.
+
+:param stream: A file-like object.
+:param encoding: The encoding of the stream contents (optional).
+:returns: A generator of :class:`~sqlparse.sql.Statement` instances.
+\end{DoxyVerb}
+ \Hypertarget{namespacesqlparse_a18a5c6eb8af8b57ddd0bc33dd1c712bd}\label{namespacesqlparse_a18a5c6eb8af8b57ddd0bc33dd1c712bd} 
+\index{sqlparse@{sqlparse}!split@{split}}
+\index{split@{split}!sqlparse@{sqlparse}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily sqlparse.\+split (\begin{DoxyParamCaption}\item[{}]{sql,  }\item[{}]{encoding = {\ttfamily None},  }\item[{}]{strip\+\_\+semicolon = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split *sql* into single statements.
+
+:param sql: A string containing one or more SQL statements.
+:param encoding: The encoding of the statement (optional).
+:param strip_semicolon: If True, remove trainling semicolons
+    (default: False).
+:returns: A list of strings.
+\end{DoxyVerb}
+ 

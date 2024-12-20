@@ -1,0 +1,57 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+viewsets}
+\hypertarget{namespacerest__framework_1_1viewsets}{}\label{namespacerest__framework_1_1viewsets}\index{rest\_framework.viewsets@{rest\_framework.viewsets}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1viewsets_1_1GenericViewSet}{Generic\+View\+Set}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ModelViewSet}{Model\+View\+Set}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ReadOnlyModelViewSet}{Read\+Only\+Model\+View\+Set}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSet}{View\+Set}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin}{View\+Set\+Mixin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1viewsets_a185f1e268b9d72a1e9958a92032fe0b1}{\+\_\+is\+\_\+extra\+\_\+action}} (attr)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1viewsets_a981bce970f11a5c8e8dade01618a9e0a}{\+\_\+check\+\_\+attr\+\_\+name}} (func, name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}ViewSets are essentially just a type of class based view, that doesn't provide
+any method handlers, such as `get()`, `post()`, etc... but instead has actions,
+such as `list()`, `retrieve()`, `create()`, etc...
+
+Actions are only bound to methods at the point of instantiating the views.
+
+    user_list = UserViewSet.as_view({'get': 'list'})
+    user_detail = UserViewSet.as_view({'get': 'retrieve'})
+
+Typically, rather than instantiate views from viewsets directly, you'll
+register the viewset with a router and let the URL conf be determined
+automatically.
+
+    router = DefaultRouter()
+    router.register(r'users', UserViewSet, 'user')
+    urlpatterns = router.urls
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1viewsets_a981bce970f11a5c8e8dade01618a9e0a}\label{namespacerest__framework_1_1viewsets_a981bce970f11a5c8e8dade01618a9e0a} 
+\index{rest\_framework.viewsets@{rest\_framework.viewsets}!\_check\_attr\_name@{\_check\_attr\_name}}
+\index{\_check\_attr\_name@{\_check\_attr\_name}!rest\_framework.viewsets@{rest\_framework.viewsets}}
+\doxysubsubsection{\texorpdfstring{\_check\_attr\_name()}{\_check\_attr\_name()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+\_\+check\+\_\+attr\+\_\+name (\begin{DoxyParamCaption}\item[{}]{func,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerest__framework_1_1viewsets_a185f1e268b9d72a1e9958a92032fe0b1}\label{namespacerest__framework_1_1viewsets_a185f1e268b9d72a1e9958a92032fe0b1} 
+\index{rest\_framework.viewsets@{rest\_framework.viewsets}!\_is\_extra\_action@{\_is\_extra\_action}}
+\index{\_is\_extra\_action@{\_is\_extra\_action}!rest\_framework.viewsets@{rest\_framework.viewsets}}
+\doxysubsubsection{\texorpdfstring{\_is\_extra\_action()}{\_is\_extra\_action()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+\_\+is\+\_\+extra\+\_\+action (\begin{DoxyParamCaption}\item[{}]{attr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+

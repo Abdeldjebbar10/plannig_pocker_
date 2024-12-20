@@ -1,0 +1,677 @@
+\doxysection{Référence de la classe pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array}
+\hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray}{}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray}\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_ab02c8a73c8148ac30d7f4fdd2d29754f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, values, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}}=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a7e4d1444039cbf084452746e623f7446}{\+\_\+\+\_\+arrow\+\_\+array\+\_\+\+\_\+}} (self, type=None)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a9431c6054158987d615c0addb4d3bb94}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, value)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a8fe359e1c71d080415b51d7647cf3efe}{astype}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}}, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}}=True)
+\item 
+Scalar \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a60b24fb8221c425531a624c192ad998e}{min}} (self, axis=None, bool skipna=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Scalar \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a34e84c8dcede259a8fdcdbe224dc503f}{max}} (self, axis=None, bool skipna=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Series \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a3a2fea21625f831176fb7d33d3ae90b9}{value\+\_\+counts}} (self, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa2fc22e57a28a85735e82be3ae1a24c1}{dropna}}=True)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a0ced191f71f88f4e4cb165e421747d12}{memory\+\_\+usage}} (self, bool deep=False)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\texorpdfstring{$\vert$}{|}np.\+intp \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a255f4eb2b5b6fb94c805fa9684e17fa5}{searchsorted}} (self, Numpy\+Value\+Array\+Like\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} value, Literal\mbox{[}"{}left"{}, "{}right"{}\mbox{]} side="{}left"{}, Numpy\+Sorter\texorpdfstring{$\vert$}{|}None sorter=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1BaseStringArray}{pandas.\+core.\+arrays.\+string\+\_\+.\+Base\+String\+Array}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1BaseStringArray_ab66206b3645cd76cea93fe8b80e406a4}{tolist}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}}
+\begin{DoxyCompactItemize}
+\item 
+Any \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ac5c566f69f17b7c52680e1af659597cd}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, Scalar\+Indexer item)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_abb04343a0481529c8db453040e48769a}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, Sequence\+Indexer item)
+\item 
+Self\texorpdfstring{$\vert$}{|}Any \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a3f5fcaa035b75f3a491824e2e0680055}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, Positional\+Indexer item)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ad8a0be4ef054697a2cf7bf4caf83f7b4}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Iterator\mbox{[}Any\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a1acdd50b2f57214aa22c103ddb60006c}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+bool\texorpdfstring{$\vert$}{|}np.\+bool\+\_\+ \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a540cebd6d9ca9d78050ddcc39ca50f80}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, object item)
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a6dc347c3648c4076fde1c5e8caea91a1}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a4d8aca90cbaad3dce79d1f77b38ffb24}{\+\_\+\+\_\+ne\+\_\+\+\_\+}} (self, object other)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a1bc82542e277cb017800199beed33c99}{to\+\_\+numpy}} (self, npt.\+DType\+Like\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}}=None, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}}=False, object na\+\_\+value=lib.\+no\+\_\+default)
+\item 
+Extension\+Dtype \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a3ffcc2a2161941ed94578637acaabdbc}{dtype}} (self)
+\item 
+Shape \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ae31417837ba79ff963d00ba474ba10c0}{shape}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a79b6d7c9a3490c0b60d51287514d3daa}{size}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a486e9f6eebdfb48a383dce50b7160b27}{ndim}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a30196eb83f4d424f3567453e3862bb57}{nbytes}} (self)
+\item 
+np.\+ndarray\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArraySupportsAnyAll}{Extension\+Array\+Supports\+Any\+All}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ac2557bb47c57bbb9f4d0da5dbcd3dac2}{isna}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a7d2dc39295bc2933180f6e7d6de0f951}{argsort}} (self, \texorpdfstring{$\ast$}{*}bool ascending=True, Sort\+Kind kind="{}quicksort"{}, str na\+\_\+position="{}last"{}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a76a78e70c988d429b70cdcf8d6a346ca}{argmin}} (self, bool skipna=True)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a76e29e08fcb56be44913122a2e041a68}{argmax}} (self, bool skipna=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a9b59ae4375339f00f2c21b1daf15723c}{interpolate}} (self, \texorpdfstring{$\ast$}{*}Interpolate\+Options method, int axis, Index index, limit, limit\+\_\+direction, limit\+\_\+area, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a5d150b6811a86e144f2363e7acba0969}{fillna}} (self, object\texorpdfstring{$\vert$}{|}Array\+Like\texorpdfstring{$\vert$}{|}None value=None, Fillna\+Options\texorpdfstring{$\vert$}{|}None method=None, int\texorpdfstring{$\vert$}{|}None limit=None, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}}=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa2fc22e57a28a85735e82be3ae1a24c1}{dropna}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a65818b24cb5c0ad39d9e257a26b2ff8d}{duplicated}} (self, Literal\mbox{[}"{}first"{}, "{}last"{}, False\mbox{]} keep="{}first"{})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a509fadac9c63a505abb4744c9b7ef3f2}{shift}} (self, int periods=1, object fill\+\_\+value=None)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a8013a5ea09b0dbe85cad92d4bcb7bebc}{unique}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a2642c561255fe0c703d1145e6fe6befd}{equals}} (self, object other)
+\item 
+npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a3a8a36d380a3829497dfd425b84860c8}{isin}} (self, Array\+Like values)
+\item 
+tuple\mbox{[}np.\+ndarray, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aba818a7d6dbc0857faeba5129820bed2}{factorize}} (self, bool use\+\_\+na\+\_\+sentinel=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_acccd39e480f3a5ee4ded0dc1920baee8}{repeat}} (self, int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]} repeats, Axis\+Int\texorpdfstring{$\vert$}{|}None axis=None)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a6ffc479cca11ec82de943e42db71dee5}{take}} (self, Take\+Indexer indices, \texorpdfstring{$\ast$}{*}bool allow\+\_\+fill=False, Any fill\+\_\+value=None)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}} (self)
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a774ebc23142487eca82e462c9735b0cb}{view}} (self, Dtype\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}}=None)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa93a0c4fc5d51a1034df1bd71eaa548d}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a9ce999d8bccd48a2eb1af932a0f74cc2}{transpose}} (self, \texorpdfstring{$\ast$}{*}int axes)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a1aaa0602a1493c34d6e6a6643f38c16d}{T}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa9dba3c7e5682c59d775c651c94f6873}{ravel}} (self, Literal\mbox{[}"{}C"{}, "{}F"{}, "{}A"{}, "{}K"{}\mbox{]}\texorpdfstring{$\vert$}{|}None order="{}C"{})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a2df6b996f5d6a2ace0eab4c9a55dbbea}{delete}} (self, Positional\+Indexer loc)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a229338eb4bb6d08bf405f78ab636f7a4}{insert}} (self, int loc, item)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a03ecc953f9c856854ac47cb939f09260}{\+\_\+\+\_\+array\+\_\+ufunc\+\_\+\+\_\+}} (self, np.\+ufunc \mbox{\hyperlink{structufunc}{ufunc}}, str method, \texorpdfstring{$\ast$}{*}inputs, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a65bc3bf8920a69e837fdd5ad3b93afb9}{map}} (self, mapper, na\+\_\+action=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a78a7d2006a7d00bd0b4d08bdc568e280}{\+\_\+validate}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a894f65cada79a42e75a30a5407c710a7}{\+\_\+from\+\_\+sequence}} (cls, scalars, \texorpdfstring{$\ast$}{*}Dtype\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}}=None, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}}=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_af31c80668024fd296e9ee338eefeb44d}{\+\_\+from\+\_\+sequence\+\_\+of\+\_\+strings}} (cls, strings, \texorpdfstring{$\ast$}{*}Dtype\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}}=None, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}}=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray}{String\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_abc19c05c62051965b88cd5b6cec80ae5}{\+\_\+empty}} (cls, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ab47b4729ee6b6b01a80353a69b2e13ed}{shape}}, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a9d2740b74ee62f019cea9c0155aca768}{\+\_\+values\+\_\+for\+\_\+factorize}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a553d4b73af7ecd29ba5d9455ec0a2cc2}{\+\_\+putmask}} (self, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, value)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_abcdeb230d71396bc87e8d57465f56a92}{\+\_\+reduce}} (self, str name, \texorpdfstring{$\ast$}{*}bool skipna=True, Axis\+Int\texorpdfstring{$\vert$}{|}None axis=0, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_aff75ffd96dad49a060f1376a303c391d}{\+\_\+cmp\+\_\+method}} (self, other, op)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_afdd6a6471b73f3e94011b5daeed8a9b5}{\+\_\+str\+\_\+map}} (self, f, na\+\_\+value=None, Dtype\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}}=None, bool convert=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1BaseStringArray}{pandas.\+core.\+arrays.\+string\+\_\+.\+Base\+String\+Array}}}
+\begin{DoxyCompactItemize}
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1BaseStringArray_a0e86e83ea97d83de16992a3486820aad}{\+\_\+from\+\_\+scalars}} (cls, scalars, Dtype\+Obj \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ad701bec281a5599fa1385e6d2f2e707e}{\+\_\+from\+\_\+factorized}} (cls, values, original)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a858911ac4c4d16e3f40f46102893b6c0}{\+\_\+hasna}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a6458d77621109a438d3938cdf2c81f30}{\+\_\+values\+\_\+for\+\_\+argsort}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a7a78bc8bb0672809c9c5f44bf4f7061a}{\+\_\+pad\+\_\+or\+\_\+backfill}} (self, \texorpdfstring{$\ast$}{*}Fillna\+Options method, int\texorpdfstring{$\vert$}{|}None limit=None, Literal\mbox{[}"{}inside"{}, "{}outside"{}\mbox{]}\texorpdfstring{$\vert$}{|}None limit\+\_\+area=None, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_afcfd72e4a09281cb4aafadc2520cf984}{copy}}=True)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aade35f091d9ee06933e38f25f4d33ad5}{\+\_\+get\+\_\+repr\+\_\+footer}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a3dfe3536394268808ff86c753d322390}{\+\_\+repr\+\_\+2d}} (self)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, str\texorpdfstring{$\vert$}{|}None\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a99183b884f35ceed6d4aa324e3c03384}{\+\_\+formatter}} (self, bool boxed=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a45636cfe694f0c3d7e32550873f954cd}{\+\_\+concat\+\_\+same\+\_\+type}} (cls, Sequence\mbox{[}Self\mbox{]} to\+\_\+concat)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a032dba5f958be571034c6c62e59ea1ea}{\+\_\+can\+\_\+hold\+\_\+na}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a096aacab0a2472559cd7f739abb2537e}{\+\_\+accumulate}} (self, str name, \texorpdfstring{$\ast$}{*}bool skipna=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a432f9153db3a0b47c29c5aa7216e0fa3}{\+\_\+values\+\_\+for\+\_\+json}} (self)
+\item 
+npt.\+NDArray\mbox{[}np.\+uint64\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a2789197e5e4cac036128a38609021456}{\+\_\+hash\+\_\+pandas\+\_\+object}} (self, \texorpdfstring{$\ast$}{*}str encoding, str hash\+\_\+key, bool categorize)
+\item 
+tuple\mbox{[}Self, npt.\+NDArray\mbox{[}np.\+uint64\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a6578d3fcb5f8eb6c8de0a59c30d0cf4c}{\+\_\+explode}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a565af8c3a92683ddc2014b51cfda4fe1}{\+\_\+where}} (self, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, value)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a449f1068bb1e4f1392fd33e1413d2c6f}{\+\_\+fill\+\_\+mask\+\_\+inplace}} (self, str method, int\texorpdfstring{$\vert$}{|}None limit, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aac7abd317a4ba5ff0669a29f0ed108ba}{\+\_\+rank}} (self, \texorpdfstring{$\ast$}{*}Axis\+Int axis=0, str method="{}average"{}, str na\+\_\+option="{}keep"{}, bool ascending=True, bool pct=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ae678f738f1083466343d3b22dd6a4e8c}{\+\_\+quantile}} (self, npt.\+NDArray\mbox{[}np.\+float64\mbox{]} qs, str interpolation)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a24d53fc2fa3b7ea6ed0d9e35d8dc08c3}{\+\_\+mode}} (self, bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa2fc22e57a28a85735e82be3ae1a24c1}{dropna}}=True)
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_abed1dda2d3d57cd4a78e84b805251a27}{\+\_\+groupby\+\_\+op}} (self, \texorpdfstring{$\ast$}{*}str how, bool has\+\_\+dropped\+\_\+na, int min\+\_\+count, int ngroups, npt.\+NDArray\mbox{[}np.\+intp\mbox{]} ids, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_aa5e7bcb8d699ce67cc4d6ee69e120f15}{\+\_\+ndarray}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a6be5e99aea792cf7251c0c3a06998290}{\+\_\+typ}} = "{}extension"{}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a7fa035e20b2af2da4739e5c39494d1aa}{\+\_\+arith\+\_\+method}} = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_aff75ffd96dad49a060f1376a303c391d}{\+\_\+cmp\+\_\+method}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_afbd60b7db58a5acf5164affe686e5495}{\+\_\+str\+\_\+na\+\_\+value}} = libmissing.\+NA
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ad6899ed0cd2a3decce126fccf8810ee6}{\+\_\+typ}} = "{}extension"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ab47b4729ee6b6b01a80353a69b2e13ed}{shape}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa44f321d17926a05efaf1be22eb41ec3}{dtype}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Extension array for string data.
+
+.. warning::
+
+   StringArray is considered experimental. The implementation and
+   parts of the API may change without warning.
+
+Parameters
+----------
+values : array-like
+    The array of data.
+
+    .. warning::
+
+       Currently, this expects an object-dtype ndarray
+       where the elements are Python strings
+       or nan-likes (``None``, ``np.nan``, ``NA``).
+       This may change without warning in the future. Use
+       :meth:`pandas.array` with ``dtype="string"`` for a stable way of
+       creating a `StringArray` from any sequence.
+
+    .. versionchanged:: 1.5.0
+
+       StringArray now accepts array-likes containing
+       nan-likes(``None``, ``np.nan``) for the ``values`` parameter
+       in addition to strings and :attr:`pandas.NA`
+
+copy : bool, default False
+    Whether to copy the array of data.
+
+Attributes
+----------
+None
+
+Methods
+-------
+None
+
+See Also
+--------
+:func:`pandas.array`
+    The recommended function for creating a StringArray.
+Series.str
+    The string methods are available on Series backed by
+    a StringArray.
+
+Notes
+-----
+StringArray returns a BooleanArray for comparison methods.
+
+Examples
+--------
+>>> pd.array(['This is', 'some text', None, 'data.'], dtype="string")
+<StringArray>
+['This is', 'some text', <NA>, 'data.']
+Length: 4, dtype: string
+
+Unlike arrays instantiated with ``dtype="object"``, ``StringArray``
+will convert the values to strings.
+
+>>> pd.array(['1', 1], dtype="object")
+<NumpyExtensionArray>
+['1', 1]
+Length: 2, dtype: object
+>>> pd.array(['1', 1], dtype="string")
+<StringArray>
+['1', '1']
+Length: 2, dtype: string
+
+However, instantiating StringArrays directly with non-strings will raise an error.
+
+For comparison methods, `StringArray` returns a :class:`pandas.BooleanArray`:
+
+>>> pd.array(["a", None, "c"], dtype="string") == "a"
+<BooleanArray>
+[True, <NA>, False]
+Length: 3, dtype: boolean
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_ab02c8a73c8148ac30d7f4fdd2d29754f}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_ab02c8a73c8148ac30d7f4fdd2d29754f} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{values,  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a7e4d1444039cbf084452746e623f7446}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a7e4d1444039cbf084452746e623f7446} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_\_arrow\_array\_\_@{\_\_arrow\_array\_\_}}
+\index{\_\_arrow\_array\_\_@{\_\_arrow\_array\_\_}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_\_arrow\_array\_\_()}{\_\_arrow\_array\_\_()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+\+\_\+arrow\+\_\+array\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{type = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert myself into a pyarrow Array.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a9431c6054158987d615c0addb4d3bb94}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a9431c6054158987d615c0addb4d3bb94} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set one or more values inplace.
+
+This method is not required to satisfy the pandas extension array
+interface.
+
+Parameters
+----------
+key : int, ndarray, or slice
+    When called from, e.g. ``Series.__setitem__``, ``key`` will be
+    one of
+
+    * scalar int
+    * ndarray of integers.
+    * boolean ndarray
+    * slice object
+
+value : ExtensionDtype.type, Sequence[ExtensionDtype.type], or object
+    value or values to be set of ``key``.
+
+Returns
+-------
+None
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aeb2c8e736e03fba367d50194bd8bcae6}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_aff75ffd96dad49a060f1376a303c391d}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_aff75ffd96dad49a060f1376a303c391d} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_cmp\_method@{\_cmp\_method}}
+\index{\_cmp\_method@{\_cmp\_method}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_cmp\_method()}{\_cmp\_method()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+cmp\+\_\+method (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other,  }\item[{}]{op }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_abc19c05c62051965b88cd5b6cec80ae5}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_abc19c05c62051965b88cd5b6cec80ae5} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_empty@{\_empty}}
+\index{\_empty@{\_empty}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_empty()}{\_empty()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray}{String\+Array}} pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+empty (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{shape,  }\item[{}]{dtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create an ExtensionArray with the given shape and dtype.
+
+See also
+--------
+ExtensionDtype.empty
+    ExtensionDtype.empty is the 'official' public version of this API.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_abda3b599965964d64368952c06adb0b6}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a894f65cada79a42e75a30a5407c710a7}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a894f65cada79a42e75a30a5407c710a7} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_from\_sequence@{\_from\_sequence}}
+\index{\_from\_sequence@{\_from\_sequence}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_sequence()}{\_from\_sequence()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+from\+\_\+sequence (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{scalars,  }\item[{\texorpdfstring{$\ast$}{*}Dtype \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Construct a new ExtensionArray from a sequence of scalars.
+
+Parameters
+----------
+scalars : Sequence
+    Each element will be an instance of the scalar type for this
+    array, ``cls.dtype.type`` or be converted into this type in this method.
+dtype : dtype, optional
+    Construct for this particular dtype. This should be a Dtype
+    compatible with the ExtensionArray.
+copy : bool, default False
+    If True, copy the underlying data.
+
+Returns
+-------
+ExtensionArray
+
+Examples
+--------
+>>> pd.arrays.IntegerArray._from_sequence([4, 5])
+<IntegerArray>
+[4, 5]
+Length: 2, dtype: Int64
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ad339ce9af9d900b158fad6eb1e23f13b}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_af31c80668024fd296e9ee338eefeb44d}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_af31c80668024fd296e9ee338eefeb44d} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_from\_sequence\_of\_strings@{\_from\_sequence\_of\_strings}}
+\index{\_from\_sequence\_of\_strings@{\_from\_sequence\_of\_strings}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_from\_sequence\_of\_strings()}{\_from\_sequence\_of\_strings()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+from\+\_\+sequence\+\_\+of\+\_\+strings (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{strings,  }\item[{\texorpdfstring{$\ast$}{*}Dtype \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None},  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Construct a new ExtensionArray from a sequence of strings.
+
+Parameters
+----------
+strings : Sequence
+    Each element will be an instance of the scalar type for this
+    array, ``cls.dtype.type``.
+dtype : dtype, optional
+    Construct for this particular dtype. This should be a Dtype
+    compatible with the ExtensionArray.
+copy : bool, default False
+    If True, copy the underlying data.
+
+Returns
+-------
+ExtensionArray
+
+Examples
+--------
+>>> pd.arrays.IntegerArray._from_sequence_of_strings(["1", "2", "3"])
+<IntegerArray>
+[1, 2, 3]
+Length: 3, dtype: Int64
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_aa6be79d87c1aede83801a47df374a6fa}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a553d4b73af7ecd29ba5d9455ec0a2cc2}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a553d4b73af7ecd29ba5d9455ec0a2cc2} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_putmask@{\_putmask}}
+\index{\_putmask@{\_putmask}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_putmask()}{\_putmask()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+putmask (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}}]{mask,  }\item[{}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Analogue to np.putmask(self, mask, value)
+
+Parameters
+----------
+mask : np.ndarray[bool]
+value : scalar or listlike
+    If listlike, must be arraylike with same length as self.
+
+Returns
+-------
+None
+
+Notes
+-----
+Unlike np.putmask, we do not repeat listlike values with mismatched length.
+'value' should either be a scalar or an arraylike with the same length
+as self.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_ac11e1f55a33c8b20dc1fdc9a63ab64ed}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_abcdeb230d71396bc87e8d57465f56a92}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_abcdeb230d71396bc87e8d57465f56a92} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_reduce@{\_reduce}}
+\index{\_reduce@{\_reduce}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_reduce()}{\_reduce()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+reduce (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True},  }\item[{Axis\+Int \texorpdfstring{$\vert$}{|} None }]{keepdims = {\ttfamily 0},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a scalar result of performing the reduction operation.
+
+Parameters
+----------
+name : str
+    Name of the function, supported values are:
+    { any, all, min, max, sum, mean, median, prod,
+    std, var, sem, kurt, skew }.
+skipna : bool, default True
+    If True, skip NaN values.
+keepdims : bool, default False
+    If False, a scalar is returned.
+    If True, the result has dimension with size one along the reduced axis.
+
+    .. versionadded:: 2.1
+
+       This parameter is not required in the _reduce signature to keep backward
+       compatibility, but will become required in the future. If the parameter
+       is not found in the method signature, a FutureWarning will be emitted.
+**kwargs
+    Additional keyword arguments passed to the reduction function.
+    Currently, `ddof` is the only supported kwarg.
+
+Returns
+-------
+scalar
+
+Raises
+------
+TypeError : subclass does not define reductions
+
+Examples
+--------
+>>> pd.array([1, 2, 3])._reduce("min")
+1
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_acf16617fd7f84a32db28031564e79feb}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_afdd6a6471b73f3e94011b5daeed8a9b5}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_afdd6a6471b73f3e94011b5daeed8a9b5} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_str\_map@{\_str\_map}}
+\index{\_str\_map@{\_str\_map}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_str\_map()}{\_str\_map()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+str\+\_\+map (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f,  }\item[{}]{na\+\_\+value = {\ttfamily None},  }\item[{Dtype \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None},  }\item[{bool }]{convert = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a78a7d2006a7d00bd0b4d08bdc568e280}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a78a7d2006a7d00bd0b4d08bdc568e280} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_validate@{\_validate}}
+\index{\_validate@{\_validate}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_validate()}{\_validate()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+validate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Validate that we only store NA or strings.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a9d2740b74ee62f019cea9c0155aca768}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a9d2740b74ee62f019cea9c0155aca768} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_values\_for\_factorize@{\_values\_for\_factorize}}
+\index{\_values\_for\_factorize@{\_values\_for\_factorize}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_values\_for\_factorize()}{\_values\_for\_factorize()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+values\+\_\+for\+\_\+factorize (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return an array and missing value suitable for factorization.
+
+Returns
+-------
+values : ndarray
+    An array suitable for factorization. This should maintain order
+    and be a supported dtype (Float64, Int64, UInt64, String, Object).
+    By default, the extension array is cast to object dtype.
+na_value : object
+    The value in `values` to consider missing. This will be treated
+    as NA in the factorization routines, so it will be coded as
+    `-1` and not included in `uniques`. By default,
+    ``np.nan`` is used.
+
+Notes
+-----
+The values returned by this method are also used in
+:func:`pandas.util.hash_pandas_object`. If needed, this can be
+overridden in the ``self._hash_pandas_object()`` method.
+
+Examples
+--------
+>>> pd.array([1, 2, 3])._values_for_factorize()
+(array([1, 2, 3], dtype=object), nan)
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a2bfd4e7acb8cfccc76ae57515f7f9acc}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a8fe359e1c71d080415b51d7647cf3efe}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a8fe359e1c71d080415b51d7647cf3efe} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!astype@{astype}}
+\index{astype@{astype}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{astype()}{astype()}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+astype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype,  }\item[{bool }]{copy = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a9e3e28c28a32103d80d27fbfcf753a4f}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a34e84c8dcede259a8fdcdbe224dc503f}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a34e84c8dcede259a8fdcdbe224dc503f} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!max@{max}}
+\index{max@{max}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily  Scalar pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+max (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{axis = {\ttfamily None},  }\item[{bool }]{skipna = {\ttfamily True},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a0ced191f71f88f4e4cb165e421747d12}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a0ced191f71f88f4e4cb165e421747d12} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!memory\_usage@{memory\_usage}}
+\index{memory\_usage@{memory\_usage}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{memory\_usage()}{memory\_usage()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+memory\+\_\+usage (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{deep = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a60b24fb8221c425531a624c192ad998e}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a60b24fb8221c425531a624c192ad998e} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!min@{min}}
+\index{min@{min}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily  Scalar pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+min (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{axis = {\ttfamily None},  }\item[{bool }]{skipna = {\ttfamily True},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a255f4eb2b5b6fb94c805fa9684e17fa5}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a255f4eb2b5b6fb94c805fa9684e17fa5} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!searchsorted@{searchsorted}}
+\index{searchsorted@{searchsorted}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{searchsorted()}{searchsorted()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \texorpdfstring{$\vert$}{|} np.\+intp pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+searchsorted (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Numpy\+Value\+Array\+Like \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}}]{value,  }\item[{Literal\mbox{[}"{}left"{}, "{}right"{}\mbox{]} }]{side = {\ttfamily "{}left"{}},  }\item[{Numpy\+Sorter \texorpdfstring{$\vert$}{|} None }]{sorter = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find indices where elements should be inserted to maintain order.
+
+Find the indices into a sorted array `self` (a) such that, if the
+corresponding elements in `value` were inserted before the indices,
+the order of `self` would be preserved.
+
+Assuming that `self` is sorted:
+
+======  ================================
+`side`  returned index `i` satisfies
+======  ================================
+left    ``self[i-1] < value <= self[i]``
+right   ``self[i-1] <= value < self[i]``
+======  ================================
+
+Parameters
+----------
+value : array-like, list or scalar
+    Value(s) to insert into `self`.
+side : {'left', 'right'}, optional
+    If 'left', the index of the first suitable location found is given.
+    If 'right', return the last such index.  If there is no suitable
+    index, return either 0 or N (where N is the length of `self`).
+sorter : 1-D array-like, optional
+    Optional array of integer indices that sort array a into ascending
+    order. They are typically the result of argsort.
+
+Returns
+-------
+array of ints or int
+    If value is array-like, array of insertion points.
+    If value is scalar, a single integer.
+
+See Also
+--------
+numpy.searchsorted : Similar method from NumPy.
+
+Examples
+--------
+>>> arr = pd.array([1, 2, 3, 5])
+>>> arr.searchsorted([4])
+array([3])
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray_a147d1466998b2c94283043384f2ea8e9}{pandas.\+core.\+arrays.\+base.\+Extension\+Array}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a3a2fea21625f831176fb7d33d3ae90b9}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a3a2fea21625f831176fb7d33d3ae90b9} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!value\_counts@{value\_counts}}
+\index{value\_counts@{value\_counts}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{value\_counts()}{value\_counts()}}
+{\footnotesize\ttfamily  Series pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+value\+\_\+counts (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{dropna = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a7fa035e20b2af2da4739e5c39494d1aa}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a7fa035e20b2af2da4739e5c39494d1aa} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_arith\_method@{\_arith\_method}}
+\index{\_arith\_method@{\_arith\_method}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_arith\_method}{\_arith\_method}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+arith\+\_\+method = \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_aff75ffd96dad49a060f1376a303c391d}{\+\_\+cmp\+\_\+method}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_aa5e7bcb8d699ce67cc4d6ee69e120f15}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_aa5e7bcb8d699ce67cc4d6ee69e120f15} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_ndarray@{\_ndarray}}
+\index{\_ndarray@{\_ndarray}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_ndarray}{\_ndarray}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+ndarray\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_afbd60b7db58a5acf5164affe686e5495}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_afbd60b7db58a5acf5164affe686e5495} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_str\_na\_value@{\_str\_na\_value}}
+\index{\_str\_na\_value@{\_str\_na\_value}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_str\_na\_value}{\_str\_na\_value}}
+{\footnotesize\ttfamily pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+str\+\_\+na\+\_\+value = libmissing.\+NA\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a6be5e99aea792cf7251c0c3a06998290}\label{classpandas_1_1core_1_1arrays_1_1string___1_1StringArray_a6be5e99aea792cf7251c0c3a06998290} 
+\index{pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}!\_typ@{\_typ}}
+\index{\_typ@{\_typ}!pandas.core.arrays.string\_.StringArray@{pandas.core.arrays.string\_.StringArray}}
+\doxysubsubsection{\texorpdfstring{\_typ}{\_typ}}
+{\footnotesize\ttfamily str pandas.\+core.\+arrays.\+string\+\_\+.\+String\+Array.\+\_\+typ = "{}extension"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/arrays/\mbox{\hyperlink{string___8py}{string\+\_\+.\+py}}\end{DoxyCompactItemize}

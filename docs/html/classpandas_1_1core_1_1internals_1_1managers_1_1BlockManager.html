@@ -1,0 +1,1738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Poker_Project: Référence de la classe pandas.core.internals.managers.BlockManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Poker_Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacepandas.html">pandas</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1core.html">core</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1core_1_1internals.html">internals</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1core_1_1internals_1_1managers.html">managers</a></li><li class="navelem"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pub-static-attribs">Attributs publics statiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe pandas.core.internals.managers.BlockManager</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Graphe d'héritage de pandas.core.internals.managers.BlockManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager__inherit__graph.png" border="0" usemap="#apandas_8core_8internals_8managers_8BlockManager_inherit__map" alt="Inheritance graph"/></div>
+<map name="apandas_8core_8internals_8managers_8BlockManager_inherit__map" id="apandas_8core_8internals_8managers_8BlockManager_inherit__map">
+<area shape="rect" title=" " alt="" coords="106,343,341,383"/>
+<area shape="rect" title=" " alt="" coords="5,262,201,287"/>
+<area shape="poly" title=" " alt="" coords="132,293,198,340,195,345,129,298"/>
+<area shape="rect" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html" title=" " alt="" coords="226,255,461,295"/>
+<area shape="poly" title=" " alt="" coords="307,305,251,345,248,340,304,301"/>
+<area shape="rect" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html" title=" " alt="" coords="243,167,444,207"/>
+<area shape="poly" title=" " alt="" coords="346,221,346,254,341,254,341,221"/>
+<area shape="rect" href="classpandas_1_1core_1_1base_1_1PandasObject.html" title=" " alt="" coords="229,93,457,119"/>
+<area shape="poly" title=" " alt="" coords="346,132,346,167,341,167,341,132"/>
+<area shape="rect" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html" title=" " alt="" coords="251,5,435,45"/>
+<area shape="poly" title=" " alt="" coords="346,59,346,93,341,93,341,59"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de pandas.core.internals.managers.BlockManager:</div>
+<div class="dyncontent">
+<div class="center"><img src="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager__coll__graph.png" border="0" usemap="#apandas_8core_8internals_8managers_8BlockManager_coll__map" alt="Collaboration graph"/></div>
+<map name="apandas_8core_8internals_8managers_8BlockManager_coll__map" id="apandas_8core_8internals_8managers_8BlockManager_coll__map">
+<area shape="rect" title=" " alt="" coords="226,389,461,429"/>
+<area shape="rect" title=" " alt="" coords="5,294,201,319"/>
+<area shape="poly" title=" " alt="" coords="144,322,299,387,297,392,142,327"/>
+<area shape="rect" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html" title=" " alt="" coords="226,287,461,327"/>
+<area shape="poly" title=" " alt="" coords="346,341,346,389,341,389,341,341"/>
+<area shape="rect" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html" title=" " alt="" coords="52,169,253,209"/>
+<area shape="poly" title=" " alt="" coords="197,214,314,284,311,289,194,219"/>
+<area shape="rect" href="classpandas_1_1core_1_1base_1_1PandasObject.html" title=" " alt="" coords="39,95,267,120"/>
+<area shape="poly" title=" " alt="" coords="155,134,155,169,150,169,150,134"/>
+<area shape="rect" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html" title=" " alt="" coords="61,5,245,45"/>
+<area shape="poly" title=" " alt="" coords="155,59,155,94,150,94,150,59"/>
+<area shape="rect" title=" " alt="" coords="278,177,321,202"/>
+<area shape="poly" title=" " alt="" coords="298,216,298,239,303,262,320,285,316,288,298,264,293,239,293,216"/>
+<area shape="rect" title=" " alt="" coords="362,177,413,202"/>
+<area shape="poly" title=" " alt="" coords="380,216,353,287,348,285,375,214"/>
+<area shape="rect" title=" " alt="" coords="536,177,583,202"/>
+<area shape="poly" title=" " alt="" coords="554,216,540,242,520,265,492,281,462,293,460,288,490,277,516,261,536,239,549,214"/>
+<area shape="rect" title=" " alt="" coords="484,294,523,319"/>
+<area shape="poly" title=" " alt="" coords="475,329,375,391,372,387,472,324"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a2682563def60c18ddcf1e060d27f01f5" id="r_a2682563def60c18ddcf1e060d27f01f5"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a2682563def60c18ddcf1e060d27f01f5">__init__</a> (self, Sequence[<a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>] <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#abd3f959068db16435fe5413976a996d9">blocks</a>, Sequence[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>] <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a0728337a4e7dda6f57b1476c59b68ea9">axes</a>, bool verify_integrity=True)</td></tr>
+<tr class="separator:a2682563def60c18ddcf1e060d27f01f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e53f699c1564da65acacabf0c2fe91" id="r_a53e53f699c1564da65acacabf0c2fe91"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a53e53f699c1564da65acacabf0c2fe91">from_blocks</a> (cls, list[<a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>] <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#abd3f959068db16435fe5413976a996d9">blocks</a>, list[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>] <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a0728337a4e7dda6f57b1476c59b68ea9">axes</a>)</td></tr>
+<tr class="separator:a53e53f699c1564da65acacabf0c2fe91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068d57e985e652eef5316d3ecc96adbe" id="r_a068d57e985e652eef5316d3ecc96adbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1SingleBlockManager.html">SingleBlockManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a068d57e985e652eef5316d3ecc96adbe">fast_xs</a> (self, int loc)</td></tr>
+<tr class="separator:a068d57e985e652eef5316d3ecc96adbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9397ed069e4b6cb61c907ada4f691b6" id="r_ad9397ed069e4b6cb61c907ada4f691b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1SingleBlockManager.html">SingleBlockManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ad9397ed069e4b6cb61c907ada4f691b6">iget</a> (self, int i, bool track_ref=True)</td></tr>
+<tr class="separator:ad9397ed069e4b6cb61c907ada4f691b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d135562c95b875224f5a28114fbbb5" id="r_ac8d135562c95b875224f5a28114fbbb5"><td class="memItemLeft" align="right" valign="top">ArrayLike&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ac8d135562c95b875224f5a28114fbbb5">iget_values</a> (self, int i)</td></tr>
+<tr class="separator:ac8d135562c95b875224f5a28114fbbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae348cf2ec58f0c0f6da37d2b336d1bea" id="r_ae348cf2ec58f0c0f6da37d2b336d1bea"><td class="memItemLeft" align="right" valign="top">list[np.ndarray]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ae348cf2ec58f0c0f6da37d2b336d1bea">column_arrays</a> (self)</td></tr>
+<tr class="separator:ae348cf2ec58f0c0f6da37d2b336d1bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb4f5e3454df9164c2842b7dbc6611d" id="r_adfb4f5e3454df9164c2842b7dbc6611d"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#adfb4f5e3454df9164c2842b7dbc6611d">iset</a> (self, int|slice|np.ndarray loc, ArrayLike value, bool inplace=False, BlockValuesRefs|None refs=None)</td></tr>
+<tr class="separator:adfb4f5e3454df9164c2842b7dbc6611d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a87c3714f76fb54b5b4c516822d789f" id="r_a8a87c3714f76fb54b5b4c516822d789f"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a8a87c3714f76fb54b5b4c516822d789f">column_setitem</a> (self, int loc, int|slice|np.ndarray idx, value, bool inplace_only=False)</td></tr>
+<tr class="separator:a8a87c3714f76fb54b5b4c516822d789f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59923d0eb6e035b6e043fe9e5f8ae96" id="r_aa59923d0eb6e035b6e043fe9e5f8ae96"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#aa59923d0eb6e035b6e043fe9e5f8ae96">insert</a> (self, int loc, Hashable item, ArrayLike value, refs=None)</td></tr>
+<tr class="separator:aa59923d0eb6e035b6e043fe9e5f8ae96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193fc0d2f1422929962f0654684c2acf" id="r_a193fc0d2f1422929962f0654684c2acf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a193fc0d2f1422929962f0654684c2acf">idelete</a> (self, indexer)</td></tr>
+<tr class="separator:a193fc0d2f1422929962f0654684c2acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773f529f4bba4107ffe18ac0e6631395" id="r_a773f529f4bba4107ffe18ac0e6631395"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a773f529f4bba4107ffe18ac0e6631395">grouped_reduce</a> (self, Callable func)</td></tr>
+<tr class="separator:a773f529f4bba4107ffe18ac0e6631395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd3276e3860731c24b86a13b93c9d48" id="r_accd3276e3860731c24b86a13b93c9d48"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#accd3276e3860731c24b86a13b93c9d48">reduce</a> (self, Callable func)</td></tr>
+<tr class="separator:accd3276e3860731c24b86a13b93c9d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c79d8076df86e9f32f98267436c0a1c" id="r_a0c79d8076df86e9f32f98267436c0a1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a0c79d8076df86e9f32f98267436c0a1c">operate_blockwise</a> (self, <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a> other, array_op)</td></tr>
+<tr class="separator:a0c79d8076df86e9f32f98267436c0a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8ae227da64321c956d8c43a83455cf" id="r_a3e8ae227da64321c956d8c43a83455cf"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a3e8ae227da64321c956d8c43a83455cf">quantile</a> (self, *<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> qs, QuantileInterpolation interpolation=&quot;linear&quot;)</td></tr>
+<tr class="separator:a3e8ae227da64321c956d8c43a83455cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156ba860aedb652d9349b55b1c84466a" id="r_a156ba860aedb652d9349b55b1c84466a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a156ba860aedb652d9349b55b1c84466a">unstack</a> (self, unstacker, fill_value)</td></tr>
+<tr class="separator:a156ba860aedb652d9349b55b1c84466a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addea99b88a583a5d043276dfeda3b822" id="r_addea99b88a583a5d043276dfeda3b822"><td class="memItemLeft" align="right" valign="top">dict[str, Self]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#addea99b88a583a5d043276dfeda3b822">to_dict</a> (self)</td></tr>
+<tr class="separator:addea99b88a583a5d043276dfeda3b822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a860b1cd5305920daa1c3e6404cc23" id="r_a49a860b1cd5305920daa1c3e6404cc23"><td class="memItemLeft" align="right" valign="top">np.ndarray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a49a860b1cd5305920daa1c3e6404cc23">as_array</a> (self, np.dtype|None dtype=None, bool <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a73ea3a217a6f4055362676a5db95366a">copy</a>=False, object na_value=lib.no_default)</td></tr>
+<tr class="separator:a49a860b1cd5305920daa1c3e6404cc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8596d26a1ac221fd81d931e59ecaa9f" id="r_ae8596d26a1ac221fd81d931e59ecaa9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ae8596d26a1ac221fd81d931e59ecaa9f">is_consolidated</a> (self)</td></tr>
+<tr class="separator:ae8596d26a1ac221fd81d931e59ecaa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fd60c61621dd9eb34ba7d55a680afa" id="r_a66fd60c61621dd9eb34ba7d55a680afa"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a66fd60c61621dd9eb34ba7d55a680afa">concat_horizontal</a> (cls, list[Self] mgrs, list[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>] <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a0728337a4e7dda6f57b1476c59b68ea9">axes</a>)</td></tr>
+<tr class="separator:a66fd60c61621dd9eb34ba7d55a680afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cb3b8652a3ba08e0afc2834e36c463" id="r_a22cb3b8652a3ba08e0afc2834e36c463"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a22cb3b8652a3ba08e0afc2834e36c463">concat_vertical</a> (cls, list[Self] mgrs, list[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>] <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a0728337a4e7dda6f57b1476c59b68ea9">axes</a>)</td></tr>
+<tr class="separator:a22cb3b8652a3ba08e0afc2834e36c463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html">pandas.core.internals.managers.BaseBlockManager</a></td></tr>
+<tr class="memitem:a8f2c6c67640484452e7ba20e797f4dea inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a8f2c6c67640484452e7ba20e797f4dea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a8f2c6c67640484452e7ba20e797f4dea">ndim</a> (self)</td></tr>
+<tr class="separator:a8f2c6c67640484452e7ba20e797f4dea inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2452fb9ffc7f965032c23fc846fc910a inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a2452fb9ffc7f965032c23fc846fc910a"><td class="memItemLeft" align="right" valign="top">npt.NDArray[np.intp]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a2452fb9ffc7f965032c23fc846fc910a">blknos</a> (self)</td></tr>
+<tr class="separator:a2452fb9ffc7f965032c23fc846fc910a inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8762b7a07538acbbd53cbaf2eb42e0e inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_af8762b7a07538acbbd53cbaf2eb42e0e"><td class="memItemLeft" align="right" valign="top">npt.NDArray[np.intp]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#af8762b7a07538acbbd53cbaf2eb42e0e">blklocs</a> (self)</td></tr>
+<tr class="separator:af8762b7a07538acbbd53cbaf2eb42e0e inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0049a84ca6272ddf814f59bc2fd4765 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_aa0049a84ca6272ddf814f59bc2fd4765"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#aa0049a84ca6272ddf814f59bc2fd4765">make_empty</a> (self, <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a35887c9cc7ce64a2148f0712a76f5048">axes</a>=None)</td></tr>
+<tr class="separator:aa0049a84ca6272ddf814f59bc2fd4765 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6adc7a9727d9b5eceda8c72178ceebf inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_ae6adc7a9727d9b5eceda8c72178ceebf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#ae6adc7a9727d9b5eceda8c72178ceebf">__nonzero__</a> (self)</td></tr>
+<tr class="separator:ae6adc7a9727d9b5eceda8c72178ceebf inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990f768193ae96378c53270d4386198f inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a990f768193ae96378c53270d4386198f"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a990f768193ae96378c53270d4386198f">set_axis</a> (self, AxisInt axis, <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> new_labels)</td></tr>
+<tr class="separator:a990f768193ae96378c53270d4386198f inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d343555575dcb53790f7fc8c069a85d inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a8d343555575dcb53790f7fc8c069a85d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a8d343555575dcb53790f7fc8c069a85d">is_single_block</a> (self)</td></tr>
+<tr class="separator:a8d343555575dcb53790f7fc8c069a85d inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136bebfcfc166fe7e1bb5d1b6f25bd7b inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a136bebfcfc166fe7e1bb5d1b6f25bd7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a136bebfcfc166fe7e1bb5d1b6f25bd7b">items</a> (self)</td></tr>
+<tr class="separator:a136bebfcfc166fe7e1bb5d1b6f25bd7b inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2379ddda3c5a231840cb0d6339123d48 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a2379ddda3c5a231840cb0d6339123d48"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a2379ddda3c5a231840cb0d6339123d48">add_references</a> (self, <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html">BaseBlockManager</a> mgr)</td></tr>
+<tr class="separator:a2379ddda3c5a231840cb0d6339123d48 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccd4310c502d2b0c632778e4dbae623 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_abccd4310c502d2b0c632778e4dbae623"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#abccd4310c502d2b0c632778e4dbae623">references_same_values</a> (self, <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html">BaseBlockManager</a> mgr, int blkno)</td></tr>
+<tr class="separator:abccd4310c502d2b0c632778e4dbae623 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb3c6bba4fd5911d1bb4a5e5c338975 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_aebb3c6bba4fd5911d1bb4a5e5c338975"><td class="memItemLeft" align="right" valign="top">npt.NDArray[np.object_]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#aebb3c6bba4fd5911d1bb4a5e5c338975">get_dtypes</a> (self)</td></tr>
+<tr class="separator:aebb3c6bba4fd5911d1bb4a5e5c338975 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a5e948f4f0147979b5f72f27030dd6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_ac6a5e948f4f0147979b5f72f27030dd6"><td class="memItemLeft" align="right" valign="top">list[ArrayLike]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#ac6a5e948f4f0147979b5f72f27030dd6">arrays</a> (self)</td></tr>
+<tr class="separator:ac6a5e948f4f0147979b5f72f27030dd6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec2b8dd91f7de50fdfaf4300ad22e15 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a1ec2b8dd91f7de50fdfaf4300ad22e15"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a1ec2b8dd91f7de50fdfaf4300ad22e15">__repr__</a> (self)</td></tr>
+<tr class="separator:a1ec2b8dd91f7de50fdfaf4300ad22e15 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46c2a10e03140830b34c8f2b847e353 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_aa46c2a10e03140830b34c8f2b847e353"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#aa46c2a10e03140830b34c8f2b847e353">apply</a> (self, f, list[str]|None align_keys=None, **kwargs)</td></tr>
+<tr class="separator:aa46c2a10e03140830b34c8f2b847e353 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4aa33e915351483a8598029f79b1735 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_ac4aa33e915351483a8598029f79b1735"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#ac4aa33e915351483a8598029f79b1735">setitem</a> (self, indexer, value, bool warn=True)</td></tr>
+<tr class="separator:ac4aa33e915351483a8598029f79b1735 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93569179d36863da12e40198bcdeb00e inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a93569179d36863da12e40198bcdeb00e"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a93569179d36863da12e40198bcdeb00e">diff</a> (self, int n)</td></tr>
+<tr class="separator:a93569179d36863da12e40198bcdeb00e inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397faa0f7c0b88a254d49a3a4adb96d6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a397faa0f7c0b88a254d49a3a4adb96d6"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a397faa0f7c0b88a254d49a3a4adb96d6">astype</a> (self, dtype, bool|None <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a73ea3a217a6f4055362676a5db95366a">copy</a>=False, str errors=&quot;raise&quot;)</td></tr>
+<tr class="separator:a397faa0f7c0b88a254d49a3a4adb96d6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c7be4e0854cc0c50895d623361f672 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a53c7be4e0854cc0c50895d623361f672"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a53c7be4e0854cc0c50895d623361f672">convert</a> (self, bool|None <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a73ea3a217a6f4055362676a5db95366a">copy</a>)</td></tr>
+<tr class="separator:a53c7be4e0854cc0c50895d623361f672 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0102d429acb5672c49c2192901aff101 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a0102d429acb5672c49c2192901aff101"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a0102d429acb5672c49c2192901aff101">convert_dtypes</a> (self, **kwargs)</td></tr>
+<tr class="separator:a0102d429acb5672c49c2192901aff101 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cad43e9e4455a06eacbf56a8d27644 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_af5cad43e9e4455a06eacbf56a8d27644"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#af5cad43e9e4455a06eacbf56a8d27644">get_values_for_csv</a> (self, *float_format, date_format, decimal, str na_rep=&quot;nan&quot;, quoting=None)</td></tr>
+<tr class="separator:af5cad43e9e4455a06eacbf56a8d27644 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6c11fcf7a9dd2bbff84d5362947a6e inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a5d6c11fcf7a9dd2bbff84d5362947a6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a5d6c11fcf7a9dd2bbff84d5362947a6e">any_extension_types</a> (self)</td></tr>
+<tr class="separator:a5d6c11fcf7a9dd2bbff84d5362947a6e inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7363a1ce6d725371a9242253f7efa4e9 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a7363a1ce6d725371a9242253f7efa4e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a7363a1ce6d725371a9242253f7efa4e9">is_view</a> (self)</td></tr>
+<tr class="separator:a7363a1ce6d725371a9242253f7efa4e9 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326f7636995b64f0187dc396db91327b inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a326f7636995b64f0187dc396db91327b"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a326f7636995b64f0187dc396db91327b">get_bool_data</a> (self)</td></tr>
+<tr class="separator:a326f7636995b64f0187dc396db91327b inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f50dc3b6ead61a9771e08873fbae483 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a2f50dc3b6ead61a9771e08873fbae483"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a2f50dc3b6ead61a9771e08873fbae483">get_numeric_data</a> (self)</td></tr>
+<tr class="separator:a2f50dc3b6ead61a9771e08873fbae483 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192a28798991c8528cf1b3b541619fa0 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a192a28798991c8528cf1b3b541619fa0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a192a28798991c8528cf1b3b541619fa0">nblocks</a> (self)</td></tr>
+<tr class="separator:a192a28798991c8528cf1b3b541619fa0 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ea3a217a6f4055362676a5db95366a inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a73ea3a217a6f4055362676a5db95366a"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a73ea3a217a6f4055362676a5db95366a">copy</a> (self, bool|None|Literal[&quot;all&quot;] deep=True)</td></tr>
+<tr class="separator:a73ea3a217a6f4055362676a5db95366a inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8974af88e578d0969e38760c1cbe5120 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a8974af88e578d0969e38760c1cbe5120"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a8974af88e578d0969e38760c1cbe5120">consolidate</a> (self)</td></tr>
+<tr class="separator:a8974af88e578d0969e38760c1cbe5120 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f401102fec3a5b5e935d6aa8587809 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_ac9f401102fec3a5b5e935d6aa8587809"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#ac9f401102fec3a5b5e935d6aa8587809">reindex_indexer</a> (self, <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> new_axis, npt.NDArray[np.intp]|None indexer, AxisInt axis, fill_value=None, bool allow_dups=False, bool|None <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a73ea3a217a6f4055362676a5db95366a">copy</a>=True, bool only_slice=False, *bool use_na_proxy=False)</td></tr>
+<tr class="separator:ac9f401102fec3a5b5e935d6aa8587809 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffcbb0cee926d4297fe8dfbb7e05d62 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a1ffcbb0cee926d4297fe8dfbb7e05d62"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a1ffcbb0cee926d4297fe8dfbb7e05d62">take</a> (self, npt.NDArray[np.intp] indexer, AxisInt axis=1, bool verify=True)</td></tr>
+<tr class="separator:a1ffcbb0cee926d4297fe8dfbb7e05d62 inherit pub_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html">pandas.core.internals.base.DataManager</a></td></tr>
+<tr class="memitem:a421b7b9e29e2b2e51835759705c2e6e6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a421b7b9e29e2b2e51835759705c2e6e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a421b7b9e29e2b2e51835759705c2e6e6">__len__</a> (self)</td></tr>
+<tr class="separator:a421b7b9e29e2b2e51835759705c2e6e6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8086a42386ca4f1b4a9df9a5cef2ab inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a8e8086a42386ca4f1b4a9df9a5cef2ab"><td class="memItemLeft" align="right" valign="top">Shape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a8e8086a42386ca4f1b4a9df9a5cef2ab">shape</a> (self)</td></tr>
+<tr class="separator:a8e8086a42386ca4f1b4a9df9a5cef2ab inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba58cf9903e830e842422086943ad3f0 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_aba58cf9903e830e842422086943ad3f0"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#aba58cf9903e830e842422086943ad3f0">reindex_axis</a> (self, <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> new_index, AxisInt axis, fill_value=None, bool only_slice=False)</td></tr>
+<tr class="separator:aba58cf9903e830e842422086943ad3f0 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30147ad1b074c028fd9646fe9870c7f inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_aa30147ad1b074c028fd9646fe9870c7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#aa30147ad1b074c028fd9646fe9870c7f">equals</a> (self, object other)</td></tr>
+<tr class="separator:aa30147ad1b074c028fd9646fe9870c7f inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31ca7f2d44ba8253ea9b183e564f85f inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_ad31ca7f2d44ba8253ea9b183e564f85f"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#ad31ca7f2d44ba8253ea9b183e564f85f">apply_with_block</a> (self, f, list[str]|None align_keys=None, **kwargs)</td></tr>
+<tr class="separator:ad31ca7f2d44ba8253ea9b183e564f85f inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8c4d91ad71a8293eb8fa89665c244a inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_aae8c4d91ad71a8293eb8fa89665c244a"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#aae8c4d91ad71a8293eb8fa89665c244a">isna</a> (self, func)</td></tr>
+<tr class="separator:aae8c4d91ad71a8293eb8fa89665c244a inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3209c2535e397f584cef6f053a328a6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_aa3209c2535e397f584cef6f053a328a6"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#aa3209c2535e397f584cef6f053a328a6">fillna</a> (self, value, int|None limit, bool inplace, downcast)</td></tr>
+<tr class="separator:aa3209c2535e397f584cef6f053a328a6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67eae919c5e4eed7b6f86a5d38cc7e6a inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a67eae919c5e4eed7b6f86a5d38cc7e6a"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a67eae919c5e4eed7b6f86a5d38cc7e6a">where</a> (self, other, cond, bool align)</td></tr>
+<tr class="separator:a67eae919c5e4eed7b6f86a5d38cc7e6a inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26e7ef0079b00fab675762604724251 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_af26e7ef0079b00fab675762604724251"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#af26e7ef0079b00fab675762604724251">putmask</a> (self, mask, new, bool align=True, bool warn=True)</td></tr>
+<tr class="separator:af26e7ef0079b00fab675762604724251 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82def08c47bebea15a3a8eb3095d53f0 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a82def08c47bebea15a3a8eb3095d53f0"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a82def08c47bebea15a3a8eb3095d53f0">round</a> (self, int decimals, bool using_cow=False)</td></tr>
+<tr class="separator:a82def08c47bebea15a3a8eb3095d53f0 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600d4d900d208071df27f76310d2aec3 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a600d4d900d208071df27f76310d2aec3"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a600d4d900d208071df27f76310d2aec3">replace</a> (self, to_replace, value, bool inplace)</td></tr>
+<tr class="separator:a600d4d900d208071df27f76310d2aec3 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3767cb9ac0de59c73aed0f746488b7b inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_aa3767cb9ac0de59c73aed0f746488b7b"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#aa3767cb9ac0de59c73aed0f746488b7b">replace_regex</a> (self, **kwargs)</td></tr>
+<tr class="separator:aa3767cb9ac0de59c73aed0f746488b7b inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6828b48573cdfe26528ef4f7831494 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a7b6828b48573cdfe26528ef4f7831494"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a7b6828b48573cdfe26528ef4f7831494">replace_list</a> (self, list[Any] src_list, list[Any] dest_list, bool inplace=False, bool regex=False)</td></tr>
+<tr class="separator:a7b6828b48573cdfe26528ef4f7831494 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2d6191da795be4ff1206b3f7becc1b inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a7a2d6191da795be4ff1206b3f7becc1b"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a7a2d6191da795be4ff1206b3f7becc1b">interpolate</a> (self, bool inplace, **kwargs)</td></tr>
+<tr class="separator:a7a2d6191da795be4ff1206b3f7becc1b inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6493df923651f5adb20c1c24aae9a6f3 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a6493df923651f5adb20c1c24aae9a6f3"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a6493df923651f5adb20c1c24aae9a6f3">pad_or_backfill</a> (self, bool inplace, **kwargs)</td></tr>
+<tr class="separator:a6493df923651f5adb20c1c24aae9a6f3 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81316e1f6dc1a45d2140d27425e62b6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_aa81316e1f6dc1a45d2140d27425e62b6"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#aa81316e1f6dc1a45d2140d27425e62b6">shift</a> (self, int periods, fill_value)</td></tr>
+<tr class="separator:aa81316e1f6dc1a45d2140d27425e62b6 inherit pub_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpandas_1_1core_1_1base_1_1PandasObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpandas_1_1core_1_1base_1_1PandasObject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="classpandas_1_1core_1_1base_1_1PandasObject.html">pandas.core.base.PandasObject</a></td></tr>
+<tr class="memitem:ad5b15e942fb2d2dcfb12fa1667404aeb inherit pub_methods_classpandas_1_1core_1_1base_1_1PandasObject" id="r_ad5b15e942fb2d2dcfb12fa1667404aeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1base_1_1PandasObject.html#ad5b15e942fb2d2dcfb12fa1667404aeb">__sizeof__</a> (self)</td></tr>
+<tr class="separator:ad5b15e942fb2d2dcfb12fa1667404aeb inherit pub_methods_classpandas_1_1core_1_1base_1_1PandasObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html">pandas.core.accessor.DirNamesMixin</a></td></tr>
+<tr class="memitem:ac86361dc5b262c58dcdf818d410136e4 inherit pub_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin" id="r_ac86361dc5b262c58dcdf818d410136e4"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html#ac86361dc5b262c58dcdf818d410136e4">__dir__</a> (self)</td></tr>
+<tr class="separator:ac86361dc5b262c58dcdf818d410136e4 inherit pub_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:a0728337a4e7dda6f57b1476c59b68ea9" id="r_a0728337a4e7dda6f57b1476c59b68ea9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a0728337a4e7dda6f57b1476c59b68ea9">axes</a></td></tr>
+<tr class="separator:a0728337a4e7dda6f57b1476c59b68ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e55cc1ecadf622bc1b63fe3385c7d9" id="r_ab7e55cc1ecadf622bc1b63fe3385c7d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ab7e55cc1ecadf622bc1b63fe3385c7d9">items</a></td></tr>
+<tr class="separator:ab7e55cc1ecadf622bc1b63fe3385c7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3f959068db16435fe5413976a996d9" id="r_abd3f959068db16435fe5413976a996d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#abd3f959068db16435fe5413976a996d9">blocks</a></td></tr>
+<tr class="separator:abd3f959068db16435fe5413976a996d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b2b59e56c387f72727701992af75f0" id="r_a20b2b59e56c387f72727701992af75f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a20b2b59e56c387f72727701992af75f0">blklocs</a></td></tr>
+<tr class="separator:a20b2b59e56c387f72727701992af75f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f5348449b7a8bd9b22dc64abeac1cd" id="r_ac9f5348449b7a8bd9b22dc64abeac1cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ac9f5348449b7a8bd9b22dc64abeac1cd">blknos</a></td></tr>
+<tr class="separator:ac9f5348449b7a8bd9b22dc64abeac1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83c184bfe281924af4ab2e22f522ebe" id="r_aa83c184bfe281924af4ab2e22f522ebe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#aa83c184bfe281924af4ab2e22f522ebe">ndim</a></td></tr>
+<tr class="separator:aa83c184bfe281924af4ab2e22f522ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager')"><img src="closed.png" alt="-"/>&#160;Attributs publics hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html">pandas.core.internals.managers.BaseBlockManager</a></td></tr>
+<tr class="memitem:adefd1c9cd461f078c1f15053fb678bb4 inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_adefd1c9cd461f078c1f15053fb678bb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#adefd1c9cd461f078c1f15053fb678bb4">ndim</a></td></tr>
+<tr class="separator:adefd1c9cd461f078c1f15053fb678bb4 inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0618dd70a7329b781b2bd37922f77a6c inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a0618dd70a7329b781b2bd37922f77a6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a0618dd70a7329b781b2bd37922f77a6c">blocks</a></td></tr>
+<tr class="separator:a0618dd70a7329b781b2bd37922f77a6c inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30da491c666773d486db5c4289a2c52e inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a30da491c666773d486db5c4289a2c52e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a30da491c666773d486db5c4289a2c52e">blknos</a></td></tr>
+<tr class="separator:a30da491c666773d486db5c4289a2c52e inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbde93bbb62f71a793662c9cffa251d inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_afdbde93bbb62f71a793662c9cffa251d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#afdbde93bbb62f71a793662c9cffa251d">axes</a></td></tr>
+<tr class="separator:afdbde93bbb62f71a793662c9cffa251d inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbda054845988bd0fd12f17c0bf1c36 inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a6dbda054845988bd0fd12f17c0bf1c36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a6dbda054845988bd0fd12f17c0bf1c36">blklocs</a></td></tr>
+<tr class="separator:a6dbda054845988bd0fd12f17c0bf1c36 inherit pub_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classpandas_1_1core_1_1internals_1_1base_1_1DataManager')"><img src="closed.png" alt="-"/>&#160;Attributs publics hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html">pandas.core.internals.base.DataManager</a></td></tr>
+<tr class="memitem:adc7f2e474ee1250f32516e2d76358696 inherit pub_attribs_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_adc7f2e474ee1250f32516e2d76358696"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#adc7f2e474ee1250f32516e2d76358696">axes</a></td></tr>
+<tr class="separator:adc7f2e474ee1250f32516e2d76358696 inherit pub_attribs_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Attributs publics statiques</h2></td></tr>
+<tr class="memitem:a4e2f5ececda3beebee4b0711012800fc" id="r_a4e2f5ececda3beebee4b0711012800fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a4e2f5ececda3beebee4b0711012800fc">ndim</a> = 2</td></tr>
+<tr class="separator:a4e2f5ececda3beebee4b0711012800fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager')"><img src="closed.png" alt="-"/>&#160;Attributs publics statiques hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html">pandas.core.internals.managers.BaseBlockManager</a></td></tr>
+<tr class="memitem:a70f1f9cd4233d3316c67b0816cd7cbd7 inherit pub_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a70f1f9cd4233d3316c67b0816cd7cbd7"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a70f1f9cd4233d3316c67b0816cd7cbd7">blocks</a> [<a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>, ...]</td></tr>
+<tr class="separator:a70f1f9cd4233d3316c67b0816cd7cbd7 inherit pub_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35887c9cc7ce64a2148f0712a76f5048 inherit pub_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a35887c9cc7ce64a2148f0712a76f5048"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a35887c9cc7ce64a2148f0712a76f5048">axes</a> [<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>]</td></tr>
+<tr class="separator:a35887c9cc7ce64a2148f0712a76f5048 inherit pub_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83aadf66ce9627d8737b88c65a5be763 inherit pub_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a83aadf66ce9627d8737b88c65a5be763"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a83aadf66ce9627d8737b88c65a5be763">apply_with_block</a> = <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#aa46c2a10e03140830b34c8f2b847e353">apply</a></td></tr>
+<tr class="separator:a83aadf66ce9627d8737b88c65a5be763 inherit pub_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classpandas_1_1core_1_1internals_1_1base_1_1DataManager')"><img src="closed.png" alt="-"/>&#160;Attributs publics statiques hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html">pandas.core.internals.base.DataManager</a></td></tr>
+<tr class="memitem:a961d8bfe89889f6e654a5135be1e4783 inherit pub_static_attribs_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a961d8bfe89889f6e654a5135be1e4783"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a961d8bfe89889f6e654a5135be1e4783">axes</a> [<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>]</td></tr>
+<tr class="separator:a961d8bfe89889f6e654a5135be1e4783 inherit pub_static_attribs_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:a2d590ea3dca9aeabff9e5a7bae5ec80a" id="r_a2d590ea3dca9aeabff9e5a7bae5ec80a"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a2d590ea3dca9aeabff9e5a7bae5ec80a">_verify_integrity</a> (self)</td></tr>
+<tr class="separator:a2d590ea3dca9aeabff9e5a7bae5ec80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0eb477021824b52cbc6fdda9e732eaa" id="r_ac0eb477021824b52cbc6fdda9e732eaa"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ac0eb477021824b52cbc6fdda9e732eaa">_iset_split_block</a> (self, int blkno_l, np.ndarray|list[int] blk_locs, ArrayLike|None value=None, BlockValuesRefs|None refs=None)</td></tr>
+<tr class="separator:ac0eb477021824b52cbc6fdda9e732eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9217c28741bbd4a689e950bac7aeb95e" id="r_a9217c28741bbd4a689e950bac7aeb95e"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a9217c28741bbd4a689e950bac7aeb95e">_iset_single</a> (self, int loc, ArrayLike value, bool inplace, int blkno, <a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a> blk, BlockValuesRefs|None refs=None)</td></tr>
+<tr class="separator:a9217c28741bbd4a689e950bac7aeb95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb9f0a89c01ac61f6a27bdeff684d75e" id="r_acb9f0a89c01ac61f6a27bdeff684d75e"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#acb9f0a89c01ac61f6a27bdeff684d75e">_insert_update_mgr_locs</a> (self, loc)</td></tr>
+<tr class="separator:acb9f0a89c01ac61f6a27bdeff684d75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16ae9d0414dcb1964fcef71f4990a61" id="r_ad16ae9d0414dcb1964fcef71f4990a61"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ad16ae9d0414dcb1964fcef71f4990a61">_insert_update_blklocs_and_blknos</a> (self, loc)</td></tr>
+<tr class="separator:ad16ae9d0414dcb1964fcef71f4990a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49cbec3485eb30c74028934d57849d3" id="r_ad49cbec3485eb30c74028934d57849d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ad49cbec3485eb30c74028934d57849d3">_equal_values</a> (<a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a> self, <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a> other)</td></tr>
+<tr class="separator:ad49cbec3485eb30c74028934d57849d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa846c3993140f95e28502b360dc96bb9" id="r_aa846c3993140f95e28502b360dc96bb9"><td class="memItemLeft" align="right" valign="top">np.ndarray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#aa846c3993140f95e28502b360dc96bb9">_interleave</a> (self, np.dtype|None dtype=None, object na_value=lib.no_default)</td></tr>
+<tr class="separator:aa846c3993140f95e28502b360dc96bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e1feedc6422ded433a454feb1e2d7a" id="r_a45e1feedc6422ded433a454feb1e2d7a"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a45e1feedc6422ded433a454feb1e2d7a">_consolidate_check</a> (self)</td></tr>
+<tr class="separator:a45e1feedc6422ded433a454feb1e2d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f3b70a49f36816cbc692451c8e4ea9" id="r_a10f3b70a49f36816cbc692451c8e4ea9"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a10f3b70a49f36816cbc692451c8e4ea9">_consolidate_inplace</a> (self)</td></tr>
+<tr class="separator:a10f3b70a49f36816cbc692451c8e4ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html">pandas.core.internals.managers.BaseBlockManager</a></td></tr>
+<tr class="memitem:a53d8c2451f8d33e4b24687f941dbfcfb inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a53d8c2451f8d33e4b24687f941dbfcfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a53d8c2451f8d33e4b24687f941dbfcfb">_normalize_axis</a> (self, AxisInt axis)</td></tr>
+<tr class="separator:a53d8c2451f8d33e4b24687f941dbfcfb inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81f9642dce209d57c41bb84ad5becd7 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_ae81f9642dce209d57c41bb84ad5becd7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#ae81f9642dce209d57c41bb84ad5becd7">_has_no_reference</a> (self, int i)</td></tr>
+<tr class="separator:ae81f9642dce209d57c41bb84ad5becd7 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29248d9531997cc837ccb6a968c042e3 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a29248d9531997cc837ccb6a968c042e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a29248d9531997cc837ccb6a968c042e3">_has_no_reference_block</a> (self, int blkno)</td></tr>
+<tr class="separator:a29248d9531997cc837ccb6a968c042e3 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f1ddcbb0ecc434d14cee405c4d3461 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_aa7f1ddcbb0ecc434d14cee405c4d3461"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#aa7f1ddcbb0ecc434d14cee405c4d3461">_get_data_subset</a> (self, Callable predicate)</td></tr>
+<tr class="separator:aa7f1ddcbb0ecc434d14cee405c4d3461 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6cdee71dabe1c2b187af34bdaeaf93 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a9b6cdee71dabe1c2b187af34bdaeaf93"><td class="memItemLeft" align="right" valign="top">Self&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a9b6cdee71dabe1c2b187af34bdaeaf93">_combine</a> (self, list[<a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>] <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a70f1f9cd4233d3316c67b0816cd7cbd7">blocks</a>, <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>|None index=None)</td></tr>
+<tr class="separator:a9b6cdee71dabe1c2b187af34bdaeaf93 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca092a4cde6ee57cdba35f9e5a9446a inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a9ca092a4cde6ee57cdba35f9e5a9446a"><td class="memItemLeft" align="right" valign="top">list[<a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a9ca092a4cde6ee57cdba35f9e5a9446a">_slice_take_blocks_ax0</a> (self, slice|np.ndarray slice_or_indexer, fill_value=lib.no_default, bool only_slice=False, *bool use_na_proxy=False, bool ref_inplace_op=False)</td></tr>
+<tr class="separator:a9ca092a4cde6ee57cdba35f9e5a9446a inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947abb3411a681a5689da5416428c0d6 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a947abb3411a681a5689da5416428c0d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a947abb3411a681a5689da5416428c0d6">_make_na_block</a> (self, BlockPlacement placement, fill_value=None, bool use_na_proxy=False)</td></tr>
+<tr class="separator:a947abb3411a681a5689da5416428c0d6 inherit pro_methods_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html">pandas.core.internals.base.DataManager</a></td></tr>
+<tr class="memitem:a09e70ed534dcd12d3beecfeb80c0a33e inherit pro_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager" id="r_a09e70ed534dcd12d3beecfeb80c0a33e"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a09e70ed534dcd12d3beecfeb80c0a33e">_validate_set_axis</a> (self, AxisInt axis, <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> new_labels)</td></tr>
+<tr class="separator:a09e70ed534dcd12d3beecfeb80c0a33e inherit pro_methods_classpandas_1_1core_1_1internals_1_1base_1_1DataManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classpandas_1_1core_1_1base_1_1PandasObject"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpandas_1_1core_1_1base_1_1PandasObject')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="classpandas_1_1core_1_1base_1_1PandasObject.html">pandas.core.base.PandasObject</a></td></tr>
+<tr class="memitem:a7b5112b72a8bafe13b1fa732bf1ea30d inherit pro_methods_classpandas_1_1core_1_1base_1_1PandasObject" id="r_a7b5112b72a8bafe13b1fa732bf1ea30d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1base_1_1PandasObject.html#a7b5112b72a8bafe13b1fa732bf1ea30d">_constructor</a> (self)</td></tr>
+<tr class="separator:a7b5112b72a8bafe13b1fa732bf1ea30d inherit pro_methods_classpandas_1_1core_1_1base_1_1PandasObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2b95a9e1e4befc5ad3cba09c3f3e68 inherit pro_methods_classpandas_1_1core_1_1base_1_1PandasObject" id="r_a8a2b95a9e1e4befc5ad3cba09c3f3e68"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1base_1_1PandasObject.html#a8a2b95a9e1e4befc5ad3cba09c3f3e68">_reset_cache</a> (self, str|None key=None)</td></tr>
+<tr class="separator:a8a2b95a9e1e4befc5ad3cba09c3f3e68 inherit pro_methods_classpandas_1_1core_1_1base_1_1PandasObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html">pandas.core.accessor.DirNamesMixin</a></td></tr>
+<tr class="memitem:a3151f76f1b53042e9d13da3d3ef3cb92 inherit pro_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin" id="r_a3151f76f1b53042e9d13da3d3ef3cb92"><td class="memItemLeft" align="right" valign="top">set[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html#a3151f76f1b53042e9d13da3d3ef3cb92">_dir_deletions</a> (self)</td></tr>
+<tr class="separator:a3151f76f1b53042e9d13da3d3ef3cb92 inherit pro_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8183d13494a720c8d4cc996826fd7323 inherit pro_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin" id="r_a8183d13494a720c8d4cc996826fd7323"><td class="memItemLeft" align="right" valign="top">set[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html#a8183d13494a720c8d4cc996826fd7323">_dir_additions</a> (self)</td></tr>
+<tr class="separator:a8183d13494a720c8d4cc996826fd7323 inherit pro_methods_classpandas_1_1core_1_1accessor_1_1DirNamesMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:a823a4f0e79c8142fdc66fa875ca9eb4e" id="r_a823a4f0e79c8142fdc66fa875ca9eb4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a823a4f0e79c8142fdc66fa875ca9eb4e">_blknos</a></td></tr>
+<tr class="separator:a823a4f0e79c8142fdc66fa875ca9eb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab969afa3e8d8db140afba9e9a6eae546" id="r_ab969afa3e8d8db140afba9e9a6eae546"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#ab969afa3e8d8db140afba9e9a6eae546">_known_consolidated</a></td></tr>
+<tr class="separator:ab969afa3e8d8db140afba9e9a6eae546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0303d7caad34bfe32cd2565297e9e83f" id="r_a0303d7caad34bfe32cd2565297e9e83f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#a0303d7caad34bfe32cd2565297e9e83f">_blklocs</a></td></tr>
+<tr class="separator:a0303d7caad34bfe32cd2565297e9e83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a0eb61f060658d509454103c5ea19e" id="r_af5a0eb61f060658d509454103c5ea19e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html#af5a0eb61f060658d509454103c5ea19e">_is_consolidated</a></td></tr>
+<tr class="separator:af5a0eb61f060658d509454103c5ea19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Membres hérités additionnels</h2></td></tr>
+<tr class="inherit_header pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager')"><img src="closed.png" alt="-"/>&#160;Attributs protégés statiques hérités de <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html">pandas.core.internals.managers.BaseBlockManager</a></td></tr>
+<tr class="memitem:a8af741f89487f7cb2f4311b34e449f9a inherit pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a8af741f89487f7cb2f4311b34e449f9a"><td class="memItemLeft" align="right" valign="top">npt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a8af741f89487f7cb2f4311b34e449f9a">_blknos</a> .NDArray[np.intp]</td></tr>
+<tr class="separator:a8af741f89487f7cb2f4311b34e449f9a inherit pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa2bab76bfb5e9295cba23d51f026e3 inherit pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a7aa2bab76bfb5e9295cba23d51f026e3"><td class="memItemLeft" align="right" valign="top">npt&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a7aa2bab76bfb5e9295cba23d51f026e3">_blklocs</a> .NDArray[np.intp]</td></tr>
+<tr class="separator:a7aa2bab76bfb5e9295cba23d51f026e3 inherit pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9bc4dd45597860513f04beb688e3b6 inherit pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_a6d9bc4dd45597860513f04beb688e3b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a6d9bc4dd45597860513f04beb688e3b6">_known_consolidated</a></td></tr>
+<tr class="separator:a6d9bc4dd45597860513f04beb688e3b6 inherit pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6296cf02e014b06721d58b32097442 inherit pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager" id="r_abd6296cf02e014b06721d58b32097442"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#abd6296cf02e014b06721d58b32097442">_is_consolidated</a></td></tr>
+<tr class="separator:abd6296cf02e014b06721d58b32097442 inherit pro_static_attribs_classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classpandas_1_1core_1_1base_1_1PandasObject"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classpandas_1_1core_1_1base_1_1PandasObject')"><img src="closed.png" alt="-"/>&#160;Attributs protégés statiques hérités de <a class="el" href="classpandas_1_1core_1_1base_1_1PandasObject.html">pandas.core.base.PandasObject</a></td></tr>
+<tr class="memitem:a3972565a4ab5ff072118eda20364cd2c inherit pro_static_attribs_classpandas_1_1core_1_1base_1_1PandasObject" id="r_a3972565a4ab5ff072118eda20364cd2c"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1base_1_1PandasObject.html#a3972565a4ab5ff072118eda20364cd2c">_cache</a> [str, Any]</td></tr>
+<tr class="separator:a3972565a4ab5ff072118eda20364cd2c inherit pro_static_attribs_classpandas_1_1core_1_1base_1_1PandasObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classpandas_1_1core_1_1accessor_1_1DirNamesMixin"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classpandas_1_1core_1_1accessor_1_1DirNamesMixin')"><img src="closed.png" alt="-"/>&#160;Attributs protégés statiques hérités de <a class="el" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html">pandas.core.accessor.DirNamesMixin</a></td></tr>
+<tr class="memitem:a1e3f9f50e3532c77c3610c4b8fe27e6f inherit pro_static_attribs_classpandas_1_1core_1_1accessor_1_1DirNamesMixin" id="r_a1e3f9f50e3532c77c3610c4b8fe27e6f"><td class="memItemLeft" align="right" valign="top">set&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html#a1e3f9f50e3532c77c3610c4b8fe27e6f">_accessors</a> = set()</td></tr>
+<tr class="separator:a1e3f9f50e3532c77c3610c4b8fe27e6f inherit pro_static_attribs_classpandas_1_1core_1_1accessor_1_1DirNamesMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9c1894b79d330020bdc71ddc7126f0 inherit pro_static_attribs_classpandas_1_1core_1_1accessor_1_1DirNamesMixin" id="r_a7b9c1894b79d330020bdc71ddc7126f0"><td class="memItemLeft" align="right" valign="top">frozenset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1core_1_1accessor_1_1DirNamesMixin.html#a7b9c1894b79d330020bdc71ddc7126f0">_hidden_attrs</a> = frozenset()</td></tr>
+<tr class="separator:a7b9c1894b79d330020bdc71ddc7126f0 inherit pro_static_attribs_classpandas_1_1core_1_1accessor_1_1DirNamesMixin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><pre class="fragment">BaseBlockManager that holds 2D blocks.
+</pre> </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a2682563def60c18ddcf1e060d27f01f5" name="a2682563def60c18ddcf1e060d27f01f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2682563def60c18ddcf1e060d27f01f5">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Sequence[<a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>]&#160;</td>
+          <td class="paramname"><em>blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Sequence[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>]&#160;</td>
+          <td class="paramname"><em>axes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>verify_integrity</em> = <code>True</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée à partir de <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a6af92f3ffcf2fb523319dcdcaeca3379">pandas.core.internals.managers.BaseBlockManager</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a45e1feedc6422ded433a454feb1e2d7a" name="a45e1feedc6422ded433a454feb1e2d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e1feedc6422ded433a454feb1e2d7a">&#9670;&#160;</a></span>_consolidate_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager._consolidate_check </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10f3b70a49f36816cbc692451c8e4ea9" name="a10f3b70a49f36816cbc692451c8e4ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f3b70a49f36816cbc692451c8e4ea9">&#9670;&#160;</a></span>_consolidate_inplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager._consolidate_inplace </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée à partir de <a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a23c41486ac2cb49806a7d81fd0c7c4cd">pandas.core.internals.base.DataManager</a>.</p>
+
+</div>
+</div>
+<a id="ad49cbec3485eb30c74028934d57849d3" name="ad49cbec3485eb30c74028934d57849d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad49cbec3485eb30c74028934d57849d3">&#9670;&#160;</a></span>_equal_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.core.internals.managers.BlockManager._equal_values </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a>&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a>&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Used in .equals defined in base class. Only check the column values
+assuming shape and indexes have already been checked.
+</pre> 
+<p>Réimplémentée à partir de <a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#a0794663a8643d8f700e39e430c631924">pandas.core.internals.base.DataManager</a>.</p>
+
+</div>
+</div>
+<a id="ad16ae9d0414dcb1964fcef71f4990a61" name="ad16ae9d0414dcb1964fcef71f4990a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16ae9d0414dcb1964fcef71f4990a61">&#9670;&#160;</a></span>_insert_update_blklocs_and_blknos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager._insert_update_blklocs_and_blknos </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>loc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">When inserting a new Block at location 'loc', we update our
+_blklocs and _blknos.
+</pre> 
+</div>
+</div>
+<a id="acb9f0a89c01ac61f6a27bdeff684d75e" name="acb9f0a89c01ac61f6a27bdeff684d75e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb9f0a89c01ac61f6a27bdeff684d75e">&#9670;&#160;</a></span>_insert_update_mgr_locs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager._insert_update_mgr_locs </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>loc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">When inserting a new Block at location 'loc', we increment
+all of the mgr_locs of blocks above that by one.
+</pre> 
+</div>
+</div>
+<a id="aa846c3993140f95e28502b360dc96bb9" name="aa846c3993140f95e28502b360dc96bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa846c3993140f95e28502b360dc96bb9">&#9670;&#160;</a></span>_interleave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.ndarray pandas.core.internals.managers.BlockManager._interleave </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">np.dtype | None &#160;</td>
+          <td class="paramname"><em>dtype</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object &#160;</td>
+          <td class="paramname"><em>na_value</em> = <code>lib.no_default</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Return ndarray from blocks with specified item order
+Items must be contained in the blocks
+</pre> 
+</div>
+</div>
+<a id="a9217c28741bbd4a689e950bac7aeb95e" name="a9217c28741bbd4a689e950bac7aeb95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9217c28741bbd4a689e950bac7aeb95e">&#9670;&#160;</a></span>_iset_single()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager._iset_single </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayLike&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inplace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blkno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>&#160;</td>
+          <td class="paramname"><em>blk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BlockValuesRefs | None &#160;</td>
+          <td class="paramname"><em>refs</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Fastpath for iset when we are only setting a single position and
+the Block currently in that position is itself single-column.
+
+In this case we can swap out the entire Block and blklocs and blknos
+are unaffected.
+</pre> 
+</div>
+</div>
+<a id="ac0eb477021824b52cbc6fdda9e732eaa" name="ac0eb477021824b52cbc6fdda9e732eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0eb477021824b52cbc6fdda9e732eaa">&#9670;&#160;</a></span>_iset_split_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager._iset_split_block </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blkno_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">np.ndarray | list[int]&#160;</td>
+          <td class="paramname"><em>blk_locs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayLike | None &#160;</td>
+          <td class="paramname"><em>value</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BlockValuesRefs | None &#160;</td>
+          <td class="paramname"><em>refs</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Removes columns from a block by splitting the block.
+
+Avoids copying the whole block through slicing and updates the manager
+after determinint the new block structure. Optionally adds a new block,
+otherwise has to be done by the caller.
+
+Parameters
+----------
+blkno_l: The block number to operate on, relevant for updating the manager
+blk_locs: The locations of our block that should be deleted.
+value: The value to set as a replacement.
+refs: The reference tracking object of the value to set.
+</pre> 
+</div>
+</div>
+<a id="a2d590ea3dca9aeabff9e5a7bae5ec80a" name="a2d590ea3dca9aeabff9e5a7bae5ec80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d590ea3dca9aeabff9e5a7bae5ec80a">&#9670;&#160;</a></span>_verify_integrity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager._verify_integrity </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49a860b1cd5305920daa1c3e6404cc23" name="a49a860b1cd5305920daa1c3e6404cc23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a860b1cd5305920daa1c3e6404cc23">&#9670;&#160;</a></span>as_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> np.ndarray pandas.core.internals.managers.BlockManager.as_array </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">np.dtype | None &#160;</td>
+          <td class="paramname"><em>dtype</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>copy</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object &#160;</td>
+          <td class="paramname"><em>na_value</em> = <code>lib.no_default</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Convert the blockmanager data into an numpy array.
+
+Parameters
+----------
+dtype : np.dtype or None, default None
+    Data type of the return array.
+copy : bool, default False
+    If True then guarantee that a copy is returned. A value of
+    False does not guarantee that the underlying data is not
+    copied.
+na_value : object, default lib.no_default
+    Value to be used as the missing value sentinel.
+
+Returns
+-------
+arr : ndarray
+</pre> 
+</div>
+</div>
+<a id="ae348cf2ec58f0c0f6da37d2b336d1bea" name="ae348cf2ec58f0c0f6da37d2b336d1bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae348cf2ec58f0c0f6da37d2b336d1bea">&#9670;&#160;</a></span>column_arrays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[np.ndarray] pandas.core.internals.managers.BlockManager.column_arrays </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Used in the JSON C code to access column arrays.
+This optimizes compared to using `iget_values` by converting each
+
+Warning! This doesn't handle Copy-on-Write, so should be used with
+caution (current use case of consuming this in the JSON code is fine).
+</pre> 
+</div>
+</div>
+<a id="a8a87c3714f76fb54b5b4c516822d789f" name="a8a87c3714f76fb54b5b4c516822d789f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a87c3714f76fb54b5b4c516822d789f">&#9670;&#160;</a></span>column_setitem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager.column_setitem </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int | slice | np.ndarray&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>inplace_only</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set values ("setitem") into a single column (not setting the full column).
+
+This is a method on the BlockManager level, to avoid creating an
+intermediate Series at the DataFrame level (`s = df[loc]; s[idx] = value`)
+</pre> 
+</div>
+</div>
+<a id="a66fd60c61621dd9eb34ba7d55a680afa" name="a66fd60c61621dd9eb34ba7d55a680afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66fd60c61621dd9eb34ba7d55a680afa">&#9670;&#160;</a></span>concat_horizontal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self pandas.core.internals.managers.BlockManager.concat_horizontal </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[Self]&#160;</td>
+          <td class="paramname"><em>mgrs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>]&#160;</td>
+          <td class="paramname"><em>axes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Concatenate uniformly-indexed BlockManagers horizontally.
+</pre> 
+</div>
+</div>
+<a id="a22cb3b8652a3ba08e0afc2834e36c463" name="a22cb3b8652a3ba08e0afc2834e36c463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cb3b8652a3ba08e0afc2834e36c463">&#9670;&#160;</a></span>concat_vertical()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self pandas.core.internals.managers.BlockManager.concat_vertical </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[Self]&#160;</td>
+          <td class="paramname"><em>mgrs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>]&#160;</td>
+          <td class="paramname"><em>axes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Concatenate uniformly-indexed BlockManagers vertically.
+</pre> 
+</div>
+</div>
+<a id="a068d57e985e652eef5316d3ecc96adbe" name="a068d57e985e652eef5316d3ecc96adbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068d57e985e652eef5316d3ecc96adbe">&#9670;&#160;</a></span>fast_xs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1SingleBlockManager.html">SingleBlockManager</a> pandas.core.internals.managers.BlockManager.fast_xs </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the array corresponding to `frame.iloc[loc]`.
+
+Parameters
+----------
+loc : int
+
+Returns
+-------
+np.ndarray or ExtensionArray
+</pre> 
+</div>
+</div>
+<a id="a53e53f699c1564da65acacabf0c2fe91" name="a53e53f699c1564da65acacabf0c2fe91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e53f699c1564da65acacabf0c2fe91">&#9670;&#160;</a></span>from_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self pandas.core.internals.managers.BlockManager.from_blocks </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[<a class="el" href="classpandas_1_1core_1_1internals_1_1blocks_1_1Block.html">Block</a>]&#160;</td>
+          <td class="paramname"><em>blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">list[<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>]&#160;</td>
+          <td class="paramname"><em>axes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Constructor for BlockManager and SingleBlockManager with same signature.
+</pre> 
+<p>Réimplémentée à partir de <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BaseBlockManager.html#a8bcbce74cfe9bb57df76478c6e429d54">pandas.core.internals.managers.BaseBlockManager</a>.</p>
+
+</div>
+</div>
+<a id="a773f529f4bba4107ffe18ac0e6631395" name="a773f529f4bba4107ffe18ac0e6631395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773f529f4bba4107ffe18ac0e6631395">&#9670;&#160;</a></span>grouped_reduce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self pandas.core.internals.managers.BlockManager.grouped_reduce </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Callable&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Apply grouped reduction function blockwise, returning a new BlockManager.
+
+Parameters
+----------
+func : grouped reduction function
+
+Returns
+-------
+BlockManager
+</pre> 
+</div>
+</div>
+<a id="a193fc0d2f1422929962f0654684c2acf" name="a193fc0d2f1422929962f0654684c2acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193fc0d2f1422929962f0654684c2acf">&#9670;&#160;</a></span>idelete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a> pandas.core.internals.managers.BlockManager.idelete </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>indexer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Delete selected locations, returning a new BlockManager.
+</pre> 
+</div>
+</div>
+<a id="ad9397ed069e4b6cb61c907ada4f691b6" name="ad9397ed069e4b6cb61c907ada4f691b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9397ed069e4b6cb61c907ada4f691b6">&#9670;&#160;</a></span>iget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1SingleBlockManager.html">SingleBlockManager</a> pandas.core.internals.managers.BlockManager.iget </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>track_ref</em> = <code>True</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the data as a SingleBlockManager.
+</pre> 
+</div>
+</div>
+<a id="ac8d135562c95b875224f5a28114fbbb5" name="ac8d135562c95b875224f5a28114fbbb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d135562c95b875224f5a28114fbbb5">&#9670;&#160;</a></span>iget_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> ArrayLike pandas.core.internals.managers.BlockManager.iget_values </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the data for column i as the values (ndarray or ExtensionArray).
+
+Warning! The returned array is a view but doesn't handle Copy-on-Write,
+so this should be used with caution.
+</pre> 
+</div>
+</div>
+<a id="aa59923d0eb6e035b6e043fe9e5f8ae96" name="aa59923d0eb6e035b6e043fe9e5f8ae96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa59923d0eb6e035b6e043fe9e5f8ae96">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager.insert </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Hashable&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayLike&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>refs</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Insert item at selected position.
+
+Parameters
+----------
+loc : int
+item : hashable
+value : np.ndarray or ExtensionArray
+refs : The reference tracking object of the value to set.
+</pre> 
+</div>
+</div>
+<a id="ae8596d26a1ac221fd81d931e59ecaa9f" name="ae8596d26a1ac221fd81d931e59ecaa9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8596d26a1ac221fd81d931e59ecaa9f">&#9670;&#160;</a></span>is_consolidated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.core.internals.managers.BlockManager.is_consolidated </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return True if more than one block with the same dtype
+</pre> 
+<p>Réimplémentée à partir de <a class="el" href="classpandas_1_1core_1_1internals_1_1base_1_1DataManager.html#ad23c36c11cccf6793d5413af8fd1a513">pandas.core.internals.base.DataManager</a>.</p>
+
+</div>
+</div>
+<a id="adfb4f5e3454df9164c2842b7dbc6611d" name="adfb4f5e3454df9164c2842b7dbc6611d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfb4f5e3454df9164c2842b7dbc6611d">&#9670;&#160;</a></span>iset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.core.internals.managers.BlockManager.iset </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int | slice | np.ndarray&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayLike&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>inplace</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BlockValuesRefs | None &#160;</td>
+          <td class="paramname"><em>refs</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Set new item in-place. Does not consolidate. Adds new Block if not
+contained in the current set of items
+</pre> 
+</div>
+</div>
+<a id="a0c79d8076df86e9f32f98267436c0a1c" name="a0c79d8076df86e9f32f98267436c0a1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c79d8076df86e9f32f98267436c0a1c">&#9670;&#160;</a></span>operate_blockwise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a> pandas.core.internals.managers.BlockManager.operate_blockwise </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a>&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>array_op</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Apply array_op blockwise with another (aligned) BlockManager.
+</pre> 
+</div>
+</div>
+<a id="a3e8ae227da64321c956d8c43a83455cf" name="a3e8ae227da64321c956d8c43a83455cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e8ae227da64321c956d8c43a83455cf">&#9670;&#160;</a></span>quantile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self pandas.core.internals.managers.BlockManager.quantile </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">*<a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>&#160;</td>
+          <td class="paramname"><em>qs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QuantileInterpolation &#160;</td>
+          <td class="paramname"><em>interpolation</em> = <code>&quot;linear&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Iterate over blocks applying quantile reduction.
+This routine is intended for reduction type operations and
+will do inference on the generated blocks.
+
+Parameters
+----------
+interpolation : type of interpolation, default 'linear'
+qs : list of the quantiles to be computed
+
+Returns
+-------
+BlockManager
+</pre> 
+</div>
+</div>
+<a id="accd3276e3860731c24b86a13b93c9d48" name="accd3276e3860731c24b86a13b93c9d48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd3276e3860731c24b86a13b93c9d48">&#9670;&#160;</a></span>reduce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Self pandas.core.internals.managers.BlockManager.reduce </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Callable&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Apply reduction function blockwise, returning a single-row BlockManager.
+
+Parameters
+----------
+func : reduction function
+
+Returns
+-------
+BlockManager
+</pre> 
+</div>
+</div>
+<a id="addea99b88a583a5d043276dfeda3b822" name="addea99b88a583a5d043276dfeda3b822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addea99b88a583a5d043276dfeda3b822">&#9670;&#160;</a></span>to_dict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> dict[str, Self] pandas.core.internals.managers.BlockManager.to_dict </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return a dict of str(dtype) -&gt; BlockManager
+
+Returns
+-------
+values : a dict of dtype -&gt; BlockManager
+</pre> 
+</div>
+</div>
+<a id="a156ba860aedb652d9349b55b1c84466a" name="a156ba860aedb652d9349b55b1c84466a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156ba860aedb652d9349b55b1c84466a">&#9670;&#160;</a></span>unstack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager.html">BlockManager</a> pandas.core.internals.managers.BlockManager.unstack </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>unstacker</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>fill_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return a BlockManager with all blocks unstacked.
+
+Parameters
+----------
+unstacker : reshape._Unstacker
+fill_value : Any
+    fill_value for newly introduced missing values.
+
+Returns
+-------
+unstacked : BlockManager
+</pre> 
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a0303d7caad34bfe32cd2565297e9e83f" name="a0303d7caad34bfe32cd2565297e9e83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0303d7caad34bfe32cd2565297e9e83f">&#9670;&#160;</a></span>_blklocs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager._blklocs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a823a4f0e79c8142fdc66fa875ca9eb4e" name="a823a4f0e79c8142fdc66fa875ca9eb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823a4f0e79c8142fdc66fa875ca9eb4e">&#9670;&#160;</a></span>_blknos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager._blknos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5a0eb61f060658d509454103c5ea19e" name="af5a0eb61f060658d509454103c5ea19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a0eb61f060658d509454103c5ea19e">&#9670;&#160;</a></span>_is_consolidated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager._is_consolidated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab969afa3e8d8db140afba9e9a6eae546" name="ab969afa3e8d8db140afba9e9a6eae546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab969afa3e8d8db140afba9e9a6eae546">&#9670;&#160;</a></span>_known_consolidated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager._known_consolidated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0728337a4e7dda6f57b1476c59b68ea9" name="a0728337a4e7dda6f57b1476c59b68ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0728337a4e7dda6f57b1476c59b68ea9">&#9670;&#160;</a></span>axes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager.axes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20b2b59e56c387f72727701992af75f0" name="a20b2b59e56c387f72727701992af75f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b2b59e56c387f72727701992af75f0">&#9670;&#160;</a></span>blklocs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager.blklocs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9f5348449b7a8bd9b22dc64abeac1cd" name="ac9f5348449b7a8bd9b22dc64abeac1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f5348449b7a8bd9b22dc64abeac1cd">&#9670;&#160;</a></span>blknos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager.blknos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd3f959068db16435fe5413976a996d9" name="abd3f959068db16435fe5413976a996d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3f959068db16435fe5413976a996d9">&#9670;&#160;</a></span>blocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager.blocks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7e55cc1ecadf622bc1b63fe3385c7d9" name="ab7e55cc1ecadf622bc1b63fe3385c7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e55cc1ecadf622bc1b63fe3385c7d9">&#9670;&#160;</a></span>items</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager.items</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e2f5ececda3beebee4b0711012800fc" name="a4e2f5ececda3beebee4b0711012800fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e2f5ececda3beebee4b0711012800fc">&#9670;&#160;</a></span>ndim <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pandas.core.internals.managers.BlockManager.ndim = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa83c184bfe281924af4ab2e22f522ebe" name="aa83c184bfe281924af4ab2e22f522ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83c184bfe281924af4ab2e22f522ebe">&#9670;&#160;</a></span>ndim <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.core.internals.managers.BlockManager.ndim</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>env/lib/python3.12/site-packages/pandas/core/internals/<a class="el" href="pandas_2core_2internals_2managers_8py.html">managers.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

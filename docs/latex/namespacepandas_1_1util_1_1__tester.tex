@@ -1,0 +1,53 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+util.\+\_\+tester}
+\hypertarget{namespacepandas_1_1util_1_1__tester}{}\label{namespacepandas_1_1util_1_1__tester}\index{pandas.util.\_tester@{pandas.util.\_tester}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1util_1_1__tester_a4519cc7c3d06738655785d023d4b6f99}{test}} (list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None extra\+\_\+args=None, bool run\+\_\+doctests=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1util_1_1__tester_a165bd6db4976541137e44e140651344a}{PKG}} = os.\+path.\+dirname(os.\+path.\+dirname(\+\_\+\+\_\+file\+\_\+\+\_\+))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Entrypoint for testing from the top-level namespace.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1util_1_1__tester_a4519cc7c3d06738655785d023d4b6f99}\label{namespacepandas_1_1util_1_1__tester_a4519cc7c3d06738655785d023d4b6f99} 
+\index{pandas.util.\_tester@{pandas.util.\_tester}!test@{test}}
+\index{test@{test}!pandas.util.\_tester@{pandas.util.\_tester}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily  None pandas.\+util.\+\_\+tester.\+test (\begin{DoxyParamCaption}\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{extra\+\_\+args = {\ttfamily None},  }\item[{bool }]{run\+\_\+doctests = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the pandas test suite using pytest.
+
+By default, runs with the marks -m "not slow and not network and not db"
+
+Parameters
+----------
+extra_args : list[str], default None
+    Extra marks to run the tests.
+run_doctests : bool, default False
+    Whether to only run the Python and Cython doctests. If you would like to run
+    both doctests/regular tests, just append "--doctest-modules"/"--doctest-cython"
+    to extra_args.
+
+Examples
+--------
+>>> pd.test()  # doctest: +SKIP
+running: pytest...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepandas_1_1util_1_1__tester_a165bd6db4976541137e44e140651344a}\label{namespacepandas_1_1util_1_1__tester_a165bd6db4976541137e44e140651344a} 
+\index{pandas.util.\_tester@{pandas.util.\_tester}!PKG@{PKG}}
+\index{PKG@{PKG}!pandas.util.\_tester@{pandas.util.\_tester}}
+\doxysubsubsection{\texorpdfstring{PKG}{PKG}}
+{\footnotesize\ttfamily pandas.\+util.\+\_\+tester.\+PKG = os.\+path.\+dirname(os.\+path.\+dirname(\+\_\+\+\_\+file\+\_\+\+\_\+))}
+

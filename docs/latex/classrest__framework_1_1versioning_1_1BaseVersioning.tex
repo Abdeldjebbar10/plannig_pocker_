@@ -1,0 +1,79 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+versioning.\+Base\+Versioning}
+\hypertarget{classrest__framework_1_1versioning_1_1BaseVersioning}{}\label{classrest__framework_1_1versioning_1_1BaseVersioning}\index{rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+versioning.\+Base\+Versioning\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_a0180d551575e6bcafa8ed803dd6f4de1}{determine\+\_\+version}} (self, request, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_ab6937a34d59515e2ef642a1a173d14d0}{reverse}} (self, viewname, args=None, kwargs=None, request=None, format=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}extra)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_abb169c68b71b4cca448068a9fd6f521c}{is\+\_\+allowed\+\_\+version}} (self, version)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_aacd341412d6e8393ded099c6dfb9f8b3}{default\+\_\+version}} = api\+\_\+settings.\+DEFAULT\+\_\+\+VERSION
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_ac536c7d512f642055fc956c83b05129a}{allowed\+\_\+versions}} = api\+\_\+settings.\+ALLOWED\+\_\+\+VERSIONS
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_ae03cfff22d66cf4a006486ce0d3c042f}{version\+\_\+param}} = api\+\_\+settings.\+VERSION\+\_\+\+PARAM
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1versioning_1_1BaseVersioning_a0180d551575e6bcafa8ed803dd6f4de1}\label{classrest__framework_1_1versioning_1_1BaseVersioning_a0180d551575e6bcafa8ed803dd6f4de1} 
+\index{rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}!determine\_version@{determine\_version}}
+\index{determine\_version@{determine\_version}!rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}}
+\doxysubsubsection{\texorpdfstring{determine\_version()}{determine\_version()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Base\+Versioning.\+determine\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1versioning_1_1AcceptHeaderVersioning_a1d0972c2783b4143238ccf99977a50f5}{rest\+\_\+framework.\+versioning.\+Accept\+Header\+Versioning}}, \mbox{\hyperlink{classrest__framework_1_1versioning_1_1URLPathVersioning_ac426fdf4f3d85c8cfb8a02a5c4d00afe}{rest\+\_\+framework.\+versioning.\+URLPath\+Versioning}}, \mbox{\hyperlink{classrest__framework_1_1versioning_1_1NamespaceVersioning_a2db5ca122301d10b00f9fda0d774fc7f}{rest\+\_\+framework.\+versioning.\+Namespace\+Versioning}}, \mbox{\hyperlink{classrest__framework_1_1versioning_1_1HostNameVersioning_ae808b5bc5c14d14a801c071f29ada1d1}{rest\+\_\+framework.\+versioning.\+Host\+Name\+Versioning}}, et \mbox{\hyperlink{classrest__framework_1_1versioning_1_1QueryParameterVersioning_aedb182c023e0c9acd2da1a084af7f33e}{rest\+\_\+framework.\+versioning.\+Query\+Parameter\+Versioning}}.
+
+\Hypertarget{classrest__framework_1_1versioning_1_1BaseVersioning_abb169c68b71b4cca448068a9fd6f521c}\label{classrest__framework_1_1versioning_1_1BaseVersioning_abb169c68b71b4cca448068a9fd6f521c} 
+\index{rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}!is\_allowed\_version@{is\_allowed\_version}}
+\index{is\_allowed\_version@{is\_allowed\_version}!rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}}
+\doxysubsubsection{\texorpdfstring{is\_allowed\_version()}{is\_allowed\_version()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Base\+Versioning.\+is\+\_\+allowed\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{version }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1versioning_1_1BaseVersioning_ab6937a34d59515e2ef642a1a173d14d0}\label{classrest__framework_1_1versioning_1_1BaseVersioning_ab6937a34d59515e2ef642a1a173d14d0} 
+\index{rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}!reverse@{reverse}}
+\index{reverse@{reverse}!rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}}
+\doxysubsubsection{\texorpdfstring{reverse()}{reverse()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Base\+Versioning.\+reverse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{viewname,  }\item[{}]{args = {\ttfamily None},  }\item[{}]{kwargs = {\ttfamily None},  }\item[{}]{request = {\ttfamily None},  }\item[{}]{format = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{extra }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1versioning_1_1URLPathVersioning_a755d624325ecb9c562a51ea87b12b011}{rest\+\_\+framework.\+versioning.\+URLPath\+Versioning}}, \mbox{\hyperlink{classrest__framework_1_1versioning_1_1NamespaceVersioning_aca396063a89cede26f3246fb003638ee}{rest\+\_\+framework.\+versioning.\+Namespace\+Versioning}}, et \mbox{\hyperlink{classrest__framework_1_1versioning_1_1QueryParameterVersioning_a8f77bc8618454c7388d1a01dc0181836}{rest\+\_\+framework.\+versioning.\+Query\+Parameter\+Versioning}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1versioning_1_1BaseVersioning_ac536c7d512f642055fc956c83b05129a}\label{classrest__framework_1_1versioning_1_1BaseVersioning_ac536c7d512f642055fc956c83b05129a} 
+\index{rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}!allowed\_versions@{allowed\_versions}}
+\index{allowed\_versions@{allowed\_versions}!rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}}
+\doxysubsubsection{\texorpdfstring{allowed\_versions}{allowed\_versions}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Base\+Versioning.\+allowed\+\_\+versions = api\+\_\+settings.\+ALLOWED\+\_\+\+VERSIONS\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1versioning_1_1BaseVersioning_aacd341412d6e8393ded099c6dfb9f8b3}\label{classrest__framework_1_1versioning_1_1BaseVersioning_aacd341412d6e8393ded099c6dfb9f8b3} 
+\index{rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}!default\_version@{default\_version}}
+\index{default\_version@{default\_version}!rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}}
+\doxysubsubsection{\texorpdfstring{default\_version}{default\_version}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Base\+Versioning.\+default\+\_\+version = api\+\_\+settings.\+DEFAULT\+\_\+\+VERSION\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1versioning_1_1BaseVersioning_ae03cfff22d66cf4a006486ce0d3c042f}\label{classrest__framework_1_1versioning_1_1BaseVersioning_ae03cfff22d66cf4a006486ce0d3c042f} 
+\index{rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}!version\_param@{version\_param}}
+\index{version\_param@{version\_param}!rest\_framework.versioning.BaseVersioning@{rest\_framework.versioning.BaseVersioning}}
+\doxysubsubsection{\texorpdfstring{version\_param}{version\_param}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Base\+Versioning.\+version\+\_\+param = api\+\_\+settings.\+VERSION\+\_\+\+PARAM\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{versioning_8py}{versioning.\+py}}\end{DoxyCompactItemize}

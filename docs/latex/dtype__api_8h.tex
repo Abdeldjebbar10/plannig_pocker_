@@ -1,0 +1,596 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/include/numpy/dtype\+\_\+api.h}
+\hypertarget{dtype__api_8h}{}\label{dtype__api_8h}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/dtype\_api.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/dtype\_api.h}}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{Py\+Array\+\_\+\+DType\+Meta\+\_\+tag}}
+\item 
+struct \mbox{\hyperlink{structPyArrayMethod__Context__tag}{Py\+Array\+Method\+\_\+\+Context\+\_\+tag}}
+\item 
+struct \mbox{\hyperlink{structPyArrayMethod__Spec}{Py\+Array\+Method\+\_\+\+Spec}}
+\item 
+struct \mbox{\hyperlink{structPyArrayDTypeMeta__Spec}{Py\+Array\+DType\+Meta\+\_\+\+Spec}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ad563eaee7fab8875560fdd61f0e18e55}{\+\_\+\+NPY\+\_\+\+METH\+\_\+resolve\+\_\+descriptors\+\_\+with\+\_\+scalars}}~1
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_abfa5090d7d3476512203a4234c2094e4}{NPY\+\_\+\+METH\+\_\+resolve\+\_\+descriptors}}~2
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a0837d88eac88e695c760a73d8d22c369}{NPY\+\_\+\+METH\+\_\+get\+\_\+loop}}~3
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ac8642387819b32543057fedc0b241ce4}{NPY\+\_\+\+METH\+\_\+get\+\_\+reduction\+\_\+initial}}~4
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ac33808eaec626b4c16952882b3d6b7a7}{NPY\+\_\+\+METH\+\_\+strided\+\_\+loop}}~5
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ab5aded0446aa81c867a9d79ed3e68b47}{NPY\+\_\+\+METH\+\_\+contiguous\+\_\+loop}}~6
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ab561c6fccf50ee95263e6b749069c066}{NPY\+\_\+\+METH\+\_\+unaligned\+\_\+strided\+\_\+loop}}~7
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a0a97403244b745dc2860549c50552025}{NPY\+\_\+\+METH\+\_\+unaligned\+\_\+contiguous\+\_\+loop}}~8
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ac153d6b83520629664e8647cc55476ad}{NPY\+\_\+\+METH\+\_\+contiguous\+\_\+indexed\+\_\+loop}}~9
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ac4bded52efc015c188dba09bca78f30f}{\+\_\+\+NPY\+\_\+\+METH\+\_\+static\+\_\+data}}~10
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ae8ad09f0a3c65ac7e31e090125f57958}{NPY\+\_\+\+DT\+\_\+\+ABSTRACT}}~1 $<$$<$ 1
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_afbb1ddf8ef646426af4baf62be00c1e8}{NPY\+\_\+\+DT\+\_\+\+PARAMETRIC}}~1 $<$$<$ 2
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ae9c346f7fdaa8d96694d751ecc5c4cbf}{NPY\+\_\+\+DT\+\_\+\+NUMERIC}}~1 $<$$<$ 3
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a601751f486cb4c5ddc8c47cf96aa3c82}{NPY\+\_\+\+DT\+\_\+discover\+\_\+descr\+\_\+from\+\_\+pyobject}}~1
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_af71da689b45198cc1f5d81233d8b020a}{\+\_\+\+NPY\+\_\+\+DT\+\_\+is\+\_\+known\+\_\+scalar\+\_\+type}}~2
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a947918bee77cd7b805025149a6f75bfb}{NPY\+\_\+\+DT\+\_\+default\+\_\+descr}}~3
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ad6c52def26dd35541ae9faaba8592cfb}{NPY\+\_\+\+DT\+\_\+common\+\_\+dtype}}~4
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ada60134db101548e773e3e7cacd19216}{NPY\+\_\+\+DT\+\_\+common\+\_\+instance}}~5
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a8342fe31e267727afedab1c4c618e581}{NPY\+\_\+\+DT\+\_\+ensure\+\_\+canonical}}~6
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a26aa26e0bcba884b1a90f1035491b6c8}{NPY\+\_\+\+DT\+\_\+setitem}}~7
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a0eddd1b84a6f401849829aaeea7215ac}{NPY\+\_\+\+DT\+\_\+getitem}}~8
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a659912a66fb33dec644f57fcfaa8fb3a}{NPY\+\_\+\+DT\+\_\+get\+\_\+clear\+\_\+loop}}~9
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a91929a73cec15293c1c952c59ed88fbb}{NPY\+\_\+\+DT\+\_\+get\+\_\+fill\+\_\+zero\+\_\+loop}}~10
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a3a02c0e1761f2f84873e6b76573ee24a}{NPY\+\_\+\+DT\+\_\+finalize\+\_\+descr}}~11
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}~(1 $<$$<$ 10)
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_aef1e4d4546a31d65f28e74d9834bec16}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+getitem}}~1 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a9e4b28dd5eff585c30ffe3cff077e996}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+setitem}}~2 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_af2aab730e3cfa3c0ce192fddd2e917a2}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+compare}}~5 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a24427d5efdfff63579fc018f9bd9be78}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+argmax}}~6 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a799ecbddf31a436dbc4c5c79e841921b}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+dotfunc}}~7 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_aa0f78e35a450eaeaa6afaf55930e6b4c}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+scanfunc}}~8 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_af28a01088938ee52194039703cddb582}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+fromstr}}~9 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_aa1f92be24795f2834e5e79f0c06edd5e}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+nonzero}}~10 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a28f74b5831d395a4143f9ea0f50c6916}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+fill}}~11 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a64af963b42167b1947c5b5c17e9f95ec}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+fillwithscalar}}~12 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a7ab32004cb324e127123c8443d92837a}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+sort}}~13 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_a88b99b4a4bc3c81566d912e02d015795}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+argsort}}~14 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ae1d4849ee095ca76ac7d2ce20aeac208}{NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+argmin}}~22 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}
+\item 
+\#define \mbox{\hyperlink{dtype__api_8h_ae9f208af1d0934094984035cde55b2f2}{NPY\+\_\+\+DTYPE}}(descr)~((\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*})Py\+\_\+\+TYPE(descr))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{Py\+Array\+\_\+\+DType\+Meta\+\_\+tag}} \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}}
+\item 
+typedef struct \mbox{\hyperlink{structPyArrayMethod__Context__tag}{Py\+Array\+Method\+\_\+\+Context\+\_\+tag}} \mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{Py\+Array\+Method\+\_\+\+Context}}
+\item 
+typedef \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\+\_\+\+CASTING}}() \mbox{\hyperlink{dtype__api_8h_a93eb49c46552bde3b0b8a76b6a7e5460}{Py\+Array\+Method\+\_\+\+Resolve\+Descriptors}}(struct Py\+Array\+Method\+Object\+\_\+tag \texorpdfstring{$\ast$}{*}method, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}dtypes, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}given\+\_\+descrs, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}loop\+\_\+descrs, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}view\+\_\+offset)
+\item 
+typedef \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\+\_\+\+CASTING}}() \mbox{\hyperlink{dtype__api_8h_ab0f5503a6eff3dac99741a4e09b9c836}{Py\+Array\+Method\+\_\+\+Resolve\+Descriptors\+With\+Scalar}}(struct Py\+Array\+Method\+Object\+\_\+tag \texorpdfstring{$\ast$}{*}method, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}dtypes, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}given\+\_\+descrs, Py\+Object \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}input\+\_\+scalars, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}loop\+\_\+descrs, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}view\+\_\+offset)
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_a205f829f4c226bbe6561d642de0b1d45}{Py\+Array\+Method\+\_\+\+Strided\+Loop}}(\mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{Py\+Array\+Method\+\_\+\+Context}} \texorpdfstring{$\ast$}{*}context, char \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}data, const \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}dimensions, const \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}strides, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}transferdata)
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_ab8e3f1abe9301ab5cc32fbfae4f56f07}{Py\+Array\+Method\+\_\+\+Get\+Loop}}(\mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{Py\+Array\+Method\+\_\+\+Context}} \texorpdfstring{$\ast$}{*}context, int aligned, int move\+\_\+references, const \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}strides, \mbox{\hyperlink{dtype__api_8h_a205f829f4c226bbe6561d642de0b1d45}{Py\+Array\+Method\+\_\+\+Strided\+Loop}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+loop, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+transferdata, \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\+\_\+\+ARRAYMETHOD\+\_\+\+FLAGS}} \texorpdfstring{$\ast$}{*}flags)
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_a496fc5a04a3abbfa3928be7b0b01d034}{Py\+Array\+Method\+\_\+\+Get\+Reduction\+Initial}}(\mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{Py\+Array\+Method\+\_\+\+Context}} \texorpdfstring{$\ast$}{*}context, \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\+\_\+bool}} reduction\+\_\+is\+\_\+empty, void \texorpdfstring{$\ast$}{*}initial)
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_a27d156457ca038d4db70a07836176a08}{Py\+Array\+Method\+\_\+\+Translate\+Given\+Descriptors}}(int nin, int nout, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const wrapped\+\_\+dtypes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}const given\+\_\+descrs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}new\+\_\+descrs\mbox{[}$\,$\mbox{]})
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_a3bbfe8c6f10b87cc265d26b512d1d2e5}{Py\+Array\+Method\+\_\+\+Translate\+Loop\+Descriptors}}(int nin, int nout, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const new\+\_\+dtypes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}const given\+\_\+descrs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}original\+\_\+descrs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}loop\+\_\+descrs\mbox{[}$\,$\mbox{]})
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_a68740e2642ab6f3a691dfaac4e317eee}{Py\+Array\+Method\+\_\+\+Traverse\+Loop}}(void \texorpdfstring{$\ast$}{*}traverse\+\_\+context, const \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}descr, char \texorpdfstring{$\ast$}{*}data, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} size, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} stride, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}auxdata)
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_ac2bef1d720bf0a175a9d3ffbc9a67d76}{Py\+Array\+Method\+\_\+\+Get\+Traverse\+Loop}}(void \texorpdfstring{$\ast$}{*}traverse\+\_\+context, const \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}descr, int aligned, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} fixed\+\_\+stride, \mbox{\hyperlink{dtype__api_8h_a68740e2642ab6f3a691dfaac4e317eee}{Py\+Array\+Method\+\_\+\+Traverse\+Loop}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+loop, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+auxdata, \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\+\_\+\+ARRAYMETHOD\+\_\+\+FLAGS}} \texorpdfstring{$\ast$}{*}flags)
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_a494a7c0c0692903c4592fe30ebe19884}{Py\+Array\+Method\+\_\+\+Promoter\+Function}}(Py\+Object \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structufunc}{ufunc}}, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const op\+\_\+dtypes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const signature\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}new\+\_\+op\+\_\+dtypes\mbox{[}$\,$\mbox{]})
+\item 
+typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{dtype__api_8h_a3b97d7a90bbe99985b9f19725556e7c0}{Py\+Array\+DType\+Meta\+\_\+\+Discover\+Descr\+From\+Pyobject}}(\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}cls, Py\+Object \texorpdfstring{$\ast$}{*}obj)
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_a78a5eaad746912cc764c014833b9b71c}{Py\+Array\+DType\+Meta\+\_\+\+Is\+Known\+Scalar\+Type}}(\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}cls, Py\+Type\+Object \texorpdfstring{$\ast$}{*}obj)
+\item 
+typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{dtype__api_8h_a7a3be55b8df0366033d738cfe15d3d66}{Py\+Array\+DType\+Meta\+\_\+\+Default\+Descriptor}}(\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}cls)
+\item 
+typedef \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{dtype__api_8h_aa5bc25e55b9ca2959d3367e0fd34ce01}{Py\+Array\+DType\+Meta\+\_\+\+Common\+DType}}(\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}dtype1, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}dtype2)
+\item 
+typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{dtype__api_8h_a1aca942890e0691ca9fe321c0e7ac987}{Py\+Array\+DType\+Meta\+\_\+\+Common\+Instance}}(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}dtype1, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}dtype2)
+\item 
+typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{dtype__api_8h_ae1f9f0549b889b033f5b7f3d5a6e9bcb}{Py\+Array\+DType\+Meta\+\_\+\+Ensure\+Canonical}}(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}dtype)
+\item 
+typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{dtype__api_8h_aa85f96e5c31c2dcda39068151201af9f}{Py\+Array\+DType\+Meta\+\_\+\+Finalize\+Descriptor}}(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}dtype)
+\item 
+typedef int() \mbox{\hyperlink{dtype__api_8h_aad3791dc80170a44c94e2df1b75459ba}{Py\+Array\+DType\+Meta\+\_\+\+Set\+Item}}(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}, Py\+Object \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})
+\item 
+typedef Py\+Object \texorpdfstring{$\ast$}{*}() \mbox{\hyperlink{dtype__api_8h_a7ad61d7a177ef84f1ba4843f7d20ba8b}{Py\+Array\+DType\+Meta\+\_\+\+Get\+Item}}(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\+\_\+\+ARRAYMETHOD\+\_\+\+FLAGS}} \{ \newline
+\mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a05326dcd9a47a10ff4e248f39a37af5a}{NPY\+\_\+\+METH\+\_\+\+REQUIRES\+\_\+\+PYAPI}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa8d35cb444ef78fc74bbb33d4b513d20}{NPY\+\_\+\+METH\+\_\+\+NO\+\_\+\+FLOATINGPOINT\+\_\+\+ERRORS}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a618f441dbed79011bddb38772d6811b1}{NPY\+\_\+\+METH\+\_\+\+SUPPORTS\+\_\+\+UNALIGNED}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702ab1f47e09c6196e6b92a09dbb28d84d78}{NPY\+\_\+\+METH\+\_\+\+IS\+\_\+\+REORDERABLE}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \newline
+\mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a95c411d78e0dc7192a1a1da8db71bfd1}{\+\_\+\+NPY\+\_\+\+METH\+\_\+\+FORCE\+\_\+\+CAST\+\_\+\+INPUTS}} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 17
+, \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa1006203f15de9c2bf7da19bb6947158}{NPY\+\_\+\+METH\+\_\+\+RUNTIME\+\_\+\+FLAGS}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}\label{dtype__api_8h_a922a34b8114bdd96d7294238535cf240} 
+\index{dtype\_api.h@{dtype\_api.h}!\_NPY\_DT\_ARRFUNCS\_OFFSET@{\_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\index{\_NPY\_DT\_ARRFUNCS\_OFFSET@{\_NPY\_DT\_ARRFUNCS\_OFFSET}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{\_NPY\_DT\_ARRFUNCS\_OFFSET}{\_NPY\_DT\_ARRFUNCS\_OFFSET}}
+{\footnotesize\ttfamily \#define \+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET~(1 $<$$<$ 10)}
+
+\Hypertarget{dtype__api_8h_af71da689b45198cc1f5d81233d8b020a}\label{dtype__api_8h_af71da689b45198cc1f5d81233d8b020a} 
+\index{dtype\_api.h@{dtype\_api.h}!\_NPY\_DT\_is\_known\_scalar\_type@{\_NPY\_DT\_is\_known\_scalar\_type}}
+\index{\_NPY\_DT\_is\_known\_scalar\_type@{\_NPY\_DT\_is\_known\_scalar\_type}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{\_NPY\_DT\_is\_known\_scalar\_type}{\_NPY\_DT\_is\_known\_scalar\_type}}
+{\footnotesize\ttfamily \#define \+\_\+\+NPY\+\_\+\+DT\+\_\+is\+\_\+known\+\_\+scalar\+\_\+type~2}
+
+\Hypertarget{dtype__api_8h_ad563eaee7fab8875560fdd61f0e18e55}\label{dtype__api_8h_ad563eaee7fab8875560fdd61f0e18e55} 
+\index{dtype\_api.h@{dtype\_api.h}!\_NPY\_METH\_resolve\_descriptors\_with\_scalars@{\_NPY\_METH\_resolve\_descriptors\_with\_scalars}}
+\index{\_NPY\_METH\_resolve\_descriptors\_with\_scalars@{\_NPY\_METH\_resolve\_descriptors\_with\_scalars}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{\_NPY\_METH\_resolve\_descriptors\_with\_scalars}{\_NPY\_METH\_resolve\_descriptors\_with\_scalars}}
+{\footnotesize\ttfamily \#define \+\_\+\+NPY\+\_\+\+METH\+\_\+resolve\+\_\+descriptors\+\_\+with\+\_\+scalars~1}
+
+\Hypertarget{dtype__api_8h_ac4bded52efc015c188dba09bca78f30f}\label{dtype__api_8h_ac4bded52efc015c188dba09bca78f30f} 
+\index{dtype\_api.h@{dtype\_api.h}!\_NPY\_METH\_static\_data@{\_NPY\_METH\_static\_data}}
+\index{\_NPY\_METH\_static\_data@{\_NPY\_METH\_static\_data}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{\_NPY\_METH\_static\_data}{\_NPY\_METH\_static\_data}}
+{\footnotesize\ttfamily \#define \+\_\+\+NPY\+\_\+\+METH\+\_\+static\+\_\+data~10}
+
+\Hypertarget{dtype__api_8h_ae8ad09f0a3c65ac7e31e090125f57958}\label{dtype__api_8h_ae8ad09f0a3c65ac7e31e090125f57958} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_ABSTRACT@{NPY\_DT\_ABSTRACT}}
+\index{NPY\_DT\_ABSTRACT@{NPY\_DT\_ABSTRACT}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_ABSTRACT}{NPY\_DT\_ABSTRACT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+ABSTRACT~1 $<$$<$ 1}
+
+\Hypertarget{dtype__api_8h_ad6c52def26dd35541ae9faaba8592cfb}\label{dtype__api_8h_ad6c52def26dd35541ae9faaba8592cfb} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_common\_dtype@{NPY\_DT\_common\_dtype}}
+\index{NPY\_DT\_common\_dtype@{NPY\_DT\_common\_dtype}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_common\_dtype}{NPY\_DT\_common\_dtype}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+common\+\_\+dtype~4}
+
+\Hypertarget{dtype__api_8h_ada60134db101548e773e3e7cacd19216}\label{dtype__api_8h_ada60134db101548e773e3e7cacd19216} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_common\_instance@{NPY\_DT\_common\_instance}}
+\index{NPY\_DT\_common\_instance@{NPY\_DT\_common\_instance}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_common\_instance}{NPY\_DT\_common\_instance}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+common\+\_\+instance~5}
+
+\Hypertarget{dtype__api_8h_a947918bee77cd7b805025149a6f75bfb}\label{dtype__api_8h_a947918bee77cd7b805025149a6f75bfb} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_default\_descr@{NPY\_DT\_default\_descr}}
+\index{NPY\_DT\_default\_descr@{NPY\_DT\_default\_descr}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_default\_descr}{NPY\_DT\_default\_descr}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+default\+\_\+descr~3}
+
+\Hypertarget{dtype__api_8h_a601751f486cb4c5ddc8c47cf96aa3c82}\label{dtype__api_8h_a601751f486cb4c5ddc8c47cf96aa3c82} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_discover\_descr\_from\_pyobject@{NPY\_DT\_discover\_descr\_from\_pyobject}}
+\index{NPY\_DT\_discover\_descr\_from\_pyobject@{NPY\_DT\_discover\_descr\_from\_pyobject}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_discover\_descr\_from\_pyobject}{NPY\_DT\_discover\_descr\_from\_pyobject}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+discover\+\_\+descr\+\_\+from\+\_\+pyobject~1}
+
+\Hypertarget{dtype__api_8h_a8342fe31e267727afedab1c4c618e581}\label{dtype__api_8h_a8342fe31e267727afedab1c4c618e581} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_ensure\_canonical@{NPY\_DT\_ensure\_canonical}}
+\index{NPY\_DT\_ensure\_canonical@{NPY\_DT\_ensure\_canonical}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_ensure\_canonical}{NPY\_DT\_ensure\_canonical}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+ensure\+\_\+canonical~6}
+
+\Hypertarget{dtype__api_8h_a3a02c0e1761f2f84873e6b76573ee24a}\label{dtype__api_8h_a3a02c0e1761f2f84873e6b76573ee24a} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_finalize\_descr@{NPY\_DT\_finalize\_descr}}
+\index{NPY\_DT\_finalize\_descr@{NPY\_DT\_finalize\_descr}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_finalize\_descr}{NPY\_DT\_finalize\_descr}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+finalize\+\_\+descr~11}
+
+\Hypertarget{dtype__api_8h_a659912a66fb33dec644f57fcfaa8fb3a}\label{dtype__api_8h_a659912a66fb33dec644f57fcfaa8fb3a} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_get\_clear\_loop@{NPY\_DT\_get\_clear\_loop}}
+\index{NPY\_DT\_get\_clear\_loop@{NPY\_DT\_get\_clear\_loop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_get\_clear\_loop}{NPY\_DT\_get\_clear\_loop}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+get\+\_\+clear\+\_\+loop~9}
+
+\Hypertarget{dtype__api_8h_a91929a73cec15293c1c952c59ed88fbb}\label{dtype__api_8h_a91929a73cec15293c1c952c59ed88fbb} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_get\_fill\_zero\_loop@{NPY\_DT\_get\_fill\_zero\_loop}}
+\index{NPY\_DT\_get\_fill\_zero\_loop@{NPY\_DT\_get\_fill\_zero\_loop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_get\_fill\_zero\_loop}{NPY\_DT\_get\_fill\_zero\_loop}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+get\+\_\+fill\+\_\+zero\+\_\+loop~10}
+
+\Hypertarget{dtype__api_8h_a0eddd1b84a6f401849829aaeea7215ac}\label{dtype__api_8h_a0eddd1b84a6f401849829aaeea7215ac} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_getitem@{NPY\_DT\_getitem}}
+\index{NPY\_DT\_getitem@{NPY\_DT\_getitem}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_getitem}{NPY\_DT\_getitem}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+getitem~8}
+
+\Hypertarget{dtype__api_8h_ae9c346f7fdaa8d96694d751ecc5c4cbf}\label{dtype__api_8h_ae9c346f7fdaa8d96694d751ecc5c4cbf} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_NUMERIC@{NPY\_DT\_NUMERIC}}
+\index{NPY\_DT\_NUMERIC@{NPY\_DT\_NUMERIC}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_NUMERIC}{NPY\_DT\_NUMERIC}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+NUMERIC~1 $<$$<$ 3}
+
+\Hypertarget{dtype__api_8h_afbb1ddf8ef646426af4baf62be00c1e8}\label{dtype__api_8h_afbb1ddf8ef646426af4baf62be00c1e8} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PARAMETRIC@{NPY\_DT\_PARAMETRIC}}
+\index{NPY\_DT\_PARAMETRIC@{NPY\_DT\_PARAMETRIC}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PARAMETRIC}{NPY\_DT\_PARAMETRIC}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+PARAMETRIC~1 $<$$<$ 2}
+
+\Hypertarget{dtype__api_8h_a24427d5efdfff63579fc018f9bd9be78}\label{dtype__api_8h_a24427d5efdfff63579fc018f9bd9be78} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_argmax@{NPY\_DT\_PyArray\_ArrFuncs\_argmax}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_argmax@{NPY\_DT\_PyArray\_ArrFuncs\_argmax}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_argmax}{NPY\_DT\_PyArray\_ArrFuncs\_argmax}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+argmax~6 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_ae1d4849ee095ca76ac7d2ce20aeac208}\label{dtype__api_8h_ae1d4849ee095ca76ac7d2ce20aeac208} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_argmin@{NPY\_DT\_PyArray\_ArrFuncs\_argmin}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_argmin@{NPY\_DT\_PyArray\_ArrFuncs\_argmin}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_argmin}{NPY\_DT\_PyArray\_ArrFuncs\_argmin}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+argmin~22 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_a88b99b4a4bc3c81566d912e02d015795}\label{dtype__api_8h_a88b99b4a4bc3c81566d912e02d015795} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_argsort@{NPY\_DT\_PyArray\_ArrFuncs\_argsort}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_argsort@{NPY\_DT\_PyArray\_ArrFuncs\_argsort}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_argsort}{NPY\_DT\_PyArray\_ArrFuncs\_argsort}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+argsort~14 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_af2aab730e3cfa3c0ce192fddd2e917a2}\label{dtype__api_8h_af2aab730e3cfa3c0ce192fddd2e917a2} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_compare@{NPY\_DT\_PyArray\_ArrFuncs\_compare}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_compare@{NPY\_DT\_PyArray\_ArrFuncs\_compare}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_compare}{NPY\_DT\_PyArray\_ArrFuncs\_compare}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+compare~5 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_a799ecbddf31a436dbc4c5c79e841921b}\label{dtype__api_8h_a799ecbddf31a436dbc4c5c79e841921b} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_dotfunc@{NPY\_DT\_PyArray\_ArrFuncs\_dotfunc}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_dotfunc@{NPY\_DT\_PyArray\_ArrFuncs\_dotfunc}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_dotfunc}{NPY\_DT\_PyArray\_ArrFuncs\_dotfunc}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+dotfunc~7 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_a28f74b5831d395a4143f9ea0f50c6916}\label{dtype__api_8h_a28f74b5831d395a4143f9ea0f50c6916} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_fill@{NPY\_DT\_PyArray\_ArrFuncs\_fill}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_fill@{NPY\_DT\_PyArray\_ArrFuncs\_fill}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_fill}{NPY\_DT\_PyArray\_ArrFuncs\_fill}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+fill~11 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_a64af963b42167b1947c5b5c17e9f95ec}\label{dtype__api_8h_a64af963b42167b1947c5b5c17e9f95ec} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_fillwithscalar@{NPY\_DT\_PyArray\_ArrFuncs\_fillwithscalar}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_fillwithscalar@{NPY\_DT\_PyArray\_ArrFuncs\_fillwithscalar}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_fillwithscalar}{NPY\_DT\_PyArray\_ArrFuncs\_fillwithscalar}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+fillwithscalar~12 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_af28a01088938ee52194039703cddb582}\label{dtype__api_8h_af28a01088938ee52194039703cddb582} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_fromstr@{NPY\_DT\_PyArray\_ArrFuncs\_fromstr}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_fromstr@{NPY\_DT\_PyArray\_ArrFuncs\_fromstr}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_fromstr}{NPY\_DT\_PyArray\_ArrFuncs\_fromstr}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+fromstr~9 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_aef1e4d4546a31d65f28e74d9834bec16}\label{dtype__api_8h_aef1e4d4546a31d65f28e74d9834bec16} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_getitem@{NPY\_DT\_PyArray\_ArrFuncs\_getitem}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_getitem@{NPY\_DT\_PyArray\_ArrFuncs\_getitem}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_getitem}{NPY\_DT\_PyArray\_ArrFuncs\_getitem}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+getitem~1 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_aa1f92be24795f2834e5e79f0c06edd5e}\label{dtype__api_8h_aa1f92be24795f2834e5e79f0c06edd5e} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_nonzero@{NPY\_DT\_PyArray\_ArrFuncs\_nonzero}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_nonzero@{NPY\_DT\_PyArray\_ArrFuncs\_nonzero}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_nonzero}{NPY\_DT\_PyArray\_ArrFuncs\_nonzero}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+nonzero~10 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_aa0f78e35a450eaeaa6afaf55930e6b4c}\label{dtype__api_8h_aa0f78e35a450eaeaa6afaf55930e6b4c} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_scanfunc@{NPY\_DT\_PyArray\_ArrFuncs\_scanfunc}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_scanfunc@{NPY\_DT\_PyArray\_ArrFuncs\_scanfunc}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_scanfunc}{NPY\_DT\_PyArray\_ArrFuncs\_scanfunc}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+scanfunc~8 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_a9e4b28dd5eff585c30ffe3cff077e996}\label{dtype__api_8h_a9e4b28dd5eff585c30ffe3cff077e996} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_setitem@{NPY\_DT\_PyArray\_ArrFuncs\_setitem}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_setitem@{NPY\_DT\_PyArray\_ArrFuncs\_setitem}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_setitem}{NPY\_DT\_PyArray\_ArrFuncs\_setitem}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+setitem~2 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_a7ab32004cb324e127123c8443d92837a}\label{dtype__api_8h_a7ab32004cb324e127123c8443d92837a} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_PyArray\_ArrFuncs\_sort@{NPY\_DT\_PyArray\_ArrFuncs\_sort}}
+\index{NPY\_DT\_PyArray\_ArrFuncs\_sort@{NPY\_DT\_PyArray\_ArrFuncs\_sort}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_PyArray\_ArrFuncs\_sort}{NPY\_DT\_PyArray\_ArrFuncs\_sort}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+\+Py\+Array\+\_\+\+Arr\+Funcs\+\_\+sort~13 + \mbox{\hyperlink{dtype__api_8h_a922a34b8114bdd96d7294238535cf240}{\+\_\+\+NPY\+\_\+\+DT\+\_\+\+ARRFUNCS\+\_\+\+OFFSET}}}
+
+\Hypertarget{dtype__api_8h_a26aa26e0bcba884b1a90f1035491b6c8}\label{dtype__api_8h_a26aa26e0bcba884b1a90f1035491b6c8} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DT\_setitem@{NPY\_DT\_setitem}}
+\index{NPY\_DT\_setitem@{NPY\_DT\_setitem}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DT\_setitem}{NPY\_DT\_setitem}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DT\+\_\+setitem~7}
+
+\Hypertarget{dtype__api_8h_ae9f208af1d0934094984035cde55b2f2}\label{dtype__api_8h_ae9f208af1d0934094984035cde55b2f2} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_DTYPE@{NPY\_DTYPE}}
+\index{NPY\_DTYPE@{NPY\_DTYPE}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DTYPE}{NPY\_DTYPE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DTYPE(\begin{DoxyParamCaption}\item[{}]{descr }\end{DoxyParamCaption})~((\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*})Py\+\_\+\+TYPE(descr))}
+
+\Hypertarget{dtype__api_8h_ac153d6b83520629664e8647cc55476ad}\label{dtype__api_8h_ac153d6b83520629664e8647cc55476ad} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_contiguous\_indexed\_loop@{NPY\_METH\_contiguous\_indexed\_loop}}
+\index{NPY\_METH\_contiguous\_indexed\_loop@{NPY\_METH\_contiguous\_indexed\_loop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_METH\_contiguous\_indexed\_loop}{NPY\_METH\_contiguous\_indexed\_loop}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+METH\+\_\+contiguous\+\_\+indexed\+\_\+loop~9}
+
+\Hypertarget{dtype__api_8h_ab5aded0446aa81c867a9d79ed3e68b47}\label{dtype__api_8h_ab5aded0446aa81c867a9d79ed3e68b47} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_contiguous\_loop@{NPY\_METH\_contiguous\_loop}}
+\index{NPY\_METH\_contiguous\_loop@{NPY\_METH\_contiguous\_loop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_METH\_contiguous\_loop}{NPY\_METH\_contiguous\_loop}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+METH\+\_\+contiguous\+\_\+loop~6}
+
+\Hypertarget{dtype__api_8h_a0837d88eac88e695c760a73d8d22c369}\label{dtype__api_8h_a0837d88eac88e695c760a73d8d22c369} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_get\_loop@{NPY\_METH\_get\_loop}}
+\index{NPY\_METH\_get\_loop@{NPY\_METH\_get\_loop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_METH\_get\_loop}{NPY\_METH\_get\_loop}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+METH\+\_\+get\+\_\+loop~3}
+
+\Hypertarget{dtype__api_8h_ac8642387819b32543057fedc0b241ce4}\label{dtype__api_8h_ac8642387819b32543057fedc0b241ce4} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_get\_reduction\_initial@{NPY\_METH\_get\_reduction\_initial}}
+\index{NPY\_METH\_get\_reduction\_initial@{NPY\_METH\_get\_reduction\_initial}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_METH\_get\_reduction\_initial}{NPY\_METH\_get\_reduction\_initial}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+METH\+\_\+get\+\_\+reduction\+\_\+initial~4}
+
+\Hypertarget{dtype__api_8h_abfa5090d7d3476512203a4234c2094e4}\label{dtype__api_8h_abfa5090d7d3476512203a4234c2094e4} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_resolve\_descriptors@{NPY\_METH\_resolve\_descriptors}}
+\index{NPY\_METH\_resolve\_descriptors@{NPY\_METH\_resolve\_descriptors}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_METH\_resolve\_descriptors}{NPY\_METH\_resolve\_descriptors}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+METH\+\_\+resolve\+\_\+descriptors~2}
+
+\Hypertarget{dtype__api_8h_ac33808eaec626b4c16952882b3d6b7a7}\label{dtype__api_8h_ac33808eaec626b4c16952882b3d6b7a7} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_strided\_loop@{NPY\_METH\_strided\_loop}}
+\index{NPY\_METH\_strided\_loop@{NPY\_METH\_strided\_loop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_METH\_strided\_loop}{NPY\_METH\_strided\_loop}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+METH\+\_\+strided\+\_\+loop~5}
+
+\Hypertarget{dtype__api_8h_a0a97403244b745dc2860549c50552025}\label{dtype__api_8h_a0a97403244b745dc2860549c50552025} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_unaligned\_contiguous\_loop@{NPY\_METH\_unaligned\_contiguous\_loop}}
+\index{NPY\_METH\_unaligned\_contiguous\_loop@{NPY\_METH\_unaligned\_contiguous\_loop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_METH\_unaligned\_contiguous\_loop}{NPY\_METH\_unaligned\_contiguous\_loop}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+METH\+\_\+unaligned\+\_\+contiguous\+\_\+loop~8}
+
+\Hypertarget{dtype__api_8h_ab561c6fccf50ee95263e6b749069c066}\label{dtype__api_8h_ab561c6fccf50ee95263e6b749069c066} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_unaligned\_strided\_loop@{NPY\_METH\_unaligned\_strided\_loop}}
+\index{NPY\_METH\_unaligned\_strided\_loop@{NPY\_METH\_unaligned\_strided\_loop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_METH\_unaligned\_strided\_loop}{NPY\_METH\_unaligned\_strided\_loop}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+METH\+\_\+unaligned\+\_\+strided\+\_\+loop~7}
+
+
+
+\doxysubsection{Documentation des définitions de type}
+\Hypertarget{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}\label{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArray\_DTypeMeta@{PyArray\_DTypeMeta}}
+\index{PyArray\_DTypeMeta@{PyArray\_DTypeMeta}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArray\_DTypeMeta}{PyArray\_DTypeMeta}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{Py\+Array\+\_\+\+DType\+Meta\+\_\+tag}} \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}}}
+
+\Hypertarget{dtype__api_8h_aa5bc25e55b9ca2959d3367e0fd34ce01}\label{dtype__api_8h_aa5bc25e55b9ca2959d3367e0fd34ce01} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_CommonDType@{PyArrayDTypeMeta\_CommonDType}}
+\index{PyArrayDTypeMeta\_CommonDType@{PyArrayDTypeMeta\_CommonDType}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_CommonDType}{PyArrayDTypeMeta\_CommonDType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}() Py\+Array\+DType\+Meta\+\_\+\+Common\+DType(\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}dtype1, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}dtype2)}
+
+\Hypertarget{dtype__api_8h_a1aca942890e0691ca9fe321c0e7ac987}\label{dtype__api_8h_a1aca942890e0691ca9fe321c0e7ac987} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_CommonInstance@{PyArrayDTypeMeta\_CommonInstance}}
+\index{PyArrayDTypeMeta\_CommonInstance@{PyArrayDTypeMeta\_CommonInstance}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_CommonInstance}{PyArrayDTypeMeta\_CommonInstance}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() Py\+Array\+DType\+Meta\+\_\+\+Common\+Instance(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}dtype1, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}dtype2)}
+
+\Hypertarget{dtype__api_8h_a7a3be55b8df0366033d738cfe15d3d66}\label{dtype__api_8h_a7a3be55b8df0366033d738cfe15d3d66} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_DefaultDescriptor@{PyArrayDTypeMeta\_DefaultDescriptor}}
+\index{PyArrayDTypeMeta\_DefaultDescriptor@{PyArrayDTypeMeta\_DefaultDescriptor}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_DefaultDescriptor}{PyArrayDTypeMeta\_DefaultDescriptor}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() Py\+Array\+DType\+Meta\+\_\+\+Default\+Descriptor(\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}cls)}
+
+\Hypertarget{dtype__api_8h_a3b97d7a90bbe99985b9f19725556e7c0}\label{dtype__api_8h_a3b97d7a90bbe99985b9f19725556e7c0} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_DiscoverDescrFromPyobject@{PyArrayDTypeMeta\_DiscoverDescrFromPyobject}}
+\index{PyArrayDTypeMeta\_DiscoverDescrFromPyobject@{PyArrayDTypeMeta\_DiscoverDescrFromPyobject}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_DiscoverDescrFromPyobject}{PyArrayDTypeMeta\_DiscoverDescrFromPyobject}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() Py\+Array\+DType\+Meta\+\_\+\+Discover\+Descr\+From\+Pyobject(\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}cls, Py\+Object \texorpdfstring{$\ast$}{*}obj)}
+
+\Hypertarget{dtype__api_8h_ae1f9f0549b889b033f5b7f3d5a6e9bcb}\label{dtype__api_8h_ae1f9f0549b889b033f5b7f3d5a6e9bcb} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_EnsureCanonical@{PyArrayDTypeMeta\_EnsureCanonical}}
+\index{PyArrayDTypeMeta\_EnsureCanonical@{PyArrayDTypeMeta\_EnsureCanonical}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_EnsureCanonical}{PyArrayDTypeMeta\_EnsureCanonical}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() Py\+Array\+DType\+Meta\+\_\+\+Ensure\+Canonical(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}dtype)}
+
+\Hypertarget{dtype__api_8h_aa85f96e5c31c2dcda39068151201af9f}\label{dtype__api_8h_aa85f96e5c31c2dcda39068151201af9f} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_FinalizeDescriptor@{PyArrayDTypeMeta\_FinalizeDescriptor}}
+\index{PyArrayDTypeMeta\_FinalizeDescriptor@{PyArrayDTypeMeta\_FinalizeDescriptor}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_FinalizeDescriptor}{PyArrayDTypeMeta\_FinalizeDescriptor}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}() Py\+Array\+DType\+Meta\+\_\+\+Finalize\+Descriptor(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}dtype)}
+
+\Hypertarget{dtype__api_8h_a7ad61d7a177ef84f1ba4843f7d20ba8b}\label{dtype__api_8h_a7ad61d7a177ef84f1ba4843f7d20ba8b} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_GetItem@{PyArrayDTypeMeta\_GetItem}}
+\index{PyArrayDTypeMeta\_GetItem@{PyArrayDTypeMeta\_GetItem}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_GetItem}{PyArrayDTypeMeta\_GetItem}}
+{\footnotesize\ttfamily typedef Py\+Object \texorpdfstring{$\ast$}{*}() Py\+Array\+DType\+Meta\+\_\+\+Get\+Item(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{dtype__api_8h_a78a5eaad746912cc764c014833b9b71c}\label{dtype__api_8h_a78a5eaad746912cc764c014833b9b71c} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_IsKnownScalarType@{PyArrayDTypeMeta\_IsKnownScalarType}}
+\index{PyArrayDTypeMeta\_IsKnownScalarType@{PyArrayDTypeMeta\_IsKnownScalarType}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_IsKnownScalarType}{PyArrayDTypeMeta\_IsKnownScalarType}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+DType\+Meta\+\_\+\+Is\+Known\+Scalar\+Type(\mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}cls, Py\+Type\+Object \texorpdfstring{$\ast$}{*}obj)}
+
+\Hypertarget{dtype__api_8h_aad3791dc80170a44c94e2df1b75459ba}\label{dtype__api_8h_aad3791dc80170a44c94e2df1b75459ba} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayDTypeMeta\_SetItem@{PyArrayDTypeMeta\_SetItem}}
+\index{PyArrayDTypeMeta\_SetItem@{PyArrayDTypeMeta\_SetItem}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayDTypeMeta\_SetItem}{PyArrayDTypeMeta\_SetItem}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+DType\+Meta\+\_\+\+Set\+Item(\mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}, Py\+Object \texorpdfstring{$\ast$}{*}, char \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}\label{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_Context@{PyArrayMethod\_Context}}
+\index{PyArrayMethod\_Context@{PyArrayMethod\_Context}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_Context}{PyArrayMethod\_Context}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structPyArrayMethod__Context__tag}{Py\+Array\+Method\+\_\+\+Context\+\_\+tag}} \mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{Py\+Array\+Method\+\_\+\+Context}}}
+
+\Hypertarget{dtype__api_8h_ab8e3f1abe9301ab5cc32fbfae4f56f07}\label{dtype__api_8h_ab8e3f1abe9301ab5cc32fbfae4f56f07} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_GetLoop@{PyArrayMethod\_GetLoop}}
+\index{PyArrayMethod\_GetLoop@{PyArrayMethod\_GetLoop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_GetLoop}{PyArrayMethod\_GetLoop}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+Method\+\_\+\+Get\+Loop(\mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{Py\+Array\+Method\+\_\+\+Context}} \texorpdfstring{$\ast$}{*}context, int aligned, int move\+\_\+references, const \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}strides, \mbox{\hyperlink{dtype__api_8h_a205f829f4c226bbe6561d642de0b1d45}{Py\+Array\+Method\+\_\+\+Strided\+Loop}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+loop, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+transferdata, \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\+\_\+\+ARRAYMETHOD\+\_\+\+FLAGS}} \texorpdfstring{$\ast$}{*}flags)}
+
+\Hypertarget{dtype__api_8h_a496fc5a04a3abbfa3928be7b0b01d034}\label{dtype__api_8h_a496fc5a04a3abbfa3928be7b0b01d034} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_GetReductionInitial@{PyArrayMethod\_GetReductionInitial}}
+\index{PyArrayMethod\_GetReductionInitial@{PyArrayMethod\_GetReductionInitial}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_GetReductionInitial}{PyArrayMethod\_GetReductionInitial}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+Method\+\_\+\+Get\+Reduction\+Initial(\mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{Py\+Array\+Method\+\_\+\+Context}} \texorpdfstring{$\ast$}{*}context, \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\+\_\+bool}} reduction\+\_\+is\+\_\+empty, void \texorpdfstring{$\ast$}{*}initial)}
+
+Query an Array\+Method for the initial value for use in reduction.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em context} & The arraymethod context, mainly to access the descriptors. \\
+\hline
+{\em reduction\+\_\+is\+\_\+empty} & Whether the reduction is empty. When it is, the value returned may differ. In this case it is a "{}default"{} value that may differ from the "{}identity"{} value normally used. For example\+:
+\begin{DoxyItemize}
+\item {\ttfamily 0.\+0} is the default for {\ttfamily sum(\mbox{[}$\,$\mbox{]})}. But {\ttfamily -\/0.\+0} is the correct identity otherwise as it preserves the sign for {\ttfamily sum(\mbox{[}-\/0.\+0\mbox{]})}.
+\item We use no identity for object, but return the default of {\ttfamily 0} and {\ttfamily 1} for the empty {\ttfamily sum(\mbox{[}\mbox{]}, dtype=object)} and {\ttfamily prod(\mbox{[}\mbox{]}, dtype=object)}. This allows {\ttfamily np.\+sum(np.\+array(\mbox{[}"{}a"{}, "{}b"{}\mbox{]}, dtype=object))} to work.
+\item {\ttfamily -\/inf} or {\ttfamily INT\+\_\+\+MIN} for {\ttfamily max} is an identity, but at least {\ttfamily INT\+\_\+\+MIN} not a good {\itshape default} when there are no items. 
+\end{DoxyItemize}\\
+\hline
+{\em initial} & Pointer to initial data to be filled (if possible)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+-\/1, 0, or 1 indicating error, no initial value, and initial being successfully filled. Errors must not be given where 0 is correct, Num\+Py may call this even when not strictly necessary. 
+\end{DoxyReturn}
+\Hypertarget{dtype__api_8h_ac2bef1d720bf0a175a9d3ffbc9a67d76}\label{dtype__api_8h_ac2bef1d720bf0a175a9d3ffbc9a67d76} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_GetTraverseLoop@{PyArrayMethod\_GetTraverseLoop}}
+\index{PyArrayMethod\_GetTraverseLoop@{PyArrayMethod\_GetTraverseLoop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_GetTraverseLoop}{PyArrayMethod\_GetTraverseLoop}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+Method\+\_\+\+Get\+Traverse\+Loop(void \texorpdfstring{$\ast$}{*}traverse\+\_\+context, const \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}descr, int aligned, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} fixed\+\_\+stride, \mbox{\hyperlink{dtype__api_8h_a68740e2642ab6f3a691dfaac4e317eee}{Py\+Array\+Method\+\_\+\+Traverse\+Loop}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+loop, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+auxdata, \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\+\_\+\+ARRAYMETHOD\+\_\+\+FLAGS}} \texorpdfstring{$\ast$}{*}flags)}
+
+\Hypertarget{dtype__api_8h_a494a7c0c0692903c4592fe30ebe19884}\label{dtype__api_8h_a494a7c0c0692903c4592fe30ebe19884} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_PromoterFunction@{PyArrayMethod\_PromoterFunction}}
+\index{PyArrayMethod\_PromoterFunction@{PyArrayMethod\_PromoterFunction}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_PromoterFunction}{PyArrayMethod\_PromoterFunction}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+Method\+\_\+\+Promoter\+Function(Py\+Object \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structufunc}{ufunc}}, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const op\+\_\+dtypes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const signature\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}new\+\_\+op\+\_\+dtypes\mbox{[}$\,$\mbox{]})}
+
+\Hypertarget{dtype__api_8h_a93eb49c46552bde3b0b8a76b6a7e5460}\label{dtype__api_8h_a93eb49c46552bde3b0b8a76b6a7e5460} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_ResolveDescriptors@{PyArrayMethod\_ResolveDescriptors}}
+\index{PyArrayMethod\_ResolveDescriptors@{PyArrayMethod\_ResolveDescriptors}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_ResolveDescriptors}{PyArrayMethod\_ResolveDescriptors}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\+\_\+\+CASTING}}() Py\+Array\+Method\+\_\+\+Resolve\+Descriptors( struct Py\+Array\+Method\+Object\+\_\+tag \texorpdfstring{$\ast$}{*}method, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}dtypes, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}given\+\_\+descrs, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}loop\+\_\+descrs, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}view\+\_\+offset)}
+
+\Hypertarget{dtype__api_8h_ab0f5503a6eff3dac99741a4e09b9c836}\label{dtype__api_8h_ab0f5503a6eff3dac99741a4e09b9c836} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_ResolveDescriptorsWithScalar@{PyArrayMethod\_ResolveDescriptorsWithScalar}}
+\index{PyArrayMethod\_ResolveDescriptorsWithScalar@{PyArrayMethod\_ResolveDescriptorsWithScalar}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_ResolveDescriptorsWithScalar}{PyArrayMethod\_ResolveDescriptorsWithScalar}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\+\_\+\+CASTING}}() Py\+Array\+Method\+\_\+\+Resolve\+Descriptors\+With\+Scalar(struct Py\+Array\+Method\+Object\+\_\+tag \texorpdfstring{$\ast$}{*}method, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}dtypes, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}given\+\_\+descrs, Py\+Object \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}input\+\_\+scalars, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}loop\+\_\+descrs, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}view\+\_\+offset)}
+
+\Hypertarget{dtype__api_8h_a205f829f4c226bbe6561d642de0b1d45}\label{dtype__api_8h_a205f829f4c226bbe6561d642de0b1d45} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_StridedLoop@{PyArrayMethod\_StridedLoop}}
+\index{PyArrayMethod\_StridedLoop@{PyArrayMethod\_StridedLoop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_StridedLoop}{PyArrayMethod\_StridedLoop}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+Method\+\_\+\+Strided\+Loop(\mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{Py\+Array\+Method\+\_\+\+Context}} \texorpdfstring{$\ast$}{*}context, char \texorpdfstring{$\ast$}{*}const \texorpdfstring{$\ast$}{*}data, const \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}dimensions, const \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}strides, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}transferdata)}
+
+\Hypertarget{dtype__api_8h_a27d156457ca038d4db70a07836176a08}\label{dtype__api_8h_a27d156457ca038d4db70a07836176a08} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_TranslateGivenDescriptors@{PyArrayMethod\_TranslateGivenDescriptors}}
+\index{PyArrayMethod\_TranslateGivenDescriptors@{PyArrayMethod\_TranslateGivenDescriptors}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_TranslateGivenDescriptors}{PyArrayMethod\_TranslateGivenDescriptors}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+Method\+\_\+\+Translate\+Given\+Descriptors(int nin, int nout, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const wrapped\+\_\+dtypes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}const given\+\_\+descrs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}new\+\_\+descrs\mbox{[}$\,$\mbox{]})}
+
+\Hypertarget{dtype__api_8h_a3bbfe8c6f10b87cc265d26b512d1d2e5}\label{dtype__api_8h_a3bbfe8c6f10b87cc265d26b512d1d2e5} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_TranslateLoopDescriptors@{PyArrayMethod\_TranslateLoopDescriptors}}
+\index{PyArrayMethod\_TranslateLoopDescriptors@{PyArrayMethod\_TranslateLoopDescriptors}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_TranslateLoopDescriptors}{PyArrayMethod\_TranslateLoopDescriptors}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+Method\+\_\+\+Translate\+Loop\+Descriptors(int nin, int nout, \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{Py\+Array\+\_\+\+DType\+Meta}} \texorpdfstring{$\ast$}{*}const new\+\_\+dtypes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}const given\+\_\+descrs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}original\+\_\+descrs\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}loop\+\_\+descrs\mbox{[}$\,$\mbox{]})}
+
+The function to convert the actual loop descriptors (as returned by the original {\ttfamily resolve\+\_\+descriptors} function) to the ones the output array should use. This function must return "{}viewable"{} types, it must not mutate them in any form that would break the inner-\/loop logic. Does not need to support NULL.
+
+The function must clean up on error.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nin} & Number of input arguments \\
+\hline
+{\em nout} & Number of output arguments \\
+\hline
+{\em new\+\_\+dtypes} & The DTypes of the output (usually probably not needed) \\
+\hline
+{\em given\+\_\+descrs} & Original given\+\_\+descrs to the resolver, necessary to fetch any information related to the new dtypes from the original. \\
+\hline
+{\em original\+\_\+descrs} & The {\ttfamily loop\+\_\+descrs} returned by the wrapped loop. \\
+\hline
+{\em loop\+\_\+descrs} & The output descriptors, compatible to {\ttfamily original\+\_\+descrs}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 on success, -\/1 on failure. 
+\end{DoxyReturn}
+\Hypertarget{dtype__api_8h_a68740e2642ab6f3a691dfaac4e317eee}\label{dtype__api_8h_a68740e2642ab6f3a691dfaac4e317eee} 
+\index{dtype\_api.h@{dtype\_api.h}!PyArrayMethod\_TraverseLoop@{PyArrayMethod\_TraverseLoop}}
+\index{PyArrayMethod\_TraverseLoop@{PyArrayMethod\_TraverseLoop}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{PyArrayMethod\_TraverseLoop}{PyArrayMethod\_TraverseLoop}}
+{\footnotesize\ttfamily typedef int() Py\+Array\+Method\+\_\+\+Traverse\+Loop(void \texorpdfstring{$\ast$}{*}traverse\+\_\+context, const \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}descr, char \texorpdfstring{$\ast$}{*}data, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} size, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} stride, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}auxdata)}
+
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\Hypertarget{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}\label{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702} 
+\index{dtype\_api.h@{dtype\_api.h}!NPY\_ARRAYMETHOD\_FLAGS@{NPY\_ARRAYMETHOD\_FLAGS}}
+\index{NPY\_ARRAYMETHOD\_FLAGS@{NPY\_ARRAYMETHOD\_FLAGS}!dtype\_api.h@{dtype\_api.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_ARRAYMETHOD\_FLAGS}{NPY\_ARRAYMETHOD\_FLAGS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\+\_\+\+ARRAYMETHOD\+\_\+\+FLAGS}}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPY\_METH\_REQUIRES\_PYAPI@{NPY\_METH\_REQUIRES\_PYAPI}!dtype\_api.h@{dtype\_api.h}}\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_REQUIRES\_PYAPI@{NPY\_METH\_REQUIRES\_PYAPI}}}\Hypertarget{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a05326dcd9a47a10ff4e248f39a37af5a}\label{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a05326dcd9a47a10ff4e248f39a37af5a} 
+NPY\+\_\+\+METH\+\_\+\+REQUIRES\+\_\+\+PYAPI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPY\_METH\_NO\_FLOATINGPOINT\_ERRORS@{NPY\_METH\_NO\_FLOATINGPOINT\_ERRORS}!dtype\_api.h@{dtype\_api.h}}\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_NO\_FLOATINGPOINT\_ERRORS@{NPY\_METH\_NO\_FLOATINGPOINT\_ERRORS}}}\Hypertarget{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa8d35cb444ef78fc74bbb33d4b513d20}\label{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa8d35cb444ef78fc74bbb33d4b513d20} 
+NPY\+\_\+\+METH\+\_\+\+NO\+\_\+\+FLOATINGPOINT\+\_\+\+ERRORS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPY\_METH\_SUPPORTS\_UNALIGNED@{NPY\_METH\_SUPPORTS\_UNALIGNED}!dtype\_api.h@{dtype\_api.h}}\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_SUPPORTS\_UNALIGNED@{NPY\_METH\_SUPPORTS\_UNALIGNED}}}\Hypertarget{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a618f441dbed79011bddb38772d6811b1}\label{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a618f441dbed79011bddb38772d6811b1} 
+NPY\+\_\+\+METH\+\_\+\+SUPPORTS\+\_\+\+UNALIGNED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPY\_METH\_IS\_REORDERABLE@{NPY\_METH\_IS\_REORDERABLE}!dtype\_api.h@{dtype\_api.h}}\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_IS\_REORDERABLE@{NPY\_METH\_IS\_REORDERABLE}}}\Hypertarget{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702ab1f47e09c6196e6b92a09dbb28d84d78}\label{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702ab1f47e09c6196e6b92a09dbb28d84d78} 
+NPY\+\_\+\+METH\+\_\+\+IS\+\_\+\+REORDERABLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{\_NPY\_METH\_FORCE\_CAST\_INPUTS@{\_NPY\_METH\_FORCE\_CAST\_INPUTS}!dtype\_api.h@{dtype\_api.h}}\index{dtype\_api.h@{dtype\_api.h}!\_NPY\_METH\_FORCE\_CAST\_INPUTS@{\_NPY\_METH\_FORCE\_CAST\_INPUTS}}}\Hypertarget{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a95c411d78e0dc7192a1a1da8db71bfd1}\label{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a95c411d78e0dc7192a1a1da8db71bfd1} 
+\+\_\+\+NPY\+\_\+\+METH\+\_\+\+FORCE\+\_\+\+CAST\+\_\+\+INPUTS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPY\_METH\_RUNTIME\_FLAGS@{NPY\_METH\_RUNTIME\_FLAGS}!dtype\_api.h@{dtype\_api.h}}\index{dtype\_api.h@{dtype\_api.h}!NPY\_METH\_RUNTIME\_FLAGS@{NPY\_METH\_RUNTIME\_FLAGS}}}\Hypertarget{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa1006203f15de9c2bf7da19bb6947158}\label{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa1006203f15de9c2bf7da19bb6947158} 
+NPY\+\_\+\+METH\+\_\+\+RUNTIME\+\_\+\+FLAGS&\\
+\hline
+
+\end{DoxyEnumFields}

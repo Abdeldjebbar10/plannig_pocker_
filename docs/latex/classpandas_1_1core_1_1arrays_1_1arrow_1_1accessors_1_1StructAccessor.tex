@@ -1,0 +1,255 @@
+\doxysection{Référence de la classe pandas.\+core.\+arrays.\+arrow.\+accessors.\+Struct\+Accessor}
+\hypertarget{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor}{}\label{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor}\index{pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+arrays.\+arrow.\+accessors.\+Struct\+Accessor\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+arrays.\+arrow.\+accessors.\+Struct\+Accessor\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_a59cb974ce9c6bf55d1f35191fee150ee}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, data=None)
+\item 
+Series \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_abaeccc8b902a67f2c5c20afa2f75951c}{dtypes}} (self)
+\item 
+Series \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_af9020e27950078569f3d96b96fd900a7}{field}} (self, list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}pc.\+Expression\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}int name\+\_\+or\+\_\+index)
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_af498053412442bbf9c0a295070d1ae98}{explode}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_a50cb9a9d882a449b93a959d49b12f35d}{\+\_\+is\+\_\+valid\+\_\+pyarrow\+\_\+dtype}} (self, pyarrow\+\_\+dtype)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1ArrowAccessor}{pandas.\+core.\+arrays.\+arrow.\+accessors.\+Arrow\+Accessor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1ArrowAccessor_a11983977b0715d405d40edce16de3ef4}{\+\_\+validate}} (self, data)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1ArrowAccessor_a8567ed58e2bfb72b3923457baa194c92}{\+\_\+pa\+\_\+array}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1ArrowAccessor}{pandas.\+core.\+arrays.\+arrow.\+accessors.\+Arrow\+Accessor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1ArrowAccessor_a4bff5091d43442036db9fdc0979406ca}{\+\_\+data}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1ArrowAccessor_a553c552bcfd1209a50dd2b4a371a5eda}{\+\_\+validation\+\_\+msg}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Accessor object for structured data properties of the Series values.
+
+Parameters
+----------
+data : Series
+    Series containing Arrow struct data.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_a59cb974ce9c6bf55d1f35191fee150ee}\label{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_a59cb974ce9c6bf55d1f35191fee150ee} 
+\index{pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+arrays.\+arrow.\+accessors.\+Struct\+Accessor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1ArrowAccessor_afd3537ace09d1ea867ed2e096a14b8bd}{pandas.\+core.\+arrays.\+arrow.\+accessors.\+Arrow\+Accessor}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_a50cb9a9d882a449b93a959d49b12f35d}\label{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_a50cb9a9d882a449b93a959d49b12f35d} 
+\index{pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}!\_is\_valid\_pyarrow\_dtype@{\_is\_valid\_pyarrow\_dtype}}
+\index{\_is\_valid\_pyarrow\_dtype@{\_is\_valid\_pyarrow\_dtype}!pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}}
+\doxysubsubsection{\texorpdfstring{\_is\_valid\_pyarrow\_dtype()}{\_is\_valid\_pyarrow\_dtype()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+arrays.\+arrow.\+accessors.\+Struct\+Accessor.\+\_\+is\+\_\+valid\+\_\+pyarrow\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pyarrow\+\_\+dtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1ArrowAccessor_ad053038759b158a70faf6137ce87b583}{pandas.\+core.\+arrays.\+arrow.\+accessors.\+Arrow\+Accessor}}.
+
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_abaeccc8b902a67f2c5c20afa2f75951c}\label{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_abaeccc8b902a67f2c5c20afa2f75951c} 
+\index{pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}!dtypes@{dtypes}}
+\index{dtypes@{dtypes}!pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}}
+\doxysubsubsection{\texorpdfstring{dtypes()}{dtypes()}}
+{\footnotesize\ttfamily  Series pandas.\+core.\+arrays.\+arrow.\+accessors.\+Struct\+Accessor.\+dtypes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the dtype object of each child field of the struct.
+
+Returns
+-------
+pandas.Series
+    The data type of each child field.
+
+Examples
+--------
+>>> import pyarrow as pa
+>>> s = pd.Series(
+...     [
+...         {"version": 1, "project": "pandas"},
+...         {"version": 2, "project": "pandas"},
+...         {"version": 1, "project": "numpy"},
+...     ],
+...     dtype=pd.ArrowDtype(pa.struct(
+...         [("version", pa.int64()), ("project", pa.string())]
+...     ))
+... )
+>>> s.struct.dtypes
+version     int64[pyarrow]
+project    string[pyarrow]
+dtype: object
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_af498053412442bbf9c0a295070d1ae98}\label{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_af498053412442bbf9c0a295070d1ae98} 
+\index{pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}!explode@{explode}}
+\index{explode@{explode}!pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}}
+\doxysubsubsection{\texorpdfstring{explode()}{explode()}}
+{\footnotesize\ttfamily  Data\+Frame pandas.\+core.\+arrays.\+arrow.\+accessors.\+Struct\+Accessor.\+explode (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract all child fields of a struct as a DataFrame.
+
+Returns
+-------
+pandas.DataFrame
+    The data corresponding to all child fields.
+
+See Also
+--------
+Series.struct.field : Return a single child field as a Series.
+
+Examples
+--------
+>>> import pyarrow as pa
+>>> s = pd.Series(
+...     [
+...         {"version": 1, "project": "pandas"},
+...         {"version": 2, "project": "pandas"},
+...         {"version": 1, "project": "numpy"},
+...     ],
+...     dtype=pd.ArrowDtype(pa.struct(
+...         [("version", pa.int64()), ("project", pa.string())]
+...     ))
+... )
+
+>>> s.struct.explode()
+   version project
+0        1  pandas
+1        2  pandas
+2        1   numpy
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_af9020e27950078569f3d96b96fd900a7}\label{classpandas_1_1core_1_1arrays_1_1arrow_1_1accessors_1_1StructAccessor_af9020e27950078569f3d96b96fd900a7} 
+\index{pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}!field@{field}}
+\index{field@{field}!pandas.core.arrays.arrow.accessors.StructAccessor@{pandas.core.arrays.arrow.accessors.StructAccessor}}
+\doxysubsubsection{\texorpdfstring{field()}{field()}}
+{\footnotesize\ttfamily  Series pandas.\+core.\+arrays.\+arrow.\+accessors.\+Struct\+Accessor.\+field (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list\mbox{[}str\mbox{]}         \texorpdfstring{$\vert$}{|} list\mbox{[}bytes\mbox{]}         \texorpdfstring{$\vert$}{|} list\mbox{[}int\mbox{]}         \texorpdfstring{$\vert$}{|} pc.\+Expression         \texorpdfstring{$\vert$}{|} bytes         \texorpdfstring{$\vert$}{|} str         \texorpdfstring{$\vert$}{|} int}]{name\+\_\+or\+\_\+index }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract a child field of a struct as a Series.
+
+Parameters
+----------
+name_or_index : str | bytes | int | expression | list
+    Name or index of the child field to extract.
+
+    For list-like inputs, this will index into a nested
+    struct.
+
+Returns
+-------
+pandas.Series
+    The data corresponding to the selected child field.
+
+See Also
+--------
+Series.struct.explode : Return all child fields as a DataFrame.
+
+Notes
+-----
+The name of the resulting Series will be set using the following
+rules:
+
+- For string, bytes, or integer `name_or_index` (or a list of these, for
+  a nested selection), the Series name is set to the selected
+  field's name.
+- For a :class:`pyarrow.compute.Expression`, this is set to
+  the string form of the expression.
+- For list-like `name_or_index`, the name will be set to the
+  name of the final field selected.
+
+Examples
+--------
+>>> import pyarrow as pa
+>>> s = pd.Series(
+...     [
+...         {"version": 1, "project": "pandas"},
+...         {"version": 2, "project": "pandas"},
+...         {"version": 1, "project": "numpy"},
+...     ],
+...     dtype=pd.ArrowDtype(pa.struct(
+...         [("version", pa.int64()), ("project", pa.string())]
+...     ))
+... )
+
+Extract by field name.
+
+>>> s.struct.field("project")
+0    pandas
+1    pandas
+2     numpy
+Name: project, dtype: string[pyarrow]
+
+Extract by field index.
+
+>>> s.struct.field(0)
+0    1
+1    2
+2    1
+Name: version, dtype: int64[pyarrow]
+
+Or an expression
+
+>>> import pyarrow.compute as pc
+>>> s.struct.field(pc.field("project"))
+0    pandas
+1    pandas
+2     numpy
+Name: project, dtype: string[pyarrow]
+
+For nested struct types, you can pass a list of values to index
+multiple levels:
+
+>>> version_type = pa.struct([
+...     ("major", pa.int64()),
+...     ("minor", pa.int64()),
+... ])
+>>> s = pd.Series(
+...     [
+...         {"version": {"major": 1, "minor": 5}, "project": "pandas"},
+...         {"version": {"major": 2, "minor": 1}, "project": "pandas"},
+...         {"version": {"major": 1, "minor": 26}, "project": "numpy"},
+...     ],
+...     dtype=pd.ArrowDtype(pa.struct(
+...         [("version", version_type), ("project", pa.string())]
+...     ))
+... )
+>>> s.struct.field(["version", "minor"])
+0     5
+1     1
+2    26
+Name: minor, dtype: int64[pyarrow]
+>>> s.struct.field([0, 0])
+0    1
+1    2
+2    1
+Name: major, dtype: int64[pyarrow]
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/arrays/arrow/\mbox{\hyperlink{arrays_2arrow_2accessors_8py}{accessors.\+py}}\end{DoxyCompactItemize}

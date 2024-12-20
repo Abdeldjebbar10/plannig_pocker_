@@ -1,0 +1,42 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+utils.\+ipv6}
+\hypertarget{namespacedjango_1_1utils_1_1ipv6}{}\label{namespacedjango_1_1utils_1_1ipv6}\index{django.utils.ipv6@{django.utils.ipv6}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_accb54475ba6baf6a2bc25f041add4b11}{clean\+\_\+ipv6\+\_\+address}} (ip\+\_\+str, unpack\+\_\+ipv4=False, error\+\_\+message=\+\_\+("{}This is not a valid IPv6 address."{}))
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1ipv6_a432b7379a9683cb15c510319f0024491}{is\+\_\+valid\+\_\+ipv6\+\_\+address}} (ip\+\_\+str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1utils_1_1ipv6_accb54475ba6baf6a2bc25f041add4b11}\label{namespacedjango_1_1utils_1_1ipv6_accb54475ba6baf6a2bc25f041add4b11} 
+\index{django.utils.ipv6@{django.utils.ipv6}!clean\_ipv6\_address@{clean\_ipv6\_address}}
+\index{clean\_ipv6\_address@{clean\_ipv6\_address}!django.utils.ipv6@{django.utils.ipv6}}
+\doxysubsubsection{\texorpdfstring{clean\_ipv6\_address()}{clean\_ipv6\_address()}}
+{\footnotesize\ttfamily django.\+utils.\+ipv6.\+clean\+\_\+ipv6\+\_\+address (\begin{DoxyParamCaption}\item[{}]{ip\+\_\+str,  }\item[{}]{unpack\+\_\+ipv4 = {\ttfamily False},  }\item[{}]{error\+\_\+message = {\ttfamily \+\_\+("{}This~is~not~a~valid~IPv6~address."{})} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clean an IPv6 address string.
+
+Raise ValidationError if the address is invalid.
+
+Replace the longest continuous zero-sequence with "::", remove leading
+zeroes, and make sure all hextets are lowercase.
+
+Args:
+    ip_str: A valid IPv6 address.
+    unpack_ipv4: if an IPv4-mapped address is found,
+    return the plain IPv4 address (default=False).
+    error_message: An error message used in the ValidationError.
+
+Return a compressed IPv6 address or the same value.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1ipv6_a432b7379a9683cb15c510319f0024491}\label{namespacedjango_1_1utils_1_1ipv6_a432b7379a9683cb15c510319f0024491} 
+\index{django.utils.ipv6@{django.utils.ipv6}!is\_valid\_ipv6\_address@{is\_valid\_ipv6\_address}}
+\index{is\_valid\_ipv6\_address@{is\_valid\_ipv6\_address}!django.utils.ipv6@{django.utils.ipv6}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_ipv6\_address()}{is\_valid\_ipv6\_address()}}
+{\footnotesize\ttfamily django.\+utils.\+ipv6.\+is\+\_\+valid\+\_\+ipv6\+\_\+address (\begin{DoxyParamCaption}\item[{}]{ip\+\_\+str }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether or not the `ip_str` string is a valid IPv6 address.
+\end{DoxyVerb}
+ 

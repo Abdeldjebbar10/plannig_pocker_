@@ -1,0 +1,207 @@
+\doxysection{Référence de la classe django.\+core.\+handlers.\+asgi.\+ASGIHandler}
+\hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler}{}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler}\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+core.\+handlers.\+asgi.\+ASGIHandler\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+core.\+handlers.\+asgi.\+ASGIHandler\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a21504f07e141716c72e16772c4cb33ca}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a22b4781bb9089ff078a3e64dd2f48dce}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, scope, receive, send)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_ab8bd4217b27960d333b61f7311b7f8ee}{handle}} (self, scope, receive, send)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_aef29d5b3473fa5f02285234805bf5a9e}{listen\+\_\+for\+\_\+disconnect}} (self, receive)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a5d7744241582b68cc192ed3c26f8706b}{run\+\_\+get\+\_\+response}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a0590964789796ccc77768c2d0c0f4d87}{read\+\_\+body}} (self, receive)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a0b6618fa208ca382258f4400d2a071db}{create\+\_\+request}} (self, scope, body\+\_\+file)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a8703cb4c364733d6fbbd3e4b547f4f1d}{handle\+\_\+uncaught\+\_\+exception}} (self, request, resolver, exc\+\_\+info)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a28542c5df5c23ccbed43eb104161b90c}{send\+\_\+response}} (self, response, send)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a120f397f30d4fee9926597fa9fe6456f}{chunk\+\_\+bytes}} (cls, data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler}{django.\+core.\+handlers.\+base.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_a41bd96bf0cbb7de9f97bd651f186eb2e}{load\+\_\+middleware}} (self, is\+\_\+async=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_ab6faacdd2c8728e76b608a0ef487045a}{adapt\+\_\+method\+\_\+mode}} (self, is\+\_\+async, method, method\+\_\+is\+\_\+async=None, debug=False, name=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_af2ac57e82855ce854f89ccbd56e5842d}{get\+\_\+response}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_a71ab5f10299a12effdebaaa6776993e2}{get\+\_\+response\+\_\+async}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_a1169ca20bb1d49582495be30dd9b88f3}{resolve\+\_\+request}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_a5077bcaa40256bd623901217f2a1922d}{check\+\_\+response}} (self, response, callback, name=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_aa6935e287f0194fc8d6a0b8a66ca15ff}{make\+\_\+view\+\_\+atomic}} (self, view)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_aff37489dfa4ce6ba160af57f46ab20e6}{process\+\_\+exception\+\_\+by\+\_\+middleware}} (self, exception, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_ae99516bba6b4aab84f23a71233da1db5}{chunk\+\_\+size}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler}{django.\+core.\+handlers.\+base.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_a07077f723de6b78546cd74ab47231847}{process\+\_\+exception\+\_\+by\+\_\+middleware}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_af0eedaad19a76a3c4ea3db6497c2e195}{request\+\_\+class}} = \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIRequest}{ASGIRequest}}
+\item 
+int \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a67a9e0e2f98c5d8001e715127f1312b5}{chunk\+\_\+size}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler}{django.\+core.\+handlers.\+base.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_aed17459d3e401e8397c44c345ae47c1d}{\+\_\+get\+\_\+response}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_a67de707a070dcf01138a3ce0b55cfe0b}{\+\_\+get\+\_\+response\+\_\+async}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler}{django.\+core.\+handlers.\+base.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_a19dceaf30c56bf7bf0a916ac1ac9987b}{\+\_\+view\+\_\+middleware}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_af0507b2cf975f575c5c0b98fe1eaa3ad}{\+\_\+template\+\_\+response\+\_\+middleware}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_a21cf0964d45939ae8b97adf53f054725}{\+\_\+exception\+\_\+middleware}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1base_1_1BaseHandler_ab620578cce0526a85ab1236f5dac47a3}{\+\_\+middleware\+\_\+chain}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Handler for ASGI requests.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a21504f07e141716c72e16772c4cb33ca}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a21504f07e141716c72e16772c4cb33ca} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1ASGIStaticFilesHandler_ae7c067fe0bdcac65bf1e9d328fb95021}{django.\+contrib.\+staticfiles.\+handlers.\+ASGIStatic\+Files\+Handler}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a22b4781bb9089ff078a3e64dd2f48dce}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a22b4781bb9089ff078a3e64dd2f48dce} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{scope,  }\item[{}]{receive,  }\item[{}]{send }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Async entrypoint - parses the request and hands off to get_response.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1handlers_1_1ASGIStaticFilesHandler_a2e5eea48e82e2d295c5934d6ebde4f1a}{django.\+contrib.\+staticfiles.\+handlers.\+ASGIStatic\+Files\+Handler}}.
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a120f397f30d4fee9926597fa9fe6456f}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a120f397f30d4fee9926597fa9fe6456f} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!chunk\_bytes@{chunk\_bytes}}
+\index{chunk\_bytes@{chunk\_bytes}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{chunk\_bytes()}{chunk\_bytes()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+chunk\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Chunks some data up so it can be sent in reasonable size messages.
+Yields (chunk, last_chunk) tuples.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a0b6618fa208ca382258f4400d2a071db}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a0b6618fa208ca382258f4400d2a071db} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!create\_request@{create\_request}}
+\index{create\_request@{create\_request}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{create\_request()}{create\_request()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+create\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{scope,  }\item[{}]{body\+\_\+file }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create the Request object and returns either (request, None) or
+(None, response) if there is an error response.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_ab8bd4217b27960d333b61f7311b7f8ee}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_ab8bd4217b27960d333b61f7311b7f8ee} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!handle@{handle}}
+\index{handle@{handle}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+handle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{scope,  }\item[{}]{receive,  }\item[{}]{send }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles the ASGI request. Called via the __call__ method.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a8703cb4c364733d6fbbd3e4b547f4f1d}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a8703cb4c364733d6fbbd3e4b547f4f1d} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!handle\_uncaught\_exception@{handle\_uncaught\_exception}}
+\index{handle\_uncaught\_exception@{handle\_uncaught\_exception}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{handle\_uncaught\_exception()}{handle\_uncaught\_exception()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+handle\+\_\+uncaught\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{resolver,  }\item[{}]{exc\+\_\+info }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Last-chance handler for exceptions.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_aef29d5b3473fa5f02285234805bf5a9e}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_aef29d5b3473fa5f02285234805bf5a9e} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!listen\_for\_disconnect@{listen\_for\_disconnect}}
+\index{listen\_for\_disconnect@{listen\_for\_disconnect}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{listen\_for\_disconnect()}{listen\_for\_disconnect()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+listen\+\_\+for\+\_\+disconnect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{receive }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Listen for disconnect from the client.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a0590964789796ccc77768c2d0c0f4d87}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a0590964789796ccc77768c2d0c0f4d87} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!read\_body@{read\_body}}
+\index{read\_body@{read\_body}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{read\_body()}{read\_body()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+read\+\_\+body (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{receive }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads an HTTP body from an ASGI connection.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a5d7744241582b68cc192ed3c26f8706b}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a5d7744241582b68cc192ed3c26f8706b} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!run\_get\_response@{run\_get\_response}}
+\index{run\_get\_response@{run\_get\_response}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{run\_get\_response()}{run\_get\_response()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+run\+\_\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get async response.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a28542c5df5c23ccbed43eb104161b90c}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a28542c5df5c23ccbed43eb104161b90c} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!send\_response@{send\_response}}
+\index{send\_response@{send\_response}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{send\_response()}{send\_response()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+send\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{response,  }\item[{}]{send }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encode and send a response out over ASGI.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a67a9e0e2f98c5d8001e715127f1312b5}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_a67a9e0e2f98c5d8001e715127f1312b5} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!chunk\_size@{chunk\_size}}
+\index{chunk\_size@{chunk\_size}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{chunk\_size}{chunk\_size}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+chunk\+\_\+size = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}16\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_ae99516bba6b4aab84f23a71233da1db5}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_ae99516bba6b4aab84f23a71233da1db5} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!chunk\_size@{chunk\_size}}
+\index{chunk\_size@{chunk\_size}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{chunk\_size}{chunk\_size}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+chunk\+\_\+size}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_af0eedaad19a76a3c4ea3db6497c2e195}\label{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIHandler_af0eedaad19a76a3c4ea3db6497c2e195} 
+\index{django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}!request\_class@{request\_class}}
+\index{request\_class@{request\_class}!django.core.handlers.asgi.ASGIHandler@{django.core.handlers.asgi.ASGIHandler}}
+\doxysubsubsection{\texorpdfstring{request\_class}{request\_class}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+asgi.\+ASGIHandler.\+request\+\_\+class = \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIRequest}{ASGIRequest}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/core/handlers/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2django_2core_2handlers_2asgi_8py}{asgi.\+py}}\end{DoxyCompactItemize}

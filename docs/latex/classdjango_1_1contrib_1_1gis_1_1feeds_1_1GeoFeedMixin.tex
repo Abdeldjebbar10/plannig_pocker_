@@ -1,0 +1,56 @@
+\doxysection{Référence de la classe django.\+contrib.\+gis.\+feeds.\+Geo\+Feed\+Mixin}
+\hypertarget{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin}{}\label{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin}\index{django.contrib.gis.feeds.GeoFeedMixin@{django.contrib.gis.feeds.GeoFeedMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+gis.\+feeds.\+Geo\+Feed\+Mixin\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_ad0b596708213ca61026e5517cd1e7518}{georss\+\_\+coords}} (self, coords)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_a53f905d912c8c5296e921d666e50aec0}{add\+\_\+georss\+\_\+point}} (self, handler, coords, w3c\+\_\+geo=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_a8f1786cc2901fa4da4d393cfaac0bb0f}{add\+\_\+georss\+\_\+element}} (self, handler, item, w3c\+\_\+geo=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This mixin provides the necessary routines for SyndicationFeed subclasses
+to produce simple GeoRSS or W3C Geo elements.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_a8f1786cc2901fa4da4d393cfaac0bb0f}\label{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_a8f1786cc2901fa4da4d393cfaac0bb0f} 
+\index{django.contrib.gis.feeds.GeoFeedMixin@{django.contrib.gis.feeds.GeoFeedMixin}!add\_georss\_element@{add\_georss\_element}}
+\index{add\_georss\_element@{add\_georss\_element}!django.contrib.gis.feeds.GeoFeedMixin@{django.contrib.gis.feeds.GeoFeedMixin}}
+\doxysubsubsection{\texorpdfstring{add\_georss\_element()}{add\_georss\_element()}}
+{\footnotesize\ttfamily django.\+contrib.\+gis.\+feeds.\+Geo\+Feed\+Mixin.\+add\+\_\+georss\+\_\+element (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{handler,  }\item[{}]{item,  }\item[{}]{w3c\+\_\+geo = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a GeoRSS XML element using the given item and handler.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_a53f905d912c8c5296e921d666e50aec0}\label{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_a53f905d912c8c5296e921d666e50aec0} 
+\index{django.contrib.gis.feeds.GeoFeedMixin@{django.contrib.gis.feeds.GeoFeedMixin}!add\_georss\_point@{add\_georss\_point}}
+\index{add\_georss\_point@{add\_georss\_point}!django.contrib.gis.feeds.GeoFeedMixin@{django.contrib.gis.feeds.GeoFeedMixin}}
+\doxysubsubsection{\texorpdfstring{add\_georss\_point()}{add\_georss\_point()}}
+{\footnotesize\ttfamily django.\+contrib.\+gis.\+feeds.\+Geo\+Feed\+Mixin.\+add\+\_\+georss\+\_\+point (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{handler,  }\item[{}]{coords,  }\item[{}]{w3c\+\_\+geo = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a GeoRSS point with the given coords using the given handler.
+Handles the differences between simple GeoRSS and the more popular
+W3C Geo specification.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_ad0b596708213ca61026e5517cd1e7518}\label{classdjango_1_1contrib_1_1gis_1_1feeds_1_1GeoFeedMixin_ad0b596708213ca61026e5517cd1e7518} 
+\index{django.contrib.gis.feeds.GeoFeedMixin@{django.contrib.gis.feeds.GeoFeedMixin}!georss\_coords@{georss\_coords}}
+\index{georss\_coords@{georss\_coords}!django.contrib.gis.feeds.GeoFeedMixin@{django.contrib.gis.feeds.GeoFeedMixin}}
+\doxysubsubsection{\texorpdfstring{georss\_coords()}{georss\_coords()}}
+{\footnotesize\ttfamily django.\+contrib.\+gis.\+feeds.\+Geo\+Feed\+Mixin.\+georss\+\_\+coords (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{coords }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}In GeoRSS coordinate pairs are ordered by lat/lon and separated by
+a single white space. Given a tuple of coordinates, return a string
+GeoRSS representation.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/gis/\mbox{\hyperlink{feeds_8py}{feeds.\+py}}\end{DoxyCompactItemize}

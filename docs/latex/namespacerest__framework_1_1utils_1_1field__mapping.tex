@@ -1,0 +1,116 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+utils.\+field\+\_\+mapping}
+\hypertarget{namespacerest__framework_1_1utils_1_1field__mapping}{}\label{namespacerest__framework_1_1utils_1_1field__mapping}\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1utils_1_1field__mapping_1_1ClassLookupDict}{Class\+Lookup\+Dict}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_a345e1710f9b822deb3fd930eeafaf41e}{needs\+\_\+label}} (model\+\_\+field, field\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_ab9d43450096a8745d11471d6b7dc061b}{get\+\_\+detail\+\_\+view\+\_\+name}} (model)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_a140d45b153a044d4d82e8dba8b6e2f1f}{get\+\_\+unique\+\_\+validators}} (field\+\_\+name, model\+\_\+field)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_ae48dfcdee71cf82b7a82540805840d02}{get\+\_\+field\+\_\+kwargs}} (field\+\_\+name, model\+\_\+field)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_a93629122237eb3eedb1a2f46774ea867}{get\+\_\+relation\+\_\+kwargs}} (field\+\_\+name, relation\+\_\+info)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_a940f2952b641d44edb19272c36e41071}{get\+\_\+nested\+\_\+relation\+\_\+kwargs}} (relation\+\_\+info)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_ae8fcf38c1723eae2430d5c92c2a98614}{get\+\_\+url\+\_\+kwargs}} (model\+\_\+field)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_a421bd1831d5e1b09555e10a3e7203143}{get\+\_\+unique\+\_\+error\+\_\+message}} (model\+\_\+field)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacerest__framework_1_1utils_1_1field__mapping_a2f12dc5f7935ae2d4f3ce981b6af3fb6}{NUMERIC\+\_\+\+FIELD\+\_\+\+TYPES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Helper functions for mapping model fields to a dictionary of default
+keyword arguments that should be used for their equivalent serializer fields.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_ab9d43450096a8745d11471d6b7dc061b}\label{namespacerest__framework_1_1utils_1_1field__mapping_ab9d43450096a8745d11471d6b7dc061b} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!get\_detail\_view\_name@{get\_detail\_view\_name}}
+\index{get\_detail\_view\_name@{get\_detail\_view\_name}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{get\_detail\_view\_name()}{get\_detail\_view\_name()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+get\+\_\+detail\+\_\+view\+\_\+name (\begin{DoxyParamCaption}\item[{}]{model }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a model class, return the view name to use for URL relationships
+that refer to instances of the model.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_ae48dfcdee71cf82b7a82540805840d02}\label{namespacerest__framework_1_1utils_1_1field__mapping_ae48dfcdee71cf82b7a82540805840d02} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!get\_field\_kwargs@{get\_field\_kwargs}}
+\index{get\_field\_kwargs@{get\_field\_kwargs}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{get\_field\_kwargs()}{get\_field\_kwargs()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+get\+\_\+field\+\_\+kwargs (\begin{DoxyParamCaption}\item[{}]{field\+\_\+name,  }\item[{}]{model\+\_\+field }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a default instance of a basic non-relational field.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_a940f2952b641d44edb19272c36e41071}\label{namespacerest__framework_1_1utils_1_1field__mapping_a940f2952b641d44edb19272c36e41071} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!get\_nested\_relation\_kwargs@{get\_nested\_relation\_kwargs}}
+\index{get\_nested\_relation\_kwargs@{get\_nested\_relation\_kwargs}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{get\_nested\_relation\_kwargs()}{get\_nested\_relation\_kwargs()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+get\+\_\+nested\+\_\+relation\+\_\+kwargs (\begin{DoxyParamCaption}\item[{}]{relation\+\_\+info }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_a93629122237eb3eedb1a2f46774ea867}\label{namespacerest__framework_1_1utils_1_1field__mapping_a93629122237eb3eedb1a2f46774ea867} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!get\_relation\_kwargs@{get\_relation\_kwargs}}
+\index{get\_relation\_kwargs@{get\_relation\_kwargs}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{get\_relation\_kwargs()}{get\_relation\_kwargs()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+get\+\_\+relation\+\_\+kwargs (\begin{DoxyParamCaption}\item[{}]{field\+\_\+name,  }\item[{}]{relation\+\_\+info }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a default instance of a flat relational field.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_a421bd1831d5e1b09555e10a3e7203143}\label{namespacerest__framework_1_1utils_1_1field__mapping_a421bd1831d5e1b09555e10a3e7203143} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!get\_unique\_error\_message@{get\_unique\_error\_message}}
+\index{get\_unique\_error\_message@{get\_unique\_error\_message}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{get\_unique\_error\_message()}{get\_unique\_error\_message()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+get\+\_\+unique\+\_\+error\+\_\+message (\begin{DoxyParamCaption}\item[{}]{model\+\_\+field }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_a140d45b153a044d4d82e8dba8b6e2f1f}\label{namespacerest__framework_1_1utils_1_1field__mapping_a140d45b153a044d4d82e8dba8b6e2f1f} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!get\_unique\_validators@{get\_unique\_validators}}
+\index{get\_unique\_validators@{get\_unique\_validators}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{get\_unique\_validators()}{get\_unique\_validators()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+get\+\_\+unique\+\_\+validators (\begin{DoxyParamCaption}\item[{}]{field\+\_\+name,  }\item[{}]{model\+\_\+field }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of UniqueValidators that should be applied to the field.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_ae8fcf38c1723eae2430d5c92c2a98614}\label{namespacerest__framework_1_1utils_1_1field__mapping_ae8fcf38c1723eae2430d5c92c2a98614} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!get\_url\_kwargs@{get\_url\_kwargs}}
+\index{get\_url\_kwargs@{get\_url\_kwargs}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{get\_url\_kwargs()}{get\_url\_kwargs()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+get\+\_\+url\+\_\+kwargs (\begin{DoxyParamCaption}\item[{}]{model\+\_\+field }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_a345e1710f9b822deb3fd930eeafaf41e}\label{namespacerest__framework_1_1utils_1_1field__mapping_a345e1710f9b822deb3fd930eeafaf41e} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!needs\_label@{needs\_label}}
+\index{needs\_label@{needs\_label}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{needs\_label()}{needs\_label()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+needs\+\_\+label (\begin{DoxyParamCaption}\item[{}]{model\+\_\+field,  }\item[{}]{field\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns `True` if the label based on the model's verbose name
+is not equal to the default label it would have based on it's field name.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1utils_1_1field__mapping_a2f12dc5f7935ae2d4f3ce981b6af3fb6}\label{namespacerest__framework_1_1utils_1_1field__mapping_a2f12dc5f7935ae2d4f3ce981b6af3fb6} 
+\index{rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}!NUMERIC\_FIELD\_TYPES@{NUMERIC\_FIELD\_TYPES}}
+\index{NUMERIC\_FIELD\_TYPES@{NUMERIC\_FIELD\_TYPES}!rest\_framework.utils.field\_mapping@{rest\_framework.utils.field\_mapping}}
+\doxysubsubsection{\texorpdfstring{NUMERIC\_FIELD\_TYPES}{NUMERIC\_FIELD\_TYPES}}
+{\footnotesize\ttfamily tuple rest\+\_\+framework.\+utils.\+field\+\_\+mapping.\+NUMERIC\+\_\+\+FIELD\+\_\+\+TYPES}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ models.IntegerField,\ models.FloatField,\ models.DecimalField,\ models.DurationField,}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

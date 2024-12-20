@@ -1,0 +1,162 @@
+\doxysection{Référence de la classe pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract}
+\hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract}{}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract}\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_aeb7f0e8d6ce804ede68f9a2f4cf0a0d0}{get\+\_\+lines}} (self)
+\item 
+Data\+Frame\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_accb066837390aebdf7800ce3d5e6955e}{data}} (self)
+\item 
+Iterable\mbox{[}Dtype\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a209840e8c946738634daead75414d019}{dtypes}} (self)
+\item 
+Mapping\mbox{[}str, int\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a026d321ab77d4340296a00a90a479cec}{dtype\+\_\+counts}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_aef71cfcf4cb01c6831a4b7a37a2a72e5}{display\+\_\+memory\+\_\+usage}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a37a986043ab9a2a88ee3c0df7428f87c}{memory\+\_\+usage\+\_\+string}} (self)
+\item 
+Sequence\mbox{[}int\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_afa251ea4526b88c6bfe4a1fbd9676608}{non\+\_\+null\+\_\+counts}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a60d4ddff2ca51ccb9cfc875d533e2b2f}{add\+\_\+object\+\_\+type\+\_\+line}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a5912b1d36d7c727167b877ab7b0b6bf3}{add\+\_\+index\+\_\+range\+\_\+line}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a97f92264ec764e9b4976b3871e6e6242}{add\+\_\+dtypes\+\_\+line}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a8aba84e2a4e7d561419f3b2e7221af0d}{data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo}{\+\_\+\+Base\+Info}} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a61c7bfd1f4bc43e26d54a065d2047a42}{info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_ac195b85fe9f9cca566421801c00569f6}{\+\_\+lines}} \mbox{[}str\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Abstract builder for info table.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a97f92264ec764e9b4976b3871e6e6242}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a97f92264ec764e9b4976b3871e6e6242} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!add\_dtypes\_line@{add\_dtypes\_line}}
+\index{add\_dtypes\_line@{add\_dtypes\_line}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{add\_dtypes\_line()}{add\_dtypes\_line()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+add\+\_\+dtypes\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add summary line with dtypes present in dataframe.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a5912b1d36d7c727167b877ab7b0b6bf3}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a5912b1d36d7c727167b877ab7b0b6bf3} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!add\_index\_range\_line@{add\_index\_range\_line}}
+\index{add\_index\_range\_line@{add\_index\_range\_line}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{add\_index\_range\_line()}{add\_index\_range\_line()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+add\+\_\+index\+\_\+range\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add line with range of indices to the table.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a60d4ddff2ca51ccb9cfc875d533e2b2f}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a60d4ddff2ca51ccb9cfc875d533e2b2f} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!add\_object\_type\_line@{add\_object\_type\_line}}
+\index{add\_object\_type\_line@{add\_object\_type\_line}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{add\_object\_type\_line()}{add\_object\_type\_line()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+add\+\_\+object\+\_\+type\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add line with string representation of dataframe to the table.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_accb066837390aebdf7800ce3d5e6955e}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_accb066837390aebdf7800ce3d5e6955e} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!data@{data}}
+\index{data@{data}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily  Data\+Frame \texorpdfstring{$\vert$}{|} Series pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__DataFrameTableBuilder_a07da5b42925cc05aa81d8fb00b75cb40}{pandas.\+io.\+formats.\+info.\+\_\+\+Data\+Frame\+Table\+Builder}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesTableBuilder_ae659b1b691154200cd3a053d1dc1961d}{pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Table\+Builder}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_aef71cfcf4cb01c6831a4b7a37a2a72e5}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_aef71cfcf4cb01c6831a4b7a37a2a72e5} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!display\_memory\_usage@{display\_memory\_usage}}
+\index{display\_memory\_usage@{display\_memory\_usage}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{display\_memory\_usage()}{display\_memory\_usage()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+display\+\_\+memory\+\_\+usage (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether to display memory usage.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a026d321ab77d4340296a00a90a479cec}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a026d321ab77d4340296a00a90a479cec} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!dtype\_counts@{dtype\_counts}}
+\index{dtype\_counts@{dtype\_counts}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{dtype\_counts()}{dtype\_counts()}}
+{\footnotesize\ttfamily  Mapping\mbox{[}str, int\mbox{]} pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+dtype\+\_\+counts (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Mapping dtype - number of counts.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a209840e8c946738634daead75414d019}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a209840e8c946738634daead75414d019} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!dtypes@{dtypes}}
+\index{dtypes@{dtypes}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{dtypes()}{dtypes()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}Dtype\mbox{]} pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+dtypes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dtypes of each of the DataFrame's columns.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_aeb7f0e8d6ce804ede68f9a2f4cf0a0d0}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_aeb7f0e8d6ce804ede68f9a2f4cf0a0d0} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!get\_lines@{get\_lines}}
+\index{get\_lines@{get\_lines}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{get\_lines()}{get\_lines()}}
+{\footnotesize\ttfamily  list\mbox{[}str\mbox{]} pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+get\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Product in a form of list of lines (strings).\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__DataFrameTableBuilder_ac044f07482424f127220c973dfc5c9b3}{pandas.\+io.\+formats.\+info.\+\_\+\+Data\+Frame\+Table\+Builder}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesTableBuilder_a8c66541869b1af4dfa723c27b67bc8cf}{pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Table\+Builder}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a37a986043ab9a2a88ee3c0df7428f87c}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a37a986043ab9a2a88ee3c0df7428f87c} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!memory\_usage\_string@{memory\_usage\_string}}
+\index{memory\_usage\_string@{memory\_usage\_string}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{memory\_usage\_string()}{memory\_usage\_string()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+memory\+\_\+usage\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Memory usage string with proper size qualifier.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_afa251ea4526b88c6bfe4a1fbd9676608}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_afa251ea4526b88c6bfe4a1fbd9676608} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!non\_null\_counts@{non\_null\_counts}}
+\index{non\_null\_counts@{non\_null\_counts}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{non\_null\_counts()}{non\_null\_counts()}}
+{\footnotesize\ttfamily  Sequence\mbox{[}int\mbox{]} pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+non\+\_\+null\+\_\+counts (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_ac195b85fe9f9cca566421801c00569f6}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_ac195b85fe9f9cca566421801c00569f6} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!\_lines@{\_lines}}
+\index{\_lines@{\_lines}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{\_lines}{\_lines}}
+{\footnotesize\ttfamily list pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+\_\+lines \mbox{[}str\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a8aba84e2a4e7d561419f3b2e7221af0d}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a8aba84e2a4e7d561419f3b2e7221af0d} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!data@{data}}
+\index{data@{data}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+data}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__DataFrameTableBuilder_a07da5b42925cc05aa81d8fb00b75cb40}{pandas.\+io.\+formats.\+info.\+\_\+\+Data\+Frame\+Table\+Builder}}, et \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__SeriesTableBuilder_ae659b1b691154200cd3a053d1dc1961d}{pandas.\+io.\+formats.\+info.\+\_\+\+Series\+Table\+Builder}}.
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a61c7bfd1f4bc43e26d54a065d2047a42}\label{classpandas_1_1io_1_1formats_1_1info_1_1__TableBuilderAbstract_a61c7bfd1f4bc43e26d54a065d2047a42} 
+\index{pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}!info@{info}}
+\index{info@{info}!pandas.io.formats.info.\_TableBuilderAbstract@{pandas.io.formats.info.\_TableBuilderAbstract}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1info_1_1__BaseInfo}{\+\_\+\+Base\+Info}} pandas.\+io.\+formats.\+info.\+\_\+\+Table\+Builder\+Abstract.\+info\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/formats/\mbox{\hyperlink{info_8py}{info.\+py}}\end{DoxyCompactItemize}

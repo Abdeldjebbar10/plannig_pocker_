@@ -1,0 +1,56 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+authentication.\+Session\+Authentication}
+\hypertarget{classrest__framework_1_1authentication_1_1SessionAuthentication}{}\label{classrest__framework_1_1authentication_1_1SessionAuthentication}\index{rest\_framework.authentication.SessionAuthentication@{rest\_framework.authentication.SessionAuthentication}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+authentication.\+Session\+Authentication\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+authentication.\+Session\+Authentication\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1SessionAuthentication_a31820e718d0d4e072499a574879d7731}{authenticate}} (self, request)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1SessionAuthentication_ad973473544b97ad8f9c67441ff19bec1}{enforce\+\_\+csrf}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication}{rest\+\_\+framework.\+authentication.\+Base\+Authentication}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication_a9bca2891f519f47ceeecad0d1c02333a}{authenticate\+\_\+header}} (self, request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Use Django's session framework for authentication.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1authentication_1_1SessionAuthentication_a31820e718d0d4e072499a574879d7731}\label{classrest__framework_1_1authentication_1_1SessionAuthentication_a31820e718d0d4e072499a574879d7731} 
+\index{rest\_framework.authentication.SessionAuthentication@{rest\_framework.authentication.SessionAuthentication}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!rest\_framework.authentication.SessionAuthentication@{rest\_framework.authentication.SessionAuthentication}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+Session\+Authentication.\+authenticate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a `User` if the request session currently has a logged in user.
+Otherwise returns `None`.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication_ae3bb4add98312b6937c33b263feae691}{rest\+\_\+framework.\+authentication.\+Base\+Authentication}}.
+
+\Hypertarget{classrest__framework_1_1authentication_1_1SessionAuthentication_ad973473544b97ad8f9c67441ff19bec1}\label{classrest__framework_1_1authentication_1_1SessionAuthentication_ad973473544b97ad8f9c67441ff19bec1} 
+\index{rest\_framework.authentication.SessionAuthentication@{rest\_framework.authentication.SessionAuthentication}!enforce\_csrf@{enforce\_csrf}}
+\index{enforce\_csrf@{enforce\_csrf}!rest\_framework.authentication.SessionAuthentication@{rest\_framework.authentication.SessionAuthentication}}
+\doxysubsubsection{\texorpdfstring{enforce\_csrf()}{enforce\_csrf()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+Session\+Authentication.\+enforce\+\_\+csrf (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enforce CSRF validation for session based authentication.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{authentication_8py}{authentication.\+py}}\end{DoxyCompactItemize}

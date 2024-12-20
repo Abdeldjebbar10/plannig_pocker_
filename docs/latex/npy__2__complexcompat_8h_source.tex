@@ -1,0 +1,34 @@
+\doxysection{npy\+\_\+2\+\_\+complexcompat.\+h}
+\hypertarget{npy__2__complexcompat_8h_source}{}\label{npy__2__complexcompat_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_2\_complexcompat.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_2\_complexcompat.h}}
+\mbox{\hyperlink{npy__2__complexcompat_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ This\ header\ is\ designed\ to\ be\ copy-\/pasted\ into\ downstream\ packages,\ since\ it\ provides}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ \ \ a\ compatibility\ layer\ between\ the\ old\ C\ struct\ complex\ types\ and\ the\ new\ native\ C99}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ complex\ types.\ The\ new\ macros\ are\ in\ numpy/npy\_math.h,\ which\ is\ why\ it\ is\ included\ here.\ */}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_2\_COMPLEXCOMPAT\_H\_}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_2\_COMPLEXCOMPAT\_H\_}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{npy__math_8h}{numpy/npy\_math.h}}>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ NPY\_CSETREALF}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ NPY\_CSETREALF(c,\ r)\ (c)-\/>real\ =\ (r)}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ NPY\_CSETIMAGF}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ NPY\_CSETIMAGF(c,\ i)\ (c)-\/>imag\ =\ (i)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ NPY\_CSETREAL}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ NPY\_CSETREAL(c,\ r)\ \ (c)-\/>real\ =\ (r)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#ifndef\ NPY\_CSETIMAG}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ NPY\_CSETIMAG(c,\ i)\ \ (c)-\/>imag\ =\ (i)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#ifndef\ NPY\_CSETREALL}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ NPY\_CSETREALL(c,\ r)\ (c)-\/>real\ =\ (r)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#ifndef\ NPY\_CSETIMAGL}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ NPY\_CSETIMAGL(c,\ i)\ (c)-\/>imag\ =\ (i)}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,54 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/io/html.py}
+\hypertarget{pandas_2io_2html_8py}{}\label{pandas_2io_2html_8py}\index{env/lib/python3.12/site-\/packages/pandas/io/html.py@{env/lib/python3.12/site-\/packages/pandas/io/html.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1html_1_1__HtmlFrameParser}{pandas.\+io.\+html.\+\_\+\+Html\+Frame\+Parser}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1html_1_1__BeautifulSoupHtml5LibFrameParser}{pandas.\+io.\+html.\+\_\+\+Beautiful\+Soup\+Html5\+Lib\+Frame\+Parser}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1html_1_1__LxmlFrameParser}{pandas.\+io.\+html.\+\_\+\+Lxml\+Frame\+Parser}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1io}{pandas.\+io}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1io_1_1html}{pandas.\+io.\+html}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1io_1_1html_a9a9e6d6e245eee3bfcaf5d9d5e4560bf}{pandas.\+io.\+html.\+\_\+remove\+\_\+whitespace}} (str s, Pattern regex=\mbox{\hyperlink{namespacepandas_1_1io_1_1html_aa02f83e5ada3e2fe4bdc80ac54aba6c4}{\+\_\+\+RE\+\_\+\+WHITESPACE}})
+\item 
+int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1html_a4e5af1d44775a45f86f2020e4cbd2171}{pandas.\+io.\+html.\+\_\+get\+\_\+skiprows}} (int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}slice\texorpdfstring{$\vert$}{|}None skiprows)
+\item 
+str\texorpdfstring{$\vert$}{|}bytes \mbox{\hyperlink{namespacepandas_1_1io_1_1html_aed5922de17a8398d4f821a58ce339fdb}{pandas.\+io.\+html.\+\_\+read}} (File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1BaseBuffer}{Base\+Buffer}} obj, str\texorpdfstring{$\vert$}{|}None encoding, Storage\+Options\texorpdfstring{$\vert$}{|}None storage\+\_\+options)
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1io_1_1html_a1c4ce638257a5141911502aa7a0ab1ff}{pandas.\+io.\+html.\+\_\+build\+\_\+xpath\+\_\+expr}} (attrs)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1io_1_1html_ae49e4993704c1fbf8746ff64ba293177}{pandas.\+io.\+html.\+\_\+expand\+\_\+elements}} (body)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1io_1_1html_ae52b97321a8611f04455f1856d9a769b}{pandas.\+io.\+html.\+\_\+data\+\_\+to\+\_\+frame}} (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+type\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1html_1_1__HtmlFrameParser}{\+\_\+\+Html\+Frame\+Parser}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1html_a9ba30d7380e94f21b7e2ba3dfc5768f8}{pandas.\+io.\+html.\+\_\+parser\+\_\+dispatch}} (HTMLFlavors\texorpdfstring{$\vert$}{|}None flavor)
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1io_1_1html_a1fd5a7b162845ccaa6aebc36e1b053f9}{pandas.\+io.\+html.\+\_\+print\+\_\+as\+\_\+set}} (s)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1io_1_1html_aee31604a69b4205308bb6137b6acd04c}{pandas.\+io.\+html.\+\_\+validate\+\_\+flavor}} (flavor)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1io_1_1html_ada6a7b6be16fe9ec93d8b0e7349d79f8}{pandas.\+io.\+html.\+\_\+parse}} (flavor, io, match, attrs, encoding, displayed\+\_\+only, extract\+\_\+links, storage\+\_\+options, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+list\mbox{[}Data\+Frame\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1html_a040ccc6ca7f94646546eef01b6d2a9d2}{pandas.\+io.\+html.\+read\+\_\+html}} (File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}str\mbox{]} io, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}Pattern match="{}.+"{}, HTMLFlavors\texorpdfstring{$\vert$}{|}Sequence\mbox{[}HTMLFlavors\mbox{]}\texorpdfstring{$\vert$}{|}None flavor=None, int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None header=None, int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None index\+\_\+col=None, int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}slice\texorpdfstring{$\vert$}{|}None skiprows=None, dict\mbox{[}str, str\mbox{]}\texorpdfstring{$\vert$}{|}None attrs=None, bool parse\+\_\+dates=False, str\texorpdfstring{$\vert$}{|}None thousands="{},"{}, str\texorpdfstring{$\vert$}{|}None encoding=None, str decimal="{}."{}, dict\texorpdfstring{$\vert$}{|}None converters=None, Iterable\mbox{[}object\mbox{]}\texorpdfstring{$\vert$}{|}None na\+\_\+values=None, bool keep\+\_\+default\+\_\+na=True, bool displayed\+\_\+only=True, Literal\mbox{[}None, "{}header"{}, "{}footer"{}, "{}body"{}, "{}all"{}\mbox{]} extract\+\_\+links=None, Dtype\+Backend\texorpdfstring{$\vert$}{|}lib.\+No\+Default dtype\+\_\+backend=lib.\+no\+\_\+default, Storage\+Options storage\+\_\+options=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1io_1_1html_aa02f83e5ada3e2fe4bdc80ac54aba6c4}{pandas.\+io.\+html.\+\_\+\+RE\+\_\+\+WHITESPACE}} = re.\+compile(r"{}\mbox{[}\textbackslash{}r\textbackslash{}n\mbox{]}+\texorpdfstring{$\vert$}{|}\textbackslash{}s\{2,\}"{})
+\begin{DoxyCompactList}\small\item\em READ HTML \#. \end{DoxyCompactList}\item 
+dict \mbox{\hyperlink{namespacepandas_1_1io_1_1html_afe93829e0715e518d6c11324e114c93a}{pandas.\+io.\+html.\+\_\+re\+\_\+namespace}} = \{"{}re"{}\+: "{}http\+://exslt.\+org/regular-\/expressions"{}\}
+\item 
+dict \mbox{\hyperlink{namespacepandas_1_1io_1_1html_acb069307dcde68335af07777ae4d33a0}{pandas.\+io.\+html.\+\_\+valid\+\_\+parsers}}
+\end{DoxyCompactItemize}

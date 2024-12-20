@@ -1,0 +1,315 @@
+\doxysection{Référence de la classe pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby}
+\hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby}{}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby}\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a3990caa9ab6a8301b6210b44dd5b17a2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Data\+Frame\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a8c0f823d2375a80fc8a221f0e3889157}{obj}}, \texorpdfstring{$\ast$}{*}args, \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}{Base\+Grouper}} \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a0f305f92f8e75aa2e7f8c2be18088224}{\+\_\+grouper}}, bool \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_aa3856301e398fd1565114fed161f532e}{\+\_\+as\+\_\+index}}=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_ac7314835b8b344e44d013ab2ae2bc15f}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str attr)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a4a55cbe91157a71aa7b9b407fbcb7063}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+Iterator \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_ab74fadfc8ab2c0f11ff87e82a4e4f128}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a4fbb45f0ce06aa1fcd54ab488819d1ab}{aggregate}} (self, func, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}{ndim}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_aad3c986de316f6c45ec1d2f161b001a1}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Frame\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_aa522ffdc33f47fea26ee04a80a287940}{\+\_\+apply}} (self, Callable\mbox{[}..., Any\mbox{]} func, str name, bool numeric\+\_\+only=False, tuple\mbox{[}Any,...\mbox{]} numba\+\_\+args=(), \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Data\+Frame\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_adc00ad75463d6818b56d528cdf70aa54}{\+\_\+apply\+\_\+pairwise}} (self, Data\+Frame\texorpdfstring{$\vert$}{|}Series target, Data\+Frame\texorpdfstring{$\vert$}{|}Series\texorpdfstring{$\vert$}{|}None other, bool\texorpdfstring{$\vert$}{|}None pairwise, Callable\mbox{[}\mbox{[}Data\+Frame\texorpdfstring{$\vert$}{|}Series, Data\+Frame\texorpdfstring{$\vert$}{|}Series\mbox{]}, Data\+Frame\texorpdfstring{$\vert$}{|}Series\mbox{]} func, bool numeric\+\_\+only)
+\item 
+NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_acef5b9b25111c4363d8e452368607675}{\+\_\+create\+\_\+data}} (self, NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a8c0f823d2375a80fc8a221f0e3889157}{obj}}, bool numeric\+\_\+only=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a06f64e9229f26b758ef413ab3243ce2c}{\+\_\+gotitem}} (self, key, \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}{ndim}}, subset=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a8165859ff5f530abd879a2c43fbf253b}{\+\_\+validate}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_ad32f802f3436f618f889a3618cbe04dc}{\+\_\+check\+\_\+window\+\_\+bounds}} (self, np.\+ndarray start, np.\+ndarray end, int num\+\_\+vals)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a6e55c31931a9de7607f9b83f7fde72a8}{\+\_\+slice\+\_\+axis\+\_\+for\+\_\+step}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} index, Sized\texorpdfstring{$\vert$}{|}None result=None)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a52c5df036895716fe461919d02c4b010}{\+\_\+validate\+\_\+numeric\+\_\+only}} (self, str name, bool numeric\+\_\+only)
+\item 
+NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_aa2f51ee515969995eb9317b5a530760f}{\+\_\+make\+\_\+numeric\+\_\+only}} (self, NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a8c0f823d2375a80fc8a221f0e3889157}{obj}})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a2809ccbc0a2c00cc75ae42d20675c884}{\+\_\+dir\+\_\+additions}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_aed06465142e39c322d5acf984bed10a8}{\+\_\+prep\+\_\+values}} (self, Array\+Like values)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a07873f0a12fef88ac7691cdf4710cfaf}{\+\_\+insert\+\_\+on\+\_\+column}} (self, Data\+Frame result, Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a8c0f823d2375a80fc8a221f0e3889157}{obj}})
+\item 
+npt.\+NDArray\mbox{[}np.\+int64\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_adc03bd113bde47b84d679e9d46a6696b}{\+\_\+index\+\_\+array}} (self)
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_af03bd66751c60fee271ecdcd91acca49}{\+\_\+resolve\+\_\+output}} (self, Data\+Frame out, Data\+Frame \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a8c0f823d2375a80fc8a221f0e3889157}{obj}})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexers_1_1objects_1_1BaseIndexer}{Base\+Indexer}} \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_aaa5014ff5ce7763638273df7be827ba6}{\+\_\+get\+\_\+window\+\_\+indexer}} (self)
+\item 
+Series \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a0d52d5755feca14cb6d9429e311299d1}{\+\_\+apply\+\_\+series}} (self, Callable\mbox{[}..., Array\+Like\mbox{]} homogeneous\+\_\+func, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+Data\+Frame\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_ab742a506715938bc1b99401f1288acc0}{\+\_\+apply\+\_\+columnwise}} (self, Callable\mbox{[}..., Array\+Like\mbox{]} homogeneous\+\_\+func, str name, bool numeric\+\_\+only=False)
+\item 
+Data\+Frame\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_ac7fca3074f276d8f63290325ae1a10d2}{\+\_\+apply\+\_\+tablewise}} (self, Callable\mbox{[}..., Array\+Like\mbox{]} homogeneous\+\_\+func, str\texorpdfstring{$\vert$}{|}None name=None, bool numeric\+\_\+only=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a883f5c8f248cd34caf9bc10569b5de56}{\+\_\+numba\+\_\+apply}} (self, Callable\mbox{[}..., Any\mbox{]} func, dict\mbox{[}str, bool\mbox{]}\texorpdfstring{$\vert$}{|}None engine\+\_\+kwargs=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}func\+\_\+kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a84ab5b21406fb07629293d56ffc9f98a}{\+\_\+selection\+\_\+list}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ac8332a4cf2bbb0823e6f917d796f51a0}{\+\_\+selected\+\_\+obj}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_acd6785b162f9f2a0f0a8a279201346db}{\+\_\+obj\+\_\+with\+\_\+exclusions}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ad1591a6bbb00dfcef714413e1389278c}{\+\_\+infer\+\_\+selection}} (self, key, Series\texorpdfstring{$\vert$}{|}Data\+Frame subset)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_ae4fe11c600ff862aa64619aabbc199a7}{\+\_\+grouper}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a4802f00907a5d8741be9a4ad87f79cba}{\+\_\+as\+\_\+index}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a677b9c1e4804308707000b3cb8f97867}{\+\_\+on}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a086b595903472dbf0a9fda5a01e0cf84}{\+\_\+selection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a4b377ecea0956413cc4e45a77d887ac5}{\+\_\+selection}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a8690d2c7cd02cf083a1e6bafa899eab6}{\+\_\+selection\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}{Base\+Grouper}} \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a0f305f92f8e75aa2e7f8c2be18088224}{\+\_\+grouper}}
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_aa3856301e398fd1565114fed161f532e}{\+\_\+as\+\_\+index}}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a37f84c5bd620d6018fce62b94951d3b0}{\+\_\+attributes}} = \mbox{[}"{}\+\_\+grouper"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a334614aa906383eacb508dd55f78fa62}{\+\_\+attributes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a8aacd07de9ea71fda09759295a4215a8}{\+\_\+on}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+Index\+Label \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_aa329bea9aae5a514a109fd19b39e4d51}{\+\_\+selection}} = None
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}} = \mbox{[}"{}\+\_\+cache"{}, "{}\+\_\+\+\_\+setstate\+\_\+\+\_\+"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a4df1b01fd09955430d448bf0a173a2f5}{\+\_\+internal\+\_\+names\+\_\+set}} = set(\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a8c0f823d2375a80fc8a221f0e3889157}{obj}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a09d83ab239e75c587caf57e2713b1b66}{on}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a29c4bffeac35ab9cb1772161f358fc9b}{closed}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a61ba64ebb13e8f505b9901390626489c}{step}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_af82cea268a6544f27b6cea56229a1f8c}{window}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_ad68e2385caf79f9340362be6c1abe967}{min\+\_\+periods}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_ac6cee4efbd1ff92995515dbd6a855d96}{center}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a45ca542f0032c0d6e3dd447f1f3a0ee2}{win\+\_\+type}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a3bfdae7b8216531b64e13ae05e280f78}{axis}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a82b5e3421206b152812f92cb7d123893}{method}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a5207a79fc68d7810cc3a907a49eaf556}{obj}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a740e931e362229a193cc2b827ac039e7}{exclusions}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a13eec14d15819f0187b70093987f8744}{exclusions}} = frozenset()
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_abadd000392d3a31bb471f2b6ff4b0a78}{agg}} = \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a4fbb45f0ce06aa1fcd54ab488819d1ab}{aggregate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a35b32ba83d07b2d612b80a3bb8b54c40}{obj}}
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a1eee2f6959c9fcab6d8b57d166c81d45}{exclusions}} \mbox{[}Hashable\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a1f3539bc11e3abeff5e0f5a31bfbc5c7}{agg}} = \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}{aggregate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Provide the groupby windowing facilities.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a3990caa9ab6a8301b6210b44dd5b17a2}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a3990caa9ab6a8301b6210b44dd5b17a2} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Data\+Frame \texorpdfstring{$\vert$}{|} Series}]{obj,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}{Base\+Grouper}}}]{\+\_\+grouper,  }\item[{bool }]{\+\_\+as\+\_\+index = {\ttfamily True},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_ad52cff835784558037dc99c3a119245c}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}.
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1ewm_1_1ExponentialMovingWindowGroupby_a476b049f7c9b6d6a69e91c625f126d3c}{pandas.\+core.\+window.\+ewm.\+Exponential\+Moving\+Window\+Groupby}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_aa522ffdc33f47fea26ee04a80a287940}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_aa522ffdc33f47fea26ee04a80a287940} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_apply@{\_apply}}
+\index{\_apply@{\_apply}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_apply()}{\_apply()}}
+{\footnotesize\ttfamily  Data\+Frame \texorpdfstring{$\vert$}{|} Series pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Callable\mbox{[}..., Any\mbox{]}}]{func,  }\item[{str}]{name,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{tuple\mbox{[}Any, ...\mbox{]} }]{numba\+\_\+args = {\ttfamily ()},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Rolling statistical measure using supplied function.
+
+Designed to be used with passed-in Cython array-based functions.
+
+Parameters
+----------
+func : callable function to apply
+name : str,
+numba_args : tuple
+    args to be passed when func is a numba func
+**kwargs
+    additional arguments for rolling function and window function
+
+Returns
+-------
+y : type of input
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_abd28847346917d5117e49016fb0e40fe}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}.
+
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_adc00ad75463d6818b56d528cdf70aa54}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_adc00ad75463d6818b56d528cdf70aa54} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_apply\_pairwise@{\_apply\_pairwise}}
+\index{\_apply\_pairwise@{\_apply\_pairwise}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_apply\_pairwise()}{\_apply\_pairwise()}}
+{\footnotesize\ttfamily  Data\+Frame \texorpdfstring{$\vert$}{|} Series pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+apply\+\_\+pairwise (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Data\+Frame \texorpdfstring{$\vert$}{|} Series}]{target,  }\item[{Data\+Frame \texorpdfstring{$\vert$}{|} Series \texorpdfstring{$\vert$}{|} None}]{other,  }\item[{bool \texorpdfstring{$\vert$}{|} None}]{pairwise,  }\item[{Callable\mbox{[}\mbox{[}Data\+Frame \texorpdfstring{$\vert$}{|} Series, Data\+Frame \texorpdfstring{$\vert$}{|} Series\mbox{]}, Data\+Frame \texorpdfstring{$\vert$}{|} Series\mbox{]}}]{func,  }\item[{bool}]{numeric\+\_\+only }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Apply the given pairwise function given 2 pandas objects (DataFrame/Series)
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a6c30a273f7df105fe13a6f3015e7c85b}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}.
+
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_acef5b9b25111c4363d8e452368607675}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_acef5b9b25111c4363d8e452368607675} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_create\_data@{\_create\_data}}
+\index{\_create\_data@{\_create\_data}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_create\_data()}{\_create\_data()}}
+{\footnotesize\ttfamily  NDFrameT pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+create\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{NDFrameT}]{obj,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Split data into blocks & return conformed data.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_aec7d5392ae4cccf664621969ad7e8bfa}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}.
+
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a06f64e9229f26b758ef413ab3243ce2c}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a06f64e9229f26b758ef413ab3243ce2c} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_gotitem@{\_gotitem}}
+\index{\_gotitem@{\_gotitem}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_gotitem()}{\_gotitem()}}
+{\footnotesize\ttfamily pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+gotitem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{ndim,  }\item[{}]{subset = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Sub-classes to define. Return a sliced object.
+
+Parameters
+----------
+key : str / list of selections
+ndim : {1, 2}
+    requested ndim of result
+subset : object, default None
+    subset to act on
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindow_a0420ee0a4969c9f5f9c5791441bda586}{pandas.\+core.\+window.\+rolling.\+Base\+Window}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_aa3856301e398fd1565114fed161f532e}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_aa3856301e398fd1565114fed161f532e} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_as\_index@{\_as\_index}}
+\index{\_as\_index@{\_as\_index}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_as\_index}{\_as\_index}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+as\+\_\+index\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a4802f00907a5d8741be9a4ad87f79cba}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a4802f00907a5d8741be9a4ad87f79cba} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_as\_index@{\_as\_index}}
+\index{\_as\_index@{\_as\_index}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_as\_index}{\_as\_index}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+as\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a37f84c5bd620d6018fce62b94951d3b0}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a37f84c5bd620d6018fce62b94951d3b0} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_attributes@{\_attributes}}
+\index{\_attributes@{\_attributes}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_attributes}{\_attributes}}
+{\footnotesize\ttfamily list pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+attributes = \mbox{[}"{}\+\_\+grouper"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a0f305f92f8e75aa2e7f8c2be18088224}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_a0f305f92f8e75aa2e7f8c2be18088224} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_grouper@{\_grouper}}
+\index{\_grouper@{\_grouper}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_grouper}{\_grouper}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}{Base\+Grouper}} pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+grouper\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_ae4fe11c600ff862aa64619aabbc199a7}\label{classpandas_1_1core_1_1window_1_1rolling_1_1BaseWindowGroupby_ae4fe11c600ff862aa64619aabbc199a7} 
+\index{pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}!\_grouper@{\_grouper}}
+\index{\_grouper@{\_grouper}!pandas.core.window.rolling.BaseWindowGroupby@{pandas.core.window.rolling.BaseWindowGroupby}}
+\doxysubsubsection{\texorpdfstring{\_grouper}{\_grouper}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+window.\+rolling.\+Base\+Window\+Groupby.\+\_\+grouper\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/window/\mbox{\hyperlink{rolling_8py}{rolling.\+py}}\end{DoxyCompactItemize}

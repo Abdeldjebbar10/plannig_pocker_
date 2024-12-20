@@ -1,0 +1,279 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/include/numpy/ufuncobject.h}
+\hypertarget{ufuncobject_8h}{}\label{ufuncobject_8h}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/ufuncobject.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/ufuncobject.h}}
+{\ttfamily \#include $<$numpy/npy\+\_\+math.\+h$>$}\newline
+{\ttfamily \#include $<$numpy/npy\+\_\+common.\+h$>$}\newline
+{\ttfamily \#include "{}arrayobject.\+h"{}}\newline
+{\ttfamily \#include "{}\+\_\+\+\_\+ufunc\+\_\+api.\+h"{}}\newline
+Graphe des dépendances par inclusion de ufuncobject.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__tagPyUFuncObject}{\+\_\+tag\+Py\+UFunc\+Object}}
+\item 
+struct \mbox{\hyperlink{structPyUFunc__PyFuncData}{Py\+UFunc\+\_\+\+Py\+Func\+Data}}
+\item 
+struct \mbox{\hyperlink{struct__loop1d__info}{\+\_\+loop1d\+\_\+info}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_adc4890517d843b5cffedd900b56d6429}{UFUNC\+\_\+\+CORE\+\_\+\+DIM\+\_\+\+SIZE\+\_\+\+INFERRED}}~0x0002
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a0d63e224df9dd3da745718d0e57623f1}{UFUNC\+\_\+\+CORE\+\_\+\+DIM\+\_\+\+CAN\+\_\+\+IGNORE}}~0x0004
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_af4036604b9e41a8ee0a137d3ba0cc847}{UFUNC\+\_\+\+CORE\+\_\+\+DIM\+\_\+\+MISSING}}~0x00040000
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a500613a4145d2808ec7bba0a4244677e}{UFUNC\+\_\+\+OBJ\+\_\+\+ISOBJECT}}~1
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a0fd0fa163d6b75007979a3f5cec2d58f}{UFUNC\+\_\+\+OBJ\+\_\+\+NEEDS\+\_\+\+API}}~2
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a22d424289b4748f0029483e787eef07e}{NPY\+\_\+\+LOOP\+\_\+\+BEGIN\+\_\+\+THREADS}}~do \{if (!(loop-\/$>$obj \& \mbox{\hyperlink{ufuncobject_8h_a0fd0fa163d6b75007979a3f5cec2d58f}{UFUNC\+\_\+\+OBJ\+\_\+\+NEEDS\+\_\+\+API}})) \+\_\+save = Py\+Eval\+\_\+\+Save\+Thread();\} while (0);
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_aa5014f00a6a12b989c9897da8f53efdf}{NPY\+\_\+\+LOOP\+\_\+\+END\+\_\+\+THREADS}}~do \{if (!(loop-\/$>$obj \& \mbox{\hyperlink{ufuncobject_8h_a0fd0fa163d6b75007979a3f5cec2d58f}{UFUNC\+\_\+\+OBJ\+\_\+\+NEEDS\+\_\+\+API}})) Py\+Eval\+\_\+\+Restore\+Thread(\+\_\+save);\} while (0);
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a9658ee7fbac38eb219ede4bee71047b6}{Py\+UFunc\+\_\+\+Zero}}~0
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_acbe84399c050e006a3fc1ba5edf22615}{Py\+UFunc\+\_\+\+One}}~1
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_af18fb051a84e9735b6c84a2710a5cfb9}{Py\+UFunc\+\_\+\+Minus\+One}}~2
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a978aa894e4b6ca05bdea27448a594467}{Py\+UFunc\+\_\+\+None}}~-\/1
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_ae1d640ee11e185a7c080a6c1c7530768}{Py\+UFunc\+\_\+\+Reorderable\+None}}~-\/2
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_ae0d23e40b6591cdf67b9196c85784aac}{Py\+UFunc\+\_\+\+Identity\+Value}}~-\/3
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a7dcd798be4c7e1995c107ec4607a3434}{UFUNC\+\_\+\+REDUCE}}~0
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_aa3150c40a057c29c1b2cf7adb135d56c}{UFUNC\+\_\+\+ACCUMULATE}}~1
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a6b112ec606e1a825f3ea752049068e3d}{UFUNC\+\_\+\+REDUCEAT}}~2
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a8bc9d94a1ece2ff8d0bd469cb0b78cc3}{UFUNC\+\_\+\+OUTER}}~3
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a317883bc6ad6ff924ba3008d190a499f}{UFUNC\+\_\+\+PYVALS\+\_\+\+NAME}}~"{}UFUNC\+\_\+\+PYVALS"{}
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_ae5dc4cd7cb998ad26e14954d48f611a0}{UFUNC\+\_\+\+FPE\+\_\+\+DIVIDEBYZERO}}~\mbox{\hyperlink{npy__math_8h_a37e0264ea417f0f907efc9b6747f756f}{NPY\+\_\+\+FPE\+\_\+\+DIVIDEBYZERO}}
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a69ec21351520436f4e7951f9e575db39}{UFUNC\+\_\+\+FPE\+\_\+\+OVERFLOW}}~\mbox{\hyperlink{npy__math_8h_ac830492f7379489ff1f4010ec1f799c5}{NPY\+\_\+\+FPE\+\_\+\+OVERFLOW}}
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a5123a2c4364e8d0df582acfc45bb0a21}{UFUNC\+\_\+\+FPE\+\_\+\+UNDERFLOW}}~\mbox{\hyperlink{npy__math_8h_afac1b230d474b41703962499f72fc729}{NPY\+\_\+\+FPE\+\_\+\+UNDERFLOW}}
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a4908f9d94cf0b3a8702569dad95b590f}{UFUNC\+\_\+\+FPE\+\_\+\+INVALID}}~\mbox{\hyperlink{npy__math_8h_a7a6e79eb7b6f71b19a4dfc43224d7948}{NPY\+\_\+\+FPE\+\_\+\+INVALID}}
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_a312688e98087476ea191a7cb1deec844}{generate\+\_\+divbyzero\+\_\+error}}()~\mbox{\hyperlink{npy__math_8h_a6dd243ce1155b2d832928e522ab5dab9}{npy\+\_\+set\+\_\+floatstatus\+\_\+divbyzero}}()
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_acc87fd1fa470820094ec142a227c0eac}{generate\+\_\+overflow\+\_\+error}}()~\mbox{\hyperlink{npy__math_8h_ad44cb8d12038d28d47b30c21d0d0f041}{npy\+\_\+set\+\_\+floatstatus\+\_\+overflow}}()
+\item 
+\#define \mbox{\hyperlink{ufuncobject_8h_af028f8ca282a27984629c3a1346b83f4}{UFUNC\+\_\+\+NOFPE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{Py\+UFunc\+Generic\+Function}}) (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}args, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} const \texorpdfstring{$\ast$}{*}dimensions, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} const \texorpdfstring{$\ast$}{*}strides, void \texorpdfstring{$\ast$}{*}innerloopdata)
+\item 
+typedef void() \mbox{\hyperlink{ufuncobject_8h_ae33b2c05c76f32454f27031187cd93de}{Py\+UFunc\+\_\+\+Masked\+Strided\+Inner\+Loop\+Func}}(char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}dataptrs, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}strides, char \texorpdfstring{$\ast$}{*}maskptr, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} mask\+\_\+stride, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} count, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}innerloopdata)
+\item 
+typedef int() \mbox{\hyperlink{ufuncobject_8h_a20dc8cfe5d10458c985f2e9130be635a}{Py\+UFunc\+\_\+\+Type\+Resolution\+Func}}(struct \mbox{\hyperlink{struct__tagPyUFuncObject}{\+\_\+tag\+Py\+UFunc\+Object}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structufunc}{ufunc}}, \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\+\_\+\+CASTING}} casting, \mbox{\hyperlink{ndarraytypes_8h_af074aa0de75119b0769c7eff2bacf784}{Py\+Array\+Object}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}operands, Py\+Object \texorpdfstring{$\ast$}{*}type\+\_\+tup, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+dtypes)
+\item 
+typedef int() \mbox{\hyperlink{ufuncobject_8h_a6079d530c287d7b3c273c66f4041327a}{Py\+UFunc\+\_\+\+Process\+Core\+Dims\+Func}}(struct \mbox{\hyperlink{struct__tagPyUFuncObject}{\+\_\+tag\+Py\+UFunc\+Object}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structufunc}{ufunc}}, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}core\+\_\+dim\+\_\+sizes)
+\item 
+typedef struct \mbox{\hyperlink{struct__tagPyUFuncObject}{\+\_\+tag\+Py\+UFunc\+Object}} \mbox{\hyperlink{ufuncobject_8h_a0762cb88ed266a8ae67294a7eeec5a62}{Py\+UFunc\+Object}}
+\item 
+typedef struct \mbox{\hyperlink{struct__loop1d__info}{\+\_\+loop1d\+\_\+info}} \mbox{\hyperlink{ufuncobject_8h_a311d4c27b82cb0cf8087b3399083fdf8}{Py\+UFunc\+\_\+\+Loop1d}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{ufuncobject_8h_a312688e98087476ea191a7cb1deec844}\label{ufuncobject_8h_a312688e98087476ea191a7cb1deec844} 
+\index{ufuncobject.h@{ufuncobject.h}!generate\_divbyzero\_error@{generate\_divbyzero\_error}}
+\index{generate\_divbyzero\_error@{generate\_divbyzero\_error}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{generate\_divbyzero\_error}{generate\_divbyzero\_error}}
+{\footnotesize\ttfamily \#define generate\+\_\+divbyzero\+\_\+error(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{npy__math_8h_a6dd243ce1155b2d832928e522ab5dab9}{npy\+\_\+set\+\_\+floatstatus\+\_\+divbyzero}}()}
+
+\Hypertarget{ufuncobject_8h_acc87fd1fa470820094ec142a227c0eac}\label{ufuncobject_8h_acc87fd1fa470820094ec142a227c0eac} 
+\index{ufuncobject.h@{ufuncobject.h}!generate\_overflow\_error@{generate\_overflow\_error}}
+\index{generate\_overflow\_error@{generate\_overflow\_error}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{generate\_overflow\_error}{generate\_overflow\_error}}
+{\footnotesize\ttfamily \#define generate\+\_\+overflow\+\_\+error(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{npy__math_8h_ad44cb8d12038d28d47b30c21d0d0f041}{npy\+\_\+set\+\_\+floatstatus\+\_\+overflow}}()}
+
+\Hypertarget{ufuncobject_8h_a22d424289b4748f0029483e787eef07e}\label{ufuncobject_8h_a22d424289b4748f0029483e787eef07e} 
+\index{ufuncobject.h@{ufuncobject.h}!NPY\_LOOP\_BEGIN\_THREADS@{NPY\_LOOP\_BEGIN\_THREADS}}
+\index{NPY\_LOOP\_BEGIN\_THREADS@{NPY\_LOOP\_BEGIN\_THREADS}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_LOOP\_BEGIN\_THREADS}{NPY\_LOOP\_BEGIN\_THREADS}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+LOOP\+\_\+\+BEGIN\+\_\+\+THREADS~do \{if (!(loop-\/$>$obj \& \mbox{\hyperlink{ufuncobject_8h_a0fd0fa163d6b75007979a3f5cec2d58f}{UFUNC\+\_\+\+OBJ\+\_\+\+NEEDS\+\_\+\+API}})) \+\_\+save = Py\+Eval\+\_\+\+Save\+Thread();\} while (0);}
+
+\Hypertarget{ufuncobject_8h_aa5014f00a6a12b989c9897da8f53efdf}\label{ufuncobject_8h_aa5014f00a6a12b989c9897da8f53efdf} 
+\index{ufuncobject.h@{ufuncobject.h}!NPY\_LOOP\_END\_THREADS@{NPY\_LOOP\_END\_THREADS}}
+\index{NPY\_LOOP\_END\_THREADS@{NPY\_LOOP\_END\_THREADS}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_LOOP\_END\_THREADS}{NPY\_LOOP\_END\_THREADS}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+LOOP\+\_\+\+END\+\_\+\+THREADS~do \{if (!(loop-\/$>$obj \& \mbox{\hyperlink{ufuncobject_8h_a0fd0fa163d6b75007979a3f5cec2d58f}{UFUNC\+\_\+\+OBJ\+\_\+\+NEEDS\+\_\+\+API}})) Py\+Eval\+\_\+\+Restore\+Thread(\+\_\+save);\} while (0);}
+
+\Hypertarget{ufuncobject_8h_ae0d23e40b6591cdf67b9196c85784aac}\label{ufuncobject_8h_ae0d23e40b6591cdf67b9196c85784aac} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_IdentityValue@{PyUFunc\_IdentityValue}}
+\index{PyUFunc\_IdentityValue@{PyUFunc\_IdentityValue}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_IdentityValue}{PyUFunc\_IdentityValue}}
+{\footnotesize\ttfamily \#define Py\+UFunc\+\_\+\+Identity\+Value~-\/3}
+
+\Hypertarget{ufuncobject_8h_af18fb051a84e9735b6c84a2710a5cfb9}\label{ufuncobject_8h_af18fb051a84e9735b6c84a2710a5cfb9} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_MinusOne@{PyUFunc\_MinusOne}}
+\index{PyUFunc\_MinusOne@{PyUFunc\_MinusOne}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_MinusOne}{PyUFunc\_MinusOne}}
+{\footnotesize\ttfamily \#define Py\+UFunc\+\_\+\+Minus\+One~2}
+
+\Hypertarget{ufuncobject_8h_a978aa894e4b6ca05bdea27448a594467}\label{ufuncobject_8h_a978aa894e4b6ca05bdea27448a594467} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_None@{PyUFunc\_None}}
+\index{PyUFunc\_None@{PyUFunc\_None}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_None}{PyUFunc\_None}}
+{\footnotesize\ttfamily \#define Py\+UFunc\+\_\+\+None~-\/1}
+
+\Hypertarget{ufuncobject_8h_acbe84399c050e006a3fc1ba5edf22615}\label{ufuncobject_8h_acbe84399c050e006a3fc1ba5edf22615} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_One@{PyUFunc\_One}}
+\index{PyUFunc\_One@{PyUFunc\_One}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_One}{PyUFunc\_One}}
+{\footnotesize\ttfamily \#define Py\+UFunc\+\_\+\+One~1}
+
+\Hypertarget{ufuncobject_8h_ae1d640ee11e185a7c080a6c1c7530768}\label{ufuncobject_8h_ae1d640ee11e185a7c080a6c1c7530768} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_ReorderableNone@{PyUFunc\_ReorderableNone}}
+\index{PyUFunc\_ReorderableNone@{PyUFunc\_ReorderableNone}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_ReorderableNone}{PyUFunc\_ReorderableNone}}
+{\footnotesize\ttfamily \#define Py\+UFunc\+\_\+\+Reorderable\+None~-\/2}
+
+\Hypertarget{ufuncobject_8h_a9658ee7fbac38eb219ede4bee71047b6}\label{ufuncobject_8h_a9658ee7fbac38eb219ede4bee71047b6} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_Zero@{PyUFunc\_Zero}}
+\index{PyUFunc\_Zero@{PyUFunc\_Zero}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_Zero}{PyUFunc\_Zero}}
+{\footnotesize\ttfamily \#define Py\+UFunc\+\_\+\+Zero~0}
+
+\Hypertarget{ufuncobject_8h_aa3150c40a057c29c1b2cf7adb135d56c}\label{ufuncobject_8h_aa3150c40a057c29c1b2cf7adb135d56c} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_ACCUMULATE@{UFUNC\_ACCUMULATE}}
+\index{UFUNC\_ACCUMULATE@{UFUNC\_ACCUMULATE}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_ACCUMULATE}{UFUNC\_ACCUMULATE}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+ACCUMULATE~1}
+
+\Hypertarget{ufuncobject_8h_a0d63e224df9dd3da745718d0e57623f1}\label{ufuncobject_8h_a0d63e224df9dd3da745718d0e57623f1} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_CORE\_DIM\_CAN\_IGNORE@{UFUNC\_CORE\_DIM\_CAN\_IGNORE}}
+\index{UFUNC\_CORE\_DIM\_CAN\_IGNORE@{UFUNC\_CORE\_DIM\_CAN\_IGNORE}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_CORE\_DIM\_CAN\_IGNORE}{UFUNC\_CORE\_DIM\_CAN\_IGNORE}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+CORE\+\_\+\+DIM\+\_\+\+CAN\+\_\+\+IGNORE~0x0004}
+
+\Hypertarget{ufuncobject_8h_af4036604b9e41a8ee0a137d3ba0cc847}\label{ufuncobject_8h_af4036604b9e41a8ee0a137d3ba0cc847} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_CORE\_DIM\_MISSING@{UFUNC\_CORE\_DIM\_MISSING}}
+\index{UFUNC\_CORE\_DIM\_MISSING@{UFUNC\_CORE\_DIM\_MISSING}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_CORE\_DIM\_MISSING}{UFUNC\_CORE\_DIM\_MISSING}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+CORE\+\_\+\+DIM\+\_\+\+MISSING~0x00040000}
+
+\Hypertarget{ufuncobject_8h_adc4890517d843b5cffedd900b56d6429}\label{ufuncobject_8h_adc4890517d843b5cffedd900b56d6429} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_CORE\_DIM\_SIZE\_INFERRED@{UFUNC\_CORE\_DIM\_SIZE\_INFERRED}}
+\index{UFUNC\_CORE\_DIM\_SIZE\_INFERRED@{UFUNC\_CORE\_DIM\_SIZE\_INFERRED}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_CORE\_DIM\_SIZE\_INFERRED}{UFUNC\_CORE\_DIM\_SIZE\_INFERRED}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+CORE\+\_\+\+DIM\+\_\+\+SIZE\+\_\+\+INFERRED~0x0002}
+
+\Hypertarget{ufuncobject_8h_ae5dc4cd7cb998ad26e14954d48f611a0}\label{ufuncobject_8h_ae5dc4cd7cb998ad26e14954d48f611a0} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_FPE\_DIVIDEBYZERO@{UFUNC\_FPE\_DIVIDEBYZERO}}
+\index{UFUNC\_FPE\_DIVIDEBYZERO@{UFUNC\_FPE\_DIVIDEBYZERO}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_FPE\_DIVIDEBYZERO}{UFUNC\_FPE\_DIVIDEBYZERO}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+FPE\+\_\+\+DIVIDEBYZERO~\mbox{\hyperlink{npy__math_8h_a37e0264ea417f0f907efc9b6747f756f}{NPY\+\_\+\+FPE\+\_\+\+DIVIDEBYZERO}}}
+
+\Hypertarget{ufuncobject_8h_a4908f9d94cf0b3a8702569dad95b590f}\label{ufuncobject_8h_a4908f9d94cf0b3a8702569dad95b590f} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_FPE\_INVALID@{UFUNC\_FPE\_INVALID}}
+\index{UFUNC\_FPE\_INVALID@{UFUNC\_FPE\_INVALID}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_FPE\_INVALID}{UFUNC\_FPE\_INVALID}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+FPE\+\_\+\+INVALID~\mbox{\hyperlink{npy__math_8h_a7a6e79eb7b6f71b19a4dfc43224d7948}{NPY\+\_\+\+FPE\+\_\+\+INVALID}}}
+
+\Hypertarget{ufuncobject_8h_a69ec21351520436f4e7951f9e575db39}\label{ufuncobject_8h_a69ec21351520436f4e7951f9e575db39} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_FPE\_OVERFLOW@{UFUNC\_FPE\_OVERFLOW}}
+\index{UFUNC\_FPE\_OVERFLOW@{UFUNC\_FPE\_OVERFLOW}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_FPE\_OVERFLOW}{UFUNC\_FPE\_OVERFLOW}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+FPE\+\_\+\+OVERFLOW~\mbox{\hyperlink{npy__math_8h_ac830492f7379489ff1f4010ec1f799c5}{NPY\+\_\+\+FPE\+\_\+\+OVERFLOW}}}
+
+\Hypertarget{ufuncobject_8h_a5123a2c4364e8d0df582acfc45bb0a21}\label{ufuncobject_8h_a5123a2c4364e8d0df582acfc45bb0a21} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_FPE\_UNDERFLOW@{UFUNC\_FPE\_UNDERFLOW}}
+\index{UFUNC\_FPE\_UNDERFLOW@{UFUNC\_FPE\_UNDERFLOW}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_FPE\_UNDERFLOW}{UFUNC\_FPE\_UNDERFLOW}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+FPE\+\_\+\+UNDERFLOW~\mbox{\hyperlink{npy__math_8h_afac1b230d474b41703962499f72fc729}{NPY\+\_\+\+FPE\+\_\+\+UNDERFLOW}}}
+
+\Hypertarget{ufuncobject_8h_af028f8ca282a27984629c3a1346b83f4}\label{ufuncobject_8h_af028f8ca282a27984629c3a1346b83f4} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_NOFPE@{UFUNC\_NOFPE}}
+\index{UFUNC\_NOFPE@{UFUNC\_NOFPE}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_NOFPE}{UFUNC\_NOFPE}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+NOFPE}
+
+\Hypertarget{ufuncobject_8h_a500613a4145d2808ec7bba0a4244677e}\label{ufuncobject_8h_a500613a4145d2808ec7bba0a4244677e} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_OBJ\_ISOBJECT@{UFUNC\_OBJ\_ISOBJECT}}
+\index{UFUNC\_OBJ\_ISOBJECT@{UFUNC\_OBJ\_ISOBJECT}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_OBJ\_ISOBJECT}{UFUNC\_OBJ\_ISOBJECT}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+OBJ\+\_\+\+ISOBJECT~1}
+
+\Hypertarget{ufuncobject_8h_a0fd0fa163d6b75007979a3f5cec2d58f}\label{ufuncobject_8h_a0fd0fa163d6b75007979a3f5cec2d58f} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_OBJ\_NEEDS\_API@{UFUNC\_OBJ\_NEEDS\_API}}
+\index{UFUNC\_OBJ\_NEEDS\_API@{UFUNC\_OBJ\_NEEDS\_API}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_OBJ\_NEEDS\_API}{UFUNC\_OBJ\_NEEDS\_API}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+OBJ\+\_\+\+NEEDS\+\_\+\+API~2}
+
+\Hypertarget{ufuncobject_8h_a8bc9d94a1ece2ff8d0bd469cb0b78cc3}\label{ufuncobject_8h_a8bc9d94a1ece2ff8d0bd469cb0b78cc3} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_OUTER@{UFUNC\_OUTER}}
+\index{UFUNC\_OUTER@{UFUNC\_OUTER}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_OUTER}{UFUNC\_OUTER}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+OUTER~3}
+
+\Hypertarget{ufuncobject_8h_a317883bc6ad6ff924ba3008d190a499f}\label{ufuncobject_8h_a317883bc6ad6ff924ba3008d190a499f} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_PYVALS\_NAME@{UFUNC\_PYVALS\_NAME}}
+\index{UFUNC\_PYVALS\_NAME@{UFUNC\_PYVALS\_NAME}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_PYVALS\_NAME}{UFUNC\_PYVALS\_NAME}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+PYVALS\+\_\+\+NAME~"{}UFUNC\+\_\+\+PYVALS"{}}
+
+\Hypertarget{ufuncobject_8h_a7dcd798be4c7e1995c107ec4607a3434}\label{ufuncobject_8h_a7dcd798be4c7e1995c107ec4607a3434} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_REDUCE@{UFUNC\_REDUCE}}
+\index{UFUNC\_REDUCE@{UFUNC\_REDUCE}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_REDUCE}{UFUNC\_REDUCE}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+REDUCE~0}
+
+\Hypertarget{ufuncobject_8h_a6b112ec606e1a825f3ea752049068e3d}\label{ufuncobject_8h_a6b112ec606e1a825f3ea752049068e3d} 
+\index{ufuncobject.h@{ufuncobject.h}!UFUNC\_REDUCEAT@{UFUNC\_REDUCEAT}}
+\index{UFUNC\_REDUCEAT@{UFUNC\_REDUCEAT}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{UFUNC\_REDUCEAT}{UFUNC\_REDUCEAT}}
+{\footnotesize\ttfamily \#define UFUNC\+\_\+\+REDUCEAT~2}
+
+
+
+\doxysubsection{Documentation des définitions de type}
+\Hypertarget{ufuncobject_8h_a311d4c27b82cb0cf8087b3399083fdf8}\label{ufuncobject_8h_a311d4c27b82cb0cf8087b3399083fdf8} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_Loop1d@{PyUFunc\_Loop1d}}
+\index{PyUFunc\_Loop1d@{PyUFunc\_Loop1d}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_Loop1d}{PyUFunc\_Loop1d}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__loop1d__info}{\+\_\+loop1d\+\_\+info}} \mbox{\hyperlink{ufuncobject_8h_a311d4c27b82cb0cf8087b3399083fdf8}{Py\+UFunc\+\_\+\+Loop1d}}}
+
+\Hypertarget{ufuncobject_8h_ae33b2c05c76f32454f27031187cd93de}\label{ufuncobject_8h_ae33b2c05c76f32454f27031187cd93de} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_MaskedStridedInnerLoopFunc@{PyUFunc\_MaskedStridedInnerLoopFunc}}
+\index{PyUFunc\_MaskedStridedInnerLoopFunc@{PyUFunc\_MaskedStridedInnerLoopFunc}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_MaskedStridedInnerLoopFunc}{PyUFunc\_MaskedStridedInnerLoopFunc}}
+{\footnotesize\ttfamily typedef void() Py\+UFunc\+\_\+\+Masked\+Strided\+Inner\+Loop\+Func(char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}dataptrs, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}strides, char \texorpdfstring{$\ast$}{*}maskptr, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} mask\+\_\+stride, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} count, \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*}innerloopdata)}
+
+\Hypertarget{ufuncobject_8h_a6079d530c287d7b3c273c66f4041327a}\label{ufuncobject_8h_a6079d530c287d7b3c273c66f4041327a} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_ProcessCoreDimsFunc@{PyUFunc\_ProcessCoreDimsFunc}}
+\index{PyUFunc\_ProcessCoreDimsFunc@{PyUFunc\_ProcessCoreDimsFunc}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_ProcessCoreDimsFunc}{PyUFunc\_ProcessCoreDimsFunc}}
+{\footnotesize\ttfamily typedef int() Py\+UFunc\+\_\+\+Process\+Core\+Dims\+Func(struct \mbox{\hyperlink{struct__tagPyUFuncObject}{\+\_\+tag\+Py\+UFunc\+Object}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structufunc}{ufunc}}, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*}core\+\_\+dim\+\_\+sizes)}
+
+\Hypertarget{ufuncobject_8h_a20dc8cfe5d10458c985f2e9130be635a}\label{ufuncobject_8h_a20dc8cfe5d10458c985f2e9130be635a} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFunc\_TypeResolutionFunc@{PyUFunc\_TypeResolutionFunc}}
+\index{PyUFunc\_TypeResolutionFunc@{PyUFunc\_TypeResolutionFunc}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFunc\_TypeResolutionFunc}{PyUFunc\_TypeResolutionFunc}}
+{\footnotesize\ttfamily typedef int() Py\+UFunc\+\_\+\+Type\+Resolution\+Func(struct \mbox{\hyperlink{struct__tagPyUFuncObject}{\+\_\+tag\+Py\+UFunc\+Object}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structufunc}{ufunc}}, \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\+\_\+\+CASTING}} casting, \mbox{\hyperlink{ndarraytypes_8h_af074aa0de75119b0769c7eff2bacf784}{Py\+Array\+Object}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}operands, Py\+Object \texorpdfstring{$\ast$}{*}type\+\_\+tup, \mbox{\hyperlink{ndarraytypes_8h_a4d074a77f47d5aead5281eec6d6822aa}{Py\+Array\+\_\+\+Descr}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out\+\_\+dtypes)}
+
+\Hypertarget{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}\label{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFuncGenericFunction@{PyUFuncGenericFunction}}
+\index{PyUFuncGenericFunction@{PyUFuncGenericFunction}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFuncGenericFunction}{PyUFuncGenericFunction}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Py\+UFunc\+Generic\+Function) (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}args, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} const \texorpdfstring{$\ast$}{*}dimensions, \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} const \texorpdfstring{$\ast$}{*}strides, void \texorpdfstring{$\ast$}{*}innerloopdata)}
+
+\Hypertarget{ufuncobject_8h_a0762cb88ed266a8ae67294a7eeec5a62}\label{ufuncobject_8h_a0762cb88ed266a8ae67294a7eeec5a62} 
+\index{ufuncobject.h@{ufuncobject.h}!PyUFuncObject@{PyUFuncObject}}
+\index{PyUFuncObject@{PyUFuncObject}!ufuncobject.h@{ufuncobject.h}}
+\doxysubsubsection{\texorpdfstring{PyUFuncObject}{PyUFuncObject}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__tagPyUFuncObject}{\+\_\+tag\+Py\+UFunc\+Object}} \mbox{\hyperlink{ufuncobject_8h_a0762cb88ed266a8ae67294a7eeec5a62}{Py\+UFunc\+Object}}}
+

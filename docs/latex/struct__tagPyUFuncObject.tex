@@ -1,0 +1,277 @@
+\doxysection{Référence de la structure \+\_\+tag\+Py\+UFunc\+Object}
+\hypertarget{struct__tagPyUFuncObject}{}\label{struct__tagPyUFuncObject}\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+
+
+{\ttfamily \#include $<$ufuncobject.\+h$>$}
+
+
+
+Graphe de collaboration de \+\_\+tag\+Py\+UFunc\+Object\+:
+% FIG 0
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+Py\+Object\+\_\+\+HEAD int \mbox{\hyperlink{struct__tagPyUFuncObject_af3c53cd1c615f06f90b73573f569709d}{nin}}
+\item 
+Py\+Object\+\_\+\+HEAD int \mbox{\hyperlink{struct__tagPyUFuncObject_a50287f22915ef1394c0ef9ac1b0873d4}{nout}}
+\item 
+Py\+Object\+\_\+\+HEAD int \mbox{\hyperlink{struct__tagPyUFuncObject_ae39e94118b13ed17d6ef0e0027cbe1a7}{nargs}}
+\item 
+int \mbox{\hyperlink{struct__tagPyUFuncObject_a3a051b99d188ed3ca2fa0c7242d6a0b5}{identity}}
+\item 
+\mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{Py\+UFunc\+Generic\+Function}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ad6bb98e6dc65c30b5971830abcbb3441}{functions}}
+\item 
+void \texorpdfstring{$\ast$}{*}const  \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_af00e76ccd34fad261b3dee15575303a5}{data}}
+\item 
+int \mbox{\hyperlink{struct__tagPyUFuncObject_a4e1c22d7d754a4a5c041f36207f8f9fc}{ntypes}}
+\item 
+int \mbox{\hyperlink{struct__tagPyUFuncObject_ae957a691faed6057cefb980eee6b836d}{reserved1}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ad40effa1e61e4d2fa9dbe49f055243af}{name}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_af442d55fd4ef456b5abfe5c950d00078}{types}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ac440be9edaf85dbbab8dc2df6b27909a}{doc}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_a2b2e34930b64b066f06290dd3f96cb19}{ptr}}
+\item 
+Py\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ab90c338569fde9a40ebe40c4c0e1a6e7}{obj}}
+\item 
+Py\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ac06355984ac7a4c881ea7b9ba9455e89}{userloops}}
+\item 
+int \mbox{\hyperlink{struct__tagPyUFuncObject_a7a8be218d979426ff649f04782c963a8}{core\+\_\+enabled}}
+\item 
+int \mbox{\hyperlink{struct__tagPyUFuncObject_a905f057550792d5b86b44e2af16d853f}{core\+\_\+num\+\_\+dim\+\_\+ix}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_aa14d296fa203002e9bc52b86424c62d7}{core\+\_\+num\+\_\+dims}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_aa3825ed4d6edee57769e126706b23135}{core\+\_\+dim\+\_\+ixs}}
+\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ade99a4709d897eaf789d258833651614}{core\+\_\+offsets}}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_a85a052ca9072bfbe178c175c839b7781}{core\+\_\+signature}}
+\item 
+\mbox{\hyperlink{ufuncobject_8h_a20dc8cfe5d10458c985f2e9130be635a}{Py\+UFunc\+\_\+\+Type\+Resolution\+Func}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ac08fe5c61d2020beda6d883c6e8a30df}{type\+\_\+resolver}}
+\item 
+Py\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ad9e7f3b83ce3f86d5b9f31eac2276c54}{dict}}
+\item 
+vectorcallfunc \mbox{\hyperlink{struct__tagPyUFuncObject_a0b4f1cd6f4a9fb2bed00f6499a11c863}{vectorcall}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_ae98781fc0fa0311b0db9cf9b68bdcb75}{reserved3}}
+\item 
+npy\+\_\+uint32 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_afc0040611bb5f61e868a60216c57e98b}{op\+\_\+flags}}
+\item 
+npy\+\_\+uint32 \mbox{\hyperlink{struct__tagPyUFuncObject_ad1a2e939a99c518934fe8f769e109a2e}{iter\+\_\+flags}}
+\item 
+\mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_a5b77f3c80715df1d42ea53f13f08bd60}{core\+\_\+dim\+\_\+sizes}}
+\item 
+npy\+\_\+uint32 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_a8990c47d52a6584639c3cda9a56dbcd7}{core\+\_\+dim\+\_\+flags}}
+\item 
+Py\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_a6e07a93e1299af82b314055fb0af26fe}{identity\+\_\+value}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_aff388772dd16c5d0c7da650fba554dcf}{\+\_\+dispatch\+\_\+cache}}
+\item 
+Py\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_a1d28b033dbd831ad5023544f740043cf}{\+\_\+loops}}
+\item 
+\mbox{\hyperlink{ufuncobject_8h_a6079d530c287d7b3c273c66f4041327a}{Py\+UFunc\+\_\+\+Process\+Core\+Dims\+Func}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct__tagPyUFuncObject_a98e7bde2d2247a431d7c817de5d5c429}{process\+\_\+core\+\_\+dims\+\_\+func}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{struct__tagPyUFuncObject_aff388772dd16c5d0c7da650fba554dcf}\label{struct__tagPyUFuncObject_aff388772dd16c5d0c7da650fba554dcf} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!\_dispatch\_cache@{\_dispatch\_cache}}
+\index{\_dispatch\_cache@{\_dispatch\_cache}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{\_dispatch\_cache}{\_dispatch\_cache}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::\+\_\+dispatch\+\_\+cache}
+
+\Hypertarget{struct__tagPyUFuncObject_a1d28b033dbd831ad5023544f740043cf}\label{struct__tagPyUFuncObject_a1d28b033dbd831ad5023544f740043cf} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!\_loops@{\_loops}}
+\index{\_loops@{\_loops}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{\_loops}{\_loops}}
+{\footnotesize\ttfamily Py\+Object\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::\+\_\+loops}
+
+\Hypertarget{struct__tagPyUFuncObject_a8990c47d52a6584639c3cda9a56dbcd7}\label{struct__tagPyUFuncObject_a8990c47d52a6584639c3cda9a56dbcd7} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!core\_dim\_flags@{core\_dim\_flags}}
+\index{core\_dim\_flags@{core\_dim\_flags}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{core\_dim\_flags}{core\_dim\_flags}}
+{\footnotesize\ttfamily npy\+\_\+uint32\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::core\+\_\+dim\+\_\+flags}
+
+\Hypertarget{struct__tagPyUFuncObject_aa3825ed4d6edee57769e126706b23135}\label{struct__tagPyUFuncObject_aa3825ed4d6edee57769e126706b23135} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!core\_dim\_ixs@{core\_dim\_ixs}}
+\index{core\_dim\_ixs@{core\_dim\_ixs}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{core\_dim\_ixs}{core\_dim\_ixs}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::core\+\_\+dim\+\_\+ixs}
+
+\Hypertarget{struct__tagPyUFuncObject_a5b77f3c80715df1d42ea53f13f08bd60}\label{struct__tagPyUFuncObject_a5b77f3c80715df1d42ea53f13f08bd60} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!core\_dim\_sizes@{core\_dim\_sizes}}
+\index{core\_dim\_sizes@{core\_dim\_sizes}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{core\_dim\_sizes}{core\_dim\_sizes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}}\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::core\+\_\+dim\+\_\+sizes}
+
+\Hypertarget{struct__tagPyUFuncObject_a7a8be218d979426ff649f04782c963a8}\label{struct__tagPyUFuncObject_a7a8be218d979426ff649f04782c963a8} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!core\_enabled@{core\_enabled}}
+\index{core\_enabled@{core\_enabled}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{core\_enabled}{core\_enabled}}
+{\footnotesize\ttfamily int \+\_\+tag\+Py\+UFunc\+Object\+::core\+\_\+enabled}
+
+\Hypertarget{struct__tagPyUFuncObject_a905f057550792d5b86b44e2af16d853f}\label{struct__tagPyUFuncObject_a905f057550792d5b86b44e2af16d853f} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!core\_num\_dim\_ix@{core\_num\_dim\_ix}}
+\index{core\_num\_dim\_ix@{core\_num\_dim\_ix}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{core\_num\_dim\_ix}{core\_num\_dim\_ix}}
+{\footnotesize\ttfamily int \+\_\+tag\+Py\+UFunc\+Object\+::core\+\_\+num\+\_\+dim\+\_\+ix}
+
+\Hypertarget{struct__tagPyUFuncObject_aa14d296fa203002e9bc52b86424c62d7}\label{struct__tagPyUFuncObject_aa14d296fa203002e9bc52b86424c62d7} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!core\_num\_dims@{core\_num\_dims}}
+\index{core\_num\_dims@{core\_num\_dims}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{core\_num\_dims}{core\_num\_dims}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::core\+\_\+num\+\_\+dims}
+
+\Hypertarget{struct__tagPyUFuncObject_ade99a4709d897eaf789d258833651614}\label{struct__tagPyUFuncObject_ade99a4709d897eaf789d258833651614} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!core\_offsets@{core\_offsets}}
+\index{core\_offsets@{core\_offsets}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{core\_offsets}{core\_offsets}}
+{\footnotesize\ttfamily int\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::core\+\_\+offsets}
+
+\Hypertarget{struct__tagPyUFuncObject_a85a052ca9072bfbe178c175c839b7781}\label{struct__tagPyUFuncObject_a85a052ca9072bfbe178c175c839b7781} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!core\_signature@{core\_signature}}
+\index{core\_signature@{core\_signature}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{core\_signature}{core\_signature}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::core\+\_\+signature}
+
+\Hypertarget{struct__tagPyUFuncObject_af00e76ccd34fad261b3dee15575303a5}\label{struct__tagPyUFuncObject_af00e76ccd34fad261b3dee15575303a5} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!data@{data}}
+\index{data@{data}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} const\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::data}
+
+\Hypertarget{struct__tagPyUFuncObject_ad9e7f3b83ce3f86d5b9f31eac2276c54}\label{struct__tagPyUFuncObject_ad9e7f3b83ce3f86d5b9f31eac2276c54} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!dict@{dict}}
+\index{dict@{dict}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{dict}{dict}}
+{\footnotesize\ttfamily Py\+Object\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::dict}
+
+\Hypertarget{struct__tagPyUFuncObject_ac440be9edaf85dbbab8dc2df6b27909a}\label{struct__tagPyUFuncObject_ac440be9edaf85dbbab8dc2df6b27909a} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!doc@{doc}}
+\index{doc@{doc}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{doc}{doc}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::doc}
+
+\Hypertarget{struct__tagPyUFuncObject_ad6bb98e6dc65c30b5971830abcbb3441}\label{struct__tagPyUFuncObject_ad6bb98e6dc65c30b5971830abcbb3441} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!functions@{functions}}
+\index{functions@{functions}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{functions}{functions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ufuncobject_8h_a92252cc48bb486d3d9b8504d1495846e}{Py\+UFunc\+Generic\+Function}}\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::functions}
+
+\Hypertarget{struct__tagPyUFuncObject_a3a051b99d188ed3ca2fa0c7242d6a0b5}\label{struct__tagPyUFuncObject_a3a051b99d188ed3ca2fa0c7242d6a0b5} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!identity@{identity}}
+\index{identity@{identity}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{identity}{identity}}
+{\footnotesize\ttfamily int \+\_\+tag\+Py\+UFunc\+Object\+::identity}
+
+\Hypertarget{struct__tagPyUFuncObject_a6e07a93e1299af82b314055fb0af26fe}\label{struct__tagPyUFuncObject_a6e07a93e1299af82b314055fb0af26fe} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!identity\_value@{identity\_value}}
+\index{identity\_value@{identity\_value}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{identity\_value}{identity\_value}}
+{\footnotesize\ttfamily Py\+Object\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::identity\+\_\+value}
+
+\Hypertarget{struct__tagPyUFuncObject_ad1a2e939a99c518934fe8f769e109a2e}\label{struct__tagPyUFuncObject_ad1a2e939a99c518934fe8f769e109a2e} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!iter\_flags@{iter\_flags}}
+\index{iter\_flags@{iter\_flags}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{iter\_flags}{iter\_flags}}
+{\footnotesize\ttfamily npy\+\_\+uint32 \+\_\+tag\+Py\+UFunc\+Object\+::iter\+\_\+flags}
+
+\Hypertarget{struct__tagPyUFuncObject_ad40effa1e61e4d2fa9dbe49f055243af}\label{struct__tagPyUFuncObject_ad40effa1e61e4d2fa9dbe49f055243af} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!name@{name}}
+\index{name@{name}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::name}
+
+\Hypertarget{struct__tagPyUFuncObject_ae39e94118b13ed17d6ef0e0027cbe1a7}\label{struct__tagPyUFuncObject_ae39e94118b13ed17d6ef0e0027cbe1a7} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!nargs@{nargs}}
+\index{nargs@{nargs}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily Py\+Object\+\_\+\+HEAD int \+\_\+tag\+Py\+UFunc\+Object\+::nargs}
+
+\Hypertarget{struct__tagPyUFuncObject_af3c53cd1c615f06f90b73573f569709d}\label{struct__tagPyUFuncObject_af3c53cd1c615f06f90b73573f569709d} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!nin@{nin}}
+\index{nin@{nin}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{nin}{nin}}
+{\footnotesize\ttfamily Py\+Object\+\_\+\+HEAD int \+\_\+tag\+Py\+UFunc\+Object\+::nin}
+
+\Hypertarget{struct__tagPyUFuncObject_a50287f22915ef1394c0ef9ac1b0873d4}\label{struct__tagPyUFuncObject_a50287f22915ef1394c0ef9ac1b0873d4} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!nout@{nout}}
+\index{nout@{nout}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{nout}{nout}}
+{\footnotesize\ttfamily Py\+Object\+\_\+\+HEAD int \+\_\+tag\+Py\+UFunc\+Object\+::nout}
+
+\Hypertarget{struct__tagPyUFuncObject_a4e1c22d7d754a4a5c041f36207f8f9fc}\label{struct__tagPyUFuncObject_a4e1c22d7d754a4a5c041f36207f8f9fc} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!ntypes@{ntypes}}
+\index{ntypes@{ntypes}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{ntypes}{ntypes}}
+{\footnotesize\ttfamily int \+\_\+tag\+Py\+UFunc\+Object\+::ntypes}
+
+\Hypertarget{struct__tagPyUFuncObject_ab90c338569fde9a40ebe40c4c0e1a6e7}\label{struct__tagPyUFuncObject_ab90c338569fde9a40ebe40c4c0e1a6e7} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!obj@{obj}}
+\index{obj@{obj}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}}
+{\footnotesize\ttfamily Py\+Object\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::obj}
+
+\Hypertarget{struct__tagPyUFuncObject_afc0040611bb5f61e868a60216c57e98b}\label{struct__tagPyUFuncObject_afc0040611bb5f61e868a60216c57e98b} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!op\_flags@{op\_flags}}
+\index{op\_flags@{op\_flags}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{op\_flags}{op\_flags}}
+{\footnotesize\ttfamily npy\+\_\+uint32\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::op\+\_\+flags}
+
+\Hypertarget{struct__tagPyUFuncObject_a98e7bde2d2247a431d7c817de5d5c429}\label{struct__tagPyUFuncObject_a98e7bde2d2247a431d7c817de5d5c429} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!process\_core\_dims\_func@{process\_core\_dims\_func}}
+\index{process\_core\_dims\_func@{process\_core\_dims\_func}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{process\_core\_dims\_func}{process\_core\_dims\_func}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ufuncobject_8h_a6079d530c287d7b3c273c66f4041327a}{Py\+UFunc\+\_\+\+Process\+Core\+Dims\+Func}}\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::process\+\_\+core\+\_\+dims\+\_\+func}
+
+\Hypertarget{struct__tagPyUFuncObject_a2b2e34930b64b066f06290dd3f96cb19}\label{struct__tagPyUFuncObject_a2b2e34930b64b066f06290dd3f96cb19} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!ptr@{ptr}}
+\index{ptr@{ptr}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::ptr}
+
+\Hypertarget{struct__tagPyUFuncObject_ae957a691faed6057cefb980eee6b836d}\label{struct__tagPyUFuncObject_ae957a691faed6057cefb980eee6b836d} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!reserved1@{reserved1}}
+\index{reserved1@{reserved1}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{reserved1}{reserved1}}
+{\footnotesize\ttfamily int \+\_\+tag\+Py\+UFunc\+Object\+::reserved1}
+
+\Hypertarget{struct__tagPyUFuncObject_ae98781fc0fa0311b0db9cf9b68bdcb75}\label{struct__tagPyUFuncObject_ae98781fc0fa0311b0db9cf9b68bdcb75} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!reserved3@{reserved3}}
+\index{reserved3@{reserved3}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{reserved3}{reserved3}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::reserved3}
+
+\Hypertarget{struct__tagPyUFuncObject_ac08fe5c61d2020beda6d883c6e8a30df}\label{struct__tagPyUFuncObject_ac08fe5c61d2020beda6d883c6e8a30df} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!type\_resolver@{type\_resolver}}
+\index{type\_resolver@{type\_resolver}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{type\_resolver}{type\_resolver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ufuncobject_8h_a20dc8cfe5d10458c985f2e9130be635a}{Py\+UFunc\+\_\+\+Type\+Resolution\+Func}}\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::type\+\_\+resolver}
+
+\Hypertarget{struct__tagPyUFuncObject_af442d55fd4ef456b5abfe5c950d00078}\label{struct__tagPyUFuncObject_af442d55fd4ef456b5abfe5c950d00078} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!types@{types}}
+\index{types@{types}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{types}{types}}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::types}
+
+\Hypertarget{struct__tagPyUFuncObject_ac06355984ac7a4c881ea7b9ba9455e89}\label{struct__tagPyUFuncObject_ac06355984ac7a4c881ea7b9ba9455e89} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!userloops@{userloops}}
+\index{userloops@{userloops}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{userloops}{userloops}}
+{\footnotesize\ttfamily Py\+Object\texorpdfstring{$\ast$}{*} \+\_\+tag\+Py\+UFunc\+Object\+::userloops}
+
+\Hypertarget{struct__tagPyUFuncObject_a0b4f1cd6f4a9fb2bed00f6499a11c863}\label{struct__tagPyUFuncObject_a0b4f1cd6f4a9fb2bed00f6499a11c863} 
+\index{\_tagPyUFuncObject@{\_tagPyUFuncObject}!vectorcall@{vectorcall}}
+\index{vectorcall@{vectorcall}!\_tagPyUFuncObject@{\_tagPyUFuncObject}}
+\doxysubsubsection{\texorpdfstring{vectorcall}{vectorcall}}
+{\footnotesize\ttfamily vectorcallfunc \+\_\+tag\+Py\+UFunc\+Object\+::vectorcall}
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/include/numpy/\mbox{\hyperlink{ufuncobject_8h}{ufuncobject.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+routers.\+Base\+Router}
+\hypertarget{classrest__framework_1_1routers_1_1BaseRouter}{}\label{classrest__framework_1_1routers_1_1BaseRouter}\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+routers.\+Base\+Router\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter_a22d7ea918b30ecf6e7a615e1bab96917}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter_acb18f42600790731f89bbb75761a5f2b}{register}} (self, prefix, viewset, basename=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter_af40ae3cc4d9b599f3420d4e531112634}{is\+\_\+already\+\_\+registered}} (self, new\+\_\+basename)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter_a68cd2db5c88a8c37c3e6cad9ab45136a}{get\+\_\+default\+\_\+basename}} (self, viewset)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter_ad976348172e7a1edb4ad4edf03a8be5a}{get\+\_\+urls}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter_a66f22dd2cbf66d0b738d082d8ff16159}{urls}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter_aca9f5879f2e3c9317f881c101916899e}{registry}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter_a73caea67b25f1825ca3bbe1f5a18d0a1}{\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1routers_1_1BaseRouter_a22d7ea918b30ecf6e7a615e1bab96917}\label{classrest__framework_1_1routers_1_1BaseRouter_a22d7ea918b30ecf6e7a615e1bab96917} 
+\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Base\+Router.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1routers_1_1DefaultRouter_a93206fdcc00bf2a735a9afe155cd9bb8}{rest\+\_\+framework.\+routers.\+Default\+Router}}, et \mbox{\hyperlink{classrest__framework_1_1routers_1_1SimpleRouter_a00fc1dcd7ef77e8cb7509e2c723c4c32}{rest\+\_\+framework.\+routers.\+Simple\+Router}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1routers_1_1BaseRouter_a68cd2db5c88a8c37c3e6cad9ab45136a}\label{classrest__framework_1_1routers_1_1BaseRouter_a68cd2db5c88a8c37c3e6cad9ab45136a} 
+\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}!get\_default\_basename@{get\_default\_basename}}
+\index{get\_default\_basename@{get\_default\_basename}!rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+\doxysubsubsection{\texorpdfstring{get\_default\_basename()}{get\_default\_basename()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Base\+Router.\+get\+\_\+default\+\_\+basename (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{viewset }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If `basename` is not specified, attempt to automatically determine
+it from the viewset.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1routers_1_1SimpleRouter_a7c688cbc8c3c1baaca04eb33c89025e1}{rest\+\_\+framework.\+routers.\+Simple\+Router}}.
+
+\Hypertarget{classrest__framework_1_1routers_1_1BaseRouter_ad976348172e7a1edb4ad4edf03a8be5a}\label{classrest__framework_1_1routers_1_1BaseRouter_ad976348172e7a1edb4ad4edf03a8be5a} 
+\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}!get\_urls@{get\_urls}}
+\index{get\_urls@{get\_urls}!rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+\doxysubsubsection{\texorpdfstring{get\_urls()}{get\_urls()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Base\+Router.\+get\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of URL patterns, given the registered viewsets.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1routers_1_1SimpleRouter_a939549f710c508cfcc6e04e6c8c0a8c9}{rest\+\_\+framework.\+routers.\+Simple\+Router}}, et \mbox{\hyperlink{classrest__framework_1_1routers_1_1DefaultRouter_a906361b7a0d9ec40c597eb826e11643c}{rest\+\_\+framework.\+routers.\+Default\+Router}}.
+
+\Hypertarget{classrest__framework_1_1routers_1_1BaseRouter_af40ae3cc4d9b599f3420d4e531112634}\label{classrest__framework_1_1routers_1_1BaseRouter_af40ae3cc4d9b599f3420d4e531112634} 
+\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}!is\_already\_registered@{is\_already\_registered}}
+\index{is\_already\_registered@{is\_already\_registered}!rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+\doxysubsubsection{\texorpdfstring{is\_already\_registered()}{is\_already\_registered()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Base\+Router.\+is\+\_\+already\+\_\+registered (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{new\+\_\+basename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if `basename` is already registered
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1routers_1_1BaseRouter_acb18f42600790731f89bbb75761a5f2b}\label{classrest__framework_1_1routers_1_1BaseRouter_acb18f42600790731f89bbb75761a5f2b} 
+\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}!register@{register}}
+\index{register@{register}!rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Base\+Router.\+register (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{prefix,  }\item[{}]{viewset,  }\item[{}]{basename = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1routers_1_1BaseRouter_a66f22dd2cbf66d0b738d082d8ff16159}\label{classrest__framework_1_1routers_1_1BaseRouter_a66f22dd2cbf66d0b738d082d8ff16159} 
+\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}!urls@{urls}}
+\index{urls@{urls}!rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+\doxysubsubsection{\texorpdfstring{urls()}{urls()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Base\+Router.\+urls (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1routers_1_1BaseRouter_a73caea67b25f1825ca3bbe1f5a18d0a1}\label{classrest__framework_1_1routers_1_1BaseRouter_a73caea67b25f1825ca3bbe1f5a18d0a1} 
+\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}!\_urls@{\_urls}}
+\index{\_urls@{\_urls}!rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+\doxysubsubsection{\texorpdfstring{\_urls}{\_urls}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Base\+Router.\+\_\+urls\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classrest__framework_1_1routers_1_1BaseRouter_aca9f5879f2e3c9317f881c101916899e}\label{classrest__framework_1_1routers_1_1BaseRouter_aca9f5879f2e3c9317f881c101916899e} 
+\index{rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}!registry@{registry}}
+\index{registry@{registry}!rest\_framework.routers.BaseRouter@{rest\_framework.routers.BaseRouter}}
+\doxysubsubsection{\texorpdfstring{registry}{registry}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Base\+Router.\+registry}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{routers_8py}{routers.\+py}}\end{DoxyCompactItemize}

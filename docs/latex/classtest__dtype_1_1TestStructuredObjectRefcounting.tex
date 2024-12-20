@@ -1,0 +1,58 @@
+\doxysection{Référence de la classe test\+\_\+dtype.\+Test\+Structured\+Object\+Refcounting}
+\hypertarget{classtest__dtype_1_1TestStructuredObjectRefcounting}{}\label{classtest__dtype_1_1TestStructuredObjectRefcounting}\index{test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestStructuredObjectRefcounting_aef67a1d1ff3b7b7535d5a3a05c63f96e}{test\+\_\+structured\+\_\+object\+\_\+create\+\_\+delete}} (self, dt, pat, count, singleton, creation\+\_\+func, creation\+\_\+obj)
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestStructuredObjectRefcounting_adb63891af098e686d4d02b881a9938b5}{test\+\_\+structured\+\_\+object\+\_\+item\+\_\+setting}} (self, dt, pat, count, singleton)
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestStructuredObjectRefcounting_ad7837317bac18d4d2363171aeebbeb8e}{test\+\_\+structured\+\_\+object\+\_\+indexing}} (self, shape, index, items\+\_\+changed, dt, pat, count, singleton)
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestStructuredObjectRefcounting_a0a4f4cfb068983d974d7da32d6cbff89}{test\+\_\+structured\+\_\+object\+\_\+take\+\_\+and\+\_\+repeat}} (self, dt, pat, count, singleton)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}These tests cover various uses of complicated structured types which
+include objects and thus require reference counting.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classtest__dtype_1_1TestStructuredObjectRefcounting_aef67a1d1ff3b7b7535d5a3a05c63f96e}\label{classtest__dtype_1_1TestStructuredObjectRefcounting_aef67a1d1ff3b7b7535d5a3a05c63f96e} 
+\index{test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}!test\_structured\_object\_create\_delete@{test\_structured\_object\_create\_delete}}
+\index{test\_structured\_object\_create\_delete@{test\_structured\_object\_create\_delete}!test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}}
+\doxysubsubsection{\texorpdfstring{test\_structured\_object\_create\_delete()}{test\_structured\_object\_create\_delete()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+Structured\+Object\+Refcounting.\+test\+\_\+structured\+\_\+object\+\_\+create\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt,  }\item[{}]{pat,  }\item[{}]{count,  }\item[{}]{singleton,  }\item[{}]{creation\+\_\+func,  }\item[{}]{creation\+\_\+obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Structured object reference counting in creation and deletion\end{DoxyVerb}
+ \Hypertarget{classtest__dtype_1_1TestStructuredObjectRefcounting_ad7837317bac18d4d2363171aeebbeb8e}\label{classtest__dtype_1_1TestStructuredObjectRefcounting_ad7837317bac18d4d2363171aeebbeb8e} 
+\index{test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}!test\_structured\_object\_indexing@{test\_structured\_object\_indexing}}
+\index{test\_structured\_object\_indexing@{test\_structured\_object\_indexing}!test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}}
+\doxysubsubsection{\texorpdfstring{test\_structured\_object\_indexing()}{test\_structured\_object\_indexing()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+Structured\+Object\+Refcounting.\+test\+\_\+structured\+\_\+object\+\_\+indexing (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{shape,  }\item[{}]{index,  }\item[{}]{items\+\_\+changed,  }\item[{}]{dt,  }\item[{}]{pat,  }\item[{}]{count,  }\item[{}]{singleton }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Structured object reference counting for advanced indexing.\end{DoxyVerb}
+ \Hypertarget{classtest__dtype_1_1TestStructuredObjectRefcounting_adb63891af098e686d4d02b881a9938b5}\label{classtest__dtype_1_1TestStructuredObjectRefcounting_adb63891af098e686d4d02b881a9938b5} 
+\index{test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}!test\_structured\_object\_item\_setting@{test\_structured\_object\_item\_setting}}
+\index{test\_structured\_object\_item\_setting@{test\_structured\_object\_item\_setting}!test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}}
+\doxysubsubsection{\texorpdfstring{test\_structured\_object\_item\_setting()}{test\_structured\_object\_item\_setting()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+Structured\+Object\+Refcounting.\+test\+\_\+structured\+\_\+object\+\_\+item\+\_\+setting (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt,  }\item[{}]{pat,  }\item[{}]{count,  }\item[{}]{singleton }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Structured object reference counting for simple item setting\end{DoxyVerb}
+ \Hypertarget{classtest__dtype_1_1TestStructuredObjectRefcounting_a0a4f4cfb068983d974d7da32d6cbff89}\label{classtest__dtype_1_1TestStructuredObjectRefcounting_a0a4f4cfb068983d974d7da32d6cbff89} 
+\index{test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}!test\_structured\_object\_take\_and\_repeat@{test\_structured\_object\_take\_and\_repeat}}
+\index{test\_structured\_object\_take\_and\_repeat@{test\_structured\_object\_take\_and\_repeat}!test\_dtype.TestStructuredObjectRefcounting@{test\_dtype.TestStructuredObjectRefcounting}}
+\doxysubsubsection{\texorpdfstring{test\_structured\_object\_take\_and\_repeat()}{test\_structured\_object\_take\_and\_repeat()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+Structured\+Object\+Refcounting.\+test\+\_\+structured\+\_\+object\+\_\+take\+\_\+and\+\_\+repeat (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt,  }\item[{}]{pat,  }\item[{}]{count,  }\item[{}]{singleton }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Structured object reference counting for specialized functions.
+The older functions such as take and repeat use different code paths
+then item setting (when writing this).
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/tests/\mbox{\hyperlink{numpy_2__core_2tests_2test__dtype_8py}{test\+\_\+dtype.\+py}}\end{DoxyCompactItemize}

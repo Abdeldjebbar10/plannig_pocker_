@@ -1,0 +1,36 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Setting\+With\+Copy\+Error}
+\hypertarget{classpandas_1_1errors_1_1SettingWithCopyError}{}\label{classpandas_1_1errors_1_1SettingWithCopyError}\index{pandas.errors.SettingWithCopyError@{pandas.errors.SettingWithCopyError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Setting\+With\+Copy\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Setting\+With\+Copy\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exception raised when trying to set on a copied slice from a ``DataFrame``.
+
+The ``mode.chained_assignment`` needs to be set to set to 'raise.' This can
+happen unintentionally when chained indexing.
+
+For more information on evaluation order,
+see :ref:`the user guide<indexing.evaluation_order>`.
+
+For more information on view vs. copy,
+see :ref:`the user guide<indexing.view_versus_copy>`.
+
+Examples
+--------
+>>> pd.options.mode.chained_assignment = 'raise'
+>>> df = pd.DataFrame({'A': [1, 1, 1, 2, 2]}, columns=['A'])
+>>> df.loc[0:3]['A'] = 'a' # doctest: +SKIP
+... # SettingWithCopyError: A value is trying to be set on a copy of a...
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

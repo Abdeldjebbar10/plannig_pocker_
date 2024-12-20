@@ -1,0 +1,239 @@
+\doxysection{Référence de la classe django.\+db.\+migrations.\+operations.\+special.\+Run\+Python}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython}{}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython}\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+migrations.\+operations.\+special.\+Run\+Python\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+db.\+migrations.\+operations.\+special.\+Run\+Python\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aaaa4b8b78e624573775862b08ce37cdf}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a43f61d6f35dcf85983a00fc800c3d545}{code}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aada6ab88e1c669bb27891c303ac1e252}{reverse\+\_\+code}}=None, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a6710c0a2adcd9f096513a8e55702f30d}{atomic}}=None, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a69485f7942ad79e47c2c4cee7df93572}{hints}}=None, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a72fc278eac2e877ecc1f6cb7acb77445}{elidable}}=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a3ebffa7aae0aa0af2f1949bc22b757aa}{deconstruct}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a5d731b89cb66ff18a45301222402f5e6}{reversible}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aa5b8fef3fbced0b20a819b15ad58ae23}{state\+\_\+forwards}} (self, app\+\_\+label, state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a75a28b1ebb8ddd75cb5620ccaa943309}{database\+\_\+forwards}} (self, app\+\_\+label, schema\+\_\+editor, from\+\_\+state, to\+\_\+state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a701d8607c100a76c2cb16f7ae94bc867}{database\+\_\+backwards}} (self, app\+\_\+label, schema\+\_\+editor, from\+\_\+state, to\+\_\+state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a1ce76077cbc085ef6d0ae71f78077fc1}{describe}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a0e75a153578c0aa184cef917cbc50cdf}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a4ce9082f85e6bf28b1e968470a333f4a}{formatted\+\_\+description}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a380e32b8eb8c0e61bab998746a0a7910}{migration\+\_\+name\+\_\+fragment}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a5396b814a7639a8ee3368d3312979d8e}{references\+\_\+model}} (self, name, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_aed3a6bc67e958f889fd3553ca2c6d19a}{references\+\_\+field}} (self, model\+\_\+name, name, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ae9ccd8dda6ac5380e583c6c53ed66445}{allow\+\_\+migrate\+\_\+model}} (self, connection\+\_\+alias, model)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ae3b7e3a7ba01cef6a928878476347231}{reduce}} (self, operation, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ab835a78e8583a6fd71f5e5ba9b5403e4}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_ab97658c88427e5de1a4384a43f5394be}{noop}} (apps, schema\+\_\+editor)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a6710c0a2adcd9f096513a8e55702f30d}{atomic}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a43f61d6f35dcf85983a00fc800c3d545}{code}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aada6ab88e1c669bb27891c303ac1e252}{reverse\+\_\+code}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a69485f7942ad79e47c2c4cee7df93572}{hints}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a72fc278eac2e877ecc1f6cb7acb77445}{elidable}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a013d18336f94cf538812c1ea47227460}{category}} = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1OperationCategory_aeec93af292b373e46e28f8df241becba}{Operation\+Category.\+PYTHON}}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a633ad903980aa6079035c76ed52a04a5}{reduces\+\_\+to\+\_\+sql}} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7f1390e35429f9b3d6c9f1571fe562e9}{reduces\+\_\+to\+\_\+sql}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a4e983956ee508f5c19674a20a2bb2500}{atomic}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a46d9b82039c84b5c0031914e70498082}{elidable}} = False
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a278729637550e4f4e403a3554ef16292}{serialization\+\_\+expand\+\_\+args}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a278ba5cdf0f89e99193f05f823a141f0}{category}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ad9ff164e630ee6d56c9dab906471c813}{\+\_\+constructor\+\_\+args}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Run Python code in a context suitable for doing versioned ORM operations.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aaaa4b8b78e624573775862b08ce37cdf}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aaaa4b8b78e624573775862b08ce37cdf} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{code,  }\item[{}]{reverse\+\_\+code = {\ttfamily None},  }\item[{}]{atomic = {\ttfamily None},  }\item[{}]{hints = {\ttfamily None},  }\item[{}]{elidable = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a701d8607c100a76c2cb16f7ae94bc867}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a701d8607c100a76c2cb16f7ae94bc867} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!database\_backwards@{database\_backwards}}
+\index{database\_backwards@{database\_backwards}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{database\_backwards()}{database\_backwards()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+database\+\_\+backwards (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app\+\_\+label,  }\item[{}]{schema\+\_\+editor,  }\item[{}]{from\+\_\+state,  }\item[{}]{to\+\_\+state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the mutation on the database schema in the reverse
+direction - e.g. if this were CreateModel, it would in fact
+drop the model's table.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_aa4a0bdd6d640b1a39bdf7bbb5a04b877}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a75a28b1ebb8ddd75cb5620ccaa943309}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a75a28b1ebb8ddd75cb5620ccaa943309} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!database\_forwards@{database\_forwards}}
+\index{database\_forwards@{database\_forwards}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{database\_forwards()}{database\_forwards()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+database\+\_\+forwards (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app\+\_\+label,  }\item[{}]{schema\+\_\+editor,  }\item[{}]{from\+\_\+state,  }\item[{}]{to\+\_\+state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the mutation on the database schema in the normal
+(forwards) direction.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a8bf567418dd297ce8046c221cb7da5dc}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a3ebffa7aae0aa0af2f1949bc22b757aa}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a3ebffa7aae0aa0af2f1949bc22b757aa} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!deconstruct@{deconstruct}}
+\index{deconstruct@{deconstruct}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{deconstruct()}{deconstruct()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+deconstruct (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a 3-tuple of class import path (or just name if it lives
+under django.db.migrations), positional arguments, and keyword
+arguments.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7a97aba5207d742bdaa2e7562714a062}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a1ce76077cbc085ef6d0ae71f78077fc1}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a1ce76077cbc085ef6d0ae71f78077fc1} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!describe@{describe}}
+\index{describe@{describe}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{describe()}{describe()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+describe (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Output a brief summary of what the action does.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a5c8477a9c9a49746db7edf2e3eb56210}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_ab97658c88427e5de1a4384a43f5394be}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_ab97658c88427e5de1a4384a43f5394be} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!noop@{noop}}
+\index{noop@{noop}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{noop()}{noop()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+noop (\begin{DoxyParamCaption}\item[{}]{apps,  }\item[{}]{schema\+\_\+editor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a5d731b89cb66ff18a45301222402f5e6}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a5d731b89cb66ff18a45301222402f5e6} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!reversible@{reversible}}
+\index{reversible@{reversible}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{reversible()}{reversible()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+reversible (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ab4f74d8a379cefdb3ac5a26072517869}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aa5b8fef3fbced0b20a819b15ad58ae23}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aa5b8fef3fbced0b20a819b15ad58ae23} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!state\_forwards@{state\_forwards}}
+\index{state\_forwards@{state\_forwards}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{state\_forwards()}{state\_forwards()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+state\+\_\+forwards (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app\+\_\+label,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take the state from the previous migration, and mutate it
+so that it matches what this migration would perform.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7cfbfb963b7c74653191ffb9afa52ff8}{django.\+db.\+migrations.\+operations.\+base.\+Operation}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a6710c0a2adcd9f096513a8e55702f30d}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a6710c0a2adcd9f096513a8e55702f30d} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!atomic@{atomic}}
+\index{atomic@{atomic}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{atomic}{atomic}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+atomic}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a013d18336f94cf538812c1ea47227460}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a013d18336f94cf538812c1ea47227460} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!category@{category}}
+\index{category@{category}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{category}{category}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+category = \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1OperationCategory_aeec93af292b373e46e28f8df241becba}{Operation\+Category.\+PYTHON}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a43f61d6f35dcf85983a00fc800c3d545}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a43f61d6f35dcf85983a00fc800c3d545} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!code@{code}}
+\index{code@{code}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+code}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a72fc278eac2e877ecc1f6cb7acb77445}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a72fc278eac2e877ecc1f6cb7acb77445} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!elidable@{elidable}}
+\index{elidable@{elidable}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{elidable}{elidable}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+elidable}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a69485f7942ad79e47c2c4cee7df93572}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a69485f7942ad79e47c2c4cee7df93572} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!hints@{hints}}
+\index{hints@{hints}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{hints}{hints}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+hints}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a633ad903980aa6079035c76ed52a04a5}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a633ad903980aa6079035c76ed52a04a5} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!reduces\_to\_sql@{reduces\_to\_sql}}
+\index{reduces\_to\_sql@{reduces\_to\_sql}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{reduces\_to\_sql}{reduces\_to\_sql}}
+{\footnotesize\ttfamily bool django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+reduces\+\_\+to\+\_\+sql = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aada6ab88e1c669bb27891c303ac1e252}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aada6ab88e1c669bb27891c303ac1e252} 
+\index{django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}!reverse\_code@{reverse\_code}}
+\index{reverse\_code@{reverse\_code}!django.db.migrations.operations.special.RunPython@{django.db.migrations.operations.special.RunPython}}
+\doxysubsubsection{\texorpdfstring{reverse\_code}{reverse\_code}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+special.\+Run\+Python.\+reverse\+\_\+code}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/migrations/operations/\mbox{\hyperlink{special_8py}{special.\+py}}\end{DoxyCompactItemize}

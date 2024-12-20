@@ -1,0 +1,874 @@
+\doxysection{Référence de la classe django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base}
+\hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase}{}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase}\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a418b8cd9be04ba58b0223821439357c1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac1e6568765cf53c3a9e2ff5247182318}{session\+\_\+key}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2bbf8589e253f149630d630c29375013}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af13eae59200d4c1c95aba5fcae5ddba0}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af14ad6c207efe3300211385eb1d9f07f}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a5ef96ca6e8afb190ddee290a250c4d1e}{aset}} (self, key, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a179520aee882a18114b7509c4a683241}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aebfc89cbad42b8e0eea4d7c6ba55f321}{key\+\_\+salt}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7d41576dd78ee0cae19d35e409a0dac4}{get}} (self, key, default=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afb8603f9464d63838aa27b4a2be7c6de}{aget}} (self, key, default=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2a7e98d1972f12732ae4e428c5e3020b}{pop}} (self, key, default=\+\_\+\+\_\+not\+\_\+given)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4b537408843bef5991faeb035a68d399}{apop}} (self, key, default=\+\_\+\+\_\+not\+\_\+given)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4f469466ebb14266de3a59b870ee6700}{setdefault}} (self, key, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6a4328ff1d24b1f2fa8d1e77ef82ddbd}{asetdefault}} (self, key, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab37a958a9ab441eb793cd5a98e538a2e}{set\+\_\+test\+\_\+cookie}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6f87a7fb118ff0870b1abfc6a70d72e3}{aset\+\_\+test\+\_\+cookie}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ace21872babeee2768958726c8d6b88d2}{test\+\_\+cookie\+\_\+worked}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1f58f865056cad906b9ce27bd431dd04}{atest\+\_\+cookie\+\_\+worked}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4c1d4e90410be43dee84a9ad7c3da338}{delete\+\_\+test\+\_\+cookie}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4b0cdd6f789f6e6320e7d3c0cb7a3b55}{adelete\+\_\+test\+\_\+cookie}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a852f82138ea80dfbd7fd279fe91d5044}{encode}} (self, session\+\_\+dict)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afb17d15a3cb07df3ddfb339557f3a85f}{decode}} (self, session\+\_\+data)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3c30c6ffbf47e3a150eaadc491b04cc5}{update}} (self, dict\+\_\+)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a11e8461644f488f54dec8a64a0933d96}{aupdate}} (self, dict\+\_\+)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac2afaf0e3a8d2ad7059d37295c8ca387}{has\+\_\+key}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4f7daa3068a64569546fd391ecc5e82b}{ahas\+\_\+key}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a81285a01cc6e6305ffbf907cf45d58c4}{keys}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7fe3d89a1ae957de1bf9da4ff02eaa58}{akeys}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2a665e48fe00d96f20531b5599470595}{values}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aa1cd9de83259e97075ddd7ba3668baab}{avalues}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_acf159b32cdfee213dfdf00a0e70dd535}{items}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a02753d5ddaa58ec10c97c3d19167042d}{aitems}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af73c950d34ba4e5b8023a29c562a7583}{clear}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af0b1304d90e83fe950370b314b9cc215}{is\+\_\+empty}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a82c6d410ceb2da885a0b28f3659de91a}{get\+\_\+session\+\_\+cookie\+\_\+age}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af853871a0f2af33b0fd38d04e9296e01}{get\+\_\+expiry\+\_\+age}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a33a8673cfe4dd22c8f392ae57952f5cd}{aget\+\_\+expiry\+\_\+age}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af87a5a48ca86a64f795e97f3529df849}{get\+\_\+expiry\+\_\+date}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a44b4386a2ebc09abe1a262a3f78e1b1e}{aget\+\_\+expiry\+\_\+date}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a8383fffb9d2a25d5b3a313ec8170f946}{set\+\_\+expiry}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a42b26bba7aef3d5f6d8fd60da55f6cfd}{aset\+\_\+expiry}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a84c6c4afda960d505a1b2a7d3f97d75f}{get\+\_\+expire\+\_\+at\+\_\+browser\+\_\+close}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab2b4d0df307c5e88ab7937f732ea6e9f}{aget\+\_\+expire\+\_\+at\+\_\+browser\+\_\+close}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a915ab38003d5f0be1ce9f849583910bb}{flush}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a850bef3f8433f3bd917cf124f76df176}{aflush}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6955e9bebe4e5b7d463bccfcf9181016}{cycle\+\_\+key}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab0495e673a30f69d5f24b28fd127ae28}{acycle\+\_\+key}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7bf2b4a5ceb726441c06bf9122c392ab}{exists}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac1e6568765cf53c3a9e2ff5247182318}{session\+\_\+key}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ae8ffa3ae9652f27137906e85d2140da8}{aexists}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac1e6568765cf53c3a9e2ff5247182318}{session\+\_\+key}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a09eaca95f0d9eeab9318b2a454738df5}{create}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a8299395ecc64402487848184f815598e}{acreate}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a444d8cc76e91cbfe23beec50953539f7}{save}} (self, must\+\_\+create=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70ab0e27cb7094523c2bdfc0e4393701}{asave}} (self, must\+\_\+create=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ad6b7b96e42cfb5aae81b80eca41c4c5c}{delete}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac1e6568765cf53c3a9e2ff5247182318}{session\+\_\+key}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_acb9142c0c2c1437bab3fb6fce058442c}{adelete}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac1e6568765cf53c3a9e2ff5247182318}{session\+\_\+key}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afc56a452ce0a662b8f5df20400780f4a}{load}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af0621c8c1de7d8b24d1146430f97dd97}{aload}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a123b38a1c3a7e8dbdc41b38976d0264d}{clear\+\_\+expired}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a9821905de8fac19c6ce227861a8a495c}{aclear\+\_\+expired}} (cls)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1a51c75c7ad5a3a73a4029d983013002}{accessed}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a18e571420ac8b4dac37611b32e57c0f6}{modified}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a38e2db763c061aba532c993482956b9c}{serializer}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2573a129e7692225fba22ea2aaf91ae5}{TEST\+\_\+\+COOKIE\+\_\+\+NAME}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3604f33068f081c478a730a4e8bf01f5}{TEST\+\_\+\+COOKIE\+\_\+\+VALUE}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a42b9213efba8fd0bdd8d8a278a0ed8fb}{exists}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a0c190753c562e5d04fa4903b7c0bee94}{create}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1d90d30d8c28b9a792d08c34d2cec84a}{save}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a078d5cf433fc60df3f9905591e2111a0}{delete}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a06ed62473dca358ac0c7091c1e91cba0}{load}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1b822da2aeefe4e68f07cde1a40a2d65}{clear\+\_\+expired}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a81e4ee5a9a86accfd1aec7a1a48a7d88}{TEST\+\_\+\+COOKIE\+\_\+\+NAME}} = "{}testcookie"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afdb0ab35c3953a839e1c0219dd11052d}{TEST\+\_\+\+COOKIE\+\_\+\+VALUE}} = "{}worked"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aa4fa1e405a4b97410d84bee8c9cf5e65}{\+\_\+get\+\_\+new\+\_\+session\+\_\+key}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2b9babe0ca256628ee69a7d090124191}{\+\_\+aget\+\_\+new\+\_\+session\+\_\+key}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a30b440c400e1f442d4f9f10e9b913d55}{\+\_\+get\+\_\+or\+\_\+create\+\_\+session\+\_\+key}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2420c166b879c7c2819e679885c9e408}{\+\_\+aget\+\_\+or\+\_\+create\+\_\+session\+\_\+key}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a44933751517d904298c125e412fea9ae}{\+\_\+validate\+\_\+session\+\_\+key}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70bf9a39e32525bf15e41862a236c457}{\+\_\+get\+\_\+session\+\_\+key}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a838d8fc57af8d3d933199df7d7fe1213}{\+\_\+set\+\_\+session\+\_\+key}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3ca0af594cbb5d34f3d4f76c8f90bf4f}{\+\_\+get\+\_\+session}} (self, no\+\_\+load=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4a10220ae315f72cd8890fcee21d1a4f}{\+\_\+aget\+\_\+session}} (self, no\+\_\+load=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab97e493351a4038c8168b2f5ee286929}{\+\_\+session\+\_\+cache}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac1e6568765cf53c3a9e2ff5247182318}{session\+\_\+key}} = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70bf9a39e32525bf15e41862a236c457}{\+\_\+get\+\_\+session\+\_\+key}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_add229cac22c0808a182d48a2a87b3aa4}{\+\_\+session\+\_\+key}} = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70bf9a39e32525bf15e41862a236c457}{\+\_\+get\+\_\+session\+\_\+key}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a838d8fc57af8d3d933199df7d7fe1213}{\+\_\+set\+\_\+session\+\_\+key}})
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a08e6a946c038877e71094df9f394b7a9}{\+\_\+session}} = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3ca0af594cbb5d34f3d4f76c8f90bf4f}{\+\_\+get\+\_\+session}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Base class for all Session classes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a418b8cd9be04ba58b0223821439357c1}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a418b8cd9be04ba58b0223821439357c1} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{session\+\_\+key = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_aff97d5653f2f045eecc3becd8e773ecc}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a6df6ad5edd81355bc22ca6bd7632272a}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a6ac4ba43b6c6d846440d25278e406ffd}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2bbf8589e253f149630d630c29375013}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2bbf8589e253f149630d630c29375013} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a179520aee882a18114b7509c4a683241}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a179520aee882a18114b7509c4a683241} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af13eae59200d4c1c95aba5fcae5ddba0}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af13eae59200d4c1c95aba5fcae5ddba0} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af14ad6c207efe3300211385eb1d9f07f}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af14ad6c207efe3300211385eb1d9f07f} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2b9babe0ca256628ee69a7d090124191}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2b9babe0ca256628ee69a7d090124191} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_aget\_new\_session\_key@{\_aget\_new\_session\_key}}
+\index{\_aget\_new\_session\_key@{\_aget\_new\_session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_aget\_new\_session\_key()}{\_aget\_new\_session\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+aget\+\_\+new\+\_\+session\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2420c166b879c7c2819e679885c9e408}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2420c166b879c7c2819e679885c9e408} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_aget\_or\_create\_session\_key@{\_aget\_or\_create\_session\_key}}
+\index{\_aget\_or\_create\_session\_key@{\_aget\_or\_create\_session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_aget\_or\_create\_session\_key()}{\_aget\_or\_create\_session\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+aget\+\_\+or\+\_\+create\+\_\+session\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4a10220ae315f72cd8890fcee21d1a4f}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4a10220ae315f72cd8890fcee21d1a4f} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_aget\_session@{\_aget\_session}}
+\index{\_aget\_session@{\_aget\_session}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_aget\_session()}{\_aget\_session()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+aget\+\_\+session (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{no\+\_\+load = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aa4fa1e405a4b97410d84bee8c9cf5e65}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aa4fa1e405a4b97410d84bee8c9cf5e65} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_get\_new\_session\_key@{\_get\_new\_session\_key}}
+\index{\_get\_new\_session\_key@{\_get\_new\_session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_get\_new\_session\_key()}{\_get\_new\_session\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+get\+\_\+new\+\_\+session\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a30b440c400e1f442d4f9f10e9b913d55}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a30b440c400e1f442d4f9f10e9b913d55} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_get\_or\_create\_session\_key@{\_get\_or\_create\_session\_key}}
+\index{\_get\_or\_create\_session\_key@{\_get\_or\_create\_session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_get\_or\_create\_session\_key()}{\_get\_or\_create\_session\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+get\+\_\+or\+\_\+create\+\_\+session\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3ca0af594cbb5d34f3d4f76c8f90bf4f}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3ca0af594cbb5d34f3d4f76c8f90bf4f} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_get\_session@{\_get\_session}}
+\index{\_get\_session@{\_get\_session}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_get\_session()}{\_get\_session()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+get\+\_\+session (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{no\+\_\+load = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Lazily load session from storage (unless "no_load" is True, when only
+an empty dict is stored) and store it in the current instance.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70bf9a39e32525bf15e41862a236c457}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70bf9a39e32525bf15e41862a236c457} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_get\_session\_key@{\_get\_session\_key}}
+\index{\_get\_session\_key@{\_get\_session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_get\_session\_key()}{\_get\_session\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+get\+\_\+session\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a0d651fab05161c744189996fc6801534}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a838d8fc57af8d3d933199df7d7fe1213}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a838d8fc57af8d3d933199df7d7fe1213} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_set\_session\_key@{\_set\_session\_key}}
+\index{\_set\_session\_key@{\_set\_session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_set\_session\_key()}{\_set\_session\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+set\+\_\+session\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Validate session key on assignment. Invalid values will set to None.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a44933751517d904298c125e412fea9ae}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a44933751517d904298c125e412fea9ae} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_validate\_session\_key@{\_validate\_session\_key}}
+\index{\_validate\_session\_key@{\_validate\_session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_validate\_session\_key()}{\_validate\_session\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+validate\+\_\+session\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Key must be truthy and at least 8 characters long. 8 characters is an
+arbitrary lower bound for some minimal key security.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a9821905de8fac19c6ce227861a8a495c}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a9821905de8fac19c6ce227861a8a495c} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aclear\_expired@{aclear\_expired}}
+\index{aclear\_expired@{aclear\_expired}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aclear\_expired()}{aclear\_expired()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aclear\+\_\+expired (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a247475dd6838401379ece4491dd827b7}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_af72afc49bf43825dcb894458e33acf06}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a5cc852e5bf4e95a7d072d23e65033156}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_ad8db335858c451b803fc028cdced5aa4}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a8299395ecc64402487848184f815598e}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a8299395ecc64402487848184f815598e} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!acreate@{acreate}}
+\index{acreate@{acreate}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{acreate()}{acreate()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+acreate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_aefbbfc5385b18dcc25cfcab34844017b}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a7e73dd6c29b166bf41a4edaef3ce3bed}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_ae11a3b99dcccc33dabffb7ec84591046}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a289ad040f11b27358033f32b98cf90b6}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab0495e673a30f69d5f24b28fd127ae28}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab0495e673a30f69d5f24b28fd127ae28} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!acycle\_key@{acycle\_key}}
+\index{acycle\_key@{acycle\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{acycle\_key()}{acycle\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+acycle\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new session key, while retaining the current session data.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a4ee2b98ea7935fc82ded44275cdd76e8}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_acb9142c0c2c1437bab3fb6fce058442c}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_acb9142c0c2c1437bab3fb6fce058442c} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!adelete@{adelete}}
+\index{adelete@{adelete}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{adelete()}{adelete()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+adelete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{session\+\_\+key = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a346fd89786a18c9fe91fa18260525827}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a592d1207273b73be4b3c0d08cd8c04cf}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a3b82a2ca2eae37378f3e91f177f4f225}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_ac7b193c6103cdb3b348af291ec7fa612}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4b0cdd6f789f6e6320e7d3c0cb7a3b55}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4b0cdd6f789f6e6320e7d3c0cb7a3b55} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!adelete\_test\_cookie@{adelete\_test\_cookie}}
+\index{adelete\_test\_cookie@{adelete\_test\_cookie}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{adelete\_test\_cookie()}{adelete\_test\_cookie()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+adelete\+\_\+test\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ae8ffa3ae9652f27137906e85d2140da8}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ae8ffa3ae9652f27137906e85d2140da8} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aexists@{aexists}}
+\index{aexists@{aexists}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aexists()}{aexists()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aexists (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{session\+\_\+key }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a49169a69f1f3bd060e28c2af20470e25}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a96730bb7ec11a9da9596768fd99ac695}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_ad1b9347e4639ce5a1de3cce49c18f4d3}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_ac866a555af5bae4e55e36db11521c397}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a850bef3f8433f3bd917cf124f76df176}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a850bef3f8433f3bd917cf124f76df176} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aflush@{aflush}}
+\index{aflush@{aflush}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aflush()}{aflush()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aflush (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afb8603f9464d63838aa27b4a2be7c6de}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afb8603f9464d63838aa27b4a2be7c6de} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aget@{aget}}
+\index{aget@{aget}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aget()}{aget()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aget (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab2b4d0df307c5e88ab7937f732ea6e9f}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab2b4d0df307c5e88ab7937f732ea6e9f} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aget\_expire\_at\_browser\_close@{aget\_expire\_at\_browser\_close}}
+\index{aget\_expire\_at\_browser\_close@{aget\_expire\_at\_browser\_close}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aget\_expire\_at\_browser\_close()}{aget\_expire\_at\_browser\_close()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aget\+\_\+expire\+\_\+at\+\_\+browser\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a33a8673cfe4dd22c8f392ae57952f5cd}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a33a8673cfe4dd22c8f392ae57952f5cd} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aget\_expiry\_age@{aget\_expiry\_age}}
+\index{aget\_expiry\_age@{aget\_expiry\_age}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aget\_expiry\_age()}{aget\_expiry\_age()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aget\+\_\+expiry\+\_\+age (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a44b4386a2ebc09abe1a262a3f78e1b1e}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a44b4386a2ebc09abe1a262a3f78e1b1e} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aget\_expiry\_date@{aget\_expiry\_date}}
+\index{aget\_expiry\_date@{aget\_expiry\_date}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aget\_expiry\_date()}{aget\_expiry\_date()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aget\+\_\+expiry\+\_\+date (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4f7daa3068a64569546fd391ecc5e82b}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4f7daa3068a64569546fd391ecc5e82b} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!ahas\_key@{ahas\_key}}
+\index{ahas\_key@{ahas\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{ahas\_key()}{ahas\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+ahas\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a02753d5ddaa58ec10c97c3d19167042d}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a02753d5ddaa58ec10c97c3d19167042d} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aitems@{aitems}}
+\index{aitems@{aitems}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aitems()}{aitems()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aitems (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7fe3d89a1ae957de1bf9da4ff02eaa58}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7fe3d89a1ae957de1bf9da4ff02eaa58} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!akeys@{akeys}}
+\index{akeys@{akeys}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{akeys()}{akeys()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+akeys (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af0621c8c1de7d8b24d1146430f97dd97}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af0621c8c1de7d8b24d1146430f97dd97} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aload@{aload}}
+\index{aload@{aload}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aload()}{aload()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aload (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a119ccc506e9de286a1cdccda12c9d4d8}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a9a962ca9d2a4433fd565d482d5622b98}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a97cb259e31d9042e56218d677c7c3878}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a73be3cb66f46e3074bab8f2de9515da2}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4b537408843bef5991faeb035a68d399}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4b537408843bef5991faeb035a68d399} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!apop@{apop}}
+\index{apop@{apop}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{apop()}{apop()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+apop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default = {\ttfamily \+\_\+\+\_\+not\+\_\+given} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70ab0e27cb7094523c2bdfc0e4393701}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70ab0e27cb7094523c2bdfc0e4393701} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!asave@{asave}}
+\index{asave@{asave}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{asave()}{asave()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+asave (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{must\+\_\+create = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a9a9f380972c2d34fc11077a14b209fad}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_aaaaac26280a46ea36294adcce02bb301}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_af29fe56ef1f9e7305cc4452dcaa9c1e6}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a2c63e588de166bc89e12904c447e0dae}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a5ef96ca6e8afb190ddee290a250c4d1e}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a5ef96ca6e8afb190ddee290a250c4d1e} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aset@{aset}}
+\index{aset@{aset}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aset()}{aset()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a42b26bba7aef3d5f6d8fd60da55f6cfd}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a42b26bba7aef3d5f6d8fd60da55f6cfd} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aset\_expiry@{aset\_expiry}}
+\index{aset\_expiry@{aset\_expiry}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aset\_expiry()}{aset\_expiry()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aset\+\_\+expiry (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6f87a7fb118ff0870b1abfc6a70d72e3}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6f87a7fb118ff0870b1abfc6a70d72e3} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aset\_test\_cookie@{aset\_test\_cookie}}
+\index{aset\_test\_cookie@{aset\_test\_cookie}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aset\_test\_cookie()}{aset\_test\_cookie()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aset\+\_\+test\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6a4328ff1d24b1f2fa8d1e77ef82ddbd}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6a4328ff1d24b1f2fa8d1e77ef82ddbd} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!asetdefault@{asetdefault}}
+\index{asetdefault@{asetdefault}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{asetdefault()}{asetdefault()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+asetdefault (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1f58f865056cad906b9ce27bd431dd04}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1f58f865056cad906b9ce27bd431dd04} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!atest\_cookie\_worked@{atest\_cookie\_worked}}
+\index{atest\_cookie\_worked@{atest\_cookie\_worked}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{atest\_cookie\_worked()}{atest\_cookie\_worked()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+atest\+\_\+cookie\+\_\+worked (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a11e8461644f488f54dec8a64a0933d96}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a11e8461644f488f54dec8a64a0933d96} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!aupdate@{aupdate}}
+\index{aupdate@{aupdate}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{aupdate()}{aupdate()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+aupdate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dict\+\_\+ }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aa1cd9de83259e97075ddd7ba3668baab}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aa1cd9de83259e97075ddd7ba3668baab} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!avalues@{avalues}}
+\index{avalues@{avalues}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{avalues()}{avalues()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+avalues (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af73c950d34ba4e5b8023a29c562a7583}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af73c950d34ba4e5b8023a29c562a7583} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!clear@{clear}}
+\index{clear@{clear}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a123b38a1c3a7e8dbdc41b38976d0264d}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a123b38a1c3a7e8dbdc41b38976d0264d} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!clear\_expired@{clear\_expired}}
+\index{clear\_expired@{clear\_expired}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{clear\_expired()}{clear\_expired()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+clear\+\_\+expired (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove expired sessions from the session store.
+
+If this operation isn't possible on a given backend, it should raise
+NotImplementedError. If it isn't necessary, because the backend has
+a built-in expiration mechanism, it should be a no-op.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a06fe859a0b40ef6f704c6deb282cd596}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a20cff7d26b13bb5568c672477c75a16b}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a192774f00f2a2a07916020133f0b0c16}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a1b6d6cc858ec51cec77b0cb9a10d9fbc}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a09eaca95f0d9eeab9318b2a454738df5}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a09eaca95f0d9eeab9318b2a454738df5} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!create@{create}}
+\index{create@{create}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+create (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new session instance. Guaranteed to create a new object with
+a unique key and will have saved the result once (with empty data)
+before the method returns.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a38c9efbdb5115fd1820ae198b767c39c}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a4a98c0168c61e75be58e279660aa6ce4}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a6624db6a37dfff490f837047e0a60dda}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_ae28b0ad66d82c118d1cdfbcfee3a6954}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6955e9bebe4e5b7d463bccfcf9181016}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a6955e9bebe4e5b7d463bccfcf9181016} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!cycle\_key@{cycle\_key}}
+\index{cycle\_key@{cycle\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{cycle\_key()}{cycle\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+cycle\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new session key, while retaining the current session data.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_abf8e71313b847459c30f19e691c25a93}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afb17d15a3cb07df3ddfb339557f3a85f}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afb17d15a3cb07df3ddfb339557f3a85f} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!decode@{decode}}
+\index{decode@{decode}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+decode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{session\+\_\+data }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ad6b7b96e42cfb5aae81b80eca41c4c5c}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ad6b7b96e42cfb5aae81b80eca41c4c5c} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!delete@{delete}}
+\index{delete@{delete}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{session\+\_\+key = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete the session data under this key. If the key is None, use the
+current session key value.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_ad5c2ace070e090f3ce182bb75cd7c474}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a04049deee2825afe9ed246e86f25d47d}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_adff061b9bf9001df76e9ac5f58286ec4}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a1e44e0ffc42edb9583fe581b451eb882}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4c1d4e90410be43dee84a9ad7c3da338}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4c1d4e90410be43dee84a9ad7c3da338} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!delete\_test\_cookie@{delete\_test\_cookie}}
+\index{delete\_test\_cookie@{delete\_test\_cookie}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{delete\_test\_cookie()}{delete\_test\_cookie()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+delete\+\_\+test\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a852f82138ea80dfbd7fd279fe91d5044}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a852f82138ea80dfbd7fd279fe91d5044} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!encode@{encode}}
+\index{encode@{encode}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+encode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{session\+\_\+dict }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7bf2b4a5ceb726441c06bf9122c392ab}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7bf2b4a5ceb726441c06bf9122c392ab} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!exists@{exists}}
+\index{exists@{exists}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+exists (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{session\+\_\+key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the given session_key already exists.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a253d926e3014bb124eaa4c182a641d66}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_ad80b6beee2197e5e67edc89f63c95bf5}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_ac71713367271770f0725f65d90ea66c5}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a1aebd5a329bcb1ea4b1faf11e6c8eb81}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a915ab38003d5f0be1ce9f849583910bb}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a915ab38003d5f0be1ce9f849583910bb} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!flush@{flush}}
+\index{flush@{flush}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+flush (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove the current session data from the database and regenerate the
+key.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7d41576dd78ee0cae19d35e409a0dac4}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a7d41576dd78ee0cae19d35e409a0dac4} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!get@{get}}
+\index{get@{get}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a84c6c4afda960d505a1b2a7d3f97d75f}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a84c6c4afda960d505a1b2a7d3f97d75f} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!get\_expire\_at\_browser\_close@{get\_expire\_at\_browser\_close}}
+\index{get\_expire\_at\_browser\_close@{get\_expire\_at\_browser\_close}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{get\_expire\_at\_browser\_close()}{get\_expire\_at\_browser\_close()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+get\+\_\+expire\+\_\+at\+\_\+browser\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return ``True`` if the session is set to expire when the browser
+closes, and ``False`` if there's an expiry date. Use
+``get_expiry_date()`` or ``get_expiry_age()`` to find the actual expiry
+date/age, if there is one.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af853871a0f2af33b0fd38d04e9296e01}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af853871a0f2af33b0fd38d04e9296e01} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!get\_expiry\_age@{get\_expiry\_age}}
+\index{get\_expiry\_age@{get\_expiry\_age}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{get\_expiry\_age()}{get\_expiry\_age()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+get\+\_\+expiry\+\_\+age (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the number of seconds until the session expires.
+
+Optionally, this function accepts `modification` and `expiry` keyword
+arguments specifying the modification and expiry of the session.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af87a5a48ca86a64f795e97f3529df849}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af87a5a48ca86a64f795e97f3529df849} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!get\_expiry\_date@{get\_expiry\_date}}
+\index{get\_expiry\_date@{get\_expiry\_date}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{get\_expiry\_date()}{get\_expiry\_date()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+get\+\_\+expiry\+\_\+date (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get session the expiry date (as a datetime object).
+
+Optionally, this function accepts `modification` and `expiry` keyword
+arguments specifying the modification and expiry of the session.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a82c6d410ceb2da885a0b28f3659de91a}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a82c6d410ceb2da885a0b28f3659de91a} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!get\_session\_cookie\_age@{get\_session\_cookie\_age}}
+\index{get\_session\_cookie\_age@{get\_session\_cookie\_age}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{get\_session\_cookie\_age()}{get\_session\_cookie\_age()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+get\+\_\+session\+\_\+cookie\+\_\+age (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac2afaf0e3a8d2ad7059d37295c8ca387}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac2afaf0e3a8d2ad7059d37295c8ca387} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!has\_key@{has\_key}}
+\index{has\_key@{has\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{has\_key()}{has\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+has\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af0b1304d90e83fe950370b314b9cc215}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_af0b1304d90e83fe950370b314b9cc215} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!is\_empty@{is\_empty}}
+\index{is\_empty@{is\_empty}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{is\_empty()}{is\_empty()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+is\+\_\+empty (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_acf159b32cdfee213dfdf00a0e70dd535}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_acf159b32cdfee213dfdf00a0e70dd535} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!items@{items}}
+\index{items@{items}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{items()}{items()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+items (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aebfc89cbad42b8e0eea4d7c6ba55f321}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_aebfc89cbad42b8e0eea4d7c6ba55f321} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!key\_salt@{key\_salt}}
+\index{key\_salt@{key\_salt}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{key\_salt()}{key\_salt()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+key\+\_\+salt (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a81285a01cc6e6305ffbf907cf45d58c4}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a81285a01cc6e6305ffbf907cf45d58c4} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!keys@{keys}}
+\index{keys@{keys}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+keys (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afc56a452ce0a662b8f5df20400780f4a}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afc56a452ce0a662b8f5df20400780f4a} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!load@{load}}
+\index{load@{load}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+load (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load the session data and return a dictionary.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_abe89d1419808d74909996a59d825822f}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_aab3bc77d15c0a33590a72f92a2efc994}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a408fa63512306fbaa7bbb62742f0295f}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a30628ca263cfc1f37e971691a155413d}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2a7e98d1972f12732ae4e428c5e3020b}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2a7e98d1972f12732ae4e428c5e3020b} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!pop@{pop}}
+\index{pop@{pop}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+pop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default = {\ttfamily \+\_\+\+\_\+not\+\_\+given} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a444d8cc76e91cbfe23beec50953539f7}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a444d8cc76e91cbfe23beec50953539f7} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!save@{save}}
+\index{save@{save}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{must\+\_\+create = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save the session data. If 'must_create' is True, create a new session
+object (or raise CreateError). Otherwise, only update an existing
+object and don't create one (raise UpdateError if needed).
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a67e81d959c24e3a84b1e755a9a861c53}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a68a6b4f159bd3dc969ec80b34c1622af}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_af170f9c112376eb1627509287bf9620f}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a37935aad339aeb6d1eb529031d04d5fd}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a8383fffb9d2a25d5b3a313ec8170f946}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a8383fffb9d2a25d5b3a313ec8170f946} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!set\_expiry@{set\_expiry}}
+\index{set\_expiry@{set\_expiry}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{set\_expiry()}{set\_expiry()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+set\+\_\+expiry (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set a custom expiration for the session. ``value`` can be an integer,
+a Python ``datetime`` or ``timedelta`` object or ``None``.
+
+If ``value`` is an integer, the session will expire after that many
+seconds of inactivity. If set to ``0`` then the session will expire on
+browser close.
+
+If ``value`` is a ``datetime`` or ``timedelta`` object, the session
+will expire at that specific future time.
+
+If ``value`` is ``None``, the session uses the global session expiry
+policy.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab37a958a9ab441eb793cd5a98e538a2e}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab37a958a9ab441eb793cd5a98e538a2e} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!set\_test\_cookie@{set\_test\_cookie}}
+\index{set\_test\_cookie@{set\_test\_cookie}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{set\_test\_cookie()}{set\_test\_cookie()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+set\+\_\+test\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4f469466ebb14266de3a59b870ee6700}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a4f469466ebb14266de3a59b870ee6700} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!setdefault@{setdefault}}
+\index{setdefault@{setdefault}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{setdefault()}{setdefault()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+setdefault (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ace21872babeee2768958726c8d6b88d2}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ace21872babeee2768958726c8d6b88d2} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!test\_cookie\_worked@{test\_cookie\_worked}}
+\index{test\_cookie\_worked@{test\_cookie\_worked}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{test\_cookie\_worked()}{test\_cookie\_worked()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+test\+\_\+cookie\+\_\+worked (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3c30c6ffbf47e3a150eaadc491b04cc5}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3c30c6ffbf47e3a150eaadc491b04cc5} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!update@{update}}
+\index{update@{update}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dict\+\_\+ }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2a665e48fe00d96f20531b5599470595}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2a665e48fe00d96f20531b5599470595} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!values@{values}}
+\index{values@{values}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{values()}{values()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+values (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab97e493351a4038c8168b2f5ee286929}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ab97e493351a4038c8168b2f5ee286929} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_session\_cache@{\_session\_cache}}
+\index{\_session\_cache@{\_session\_cache}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_session\_cache}{\_session\_cache}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+session\+\_\+cache\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1a51c75c7ad5a3a73a4029d983013002}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1a51c75c7ad5a3a73a4029d983013002} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!accessed@{accessed}}
+\index{accessed@{accessed}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{accessed}{accessed}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+accessed}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1b822da2aeefe4e68f07cde1a40a2d65}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1b822da2aeefe4e68f07cde1a40a2d65} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!clear\_expired@{clear\_expired}}
+\index{clear\_expired@{clear\_expired}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{clear\_expired}{clear\_expired}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+clear\+\_\+expired}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a06fe859a0b40ef6f704c6deb282cd596}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a20cff7d26b13bb5568c672477c75a16b}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a192774f00f2a2a07916020133f0b0c16}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a1b6d6cc858ec51cec77b0cb9a10d9fbc}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a0c190753c562e5d04fa4903b7c0bee94}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a0c190753c562e5d04fa4903b7c0bee94} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!create@{create}}
+\index{create@{create}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+create}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a38c9efbdb5115fd1820ae198b767c39c}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a4a98c0168c61e75be58e279660aa6ce4}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a6624db6a37dfff490f837047e0a60dda}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_ae28b0ad66d82c118d1cdfbcfee3a6954}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a078d5cf433fc60df3f9905591e2111a0}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a078d5cf433fc60df3f9905591e2111a0} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!delete@{delete}}
+\index{delete@{delete}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{delete}{delete}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+delete}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_ad5c2ace070e090f3ce182bb75cd7c474}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a04049deee2825afe9ed246e86f25d47d}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_adff061b9bf9001df76e9ac5f58286ec4}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a1e44e0ffc42edb9583fe581b451eb882}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a42b9213efba8fd0bdd8d8a278a0ed8fb}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a42b9213efba8fd0bdd8d8a278a0ed8fb} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!exists@{exists}}
+\index{exists@{exists}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{exists}{exists}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+exists}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a253d926e3014bb124eaa4c182a641d66}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_ad80b6beee2197e5e67edc89f63c95bf5}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_ac71713367271770f0725f65d90ea66c5}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a1aebd5a329bcb1ea4b1faf11e6c8eb81}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a06ed62473dca358ac0c7091c1e91cba0}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a06ed62473dca358ac0c7091c1e91cba0} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!load@{load}}
+\index{load@{load}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{load}{load}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+load}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_abe89d1419808d74909996a59d825822f}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_aab3bc77d15c0a33590a72f92a2efc994}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_a408fa63512306fbaa7bbb62742f0295f}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a30628ca263cfc1f37e971691a155413d}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a18e571420ac8b4dac37611b32e57c0f6}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a18e571420ac8b4dac37611b32e57c0f6} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!modified@{modified}}
+\index{modified@{modified}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{modified}{modified}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+modified}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1d90d30d8c28b9a792d08c34d2cec84a}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a1d90d30d8c28b9a792d08c34d2cec84a} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!save@{save}}
+\index{save@{save}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{save}{save}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+save}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1cache_1_1SessionStore_a67e81d959c24e3a84b1e755a9a861c53}{django.\+contrib.\+sessions.\+backends.\+cache.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1db_1_1SessionStore_a68a6b4f159bd3dc969ec80b34c1622af}{django.\+contrib.\+sessions.\+backends.\+db.\+Session\+Store}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1file_1_1SessionStore_af170f9c112376eb1627509287bf9620f}{django.\+contrib.\+sessions.\+backends.\+file.\+Session\+Store}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1signed__cookies_1_1SessionStore_a37935aad339aeb6d1eb529031d04d5fd}{django.\+contrib.\+sessions.\+backends.\+signed\+\_\+cookies.\+Session\+Store}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a38e2db763c061aba532c993482956b9c}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a38e2db763c061aba532c993482956b9c} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!serializer@{serializer}}
+\index{serializer@{serializer}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{serializer}{serializer}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+serializer}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a81e4ee5a9a86accfd1aec7a1a48a7d88}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a81e4ee5a9a86accfd1aec7a1a48a7d88} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!TEST\_COOKIE\_NAME@{TEST\_COOKIE\_NAME}}
+\index{TEST\_COOKIE\_NAME@{TEST\_COOKIE\_NAME}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{TEST\_COOKIE\_NAME}{TEST\_COOKIE\_NAME}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+TEST\+\_\+\+COOKIE\+\_\+\+NAME = "{}testcookie"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2573a129e7692225fba22ea2aaf91ae5}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a2573a129e7692225fba22ea2aaf91ae5} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!TEST\_COOKIE\_NAME@{TEST\_COOKIE\_NAME}}
+\index{TEST\_COOKIE\_NAME@{TEST\_COOKIE\_NAME}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{TEST\_COOKIE\_NAME}{TEST\_COOKIE\_NAME}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+TEST\+\_\+\+COOKIE\+\_\+\+NAME}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afdb0ab35c3953a839e1c0219dd11052d}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_afdb0ab35c3953a839e1c0219dd11052d} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!TEST\_COOKIE\_VALUE@{TEST\_COOKIE\_VALUE}}
+\index{TEST\_COOKIE\_VALUE@{TEST\_COOKIE\_VALUE}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{TEST\_COOKIE\_VALUE}{TEST\_COOKIE\_VALUE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+TEST\+\_\+\+COOKIE\+\_\+\+VALUE = "{}worked"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3604f33068f081c478a730a4e8bf01f5}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3604f33068f081c478a730a4e8bf01f5} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!TEST\_COOKIE\_VALUE@{TEST\_COOKIE\_VALUE}}
+\index{TEST\_COOKIE\_VALUE@{TEST\_COOKIE\_VALUE}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{TEST\_COOKIE\_VALUE}{TEST\_COOKIE\_VALUE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+TEST\+\_\+\+COOKIE\+\_\+\+VALUE}
+
+
+
+\doxysubsection{Documentation des propriétés}
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a08e6a946c038877e71094df9f394b7a9}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a08e6a946c038877e71094df9f394b7a9} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_session@{\_session}}
+\index{\_session@{\_session}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_session}{\_session}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+session = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a3ca0af594cbb5d34f3d4f76c8f90bf4f}{\+\_\+get\+\_\+session}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_add229cac22c0808a182d48a2a87b3aa4}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_add229cac22c0808a182d48a2a87b3aa4} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!\_session\_key@{\_session\_key}}
+\index{\_session\_key@{\_session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{\_session\_key}{\_session\_key}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+\_\+session\+\_\+key = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70bf9a39e32525bf15e41862a236c457}{\+\_\+get\+\_\+session\+\_\+key}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a838d8fc57af8d3d933199df7d7fe1213}{\+\_\+set\+\_\+session\+\_\+key}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac1e6568765cf53c3a9e2ff5247182318}\label{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_ac1e6568765cf53c3a9e2ff5247182318} 
+\index{django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}!session\_key@{session\_key}}
+\index{session\_key@{session\_key}!django.contrib.sessions.backends.base.SessionBase@{django.contrib.sessions.backends.base.SessionBase}}
+\doxysubsubsection{\texorpdfstring{session\_key}{session\_key}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+backends.\+base.\+Session\+Base.\+session\+\_\+key = property(\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1backends_1_1base_1_1SessionBase_a70bf9a39e32525bf15e41862a236c457}{\+\_\+get\+\_\+session\+\_\+key}})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/sessions/backends/\mbox{\hyperlink{django_2contrib_2sessions_2backends_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

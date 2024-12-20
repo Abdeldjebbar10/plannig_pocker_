@@ -1,0 +1,123 @@
+\doxysection{Référence de la classe sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter}
+\hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter}{}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter}\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a19045b7d3bb0dbb973176bd949769c63}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a2f4597f2162d5f5f5906793744006760}{process}} (self, stream)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ad191ffc7aebfdb55e33e006c1c97a907}{consume\+\_\+ws}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a92242fa6d67489dc397046caee0aa70d}{tokens}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a702ffeac16260fbdd8c276e42dbf5983}{level}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ae1e03296c6dc3daf36994a3b70d5644b}{\+\_\+reset}} (self)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a98be77ce049244aaf3cdc7593fd4a69f}{\+\_\+change\+\_\+splitlevel}} (self, ttype, value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ac33aff0c274e71f4c3a392e13d3f1838}{\+\_\+in\+\_\+declare}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a8b794db63bfb01eec5693bd846f7084b}{\+\_\+in\+\_\+case}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ac78656b1a0bc5ef0756838d5571b857b}{\+\_\+is\+\_\+create}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a51d3e02cbf6d16841b4de1dbaaa83a39}{\+\_\+begin\+\_\+depth}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Filter that split stream at individual statements\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a19045b7d3bb0dbb973176bd949769c63}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a19045b7d3bb0dbb973176bd949769c63} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a98be77ce049244aaf3cdc7593fd4a69f}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a98be77ce049244aaf3cdc7593fd4a69f} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!\_change\_splitlevel@{\_change\_splitlevel}}
+\index{\_change\_splitlevel@{\_change\_splitlevel}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{\_change\_splitlevel()}{\_change\_splitlevel()}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+\_\+change\+\_\+splitlevel (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ttype,  }\item[{}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get the new split level (increase, decrease or remain equal)\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ae1e03296c6dc3daf36994a3b70d5644b}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ae1e03296c6dc3daf36994a3b70d5644b} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!\_reset@{\_reset}}
+\index{\_reset@{\_reset}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{\_reset()}{\_reset()}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+\_\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Set the filter attributes to its default values\end{DoxyVerb}
+ \Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a2f4597f2162d5f5f5906793744006760}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a2f4597f2162d5f5f5906793744006760} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!process@{process}}
+\index{process@{process}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+process (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stream }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process the stream\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a51d3e02cbf6d16841b4de1dbaaa83a39}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a51d3e02cbf6d16841b4de1dbaaa83a39} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!\_begin\_depth@{\_begin\_depth}}
+\index{\_begin\_depth@{\_begin\_depth}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{\_begin\_depth}{\_begin\_depth}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+\_\+begin\+\_\+depth\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a8b794db63bfb01eec5693bd846f7084b}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a8b794db63bfb01eec5693bd846f7084b} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!\_in\_case@{\_in\_case}}
+\index{\_in\_case@{\_in\_case}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{\_in\_case}{\_in\_case}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+\_\+in\+\_\+case\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ac33aff0c274e71f4c3a392e13d3f1838}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ac33aff0c274e71f4c3a392e13d3f1838} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!\_in\_declare@{\_in\_declare}}
+\index{\_in\_declare@{\_in\_declare}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{\_in\_declare}{\_in\_declare}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+\_\+in\+\_\+declare\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ac78656b1a0bc5ef0756838d5571b857b}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ac78656b1a0bc5ef0756838d5571b857b} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!\_is\_create@{\_is\_create}}
+\index{\_is\_create@{\_is\_create}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{\_is\_create}{\_is\_create}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+\_\+is\+\_\+create\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ad191ffc7aebfdb55e33e006c1c97a907}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_ad191ffc7aebfdb55e33e006c1c97a907} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!consume\_ws@{consume\_ws}}
+\index{consume\_ws@{consume\_ws}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{consume\_ws}{consume\_ws}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+consume\+\_\+ws}
+
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a702ffeac16260fbdd8c276e42dbf5983}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a702ffeac16260fbdd8c276e42dbf5983} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!level@{level}}
+\index{level@{level}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+level}
+
+\Hypertarget{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a92242fa6d67489dc397046caee0aa70d}\label{classsqlparse_1_1engine_1_1statement__splitter_1_1StatementSplitter_a92242fa6d67489dc397046caee0aa70d} 
+\index{sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}!tokens@{tokens}}
+\index{tokens@{tokens}!sqlparse.engine.statement\_splitter.StatementSplitter@{sqlparse.engine.statement\_splitter.StatementSplitter}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily sqlparse.\+engine.\+statement\+\_\+splitter.\+Statement\+Splitter.\+tokens}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/sqlparse/engine/\mbox{\hyperlink{statement__splitter_8py}{statement\+\_\+splitter.\+py}}\end{DoxyCompactItemize}

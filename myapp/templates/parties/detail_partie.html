@@ -1,0 +1,101 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Détails de la Partie</h1>
+
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h4 class="card-title mb-0">{{ partie.nom }}</h4>
+        </div>
+        <div class="card-body">
+            <p><strong>Administrateur :</strong> {{ partie.admin.pseudo }}</p>
+            <p><strong>Mode de jeu :</strong> 
+                {% if partie.mode_jeu == 'strict' %}
+                    <span class="badge bg-danger">Strict</span>
+                {% else %}
+                    <span class="badge bg-success">Moyenne</span>
+                {% endif %} 
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Participants</h3>
+            <ul class="list-group">
+                {% for participant in partie.participants.all %}
+                    <li class="list-group-item">{{ participant.pseudo }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h3>Fonctionnalités</h3>
+            <ul class="list-group">
+                {% for fonctionnalite in partie.fonctionnalites.all %}
+                    <li class="list-group-item">
+                        <strong>{{ fonctionnalite.name }}</strong>
+                        {% if fonctionnalite.valide %}
+                            <span class="badge bg-success float-end">Validée</span>
+                        {% else %}
+                            <span class="badge bg-warning text-dark float-end">En attente</span>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h3 class="text-center">Votes</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Participant</th>
+                    <th>Fonctionnalité</th>
+                    <th>Statut</th>
+                    <th>Vote</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for vote in votes %}
+                <tr>
+                    <td>{{ vote.participant.pseudo }}</td>
+                    <td>
+                        {% if vote.fonctionnalite %}
+                            {{ vote.fonctionnalite.name }}
+                        {% else %}
+                            <em>Fonctionnalité supprimée</em>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if vote.fonctionnalite and vote.fonctionnalite.valide %}
+                            <span class="badge bg-success">Valide</span>
+                        {% elif not vote.fonctionnalite %}
+                            <span class="badge bg-secondary">Supprimée</span>
+                        {% else %}
+                            <span class="badge bg-warning text-dark">Non valide</span>
+                        {% endif %}
+                    </td>
+                    
+                    <td>{{ vote.vote }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4" class="text-center">Aucun vote n'a été enregistré pour cette partie.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-center mt-4">
+        {% if partie.statut == "en_attente" %}
+            <!-- Bouton pour continuer la partie -->
+            <a href="{% url 'demarrer_vote' partie.id %}" class="btn btn-primary">Continuer la Partie</a>
+        {% endif %}
+        <a href="{% url 'lister_parties' %}" class="btn btn-secondary">Retour à la liste des parties</a>
+    </div>
+    
+</div>
+{% endblock %}

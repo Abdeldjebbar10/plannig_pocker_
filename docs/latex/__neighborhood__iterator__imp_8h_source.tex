@@ -1,0 +1,96 @@
+\doxysection{\+\_\+neighborhood\+\_\+iterator\+\_\+imp.\+h}
+\hypertarget{__neighborhood__iterator__imp_8h_source}{}\label{__neighborhood__iterator__imp_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/\_neighborhood\_iterator\_imp.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/\_neighborhood\_iterator\_imp.h}}
+\mbox{\hyperlink{__neighborhood__iterator__imp_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_\_NEIGHBORHOOD\_IMP\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#error\ You\ should\ not\ include\ this\ header\ directly}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Private\ API\ (here\ for\ inline)}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00008\ \_PyArrayNeighborhoodIter\_IncrCoord(\mbox{\hyperlink{structPyArrayNeighborhoodIterObject}{PyArrayNeighborhoodIterObject}}*\ iter);}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ Update\ to\ next\ item\ of\ the\ iterator}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ Note:\ this\ simply\ increment\ the\ coordinates\ vector,\ last\ dimension}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ incremented\ first\ ,\ i.e,\ for\ dimension\ 3}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ ...}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ -\/1,\ -\/1,\ -\/1}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ -\/1,\ -\/1,\ \ 0}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ -\/1,\ -\/1,\ \ 1}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ ....}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ -\/1,\ \ 0,\ -\/1}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ -\/1,\ \ 0,\ \ 0}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ ....}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ 0,\ \ -\/1,\ -\/1}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ 0,\ \ -\/1,\ \ 0}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ ....}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ \_UPDATE\_COORD\_ITER(c)\ \(\backslash\)}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\ \ \ \ wb\ =\ iter-\/>coordinates[c]\ <\ iter-\/>bounds[c][1];\ \(\backslash\)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\ \ \ \ if\ (wb)\ \{\ \(\backslash\)}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ iter-\/>coordinates[c]\ +=\ 1;\ \(\backslash\)}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ return\ 0;\ \(\backslash\)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\ \ \ \ \}\ \(\backslash\)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\ \ \ \ else\ \{\ \(\backslash\)}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ iter-\/>coordinates[c]\ =\ iter-\/>bounds[c][0];\ \(\backslash\)}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\ \ \ \ \}}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00038\ \_PyArrayNeighborhoodIter\_IncrCoord(\mbox{\hyperlink{structPyArrayNeighborhoodIterObject}{PyArrayNeighborhoodIterObject}}*\ iter)}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ i,\ wb;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ iter-\/>\mbox{\hyperlink{structPyArrayNeighborhoodIterObject_ae132e4dd502952187115c3012238b55a}{nd}}\ -\/\ 1;\ i\ >=\ 0;\ -\/-\/i)\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{__neighborhood__iterator__imp_8h_a72d549c5d237a2f8a410fa5ca22d3edb}{\_UPDATE\_COORD\_ITER}}(i)}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00047\ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ *\ Version\ optimized\ for\ 2d\ arrays,\ manual\ loop\ unrolling}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00052\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00053\ \_PyArrayNeighborhoodIter\_IncrCoord2D(\mbox{\hyperlink{structPyArrayNeighborhoodIterObject}{PyArrayNeighborhoodIterObject}}*\ iter)}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ wb;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{__neighborhood__iterator__imp_8h_a72d549c5d237a2f8a410fa5ca22d3edb}{\_UPDATE\_COORD\_ITER}}(1)}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{__neighborhood__iterator__imp_8h_a72d549c5d237a2f8a410fa5ca22d3edb}{\_UPDATE\_COORD\_ITER}}(0)}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ return\ 0;}
+\DoxyCodeLine{00061\ \}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#undef\ \_UPDATE\_COORD\_ITER}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00065\ \textcolor{comment}{\ *\ Advance\ to\ the\ next\ neighbour}}
+\DoxyCodeLine{00066\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00067\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00068\ PyArrayNeighborhoodIter\_Next(\mbox{\hyperlink{structPyArrayNeighborhoodIterObject}{PyArrayNeighborhoodIterObject}}*\ iter)}
+\DoxyCodeLine{00069\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \_PyArrayNeighborhoodIter\_IncrCoord\ (iter);}
+\DoxyCodeLine{00071\ \ \ \ \ iter-\/>\mbox{\hyperlink{structPyArrayNeighborhoodIterObject_a5457d4a9e37bdc6d33f27bf8667785b0}{dataptr}}\ =\ iter-\/>\mbox{\hyperlink{structPyArrayNeighborhoodIterObject_a5a8b049ee7e72ab78a87569652495af9}{translate}}((\mbox{\hyperlink{structPyArrayIterObject__tag}{PyArrayIterObject}}*)iter,\ iter-\/>\mbox{\hyperlink{structPyArrayIterObject__tag_a0c45479d41eed2da74807ca9769dc257}{coordinates}});}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00074\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00077\ \textcolor{comment}{\ *\ Reset\ functions}}
+\DoxyCodeLine{00078\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00079\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00080\ PyArrayNeighborhoodIter\_Reset(\mbox{\hyperlink{structPyArrayNeighborhoodIterObject}{PyArrayNeighborhoodIterObject}}*\ iter)}
+\DoxyCodeLine{00081\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \mbox{\hyperlink{namespacecmplxdat_a09769bc5281209fa7180a6be5bfda6cb}{i}};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;\ \mbox{\hyperlink{namespacecmplxdat_a09769bc5281209fa7180a6be5bfda6cb}{i}}\ <\ iter-\/>\mbox{\hyperlink{structPyArrayNeighborhoodIterObject_ae132e4dd502952187115c3012238b55a}{nd}};\ ++\mbox{\hyperlink{namespacecmplxdat_a09769bc5281209fa7180a6be5bfda6cb}{i}})\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ iter-\/>\mbox{\hyperlink{structPyArrayNeighborhoodIterObject_aff3d96708be8c153ff4d38d974b4ed4d}{coordinates}}[\mbox{\hyperlink{namespacecmplxdat_a09769bc5281209fa7180a6be5bfda6cb}{i}}]\ =\ iter-\/>\mbox{\hyperlink{structPyArrayNeighborhoodIterObject_a284c44e668fe8f96410ccab2adb9ef26}{bounds}}[\mbox{\hyperlink{namespacecmplxdat_a09769bc5281209fa7180a6be5bfda6cb}{i}}][0];}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+\DoxyCodeLine{00087\ \ \ \ \ iter-\/>\mbox{\hyperlink{structPyArrayNeighborhoodIterObject_a5457d4a9e37bdc6d33f27bf8667785b0}{dataptr}}\ =\ iter-\/>\mbox{\hyperlink{structPyArrayNeighborhoodIterObject_a5a8b049ee7e72ab78a87569652495af9}{translate}}((\mbox{\hyperlink{structPyArrayIterObject__tag}{PyArrayIterObject}}*)iter,\ iter-\/>\mbox{\hyperlink{structPyArrayIterObject__tag_a0c45479d41eed2da74807ca9769dc257}{coordinates}});}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00090\ \}}
+
+\end{DoxyCode}

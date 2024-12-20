@@ -1,0 +1,59 @@
+\doxysection{Référence de la classe test\+\_\+dtype.\+Test\+DType\+Make\+Canonical}
+\hypertarget{classtest__dtype_1_1TestDTypeMakeCanonical}{}\label{classtest__dtype_1_1TestDTypeMakeCanonical}\index{test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestDTypeMakeCanonical_a4c2d7a152d254880be5b20e28a6960e4}{check\+\_\+canonical}} (self, dtype, canonical)
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestDTypeMakeCanonical_a25829417d206ab132e0d67584087e92e}{test\+\_\+simple}} (self)
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestDTypeMakeCanonical_a31aee0fe1d87dd04b4d8bb88979189fd}{test\+\_\+object\+\_\+flag\+\_\+not\+\_\+inherited}} (self)
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestDTypeMakeCanonical_ad6df5d883577cc49c833ada671070413}{test\+\_\+make\+\_\+canonical\+\_\+hypothesis}} (self, dtype)
+\item 
+\mbox{\hyperlink{classtest__dtype_1_1TestDTypeMakeCanonical_a9ec16af3d1328111cf284f409a00a199}{test\+\_\+structured}} (self, dtype)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classtest__dtype_1_1TestDTypeMakeCanonical_a4c2d7a152d254880be5b20e28a6960e4}\label{classtest__dtype_1_1TestDTypeMakeCanonical_a4c2d7a152d254880be5b20e28a6960e4} 
+\index{test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}!check\_canonical@{check\_canonical}}
+\index{check\_canonical@{check\_canonical}!test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}}
+\doxysubsubsection{\texorpdfstring{check\_canonical()}{check\_canonical()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+DType\+Make\+Canonical.\+check\+\_\+canonical (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype,  }\item[{}]{canonical }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check most properties relevant to "canonical" versions of a dtype,
+which is mainly native byte order for datatypes supporting this.
+
+The main work is checking structured dtypes with fields, where we
+reproduce most the actual logic used in the C-code.
+\end{DoxyVerb}
+ \Hypertarget{classtest__dtype_1_1TestDTypeMakeCanonical_ad6df5d883577cc49c833ada671070413}\label{classtest__dtype_1_1TestDTypeMakeCanonical_ad6df5d883577cc49c833ada671070413} 
+\index{test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}!test\_make\_canonical\_hypothesis@{test\_make\_canonical\_hypothesis}}
+\index{test\_make\_canonical\_hypothesis@{test\_make\_canonical\_hypothesis}!test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}}
+\doxysubsubsection{\texorpdfstring{test\_make\_canonical\_hypothesis()}{test\_make\_canonical\_hypothesis()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+DType\+Make\+Canonical.\+test\+\_\+make\+\_\+canonical\+\_\+hypothesis (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__dtype_1_1TestDTypeMakeCanonical_a31aee0fe1d87dd04b4d8bb88979189fd}\label{classtest__dtype_1_1TestDTypeMakeCanonical_a31aee0fe1d87dd04b4d8bb88979189fd} 
+\index{test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}!test\_object\_flag\_not\_inherited@{test\_object\_flag\_not\_inherited}}
+\index{test\_object\_flag\_not\_inherited@{test\_object\_flag\_not\_inherited}!test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}}
+\doxysubsubsection{\texorpdfstring{test\_object\_flag\_not\_inherited()}{test\_object\_flag\_not\_inherited()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+DType\+Make\+Canonical.\+test\+\_\+object\+\_\+flag\+\_\+not\+\_\+inherited (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__dtype_1_1TestDTypeMakeCanonical_a25829417d206ab132e0d67584087e92e}\label{classtest__dtype_1_1TestDTypeMakeCanonical_a25829417d206ab132e0d67584087e92e} 
+\index{test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}!test\_simple@{test\_simple}}
+\index{test\_simple@{test\_simple}!test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}}
+\doxysubsubsection{\texorpdfstring{test\_simple()}{test\_simple()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+DType\+Make\+Canonical.\+test\+\_\+simple (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__dtype_1_1TestDTypeMakeCanonical_a9ec16af3d1328111cf284f409a00a199}\label{classtest__dtype_1_1TestDTypeMakeCanonical_a9ec16af3d1328111cf284f409a00a199} 
+\index{test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}!test\_structured@{test\_structured}}
+\index{test\_structured@{test\_structured}!test\_dtype.TestDTypeMakeCanonical@{test\_dtype.TestDTypeMakeCanonical}}
+\doxysubsubsection{\texorpdfstring{test\_structured()}{test\_structured()}}
+{\footnotesize\ttfamily test\+\_\+dtype.\+Test\+DType\+Make\+Canonical.\+test\+\_\+structured (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype }\end{DoxyParamCaption})}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/tests/\mbox{\hyperlink{numpy_2__core_2tests_2test__dtype_8py}{test\+\_\+dtype.\+py}}\end{DoxyCompactItemize}

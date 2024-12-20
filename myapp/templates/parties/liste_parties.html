@@ -1,0 +1,22 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+    <h1 class="mt-5">Liste des Parties</h1>
+    <ul class="list-group">
+        {% for partie in parties %}
+            <li class="list-group-item">
+                <strong>{{ partie.nom }}</strong> - Créée par {{ partie.admin.pseudo }}
+                <div class="mt-2">
+                    {% if partie.statut == "new" %}
+                        <a href="{% url 'lancer_partie' partie.id %}" class="btn btn-success btn-sm">Lancer la Partie</a>
+                    {% elif partie.statut == "en_attente" %}
+                        <a href="{% url 'reprendre_partie' partie.id %}" class="btn btn-warning btn-sm">Reprendre la Partie</a>
+                    {% elif partie.statut == "fin" %}
+                        <a href="{% url 'detail_partie' partie.id %}" class="btn btn-info btn-sm">Voir les Détails</a>
+                    {% endif %}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'creer_partie' %}" class="btn btn-primary mt-3">Créer une nouvelle partie</a>
+{% endblock %}

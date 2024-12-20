@@ -1,0 +1,172 @@
+\doxysection{Référence de la classe numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate}
+\hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate}{}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate}\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_af0afb494eef52a275141347ff015f500}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}call=\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__ufunc__config_a2a5911ebcd10e32acbf13b79524d1654}{\+\_\+\+Unspecified}}, \mbox{\hyperlink{namespacenumpy_1_1__core_1_1fromnumeric_a6ae68c91210062722ef04204c10c4b5a}{all}}=None, divide=None, over=None, under=None, invalid=None)
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a0a98892826788195ce8d999c46a23648}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_af9a37eb5fc8dc87034e497f1469b58a5}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}exc\+\_\+info)
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a3780698cdaa3c912c277ae31aaa734a3}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a1e8bc8b2235739e2c09c96bd707f7dc2}{\+\_\+token}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a0a7368713641e3692d89a1a1b3e6c3ae}{\+\_\+call}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_acd9b94d7f63cc6e5718d704fae13679e}{\+\_\+all}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_afaa161274c53e4d5ef4cf1ed1791319c}{\+\_\+divide}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a92b9a102d352296ede9e1ac5fd93fddb}{\+\_\+over}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a2bb6863568dfa568d9d1e294faca0eb1}{\+\_\+under}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a17ad8f8001573c94548e2ef31a6106ac}{\+\_\+invalid}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}errstate(**kwargs)
+
+Context manager for floating-point error handling.
+
+Using an instance of `errstate` as a context manager allows statements in
+that context to execute with a known error handling behavior. Upon entering
+the context the error handling is set with `seterr` and `seterrcall`, and
+upon exiting it is reset to what it was before.
+
+..  versionchanged:: 1.17.0
+    `errstate` is also usable as a function decorator, saving
+    a level of indentation if an entire function is wrapped.
+
+.. versionchanged:: 2.0
+    `errstate` is now fully thread and asyncio safe, but may not be
+    entered more than once.
+    It is not safe to decorate async functions using ``errstate``.
+
+Parameters
+----------
+kwargs : {divide, over, under, invalid}
+    Keyword arguments. The valid keywords are the possible floating-point
+    exceptions. Each keyword should have a string value that defines the
+    treatment for the particular error. Possible values are
+    {'ignore', 'warn', 'raise', 'call', 'print', 'log'}.
+
+See Also
+--------
+seterr, geterr, seterrcall, geterrcall
+
+Notes
+-----
+For complete documentation of the types of floating-point exceptions and
+treatment options, see `seterr`.
+
+Examples
+--------
+>>> import numpy as np
+>>> olderr = np.seterr(all='ignore')  # Set error handling to known state.
+
+>>> np.arange(3) / 0.
+array([nan, inf, inf])
+>>> with np.errstate(divide='ignore'):
+...     np.arange(3) / 0.
+array([nan, inf, inf])
+
+>>> np.sqrt(-1)
+np.float64(nan)
+>>> with np.errstate(invalid='raise'):
+...     np.sqrt(-1)
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+FloatingPointError: invalid value encountered in sqrt
+
+Outside the context the error handling behavior has not changed:
+
+>>> np.geterr()
+{'divide': 'ignore', 'over': 'ignore', 'under': 'ignore', 'invalid': 'ignore'}
+>>> olderr = np.seterr(**olderr)  # restore original state\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_af0afb494eef52a275141347ff015f500}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_af0afb494eef52a275141347ff015f500} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{call = {\ttfamily \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__ufunc__config_a2a5911ebcd10e32acbf13b79524d1654}{\+\_\+\+Unspecified}}},  }\item[{}]{all = {\ttfamily None},  }\item[{}]{divide = {\ttfamily None},  }\item[{}]{over = {\ttfamily None},  }\item[{}]{under = {\ttfamily None},  }\item[{}]{invalid = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a3780698cdaa3c912c277ae31aaa734a3}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a3780698cdaa3c912c277ae31aaa734a3} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a0a98892826788195ce8d999c46a23648}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a0a98892826788195ce8d999c46a23648} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_af9a37eb5fc8dc87034e497f1469b58a5}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_af9a37eb5fc8dc87034e497f1469b58a5} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{exc\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_acd9b94d7f63cc6e5718d704fae13679e}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_acd9b94d7f63cc6e5718d704fae13679e} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_all@{\_all}}
+\index{\_all@{\_all}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_all}{\_all}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+all\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a0a7368713641e3692d89a1a1b3e6c3ae}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a0a7368713641e3692d89a1a1b3e6c3ae} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_call@{\_call}}
+\index{\_call@{\_call}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_call}{\_call}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+call\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_afaa161274c53e4d5ef4cf1ed1791319c}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_afaa161274c53e4d5ef4cf1ed1791319c} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_divide@{\_divide}}
+\index{\_divide@{\_divide}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_divide}{\_divide}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+divide\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a17ad8f8001573c94548e2ef31a6106ac}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a17ad8f8001573c94548e2ef31a6106ac} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_invalid@{\_invalid}}
+\index{\_invalid@{\_invalid}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_invalid}{\_invalid}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+invalid\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a92b9a102d352296ede9e1ac5fd93fddb}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a92b9a102d352296ede9e1ac5fd93fddb} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_over@{\_over}}
+\index{\_over@{\_over}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_over}{\_over}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+over\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a1e8bc8b2235739e2c09c96bd707f7dc2}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a1e8bc8b2235739e2c09c96bd707f7dc2} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_token@{\_token}}
+\index{\_token@{\_token}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_token}{\_token}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+token\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a2bb6863568dfa568d9d1e294faca0eb1}\label{classnumpy_1_1__core_1_1__ufunc__config_1_1errstate_a2bb6863568dfa568d9d1e294faca0eb1} 
+\index{numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}!\_under@{\_under}}
+\index{\_under@{\_under}!numpy.\_core.\_ufunc\_config.errstate@{numpy.\_core.\_ufunc\_config.errstate}}
+\doxysubsubsection{\texorpdfstring{\_under}{\_under}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+ufunc\+\_\+config.\+errstate.\+\_\+under\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/\mbox{\hyperlink{__ufunc__config_8py}{\+\_\+ufunc\+\_\+config.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,189 @@
+\doxysection{Référence de la classe pandas.\+core.\+computation.\+expr.\+Expr}
+\hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr}{}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr}\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+computation.\+expr.\+Expr\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+computation.\+expr.\+Expr\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a7b10533d6255afd9bc1329916b398bef}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a403a38d2884e2001803fec78fb4e8778}{expr}}, str \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a3f1b45fa2bb84cf858058a43abe78a61}{engine}}="{}numexpr"{}, str \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a066e0f813232003c63f8f4b819e3f357}{parser}}="{}pandas"{}, \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope}{Scope}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a319ca3ab29178d6831b1e84641583db9}{env}}=None, int level=0)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a356c3e0deb3becbe5654201df8a0241b}{assigner}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a22d31c39fa8fb284dce8d2b796523e9a}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a0818f281e82e9b0d7202c8f617562357}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a585f0ea4495106c51e996fa683cd1620}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_ad2303595e1d7066d56f74679b5b25501}{parse}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_af160126d667541011a31082ea225cd18}{names}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a403a38d2884e2001803fec78fb4e8778}{expr}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a248749b61ba68d267e1a45dde4911edc}{env}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a624435394866d50f51a71989b7eed864}{engine}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a1ec8cacce4f4c60615a87099a92a7977}{parser}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_aa1f2391c38a4fd6a8a914cb1a68ad864}{terms}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope}{Scope}} \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a319ca3ab29178d6831b1e84641583db9}{env}}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a3f1b45fa2bb84cf858058a43abe78a61}{engine}}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a066e0f813232003c63f8f4b819e3f357}{parser}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_aedd6a77aa774d0f0c36056cc3bbd8e98}{\+\_\+visitor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Object encapsulating an expression.
+
+Parameters
+----------
+expr : str
+engine : str, optional, default 'numexpr'
+parser : str, optional, default 'pandas'
+env : Scope, optional, default None
+level : int, optional, default 2
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a7b10533d6255afd9bc1329916b398bef}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a7b10533d6255afd9bc1329916b398bef} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+computation.\+expr.\+Expr.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{expr,  }\item[{str }]{engine = {\ttfamily "{}numexpr"{}},  }\item[{str }]{parser = {\ttfamily "{}pandas"{}},  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope}{Scope}} \texorpdfstring{$\vert$}{|} None }]{env = {\ttfamily None},  }\item[{int }]{level = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1pytables_1_1PyTablesExpr_aab7ca5feb5c2fac2ede49ad8fa6b36fc}{pandas.\+core.\+computation.\+pytables.\+Py\+Tables\+Expr}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a22d31c39fa8fb284dce8d2b796523e9a}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a22d31c39fa8fb284dce8d2b796523e9a} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a585f0ea4495106c51e996fa683cd1620}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a585f0ea4495106c51e996fa683cd1620} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+computation.\+expr.\+Expr.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a0818f281e82e9b0d7202c8f617562357}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a0818f281e82e9b0d7202c8f617562357} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+computation.\+expr.\+Expr.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1pytables_1_1PyTablesExpr_a02c67cf1a696d5b8c12838e142e957f1}{pandas.\+core.\+computation.\+pytables.\+Py\+Tables\+Expr}}.
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a356c3e0deb3becbe5654201df8a0241b}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a356c3e0deb3becbe5654201df8a0241b} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!assigner@{assigner}}
+\index{assigner@{assigner}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{assigner()}{assigner()}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+assigner (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_af160126d667541011a31082ea225cd18}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_af160126d667541011a31082ea225cd18} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!names@{names}}
+\index{names@{names}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{names()}{names()}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the names in an expression.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_ad2303595e1d7066d56f74679b5b25501}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_ad2303595e1d7066d56f74679b5b25501} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!parse@{parse}}
+\index{parse@{parse}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+parse (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse an expression.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_aedd6a77aa774d0f0c36056cc3bbd8e98}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_aedd6a77aa774d0f0c36056cc3bbd8e98} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!\_visitor@{\_visitor}}
+\index{\_visitor@{\_visitor}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{\_visitor}{\_visitor}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+\_\+visitor\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a3f1b45fa2bb84cf858058a43abe78a61}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a3f1b45fa2bb84cf858058a43abe78a61} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!engine@{engine}}
+\index{engine@{engine}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{engine}{engine}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str pandas.\+core.\+computation.\+expr.\+Expr.\+engine\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a624435394866d50f51a71989b7eed864}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a624435394866d50f51a71989b7eed864} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!engine@{engine}}
+\index{engine@{engine}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{engine}{engine}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+engine}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a319ca3ab29178d6831b1e84641583db9}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a319ca3ab29178d6831b1e84641583db9} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!env@{env}}
+\index{env@{env}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{env}{env}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1core_1_1computation_1_1scope_1_1Scope}{Scope}} pandas.\+core.\+computation.\+expr.\+Expr.\+env\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a248749b61ba68d267e1a45dde4911edc}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a248749b61ba68d267e1a45dde4911edc} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!env@{env}}
+\index{env@{env}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{env}{env}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+env}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a403a38d2884e2001803fec78fb4e8778}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a403a38d2884e2001803fec78fb4e8778} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!expr@{expr}}
+\index{expr@{expr}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{expr}{expr}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+expr}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a066e0f813232003c63f8f4b819e3f357}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a066e0f813232003c63f8f4b819e3f357} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!parser@{parser}}
+\index{parser@{parser}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str pandas.\+core.\+computation.\+expr.\+Expr.\+parser\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a1ec8cacce4f4c60615a87099a92a7977}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_a1ec8cacce4f4c60615a87099a92a7977} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!parser@{parser}}
+\index{parser@{parser}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+parser}
+
+\Hypertarget{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_aa1f2391c38a4fd6a8a914cb1a68ad864}\label{classpandas_1_1core_1_1computation_1_1expr_1_1Expr_aa1f2391c38a4fd6a8a914cb1a68ad864} 
+\index{pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}!terms@{terms}}
+\index{terms@{terms}!pandas.core.computation.expr.Expr@{pandas.core.computation.expr.Expr}}
+\doxysubsubsection{\texorpdfstring{terms}{terms}}
+{\footnotesize\ttfamily pandas.\+core.\+computation.\+expr.\+Expr.\+terms}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/computation/\mbox{\hyperlink{expr_8py}{expr.\+py}}\end{DoxyCompactItemize}

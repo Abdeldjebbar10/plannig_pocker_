@@ -1,0 +1,730 @@
+\doxysection{Référence de la classe pandas.\+io.\+stata.\+Stata\+Writer}
+\hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter}{}\label{classpandas_1_1io_1_1stata_1_1StataWriter}\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+stata.\+Stata\+Writer\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+io.\+stata.\+Stata\+Writer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a1bffd45187823f3d222ba05d025f9d06}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]} fname, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}{data}}, dict\mbox{[}Hashable, str\mbox{]}\texorpdfstring{$\vert$}{|}None convert\+\_\+dates=None, bool write\+\_\+index=True, str\texorpdfstring{$\vert$}{|}None byteorder=None, datetime\texorpdfstring{$\vert$}{|}None time\+\_\+stamp=None, str\texorpdfstring{$\vert$}{|}None data\+\_\+label=None, dict\mbox{[}Hashable, str\mbox{]}\texorpdfstring{$\vert$}{|}None variable\+\_\+labels=None, Compression\+Options compression="{}infer"{}, Storage\+Options\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a21622c51d4dd0de0dc7d48bc324c4a7e}{storage\+\_\+options}}=None, \texorpdfstring{$\ast$}{*}dict\mbox{[}Hashable, dict\mbox{[}float, str\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None value\+\_\+labels=None)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_af0a8805a4599f86ab650dbb171c74643}{write\+\_\+file}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}{data}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a21622c51d4dd0de0dc7d48bc324c4a7e}{storage\+\_\+options}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a0e650c13c575682b3ea03baee89f26dc}{type\+\_\+converters}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_ad7035a2c631259c5a2489525ac8caac0}{nobs}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_abebeaace2f437c62460bc1fca0c96e63}{nvar}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a991dada3bd12a3f0302ef3a8e363408c}{varlist}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser}{pandas.\+io.\+stata.\+Stata\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_a6316d0151602edb72a61471736f7e7a0}{DTYPE\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_aa05e81ef5274df05d659fedeafcf5983}{TYPE\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_ab7016a7165d7467ab0ee82c6f8275edc}{TYPE\+\_\+\+MAP\+\_\+\+XML}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_a9018426efa35cb0d519226e5e875b934}{VALID\+\_\+\+RANGE}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_a9e66f580fcfd5b1cae725ee4ccb49e75}{OLD\+\_\+\+TYPE\+\_\+\+MAPPING}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_add139497afc66c9f9c3d15a8f8b7c7b7}{MISSING\+\_\+\+VALUES}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_a0718291fe60883b35304f03b7dfc7f52}{NUMPY\+\_\+\+TYPE\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_af765710dcb322d4665c5c95a053e61ef}{RESERVED\+\_\+\+WORDS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a93b72799a5e059cde6b310b5dd87c051}{\+\_\+write}} (self, str to\+\_\+write)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a5ee4f427486f1bc66a67f28a1cd16792}{\+\_\+write\+\_\+bytes}} (self, bytes value)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataNonCatValueLabel}{Stata\+Non\+Cat\+Value\+Label}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a0cf1e18cdc53a264b5b4dd22bb28df33}{\+\_\+prepare\+\_\+non\+\_\+cat\+\_\+value\+\_\+labels}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}{data}})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a130ecff5832aff7622ad7e9774ff47af}{\+\_\+prepare\+\_\+categoricals}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}{data}})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a3486b15f3c659528a021a9da69d15d8b}{\+\_\+replace\+\_\+nans}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}{data}})
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_adb470a7779da1baca33e536ebd376cf2}{\+\_\+update\+\_\+strl\+\_\+names}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a6cae651f03ca5b6e6b476b02b6a78ddc}{\+\_\+validate\+\_\+variable\+\_\+name}} (self, str name)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a5a892ddfcd08a6a5bcb264b5efe19df5}{\+\_\+check\+\_\+column\+\_\+names}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}{data}})
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aac2c5cc9c8114d55b0459b0b3b8387ff}{\+\_\+set\+\_\+formats\+\_\+and\+\_\+types}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} dtypes)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a7b8390051ebc33c336293d240b9cb77b}{\+\_\+prepare\+\_\+pandas}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}{data}})
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aca389d0c856dd69588c0dd0f41542c42}{\+\_\+encode\+\_\+strings}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a42176301f63adf00271021ce9228b88d}{\+\_\+close}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a8acbb1636651287554e3153330118883}{\+\_\+write\+\_\+map}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa1732476861341f9de1791744b86ea1c}{\+\_\+write\+\_\+file\+\_\+close\+\_\+tag}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a31e477cddce4d489f42f6431df74b7cc}{\+\_\+write\+\_\+characteristics}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a6c26cf6d0eb93b28d6a1d94b4d73f556}{\+\_\+write\+\_\+strls}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_acceb688f99eec0b9e25f5d8915150f15}{\+\_\+write\+\_\+expansion\+\_\+fields}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aac568b53a0d6c05367dbfcd71d7df059}{\+\_\+write\+\_\+value\+\_\+labels}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a8efb525cac3a20277e308a8fb638308d}{\+\_\+write\+\_\+header}} (self, str\texorpdfstring{$\vert$}{|}None data\+\_\+label=None, datetime\texorpdfstring{$\vert$}{|}None time\+\_\+stamp=None)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a0f01804f3a93137b6f8281718dcd31be}{\+\_\+write\+\_\+variable\+\_\+types}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a0afbe1aa2727159fde71fff45a8aee89}{\+\_\+write\+\_\+varnames}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aca3de64b97bb9e4b68c23f051c097682}{\+\_\+write\+\_\+sortlist}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_afeb03d1da232833e0bb1733326446b59}{\+\_\+write\+\_\+formats}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a0854d5c6ba0fdef39ac59b29c10d20ba}{\+\_\+write\+\_\+value\+\_\+label\+\_\+names}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_abf4d578c310916fb3a02fe02c4077b6d}{\+\_\+write\+\_\+variable\+\_\+labels}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a333dd851d19cea53e58179282faf7d34}{\+\_\+convert\+\_\+strls}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}{data}})
+\item 
+np.\+rec.\+recarray \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a06cdeda938a893beed582ef0de88ffba}{\+\_\+prepare\+\_\+data}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a08475851ca99e7850c54c7078292d1ac}{\+\_\+write\+\_\+data}} (self, np.\+rec.\+recarray records)
+\item 
+bytes \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a12ff0588cb3d84abc646632fc84aac5b}{\+\_\+null\+\_\+terminate\+\_\+bytes}} (self, str s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a93c83307846dfd795202279c6e4037b3}{\+\_\+null\+\_\+terminate\+\_\+str}} (str s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a91024b2d2790acf9314b0aff464c8aaf}{\+\_\+convert\+\_\+dates}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a73267968e12ed2ad3cdf30e0f0bff90e}{\+\_\+write\+\_\+index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a61320f372c0234c3ce31b3d44b54e2e8}{\+\_\+time\+\_\+stamp}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a912a481adbe2300011d8debc1b6cfce9}{\+\_\+data\+\_\+label}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a16d22916d35d5436e1cbb0b5536cfc5d}{\+\_\+variable\+\_\+labels}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a2c45894faf405ba673d00e084f37939d}{\+\_\+non\+\_\+cat\+\_\+value\+\_\+labels}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_ad69aa3d63596f8d995d4cd2a6502c5ab}{\+\_\+has\+\_\+value\+\_\+labels}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a612b92ad115e89d4422d4170831bcf55}{\+\_\+compression}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a486b552db3b07fe10900fc925280a047}{\+\_\+byteorder}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a48d94e9f418df5f43e686817cfa618ae}{\+\_\+fname}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a4e2afeb9cdce32ba3d45480dd9a3dd6d}{\+\_\+encoding}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_ae9d39af8d678db7e60af837b77b69f56}{\+\_\+converted\+\_\+names}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a2fd4c6d9325bfaa9e137006c684840fb}{\+\_\+output\+\_\+file}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a70ec3efeebc8bff475ef8cb0f52b5396}{\+\_\+max\+\_\+string\+\_\+length}} = 244
+\item 
+Literal \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter_a1c16772be095b7575a04f10ccc9ab05c}{\+\_\+encoding}} = "{}latin-\/1"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A class for writing Stata binary dta files
+
+Parameters
+----------
+fname : path (string), buffer or path object
+    string, path object (pathlib.Path or py._path.local.LocalPath) or
+    object implementing a binary write() functions. If using a buffer
+    then the buffer will not be automatically closed after the file
+    is written.
+data : DataFrame
+    Input to save
+convert_dates : dict
+    Dictionary mapping columns containing datetime types to stata internal
+    format to use when writing the dates. Options are 'tc', 'td', 'tm',
+    'tw', 'th', 'tq', 'ty'. Column can be either an integer or a name.
+    Datetime columns that do not have a conversion type specified will be
+    converted to 'tc'. Raises NotImplementedError if a datetime column has
+    timezone information
+write_index : bool
+    Write the index to Stata dataset.
+byteorder : str
+    Can be ">", "<", "little", or "big". default is `sys.byteorder`
+time_stamp : datetime
+    A datetime to use as file creation date.  Default is the current time
+data_label : str
+    A label for the data set.  Must be 80 characters or smaller.
+variable_labels : dict
+    Dictionary containing columns as keys and variable labels as values.
+    Each label must be 80 characters or smaller.
+{compression_options}
+
+    .. versionchanged:: 1.4.0 Zstandard support.
+
+{storage_options}
+
+value_labels : dict of dicts
+    Dictionary containing columns as keys and dictionaries of column value
+    to labels as values. The combined length of all labels for a single
+    variable must be 32,000 characters or smaller.
+
+    .. versionadded:: 1.4.0
+
+Returns
+-------
+writer : StataWriter instance
+    The StataWriter instance has a write_file method, which will
+    write the file to the given `fname`.
+
+Raises
+------
+NotImplementedError
+    * If datetimes contain timezone information
+ValueError
+    * Columns listed in convert_dates are neither datetime64[ns]
+      or datetime
+    * Column dtype is not representable in Stata
+    * Column listed in convert_dates is not in DataFrame
+    * Categorical label contains more than 32,000 characters
+
+Examples
+--------
+>>> data = pd.DataFrame([[1.0, 1]], columns=['a', 'b'])
+>>> writer = StataWriter('./data_file.dta', data)
+>>> writer.write_file()
+
+Directly write a zip file
+>>> compression = {{"method": "zip", "archive_name": "data_file.dta"}}
+>>> writer = StataWriter('./data_file.zip', data, compression=compression)
+>>> writer.write_file()
+
+Save a DataFrame with dates
+>>> from datetime import datetime
+>>> data = pd.DataFrame([[datetime(2000,1,1)]], columns=['date'])
+>>> writer = StataWriter('./date_data_file.dta', data, {{'date' : 'tw'}})
+>>> writer.write_file()
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a1bffd45187823f3d222ba05d025f9d06}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a1bffd45187823f3d222ba05d025f9d06} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{File\+Path \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]}}]{fname,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}}]{data,  }\item[{dict\mbox{[}Hashable, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{convert\+\_\+dates = {\ttfamily None},  }\item[{bool }]{write\+\_\+index = {\ttfamily True},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{byteorder = {\ttfamily None},  }\item[{datetime \texorpdfstring{$\vert$}{|} None }]{time\+\_\+stamp = {\ttfamily None},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{data\+\_\+label = {\ttfamily None},  }\item[{dict\mbox{[}Hashable, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{variable\+\_\+labels = {\ttfamily None},  }\item[{Compression\+Options }]{compression = {\ttfamily "{}infer"{}},  }\item[{Storage\+Options \texorpdfstring{$\vert$}{|} None }]{storage\+\_\+options = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}dict\mbox{[}Hashable, dict\mbox{[}float, str\mbox{]}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{value\+\_\+labels = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataParser_a53d8c0f5ded5b7e12abd8411752fee27}{pandas.\+io.\+stata.\+Stata\+Parser}}.
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a1a7722ca1dd2362235ac832c98c1c6fb}{pandas.\+io.\+stata.\+Stata\+Writer117}}, et \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriterUTF8_a1c751433b25e51d959fab0ef2fe8584b}{pandas.\+io.\+stata.\+Stata\+Writer\+UTF8}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a5a892ddfcd08a6a5bcb264b5efe19df5}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a5a892ddfcd08a6a5bcb264b5efe19df5} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_check\_column\_names@{\_check\_column\_names}}
+\index{\_check\_column\_names@{\_check\_column\_names}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_check\_column\_names()}{\_check\_column\_names()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+check\+\_\+column\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Checks column names to ensure that they are valid Stata column names.
+This includes checks for:
+    * Non-string names
+    * Stata keywords
+    * Variables that start with numbers
+    * Variables with names that are too long
+
+When an illegal variable name is detected, it is converted, and if
+dates are exported, the variable name is propagated to the date
+conversion dictionary
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a42176301f63adf00271021ce9228b88d}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a42176301f63adf00271021ce9228b88d} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_close@{\_close}}
+\index{\_close@{\_close}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_close()}{\_close()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Close the file if it was created by the writer.
+
+If a buffer or file-like object was passed in, for example a GzipFile,
+then leave this file open for the caller to close.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a333dd851d19cea53e58179282faf7d34}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a333dd851d19cea53e58179282faf7d34} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_convert\_strls@{\_convert\_strls}}
+\index{\_convert\_strls@{\_convert\_strls}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_convert\_strls()}{\_convert\_strls()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+convert\+\_\+strls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}No-op, future compatibility\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a21c7f0b6a1dca7850a6449d86efff62c}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_aca389d0c856dd69588c0dd0f41542c42}\label{classpandas_1_1io_1_1stata_1_1StataWriter_aca389d0c856dd69588c0dd0f41542c42} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_encode\_strings@{\_encode\_strings}}
+\index{\_encode\_strings@{\_encode\_strings}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_encode\_strings()}{\_encode\_strings()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+encode\+\_\+strings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Encode strings in dta-specific encoding
+
+Do not encode columns marked for date conversion or for strL
+conversion. The strL converter independently handles conversion and
+also accepts empty string arrays.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a12ff0588cb3d84abc646632fc84aac5b}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a12ff0588cb3d84abc646632fc84aac5b} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_null\_terminate\_bytes@{\_null\_terminate\_bytes}}
+\index{\_null\_terminate\_bytes@{\_null\_terminate\_bytes}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_null\_terminate\_bytes()}{\_null\_terminate\_bytes()}}
+{\footnotesize\ttfamily  bytes pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+null\+\_\+terminate\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a93c83307846dfd795202279c6e4037b3}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a93c83307846dfd795202279c6e4037b3} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_null\_terminate\_str@{\_null\_terminate\_str}}
+\index{\_null\_terminate\_str@{\_null\_terminate\_str}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_null\_terminate\_str()}{\_null\_terminate\_str()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+null\+\_\+terminate\+\_\+str (\begin{DoxyParamCaption}\item[{str}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a130ecff5832aff7622ad7e9774ff47af}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a130ecff5832aff7622ad7e9774ff47af} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_prepare\_categoricals@{\_prepare\_categoricals}}
+\index{\_prepare\_categoricals@{\_prepare\_categoricals}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_prepare\_categoricals()}{\_prepare\_categoricals()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+prepare\+\_\+categoricals (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check for categorical columns, retain categorical information for
+Stata file and convert categorical data to int
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a06cdeda938a893beed582ef0de88ffba}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a06cdeda938a893beed582ef0de88ffba} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_prepare\_data@{\_prepare\_data}}
+\index{\_prepare\_data@{\_prepare\_data}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_prepare\_data()}{\_prepare\_data()}}
+{\footnotesize\ttfamily  np.\+rec.\+recarray pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+prepare\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a0cf1e18cdc53a264b5b4dd22bb28df33}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a0cf1e18cdc53a264b5b4dd22bb28df33} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_prepare\_non\_cat\_value\_labels@{\_prepare\_non\_cat\_value\_labels}}
+\index{\_prepare\_non\_cat\_value\_labels@{\_prepare\_non\_cat\_value\_labels}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_prepare\_non\_cat\_value\_labels()}{\_prepare\_non\_cat\_value\_labels()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataNonCatValueLabel}{Stata\+Non\+Cat\+Value\+Label}}\mbox{]} pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+prepare\+\_\+non\+\_\+cat\+\_\+value\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}     }]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check for value labels provided for non-categorical columns. Value
+labels
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a7b8390051ebc33c336293d240b9cb77b}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a7b8390051ebc33c336293d240b9cb77b} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_prepare\_pandas@{\_prepare\_pandas}}
+\index{\_prepare\_pandas@{\_prepare\_pandas}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_prepare\_pandas()}{\_prepare\_pandas()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+prepare\+\_\+pandas (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a3486b15f3c659528a021a9da69d15d8b}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a3486b15f3c659528a021a9da69d15d8b} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_replace\_nans@{\_replace\_nans}}
+\index{\_replace\_nans@{\_replace\_nans}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_replace\_nans()}{\_replace\_nans()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+replace\+\_\+nans (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Checks floating point data columns for nans, and replaces these with
+the generic Stata for missing value (.)
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_aac2c5cc9c8114d55b0459b0b3b8387ff}\label{classpandas_1_1io_1_1stata_1_1StataWriter_aac2c5cc9c8114d55b0459b0b3b8387ff} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_set\_formats\_and\_types@{\_set\_formats\_and\_types}}
+\index{\_set\_formats\_and\_types@{\_set\_formats\_and\_types}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_set\_formats\_and\_types()}{\_set\_formats\_and\_types()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+set\+\_\+formats\+\_\+and\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}}}]{dtypes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_af2f4fc9a3887d95de1d8cd49278d825e}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_adb470a7779da1baca33e536ebd376cf2}\label{classpandas_1_1io_1_1stata_1_1StataWriter_adb470a7779da1baca33e536ebd376cf2} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_update\_strl\_names@{\_update\_strl\_names}}
+\index{\_update\_strl\_names@{\_update\_strl\_names}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_update\_strl\_names()}{\_update\_strl\_names()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+update\+\_\+strl\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}No-op, forward compatibility\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a3f368aa326a20a188e2e6f44b28e039f}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a6cae651f03ca5b6e6b476b02b6a78ddc}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a6cae651f03ca5b6e6b476b02b6a78ddc} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_validate\_variable\_name@{\_validate\_variable\_name}}
+\index{\_validate\_variable\_name@{\_validate\_variable\_name}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_validate\_variable\_name()}{\_validate\_variable\_name()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+validate\+\_\+variable\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Validate variable names for Stata export.
+
+Parameters
+----------
+name : str
+    Variable name
+
+Returns
+-------
+str
+    The validated name with invalid characters replaced with
+    underscores.
+
+Notes
+-----
+Stata 114 and 117 support ascii characters in a-z, A-Z, 0-9
+and _.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriterUTF8_a5aa75b565d119cf8c0519e382aeab494}{pandas.\+io.\+stata.\+Stata\+Writer\+UTF8}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a93b72799a5e059cde6b310b5dd87c051}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a93b72799a5e059cde6b310b5dd87c051} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write@{\_write}}
+\index{\_write@{\_write}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write()}{\_write()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{to\+\_\+write }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Helper to call encode before writing to file for Python 3 compat.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a5ee4f427486f1bc66a67f28a1cd16792}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a5ee4f427486f1bc66a67f28a1cd16792} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_bytes@{\_write\_bytes}}
+\index{\_write\_bytes@{\_write\_bytes}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_bytes()}{\_write\_bytes()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bytes}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Helper to assert file is open before writing.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a31e477cddce4d489f42f6431df74b7cc}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a31e477cddce4d489f42f6431df74b7cc} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_characteristics@{\_write\_characteristics}}
+\index{\_write\_characteristics@{\_write\_characteristics}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_characteristics()}{\_write\_characteristics()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+characteristics (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}No-op, future compatibility\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_afda892b6b48c2a4675e71f194ef18fbc}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a08475851ca99e7850c54c7078292d1ac}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a08475851ca99e7850c54c7078292d1ac} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_data@{\_write\_data}}
+\index{\_write\_data@{\_write\_data}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_data()}{\_write\_data()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+rec.\+recarray}]{records }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a6eb8115eb8f4ee237782ec5236b1fd68}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_acceb688f99eec0b9e25f5d8915150f15}\label{classpandas_1_1io_1_1stata_1_1StataWriter_acceb688f99eec0b9e25f5d8915150f15} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_expansion\_fields@{\_write\_expansion\_fields}}
+\index{\_write\_expansion\_fields@{\_write\_expansion\_fields}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_expansion\_fields()}{\_write\_expansion\_fields()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+expansion\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Write 5 zeros for expansion fields\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a68a08f129308924609cb132674746107}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_aa1732476861341f9de1791744b86ea1c}\label{classpandas_1_1io_1_1stata_1_1StataWriter_aa1732476861341f9de1791744b86ea1c} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_file\_close\_tag@{\_write\_file\_close\_tag}}
+\index{\_write\_file\_close\_tag@{\_write\_file\_close\_tag}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_file\_close\_tag()}{\_write\_file\_close\_tag()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+file\+\_\+close\+\_\+tag (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}No-op, future compatibility\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a2ded1103c21782a4cbc2efde73d630fd}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_afeb03d1da232833e0bb1733326446b59}\label{classpandas_1_1io_1_1stata_1_1StataWriter_afeb03d1da232833e0bb1733326446b59} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_formats@{\_write\_formats}}
+\index{\_write\_formats@{\_write\_formats}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_formats()}{\_write\_formats()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+formats (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_aef8e2b95f616ee8548e305be1d3fa251}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a8efb525cac3a20277e308a8fb638308d}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a8efb525cac3a20277e308a8fb638308d} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_header@{\_write\_header}}
+\index{\_write\_header@{\_write\_header}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_header()}{\_write\_header()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str \texorpdfstring{$\vert$}{|} None }]{data\+\_\+label = {\ttfamily None},  }\item[{datetime \texorpdfstring{$\vert$}{|} None }]{time\+\_\+stamp = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a15e6b55814ac964fcf274240c3710383}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a8acbb1636651287554e3153330118883}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a8acbb1636651287554e3153330118883} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_map@{\_write\_map}}
+\index{\_write\_map@{\_write\_map}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_map()}{\_write\_map()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+map (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}No-op, future compatibility\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a95264081adda87cf91126dbc165ecd73}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_aca3de64b97bb9e4b68c23f051c097682}\label{classpandas_1_1io_1_1stata_1_1StataWriter_aca3de64b97bb9e4b68c23f051c097682} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_sortlist@{\_write\_sortlist}}
+\index{\_write\_sortlist@{\_write\_sortlist}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_sortlist()}{\_write\_sortlist()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+sortlist (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_af6d57030b6aa77b0bc370c54d49e25e2}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a6c26cf6d0eb93b28d6a1d94b4d73f556}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a6c26cf6d0eb93b28d6a1d94b4d73f556} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_strls@{\_write\_strls}}
+\index{\_write\_strls@{\_write\_strls}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_strls()}{\_write\_strls()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+strls (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}No-op, future compatibility\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a2256b7fd225f9429b938af5cb4c2a48d}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a0854d5c6ba0fdef39ac59b29c10d20ba}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a0854d5c6ba0fdef39ac59b29c10d20ba} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_value\_label\_names@{\_write\_value\_label\_names}}
+\index{\_write\_value\_label\_names@{\_write\_value\_label\_names}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_value\_label\_names()}{\_write\_value\_label\_names()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+value\+\_\+label\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a5459d19a68331ed273934bcfba3cfebe}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_aac568b53a0d6c05367dbfcd71d7df059}\label{classpandas_1_1io_1_1stata_1_1StataWriter_aac568b53a0d6c05367dbfcd71d7df059} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_value\_labels@{\_write\_value\_labels}}
+\index{\_write\_value\_labels@{\_write\_value\_labels}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_value\_labels()}{\_write\_value\_labels()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+value\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a5c1fcd22e310a0e6895d770535e27ac9}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_abf4d578c310916fb3a02fe02c4077b6d}\label{classpandas_1_1io_1_1stata_1_1StataWriter_abf4d578c310916fb3a02fe02c4077b6d} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_variable\_labels@{\_write\_variable\_labels}}
+\index{\_write\_variable\_labels@{\_write\_variable\_labels}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_variable\_labels()}{\_write\_variable\_labels()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+variable\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_ad7d999d06b2a65b75087f7a1bcf61081}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a0f01804f3a93137b6f8281718dcd31be}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a0f01804f3a93137b6f8281718dcd31be} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_variable\_types@{\_write\_variable\_types}}
+\index{\_write\_variable\_types@{\_write\_variable\_types}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_variable\_types()}{\_write\_variable\_types()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+variable\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_ae658c534687d63e568d32360c3e563c3}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a0afbe1aa2727159fde71fff45a8aee89}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a0afbe1aa2727159fde71fff45a8aee89} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_varnames@{\_write\_varnames}}
+\index{\_write\_varnames@{\_write\_varnames}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_varnames()}{\_write\_varnames()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+varnames (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1stata_1_1StataWriter117_a70e7327103e9658dcbcdbd04a49ac30a}{pandas.\+io.\+stata.\+Stata\+Writer117}}.
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_af0a8805a4599f86ab650dbb171c74643}\label{classpandas_1_1io_1_1stata_1_1StataWriter_af0a8805a4599f86ab650dbb171c74643} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!write\_file@{write\_file}}
+\index{write\_file@{write\_file}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{write\_file()}{write\_file()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+stata.\+Stata\+Writer.\+write\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Export DataFrame object to Stata dta format.
+
+Examples
+--------
+>>> df = pd.DataFrame({"fully_labelled": [1, 2, 3, 3, 1],
+...                    "partially_labelled": [1.0, 2.0, np.nan, 9.0, np.nan],
+...                    "Y": [7, 7, 9, 8, 10],
+...                    "Z": pd.Categorical(["j", "k", "l", "k", "j"]),
+...                    })
+>>> path = "/My_path/filename.dta"
+>>> labels = {"fully_labelled": {1: "one", 2: "two", 3: "three"},
+...           "partially_labelled": {1.0: "one", 2.0: "two"},
+...           }
+>>> writer = pd.io.stata.StataWriter(path,
+...                                  df,
+...                                  value_labels=labels)  # doctest: +SKIP
+>>> writer.write_file()  # doctest: +SKIP
+>>> df = pd.read_stata(path)  # doctest: +SKIP
+>>> df  # doctest: +SKIP
+    index fully_labelled  partially_labeled  Y  Z
+0       0            one                one  7  j
+1       1            two                two  7  k
+2       2          three                NaN  9  l
+3       3          three                9.0  8  k
+4       4            one                NaN 10  j
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a486b552db3b07fe10900fc925280a047}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a486b552db3b07fe10900fc925280a047} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_byteorder@{\_byteorder}}
+\index{\_byteorder@{\_byteorder}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_byteorder}{\_byteorder}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+byteorder\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a612b92ad115e89d4422d4170831bcf55}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a612b92ad115e89d4422d4170831bcf55} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_compression@{\_compression}}
+\index{\_compression@{\_compression}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_compression}{\_compression}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+compression\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a91024b2d2790acf9314b0aff464c8aaf}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a91024b2d2790acf9314b0aff464c8aaf} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_convert\_dates@{\_convert\_dates}}
+\index{\_convert\_dates@{\_convert\_dates}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_convert\_dates}{\_convert\_dates}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+convert\+\_\+dates\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_ae9d39af8d678db7e60af837b77b69f56}\label{classpandas_1_1io_1_1stata_1_1StataWriter_ae9d39af8d678db7e60af837b77b69f56} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_converted\_names@{\_converted\_names}}
+\index{\_converted\_names@{\_converted\_names}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_converted\_names}{\_converted\_names}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+converted\+\_\+names\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a912a481adbe2300011d8debc1b6cfce9}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a912a481adbe2300011d8debc1b6cfce9} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_data\_label@{\_data\_label}}
+\index{\_data\_label@{\_data\_label}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_data\_label}{\_data\_label}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+data\+\_\+label\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a1c16772be095b7575a04f10ccc9ab05c}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a1c16772be095b7575a04f10ccc9ab05c} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_encoding@{\_encoding}}
+\index{\_encoding@{\_encoding}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_encoding}{\_encoding}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Literal pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+encoding = "{}latin-\/1"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a4e2afeb9cdce32ba3d45480dd9a3dd6d}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a4e2afeb9cdce32ba3d45480dd9a3dd6d} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_encoding@{\_encoding}}
+\index{\_encoding@{\_encoding}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_encoding}{\_encoding}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+encoding\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a48d94e9f418df5f43e686817cfa618ae}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a48d94e9f418df5f43e686817cfa618ae} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_fname@{\_fname}}
+\index{\_fname@{\_fname}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_fname}{\_fname}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+fname\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_ad69aa3d63596f8d995d4cd2a6502c5ab}\label{classpandas_1_1io_1_1stata_1_1StataWriter_ad69aa3d63596f8d995d4cd2a6502c5ab} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_has\_value\_labels@{\_has\_value\_labels}}
+\index{\_has\_value\_labels@{\_has\_value\_labels}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_has\_value\_labels}{\_has\_value\_labels}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+has\+\_\+value\+\_\+labels\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a70ec3efeebc8bff475ef8cb0f52b5396}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a70ec3efeebc8bff475ef8cb0f52b5396} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_max\_string\_length@{\_max\_string\_length}}
+\index{\_max\_string\_length@{\_max\_string\_length}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_max\_string\_length}{\_max\_string\_length}}
+{\footnotesize\ttfamily int pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+max\+\_\+string\+\_\+length = 244\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a2c45894faf405ba673d00e084f37939d}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a2c45894faf405ba673d00e084f37939d} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_non\_cat\_value\_labels@{\_non\_cat\_value\_labels}}
+\index{\_non\_cat\_value\_labels@{\_non\_cat\_value\_labels}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_non\_cat\_value\_labels}{\_non\_cat\_value\_labels}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+non\+\_\+cat\+\_\+value\+\_\+labels\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a2fd4c6d9325bfaa9e137006c684840fb}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a2fd4c6d9325bfaa9e137006c684840fb} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_output\_file@{\_output\_file}}
+\index{\_output\_file@{\_output\_file}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_output\_file}{\_output\_file}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+output\+\_\+file\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a61320f372c0234c3ce31b3d44b54e2e8}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a61320f372c0234c3ce31b3d44b54e2e8} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_time\_stamp@{\_time\_stamp}}
+\index{\_time\_stamp@{\_time\_stamp}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_time\_stamp}{\_time\_stamp}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+time\+\_\+stamp\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a16d22916d35d5436e1cbb0b5536cfc5d}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a16d22916d35d5436e1cbb0b5536cfc5d} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_variable\_labels@{\_variable\_labels}}
+\index{\_variable\_labels@{\_variable\_labels}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_variable\_labels}{\_variable\_labels}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+variable\+\_\+labels\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a73267968e12ed2ad3cdf30e0f0bff90e}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a73267968e12ed2ad3cdf30e0f0bff90e} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!\_write\_index@{\_write\_index}}
+\index{\_write\_index@{\_write\_index}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{\_write\_index}{\_write\_index}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+\_\+write\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755}\label{classpandas_1_1io_1_1stata_1_1StataWriter_aa895587ef1508665182f15ffa0d97755} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!data@{data}}
+\index{data@{data}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+data}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_ad7035a2c631259c5a2489525ac8caac0}\label{classpandas_1_1io_1_1stata_1_1StataWriter_ad7035a2c631259c5a2489525ac8caac0} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!nobs@{nobs}}
+\index{nobs@{nobs}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{nobs}{nobs}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+nobs}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_abebeaace2f437c62460bc1fca0c96e63}\label{classpandas_1_1io_1_1stata_1_1StataWriter_abebeaace2f437c62460bc1fca0c96e63} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!nvar@{nvar}}
+\index{nvar@{nvar}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{nvar}{nvar}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+nvar}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a21622c51d4dd0de0dc7d48bc324c4a7e}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a21622c51d4dd0de0dc7d48bc324c4a7e} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!storage\_options@{storage\_options}}
+\index{storage\_options@{storage\_options}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{storage\_options}{storage\_options}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+storage\+\_\+options}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a0e650c13c575682b3ea03baee89f26dc}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a0e650c13c575682b3ea03baee89f26dc} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!type\_converters@{type\_converters}}
+\index{type\_converters@{type\_converters}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{type\_converters}{type\_converters}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+type\+\_\+converters}
+
+\Hypertarget{classpandas_1_1io_1_1stata_1_1StataWriter_a991dada3bd12a3f0302ef3a8e363408c}\label{classpandas_1_1io_1_1stata_1_1StataWriter_a991dada3bd12a3f0302ef3a8e363408c} 
+\index{pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}!varlist@{varlist}}
+\index{varlist@{varlist}!pandas.io.stata.StataWriter@{pandas.io.stata.StataWriter}}
+\doxysubsubsection{\texorpdfstring{varlist}{varlist}}
+{\footnotesize\ttfamily pandas.\+io.\+stata.\+Stata\+Writer.\+varlist}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/\mbox{\hyperlink{stata_8py}{stata.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/tests/data/generate\+\_\+umath\+\_\+validation\+\_\+data.cpp}
+\hypertarget{generate__umath__validation__data_8cpp}{}\label{generate__umath__validation__data_8cpp}\index{env/lib/python3.12/site-\/packages/numpy/\_core/tests/data/generate\_umath\_validation\_data.cpp@{env/lib/python3.12/site-\/packages/numpy/\_core/tests/data/generate\_umath\_validation\_data.cpp}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Graphe des dépendances par inclusion de generate\+\_\+umath\+\_\+validation\+\_\+data.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structufunc}{ufunc}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{generate__umath__validation__data_8cpp_ae81a45f0440ef77e6d4aad68d988a23a}{MINDEN}}~std\+::numeric\+\_\+limits$<$T$>$\+::denorm\+\_\+min()
+\item 
+\#define \mbox{\hyperlink{generate__umath__validation__data_8cpp_adc1e7d2595f68ec7c9dfb533c0ff57db}{MINFLT}}~std\+::numeric\+\_\+limits$<$T$>$\+::min()
+\item 
+\#define \mbox{\hyperlink{generate__umath__validation__data_8cpp_acd60b0560becaf88abe19f9bb35dad51}{MAXFLT}}~std\+::numeric\+\_\+limits$<$T$>$\+::max()
+\item 
+\#define \mbox{\hyperlink{generate__umath__validation__data_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}{INF}}~std\+::numeric\+\_\+limits$<$T$>$\+::infinity()
+\item 
+\#define \mbox{\hyperlink{generate__umath__validation__data_8cpp_a1f941034b3985708bdb0521b4d9bf937}{q\+NAN}}~std\+::numeric\+\_\+limits$<$T$>$\+::quiet\+\_\+\+NaN()
+\item 
+\#define \mbox{\hyperlink{generate__umath__validation__data_8cpp_a7401e9d0537a3fac3ea120aff9848bb4}{s\+NAN}}~std\+::numeric\+\_\+limits$<$T$>$\+::signaling\+\_\+\+NaN()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{generate__umath__validation__data_8cpp_a8001de773fa5ace1b998284f6f6093ba}{Random\+Float}} (T a, T b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{generate__umath__validation__data_8cpp_ab00d42d72983e3b52c4f50be13bbd1e6}{append\+\_\+random\+\_\+array}} (std\+::vector$<$ T $>$ \&arr, T min, T max, size\+\_\+t N)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\std\+::vector$<$ T1 $>$ \mbox{\hyperlink{generate__umath__validation__data_8cpp_ac566ae6a84e755f57f49aee0a4643907}{compute\+True\+Val}} (const std\+::vector$<$ T1 $>$ \&in, T2(\texorpdfstring{$\ast$}{*}mathfunc)(T2))
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ T $>$ \mbox{\hyperlink{generate__umath__validation__data_8cpp_ac8e6754499dfc0f48576d0020b574851}{generate\+\_\+input\+\_\+vector}} (std\+::string func)
+\item 
+int \mbox{\hyperlink{generate__umath__validation__data_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{generate__umath__validation__data_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}\label{generate__umath__validation__data_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!INF@{INF}}
+\index{INF@{INF}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{INF}{INF}}
+{\footnotesize\ttfamily \#define INF~std\+::numeric\+\_\+limits$<$T$>$\+::infinity()}
+
+\Hypertarget{generate__umath__validation__data_8cpp_acd60b0560becaf88abe19f9bb35dad51}\label{generate__umath__validation__data_8cpp_acd60b0560becaf88abe19f9bb35dad51} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!MAXFLT@{MAXFLT}}
+\index{MAXFLT@{MAXFLT}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{MAXFLT}{MAXFLT}}
+{\footnotesize\ttfamily \#define MAXFLT~std\+::numeric\+\_\+limits$<$T$>$\+::max()}
+
+\Hypertarget{generate__umath__validation__data_8cpp_ae81a45f0440ef77e6d4aad68d988a23a}\label{generate__umath__validation__data_8cpp_ae81a45f0440ef77e6d4aad68d988a23a} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!MINDEN@{MINDEN}}
+\index{MINDEN@{MINDEN}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{MINDEN}{MINDEN}}
+{\footnotesize\ttfamily \#define MINDEN~std\+::numeric\+\_\+limits$<$T$>$\+::denorm\+\_\+min()}
+
+\Hypertarget{generate__umath__validation__data_8cpp_adc1e7d2595f68ec7c9dfb533c0ff57db}\label{generate__umath__validation__data_8cpp_adc1e7d2595f68ec7c9dfb533c0ff57db} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!MINFLT@{MINFLT}}
+\index{MINFLT@{MINFLT}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{MINFLT}{MINFLT}}
+{\footnotesize\ttfamily \#define MINFLT~std\+::numeric\+\_\+limits$<$T$>$\+::min()}
+
+\Hypertarget{generate__umath__validation__data_8cpp_a1f941034b3985708bdb0521b4d9bf937}\label{generate__umath__validation__data_8cpp_a1f941034b3985708bdb0521b4d9bf937} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!qNAN@{qNAN}}
+\index{qNAN@{qNAN}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{qNAN}{qNAN}}
+{\footnotesize\ttfamily \#define q\+NAN~std\+::numeric\+\_\+limits$<$T$>$\+::quiet\+\_\+\+NaN()}
+
+\Hypertarget{generate__umath__validation__data_8cpp_a7401e9d0537a3fac3ea120aff9848bb4}\label{generate__umath__validation__data_8cpp_a7401e9d0537a3fac3ea120aff9848bb4} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!sNAN@{sNAN}}
+\index{sNAN@{sNAN}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{sNAN}{sNAN}}
+{\footnotesize\ttfamily \#define s\+NAN~std\+::numeric\+\_\+limits$<$T$>$\+::signaling\+\_\+\+NaN()}
+
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{generate__umath__validation__data_8cpp_ab00d42d72983e3b52c4f50be13bbd1e6}\label{generate__umath__validation__data_8cpp_ab00d42d72983e3b52c4f50be13bbd1e6} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!append\_random\_array@{append\_random\_array}}
+\index{append\_random\_array@{append\_random\_array}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{append\_random\_array()}{append\_random\_array()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void append\+\_\+random\+\_\+array (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{arr,  }\item[{T}]{min,  }\item[{T}]{max,  }\item[{size\+\_\+t}]{N }\end{DoxyParamCaption})}
+
+\Hypertarget{generate__umath__validation__data_8cpp_ac566ae6a84e755f57f49aee0a4643907}\label{generate__umath__validation__data_8cpp_ac566ae6a84e755f57f49aee0a4643907} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!computeTrueVal@{computeTrueVal}}
+\index{computeTrueVal@{computeTrueVal}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{computeTrueVal()}{computeTrueVal()}}
+{\footnotesize\ttfamily template$<$typename T1 , typename T2 $>$ \\
+std\+::vector$<$ T1 $>$ compute\+True\+Val (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T1 $>$ \&}]{in,  }\item[{T2(\texorpdfstring{$\ast$}{*})(T2)}]{mathfunc }\end{DoxyParamCaption})}
+
+\Hypertarget{generate__umath__validation__data_8cpp_ac8e6754499dfc0f48576d0020b574851}\label{generate__umath__validation__data_8cpp_ac8e6754499dfc0f48576d0020b574851} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!generate\_input\_vector@{generate\_input\_vector}}
+\index{generate\_input\_vector@{generate\_input\_vector}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{generate\_input\_vector()}{generate\_input\_vector()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$ T $>$ generate\+\_\+input\+\_\+vector (\begin{DoxyParamCaption}\item[{std\+::string}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{generate__umath__validation__data_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{generate__umath__validation__data_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!main@{main}}
+\index{main@{main}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{generate__umath__validation__data_8cpp_a8001de773fa5ace1b998284f6f6093ba}\label{generate__umath__validation__data_8cpp_a8001de773fa5ace1b998284f6f6093ba} 
+\index{generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}!RandomFloat@{RandomFloat}}
+\index{RandomFloat@{RandomFloat}!generate\_umath\_validation\_data.cpp@{generate\_umath\_validation\_data.cpp}}
+\doxysubsubsection{\texorpdfstring{RandomFloat()}{RandomFloat()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Random\+Float (\begin{DoxyParamCaption}\item[{T}]{a,  }\item[{T}]{b }\end{DoxyParamCaption})}
+

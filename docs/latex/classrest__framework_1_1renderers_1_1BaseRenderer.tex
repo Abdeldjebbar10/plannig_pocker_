@@ -1,0 +1,77 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+renderers.\+Base\+Renderer}
+\hypertarget{classrest__framework_1_1renderers_1_1BaseRenderer}{}\label{classrest__framework_1_1renderers_1_1BaseRenderer}\index{rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+renderers.\+Base\+Renderer\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+renderers.\+Base\+Renderer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a5a896320e27ee4c3cd59b9b75816b26e}{render}} (self, data, accepted\+\_\+media\+\_\+type=None, renderer\+\_\+context=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a4b069d932469c3bbded458f53752216f}{media\+\_\+type}} = None
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_ae5e3a1c630b0a2fe8313136879445163}{format}} = None
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a6b2cb330c059e96c05e436f1f113154d}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a9395a7164e794d61f52bcad01cf4e3ed}{render\+\_\+style}} = \textquotesingle{}text\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}All renderers should extend this class, setting the `media_type`
+and `format` attributes, and override the `.render()` method.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1BaseRenderer_a5a896320e27ee4c3cd59b9b75816b26e}\label{classrest__framework_1_1renderers_1_1BaseRenderer_a5a896320e27ee4c3cd59b9b75816b26e} 
+\index{rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}!render@{render}}
+\index{render@{render}!rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Base\+Renderer.\+render (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{accepted\+\_\+media\+\_\+type = {\ttfamily None},  }\item[{}]{renderer\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_a6ba7296471a8d06e2cf83e243c360eac}{rest\+\_\+framework.\+renderers.\+JSONRenderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ab09c2323ddfa06e84a17c67beaecc935}{rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a82352a7cb58f7d98ae85decec9f6ea1b}{rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_ae92f9a12710e8a997ab4d0ee9cda85dc}{rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BrowsableAPIRenderer_af379d41c3f3568c7ff036c36f0715ba1}{rest\+\_\+framework.\+renderers.\+Browsable\+APIRenderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1AdminRenderer_a874c7d6e498de61a351f49a0d59f268d}{rest\+\_\+framework.\+renderers.\+Admin\+Renderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1DocumentationRenderer_a3499313dc7bdc9c52af8369d8699e258}{rest\+\_\+framework.\+renderers.\+Documentation\+Renderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1SchemaJSRenderer_a8f5d83c6479b5d9cfad2b60ac5a0ca2d}{rest\+\_\+framework.\+renderers.\+Schema\+JSRenderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1MultiPartRenderer_a906c294f7192eb61731f511ca683796a}{rest\+\_\+framework.\+renderers.\+Multi\+Part\+Renderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1CoreJSONRenderer_a5fb0266ccf2a9df38035961fcc1164d7}{rest\+\_\+framework.\+renderers.\+Core\+JSONRenderer}}, \mbox{\hyperlink{classrest__framework_1_1renderers_1_1OpenAPIRenderer_a508945381244ebe19e04c15a05a166fb}{rest\+\_\+framework.\+renderers.\+Open\+APIRenderer}}, et \mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONOpenAPIRenderer_acbfd74d203887093e9a2f54fb27ae6e1}{rest\+\_\+framework.\+renderers.\+JSONOpen\+APIRenderer}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1BaseRenderer_a6b2cb330c059e96c05e436f1f113154d}\label{classrest__framework_1_1renderers_1_1BaseRenderer_a6b2cb330c059e96c05e436f1f113154d} 
+\index{rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}!charset@{charset}}
+\index{charset@{charset}!rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}}
+\doxysubsubsection{\texorpdfstring{charset}{charset}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+Base\+Renderer.\+charset = \textquotesingle{}utf-\/8\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1BaseRenderer_ae5e3a1c630b0a2fe8313136879445163}\label{classrest__framework_1_1renderers_1_1BaseRenderer_ae5e3a1c630b0a2fe8313136879445163} 
+\index{rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}!format@{format}}
+\index{format@{format}!rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Base\+Renderer.\+format = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1BaseRenderer_a4b069d932469c3bbded458f53752216f}\label{classrest__framework_1_1renderers_1_1BaseRenderer_a4b069d932469c3bbded458f53752216f} 
+\index{rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}!media\_type@{media\_type}}
+\index{media\_type@{media\_type}!rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}}
+\doxysubsubsection{\texorpdfstring{media\_type}{media\_type}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Base\+Renderer.\+media\+\_\+type = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1BaseRenderer_a9395a7164e794d61f52bcad01cf4e3ed}\label{classrest__framework_1_1renderers_1_1BaseRenderer_a9395a7164e794d61f52bcad01cf4e3ed} 
+\index{rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}!render\_style@{render\_style}}
+\index{render\_style@{render\_style}!rest\_framework.renderers.BaseRenderer@{rest\_framework.renderers.BaseRenderer}}
+\doxysubsubsection{\texorpdfstring{render\_style}{render\_style}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+Base\+Renderer.\+render\+\_\+style = \textquotesingle{}text\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2renderers_8py}{renderers.\+py}}\end{DoxyCompactItemize}

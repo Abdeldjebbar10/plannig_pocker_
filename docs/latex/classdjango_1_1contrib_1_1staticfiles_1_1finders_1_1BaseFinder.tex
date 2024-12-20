@@ -1,0 +1,66 @@
+\doxysection{Référence de la classe django.\+contrib.\+staticfiles.\+finders.\+Base\+Finder}
+\hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder}{}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder}\index{django.contrib.staticfiles.finders.BaseFinder@{django.contrib.staticfiles.finders.BaseFinder}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+staticfiles.\+finders.\+Base\+Finder\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_ab92c4f7950eea18b75fdb93463b0d29d}{check}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_afaa9cba6db6b2813a159ed3fb953750a}{find}} (self, path, all=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_a59a058cd5dcda8895b5465dd412a6e18}{list}} (self, ignore\+\_\+patterns)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A base file finder to be used for custom staticfiles finder classes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_ab92c4f7950eea18b75fdb93463b0d29d}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_ab92c4f7950eea18b75fdb93463b0d29d} 
+\index{django.contrib.staticfiles.finders.BaseFinder@{django.contrib.staticfiles.finders.BaseFinder}!check@{check}}
+\index{check@{check}!django.contrib.staticfiles.finders.BaseFinder@{django.contrib.staticfiles.finders.BaseFinder}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+finders.\+Base\+Finder.\+check (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1FileSystemFinder_a709eac9ec46c5e67a0ba159b658dc15a}{django.\+contrib.\+staticfiles.\+finders.\+File\+System\+Finder}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_afaa9cba6db6b2813a159ed3fb953750a}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_afaa9cba6db6b2813a159ed3fb953750a} 
+\index{django.contrib.staticfiles.finders.BaseFinder@{django.contrib.staticfiles.finders.BaseFinder}!find@{find}}
+\index{find@{find}!django.contrib.staticfiles.finders.BaseFinder@{django.contrib.staticfiles.finders.BaseFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+finders.\+Base\+Finder.\+find (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{all = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a relative file path, find an absolute file path.
+
+If the ``all`` parameter is False (default) return only the first found
+file path; if True, return a list of all found files paths.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1FileSystemFinder_a9e6cfc186466ebd70244a7f803ebb0e2}{django.\+contrib.\+staticfiles.\+finders.\+File\+System\+Finder}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1AppDirectoriesFinder_a9a02098acc0c8a797122b2af921f86f8}{django.\+contrib.\+staticfiles.\+finders.\+App\+Directories\+Finder}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_a080b68ead50b505f8c529bc619c2c9b3}{django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_a59a058cd5dcda8895b5465dd412a6e18}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_a59a058cd5dcda8895b5465dd412a6e18} 
+\index{django.contrib.staticfiles.finders.BaseFinder@{django.contrib.staticfiles.finders.BaseFinder}!list@{list}}
+\index{list@{list}!django.contrib.staticfiles.finders.BaseFinder@{django.contrib.staticfiles.finders.BaseFinder}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+finders.\+Base\+Finder.\+list (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ignore\+\_\+patterns }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given an optional list of paths to ignore, return a two item iterable
+consisting of the relative path and storage instance.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1FileSystemFinder_ae52c7c49c958d003eb8ccc8d49952535}{django.\+contrib.\+staticfiles.\+finders.\+File\+System\+Finder}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1AppDirectoriesFinder_a07c232575ad479095d6b5ef335c3b52b}{django.\+contrib.\+staticfiles.\+finders.\+App\+Directories\+Finder}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_a5944bb958ceeab7f7a4c4cf086856349}{django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/staticfiles/\mbox{\hyperlink{finders_8py}{finders.\+py}}\end{DoxyCompactItemize}

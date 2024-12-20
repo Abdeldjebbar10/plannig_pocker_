@@ -1,0 +1,1031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Poker_Project: Référence de la classe django.contrib.gis.db.backends.base.operations.BaseSpatialOperations</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Poker_Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacedjango.html">django</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1contrib.html">contrib</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1contrib_1_1gis.html">gis</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1contrib_1_1gis_1_1db.html">db</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1contrib_1_1gis_1_1db_1_1backends.html">backends</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base.html">base</a></li><li class="navelem"><a class="el" href="namespacedjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations.html">operations</a></li><li class="navelem"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html">BaseSpatialOperations</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pub-static-attribs">Attributs publics statiques</a> &#124;
+<a href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe django.contrib.gis.db.backends.base.operations.BaseSpatialOperations</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Graphe d'héritage de django.contrib.gis.db.backends.base.operations.BaseSpatialOperations:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations__inherit__graph.png" border="0" usemap="#adjango_8contrib_8gis_8db_8backends_8base_8operations_8BaseSpatialOperations_inherit__map" alt="Inheritance graph"/></div>
+<map name="adjango_8contrib_8gis_8db_8backends_8base_8operations_8BaseSpatialOperations_inherit__map" id="adjango_8contrib_8gis_8db_8backends_8base_8operations_8BaseSpatialOperations_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,101,340,141"/>
+<area shape="rect" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html" title=" " alt="" coords="399,5,743,45"/>
+<area shape="poly" title=" " alt="" coords="247,95,387,55,444,43,445,48,389,60,248,100"/>
+<area shape="rect" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html" title=" " alt="" coords="399,69,743,109"/>
+<area shape="poly" title=" " alt="" coords="354,104,398,100,399,106,354,109"/>
+<area shape="rect" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html" title=" " alt="" coords="395,133,746,173"/>
+<area shape="poly" title=" " alt="" coords="354,133,395,137,395,142,354,139"/>
+<area shape="rect" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html" title=" " alt="" coords="388,197,753,237"/>
+<area shape="poly" title=" " alt="" coords="248,143,389,183,445,195,444,200,387,188,247,148"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de django.contrib.gis.db.backends.base.operations.BaseSpatialOperations:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations__coll__graph.png" border="0" usemap="#adjango_8contrib_8gis_8db_8backends_8base_8operations_8BaseSpatialOperations_coll__map" alt="Collaboration graph"/></div>
+<map name="adjango_8contrib_8gis_8db_8backends_8base_8operations_8BaseSpatialOperations_coll__map" id="adjango_8contrib_8gis_8db_8backends_8base_8operations_8BaseSpatialOperations_coll__map">
+<area shape="rect" title=" " alt="" coords="5,167,340,207"/>
+<area shape="rect" title=" " alt="" coords="98,5,149,31"/>
+<area shape="poly" title=" " alt="" coords="121,44,117,91,120,117,127,141,146,165,141,168,122,144,114,118,112,91,115,44"/>
+<area shape="rect" title=" " alt="" coords="204,5,243,31"/>
+<area shape="poly" title=" " alt="" coords="222,45,212,91,197,144,186,168,181,166,191,142,207,90,217,44"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a24dc7873caa444d009dfb133b7827b5b" id="r_a24dc7873caa444d009dfb133b7827b5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a24dc7873caa444d009dfb133b7827b5b">select_extent</a> (self)</td></tr>
+<tr class="separator:a24dc7873caa444d009dfb133b7827b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290c1ef3c303bf605751834014418213" id="r_a290c1ef3c303bf605751834014418213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a290c1ef3c303bf605751834014418213">convert_extent</a> (self, box, srid)</td></tr>
+<tr class="separator:a290c1ef3c303bf605751834014418213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9c2520da2e2464fb937fd8b4992796" id="r_abd9c2520da2e2464fb937fd8b4992796"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#abd9c2520da2e2464fb937fd8b4992796">convert_extent3d</a> (self, box, srid)</td></tr>
+<tr class="separator:abd9c2520da2e2464fb937fd8b4992796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9f85ed4bdf2a65e0846bcad4ca8dca" id="r_abc9f85ed4bdf2a65e0846bcad4ca8dca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#abc9f85ed4bdf2a65e0846bcad4ca8dca">geo_quote_name</a> (self, name)</td></tr>
+<tr class="separator:abc9f85ed4bdf2a65e0846bcad4ca8dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4a65e5b67a6a785c0068291f3c5dbf" id="r_acd4a65e5b67a6a785c0068291f3c5dbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#acd4a65e5b67a6a785c0068291f3c5dbf">geo_db_type</a> (self, f)</td></tr>
+<tr class="separator:acd4a65e5b67a6a785c0068291f3c5dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8b2badb7cf77ad863a5a4e8b98f608" id="r_a3d8b2badb7cf77ad863a5a4e8b98f608"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a3d8b2badb7cf77ad863a5a4e8b98f608">get_distance</a> (self, f, value, lookup_type)</td></tr>
+<tr class="separator:a3d8b2badb7cf77ad863a5a4e8b98f608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cc02a2095279616cf7d9cec2ea44a8" id="r_a14cc02a2095279616cf7d9cec2ea44a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a14cc02a2095279616cf7d9cec2ea44a8">get_geom_placeholder</a> (self, f, value, compiler)</td></tr>
+<tr class="separator:a14cc02a2095279616cf7d9cec2ea44a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51fb0e763a513001ed5d1f5dbeb34bd" id="r_ac51fb0e763a513001ed5d1f5dbeb34bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#ac51fb0e763a513001ed5d1f5dbeb34bd">check_expression_support</a> (self, expression)</td></tr>
+<tr class="separator:ac51fb0e763a513001ed5d1f5dbeb34bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefac384891c7524326c99bb8fad3414d" id="r_aefac384891c7524326c99bb8fad3414d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#aefac384891c7524326c99bb8fad3414d">spatial_aggregate_name</a> (self, agg_name)</td></tr>
+<tr class="separator:aefac384891c7524326c99bb8fad3414d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36337d377ac4c4e7e22798b5a7e72838" id="r_a36337d377ac4c4e7e22798b5a7e72838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a36337d377ac4c4e7e22798b5a7e72838">spatial_function_name</a> (self, func_name)</td></tr>
+<tr class="separator:a36337d377ac4c4e7e22798b5a7e72838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b278871c01521d76beb24a4db36b50" id="r_a08b278871c01521d76beb24a4db36b50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a08b278871c01521d76beb24a4db36b50">geometry_columns</a> (self)</td></tr>
+<tr class="separator:a08b278871c01521d76beb24a4db36b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bfa68f10f318f525f75dd2bcc7d169" id="r_ad6bfa68f10f318f525f75dd2bcc7d169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#ad6bfa68f10f318f525f75dd2bcc7d169">spatial_ref_sys</a> (self)</td></tr>
+<tr class="separator:ad6bfa68f10f318f525f75dd2bcc7d169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058e7d54c34ca41522427bc672b5106f" id="r_a058e7d54c34ca41522427bc672b5106f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a058e7d54c34ca41522427bc672b5106f">get_db_converters</a> (self, expression)</td></tr>
+<tr class="separator:a058e7d54c34ca41522427bc672b5106f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2646df222449fd75c4b0deb98f5cd878" id="r_a2646df222449fd75c4b0deb98f5cd878"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a2646df222449fd75c4b0deb98f5cd878">get_geometry_converter</a> (self, expression)</td></tr>
+<tr class="separator:a2646df222449fd75c4b0deb98f5cd878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2341201a11a08b89af3679ed4d690d3d" id="r_a2341201a11a08b89af3679ed4d690d3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a2341201a11a08b89af3679ed4d690d3d">get_area_att_for_field</a> (self, field)</td></tr>
+<tr class="separator:a2341201a11a08b89af3679ed4d690d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3e214f2de7d6e422b6ab3e68f57f0d" id="r_a1c3e214f2de7d6e422b6ab3e68f57f0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a1c3e214f2de7d6e422b6ab3e68f57f0d">get_distance_att_for_field</a> (self, field)</td></tr>
+<tr class="separator:a1c3e214f2de7d6e422b6ab3e68f57f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:a0968a104b9bdfb4eb3dbcf6171a2eaa4" id="r_a0968a104b9bdfb4eb3dbcf6171a2eaa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a0968a104b9bdfb4eb3dbcf6171a2eaa4">from_text</a></td></tr>
+<tr class="separator:a0968a104b9bdfb4eb3dbcf6171a2eaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b58a432a7223dc631821bc96b8df095" id="r_a1b58a432a7223dc631821bc96b8df095"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a1b58a432a7223dc631821bc96b8df095">disallowed_aggregates</a></td></tr>
+<tr class="separator:a1b58a432a7223dc631821bc96b8df095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd546318d100989e2477ced3ce3326d" id="r_a8bd546318d100989e2477ced3ce3326d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a8bd546318d100989e2477ced3ce3326d">connection</a></td></tr>
+<tr class="separator:a8bd546318d100989e2477ced3ce3326d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Attributs publics statiques</h2></td></tr>
+<tr class="memitem:a19cc480ec49c100d5d9e8b7ece8ccf78" id="r_a19cc480ec49c100d5d9e8b7ece8ccf78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a19cc480ec49c100d5d9e8b7ece8ccf78">postgis</a> = False</td></tr>
+<tr class="separator:a19cc480ec49c100d5d9e8b7ece8ccf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1ec31415776e447ef2f43b6a361d62" id="r_abd1ec31415776e447ef2f43b6a361d62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#abd1ec31415776e447ef2f43b6a361d62">spatialite</a> = False</td></tr>
+<tr class="separator:abd1ec31415776e447ef2f43b6a361d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074ad24c2c0bece5e653c7905e80ce22" id="r_a074ad24c2c0bece5e653c7905e80ce22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a074ad24c2c0bece5e653c7905e80ce22">mariadb</a> = False</td></tr>
+<tr class="separator:a074ad24c2c0bece5e653c7905e80ce22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afc3be0d0934495548f2818987b9eec" id="r_a3afc3be0d0934495548f2818987b9eec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a3afc3be0d0934495548f2818987b9eec">mysql</a> = False</td></tr>
+<tr class="separator:a3afc3be0d0934495548f2818987b9eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7461b0deb9871bdf2cddd633eaf6d7c9" id="r_a7461b0deb9871bdf2cddd633eaf6d7c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a7461b0deb9871bdf2cddd633eaf6d7c9">oracle</a> = False</td></tr>
+<tr class="separator:a7461b0deb9871bdf2cddd633eaf6d7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67dd6ceeb8048b2e9b95d93a6f8b927b" id="r_a67dd6ceeb8048b2e9b95d93a6f8b927b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a67dd6ceeb8048b2e9b95d93a6f8b927b">spatial_version</a> = None</td></tr>
+<tr class="separator:a67dd6ceeb8048b2e9b95d93a6f8b927b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4c472bc352f892f4b16b5dcd79b357" id="r_aef4c472bc352f892f4b16b5dcd79b357"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#aef4c472bc352f892f4b16b5dcd79b357">select</a> = &quot;%s&quot;</td></tr>
+<tr class="separator:aef4c472bc352f892f4b16b5dcd79b357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72599d901f87f5755e1374b23b41060" id="r_ac72599d901f87f5755e1374b23b41060"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#ac72599d901f87f5755e1374b23b41060">disallowed_aggregates</a> = ()</td></tr>
+<tr class="separator:ac72599d901f87f5755e1374b23b41060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86c8b10c0fde937b6994f334106afac" id="r_af86c8b10c0fde937b6994f334106afac"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#af86c8b10c0fde937b6994f334106afac">geom_func_prefix</a> = &quot;&quot;</td></tr>
+<tr class="separator:af86c8b10c0fde937b6994f334106afac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031dc5ad4bb91f5a54cdbe1238bb6c24" id="r_a031dc5ad4bb91f5a54cdbe1238bb6c24"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a031dc5ad4bb91f5a54cdbe1238bb6c24">function_names</a> = {}</td></tr>
+<tr class="separator:a031dc5ad4bb91f5a54cdbe1238bb6c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d82c714a17604375b56974af7a2bef" id="r_a77d82c714a17604375b56974af7a2bef"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a77d82c714a17604375b56974af7a2bef">unsupported_functions</a></td></tr>
+<tr class="separator:a77d82c714a17604375b56974af7a2bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c036e23eee9395e43c6b99db27ab4b" id="r_ad6c036e23eee9395e43c6b99db27ab4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#ad6c036e23eee9395e43c6b99db27ab4b">from_text</a> = False</td></tr>
+<tr class="separator:ad6c036e23eee9395e43c6b99db27ab4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da22d5ee0bfbd031f380091872dedfc" id="r_a6da22d5ee0bfbd031f380091872dedfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1base_1_1operations_1_1BaseSpatialOperations.html#a6da22d5ee0bfbd031f380091872dedfc">distance_expr_for_lookup</a> = staticmethod(<a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1models_1_1functions_1_1Distance.html">Distance</a>)</td></tr>
+<tr class="separator:a6da22d5ee0bfbd031f380091872dedfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="ac51fb0e763a513001ed5d1f5dbeb34bd" name="ac51fb0e763a513001ed5d1f5dbeb34bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51fb0e763a513001ed5d1f5dbeb34bd">&#9670;&#160;</a></span>check_expression_support()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.check_expression_support </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>expression</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a290c1ef3c303bf605751834014418213" name="a290c1ef3c303bf605751834014418213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290c1ef3c303bf605751834014418213">&#9670;&#160;</a></span>convert_extent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.convert_extent </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>box</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>srid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a92c236a566f7422504774bee3406ab77">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#a6c7d712cbf56103ecf6ed4a84aa0ea59">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#ad95169a0126aa9550a70917bf09355a7">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>.</p>
+
+</div>
+</div>
+<a id="abd9c2520da2e2464fb937fd8b4992796" name="abd9c2520da2e2464fb937fd8b4992796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd9c2520da2e2464fb937fd8b4992796">&#9670;&#160;</a></span>convert_extent3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.convert_extent3d </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>box</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>srid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a6c07e90eeb4416ea1a6732021081d910">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>.</p>
+
+</div>
+</div>
+<a id="acd4a65e5b67a6a785c0068291f3c5dbf" name="acd4a65e5b67a6a785c0068291f3c5dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4a65e5b67a6a785c0068291f3c5dbf">&#9670;&#160;</a></span>geo_db_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.geo_db_type </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the database column type for the geometry field on
+the spatial backend.
+</pre> 
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#ad07c55f7806c9f0e0d6ac45097c5fad0">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#a3639f9c53ed66303b44f4ebe2e03ff20">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a5cea70463f4f70a64fdd9134a657aaba">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#abf5feb85102987001c5625d87973966d">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>.</p>
+
+</div>
+</div>
+<a id="abc9f85ed4bdf2a65e0846bcad4ca8dca" name="abc9f85ed4bdf2a65e0846bcad4ca8dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9f85ed4bdf2a65e0846bcad4ca8dca">&#9670;&#160;</a></span>geo_quote_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.geo_quote_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#a594f86488cb662903f62c691b868eb2a">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>.</p>
+
+</div>
+</div>
+<a id="a08b278871c01521d76beb24a4db36b50" name="a08b278871c01521d76beb24a4db36b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b278871c01521d76beb24a4db36b50">&#9670;&#160;</a></span>geometry_columns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.geometry_columns </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#a873eb4e415b849836534c66b215bab58">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a1f7d2ba220d229b0f22f2a40655c5a33">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#aea8c2771ca4579c6e2fa5bddb24bea68">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>.</p>
+
+</div>
+</div>
+<a id="a2341201a11a08b89af3679ed4d690d3d" name="a2341201a11a08b89af3679ed4d690d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2341201a11a08b89af3679ed4d690d3d">&#9670;&#160;</a></span>get_area_att_for_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.get_area_att_for_field </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>field</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#a3ab083ed22f3f2473db10ac8e1b72a11">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a8bb96efb11bc975bca2796261e3907ec">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>.</p>
+
+</div>
+</div>
+<a id="a058e7d54c34ca41522427bc672b5106f" name="a058e7d54c34ca41522427bc672b5106f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a058e7d54c34ca41522427bc672b5106f">&#9670;&#160;</a></span>get_db_converters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.get_db_converters </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>expression</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d8b2badb7cf77ad863a5a4e8b98f608" name="a3d8b2badb7cf77ad863a5a4e8b98f608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8b2badb7cf77ad863a5a4e8b98f608">&#9670;&#160;</a></span>get_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.get_distance </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lookup_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the distance parameters for the given geometry field,
+lookup value, and lookup type.
+</pre> 
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a428ccb5a442e057cbf729a90d551276f">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#a73d4959c6c4a336b5b3ab10307373e43">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#ac637e1f48087a30414ecee58d6ee9179">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#a9dd35d60d06e6277f81aabe46fc69386">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>.</p>
+
+</div>
+</div>
+<a id="a1c3e214f2de7d6e422b6ab3e68f57f0d" name="a1c3e214f2de7d6e422b6ab3e68f57f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3e214f2de7d6e422b6ab3e68f57f0d">&#9670;&#160;</a></span>get_distance_att_for_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.get_distance_att_for_field </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>field</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14cc02a2095279616cf7d9cec2ea44a8" name="a14cc02a2095279616cf7d9cec2ea44a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14cc02a2095279616cf7d9cec2ea44a8">&#9670;&#160;</a></span>get_geom_placeholder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.get_geom_placeholder </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>compiler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Return the placeholder for the given geometry field with the given
+value.  Depending on the spatial backend, the placeholder may contain a
+stored procedure call to the transformation function of the spatial
+backend.
+</pre> 
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#a79a5b53d3d3abee83275c7218f50660c">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a274b8700907b6ee5fe5d1637405cc1a9">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>.</p>
+
+</div>
+</div>
+<a id="a2646df222449fd75c4b0deb98f5cd878" name="a2646df222449fd75c4b0deb98f5cd878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2646df222449fd75c4b0deb98f5cd878">&#9670;&#160;</a></span>get_geometry_converter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.get_geometry_converter </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>expression</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#a7b8da40c9c0306bc7fdf57daa4106586">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#a28642a63961c76f15323d6ce8d9ded8e">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a6473d5154d34e9888414fe0fd2e4fa84">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#a26a59011e91cc78ea9aa090775897983">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>.</p>
+
+</div>
+</div>
+<a id="a24dc7873caa444d009dfb133b7827b5b" name="a24dc7873caa444d009dfb133b7827b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24dc7873caa444d009dfb133b7827b5b">&#9670;&#160;</a></span>select_extent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.select_extent </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefac384891c7524326c99bb8fad3414d" name="aefac384891c7524326c99bb8fad3414d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefac384891c7524326c99bb8fad3414d">&#9670;&#160;</a></span>spatial_aggregate_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.spatial_aggregate_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>agg_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#a22605435e078d50def0870d8545202da">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#ababa3727ddb598874b2cde266b2bbc2c">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a5c4e585fa05e36be2f7c63fb720c4a5c">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#a3eb97cabbc042e9cacacc1c885924876">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>.</p>
+
+</div>
+</div>
+<a id="a36337d377ac4c4e7e22798b5a7e72838" name="a36337d377ac4c4e7e22798b5a7e72838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36337d377ac4c4e7e22798b5a7e72838">&#9670;&#160;</a></span>spatial_function_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.spatial_function_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>func_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6bfa68f10f318f525f75dd2bcc7d169" name="ad6bfa68f10f318f525f75dd2bcc7d169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bfa68f10f318f525f75dd2bcc7d169">&#9670;&#160;</a></span>spatial_ref_sys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.spatial_ref_sys </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1oracle_1_1operations_1_1OracleOperations.html#ad3cf8fb42a4a602bd06b6ff058be45c5">django.contrib.gis.db.backends.oracle.operations.OracleOperations</a>, <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a6e875d315dd9ce1901439195f5e49df3">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#a82bd1c3c1dbd224925e1859717298ee1">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a8bd546318d100989e2477ced3ce3326d" name="a8bd546318d100989e2477ced3ce3326d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd546318d100989e2477ced3ce3326d">&#9670;&#160;</a></span>connection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.connection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac72599d901f87f5755e1374b23b41060" name="ac72599d901f87f5755e1374b23b41060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72599d901f87f5755e1374b23b41060">&#9670;&#160;</a></span>disallowed_aggregates <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tuple django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.disallowed_aggregates = ()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#ae2dcdd190c907ff08fa22c14906c50bd">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>.</p>
+
+</div>
+</div>
+<a id="a1b58a432a7223dc631821bc96b8df095" name="a1b58a432a7223dc631821bc96b8df095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b58a432a7223dc631821bc96b8df095">&#9670;&#160;</a></span>disallowed_aggregates <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.disallowed_aggregates</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#ae2dcdd190c907ff08fa22c14906c50bd">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>.</p>
+
+</div>
+</div>
+<a id="a6da22d5ee0bfbd031f380091872dedfc" name="a6da22d5ee0bfbd031f380091872dedfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da22d5ee0bfbd031f380091872dedfc">&#9670;&#160;</a></span>distance_expr_for_lookup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.distance_expr_for_lookup = staticmethod(<a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1models_1_1functions_1_1Distance.html">Distance</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a67c927578eb04ad4cbbcbedb60f53ce4">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>.</p>
+
+</div>
+</div>
+<a id="ad6c036e23eee9395e43c6b99db27ab4b" name="ad6c036e23eee9395e43c6b99db27ab4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c036e23eee9395e43c6b99db27ab4b">&#9670;&#160;</a></span>from_text <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.from_text = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#ae0b51c8b1f66f6eeaf9afad34b1f3458">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>.</p>
+
+</div>
+</div>
+<a id="a0968a104b9bdfb4eb3dbcf6171a2eaa4" name="a0968a104b9bdfb4eb3dbcf6171a2eaa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0968a104b9bdfb4eb3dbcf6171a2eaa4">&#9670;&#160;</a></span>from_text <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.from_text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#ae0b51c8b1f66f6eeaf9afad34b1f3458">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>.</p>
+
+</div>
+</div>
+<a id="a031dc5ad4bb91f5a54cdbe1238bb6c24" name="a031dc5ad4bb91f5a54cdbe1238bb6c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031dc5ad4bb91f5a54cdbe1238bb6c24">&#9670;&#160;</a></span>function_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.function_names = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a50a58141e773ca28f45e6c39ff0ed3b8">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>.</p>
+
+</div>
+</div>
+<a id="af86c8b10c0fde937b6994f334106afac" name="af86c8b10c0fde937b6994f334106afac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86c8b10c0fde937b6994f334106afac">&#9670;&#160;</a></span>geom_func_prefix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.geom_func_prefix = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a074ad24c2c0bece5e653c7905e80ce22" name="a074ad24c2c0bece5e653c7905e80ce22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074ad24c2c0bece5e653c7905e80ce22">&#9670;&#160;</a></span>mariadb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.mariadb = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#a2b55fc7fa782aacb0d9eb811fdd79502">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>.</p>
+
+</div>
+</div>
+<a id="a3afc3be0d0934495548f2818987b9eec" name="a3afc3be0d0934495548f2818987b9eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afc3be0d0934495548f2818987b9eec">&#9670;&#160;</a></span>mysql</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.mysql = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#afd52f067214c8a5655d60124eec77129">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>.</p>
+
+</div>
+</div>
+<a id="a7461b0deb9871bdf2cddd633eaf6d7c9" name="a7461b0deb9871bdf2cddd633eaf6d7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7461b0deb9871bdf2cddd633eaf6d7c9">&#9670;&#160;</a></span>oracle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.oracle = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19cc480ec49c100d5d9e8b7ece8ccf78" name="a19cc480ec49c100d5d9e8b7ece8ccf78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19cc480ec49c100d5d9e8b7ece8ccf78">&#9670;&#160;</a></span>postgis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.postgis = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef4c472bc352f892f4b16b5dcd79b357" name="aef4c472bc352f892f4b16b5dcd79b357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4c472bc352f892f4b16b5dcd79b357">&#9670;&#160;</a></span>select</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">str django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.select = &quot;%s&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#a284d53076e3cb34e7be3e29f7a257e29">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>.</p>
+
+</div>
+</div>
+<a id="a67dd6ceeb8048b2e9b95d93a6f8b927b" name="a67dd6ceeb8048b2e9b95d93a6f8b927b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67dd6ceeb8048b2e9b95d93a6f8b927b">&#9670;&#160;</a></span>spatial_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.spatial_version = None</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1postgis_1_1operations_1_1PostGISOperations.html#a37e57e01495dd8bd52dfab7d1e65341d">django.contrib.gis.db.backends.postgis.operations.PostGISOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#ac64b4339bb812e5c7db13345cc62bdd8">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>.</p>
+
+</div>
+</div>
+<a id="abd1ec31415776e447ef2f43b6a361d62" name="abd1ec31415776e447ef2f43b6a361d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1ec31415776e447ef2f43b6a361d62">&#9670;&#160;</a></span>spatialite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.spatialite = False</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77d82c714a17604375b56974af7a2bef" name="a77d82c714a17604375b56974af7a2bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d82c714a17604375b56974af7a2bef">&#9670;&#160;</a></span>unsupported_functions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict django.contrib.gis.db.backends.base.operations.BaseSpatialOperations.unsupported_functions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée dans <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1mysql_1_1operations_1_1MySQLOperations.html#a8c26668e9d8e64ad9ddb9908e289abfe">django.contrib.gis.db.backends.mysql.operations.MySQLOperations</a>, et <a class="el" href="classdjango_1_1contrib_1_1gis_1_1db_1_1backends_1_1spatialite_1_1operations_1_1SpatiaLiteOperations.html#ad666e7323224656d124d7f955760ec9d">django.contrib.gis.db.backends.spatialite.operations.SpatiaLiteOperations</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>env/lib/python3.12/site-packages/django/contrib/gis/db/backends/base/<a class="el" href="contrib_2gis_2db_2backends_2base_2operations_8py.html">operations.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

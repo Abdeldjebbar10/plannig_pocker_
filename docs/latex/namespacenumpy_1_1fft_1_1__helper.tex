@@ -1,0 +1,221 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+fft.\+\_\+helper}
+\hypertarget{namespacenumpy_1_1fft_1_1__helper}{}\label{namespacenumpy_1_1fft_1_1__helper}\index{numpy.fft.\_helper@{numpy.fft.\_helper}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1fft_1_1__helper_adb9c5dc3a948eefcd6510648bb17d3f4}{\+\_\+fftshift\+\_\+dispatcher}} (x, axes=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1fft_1_1__helper_a0e3435874884a47b9a18d4c8aaabd0b1}{fftshift}} (x, axes=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1fft_1_1__helper_a56bad43f6262fcac7c74fbd82ebb52cd}{ifftshift}} (x, axes=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1fft_1_1__helper_abad37183167bf0259bef32e024729d45}{fftfreq}} (n, d=1.\+0, device=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1fft_1_1__helper_a4b6e1352d92736976b07c36b2f0f32f8}{rfftfreq}} (n, d=1.\+0, device=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacenumpy_1_1fft_1_1__helper_af18850581ba2ba43f820ff5e383c0821}{integer\+\_\+types}} = (int, integer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Discrete Fourier Transforms - _helper.py\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1fft_1_1__helper_adb9c5dc3a948eefcd6510648bb17d3f4}\label{namespacenumpy_1_1fft_1_1__helper_adb9c5dc3a948eefcd6510648bb17d3f4} 
+\index{numpy.fft.\_helper@{numpy.fft.\_helper}!\_fftshift\_dispatcher@{\_fftshift\_dispatcher}}
+\index{\_fftshift\_dispatcher@{\_fftshift\_dispatcher}!numpy.fft.\_helper@{numpy.fft.\_helper}}
+\doxysubsubsection{\texorpdfstring{\_fftshift\_dispatcher()}{\_fftshift\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+fft.\+\_\+helper.\+\_\+fftshift\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{axes = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1fft_1_1__helper_abad37183167bf0259bef32e024729d45}\label{namespacenumpy_1_1fft_1_1__helper_abad37183167bf0259bef32e024729d45} 
+\index{numpy.fft.\_helper@{numpy.fft.\_helper}!fftfreq@{fftfreq}}
+\index{fftfreq@{fftfreq}!numpy.fft.\_helper@{numpy.fft.\_helper}}
+\doxysubsubsection{\texorpdfstring{fftfreq()}{fftfreq()}}
+{\footnotesize\ttfamily numpy.\+fft.\+\_\+helper.\+fftfreq (\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{d = {\ttfamily 1.0},  }\item[{}]{device = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the Discrete Fourier Transform sample frequencies.
+
+The returned float array `f` contains the frequency bin centers in cycles
+per unit of the sample spacing (with zero at the start).  For instance, if
+the sample spacing is in seconds, then the frequency unit is cycles/second.
+
+Given a window length `n` and a sample spacing `d`::
+
+  f = [0, 1, ...,   n/2-1,     -n/2, ..., -1] / (d*n)   if n is even
+  f = [0, 1, ..., (n-1)/2, -(n-1)/2, ..., -1] / (d*n)   if n is odd
+
+Parameters
+----------
+n : int
+    Window length.
+d : scalar, optional
+    Sample spacing (inverse of the sampling rate). Defaults to 1.
+device : str, optional
+    The device on which to place the created array. Default: ``None``.
+    For Array-API interoperability only, so must be ``"cpu"`` if passed.
+
+    .. versionadded:: 2.0.0
+
+Returns
+-------
+f : ndarray
+    Array of length `n` containing the sample frequencies.
+
+Examples
+--------
+>>> import numpy as np
+>>> signal = np.array([-2, 8, 6, 4, 1, 0, 3, 5], dtype=float)
+>>> fourier = np.fft.fft(signal)
+>>> n = signal.size
+>>> timestep = 0.1
+>>> freq = np.fft.fftfreq(n, d=timestep)
+>>> freq
+array([ 0.  ,  1.25,  2.5 , ..., -3.75, -2.5 , -1.25])\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1fft_1_1__helper_a0e3435874884a47b9a18d4c8aaabd0b1}\label{namespacenumpy_1_1fft_1_1__helper_a0e3435874884a47b9a18d4c8aaabd0b1} 
+\index{numpy.fft.\_helper@{numpy.fft.\_helper}!fftshift@{fftshift}}
+\index{fftshift@{fftshift}!numpy.fft.\_helper@{numpy.fft.\_helper}}
+\doxysubsubsection{\texorpdfstring{fftshift()}{fftshift()}}
+{\footnotesize\ttfamily numpy.\+fft.\+\_\+helper.\+fftshift (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{axes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shift the zero-frequency component to the center of the spectrum.
+
+This function swaps half-spaces for all axes listed (defaults to all).
+Note that ``y[0]`` is the Nyquist component only if ``len(x)`` is even.
+
+Parameters
+----------
+x : array_like
+    Input array.
+axes : int or shape tuple, optional
+    Axes over which to shift.  Default is None, which shifts all axes.
+
+Returns
+-------
+y : ndarray
+    The shifted array.
+
+See Also
+--------
+ifftshift : The inverse of `fftshift`.
+
+Examples
+--------
+>>> import numpy as np
+>>> freqs = np.fft.fftfreq(10, 0.1)
+>>> freqs
+array([ 0.,  1.,  2., ..., -3., -2., -1.])
+>>> np.fft.fftshift(freqs)
+array([-5., -4., -3., -2., -1.,  0.,  1.,  2.,  3.,  4.])
+
+Shift the zero-frequency component only along the second axis:
+
+>>> freqs = np.fft.fftfreq(9, d=1./9).reshape(3, 3)
+>>> freqs
+array([[ 0.,  1.,  2.],
+       [ 3.,  4., -4.],
+       [-3., -2., -1.]])
+>>> np.fft.fftshift(freqs, axes=(1,))
+array([[ 2.,  0.,  1.],
+       [-4.,  3.,  4.],
+       [-1., -3., -2.]])\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1fft_1_1__helper_a56bad43f6262fcac7c74fbd82ebb52cd}\label{namespacenumpy_1_1fft_1_1__helper_a56bad43f6262fcac7c74fbd82ebb52cd} 
+\index{numpy.fft.\_helper@{numpy.fft.\_helper}!ifftshift@{ifftshift}}
+\index{ifftshift@{ifftshift}!numpy.fft.\_helper@{numpy.fft.\_helper}}
+\doxysubsubsection{\texorpdfstring{ifftshift()}{ifftshift()}}
+{\footnotesize\ttfamily numpy.\+fft.\+\_\+helper.\+ifftshift (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{axes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The inverse of `fftshift`. Although identical for even-length `x`, the
+functions differ by one sample for odd-length `x`.
+
+Parameters
+----------
+x : array_like
+    Input array.
+axes : int or shape tuple, optional
+    Axes over which to calculate.  Defaults to None, which shifts all axes.
+
+Returns
+-------
+y : ndarray
+    The shifted array.
+
+See Also
+--------
+fftshift : Shift zero-frequency component to the center of the spectrum.
+
+Examples
+--------
+>>> import numpy as np
+>>> freqs = np.fft.fftfreq(9, d=1./9).reshape(3, 3)
+>>> freqs
+array([[ 0.,  1.,  2.],
+       [ 3.,  4., -4.],
+       [-3., -2., -1.]])
+>>> np.fft.ifftshift(np.fft.fftshift(freqs))
+array([[ 0.,  1.,  2.],
+       [ 3.,  4., -4.],
+       [-3., -2., -1.]])\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1fft_1_1__helper_a4b6e1352d92736976b07c36b2f0f32f8}\label{namespacenumpy_1_1fft_1_1__helper_a4b6e1352d92736976b07c36b2f0f32f8} 
+\index{numpy.fft.\_helper@{numpy.fft.\_helper}!rfftfreq@{rfftfreq}}
+\index{rfftfreq@{rfftfreq}!numpy.fft.\_helper@{numpy.fft.\_helper}}
+\doxysubsubsection{\texorpdfstring{rfftfreq()}{rfftfreq()}}
+{\footnotesize\ttfamily numpy.\+fft.\+\_\+helper.\+rfftfreq (\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{d = {\ttfamily 1.0},  }\item[{}]{device = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the Discrete Fourier Transform sample frequencies
+(for usage with rfft, irfft).
+
+The returned float array `f` contains the frequency bin centers in cycles
+per unit of the sample spacing (with zero at the start).  For instance, if
+the sample spacing is in seconds, then the frequency unit is cycles/second.
+
+Given a window length `n` and a sample spacing `d`::
+
+  f = [0, 1, ...,     n/2-1,     n/2] / (d*n)   if n is even
+  f = [0, 1, ..., (n-1)/2-1, (n-1)/2] / (d*n)   if n is odd
+
+Unlike `fftfreq` (but like `scipy.fftpack.rfftfreq`)
+the Nyquist frequency component is considered to be positive.
+
+Parameters
+----------
+n : int
+    Window length.
+d : scalar, optional
+    Sample spacing (inverse of the sampling rate). Defaults to 1.
+device : str, optional
+    The device on which to place the created array. Default: ``None``.
+    For Array-API interoperability only, so must be ``"cpu"`` if passed.
+
+    .. versionadded:: 2.0.0
+
+Returns
+-------
+f : ndarray
+    Array of length ``n//2 + 1`` containing the sample frequencies.
+
+Examples
+--------
+>>> import numpy as np
+>>> signal = np.array([-2, 8, 6, 4, 1, 0, 3, 5, -3, 4], dtype=float)
+>>> fourier = np.fft.rfft(signal)
+>>> n = signal.size
+>>> sample_rate = 100
+>>> freq = np.fft.fftfreq(n, d=1./sample_rate)
+>>> freq
+array([  0.,  10.,  20., ..., -30., -20., -10.])
+>>> freq = np.fft.rfftfreq(n, d=1./sample_rate)
+>>> freq
+array([  0.,  10.,  20.,  30.,  40.,  50.])\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1fft_1_1__helper_af18850581ba2ba43f820ff5e383c0821}\label{namespacenumpy_1_1fft_1_1__helper_af18850581ba2ba43f820ff5e383c0821} 
+\index{numpy.fft.\_helper@{numpy.fft.\_helper}!integer\_types@{integer\_types}}
+\index{integer\_types@{integer\_types}!numpy.fft.\_helper@{numpy.fft.\_helper}}
+\doxysubsubsection{\texorpdfstring{integer\_types}{integer\_types}}
+{\footnotesize\ttfamily tuple numpy.\+fft.\+\_\+helper.\+integer\+\_\+types = (int, integer)}
+

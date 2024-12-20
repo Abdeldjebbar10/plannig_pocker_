@@ -1,0 +1,58 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+\_\+core.\+\_\+exceptions}
+\hypertarget{namespacenumpy_1_1__core_1_1__exceptions}{}\label{namespacenumpy_1_1__core_1_1__exceptions}\index{numpy.\_core.\_exceptions@{numpy.\_core.\_exceptions}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1__exceptions_1_1__ArrayMemoryError}{\+\_\+\+Array\+Memory\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1__exceptions_1_1__UFuncBinaryResolutionError}{\+\_\+\+UFunc\+Binary\+Resolution\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1__exceptions_1_1__UFuncCastingError}{\+\_\+\+UFunc\+Casting\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1__exceptions_1_1__UFuncInputCastingError}{\+\_\+\+UFunc\+Input\+Casting\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1__exceptions_1_1__UFuncNoLoopError}{\+\_\+\+UFunc\+No\+Loop\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1__exceptions_1_1__UFuncOutputCastingError}{\+\_\+\+UFunc\+Output\+Casting\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1__exceptions_1_1UFuncTypeError}{UFunc\+Type\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__exceptions_a66c2964f1cb5b70cb29d6525e4137525}{\+\_\+unpack\+\_\+tuple}} (tup)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__exceptions_a618a86bc64826fc9375bca4f64d4762c}{\+\_\+display\+\_\+as\+\_\+base}} (cls)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Various richly-typed exceptions, that also help us deal with string formatting
+in python where it's easier.
+
+By putting the formatting in `__str__`, we also avoid paying the cost for
+users who silence the exceptions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1__core_1_1__exceptions_a618a86bc64826fc9375bca4f64d4762c}\label{namespacenumpy_1_1__core_1_1__exceptions_a618a86bc64826fc9375bca4f64d4762c} 
+\index{numpy.\_core.\_exceptions@{numpy.\_core.\_exceptions}!\_display\_as\_base@{\_display\_as\_base}}
+\index{\_display\_as\_base@{\_display\_as\_base}!numpy.\_core.\_exceptions@{numpy.\_core.\_exceptions}}
+\doxysubsubsection{\texorpdfstring{\_display\_as\_base()}{\_display\_as\_base()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+exceptions.\+\_\+display\+\_\+as\+\_\+base (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}A decorator that makes an exception class look like its base.
+
+We use this to hide subclasses that are implementation details - the user
+should catch the base type, which is what the traceback will show them.
+
+Classes decorated with this decorator are subject to removal without a
+deprecation warning.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1__core_1_1__exceptions_a66c2964f1cb5b70cb29d6525e4137525}\label{namespacenumpy_1_1__core_1_1__exceptions_a66c2964f1cb5b70cb29d6525e4137525} 
+\index{numpy.\_core.\_exceptions@{numpy.\_core.\_exceptions}!\_unpack\_tuple@{\_unpack\_tuple}}
+\index{\_unpack\_tuple@{\_unpack\_tuple}!numpy.\_core.\_exceptions@{numpy.\_core.\_exceptions}}
+\doxysubsubsection{\texorpdfstring{\_unpack\_tuple()}{\_unpack\_tuple()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+exceptions.\+\_\+unpack\+\_\+tuple (\begin{DoxyParamCaption}\item[{}]{tup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+

@@ -1,0 +1,132 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+settings}
+\hypertarget{namespacerest__framework_1_1settings}{}\label{namespacerest__framework_1_1settings}\index{rest\_framework.settings@{rest\_framework.settings}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings}{APISettings}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1settings_ac6e50abde0995ea8e38a9000c9f3891b}{perform\+\_\+import}} (val, setting\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1settings_a3d4dc2e4c01f7b7ae1dfbdd53f6b180b}{import\+\_\+from\+\_\+string}} (val, setting\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1settings_ae5401edb8daf77673b607c0e096ded68}{reload\+\_\+api\+\_\+settings}} (\texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacerest__framework_1_1settings_a59940968c33e8fb7700965fa2e7e8c2f}{DEFAULTS}}
+\item 
+list \mbox{\hyperlink{namespacerest__framework_1_1settings_ad289343b9b2403187ecb4b440a96c203}{IMPORT\+\_\+\+STRINGS}}
+\item 
+list \mbox{\hyperlink{namespacerest__framework_1_1settings_a578979b552afc206ebecafe92753996a}{REMOVED\+\_\+\+SETTINGS}}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1settings_abf4d1baeeddbc10a779a6fb0deee9567}{api\+\_\+settings}} = \mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings}{APISettings}}(None, \mbox{\hyperlink{namespacerest__framework_1_1settings_a59940968c33e8fb7700965fa2e7e8c2f}{DEFAULTS}}, \mbox{\hyperlink{namespacerest__framework_1_1settings_ad289343b9b2403187ecb4b440a96c203}{IMPORT\+\_\+\+STRINGS}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Settings for REST framework are all namespaced in the REST_FRAMEWORK setting.
+For example your project's `settings.py` file might look like this:
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.TemplateHTMLRenderer',
+    ],
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.MultiPartParser',
+    ],
+}
+
+This module provides the `api_setting` object, that is used to access
+REST framework settings, checking for user settings first, then falling
+back to the defaults.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1settings_a3d4dc2e4c01f7b7ae1dfbdd53f6b180b}\label{namespacerest__framework_1_1settings_a3d4dc2e4c01f7b7ae1dfbdd53f6b180b} 
+\index{rest\_framework.settings@{rest\_framework.settings}!import\_from\_string@{import\_from\_string}}
+\index{import\_from\_string@{import\_from\_string}!rest\_framework.settings@{rest\_framework.settings}}
+\doxysubsubsection{\texorpdfstring{import\_from\_string()}{import\_from\_string()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+import\+\_\+from\+\_\+string (\begin{DoxyParamCaption}\item[{}]{val,  }\item[{}]{setting\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt to import a class from a string representation.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1settings_ac6e50abde0995ea8e38a9000c9f3891b}\label{namespacerest__framework_1_1settings_ac6e50abde0995ea8e38a9000c9f3891b} 
+\index{rest\_framework.settings@{rest\_framework.settings}!perform\_import@{perform\_import}}
+\index{perform\_import@{perform\_import}!rest\_framework.settings@{rest\_framework.settings}}
+\doxysubsubsection{\texorpdfstring{perform\_import()}{perform\_import()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+perform\+\_\+import (\begin{DoxyParamCaption}\item[{}]{val,  }\item[{}]{setting\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If the given setting is a string import notation,
+then perform the necessary import or imports.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1settings_ae5401edb8daf77673b607c0e096ded68}\label{namespacerest__framework_1_1settings_ae5401edb8daf77673b607c0e096ded68} 
+\index{rest\_framework.settings@{rest\_framework.settings}!reload\_api\_settings@{reload\_api\_settings}}
+\index{reload\_api\_settings@{reload\_api\_settings}!rest\_framework.settings@{rest\_framework.settings}}
+\doxysubsubsection{\texorpdfstring{reload\_api\_settings()}{reload\_api\_settings()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+reload\+\_\+api\+\_\+settings (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1settings_abf4d1baeeddbc10a779a6fb0deee9567}\label{namespacerest__framework_1_1settings_abf4d1baeeddbc10a779a6fb0deee9567} 
+\index{rest\_framework.settings@{rest\_framework.settings}!api\_settings@{api\_settings}}
+\index{api\_settings@{api\_settings}!rest\_framework.settings@{rest\_framework.settings}}
+\doxysubsubsection{\texorpdfstring{api\_settings}{api\_settings}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+api\+\_\+settings = \mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings}{APISettings}}(None, \mbox{\hyperlink{namespacerest__framework_1_1settings_a59940968c33e8fb7700965fa2e7e8c2f}{DEFAULTS}}, \mbox{\hyperlink{namespacerest__framework_1_1settings_ad289343b9b2403187ecb4b440a96c203}{IMPORT\+\_\+\+STRINGS}})}
+
+\Hypertarget{namespacerest__framework_1_1settings_a59940968c33e8fb7700965fa2e7e8c2f}\label{namespacerest__framework_1_1settings_a59940968c33e8fb7700965fa2e7e8c2f} 
+\index{rest\_framework.settings@{rest\_framework.settings}!DEFAULTS@{DEFAULTS}}
+\index{DEFAULTS@{DEFAULTS}!rest\_framework.settings@{rest\_framework.settings}}
+\doxysubsubsection{\texorpdfstring{DEFAULTS}{DEFAULTS}}
+{\footnotesize\ttfamily dict rest\+\_\+framework.\+settings.\+DEFAULTS}
+
+\Hypertarget{namespacerest__framework_1_1settings_ad289343b9b2403187ecb4b440a96c203}\label{namespacerest__framework_1_1settings_ad289343b9b2403187ecb4b440a96c203} 
+\index{rest\_framework.settings@{rest\_framework.settings}!IMPORT\_STRINGS@{IMPORT\_STRINGS}}
+\index{IMPORT\_STRINGS@{IMPORT\_STRINGS}!rest\_framework.settings@{rest\_framework.settings}}
+\doxysubsubsection{\texorpdfstring{IMPORT\_STRINGS}{IMPORT\_STRINGS}}
+{\footnotesize\ttfamily list rest\+\_\+framework.\+settings.\+IMPORT\+\_\+\+STRINGS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_RENDERER\_CLASSES'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_PARSER\_CLASSES'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_AUTHENTICATION\_CLASSES'},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_PERMISSION\_CLASSES'},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_THROTTLE\_CLASSES'},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_CONTENT\_NEGOTIATION\_CLASS'},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_METADATA\_CLASS'},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_VERSIONING\_CLASS'},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_PAGINATION\_CLASS'},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_FILTER\_BACKENDS'},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{'DEFAULT\_SCHEMA\_CLASS'},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{'EXCEPTION\_HANDLER'},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{'TEST\_REQUEST\_RENDERER\_CLASSES'},}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{'UNAUTHENTICATED\_USER'},}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{'UNAUTHENTICATED\_TOKEN'},}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{'VIEW\_NAME\_FUNCTION'},}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{stringliteral}{'VIEW\_DESCRIPTION\_FUNCTION'}}
+\DoxyCodeLine{00019\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacerest__framework_1_1settings_a578979b552afc206ebecafe92753996a}\label{namespacerest__framework_1_1settings_a578979b552afc206ebecafe92753996a} 
+\index{rest\_framework.settings@{rest\_framework.settings}!REMOVED\_SETTINGS@{REMOVED\_SETTINGS}}
+\index{REMOVED\_SETTINGS@{REMOVED\_SETTINGS}!rest\_framework.settings@{rest\_framework.settings}}
+\doxysubsubsection{\texorpdfstring{REMOVED\_SETTINGS}{REMOVED\_SETTINGS}}
+{\footnotesize\ttfamily list rest\+\_\+framework.\+settings.\+REMOVED\+\_\+\+SETTINGS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'PAGINATE\_BY'},\ \textcolor{stringliteral}{'PAGINATE\_BY\_PARAM'},\ \textcolor{stringliteral}{'MAX\_PAGINATE\_BY'},}
+\DoxyCodeLine{00003\ ]}
+
+\end{DoxyCode}

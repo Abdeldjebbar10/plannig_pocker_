@@ -1,0 +1,69 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+tests.\+io.\+parser.\+test\+\_\+network}
+\hypertarget{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network}{}\label{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network}\index{pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1parser_1_1test__network_1_1TestS3}{Test\+S3}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_aae3eb487aaba6c04bd294cdd9125731a}{test\+\_\+compressed\+\_\+urls}} (httpserver, datapath, salaries\+\_\+table, mode, engine, compression\+\_\+only, compression\+\_\+to\+\_\+extension)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_a2eda0acb7eee2608042fe7837e112790}{test\+\_\+url\+\_\+encoding\+\_\+csv}} (httpserver, datapath)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_a2efbe8cde15473f094aaedc262e734c0}{tips\+\_\+df}} (datapath)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_ae634f4dd34e84d1927359135d313223d}{pytestmark}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Tests parsers ability to read and parse non-local files
+and hence require a network connection to be read.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_aae3eb487aaba6c04bd294cdd9125731a}\label{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_aae3eb487aaba6c04bd294cdd9125731a} 
+\index{pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}!test\_compressed\_urls@{test\_compressed\_urls}}
+\index{test\_compressed\_urls@{test\_compressed\_urls}!pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}}
+\doxysubsubsection{\texorpdfstring{test\_compressed\_urls()}{test\_compressed\_urls()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+parser.\+test\+\_\+network.\+test\+\_\+compressed\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{httpserver,  }\item[{}]{datapath,  }\item[{}]{salaries\+\_\+table,  }\item[{}]{mode,  }\item[{}]{engine,  }\item[{}]{compression\+\_\+only,  }\item[{}]{compression\+\_\+to\+\_\+extension }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_a2eda0acb7eee2608042fe7837e112790}\label{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_a2eda0acb7eee2608042fe7837e112790} 
+\index{pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}!test\_url\_encoding\_csv@{test\_url\_encoding\_csv}}
+\index{test\_url\_encoding\_csv@{test\_url\_encoding\_csv}!pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}}
+\doxysubsubsection{\texorpdfstring{test\_url\_encoding\_csv()}{test\_url\_encoding\_csv()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+parser.\+test\+\_\+network.\+test\+\_\+url\+\_\+encoding\+\_\+csv (\begin{DoxyParamCaption}\item[{}]{httpserver,  }\item[{}]{datapath }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}read_csv should honor the requested encoding for URLs.
+
+GH 10424
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_a2efbe8cde15473f094aaedc262e734c0}\label{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_a2efbe8cde15473f094aaedc262e734c0} 
+\index{pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}!tips\_df@{tips\_df}}
+\index{tips\_df@{tips\_df}!pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}}
+\doxysubsubsection{\texorpdfstring{tips\_df()}{tips\_df()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+parser.\+test\+\_\+network.\+tips\+\_\+df (\begin{DoxyParamCaption}\item[{}]{datapath }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}DataFrame with the tips dataset.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_ae634f4dd34e84d1927359135d313223d}\label{namespacepandas_1_1tests_1_1io_1_1parser_1_1test__network_ae634f4dd34e84d1927359135d313223d} 
+\index{pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}!pytestmark@{pytestmark}}
+\index{pytestmark@{pytestmark}!pandas.tests.io.parser.test\_network@{pandas.tests.io.parser.test\_network}}
+\doxysubsubsection{\texorpdfstring{pytestmark}{pytestmark}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+parser.\+test\+\_\+network.\+pytestmark}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ pytest.mark.filterwarnings(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}ignore:Passing\ a\ BlockManager\ to\ DataFrame:DeprecationWarning"{}}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

@@ -1,0 +1,182 @@
+\doxysection{Référence de la classe pandas.\+core.\+flags.\+Flags}
+\hypertarget{classpandas_1_1core_1_1flags_1_1Flags}{}\label{classpandas_1_1core_1_1flags_1_1Flags}\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a4e37beb722c8e0fbaab3f5c66f5479c8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1generic_1_1NDFrame}{NDFrame}} obj, \texorpdfstring{$\ast$}{*}bool \mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a796b4d7348b7e76a9d85a42787de346c}{allows\+\_\+duplicate\+\_\+labels}})
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_acc64cb2ca34eeba29ec9ee0408798850}{allows\+\_\+duplicate\+\_\+labels}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a49b9b22858a221f1e064c80401e8c0d7}{allows\+\_\+duplicate\+\_\+labels}} (self, bool value)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a883e5729685143060c81f82f9b32bd46}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, str key)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a7d9c8b39dbe9b5c65a87e9bd0dcf079f}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, str key, value)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a05a9112e9eb119ccc0e321d8b7a5a33e}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a358a1e354c3a9fa8217b27a4bbd87c33}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a796b4d7348b7e76a9d85a42787de346c}{allows\+\_\+duplicate\+\_\+labels}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_abadaaea19cb7fff7a0b65e8ab9f3d2c5}{\+\_\+allows\+\_\+duplicate\+\_\+labels}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_a4c3b80a8394dced9052d9a09fa9b0d0d}{\+\_\+obj}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1flags_1_1Flags_afccd1b9746aaf6537327eac1cd627621}{\+\_\+keys}} = \{"{}allows\+\_\+duplicate\+\_\+labels"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Flags that apply to pandas objects.
+
+Parameters
+----------
+obj : Series or DataFrame
+    The object these flags are associated with.
+allows_duplicate_labels : bool, default True
+    Whether to allow duplicate labels in this object. By default,
+    duplicate labels are permitted. Setting this to ``False`` will
+    cause an :class:`errors.DuplicateLabelError` to be raised when
+    `index` (or columns for DataFrame) is not unique, or any
+    subsequent operation on introduces duplicates.
+    See :ref:`duplicates.disallow` for more.
+
+    .. warning::
+
+       This is an experimental feature. Currently, many methods fail to
+       propagate the ``allows_duplicate_labels`` value. In future versions
+       it is expected that every method taking or returning one or more
+       DataFrame or Series objects will propagate ``allows_duplicate_labels``.
+
+Examples
+--------
+Attributes can be set in two ways:
+
+>>> df = pd.DataFrame()
+>>> df.flags
+<Flags(allows_duplicate_labels=True)>
+>>> df.flags.allows_duplicate_labels = False
+>>> df.flags
+<Flags(allows_duplicate_labels=False)>
+
+>>> df.flags['allows_duplicate_labels'] = True
+>>> df.flags
+<Flags(allows_duplicate_labels=True)>
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_a4e37beb722c8e0fbaab3f5c66f5479c8}\label{classpandas_1_1core_1_1flags_1_1Flags_a4e37beb722c8e0fbaab3f5c66f5479c8} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+flags.\+Flags.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1generic_1_1NDFrame}{NDFrame}}}]{obj,  }\item[{\texorpdfstring{$\ast$}{*}bool}]{allows\+\_\+duplicate\+\_\+labels }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_a358a1e354c3a9fa8217b27a4bbd87c33}\label{classpandas_1_1core_1_1flags_1_1Flags_a358a1e354c3a9fa8217b27a4bbd87c33} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+flags.\+Flags.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_a883e5729685143060c81f82f9b32bd46}\label{classpandas_1_1core_1_1flags_1_1Flags_a883e5729685143060c81f82f9b32bd46} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily pandas.\+core.\+flags.\+Flags.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_a05a9112e9eb119ccc0e321d8b7a5a33e}\label{classpandas_1_1core_1_1flags_1_1Flags_a05a9112e9eb119ccc0e321d8b7a5a33e} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+flags.\+Flags.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_a7d9c8b39dbe9b5c65a87e9bd0dcf079f}\label{classpandas_1_1core_1_1flags_1_1Flags_a7d9c8b39dbe9b5c65a87e9bd0dcf079f} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+flags.\+Flags.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_acc64cb2ca34eeba29ec9ee0408798850}\label{classpandas_1_1core_1_1flags_1_1Flags_acc64cb2ca34eeba29ec9ee0408798850} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!allows\_duplicate\_labels@{allows\_duplicate\_labels}}
+\index{allows\_duplicate\_labels@{allows\_duplicate\_labels}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{allows\_duplicate\_labels()}{allows\_duplicate\_labels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+flags.\+Flags.\+allows\+\_\+duplicate\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether this object allows duplicate labels.
+
+Setting ``allows_duplicate_labels=False`` ensures that the
+index (and columns of a DataFrame) are unique. Most methods
+that accept and return a Series or DataFrame will propagate
+the value of ``allows_duplicate_labels``.
+
+See :ref:`duplicates` for more.
+
+See Also
+--------
+DataFrame.attrs : Set global metadata on this object.
+DataFrame.set_flags : Set global flags on this object.
+
+Examples
+--------
+>>> df = pd.DataFrame({"A": [1, 2]}, index=['a', 'a'])
+>>> df.flags.allows_duplicate_labels
+True
+>>> df.flags.allows_duplicate_labels = False
+Traceback (most recent call last):
+    ...
+pandas.errors.DuplicateLabelError: Index has duplicates.
+      positions
+label
+a        [0, 1]
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_a49b9b22858a221f1e064c80401e8c0d7}\label{classpandas_1_1core_1_1flags_1_1Flags_a49b9b22858a221f1e064c80401e8c0d7} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!allows\_duplicate\_labels@{allows\_duplicate\_labels}}
+\index{allows\_duplicate\_labels@{allows\_duplicate\_labels}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{allows\_duplicate\_labels()}{allows\_duplicate\_labels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily  None pandas.\+core.\+flags.\+Flags.\+allows\+\_\+duplicate\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_abadaaea19cb7fff7a0b65e8ab9f3d2c5}\label{classpandas_1_1core_1_1flags_1_1Flags_abadaaea19cb7fff7a0b65e8ab9f3d2c5} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!\_allows\_duplicate\_labels@{\_allows\_duplicate\_labels}}
+\index{\_allows\_duplicate\_labels@{\_allows\_duplicate\_labels}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{\_allows\_duplicate\_labels}{\_allows\_duplicate\_labels}}
+{\footnotesize\ttfamily pandas.\+core.\+flags.\+Flags.\+\_\+allows\+\_\+duplicate\+\_\+labels\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_afccd1b9746aaf6537327eac1cd627621}\label{classpandas_1_1core_1_1flags_1_1Flags_afccd1b9746aaf6537327eac1cd627621} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!\_keys@{\_keys}}
+\index{\_keys@{\_keys}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{\_keys}{\_keys}}
+{\footnotesize\ttfamily dict pandas.\+core.\+flags.\+Flags.\+\_\+keys = \{"{}allows\+\_\+duplicate\+\_\+labels"{}\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_a4c3b80a8394dced9052d9a09fa9b0d0d}\label{classpandas_1_1core_1_1flags_1_1Flags_a4c3b80a8394dced9052d9a09fa9b0d0d} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!\_obj@{\_obj}}
+\index{\_obj@{\_obj}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{\_obj}{\_obj}}
+{\footnotesize\ttfamily pandas.\+core.\+flags.\+Flags.\+\_\+obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1flags_1_1Flags_a796b4d7348b7e76a9d85a42787de346c}\label{classpandas_1_1core_1_1flags_1_1Flags_a796b4d7348b7e76a9d85a42787de346c} 
+\index{pandas.core.flags.Flags@{pandas.core.flags.Flags}!allows\_duplicate\_labels@{allows\_duplicate\_labels}}
+\index{allows\_duplicate\_labels@{allows\_duplicate\_labels}!pandas.core.flags.Flags@{pandas.core.flags.Flags}}
+\doxysubsubsection{\texorpdfstring{allows\_duplicate\_labels}{allows\_duplicate\_labels}}
+{\footnotesize\ttfamily pandas.\+core.\+flags.\+Flags.\+allows\+\_\+duplicate\+\_\+labels}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/\mbox{\hyperlink{flags_8py}{flags.\+py}}\end{DoxyCompactItemize}

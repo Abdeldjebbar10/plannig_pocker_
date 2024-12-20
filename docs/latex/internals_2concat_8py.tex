@@ -1,0 +1,43 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/core/internals/concat.py}
+\hypertarget{internals_2concat_8py}{}\label{internals_2concat_8py}\index{env/lib/python3.12/site-\/packages/pandas/core/internals/concat.py@{env/lib/python3.12/site-\/packages/pandas/core/internals/concat.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1concat_1_1JoinUnit}{pandas.\+core.\+internals.\+concat.\+Join\+Unit}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core}{pandas.\+core}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core_1_1internals}{pandas.\+core.\+internals}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat}{pandas.\+core.\+internals.\+concat}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+Manager2D \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_ac176172885916f418d93396b4790f1d7}{pandas.\+core.\+internals.\+concat.\+\_\+concatenate\+\_\+array\+\_\+managers}} (list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1ArrayManager}{Array\+Manager}}\mbox{]} mgrs, list\mbox{[}Index\mbox{]} axes, Axis\+Int concat\+\_\+axis)
+\item 
+Manager2D \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_a0b24c7f443f10f8f833e3a86c99c8596}{pandas.\+core.\+internals.\+concat.\+concatenate\+\_\+managers}} (mgrs\+\_\+indexers, list\mbox{[}Index\mbox{]} axes, Axis\+Int concat\+\_\+axis, bool copy)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager}{Block\+Manager}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_a76c012958ab003e9370d3215556102f7}{pandas.\+core.\+internals.\+concat.\+\_\+maybe\+\_\+reindex\+\_\+columns\+\_\+na\+\_\+proxy}} (list\mbox{[}Index\mbox{]} axes, list\mbox{[}tuple\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager}{Block\+Manager}}, dict\mbox{[}int, np.\+ndarray\mbox{]}\mbox{]}\mbox{]} mgrs\+\_\+indexers, bool needs\+\_\+copy)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_acfa15c84cad8506a1168c4f3e89968fc}{pandas.\+core.\+internals.\+concat.\+\_\+is\+\_\+homogeneous\+\_\+mgr}} (\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager}{Block\+Manager}} mgr, Dtype\+Obj first\+\_\+dtype)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_a7ce1cb09769b38766fdd53b8f8a8ef0e}{pandas.\+core.\+internals.\+concat.\+\_\+concat\+\_\+homogeneous\+\_\+fastpath}} (mgrs\+\_\+indexers, Shape shape, np.\+dtype first\+\_\+dtype)
+\item 
+list\mbox{[}tuple\mbox{[}Block\+Placement, list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1concat_1_1JoinUnit}{Join\+Unit}}\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_a54c41c4c7900e6aca507cd236a7b8e1b}{pandas.\+core.\+internals.\+concat.\+\_\+get\+\_\+combined\+\_\+plan}} (list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager}{Block\+Manager}}\mbox{]} mgrs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_aca822893fdc75b2e13ff5d4666b67301}{pandas.\+core.\+internals.\+concat.\+\_\+get\+\_\+block\+\_\+for\+\_\+concat\+\_\+plan}} (\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1managers_1_1BlockManager}{Block\+Manager}} mgr, Block\+Placement bp, int blkno, \texorpdfstring{$\ast$}{*}int max\+\_\+len)
+\item 
+Array\+Like \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_acfd5ab965238adec5db71f44b15b1fc8}{pandas.\+core.\+internals.\+concat.\+\_\+concatenate\+\_\+join\+\_\+units}} (list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1concat_1_1JoinUnit}{Join\+Unit}}\mbox{]} join\+\_\+units, bool copy)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_a7a2f78434e96f1224f7f36418214b544}{pandas.\+core.\+internals.\+concat.\+\_\+dtype\+\_\+to\+\_\+na\+\_\+value}} (Dtype\+Obj dtype, bool has\+\_\+none\+\_\+blocks)
+\item 
+tuple\mbox{[}Dtype\+Obj, Dtype\+Obj\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_a6b631e23aeae0f97c7085f1bb1352b8f}{pandas.\+core.\+internals.\+concat.\+\_\+get\+\_\+empty\+\_\+dtype}} (Sequence\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1concat_1_1JoinUnit}{Join\+Unit}}\mbox{]} join\+\_\+units)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1concat_acff355ce8e0306119835e40ffdf11d02}{pandas.\+core.\+internals.\+concat.\+\_\+is\+\_\+uniform\+\_\+join\+\_\+units}} (list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1concat_1_1JoinUnit}{Join\+Unit}}\mbox{]} join\+\_\+units)
+\end{DoxyCompactItemize}

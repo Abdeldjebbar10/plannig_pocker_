@@ -1,0 +1,108 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage test\+\_\+umath\+\_\+accuracy}
+\hypertarget{namespacetest__umath__accuracy}{}\label{namespacetest__umath__accuracy}\index{test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__umath__accuracy_1_1TestAccuracy}{Test\+Accuracy}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__umath__accuracy_a5f2d76dc7469dc41aaccf3acf1d3a26b}{convert}} (s, datatype="{}np.\+float32"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetest__umath__accuracy_acb97e966accf96ba8e8583d7ed0227c4}{UNARY\+\_\+\+UFUNCS}}
+\item 
+list \mbox{\hyperlink{namespacetest__umath__accuracy_a3bc5eb2451172b671aa764fb0de0d3c7}{UNARY\+\_\+\+OBJECT\+\_\+\+UFUNCS}} = \mbox{[}uf for uf in \mbox{\hyperlink{namespacetest__umath__accuracy_acb97e966accf96ba8e8583d7ed0227c4}{UNARY\+\_\+\+UFUNCS}} if "{}O-\/$>$O"{} in uf.\+types\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetest__umath__accuracy_ae670e78db975f791f0ee9cf4ab1b7f65}{IS\+\_\+\+AVX}}
+\item 
+\mbox{\hyperlink{namespacetest__umath__accuracy_a3ee47957bf46fc965c8036362e90abb8}{IS\+\_\+\+AVX512\+FP16}} = \+\_\+\+\_\+cpu\+\_\+features\+\_\+\+\_\+.\+get(\textquotesingle{}AVX512\+FP16\textquotesingle{}, False)
+\item 
+tuple \mbox{\hyperlink{namespacetest__umath__accuracy_a9083a6706d7a7c9883403c3fd8e25f60}{runtest}}
+\item 
+\mbox{\hyperlink{namespacetest__umath__accuracy_af383630f47e7c46c9313a391a8e35885}{platform\+\_\+skip}}
+\item 
+\mbox{\hyperlink{namespacetest__umath__accuracy_ac48c9610da3a84ad48f1d46e35179459}{str\+\_\+to\+\_\+float}} = np.\+vectorize(\mbox{\hyperlink{namespacetest__umath__accuracy_a5f2d76dc7469dc41aaccf3acf1d3a26b}{convert}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacetest__umath__accuracy_a5f2d76dc7469dc41aaccf3acf1d3a26b}\label{namespacetest__umath__accuracy_a5f2d76dc7469dc41aaccf3acf1d3a26b} 
+\index{test\_umath\_accuracy@{test\_umath\_accuracy}!convert@{convert}}
+\index{convert@{convert}!test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily test\+\_\+umath\+\_\+accuracy.\+convert (\begin{DoxyParamCaption}\item[{}]{s,  }\item[{}]{datatype = {\ttfamily "{}np.float32"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacetest__umath__accuracy_ae670e78db975f791f0ee9cf4ab1b7f65}\label{namespacetest__umath__accuracy_ae670e78db975f791f0ee9cf4ab1b7f65} 
+\index{test\_umath\_accuracy@{test\_umath\_accuracy}!IS\_AVX@{IS\_AVX}}
+\index{IS\_AVX@{IS\_AVX}!test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection{\texorpdfstring{IS\_AVX}{IS\_AVX}}
+{\footnotesize\ttfamily test\+\_\+umath\+\_\+accuracy.\+IS\+\_\+\+AVX}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \_\_cpu\_features\_\_.get(\textcolor{stringliteral}{'AVX512F'},\ \textcolor{keyword}{False})\ \textcolor{keywordflow}{or}\ \(\backslash\)}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ (\_\_cpu\_features\_\_.get(\textcolor{stringliteral}{'FMA3'},\ \textcolor{keyword}{False})\ \textcolor{keywordflow}{and}\ \_\_cpu\_features\_\_.get(\textcolor{stringliteral}{'AVX2'},\ \textcolor{keyword}{False}))}
+
+\end{DoxyCode}
+\Hypertarget{namespacetest__umath__accuracy_a3ee47957bf46fc965c8036362e90abb8}\label{namespacetest__umath__accuracy_a3ee47957bf46fc965c8036362e90abb8} 
+\index{test\_umath\_accuracy@{test\_umath\_accuracy}!IS\_AVX512FP16@{IS\_AVX512FP16}}
+\index{IS\_AVX512FP16@{IS\_AVX512FP16}!test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection{\texorpdfstring{IS\_AVX512FP16}{IS\_AVX512FP16}}
+{\footnotesize\ttfamily test\+\_\+umath\+\_\+accuracy.\+IS\+\_\+\+AVX512\+FP16 = \+\_\+\+\_\+cpu\+\_\+features\+\_\+\+\_\+.\+get(\textquotesingle{}AVX512\+FP16\textquotesingle{}, False)}
+
+\Hypertarget{namespacetest__umath__accuracy_af383630f47e7c46c9313a391a8e35885}\label{namespacetest__umath__accuracy_af383630f47e7c46c9313a391a8e35885} 
+\index{test\_umath\_accuracy@{test\_umath\_accuracy}!platform\_skip@{platform\_skip}}
+\index{platform\_skip@{platform\_skip}!test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection{\texorpdfstring{platform\_skip}{platform\_skip}}
+{\footnotesize\ttfamily test\+\_\+umath\+\_\+accuracy.\+platform\+\_\+skip}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ pytest.mark.skipif(\textcolor{keywordflow}{not}\ runtest,}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reason=\textcolor{stringliteral}{"{}avoid\ testing\ inconsistent\ platform\ "{}}}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}library\ implementations"{}})}
+
+\end{DoxyCode}
+\Hypertarget{namespacetest__umath__accuracy_a9083a6706d7a7c9883403c3fd8e25f60}\label{namespacetest__umath__accuracy_a9083a6706d7a7c9883403c3fd8e25f60} 
+\index{test\_umath\_accuracy@{test\_umath\_accuracy}!runtest@{runtest}}
+\index{runtest@{runtest}!test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection{\texorpdfstring{runtest}{runtest}}
+{\footnotesize\ttfamily tuple test\+\_\+umath\+\_\+accuracy.\+runtest}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (sys.platform.startswith(\textcolor{stringliteral}{'linux'})}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{and}\ IS\_AVX\ \textcolor{keywordflow}{and}\ \textcolor{keywordflow}{not}\ \_glibc\_older\_than(\textcolor{stringliteral}{"{}2.17"{}}))}
+
+\end{DoxyCode}
+\Hypertarget{namespacetest__umath__accuracy_ac48c9610da3a84ad48f1d46e35179459}\label{namespacetest__umath__accuracy_ac48c9610da3a84ad48f1d46e35179459} 
+\index{test\_umath\_accuracy@{test\_umath\_accuracy}!str\_to\_float@{str\_to\_float}}
+\index{str\_to\_float@{str\_to\_float}!test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection{\texorpdfstring{str\_to\_float}{str\_to\_float}}
+{\footnotesize\ttfamily test\+\_\+umath\+\_\+accuracy.\+str\+\_\+to\+\_\+float = np.\+vectorize(\mbox{\hyperlink{namespacetest__umath__accuracy_a5f2d76dc7469dc41aaccf3acf1d3a26b}{convert}})}
+
+\Hypertarget{namespacetest__umath__accuracy_a3bc5eb2451172b671aa764fb0de0d3c7}\label{namespacetest__umath__accuracy_a3bc5eb2451172b671aa764fb0de0d3c7} 
+\index{test\_umath\_accuracy@{test\_umath\_accuracy}!UNARY\_OBJECT\_UFUNCS@{UNARY\_OBJECT\_UFUNCS}}
+\index{UNARY\_OBJECT\_UFUNCS@{UNARY\_OBJECT\_UFUNCS}!test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection{\texorpdfstring{UNARY\_OBJECT\_UFUNCS}{UNARY\_OBJECT\_UFUNCS}}
+{\footnotesize\ttfamily list test\+\_\+umath\+\_\+accuracy.\+UNARY\+\_\+\+OBJECT\+\_\+\+UFUNCS = \mbox{[}uf for uf in \mbox{\hyperlink{namespacetest__umath__accuracy_acb97e966accf96ba8e8583d7ed0227c4}{UNARY\+\_\+\+UFUNCS}} if "{}O-\/$>$O"{} in uf.\+types\mbox{]}}
+
+\Hypertarget{namespacetest__umath__accuracy_acb97e966accf96ba8e8583d7ed0227c4}\label{namespacetest__umath__accuracy_acb97e966accf96ba8e8583d7ed0227c4} 
+\index{test\_umath\_accuracy@{test\_umath\_accuracy}!UNARY\_UFUNCS@{UNARY\_UFUNCS}}
+\index{UNARY\_UFUNCS@{UNARY\_UFUNCS}!test\_umath\_accuracy@{test\_umath\_accuracy}}
+\doxysubsubsection{\texorpdfstring{UNARY\_UFUNCS}{UNARY\_UFUNCS}}
+{\footnotesize\ttfamily list test\+\_\+umath\+\_\+accuracy.\+UNARY\+\_\+\+UFUNCS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [obj\ \textcolor{keywordflow}{for}\ obj\ \textcolor{keywordflow}{in}\ np.\_core.umath.\_\_dict\_\_.values()\ \textcolor{keywordflow}{if}}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ isinstance(obj,\ np.ufunc)]}
+
+\end{DoxyCode}

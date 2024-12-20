@@ -1,0 +1,202 @@
+\doxysection{Référence de la classe pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}
+\hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command}{}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command}\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad624d48456438789ebbf9a14ba4baffc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a0da6dc821b6ea82a287734d22bf13b36}{name}}, str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a48a6dcdddf38765713fec5d08731bef3}{summary}}, bool isolated=False)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad74cf63053e59d30953e9429750d41b3}{add\+\_\+options}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a715e0edc6d7dbc3dd2f694340c9caf58}{handle\+\_\+pip\+\_\+version\+\_\+check}} (self, Values options)
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_abfb817417c4522bde2e2eb6141126aba}{run}} (self, Values options, List\mbox{[}str\mbox{]} args)
+\item 
+Tuple\mbox{[}Values, List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ae5d2ab6756b8ba6603587cbb39b9127f}{parse\+\_\+args}} (self, List\mbox{[}str\mbox{]} args)
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a387c198ac00654bb33e13cfc3770c0ab}{main}} (self, List\mbox{[}str\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1CommandContextMixIn}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+Generator\mbox{[}None, None, None\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1CommandContextMixIn_abe6c9895db2e49d99513111f76a43fdd}{main\+\_\+context}} (self)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1command__context_a7525ef54d8c7ac0f264b88324ebf22f1}{\+\_\+T}} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1CommandContextMixIn_a3146b2846523dc818459e6a8fa4874f2}{enter\+\_\+context}} (self, Context\+Manager\mbox{[}\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1command__context_a7525ef54d8c7ac0f264b88324ebf22f1}{\+\_\+T}}\mbox{]} context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a0da6dc821b6ea82a287734d22bf13b36}{name}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a48a6dcdddf38765713fec5d08731bef3}{summary}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_af55279eb904d389000b26fec0cdfb165}{parser}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ac92a9689689c17dc866ddeeb2a276ef1}{cmd\+\_\+opts}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a5dc04e349a7387dd3faac77580f3ddc0}{tempdir\+\_\+registry}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a958ba174a0d03ffa3cfdd3cb2b6d3b9e}{verbosity}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_afc8b0f72180d16e251dd8de756a1a627}{usage}} = "{}"{}
+\item 
+bool \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ae9f9614fc10bb893754c2193e526fd54}{ignore\+\_\+require\+\_\+venv}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad20b1f76545612cf9af15f32e5d6bc8c}{\+\_\+run\+\_\+wrapper}} (self, int level\+\_\+number, Values options, List\mbox{[}str\mbox{]} args)
+\item 
+int \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a8bd305e8a444810d66cd9376bd3a63c9}{\+\_\+main}} (self, List\mbox{[}str\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1CommandContextMixIn}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1CommandContextMixIn_a285e125e7dcaa9851eec167653c8e960}{\+\_\+in\+\_\+main\+\_\+context}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1CommandContextMixIn_a3b442734053208d198898396956eef77}{\+\_\+main\+\_\+context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad624d48456438789ebbf9a14ba4baffc}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad624d48456438789ebbf9a14ba4baffc} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{str}]{summary,  }\item[{bool }]{isolated = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1CommandContextMixIn_ac66381e0cf691286a57b0a13471236f7}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}.
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1RequirementCommand_a089338b2d4b4c63ced3e4bb1cb94ce31}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Requirement\+Command}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a8bd305e8a444810d66cd9376bd3a63c9}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a8bd305e8a444810d66cd9376bd3a63c9} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!\_main@{\_main}}
+\index{\_main@{\_main}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{\_main()}{\_main()}}
+{\footnotesize\ttfamily  int pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+\_\+main (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{List\mbox{[}str\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad20b1f76545612cf9af15f32e5d6bc8c}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad20b1f76545612cf9af15f32e5d6bc8c} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!\_run\_wrapper@{\_run\_wrapper}}
+\index{\_run\_wrapper@{\_run\_wrapper}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{\_run\_wrapper()}{\_run\_wrapper()}}
+{\footnotesize\ttfamily  int pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+\_\+run\+\_\+wrapper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{level\+\_\+number,  }\item[{Values}]{options,  }\item[{List\mbox{[}str\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad74cf63053e59d30953e9429750d41b3}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ad74cf63053e59d30953e9429750d41b3} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!add\_options@{add\_options}}
+\index{add\_options@{add\_options}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{add\_options()}{add\_options()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+add\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_a0f77d59024b9b1ef961c52f13d212f24}{pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1completion_1_1CompletionCommand_a1eb67ff9b3675d2707cf494bd8741c49}{pip.\+\_\+internal.\+commands.\+completion.\+Completion\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1configuration_1_1ConfigurationCommand_a34fee80a1dd22c91d18231d05fcddcb9}{pip.\+\_\+internal.\+commands.\+configuration.\+Configuration\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1debug_1_1DebugCommand_acf37647e8d123e45739851daf8d825a2}{pip.\+\_\+internal.\+commands.\+debug.\+Debug\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1download_1_1DownloadCommand_ad4f28049e3ece7692f876f5d8db24328}{pip.\+\_\+internal.\+commands.\+download.\+Download\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1freeze_1_1FreezeCommand_ab61eff72627da2ed78e2bcbfc1d8156b}{pip.\+\_\+internal.\+commands.\+freeze.\+Freeze\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1hash_1_1HashCommand_a4fb1dcef9b2b7b7f5eeae5ef40f52ffb}{pip.\+\_\+internal.\+commands.\+hash.\+Hash\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1index_1_1IndexCommand_aee8d3a446d5d574f8769298a9cbc2ebb}{pip.\+\_\+internal.\+commands.\+index.\+Index\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1inspect_1_1InspectCommand_ad909c1f5e144f0c011a664029f3e84ef}{pip.\+\_\+internal.\+commands.\+inspect.\+Inspect\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1install_1_1InstallCommand_acd7771f99caac556bedec90551f736c6}{pip.\+\_\+internal.\+commands.\+install.\+Install\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1list_1_1ListCommand_a7beb3337bc0e9088a2ac304563feb671}{pip.\+\_\+internal.\+commands.\+list.\+List\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1search_1_1SearchCommand_a422d7e667ebd88d7fa4a4df8ab87a160}{pip.\+\_\+internal.\+commands.\+search.\+Search\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1show_1_1ShowCommand_ab9043a1dff21cf85caf8c49fab83a820}{pip.\+\_\+internal.\+commands.\+show.\+Show\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1uninstall_1_1UninstallCommand_ae747ee4cf67dc6cc9d5af330b750f124}{pip.\+\_\+internal.\+commands.\+uninstall.\+Uninstall\+Command}}, et \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1wheel_1_1WheelCommand_a099839713a1e331c78e0bac9ca3c7d7a}{pip.\+\_\+internal.\+commands.\+wheel.\+Wheel\+Command}}.
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a715e0edc6d7dbc3dd2f694340c9caf58}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a715e0edc6d7dbc3dd2f694340c9caf58} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!handle\_pip\_version\_check@{handle\_pip\_version\_check}}
+\index{handle\_pip\_version\_check@{handle\_pip\_version\_check}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{handle\_pip\_version\_check()}{handle\_pip\_version\_check()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+handle\+\_\+pip\+\_\+version\+\_\+check (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Values}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is a no-op so that commands by default do not do the pip version
+check.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1index__command_1_1IndexGroupCommand_ae01b17d53f344ee63236e4bdf2032135}{pip.\+\_\+internal.\+cli.\+index\+\_\+command.\+Index\+Group\+Command}}, et \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1list_1_1ListCommand_a25ad208add15205a521f4b0076171514}{pip.\+\_\+internal.\+commands.\+list.\+List\+Command}}.
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a387c198ac00654bb33e13cfc3770c0ab}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a387c198ac00654bb33e13cfc3770c0ab} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!main@{main}}
+\index{main@{main}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily  int pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+main (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{List\mbox{[}str\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ae5d2ab6756b8ba6603587cbb39b9127f}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ae5d2ab6756b8ba6603587cbb39b9127f} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!parse\_args@{parse\_args}}
+\index{parse\_args@{parse\_args}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{parse\_args()}{parse\_args()}}
+{\footnotesize\ttfamily  Tuple\mbox{[}Values, List\mbox{[}str\mbox{]}\mbox{]} pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+parse\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{List\mbox{[}str\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_abfb817417c4522bde2e2eb6141126aba}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_abfb817417c4522bde2e2eb6141126aba} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!run@{run}}
+\index{run@{run}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily  int pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Values}]{options,  }\item[{List\mbox{[}str\mbox{]}}]{args }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1cache_1_1CacheCommand_afed6a8ed53011f9007c8a56b8e578dbe}{pip.\+\_\+internal.\+commands.\+cache.\+Cache\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1check_1_1CheckCommand_a66919d70335591205775dc299cef9556}{pip.\+\_\+internal.\+commands.\+check.\+Check\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1completion_1_1CompletionCommand_acb73bdd2d724959e934415aa9b8ac7ab}{pip.\+\_\+internal.\+commands.\+completion.\+Completion\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1configuration_1_1ConfigurationCommand_a037593a993ca45f90158866c148efdb0}{pip.\+\_\+internal.\+commands.\+configuration.\+Configuration\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1debug_1_1DebugCommand_ad61d252dadf4281ecbf50be217af05b8}{pip.\+\_\+internal.\+commands.\+debug.\+Debug\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1download_1_1DownloadCommand_a0dd51c41d3594398e1ab28c6a08f8ddc}{pip.\+\_\+internal.\+commands.\+download.\+Download\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1freeze_1_1FreezeCommand_a08770077d395182ea70410a69e50b0ee}{pip.\+\_\+internal.\+commands.\+freeze.\+Freeze\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1hash_1_1HashCommand_a1c507b4629e8940645b8239212076661}{pip.\+\_\+internal.\+commands.\+hash.\+Hash\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1help_1_1HelpCommand_a42d55ea22ffe4629cb79f2ea28e579fa}{pip.\+\_\+internal.\+commands.\+help.\+Help\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1index_1_1IndexCommand_a5ee8c68da095e3f6a704f66e4ee2691d}{pip.\+\_\+internal.\+commands.\+index.\+Index\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1inspect_1_1InspectCommand_a617b099e7f8157ec3647001660811b78}{pip.\+\_\+internal.\+commands.\+inspect.\+Inspect\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1install_1_1InstallCommand_a2a946583a8728eac5e890e367604f637}{pip.\+\_\+internal.\+commands.\+install.\+Install\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1list_1_1ListCommand_a94228d389b9156ab6e0cf12445c83557}{pip.\+\_\+internal.\+commands.\+list.\+List\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1search_1_1SearchCommand_aaddade13dc1a9442d9fda830e0ea15f3}{pip.\+\_\+internal.\+commands.\+search.\+Search\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1show_1_1ShowCommand_ab99cc84fc85b173b3c6e8ea6d687854e}{pip.\+\_\+internal.\+commands.\+show.\+Show\+Command}}, \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1uninstall_1_1UninstallCommand_a3667b0dca3ab8ca11f39a21ef1ff1ee9}{pip.\+\_\+internal.\+commands.\+uninstall.\+Uninstall\+Command}}, et \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1wheel_1_1WheelCommand_aef0e01f600b1c5d1c36a29ac5a1a4d65}{pip.\+\_\+internal.\+commands.\+wheel.\+Wheel\+Command}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ac92a9689689c17dc866ddeeb2a276ef1}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ac92a9689689c17dc866ddeeb2a276ef1} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!cmd\_opts@{cmd\_opts}}
+\index{cmd\_opts@{cmd\_opts}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{cmd\_opts}{cmd\_opts}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+cmd\+\_\+opts}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ae9f9614fc10bb893754c2193e526fd54}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_ae9f9614fc10bb893754c2193e526fd54} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!ignore\_require\_venv@{ignore\_require\_venv}}
+\index{ignore\_require\_venv@{ignore\_require\_venv}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{ignore\_require\_venv}{ignore\_require\_venv}}
+{\footnotesize\ttfamily bool pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+ignore\+\_\+require\+\_\+venv = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a0da6dc821b6ea82a287734d22bf13b36}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a0da6dc821b6ea82a287734d22bf13b36} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!name@{name}}
+\index{name@{name}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+name}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_af55279eb904d389000b26fec0cdfb165}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_af55279eb904d389000b26fec0cdfb165} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!parser@{parser}}
+\index{parser@{parser}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+parser}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a48a6dcdddf38765713fec5d08731bef3}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a48a6dcdddf38765713fec5d08731bef3} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!summary@{summary}}
+\index{summary@{summary}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{summary}{summary}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+summary}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a5dc04e349a7387dd3faac77580f3ddc0}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a5dc04e349a7387dd3faac77580f3ddc0} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!tempdir\_registry@{tempdir\_registry}}
+\index{tempdir\_registry@{tempdir\_registry}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{tempdir\_registry}{tempdir\_registry}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+tempdir\+\_\+registry}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_afc8b0f72180d16e251dd8de756a1a627}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_afc8b0f72180d16e251dd8de756a1a627} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!usage@{usage}}
+\index{usage@{usage}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily str pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+usage = "{}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a958ba174a0d03ffa3cfdd3cb2b6d3b9e}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1Command_a958ba174a0d03ffa3cfdd3cb2b6d3b9e} 
+\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!verbosity@{verbosity}}
+\index{verbosity@{verbosity}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{verbosity}{verbosity}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+verbosity}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+internal/cli/\mbox{\hyperlink{base__command_8py}{base\+\_\+command.\+py}}\end{DoxyCompactItemize}

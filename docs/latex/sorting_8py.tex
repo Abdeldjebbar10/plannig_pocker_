@@ -1,0 +1,48 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/core/sorting.py}
+\hypertarget{sorting_8py}{}\label{sorting_8py}\index{env/lib/python3.12/site-\/packages/pandas/core/sorting.py@{env/lib/python3.12/site-\/packages/pandas/core/sorting.py}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core}{pandas.\+core}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting}{pandas.\+core.\+sorting}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a5d59af530c66d30bee514adae3065f97}{pandas.\+core.\+sorting.\+get\+\_\+indexer\+\_\+indexer}} (\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} target, Level\texorpdfstring{$\vert$}{|}list\mbox{[}Level\mbox{]}\texorpdfstring{$\vert$}{|}None level, list\mbox{[}bool\mbox{]}\texorpdfstring{$\vert$}{|}bool ascending, Sort\+Kind kind, Na\+Position na\+\_\+position, bool sort\+\_\+remaining, Index\+Key\+Func key)
+\item 
+npt.\+NDArray\mbox{[}np.\+int64\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_adbcaea4c69033b757e68fb6f8ed6105c}{pandas.\+core.\+sorting.\+get\+\_\+group\+\_\+index}} (labels, Shape shape, bool sort, bool xnull)
+\item 
+tuple\mbox{[}npt.\+NDArray\mbox{[}np.\+intp\mbox{]}, npt.\+NDArray\mbox{[}np.\+int64\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a958d45b3afb39502d01b014cccbb7401}{pandas.\+core.\+sorting.\+get\+\_\+compressed\+\_\+ids}} (labels, Shape sizes)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a6ae8cf75c93f330b36b0d473c588b747}{pandas.\+core.\+sorting.\+is\+\_\+int64\+\_\+overflow\+\_\+possible}} (Shape shape)
+\item 
+list\mbox{[}npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_aea88f88f2c88a1a2966dd2406e7f06ab}{pandas.\+core.\+sorting.\+\_\+decons\+\_\+group\+\_\+index}} (npt.\+NDArray\mbox{[}np.\+intp\mbox{]} comp\+\_\+labels, Shape shape)
+\item 
+list\mbox{[}npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_ae47f9cd7d5058c4fcd4f6f5830bb1b84}{pandas.\+core.\+sorting.\+decons\+\_\+obs\+\_\+group\+\_\+ids}} (npt.\+NDArray\mbox{[}np.\+intp\mbox{]} comp\+\_\+ids, npt.\+NDArray\mbox{[}np.\+intp\mbox{]} obs\+\_\+ids, Shape shape, Sequence\mbox{[}npt.\+NDArray\mbox{[}np.\+signedinteger\mbox{]}\mbox{]} labels, bool xnull)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a984c5ea1947ec578cdaff655702df5a3}{pandas.\+core.\+sorting.\+lexsort\+\_\+indexer}} (Sequence\mbox{[}Array\+Like\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}Series\mbox{]} keys, orders=None, str na\+\_\+position="{}last"{}, Callable\texorpdfstring{$\vert$}{|}None key=None, bool codes\+\_\+given=False)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_add1268682e9720be5e4682def9a832ed}{pandas.\+core.\+sorting.\+nargsort}} (Array\+Like\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}Series items, Sort\+Kind kind="{}quicksort"{}, bool ascending=True, str na\+\_\+position="{}last"{}, Callable\texorpdfstring{$\vert$}{|}None key=None, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}\texorpdfstring{$\vert$}{|}None mask=None)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_acc3cdcbfcd60d2253e7e843f254a8d6b}{pandas.\+core.\+sorting.\+nargminmax}} (\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} values, str method, Axis\+Int axis=0)
+\item 
+int \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a98e3a92a42103c4b3e5ff927d4c908b6}{pandas.\+core.\+sorting.\+\_\+nanargminmax}} (np.\+ndarray values, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, func)
+\item 
+Multi\+Index \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a40672fba282049a52ada719678ec5baf}{pandas.\+core.\+sorting.\+\_\+ensure\+\_\+key\+\_\+mapped\+\_\+multiindex}} (Multi\+Index index, Callable key, level=None)
+\item 
+Array\+Like\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a987539d31d22237fc43c6ee443d2120f}{pandas.\+core.\+sorting.\+ensure\+\_\+key\+\_\+mapped}} (Array\+Like\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\texorpdfstring{$\vert$}{|}Series values, Callable\texorpdfstring{$\vert$}{|}None key, levels=None)
+\item 
+list\mbox{[}tuple\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_aeb4b09b6dcedc57a6e7d13733b54e395}{pandas.\+core.\+sorting.\+get\+\_\+flattened\+\_\+list}} (npt.\+NDArray\mbox{[}np.\+intp\mbox{]} comp\+\_\+ids, int ngroups, Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} levels, Iterable\mbox{[}np.\+ndarray\mbox{]} labels)
+\item 
+dict\mbox{[}Hashable, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_ac2f9b61304768d12c21ff05d08e6f739}{pandas.\+core.\+sorting.\+get\+\_\+indexer\+\_\+dict}} (list\mbox{[}np.\+ndarray\mbox{]} label\+\_\+list, list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} keys)
+\item 
+npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a508c4e5b564f2354194bf7a44b6df8e7}{pandas.\+core.\+sorting.\+get\+\_\+group\+\_\+index\+\_\+sorter}} (npt.\+NDArray\mbox{[}np.\+intp\mbox{]} group\+\_\+index, int\texorpdfstring{$\vert$}{|}None ngroups=None)
+\item 
+tuple\mbox{[}npt.\+NDArray\mbox{[}np.\+int64\mbox{]}, npt.\+NDArray\mbox{[}np.\+int64\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a4671f23853e5550b2dce6fcaaa13e00b}{pandas.\+core.\+sorting.\+compress\+\_\+group\+\_\+index}} (npt.\+NDArray\mbox{[}np.\+int64\mbox{]} group\+\_\+index, bool sort=True)
+\item 
+tuple\mbox{[}npt.\+NDArray\mbox{[}np.\+int64\mbox{]}, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1sorting_a6fed5723f0a2dffd444d6b22afe32692}{pandas.\+core.\+sorting.\+\_\+reorder\+\_\+by\+\_\+uniques}} (npt.\+NDArray\mbox{[}np.\+int64\mbox{]} uniques, npt.\+NDArray\mbox{[}np.\+intp\mbox{]} labels)
+\end{DoxyCompactItemize}

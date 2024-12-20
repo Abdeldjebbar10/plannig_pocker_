@@ -1,0 +1,28 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Empty\+Data\+Error}
+\hypertarget{classpandas_1_1errors_1_1EmptyDataError}{}\label{classpandas_1_1errors_1_1EmptyDataError}\index{pandas.errors.EmptyDataError@{pandas.errors.EmptyDataError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Empty\+Data\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Empty\+Data\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exception raised in ``pd.read_csv`` when empty data or header is encountered.
+
+Examples
+--------
+>>> from io import StringIO
+>>> empty = StringIO()
+>>> pd.read_csv(empty)
+Traceback (most recent call last):
+EmptyDataError: No columns to parse from file
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

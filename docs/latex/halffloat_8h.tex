@@ -1,0 +1,298 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/include/numpy/halffloat.h}
+\hypertarget{halffloat_8h}{}\label{halffloat_8h}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/halffloat.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/halffloat.h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include $<$numpy/npy\+\_\+math.\+h$>$}\newline
+Graphe des dépendances par inclusion de halffloat.\+h\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_ab7992ad9174a8c1a8f0f76922df70db2}{NPY\+\_\+\+HALF\+\_\+\+ZERO}}~(0x0000u)
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_ab09cae7e3de97e1f9f9e8bed60226e52}{NPY\+\_\+\+HALF\+\_\+\+PZERO}}~(0x0000u)
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_af24a1de40e23d99da2be35a00bb88878}{NPY\+\_\+\+HALF\+\_\+\+NZERO}}~(0x8000u)
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_a9435531d6cd641e1cd0d46b0d77e021f}{NPY\+\_\+\+HALF\+\_\+\+ONE}}~(0x3c00u)
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_a15ab97e99c48b504e555215855578226}{NPY\+\_\+\+HALF\+\_\+\+NEGONE}}~(0xbc00u)
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_a9589e1e77913b3cb417bd1b81095acc3}{NPY\+\_\+\+HALF\+\_\+\+PINF}}~(0x7c00u)
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_a413c0c91260bdaab4f385266e981a7c4}{NPY\+\_\+\+HALF\+\_\+\+NINF}}~(0xfc00u)
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_a7920dbca15f8d2edd3e05b9995db9006}{NPY\+\_\+\+HALF\+\_\+\+NAN}}~(0x7e00u)
+\item 
+\#define \mbox{\hyperlink{halffloat_8h_aebdd1120bacbb1914beb8d4139ff708c}{NPY\+\_\+\+MAX\+\_\+\+HALF}}~(0x7bffu)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{halffloat_8h_aac8b1560f3a9de23b8e26be5701bac32}{npy\+\_\+half\+\_\+to\+\_\+float}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h)
+\item 
+double \mbox{\hyperlink{halffloat_8h_a102cce0a8d96a2780d308921d407b32f}{npy\+\_\+half\+\_\+to\+\_\+double}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h)
+\item 
+\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \mbox{\hyperlink{halffloat_8h_a6cd896f1e32701cc2ee99421cd9b6b67}{npy\+\_\+float\+\_\+to\+\_\+half}} (float f)
+\item 
+\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \mbox{\hyperlink{halffloat_8h_a8213fe700ed77675d0cbe40d904068c4}{npy\+\_\+double\+\_\+to\+\_\+half}} (double d)
+\item 
+int \mbox{\hyperlink{halffloat_8h_ab9f4ad1a600d0998ccc6c14cdeffee65}{npy\+\_\+half\+\_\+eq}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_a15f4b0af492de5407fab42d5dcee9687}{npy\+\_\+half\+\_\+ne}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_a85633929e0af27192054d218dc3ffc8f}{npy\+\_\+half\+\_\+le}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_a1d75a9238ff562b3511795cd1b77c69b}{npy\+\_\+half\+\_\+lt}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_addcb11b1d834ff7b1df8d2e1d47e8fa8}{npy\+\_\+half\+\_\+ge}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_a278cf09fe71d41c1157a913f96bd96c6}{npy\+\_\+half\+\_\+gt}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_afab778c75ce0842c1ff3396d10e5812f}{npy\+\_\+half\+\_\+eq\+\_\+nonan}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_abd970b1a84eaac045bc721752a4fcee0}{npy\+\_\+half\+\_\+lt\+\_\+nonan}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_ac9a17c95b2e9826fc85188d43120972b}{npy\+\_\+half\+\_\+le\+\_\+nonan}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h1, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h2)
+\item 
+int \mbox{\hyperlink{halffloat_8h_a28e33b4ad72097baf25102bb4ec7a0e6}{npy\+\_\+half\+\_\+iszero}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h)
+\item 
+int \mbox{\hyperlink{halffloat_8h_a205fad9151265856460b69a47ff884ac}{npy\+\_\+half\+\_\+isnan}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h)
+\item 
+int \mbox{\hyperlink{halffloat_8h_a576a18c24248af5bb585b16106de866f}{npy\+\_\+half\+\_\+isinf}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h)
+\item 
+int \mbox{\hyperlink{halffloat_8h_ae46004ec0f498c04da421683fe31e260}{npy\+\_\+half\+\_\+isfinite}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h)
+\item 
+int \mbox{\hyperlink{halffloat_8h_a3fc4fe744f9924d56b7eec3f33f8367f}{npy\+\_\+half\+\_\+signbit}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h)
+\item 
+\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \mbox{\hyperlink{halffloat_8h_aa93c8b02e15766fc9a40f4cf2bf95bd0}{npy\+\_\+half\+\_\+copysign}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} x, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} y)
+\item 
+\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \mbox{\hyperlink{halffloat_8h_ade12a8a595bfff86a1048b1cfd1ef9e9}{npy\+\_\+half\+\_\+spacing}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} h)
+\item 
+\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \mbox{\hyperlink{halffloat_8h_a7f5fb946ad9608b0c36395c3c832e3eb}{npy\+\_\+half\+\_\+nextafter}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} x, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} y)
+\item 
+\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \mbox{\hyperlink{halffloat_8h_ab179a6f28cacdbe16e77994560dc3dbd}{npy\+\_\+half\+\_\+divmod}} (\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} x, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} y, \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \texorpdfstring{$\ast$}{*}modulus)
+\item 
+npy\+\_\+uint16 \mbox{\hyperlink{halffloat_8h_afebe97be77f8eaf8d3068f7d3bfb7634}{npy\+\_\+floatbits\+\_\+to\+\_\+halfbits}} (npy\+\_\+uint32 f)
+\item 
+npy\+\_\+uint16 \mbox{\hyperlink{halffloat_8h_a2316c9775010bb8d2fa30fe360a43408}{npy\+\_\+doublebits\+\_\+to\+\_\+halfbits}} (npy\+\_\+uint64 d)
+\item 
+npy\+\_\+uint32 \mbox{\hyperlink{halffloat_8h_a70d7bd635ae875f5465516f30e3b7e45}{npy\+\_\+halfbits\+\_\+to\+\_\+floatbits}} (npy\+\_\+uint16 h)
+\item 
+npy\+\_\+uint64 \mbox{\hyperlink{halffloat_8h_a98c4896f92ecd432c2749964e11842a6}{npy\+\_\+halfbits\+\_\+to\+\_\+doublebits}} (npy\+\_\+uint16 h)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{halffloat_8h_a7920dbca15f8d2edd3e05b9995db9006}\label{halffloat_8h_a7920dbca15f8d2edd3e05b9995db9006} 
+\index{halffloat.h@{halffloat.h}!NPY\_HALF\_NAN@{NPY\_HALF\_NAN}}
+\index{NPY\_HALF\_NAN@{NPY\_HALF\_NAN}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_NAN}{NPY\_HALF\_NAN}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+NAN~(0x7e00u)}
+
+\Hypertarget{halffloat_8h_a15ab97e99c48b504e555215855578226}\label{halffloat_8h_a15ab97e99c48b504e555215855578226} 
+\index{halffloat.h@{halffloat.h}!NPY\_HALF\_NEGONE@{NPY\_HALF\_NEGONE}}
+\index{NPY\_HALF\_NEGONE@{NPY\_HALF\_NEGONE}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_NEGONE}{NPY\_HALF\_NEGONE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+NEGONE~(0xbc00u)}
+
+\Hypertarget{halffloat_8h_a413c0c91260bdaab4f385266e981a7c4}\label{halffloat_8h_a413c0c91260bdaab4f385266e981a7c4} 
+\index{halffloat.h@{halffloat.h}!NPY\_HALF\_NINF@{NPY\_HALF\_NINF}}
+\index{NPY\_HALF\_NINF@{NPY\_HALF\_NINF}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_NINF}{NPY\_HALF\_NINF}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+NINF~(0xfc00u)}
+
+\Hypertarget{halffloat_8h_af24a1de40e23d99da2be35a00bb88878}\label{halffloat_8h_af24a1de40e23d99da2be35a00bb88878} 
+\index{halffloat.h@{halffloat.h}!NPY\_HALF\_NZERO@{NPY\_HALF\_NZERO}}
+\index{NPY\_HALF\_NZERO@{NPY\_HALF\_NZERO}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_NZERO}{NPY\_HALF\_NZERO}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+NZERO~(0x8000u)}
+
+\Hypertarget{halffloat_8h_a9435531d6cd641e1cd0d46b0d77e021f}\label{halffloat_8h_a9435531d6cd641e1cd0d46b0d77e021f} 
+\index{halffloat.h@{halffloat.h}!NPY\_HALF\_ONE@{NPY\_HALF\_ONE}}
+\index{NPY\_HALF\_ONE@{NPY\_HALF\_ONE}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_ONE}{NPY\_HALF\_ONE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+ONE~(0x3c00u)}
+
+\Hypertarget{halffloat_8h_a9589e1e77913b3cb417bd1b81095acc3}\label{halffloat_8h_a9589e1e77913b3cb417bd1b81095acc3} 
+\index{halffloat.h@{halffloat.h}!NPY\_HALF\_PINF@{NPY\_HALF\_PINF}}
+\index{NPY\_HALF\_PINF@{NPY\_HALF\_PINF}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_PINF}{NPY\_HALF\_PINF}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+PINF~(0x7c00u)}
+
+\Hypertarget{halffloat_8h_ab09cae7e3de97e1f9f9e8bed60226e52}\label{halffloat_8h_ab09cae7e3de97e1f9f9e8bed60226e52} 
+\index{halffloat.h@{halffloat.h}!NPY\_HALF\_PZERO@{NPY\_HALF\_PZERO}}
+\index{NPY\_HALF\_PZERO@{NPY\_HALF\_PZERO}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_PZERO}{NPY\_HALF\_PZERO}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+PZERO~(0x0000u)}
+
+\Hypertarget{halffloat_8h_ab7992ad9174a8c1a8f0f76922df70db2}\label{halffloat_8h_ab7992ad9174a8c1a8f0f76922df70db2} 
+\index{halffloat.h@{halffloat.h}!NPY\_HALF\_ZERO@{NPY\_HALF\_ZERO}}
+\index{NPY\_HALF\_ZERO@{NPY\_HALF\_ZERO}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_ZERO}{NPY\_HALF\_ZERO}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+ZERO~(0x0000u)}
+
+\Hypertarget{halffloat_8h_aebdd1120bacbb1914beb8d4139ff708c}\label{halffloat_8h_aebdd1120bacbb1914beb8d4139ff708c} 
+\index{halffloat.h@{halffloat.h}!NPY\_MAX\_HALF@{NPY\_MAX\_HALF}}
+\index{NPY\_MAX\_HALF@{NPY\_MAX\_HALF}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_HALF}{NPY\_MAX\_HALF}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+HALF~(0x7bffu)}
+
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{halffloat_8h_a8213fe700ed77675d0cbe40d904068c4}\label{halffloat_8h_a8213fe700ed77675d0cbe40d904068c4} 
+\index{halffloat.h@{halffloat.h}!npy\_double\_to\_half@{npy\_double\_to\_half}}
+\index{npy\_double\_to\_half@{npy\_double\_to\_half}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_double\_to\_half()}{npy\_double\_to\_half()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} npy\+\_\+double\+\_\+to\+\_\+half (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a2316c9775010bb8d2fa30fe360a43408}\label{halffloat_8h_a2316c9775010bb8d2fa30fe360a43408} 
+\index{halffloat.h@{halffloat.h}!npy\_doublebits\_to\_halfbits@{npy\_doublebits\_to\_halfbits}}
+\index{npy\_doublebits\_to\_halfbits@{npy\_doublebits\_to\_halfbits}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_doublebits\_to\_halfbits()}{npy\_doublebits\_to\_halfbits()}}
+{\footnotesize\ttfamily npy\+\_\+uint16 npy\+\_\+doublebits\+\_\+to\+\_\+halfbits (\begin{DoxyParamCaption}\item[{npy\+\_\+uint64}]{d }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a6cd896f1e32701cc2ee99421cd9b6b67}\label{halffloat_8h_a6cd896f1e32701cc2ee99421cd9b6b67} 
+\index{halffloat.h@{halffloat.h}!npy\_float\_to\_half@{npy\_float\_to\_half}}
+\index{npy\_float\_to\_half@{npy\_float\_to\_half}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_float\_to\_half()}{npy\_float\_to\_half()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} npy\+\_\+float\+\_\+to\+\_\+half (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_afebe97be77f8eaf8d3068f7d3bfb7634}\label{halffloat_8h_afebe97be77f8eaf8d3068f7d3bfb7634} 
+\index{halffloat.h@{halffloat.h}!npy\_floatbits\_to\_halfbits@{npy\_floatbits\_to\_halfbits}}
+\index{npy\_floatbits\_to\_halfbits@{npy\_floatbits\_to\_halfbits}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_floatbits\_to\_halfbits()}{npy\_floatbits\_to\_halfbits()}}
+{\footnotesize\ttfamily npy\+\_\+uint16 npy\+\_\+floatbits\+\_\+to\+\_\+halfbits (\begin{DoxyParamCaption}\item[{npy\+\_\+uint32}]{f }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_aa93c8b02e15766fc9a40f4cf2bf95bd0}\label{halffloat_8h_aa93c8b02e15766fc9a40f4cf2bf95bd0} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_copysign@{npy\_half\_copysign}}
+\index{npy\_half\_copysign@{npy\_half\_copysign}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_copysign()}{npy\_half\_copysign()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} npy\+\_\+half\+\_\+copysign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{x,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{y }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_ab179a6f28cacdbe16e77994560dc3dbd}\label{halffloat_8h_ab179a6f28cacdbe16e77994560dc3dbd} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_divmod@{npy\_half\_divmod}}
+\index{npy\_half\_divmod@{npy\_half\_divmod}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_divmod()}{npy\_half\_divmod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} npy\+\_\+half\+\_\+divmod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{x,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{y,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \texorpdfstring{$\ast$}{*}}]{modulus }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_ab9f4ad1a600d0998ccc6c14cdeffee65}\label{halffloat_8h_ab9f4ad1a600d0998ccc6c14cdeffee65} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_eq@{npy\_half\_eq}}
+\index{npy\_half\_eq@{npy\_half\_eq}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_eq()}{npy\_half\_eq()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+eq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_afab778c75ce0842c1ff3396d10e5812f}\label{halffloat_8h_afab778c75ce0842c1ff3396d10e5812f} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_eq\_nonan@{npy\_half\_eq\_nonan}}
+\index{npy\_half\_eq\_nonan@{npy\_half\_eq\_nonan}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_eq\_nonan()}{npy\_half\_eq\_nonan()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+eq\+\_\+nonan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_addcb11b1d834ff7b1df8d2e1d47e8fa8}\label{halffloat_8h_addcb11b1d834ff7b1df8d2e1d47e8fa8} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_ge@{npy\_half\_ge}}
+\index{npy\_half\_ge@{npy\_half\_ge}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_ge()}{npy\_half\_ge()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+ge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a278cf09fe71d41c1157a913f96bd96c6}\label{halffloat_8h_a278cf09fe71d41c1157a913f96bd96c6} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_gt@{npy\_half\_gt}}
+\index{npy\_half\_gt@{npy\_half\_gt}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_gt()}{npy\_half\_gt()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+gt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_ae46004ec0f498c04da421683fe31e260}\label{halffloat_8h_ae46004ec0f498c04da421683fe31e260} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_isfinite@{npy\_half\_isfinite}}
+\index{npy\_half\_isfinite@{npy\_half\_isfinite}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_isfinite()}{npy\_half\_isfinite()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+isfinite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a576a18c24248af5bb585b16106de866f}\label{halffloat_8h_a576a18c24248af5bb585b16106de866f} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_isinf@{npy\_half\_isinf}}
+\index{npy\_half\_isinf@{npy\_half\_isinf}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_isinf()}{npy\_half\_isinf()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+isinf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a205fad9151265856460b69a47ff884ac}\label{halffloat_8h_a205fad9151265856460b69a47ff884ac} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_isnan@{npy\_half\_isnan}}
+\index{npy\_half\_isnan@{npy\_half\_isnan}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_isnan()}{npy\_half\_isnan()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+isnan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a28e33b4ad72097baf25102bb4ec7a0e6}\label{halffloat_8h_a28e33b4ad72097baf25102bb4ec7a0e6} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_iszero@{npy\_half\_iszero}}
+\index{npy\_half\_iszero@{npy\_half\_iszero}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_iszero()}{npy\_half\_iszero()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+iszero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a85633929e0af27192054d218dc3ffc8f}\label{halffloat_8h_a85633929e0af27192054d218dc3ffc8f} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_le@{npy\_half\_le}}
+\index{npy\_half\_le@{npy\_half\_le}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_le()}{npy\_half\_le()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+le (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_ac9a17c95b2e9826fc85188d43120972b}\label{halffloat_8h_ac9a17c95b2e9826fc85188d43120972b} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_le\_nonan@{npy\_half\_le\_nonan}}
+\index{npy\_half\_le\_nonan@{npy\_half\_le\_nonan}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_le\_nonan()}{npy\_half\_le\_nonan()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+le\+\_\+nonan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a1d75a9238ff562b3511795cd1b77c69b}\label{halffloat_8h_a1d75a9238ff562b3511795cd1b77c69b} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_lt@{npy\_half\_lt}}
+\index{npy\_half\_lt@{npy\_half\_lt}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_lt()}{npy\_half\_lt()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+lt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_abd970b1a84eaac045bc721752a4fcee0}\label{halffloat_8h_abd970b1a84eaac045bc721752a4fcee0} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_lt\_nonan@{npy\_half\_lt\_nonan}}
+\index{npy\_half\_lt\_nonan@{npy\_half\_lt\_nonan}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_lt\_nonan()}{npy\_half\_lt\_nonan()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+lt\+\_\+nonan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a15f4b0af492de5407fab42d5dcee9687}\label{halffloat_8h_a15f4b0af492de5407fab42d5dcee9687} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_ne@{npy\_half\_ne}}
+\index{npy\_half\_ne@{npy\_half\_ne}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_ne()}{npy\_half\_ne()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+ne (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h1,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h2 }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a7f5fb946ad9608b0c36395c3c832e3eb}\label{halffloat_8h_a7f5fb946ad9608b0c36395c3c832e3eb} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_nextafter@{npy\_half\_nextafter}}
+\index{npy\_half\_nextafter@{npy\_half\_nextafter}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_nextafter()}{npy\_half\_nextafter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} npy\+\_\+half\+\_\+nextafter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{x,  }\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{y }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a3fc4fe744f9924d56b7eec3f33f8367f}\label{halffloat_8h_a3fc4fe744f9924d56b7eec3f33f8367f} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_signbit@{npy\_half\_signbit}}
+\index{npy\_half\_signbit@{npy\_half\_signbit}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_signbit()}{npy\_half\_signbit()}}
+{\footnotesize\ttfamily int npy\+\_\+half\+\_\+signbit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_ade12a8a595bfff86a1048b1cfd1ef9e9}\label{halffloat_8h_ade12a8a595bfff86a1048b1cfd1ef9e9} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_spacing@{npy\_half\_spacing}}
+\index{npy\_half\_spacing@{npy\_half\_spacing}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_spacing()}{npy\_half\_spacing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} npy\+\_\+half\+\_\+spacing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a102cce0a8d96a2780d308921d407b32f}\label{halffloat_8h_a102cce0a8d96a2780d308921d407b32f} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_to\_double@{npy\_half\_to\_double}}
+\index{npy\_half\_to\_double@{npy\_half\_to\_double}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_to\_double()}{npy\_half\_to\_double()}}
+{\footnotesize\ttfamily double npy\+\_\+half\+\_\+to\+\_\+double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_aac8b1560f3a9de23b8e26be5701bac32}\label{halffloat_8h_aac8b1560f3a9de23b8e26be5701bac32} 
+\index{halffloat.h@{halffloat.h}!npy\_half\_to\_float@{npy\_half\_to\_float}}
+\index{npy\_half\_to\_float@{npy\_half\_to\_float}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half\_to\_float()}{npy\_half\_to\_float()}}
+{\footnotesize\ttfamily float npy\+\_\+half\+\_\+to\+\_\+float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a98c4896f92ecd432c2749964e11842a6}\label{halffloat_8h_a98c4896f92ecd432c2749964e11842a6} 
+\index{halffloat.h@{halffloat.h}!npy\_halfbits\_to\_doublebits@{npy\_halfbits\_to\_doublebits}}
+\index{npy\_halfbits\_to\_doublebits@{npy\_halfbits\_to\_doublebits}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_halfbits\_to\_doublebits()}{npy\_halfbits\_to\_doublebits()}}
+{\footnotesize\ttfamily npy\+\_\+uint64 npy\+\_\+halfbits\+\_\+to\+\_\+doublebits (\begin{DoxyParamCaption}\item[{npy\+\_\+uint16}]{h }\end{DoxyParamCaption})}
+
+\Hypertarget{halffloat_8h_a70d7bd635ae875f5465516f30e3b7e45}\label{halffloat_8h_a70d7bd635ae875f5465516f30e3b7e45} 
+\index{halffloat.h@{halffloat.h}!npy\_halfbits\_to\_floatbits@{npy\_halfbits\_to\_floatbits}}
+\index{npy\_halfbits\_to\_floatbits@{npy\_halfbits\_to\_floatbits}!halffloat.h@{halffloat.h}}
+\doxysubsubsection{\texorpdfstring{npy\_halfbits\_to\_floatbits()}{npy\_halfbits\_to\_floatbits()}}
+{\footnotesize\ttfamily npy\+\_\+uint32 npy\+\_\+halfbits\+\_\+to\+\_\+floatbits (\begin{DoxyParamCaption}\item[{npy\+\_\+uint16}]{h }\end{DoxyParamCaption})}
+

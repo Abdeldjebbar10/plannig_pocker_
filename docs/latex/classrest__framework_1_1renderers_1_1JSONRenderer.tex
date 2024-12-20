@@ -1,0 +1,121 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+renderers.\+JSONRenderer}
+\hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer}{}\label{classrest__framework_1_1renderers_1_1JSONRenderer}\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+renderers.\+JSONRenderer\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+renderers.\+JSONRenderer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_aee74e10428efd79304be2c6f5274255b}{get\+\_\+indent}} (self, accepted\+\_\+media\+\_\+type, renderer\+\_\+context)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_a6ba7296471a8d06e2cf83e243c360eac}{render}} (self, data, accepted\+\_\+media\+\_\+type=None, renderer\+\_\+context=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_a44d3d14710ba92845fdf08fc610836a6}{media\+\_\+type}} = \textquotesingle{}application/json\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_a110abf9c0195e64276ea7baf32c1dac2}{format}} = \textquotesingle{}json\textquotesingle{}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_a841ffef60dc0caaf9e4721c035c95eaa}{encoder\+\_\+class}} = encoders.\+JSONEncoder
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_a3e1f19989aff62478c242d9d0ca9e28a}{ensure\+\_\+ascii}} = not api\+\_\+settings.\+UNICODE\+\_\+\+JSON
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_ab890d7db6867a3c09a7c3508abb36218}{compact}} = api\+\_\+settings.\+COMPACT\+\_\+\+JSON
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_a8e718b7c7c1df6f3d58ed6b25d3ff7bd}{strict}} = api\+\_\+settings.\+STRICT\+\_\+\+JSON
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer_ac8da6ce8d66f01fd0c5332bfb9d0c928}{charset}} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer}{rest\+\_\+framework.\+renderers.\+Base\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a4b069d932469c3bbded458f53752216f}{media\+\_\+type}} = None
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_ae5e3a1c630b0a2fe8313136879445163}{format}} = None
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a6b2cb330c059e96c05e436f1f113154d}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a9395a7164e794d61f52bcad01cf4e3ed}{render\+\_\+style}} = \textquotesingle{}text\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Renderer which serializes to JSON.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_aee74e10428efd79304be2c6f5274255b}\label{classrest__framework_1_1renderers_1_1JSONRenderer_aee74e10428efd79304be2c6f5274255b} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!get\_indent@{get\_indent}}
+\index{get\_indent@{get\_indent}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{get\_indent()}{get\_indent()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+JSONRenderer.\+get\+\_\+indent (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{accepted\+\_\+media\+\_\+type,  }\item[{}]{renderer\+\_\+context }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_a6ba7296471a8d06e2cf83e243c360eac}\label{classrest__framework_1_1renderers_1_1JSONRenderer_a6ba7296471a8d06e2cf83e243c360eac} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!render@{render}}
+\index{render@{render}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+JSONRenderer.\+render (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{accepted\+\_\+media\+\_\+type = {\ttfamily None},  }\item[{}]{renderer\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render `data` into JSON, returning a bytestring.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a5a896320e27ee4c3cd59b9b75816b26e}{rest\+\_\+framework.\+renderers.\+Base\+Renderer}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_ac8da6ce8d66f01fd0c5332bfb9d0c928}\label{classrest__framework_1_1renderers_1_1JSONRenderer_ac8da6ce8d66f01fd0c5332bfb9d0c928} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!charset@{charset}}
+\index{charset@{charset}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{charset}{charset}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+JSONRenderer.\+charset = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_ab890d7db6867a3c09a7c3508abb36218}\label{classrest__framework_1_1renderers_1_1JSONRenderer_ab890d7db6867a3c09a7c3508abb36218} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!compact@{compact}}
+\index{compact@{compact}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{compact}{compact}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+JSONRenderer.\+compact = api\+\_\+settings.\+COMPACT\+\_\+\+JSON\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_a841ffef60dc0caaf9e4721c035c95eaa}\label{classrest__framework_1_1renderers_1_1JSONRenderer_a841ffef60dc0caaf9e4721c035c95eaa} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!encoder\_class@{encoder\_class}}
+\index{encoder\_class@{encoder\_class}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{encoder\_class}{encoder\_class}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+JSONRenderer.\+encoder\+\_\+class = encoders.\+JSONEncoder\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_a3e1f19989aff62478c242d9d0ca9e28a}\label{classrest__framework_1_1renderers_1_1JSONRenderer_a3e1f19989aff62478c242d9d0ca9e28a} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!ensure\_ascii@{ensure\_ascii}}
+\index{ensure\_ascii@{ensure\_ascii}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{ensure\_ascii}{ensure\_ascii}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+JSONRenderer.\+ensure\+\_\+ascii = not api\+\_\+settings.\+UNICODE\+\_\+\+JSON\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_a110abf9c0195e64276ea7baf32c1dac2}\label{classrest__framework_1_1renderers_1_1JSONRenderer_a110abf9c0195e64276ea7baf32c1dac2} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!format@{format}}
+\index{format@{format}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+JSONRenderer.\+format = \textquotesingle{}json\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_a44d3d14710ba92845fdf08fc610836a6}\label{classrest__framework_1_1renderers_1_1JSONRenderer_a44d3d14710ba92845fdf08fc610836a6} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!media\_type@{media\_type}}
+\index{media\_type@{media\_type}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{media\_type}{media\_type}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+JSONRenderer.\+media\+\_\+type = \textquotesingle{}application/json\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1JSONRenderer_a8e718b7c7c1df6f3d58ed6b25d3ff7bd}\label{classrest__framework_1_1renderers_1_1JSONRenderer_a8e718b7c7c1df6f3d58ed6b25d3ff7bd} 
+\index{rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}!strict@{strict}}
+\index{strict@{strict}!rest\_framework.renderers.JSONRenderer@{rest\_framework.renderers.JSONRenderer}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+JSONRenderer.\+strict = api\+\_\+settings.\+STRICT\+\_\+\+JSON\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2renderers_8py}{renderers.\+py}}\end{DoxyCompactItemize}

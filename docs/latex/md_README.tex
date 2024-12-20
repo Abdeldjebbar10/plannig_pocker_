@@ -1,0 +1,71 @@
+\chapter{Application Web Planning Poker}
+\hypertarget{md_README}{}\label{md_README}\index{Application Web Planning Poker@{Application Web Planning Poker}}
+\label{md_README_autotoc_md10}%
+\Hypertarget{md_README_autotoc_md10}%
+ Cette application permet de jouer au {\bfseries{Planning Poker}} en ligne, permettant à plusieurs participants d\textquotesingle{}estimer la difficulté des fonctionnalités d\textquotesingle{}un projet. Les règles sont flexibles (strict, moyenne, médiane, etc.) et l\textquotesingle{}application génère un fichier JSON avec les résultats à la fin.\hypertarget{md_README_autotoc_md11}{}\doxysection{\texorpdfstring{Fonctionnalités}{Fonctionnalités}}\label{md_README_autotoc_md11}
+
+\begin{DoxyItemize}
+\item {\bfseries{Création de joueurs}} \+: Permet de définir des joueurs avec des rôles (admin ou non).
+\item {\bfseries{Création de parties}} \+: Sélection des participants et de l\textquotesingle{}admin pour chaque partie.
+\item {\bfseries{Vote de fonctionnalités}} \+: Chaque joueur vote avec une carte, et les votes sont validés selon les règles choisies.
+\item {\bfseries{Mode de jeu}} \+: Strict, moyenne, médiane, etc.
+\item {\bfseries{Gestion des parties}} \+: Suivi de l\textquotesingle{}état des parties (en cours, terminé, non commencé).
+\item {\bfseries{Export JSON}} \+: Sauvegarde des résultats des votes et des fonctionnalités dans un fichier JSON.
+\item {\bfseries{Reprise de la partie}} \+: Reprise d\textquotesingle{}une partie en cours à partir d\textquotesingle{}un fichier JSON sauvegardé.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md12}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md_README_autotoc_md12}
+\hypertarget{md_README_autotoc_md13}{}\doxysubsection{\texorpdfstring{Prérequis}{Prérequis}}\label{md_README_autotoc_md13}
+Avant de démarrer le projet, assurez-\/vous d\textquotesingle{}avoir les éléments suivants installés \+:
+
+
+\begin{DoxyItemize}
+\item Python 3.\+x
+\item pip (gestionnaire de paquets Python)
+\item Node.\+js (pour le frontend React)
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md14}{}\doxysubsection{\texorpdfstring{Étapes d\textquotesingle{}installation}{Étapes d'installation}}\label{md_README_autotoc_md14}
+
+\begin{DoxyEnumerate}
+\item Clonez ce projet \+: \`{}\`{}\`{}bash git clone \href{https://votre-repository-url.git}{\texttt{ https\+://votre-\/repository-\/url.\+git}} cd nom\+\_\+du\+\_\+dossier
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md15}{}\doxysection{\texorpdfstring{Technologies}{Technologies}}\label{md_README_autotoc_md15}
+
+\begin{DoxyItemize}
+\item {\bfseries{Backend}} \+: Django, Django REST Framework
+\item {\bfseries{Frontend}} \+: React, Axios
+\item {\bfseries{Base de données}} \+: Postgre\+SQL
+\item {\bfseries{Autres}} \+: Docker, CORS
+\end{DoxyItemize}
+
+Activer l\textquotesingle{}environnement virtuel \+:
+
+Sous Linux/\+Mac \+:
+
+source env/bin/activate Sous Windows \+:
+
+.\textbackslash{}env\textbackslash{}\+Scripts\textbackslash{}activate Une fois activé, tu devrais voir (env) devant ton invite de commande.
+
+Installer Django \+:
+
+Dans ton environnement virtuel activé, installe Django \+:
+
+pip install django Installer d\textquotesingle{}autres dépendances nécessaires \+:
+
+Pour ton projet, nous aurons besoin de Django REST Framework (pour créer des API) et django-\/cors-\/headers (pour gérer les requêtes du frontend).
+
+pip install djangorestframework django-\/cors-\/headers
+
+Créer un projet Django \+:
+
+Dans ton terminal, exécute cette commande pour créer un nouveau projet Django \+:
+
+django-\/admin startproject \doxylink{namespaceplanning__poker}{planning\+\_\+poker} .
+
+Vérifier le projet \+:
+
+Lance le serveur Django pour t\textquotesingle{}assurer que tout fonctionne correctement.
+
+python \doxylink{manage_8py}{manage.\+py} runserver Tu devrais voir un message indiquant que le serveur est en cours d\textquotesingle{}exécution, généralement à l\textquotesingle{}adresse \href{http://127.0.0.1:8000/}{\texttt{ http\+://127.\+0.\+0.\+1\+:8000/}}.
+
+Ouvre ton navigateur et va à l\textquotesingle{}adresse \href{http://127.0.0.1:8000/}{\texttt{ http\+://127.\+0.\+0.\+1\+:8000/}}. Si tu vois la page d\textquotesingle{}accueil Django, cela signifie que tout est correctement installé.
+
+pip install django-\/widget-\/tweaks
+
+python \doxylink{manage_8py}{manage.\+py} collectstatic 

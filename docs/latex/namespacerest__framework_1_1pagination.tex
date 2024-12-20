@@ -1,0 +1,121 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+pagination}
+\hypertarget{namespacerest__framework_1_1pagination}{}\label{namespacerest__framework_1_1pagination}\index{rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1pagination_1_1BasePagination}{Base\+Pagination}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1pagination_1_1CursorPagination}{Cursor\+Pagination}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1pagination_1_1LimitOffsetPagination}{Limit\+Offset\+Pagination}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1pagination_1_1PageNumberPagination}{Page\+Number\+Pagination}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1pagination_a93c7bc095e649e03d89f75c9c765a0a2}{\+\_\+positive\+\_\+int}} (integer\+\_\+string, strict=False, cutoff=None)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1pagination_a6a6fc75541f258ee6cbab40ddfa4eef5}{\+\_\+divide\+\_\+with\+\_\+ceil}} (a, b)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1pagination_af5fb1d1dc4478f5722ae4c15e350994d}{\+\_\+get\+\_\+displayed\+\_\+page\+\_\+numbers}} (current, final)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1pagination_aebd86acaae9c30afee8ed4a23381083f}{\+\_\+get\+\_\+page\+\_\+links}} (page\+\_\+numbers, current, url\+\_\+func)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1pagination_abbdac3079a0603eb85591ce93fb1899f}{\+\_\+reverse\+\_\+ordering}} (ordering\+\_\+tuple)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1pagination_a88ab1f6f7fc6e3fa116c8a75f4309d54}{Cursor}} = namedtuple(\textquotesingle{}Cursor\textquotesingle{}, \mbox{[}\textquotesingle{}offset\textquotesingle{}, \textquotesingle{}reverse\textquotesingle{}, \textquotesingle{}position\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1pagination_ae42bc3837dcc6c84458137c33f7bd9b2}{Page\+Link}} = namedtuple(\textquotesingle{}Page\+Link\textquotesingle{}, \mbox{[}\textquotesingle{}url\textquotesingle{}, \textquotesingle{}number\textquotesingle{}, \textquotesingle{}is\+\_\+active\textquotesingle{}, \textquotesingle{}is\+\_\+break\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1pagination_ace6c41d24b090ab5f6d0e167eaaed7c2}{PAGE\+\_\+\+BREAK}} = \mbox{\hyperlink{namespacerest__framework_1_1pagination_ae42bc3837dcc6c84458137c33f7bd9b2}{Page\+Link}}(url=None, number=None, is\+\_\+active=False, is\+\_\+break=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Pagination serializers determine the structure of the output that should
+be used for paginated responses.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1pagination_a6a6fc75541f258ee6cbab40ddfa4eef5}\label{namespacerest__framework_1_1pagination_a6a6fc75541f258ee6cbab40ddfa4eef5} 
+\index{rest\_framework.pagination@{rest\_framework.pagination}!\_divide\_with\_ceil@{\_divide\_with\_ceil}}
+\index{\_divide\_with\_ceil@{\_divide\_with\_ceil}!rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection{\texorpdfstring{\_divide\_with\_ceil()}{\_divide\_with\_ceil()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+pagination.\+\_\+divide\+\_\+with\+\_\+ceil (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns 'a' divided by 'b', with any remainder rounded up.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1pagination_af5fb1d1dc4478f5722ae4c15e350994d}\label{namespacerest__framework_1_1pagination_af5fb1d1dc4478f5722ae4c15e350994d} 
+\index{rest\_framework.pagination@{rest\_framework.pagination}!\_get\_displayed\_page\_numbers@{\_get\_displayed\_page\_numbers}}
+\index{\_get\_displayed\_page\_numbers@{\_get\_displayed\_page\_numbers}!rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection{\texorpdfstring{\_get\_displayed\_page\_numbers()}{\_get\_displayed\_page\_numbers()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+pagination.\+\_\+get\+\_\+displayed\+\_\+page\+\_\+numbers (\begin{DoxyParamCaption}\item[{}]{current,  }\item[{}]{final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This utility function determines a list of page numbers to display.
+This gives us a nice contextually relevant set of page numbers.
+
+For example:
+current=14, final=16 -> [1, None, 13, 14, 15, 16]
+
+This implementation gives one page to each side of the cursor,
+or two pages to the side when the cursor is at the edge, then
+ensures that any breaks between non-continuous page numbers never
+remove only a single page.
+
+For an alternative implementation which gives two pages to each side of
+the cursor, eg. as in GitHub issue list pagination, see:
+
+https://gist.github.com/tomchristie/321140cebb1c4a558b15
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1pagination_aebd86acaae9c30afee8ed4a23381083f}\label{namespacerest__framework_1_1pagination_aebd86acaae9c30afee8ed4a23381083f} 
+\index{rest\_framework.pagination@{rest\_framework.pagination}!\_get\_page\_links@{\_get\_page\_links}}
+\index{\_get\_page\_links@{\_get\_page\_links}!rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection{\texorpdfstring{\_get\_page\_links()}{\_get\_page\_links()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+pagination.\+\_\+get\+\_\+page\+\_\+links (\begin{DoxyParamCaption}\item[{}]{page\+\_\+numbers,  }\item[{}]{current,  }\item[{}]{url\+\_\+func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Given a list of page numbers and `None` page breaks,
+return a list of `PageLink` objects.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1pagination_a93c7bc095e649e03d89f75c9c765a0a2}\label{namespacerest__framework_1_1pagination_a93c7bc095e649e03d89f75c9c765a0a2} 
+\index{rest\_framework.pagination@{rest\_framework.pagination}!\_positive\_int@{\_positive\_int}}
+\index{\_positive\_int@{\_positive\_int}!rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection{\texorpdfstring{\_positive\_int()}{\_positive\_int()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+pagination.\+\_\+positive\+\_\+int (\begin{DoxyParamCaption}\item[{}]{integer\+\_\+string,  }\item[{}]{strict = {\ttfamily False},  }\item[{}]{cutoff = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Cast a string to a strictly positive integer.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1pagination_abbdac3079a0603eb85591ce93fb1899f}\label{namespacerest__framework_1_1pagination_abbdac3079a0603eb85591ce93fb1899f} 
+\index{rest\_framework.pagination@{rest\_framework.pagination}!\_reverse\_ordering@{\_reverse\_ordering}}
+\index{\_reverse\_ordering@{\_reverse\_ordering}!rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection{\texorpdfstring{\_reverse\_ordering()}{\_reverse\_ordering()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+pagination.\+\_\+reverse\+\_\+ordering (\begin{DoxyParamCaption}\item[{}]{ordering\+\_\+tuple }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Given an order_by tuple such as `('-created', 'uuid')` reverse the
+ordering and return a new tuple, eg. `('created', '-uuid')`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1pagination_a88ab1f6f7fc6e3fa116c8a75f4309d54}\label{namespacerest__framework_1_1pagination_a88ab1f6f7fc6e3fa116c8a75f4309d54} 
+\index{rest\_framework.pagination@{rest\_framework.pagination}!Cursor@{Cursor}}
+\index{Cursor@{Cursor}!rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection{\texorpdfstring{Cursor}{Cursor}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+pagination.\+Cursor = namedtuple(\textquotesingle{}Cursor\textquotesingle{}, \mbox{[}\textquotesingle{}offset\textquotesingle{}, \textquotesingle{}reverse\textquotesingle{}, \textquotesingle{}position\textquotesingle{}\mbox{]})}
+
+\Hypertarget{namespacerest__framework_1_1pagination_ace6c41d24b090ab5f6d0e167eaaed7c2}\label{namespacerest__framework_1_1pagination_ace6c41d24b090ab5f6d0e167eaaed7c2} 
+\index{rest\_framework.pagination@{rest\_framework.pagination}!PAGE\_BREAK@{PAGE\_BREAK}}
+\index{PAGE\_BREAK@{PAGE\_BREAK}!rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection{\texorpdfstring{PAGE\_BREAK}{PAGE\_BREAK}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+pagination.\+PAGE\+\_\+\+BREAK = \mbox{\hyperlink{namespacerest__framework_1_1pagination_ae42bc3837dcc6c84458137c33f7bd9b2}{Page\+Link}}(url=None, number=None, is\+\_\+active=False, is\+\_\+break=True)}
+
+\Hypertarget{namespacerest__framework_1_1pagination_ae42bc3837dcc6c84458137c33f7bd9b2}\label{namespacerest__framework_1_1pagination_ae42bc3837dcc6c84458137c33f7bd9b2} 
+\index{rest\_framework.pagination@{rest\_framework.pagination}!PageLink@{PageLink}}
+\index{PageLink@{PageLink}!rest\_framework.pagination@{rest\_framework.pagination}}
+\doxysubsubsection{\texorpdfstring{PageLink}{PageLink}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+pagination.\+Page\+Link = namedtuple(\textquotesingle{}Page\+Link\textquotesingle{}, \mbox{[}\textquotesingle{}url\textquotesingle{}, \textquotesingle{}number\textquotesingle{}, \textquotesingle{}is\+\_\+active\textquotesingle{}, \textquotesingle{}is\+\_\+break\textquotesingle{}\mbox{]})}
+

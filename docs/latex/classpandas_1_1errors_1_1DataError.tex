@@ -1,0 +1,30 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Data\+Error}
+\hypertarget{classpandas_1_1errors_1_1DataError}{}\label{classpandas_1_1errors_1_1DataError}\index{pandas.errors.DataError@{pandas.errors.DataError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Data\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Data\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exceptionn raised when performing an operation on non-numerical data.
+
+For example, calling ``ohlc`` on a non-numerical column or a function
+on a rolling window.
+
+Examples
+--------
+>>> ser = pd.Series(['a', 'b', 'c'])
+>>> ser.rolling(2).sum()
+Traceback (most recent call last):
+DataError: No numeric types to aggregate
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

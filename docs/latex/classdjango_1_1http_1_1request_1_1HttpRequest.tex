@@ -1,0 +1,530 @@
+\doxysection{Référence de la classe django.\+http.\+request.\+Http\+Request}
+\hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest}{}\label{classdjango_1_1http_1_1request_1_1HttpRequest}\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+http.\+request.\+Http\+Request\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a632ddef011403d00decc1b918959affd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a8749f72f86bc50a5c3413be86e80c6e5}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a757d86c06e163aa94180817723ce1b9c}{headers}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a0df3d3c567c70e211f5ba630693a05b2}{accepted\+\_\+types}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_abdf0235d56745f4653b68f72d1d23278}{accepts}} (self, media\+\_\+type)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a24ec01aa893820b82d0387c09832d97e}{get\+\_\+host}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_aea068e7cc0f8344548c4faf9904994bb}{get\+\_\+port}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a9310d293f0bcd017585fe6f1bde2bb7a}{get\+\_\+full\+\_\+path}} (self, force\+\_\+append\+\_\+slash=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a696e63a84a61e584dc7b0ac52bf03f7c}{get\+\_\+full\+\_\+path\+\_\+info}} (self, force\+\_\+append\+\_\+slash=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a0d8935c3f62e91008b59694e5883e0cc}{get\+\_\+signed\+\_\+cookie}} (self, key, default=\mbox{\hyperlink{namespacedjango_1_1http_1_1request_ac8424f2711a447ec93c2c7c86d23074e}{RAISE\+\_\+\+ERROR}}, salt="{}"{}, max\+\_\+age=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a779e4388b7528ae2f94ae9da4f796d4c}{build\+\_\+absolute\+\_\+uri}} (self, location=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a310351c62fabcc0ae84b2adf024ebe2a}{scheme}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a36a10a06496598c40f0f3c40e2d248bd}{is\+\_\+secure}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_affc440df209dd1fb33d63b8fce39f3b2}{encoding}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a09c32945992a963608d955c2618ead79}{encoding}} (self, val)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_ab7a7aa2c822f67c140b4c5a6e7e509ab}{upload\+\_\+handlers}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a031a0dd5cb3e0fd372e158b06906505d}{upload\+\_\+handlers}} (self, upload\+\_\+handlers)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a117df1053362344a0dd0475ce3545e6e}{parse\+\_\+file\+\_\+upload}} (self, \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_ad55450e18be6e845fbea7d769ca1f047}{META}}, post\+\_\+data)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a0c776b91cea1a69dafe5dce09b6f96f1}{body}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a13db25295d57830ab61aed1a8339842e}{close}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a7b5205e754042f5dc1400c5f6884da05}{read}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_afb060721e5b1e1b326667868f0cdedc5}{readline}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a2c9788fbe1c2da8396161e0f43a4f1ea}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_aa8d6998a7d76e3634977b366f97a2b8a}{readlines}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a8cfa0f66d25b4601c33746874eeaa319}{GET}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_abb19780b570f37d4737bd041e6d4e1ec}{POST}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a0b2ecc6cee20b9d28f38c529e0a167c5}{COOKIES}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_ad55450e18be6e845fbea7d769ca1f047}{META}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a8f13014b886ea92e3690aaf8426bddda}{FILES}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a5cc77eb278effbf5ce9452e5764079a1}{path}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a453ada9c4f4c57b25432754032c6720a}{path\+\_\+info}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a15aabfb55db9e36dabdbeb83e001039f}{method}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_ac8bba998f0c191af947cc25987fa5369}{resolver\+\_\+match}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a310669cf455333418225b54eb7ae5a8a}{content\+\_\+type}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_af766fc3ef8e8928c0e06602ff8ab14c2}{content\+\_\+params}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_aef55127a87c3ed9ec3cdc27cea582dc6}{encoding}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_ac7436d456669c32fddbb988bcfed4f97}{scheme}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_aa1cee684fb5f3836f76b1a88fa94ede6}{upload\+\_\+handlers}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a4c51df785a7330471874e6d9ee29769a}{readline}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a0900589b1188413f340433b37a648b8f}{\+\_\+set\+\_\+content\+\_\+type\+\_\+params}} (self, meta)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a4af1d0475edb9ed265670ae53f202d4d}{\+\_\+get\+\_\+raw\+\_\+host}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_ac071cab888c74855b89f479962eed0de}{\+\_\+get\+\_\+full\+\_\+path}} (self, \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a5cc77eb278effbf5ce9452e5764079a1}{path}}, force\+\_\+append\+\_\+slash)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_af67e2ea4f57a4a2ae4d14431ea1e9f0c}{\+\_\+current\+\_\+scheme\+\_\+host}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a5d4a545f4035f64b59bdde25b491ef3c}{\+\_\+get\+\_\+scheme}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_afd91d964260c2d34c3bf4777d221adfb}{\+\_\+initialize\+\_\+handlers}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a9fb7ef54733497d4980b4d2b5f832344}{\+\_\+mark\+\_\+post\+\_\+parse\+\_\+error}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a04522e2fced67c5d584baa4acb82a98d}{\+\_\+load\+\_\+post\+\_\+and\+\_\+files}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_ae78c7cc7551a419102b3a39089066f92}{\+\_\+upload\+\_\+handlers}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a1cb0541742ac4fbd3ee10a6cb302630e}{\+\_\+body}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a5bdd7667475eff922e770766c0ed397e}{\+\_\+stream}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a379d1cb8dd7a13fe6f69b2a793313eaf}{\+\_\+post}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a479f2aab70fe6f13b6e9f3f42bcb5193}{\+\_\+files}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a956b695d60b35d748d02178beedd2cca}{\+\_\+read\+\_\+started}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_a6217dd086e9edb723d88a2bf0c0ccb73}{\+\_\+encoding}} = None
+\item 
+list \mbox{\hyperlink{classdjango_1_1http_1_1request_1_1HttpRequest_ad490d4687d340ac0062454527885e9cf}{\+\_\+upload\+\_\+handlers}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A basic HTTP request.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a632ddef011403d00decc1b918959affd}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a632ddef011403d00decc1b918959affd} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1WSGIRequest_a33fc6e8936688c78e5abaec6b37fd87b}{django.\+core.\+handlers.\+wsgi.\+WSGIRequest}}, et \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIRequest_ad5659bfb3ce3852c6cf0348c49794433}{django.\+core.\+handlers.\+asgi.\+ASGIRequest}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a2c9788fbe1c2da8396161e0f43a4f1ea}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a2c9788fbe1c2da8396161e0f43a4f1ea} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a8749f72f86bc50a5c3413be86e80c6e5}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a8749f72f86bc50a5c3413be86e80c6e5} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_af67e2ea4f57a4a2ae4d14431ea1e9f0c}\label{classdjango_1_1http_1_1request_1_1HttpRequest_af67e2ea4f57a4a2ae4d14431ea1e9f0c} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_current\_scheme\_host@{\_current\_scheme\_host}}
+\index{\_current\_scheme\_host@{\_current\_scheme\_host}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_current\_scheme\_host()}{\_current\_scheme\_host()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+current\+\_\+scheme\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_ac071cab888c74855b89f479962eed0de}\label{classdjango_1_1http_1_1request_1_1HttpRequest_ac071cab888c74855b89f479962eed0de} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_get\_full\_path@{\_get\_full\_path}}
+\index{\_get\_full\_path@{\_get\_full\_path}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_get\_full\_path()}{\_get\_full\_path()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+get\+\_\+full\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{force\+\_\+append\+\_\+slash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a4af1d0475edb9ed265670ae53f202d4d}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a4af1d0475edb9ed265670ae53f202d4d} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_get\_raw\_host@{\_get\_raw\_host}}
+\index{\_get\_raw\_host@{\_get\_raw\_host}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_get\_raw\_host()}{\_get\_raw\_host()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+get\+\_\+raw\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the HTTP host using the environment or request headers. Skip
+allowed hosts protection, so may return an insecure host.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a5d4a545f4035f64b59bdde25b491ef3c}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a5d4a545f4035f64b59bdde25b491ef3c} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_get\_scheme@{\_get\_scheme}}
+\index{\_get\_scheme@{\_get\_scheme}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_get\_scheme()}{\_get\_scheme()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+get\+\_\+scheme (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Hook for subclasses like WSGIRequest to implement. Return 'http' by
+default.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIRequest_ad35cf1281b6acc53ed620caf924ee919}{django.\+core.\+handlers.\+asgi.\+ASGIRequest}}, et \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1WSGIRequest_a7ed15bfcc5b849dff1cb1d523c88357e}{django.\+core.\+handlers.\+wsgi.\+WSGIRequest}}.
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_afd91d964260c2d34c3bf4777d221adfb}\label{classdjango_1_1http_1_1request_1_1HttpRequest_afd91d964260c2d34c3bf4777d221adfb} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_initialize\_handlers@{\_initialize\_handlers}}
+\index{\_initialize\_handlers@{\_initialize\_handlers}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_initialize\_handlers()}{\_initialize\_handlers()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+initialize\+\_\+handlers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a04522e2fced67c5d584baa4acb82a98d}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a04522e2fced67c5d584baa4acb82a98d} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_load\_post\_and\_files@{\_load\_post\_and\_files}}
+\index{\_load\_post\_and\_files@{\_load\_post\_and\_files}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_load\_post\_and\_files()}{\_load\_post\_and\_files()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+load\+\_\+post\+\_\+and\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Populate self._post and self._files if the content-type is a form type\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a9fb7ef54733497d4980b4d2b5f832344}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a9fb7ef54733497d4980b4d2b5f832344} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_mark\_post\_parse\_error@{\_mark\_post\_parse\_error}}
+\index{\_mark\_post\_parse\_error@{\_mark\_post\_parse\_error}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_mark\_post\_parse\_error()}{\_mark\_post\_parse\_error()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+mark\+\_\+post\+\_\+parse\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a0900589b1188413f340433b37a648b8f}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a0900589b1188413f340433b37a648b8f} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_set\_content\_type\_params@{\_set\_content\_type\_params}}
+\index{\_set\_content\_type\_params@{\_set\_content\_type\_params}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_set\_content\_type\_params()}{\_set\_content\_type\_params()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+set\+\_\+content\+\_\+type\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{meta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Set content_type, content_params, and encoding.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a0df3d3c567c70e211f5ba630693a05b2}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a0df3d3c567c70e211f5ba630693a05b2} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!accepted\_types@{accepted\_types}}
+\index{accepted\_types@{accepted\_types}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{accepted\_types()}{accepted\_types()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+accepted\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of MediaType instances.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_abdf0235d56745f4653b68f72d1d23278}\label{classdjango_1_1http_1_1request_1_1HttpRequest_abdf0235d56745f4653b68f72d1d23278} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!accepts@{accepts}}
+\index{accepts@{accepts}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{accepts()}{accepts()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+accepts (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{media\+\_\+type }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a0c776b91cea1a69dafe5dce09b6f96f1}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a0c776b91cea1a69dafe5dce09b6f96f1} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!body@{body}}
+\index{body@{body}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{body()}{body()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+body (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a779e4388b7528ae2f94ae9da4f796d4c}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a779e4388b7528ae2f94ae9da4f796d4c} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!build\_absolute\_uri@{build\_absolute\_uri}}
+\index{build\_absolute\_uri@{build\_absolute\_uri}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{build\_absolute\_uri()}{build\_absolute\_uri()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+build\+\_\+absolute\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{location = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build an absolute URI from the location and the variables available in
+this request. If no ``location`` is specified, build the absolute URI
+using request.get_full_path(). If the location is absolute, convert it
+to an RFC 3987 compliant URI and return it. If location is relative or
+is scheme-relative (i.e., ``//example.com/``), urljoin() it to a base
+URL constructed from the request variables.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a13db25295d57830ab61aed1a8339842e}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a13db25295d57830ab61aed1a8339842e} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!close@{close}}
+\index{close@{close}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIRequest_a2f3a1c1c50b4cf63ef552b4f96cc4f7f}{django.\+core.\+handlers.\+asgi.\+ASGIRequest}}.
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_affc440df209dd1fb33d63b8fce39f3b2}\label{classdjango_1_1http_1_1request_1_1HttpRequest_affc440df209dd1fb33d63b8fce39f3b2} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!encoding@{encoding}}
+\index{encoding@{encoding}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{encoding()}{encoding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+encoding (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a09c32945992a963608d955c2618ead79}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a09c32945992a963608d955c2618ead79} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!encoding@{encoding}}
+\index{encoding@{encoding}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{encoding()}{encoding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+encoding (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{val }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the encoding used for GET/POST accesses. If the GET or POST
+dictionary has already been created, remove and recreate it on the
+next access (so that it is decoded correctly).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a9310d293f0bcd017585fe6f1bde2bb7a}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a9310d293f0bcd017585fe6f1bde2bb7a} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!get\_full\_path@{get\_full\_path}}
+\index{get\_full\_path@{get\_full\_path}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{get\_full\_path()}{get\_full\_path()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+get\+\_\+full\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{force\+\_\+append\+\_\+slash = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a696e63a84a61e584dc7b0ac52bf03f7c}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a696e63a84a61e584dc7b0ac52bf03f7c} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!get\_full\_path\_info@{get\_full\_path\_info}}
+\index{get\_full\_path\_info@{get\_full\_path\_info}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{get\_full\_path\_info()}{get\_full\_path\_info()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+get\+\_\+full\+\_\+path\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{force\+\_\+append\+\_\+slash = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a24ec01aa893820b82d0387c09832d97e}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a24ec01aa893820b82d0387c09832d97e} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!get\_host@{get\_host}}
+\index{get\_host@{get\_host}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{get\_host()}{get\_host()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+get\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the HTTP host using the environment or request headers.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_aea068e7cc0f8344548c4faf9904994bb}\label{classdjango_1_1http_1_1request_1_1HttpRequest_aea068e7cc0f8344548c4faf9904994bb} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!get\_port@{get\_port}}
+\index{get\_port@{get\_port}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{get\_port()}{get\_port()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+get\+\_\+port (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the port number for the request as a string.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a0d8935c3f62e91008b59694e5883e0cc}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a0d8935c3f62e91008b59694e5883e0cc} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!get\_signed\_cookie@{get\_signed\_cookie}}
+\index{get\_signed\_cookie@{get\_signed\_cookie}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{get\_signed\_cookie()}{get\_signed\_cookie()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+get\+\_\+signed\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default = {\ttfamily \mbox{\hyperlink{namespacedjango_1_1http_1_1request_ac8424f2711a447ec93c2c7c86d23074e}{RAISE\+\_\+\+ERROR}}},  }\item[{}]{salt = {\ttfamily "{}"{}},  }\item[{}]{max\+\_\+age = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt to return a signed cookie. If the signature fails or the
+cookie has expired, raise an exception, unless the `default` argument
+is provided,  in which case return that value.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a757d86c06e163aa94180817723ce1b9c}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a757d86c06e163aa94180817723ce1b9c} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!headers@{headers}}
+\index{headers@{headers}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{headers()}{headers()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+headers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a36a10a06496598c40f0f3c40e2d248bd}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a36a10a06496598c40f0f3c40e2d248bd} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!is\_secure@{is\_secure}}
+\index{is\_secure@{is\_secure}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{is\_secure()}{is\_secure()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+is\+\_\+secure (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a117df1053362344a0dd0475ce3545e6e}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a117df1053362344a0dd0475ce3545e6e} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!parse\_file\_upload@{parse\_file\_upload}}
+\index{parse\_file\_upload@{parse\_file\_upload}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{parse\_file\_upload()}{parse\_file\_upload()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+parse\+\_\+file\+\_\+upload (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{META,  }\item[{}]{post\+\_\+data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a tuple of (POST QueryDict, FILES MultiValueDict).\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a7b5205e754042f5dc1400c5f6884da05}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a7b5205e754042f5dc1400c5f6884da05} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!read@{read}}
+\index{read@{read}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_afb060721e5b1e1b326667868f0cdedc5}\label{classdjango_1_1http_1_1request_1_1HttpRequest_afb060721e5b1e1b326667868f0cdedc5} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!readline@{readline}}
+\index{readline@{readline}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+readline (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_aa8d6998a7d76e3634977b366f97a2b8a}\label{classdjango_1_1http_1_1request_1_1HttpRequest_aa8d6998a7d76e3634977b366f97a2b8a} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!readlines@{readlines}}
+\index{readlines@{readlines}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{readlines()}{readlines()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+readlines (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a310351c62fabcc0ae84b2adf024ebe2a}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a310351c62fabcc0ae84b2adf024ebe2a} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!scheme@{scheme}}
+\index{scheme@{scheme}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{scheme()}{scheme()}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+scheme (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_ab7a7aa2c822f67c140b4c5a6e7e509ab}\label{classdjango_1_1http_1_1request_1_1HttpRequest_ab7a7aa2c822f67c140b4c5a6e7e509ab} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!upload\_handlers@{upload\_handlers}}
+\index{upload\_handlers@{upload\_handlers}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{upload\_handlers()}{upload\_handlers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+upload\+\_\+handlers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a031a0dd5cb3e0fd372e158b06906505d}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a031a0dd5cb3e0fd372e158b06906505d} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!upload\_handlers@{upload\_handlers}}
+\index{upload\_handlers@{upload\_handlers}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{upload\_handlers()}{upload\_handlers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+upload\+\_\+handlers (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{upload\+\_\+handlers }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a1cb0541742ac4fbd3ee10a6cb302630e}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a1cb0541742ac4fbd3ee10a6cb302630e} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_body@{\_body}}
+\index{\_body@{\_body}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_body}{\_body}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+body\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a6217dd086e9edb723d88a2bf0c0ccb73}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a6217dd086e9edb723d88a2bf0c0ccb73} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_encoding@{\_encoding}}
+\index{\_encoding@{\_encoding}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_encoding}{\_encoding}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+encoding = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a479f2aab70fe6f13b6e9f3f42bcb5193}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a479f2aab70fe6f13b6e9f3f42bcb5193} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_files@{\_files}}
+\index{\_files@{\_files}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_files}{\_files}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+files\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a379d1cb8dd7a13fe6f69b2a793313eaf}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a379d1cb8dd7a13fe6f69b2a793313eaf} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_post@{\_post}}
+\index{\_post@{\_post}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_post}{\_post}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+post\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a956b695d60b35d748d02178beedd2cca}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a956b695d60b35d748d02178beedd2cca} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_read\_started@{\_read\_started}}
+\index{\_read\_started@{\_read\_started}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_read\_started}{\_read\_started}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+read\+\_\+started\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a5bdd7667475eff922e770766c0ed397e}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a5bdd7667475eff922e770766c0ed397e} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_stream}{\_stream}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+stream\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_ad490d4687d340ac0062454527885e9cf}\label{classdjango_1_1http_1_1request_1_1HttpRequest_ad490d4687d340ac0062454527885e9cf} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_upload\_handlers@{\_upload\_handlers}}
+\index{\_upload\_handlers@{\_upload\_handlers}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_upload\_handlers}{\_upload\_handlers}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily list django.\+http.\+request.\+Http\+Request.\+\_\+upload\+\_\+handlers = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_ae78c7cc7551a419102b3a39089066f92}\label{classdjango_1_1http_1_1request_1_1HttpRequest_ae78c7cc7551a419102b3a39089066f92} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!\_upload\_handlers@{\_upload\_handlers}}
+\index{\_upload\_handlers@{\_upload\_handlers}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{\_upload\_handlers}{\_upload\_handlers}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+\_\+upload\+\_\+handlers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_af766fc3ef8e8928c0e06602ff8ab14c2}\label{classdjango_1_1http_1_1request_1_1HttpRequest_af766fc3ef8e8928c0e06602ff8ab14c2} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!content\_params@{content\_params}}
+\index{content\_params@{content\_params}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{content\_params}{content\_params}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+content\+\_\+params}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a310669cf455333418225b54eb7ae5a8a}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a310669cf455333418225b54eb7ae5a8a} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{content\_type}{content\_type}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+content\+\_\+type}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a0b2ecc6cee20b9d28f38c529e0a167c5}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a0b2ecc6cee20b9d28f38c529e0a167c5} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!COOKIES@{COOKIES}}
+\index{COOKIES@{COOKIES}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{COOKIES}{COOKIES}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+COOKIES}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIRequest_ac507f23b1200bd65898b1976215cdcd9}{django.\+core.\+handlers.\+asgi.\+ASGIRequest}}, et \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1WSGIRequest_a382891cbffe96dc66274808aaf16a7ec}{django.\+core.\+handlers.\+wsgi.\+WSGIRequest}}.
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_aef55127a87c3ed9ec3cdc27cea582dc6}\label{classdjango_1_1http_1_1request_1_1HttpRequest_aef55127a87c3ed9ec3cdc27cea582dc6} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!encoding@{encoding}}
+\index{encoding@{encoding}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+encoding}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a8f13014b886ea92e3690aaf8426bddda}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a8f13014b886ea92e3690aaf8426bddda} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!FILES@{FILES}}
+\index{FILES@{FILES}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{FILES}{FILES}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+FILES}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1WSGIRequest_a940ee74f7404e33b0297d070b0b3d391}{django.\+core.\+handlers.\+wsgi.\+WSGIRequest}}.
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a8cfa0f66d25b4601c33746874eeaa319}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a8cfa0f66d25b4601c33746874eeaa319} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!GET@{GET}}
+\index{GET@{GET}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{GET}{GET}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+GET}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1asgi_1_1ASGIRequest_a22178cf518b0498b12175ee12f8e7706}{django.\+core.\+handlers.\+asgi.\+ASGIRequest}}, et \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1WSGIRequest_a4167c70bcdd94cc925f4444860678305}{django.\+core.\+handlers.\+wsgi.\+WSGIRequest}}.
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_ad55450e18be6e845fbea7d769ca1f047}\label{classdjango_1_1http_1_1request_1_1HttpRequest_ad55450e18be6e845fbea7d769ca1f047} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!META@{META}}
+\index{META@{META}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{META}{META}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+META}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a15aabfb55db9e36dabdbeb83e001039f}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a15aabfb55db9e36dabdbeb83e001039f} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!method@{method}}
+\index{method@{method}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+method}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a5cc77eb278effbf5ce9452e5764079a1}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a5cc77eb278effbf5ce9452e5764079a1} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!path@{path}}
+\index{path@{path}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+path}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a453ada9c4f4c57b25432754032c6720a}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a453ada9c4f4c57b25432754032c6720a} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!path\_info@{path\_info}}
+\index{path\_info@{path\_info}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{path\_info}{path\_info}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+path\+\_\+info}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_abb19780b570f37d4737bd041e6d4e1ec}\label{classdjango_1_1http_1_1request_1_1HttpRequest_abb19780b570f37d4737bd041e6d4e1ec} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!POST@{POST}}
+\index{POST@{POST}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{POST}{POST}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+POST}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_a4c51df785a7330471874e6d9ee29769a}\label{classdjango_1_1http_1_1request_1_1HttpRequest_a4c51df785a7330471874e6d9ee29769a} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!readline@{readline}}
+\index{readline@{readline}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{readline}{readline}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+readline}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_ac8bba998f0c191af947cc25987fa5369}\label{classdjango_1_1http_1_1request_1_1HttpRequest_ac8bba998f0c191af947cc25987fa5369} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!resolver\_match@{resolver\_match}}
+\index{resolver\_match@{resolver\_match}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{resolver\_match}{resolver\_match}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+resolver\+\_\+match}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_ac7436d456669c32fddbb988bcfed4f97}\label{classdjango_1_1http_1_1request_1_1HttpRequest_ac7436d456669c32fddbb988bcfed4f97} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!scheme@{scheme}}
+\index{scheme@{scheme}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{scheme}{scheme}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+scheme}
+
+\Hypertarget{classdjango_1_1http_1_1request_1_1HttpRequest_aa1cee684fb5f3836f76b1a88fa94ede6}\label{classdjango_1_1http_1_1request_1_1HttpRequest_aa1cee684fb5f3836f76b1a88fa94ede6} 
+\index{django.http.request.HttpRequest@{django.http.request.HttpRequest}!upload\_handlers@{upload\_handlers}}
+\index{upload\_handlers@{upload\_handlers}!django.http.request.HttpRequest@{django.http.request.HttpRequest}}
+\doxysubsubsection{\texorpdfstring{upload\_handlers}{upload\_handlers}}
+{\footnotesize\ttfamily django.\+http.\+request.\+Http\+Request.\+upload\+\_\+handlers}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/http/\mbox{\hyperlink{django_2http_2request_8py}{request.\+py}}\end{DoxyCompactItemize}

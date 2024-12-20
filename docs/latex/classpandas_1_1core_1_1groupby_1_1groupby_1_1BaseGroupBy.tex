@@ -1,0 +1,599 @@
+\doxysection{Référence de la classe pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}
+\hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy}{}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy}\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8337410d52f544362ee647ab1a502b01}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8b952c92d9fdda32cdcd7b6db3eb3fa8}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}{ops.\+Base\+Grouper}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_adf4d053fd1818e6c37fdbac7960e413c}{grouper}} (self)
+\item 
+dict\mbox{[}Hashable, np.\+ndarray\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a4bd0a55d97fcab26f8df25e67e9bea0b}{groups}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a10aae1b1de1e558515d979282899845c}{ngroups}} (self)
+\item 
+dict\mbox{[}Hashable, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a69170c122250520eae9635882820c3d3}{indices}} (self)
+\item 
+T \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a9f305e6758cd10d99d0389bf68b45011}{pipe}} (self, Callable\mbox{[}..., T\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}Callable\mbox{[}..., T\mbox{]}, str\mbox{]} func, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_af91fe7eafca224e3204260639512406d}{get\+\_\+group}} (self, name, \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aac4094c67077964fa95bb915942d224c}{obj}}=None)
+\item 
+Iterator\mbox{[}tuple\mbox{[}Hashable, NDFrameT\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a9e47304f229dd92531696371b9be253e}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_ad5b15e942fb2d2dcfb12fa1667404aeb}{\+\_\+\+\_\+sizeof\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_ac86361dc5b262c58dcdf818d410136e4}{\+\_\+\+\_\+dir\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}{ndim}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_aad3c986de316f6c45ec1d2f161b001a1}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}{aggregate}} (self, func, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8cd00befecc935b7ab0c04017fa5f4a7}{groups}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a382def7764ebcaf70d26e83645db0e59}{indices}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aac4094c67077964fa95bb915942d224c}{obj}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a5207a79fc68d7810cc3a907a49eaf556}{obj}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a740e931e362229a193cc2b827ac039e7}{exclusions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+Axis\+Int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad7c87829c4f7e644366e65163289ad63}{axis}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1groupby_1_1groupby_a34ab6708bf412008a6c49f719c219280}{\+\_\+\+Keys\+Arg\+Type}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a03ac204416264c8e1af84f43300bba61}{keys}} = None
+\item 
+Index\+Label \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a37f1cb20ca08f02bc9e136da76182383}{level}} = None
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad6a78667f6d1b18a9ea35fd12c878380}{group\+\_\+keys}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a35b32ba83d07b2d612b80a3bb8b54c40}{obj}}
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a1eee2f6959c9fcab6d8b57d166c81d45}{exclusions}} \mbox{[}Hashable\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a1f3539bc11e3abeff5e0f5a31bfbc5c7}{agg}} = \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}{aggregate}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_accd950a40bfd15bc8696bf3a9ca76f38}{\+\_\+get\+\_\+indices}} (self, names)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a3542def8e404156a3457e499c8583842}{\+\_\+get\+\_\+index}} (self, name)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aa8d7f37c3e7e01e9a624bfcdb9ca795f}{\+\_\+selected\+\_\+obj}} (self)
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad7cad65657392c7742cfa69fdb2fadbb}{\+\_\+dir\+\_\+additions}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a7b5112b72a8bafe13b1fa732bf1ea30d}{\+\_\+constructor}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a8a2b95a9e1e4befc5ad3cba09c3f3e68}{\+\_\+reset\+\_\+cache}} (self, str\texorpdfstring{$\vert$}{|}None key=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a3151f76f1b53042e9d13da3d3ef3cb92}{\+\_\+dir\+\_\+deletions}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a84ab5b21406fb07629293d56ffc9f98a}{\+\_\+selection\+\_\+list}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_acd6785b162f9f2a0f0a8a279201346db}{\+\_\+obj\+\_\+with\+\_\+exclusions}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a9f3d118b3cd8f40293932a1487962d18}{\+\_\+gotitem}} (self, key, int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}{ndim}}, subset=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ad1591a6bbb00dfcef714413e1389278c}{\+\_\+infer\+\_\+selection}} (self, key, Series\texorpdfstring{$\vert$}{|}Data\+Frame subset)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin}{pandas.\+core.\+groupby.\+indexing.\+Group\+By\+Indexing\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector}{Group\+By\+Positional\+Selector}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a8058dd6f140a9da6b0f02e823cce9159}{\+\_\+positional\+\_\+selector}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a1544259469e017dd36d79d395ed5f15e}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+positional\+\_\+indexer}} (self, Positional\+Indexer\texorpdfstring{$\vert$}{|}tuple arg)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a919beb972b6e2651679c1ab45f0d0f63}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+int}} (self, int arg)
+\item 
+bool\texorpdfstring{$\vert$}{|}np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a1d0259da6f314c77dd123353e9812c97}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+list}} (self, Iterable\mbox{[}int\mbox{]} args)
+\item 
+bool\texorpdfstring{$\vert$}{|}np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a6fd469858a37bce644e9d3beafbe7ff1}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+tuple}} (self, tuple args)
+\item 
+bool\texorpdfstring{$\vert$}{|}np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a3816900101ed8903025bb3c5e4e29f1a}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+slice}} (self, slice arg)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_aea8a626dbf481c3b532e4479cb8b040c}{\+\_\+ascending\+\_\+count}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_aad474a847bbcdd0cadf7ca3edce7bcbb}{\+\_\+descending\+\_\+count}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a88200cadb55a17f5cfbb144b228762f7}{\+\_\+selection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a4b377ecea0956413cc4e45a77d887ac5}{\+\_\+selection}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a8690d2c7cd02cf083a1e6bafa899eab6}{\+\_\+selection\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin}{pandas.\+core.\+groupby.\+indexing.\+Group\+By\+Indexing\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a783cac517cedcd04929c9306b10f99f7}{\+\_\+ascending\+\_\+count}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a9035f1c6ded6d3a8a4be99f8bcdc819e}{\+\_\+descending\+\_\+count}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a792c142e01aa4fc5640ed6e0211d3c5f}{\+\_\+hidden\+\_\+attrs}}
+\item 
+ops \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a40f94745c7c0b54221efcb23f6c5de5c}{\+\_\+grouper}} .Base\+Grouper
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a3972565a4ab5ff072118eda20364cd2c}{\+\_\+cache}} \mbox{[}str, Any\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a1e3f9f50e3532c77c3610c4b8fe27e6f}{\+\_\+accessors}} = set()
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a7b9c1894b79d330020bdc71ddc7126f0}{\+\_\+hidden\+\_\+attrs}} = frozenset()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+Index\+Label \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_aa329bea9aae5a514a109fd19b39e4d51}{\+\_\+selection}} = None
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}} = \mbox{[}"{}\+\_\+cache"{}, "{}\+\_\+\+\_\+setstate\+\_\+\+\_\+"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a4df1b01fd09955430d448bf0a173a2f5}{\+\_\+internal\+\_\+names\+\_\+set}} = set(\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a9e47304f229dd92531696371b9be253e}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a9e47304f229dd92531696371b9be253e} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily  Iterator\mbox{[}tuple\mbox{[}Hashable, NDFrameT\mbox{]}\mbox{]} pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Groupby iterator.
+
+Returns
+-------
+Generator yielding sequence of (name, subsetted object)
+for each group
+
+Examples
+--------
+
+For SeriesGroupBy:
+
+>>> lst = ['a', 'a', 'b']
+>>> ser = pd.Series([1, 2, 3], index=lst)
+>>> ser
+a    1
+a    2
+b    3
+dtype: int64
+>>> for x, y in ser.groupby(level=0):
+...     print(f'{x}\\n{y}\\n')
+a
+a    1
+a    2
+dtype: int64
+b
+b    3
+dtype: int64
+
+For DataFrameGroupBy:
+
+>>> data = [[1, 2, 3], [1, 5, 6], [7, 8, 9]]
+>>> df = pd.DataFrame(data, columns=["a", "b", "c"])
+>>> df
+   a  b  c
+0  1  2  3
+1  1  5  6
+2  7  8  9
+>>> for x, y in df.groupby(by=["a"]):
+...     print(f'{x}\\n{y}\\n')
+(1,)
+   a  b  c
+0  1  2  3
+1  1  5  6
+(7,)
+   a  b  c
+2  7  8  9
+
+For Resampler:
+
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> for x, y in ser.resample('MS'):
+...     print(f'{x}\\n{y}\\n')
+2023-01-01 00:00:00
+2023-01-01    1
+2023-01-15    2
+dtype: int64
+2023-02-01 00:00:00
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8337410d52f544362ee647ab1a502b01}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8337410d52f544362ee647ab1a502b01} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8b952c92d9fdda32cdcd7b6db3eb3fa8}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8b952c92d9fdda32cdcd7b6db3eb3fa8} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string representation for a particular object.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a417b85c7fda9b57f893ad25a764fcf36}{pandas.\+core.\+base.\+Pandas\+Object}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad7cad65657392c7742cfa69fdb2fadbb}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad7cad65657392c7742cfa69fdb2fadbb} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_dir\_additions@{\_dir\_additions}}
+\index{\_dir\_additions@{\_dir\_additions}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_dir\_additions()}{\_dir\_additions()}}
+{\footnotesize\ttfamily  set\mbox{[}str\mbox{]} pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+dir\+\_\+additions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Add additional __dir__ for this object.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a8183d13494a720c8d4cc996826fd7323}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a3542def8e404156a3457e499c8583842}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a3542def8e404156a3457e499c8583842} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_get\_index@{\_get\_index}}
+\index{\_get\_index@{\_get\_index}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_get\_index()}{\_get\_index()}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+get\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Safe get index, translate keys for datelike to underlying repr.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_accd950a40bfd15bc8696bf3a9ca76f38}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_accd950a40bfd15bc8696bf3a9ca76f38} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_get\_indices@{\_get\_indices}}
+\index{\_get\_indices@{\_get\_indices}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_get\_indices()}{\_get\_indices()}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+get\+\_\+indices (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Safe get multiple indices, translate keys for
+datelike to underlying repr.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aa8d7f37c3e7e01e9a624bfcdb9ca795f}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aa8d7f37c3e7e01e9a624bfcdb9ca795f} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_selected\_obj@{\_selected\_obj}}
+\index{\_selected\_obj@{\_selected\_obj}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_selected\_obj()}{\_selected\_obj()}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+selected\+\_\+obj (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ac8332a4cf2bbb0823e6f917d796f51a0}{pandas.\+core.\+base.\+Selection\+Mixin}}.
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_af91fe7eafca224e3204260639512406d}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_af91fe7eafca224e3204260639512406d} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!get\_group@{get\_group}}
+\index{get\_group@{get\_group}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{get\_group()}{get\_group()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+get\+\_\+group (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{obj = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct DataFrame from group with provided name.
+
+Parameters
+----------
+name : object
+    The name of the group to get as a DataFrame.
+obj : DataFrame, default None
+    The DataFrame to take the DataFrame out of.  If
+    it is None, the object groupby was called on will
+    be used.
+
+    .. deprecated:: 2.1.0
+        The obj is deprecated and will be removed in a future version.
+        Do ``df.iloc[gb.indices.get(name)]``
+        instead of ``gb.get_group(name, obj=df)``.
+
+Returns
+-------
+same type as obj
+
+Examples
+--------
+
+For SeriesGroupBy:
+
+>>> lst = ['a', 'a', 'b']
+>>> ser = pd.Series([1, 2, 3], index=lst)
+>>> ser
+a    1
+a    2
+b    3
+dtype: int64
+>>> ser.groupby(level=0).get_group("a")
+a    1
+a    2
+dtype: int64
+
+For DataFrameGroupBy:
+
+>>> data = [[1, 2, 3], [1, 5, 6], [7, 8, 9]]
+>>> df = pd.DataFrame(data, columns=["a", "b", "c"],
+...                   index=["owl", "toucan", "eagle"])
+>>> df
+        a  b  c
+owl     1  2  3
+toucan  1  5  6
+eagle   7  8  9
+>>> df.groupby(by=["a"]).get_group((1,))
+        a  b  c
+owl     1  2  3
+toucan  1  5  6
+
+For Resampler:
+
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> ser.resample('MS').get_group('2023-01-01')
+2023-01-01    1
+2023-01-15    2
+dtype: int64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_adf4d053fd1818e6c37fdbac7960e413c}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_adf4d053fd1818e6c37fdbac7960e413c} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!grouper@{grouper}}
+\index{grouper@{grouper}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{grouper()}{grouper()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}{ops.\+Base\+Grouper}} pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+grouper (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a4bd0a55d97fcab26f8df25e67e9bea0b}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a4bd0a55d97fcab26f8df25e67e9bea0b} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!groups@{groups}}
+\index{groups@{groups}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{groups()}{groups()}}
+{\footnotesize\ttfamily  dict\mbox{[}Hashable, np.\+ndarray\mbox{]} pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+groups (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict {group name -> group labels}.
+
+Examples
+--------
+
+For SeriesGroupBy:
+
+>>> lst = ['a', 'a', 'b']
+>>> ser = pd.Series([1, 2, 3], index=lst)
+>>> ser
+a    1
+a    2
+b    3
+dtype: int64
+>>> ser.groupby(level=0).groups
+{'a': ['a', 'a'], 'b': ['b']}
+
+For DataFrameGroupBy:
+
+>>> data = [[1, 2, 3], [1, 5, 6], [7, 8, 9]]
+>>> df = pd.DataFrame(data, columns=["a", "b", "c"])
+>>> df
+   a  b  c
+0  1  2  3
+1  1  5  6
+2  7  8  9
+>>> df.groupby(by=["a"]).groups
+{1: [0, 1], 7: [2]}
+
+For Resampler:
+
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> ser.resample('MS').groups
+{Timestamp('2023-01-01 00:00:00'): 2, Timestamp('2023-02-01 00:00:00'): 4}
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a69170c122250520eae9635882820c3d3}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a69170c122250520eae9635882820c3d3} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!indices@{indices}}
+\index{indices@{indices}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{indices()}{indices()}}
+{\footnotesize\ttfamily  dict\mbox{[}Hashable, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+indices (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dict {group name -> group indices}.
+
+Examples
+--------
+
+For SeriesGroupBy:
+
+>>> lst = ['a', 'a', 'b']
+>>> ser = pd.Series([1, 2, 3], index=lst)
+>>> ser
+a    1
+a    2
+b    3
+dtype: int64
+>>> ser.groupby(level=0).indices
+{'a': array([0, 1]), 'b': array([2])}
+
+For DataFrameGroupBy:
+
+>>> data = [[1, 2, 3], [1, 5, 6], [7, 8, 9]]
+>>> df = pd.DataFrame(data, columns=["a", "b", "c"],
+...                   index=["owl", "toucan", "eagle"])
+>>> df
+        a  b  c
+owl     1  2  3
+toucan  1  5  6
+eagle   7  8  9
+>>> df.groupby(by=["a"]).indices
+{1: array([0, 1]), 7: array([2])}
+
+For Resampler:
+
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> ser.resample('MS').indices
+defaultdict(<class 'list'>, {Timestamp('2023-01-01 00:00:00'): [0, 1],
+Timestamp('2023-02-01 00:00:00'): [2, 3]})
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a10aae1b1de1e558515d979282899845c}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a10aae1b1de1e558515d979282899845c} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!ngroups@{ngroups}}
+\index{ngroups@{ngroups}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{ngroups()}{ngroups()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+ngroups (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a9f305e6758cd10d99d0389bf68b45011}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a9f305e6758cd10d99d0389bf68b45011} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!pipe@{pipe}}
+\index{pipe@{pipe}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{pipe()}{pipe()}}
+{\footnotesize\ttfamily  T pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+pipe (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Callable\mbox{[}..., T\mbox{]} \texorpdfstring{$\vert$}{|} tuple\mbox{[}Callable\mbox{[}..., T\mbox{]}, str\mbox{]}}]{func,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a431c855366df2ea18449b85ee31aa6e0}{pandas.\+core.\+resample.\+Resampler}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a40f94745c7c0b54221efcb23f6c5de5c}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a40f94745c7c0b54221efcb23f6c5de5c} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_grouper@{\_grouper}}
+\index{\_grouper@{\_grouper}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_grouper}{\_grouper}}
+{\footnotesize\ttfamily ops pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+grouper .Base\+Grouper\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a792c142e01aa4fc5640ed6e0211d3c5f}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a792c142e01aa4fc5640ed6e0211d3c5f} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_hidden\_attrs@{\_hidden\_attrs}}
+\index{\_hidden\_attrs@{\_hidden\_attrs}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_hidden\_attrs}{\_hidden\_attrs}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+hidden\+\_\+attrs\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ PandasObject.\_hidden\_attrs\ |\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}as\_index"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}axis"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dropna"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}exclusions"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}grouper"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}group\_keys"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}keys"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}level"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}obj"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}observed"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}sort"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a88200cadb55a17f5cfbb144b228762f7}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a88200cadb55a17f5cfbb144b228762f7} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!\_selection@{\_selection}}
+\index{\_selection@{\_selection}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{\_selection}{\_selection}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+\_\+selection\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad7c87829c4f7e644366e65163289ad63}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad7c87829c4f7e644366e65163289ad63} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!axis@{axis}}
+\index{axis@{axis}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{axis}{axis}}
+{\footnotesize\ttfamily Axis\+Int pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+axis\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad6a78667f6d1b18a9ea35fd12c878380}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad6a78667f6d1b18a9ea35fd12c878380} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!group\_keys@{group\_keys}}
+\index{group\_keys@{group\_keys}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{group\_keys}{group\_keys}}
+{\footnotesize\ttfamily bool pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+group\+\_\+keys\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8cd00befecc935b7ab0c04017fa5f4a7}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8cd00befecc935b7ab0c04017fa5f4a7} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!groups@{groups}}
+\index{groups@{groups}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{groups}{groups}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+groups}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a382def7764ebcaf70d26e83645db0e59}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a382def7764ebcaf70d26e83645db0e59} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!indices@{indices}}
+\index{indices@{indices}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{indices}{indices}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+indices}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a03ac204416264c8e1af84f43300bba61}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a03ac204416264c8e1af84f43300bba61} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!keys@{keys}}
+\index{keys@{keys}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepandas_1_1core_1_1groupby_1_1groupby_a34ab6708bf412008a6c49f719c219280}{\+\_\+\+Keys\+Arg\+Type}} pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+keys = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a37f1cb20ca08f02bc9e136da76182383}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a37f1cb20ca08f02bc9e136da76182383} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!level@{level}}
+\index{level@{level}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily Index\+Label pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+level = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aac4094c67077964fa95bb915942d224c}\label{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aac4094c67077964fa95bb915942d224c} 
+\index{pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}!obj@{obj}}
+\index{obj@{obj}!pandas.core.groupby.groupby.BaseGroupBy@{pandas.core.groupby.groupby.BaseGroupBy}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By.\+obj}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/groupby/\mbox{\hyperlink{core_2groupby_2groupby_8py}{groupby.\+py}}\end{DoxyCompactItemize}

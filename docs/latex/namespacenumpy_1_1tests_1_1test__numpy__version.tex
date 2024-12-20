@@ -1,0 +1,51 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+tests.\+test\+\_\+numpy\+\_\+version}
+\hypertarget{namespacenumpy_1_1tests_1_1test__numpy__version}{}\label{namespacenumpy_1_1tests_1_1test__numpy__version}\index{numpy.tests.test\_numpy\_version@{numpy.tests.test\_numpy\_version}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1tests_1_1test__numpy__version_a283e6e98346da6d98b1324778630cab4}{test\+\_\+valid\+\_\+numpy\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1tests_1_1test__numpy__version_ac27924925776c6fdbb2397d6f38c137a}{test\+\_\+short\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1tests_1_1test__numpy__version_ac0421651419e3c9efee5dfcabad52c14}{test\+\_\+version\+\_\+module}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Check the numpy version is valid.
+
+Note that a development version is marked by the presence of 'dev0' or '+'
+in the version string, all else is treated as a release. The version string
+itself is set from the output of ``git describe`` which relies on tags.
+
+Examples
+--------
+
+Valid Development: 1.22.0.dev0 1.22.0.dev0+5-g7999db4df2 1.22.0+5-g7999db4df2
+Valid Release: 1.21.0.rc1, 1.21.0.b1, 1.21.0
+Invalid: 1.22.0.dev, 1.22.0.dev0-5-g7999db4dfB, 1.21.0.d1, 1.21.a
+
+Note that a release is determined by the version string, which in turn
+is controlled by the result of the ``git describe`` command.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1tests_1_1test__numpy__version_ac27924925776c6fdbb2397d6f38c137a}\label{namespacenumpy_1_1tests_1_1test__numpy__version_ac27924925776c6fdbb2397d6f38c137a} 
+\index{numpy.tests.test\_numpy\_version@{numpy.tests.test\_numpy\_version}!test\_short\_version@{test\_short\_version}}
+\index{test\_short\_version@{test\_short\_version}!numpy.tests.test\_numpy\_version@{numpy.tests.test\_numpy\_version}}
+\doxysubsubsection{\texorpdfstring{test\_short\_version()}{test\_short\_version()}}
+{\footnotesize\ttfamily numpy.\+tests.\+test\+\_\+numpy\+\_\+version.\+test\+\_\+short\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacenumpy_1_1tests_1_1test__numpy__version_a283e6e98346da6d98b1324778630cab4}\label{namespacenumpy_1_1tests_1_1test__numpy__version_a283e6e98346da6d98b1324778630cab4} 
+\index{numpy.tests.test\_numpy\_version@{numpy.tests.test\_numpy\_version}!test\_valid\_numpy\_version@{test\_valid\_numpy\_version}}
+\index{test\_valid\_numpy\_version@{test\_valid\_numpy\_version}!numpy.tests.test\_numpy\_version@{numpy.tests.test\_numpy\_version}}
+\doxysubsubsection{\texorpdfstring{test\_valid\_numpy\_version()}{test\_valid\_numpy\_version()}}
+{\footnotesize\ttfamily numpy.\+tests.\+test\+\_\+numpy\+\_\+version.\+test\+\_\+valid\+\_\+numpy\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacenumpy_1_1tests_1_1test__numpy__version_ac0421651419e3c9efee5dfcabad52c14}\label{namespacenumpy_1_1tests_1_1test__numpy__version_ac0421651419e3c9efee5dfcabad52c14} 
+\index{numpy.tests.test\_numpy\_version@{numpy.tests.test\_numpy\_version}!test\_version\_module@{test\_version\_module}}
+\index{test\_version\_module@{test\_version\_module}!numpy.tests.test\_numpy\_version@{numpy.tests.test\_numpy\_version}}
+\doxysubsubsection{\texorpdfstring{test\_version\_module()}{test\_version\_module()}}
+{\footnotesize\ttfamily numpy.\+tests.\+test\+\_\+numpy\+\_\+version.\+test\+\_\+version\+\_\+module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

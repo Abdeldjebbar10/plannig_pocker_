@@ -1,0 +1,447 @@
+\doxysection{dtype\+\_\+api.\+h}
+\hypertarget{dtype__api_8h_source}{}\label{dtype__api_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/dtype\_api.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/dtype\_api.h}}
+\mbox{\hyperlink{dtype__api_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ The\ public\ DType\ API}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_\_\_DTYPE\_API\_H\_}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_\_\_DTYPE\_API\_H\_}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }PyArrayMethodObject\_tag;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ Largely\ opaque\ struct\ for\ DType\ classes\ (i.e.\ metaclass\ instances).}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ The\ internal\ definition\ is\ currently\ in\ \`{}ndarraytypes.h`\ (export\ is\ a\ bit}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ more\ complex\ because\ \`{}PyArray\_Descr`\ is\ a\ DTypeMeta\ internally\ but\ not}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ externally).}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#if\ !(defined(NPY\_INTERNAL\_BUILD)\ \&\&\ NPY\_INTERNAL\_BUILD)}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#ifndef\ Py\_LIMITED\_API}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta\_tag}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ PyHeapTypeObject\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag_ac5fb7cc58287801b9a9cde93d0369629}{super}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ Most\ DTypes\ will\ have\ a\ singleton\ default\ instance,\ for\ the}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ parametric\ legacy\ DTypes\ (bytes,\ string,\ void,\ datetime)\ this}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ may\ be\ a\ pointer\ to\ the\ *prototype*\ instance?}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\mbox{\hyperlink{structPyArray__DTypeMeta__tag_ac8f716b9a8e06a10d2d50560ae14c221}{singleton}};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Copy\ of\ the\ legacy\ DTypes\ type\ number,\ usually\ invalid.\ */}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag_a1c80ffb700de388fa899806c2f81e0b9}{type\_num}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ The\ type\ object\ of\ the\ scalar\ instances\ (may\ be\ NULL?)\ */}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ PyTypeObject\ *\mbox{\hyperlink{structPyArray__DTypeMeta__tag_a9c6f24d01a25213de1747f75a04893e0}{scalar\_type}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ DType\ flags\ to\ signal\ legacy,\ parametric,\ or}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ abstract.\ \ But\ plenty\ of\ space\ for\ additional\ information/flags.}}
+\DoxyCodeLine{00037\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ npy\_uint64\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag_abbd782d9e012e163388c9ca518114975}{flags}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ Use\ indirection\ in\ order\ to\ allow\ a\ fixed\ size\ for\ this\ struct.}}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ A\ stable\ ABI\ size\ makes\ creating\ a\ static\ DType\ less\ painful}}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ while\ also\ ensuring\ flexibility\ for\ all\ opaque\ API\ (with\ one}}
+\DoxyCodeLine{00044\ \textcolor{comment}{\ \ \ \ \ \ \ \ *\ indirection\ due\ the\ pointer\ lookup).}}
+\DoxyCodeLine{00045\ \textcolor{comment}{\ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *\mbox{\hyperlink{structPyArray__DTypeMeta__tag_abcc32c4c486ec8759c41d3d9f1d630de}{dt\_slots}};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Allow\ growing\ (at\ the\ moment\ also\ beyond\ this)\ */}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *\mbox{\hyperlink{structPyArray__DTypeMeta__tag_aa2c937876a4827bda6b4bf0e76dd8fe4}{reserved}}[3];}
+\DoxyCodeLine{00049\ \ \ \ \ \}\ \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{PyArray\_DTypeMeta}};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{typedef}\ PyTypeObject\ \mbox{\hyperlink{dtype__api_8h_a7300a9c451afdff6f47a27311b5cd557}{PyArray\_DTypeMeta}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ Py\_LIMITED\_API\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ not\ internal\ build\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00060\ \textcolor{comment}{\ *\ ******************************************************}}
+\DoxyCodeLine{00061\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ ArrayMethod\ API\ (Casting\ and\ UFuncs)}}
+\DoxyCodeLine{00062\ \textcolor{comment}{\ *\ ******************************************************}}
+\DoxyCodeLine{00063\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{/*\ Flag\ for\ whether\ the\ GIL\ is\ required\ */}}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a05326dcd9a47a10ff4e248f39a37af5a}{NPY\_METH\_REQUIRES\_PYAPI}}\ =\ 1\ <<\ 0,}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ \ \ \ \ *\ Some\ functions\ cannot\ set\ floating\ point\ error\ flags,\ this\ flag}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ \ \ \ \ *\ gives\ us\ the\ option\ (not\ requirement)\ to\ skip\ floating\ point\ error}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ \ \ \ \ *\ setup/check.\ No\ function\ should\ set\ error\ flags\ and\ ignore\ them}}
+\DoxyCodeLine{00073\ \textcolor{comment}{\ \ \ \ \ *\ since\ it\ would\ interfere\ with\ chaining\ operations\ (e.g.\ casting).}}
+\DoxyCodeLine{00074\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa8d35cb444ef78fc74bbb33d4b513d20}{NPY\_METH\_NO\_FLOATINGPOINT\_ERRORS}}\ =\ 1\ <<\ 1,}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{/*\ Whether\ the\ method\ supports\ unaligned\ access\ (not\ runtime)\ */}}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a618f441dbed79011bddb38772d6811b1}{NPY\_METH\_SUPPORTS\_UNALIGNED}}\ =\ 1\ <<\ 2,}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00079\ \textcolor{comment}{\ \ \ \ \ *\ Used\ for\ reductions\ to\ allow\ reordering\ the\ operation.\ \ At\ this\ point}}
+\DoxyCodeLine{00080\ \textcolor{comment}{\ \ \ \ \ *\ assume\ that\ if\ set,\ it\ also\ applies\ to\ normal\ operations\ though!}}
+\DoxyCodeLine{00081\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702ab1f47e09c6196e6b92a09dbb28d84d78}{NPY\_METH\_IS\_REORDERABLE}}\ =\ 1\ <<\ 3,}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00084\ \textcolor{comment}{\ \ \ \ \ *\ Private\ flag\ for\ now\ for\ *logic*\ functions.\ \ The\ logical\ functions}}
+\DoxyCodeLine{00085\ \textcolor{comment}{\ \ \ \ \ *\ \`{}logical\_or`\ and\ \`{}logical\_and`\ can\ always\ cast\ the\ inputs\ to\ booleans}}
+\DoxyCodeLine{00086\ \textcolor{comment}{\ \ \ \ \ *\ "{}safely"{}\ (because\ that\ is\ how\ the\ cast\ to\ bool\ is\ defined).}}
+\DoxyCodeLine{00087\ \textcolor{comment}{\ \ \ \ \ *\ @seberg:\ I\ am\ not\ sure\ this\ is\ the\ best\ way\ to\ handle\ this,\ so\ its}}
+\DoxyCodeLine{00088\ \textcolor{comment}{\ \ \ \ \ *\ private\ for\ now\ (also\ it\ is\ very\ limited\ anyway).}}
+\DoxyCodeLine{00089\ \textcolor{comment}{\ \ \ \ \ *\ There\ is\ one\ "{}exception"{}.\ NA\ aware\ dtypes\ cannot\ cast\ to\ bool}}
+\DoxyCodeLine{00090\ \textcolor{comment}{\ \ \ \ \ *\ (hopefully),\ so\ the\ \`{}??-\/>?`\ loop\ should\ error\ even\ with\ this\ flag.}}
+\DoxyCodeLine{00091\ \textcolor{comment}{\ \ \ \ \ *\ But\ a\ second\ NA\ fallback\ loop\ will\ be\ necessary.}}
+\DoxyCodeLine{00092\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a95c411d78e0dc7192a1a1da8db71bfd1}{\_NPY\_METH\_FORCE\_CAST\_INPUTS}}\ =\ 1\ <<\ 17,}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{/*\ All\ flags\ which\ can\ change\ at\ runtime\ */}}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa1006203f15de9c2bf7da19bb6947158}{NPY\_METH\_RUNTIME\_FLAGS}}\ =\ (}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702a05326dcd9a47a10ff4e248f39a37af5a}{NPY\_METH\_REQUIRES\_PYAPI}}\ |}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702aa8d35cb444ef78fc74bbb33d4b513d20}{NPY\_METH\_NO\_FLOATINGPOINT\_ERRORS}}),}
+\DoxyCodeLine{00099\ \}\ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\_ARRAYMETHOD\_FLAGS}};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPyArrayMethod__Context__tag}{PyArrayMethod\_Context\_tag}}\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{comment}{/*\ The\ caller,\ which\ is\ typically\ the\ original\ ufunc.\ \ May\ be\ NULL\ */}}
+\DoxyCodeLine{00104\ \ \ \ \ PyObject\ *\mbox{\hyperlink{structPyArrayMethod__Context__tag_a69cdda070f13a8037d1125c2c81c8b1b}{caller}};}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{comment}{/*\ The\ method\ "{}self"{}.\ \ Currently\ an\ opaque\ object.\ */}}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{struct\ }PyArrayMethodObject\_tag\ *\mbox{\hyperlink{structPyArrayMethod__Context__tag_aa97fa3466f664945b117b4acf55aabe8}{method}};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{comment}{/*\ Operand\ descriptors,\ filled\ in\ by\ resolve\_descriptors\ */}}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\textcolor{keyword}{const}\ *\mbox{\hyperlink{structPyArrayMethod__Context__tag_a48d2e713dcb70ebf4a89c086253ef28a}{descriptors}};}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{comment}{/*\ Structure\ may\ grow\ (this\ is\ harmless\ for\ DType\ authors)\ */}}
+\DoxyCodeLine{00111\ \}\ \mbox{\hyperlink{dtype__api_8h_a3283b190041fe450456b7e7cfa34207b}{PyArrayMethod\_Context}};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00115\ \textcolor{comment}{\ *\ The\ main\ object\ for\ creating\ a\ new\ ArrayMethod.\ We\ use\ the\ typical\ \`{}slots`}}
+\DoxyCodeLine{00116\ \textcolor{comment}{\ *\ mechanism\ used\ by\ the\ Python\ limited\ API\ (see\ below\ for\ the\ slot\ defs).}}
+\DoxyCodeLine{00117\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00118\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structPyArrayMethod__Spec_a0fed57d3458ebf08788b7500ad5281aa}{name}};}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPyArrayMethod__Spec_abaa1c068c94f56bbc9e2f3b8a48cb43d}{nin}},\ nout;}
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\_CASTING}}\ \mbox{\hyperlink{structPyArrayMethod__Spec_a50846d9fe59aaa7cdf7dc16c50d0f96a}{casting}};}
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\_ARRAYMETHOD\_FLAGS}}\ \mbox{\hyperlink{structPyArrayMethod__Spec_a9e0e12980bfa656265e8b30776e9b253}{flags}};}
+\DoxyCodeLine{00123\ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ **\mbox{\hyperlink{structPyArrayMethod__Spec_a59edb75f661c48d6d89fadd65e6ab1e4}{dtypes}};}
+\DoxyCodeLine{00124\ \ \ \ \ PyType\_Slot\ *\mbox{\hyperlink{structPyArrayMethod__Spec_add7f924ea418493510fbafc74f3f2688}{slots}};}
+\DoxyCodeLine{00125\ \}\ \mbox{\hyperlink{structPyArrayMethod__Spec}{PyArrayMethod\_Spec}};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00129\ \textcolor{comment}{\ *\ ArrayMethod\ slots}}
+\DoxyCodeLine{00130\ \textcolor{comment}{\ *\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00131\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00132\ \textcolor{comment}{\ *\ SLOTS\ IDs\ For\ the\ ArrayMethod\ creation,\ once\ fully\ public,\ IDs\ are\ fixed}}
+\DoxyCodeLine{00133\ \textcolor{comment}{\ *\ but\ can\ be\ deprecated\ and\ arbitrarily\ extended.}}
+\DoxyCodeLine{00134\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#define\ \_NPY\_METH\_resolve\_descriptors\_with\_scalars\ 1}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#define\ NPY\_METH\_resolve\_descriptors\ 2}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#define\ NPY\_METH\_get\_loop\ 3}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#define\ NPY\_METH\_get\_reduction\_initial\ 4}}
+\DoxyCodeLine{00139\ \textcolor{comment}{/*\ specific\ loops\ for\ constructions/default\ get\_loop:\ */}}
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#define\ NPY\_METH\_strided\_loop\ 5}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#define\ NPY\_METH\_contiguous\_loop\ 6}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#define\ NPY\_METH\_unaligned\_strided\_loop\ 7}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#define\ NPY\_METH\_unaligned\_contiguous\_loop\ 8}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#define\ NPY\_METH\_contiguous\_indexed\_loop\ 9}}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#define\ \_NPY\_METH\_static\_data\ 10}}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00149\ \textcolor{comment}{\ *\ The\ resolve\ descriptors\ function,\ must\ be\ able\ to\ handle\ NULL\ values\ for}}
+\DoxyCodeLine{00150\ \textcolor{comment}{\ *\ all\ output\ (but\ not\ input)\ \`{}given\_descrs`\ and\ fill\ \`{}loop\_descrs`.}}
+\DoxyCodeLine{00151\ \textcolor{comment}{\ *\ Return\ -\/1\ on\ error\ or\ 0\ if\ the\ operation\ is\ not\ possible\ without\ an\ error}}
+\DoxyCodeLine{00152\ \textcolor{comment}{\ *\ set.\ \ (This\ may\ still\ be\ in\ flux.)}}
+\DoxyCodeLine{00153\ \textcolor{comment}{\ *\ Otherwise\ must\ return\ the\ "{}casting\ safety"{},\ for\ normal\ functions,\ this\ is}}
+\DoxyCodeLine{00154\ \textcolor{comment}{\ *\ almost\ always\ "{}safe"{}\ (or\ even\ "{}equivalent"{}?).}}
+\DoxyCodeLine{00155\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00156\ \textcolor{comment}{\ *\ \`{}resolve\_descriptors`\ is\ optional\ if\ all\ output\ DTypes\ are\ non-\/parametric.}}
+\DoxyCodeLine{00157\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00158\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\_CASTING}}\ (\mbox{\hyperlink{dtype__api_8h_a93eb49c46552bde3b0b8a76b6a7e5460}{PyArrayMethod\_ResolveDescriptors}})(}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ "{}method"{}\ is\ currently\ opaque\ (necessary\ e.g.\ to\ wrap\ Python)\ */}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }PyArrayMethodObject\_tag\ *method,}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ DTypes\ the\ method\ was\ created\ for\ */}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *\textcolor{keyword}{const}\ *dtypes,}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Input\ descriptors\ (instances).\ \ Outputs\ may\ be\ NULL.\ */}}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\textcolor{keyword}{const}\ *given\_descrs,}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Exact\ loop\ descriptors\ to\ use,\ must\ not\ hold\ references\ on\ error\ */}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ **loop\_descrs,}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *view\_offset);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00171\ \textcolor{comment}{\ *\ Rarely\ needed,\ slightly\ more\ powerful\ version\ of\ \`{}resolve\_descriptors`.}}
+\DoxyCodeLine{00172\ \textcolor{comment}{\ *\ See\ also\ \`{}PyArrayMethod\_ResolveDescriptors`\ for\ details\ on\ shared\ arguments.}}
+\DoxyCodeLine{00173\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00174\ \textcolor{comment}{\ *\ NOTE:\ This\ function\ is\ private\ now\ as\ it\ is\ unclear\ how\ and\ what\ to\ pass}}
+\DoxyCodeLine{00175\ \textcolor{comment}{\ *\ \ \ \ \ \ \ exactly\ as\ additional\ information\ to\ allow\ dealing\ with\ the\ scalars.}}
+\DoxyCodeLine{00176\ \textcolor{comment}{\ *\ \ \ \ \ \ \ See\ also\ gh-\/24915.}}
+\DoxyCodeLine{00177\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00178\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{ndarraytypes_8h_a2ad642e567c8c1b334cfad4929cd9697}{NPY\_CASTING}}\ (\mbox{\hyperlink{dtype__api_8h_ab0f5503a6eff3dac99741a4e09b9c836}{PyArrayMethod\_ResolveDescriptorsWithScalar}})(}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }PyArrayMethodObject\_tag\ *method,}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *\textcolor{keyword}{const}\ *dtypes,}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Unlike\ above,\ these\ can\ have\ any\ DType\ and\ we\ may\ allow\ NULL.\ */}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\textcolor{keyword}{const}\ *given\_descrs,}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00184\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ Input\ scalars\ or\ NULL.\ \ Only\ ever\ passed\ for\ python\ scalars.}}
+\DoxyCodeLine{00185\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ WARNING:\ In\ some\ cases,\ a\ loop\ may\ be\ explicitly\ selected\ and\ the}}
+\DoxyCodeLine{00186\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ \ \ \ \ value\ passed\ is\ not\ available\ (NULL)\ or\ does\ not\ have\ the}}
+\DoxyCodeLine{00187\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ \ \ \ \ expected\ type.}}
+\DoxyCodeLine{00188\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ PyObject\ *\textcolor{keyword}{const}\ *input\_scalars,}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ **loop\_descrs,}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *view\_offset);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_a205f829f4c226bbe6561d642de0b1d45}{PyArrayMethod\_StridedLoop}})(\mbox{\hyperlink{structPyArrayMethod__Context__tag}{PyArrayMethod\_Context}}\ *context,}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ *\textcolor{keyword}{const}\ *\mbox{\hyperlink{namespacedata}{data}},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *dimensions,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *strides,}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNpyAuxData__tag}{NpyAuxData}}\ *transferdata);}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_ab8e3f1abe9301ab5cc32fbfae4f56f07}{PyArrayMethod\_GetLoop}})(}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArrayMethod__Context__tag}{PyArrayMethod\_Context}}\ *context,}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ aligned,\ \textcolor{keywordtype}{int}\ move\_references,}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *strides,}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_a205f829f4c226bbe6561d642de0b1d45}{PyArrayMethod\_StridedLoop}}\ **out\_loop,}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structNpyAuxData__tag}{NpyAuxData}}\ **out\_transferdata,}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\_ARRAYMETHOD\_FLAGS}}\ *flags);}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00228\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_a496fc5a04a3abbfa3928be7b0b01d034}{PyArrayMethod\_GetReductionInitial}})(}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArrayMethod__Context__tag}{PyArrayMethod\_Context}}\ *context,\ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ reduction\_is\_empty,}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *initial);}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00233\ \textcolor{comment}{\ *\ The\ following\ functions\ are\ only\ used\ by\ the\ wrapping\ array\ method\ defined}}
+\DoxyCodeLine{00234\ \textcolor{comment}{\ *\ in\ umath/wrapping\_array\_method.c}}
+\DoxyCodeLine{00235\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00238\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00239\ \textcolor{comment}{\ *\ The\ function\ to\ convert\ the\ given\ descriptors\ (passed\ in\ to}}
+\DoxyCodeLine{00240\ \textcolor{comment}{\ *\ \`{}resolve\_descriptors`)\ and\ translates\ them\ for\ the\ wrapped\ loop.}}
+\DoxyCodeLine{00241\ \textcolor{comment}{\ *\ The\ new\ descriptors\ MUST\ be\ viewable\ with\ the\ old\ ones,\ \`{}NULL`\ must\ be}}
+\DoxyCodeLine{00242\ \textcolor{comment}{\ *\ supported\ (for\ outputs)\ and\ should\ normally\ be\ forwarded.}}
+\DoxyCodeLine{00243\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00244\ \textcolor{comment}{\ *\ The\ function\ must\ clean\ up\ on\ error.}}
+\DoxyCodeLine{00245\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00246\ \textcolor{comment}{\ *\ NOTE:\ We\ currently\ assume\ that\ this\ translation\ gives\ "{}viewable"{}\ results.}}
+\DoxyCodeLine{00247\ \textcolor{comment}{\ *\ \ \ \ \ \ \ I.e.\ there\ is\ no\ additional\ casting\ related\ to\ the\ wrapping\ process.}}
+\DoxyCodeLine{00248\ \textcolor{comment}{\ *\ \ \ \ \ \ \ In\ principle\ that\ could\ be\ supported,\ but\ not\ sure\ it\ is\ useful.}}
+\DoxyCodeLine{00249\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ currently\ also\ means\ that\ e.g.\ alignment\ must\ apply\ identically}}
+\DoxyCodeLine{00250\ \textcolor{comment}{\ *\ \ \ \ \ \ \ to\ the\ new\ dtypes.}}
+\DoxyCodeLine{00251\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00252\ \textcolor{comment}{\ *\ TODO:\ Due\ to\ the\ fact\ that\ \`{}resolve\_descriptors`\ is\ also\ used\ for\ \`{}can\_cast`}}
+\DoxyCodeLine{00253\ \textcolor{comment}{\ *\ \ \ \ \ \ \ there\ is\ no\ way\ to\ "{}pass\ out"{}\ the\ result\ of\ this\ function.\ \ This\ means}}
+\DoxyCodeLine{00254\ \textcolor{comment}{\ *\ \ \ \ \ \ \ it\ will\ be\ called\ twice\ for\ every\ ufunc\ call.}}
+\DoxyCodeLine{00255\ \textcolor{comment}{\ *\ \ \ \ \ \ \ (I\ am\ considering\ including\ \`{}auxdata`\ as\ an\ "{}optional"{}\ parameter\ to}}
+\DoxyCodeLine{00256\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \`{}resolve\_descriptors`,\ so\ that\ it\ can\ be\ filled\ there\ if\ not\ NULL.)}}
+\DoxyCodeLine{00257\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00258\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_a27d156457ca038d4db70a07836176a08}{PyArrayMethod\_TranslateGivenDescriptors}})(\textcolor{keywordtype}{int}\ nin,\ \textcolor{keywordtype}{int}\ nout,}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *\textcolor{keyword}{const}\ wrapped\_dtypes[],}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\textcolor{keyword}{const}\ given\_descrs[],\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *new\_descrs[]);}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00281\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_a3bbfe8c6f10b87cc265d26b512d1d2e5}{PyArrayMethod\_TranslateLoopDescriptors}})(\textcolor{keywordtype}{int}\ nin,\ \textcolor{keywordtype}{int}\ nout,}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *\textcolor{keyword}{const}\ new\_dtypes[],\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\textcolor{keyword}{const}\ given\_descrs[],}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *original\_descrs[],\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *loop\_descrs[]);}
+\DoxyCodeLine{00284\ }
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00287\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00288\ \textcolor{comment}{\ *\ A\ traverse\ loop\ working\ on\ a\ single\ array.\ This\ is\ similar\ to\ the\ general}}
+\DoxyCodeLine{00289\ \textcolor{comment}{\ *\ strided-\/loop\ function.\ This\ is\ designed\ for\ loops\ that\ need\ to\ visit\ every}}
+\DoxyCodeLine{00290\ \textcolor{comment}{\ *\ element\ of\ a\ single\ array.}}
+\DoxyCodeLine{00291\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00292\ \textcolor{comment}{\ *\ Currently\ this\ is\ used\ for\ array\ clearing,\ via\ the\ NPY\_DT\_get\_clear\_loop}}
+\DoxyCodeLine{00293\ \textcolor{comment}{\ *\ API\ hook,\ and\ zero-\/filling,\ via\ the\ NPY\_DT\_get\_fill\_zero\_loop\ API\ hook.}}
+\DoxyCodeLine{00294\ \textcolor{comment}{\ *\ These\ are\ most\ useful\ for\ handling\ arrays\ storing\ embedded\ references\ to}}
+\DoxyCodeLine{00295\ \textcolor{comment}{\ *\ python\ objects\ or\ heap-\/allocated\ data.}}
+\DoxyCodeLine{00296\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00297\ \textcolor{comment}{\ *\ The\ \`{}void\ *traverse\_context`\ is\ passed\ in\ because\ we\ may\ need\ to\ pass\ in}}
+\DoxyCodeLine{00298\ \textcolor{comment}{\ *\ Interpreter\ state\ or\ similar\ in\ the\ future,\ but\ we\ don't\ want\ to\ pass\ in}}
+\DoxyCodeLine{00299\ \textcolor{comment}{\ *\ a\ full\ context\ (with\ pointers\ to\ dtypes,\ method,\ caller\ which\ all\ make}}
+\DoxyCodeLine{00300\ \textcolor{comment}{\ *\ no\ sense\ for\ a\ traverse\ function).}}
+\DoxyCodeLine{00301\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00302\ \textcolor{comment}{\ *\ We\ assume\ for\ now\ that\ this\ context\ can\ be\ just\ passed\ through\ in\ the}}
+\DoxyCodeLine{00303\ \textcolor{comment}{\ *\ the\ future\ (for\ structured\ dtypes).}}
+\DoxyCodeLine{00304\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00305\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00306\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_a68740e2642ab6f3a691dfaac4e317eee}{PyArrayMethod\_TraverseLoop}})(}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *traverse\_context,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *descr,\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacedata}{data}},}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ size,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ stride,\ \mbox{\hyperlink{structNpyAuxData__tag}{NpyAuxData}}\ *auxdata);}
+\DoxyCodeLine{00309\ }
+\DoxyCodeLine{00310\ }
+\DoxyCodeLine{00311\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00312\ \textcolor{comment}{\ *\ Simplified\ get\_loop\ function\ specific\ to\ dtype\ traversal}}
+\DoxyCodeLine{00313\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00314\ \textcolor{comment}{\ *\ It\ should\ set\ the\ flags\ needed\ for\ the\ traversal\ loop\ and\ set\ out\_loop\ to\ the}}
+\DoxyCodeLine{00315\ \textcolor{comment}{\ *\ loop\ function,\ which\ must\ be\ a\ valid\ PyArrayMethod\_TraverseLoop}}
+\DoxyCodeLine{00316\ \textcolor{comment}{\ *\ pointer.\ Currently\ this\ is\ used\ for\ zero-\/filling\ and\ clearing\ arrays\ storing}}
+\DoxyCodeLine{00317\ \textcolor{comment}{\ *\ embedded\ references.}}
+\DoxyCodeLine{00318\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00319\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00320\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_ac2bef1d720bf0a175a9d3ffbc9a67d76}{PyArrayMethod\_GetTraverseLoop}})(}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *traverse\_context,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *descr,}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ aligned,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ fixed\_stride,}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_a68740e2642ab6f3a691dfaac4e317eee}{PyArrayMethod\_TraverseLoop}}\ **out\_loop,\ \mbox{\hyperlink{structNpyAuxData__tag}{NpyAuxData}}\ **out\_auxdata,}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{dtype__api_8h_ae6b330342230e8f59d6856e3bdab5702}{NPY\_ARRAYMETHOD\_FLAGS}}\ *flags);}
+\DoxyCodeLine{00325\ }
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00327\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00328\ \textcolor{comment}{\ *\ Type\ of\ the\ C\ promoter\ function,\ which\ must\ be\ wrapped\ into\ a}}
+\DoxyCodeLine{00329\ \textcolor{comment}{\ *\ PyCapsule\ with\ name\ "{}numpy.\_ufunc\_promoter"{}.}}
+\DoxyCodeLine{00330\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00331\ \textcolor{comment}{\ *\ Note\ that\ currently\ the\ output\ dtypes\ are\ always\ NULL\ unless\ they\ are}}
+\DoxyCodeLine{00332\ \textcolor{comment}{\ *\ also\ part\ of\ the\ signature.\ This\ is\ an\ implementation\ detail\ and\ could}}
+\DoxyCodeLine{00333\ \textcolor{comment}{\ *\ change\ in\ the\ future.\ However,\ in\ general\ promoters\ should\ not\ have\ a}}
+\DoxyCodeLine{00334\ \textcolor{comment}{\ *\ need\ for\ output\ dtypes.}}
+\DoxyCodeLine{00335\ \textcolor{comment}{\ *\ (There\ are\ potential\ use-\/cases,\ these\ are\ currently\ unsupported.)}}
+\DoxyCodeLine{00336\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00337\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_a494a7c0c0692903c4592fe30ebe19884}{PyArrayMethod\_PromoterFunction}})(PyObject\ *\mbox{\hyperlink{structufunc}{ufunc}},}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *\textcolor{keyword}{const}\ op\_dtypes[],\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *\textcolor{keyword}{const}\ signature[],}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *new\_op\_dtypes[]);}
+\DoxyCodeLine{00340\ }
+\DoxyCodeLine{00341\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00342\ \textcolor{comment}{\ *\ ****************************}}
+\DoxyCodeLine{00343\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ DTYPE\ API}}
+\DoxyCodeLine{00344\ \textcolor{comment}{\ *\ ****************************}}
+\DoxyCodeLine{00345\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00347\ \textcolor{preprocessor}{\#define\ NPY\_DT\_ABSTRACT\ 1\ <<\ 1}}
+\DoxyCodeLine{00348\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PARAMETRIC\ 1\ <<\ 2}}
+\DoxyCodeLine{00349\ \textcolor{preprocessor}{\#define\ NPY\_DT\_NUMERIC\ 1\ <<\ 3}}
+\DoxyCodeLine{00350\ }
+\DoxyCodeLine{00351\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00352\ \textcolor{comment}{\ *\ These\ correspond\ to\ slots\ in\ the\ NPY\_DType\_Slots\ struct\ and\ must}}
+\DoxyCodeLine{00353\ \textcolor{comment}{\ *\ be\ in\ the\ same\ order\ as\ the\ members\ of\ that\ struct.\ If\ new\ slots}}
+\DoxyCodeLine{00354\ \textcolor{comment}{\ *\ get\ added\ or\ old\ slots\ get\ removed\ NPY\_NUM\_DTYPE\_SLOTS\ must\ also}}
+\DoxyCodeLine{00355\ \textcolor{comment}{\ *\ be\ updated}}
+\DoxyCodeLine{00356\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00357\ }
+\DoxyCodeLine{00358\ \textcolor{preprocessor}{\#define\ NPY\_DT\_discover\_descr\_from\_pyobject\ 1}}
+\DoxyCodeLine{00359\ \textcolor{comment}{//\ this\ slot\ is\ considered\ private\ because\ its\ API\ hasn't\ been\ decided}}
+\DoxyCodeLine{00360\ \textcolor{preprocessor}{\#define\ \_NPY\_DT\_is\_known\_scalar\_type\ 2}}
+\DoxyCodeLine{00361\ \textcolor{preprocessor}{\#define\ NPY\_DT\_default\_descr\ 3}}
+\DoxyCodeLine{00362\ \textcolor{preprocessor}{\#define\ NPY\_DT\_common\_dtype\ 4}}
+\DoxyCodeLine{00363\ \textcolor{preprocessor}{\#define\ NPY\_DT\_common\_instance\ 5}}
+\DoxyCodeLine{00364\ \textcolor{preprocessor}{\#define\ NPY\_DT\_ensure\_canonical\ 6}}
+\DoxyCodeLine{00365\ \textcolor{preprocessor}{\#define\ NPY\_DT\_setitem\ 7}}
+\DoxyCodeLine{00366\ \textcolor{preprocessor}{\#define\ NPY\_DT\_getitem\ 8}}
+\DoxyCodeLine{00367\ \textcolor{preprocessor}{\#define\ NPY\_DT\_get\_clear\_loop\ 9}}
+\DoxyCodeLine{00368\ \textcolor{preprocessor}{\#define\ NPY\_DT\_get\_fill\_zero\_loop\ 10}}
+\DoxyCodeLine{00369\ \textcolor{preprocessor}{\#define\ NPY\_DT\_finalize\_descr\ 11}}
+\DoxyCodeLine{00370\ }
+\DoxyCodeLine{00371\ \textcolor{comment}{//\ These\ PyArray\_ArrFunc\ slots\ will\ be\ deprecated\ and\ replaced\ eventually}}
+\DoxyCodeLine{00372\ \textcolor{comment}{//\ getitem\ and\ setitem\ can\ be\ defined\ as\ a\ performance\ optimization;}}
+\DoxyCodeLine{00373\ \textcolor{comment}{//\ by\ default\ the\ user\ dtypes\ call\ \`{}legacy\_getitem\_using\_DType`\ and}}
+\DoxyCodeLine{00374\ \textcolor{comment}{//\ \`{}legacy\_setitem\_using\_DType`,\ respectively.\ This\ functionality\ is}}
+\DoxyCodeLine{00375\ \textcolor{comment}{//\ only\ supported\ for\ basic\ NumPy\ DTypes.}}
+\DoxyCodeLine{00376\ }
+\DoxyCodeLine{00377\ }
+\DoxyCodeLine{00378\ \textcolor{comment}{//\ used\ to\ separate\ dtype\ slots\ from\ arrfuncs\ slots}}
+\DoxyCodeLine{00379\ \textcolor{comment}{//\ intended\ only\ for\ internal\ use\ but\ defined\ here\ for\ clarity}}
+\DoxyCodeLine{00380\ \textcolor{preprocessor}{\#define\ \_NPY\_DT\_ARRFUNCS\_OFFSET\ (1\ <<\ 10)}}
+\DoxyCodeLine{00381\ }
+\DoxyCodeLine{00382\ \textcolor{comment}{//\ Cast\ is\ disabled}}
+\DoxyCodeLine{00383\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_cast\ 0\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00384\ }
+\DoxyCodeLine{00385\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_getitem\ 1\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00386\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_setitem\ 2\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00387\ }
+\DoxyCodeLine{00388\ \textcolor{comment}{//\ Copyswap\ is\ disabled}}
+\DoxyCodeLine{00389\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_copyswapn\ 3\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00390\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_copyswap\ 4\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00391\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_compare\ 5\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00392\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_argmax\ 6\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00393\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_dotfunc\ 7\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00394\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_scanfunc\ 8\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00395\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_fromstr\ 9\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00396\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_nonzero\ 10\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00397\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_fill\ 11\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00398\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_fillwithscalar\ 12\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00399\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_sort\ 13\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00400\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_argsort\ 14\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00401\ }
+\DoxyCodeLine{00402\ \textcolor{comment}{//\ Casting\ related\ slots\ are\ disabled.\ See}}
+\DoxyCodeLine{00403\ \textcolor{comment}{//\ https://github.com/numpy/numpy/pull/23173\#discussion\_r1101098163}}
+\DoxyCodeLine{00404\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_castdict\ 15\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00405\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_scalarkind\ 16\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00406\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_cancastscalarkindto\ 17\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00407\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_cancastto\ 18\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00408\ }
+\DoxyCodeLine{00409\ \textcolor{comment}{//\ These\ are\ deprecated\ in\ NumPy\ 1.19,\ so\ are\ disabled\ here.}}
+\DoxyCodeLine{00410\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_fastclip\ 19\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00411\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_fastputmask\ 20\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00412\ \textcolor{comment}{//\ \#define\ NPY\_DT\_PyArray\_ArrFuncs\_fasttake\ 21\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00413\ \textcolor{preprocessor}{\#define\ NPY\_DT\_PyArray\_ArrFuncs\_argmin\ 22\ +\ \_NPY\_DT\_ARRFUNCS\_OFFSET}}
+\DoxyCodeLine{00414\ }
+\DoxyCodeLine{00415\ }
+\DoxyCodeLine{00416\ \textcolor{comment}{//\ TODO:\ These\ slots\ probably\ still\ need\ some\ thought,\ and/or\ a\ way\ to\ "{}grow"{}?}}
+\DoxyCodeLine{00417\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00418\ \ \ \ \ PyTypeObject\ *\mbox{\hyperlink{structPyArrayDTypeMeta__Spec_a20d217556b9b121fe07bdf4e80d4bf8c}{typeobj}};\ \ \ \ \textcolor{comment}{/*\ type\ of\ python\ scalar\ or\ NULL\ */}}
+\DoxyCodeLine{00419\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPyArrayDTypeMeta__Spec_a3a84496e832a4b3ab3f1e8ea0fc89f47}{flags}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ flags,\ including\ parametric\ and\ abstract\ */}}
+\DoxyCodeLine{00420\ \ \ \ \ \textcolor{comment}{/*\ NULL\ terminated\ cast\ definitions.\ Use\ NULL\ for\ the\ newly\ created\ DType\ */}}
+\DoxyCodeLine{00421\ \ \ \ \ \mbox{\hyperlink{structPyArrayMethod__Spec}{PyArrayMethod\_Spec}}\ **\mbox{\hyperlink{structPyArrayDTypeMeta__Spec_abff231f33b8a1de7b807721c25f0fe6e}{casts}};}
+\DoxyCodeLine{00422\ \ \ \ \ PyType\_Slot\ *\mbox{\hyperlink{structPyArrayDTypeMeta__Spec_a3a798e8f87650095663a036a14f50169}{slots}};}
+\DoxyCodeLine{00423\ \ \ \ \ \textcolor{comment}{/*\ Baseclass\ or\ NULL\ (will\ always\ subclass\ \`{}np.dtype`)\ */}}
+\DoxyCodeLine{00424\ \ \ \ \ PyTypeObject\ *\mbox{\hyperlink{structPyArrayDTypeMeta__Spec_afb2fcb520dfb0d811f6bd0671724c724}{baseclass}};}
+\DoxyCodeLine{00425\ \}\ \mbox{\hyperlink{structPyArrayDTypeMeta__Spec}{PyArrayDTypeMeta\_Spec}};}
+\DoxyCodeLine{00426\ }
+\DoxyCodeLine{00427\ }
+\DoxyCodeLine{00428\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *(\mbox{\hyperlink{dtype__api_8h_a3b97d7a90bbe99985b9f19725556e7c0}{PyArrayDTypeMeta\_DiscoverDescrFromPyobject}})(}
+\DoxyCodeLine{00429\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *cls,\ PyObject\ *obj);}
+\DoxyCodeLine{00430\ }
+\DoxyCodeLine{00431\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00432\ \textcolor{comment}{\ *\ Before\ making\ this\ public,\ we\ should\ decide\ whether\ it\ should\ pass}}
+\DoxyCodeLine{00433\ \textcolor{comment}{\ *\ the\ type,\ or\ allow\ looking\ at\ the\ object.\ A\ possible\ use-\/case:}}
+\DoxyCodeLine{00434\ \textcolor{comment}{\ *\ \`{}np.array(np.array([0]),\ dtype=np.ndarray)`}}
+\DoxyCodeLine{00435\ \textcolor{comment}{\ *\ Could\ consider\ arrays\ that\ are\ not\ \`{}dtype=ndarray`\ "{}scalars"{}.}}
+\DoxyCodeLine{00436\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00437\ \textcolor{keyword}{typedef}\ int\ (\mbox{\hyperlink{dtype__api_8h_a78a5eaad746912cc764c014833b9b71c}{PyArrayDTypeMeta\_IsKnownScalarType}})(}
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *cls,\ PyTypeObject\ *obj);}
+\DoxyCodeLine{00439\ }
+\DoxyCodeLine{00440\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *(\mbox{\hyperlink{dtype__api_8h_a7a3be55b8df0366033d738cfe15d3d66}{PyArrayDTypeMeta\_DefaultDescriptor}})(\mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *cls);}
+\DoxyCodeLine{00441\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *(\mbox{\hyperlink{dtype__api_8h_aa5bc25e55b9ca2959d3367e0fd34ce01}{PyArrayDTypeMeta\_CommonDType}})(}
+\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *dtype1,\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *dtype2);}
+\DoxyCodeLine{00443\ }
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00445\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00446\ \textcolor{comment}{\ *\ Convenience\ utility\ for\ getting\ a\ reference\ to\ the\ DType\ metaclass\ associated}}
+\DoxyCodeLine{00447\ \textcolor{comment}{\ *\ with\ a\ dtype\ instance.}}
+\DoxyCodeLine{00448\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00449\ \textcolor{preprocessor}{\#define\ NPY\_DTYPE(descr)\ ((PyArray\_DTypeMeta\ *)Py\_TYPE(descr))}}
+\DoxyCodeLine{00450\ }
+\DoxyCodeLine{00451\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *}
+\DoxyCodeLine{00452\ NPY\_DT\_NewRef(\mbox{\hyperlink{structPyArray__DTypeMeta__tag}{PyArray\_DTypeMeta}}\ *o)\ \{}
+\DoxyCodeLine{00453\ \ \ \ \ Py\_INCREF((PyObject\ *)o);}
+\DoxyCodeLine{00454\ \ \ \ \ \textcolor{keywordflow}{return}\ o;}
+\DoxyCodeLine{00455\ \}}
+\DoxyCodeLine{00456\ }
+\DoxyCodeLine{00457\ }
+\DoxyCodeLine{00458\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *(\mbox{\hyperlink{dtype__api_8h_a1aca942890e0691ca9fe321c0e7ac987}{PyArrayDTypeMeta\_CommonInstance}})(}
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *dtype1,\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *dtype2);}
+\DoxyCodeLine{00460\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *(\mbox{\hyperlink{dtype__api_8h_ae1f9f0549b889b033f5b7f3d5a6e9bcb}{PyArrayDTypeMeta\_EnsureCanonical}})(\mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\mbox{\hyperlink{namespacedtype}{dtype}});}
+\DoxyCodeLine{00461\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00462\ \textcolor{comment}{\ *\ Returns\ either\ a\ new\ reference\ to\ *dtype*\ or\ a\ new\ descriptor\ instance}}
+\DoxyCodeLine{00463\ \textcolor{comment}{\ *\ initialized\ with\ the\ same\ parameters\ as\ *dtype*.\ The\ caller\ cannot\ know}}
+\DoxyCodeLine{00464\ \textcolor{comment}{\ *\ which\ choice\ a\ dtype\ will\ make.\ This\ function\ is\ called\ just\ before\ the}}
+\DoxyCodeLine{00465\ \textcolor{comment}{\ *\ array\ buffer\ is\ created\ for\ a\ newly\ created\ array,\ it\ is\ not\ called\ for}}
+\DoxyCodeLine{00466\ \textcolor{comment}{\ *\ views\ and\ the\ descriptor\ returned\ by\ this\ function\ is\ attached\ to\ the\ array.}}
+\DoxyCodeLine{00467\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00468\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *(\mbox{\hyperlink{dtype__api_8h_aa85f96e5c31c2dcda39068151201af9f}{PyArrayDTypeMeta\_FinalizeDescriptor}})(\mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\mbox{\hyperlink{namespacedtype}{dtype}});}
+\DoxyCodeLine{00469\ }
+\DoxyCodeLine{00470\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00471\ \textcolor{comment}{\ *\ TODO:\ These\ two\ functions\ are\ currently\ only\ used\ for\ experimental\ DType}}
+\DoxyCodeLine{00472\ \textcolor{comment}{\ *\ \ \ \ \ \ \ API\ support.\ \ Their\ relation\ should\ be\ "{}reversed"{}:\ NumPy\ should}}
+\DoxyCodeLine{00473\ \textcolor{comment}{\ *\ \ \ \ \ \ \ always\ use\ them\ internally.}}
+\DoxyCodeLine{00474\ \textcolor{comment}{\ *\ \ \ \ \ \ \ There\ are\ open\ points\ about\ "{}casting\ safety"{}\ though,\ e.g.\ setting}}
+\DoxyCodeLine{00475\ \textcolor{comment}{\ *\ \ \ \ \ \ \ elements\ is\ currently\ always\ unsafe.}}
+\DoxyCodeLine{00476\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00477\ \textcolor{keyword}{typedef}\ int(\mbox{\hyperlink{dtype__api_8h_aad3791dc80170a44c94e2df1b75459ba}{PyArrayDTypeMeta\_SetItem}})(\mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *,\ PyObject\ *,\ \textcolor{keywordtype}{char}\ *);}
+\DoxyCodeLine{00478\ \textcolor{keyword}{typedef}\ PyObject\ *(\mbox{\hyperlink{dtype__api_8h_a7ad61d7a177ef84f1ba4843f7d20ba8b}{PyArrayDTypeMeta\_GetItem}})(\mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *,\ \textcolor{keywordtype}{char}\ *);}
+\DoxyCodeLine{00479\ }
+\DoxyCodeLine{00480\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_\_\_DTYPE\_API\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

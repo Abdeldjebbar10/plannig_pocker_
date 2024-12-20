@@ -1,0 +1,52 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+f2py.\+tests.\+test\+\_\+docs}
+\hypertarget{namespacenumpy_1_1f2py_1_1tests_1_1test__docs}{}\label{namespacenumpy_1_1f2py_1_1tests_1_1test__docs}\index{numpy.f2py.tests.test\_docs@{numpy.f2py.tests.test\_docs}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1f2py_1_1tests_1_1test__docs_1_1TestDocAdvanced}{Test\+Doc\+Advanced}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a3d585db49b20e5fa4b5861f2d53ad707}{get\+\_\+docdir}} ()
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a9e8be930f49d7bb5cf15a45da310436d}{\+\_\+path}} (\texorpdfstring{$\ast$}{*}args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a97a3388633b4fc32a24d99e38b8bec44}{pytestmark}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a9e8be930f49d7bb5cf15a45da310436d}\label{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a9e8be930f49d7bb5cf15a45da310436d} 
+\index{numpy.f2py.tests.test\_docs@{numpy.f2py.tests.test\_docs}!\_path@{\_path}}
+\index{\_path@{\_path}!numpy.f2py.tests.test\_docs@{numpy.f2py.tests.test\_docs}}
+\doxysubsubsection{\texorpdfstring{\_path()}{\_path()}}
+{\footnotesize\ttfamily numpy.\+f2py.\+tests.\+test\+\_\+docs.\+\_\+path (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a3d585db49b20e5fa4b5861f2d53ad707}\label{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a3d585db49b20e5fa4b5861f2d53ad707} 
+\index{numpy.f2py.tests.test\_docs@{numpy.f2py.tests.test\_docs}!get\_docdir@{get\_docdir}}
+\index{get\_docdir@{get\_docdir}!numpy.f2py.tests.test\_docs@{numpy.f2py.tests.test\_docs}}
+\doxysubsubsection{\texorpdfstring{get\_docdir()}{get\_docdir()}}
+{\footnotesize\ttfamily numpy.\+f2py.\+tests.\+test\+\_\+docs.\+get\+\_\+docdir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a97a3388633b4fc32a24d99e38b8bec44}\label{namespacenumpy_1_1f2py_1_1tests_1_1test__docs_a97a3388633b4fc32a24d99e38b8bec44} 
+\index{numpy.f2py.tests.test\_docs@{numpy.f2py.tests.test\_docs}!pytestmark@{pytestmark}}
+\index{pytestmark@{pytestmark}!numpy.f2py.tests.test\_docs@{numpy.f2py.tests.test\_docs}}
+\doxysubsubsection{\texorpdfstring{pytestmark}{pytestmark}}
+{\footnotesize\ttfamily numpy.\+f2py.\+tests.\+test\+\_\+docs.\+pytestmark}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ pytest.mark.skipif(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{keywordflow}{not}\ get\_docdir().is\_dir(),}
+\DoxyCodeLine{00003\ \ \ \ \ reason=f\textcolor{stringliteral}{"{}Could\ not\ find\ f2py\ documentation\ sources"{}}}
+\DoxyCodeLine{00004\ \ \ \ \ f\textcolor{stringliteral}{"{}(\{get\_docdir()\}\ does\ not\ exist)"{}},}
+\DoxyCodeLine{00005\ )}
+
+\end{DoxyCode}

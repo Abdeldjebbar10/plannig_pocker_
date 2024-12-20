@@ -1,0 +1,195 @@
+\doxysection{Référence de la classe pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST}
+\hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST}{}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST}\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+
+
+Graphe de collaboration de pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a76508f3d14b672a05bfee126c833d77a}{test\+\_\+springforward\+\_\+plural}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_ad3ee9b56aef921dfdbbddaf1a4f68b66}{test\+\_\+fallback\+\_\+singular}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a6b8001f0cfd2cef5498e0e94555f125e}{test\+\_\+springforward\+\_\+singular}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_afb9178e626b25b68209911d47b1699bf}{test\+\_\+all\+\_\+offset\+\_\+classes}} (self, tup)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a4daa7de2bc05a7c9d47fb71b2e1f3c55}{ts\+\_\+pre\+\_\+fallback}} = "{}2013-\/11-\/03 01\+:59\+:59.\+999999"{}
+\item 
+str \mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a5b2e4333fa9e512d1a163e4e396e1edc}{ts\+\_\+pre\+\_\+springfwd}} = "{}2013-\/03-\/10 01\+:59\+:59.\+999999"{}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a460bd2723df7500e0c8ffc86cd219b71}{timezone\+\_\+utc\+\_\+offsets}}
+\item 
+list \mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_ac7edebece0e0dfb53f830afc93f48553}{valid\+\_\+date\+\_\+offsets\+\_\+singular}}
+\item 
+list \mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_acef60cfaaa420625aade755b6ea2584f}{valid\+\_\+date\+\_\+offsets\+\_\+plural}}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a775b9e68aca1bbce64737186b171a53d}{offset\+\_\+classes}}
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a5064c2fe25400f4c5350dc79b53f51b2}{marks}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a2929b216509295800c79c2d32430b77a}{\+\_\+test\+\_\+all\+\_\+offsets}} (self, n, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a7ac7682465bbd4602e4283213b35c0b3}{\+\_\+test\+\_\+offset}} (self, offset\+\_\+name, offset\+\_\+n, tstart, expected\+\_\+utc\+\_\+offset)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a714fa45f59eab8f607b275522bccaeb3}{\+\_\+make\+\_\+timestamp}} (self, string, hrs\+\_\+offset, tz)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a714fa45f59eab8f607b275522bccaeb3}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a714fa45f59eab8f607b275522bccaeb3} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!\_make\_timestamp@{\_make\_timestamp}}
+\index{\_make\_timestamp@{\_make\_timestamp}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{\_make\_timestamp()}{\_make\_timestamp()}}
+{\footnotesize\ttfamily pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+\_\+make\+\_\+timestamp (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{string,  }\item[{}]{hrs\+\_\+offset,  }\item[{}]{tz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a2929b216509295800c79c2d32430b77a}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a2929b216509295800c79c2d32430b77a} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!\_test\_all\_offsets@{\_test\_all\_offsets}}
+\index{\_test\_all\_offsets@{\_test\_all\_offsets}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{\_test\_all\_offsets()}{\_test\_all\_offsets()}}
+{\footnotesize\ttfamily pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+\_\+test\+\_\+all\+\_\+offsets (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{n,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a7ac7682465bbd4602e4283213b35c0b3}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a7ac7682465bbd4602e4283213b35c0b3} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!\_test\_offset@{\_test\_offset}}
+\index{\_test\_offset@{\_test\_offset}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{\_test\_offset()}{\_test\_offset()}}
+{\footnotesize\ttfamily pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+\_\+test\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{offset\+\_\+name,  }\item[{}]{offset\+\_\+n,  }\item[{}]{tstart,  }\item[{}]{expected\+\_\+utc\+\_\+offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_afb9178e626b25b68209911d47b1699bf}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_afb9178e626b25b68209911d47b1699bf} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!test\_all\_offset\_classes@{test\_all\_offset\_classes}}
+\index{test\_all\_offset\_classes@{test\_all\_offset\_classes}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{test\_all\_offset\_classes()}{test\_all\_offset\_classes()}}
+{\footnotesize\ttfamily pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+test\+\_\+all\+\_\+offset\+\_\+classes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tup }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_ad3ee9b56aef921dfdbbddaf1a4f68b66}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_ad3ee9b56aef921dfdbbddaf1a4f68b66} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!test\_fallback\_singular@{test\_fallback\_singular}}
+\index{test\_fallback\_singular@{test\_fallback\_singular}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{test\_fallback\_singular()}{test\_fallback\_singular()}}
+{\footnotesize\ttfamily pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+test\+\_\+fallback\+\_\+singular (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a76508f3d14b672a05bfee126c833d77a}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a76508f3d14b672a05bfee126c833d77a} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!test\_springforward\_plural@{test\_springforward\_plural}}
+\index{test\_springforward\_plural@{test\_springforward\_plural}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{test\_springforward\_plural()}{test\_springforward\_plural()}}
+{\footnotesize\ttfamily pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+test\+\_\+springforward\+\_\+plural (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a6b8001f0cfd2cef5498e0e94555f125e}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a6b8001f0cfd2cef5498e0e94555f125e} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!test\_springforward\_singular@{test\_springforward\_singular}}
+\index{test\_springforward\_singular@{test\_springforward\_singular}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{test\_springforward\_singular()}{test\_springforward\_singular()}}
+{\footnotesize\ttfamily pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+test\+\_\+springforward\+\_\+singular (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a5064c2fe25400f4c5350dc79b53f51b2}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a5064c2fe25400f4c5350dc79b53f51b2} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!marks@{marks}}
+\index{marks@{marks}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{marks}{marks}}
+{\footnotesize\ttfamily pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+marks\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a775b9e68aca1bbce64737186b171a53d}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a775b9e68aca1bbce64737186b171a53d} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!offset\_classes@{offset\_classes}}
+\index{offset\_classes@{offset\_classes}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{offset\_classes}{offset\_classes}}
+{\footnotesize\ttfamily dict pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+offset\+\_\+classes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ MonthBegin:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/1/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ MonthEnd:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}11/30/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ BMonthBegin:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/3/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ BMonthEnd:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}11/30/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ CBMonthBegin:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/3/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ CBMonthEnd:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}11/30/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ SemiMonthBegin:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}11/15/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ SemiMonthEnd:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}11/15/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Week:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}11/9/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ YearBegin:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}1/1/2013"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ YearEnd:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/31/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ BYearBegin:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}1/1/2013"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ BYearEnd:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/31/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ QuarterBegin:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/1/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ QuarterEnd:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/31/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ BQuarterBegin:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/3/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ BQuarterEnd:\ [\textcolor{stringliteral}{"{}11/2/2012"{}},\ \textcolor{stringliteral}{"{}12/31/2012"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Day:\ [\textcolor{stringliteral}{"{}11/4/2012"{}},\ \textcolor{stringliteral}{"{}11/4/2012\ 23:00"{}}],}
+\DoxyCodeLine{\ \ \ \ \}.items()}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a460bd2723df7500e0c8ffc86cd219b71}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a460bd2723df7500e0c8ffc86cd219b71} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!timezone\_utc\_offsets@{timezone\_utc\_offsets}}
+\index{timezone\_utc\_offsets@{timezone\_utc\_offsets}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{timezone\_utc\_offsets}{timezone\_utc\_offsets}}
+{\footnotesize\ttfamily dict pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+timezone\+\_\+utc\+\_\+offsets\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}US/Eastern"{}}:\ \{\textcolor{stringliteral}{"{}utc\_offset\_daylight"{}}:\ -\/4,\ \textcolor{stringliteral}{"{}utc\_offset\_standard"{}}:\ -\/5\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}dateutil/US/Pacific"{}}:\ \{\textcolor{stringliteral}{"{}utc\_offset\_daylight"{}}:\ -\/7,\ \textcolor{stringliteral}{"{}utc\_offset\_standard"{}}:\ -\/8\},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a4daa7de2bc05a7c9d47fb71b2e1f3c55}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a4daa7de2bc05a7c9d47fb71b2e1f3c55} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!ts\_pre\_fallback@{ts\_pre\_fallback}}
+\index{ts\_pre\_fallback@{ts\_pre\_fallback}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{ts\_pre\_fallback}{ts\_pre\_fallback}}
+{\footnotesize\ttfamily str pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+ts\+\_\+pre\+\_\+fallback = "{}2013-\/11-\/03 01\+:59\+:59.\+999999"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a5b2e4333fa9e512d1a163e4e396e1edc}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_a5b2e4333fa9e512d1a163e4e396e1edc} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!ts\_pre\_springfwd@{ts\_pre\_springfwd}}
+\index{ts\_pre\_springfwd@{ts\_pre\_springfwd}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{ts\_pre\_springfwd}{ts\_pre\_springfwd}}
+{\footnotesize\ttfamily str pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+ts\+\_\+pre\+\_\+springfwd = "{}2013-\/03-\/10 01\+:59\+:59.\+999999"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_acef60cfaaa420625aade755b6ea2584f}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_acef60cfaaa420625aade755b6ea2584f} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!valid\_date\_offsets\_plural@{valid\_date\_offsets\_plural}}
+\index{valid\_date\_offsets\_plural@{valid\_date\_offsets\_plural}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{valid\_date\_offsets\_plural}{valid\_date\_offsets\_plural}}
+{\footnotesize\ttfamily list pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+valid\+\_\+date\+\_\+offsets\+\_\+plural\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}weeks"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}days"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hours"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}minutes"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}seconds"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}milliseconds"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}microseconds"{}},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_ac7edebece0e0dfb53f830afc93f48553}\label{classpandas_1_1tests_1_1tseries_1_1offsets_1_1test__dst_1_1TestDST_ac7edebece0e0dfb53f830afc93f48553} 
+\index{pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}!valid\_date\_offsets\_singular@{valid\_date\_offsets\_singular}}
+\index{valid\_date\_offsets\_singular@{valid\_date\_offsets\_singular}!pandas.tests.tseries.offsets.test\_dst.TestDST@{pandas.tests.tseries.offsets.test\_dst.TestDST}}
+\doxysubsubsection{\texorpdfstring{valid\_date\_offsets\_singular}{valid\_date\_offsets\_singular}}
+{\footnotesize\ttfamily list pandas.\+tests.\+tseries.\+offsets.\+test\+\_\+dst.\+Test\+DST.\+valid\+\_\+date\+\_\+offsets\+\_\+singular\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}weekday"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}day"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}hour"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}minute"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}second"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}microsecond"{}},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/tests/tseries/offsets/\mbox{\hyperlink{test__dst_8py}{test\+\_\+dst.\+py}}\end{DoxyCompactItemize}

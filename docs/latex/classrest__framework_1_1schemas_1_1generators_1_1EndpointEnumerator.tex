@@ -1,0 +1,83 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+schemas.\+generators.\+Endpoint\+Enumerator}
+\hypertarget{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator}{}\label{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator}\index{rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_a3f8584c33a10129bddab4d525a655ca1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_afea8c48db67c864df7aa49984727c32c}{patterns}}=None, urlconf=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_adb20a851d26fd7505899526371decabd}{get\+\_\+api\+\_\+endpoints}} (self, \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_afea8c48db67c864df7aa49984727c32c}{patterns}}=None, prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_ac65531bf598cd5be8edc7aa80e1e271e}{get\+\_\+path\+\_\+from\+\_\+regex}} (self, path\+\_\+regex)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_a361e3902df20c492e66e46fa3a8f3afc}{should\+\_\+include\+\_\+endpoint}} (self, path, callback)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_ab6389b6b138b1a99452e407994d6ce7b}{get\+\_\+allowed\+\_\+methods}} (self, callback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_afea8c48db67c864df7aa49984727c32c}{patterns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A class to determine the available API endpoints that a project exposes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_a3f8584c33a10129bddab4d525a655ca1}\label{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_a3f8584c33a10129bddab4d525a655ca1} 
+\index{rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Endpoint\+Enumerator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{patterns = {\ttfamily None},  }\item[{}]{urlconf = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_ab6389b6b138b1a99452e407994d6ce7b}\label{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_ab6389b6b138b1a99452e407994d6ce7b} 
+\index{rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}!get\_allowed\_methods@{get\_allowed\_methods}}
+\index{get\_allowed\_methods@{get\_allowed\_methods}!rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}}
+\doxysubsubsection{\texorpdfstring{get\_allowed\_methods()}{get\_allowed\_methods()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Endpoint\+Enumerator.\+get\+\_\+allowed\+\_\+methods (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{callback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of the valid HTTP methods for this endpoint.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_adb20a851d26fd7505899526371decabd}\label{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_adb20a851d26fd7505899526371decabd} 
+\index{rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}!get\_api\_endpoints@{get\_api\_endpoints}}
+\index{get\_api\_endpoints@{get\_api\_endpoints}!rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}}
+\doxysubsubsection{\texorpdfstring{get\_api\_endpoints()}{get\_api\_endpoints()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Endpoint\+Enumerator.\+get\+\_\+api\+\_\+endpoints (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{patterns = {\ttfamily None},  }\item[{}]{prefix = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of all available API endpoints by inspecting the URL conf.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_ac65531bf598cd5be8edc7aa80e1e271e}\label{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_ac65531bf598cd5be8edc7aa80e1e271e} 
+\index{rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}!get\_path\_from\_regex@{get\_path\_from\_regex}}
+\index{get\_path\_from\_regex@{get\_path\_from\_regex}!rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}}
+\doxysubsubsection{\texorpdfstring{get\_path\_from\_regex()}{get\_path\_from\_regex()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Endpoint\+Enumerator.\+get\+\_\+path\+\_\+from\+\_\+regex (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path\+\_\+regex }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a URL conf regex, return a URI template string.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_a361e3902df20c492e66e46fa3a8f3afc}\label{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_a361e3902df20c492e66e46fa3a8f3afc} 
+\index{rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}!should\_include\_endpoint@{should\_include\_endpoint}}
+\index{should\_include\_endpoint@{should\_include\_endpoint}!rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}}
+\doxysubsubsection{\texorpdfstring{should\_include\_endpoint()}{should\_include\_endpoint()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Endpoint\+Enumerator.\+should\+\_\+include\+\_\+endpoint (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{callback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return `True` if the given endpoint should be included.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_afea8c48db67c864df7aa49984727c32c}\label{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator_afea8c48db67c864df7aa49984727c32c} 
+\index{rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}!patterns@{patterns}}
+\index{patterns@{patterns}!rest\_framework.schemas.generators.EndpointEnumerator@{rest\_framework.schemas.generators.EndpointEnumerator}}
+\doxysubsubsection{\texorpdfstring{patterns}{patterns}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Endpoint\+Enumerator.\+patterns}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/schemas/\mbox{\hyperlink{generators_8py}{generators.\+py}}\end{DoxyCompactItemize}

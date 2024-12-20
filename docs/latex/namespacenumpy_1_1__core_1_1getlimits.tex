@@ -1,0 +1,174 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+\_\+core.\+getlimits}
+\hypertarget{namespacenumpy_1_1__core_1_1getlimits}{}\label{namespacenumpy_1_1__core_1_1getlimits}\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1getlimits_1_1finfo}{finfo}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1getlimits_1_1iinfo}{iinfo}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1__core_1_1getlimits_1_1MachArLike}{Mach\+Ar\+Like}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_a6eb899770eee5559ba01ef6ea5354cab}{\+\_\+fr0}} (a)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_a0ac91e9721b04dab31b57316fd175e92}{\+\_\+fr1}} (a)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_ab15ed7535b837a462d972f254d4cd7e3}{\+\_\+register\+\_\+type}} (machar, bytepat)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_a4b14202546b5114e9f9cf41591ed1866}{\+\_\+register\+\_\+known\+\_\+types}} ()
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_a972258faed29f99b1ca3e7adba8c6fb4}{\+\_\+get\+\_\+machar}} (ftype)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_aecfac93c0d14da2732a216f17bc91e30}{\+\_\+discovered\+\_\+machar}} (ftype)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_a6bcc11ff23760e216e94f8ab904876fe}{\+\_\+convert\+\_\+to\+\_\+float}}
+\item 
+str \mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_abeadbdd97eb926dedc3a47d44c237257}{\+\_\+title\+\_\+fmt}} = \textquotesingle{}numpy \{\} precision floating point number\textquotesingle{}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_a5f3e25ff5c5193f5b365697fd3045b14}{\+\_\+\+MACHAR\+\_\+\+PARAMS}}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_aa5af77e7027472fa6ea9af94d16dfa3c}{\+\_\+\+KNOWN\+\_\+\+TYPES}} = \{\}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1getlimits_a484de84a7d1f45cab17498ca67def33c}{\+\_\+float\+\_\+ma}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Machine limits for Float32 and Float64 and (long double) if available...\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1__core_1_1getlimits_aecfac93c0d14da2732a216f17bc91e30}\label{namespacenumpy_1_1__core_1_1getlimits_aecfac93c0d14da2732a216f17bc91e30} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_discovered\_machar@{\_discovered\_machar}}
+\index{\_discovered\_machar@{\_discovered\_machar}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_discovered\_machar()}{\_discovered\_machar()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+getlimits.\+\_\+discovered\+\_\+machar (\begin{DoxyParamCaption}\item[{}]{ftype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Create MachAr instance with found information on float types
+
+TODO: MachAr should be retired completely ideally.  We currently only
+      ever use it system with broken longdouble (valgrind, WSL).
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1__core_1_1getlimits_a6eb899770eee5559ba01ef6ea5354cab}\label{namespacenumpy_1_1__core_1_1getlimits_a6eb899770eee5559ba01ef6ea5354cab} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_fr0@{\_fr0}}
+\index{\_fr0@{\_fr0}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_fr0()}{\_fr0()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+getlimits.\+\_\+fr0 (\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}fix rank-0 --> rank-1\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1__core_1_1getlimits_a0ac91e9721b04dab31b57316fd175e92}\label{namespacenumpy_1_1__core_1_1getlimits_a0ac91e9721b04dab31b57316fd175e92} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_fr1@{\_fr1}}
+\index{\_fr1@{\_fr1}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_fr1()}{\_fr1()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+getlimits.\+\_\+fr1 (\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}fix rank > 0 --> rank-0\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1__core_1_1getlimits_a972258faed29f99b1ca3e7adba8c6fb4}\label{namespacenumpy_1_1__core_1_1getlimits_a972258faed29f99b1ca3e7adba8c6fb4} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_get\_machar@{\_get\_machar}}
+\index{\_get\_machar@{\_get\_machar}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_get\_machar()}{\_get\_machar()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+getlimits.\+\_\+get\+\_\+machar (\begin{DoxyParamCaption}\item[{}]{ftype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Get MachAr instance or MachAr-like instance
+
+Get parameters for floating point type, by first trying signatures of
+various known floating point types, then, if none match, attempting to
+identify parameters by analysis.
+
+Parameters
+----------
+ftype : class
+    Numpy floating point type class (e.g. ``np.float64``)
+
+Returns
+-------
+ma_like : instance of :class:`MachAr` or :class:`MachArLike`
+    Object giving floating point parameters for `ftype`.
+
+Warns
+-----
+UserWarning
+    If the binary signature of the float type is not in the dictionary of
+    known float types.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1__core_1_1getlimits_a4b14202546b5114e9f9cf41591ed1866}\label{namespacenumpy_1_1__core_1_1getlimits_a4b14202546b5114e9f9cf41591ed1866} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_register\_known\_types@{\_register\_known\_types}}
+\index{\_register\_known\_types@{\_register\_known\_types}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_register\_known\_types()}{\_register\_known\_types()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+getlimits.\+\_\+register\+\_\+known\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1getlimits_ab15ed7535b837a462d972f254d4cd7e3}\label{namespacenumpy_1_1__core_1_1getlimits_ab15ed7535b837a462d972f254d4cd7e3} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_register\_type@{\_register\_type}}
+\index{\_register\_type@{\_register\_type}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_register\_type()}{\_register\_type()}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+getlimits.\+\_\+register\+\_\+type (\begin{DoxyParamCaption}\item[{}]{machar,  }\item[{}]{bytepat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1__core_1_1getlimits_a6bcc11ff23760e216e94f8ab904876fe}\label{namespacenumpy_1_1__core_1_1getlimits_a6bcc11ff23760e216e94f8ab904876fe} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_convert\_to\_float@{\_convert\_to\_float}}
+\index{\_convert\_to\_float@{\_convert\_to\_float}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_convert\_to\_float}{\_convert\_to\_float}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+getlimits.\+\_\+convert\+\_\+to\+\_\+float\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ ntypes.csingle:\ ntypes.single,}
+\DoxyCodeLine{00003\ \ \ \ \ ntypes.complex128:\ ntypes.float64,}
+\DoxyCodeLine{00004\ \ \ \ \ ntypes.clongdouble:\ ntypes.longdouble}
+\DoxyCodeLine{00005\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1__core_1_1getlimits_a484de84a7d1f45cab17498ca67def33c}\label{namespacenumpy_1_1__core_1_1getlimits_a484de84a7d1f45cab17498ca67def33c} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_float\_ma@{\_float\_ma}}
+\index{\_float\_ma@{\_float\_ma}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_float\_ma}{\_float\_ma}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+getlimits.\+\_\+float\+\_\+ma = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1getlimits_aa5af77e7027472fa6ea9af94d16dfa3c}\label{namespacenumpy_1_1__core_1_1getlimits_aa5af77e7027472fa6ea9af94d16dfa3c} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_KNOWN\_TYPES@{\_KNOWN\_TYPES}}
+\index{\_KNOWN\_TYPES@{\_KNOWN\_TYPES}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_KNOWN\_TYPES}{\_KNOWN\_TYPES}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+getlimits.\+\_\+\+KNOWN\+\_\+\+TYPES = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1getlimits_a5f3e25ff5c5193f5b365697fd3045b14}\label{namespacenumpy_1_1__core_1_1getlimits_a5f3e25ff5c5193f5b365697fd3045b14} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_MACHAR\_PARAMS@{\_MACHAR\_PARAMS}}
+\index{\_MACHAR\_PARAMS@{\_MACHAR\_PARAMS}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_MACHAR\_PARAMS}{\_MACHAR\_PARAMS}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+getlimits.\+\_\+\+MACHAR\+\_\+\+PARAMS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ ntypes.double:\ dict(}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ itype\ =\ ntypes.int64,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ fmt\ =\ \textcolor{stringliteral}{'\%24.16e'},}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ title\ =\ \_title\_fmt.format(\textcolor{stringliteral}{'double'})),}
+\DoxyCodeLine{00006\ \ \ \ \ ntypes.single:\ dict(}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ itype\ =\ ntypes.int32,}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ fmt\ =\ \textcolor{stringliteral}{'\%15.7e'},}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ title\ =\ \_title\_fmt.format(\textcolor{stringliteral}{'single'})),}
+\DoxyCodeLine{00010\ \ \ \ \ ntypes.longdouble:\ dict(}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ itype\ =\ ntypes.longlong,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ fmt\ =\ \textcolor{stringliteral}{'\%s'},}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ title\ =\ \_title\_fmt.format(\textcolor{stringliteral}{'long\ double'})),}
+\DoxyCodeLine{00014\ \ \ \ \ ntypes.half:\ dict(}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ itype\ =\ ntypes.int16,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ fmt\ =\ \textcolor{stringliteral}{'\%12.5e'},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ title\ =\ \_title\_fmt.format(\textcolor{stringliteral}{'half'}))\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1__core_1_1getlimits_abeadbdd97eb926dedc3a47d44c237257}\label{namespacenumpy_1_1__core_1_1getlimits_abeadbdd97eb926dedc3a47d44c237257} 
+\index{numpy.\_core.getlimits@{numpy.\_core.getlimits}!\_title\_fmt@{\_title\_fmt}}
+\index{\_title\_fmt@{\_title\_fmt}!numpy.\_core.getlimits@{numpy.\_core.getlimits}}
+\doxysubsubsection{\texorpdfstring{\_title\_fmt}{\_title\_fmt}}
+{\footnotesize\ttfamily str numpy.\+\_\+core.\+getlimits.\+\_\+title\+\_\+fmt = \textquotesingle{}numpy \{\} precision floating point number\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+

@@ -1,0 +1,108 @@
+\doxysection{Référence de la classe numpy.\+lib.\+\_\+datasource.\+\_\+\+File\+Openers}
+\hypertarget{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners}{}\label{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners}\index{numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_aec1a7666e2f91cd128dd90f499adf52e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a8223f6b7e94a063b31754c52908ad206}{keys}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a006c27fa8c31a836551d1740d5023863}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_abf2f19e4840a5ed2ff75e4bda0f6b7c6}{\+\_\+load}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a3777165e27848ea2bdc239a26ebc8a81}{\+\_\+loaded}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a891704f7c6be6de3d7ee4442d106bd33}{\+\_\+file\+\_\+openers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Container for different methods to open (un-)compressed files.
+
+`_FileOpeners` contains a dictionary that holds one method for each
+supported file format. Attribute lookup is implemented in such a way
+that an instance of `_FileOpeners` itself can be indexed with the keys
+of that dictionary. Currently uncompressed files as well as files
+compressed with ``gzip``, ``bz2`` or ``xz`` compression are supported.
+
+Notes
+-----
+`_file_openers`, an instance of `_FileOpeners`, is made available for
+use in the `_datasource` module.
+
+Examples
+--------
+>>> import gzip
+>>> np.lib._datasource._file_openers.keys()
+[None, '.bz2', '.gz', '.xz', '.lzma']
+>>> np.lib._datasource._file_openers['.gz'] is gzip.open
+True\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_aec1a7666e2f91cd128dd90f499adf52e}\label{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_aec1a7666e2f91cd128dd90f499adf52e} 
+\index{numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+\_\+\+File\+Openers.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a006c27fa8c31a836551d1740d5023863}\label{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a006c27fa8c31a836551d1740d5023863} 
+\index{numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+\_\+\+File\+Openers.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_abf2f19e4840a5ed2ff75e4bda0f6b7c6}\label{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_abf2f19e4840a5ed2ff75e4bda0f6b7c6} 
+\index{numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}!\_load@{\_load}}
+\index{\_load@{\_load}!numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}}
+\doxysubsubsection{\texorpdfstring{\_load()}{\_load()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+\_\+\+File\+Openers.\+\_\+load (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a8223f6b7e94a063b31754c52908ad206}\label{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a8223f6b7e94a063b31754c52908ad206} 
+\index{numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}!keys@{keys}}
+\index{keys@{keys}!numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+\_\+\+File\+Openers.\+keys (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the keys of currently supported file openers.
+
+Parameters
+----------
+None
+
+Returns
+-------
+keys : list
+    The keys are None for uncompressed files and the file extension
+    strings (i.e. ``'.gz'``, ``'.xz'``) for supported compression
+    methods.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a891704f7c6be6de3d7ee4442d106bd33}\label{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a891704f7c6be6de3d7ee4442d106bd33} 
+\index{numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}!\_file\_openers@{\_file\_openers}}
+\index{\_file\_openers@{\_file\_openers}!numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}}
+\doxysubsubsection{\texorpdfstring{\_file\_openers}{\_file\_openers}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+\_\+\+File\+Openers.\+\_\+file\+\_\+openers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a3777165e27848ea2bdc239a26ebc8a81}\label{classnumpy_1_1lib_1_1__datasource_1_1__FileOpeners_a3777165e27848ea2bdc239a26ebc8a81} 
+\index{numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}!\_loaded@{\_loaded}}
+\index{\_loaded@{\_loaded}!numpy.lib.\_datasource.\_FileOpeners@{numpy.lib.\_datasource.\_FileOpeners}}
+\doxysubsubsection{\texorpdfstring{\_loaded}{\_loaded}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+datasource.\+\_\+\+File\+Openers.\+\_\+loaded\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/lib/\mbox{\hyperlink{__datasource_8py}{\+\_\+datasource.\+py}}\end{DoxyCompactItemize}

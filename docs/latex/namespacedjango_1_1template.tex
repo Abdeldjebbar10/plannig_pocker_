@@ -1,0 +1,91 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+template}
+\hypertarget{namespacedjango_1_1template}{}\label{namespacedjango_1_1template}\index{django.template@{django.template}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1autoreload}{autoreload}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1backends}{backends}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1base}{base}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1context}{context}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1context__processors}{context\+\_\+processors}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1defaultfilters}{defaultfilters}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1defaulttags}{defaulttags}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1engine}{engine}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1exceptions}{exceptions}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1library}{library}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1loader}{loader}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1loader__tags}{loader\+\_\+tags}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1loaders}{loaders}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1response}{response}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1smartif}{smartif}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1template_1_1utils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1template_a58b1f5e39a5ffbe7485dc18875c6a0c0}{engines}} = \mbox{\hyperlink{classdjango_1_1template_1_1utils_1_1EngineHandler}{Engine\+Handler}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Django's support for templates.
+
+The django.template namespace contains two independent subsystems:
+
+1. Multiple Template Engines: support for pluggable template backends,
+   built-in backends and backend-independent APIs
+2. Django Template Language: Django's own template engine, including its
+   built-in loaders, context processors, tags and filters.
+
+Ideally these subsystems would be implemented in distinct packages. However
+keeping them together made the implementation of Multiple Template Engines
+less disruptive .
+
+Here's a breakdown of which modules belong to which subsystem.
+
+Multiple Template Engines:
+
+- django.template.backends.*
+- django.template.loader
+- django.template.response
+
+Django Template Language:
+
+- django.template.base
+- django.template.context
+- django.template.context_processors
+- django.template.loaders.*
+- django.template.debug
+- django.template.defaultfilters
+- django.template.defaulttags
+- django.template.engine
+- django.template.loader_tags
+- django.template.smartif
+
+Shared:
+
+- django.template.utils\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1template_a58b1f5e39a5ffbe7485dc18875c6a0c0}\label{namespacedjango_1_1template_a58b1f5e39a5ffbe7485dc18875c6a0c0} 
+\index{django.template@{django.template}!engines@{engines}}
+\index{engines@{engines}!django.template@{django.template}}
+\doxysubsubsection{\texorpdfstring{engines}{engines}}
+{\footnotesize\ttfamily django.\+template.\+engines = \mbox{\hyperlink{classdjango_1_1template_1_1utils_1_1EngineHandler}{Engine\+Handler}}()}
+

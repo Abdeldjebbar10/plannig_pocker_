@@ -1,0 +1,85 @@
+\doxysection{Référence de la classe pandas.\+core.\+accessor.\+Pandas\+Delegate}
+\hypertarget{classpandas_1_1core_1_1accessor_1_1PandasDelegate}{}\label{classpandas_1_1core_1_1accessor_1_1PandasDelegate}\index{pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+accessor.\+Pandas\+Delegate\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1PandasDelegate_af04f656650c47a01e4aad3eb6a7f8ad8}{\+\_\+delegate\+\_\+property\+\_\+get}} (self, str name, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a112439e3f0e2cfaf363ec35ac6fa6417}{\+\_\+delegate\+\_\+property\+\_\+set}} (self, str name, value, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a82e93acfba1cafcaaebc25fa7c7b5b58}{\+\_\+delegate\+\_\+method}} (self, str name, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a417b4310ab99013ea4d21cd2b73e6d22}{\+\_\+add\+\_\+delegate\+\_\+accessors}} (cls, delegate, list\mbox{[}str\mbox{]} accessors, str typ, bool overwrite=False, Callable\mbox{[}\mbox{[}str\mbox{]}, str\mbox{]} accessor\+\_\+mapping=lambda x\+:x, bool raise\+\_\+on\+\_\+missing=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Abstract base class for delegating methods/properties.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a417b4310ab99013ea4d21cd2b73e6d22}\label{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a417b4310ab99013ea4d21cd2b73e6d22} 
+\index{pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}!\_add\_delegate\_accessors@{\_add\_delegate\_accessors}}
+\index{\_add\_delegate\_accessors@{\_add\_delegate\_accessors}!pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}}
+\doxysubsubsection{\texorpdfstring{\_add\_delegate\_accessors()}{\_add\_delegate\_accessors()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+accessor.\+Pandas\+Delegate.\+\_\+add\+\_\+delegate\+\_\+accessors (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{delegate,  }\item[{list\mbox{[}str\mbox{]}}]{accessors,  }\item[{str}]{typ,  }\item[{bool }]{overwrite = {\ttfamily False},  }\item[{Callable\mbox{[}\mbox{[}str\mbox{]}, str\mbox{]} }]{accessor\+\_\+mapping = {\ttfamily lambda~x\+:~x},  }\item[{bool }]{raise\+\_\+on\+\_\+missing = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Add accessors to cls from the delegate class.
+
+Parameters
+----------
+cls
+    Class to add the methods/properties to.
+delegate
+    Class to get methods/properties and doc-strings.
+accessors : list of str
+    List of accessors to add.
+typ : {'property', 'method'}
+overwrite : bool, default False
+    Overwrite the method/property in the target class if it exists.
+accessor_mapping: Callable, default lambda x: x
+    Callable to map the delegate's function to the cls' function.
+raise_on_missing: bool, default True
+    Raise if an accessor does not exist on delegate.
+    False skips the missing accessor.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a82e93acfba1cafcaaebc25fa7c7b5b58}\label{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a82e93acfba1cafcaaebc25fa7c7b5b58} 
+\index{pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}!\_delegate\_method@{\_delegate\_method}}
+\index{\_delegate\_method@{\_delegate\_method}!pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}}
+\doxysubsubsection{\texorpdfstring{\_delegate\_method()}{\_delegate\_method()}}
+{\footnotesize\ttfamily pandas.\+core.\+accessor.\+Pandas\+Delegate.\+\_\+delegate\+\_\+method (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1categorical_1_1CategoricalAccessor_aeb97d4129e711da2e836fd95357fc38e}{pandas.\+core.\+arrays.\+categorical.\+Categorical\+Accessor}}, \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1sparse_1_1accessor_1_1SparseAccessor_a019968464e66b9a289c62a4ca6c4fff9}{pandas.\+core.\+arrays.\+sparse.\+accessor.\+Sparse\+Accessor}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1accessors_1_1Properties_aafb45404a413937fa11dc4bf2eef2d70}{pandas.\+core.\+indexes.\+accessors.\+Properties}}, et \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1accessors_1_1ArrowTemporalProperties_a9033a737ef7ab0e5d65aee5521e0cb84}{pandas.\+core.\+indexes.\+accessors.\+Arrow\+Temporal\+Properties}}.
+
+\Hypertarget{classpandas_1_1core_1_1accessor_1_1PandasDelegate_af04f656650c47a01e4aad3eb6a7f8ad8}\label{classpandas_1_1core_1_1accessor_1_1PandasDelegate_af04f656650c47a01e4aad3eb6a7f8ad8} 
+\index{pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}!\_delegate\_property\_get@{\_delegate\_property\_get}}
+\index{\_delegate\_property\_get@{\_delegate\_property\_get}!pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}}
+\doxysubsubsection{\texorpdfstring{\_delegate\_property\_get()}{\_delegate\_property\_get()}}
+{\footnotesize\ttfamily pandas.\+core.\+accessor.\+Pandas\+Delegate.\+\_\+delegate\+\_\+property\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1categorical_1_1CategoricalAccessor_a36719a0b7579b770def1f1f302286ea0}{pandas.\+core.\+arrays.\+categorical.\+Categorical\+Accessor}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1accessors_1_1Properties_aee884b6685e5366a203f754c60314a2b}{pandas.\+core.\+indexes.\+accessors.\+Properties}}, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1accessors_1_1ArrowTemporalProperties_acf51ad305d57b766b6be35450aa3db81}{pandas.\+core.\+indexes.\+accessors.\+Arrow\+Temporal\+Properties}}, et \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1sparse_1_1accessor_1_1SparseAccessor_ac12aea2347499d9bc1f63fd52311ce3c}{pandas.\+core.\+arrays.\+sparse.\+accessor.\+Sparse\+Accessor}}.
+
+\Hypertarget{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a112439e3f0e2cfaf363ec35ac6fa6417}\label{classpandas_1_1core_1_1accessor_1_1PandasDelegate_a112439e3f0e2cfaf363ec35ac6fa6417} 
+\index{pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}!\_delegate\_property\_set@{\_delegate\_property\_set}}
+\index{\_delegate\_property\_set@{\_delegate\_property\_set}!pandas.core.accessor.PandasDelegate@{pandas.core.accessor.PandasDelegate}}
+\doxysubsubsection{\texorpdfstring{\_delegate\_property\_set()}{\_delegate\_property\_set()}}
+{\footnotesize\ttfamily pandas.\+core.\+accessor.\+Pandas\+Delegate.\+\_\+delegate\+\_\+property\+\_\+set (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{}]{value,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1categorical_1_1CategoricalAccessor_ac13891d0ca9d3eadcc1632a99b400da3}{pandas.\+core.\+arrays.\+categorical.\+Categorical\+Accessor}}, et \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1accessors_1_1Properties_a12f2d92423a435ce715e83a13a23005a}{pandas.\+core.\+indexes.\+accessors.\+Properties}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/\mbox{\hyperlink{accessor_8py}{accessor.\+py}}\end{DoxyCompactItemize}

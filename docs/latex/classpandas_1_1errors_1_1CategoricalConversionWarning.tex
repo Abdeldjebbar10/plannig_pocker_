@@ -1,0 +1,28 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Categorical\+Conversion\+Warning}
+\hypertarget{classpandas_1_1errors_1_1CategoricalConversionWarning}{}\label{classpandas_1_1errors_1_1CategoricalConversionWarning}\index{pandas.errors.CategoricalConversionWarning@{pandas.errors.CategoricalConversionWarning}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Categorical\+Conversion\+Warning\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Categorical\+Conversion\+Warning\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Warning is raised when reading a partial labeled Stata file using a iterator.
+
+Examples
+--------
+>>> from pandas.io.stata import StataReader
+>>> with StataReader('dta_file', chunksize=2) as reader: # doctest: +SKIP
+...   for i, block in enumerate(reader):
+...      print(i, block)
+... # CategoricalConversionWarning: One or more series with value labels...
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

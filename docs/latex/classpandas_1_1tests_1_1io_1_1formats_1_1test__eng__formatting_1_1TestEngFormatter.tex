@@ -1,0 +1,94 @@
+\doxysection{Référence de la classe pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter}
+\hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter}{}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter}\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a32983e9485872d2c92921ac4a9c83feb}{test\+\_\+eng\+\_\+float\+\_\+formatter2}} (self, float\+\_\+frame)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ae215761cc6d4009b3d8d0139f58b1fa3}{test\+\_\+eng\+\_\+float\+\_\+formatter}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ae52268adbb0f583e4d9b1aca28a0c309}{compare}} (self, formatter, input, output)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ade01523f3fa9f5a5a1f4a42041e0fb17}{compare\+\_\+all}} (self, formatter, in\+\_\+out)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a1a1f07d935c5110031619d99d21e5532}{test\+\_\+exponents\+\_\+with\+\_\+eng\+\_\+prefix}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a6e8fe87b5df88686a4f137bb7a54b82c}{test\+\_\+exponents\+\_\+without\+\_\+eng\+\_\+prefix}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ac319c982fb2e09897206a7b7bcb92373}{test\+\_\+rounding}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_af1f0f206ca13954124dd2cdca808b76d}{test\+\_\+nan}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ab50b602035d4bf6205190950bfaed2c1}{test\+\_\+inf}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ae52268adbb0f583e4d9b1aca28a0c309}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ae52268adbb0f583e4d9b1aca28a0c309} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!compare@{compare}}
+\index{compare@{compare}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+compare (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{formatter,  }\item[{}]{input,  }\item[{}]{output }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ade01523f3fa9f5a5a1f4a42041e0fb17}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ade01523f3fa9f5a5a1f4a42041e0fb17} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!compare\_all@{compare\_all}}
+\index{compare\_all@{compare\_all}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{compare\_all()}{compare\_all()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+compare\+\_\+all (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{formatter,  }\item[{}]{in\+\_\+out }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parameters:
+-----------
+formatter: EngFormatter under test
+in_out: list of tuples. Each tuple = (number, expected_formatting)
+
+It is tested if 'formatter(number) == expected_formatting'.
+*number* should be >= 0 because formatter(-number) == fmt is also
+tested. *fmt* is derived from *expected_formatting*
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ae215761cc6d4009b3d8d0139f58b1fa3}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ae215761cc6d4009b3d8d0139f58b1fa3} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!test\_eng\_float\_formatter@{test\_eng\_float\_formatter}}
+\index{test\_eng\_float\_formatter@{test\_eng\_float\_formatter}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{test\_eng\_float\_formatter()}{test\_eng\_float\_formatter()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+test\+\_\+eng\+\_\+float\+\_\+formatter (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a32983e9485872d2c92921ac4a9c83feb}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a32983e9485872d2c92921ac4a9c83feb} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!test\_eng\_float\_formatter2@{test\_eng\_float\_formatter2}}
+\index{test\_eng\_float\_formatter2@{test\_eng\_float\_formatter2}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{test\_eng\_float\_formatter2()}{test\_eng\_float\_formatter2()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+test\+\_\+eng\+\_\+float\+\_\+formatter2 (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{float\+\_\+frame }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a1a1f07d935c5110031619d99d21e5532}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a1a1f07d935c5110031619d99d21e5532} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!test\_exponents\_with\_eng\_prefix@{test\_exponents\_with\_eng\_prefix}}
+\index{test\_exponents\_with\_eng\_prefix@{test\_exponents\_with\_eng\_prefix}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{test\_exponents\_with\_eng\_prefix()}{test\_exponents\_with\_eng\_prefix()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+test\+\_\+exponents\+\_\+with\+\_\+eng\+\_\+prefix (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a6e8fe87b5df88686a4f137bb7a54b82c}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_a6e8fe87b5df88686a4f137bb7a54b82c} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!test\_exponents\_without\_eng\_prefix@{test\_exponents\_without\_eng\_prefix}}
+\index{test\_exponents\_without\_eng\_prefix@{test\_exponents\_without\_eng\_prefix}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{test\_exponents\_without\_eng\_prefix()}{test\_exponents\_without\_eng\_prefix()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+test\+\_\+exponents\+\_\+without\+\_\+eng\+\_\+prefix (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ab50b602035d4bf6205190950bfaed2c1}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ab50b602035d4bf6205190950bfaed2c1} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!test\_inf@{test\_inf}}
+\index{test\_inf@{test\_inf}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{test\_inf()}{test\_inf()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+test\+\_\+inf (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_af1f0f206ca13954124dd2cdca808b76d}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_af1f0f206ca13954124dd2cdca808b76d} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!test\_nan@{test\_nan}}
+\index{test\_nan@{test\_nan}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{test\_nan()}{test\_nan()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+test\+\_\+nan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ac319c982fb2e09897206a7b7bcb92373}\label{classpandas_1_1tests_1_1io_1_1formats_1_1test__eng__formatting_1_1TestEngFormatter_ac319c982fb2e09897206a7b7bcb92373} 
+\index{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}!test\_rounding@{test\_rounding}}
+\index{test\_rounding@{test\_rounding}!pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter@{pandas.tests.io.formats.test\_eng\_formatting.TestEngFormatter}}
+\doxysubsubsection{\texorpdfstring{test\_rounding()}{test\_rounding()}}
+{\footnotesize\ttfamily pandas.\+tests.\+io.\+formats.\+test\+\_\+eng\+\_\+formatting.\+Test\+Eng\+Formatter.\+test\+\_\+rounding (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/tests/io/formats/\mbox{\hyperlink{test__eng__formatting_8py}{test\+\_\+eng\+\_\+formatting.\+py}}\end{DoxyCompactItemize}

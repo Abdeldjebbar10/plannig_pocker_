@@ -1,0 +1,35 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Indexing\+Error}
+\hypertarget{classpandas_1_1errors_1_1IndexingError}{}\label{classpandas_1_1errors_1_1IndexingError}\index{pandas.errors.IndexingError@{pandas.errors.IndexingError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Indexing\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Indexing\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exception is raised when trying to index and there is a mismatch in dimensions.
+
+Examples
+--------
+>>> df = pd.DataFrame({'A': [1, 1, 1]})
+>>> df.loc[..., ..., 'A'] # doctest: +SKIP
+... # IndexingError: indexer may only contain one '...' entry
+>>> df = pd.DataFrame({'A': [1, 1, 1]})
+>>> df.loc[1, ..., ...] # doctest: +SKIP
+... # IndexingError: Too many indexers
+>>> df[pd.Series([True], dtype=bool)] # doctest: +SKIP
+... # IndexingError: Unalignable boolean Series provided as indexer...
+>>> s = pd.Series(range(2),
+...               index = pd.MultiIndex.from_product([["a", "b"], ["c"]]))
+>>> s.loc["a", "c", "d"] # doctest: +SKIP
+... # IndexingError: Too many indexers
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

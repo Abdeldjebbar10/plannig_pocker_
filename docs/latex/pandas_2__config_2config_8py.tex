@@ -1,0 +1,106 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/\+\_\+config/config.py}
+\hypertarget{pandas_2__config_2config_8py}{}\label{pandas_2__config_2config_8py}\index{env/lib/python3.12/site-\/packages/pandas/\_config/config.py@{env/lib/python3.12/site-\/packages/pandas/\_config/config.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1DeprecatedOption}{pandas.\+\_\+config.\+config.\+Deprecated\+Option}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1RegisteredOption}{pandas.\+\_\+config.\+config.\+Registered\+Option}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1OptionError}{pandas.\+\_\+config.\+config.\+Option\+Error}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1DictWrapper}{pandas.\+\_\+config.\+config.\+Dict\+Wrapper}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1CallableDynamicDoc}{pandas.\+\_\+config.\+config.\+Callable\+Dynamic\+Doc}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1option__context}{pandas.\+\_\+config.\+config.\+option\+\_\+context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1__config}{pandas.\+\_\+config}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1__config_1_1config}{pandas.\+\_\+config.\+config}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a8cc7a433f135d6fdd86f6cd2f1e401b6}{pandas.\+\_\+config.\+config.\+\_\+get\+\_\+single\+\_\+key}} (str pat, bool silent)
+\item 
+Any \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a9436883ae46cded62dd129d3bce2e3cd}{pandas.\+\_\+config.\+config.\+\_\+get\+\_\+option}} (str pat, bool silent=False)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a14b4ea64772f3a99f7231f47a4794e5a}{pandas.\+\_\+config.\+config.\+\_\+set\+\_\+option}} (\texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a67d1bce2ce0dcd8ba81d2e4b1d86c095}{pandas.\+\_\+config.\+config.\+\_\+describe\+\_\+option}} (str pat="{}"{}, bool \+\_\+print\+\_\+desc=True)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a4811f6957d1f3f5f37348b7abff5b235}{pandas.\+\_\+config.\+config.\+\_\+reset\+\_\+option}} (str pat, bool silent=False)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a479131f310c39722168f4d0184ee4aa8}{pandas.\+\_\+config.\+config.\+get\+\_\+default\+\_\+val}} (str pat)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_aa9c3f2cce605fd9865de62ae942c10d2}{pandas.\+\_\+config.\+config.\+register\+\_\+option}} (str key, object defval, str doc="{}"{}, Callable\mbox{[}\mbox{[}object\mbox{]}, Any\mbox{]}\texorpdfstring{$\vert$}{|}None validator=None, Callable\mbox{[}\mbox{[}str\mbox{]}, Any\mbox{]}\texorpdfstring{$\vert$}{|}None cb=None)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a01353c8731a02e1139318df16cd50677}{pandas.\+\_\+config.\+config.\+deprecate\+\_\+option}} (str key, str\texorpdfstring{$\vert$}{|}None msg=None, str\texorpdfstring{$\vert$}{|}None rkey=None, str\texorpdfstring{$\vert$}{|}None removal\+\_\+ver=None)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a71d269cc5acdc2a82d146775c133c7cb}{pandas.\+\_\+config.\+config.\+\_\+select\+\_\+options}} (str pat)
+\item 
+tuple\mbox{[}dict\mbox{[}str, Any\mbox{]}, str\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a4376b5d1a57b716f9be1757cbfc1cb6e}{pandas.\+\_\+config.\+config.\+\_\+get\+\_\+root}} (str key)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a4e6e46e79ca4121bf58a56c525f1ab4b}{pandas.\+\_\+config.\+config.\+\_\+is\+\_\+deprecated}} (str key)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a03a8a459d07799091d4ba30eac127bb9}{pandas.\+\_\+config.\+config.\+\_\+get\+\_\+deprecated\+\_\+option}} (str key)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a55c35d3234e49bd30bb647953ae4856b}{pandas.\+\_\+config.\+config.\+\_\+get\+\_\+registered\+\_\+option}} (str key)
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a14fe67470a8d1e23550c8f62784555e0}{pandas.\+\_\+config.\+config.\+\_\+translate\+\_\+key}} (str key)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_ac119647e8d69f15d1f40520a58757393}{pandas.\+\_\+config.\+config.\+\_\+warn\+\_\+if\+\_\+deprecated}} (str key)
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a0c8127c1a5b86b7cde1127930c27a3cf}{pandas.\+\_\+config.\+config.\+\_\+build\+\_\+option\+\_\+description}} (str k)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a939e8460cdb461ba36d025335a11a5fb}{pandas.\+\_\+config.\+config.\+pp\+\_\+options\+\_\+list}} (Iterable\mbox{[}str\mbox{]} keys, int width=80, bool \+\_\+print=False)
+\item 
+Generator\mbox{[}None, None, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a0fc8d4fa5b8251d1048b99b84ed75df9}{pandas.\+\_\+config.\+config.\+config\+\_\+prefix}} (str prefix)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abaf7230d9b210facdf9d5d77fa461eb5}{pandas.\+\_\+config.\+config.\+is\+\_\+type\+\_\+factory}} (type\mbox{[}Any\mbox{]} \+\_\+type)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a6b67a468d52e0e83fb3434caff6333f7}{pandas.\+\_\+config.\+config.\+is\+\_\+instance\+\_\+factory}} (\+\_\+type)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a6ef8a1f43cfdb017fa7597153d0fe1a9}{pandas.\+\_\+config.\+config.\+is\+\_\+one\+\_\+of\+\_\+factory}} (legal\+\_\+values)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a80cf680851fde02b2a74fb0c2e21168e}{pandas.\+\_\+config.\+config.\+is\+\_\+nonnegative\+\_\+int}} (object value)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abdf06a4d710db5bc1b5b1bac683e7a68}{pandas.\+\_\+config.\+config.\+is\+\_\+callable}} (obj)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a540d3c9f873dbd93afe80af4f31227b7}{pandas.\+\_\+config.\+config.\+\_\+get\+\_\+option\+\_\+tmpl}}
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a5a16ea5d30b6dab73b7fefac3d6526b7}{pandas.\+\_\+config.\+config.\+\_\+set\+\_\+option\+\_\+tmpl}}
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abb4ec8e6f885d4df33cf2e2778b632ec}{pandas.\+\_\+config.\+config.\+\_\+describe\+\_\+option\+\_\+tmpl}}
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a734d0d47546a6bfadd426be73a105435}{pandas.\+\_\+config.\+config.\+\_\+reset\+\_\+option\+\_\+tmpl}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_aa4f74bbff9e9ff51df3dc50ac431893e}{pandas.\+\_\+config.\+config.\+get\+\_\+option}} = \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1CallableDynamicDoc}{Callable\+Dynamic\+Doc}}(\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a9436883ae46cded62dd129d3bce2e3cd}{\+\_\+get\+\_\+option}}, \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a540d3c9f873dbd93afe80af4f31227b7}{\+\_\+get\+\_\+option\+\_\+tmpl}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a866d20dd3416d04e99d1d79467270d5e}{pandas.\+\_\+config.\+config.\+set\+\_\+option}} = \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1CallableDynamicDoc}{Callable\+Dynamic\+Doc}}(\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a14b4ea64772f3a99f7231f47a4794e5a}{\+\_\+set\+\_\+option}}, \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a5a16ea5d30b6dab73b7fefac3d6526b7}{\+\_\+set\+\_\+option\+\_\+tmpl}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a0160141051077649e7209626eaeb227a}{pandas.\+\_\+config.\+config.\+reset\+\_\+option}} = \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1CallableDynamicDoc}{Callable\+Dynamic\+Doc}}(\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a4811f6957d1f3f5f37348b7abff5b235}{\+\_\+reset\+\_\+option}}, \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a734d0d47546a6bfadd426be73a105435}{\+\_\+reset\+\_\+option\+\_\+tmpl}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_aa23522d4639e8958475cd8abe15a1125}{pandas.\+\_\+config.\+config.\+describe\+\_\+option}} = \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1CallableDynamicDoc}{Callable\+Dynamic\+Doc}}(\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a67d1bce2ce0dcd8ba81d2e4b1d86c095}{\+\_\+describe\+\_\+option}}, \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abb4ec8e6f885d4df33cf2e2778b632ec}{\+\_\+describe\+\_\+option\+\_\+tmpl}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1__config_1_1config_ad17e7e500e93ab9f0c19c937636bc4ca}{pandas.\+\_\+config.\+config.\+options}} = \mbox{\hyperlink{classpandas_1_1__config_1_1config_1_1DictWrapper}{Dict\+Wrapper}}(\+\_\+global\+\_\+config)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a9b32936424f9a4752a71e29df3110b0a}{pandas.\+\_\+config.\+config.\+is\+\_\+int}} = \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abaf7230d9b210facdf9d5d77fa461eb5}{is\+\_\+type\+\_\+factory}}(int)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_acd3dac48d65d14b6138114fe0153e770}{pandas.\+\_\+config.\+config.\+is\+\_\+bool}} = \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abaf7230d9b210facdf9d5d77fa461eb5}{is\+\_\+type\+\_\+factory}}(bool)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a068ac13a140a12caa0d2e43966c894c0}{pandas.\+\_\+config.\+config.\+is\+\_\+float}} = \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abaf7230d9b210facdf9d5d77fa461eb5}{is\+\_\+type\+\_\+factory}}(float)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_ab155eab87b64fc9b49a62bbf01b8ac31}{pandas.\+\_\+config.\+config.\+is\+\_\+str}} = \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abaf7230d9b210facdf9d5d77fa461eb5}{is\+\_\+type\+\_\+factory}}(str)
+\item 
+Callable\mbox{[}\mbox{[}Any\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_abddeb7fa3d3fc7d72f4abaa85bad0c95}{pandas.\+\_\+config.\+config.\+is\+\_\+text}} = \mbox{\hyperlink{namespacepandas_1_1__config_1_1config_a6b67a468d52e0e83fb3434caff6333f7}{is\+\_\+instance\+\_\+factory}}((str, bytes))
+\end{DoxyCompactItemize}

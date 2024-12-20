@@ -1,0 +1,106 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+versioning.\+Namespace\+Versioning}
+\hypertarget{classrest__framework_1_1versioning_1_1NamespaceVersioning}{}\label{classrest__framework_1_1versioning_1_1NamespaceVersioning}\index{rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+versioning.\+Namespace\+Versioning\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+versioning.\+Namespace\+Versioning\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1NamespaceVersioning_a2db5ca122301d10b00f9fda0d774fc7f}{determine\+\_\+version}} (self, request, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1NamespaceVersioning_aca396063a89cede26f3246fb003638ee}{reverse}} (self, viewname, args=None, kwargs=None, request=None, format=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}extra)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1NamespaceVersioning_a90bf398d96ce046079ae3023053da7e5}{get\+\_\+versioned\+\_\+viewname}} (self, viewname, request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning}{rest\+\_\+framework.\+versioning.\+Base\+Versioning}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_abb169c68b71b4cca448068a9fd6f521c}{is\+\_\+allowed\+\_\+version}} (self, version)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1NamespaceVersioning_ac933094c0b06ee107b81be72793b2cc3}{invalid\+\_\+version\+\_\+message}} = \+\_\+(\textquotesingle{}Invalid version in URL path. Does not match any version namespace.\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning}{rest\+\_\+framework.\+versioning.\+Base\+Versioning}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_aacd341412d6e8393ded099c6dfb9f8b3}{default\+\_\+version}} = api\+\_\+settings.\+DEFAULT\+\_\+\+VERSION
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_ac536c7d512f642055fc956c83b05129a}{allowed\+\_\+versions}} = api\+\_\+settings.\+ALLOWED\+\_\+\+VERSIONS
+\item 
+\mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_ae03cfff22d66cf4a006486ce0d3c042f}{version\+\_\+param}} = api\+\_\+settings.\+VERSION\+\_\+\+PARAM
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}To the client this is the same style as `URLPathVersioning`.
+The difference is in the backend - this implementation uses
+Django's URL namespaces to determine the version.
+
+An example URL conf that is namespaced into two separate versions
+
+# users/urls.py
+urlpatterns = [
+    path('/users/', users_list, name='users-list'),
+    path('/users/<int:pk>/', users_detail, name='users-detail')
+]
+
+# urls.py
+urlpatterns = [
+    path('v1/', include('users.urls', namespace='v1')),
+    path('v2/', include('users.urls', namespace='v2'))
+]
+
+GET /1.0/something/ HTTP/1.1
+Host: example.com
+Accept: application/json
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1versioning_1_1NamespaceVersioning_a2db5ca122301d10b00f9fda0d774fc7f}\label{classrest__framework_1_1versioning_1_1NamespaceVersioning_a2db5ca122301d10b00f9fda0d774fc7f} 
+\index{rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}!determine\_version@{determine\_version}}
+\index{determine\_version@{determine\_version}!rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}}
+\doxysubsubsection{\texorpdfstring{determine\_version()}{determine\_version()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Namespace\+Versioning.\+determine\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_a0180d551575e6bcafa8ed803dd6f4de1}{rest\+\_\+framework.\+versioning.\+Base\+Versioning}}.
+
+\Hypertarget{classrest__framework_1_1versioning_1_1NamespaceVersioning_a90bf398d96ce046079ae3023053da7e5}\label{classrest__framework_1_1versioning_1_1NamespaceVersioning_a90bf398d96ce046079ae3023053da7e5} 
+\index{rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}!get\_versioned\_viewname@{get\_versioned\_viewname}}
+\index{get\_versioned\_viewname@{get\_versioned\_viewname}!rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}}
+\doxysubsubsection{\texorpdfstring{get\_versioned\_viewname()}{get\_versioned\_viewname()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Namespace\+Versioning.\+get\+\_\+versioned\+\_\+viewname (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{viewname,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1versioning_1_1NamespaceVersioning_aca396063a89cede26f3246fb003638ee}\label{classrest__framework_1_1versioning_1_1NamespaceVersioning_aca396063a89cede26f3246fb003638ee} 
+\index{rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}!reverse@{reverse}}
+\index{reverse@{reverse}!rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}}
+\doxysubsubsection{\texorpdfstring{reverse()}{reverse()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Namespace\+Versioning.\+reverse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{viewname,  }\item[{}]{args = {\ttfamily None},  }\item[{}]{kwargs = {\ttfamily None},  }\item[{}]{request = {\ttfamily None},  }\item[{}]{format = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{extra }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1versioning_1_1BaseVersioning_ab6937a34d59515e2ef642a1a173d14d0}{rest\+\_\+framework.\+versioning.\+Base\+Versioning}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1versioning_1_1NamespaceVersioning_ac933094c0b06ee107b81be72793b2cc3}\label{classrest__framework_1_1versioning_1_1NamespaceVersioning_ac933094c0b06ee107b81be72793b2cc3} 
+\index{rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}!invalid\_version\_message@{invalid\_version\_message}}
+\index{invalid\_version\_message@{invalid\_version\_message}!rest\_framework.versioning.NamespaceVersioning@{rest\_framework.versioning.NamespaceVersioning}}
+\doxysubsubsection{\texorpdfstring{invalid\_version\_message}{invalid\_version\_message}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+versioning.\+Namespace\+Versioning.\+invalid\+\_\+version\+\_\+message = \+\_\+(\textquotesingle{}Invalid version in URL path. Does not match any version namespace.\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{versioning_8py}{versioning.\+py}}\end{DoxyCompactItemize}

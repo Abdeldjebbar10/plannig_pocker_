@@ -1,0 +1,78 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+routers}
+\hypertarget{namespacerest__framework_1_1routers}{}\label{namespacerest__framework_1_1routers}\index{rest\_framework.routers@{rest\_framework.routers}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1routers_1_1APIRootView}{APIRoot\+View}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1routers_1_1BaseRouter}{Base\+Router}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1routers_1_1DefaultRouter}{Default\+Router}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1routers_1_1SimpleRouter}{Simple\+Router}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1routers_a5fc15266c6ac87ae9e9a6ffa33929372}{escape\+\_\+curly\+\_\+brackets}} (url\+\_\+path)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1routers_a2b29838add4ea773772827f476e006f6}{flatten}} (list\+\_\+of\+\_\+lists)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1routers_a5fca49074e255988c31c5b1944b318c2}{Route}} = namedtuple(\textquotesingle{}Route\textquotesingle{}, \mbox{[}\textquotesingle{}url\textquotesingle{}, \textquotesingle{}mapping\textquotesingle{}, \textquotesingle{}name\textquotesingle{}, \textquotesingle{}detail\textquotesingle{}, \textquotesingle{}initkwargs\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1routers_a5fa1365e0c63620e5ab96208ec5e2c99}{Dynamic\+Route}} = namedtuple(\textquotesingle{}Dynamic\+Route\textquotesingle{}, \mbox{[}\textquotesingle{}url\textquotesingle{}, \textquotesingle{}name\textquotesingle{}, \textquotesingle{}detail\textquotesingle{}, \textquotesingle{}initkwargs\textquotesingle{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Routers provide a convenient and consistent way of automatically
+determining the URL conf for your API.
+
+They are used by simply instantiating a Router class, and then registering
+all the required ViewSets with that router.
+
+For example, you might have a `urls.py` that looks something like this:
+
+    router = routers.DefaultRouter()
+    router.register('users', UserViewSet, 'user')
+    router.register('accounts', AccountViewSet, 'account')
+
+    urlpatterns = router.urls
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1routers_a5fc15266c6ac87ae9e9a6ffa33929372}\label{namespacerest__framework_1_1routers_a5fc15266c6ac87ae9e9a6ffa33929372} 
+\index{rest\_framework.routers@{rest\_framework.routers}!escape\_curly\_brackets@{escape\_curly\_brackets}}
+\index{escape\_curly\_brackets@{escape\_curly\_brackets}!rest\_framework.routers@{rest\_framework.routers}}
+\doxysubsubsection{\texorpdfstring{escape\_curly\_brackets()}{escape\_curly\_brackets()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+escape\+\_\+curly\+\_\+brackets (\begin{DoxyParamCaption}\item[{}]{url\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Double brackets in regex of url_path for escape string formatting
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1routers_a2b29838add4ea773772827f476e006f6}\label{namespacerest__framework_1_1routers_a2b29838add4ea773772827f476e006f6} 
+\index{rest\_framework.routers@{rest\_framework.routers}!flatten@{flatten}}
+\index{flatten@{flatten}!rest\_framework.routers@{rest\_framework.routers}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+flatten (\begin{DoxyParamCaption}\item[{}]{list\+\_\+of\+\_\+lists }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes an iterable of iterables, returns a single iterable containing all items
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1routers_a5fa1365e0c63620e5ab96208ec5e2c99}\label{namespacerest__framework_1_1routers_a5fa1365e0c63620e5ab96208ec5e2c99} 
+\index{rest\_framework.routers@{rest\_framework.routers}!DynamicRoute@{DynamicRoute}}
+\index{DynamicRoute@{DynamicRoute}!rest\_framework.routers@{rest\_framework.routers}}
+\doxysubsubsection{\texorpdfstring{DynamicRoute}{DynamicRoute}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Dynamic\+Route = namedtuple(\textquotesingle{}Dynamic\+Route\textquotesingle{}, \mbox{[}\textquotesingle{}url\textquotesingle{}, \textquotesingle{}name\textquotesingle{}, \textquotesingle{}detail\textquotesingle{}, \textquotesingle{}initkwargs\textquotesingle{}\mbox{]})}
+
+\Hypertarget{namespacerest__framework_1_1routers_a5fca49074e255988c31c5b1944b318c2}\label{namespacerest__framework_1_1routers_a5fca49074e255988c31c5b1944b318c2} 
+\index{rest\_framework.routers@{rest\_framework.routers}!Route@{Route}}
+\index{Route@{Route}!rest\_framework.routers@{rest\_framework.routers}}
+\doxysubsubsection{\texorpdfstring{Route}{Route}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+routers.\+Route = namedtuple(\textquotesingle{}Route\textquotesingle{}, \mbox{[}\textquotesingle{}url\textquotesingle{}, \textquotesingle{}mapping\textquotesingle{}, \textquotesingle{}name\textquotesingle{}, \textquotesingle{}detail\textquotesingle{}, \textquotesingle{}initkwargs\textquotesingle{}\mbox{]})}
+

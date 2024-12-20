@@ -1,0 +1,395 @@
+\doxysection{Référence de la classe numpy.\+polynomial.\+polynomial.\+Polynomial}
+\hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial}{}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial}\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+
+
+Graphe d\textquotesingle{}héritage de numpy.\+polynomial.\+polynomial.\+Polynomial\+:
+% FIG 0
+
+
+Graphe de collaboration de numpy.\+polynomial.\+polynomial.\+Polynomial\+:
+% FIG 1
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_ade1673f8a7b34480d6d6f98bcc61d034}{domain}} = np.\+array(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a7a119d1b65932bf329ae2b46feb15f91}{polydomain}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_adb4c184e3034e6a051fafd00ba149989}{window}} = np.\+array(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a7a119d1b65932bf329ae2b46feb15f91}{polydomain}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a3814f820c9d1ed2a60ed82ca50f9323c}{basis\+\_\+name}} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a662d731431559238f7e308a3a196feb4}{maxpower}} = 100
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a68cd50118ba66ebbbb5e6381e3dc4d4c}{\+\_\+str\+\_\+term\+\_\+unicode}} (cls, i, arg\+\_\+str)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a04561efeb5738a6e1dfffaf90e2f89d4}{\+\_\+get\+\_\+coefficients}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a589f6965cbd4f65f7bbab46b4e4264cd}{\+\_\+generate\+\_\+string}} (self, term\+\_\+method)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a503b15baad309d8961249dfa6917f11f}{\+\_\+format\+\_\+term}} (self, Callable scalar\+\_\+format, float off, float scale)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a763a99ab8761fa6398c1d87db707cd77}{\+\_\+repr\+\_\+latex\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_afcf64cf9ef41b0a140d208c51614c378}{\+\_\+str\+\_\+term\+\_\+ascii}} (i, arg\+\_\+str)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aaf59b25cd9dda27470ec3fe482e36435}{\+\_\+repr\+\_\+latex\+\_\+term}} (i, arg\+\_\+str, needs\+\_\+parens)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées statiques hérités de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ab28d69667fae26d4679fba5ff2265539}{\+\_\+add}} (c1, c2)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_abba7abf9d780bce0fd778baedfc9ebd8}{\+\_\+sub}} (c1, c2)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_adc3e39fd759cdede78b58fb281088f37}{\+\_\+mul}} (c1, c2)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a037a68800606804ab36ccc778236c0f3}{\+\_\+div}} (c1, c2)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a4d616b0797918c7dd4b5ed4b8cd44b4d}{\+\_\+pow}} (c, pow, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a662d731431559238f7e308a3a196feb4}{maxpower}}=None)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a7cb9a2a7f1cb3c418fc29f6e8159cec6}{\+\_\+val}} (x, c)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a8ca0e62136f9742def30e0e7aa003066}{\+\_\+int}} (c, m, k, lbnd, scl)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_abf9637db4133e2215a2462f27b41f9c0}{\+\_\+der}} (c, m, scl)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ab81842b5f449a09c1d6e9c7cff7a98ae}{\+\_\+fit}} (x, y, deg, rcond, full)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a9c3355e04c9f673dd568e17b7dacf746}{\+\_\+line}} (off, scl)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a65daca2612577d8444d1ee538f8472c4}{\+\_\+roots}} (c)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a9348d8d6fb03c82607b7c1f53a99960f}{\+\_\+fromroots}} (r)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aff710f2cf58685e00fc5774596c63103}{\+\_\+repr\+\_\+latex\+\_\+scalar}} (x, parens=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_ab66a02516eb64f628cf7ff64d2e2a9a4}{\+\_\+add}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_ac24499152556afdb9bb8ecabafa47748}{polyadd}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aae6651cebd4db5066e50b61bb209332c}{\+\_\+sub}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a27a52aa247003715189181dbc5cca1ba}{polysub}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4174733dd26e27ea45d8b09ea2cf75cd}{\+\_\+mul}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a9eae7956d8adccdea88a022b1377a788}{polymul}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a122aa66edc0122e475c80908ccca69f2}{\+\_\+div}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_aa3d699e58f111c1cf8f131b145c92101}{polydiv}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4ad61a4b44d452348586ab5bf72b0f05}{\+\_\+pow}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a7346f5d7618fd9d086d66c1cb74b6386}{polypow}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a8804cf1ecdc161c3ddc948262b22c8f4}{\+\_\+val}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a5af96090a5a020c74c2cf0ce6b5fd364}{polyval}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4c11a27d1f72664427530bf37fb26ba6}{\+\_\+int}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_ae925c9505594a28d957813e32a3f8d94}{polyint}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aeca946109203556e4a08e1821ac35d61}{\+\_\+der}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a2e713b1481c20598277695ce6116c8f5}{polyder}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_af0d38fc388c3a90bdd3a7df4bfeaab4b}{\+\_\+fit}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a0b36c13a422b50bf194c46022946fff1}{polyfit}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_abb651fcf2ee59e2d4b85a359e07d8837}{\+\_\+line}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_ae918ad4af8515648d5d4aab5dddf0d55}{polyline}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a2978969017d14593525ec17730f5d907}{\+\_\+roots}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a00c3c07debc947d63e4e61e87e4dd82e}{polyroots}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_adfbfe731ab0b65497ce8cdcbf1f2014f}{\+\_\+fromroots}} = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a29a0bddca583334f657830d8dd513f36}{polyfromroots}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ac31166bea0bd184ea381b463c8ee7976}{\+\_\+superscript\+\_\+mapping}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ab423a0895354d5e61963053543f75e60}{\+\_\+subscript\+\_\+mapping}}
+\item 
+str \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a633aff090a9e209f8112d40d2602865f}{\+\_\+use\+\_\+unicode}} = \textquotesingle{}nt\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a6ecde17dfd39a78a08f4fa047052d164}{symbol}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a0cb63f91a83a9da4e3e86084ae715ed4}{domain}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a9b6cf589c3403bc0d583d8f7cc82c89c}{window}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_abf2191f5d7e116912a04f81cc79636f5}{basis\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a9358cc073fff4b47729f6d6037217ccd}{has\+\_\+samecoef}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ad3cb67dbe08d5018a54e31c7c23f472d}{has\+\_\+samedomain}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ad813db8472500f9646b9576be691519b}{has\+\_\+samewindow}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a3c9055b6798f9c2225c892e90177999a}{has\+\_\+sametype}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ae02bdfef04d26769758586f8d62db60f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_abc32ea31245612c296b11a3dcca1e922}{coef}}, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a193a5e19ba940ca6b5a441151c0278e4}{window}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a3a245a4975b4dc448429bfc977a3d17f}{symbol}}=\textquotesingle{}x\textquotesingle{})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aace14dceae7df9582a16676ccb737a94}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a444057d838c89785102baed206e9aad6}{\+\_\+\+\_\+format\+\_\+\+\_\+}} (self, fmt\+\_\+str)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a9a8177233dc4660d338b600d9ec6bce2}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ae117a5c9d96077461a76961c88d3ce29}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ae32bba4a3964830c9ac12d75c0dbc110}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, dict)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a201a562e3e71f608f6cce37f82c41c14}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, arg)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_afa653185e3aa8bc8a1109ce9ee044285}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a2356d285e669a4fa515c9a1559356a79}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_af1bfdc490d983b2ece65e6f372ac13d8}{\+\_\+\+\_\+neg\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a84bd6af55be3083979c504767f68b6e3}{\+\_\+\+\_\+pos\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a93c83dffd876dbae198d5efbb458a5e4}{\+\_\+\+\_\+add\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a0d8b977034832e4d8b4bcfee01c6556d}{\+\_\+\+\_\+sub\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a31631ac101d243f65e4b974055695524}{\+\_\+\+\_\+mul\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ac54f1b0be32cbdf7abb0b4c7cc8b68b0}{\+\_\+\+\_\+truediv\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_af8d7e015066cd1bfb84cbc0e6a0ab39a}{\+\_\+\+\_\+floordiv\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aef2a53d91d17ba5b8a28f906dcbc2021}{\+\_\+\+\_\+mod\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a2970935a67ac7a314b78f596e2277fc5}{\+\_\+\+\_\+divmod\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_abfebfd70f2f19e23d1ce121cd33d66e8}{\+\_\+\+\_\+pow\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a47acd6dba388b9bdf1671ecd6c4542f9}{\+\_\+\+\_\+radd\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a9126f59beaac403713cc6e894fbfe5b3}{\+\_\+\+\_\+rsub\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a95eaf17915f08c4a7c152d2d9e2e8991}{\+\_\+\+\_\+rmul\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aca216b9a475e3d704d3b62c7c0aa8b54}{\+\_\+\+\_\+rdiv\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a4b15cee4124ff34aa205323bf1b61bc2}{\+\_\+\+\_\+rtruediv\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a82ff3a0abed297af7e818bc32a9eaef3}{\+\_\+\+\_\+rfloordiv\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a77fff163555b49505cd79193d681033e}{\+\_\+\+\_\+rmod\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aa3ded9d883266caaa5d4384665a426d0}{\+\_\+\+\_\+rdivmod\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_abdfdea6e27f6b8e9951cd66b2eaf75d9}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a4420cb7c7e83f7b3a35f44f9b506cf58}{\+\_\+\+\_\+ne\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aa977348ac47a0c0799b7ffeb1dadfb8b}{copy}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a0be426294069b2906762c2c1e69cd448}{degree}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a7a9fd4bbda04ef29e309884cb1d8a6fc}{cutdeg}} (self, deg)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a096f936c4c127668627839005d975410}{trim}} (self, tol=0)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a861124fb476d435445e54978554c5589}{truncate}} (self, size)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a0fb4f7c9eaf8728f6252d8c712b93b6a}{convert}} (self, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}=None, kind=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a193a5e19ba940ca6b5a441151c0278e4}{window}}=None)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a99c53165e6fece39d01f16f75e0e2778}{mapparms}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a005f1f715081f9b6ff243fb237d62083}{integ}} (self, m=1, k=\mbox{[}$\,$\mbox{]}, lbnd=None)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a5d85bb7e13bf78c42427dbd481a2d87c}{deriv}} (self, m=1)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ab37770c3b8071a3acdd81da3258df1f4}{roots}} (self)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a4bf78a85d7d7eedb260265bfc4821a6f}{linspace}} (self, n=100, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}=None)
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aa58e3a70726065bc6773a1873a9f93bd}{fit}} (cls, x, y, deg, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}=None, rcond=None, full=False, w=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a193a5e19ba940ca6b5a441151c0278e4}{window}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a3a245a4975b4dc448429bfc977a3d17f}{symbol}}=\textquotesingle{}x\textquotesingle{})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a9da5fab3f8646fd51abeef5ec4547836}{fromroots}} (cls, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ab37770c3b8071a3acdd81da3258df1f4}{roots}}, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}=\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a193a5e19ba940ca6b5a441151c0278e4}{window}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a3a245a4975b4dc448429bfc977a3d17f}{symbol}}=\textquotesingle{}x\textquotesingle{})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_afca3e20cffa3d1da462d83a94f7562c1}{identity}} (cls, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a193a5e19ba940ca6b5a441151c0278e4}{window}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a3a245a4975b4dc448429bfc977a3d17f}{symbol}}=\textquotesingle{}x\textquotesingle{})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a26e3d7e04184c68d3fe9fd888767b831}{basis}} (cls, deg, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a193a5e19ba940ca6b5a441151c0278e4}{window}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a3a245a4975b4dc448429bfc977a3d17f}{symbol}}=\textquotesingle{}x\textquotesingle{})
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_ab19cea78dbd298fbfb1417ef92e537fe}{cast}} (cls, series, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}=None, \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a193a5e19ba940ca6b5a441151c0278e4}{window}}=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_abc32ea31245612c296b11a3dcca1e922}{coef}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aaf29f269a505cdb48cc84467414a497b}{domain}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a193a5e19ba940ca6b5a441151c0278e4}{window}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a3a245a4975b4dc448429bfc977a3d17f}{symbol}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a988293aa8df4e019570a30a699c39253}{\+\_\+symbol}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A power series class.
+
+The Polynomial class provides the standard Python numerical methods
+'+', '-', '*', '//', '%', 'divmod', '**', and '()' as well as the
+attributes and methods listed below.
+
+Parameters
+----------
+coef : array_like
+    Polynomial coefficients in order of increasing degree, i.e.,
+    ``(1, 2, 3)`` give ``1 + 2*x + 3*x**2``.
+domain : (2,) array_like, optional
+    Domain to use. The interval ``[domain[0], domain[1]]`` is mapped
+    to the interval ``[window[0], window[1]]`` by shifting and scaling.
+    The default value is [-1., 1.].
+window : (2,) array_like, optional
+    Window, see `domain` for its use. The default value is [-1., 1.].
+symbol : str, optional
+    Symbol used to represent the independent variable in string
+    representations of the polynomial expression, e.g. for printing.
+    The symbol must be a valid Python identifier. Default value is 'x'.
+
+    .. versionadded:: 1.24\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aaf59b25cd9dda27470ec3fe482e36435}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aaf59b25cd9dda27470ec3fe482e36435} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_repr\_latex\_term@{\_repr\_latex\_term}}
+\index{\_repr\_latex\_term@{\_repr\_latex\_term}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_repr\_latex\_term()}{\_repr\_latex\_term()}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+repr\+\_\+latex\+\_\+term (\begin{DoxyParamCaption}\item[{}]{i,  }\item[{}]{arg\+\_\+str,  }\item[{}]{needs\+\_\+parens }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_aa36d61f6c496d17ca722dee3ed56a10c}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}.
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_afcf64cf9ef41b0a140d208c51614c378}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_afcf64cf9ef41b0a140d208c51614c378} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_str\_term\_ascii@{\_str\_term\_ascii}}
+\index{\_str\_term\_ascii@{\_str\_term\_ascii}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_str\_term\_ascii()}{\_str\_term\_ascii()}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+str\+\_\+term\+\_\+ascii (\begin{DoxyParamCaption}\item[{}]{i,  }\item[{}]{arg\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a032e57764617eb01cb5c216b9f536895}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}.
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a68cd50118ba66ebbbb5e6381e3dc4d4c}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a68cd50118ba66ebbbb5e6381e3dc4d4c} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_str\_term\_unicode@{\_str\_term\_unicode}}
+\index{\_str\_term\_unicode@{\_str\_term\_unicode}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_str\_term\_unicode()}{\_str\_term\_unicode()}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+str\+\_\+term\+\_\+unicode (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{i,  }\item[{}]{arg\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classnumpy_1_1polynomial_1_1__polybase_1_1ABCPolyBase_a36084ddf2da45f06f9163bf96040e64c}{numpy.\+polynomial.\+\_\+polybase.\+ABCPoly\+Base}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_ab66a02516eb64f628cf7ff64d2e2a9a4}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_ab66a02516eb64f628cf7ff64d2e2a9a4} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_add@{\_add}}
+\index{\_add@{\_add}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_add}{\_add}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+add = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_ac24499152556afdb9bb8ecabafa47748}{polyadd}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aeca946109203556e4a08e1821ac35d61}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aeca946109203556e4a08e1821ac35d61} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_der@{\_der}}
+\index{\_der@{\_der}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_der}{\_der}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+der = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a2e713b1481c20598277695ce6116c8f5}{polyder}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a122aa66edc0122e475c80908ccca69f2}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a122aa66edc0122e475c80908ccca69f2} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_div@{\_div}}
+\index{\_div@{\_div}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_div}{\_div}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+div = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_aa3d699e58f111c1cf8f131b145c92101}{polydiv}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_af0d38fc388c3a90bdd3a7df4bfeaab4b}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_af0d38fc388c3a90bdd3a7df4bfeaab4b} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_fit@{\_fit}}
+\index{\_fit@{\_fit}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_fit}{\_fit}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+fit = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a0b36c13a422b50bf194c46022946fff1}{polyfit}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_adfbfe731ab0b65497ce8cdcbf1f2014f}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_adfbfe731ab0b65497ce8cdcbf1f2014f} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_fromroots@{\_fromroots}}
+\index{\_fromroots@{\_fromroots}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_fromroots}{\_fromroots}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+fromroots = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a29a0bddca583334f657830d8dd513f36}{polyfromroots}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4c11a27d1f72664427530bf37fb26ba6}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4c11a27d1f72664427530bf37fb26ba6} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_int@{\_int}}
+\index{\_int@{\_int}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_int}{\_int}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+int = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_ae925c9505594a28d957813e32a3f8d94}{polyint}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_abb651fcf2ee59e2d4b85a359e07d8837}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_abb651fcf2ee59e2d4b85a359e07d8837} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_line@{\_line}}
+\index{\_line@{\_line}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_line}{\_line}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+line = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_ae918ad4af8515648d5d4aab5dddf0d55}{polyline}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4174733dd26e27ea45d8b09ea2cf75cd}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4174733dd26e27ea45d8b09ea2cf75cd} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_mul@{\_mul}}
+\index{\_mul@{\_mul}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_mul}{\_mul}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+mul = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a9eae7956d8adccdea88a022b1377a788}{polymul}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4ad61a4b44d452348586ab5bf72b0f05}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a4ad61a4b44d452348586ab5bf72b0f05} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_pow@{\_pow}}
+\index{\_pow@{\_pow}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_pow}{\_pow}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+pow = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a7346f5d7618fd9d086d66c1cb74b6386}{polypow}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a2978969017d14593525ec17730f5d907}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a2978969017d14593525ec17730f5d907} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_roots@{\_roots}}
+\index{\_roots@{\_roots}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_roots}{\_roots}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+roots = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a00c3c07debc947d63e4e61e87e4dd82e}{polyroots}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aae6651cebd4db5066e50b61bb209332c}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_aae6651cebd4db5066e50b61bb209332c} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_sub@{\_sub}}
+\index{\_sub@{\_sub}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_sub}{\_sub}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+sub = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a27a52aa247003715189181dbc5cca1ba}{polysub}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a8804cf1ecdc161c3ddc948262b22c8f4}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a8804cf1ecdc161c3ddc948262b22c8f4} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!\_val@{\_val}}
+\index{\_val@{\_val}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{\_val}{\_val}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+\_\+val = staticmethod(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a5af96090a5a020c74c2cf0ce6b5fd364}{polyval}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a3814f820c9d1ed2a60ed82ca50f9323c}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_a3814f820c9d1ed2a60ed82ca50f9323c} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!basis\_name@{basis\_name}}
+\index{basis\_name@{basis\_name}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{basis\_name}{basis\_name}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+basis\+\_\+name = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_ade1673f8a7b34480d6d6f98bcc61d034}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_ade1673f8a7b34480d6d6f98bcc61d034} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!domain@{domain}}
+\index{domain@{domain}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{domain}{domain}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+domain = np.\+array(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a7a119d1b65932bf329ae2b46feb15f91}{polydomain}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_adb4c184e3034e6a051fafd00ba149989}\label{classnumpy_1_1polynomial_1_1polynomial_1_1Polynomial_adb4c184e3034e6a051fafd00ba149989} 
+\index{numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}!window@{window}}
+\index{window@{window}!numpy.polynomial.polynomial.Polynomial@{numpy.polynomial.polynomial.Polynomial}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily numpy.\+polynomial.\+polynomial.\+Polynomial.\+window = np.\+array(\mbox{\hyperlink{namespacenumpy_1_1polynomial_1_1polynomial_a7a119d1b65932bf329ae2b46feb15f91}{polydomain}})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/polynomial/\mbox{\hyperlink{polynomial_8py}{polynomial.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\doxysection{npy\+\_\+endian.\+h}
+\hypertarget{npy__endian_8h_source}{}\label{npy__endian_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_endian.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_endian.h}}
+\mbox{\hyperlink{npy__endian_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_ENDIAN\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_ENDIAN\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ NPY\_BYTE\_ORDER\ is\ set\ to\ the\ same\ value\ as\ BYTE\_ORDER\ set\ by\ glibc\ in}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ endian.h}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#if\ defined(NPY\_HAVE\_ENDIAN\_H)\ ||\ defined(NPY\_HAVE\_SYS\_ENDIAN\_H)}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{/*\ Use\ endian.h\ if\ available\ */}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#if\ defined(NPY\_HAVE\_ENDIAN\_H)}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <endian.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(NPY\_HAVE\_SYS\_ENDIAN\_H)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ <sys/endian.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#if\ defined(BYTE\_ORDER)\ \&\&\ defined(BIG\_ENDIAN)\ \&\&\ defined(LITTLE\_ENDIAN)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_BYTE\_ORDER\ \ \ \ BYTE\_ORDER}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_LITTLE\_ENDIAN\ LITTLE\_ENDIAN}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_BIG\_ENDIAN\ \ \ \ BIG\_ENDIAN}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(\_BYTE\_ORDER)\ \&\&\ defined(\_BIG\_ENDIAN)\ \&\&\ defined(\_LITTLE\_ENDIAN)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_BYTE\_ORDER\ \ \ \ \_BYTE\_ORDER}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_LITTLE\_ENDIAN\ \_LITTLE\_ENDIAN}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_BIG\_ENDIAN\ \ \ \ \_BIG\_ENDIAN}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(\_\_BYTE\_ORDER)\ \&\&\ defined(\_\_BIG\_ENDIAN)\ \&\&\ defined(\_\_LITTLE\_ENDIAN)}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_BYTE\_ORDER\ \ \ \ \_\_BYTE\_ORDER}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_LITTLE\_ENDIAN\ \_\_LITTLE\_ENDIAN}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_BIG\_ENDIAN\ \ \ \ \_\_BIG\_ENDIAN}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#ifndef\ NPY\_BYTE\_ORDER}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{/*\ Set\ endianness\ info\ using\ target\ CPU\ */}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{npy__cpu_8h}{npy\_cpu.h}}"{}}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_LITTLE\_ENDIAN\ 1234}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_BIG\_ENDIAN\ 4321}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\ \ \ \ \#if\ defined(NPY\_CPU\_X86)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_AMD64)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_IA64)\ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ALPHA)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ARMEL)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ARMEL\_AARCH32)\ \(\backslash\)}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ARMEL\_AARCH64)\ \(\backslash\)}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_SH\_LE)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_MIPSEL)\ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_PPC64LE)\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ARCEL)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_RISCV64)\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_RISCV32)\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_LOONGARCH)\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_WASM)}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_BYTE\_ORDER\ NPY\_LITTLE\_ENDIAN}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(NPY\_CPU\_PPC)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_SPARC)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_S390)\ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_HPPA)\ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_PPC64)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ARMEB)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ARMEB\_AARCH32)\ \(\backslash\)}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ARMEB\_AARCH64)\ \(\backslash\)}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_SH\_BE)\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_MIPSEB)\ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_OR1K)\ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_M68K)\ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ ||\ defined(NPY\_CPU\_ARCEB)}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_BYTE\_ORDER\ NPY\_BIG\_ENDIAN}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#error\ Unknown\ CPU:\ can\ not\ set\ endianness}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_ENDIAN\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

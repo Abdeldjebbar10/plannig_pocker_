@@ -1,0 +1,26 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Value\+Label\+Type\+Mismatch}
+\hypertarget{classpandas_1_1errors_1_1ValueLabelTypeMismatch}{}\label{classpandas_1_1errors_1_1ValueLabelTypeMismatch}\index{pandas.errors.ValueLabelTypeMismatch@{pandas.errors.ValueLabelTypeMismatch}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Value\+Label\+Type\+Mismatch\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Value\+Label\+Type\+Mismatch\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Warning raised by to_stata on a category column that contains non-string values.
+
+Examples
+--------
+>>> df = pd.DataFrame({"categories": pd.Series(["a", 2], dtype="category")})
+>>> df.to_stata('test') # doctest: +SKIP
+... # ValueLabelTypeMismatch: Stata value labels (pandas categories) must be str...
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

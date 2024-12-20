@@ -1,0 +1,123 @@
+\doxysection{Référence de la classe myapp.\+forms.\+Partie\+Form}
+\hypertarget{classmyapp_1_1forms_1_1PartieForm}{}\label{classmyapp_1_1forms_1_1PartieForm}\index{myapp.forms.PartieForm@{myapp.forms.PartieForm}}
+
+
+Graphe d\textquotesingle{}héritage de myapp.\+forms.\+Partie\+Form\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classmyapp_1_1forms_1_1PartieForm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de myapp.\+forms.\+Partie\+Form\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classmyapp_1_1forms_1_1PartieForm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmyapp_1_1forms_1_1PartieForm_1_1Meta}{Meta}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmyapp_1_1forms_1_1PartieForm_a03b3ce140499aaa537d82a2f2909dba6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classmyapp_1_1forms_1_1PartieForm_a440922f03bac7169230c1813fd2706be}{clean\+\_\+fonctionnalites\+\_\+json}} (self)
+\item 
+\mbox{\hyperlink{classmyapp_1_1forms_1_1PartieForm_a3db7a53cb681bb2a38e437645e9945ab}{save}} (self, commit=True)
+\item 
+\mbox{\hyperlink{classmyapp_1_1forms_1_1PartieForm_a1cef1e94c60634bc07df829194e74f01}{importer\+\_\+fonctionnalites}} (self, fichier\+\_\+json, partie)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmyapp_1_1forms_1_1PartieForm_ac02f3a57361b87fce2c38e9b6927d701}{administrateur}} = forms.\+Model\+Choice\+Field(queryset=Participant.\+objects.\+filter(est\+\_\+admin=True), required=True)
+\item 
+\mbox{\hyperlink{classmyapp_1_1forms_1_1PartieForm_a3504a1ba038f64a02a9f93b6f63be0b9}{participants}} = forms.\+Model\+Multiple\+Choice\+Field(queryset=Participant.\+objects.\+all(), widget=forms.\+Checkbox\+Select\+Multiple)
+\item 
+\mbox{\hyperlink{classmyapp_1_1forms_1_1PartieForm_ad1522e30a54c6df952b86b1fb1dd4e08}{fonctionnalites\+\_\+json}} = forms.\+File\+Field(required=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}@class PartieForm
+@brief Formulaire pour créer ou modifier une partie.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classmyapp_1_1forms_1_1PartieForm_a03b3ce140499aaa537d82a2f2909dba6}\label{classmyapp_1_1forms_1_1PartieForm_a03b3ce140499aaa537d82a2f2909dba6} 
+\index{myapp.forms.PartieForm@{myapp.forms.PartieForm}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!myapp.forms.PartieForm@{myapp.forms.PartieForm}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily myapp.\+forms.\+Partie\+Form.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Initialisation du formulaire.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classmyapp_1_1forms_1_1PartieForm_a440922f03bac7169230c1813fd2706be}\label{classmyapp_1_1forms_1_1PartieForm_a440922f03bac7169230c1813fd2706be} 
+\index{myapp.forms.PartieForm@{myapp.forms.PartieForm}!clean\_fonctionnalites\_json@{clean\_fonctionnalites\_json}}
+\index{clean\_fonctionnalites\_json@{clean\_fonctionnalites\_json}!myapp.forms.PartieForm@{myapp.forms.PartieForm}}
+\doxysubsubsection{\texorpdfstring{clean\_fonctionnalites\_json()}{clean\_fonctionnalites\_json()}}
+{\footnotesize\ttfamily myapp.\+forms.\+Partie\+Form.\+clean\+\_\+fonctionnalites\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Valide que le fichier JSON des fonctionnalités est valide.
+@return Le fichier JSON validé.
+@exception forms.ValidationError Si le fichier JSON est invalide.
+\end{DoxyVerb}
+ \Hypertarget{classmyapp_1_1forms_1_1PartieForm_a1cef1e94c60634bc07df829194e74f01}\label{classmyapp_1_1forms_1_1PartieForm_a1cef1e94c60634bc07df829194e74f01} 
+\index{myapp.forms.PartieForm@{myapp.forms.PartieForm}!importer\_fonctionnalites@{importer\_fonctionnalites}}
+\index{importer\_fonctionnalites@{importer\_fonctionnalites}!myapp.forms.PartieForm@{myapp.forms.PartieForm}}
+\doxysubsubsection{\texorpdfstring{importer\_fonctionnalites()}{importer\_fonctionnalites()}}
+{\footnotesize\ttfamily myapp.\+forms.\+Partie\+Form.\+importer\+\_\+fonctionnalites (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fichier\+\_\+json,  }\item[{}]{partie }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Importe les fonctionnalités depuis un fichier JSON et les associe à la partie.
+@param fichier_json Fichier JSON contenant les fonctionnalités.
+@param partie Objet Partie auquel les fonctionnalités seront associées.
+\end{DoxyVerb}
+ \Hypertarget{classmyapp_1_1forms_1_1PartieForm_a3db7a53cb681bb2a38e437645e9945ab}\label{classmyapp_1_1forms_1_1PartieForm_a3db7a53cb681bb2a38e437645e9945ab} 
+\index{myapp.forms.PartieForm@{myapp.forms.PartieForm}!save@{save}}
+\index{save@{save}!myapp.forms.PartieForm@{myapp.forms.PartieForm}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily myapp.\+forms.\+Partie\+Form.\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{commit = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Sauvegarde le formulaire et les relations ManyToMany.
+@param commit Booléen indiquant si la sauvegarde doit être effectuée immédiatement.
+@return L'objet Partie sauvegardé.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classmyapp_1_1forms_1_1PartieForm_ac02f3a57361b87fce2c38e9b6927d701}\label{classmyapp_1_1forms_1_1PartieForm_ac02f3a57361b87fce2c38e9b6927d701} 
+\index{myapp.forms.PartieForm@{myapp.forms.PartieForm}!administrateur@{administrateur}}
+\index{administrateur@{administrateur}!myapp.forms.PartieForm@{myapp.forms.PartieForm}}
+\doxysubsubsection{\texorpdfstring{administrateur}{administrateur}}
+{\footnotesize\ttfamily myapp.\+forms.\+Partie\+Form.\+administrateur = forms.\+Model\+Choice\+Field(queryset=Participant.\+objects.\+filter(est\+\_\+admin=True), required=True)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1forms_1_1PartieForm_ad1522e30a54c6df952b86b1fb1dd4e08}\label{classmyapp_1_1forms_1_1PartieForm_ad1522e30a54c6df952b86b1fb1dd4e08} 
+\index{myapp.forms.PartieForm@{myapp.forms.PartieForm}!fonctionnalites\_json@{fonctionnalites\_json}}
+\index{fonctionnalites\_json@{fonctionnalites\_json}!myapp.forms.PartieForm@{myapp.forms.PartieForm}}
+\doxysubsubsection{\texorpdfstring{fonctionnalites\_json}{fonctionnalites\_json}}
+{\footnotesize\ttfamily myapp.\+forms.\+Partie\+Form.\+fonctionnalites\+\_\+json = forms.\+File\+Field(required=False)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1forms_1_1PartieForm_a3504a1ba038f64a02a9f93b6f63be0b9}\label{classmyapp_1_1forms_1_1PartieForm_a3504a1ba038f64a02a9f93b6f63be0b9} 
+\index{myapp.forms.PartieForm@{myapp.forms.PartieForm}!participants@{participants}}
+\index{participants@{participants}!myapp.forms.PartieForm@{myapp.forms.PartieForm}}
+\doxysubsubsection{\texorpdfstring{participants}{participants}}
+{\footnotesize\ttfamily myapp.\+forms.\+Partie\+Form.\+participants = forms.\+Model\+Multiple\+Choice\+Field(queryset=Participant.\+objects.\+all(), widget=forms.\+Checkbox\+Select\+Multiple)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+myapp/\mbox{\hyperlink{forms_8py}{forms.\+py}}\end{DoxyCompactItemize}

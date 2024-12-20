@@ -1,0 +1,61 @@
+\doxysection{Référence de la structure Py\+Data\+Mem\+Allocator}
+\hypertarget{structPyDataMemAllocator}{}\label{structPyDataMemAllocator}\index{PyDataMemAllocator@{PyDataMemAllocator}}
+
+
+{\ttfamily \#include $<$ndarraytypes.\+h$>$}
+
+
+
+Graphe de collaboration de Py\+Data\+Mem\+Allocator\+:
+% FIG 0
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}
+\item 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyDataMemAllocator_a3687a2192529474cee4fb9e05610865a}{malloc}} )(void \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}, size\+\_\+t size)
+\item 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyDataMemAllocator_a345d5f38b5a7eb2e2eb2df16f0dda41a}{calloc}} )(void \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}, size\+\_\+t nelem, size\+\_\+t elsize)
+\item 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyDataMemAllocator_aa0f6327b9375931c4864126d4751dae0}{realloc}} )(void \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}, void \texorpdfstring{$\ast$}{*}ptr, size\+\_\+t new\+\_\+size)
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyDataMemAllocator_a826cc5865b33a29c1647462cb5ad3734}{free}} )(void \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}, void \texorpdfstring{$\ast$}{*}ptr, size\+\_\+t size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{structPyDataMemAllocator_a345d5f38b5a7eb2e2eb2df16f0dda41a}\label{structPyDataMemAllocator_a345d5f38b5a7eb2e2eb2df16f0dda41a} 
+\index{PyDataMemAllocator@{PyDataMemAllocator}!calloc@{calloc}}
+\index{calloc@{calloc}!PyDataMemAllocator@{PyDataMemAllocator}}
+\doxysubsubsection{\texorpdfstring{calloc}{calloc}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} Py\+Data\+Mem\+Allocator\+::calloc) (void \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}, size\+\_\+t nelem, size\+\_\+t elsize)}
+
+\Hypertarget{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}\label{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3} 
+\index{PyDataMemAllocator@{PyDataMemAllocator}!ctx@{ctx}}
+\index{ctx@{ctx}!PyDataMemAllocator@{PyDataMemAllocator}}
+\doxysubsubsection{\texorpdfstring{ctx}{ctx}}
+{\footnotesize\ttfamily void\texorpdfstring{$\ast$}{*} Py\+Data\+Mem\+Allocator\+::ctx}
+
+\Hypertarget{structPyDataMemAllocator_a826cc5865b33a29c1647462cb5ad3734}\label{structPyDataMemAllocator_a826cc5865b33a29c1647462cb5ad3734} 
+\index{PyDataMemAllocator@{PyDataMemAllocator}!free@{free}}
+\index{free@{free}!PyDataMemAllocator@{PyDataMemAllocator}}
+\doxysubsubsection{\texorpdfstring{free}{free}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} Py\+Data\+Mem\+Allocator\+::free) (void \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}, void \texorpdfstring{$\ast$}{*}ptr, size\+\_\+t size)}
+
+\Hypertarget{structPyDataMemAllocator_a3687a2192529474cee4fb9e05610865a}\label{structPyDataMemAllocator_a3687a2192529474cee4fb9e05610865a} 
+\index{PyDataMemAllocator@{PyDataMemAllocator}!malloc@{malloc}}
+\index{malloc@{malloc}!PyDataMemAllocator@{PyDataMemAllocator}}
+\doxysubsubsection{\texorpdfstring{malloc}{malloc}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} Py\+Data\+Mem\+Allocator\+::malloc) (void \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}, size\+\_\+t size)}
+
+\Hypertarget{structPyDataMemAllocator_aa0f6327b9375931c4864126d4751dae0}\label{structPyDataMemAllocator_aa0f6327b9375931c4864126d4751dae0} 
+\index{PyDataMemAllocator@{PyDataMemAllocator}!realloc@{realloc}}
+\index{realloc@{realloc}!PyDataMemAllocator@{PyDataMemAllocator}}
+\doxysubsubsection{\texorpdfstring{realloc}{realloc}}
+{\footnotesize\ttfamily void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} Py\+Data\+Mem\+Allocator\+::realloc) (void \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structPyDataMemAllocator_ace53c5f3608e33fc24d4dd6046876aa3}{ctx}}, void \texorpdfstring{$\ast$}{*}ptr, size\+\_\+t new\+\_\+size)}
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/include/numpy/\mbox{\hyperlink{ndarraytypes_8h}{ndarraytypes.\+h}}\end{DoxyCompactItemize}

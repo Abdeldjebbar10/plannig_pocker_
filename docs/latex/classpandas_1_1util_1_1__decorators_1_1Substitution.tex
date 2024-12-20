@@ -1,0 +1,85 @@
+\doxysection{Référence de la classe pandas.\+util.\+\_\+decorators.\+Substitution}
+\hypertarget{classpandas_1_1util_1_1__decorators_1_1Substitution}{}\label{classpandas_1_1util_1_1__decorators_1_1Substitution}\index{pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1util_1_1__decorators_1_1Substitution_a7e3e165f904fec8e9e0f81d7b4c70a8c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+F \mbox{\hyperlink{classpandas_1_1util_1_1__decorators_1_1Substitution_ac86226533e25d1792e2ef22a9ac41e17}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, F func)
+\item 
+None \mbox{\hyperlink{classpandas_1_1util_1_1__decorators_1_1Substitution_a295f023e7b536ceb2fb961b142ca5519}{update}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1util_1_1__decorators_1_1Substitution_a1f4af1e8607f3437afeeffa4cc96ef84}{params}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A decorator to take a function's docstring and perform string
+substitution on it.
+
+This decorator should be robust even if func.__doc__ is None
+(for example, if -OO was passed to the interpreter)
+
+Usage: construct a docstring.Substitution with a sequence or
+dictionary suitable for performing substitution; then
+decorate a suitable function with the constructed object. e.g.
+
+sub_author_name = Substitution(author='Jason')
+
+@sub_author_name
+def some_function(x):
+    "%(author)s wrote this function"
+
+# note that some_function.__doc__ is now "Jason wrote this function"
+
+One can also use positional arguments.
+
+sub_first_last_names = Substitution('Edgar Allen', 'Poe')
+
+@sub_first_last_names
+def some_function(x):
+    "%s %s wrote the Raven"
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1util_1_1__decorators_1_1Substitution_a7e3e165f904fec8e9e0f81d7b4c70a8c}\label{classpandas_1_1util_1_1__decorators_1_1Substitution_a7e3e165f904fec8e9e0f81d7b4c70a8c} 
+\index{pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+util.\+\_\+decorators.\+Substitution.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1util_1_1__decorators_1_1Substitution_ac86226533e25d1792e2ef22a9ac41e17}\label{classpandas_1_1util_1_1__decorators_1_1Substitution_ac86226533e25d1792e2ef22a9ac41e17} 
+\index{pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily  F pandas.\+util.\+\_\+decorators.\+Substitution.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{F}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1util_1_1__decorators_1_1Substitution_a295f023e7b536ceb2fb961b142ca5519}\label{classpandas_1_1util_1_1__decorators_1_1Substitution_a295f023e7b536ceb2fb961b142ca5519} 
+\index{pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}!update@{update}}
+\index{update@{update}!pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily  None pandas.\+util.\+\_\+decorators.\+Substitution.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update self.params with supplied args.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1util_1_1__decorators_1_1Substitution_a1f4af1e8607f3437afeeffa4cc96ef84}\label{classpandas_1_1util_1_1__decorators_1_1Substitution_a1f4af1e8607f3437afeeffa4cc96ef84} 
+\index{pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}!params@{params}}
+\index{params@{params}!pandas.util.\_decorators.Substitution@{pandas.util.\_decorators.Substitution}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily pandas.\+util.\+\_\+decorators.\+Substitution.\+params}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/util/\mbox{\hyperlink{__decorators_8py}{\+\_\+decorators.\+py}}\end{DoxyCompactItemize}

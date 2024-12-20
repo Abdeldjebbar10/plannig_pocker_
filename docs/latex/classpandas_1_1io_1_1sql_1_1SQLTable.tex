@@ -1,0 +1,347 @@
+\doxysection{Référence de la classe pandas.\+io.\+sql.\+SQLTable}
+\hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable}{}\label{classpandas_1_1io_1_1sql_1_1SQLTable}\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+sql.\+SQLTable\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+io.\+sql.\+SQLTable\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a282af2a080403fa86cc773f5b16c2032}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_ac2772cb1775e3d932c96ed7f4ae976c5}{name}}, pandas\+\_\+sql\+\_\+engine, \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_ac8c94a5f63ab0fac1668ca128b24e153}{frame}}=None, bool\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_af7f9055d2dfbbab3cb7d77a5e113dddc}{index}}=True, Literal\mbox{[}"{}fail"{}, "{}replace"{}, "{}append"{}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a2f79406b488b754b1952085ce7e5cce3}{if\+\_\+exists}}="{}fail"{}, str \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a29958dfa0b43830517e2c9fd938c0081}{prefix}}="{}pandas"{}, index\+\_\+label=None, \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a53f336251164404c0a611ff15a6b4a40}{schema}}=None, \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a6e53e752d475fa9f68dec97117003641}{keys}}=None, Dtype\+Arg\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_ae3880d12d1c71fb99cee12b28284758d}{dtype}}=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_af0bbfca22b5bbdb6341f0d7e72e4823d}{exists}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_aad7752179264b0024b22c4a9aac33c0a}{sql\+\_\+schema}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_ab79618254de72c9098e5bf99806c6327}{create}} (self)
+\item 
+tuple\mbox{[}list\mbox{[}str\mbox{]}, list\mbox{[}np.\+ndarray\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a3dbb06b4012efe9ca5678abc0830422f}{insert\+\_\+data}} (self)
+\item 
+int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a060bb6a5055fbd8c982fd814cf192eba}{insert}} (self, int\texorpdfstring{$\vert$}{|}None chunksize=None, Literal\mbox{[}"{}multi"{}\mbox{]}\texorpdfstring{$\vert$}{|}Callable\texorpdfstring{$\vert$}{|}None method=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}\texorpdfstring{$\vert$}{|}Iterator\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a144001ad84a4e49696b584096fbae115}{read}} (self, Exit\+Stack exit\+\_\+stack, bool coerce\+\_\+float=True, parse\+\_\+dates=None, columns=None, int\texorpdfstring{$\vert$}{|}None chunksize=None, Dtype\+Backend\texorpdfstring{$\vert$}{|}Literal\mbox{[}"{}numpy"{}\mbox{]} dtype\+\_\+backend="{}numpy"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a417b85c7fda9b57f893ad25a764fcf36}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_ad5b15e942fb2d2dcfb12fa1667404aeb}{\+\_\+\+\_\+sizeof\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_ac86361dc5b262c58dcdf818d410136e4}{\+\_\+\+\_\+dir\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_ac2772cb1775e3d932c96ed7f4ae976c5}{name}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_ac6cd41e0def4decd40c14b2242a68b64}{pd\+\_\+sql}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a29958dfa0b43830517e2c9fd938c0081}{prefix}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_ac8c94a5f63ab0fac1668ca128b24e153}{frame}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_af7f9055d2dfbbab3cb7d77a5e113dddc}{index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a53f336251164404c0a611ff15a6b4a40}{schema}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a2f79406b488b754b1952085ce7e5cce3}{if\+\_\+exists}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a6e53e752d475fa9f68dec97117003641}{keys}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_ae3880d12d1c71fb99cee12b28284758d}{dtype}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a464a705d187c72329444394c6fe048f3}{table}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a1e115f8663ccb767c19a9dcbc758d4b1}{\+\_\+execute\+\_\+create}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a930ef1a992c387ab47e1fc32f24c7117}{\+\_\+execute\+\_\+insert}} (self, conn, list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a6e53e752d475fa9f68dec97117003641}{keys}}, data\+\_\+iter)
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a9394a966d0d63cdafde13fe4a56f81c3}{\+\_\+execute\+\_\+insert\+\_\+multi}} (self, conn, list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a6e53e752d475fa9f68dec97117003641}{keys}}, data\+\_\+iter)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a9ed1e478bbd9fb53f069557ff01c8bb7}{\+\_\+query\+\_\+iterator}} (self, result, Exit\+Stack exit\+\_\+stack, int\texorpdfstring{$\vert$}{|}None chunksize, columns, bool coerce\+\_\+float=True, parse\+\_\+dates=None, Dtype\+Backend\texorpdfstring{$\vert$}{|}Literal\mbox{[}"{}numpy"{}\mbox{]} dtype\+\_\+backend="{}numpy"{})
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a43fb2f3a83429b5ada091a86c0bd5f78}{\+\_\+index\+\_\+name}} (self, \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_af7f9055d2dfbbab3cb7d77a5e113dddc}{index}}, index\+\_\+label)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_abefbab1280ba630f742fa27abcd4e3bd}{\+\_\+get\+\_\+column\+\_\+names\+\_\+and\+\_\+types}} (self, dtype\+\_\+mapper)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a3cb8e92b516be9473493d56c09cbb998}{\+\_\+create\+\_\+table\+\_\+setup}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a226c3c529ad88d3e2db28da7028435ce}{\+\_\+harmonize\+\_\+columns}} (self, parse\+\_\+dates=None, Dtype\+Backend\texorpdfstring{$\vert$}{|}Literal\mbox{[}"{}numpy"{}\mbox{]} dtype\+\_\+backend="{}numpy"{})
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a939d2295229087ca69f0abbfb34d4e4f}{\+\_\+sqlalchemy\+\_\+type}} (self, Index\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} col)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLTable_a36c572cb380f1627132160e23a4c63d6}{\+\_\+get\+\_\+dtype}} (self, sqltype)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a7b5112b72a8bafe13b1fa732bf1ea30d}{\+\_\+constructor}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a8a2b95a9e1e4befc5ad3cba09c3f3e68}{\+\_\+reset\+\_\+cache}} (self, str\texorpdfstring{$\vert$}{|}None key=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a3151f76f1b53042e9d13da3d3ef3cb92}{\+\_\+dir\+\_\+deletions}} (self)
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a8183d13494a720c8d4cc996826fd7323}{\+\_\+dir\+\_\+additions}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a3972565a4ab5ff072118eda20364cd2c}{\+\_\+cache}} \mbox{[}str, Any\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a1e3f9f50e3532c77c3610c4b8fe27e6f}{\+\_\+accessors}} = set()
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a7b9c1894b79d330020bdc71ddc7126f0}{\+\_\+hidden\+\_\+attrs}} = frozenset()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}For mapping Pandas tables to SQL tables.
+Uses fact that table is reflected by SQLAlchemy to
+do better type conversions.
+Also holds various flags needed to avoid having to
+pass them between functions all the time.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a282af2a080403fa86cc773f5b16c2032}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a282af2a080403fa86cc773f5b16c2032} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sql.\+SQLTable.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{}]{pandas\+\_\+sql\+\_\+engine,  }\item[{}]{frame = {\ttfamily None},  }\item[{bool \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{index = {\ttfamily True},  }\item[{Literal\mbox{[}"{}fail"{}, "{}replace"{}, "{}append"{}\mbox{]} }]{if\+\_\+exists = {\ttfamily "{}fail"{}},  }\item[{str }]{prefix = {\ttfamily "{}pandas"{}},  }\item[{}]{index\+\_\+label = {\ttfamily None},  }\item[{}]{schema = {\ttfamily None},  }\item[{}]{keys = {\ttfamily None},  }\item[{Dtype\+Arg \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLiteTable_ae46b7c5c45d49f7cac05f4a19f4bbb65}{pandas.\+io.\+sql.\+SQLite\+Table}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a3cb8e92b516be9473493d56c09cbb998}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a3cb8e92b516be9473493d56c09cbb998} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_create\_table\_setup@{\_create\_table\_setup}}
+\index{\_create\_table\_setup@{\_create\_table\_setup}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_create\_table\_setup()}{\_create\_table\_setup()}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+\_\+create\+\_\+table\+\_\+setup (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLiteTable_a320559a98903605014a5ee88f2dc279d}{pandas.\+io.\+sql.\+SQLite\+Table}}.
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a1e115f8663ccb767c19a9dcbc758d4b1}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a1e115f8663ccb767c19a9dcbc758d4b1} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_execute\_create@{\_execute\_create}}
+\index{\_execute\_create@{\_execute\_create}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_execute\_create()}{\_execute\_create()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sql.\+SQLTable.\+\_\+execute\+\_\+create (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLiteTable_a8b766cc084c953f4a17a4902c57df720}{pandas.\+io.\+sql.\+SQLite\+Table}}.
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a930ef1a992c387ab47e1fc32f24c7117}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a930ef1a992c387ab47e1fc32f24c7117} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_execute\_insert@{\_execute\_insert}}
+\index{\_execute\_insert@{\_execute\_insert}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_execute\_insert()}{\_execute\_insert()}}
+{\footnotesize\ttfamily  int pandas.\+io.\+sql.\+SQLTable.\+\_\+execute\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conn,  }\item[{list\mbox{[}str\mbox{]}}]{keys,  }\item[{}]{data\+\_\+iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Execute SQL statement inserting data
+
+Parameters
+----------
+conn : sqlalchemy.engine.Engine or sqlalchemy.engine.Connection
+keys : list of str
+   Column names
+data_iter : generator of list
+   Each item contains a list of values to be inserted
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLiteTable_a2b0188cd44e84036245fc2cab71fb2fb}{pandas.\+io.\+sql.\+SQLite\+Table}}.
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a9394a966d0d63cdafde13fe4a56f81c3}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a9394a966d0d63cdafde13fe4a56f81c3} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_execute\_insert\_multi@{\_execute\_insert\_multi}}
+\index{\_execute\_insert\_multi@{\_execute\_insert\_multi}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_execute\_insert\_multi()}{\_execute\_insert\_multi()}}
+{\footnotesize\ttfamily  int pandas.\+io.\+sql.\+SQLTable.\+\_\+execute\+\_\+insert\+\_\+multi (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{conn,  }\item[{list\mbox{[}str\mbox{]}}]{keys,  }\item[{}]{data\+\_\+iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Alternative to _execute_insert for DBs support multi-value INSERT.
+
+Note: multi-value insert is usually faster for analytics DBs
+and tables containing a few columns
+but performance degrades quickly with increase of columns.\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLiteTable_ae54c734c487f14a29882ca7d72536315}{pandas.\+io.\+sql.\+SQLite\+Table}}.
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_abefbab1280ba630f742fa27abcd4e3bd}\label{classpandas_1_1io_1_1sql_1_1SQLTable_abefbab1280ba630f742fa27abcd4e3bd} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_get\_column\_names\_and\_types@{\_get\_column\_names\_and\_types}}
+\index{\_get\_column\_names\_and\_types@{\_get\_column\_names\_and\_types}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_get\_column\_names\_and\_types()}{\_get\_column\_names\_and\_types()}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+\_\+get\+\_\+column\+\_\+names\+\_\+and\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype\+\_\+mapper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a36c572cb380f1627132160e23a4c63d6}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a36c572cb380f1627132160e23a4c63d6} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_get\_dtype@{\_get\_dtype}}
+\index{\_get\_dtype@{\_get\_dtype}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_get\_dtype()}{\_get\_dtype()}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+\_\+get\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sqltype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a226c3c529ad88d3e2db28da7028435ce}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a226c3c529ad88d3e2db28da7028435ce} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_harmonize\_columns@{\_harmonize\_columns}}
+\index{\_harmonize\_columns@{\_harmonize\_columns}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_harmonize\_columns()}{\_harmonize\_columns()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sql.\+SQLTable.\+\_\+harmonize\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parse\+\_\+dates = {\ttfamily None},  }\item[{Dtype\+Backend \texorpdfstring{$\vert$}{|} Literal\mbox{[}"{}numpy"{}\mbox{]} }]{dtype\+\_\+backend = {\ttfamily "{}numpy"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Make the DataFrame's column types align with the SQL table
+column types.
+Need to work around limited NA value support. Floats are always
+fine, ints must always be floats if there are Null values.
+Booleans are hard because converting bool column with None replaces
+all Nones with false. Therefore only convert bool if there are no
+NA values.
+Datetimes should already be converted to np.datetime64 if supported,
+but here we also force conversion if required.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a43fb2f3a83429b5ada091a86c0bd5f78}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a43fb2f3a83429b5ada091a86c0bd5f78} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_index\_name@{\_index\_name}}
+\index{\_index\_name@{\_index\_name}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_index\_name()}{\_index\_name()}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+\_\+index\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{index,  }\item[{}]{index\+\_\+label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a9ed1e478bbd9fb53f069557ff01c8bb7}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a9ed1e478bbd9fb53f069557ff01c8bb7} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_query\_iterator@{\_query\_iterator}}
+\index{\_query\_iterator@{\_query\_iterator}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_query\_iterator()}{\_query\_iterator()}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+\_\+query\+\_\+iterator (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{result,  }\item[{Exit\+Stack}]{exit\+\_\+stack,  }\item[{int \texorpdfstring{$\vert$}{|} None}]{chunksize,  }\item[{}]{columns,  }\item[{bool }]{coerce\+\_\+float = {\ttfamily True},  }\item[{}]{parse\+\_\+dates = {\ttfamily None},  }\item[{Dtype\+Backend \texorpdfstring{$\vert$}{|} Literal\mbox{[}"{}numpy"{}\mbox{]} }]{dtype\+\_\+backend = {\ttfamily "{}numpy"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return generator through chunked result set.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a939d2295229087ca69f0abbfb34d4e4f}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a939d2295229087ca69f0abbfb34d4e4f} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!\_sqlalchemy\_type@{\_sqlalchemy\_type}}
+\index{\_sqlalchemy\_type@{\_sqlalchemy\_type}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{\_sqlalchemy\_type()}{\_sqlalchemy\_type()}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+\_\+sqlalchemy\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Index \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}}}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_ab79618254de72c9098e5bf99806c6327}\label{classpandas_1_1io_1_1sql_1_1SQLTable_ab79618254de72c9098e5bf99806c6327} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!create@{create}}
+\index{create@{create}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sql.\+SQLTable.\+create (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_af0bbfca22b5bbdb6341f0d7e72e4823d}\label{classpandas_1_1io_1_1sql_1_1SQLTable_af0bbfca22b5bbdb6341f0d7e72e4823d} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!exists@{exists}}
+\index{exists@{exists}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+exists (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a060bb6a5055fbd8c982fd814cf192eba}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a060bb6a5055fbd8c982fd814cf192eba} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!insert@{insert}}
+\index{insert@{insert}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily  int \texorpdfstring{$\vert$}{|} None pandas.\+io.\+sql.\+SQLTable.\+insert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{chunksize = {\ttfamily None},  }\item[{Literal\mbox{[}"{}multi"{}\mbox{]} \texorpdfstring{$\vert$}{|} Callable \texorpdfstring{$\vert$}{|} None }]{method = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a3dbb06b4012efe9ca5678abc0830422f}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a3dbb06b4012efe9ca5678abc0830422f} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!insert\_data@{insert\_data}}
+\index{insert\_data@{insert\_data}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{insert\_data()}{insert\_data()}}
+{\footnotesize\ttfamily  tuple\mbox{[}list\mbox{[}str\mbox{]}, list\mbox{[}np.\+ndarray\mbox{]}\mbox{]} pandas.\+io.\+sql.\+SQLTable.\+insert\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a144001ad84a4e49696b584096fbae115}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a144001ad84a4e49696b584096fbae115} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!read@{read}}
+\index{read@{read}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}} \texorpdfstring{$\vert$}{|} Iterator\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}\mbox{]} pandas.\+io.\+sql.\+SQLTable.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Exit\+Stack}]{exit\+\_\+stack,  }\item[{bool }]{coerce\+\_\+float = {\ttfamily True},  }\item[{}]{parse\+\_\+dates = {\ttfamily None},  }\item[{}]{columns = {\ttfamily None},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{chunksize = {\ttfamily None},  }\item[{Dtype\+Backend \texorpdfstring{$\vert$}{|} Literal\mbox{[}"{}numpy"{}\mbox{]} }]{dtype\+\_\+backend = {\ttfamily "{}numpy"{}} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_aad7752179264b0024b22c4a9aac33c0a}\label{classpandas_1_1io_1_1sql_1_1SQLTable_aad7752179264b0024b22c4a9aac33c0a} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!sql\_schema@{sql\_schema}}
+\index{sql\_schema@{sql\_schema}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{sql\_schema()}{sql\_schema()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+sql.\+SQLTable.\+sql\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1sql_1_1SQLiteTable_ad6a430dbdb2c0f79618c91dde83f3718}{pandas.\+io.\+sql.\+SQLite\+Table}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_ae3880d12d1c71fb99cee12b28284758d}\label{classpandas_1_1io_1_1sql_1_1SQLTable_ae3880d12d1c71fb99cee12b28284758d} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!dtype@{dtype}}
+\index{dtype@{dtype}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{dtype}{dtype}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+dtype}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_ac8c94a5f63ab0fac1668ca128b24e153}\label{classpandas_1_1io_1_1sql_1_1SQLTable_ac8c94a5f63ab0fac1668ca128b24e153} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!frame@{frame}}
+\index{frame@{frame}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+frame}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a2f79406b488b754b1952085ce7e5cce3}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a2f79406b488b754b1952085ce7e5cce3} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!if\_exists@{if\_exists}}
+\index{if\_exists@{if\_exists}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{if\_exists}{if\_exists}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+if\+\_\+exists}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_af7f9055d2dfbbab3cb7d77a5e113dddc}\label{classpandas_1_1io_1_1sql_1_1SQLTable_af7f9055d2dfbbab3cb7d77a5e113dddc} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!index@{index}}
+\index{index@{index}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+index}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a6e53e752d475fa9f68dec97117003641}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a6e53e752d475fa9f68dec97117003641} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!keys@{keys}}
+\index{keys@{keys}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+keys}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_ac2772cb1775e3d932c96ed7f4ae976c5}\label{classpandas_1_1io_1_1sql_1_1SQLTable_ac2772cb1775e3d932c96ed7f4ae976c5} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!name@{name}}
+\index{name@{name}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+name}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_ac6cd41e0def4decd40c14b2242a68b64}\label{classpandas_1_1io_1_1sql_1_1SQLTable_ac6cd41e0def4decd40c14b2242a68b64} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!pd\_sql@{pd\_sql}}
+\index{pd\_sql@{pd\_sql}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{pd\_sql}{pd\_sql}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+pd\+\_\+sql}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a29958dfa0b43830517e2c9fd938c0081}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a29958dfa0b43830517e2c9fd938c0081} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!prefix@{prefix}}
+\index{prefix@{prefix}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+prefix}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a53f336251164404c0a611ff15a6b4a40}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a53f336251164404c0a611ff15a6b4a40} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!schema@{schema}}
+\index{schema@{schema}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+schema}
+
+\Hypertarget{classpandas_1_1io_1_1sql_1_1SQLTable_a464a705d187c72329444394c6fe048f3}\label{classpandas_1_1io_1_1sql_1_1SQLTable_a464a705d187c72329444394c6fe048f3} 
+\index{pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}!table@{table}}
+\index{table@{table}!pandas.io.sql.SQLTable@{pandas.io.sql.SQLTable}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily pandas.\+io.\+sql.\+SQLTable.\+table}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/\mbox{\hyperlink{pandas_2io_2sql_8py}{sql.\+py}}\end{DoxyCompactItemize}

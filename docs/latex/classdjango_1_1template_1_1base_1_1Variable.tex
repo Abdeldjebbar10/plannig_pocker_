@@ -1,0 +1,132 @@
+\doxysection{Référence de la classe django.\+template.\+base.\+Variable}
+\hypertarget{classdjango_1_1template_1_1base_1_1Variable}{}\label{classdjango_1_1template_1_1base_1_1Variable}\index{django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_a470f9da17b2055abb6b7b13d733b9c22}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_a9516cc552bbb2442d688ec79d26ab0c8}{var}})
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_acf266510aec3e5ee1ffe0d909dee758a}{resolve}} (self, context)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_a327c2ae3289e43b3ddeb0c51354e86a5}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_a471590aac7ece7acca6a03a27e365824}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_a9516cc552bbb2442d688ec79d26ab0c8}{var}}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_a8273f20053f4e8dbd59a75e2240cf5e9}{literal}}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_a196b1de05b06ae09d3d61ef30883b8d8}{lookups}}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_adc02fd5f63cd9ad086314ab35fff6bb8}{translate}}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_aaf24adc45b033d8d1e7a2b99c65aec49}{message\+\_\+context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1base_1_1Variable_a29a010834c1da3c665068538fb8027c0}{\+\_\+resolve\+\_\+lookup}} (self, context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A template variable, resolvable against a given context. The variable may
+be a hard-coded string (if it begins and ends with single or double quote
+marks)::
+
+    >>> c = {'article': {'section':'News'}}
+    >>> Variable('article.section').resolve(c)
+    'News'
+    >>> Variable('article').resolve(c)
+    {'section': 'News'}
+    >>> class AClass: pass
+    >>> c = AClass()
+    >>> c.article = AClass()
+    >>> c.article.section = 'News'
+
+(The example assumes VARIABLE_ATTRIBUTE_SEPARATOR is '.')
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_a470f9da17b2055abb6b7b13d733b9c22}\label{classdjango_1_1template_1_1base_1_1Variable_a470f9da17b2055abb6b7b13d733b9c22} 
+\index{django.template.base.Variable@{django.template.base.Variable}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{var }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_a327c2ae3289e43b3ddeb0c51354e86a5}\label{classdjango_1_1template_1_1base_1_1Variable_a327c2ae3289e43b3ddeb0c51354e86a5} 
+\index{django.template.base.Variable@{django.template.base.Variable}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_a471590aac7ece7acca6a03a27e365824}\label{classdjango_1_1template_1_1base_1_1Variable_a471590aac7ece7acca6a03a27e365824} 
+\index{django.template.base.Variable@{django.template.base.Variable}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_a29a010834c1da3c665068538fb8027c0}\label{classdjango_1_1template_1_1base_1_1Variable_a29a010834c1da3c665068538fb8027c0} 
+\index{django.template.base.Variable@{django.template.base.Variable}!\_resolve\_lookup@{\_resolve\_lookup}}
+\index{\_resolve\_lookup@{\_resolve\_lookup}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{\_resolve\_lookup()}{\_resolve\_lookup()}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+\_\+resolve\+\_\+lookup (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Perform resolution of a real variable (i.e. not a literal) against the
+given context.
+
+As indicated by the method's name, this method is an implementation
+detail and shouldn't be called by external code. Use Variable.resolve()
+instead.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1template_1_1base_1_1Variable_acf266510aec3e5ee1ffe0d909dee758a}\label{classdjango_1_1template_1_1base_1_1Variable_acf266510aec3e5ee1ffe0d909dee758a} 
+\index{django.template.base.Variable@{django.template.base.Variable}!resolve@{resolve}}
+\index{resolve@{resolve}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+resolve (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{context }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve this variable against a given context.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_a8273f20053f4e8dbd59a75e2240cf5e9}\label{classdjango_1_1template_1_1base_1_1Variable_a8273f20053f4e8dbd59a75e2240cf5e9} 
+\index{django.template.base.Variable@{django.template.base.Variable}!literal@{literal}}
+\index{literal@{literal}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{literal}{literal}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+literal}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_a196b1de05b06ae09d3d61ef30883b8d8}\label{classdjango_1_1template_1_1base_1_1Variable_a196b1de05b06ae09d3d61ef30883b8d8} 
+\index{django.template.base.Variable@{django.template.base.Variable}!lookups@{lookups}}
+\index{lookups@{lookups}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{lookups}{lookups}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+lookups}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_aaf24adc45b033d8d1e7a2b99c65aec49}\label{classdjango_1_1template_1_1base_1_1Variable_aaf24adc45b033d8d1e7a2b99c65aec49} 
+\index{django.template.base.Variable@{django.template.base.Variable}!message\_context@{message\_context}}
+\index{message\_context@{message\_context}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{message\_context}{message\_context}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+message\+\_\+context}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_adc02fd5f63cd9ad086314ab35fff6bb8}\label{classdjango_1_1template_1_1base_1_1Variable_adc02fd5f63cd9ad086314ab35fff6bb8} 
+\index{django.template.base.Variable@{django.template.base.Variable}!translate@{translate}}
+\index{translate@{translate}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{translate}{translate}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+translate}
+
+\Hypertarget{classdjango_1_1template_1_1base_1_1Variable_a9516cc552bbb2442d688ec79d26ab0c8}\label{classdjango_1_1template_1_1base_1_1Variable_a9516cc552bbb2442d688ec79d26ab0c8} 
+\index{django.template.base.Variable@{django.template.base.Variable}!var@{var}}
+\index{var@{var}!django.template.base.Variable@{django.template.base.Variable}}
+\doxysubsubsection{\texorpdfstring{var}{var}}
+{\footnotesize\ttfamily django.\+template.\+base.\+Variable.\+var}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/template/\mbox{\hyperlink{django_2template_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

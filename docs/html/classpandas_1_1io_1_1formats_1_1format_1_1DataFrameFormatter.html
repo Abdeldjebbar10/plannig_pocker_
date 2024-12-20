@@ -1,0 +1,1606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Poker_Project: Référence de la classe pandas.io.formats.format.DataFrameFormatter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Poker_Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacepandas.html">pandas</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1io.html">io</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1io_1_1formats.html">formats</a></li><li class="navelem"><a class="el" href="namespacepandas_1_1io_1_1formats_1_1format.html">format</a></li><li class="navelem"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html">DataFrameFormatter</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe pandas.io.formats.format.DataFrameFormatter</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a459681bfe36d4ca7ed9c68378b92134f" id="r_a459681bfe36d4ca7ed9c68378b92134f"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a459681bfe36d4ca7ed9c68378b92134f">__init__</a> (self, DataFrame <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a8cb7b51cfccb1e5cdcc634436e5cc52b">frame</a>, Axes|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a64973f850c9737b4747ea54a416fa31a">columns</a>=None, ColspaceArgType|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#acecb8fd4a8caefc2dec030f434d58f28">col_space</a>=None, bool|<a class="el" href="classpandas_1_1__typing_1_1SequenceNotStr.html">SequenceNotStr</a>[str] <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a3c1277a1d22a4640e413941351071c25">header</a>=True, bool <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ac4c7a2d6cd89066f1faa296250a596ed">index</a>=True, str <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a63010b064d36accd7ae19c755edea8c5">na_rep</a>=&quot;NaN&quot;, FormattersType|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a630199137a55956a9a43b30f73398dee">formatters</a>=None, str|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#af9b73382810f3a61d7e320a3549050a0">justify</a>=None, FloatFormatType|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a2fb85e33748267d6286ab3873c6d12ef">float_format</a>=None, bool|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a69ee816292bb755d1f670e78f93f56e6">sparsify</a>=None, bool index_names=True, int|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a8e80cc805656280c204ecb4c24caad48">max_rows</a>=None, int|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#aa9c54a6cdec884e09a8a59420aa09cf1">min_rows</a>=None, int|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ada40b7fb83b9e8f2bf291557608a7df4">max_cols</a>=None, bool|str <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a4e2637e8771d6fd48116112ea476fd82">show_dimensions</a>=False, str <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ae99984b07f846948e3b648607a80dfa7">decimal</a>=&quot;.&quot;, bool <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a02b1915c82a9c032df07b8669c2beac4">bold_rows</a>=False, bool <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a34ec02adb7280c5912710c1c32e15f97">escape</a>=True)</td></tr>
+<tr class="separator:a459681bfe36d4ca7ed9c68378b92134f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d38c73d08c3b6a38ef3ecd949bb8a41" id="r_a5d38c73d08c3b6a38ef3ecd949bb8a41"><td class="memItemLeft" align="right" valign="top">list[list[str]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a5d38c73d08c3b6a38ef3ecd949bb8a41">get_strcols</a> (self)</td></tr>
+<tr class="separator:a5d38c73d08c3b6a38ef3ecd949bb8a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb05aef0016fc04061cea050d6dcb0a" id="r_a4bb05aef0016fc04061cea050d6dcb0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a4bb05aef0016fc04061cea050d6dcb0a">should_show_dimensions</a> (self)</td></tr>
+<tr class="separator:a4bb05aef0016fc04061cea050d6dcb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b50946365a02cf79ff2ffcd9ce675a" id="r_a76b50946365a02cf79ff2ffcd9ce675a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a76b50946365a02cf79ff2ffcd9ce675a">is_truncated</a> (self)</td></tr>
+<tr class="separator:a76b50946365a02cf79ff2ffcd9ce675a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ac45bb5e67ac8b620476b1e505ba1d" id="r_a69ac45bb5e67ac8b620476b1e505ba1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a69ac45bb5e67ac8b620476b1e505ba1d">is_truncated_horizontally</a> (self)</td></tr>
+<tr class="separator:a69ac45bb5e67ac8b620476b1e505ba1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7cf60eb6a5f68690ff72adc3ffd92f" id="r_a2f7cf60eb6a5f68690ff72adc3ffd92f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a2f7cf60eb6a5f68690ff72adc3ffd92f">is_truncated_vertically</a> (self)</td></tr>
+<tr class="separator:a2f7cf60eb6a5f68690ff72adc3ffd92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b782d88c2face50aec24468bdb82e5" id="r_a08b782d88c2face50aec24468bdb82e5"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a08b782d88c2face50aec24468bdb82e5">dimensions_info</a> (self)</td></tr>
+<tr class="separator:a08b782d88c2face50aec24468bdb82e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e83e938888f1dff8bcee186773f6d2" id="r_a18e83e938888f1dff8bcee186773f6d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a18e83e938888f1dff8bcee186773f6d2">has_index_names</a> (self)</td></tr>
+<tr class="separator:a18e83e938888f1dff8bcee186773f6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a6391512f0eb18327b4994056b1139" id="r_af6a6391512f0eb18327b4994056b1139"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#af6a6391512f0eb18327b4994056b1139">has_column_names</a> (self)</td></tr>
+<tr class="separator:af6a6391512f0eb18327b4994056b1139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04064dfc35faae20bcb7efd8632fa3" id="r_a3c04064dfc35faae20bcb7efd8632fa3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a3c04064dfc35faae20bcb7efd8632fa3">show_row_idx_names</a> (self)</td></tr>
+<tr class="separator:a3c04064dfc35faae20bcb7efd8632fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75338a6952678ca02a0fb426002d226" id="r_ad75338a6952678ca02a0fb426002d226"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ad75338a6952678ca02a0fb426002d226">show_col_idx_names</a> (self)</td></tr>
+<tr class="separator:ad75338a6952678ca02a0fb426002d226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af708d3fa44261018dde80e22d8531a59" id="r_af708d3fa44261018dde80e22d8531a59"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#af708d3fa44261018dde80e22d8531a59">max_rows_displayed</a> (self)</td></tr>
+<tr class="separator:af708d3fa44261018dde80e22d8531a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7f543be699db27b4582c350777cec6" id="r_a4a7f543be699db27b4582c350777cec6"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a4a7f543be699db27b4582c350777cec6">truncate</a> (self)</td></tr>
+<tr class="separator:a4a7f543be699db27b4582c350777cec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77168b4ad6a00494a054149c4256268f" id="r_a77168b4ad6a00494a054149c4256268f"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a77168b4ad6a00494a054149c4256268f">format_col</a> (self, int i)</td></tr>
+<tr class="separator:a77168b4ad6a00494a054149c4256268f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:a8cb7b51cfccb1e5cdcc634436e5cc52b" id="r_a8cb7b51cfccb1e5cdcc634436e5cc52b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a8cb7b51cfccb1e5cdcc634436e5cc52b">frame</a></td></tr>
+<tr class="separator:a8cb7b51cfccb1e5cdcc634436e5cc52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64973f850c9737b4747ea54a416fa31a" id="r_a64973f850c9737b4747ea54a416fa31a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a64973f850c9737b4747ea54a416fa31a">columns</a></td></tr>
+<tr class="separator:a64973f850c9737b4747ea54a416fa31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acecb8fd4a8caefc2dec030f434d58f28" id="r_acecb8fd4a8caefc2dec030f434d58f28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#acecb8fd4a8caefc2dec030f434d58f28">col_space</a></td></tr>
+<tr class="separator:acecb8fd4a8caefc2dec030f434d58f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1277a1d22a4640e413941351071c25" id="r_a3c1277a1d22a4640e413941351071c25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a3c1277a1d22a4640e413941351071c25">header</a></td></tr>
+<tr class="separator:a3c1277a1d22a4640e413941351071c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c7a2d6cd89066f1faa296250a596ed" id="r_ac4c7a2d6cd89066f1faa296250a596ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ac4c7a2d6cd89066f1faa296250a596ed">index</a></td></tr>
+<tr class="separator:ac4c7a2d6cd89066f1faa296250a596ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63010b064d36accd7ae19c755edea8c5" id="r_a63010b064d36accd7ae19c755edea8c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a63010b064d36accd7ae19c755edea8c5">na_rep</a></td></tr>
+<tr class="separator:a63010b064d36accd7ae19c755edea8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630199137a55956a9a43b30f73398dee" id="r_a630199137a55956a9a43b30f73398dee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a630199137a55956a9a43b30f73398dee">formatters</a></td></tr>
+<tr class="separator:a630199137a55956a9a43b30f73398dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b73382810f3a61d7e320a3549050a0" id="r_af9b73382810f3a61d7e320a3549050a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#af9b73382810f3a61d7e320a3549050a0">justify</a></td></tr>
+<tr class="separator:af9b73382810f3a61d7e320a3549050a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb85e33748267d6286ab3873c6d12ef" id="r_a2fb85e33748267d6286ab3873c6d12ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a2fb85e33748267d6286ab3873c6d12ef">float_format</a></td></tr>
+<tr class="separator:a2fb85e33748267d6286ab3873c6d12ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ee816292bb755d1f670e78f93f56e6" id="r_a69ee816292bb755d1f670e78f93f56e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a69ee816292bb755d1f670e78f93f56e6">sparsify</a></td></tr>
+<tr class="separator:a69ee816292bb755d1f670e78f93f56e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bca54a8184864371201f28b3e9e9b65" id="r_a0bca54a8184864371201f28b3e9e9b65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a0bca54a8184864371201f28b3e9e9b65">show_index_names</a></td></tr>
+<tr class="separator:a0bca54a8184864371201f28b3e9e9b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99984b07f846948e3b648607a80dfa7" id="r_ae99984b07f846948e3b648607a80dfa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ae99984b07f846948e3b648607a80dfa7">decimal</a></td></tr>
+<tr class="separator:ae99984b07f846948e3b648607a80dfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b1915c82a9c032df07b8669c2beac4" id="r_a02b1915c82a9c032df07b8669c2beac4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a02b1915c82a9c032df07b8669c2beac4">bold_rows</a></td></tr>
+<tr class="separator:a02b1915c82a9c032df07b8669c2beac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ec02adb7280c5912710c1c32e15f97" id="r_a34ec02adb7280c5912710c1c32e15f97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a34ec02adb7280c5912710c1c32e15f97">escape</a></td></tr>
+<tr class="separator:a34ec02adb7280c5912710c1c32e15f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e80cc805656280c204ecb4c24caad48" id="r_a8e80cc805656280c204ecb4c24caad48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a8e80cc805656280c204ecb4c24caad48">max_rows</a></td></tr>
+<tr class="separator:a8e80cc805656280c204ecb4c24caad48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c54a6cdec884e09a8a59420aa09cf1" id="r_aa9c54a6cdec884e09a8a59420aa09cf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#aa9c54a6cdec884e09a8a59420aa09cf1">min_rows</a></td></tr>
+<tr class="separator:aa9c54a6cdec884e09a8a59420aa09cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada40b7fb83b9e8f2bf291557608a7df4" id="r_ada40b7fb83b9e8f2bf291557608a7df4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ada40b7fb83b9e8f2bf291557608a7df4">max_cols</a></td></tr>
+<tr class="separator:ada40b7fb83b9e8f2bf291557608a7df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e2637e8771d6fd48116112ea476fd82" id="r_a4e2637e8771d6fd48116112ea476fd82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a4e2637e8771d6fd48116112ea476fd82">show_dimensions</a></td></tr>
+<tr class="separator:a4e2637e8771d6fd48116112ea476fd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06abcc6aafb9f613f5f0b81132f043a5" id="r_a06abcc6aafb9f613f5f0b81132f043a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a06abcc6aafb9f613f5f0b81132f043a5">max_cols_fitted</a></td></tr>
+<tr class="separator:a06abcc6aafb9f613f5f0b81132f043a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769558fe68e6d67c56d0de877a7a5a49" id="r_a769558fe68e6d67c56d0de877a7a5a49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a769558fe68e6d67c56d0de877a7a5a49">max_rows_fitted</a></td></tr>
+<tr class="separator:a769558fe68e6d67c56d0de877a7a5a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c799747cf306a8a0d81b55bdd02d9d" id="r_ab1c799747cf306a8a0d81b55bdd02d9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ab1c799747cf306a8a0d81b55bdd02d9d">tr_frame</a></td></tr>
+<tr class="separator:ab1c799747cf306a8a0d81b55bdd02d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58067d511db336d1c1e32f4bac20e7d" id="r_ac58067d511db336d1c1e32f4bac20e7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ac58067d511db336d1c1e32f4bac20e7d">adj</a></td></tr>
+<tr class="separator:ac58067d511db336d1c1e32f4bac20e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0859325d6eae4c0ef5cc5492670e4071" id="r_a0859325d6eae4c0ef5cc5492670e4071"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a0859325d6eae4c0ef5cc5492670e4071">is_truncated_vertically</a></td></tr>
+<tr class="separator:a0859325d6eae4c0ef5cc5492670e4071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9fb4756de75f52131f31a2eff5a642" id="r_a4d9fb4756de75f52131f31a2eff5a642"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a4d9fb4756de75f52131f31a2eff5a642">has_index_names</a></td></tr>
+<tr class="separator:a4d9fb4756de75f52131f31a2eff5a642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec32da23409a17222be530bfdbc54702" id="r_aec32da23409a17222be530bfdbc54702"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#aec32da23409a17222be530bfdbc54702">has_column_names</a></td></tr>
+<tr class="separator:aec32da23409a17222be530bfdbc54702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c36acec4274193e68b29eab80eefd2" id="r_ad8c36acec4274193e68b29eab80eefd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ad8c36acec4274193e68b29eab80eefd2">tr_col_num</a></td></tr>
+<tr class="separator:ad8c36acec4274193e68b29eab80eefd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616f29b374f1ceac526ae327a142be50" id="r_a616f29b374f1ceac526ae327a142be50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a616f29b374f1ceac526ae327a142be50">tr_row_num</a></td></tr>
+<tr class="separator:a616f29b374f1ceac526ae327a142be50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:a128a5dfe82a03b25a9b11b5a12c06098" id="r_a128a5dfe82a03b25a9b11b5a12c06098"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a128a5dfe82a03b25a9b11b5a12c06098">_initialize_sparsify</a> (self, bool|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a69ee816292bb755d1f670e78f93f56e6">sparsify</a>)</td></tr>
+<tr class="separator:a128a5dfe82a03b25a9b11b5a12c06098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd802421da260eb526462ccf6e9cfb5" id="r_a1dd802421da260eb526462ccf6e9cfb5"><td class="memItemLeft" align="right" valign="top">FormattersType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a1dd802421da260eb526462ccf6e9cfb5">_initialize_formatters</a> (self, FormattersType|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a630199137a55956a9a43b30f73398dee">formatters</a>)</td></tr>
+<tr class="separator:a1dd802421da260eb526462ccf6e9cfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657d18f2acb832d84f4e1de47719d386" id="r_a657d18f2acb832d84f4e1de47719d386"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a657d18f2acb832d84f4e1de47719d386">_initialize_justify</a> (self, str|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#af9b73382810f3a61d7e320a3549050a0">justify</a>)</td></tr>
+<tr class="separator:a657d18f2acb832d84f4e1de47719d386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01146c039a31c5fb5570ada5702b11c" id="r_aa01146c039a31c5fb5570ada5702b11c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#aa01146c039a31c5fb5570ada5702b11c">_initialize_columns</a> (self, Axes|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a64973f850c9737b4747ea54a416fa31a">columns</a>)</td></tr>
+<tr class="separator:aa01146c039a31c5fb5570ada5702b11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7df7210e869e959adc29455b8ae350f" id="r_ac7df7210e869e959adc29455b8ae350f"><td class="memItemLeft" align="right" valign="top">ColspaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ac7df7210e869e959adc29455b8ae350f">_initialize_colspace</a> (self, ColspaceArgType|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#acecb8fd4a8caefc2dec030f434d58f28">col_space</a>)</td></tr>
+<tr class="separator:ac7df7210e869e959adc29455b8ae350f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99ec803fd9b1c24716c1db56da0b062" id="r_ae99ec803fd9b1c24716c1db56da0b062"><td class="memItemLeft" align="right" valign="top">int|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ae99ec803fd9b1c24716c1db56da0b062">_calc_max_cols_fitted</a> (self)</td></tr>
+<tr class="separator:ae99ec803fd9b1c24716c1db56da0b062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84682f2cde35f6ad0e7f8af235f004c9" id="r_a84682f2cde35f6ad0e7f8af235f004c9"><td class="memItemLeft" align="right" valign="top">int|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a84682f2cde35f6ad0e7f8af235f004c9">_calc_max_rows_fitted</a> (self)</td></tr>
+<tr class="separator:a84682f2cde35f6ad0e7f8af235f004c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8d1510e45dee47702e06806304788a" id="r_a6f8d1510e45dee47702e06806304788a"><td class="memItemLeft" align="right" valign="top">int|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a6f8d1510e45dee47702e06806304788a">_adjust_max_rows</a> (self, int|None <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a8e80cc805656280c204ecb4c24caad48">max_rows</a>)</td></tr>
+<tr class="separator:a6f8d1510e45dee47702e06806304788a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b4a2546c2743942a67ea8efa34eae7" id="r_af1b4a2546c2743942a67ea8efa34eae7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#af1b4a2546c2743942a67ea8efa34eae7">_is_in_terminal</a> (self)</td></tr>
+<tr class="separator:af1b4a2546c2743942a67ea8efa34eae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aad012ccb406595ffaf05496fdece85" id="r_a7aad012ccb406595ffaf05496fdece85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a7aad012ccb406595ffaf05496fdece85">_is_screen_narrow</a> (self, max_width)</td></tr>
+<tr class="separator:a7aad012ccb406595ffaf05496fdece85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01ec58ac54015ab6f65229aeeed9bb8" id="r_ae01ec58ac54015ab6f65229aeeed9bb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ae01ec58ac54015ab6f65229aeeed9bb8">_is_screen_short</a> (self, max_height)</td></tr>
+<tr class="separator:ae01ec58ac54015ab6f65229aeeed9bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e2198b52c5fa6bec9db50277d4e4eb" id="r_af3e2198b52c5fa6bec9db50277d4e4eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#af3e2198b52c5fa6bec9db50277d4e4eb">_get_number_of_auxiliary_rows</a> (self)</td></tr>
+<tr class="separator:af3e2198b52c5fa6bec9db50277d4e4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569123770f936962168f0a239eaead4c" id="r_a569123770f936962168f0a239eaead4c"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a569123770f936962168f0a239eaead4c">_truncate_horizontally</a> (self)</td></tr>
+<tr class="separator:a569123770f936962168f0a239eaead4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61434db0aad78fa655c6a10880e53572" id="r_a61434db0aad78fa655c6a10880e53572"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a61434db0aad78fa655c6a10880e53572">_truncate_vertically</a> (self)</td></tr>
+<tr class="separator:a61434db0aad78fa655c6a10880e53572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82319d7d29af83415087c04de38a67a1" id="r_a82319d7d29af83415087c04de38a67a1"><td class="memItemLeft" align="right" valign="top">list[list[str]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a82319d7d29af83415087c04de38a67a1">_get_strcols_without_index</a> (self)</td></tr>
+<tr class="separator:a82319d7d29af83415087c04de38a67a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cd0db78841489615cd110783e14557" id="r_ae1cd0db78841489615cd110783e14557"><td class="memItemLeft" align="right" valign="top">Callable|None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ae1cd0db78841489615cd110783e14557">_get_formatter</a> (self, str|int i)</td></tr>
+<tr class="separator:ae1cd0db78841489615cd110783e14557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b21037a81320be986057ab33b6ea234" id="r_a6b21037a81320be986057ab33b6ea234"><td class="memItemLeft" align="right" valign="top">list[list[str]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a6b21037a81320be986057ab33b6ea234">_get_formatted_column_labels</a> (self, DataFrame <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a8cb7b51cfccb1e5cdcc634436e5cc52b">frame</a>)</td></tr>
+<tr class="separator:a6b21037a81320be986057ab33b6ea234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4755f6f83189b154a08c7e94b4133a49" id="r_a4755f6f83189b154a08c7e94b4133a49"><td class="memItemLeft" align="right" valign="top">list[str]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a4755f6f83189b154a08c7e94b4133a49">_get_formatted_index</a> (self, DataFrame <a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#a8cb7b51cfccb1e5cdcc634436e5cc52b">frame</a>)</td></tr>
+<tr class="separator:a4755f6f83189b154a08c7e94b4133a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26ab41b5397af17543c7181ef2d51e1" id="r_ae26ab41b5397af17543c7181ef2d51e1"><td class="memItemLeft" align="right" valign="top">list[Hashable]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter.html#ae26ab41b5397af17543c7181ef2d51e1">_get_column_name_list</a> (self)</td></tr>
+<tr class="separator:ae26ab41b5397af17543c7181ef2d51e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><pre class="fragment">Class for processing dataframe formatting options and data.
+
+Used by DataFrame.to_string, which backs DataFrame.__repr__.
+</pre> </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a459681bfe36d4ca7ed9c68378b92134f" name="a459681bfe36d4ca7ed9c68378b92134f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a459681bfe36d4ca7ed9c68378b92134f">&#9670;&#160;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.io.formats.format.DataFrameFormatter.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataFrame&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Axes | None &#160;</td>
+          <td class="paramname"><em>columns</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColspaceArgType | None &#160;</td>
+          <td class="paramname"><em>col_space</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool | <a class="el" href="classpandas_1_1__typing_1_1SequenceNotStr.html">SequenceNotStr</a>[str] &#160;</td>
+          <td class="paramname"><em>header</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>index</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str &#160;</td>
+          <td class="paramname"><em>na_rep</em> = <code>&quot;NaN&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FormattersType | None &#160;</td>
+          <td class="paramname"><em>formatters</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str | None &#160;</td>
+          <td class="paramname"><em>justify</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FloatFormatType | None &#160;</td>
+          <td class="paramname"><em>float_format</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool | None &#160;</td>
+          <td class="paramname"><em>sparsify</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>index_names</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int | None &#160;</td>
+          <td class="paramname"><em>max_rows</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int | None &#160;</td>
+          <td class="paramname"><em>min_rows</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int | None &#160;</td>
+          <td class="paramname"><em>max_cols</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool | str &#160;</td>
+          <td class="paramname"><em>show_dimensions</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str &#160;</td>
+          <td class="paramname"><em>decimal</em> = <code>&quot;.&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>bold_rows</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &#160;</td>
+          <td class="paramname"><em>escape</em> = <code>True</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a6f8d1510e45dee47702e06806304788a" name="a6f8d1510e45dee47702e06806304788a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8d1510e45dee47702e06806304788a">&#9670;&#160;</a></span>_adjust_max_rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int | None pandas.io.formats.format.DataFrameFormatter._adjust_max_rows </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int | None&#160;</td>
+          <td class="paramname"><em>max_rows</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Adjust max_rows using display logic.
+
+See description here:
+https://pandas.pydata.org/docs/dev/user_guide/options.html#frequently-used-options
+
+GH #37359
+</pre> 
+</div>
+</div>
+<a id="ae99ec803fd9b1c24716c1db56da0b062" name="ae99ec803fd9b1c24716c1db56da0b062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99ec803fd9b1c24716c1db56da0b062">&#9670;&#160;</a></span>_calc_max_cols_fitted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int | None pandas.io.formats.format.DataFrameFormatter._calc_max_cols_fitted </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Number of columns fitting the screen.</pre> 
+</div>
+</div>
+<a id="a84682f2cde35f6ad0e7f8af235f004c9" name="a84682f2cde35f6ad0e7f8af235f004c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84682f2cde35f6ad0e7f8af235f004c9">&#9670;&#160;</a></span>_calc_max_rows_fitted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int | None pandas.io.formats.format.DataFrameFormatter._calc_max_rows_fitted </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Number of rows with data fitting the screen.</pre> 
+</div>
+</div>
+<a id="ae26ab41b5397af17543c7181ef2d51e1" name="ae26ab41b5397af17543c7181ef2d51e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26ab41b5397af17543c7181ef2d51e1">&#9670;&#160;</a></span>_get_column_name_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[Hashable] pandas.io.formats.format.DataFrameFormatter._get_column_name_list </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b21037a81320be986057ab33b6ea234" name="a6b21037a81320be986057ab33b6ea234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b21037a81320be986057ab33b6ea234">&#9670;&#160;</a></span>_get_formatted_column_labels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[list[str]] pandas.io.formats.format.DataFrameFormatter._get_formatted_column_labels </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataFrame&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4755f6f83189b154a08c7e94b4133a49" name="a4755f6f83189b154a08c7e94b4133a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4755f6f83189b154a08c7e94b4133a49">&#9670;&#160;</a></span>_get_formatted_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] pandas.io.formats.format.DataFrameFormatter._get_formatted_index </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataFrame&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1cd0db78841489615cd110783e14557" name="ae1cd0db78841489615cd110783e14557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1cd0db78841489615cd110783e14557">&#9670;&#160;</a></span>_get_formatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Callable | None pandas.io.formats.format.DataFrameFormatter._get_formatter </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str | int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3e2198b52c5fa6bec9db50277d4e4eb" name="af3e2198b52c5fa6bec9db50277d4e4eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e2198b52c5fa6bec9db50277d4e4eb">&#9670;&#160;</a></span>_get_number_of_auxiliary_rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int pandas.io.formats.format.DataFrameFormatter._get_number_of_auxiliary_rows </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Get number of rows occupied by prompt, dots and dimension info.</pre> 
+</div>
+</div>
+<a id="a82319d7d29af83415087c04de38a67a1" name="a82319d7d29af83415087c04de38a67a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82319d7d29af83415087c04de38a67a1">&#9670;&#160;</a></span>_get_strcols_without_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[list[str]] pandas.io.formats.format.DataFrameFormatter._get_strcols_without_index </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7df7210e869e959adc29455b8ae350f" name="ac7df7210e869e959adc29455b8ae350f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7df7210e869e959adc29455b8ae350f">&#9670;&#160;</a></span>_initialize_colspace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> ColspaceType pandas.io.formats.format.DataFrameFormatter._initialize_colspace </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ColspaceArgType | None&#160;</td>
+          <td class="paramname"><em>col_space</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa01146c039a31c5fb5570ada5702b11c" name="aa01146c039a31c5fb5570ada5702b11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01146c039a31c5fb5570ada5702b11c">&#9670;&#160;</a></span>_initialize_columns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> <a class="el" href="classpandas_1_1core_1_1indexes_1_1base_1_1Index.html">Index</a> pandas.io.formats.format.DataFrameFormatter._initialize_columns </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Axes | None&#160;</td>
+          <td class="paramname"><em>columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1dd802421da260eb526462ccf6e9cfb5" name="a1dd802421da260eb526462ccf6e9cfb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd802421da260eb526462ccf6e9cfb5">&#9670;&#160;</a></span>_initialize_formatters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> FormattersType pandas.io.formats.format.DataFrameFormatter._initialize_formatters </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FormattersType | None
+    &#160;</td>
+          <td class="paramname"><em>formatters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a657d18f2acb832d84f4e1de47719d386" name="a657d18f2acb832d84f4e1de47719d386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657d18f2acb832d84f4e1de47719d386">&#9670;&#160;</a></span>_initialize_justify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str pandas.io.formats.format.DataFrameFormatter._initialize_justify </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str | None&#160;</td>
+          <td class="paramname"><em>justify</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a128a5dfe82a03b25a9b11b5a12c06098" name="a128a5dfe82a03b25a9b11b5a12c06098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128a5dfe82a03b25a9b11b5a12c06098">&#9670;&#160;</a></span>_initialize_sparsify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter._initialize_sparsify </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool | None&#160;</td>
+          <td class="paramname"><em>sparsify</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1b4a2546c2743942a67ea8efa34eae7" name="af1b4a2546c2743942a67ea8efa34eae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1b4a2546c2743942a67ea8efa34eae7">&#9670;&#160;</a></span>_is_in_terminal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter._is_in_terminal </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Check if the output is to be shown in terminal.</pre> 
+</div>
+</div>
+<a id="a7aad012ccb406595ffaf05496fdece85" name="a7aad012ccb406595ffaf05496fdece85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aad012ccb406595ffaf05496fdece85">&#9670;&#160;</a></span>_is_screen_narrow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter._is_screen_narrow </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>max_width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae01ec58ac54015ab6f65229aeeed9bb8" name="ae01ec58ac54015ab6f65229aeeed9bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01ec58ac54015ab6f65229aeeed9bb8">&#9670;&#160;</a></span>_is_screen_short()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter._is_screen_short </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>max_height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a569123770f936962168f0a239eaead4c" name="a569123770f936962168f0a239eaead4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569123770f936962168f0a239eaead4c">&#9670;&#160;</a></span>_truncate_horizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.io.formats.format.DataFrameFormatter._truncate_horizontally </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Remove columns, which are not to be displayed and adjust formatters.
+
+Attributes affected:
+    - tr_frame
+    - formatters
+    - tr_col_num
+</pre> 
+</div>
+</div>
+<a id="a61434db0aad78fa655c6a10880e53572" name="a61434db0aad78fa655c6a10880e53572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61434db0aad78fa655c6a10880e53572">&#9670;&#160;</a></span>_truncate_vertically()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.io.formats.format.DataFrameFormatter._truncate_vertically </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">Remove rows, which are not to be displayed.
+
+Attributes affected:
+    - tr_frame
+    - tr_row_num
+</pre> 
+</div>
+</div>
+<a id="a08b782d88c2face50aec24468bdb82e5" name="a08b782d88c2face50aec24468bdb82e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b782d88c2face50aec24468bdb82e5">&#9670;&#160;</a></span>dimensions_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str pandas.io.formats.format.DataFrameFormatter.dimensions_info </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77168b4ad6a00494a054149c4256268f" name="a77168b4ad6a00494a054149c4256268f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77168b4ad6a00494a054149c4256268f">&#9670;&#160;</a></span>format_col()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[str] pandas.io.formats.format.DataFrameFormatter.format_col </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d38c73d08c3b6a38ef3ecd949bb8a41" name="a5d38c73d08c3b6a38ef3ecd949bb8a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d38c73d08c3b6a38ef3ecd949bb8a41">&#9670;&#160;</a></span>get_strcols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> list[list[str]] pandas.io.formats.format.DataFrameFormatter.get_strcols </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Render a DataFrame to a list of columns (as lists of strings).
+</pre> 
+</div>
+</div>
+<a id="af6a6391512f0eb18327b4994056b1139" name="af6a6391512f0eb18327b4994056b1139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a6391512f0eb18327b4994056b1139">&#9670;&#160;</a></span>has_column_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter.has_column_names </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18e83e938888f1dff8bcee186773f6d2" name="a18e83e938888f1dff8bcee186773f6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e83e938888f1dff8bcee186773f6d2">&#9670;&#160;</a></span>has_index_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter.has_index_names </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76b50946365a02cf79ff2ffcd9ce675a" name="a76b50946365a02cf79ff2ffcd9ce675a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b50946365a02cf79ff2ffcd9ce675a">&#9670;&#160;</a></span>is_truncated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter.is_truncated </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69ac45bb5e67ac8b620476b1e505ba1d" name="a69ac45bb5e67ac8b620476b1e505ba1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ac45bb5e67ac8b620476b1e505ba1d">&#9670;&#160;</a></span>is_truncated_horizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter.is_truncated_horizontally </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f7cf60eb6a5f68690ff72adc3ffd92f" name="a2f7cf60eb6a5f68690ff72adc3ffd92f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7cf60eb6a5f68690ff72adc3ffd92f">&#9670;&#160;</a></span>is_truncated_vertically()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter.is_truncated_vertically </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af708d3fa44261018dde80e22d8531a59" name="af708d3fa44261018dde80e22d8531a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af708d3fa44261018dde80e22d8531a59">&#9670;&#160;</a></span>max_rows_displayed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> int pandas.io.formats.format.DataFrameFormatter.max_rows_displayed </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bb05aef0016fc04061cea050d6dcb0a" name="a4bb05aef0016fc04061cea050d6dcb0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb05aef0016fc04061cea050d6dcb0a">&#9670;&#160;</a></span>should_show_dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter.should_show_dimensions </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad75338a6952678ca02a0fb426002d226" name="ad75338a6952678ca02a0fb426002d226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75338a6952678ca02a0fb426002d226">&#9670;&#160;</a></span>show_col_idx_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter.show_col_idx_names </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c04064dfc35faae20bcb7efd8632fa3" name="a3c04064dfc35faae20bcb7efd8632fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04064dfc35faae20bcb7efd8632fa3">&#9670;&#160;</a></span>show_row_idx_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool pandas.io.formats.format.DataFrameFormatter.show_row_idx_names </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a7f543be699db27b4582c350777cec6" name="a4a7f543be699db27b4582c350777cec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7f543be699db27b4582c350777cec6">&#9670;&#160;</a></span>truncate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None pandas.io.formats.format.DataFrameFormatter.truncate </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Check whether the frame should be truncated. If so, slice the frame up.
+</pre> 
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="ac58067d511db336d1c1e32f4bac20e7d" name="ac58067d511db336d1c1e32f4bac20e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac58067d511db336d1c1e32f4bac20e7d">&#9670;&#160;</a></span>adj</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.adj</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02b1915c82a9c032df07b8669c2beac4" name="a02b1915c82a9c032df07b8669c2beac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b1915c82a9c032df07b8669c2beac4">&#9670;&#160;</a></span>bold_rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.bold_rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acecb8fd4a8caefc2dec030f434d58f28" name="acecb8fd4a8caefc2dec030f434d58f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acecb8fd4a8caefc2dec030f434d58f28">&#9670;&#160;</a></span>col_space</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.col_space</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64973f850c9737b4747ea54a416fa31a" name="a64973f850c9737b4747ea54a416fa31a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64973f850c9737b4747ea54a416fa31a">&#9670;&#160;</a></span>columns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.columns</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae99984b07f846948e3b648607a80dfa7" name="ae99984b07f846948e3b648607a80dfa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99984b07f846948e3b648607a80dfa7">&#9670;&#160;</a></span>decimal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.decimal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34ec02adb7280c5912710c1c32e15f97" name="a34ec02adb7280c5912710c1c32e15f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ec02adb7280c5912710c1c32e15f97">&#9670;&#160;</a></span>escape</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.escape</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fb85e33748267d6286ab3873c6d12ef" name="a2fb85e33748267d6286ab3873c6d12ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb85e33748267d6286ab3873c6d12ef">&#9670;&#160;</a></span>float_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.float_format</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a630199137a55956a9a43b30f73398dee" name="a630199137a55956a9a43b30f73398dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630199137a55956a9a43b30f73398dee">&#9670;&#160;</a></span>formatters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.formatters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cb7b51cfccb1e5cdcc634436e5cc52b" name="a8cb7b51cfccb1e5cdcc634436e5cc52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb7b51cfccb1e5cdcc634436e5cc52b">&#9670;&#160;</a></span>frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec32da23409a17222be530bfdbc54702" name="aec32da23409a17222be530bfdbc54702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec32da23409a17222be530bfdbc54702">&#9670;&#160;</a></span>has_column_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.has_column_names</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d9fb4756de75f52131f31a2eff5a642" name="a4d9fb4756de75f52131f31a2eff5a642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9fb4756de75f52131f31a2eff5a642">&#9670;&#160;</a></span>has_index_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.has_index_names</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c1277a1d22a4640e413941351071c25" name="a3c1277a1d22a4640e413941351071c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1277a1d22a4640e413941351071c25">&#9670;&#160;</a></span>header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4c7a2d6cd89066f1faa296250a596ed" name="ac4c7a2d6cd89066f1faa296250a596ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c7a2d6cd89066f1faa296250a596ed">&#9670;&#160;</a></span>index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0859325d6eae4c0ef5cc5492670e4071" name="a0859325d6eae4c0ef5cc5492670e4071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0859325d6eae4c0ef5cc5492670e4071">&#9670;&#160;</a></span>is_truncated_vertically</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.is_truncated_vertically</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9b73382810f3a61d7e320a3549050a0" name="af9b73382810f3a61d7e320a3549050a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b73382810f3a61d7e320a3549050a0">&#9670;&#160;</a></span>justify</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.justify</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada40b7fb83b9e8f2bf291557608a7df4" name="ada40b7fb83b9e8f2bf291557608a7df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada40b7fb83b9e8f2bf291557608a7df4">&#9670;&#160;</a></span>max_cols</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.max_cols</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06abcc6aafb9f613f5f0b81132f043a5" name="a06abcc6aafb9f613f5f0b81132f043a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06abcc6aafb9f613f5f0b81132f043a5">&#9670;&#160;</a></span>max_cols_fitted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.max_cols_fitted</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e80cc805656280c204ecb4c24caad48" name="a8e80cc805656280c204ecb4c24caad48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e80cc805656280c204ecb4c24caad48">&#9670;&#160;</a></span>max_rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.max_rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a769558fe68e6d67c56d0de877a7a5a49" name="a769558fe68e6d67c56d0de877a7a5a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769558fe68e6d67c56d0de877a7a5a49">&#9670;&#160;</a></span>max_rows_fitted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.max_rows_fitted</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9c54a6cdec884e09a8a59420aa09cf1" name="aa9c54a6cdec884e09a8a59420aa09cf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c54a6cdec884e09a8a59420aa09cf1">&#9670;&#160;</a></span>min_rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.min_rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63010b064d36accd7ae19c755edea8c5" name="a63010b064d36accd7ae19c755edea8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63010b064d36accd7ae19c755edea8c5">&#9670;&#160;</a></span>na_rep</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.na_rep</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e2637e8771d6fd48116112ea476fd82" name="a4e2637e8771d6fd48116112ea476fd82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e2637e8771d6fd48116112ea476fd82">&#9670;&#160;</a></span>show_dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.show_dimensions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bca54a8184864371201f28b3e9e9b65" name="a0bca54a8184864371201f28b3e9e9b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bca54a8184864371201f28b3e9e9b65">&#9670;&#160;</a></span>show_index_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.show_index_names</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69ee816292bb755d1f670e78f93f56e6" name="a69ee816292bb755d1f670e78f93f56e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ee816292bb755d1f670e78f93f56e6">&#9670;&#160;</a></span>sparsify</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.sparsify</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8c36acec4274193e68b29eab80eefd2" name="ad8c36acec4274193e68b29eab80eefd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c36acec4274193e68b29eab80eefd2">&#9670;&#160;</a></span>tr_col_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.tr_col_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1c799747cf306a8a0d81b55bdd02d9d" name="ab1c799747cf306a8a0d81b55bdd02d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c799747cf306a8a0d81b55bdd02d9d">&#9670;&#160;</a></span>tr_frame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.tr_frame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a616f29b374f1ceac526ae327a142be50" name="a616f29b374f1ceac526ae327a142be50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a616f29b374f1ceac526ae327a142be50">&#9670;&#160;</a></span>tr_row_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pandas.io.formats.format.DataFrameFormatter.tr_row_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>env/lib/python3.12/site-packages/pandas/io/formats/<a class="el" href="pandas_2io_2formats_2format_8py.html">format.py</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

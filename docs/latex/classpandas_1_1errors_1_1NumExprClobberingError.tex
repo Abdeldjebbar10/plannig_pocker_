@@ -1,0 +1,33 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Num\+Expr\+Clobbering\+Error}
+\hypertarget{classpandas_1_1errors_1_1NumExprClobberingError}{}\label{classpandas_1_1errors_1_1NumExprClobberingError}\index{pandas.errors.NumExprClobberingError@{pandas.errors.NumExprClobberingError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Num\+Expr\+Clobbering\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Num\+Expr\+Clobbering\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exception raised when trying to use a built-in numexpr name as a variable name.
+
+``eval`` or ``query`` will throw the error if the engine is set
+to 'numexpr'. 'numexpr' is the default engine value for these methods if the
+numexpr package is installed.
+
+Examples
+--------
+>>> df = pd.DataFrame({'abs': [1, 1, 1]})
+>>> df.query("abs > 2") # doctest: +SKIP
+... # NumExprClobberingError: Variables in expression "(abs) > (2)" overlap...
+>>> sin, a = 1, 2
+>>> pd.eval("sin + a", engine='numexpr') # doctest: +SKIP
+... # NumExprClobberingError: Variables in expression "(sin) + (a)" overlap...
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\doxysection{\+\_\+public\+\_\+dtype\+\_\+api\+\_\+table.\+h}
+\hypertarget{__public__dtype__api__table_8h_source}{}\label{__public__dtype__api__table_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/\_public\_dtype\_api\_table.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/\_public\_dtype\_api\_table.h}}
+\mbox{\hyperlink{__public__dtype__api__table_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Public\ exposure\ of\ the\ DType\ Classes.\ \ These\ are\ tricky\ to\ expose}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ via\ the\ Python\ API,\ so\ they\ are\ exposed\ through\ this\ header\ for\ now.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ These\ definitions\ are\ only\ relevant\ for\ the\ public\ API\ and\ we\ reserve}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ the\ slots\ 320-\/360\ in\ the\ API\ table\ generation\ for\ this\ (currently).}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ TODO:\ This\ file\ should\ be\ consolidated\ with\ the\ API\ table\ generation}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ \ \ \ \ \ \ (although\ not\ sure\ the\ current\ generation\ is\ worth\ preserving).}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_\_PUBLIC\_DTYPE\_API\_TABLE\_H\_}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_\_PUBLIC\_DTYPE\_API\_TABLE\_H\_}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#if\ !(defined(NPY\_INTERNAL\_BUILD)\ \&\&\ NPY\_INTERNAL\_BUILD)}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{/*\ All\ of\ these\ require\ NumPy\ 2.0\ support\ */}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ The\ type\ of\ the\ DType\ metaclass}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ PyArrayDTypeMeta\_Type\ (*(PyTypeObject\ *)(PyArray\_API\ +\ 320)[0])}}
+\DoxyCodeLine{00023\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ NumPy's\ builtin\ DTypes:}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ PyArray\_BoolDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[1])}}
+\DoxyCodeLine{00027\ \textcolor{comment}{/*\ Integers\ */}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ PyArray\_ByteDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[2])}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ PyArray\_UByteDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[3])}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ PyArray\_ShortDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[4])}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ PyArray\_UShortDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[5])}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ PyArray\_IntDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[6])}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ PyArray\_UIntDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[7])}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ PyArray\_LongDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[8])}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ PyArray\_ULongDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[9])}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ PyArray\_LongLongDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[10])}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ PyArray\_ULongLongDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[11])}}
+\DoxyCodeLine{00038\ \textcolor{comment}{/*\ Integer\ aliases\ */}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ PyArray\_Int8DType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[12])}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ PyArray\_UInt8DType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[13])}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ PyArray\_Int16DType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[14])}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ PyArray\_UInt16DType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[15])}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ PyArray\_Int32DType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[16])}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ PyArray\_UInt32DType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[17])}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ PyArray\_Int64DType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[18])}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ PyArray\_UInt64DType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[19])}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ PyArray\_IntpDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[20])}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ PyArray\_UIntpDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[21])}}
+\DoxyCodeLine{00049\ \textcolor{comment}{/*\ Floats\ */}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ PyArray\_HalfDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[22])}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ PyArray\_FloatDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[23])}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ PyArray\_DoubleDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[24])}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ PyArray\_LongDoubleDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[25])}}
+\DoxyCodeLine{00054\ \textcolor{comment}{/*\ Complex\ */}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ PyArray\_CFloatDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[26])}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ PyArray\_CDoubleDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[27])}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ PyArray\_CLongDoubleDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[28])}}
+\DoxyCodeLine{00058\ \textcolor{comment}{/*\ String/Bytes\ */}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ PyArray\_BytesDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[29])}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ PyArray\_UnicodeDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[30])}}
+\DoxyCodeLine{00061\ \textcolor{comment}{/*\ Datetime/Timedelta\ */}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ PyArray\_DatetimeDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[31])}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#define\ PyArray\_TimedeltaDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[32])}}
+\DoxyCodeLine{00064\ \textcolor{comment}{/*\ Object/Void\ */}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ PyArray\_ObjectDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[33])}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ PyArray\_VoidDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[34])}}
+\DoxyCodeLine{00067\ \textcolor{comment}{/*\ Python\ types\ (used\ as\ markers\ for\ scalars)\ */}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ PyArray\_PyLongDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[35])}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#define\ PyArray\_PyFloatDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[36])}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ PyArray\_PyComplexDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[37])}}
+\DoxyCodeLine{00071\ \textcolor{comment}{/*\ Default\ integer\ type\ */}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ PyArray\_DefaultIntDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[38])}}
+\DoxyCodeLine{00073\ \textcolor{comment}{/*\ New\ non-\/legacy\ DTypes\ follow\ in\ the\ order\ they\ were\ added\ */}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ PyArray\_StringDType\ (*(PyArray\_DTypeMeta\ *)(PyArray\_API\ +\ 320)[39])}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{comment}{/*\ NOTE:\ offset\ 40\ is\ free\ */}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{comment}{/*\ Need\ to\ start\ with\ a\ larger\ offset\ again\ for\ the\ abstract\ classes:\ */}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#define\ PyArray\_IntAbstractDType\ (*(PyArray\_DTypeMeta\ *)PyArray\_API[366])}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ PyArray\_FloatAbstractDType\ (*(PyArray\_DTypeMeta\ *)PyArray\_API[367])}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#define\ PyArray\_ComplexAbstractDType\ (*(PyArray\_DTypeMeta\ *)PyArray\_API[368])}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NPY\_INTERNAL\_BUILD\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_\_PUBLIC\_DTYPE\_API\_TABLE\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

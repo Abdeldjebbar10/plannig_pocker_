@@ -1,0 +1,184 @@
+\doxysection{Référence de la classe django.\+db.\+models.\+constraints.\+Base\+Constraint}
+\hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint}{}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint}\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+models.\+constraints.\+Base\+Constraint\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a3064025a40845a8591e98ac3edc8097a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a864c7c8cc0f7553cf10c7b613d6b01e6}{name}}=None, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_afb0b07e39e35a13af4fe784ef6933faf}{violation\+\_\+error\+\_\+code}}=None, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a27d24b0ed8e56038aee2bb50c77d7258}{violation\+\_\+error\+\_\+message}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_adfc38dd34f3d8dd3e8db0fbd7191db70}{contains\+\_\+expressions}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a4e0157f7768331c2db62568990555ba8}{constraint\+\_\+sql}} (self, model, schema\+\_\+editor)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ac7388f77fc34f536f19ce7217d669a83}{create\+\_\+sql}} (self, model, schema\+\_\+editor)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ab7f8d42f181d0b5603094524a9297306}{remove\+\_\+sql}} (self, model, schema\+\_\+editor)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a49c8ebf08694f5e48b47f9bad31fe9d5}{validate}} (self, model, instance, exclude=None, using=DEFAULT\+\_\+\+DB\+\_\+\+ALIAS)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a05e867ca2c893dc40528847caecdf99b}{get\+\_\+violation\+\_\+error\+\_\+message}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a95bb97a88479f7469ad6591035e3d648}{deconstruct}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a0f02e73d4209006f6317758e83ccf8ac}{clone}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a864c7c8cc0f7553cf10c7b613d6b01e6}{name}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ab5de14d49e4f0ef3387f45716f25b2bc}{default\+\_\+violation\+\_\+error\+\_\+message}} = \+\_\+("{}Constraint “\%(\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a864c7c8cc0f7553cf10c7b613d6b01e6}{name}})s” is violated."{})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_afb0b07e39e35a13af4fe784ef6933faf}{violation\+\_\+error\+\_\+code}} = None
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a27d24b0ed8e56038aee2bb50c77d7258}{violation\+\_\+error\+\_\+message}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ac81c08db56e56e1a7b962fd0bfd01939}{\+\_\+check}} (self, model, connection)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ad4158c8308db299108cec5170f50295b}{\+\_\+check\+\_\+references}} (self, model, references)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a3064025a40845a8591e98ac3edc8097a}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a3064025a40845a8591e98ac3edc8097a} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{}]{name = {\ttfamily None},  }\item[{}]{violation\+\_\+error\+\_\+code = {\ttfamily None},  }\item[{}]{violation\+\_\+error\+\_\+message = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1UniqueConstraint_a018c0b38212c64018d24c7235608815b}{django.\+db.\+models.\+constraints.\+Unique\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1CheckConstraint_a30363ddc9b606372a64029b9d2cf91d5}{django.\+db.\+models.\+constraints.\+Check\+Constraint}}, et \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1constraints_1_1ExclusionConstraint_a8beb5cfcf88c2e088c5615bd235fab6f}{django.\+contrib.\+postgres.\+constraints.\+Exclusion\+Constraint}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ac81c08db56e56e1a7b962fd0bfd01939}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ac81c08db56e56e1a7b962fd0bfd01939} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!\_check@{\_check}}
+\index{\_check@{\_check}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{\_check()}{\_check()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+\_\+check (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model,  }\item[{}]{connection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1constraints_1_1ExclusionConstraint_abe75f4db6f710c86e00102d9fed29c8e}{django.\+contrib.\+postgres.\+constraints.\+Exclusion\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1CheckConstraint_afad8a9b4da3e43f469cbef84cfd3bbef}{django.\+db.\+models.\+constraints.\+Check\+Constraint}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1UniqueConstraint_ab72c074a758549cf2e6df1d4ff57cd67}{django.\+db.\+models.\+constraints.\+Unique\+Constraint}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ad4158c8308db299108cec5170f50295b}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ad4158c8308db299108cec5170f50295b} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!\_check\_references@{\_check\_references}}
+\index{\_check\_references@{\_check\_references}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{\_check\_references()}{\_check\_references()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+\_\+check\+\_\+references (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model,  }\item[{}]{references }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a0f02e73d4209006f6317758e83ccf8ac}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a0f02e73d4209006f6317758e83ccf8ac} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!clone@{clone}}
+\index{clone@{clone}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+clone (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a4e0157f7768331c2db62568990555ba8}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a4e0157f7768331c2db62568990555ba8} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!constraint\_sql@{constraint\_sql}}
+\index{constraint\_sql@{constraint\_sql}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{constraint\_sql()}{constraint\_sql()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+constraint\+\_\+sql (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model,  }\item[{}]{schema\+\_\+editor }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1constraints_1_1ExclusionConstraint_a9c7786d94df04c688d948011958a68c1}{django.\+contrib.\+postgres.\+constraints.\+Exclusion\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1CheckConstraint_aa56a99c0f85522e94261cb09b557bea8}{django.\+db.\+models.\+constraints.\+Check\+Constraint}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1UniqueConstraint_ad8e91d3d3fb576b5000de9908877754d}{django.\+db.\+models.\+constraints.\+Unique\+Constraint}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_adfc38dd34f3d8dd3e8db0fbd7191db70}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_adfc38dd34f3d8dd3e8db0fbd7191db70} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!contains\_expressions@{contains\_expressions}}
+\index{contains\_expressions@{contains\_expressions}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{contains\_expressions()}{contains\_expressions()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+contains\+\_\+expressions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1UniqueConstraint_a0a8ff90cf0dffcc2ad2200724e215007}{django.\+db.\+models.\+constraints.\+Unique\+Constraint}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ac7388f77fc34f536f19ce7217d669a83}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ac7388f77fc34f536f19ce7217d669a83} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!create\_sql@{create\_sql}}
+\index{create\_sql@{create\_sql}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{create\_sql()}{create\_sql()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+create\+\_\+sql (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model,  }\item[{}]{schema\+\_\+editor }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1constraints_1_1ExclusionConstraint_a491aa9fcecb71b800a51e96a00892078}{django.\+contrib.\+postgres.\+constraints.\+Exclusion\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1CheckConstraint_a515cb4be80a7dcc0961fe5be44016458}{django.\+db.\+models.\+constraints.\+Check\+Constraint}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1UniqueConstraint_ad0cc45d12329073fac8ae7b419a34cae}{django.\+db.\+models.\+constraints.\+Unique\+Constraint}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a95bb97a88479f7469ad6591035e3d648}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a95bb97a88479f7469ad6591035e3d648} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!deconstruct@{deconstruct}}
+\index{deconstruct@{deconstruct}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{deconstruct()}{deconstruct()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+deconstruct (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1constraints_1_1ExclusionConstraint_ad7f2b1013a1aeb3f6e584282ead19dfb}{django.\+contrib.\+postgres.\+constraints.\+Exclusion\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1CheckConstraint_ac92574d84d50d54d9cffa5abb756b970}{django.\+db.\+models.\+constraints.\+Check\+Constraint}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1UniqueConstraint_a79dd632a14039b180b2b909fefcfce70}{django.\+db.\+models.\+constraints.\+Unique\+Constraint}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a05e867ca2c893dc40528847caecdf99b}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a05e867ca2c893dc40528847caecdf99b} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!get\_violation\_error\_message@{get\_violation\_error\_message}}
+\index{get\_violation\_error\_message@{get\_violation\_error\_message}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{get\_violation\_error\_message()}{get\_violation\_error\_message()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+get\+\_\+violation\+\_\+error\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ab7f8d42f181d0b5603094524a9297306}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ab7f8d42f181d0b5603094524a9297306} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!remove\_sql@{remove\_sql}}
+\index{remove\_sql@{remove\_sql}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{remove\_sql()}{remove\_sql()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+remove\+\_\+sql (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model,  }\item[{}]{schema\+\_\+editor }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1constraints_1_1ExclusionConstraint_a37d7974429acddab78671446925ae323}{django.\+contrib.\+postgres.\+constraints.\+Exclusion\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1CheckConstraint_abd9a27072590c2fd284d27cd15ce5c32}{django.\+db.\+models.\+constraints.\+Check\+Constraint}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1UniqueConstraint_ab15414e4b19d874a865c00e01427dfd1}{django.\+db.\+models.\+constraints.\+Unique\+Constraint}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a49c8ebf08694f5e48b47f9bad31fe9d5}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a49c8ebf08694f5e48b47f9bad31fe9d5} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!validate@{validate}}
+\index{validate@{validate}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+validate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model,  }\item[{}]{instance,  }\item[{}]{exclude = {\ttfamily None},  }\item[{}]{using = {\ttfamily DEFAULT\+\_\+DB\+\_\+ALIAS} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1constraints_1_1ExclusionConstraint_a9cdc95b9adad186c48f18dabd66effca}{django.\+contrib.\+postgres.\+constraints.\+Exclusion\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1CheckConstraint_a0c49f2501ccbac5b7ff5d6bd42ee916a}{django.\+db.\+models.\+constraints.\+Check\+Constraint}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1UniqueConstraint_a7a56603716be4edc47968b95e544f6ce}{django.\+db.\+models.\+constraints.\+Unique\+Constraint}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ab5de14d49e4f0ef3387f45716f25b2bc}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_ab5de14d49e4f0ef3387f45716f25b2bc} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!default\_violation\_error\_message@{default\_violation\_error\_message}}
+\index{default\_violation\_error\_message@{default\_violation\_error\_message}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{default\_violation\_error\_message}{default\_violation\_error\_message}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+default\+\_\+violation\+\_\+error\+\_\+message = \+\_\+("{}Constraint “\%(\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a864c7c8cc0f7553cf10c7b613d6b01e6}{name}})s” is violated."{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a864c7c8cc0f7553cf10c7b613d6b01e6}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a864c7c8cc0f7553cf10c7b613d6b01e6} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!name@{name}}
+\index{name@{name}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+name}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_afb0b07e39e35a13af4fe784ef6933faf}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_afb0b07e39e35a13af4fe784ef6933faf} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!violation\_error\_code@{violation\_error\_code}}
+\index{violation\_error\_code@{violation\_error\_code}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{violation\_error\_code}{violation\_error\_code}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+violation\+\_\+error\+\_\+code = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a27d24b0ed8e56038aee2bb50c77d7258}\label{classdjango_1_1db_1_1models_1_1constraints_1_1BaseConstraint_a27d24b0ed8e56038aee2bb50c77d7258} 
+\index{django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}!violation\_error\_message@{violation\_error\_message}}
+\index{violation\_error\_message@{violation\_error\_message}!django.db.models.constraints.BaseConstraint@{django.db.models.constraints.BaseConstraint}}
+\doxysubsubsection{\texorpdfstring{violation\_error\_message}{violation\_error\_message}}
+{\footnotesize\ttfamily django.\+db.\+models.\+constraints.\+Base\+Constraint.\+violation\+\_\+error\+\_\+message = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/models/\mbox{\hyperlink{db_2models_2constraints_8py}{constraints.\+py}}\end{DoxyCompactItemize}

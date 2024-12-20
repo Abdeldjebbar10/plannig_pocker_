@@ -1,0 +1,470 @@
+\doxysection{Référence de la classe pandas.\+io.\+formats.\+csvs.\+CSVFormatter}
+\hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter}{}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter}\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+
+
+Graphe de collaboration de pandas.\+io.\+formats.\+csvs.\+CSVFormatter\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_afdd6fd17a9ce042ec763cea22fb6785e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter}{Data\+Frame\+Formatter}} formatter, File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]} path\+\_\+or\+\_\+buf="{}"{}, str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a2821599c5976d69165682dd1f101768c}{sep}}="{},"{}, Sequence\mbox{[}Hashable\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aba74984dcbf6009f85b525d06b0d10ed}{cols}}=None, Index\+Label\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab768d53a036090d52c357e9b27c26934}{index\+\_\+label}}=None, str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7caa00f81ad9c0f23efc55b1eae241f8}{mode}}="{}w"{}, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5694e3908846c013560e1b4a619652cc}{encoding}}=None, str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a24e72a232b95f8fc702caedbdb5e9a1e}{errors}}="{}strict"{}, Compression\+Options compression="{}infer"{}, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7bbbc77a3fa65231bf54b2b0004f4073}{quoting}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2799fd53a03fba972ecd5681f6e10bd}{lineterminator}}="{}\textbackslash{}n"{}, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2a0cbe24e88a3b9e5ef56aa226ca477}{chunksize}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a6c786835c0a51f11d89e02c78a231eaa}{quotechar}}=\textquotesingle{}"{}\textquotesingle{}, str \texorpdfstring{$\vert$}{|} None  \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7a47c85bd47c4057e4756a510e2b1354}{date\+\_\+format}}=None, bool  \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa5ade099e2f3856e4d5ab7f3394f0f93}{doublequote}}=True, str \texorpdfstring{$\vert$}{|} None  \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abaa6b6ca53a60540b710e8077c202d46}{escapechar}}=None, Storage\+Options \texorpdfstring{$\vert$}{|} None  \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a9cf9396e1078b7359633db5260eb58f7}{storage\+\_\+options}}=None)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa6d8c8519f841509cd445ac2a3ec9d2b}{na\+\_\+rep}} (self)
+\item 
+Float\+Format\+Type\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1905d9b0b08e28341c8947b7e2038cbf}{float\+\_\+format}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab56d6787da4a09052fa67356e7bb4c71}{decimal}} (self)
+\item 
+bool\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1SequenceNotStr}{Sequence\+Not\+Str}}\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1edbdacc98ee2a94e066434bc9e7afab}{header}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a39cb3ce9ccfbdb587f39be6699f1e4fa}{index}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa0cdcbd331fdb2bbfb44e47b9bb628a0}{has\+\_\+mi\+\_\+columns}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7c5ee0336794cadb6c7b30bbaaa293a2}{data\+\_\+index}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7c16c36802715bbfe4b14d675596b5fe}{nlevels}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1__typing_1_1SequenceNotStr}{Sequence\+Not\+Str}}\mbox{[}Hashable\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3cd2e567979e80c38dba8447ae7c6d96}{write\+\_\+cols}} (self)
+\item 
+list\mbox{[}Hashable\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3d4840ecfde2c0e4d52b9b1407f80080}{encoded\+\_\+labels}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac0232a49bda57eb7380c9eb29487d60b}{save}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3a46f8adb2d257d63fabab16c8dc98c9}{fmt}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a76d699d11e0f1ba733c997985405ceba}{obj}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa9fe62afcbbc7e2e06b36268af2ca697}{filepath\+\_\+or\+\_\+buffer}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5694e3908846c013560e1b4a619652cc}{encoding}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7caa00f81ad9c0f23efc55b1eae241f8}{mode}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a9cf9396e1078b7359633db5260eb58f7}{storage\+\_\+options}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a2821599c5976d69165682dd1f101768c}{sep}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab768d53a036090d52c357e9b27c26934}{index\+\_\+label}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a24e72a232b95f8fc702caedbdb5e9a1e}{errors}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7bbbc77a3fa65231bf54b2b0004f4073}{quoting}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a6c786835c0a51f11d89e02c78a231eaa}{quotechar}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa5ade099e2f3856e4d5ab7f3394f0f93}{doublequote}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abaa6b6ca53a60540b710e8077c202d46}{escapechar}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2799fd53a03fba972ecd5681f6e10bd}{lineterminator}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7a47c85bd47c4057e4756a510e2b1354}{date\+\_\+format}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a42eb9a241da7c97b2fba98e0d6a94769}{cols}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2a0cbe24e88a3b9e5ef56aa226ca477}{chunksize}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a8c8a7a866dc9a999bada1b0a3cafbdf9}{na\+\_\+rep}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a24e208d23880e474b0b7acaeee6daa2d}{float\+\_\+format}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ad6910f17c44bd17360f1f129a59665a6}{decimal}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5fca10605d81f57534e9b361787ff140}{data\+\_\+index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab353501f0ca0289068a5850545e164eb}{header}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a22c39dd5bc70291c1015da77e471fa32}{writer}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a670f4f6d872c83f7a284a3edc5cb662f}{encoded\+\_\+labels}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5da1b9a8187674d6b849b8a04499fadf}{nlevels}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+npt \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aba74984dcbf6009f85b525d06b0d10ed}{cols}} .NDArray\mbox{[}np.\+object\+\_\+\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+Index\+Label \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a70934da9ef70e386fb0cb09a85b227cc}{\+\_\+initialize\+\_\+index\+\_\+label}} (self, Index\+Label\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab768d53a036090d52c357e9b27c26934}{index\+\_\+label}})
+\item 
+Sequence\mbox{[}Hashable\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab6691400e294fa01ad1fb2bd1bae2ee0}{\+\_\+get\+\_\+index\+\_\+label\+\_\+from\+\_\+obj}} (self)
+\item 
+Sequence\mbox{[}Hashable\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a043f27fd4d09474b5007f2b47f73d9f8}{\+\_\+get\+\_\+index\+\_\+label\+\_\+multiindex}} (self)
+\item 
+Sequence\mbox{[}Hashable\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac3b7e5fe602d98818cff2f4997f8f115}{\+\_\+get\+\_\+index\+\_\+label\+\_\+flat}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac6da89992240d5e8a78d6a7453a2dd33}{\+\_\+initialize\+\_\+quotechar}} (self, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a6c786835c0a51f11d89e02c78a231eaa}{quotechar}})
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a2e4167597851cd8e3b5d8fe6503bc42c}{\+\_\+initialize\+\_\+columns}} (self, Iterable\mbox{[}Hashable\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aba74984dcbf6009f85b525d06b0d10ed}{cols}})
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1fd18be1ffab4fedcf8a4e7972602530}{\+\_\+initialize\+\_\+chunksize}} (self, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2a0cbe24e88a3b9e5ef56aa226ca477}{chunksize}})
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab7ec962b9403697e99f4a2cacb634333}{\+\_\+number\+\_\+format}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abfa931a6125d697eb851e8097d45ea4f}{\+\_\+has\+\_\+aliases}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a6fb2176ff934ecfb7a579102645ffd4e}{\+\_\+need\+\_\+to\+\_\+save\+\_\+header}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a167e1e31506a2519826d3819905df98d}{\+\_\+save}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a65dd3766572b52896173aed57a63bf20}{\+\_\+save\+\_\+header}} (self)
+\item 
+Iterator\mbox{[}list\mbox{[}Hashable\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ad74c5bd60582f126381681f235ea40fd}{\+\_\+generate\+\_\+multiindex\+\_\+header\+\_\+rows}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5a8eb6cabf84ed3743b2110be8912f7f}{\+\_\+save\+\_\+body}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a86fe014908ea6ce6d9e48300b450e552}{\+\_\+save\+\_\+chunk}} (self, int start\+\_\+i, int end\+\_\+i)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abc76a453f87a7b53e06273e9c3a134f5}{\+\_\+number\+\_\+format}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_afdd6fd17a9ce042ec763cea22fb6785e}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_afdd6fd17a9ce042ec763cea22fb6785e} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter}{Data\+Frame\+Formatter}}}]{formatter,  }\item[{File\+Path \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]} }]{path\+\_\+or\+\_\+buf = {\ttfamily "{}"{}},  }\item[{str }]{sep = {\ttfamily "{},"{}},  }\item[{Sequence\mbox{[}Hashable\mbox{]} \texorpdfstring{$\vert$}{|} None }]{cols = {\ttfamily None},  }\item[{Index\+Label \texorpdfstring{$\vert$}{|} None }]{index\+\_\+label = {\ttfamily None},  }\item[{str }]{mode = {\ttfamily "{}w"{}},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding = {\ttfamily None},  }\item[{str }]{errors = {\ttfamily "{}strict"{}},  }\item[{Compression\+Options }]{compression = {\ttfamily "{}infer"{}},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{quoting = {\ttfamily None},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{lineterminator = {\ttfamily "{}\textbackslash{}n"{}},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{chunksize = {\ttfamily None},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{quotechar = {\ttfamily \textquotesingle{}"{}\textquotesingle{}},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{date\+\_\+format = {\ttfamily None},  }\item[{bool }]{doublequote = {\ttfamily True},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{escapechar = {\ttfamily None},  }\item[{Storage\+Options \texorpdfstring{$\vert$}{|} None }]{storage\+\_\+options = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ad74c5bd60582f126381681f235ea40fd}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ad74c5bd60582f126381681f235ea40fd} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_generate\_multiindex\_header\_rows@{\_generate\_multiindex\_header\_rows}}
+\index{\_generate\_multiindex\_header\_rows@{\_generate\_multiindex\_header\_rows}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_generate\_multiindex\_header\_rows()}{\_generate\_multiindex\_header\_rows()}}
+{\footnotesize\ttfamily  Iterator\mbox{[}list\mbox{[}Hashable\mbox{]}\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+generate\+\_\+multiindex\+\_\+header\+\_\+rows (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac3b7e5fe602d98818cff2f4997f8f115}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac3b7e5fe602d98818cff2f4997f8f115} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_get\_index\_label\_flat@{\_get\_index\_label\_flat}}
+\index{\_get\_index\_label\_flat@{\_get\_index\_label\_flat}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_get\_index\_label\_flat()}{\_get\_index\_label\_flat()}}
+{\footnotesize\ttfamily  Sequence\mbox{[}Hashable\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+get\+\_\+index\+\_\+label\+\_\+flat (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab6691400e294fa01ad1fb2bd1bae2ee0}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab6691400e294fa01ad1fb2bd1bae2ee0} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_get\_index\_label\_from\_obj@{\_get\_index\_label\_from\_obj}}
+\index{\_get\_index\_label\_from\_obj@{\_get\_index\_label\_from\_obj}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_get\_index\_label\_from\_obj()}{\_get\_index\_label\_from\_obj()}}
+{\footnotesize\ttfamily  Sequence\mbox{[}Hashable\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+get\+\_\+index\+\_\+label\+\_\+from\+\_\+obj (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a043f27fd4d09474b5007f2b47f73d9f8}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a043f27fd4d09474b5007f2b47f73d9f8} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_get\_index\_label\_multiindex@{\_get\_index\_label\_multiindex}}
+\index{\_get\_index\_label\_multiindex@{\_get\_index\_label\_multiindex}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_get\_index\_label\_multiindex()}{\_get\_index\_label\_multiindex()}}
+{\footnotesize\ttfamily  Sequence\mbox{[}Hashable\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+get\+\_\+index\+\_\+label\+\_\+multiindex (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abfa931a6125d697eb851e8097d45ea4f}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abfa931a6125d697eb851e8097d45ea4f} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_has\_aliases@{\_has\_aliases}}
+\index{\_has\_aliases@{\_has\_aliases}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_has\_aliases()}{\_has\_aliases()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+has\+\_\+aliases (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1fd18be1ffab4fedcf8a4e7972602530}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1fd18be1ffab4fedcf8a4e7972602530} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_initialize\_chunksize@{\_initialize\_chunksize}}
+\index{\_initialize\_chunksize@{\_initialize\_chunksize}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_initialize\_chunksize()}{\_initialize\_chunksize()}}
+{\footnotesize\ttfamily  int pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+initialize\+\_\+chunksize (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} None}]{chunksize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a2e4167597851cd8e3b5d8fe6503bc42c}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a2e4167597851cd8e3b5d8fe6503bc42c} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_initialize\_columns@{\_initialize\_columns}}
+\index{\_initialize\_columns@{\_initialize\_columns}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_initialize\_columns()}{\_initialize\_columns()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+initialize\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Iterable\mbox{[}Hashable\mbox{]} \texorpdfstring{$\vert$}{|} None     }]{cols }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a70934da9ef70e386fb0cb09a85b227cc}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a70934da9ef70e386fb0cb09a85b227cc} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_initialize\_index\_label@{\_initialize\_index\_label}}
+\index{\_initialize\_index\_label@{\_initialize\_index\_label}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_initialize\_index\_label()}{\_initialize\_index\_label()}}
+{\footnotesize\ttfamily  Index\+Label pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+initialize\+\_\+index\+\_\+label (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Index\+Label \texorpdfstring{$\vert$}{|} None}]{index\+\_\+label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac6da89992240d5e8a78d6a7453a2dd33}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac6da89992240d5e8a78d6a7453a2dd33} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_initialize\_quotechar@{\_initialize\_quotechar}}
+\index{\_initialize\_quotechar@{\_initialize\_quotechar}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_initialize\_quotechar()}{\_initialize\_quotechar()}}
+{\footnotesize\ttfamily  str \texorpdfstring{$\vert$}{|} None pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+initialize\+\_\+quotechar (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str \texorpdfstring{$\vert$}{|} None}]{quotechar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a6fb2176ff934ecfb7a579102645ffd4e}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a6fb2176ff934ecfb7a579102645ffd4e} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_need\_to\_save\_header@{\_need\_to\_save\_header}}
+\index{\_need\_to\_save\_header@{\_need\_to\_save\_header}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_need\_to\_save\_header()}{\_need\_to\_save\_header()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+need\+\_\+to\+\_\+save\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab7ec962b9403697e99f4a2cacb634333}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab7ec962b9403697e99f4a2cacb634333} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_number\_format@{\_number\_format}}
+\index{\_number\_format@{\_number\_format}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_number\_format()}{\_number\_format()}}
+{\footnotesize\ttfamily  dict\mbox{[}str, Any\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+number\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Dictionary used for storing number formatting settings.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a167e1e31506a2519826d3819905df98d}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a167e1e31506a2519826d3819905df98d} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_save@{\_save}}
+\index{\_save@{\_save}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_save()}{\_save()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+save (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5a8eb6cabf84ed3743b2110be8912f7f}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5a8eb6cabf84ed3743b2110be8912f7f} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_save\_body@{\_save\_body}}
+\index{\_save\_body@{\_save\_body}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_save\_body()}{\_save\_body()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+save\+\_\+body (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a86fe014908ea6ce6d9e48300b450e552}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a86fe014908ea6ce6d9e48300b450e552} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_save\_chunk@{\_save\_chunk}}
+\index{\_save\_chunk@{\_save\_chunk}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_save\_chunk()}{\_save\_chunk()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+save\+\_\+chunk (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{start\+\_\+i,  }\item[{int}]{end\+\_\+i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a65dd3766572b52896173aed57a63bf20}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a65dd3766572b52896173aed57a63bf20} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_save\_header@{\_save\_header}}
+\index{\_save\_header@{\_save\_header}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_save\_header()}{\_save\_header()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+save\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7c5ee0336794cadb6c7b30bbaaa293a2}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7c5ee0336794cadb6c7b30bbaaa293a2} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!data\_index@{data\_index}}
+\index{data\_index@{data\_index}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{data\_index()}{data\_index()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+data\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab56d6787da4a09052fa67356e7bb4c71}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab56d6787da4a09052fa67356e7bb4c71} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!decimal@{decimal}}
+\index{decimal@{decimal}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{decimal()}{decimal()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+decimal (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3d4840ecfde2c0e4d52b9b1407f80080}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3d4840ecfde2c0e4d52b9b1407f80080} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!encoded\_labels@{encoded\_labels}}
+\index{encoded\_labels@{encoded\_labels}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{encoded\_labels()}{encoded\_labels()}}
+{\footnotesize\ttfamily  list\mbox{[}Hashable\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+encoded\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1905d9b0b08e28341c8947b7e2038cbf}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1905d9b0b08e28341c8947b7e2038cbf} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!float\_format@{float\_format}}
+\index{float\_format@{float\_format}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{float\_format()}{float\_format()}}
+{\footnotesize\ttfamily  Float\+Format\+Type \texorpdfstring{$\vert$}{|} None pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+float\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa0cdcbd331fdb2bbfb44e47b9bb628a0}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa0cdcbd331fdb2bbfb44e47b9bb628a0} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!has\_mi\_columns@{has\_mi\_columns}}
+\index{has\_mi\_columns@{has\_mi\_columns}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{has\_mi\_columns()}{has\_mi\_columns()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+has\+\_\+mi\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1edbdacc98ee2a94e066434bc9e7afab}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a1edbdacc98ee2a94e066434bc9e7afab} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!header@{header}}
+\index{header@{header}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{header()}{header()}}
+{\footnotesize\ttfamily  bool \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1SequenceNotStr}{Sequence\+Not\+Str}}\mbox{[}str\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+header (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a39cb3ce9ccfbdb587f39be6699f1e4fa}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a39cb3ce9ccfbdb587f39be6699f1e4fa} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!index@{index}}
+\index{index@{index}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+index (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa6d8c8519f841509cd445ac2a3ec9d2b}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa6d8c8519f841509cd445ac2a3ec9d2b} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!na\_rep@{na\_rep}}
+\index{na\_rep@{na\_rep}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{na\_rep()}{na\_rep()}}
+{\footnotesize\ttfamily  str pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+na\+\_\+rep (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7c16c36802715bbfe4b14d675596b5fe}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7c16c36802715bbfe4b14d675596b5fe} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!nlevels@{nlevels}}
+\index{nlevels@{nlevels}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{nlevels()}{nlevels()}}
+{\footnotesize\ttfamily  int pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+nlevels (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac0232a49bda57eb7380c9eb29487d60b}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ac0232a49bda57eb7380c9eb29487d60b} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!save@{save}}
+\index{save@{save}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+save (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create the writer & save.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3cd2e567979e80c38dba8447ae7c6d96}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3cd2e567979e80c38dba8447ae7c6d96} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!write\_cols@{write\_cols}}
+\index{write\_cols@{write\_cols}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{write\_cols()}{write\_cols()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1__typing_1_1SequenceNotStr}{Sequence\+Not\+Str}}\mbox{[}Hashable\mbox{]} pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+write\+\_\+cols (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abc76a453f87a7b53e06273e9c3a134f5}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abc76a453f87a7b53e06273e9c3a134f5} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!\_number\_format@{\_number\_format}}
+\index{\_number\_format@{\_number\_format}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{\_number\_format}{\_number\_format}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+\_\+number\+\_\+format\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2a0cbe24e88a3b9e5ef56aa226ca477}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2a0cbe24e88a3b9e5ef56aa226ca477} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!chunksize@{chunksize}}
+\index{chunksize@{chunksize}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{chunksize}{chunksize}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+chunksize}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aba74984dcbf6009f85b525d06b0d10ed}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aba74984dcbf6009f85b525d06b0d10ed} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!cols@{cols}}
+\index{cols@{cols}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily npt pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+cols .NDArray\mbox{[}np.\+object\+\_\+\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a42eb9a241da7c97b2fba98e0d6a94769}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a42eb9a241da7c97b2fba98e0d6a94769} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!cols@{cols}}
+\index{cols@{cols}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+cols}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5fca10605d81f57534e9b361787ff140}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5fca10605d81f57534e9b361787ff140} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!data\_index@{data\_index}}
+\index{data\_index@{data\_index}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{data\_index}{data\_index}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+data\+\_\+index}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7a47c85bd47c4057e4756a510e2b1354}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7a47c85bd47c4057e4756a510e2b1354} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!date\_format@{date\_format}}
+\index{date\_format@{date\_format}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{date\_format}{date\_format}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+date\+\_\+format}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ad6910f17c44bd17360f1f129a59665a6}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ad6910f17c44bd17360f1f129a59665a6} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!decimal@{decimal}}
+\index{decimal@{decimal}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{decimal}{decimal}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+decimal}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa5ade099e2f3856e4d5ab7f3394f0f93}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa5ade099e2f3856e4d5ab7f3394f0f93} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!doublequote@{doublequote}}
+\index{doublequote@{doublequote}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{doublequote}{doublequote}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+doublequote}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a670f4f6d872c83f7a284a3edc5cb662f}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a670f4f6d872c83f7a284a3edc5cb662f} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!encoded\_labels@{encoded\_labels}}
+\index{encoded\_labels@{encoded\_labels}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{encoded\_labels}{encoded\_labels}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+encoded\+\_\+labels}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5694e3908846c013560e1b4a619652cc}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5694e3908846c013560e1b4a619652cc} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!encoding@{encoding}}
+\index{encoding@{encoding}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+encoding}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a24e72a232b95f8fc702caedbdb5e9a1e}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a24e72a232b95f8fc702caedbdb5e9a1e} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!errors@{errors}}
+\index{errors@{errors}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{errors}{errors}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+errors}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abaa6b6ca53a60540b710e8077c202d46}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_abaa6b6ca53a60540b710e8077c202d46} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!escapechar@{escapechar}}
+\index{escapechar@{escapechar}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{escapechar}{escapechar}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+escapechar}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa9fe62afcbbc7e2e06b36268af2ca697}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_aa9fe62afcbbc7e2e06b36268af2ca697} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!filepath\_or\_buffer@{filepath\_or\_buffer}}
+\index{filepath\_or\_buffer@{filepath\_or\_buffer}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{filepath\_or\_buffer}{filepath\_or\_buffer}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+filepath\+\_\+or\+\_\+buffer}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a24e208d23880e474b0b7acaeee6daa2d}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a24e208d23880e474b0b7acaeee6daa2d} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!float\_format@{float\_format}}
+\index{float\_format@{float\_format}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{float\_format}{float\_format}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+float\+\_\+format}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3a46f8adb2d257d63fabab16c8dc98c9}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a3a46f8adb2d257d63fabab16c8dc98c9} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!fmt@{fmt}}
+\index{fmt@{fmt}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{fmt}{fmt}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+fmt}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab353501f0ca0289068a5850545e164eb}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab353501f0ca0289068a5850545e164eb} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!header@{header}}
+\index{header@{header}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+header}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab768d53a036090d52c357e9b27c26934}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_ab768d53a036090d52c357e9b27c26934} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!index\_label@{index\_label}}
+\index{index\_label@{index\_label}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{index\_label}{index\_label}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+index\+\_\+label}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2799fd53a03fba972ecd5681f6e10bd}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_af2799fd53a03fba972ecd5681f6e10bd} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!lineterminator@{lineterminator}}
+\index{lineterminator@{lineterminator}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{lineterminator}{lineterminator}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+lineterminator}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7caa00f81ad9c0f23efc55b1eae241f8}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7caa00f81ad9c0f23efc55b1eae241f8} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!mode@{mode}}
+\index{mode@{mode}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+mode}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a8c8a7a866dc9a999bada1b0a3cafbdf9}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a8c8a7a866dc9a999bada1b0a3cafbdf9} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!na\_rep@{na\_rep}}
+\index{na\_rep@{na\_rep}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{na\_rep}{na\_rep}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+na\+\_\+rep}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5da1b9a8187674d6b849b8a04499fadf}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a5da1b9a8187674d6b849b8a04499fadf} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!nlevels@{nlevels}}
+\index{nlevels@{nlevels}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{nlevels}{nlevels}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+nlevels}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a76d699d11e0f1ba733c997985405ceba}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a76d699d11e0f1ba733c997985405ceba} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!obj@{obj}}
+\index{obj@{obj}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+obj}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a6c786835c0a51f11d89e02c78a231eaa}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a6c786835c0a51f11d89e02c78a231eaa} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!quotechar@{quotechar}}
+\index{quotechar@{quotechar}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{quotechar}{quotechar}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+quotechar}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7bbbc77a3fa65231bf54b2b0004f4073}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a7bbbc77a3fa65231bf54b2b0004f4073} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!quoting@{quoting}}
+\index{quoting@{quoting}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{quoting}{quoting}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+quoting}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a2821599c5976d69165682dd1f101768c}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a2821599c5976d69165682dd1f101768c} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!sep@{sep}}
+\index{sep@{sep}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{sep}{sep}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+sep}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a9cf9396e1078b7359633db5260eb58f7}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a9cf9396e1078b7359633db5260eb58f7} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!storage\_options@{storage\_options}}
+\index{storage\_options@{storage\_options}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{storage\_options}{storage\_options}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+storage\+\_\+options}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a22c39dd5bc70291c1015da77e471fa32}\label{classpandas_1_1io_1_1formats_1_1csvs_1_1CSVFormatter_a22c39dd5bc70291c1015da77e471fa32} 
+\index{pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}!writer@{writer}}
+\index{writer@{writer}!pandas.io.formats.csvs.CSVFormatter@{pandas.io.formats.csvs.CSVFormatter}}
+\doxysubsubsection{\texorpdfstring{writer}{writer}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+csvs.\+CSVFormatter.\+writer}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/formats/\mbox{\hyperlink{csvs_8py}{csvs.\+py}}\end{DoxyCompactItemize}

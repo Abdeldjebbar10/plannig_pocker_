@@ -1,0 +1,209 @@
+\doxysection{Référence de la classe numpy.\+lib.\+\_\+version.\+Numpy\+Version}
+\hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion}{}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion}\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a3074067c42e35a1481b4c034cb969557}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a042f75c1c65f7a901b91cae401bb61b4}{vstring}})
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a7ec16cdff4d11e15f1800d7493d62297}{\+\_\+\+\_\+lt\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a6196b13b199da023ea8c67f31df957eb}{\+\_\+\+\_\+le\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aaf749851eb55dc7d271ac80f5163eb6f}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a836421f07d47ad075baf90b678bc69cb}{\+\_\+\+\_\+ne\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aaeeebb2b2c4861f058489681d83a6a61}{\+\_\+\+\_\+gt\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a1ff6baada7816f318d96e4d559d09e84}{\+\_\+\+\_\+ge\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_afbd24981b49e6fdbeb38b3a615dad77d}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a042f75c1c65f7a901b91cae401bb61b4}{vstring}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a05b4ffec77bb94e926578505f5177958}{version}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a284ef8d82bae5490a0285f8e9451b07a}{major}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a66974a2046d5f5889e9928d1563e7ca0}{minor}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a897424190920514c101d41b25fa93e4d}{bugfix}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a479826630dde458719fe8b9c02193a36}{pre\+\_\+release}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_ac3f3e34217ad17e833339fb5b1377335}{is\+\_\+devversion}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aa1f7e54597ce27b7ac8eeeb60c81fa36}{\+\_\+compare\+\_\+version}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a439124b23b819899597f475027977fed}{\+\_\+compare\+\_\+pre\+\_\+release}} (self, other)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a9ba84a5c9b8fc3e60d1f23cafe6664dc}{\+\_\+compare}} (self, other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Parse and compare numpy version strings.
+
+NumPy has the following versioning scheme (numbers given are examples; they
+can be > 9 in principle):
+
+- Released version: '1.8.0', '1.8.1', etc.
+- Alpha: '1.8.0a1', '1.8.0a2', etc.
+- Beta: '1.8.0b1', '1.8.0b2', etc.
+- Release candidates: '1.8.0rc1', '1.8.0rc2', etc.
+- Development versions: '1.8.0.dev-f1234afa' (git commit hash appended)
+- Development versions after a1: '1.8.0a1.dev-f1234afa',
+                                 '1.8.0b2.dev-f1234afa',
+                                 '1.8.1rc1.dev-f1234afa', etc.
+- Development versions (no git hash available): '1.8.0.dev-Unknown'
+
+Comparing needs to be done against a valid version string or other
+`NumpyVersion` instance. Note that all development versions of the same
+(pre-)release compare equal.
+
+Parameters
+----------
+vstring : str
+    NumPy version string (``np.__version__``).
+
+Examples
+--------
+>>> from numpy.lib import NumpyVersion
+>>> if NumpyVersion(np.__version__) < '1.7.0':
+...     print('skip')
+>>> # skip
+
+>>> NumpyVersion('1.7')  # raises ValueError, add ".0"
+Traceback (most recent call last):
+    ...
+ValueError: Not a valid numpy version string\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a3074067c42e35a1481b4c034cb969557}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a3074067c42e35a1481b4c034cb969557} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{vstring }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aaf749851eb55dc7d271ac80f5163eb6f}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aaf749851eb55dc7d271ac80f5163eb6f} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a1ff6baada7816f318d96e4d559d09e84}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a1ff6baada7816f318d96e4d559d09e84} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_\_ge\_\_@{\_\_ge\_\_}}
+\index{\_\_ge\_\_@{\_\_ge\_\_}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_\_ge\_\_()}{\_\_ge\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+\+\_\+ge\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aaeeebb2b2c4861f058489681d83a6a61}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aaeeebb2b2c4861f058489681d83a6a61} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_\_gt\_\_@{\_\_gt\_\_}}
+\index{\_\_gt\_\_@{\_\_gt\_\_}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_\_gt\_\_()}{\_\_gt\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+\+\_\+gt\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a6196b13b199da023ea8c67f31df957eb}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a6196b13b199da023ea8c67f31df957eb} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_\_le\_\_@{\_\_le\_\_}}
+\index{\_\_le\_\_@{\_\_le\_\_}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_\_le\_\_()}{\_\_le\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+\+\_\+le\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a7ec16cdff4d11e15f1800d7493d62297}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a7ec16cdff4d11e15f1800d7493d62297} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_\_lt\_\_@{\_\_lt\_\_}}
+\index{\_\_lt\_\_@{\_\_lt\_\_}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_\_lt\_\_()}{\_\_lt\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+\+\_\+lt\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a836421f07d47ad075baf90b678bc69cb}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a836421f07d47ad075baf90b678bc69cb} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_\_ne\_\_@{\_\_ne\_\_}}
+\index{\_\_ne\_\_@{\_\_ne\_\_}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_\_ne\_\_()}{\_\_ne\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+\+\_\+ne\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_afbd24981b49e6fdbeb38b3a615dad77d}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_afbd24981b49e6fdbeb38b3a615dad77d} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a9ba84a5c9b8fc3e60d1f23cafe6664dc}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a9ba84a5c9b8fc3e60d1f23cafe6664dc} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_compare@{\_compare}}
+\index{\_compare@{\_compare}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_compare()}{\_compare()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+compare (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a439124b23b819899597f475027977fed}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a439124b23b819899597f475027977fed} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_compare\_pre\_release@{\_compare\_pre\_release}}
+\index{\_compare\_pre\_release@{\_compare\_pre\_release}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_compare\_pre\_release()}{\_compare\_pre\_release()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+compare\+\_\+pre\+\_\+release (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Compare alpha/beta/rc/final.\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aa1f7e54597ce27b7ac8eeeb60c81fa36}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_aa1f7e54597ce27b7ac8eeeb60c81fa36} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!\_compare\_version@{\_compare\_version}}
+\index{\_compare\_version@{\_compare\_version}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{\_compare\_version()}{\_compare\_version()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+\_\+compare\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Compare major.minor.bugfix\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a897424190920514c101d41b25fa93e4d}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a897424190920514c101d41b25fa93e4d} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!bugfix@{bugfix}}
+\index{bugfix@{bugfix}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{bugfix}{bugfix}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+bugfix}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_ac3f3e34217ad17e833339fb5b1377335}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_ac3f3e34217ad17e833339fb5b1377335} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!is\_devversion@{is\_devversion}}
+\index{is\_devversion@{is\_devversion}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{is\_devversion}{is\_devversion}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+is\+\_\+devversion}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a284ef8d82bae5490a0285f8e9451b07a}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a284ef8d82bae5490a0285f8e9451b07a} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!major@{major}}
+\index{major@{major}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{major}{major}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+major}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a66974a2046d5f5889e9928d1563e7ca0}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a66974a2046d5f5889e9928d1563e7ca0} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!minor@{minor}}
+\index{minor@{minor}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{minor}{minor}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+minor}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a479826630dde458719fe8b9c02193a36}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a479826630dde458719fe8b9c02193a36} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!pre\_release@{pre\_release}}
+\index{pre\_release@{pre\_release}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{pre\_release}{pre\_release}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+pre\+\_\+release}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a05b4ffec77bb94e926578505f5177958}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a05b4ffec77bb94e926578505f5177958} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!version@{version}}
+\index{version@{version}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+version}
+
+\Hypertarget{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a042f75c1c65f7a901b91cae401bb61b4}\label{classnumpy_1_1lib_1_1__version_1_1NumpyVersion_a042f75c1c65f7a901b91cae401bb61b4} 
+\index{numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}!vstring@{vstring}}
+\index{vstring@{vstring}!numpy.lib.\_version.NumpyVersion@{numpy.lib.\_version.NumpyVersion}}
+\doxysubsubsection{\texorpdfstring{vstring}{vstring}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+version.\+Numpy\+Version.\+vstring}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/lib/\mbox{\hyperlink{numpy_2lib_2__version_8py}{\+\_\+version.\+py}}\end{DoxyCompactItemize}

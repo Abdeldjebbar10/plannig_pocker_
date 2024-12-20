@@ -1,0 +1,49 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+core.\+internals.\+array\+\_\+manager}
+\hypertarget{namespacepandas_1_1core_1_1internals_1_1array__manager}{}\label{namespacepandas_1_1core_1_1internals_1_1array__manager}\index{pandas.core.internals.array\_manager@{pandas.core.internals.array\_manager}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1ArrayManager}{Array\+Manager}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager}{Base\+Array\+Manager}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy}{Null\+Array\+Proxy}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager}{Single\+Array\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+Array\+Like \mbox{\hyperlink{namespacepandas_1_1core_1_1internals_1_1array__manager_ae4b8fa486653979f4d99ccb005a27cd8}{concat\+\_\+arrays}} (list to\+\_\+concat)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Experimental manager based on storing a collection of 1D arrays
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1core_1_1internals_1_1array__manager_ae4b8fa486653979f4d99ccb005a27cd8}\label{namespacepandas_1_1core_1_1internals_1_1array__manager_ae4b8fa486653979f4d99ccb005a27cd8} 
+\index{pandas.core.internals.array\_manager@{pandas.core.internals.array\_manager}!concat\_arrays@{concat\_arrays}}
+\index{concat\_arrays@{concat\_arrays}!pandas.core.internals.array\_manager@{pandas.core.internals.array\_manager}}
+\doxysubsubsection{\texorpdfstring{concat\_arrays()}{concat\_arrays()}}
+{\footnotesize\ttfamily  Array\+Like pandas.\+core.\+internals.\+array\+\_\+manager.\+concat\+\_\+arrays (\begin{DoxyParamCaption}\item[{list}]{to\+\_\+concat }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Alternative for concat_compat but specialized for use in the ArrayManager.
+
+Differences: only deals with 1D arrays (no axis keyword), assumes
+ensure_wrapped_if_datetimelike and does not skip empty arrays to determine
+the dtype.
+In addition ensures that all NullArrayProxies get replaced with actual
+arrays.
+
+Parameters
+----------
+to_concat : list of arrays
+
+Returns
+-------
+np.ndarray or ExtensionArray
+\end{DoxyVerb}
+ 

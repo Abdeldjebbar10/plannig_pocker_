@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Poker_Project: Référence du fichier env/lib/python3.12/site-packages/numpy/f2py/src/fortranobject.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Poker_Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e51542386d3b21171ca4996d416c0411.html">env</a></li><li class="navelem"><a class="el" href="dir_e3b0e9b4c6949bb4ce30804317f04101.html">lib</a></li><li class="navelem"><a class="el" href="dir_090d6b1bbaab8253eaebbb1be92fcb15.html">python3.12</a></li><li class="navelem"><a class="el" href="dir_9ed114b829ee44716c2ce801f69393bc.html">site-packages</a></li><li class="navelem"><a class="el" href="dir_40b7ca29aedb8db0847603dbe37f62d1.html">numpy</a></li><li class="navelem"><a class="el" href="dir_f7a7ba746510cd8a929fc9fa29f16ade.html">f2py</a></li><li class="navelem"><a class="el" href="dir_b915de1e4e5d553be55cd591528e6b8f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier fortranobject.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="fortranobject_8h_source.html">fortranobject.h</a>&quot;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de fortranobject.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="fortranobject_8c__incl.png" border="0" usemap="#aenv_2lib_2python3_812_2site-packages_2numpy_2f2py_2src_2fortranobject_8c" alt=""/></div>
+<map name="aenv_2lib_2python3_812_2site-packages_2numpy_2f2py_2src_2fortranobject_8c" id="aenv_2lib_2python3_812_2site-packages_2numpy_2f2py_2src_2fortranobject_8c">
+<area shape="rect" title=" " alt="" coords="459,5,636,60"/>
+<area shape="rect" href="fortranobject_8h.html" title=" " alt="" coords="320,108,439,133"/>
+<area shape="poly" title=" " alt="" coords="497,62,415,104,413,99,495,58"/>
+<area shape="rect" title=" " alt="" coords="462,108,537,133"/>
+<area shape="poly" title=" " alt="" coords="535,61,515,97,510,95,530,59"/>
+<area shape="rect" title=" " alt="" coords="561,108,632,133"/>
+<area shape="poly" title=" " alt="" coords="565,59,585,95,581,97,560,61"/>
+<area shape="rect" title=" " alt="" coords="656,108,727,133"/>
+<area shape="poly" title=" " alt="" coords="593,58,662,99,659,103,590,62"/>
+<area shape="rect" title=" " alt="" coords="368,489,447,515"/>
+<area shape="poly" title=" " alt="" coords="321,135,228,155,125,184,80,202,43,222,19,244,12,255,10,266,10,342,10,397,17,418,35,439,57,453,90,465,177,482,272,492,355,497,354,502,272,497,176,487,89,470,55,458,31,443,12,421,5,398,5,342,5,266,7,253,14,240,40,218,78,197,123,179,226,150,320,130"/>
+<area shape="rect" href="arrayobject_8h.html" title=" " alt="" coords="301,181,458,207"/>
+<area shape="poly" title=" " alt="" coords="382,134,382,168,377,168,377,134"/>
+<area shape="rect" href="npy__3kcompat_8h.html" title=" " alt="" coords="539,328,718,353"/>
+<area shape="poly" title=" " alt="" coords="401,131,472,179,552,252,612,316,608,320,548,256,468,183,398,136"/>
+<area shape="rect" href="ndarrayobject_8h.html" title=" " alt="" coords="317,255,441,280"/>
+<area shape="poly" title=" " alt="" coords="382,207,382,241,377,241,377,207"/>
+<area shape="poly" title=" " alt="" coords="383,280,407,476,402,476,378,281"/>
+<area shape="rect" href="ndarraytypes_8h.html" title=" " alt="" coords="863,328,983,353"/>
+<area shape="poly" title=" " alt="" coords="442,274,850,327,850,332,441,279"/>
+<area shape="rect" href="dtype__api_8h.html" title=" " alt="" coords="417,328,515,353"/>
+<area shape="poly" title=" " alt="" coords="395,278,443,317,440,321,392,282"/>
+<area shape="rect" href="____multiarray__api_8h.html" title=" " alt="" coords="45,328,188,353"/>
+<area shape="poly" title=" " alt="" coords="338,283,173,327,172,322,337,277"/>
+<area shape="rect" href="npy__2__compat_8h.html" title=" " alt="" coords="212,328,341,353"/>
+<area shape="poly" title=" " alt="" coords="364,282,306,322,303,318,361,278"/>
+<area shape="rect" href="npy__common_8h.html" title=" " alt="" coords="565,409,687,434"/>
+<area shape="poly" title=" " alt="" coords="881,356,683,408,682,403,880,351"/>
+<area shape="rect" href="npy__endian_8h.html" title=" " alt="" coords="1227,409,1337,434"/>
+<area shape="poly" title=" " alt="" coords="983,351,1209,399,1226,403,1225,408,1208,404,982,356"/>
+<area shape="rect" href="npy__cpu_8h.html" title=" " alt="" coords="1146,489,1234,515"/>
+<area shape="poly" title=" " alt="" coords="984,347,1089,367,1136,382,1167,399,1179,417,1187,436,1193,475,1188,476,1182,438,1175,419,1163,403,1134,386,1088,372,983,352"/>
+<area shape="rect" href="utils_8h.html" title=" " alt="" coords="892,409,955,434"/>
+<area shape="poly" title=" " alt="" coords="926,354,926,395,921,395,921,354"/>
+<area shape="rect" href="__neighborhood__iterator__imp_8h.html" title=" " alt="" coords="979,401,1153,441"/>
+<area shape="poly" title=" " alt="" coords="946,351,1021,392,1018,397,943,356"/>
+<area shape="rect" href="npy__1__7__deprecated__api_8h.html" title=" " alt="" coords="712,401,868,441"/>
+<area shape="poly" title=" " alt="" coords="905,356,835,397,833,392,902,351"/>
+<area shape="poly" title=" " alt="" coords="595,437,453,487,451,482,593,431"/>
+<area shape="rect" href="numpyconfig_8h.html" title=" " alt="" coords="792,563,911,588"/>
+<area shape="poly" title=" " alt="" coords="602,436,575,452,550,471,536,492,536,503,541,513,556,525,579,535,640,551,711,562,779,568,778,573,710,567,639,557,577,540,553,529,537,516,531,504,531,491,546,468,572,447,600,432"/>
+<area shape="rect" title=" " alt="" coords="762,489,858,515"/>
+<area shape="poly" title=" " alt="" coords="654,432,772,482,770,487,652,436"/>
+<area shape="rect" title=" " alt="" coords="882,489,957,515"/>
+<area shape="poly" title=" " alt="" coords="669,431,870,485,868,490,668,437"/>
+<area shape="rect" title=" " alt="" coords="551,489,642,515"/>
+<area shape="poly" title=" " alt="" coords="624,435,608,477,603,475,619,433"/>
+<area shape="rect" title=" " alt="" coords="667,489,737,515"/>
+<area shape="poly" title=" " alt="" coords="639,432,683,478,679,481,635,436"/>
+<area shape="rect" href="__numpyconfig_8h.html" title=" " alt="" coords="789,636,914,661"/>
+<area shape="poly" title=" " alt="" coords="854,588,854,622,849,622,849,588"/>
+<area shape="poly" title=" " alt="" coords="1270,436,1216,482,1212,478,1267,432"/>
+<area shape="poly" title=" " alt="" coords="1146,515,920,562,919,557,1145,510"/>
+<area shape="rect" href="__public__dtype__api__table_8h.html" title=" " alt="" coords="45,401,207,441"/>
+<area shape="poly" title=" " alt="" coords="121,353,125,387,120,388,115,354"/>
+<area shape="poly" title=" " alt="" coords="566,356,513,374,487,387,464,403,448,420,435,439,418,477,413,475,431,436,444,417,460,399,484,382,511,369,564,351"/>
+<area shape="poly" title=" " alt="" coords="631,354,630,395,624,395,626,353"/>
+<area shape="rect" title=" " alt="" coords="474,409,541,434"/>
+<area shape="poly" title=" " alt="" coords="612,356,538,403,535,399,609,351"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0d30258a0d86b7d3c11499e2754a6087" id="r_a0d30258a0d86b7d3c11499e2754a6087"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a0d30258a0d86b7d3c11499e2754a6087">FORTRANOBJECT_C</a></td></tr>
+<tr class="separator:a0d30258a0d86b7d3c11499e2754a6087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38eb56fff49b938b9b8144bdff9847f1" id="r_a38eb56fff49b938b9b8144bdff9847f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a38eb56fff49b938b9b8144bdff9847f1">F2PY_REPORT_ON_ARRAY_COPY_FROMARR</a></td></tr>
+<tr class="separator:a38eb56fff49b938b9b8144bdff9847f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdfddd3f733bd9f8fcd0f92cf5937f0a" id="r_afdfddd3f733bd9f8fcd0f92cf5937f0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#afdfddd3f733bd9f8fcd0f92cf5937f0a">F2PY_REPORT_ON_ARRAY_COPY_FROMANY</a></td></tr>
+<tr class="separator:afdfddd3f733bd9f8fcd0f92cf5937f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90222168aa5567a5331a7131be6661cd" id="r_a90222168aa5567a5331a7131be6661cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a90222168aa5567a5331a7131be6661cd">SWAPTYPE</a>(a,  b,  <a class="el" href="callback_2foo_8f.html#a50e16bc59be823d9ec58240a76a1a971">t</a>)</td></tr>
+<tr class="separator:a90222168aa5567a5331a7131be6661cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7015ea6b7d15ee295bf2723e9005d04" id="r_af7015ea6b7d15ee295bf2723e9005d04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#af7015ea6b7d15ee295bf2723e9005d04">ARRAY_ISCOMPATIBLE</a>(arr,  type_num)</td></tr>
+<tr class="separator:af7015ea6b7d15ee295bf2723e9005d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a2d2cd80d26a497f8510baaea353b4a1b" id="r_a2d2cd80d26a497f8510baaea353b4a1b"><td class="memItemLeft" align="right" valign="top">typedef PyObject *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a2d2cd80d26a497f8510baaea353b4a1b">fortranfunc</a>) (PyObject *, PyObject *, PyObject *, void *)</td></tr>
+<tr class="separator:a2d2cd80d26a497f8510baaea353b4a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a4e850949e4434cff9bc2d34d95e67a1e" id="r_a4e850949e4434cff9bc2d34d95e67a1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a4e850949e4434cff9bc2d34d95e67a1e">F2PyDict_SetItemString</a> (PyObject *dict, char *name, PyObject *obj)</td></tr>
+<tr class="separator:a4e850949e4434cff9bc2d34d95e67a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b60763e8c14d7179ac9da4831198a34" id="r_a0b60763e8c14d7179ac9da4831198a34"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a0b60763e8c14d7179ac9da4831198a34">F2PySwapThreadLocalCallbackPtr</a> (char *key, void *ptr)</td></tr>
+<tr class="separator:a0b60763e8c14d7179ac9da4831198a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58fa77bf00ad883bb4cc197baf8e0a8a" id="r_a58fa77bf00ad883bb4cc197baf8e0a8a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a58fa77bf00ad883bb4cc197baf8e0a8a">F2PyGetThreadLocalCallbackPtr</a> (char *key)</td></tr>
+<tr class="separator:a58fa77bf00ad883bb4cc197baf8e0a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42b9b4e168edf62851d172716ab7ada" id="r_aa42b9b4e168edf62851d172716ab7ada"><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#aa42b9b4e168edf62851d172716ab7ada">PyFortranObject_New</a> (<a class="el" href="structFortranDataDef.html">FortranDataDef</a> *defs, <a class="el" href="fortranobject_8h.html#a7d9c08c3ea8cfdad0b1f0a0dc94f093b">f2py_void_func</a> init)</td></tr>
+<tr class="separator:aa42b9b4e168edf62851d172716ab7ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87110dbeba43e93f86c7fd83d66ef0d" id="r_ad87110dbeba43e93f86c7fd83d66ef0d"><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#ad87110dbeba43e93f86c7fd83d66ef0d">PyFortranObject_NewAsAttr</a> (<a class="el" href="structFortranDataDef.html">FortranDataDef</a> *defs)</td></tr>
+<tr class="separator:ad87110dbeba43e93f86c7fd83d66ef0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee88900d9af237ae6fba5609f95eb6e" id="r_aaee88900d9af237ae6fba5609f95eb6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#aaee88900d9af237ae6fba5609f95eb6e">ndarray_from_pyobj</a> (const int type_num, const int elsize_, <a class="el" href="npy__common_8h.html#a966a45719c0ab85ba9ce27d0b41310f4">npy_intp</a> *dims, const int rank, const int intent, PyObject *obj, const char *errmess)</td></tr>
+<tr class="separator:aaee88900d9af237ae6fba5609f95eb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5522ce659c013ca99dab8ce094b877" id="r_aad5522ce659c013ca99dab8ce094b877"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#aad5522ce659c013ca99dab8ce094b877">array_from_pyobj</a> (const int type_num, <a class="el" href="npy__common_8h.html#a966a45719c0ab85ba9ce27d0b41310f4">npy_intp</a> *dims, const int rank, const int intent, PyObject *obj)</td></tr>
+<tr class="separator:aad5522ce659c013ca99dab8ce094b877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11666898370bf0f487db5d8e60d7bd8c" id="r_a11666898370bf0f487db5d8e60d7bd8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a11666898370bf0f487db5d8e60d7bd8c">copy_ND_array</a> (const <a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> *arr, <a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> *out)</td></tr>
+<tr class="separator:a11666898370bf0f487db5d8e60d7bd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89806b3bcb5e349e1152fc58b4491289" id="r_a89806b3bcb5e349e1152fc58b4491289"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a89806b3bcb5e349e1152fc58b4491289">f2py_describe</a> (PyObject *obj, char *buf)</td></tr>
+<tr class="separator:a89806b3bcb5e349e1152fc58b4491289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd5162c59169528b4cd86e41087b0bf" id="r_a3bd5162c59169528b4cd86e41087b0bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="npy__common_8h.html#a966a45719c0ab85ba9ce27d0b41310f4">npy_intp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a3bd5162c59169528b4cd86e41087b0bf">f2py_size_impl</a> (<a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> *var,...)</td></tr>
+<tr class="separator:a3bd5162c59169528b4cd86e41087b0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa24e20aa1c550517fa26c771be84b76b" id="r_aa24e20aa1c550517fa26c771be84b76b"><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#aa24e20aa1c550517fa26c771be84b76b">F2PyCapsule_FromVoidPtr</a> (void *ptr, void(*dtor)(PyObject *))</td></tr>
+<tr class="separator:aa24e20aa1c550517fa26c771be84b76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e64a9fd51c06b1a965dffba02eed0cf" id="r_a3e64a9fd51c06b1a965dffba02eed0cf"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a3e64a9fd51c06b1a965dffba02eed0cf">F2PyCapsule_AsVoidPtr</a> (PyObject *obj)</td></tr>
+<tr class="separator:a3e64a9fd51c06b1a965dffba02eed0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688d507d78750d3bac202a3e9851cefd" id="r_a688d507d78750d3bac202a3e9851cefd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#a688d507d78750d3bac202a3e9851cefd">F2PyCapsule_Check</a> (PyObject *ptr)</td></tr>
+<tr class="separator:a688d507d78750d3bac202a3e9851cefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:acaa417f3700e11ef00efbc9ccc0d81b6" id="r_acaa417f3700e11ef00efbc9ccc0d81b6"><td class="memItemLeft" align="right" valign="top">PyTypeObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fortranobject_8c.html#acaa417f3700e11ef00efbc9ccc0d81b6">PyFortran_Type</a></td></tr>
+<tr class="separator:acaa417f3700e11ef00efbc9ccc0d81b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="af7015ea6b7d15ee295bf2723e9005d04" name="af7015ea6b7d15ee295bf2723e9005d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7015ea6b7d15ee295bf2723e9005d04">&#9670;&#160;</a></span>ARRAY_ISCOMPATIBLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARRAY_ISCOMPATIBLE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">arr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type_num&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur :</b><div class="fragment"><div class="line">    ((<a class="code hl_define" href="ndarraytypes_8h.html#a191efa752acabd75ebf92cac20f6a159">PyArray_ISINTEGER</a>(arr) &amp;&amp; <a class="code hl_define" href="ndarraytypes_8h.html#a8f8450a8f99c43826795fab5cecf013b">PyTypeNum_ISINTEGER</a>(type_num)) ||     \</div>
+<div class="line">     (<a class="code hl_define" href="ndarraytypes_8h.html#a834f15f8185f40bd07d2e2eee1a9a332">PyArray_ISFLOAT</a>(arr) &amp;&amp; <a class="code hl_define" href="ndarraytypes_8h.html#ac05c12edd2fa08ca6ad3b0bcb2e4ac57">PyTypeNum_ISFLOAT</a>(type_num)) ||         \</div>
+<div class="line">     (<a class="code hl_define" href="ndarraytypes_8h.html#ad55f5bee07ae60ad9a2b07d8e9f532fa">PyArray_ISCOMPLEX</a>(arr) &amp;&amp; <a class="code hl_define" href="ndarraytypes_8h.html#a703bc3d8ab6e3a820651f47d34c3b6bf">PyTypeNum_ISCOMPLEX</a>(type_num)) ||     \</div>
+<div class="line">     (<a class="code hl_define" href="ndarraytypes_8h.html#ac6b1a1049ceb70fdd341eb3231fc1176">PyArray_ISBOOL</a>(arr) &amp;&amp; <a class="code hl_define" href="ndarraytypes_8h.html#a71d28e69b6afe06112ae900f85d1aadd">PyTypeNum_ISBOOL</a>(type_num)) ||           \</div>
+<div class="line">     (<a class="code hl_define" href="ndarraytypes_8h.html#a2361fa00ba08f47838325751c8ad1eee">PyArray_ISSTRING</a>(arr) &amp;&amp; <a class="code hl_define" href="ndarraytypes_8h.html#a47369072b4e15867ff9b7de68479e4a2">PyTypeNum_ISSTRING</a>(type_num)))</div>
+<div class="ttc" id="andarraytypes_8h_html_a191efa752acabd75ebf92cac20f6a159"><div class="ttname"><a href="ndarraytypes_8h.html#a191efa752acabd75ebf92cac20f6a159">PyArray_ISINTEGER</a></div><div class="ttdeci">#define PyArray_ISINTEGER(obj)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1689</div></div>
+<div class="ttc" id="andarraytypes_8h_html_a2361fa00ba08f47838325751c8ad1eee"><div class="ttname"><a href="ndarraytypes_8h.html#a2361fa00ba08f47838325751c8ad1eee">PyArray_ISSTRING</a></div><div class="ttdeci">#define PyArray_ISSTRING(obj)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1692</div></div>
+<div class="ttc" id="andarraytypes_8h_html_a47369072b4e15867ff9b7de68479e4a2"><div class="ttname"><a href="ndarraytypes_8h.html#a47369072b4e15867ff9b7de68479e4a2">PyTypeNum_ISSTRING</a></div><div class="ttdeci">#define PyTypeNum_ISSTRING(type)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1642</div></div>
+<div class="ttc" id="andarraytypes_8h_html_a703bc3d8ab6e3a820651f47d34c3b6bf"><div class="ttname"><a href="ndarraytypes_8h.html#a703bc3d8ab6e3a820651f47d34c3b6bf">PyTypeNum_ISCOMPLEX</a></div><div class="ttdeci">#define PyTypeNum_ISCOMPLEX(type)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1645</div></div>
+<div class="ttc" id="andarraytypes_8h_html_a71d28e69b6afe06112ae900f85d1aadd"><div class="ttname"><a href="ndarraytypes_8h.html#a71d28e69b6afe06112ae900f85d1aadd">PyTypeNum_ISBOOL</a></div><div class="ttdeci">#define PyTypeNum_ISBOOL(type)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1618</div></div>
+<div class="ttc" id="andarraytypes_8h_html_a834f15f8185f40bd07d2e2eee1a9a332"><div class="ttname"><a href="ndarraytypes_8h.html#a834f15f8185f40bd07d2e2eee1a9a332">PyArray_ISFLOAT</a></div><div class="ttdeci">#define PyArray_ISFLOAT(obj)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1690</div></div>
+<div class="ttc" id="andarraytypes_8h_html_a8f8450a8f99c43826795fab5cecf013b"><div class="ttname"><a href="ndarraytypes_8h.html#a8f8450a8f99c43826795fab5cecf013b">PyTypeNum_ISINTEGER</a></div><div class="ttdeci">#define PyTypeNum_ISINTEGER(type)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1632</div></div>
+<div class="ttc" id="andarraytypes_8h_html_ac05c12edd2fa08ca6ad3b0bcb2e4ac57"><div class="ttname"><a href="ndarraytypes_8h.html#ac05c12edd2fa08ca6ad3b0bcb2e4ac57">PyTypeNum_ISFLOAT</a></div><div class="ttdeci">#define PyTypeNum_ISFLOAT(type)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1635</div></div>
+<div class="ttc" id="andarraytypes_8h_html_ac6b1a1049ceb70fdd341eb3231fc1176"><div class="ttname"><a href="ndarraytypes_8h.html#ac6b1a1049ceb70fdd341eb3231fc1176">PyArray_ISBOOL</a></div><div class="ttdeci">#define PyArray_ISBOOL(obj)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1686</div></div>
+<div class="ttc" id="andarraytypes_8h_html_ad55f5bee07ae60ad9a2b07d8e9f532fa"><div class="ttname"><a href="ndarraytypes_8h.html#ad55f5bee07ae60ad9a2b07d8e9f532fa">PyArray_ISCOMPLEX</a></div><div class="ttdeci">#define PyArray_ISCOMPLEX(obj)</div><div class="ttdef"><b>Definition</b> ndarraytypes.h:1693</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afdfddd3f733bd9f8fcd0f92cf5937f0a" name="afdfddd3f733bd9f8fcd0f92cf5937f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdfddd3f733bd9f8fcd0f92cf5937f0a">&#9670;&#160;</a></span>F2PY_REPORT_ON_ARRAY_COPY_FROMANY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F2PY_REPORT_ON_ARRAY_COPY_FROMANY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38eb56fff49b938b9b8144bdff9847f1" name="a38eb56fff49b938b9b8144bdff9847f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38eb56fff49b938b9b8144bdff9847f1">&#9670;&#160;</a></span>F2PY_REPORT_ON_ARRAY_COPY_FROMARR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F2PY_REPORT_ON_ARRAY_COPY_FROMARR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d30258a0d86b7d3c11499e2754a6087" name="a0d30258a0d86b7d3c11499e2754a6087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d30258a0d86b7d3c11499e2754a6087">&#9670;&#160;</a></span>FORTRANOBJECT_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FORTRANOBJECT_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90222168aa5567a5331a7131be6661cd" name="a90222168aa5567a5331a7131be6661cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90222168aa5567a5331a7131be6661cd">&#9670;&#160;</a></span>SWAPTYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SWAPTYPE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="callback_2foo_8f.html#a50e16bc59be823d9ec58240a76a1a971">t</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur :</b><div class="fragment"><div class="line">    {                     \</div>
+<div class="line">        <a class="code hl_function" href="callback_2foo_8f.html#a50e16bc59be823d9ec58240a76a1a971">t</a> c;              \</div>
+<div class="line">        c = (a);          \</div>
+<div class="line">        (a) = (b);        \</div>
+<div class="line">        (b) = c;          \</div>
+<div class="line">    }</div>
+<div class="ttc" id="acallback_2foo_8f_html_a50e16bc59be823d9ec58240a76a1a971"><div class="ttname"><a href="callback_2foo_8f.html#a50e16bc59be823d9ec58240a76a1a971">t</a></div><div class="ttdeci">subroutine t(fun, a)</div><div class="ttdef"><b>Definition</b> foo.f:2</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a id="a2d2cd80d26a497f8510baaea353b4a1b" name="a2d2cd80d26a497f8510baaea353b4a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2cd80d26a497f8510baaea353b4a1b">&#9670;&#160;</a></span>fortranfunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef PyObject *(* fortranfunc) (PyObject *, PyObject *, PyObject *, void *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aad5522ce659c013ca99dab8ce094b877" name="aad5522ce659c013ca99dab8ce094b877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5522ce659c013ca99dab8ce094b877">&#9670;&#160;</a></span>array_from_pyobj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> * array_from_pyobj </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>type_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="npy__common_8h.html#a966a45719c0ab85ba9ce27d0b41310f4">npy_intp</a> *&#160;</td>
+          <td class="paramname"><em>dims</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>intent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PyObject *&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11666898370bf0f487db5d8e60d7bd8c" name="a11666898370bf0f487db5d8e60d7bd8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11666898370bf0f487db5d8e60d7bd8c">&#9670;&#160;</a></span>copy_ND_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int copy_ND_array </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> *&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89806b3bcb5e349e1152fc58b4491289" name="a89806b3bcb5e349e1152fc58b4491289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89806b3bcb5e349e1152fc58b4491289">&#9670;&#160;</a></span>f2py_describe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int f2py_describe </td>
+          <td>(</td>
+          <td class="paramtype">PyObject *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bd5162c59169528b4cd86e41087b0bf" name="a3bd5162c59169528b4cd86e41087b0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bd5162c59169528b4cd86e41087b0bf">&#9670;&#160;</a></span>f2py_size_impl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="npy__common_8h.html#a966a45719c0ab85ba9ce27d0b41310f4">npy_intp</a> f2py_size_impl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> *&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e64a9fd51c06b1a965dffba02eed0cf" name="a3e64a9fd51c06b1a965dffba02eed0cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e64a9fd51c06b1a965dffba02eed0cf">&#9670;&#160;</a></span>F2PyCapsule_AsVoidPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * F2PyCapsule_AsVoidPtr </td>
+          <td>(</td>
+          <td class="paramtype">PyObject *&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a688d507d78750d3bac202a3e9851cefd" name="a688d507d78750d3bac202a3e9851cefd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688d507d78750d3bac202a3e9851cefd">&#9670;&#160;</a></span>F2PyCapsule_Check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int F2PyCapsule_Check </td>
+          <td>(</td>
+          <td class="paramtype">PyObject *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa24e20aa1c550517fa26c771be84b76b" name="aa24e20aa1c550517fa26c771be84b76b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa24e20aa1c550517fa26c771be84b76b">&#9670;&#160;</a></span>F2PyCapsule_FromVoidPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PyObject * F2PyCapsule_FromVoidPtr </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(PyObject *)&#160;</td>
+          <td class="paramname"><em>dtor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e850949e4434cff9bc2d34d95e67a1e" name="a4e850949e4434cff9bc2d34d95e67a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e850949e4434cff9bc2d34d95e67a1e">&#9670;&#160;</a></span>F2PyDict_SetItemString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int F2PyDict_SetItemString </td>
+          <td>(</td>
+          <td class="paramtype">PyObject *&#160;</td>
+          <td class="paramname"><em>dict</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PyObject *&#160;</td>
+          <td class="paramname"><em>obj</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58fa77bf00ad883bb4cc197baf8e0a8a" name="a58fa77bf00ad883bb4cc197baf8e0a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58fa77bf00ad883bb4cc197baf8e0a8a">&#9670;&#160;</a></span>F2PyGetThreadLocalCallbackPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * F2PyGetThreadLocalCallbackPtr </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b60763e8c14d7179ac9da4831198a34" name="a0b60763e8c14d7179ac9da4831198a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b60763e8c14d7179ac9da4831198a34">&#9670;&#160;</a></span>F2PySwapThreadLocalCallbackPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * F2PySwapThreadLocalCallbackPtr </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaee88900d9af237ae6fba5609f95eb6e" name="aaee88900d9af237ae6fba5609f95eb6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee88900d9af237ae6fba5609f95eb6e">&#9670;&#160;</a></span>ndarray_from_pyobj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ndarraytypes_8h.html#af074aa0de75119b0769c7eff2bacf784">PyArrayObject</a> * ndarray_from_pyobj </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>type_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>elsize_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="npy__common_8h.html#a966a45719c0ab85ba9ce27d0b41310f4">npy_intp</a> *&#160;</td>
+          <td class="paramname"><em>dims</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>intent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PyObject *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>errmess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa42b9b4e168edf62851d172716ab7ada" name="aa42b9b4e168edf62851d172716ab7ada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42b9b4e168edf62851d172716ab7ada">&#9670;&#160;</a></span>PyFortranObject_New()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PyObject * PyFortranObject_New </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFortranDataDef.html">FortranDataDef</a> *&#160;</td>
+          <td class="paramname"><em>defs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fortranobject_8h.html#a7d9c08c3ea8cfdad0b1f0a0dc94f093b">f2py_void_func</a>&#160;</td>
+          <td class="paramname"><em>init</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad87110dbeba43e93f86c7fd83d66ef0d" name="ad87110dbeba43e93f86c7fd83d66ef0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87110dbeba43e93f86c7fd83d66ef0d">&#9670;&#160;</a></span>PyFortranObject_NewAsAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PyObject * PyFortranObject_NewAsAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFortranDataDef.html">FortranDataDef</a> *&#160;</td>
+          <td class="paramname"><em>defs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="acaa417f3700e11ef00efbc9ccc0d81b6" name="acaa417f3700e11ef00efbc9ccc0d81b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa417f3700e11ef00efbc9ccc0d81b6">&#9670;&#160;</a></span>PyFortran_Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PyTypeObject PyFortran_Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        PyVarObject_HEAD_INIT(NULL, 0).tp_name = <span class="stringliteral">&quot;fortran&quot;</span>,</div>
+<div class="line">        .tp_basicsize = <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structPyFortranObject.html">PyFortranObject</a>),</div>
+<div class="line">        .tp_dealloc = (destructor)fortran_dealloc,</div>
+<div class="line">        .tp_getattr = (getattrfunc)fortran_getattr,</div>
+<div class="line">        .tp_setattr = (setattrfunc)fortran_setattr,</div>
+<div class="line">        .tp_repr = (reprfunc)fortran_repr,</div>
+<div class="line">        .tp_call = (ternaryfunc)fortran_call,</div>
+<div class="line">}</div>
+<div class="ttc" id="astructPyFortranObject_html"><div class="ttname"><a href="structPyFortranObject.html">PyFortranObject</a></div><div class="ttdef"><b>Definition</b> fortranobject.h:78</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

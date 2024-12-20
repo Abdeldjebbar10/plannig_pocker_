@@ -1,0 +1,420 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+lib.\+\_\+utils\+\_\+impl}
+\hypertarget{namespacenumpy_1_1lib_1_1__utils__impl}{}\label{namespacenumpy_1_1lib_1_1__utils__impl}\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1lib_1_1__utils__impl_1_1__Deprecate}{\+\_\+\+Deprecate}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_ac372be43c2b597903865f3b646d28f3f}{show\+\_\+runtime}} ()
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_af850ac15e7336b852fc06b25a846c6f2}{get\+\_\+include}} ()
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a40ebf156f0bb65d2901bcff78b33b868}{\+\_\+get\+\_\+indent}} (lines)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_abecbfb0e6566a4fecf6ce2bd1acd8740}{deprecate}} (\texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a5a17cff883558306efff98ac1d3209f9}{deprecate\+\_\+with\+\_\+doc}} (\mbox{\hyperlink{namespacenumpy_a0c3cf746f0b31f14abc440a931f14957}{msg}})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_ab309927c8921c4bd78832052dbe4f9a8}{\+\_\+split\+\_\+line}} (name, arguments, width)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a2574241b0a67b0e2d81f3feeb887f570}{\+\_\+makenamedict}} (module=\textquotesingle{}numpy\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a6527cf5aae91c50048bbe6667aea8f1f}{\+\_\+info}} (obj, output=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a9ad32b3200e60b4e31b304d4c705b50c}{info}} (object=None, maxwidth=76, output=None, toplevel=\textquotesingle{}numpy\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a6d53801d73dc0792fb07f409828bae64}{safe\+\_\+eval}} (source)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a75cafbdcb76e8600dfc896a0e178a1e7}{\+\_\+median\+\_\+nancheck}} (data, result, axis)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a5fe6211b728789514a2de0a584dd441d}{\+\_\+opt\+\_\+info}} ()
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_ac720ad68807286c109657b374e2e2d82}{drop\+\_\+metadata}} (dtype)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_aa0e388e6273851bf5f07933b81d7cab0}{\+\_\+namedict}} = None
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__utils__impl_a883bf75859b273d17d201c3bda91192f}{\+\_\+dictlist}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a40ebf156f0bb65d2901bcff78b33b868}\label{namespacenumpy_1_1lib_1_1__utils__impl_a40ebf156f0bb65d2901bcff78b33b868} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!\_get\_indent@{\_get\_indent}}
+\index{\_get\_indent@{\_get\_indent}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{\_get\_indent()}{\_get\_indent()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+\_\+get\+\_\+indent (\begin{DoxyParamCaption}\item[{}]{lines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Determines the leading whitespace that could be removed from all the lines.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a6527cf5aae91c50048bbe6667aea8f1f}\label{namespacenumpy_1_1lib_1_1__utils__impl_a6527cf5aae91c50048bbe6667aea8f1f} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!\_info@{\_info}}
+\index{\_info@{\_info}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{\_info()}{\_info()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+\_\+info (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{output = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Provide information about ndarray obj.
+
+Parameters
+----------
+obj : ndarray
+    Must be ndarray, not checked.
+output
+    Where printed output goes.
+
+Notes
+-----
+Copied over from the numarray module prior to its removal.
+Adapted somewhat as only numpy is an option now.
+
+Called by info.\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a2574241b0a67b0e2d81f3feeb887f570}\label{namespacenumpy_1_1lib_1_1__utils__impl_a2574241b0a67b0e2d81f3feeb887f570} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!\_makenamedict@{\_makenamedict}}
+\index{\_makenamedict@{\_makenamedict}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{\_makenamedict()}{\_makenamedict()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+\_\+makenamedict (\begin{DoxyParamCaption}\item[{}]{module = {\ttfamily \textquotesingle{}numpy\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a75cafbdcb76e8600dfc896a0e178a1e7}\label{namespacenumpy_1_1lib_1_1__utils__impl_a75cafbdcb76e8600dfc896a0e178a1e7} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!\_median\_nancheck@{\_median\_nancheck}}
+\index{\_median\_nancheck@{\_median\_nancheck}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{\_median\_nancheck()}{\_median\_nancheck()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+\_\+median\+\_\+nancheck (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{result,  }\item[{}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Utility function to check median result from data for NaN values at the end
+and return NaN in that case. Input result can also be a MaskedArray.
+
+Parameters
+----------
+data : array
+    Sorted input data to median function
+result : Array or MaskedArray
+    Result of median function.
+axis : int
+    Axis along which the median was computed.
+
+Returns
+-------
+result : scalar or ndarray
+    Median or NaN in axes which contained NaN in the input.  If the input
+    was an array, NaN will be inserted in-place.  If a scalar, either the
+    input itself or a scalar NaN.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a5fe6211b728789514a2de0a584dd441d}\label{namespacenumpy_1_1lib_1_1__utils__impl_a5fe6211b728789514a2de0a584dd441d} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!\_opt\_info@{\_opt\_info}}
+\index{\_opt\_info@{\_opt\_info}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{\_opt\_info()}{\_opt\_info()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+\_\+opt\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns a string containing the CPU features supported
+by the current build.
+
+The format of the string can be explained as follows:
+    - Dispatched features supported by the running machine end with `*`.
+    - Dispatched features not supported by the running machine
+      end with `?`.
+    - Remaining features represent the baseline.
+
+Returns:
+    str: A formatted string indicating the supported CPU features.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_ab309927c8921c4bd78832052dbe4f9a8}\label{namespacenumpy_1_1lib_1_1__utils__impl_ab309927c8921c4bd78832052dbe4f9a8} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!\_split\_line@{\_split\_line}}
+\index{\_split\_line@{\_split\_line}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{\_split\_line()}{\_split\_line()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+\_\+split\+\_\+line (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{arguments,  }\item[{}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_abecbfb0e6566a4fecf6ce2bd1acd8740}\label{namespacenumpy_1_1lib_1_1__utils__impl_abecbfb0e6566a4fecf6ce2bd1acd8740} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!deprecate@{deprecate}}
+\index{deprecate@{deprecate}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{deprecate()}{deprecate()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+deprecate (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Issues a DeprecationWarning, adds warning to `old_name`'s
+docstring, rebinds ``old_name.__name__`` and returns the new
+function object.
+
+This function may also be used as a decorator.
+
+.. deprecated:: 2.0
+    Use `~warnings.warn` with :exc:`DeprecationWarning` instead.
+
+Parameters
+----------
+func : function
+    The function to be deprecated.
+old_name : str, optional
+    The name of the function to be deprecated. Default is None, in
+    which case the name of `func` is used.
+new_name : str, optional
+    The new name for the function. Default is None, in which case the
+    deprecation message is that `old_name` is deprecated. If given, the
+    deprecation message is that `old_name` is deprecated and `new_name`
+    should be used instead.
+message : str, optional
+    Additional explanation of the deprecation.  Displayed in the
+    docstring after the warning.
+
+Returns
+-------
+old_func : function
+    The deprecated function.
+
+Examples
+--------
+Note that ``olduint`` returns a value after printing Deprecation
+Warning:
+
+>>> olduint = np.lib.utils.deprecate(np.uint)
+DeprecationWarning: `uint64` is deprecated! # may vary
+>>> olduint(6)
+6\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a5a17cff883558306efff98ac1d3209f9}\label{namespacenumpy_1_1lib_1_1__utils__impl_a5a17cff883558306efff98ac1d3209f9} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!deprecate\_with\_doc@{deprecate\_with\_doc}}
+\index{deprecate\_with\_doc@{deprecate\_with\_doc}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{deprecate\_with\_doc()}{deprecate\_with\_doc()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+deprecate\+\_\+with\+\_\+doc (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deprecates a function and includes the deprecation in its docstring.
+
+.. deprecated:: 2.0
+    Use `~warnings.warn` with :exc:`DeprecationWarning` instead.
+
+This function is used as a decorator. It returns an object that can be
+used to issue a DeprecationWarning, by passing the to-be decorated
+function as argument, this adds warning to the to-be decorated function's
+docstring and returns the new function object.
+
+See Also
+--------
+deprecate : Decorate a function such that it issues a
+            :exc:`DeprecationWarning`
+
+Parameters
+----------
+msg : str
+    Additional explanation of the deprecation. Displayed in the
+    docstring after the warning.
+
+Returns
+-------
+obj : object\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_ac720ad68807286c109657b374e2e2d82}\label{namespacenumpy_1_1lib_1_1__utils__impl_ac720ad68807286c109657b374e2e2d82} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!drop\_metadata@{drop\_metadata}}
+\index{drop\_metadata@{drop\_metadata}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{drop\_metadata()}{drop\_metadata()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+drop\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{dtype }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the dtype unchanged if it contained no metadata or a copy of the
+dtype if it (or any of its structure dtypes) contained metadata.
+
+This utility is used by `np.save` and `np.savez` to drop metadata before
+saving.
+
+.. note::
+
+    Due to its limitation this function may move to a more appropriate
+    home or change in the future and is considered semi-public API only.
+
+.. warning::
+
+    This function does not preserve more strange things like record dtypes
+    and user dtypes may simply return the wrong thing.  If you need to be
+    sure about the latter, check the result with:
+    ``np.can_cast(new_dtype, dtype, casting="no")``.\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_af850ac15e7336b852fc06b25a846c6f2}\label{namespacenumpy_1_1lib_1_1__utils__impl_af850ac15e7336b852fc06b25a846c6f2} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!get\_include@{get\_include}}
+\index{get\_include@{get\_include}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{get\_include()}{get\_include()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+get\+\_\+include (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the directory that contains the NumPy \\*.h header files.
+
+Extension modules that need to compile against NumPy may need to use this
+function to locate the appropriate include directory.
+
+Notes
+-----
+When using ``setuptools``, for example in ``setup.py``::
+
+    import numpy as np
+    ...
+    Extension('extension_name', ...
+              include_dirs=[np.get_include()])
+    ...
+
+Note that a CLI tool ``numpy-config`` was introduced in NumPy 2.0, using
+that is likely preferred for build systems other than ``setuptools``::
+
+    $ numpy-config --cflags
+    -I/path/to/site-packages/numpy/_core/include
+
+    # Or rely on pkg-config:
+    $ export PKG_CONFIG_PATH=$(numpy-config --pkgconfigdir)
+    $ pkg-config --cflags
+    -I/path/to/site-packages/numpy/_core/include
+
+Examples
+--------
+>>> np.get_include()
+'.../site-packages/numpy/core/include'  # may vary\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a9ad32b3200e60b4e31b304d4c705b50c}\label{namespacenumpy_1_1lib_1_1__utils__impl_a9ad32b3200e60b4e31b304d4c705b50c} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!info@{info}}
+\index{info@{info}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+info (\begin{DoxyParamCaption}\item[{}]{object = {\ttfamily None},  }\item[{}]{maxwidth = {\ttfamily 76},  }\item[{}]{output = {\ttfamily None},  }\item[{}]{toplevel = {\ttfamily \textquotesingle{}numpy\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get help information for an array, function, class, or module.
+
+Parameters
+----------
+object : object or str, optional
+    Input object or name to get information about. If `object` is
+    an `ndarray` instance, information about the array is printed.
+    If `object` is a numpy object, its docstring is given. If it is
+    a string, available modules are searched for matching objects.
+    If None, information about `info` itself is returned.
+maxwidth : int, optional
+    Printing width.
+output : file like object, optional
+    File like object that the output is written to, default is
+    ``None``, in which case ``sys.stdout`` will be used.
+    The object has to be opened in 'w' or 'a' mode.
+toplevel : str, optional
+    Start search at this level.
+
+Notes
+-----
+When used interactively with an object, ``np.info(obj)`` is equivalent
+to ``help(obj)`` on the Python prompt or ``obj?`` on the IPython
+prompt.
+
+Examples
+--------
+>>> np.info(np.polyval) # doctest: +SKIP
+   polyval(p, x)
+     Evaluate the polynomial p at x.
+     ...
+
+When using a string for `object` it is possible to get multiple results.
+
+>>> np.info('fft') # doctest: +SKIP
+     *** Found in numpy ***
+Core FFT routines
+...
+     *** Found in numpy.fft ***
+ fft(a, n=None, axis=-1)
+...
+     *** Repeat reference found in numpy.fft.fftpack ***
+     *** Total of 3 references found. ***
+
+When the argument is an array, information about the array is printed.
+
+>>> a = np.array([[1 + 2j, 3, -4], [-5j, 6, 0]], dtype=np.complex64)
+>>> np.info(a)
+class:  ndarray
+shape:  (2, 3)
+strides:  (24, 8)
+itemsize:  8
+aligned:  True
+contiguous:  True
+fortran:  False
+data pointer: 0x562b6e0d2860  # may vary
+byteorder:  little
+byteswap:  False
+type: complex64\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a6d53801d73dc0792fb07f409828bae64}\label{namespacenumpy_1_1lib_1_1__utils__impl_a6d53801d73dc0792fb07f409828bae64} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!safe\_eval@{safe\_eval}}
+\index{safe\_eval@{safe\_eval}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{safe\_eval()}{safe\_eval()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+safe\+\_\+eval (\begin{DoxyParamCaption}\item[{}]{source }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Protected string evaluation.
+
+.. deprecated:: 2.0
+    Use `ast.literal_eval` instead.
+
+Evaluate a string containing a Python literal expression without
+allowing the execution of arbitrary non-literal code.
+
+.. warning::
+
+    This function is identical to :py:meth:`ast.literal_eval` and
+    has the same security implications.  It may not always be safe
+    to evaluate large input strings.
+
+Parameters
+----------
+source : str
+    The string to evaluate.
+
+Returns
+-------
+obj : object
+   The result of evaluating `source`.
+
+Raises
+------
+SyntaxError
+    If the code has invalid Python syntax, or if it contains
+    non-literal code.
+
+Examples
+--------
+>>> np.safe_eval('1')
+1
+>>> np.safe_eval('[1, 2, 3]')
+[1, 2, 3]
+>>> np.safe_eval('{"foo": ("bar", 10.0)}')
+{'foo': ('bar', 10.0)}
+
+>>> np.safe_eval('import os')
+Traceback (most recent call last):
+  ...
+SyntaxError: invalid syntax
+
+>>> np.safe_eval('open("/home/user/.ssh/id_dsa").read()')
+Traceback (most recent call last):
+  ...
+ValueError: malformed node or string: <_ast.Call object at 0x...>\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_ac372be43c2b597903865f3b646d28f3f}\label{namespacenumpy_1_1lib_1_1__utils__impl_ac372be43c2b597903865f3b646d28f3f} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!show\_runtime@{show\_runtime}}
+\index{show\_runtime@{show\_runtime}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{show\_runtime()}{show\_runtime()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+show\+\_\+runtime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print information about various resources in the system
+including available intrinsic support and BLAS/LAPACK library
+in use
+
+.. versionadded:: 1.24.0
+
+See Also
+--------
+show_config : Show libraries in the system on which NumPy was built.
+
+Notes
+-----
+1. Information is derived with the help of `threadpoolctl <https://pypi.org/project/threadpoolctl/>`_
+   library if available.
+2. SIMD related information is derived from ``__cpu_features__``,
+   ``__cpu_baseline__`` and ``__cpu_dispatch__``\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_a883bf75859b273d17d201c3bda91192f}\label{namespacenumpy_1_1lib_1_1__utils__impl_a883bf75859b273d17d201c3bda91192f} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!\_dictlist@{\_dictlist}}
+\index{\_dictlist@{\_dictlist}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{\_dictlist}{\_dictlist}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+\_\+dictlist = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__utils__impl_aa0e388e6273851bf5f07933b81d7cab0}\label{namespacenumpy_1_1lib_1_1__utils__impl_aa0e388e6273851bf5f07933b81d7cab0} 
+\index{numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}!\_namedict@{\_namedict}}
+\index{\_namedict@{\_namedict}!numpy.lib.\_utils\_impl@{numpy.lib.\_utils\_impl}}
+\doxysubsubsection{\texorpdfstring{\_namedict}{\_namedict}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+utils\+\_\+impl.\+\_\+namedict = None\hspace{0.3cm}{\ttfamily [protected]}}
+

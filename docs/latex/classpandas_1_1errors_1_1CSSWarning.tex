@@ -1,0 +1,35 @@
+\doxysection{Référence de la classe pandas.\+errors.\+CSSWarning}
+\hypertarget{classpandas_1_1errors_1_1CSSWarning}{}\label{classpandas_1_1errors_1_1CSSWarning}\index{pandas.errors.CSSWarning@{pandas.errors.CSSWarning}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+CSSWarning\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+CSSWarning\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Warning is raised when converting css styling fails.
+
+This can be due to the styling not having an equivalent value or because the
+styling isn't properly formatted.
+
+Examples
+--------
+>>> df = pd.DataFrame({'A': [1, 1, 1]})
+>>> df.style.applymap(
+...     lambda x: 'background-color: blueGreenRed;'
+... ).to_excel('styled.xlsx')  # doctest: +SKIP
+CSSWarning: Unhandled color format: 'blueGreenRed'
+>>> df.style.applymap(
+...     lambda x: 'border: 1px solid red red;'
+... ).to_excel('styled.xlsx')  # doctest: +SKIP
+CSSWarning: Unhandled color format: 'blueGreenRed'
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

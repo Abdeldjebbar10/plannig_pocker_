@@ -1,0 +1,106 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+settings.\+APISettings}
+\hypertarget{classrest__framework_1_1settings_1_1APISettings}{}\label{classrest__framework_1_1settings_1_1APISettings}\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_ace3d5a6fb6948d438eef883919712215}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_a095c0b96debae7d2882b425bc6148a2e}{user\+\_\+settings}}=None, \mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_a1b4b5a7f98ada9c6508ee5b7973918de}{defaults}}=None, \mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_abfbfb2515bca98ebe182710d9b883281}{import\+\_\+strings}}=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_a095c0b96debae7d2882b425bc6148a2e}{user\+\_\+settings}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_a5337e158e759b7e5c57b6ef473d7ca68}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, attr)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_ab766d238efb5ad4d4f6e467532267341}{reload}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_a1b4b5a7f98ada9c6508ee5b7973918de}{defaults}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_abfbfb2515bca98ebe182710d9b883281}{import\+\_\+strings}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_acd3b4c87eee6804cfb323aa8d3884300}{\+\_\+user\+\_\+settings}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1settings_1_1APISettings_aabb78d3cbf7cfd8b5c653cc7e9f74933}{\+\_\+cached\+\_\+attrs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A settings object that allows REST Framework settings to be accessed as
+properties. For example:
+
+    from rest_framework.settings import api_settings
+    print(api_settings.DEFAULT_RENDERER_CLASSES)
+
+Any setting with string import paths will be automatically resolved
+and return the class, rather than the string literal.
+
+Note:
+This is an internal class that is only compatible with settings namespaced
+under the REST_FRAMEWORK name. It is not intended to be used by 3rd-party
+apps, and test helpers like `override_settings` may not work as expected.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1settings_1_1APISettings_ace3d5a6fb6948d438eef883919712215}\label{classrest__framework_1_1settings_1_1APISettings_ace3d5a6fb6948d438eef883919712215} 
+\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+APISettings.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user\+\_\+settings = {\ttfamily None},  }\item[{}]{defaults = {\ttfamily None},  }\item[{}]{import\+\_\+strings = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1settings_1_1APISettings_a5337e158e759b7e5c57b6ef473d7ca68}\label{classrest__framework_1_1settings_1_1APISettings_a5337e158e759b7e5c57b6ef473d7ca68} 
+\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+APISettings.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{attr }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1settings_1_1APISettings_ab766d238efb5ad4d4f6e467532267341}\label{classrest__framework_1_1settings_1_1APISettings_ab766d238efb5ad4d4f6e467532267341} 
+\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}!reload@{reload}}
+\index{reload@{reload}!rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+APISettings.\+reload (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1settings_1_1APISettings_a095c0b96debae7d2882b425bc6148a2e}\label{classrest__framework_1_1settings_1_1APISettings_a095c0b96debae7d2882b425bc6148a2e} 
+\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}!user\_settings@{user\_settings}}
+\index{user\_settings@{user\_settings}!rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection{\texorpdfstring{user\_settings()}{user\_settings()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+APISettings.\+user\+\_\+settings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1settings_1_1APISettings_aabb78d3cbf7cfd8b5c653cc7e9f74933}\label{classrest__framework_1_1settings_1_1APISettings_aabb78d3cbf7cfd8b5c653cc7e9f74933} 
+\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}!\_cached\_attrs@{\_cached\_attrs}}
+\index{\_cached\_attrs@{\_cached\_attrs}!rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection{\texorpdfstring{\_cached\_attrs}{\_cached\_attrs}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+APISettings.\+\_\+cached\+\_\+attrs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classrest__framework_1_1settings_1_1APISettings_acd3b4c87eee6804cfb323aa8d3884300}\label{classrest__framework_1_1settings_1_1APISettings_acd3b4c87eee6804cfb323aa8d3884300} 
+\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}!\_user\_settings@{\_user\_settings}}
+\index{\_user\_settings@{\_user\_settings}!rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection{\texorpdfstring{\_user\_settings}{\_user\_settings}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+APISettings.\+\_\+user\+\_\+settings\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classrest__framework_1_1settings_1_1APISettings_a1b4b5a7f98ada9c6508ee5b7973918de}\label{classrest__framework_1_1settings_1_1APISettings_a1b4b5a7f98ada9c6508ee5b7973918de} 
+\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}!defaults@{defaults}}
+\index{defaults@{defaults}!rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection{\texorpdfstring{defaults}{defaults}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+APISettings.\+defaults}
+
+\Hypertarget{classrest__framework_1_1settings_1_1APISettings_abfbfb2515bca98ebe182710d9b883281}\label{classrest__framework_1_1settings_1_1APISettings_abfbfb2515bca98ebe182710d9b883281} 
+\index{rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}!import\_strings@{import\_strings}}
+\index{import\_strings@{import\_strings}!rest\_framework.settings.APISettings@{rest\_framework.settings.APISettings}}
+\doxysubsubsection{\texorpdfstring{import\_strings}{import\_strings}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+settings.\+APISettings.\+import\+\_\+strings}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2rest__framework_2settings_8py}{settings.\+py}}\end{DoxyCompactItemize}

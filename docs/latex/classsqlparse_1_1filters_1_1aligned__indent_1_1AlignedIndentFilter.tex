@@ -1,0 +1,220 @@
+\doxysection{Référence de la classe sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter}
+\hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter}{}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter}\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+
+
+Graphe de collaboration de sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae5a1cd21b6aa64050d5377a52b9ae370}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0a9abf2fbc1158db87aa4f714957bbf6}{char}}=\textquotesingle{} \textquotesingle{}, \mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a219a91a2c59e3b47d5719f3be0e0581a}{n}}=\textquotesingle{}\textbackslash{}\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a219a91a2c59e3b47d5719f3be0e0581a}{n}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0137da1c080d0ab864e01e6c9d70a2c8}{nl}} (self, \mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a677ddc1da17c13e3f35bd69da2e53a16}{offset}}=1)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a932c29e956eedefc82ac8c90ac4a46e0}{process}} (self, stmt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a219a91a2c59e3b47d5719f3be0e0581a}{n}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a677ddc1da17c13e3f35bd69da2e53a16}{offset}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_afcf0ad244117b6f1c75fc015452bf722}{indent}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0a9abf2fbc1158db87aa4f714957bbf6}{char}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0cac22a161e2f797f225508175edcd34}{join\+\_\+words}}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a9aa1f0bca443b9ce2b8efa2c55e80622}{by\+\_\+words}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_acfa81d6317cd5face462443a8eddb3e2}{join\+\_\+words}}
+\item 
+str \mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a9cf8d27bf5bde74854f10a51b329233c}{by\+\_\+words}} = r\textquotesingle{}(GROUP\texorpdfstring{$\vert$}{|}ORDER)\textbackslash{}s+BY\textbackslash{}b\textquotesingle{}
+\item 
+tuple \mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0337efed03c74fa48b8b3439e7b4c854}{split\+\_\+words}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0dc0e7f7d4e057c4840e8b0830e2e31e}{\+\_\+process\+\_\+statement}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a6434c8b95516841ceaa94618c9633ba8}{\+\_\+process\+\_\+parenthesis}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_abcb7771d6ec4e8b27547d32b6ed5a464}{\+\_\+process\+\_\+identifierlist}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a86c5818f59fc0c33da38e4d776be62d0}{\+\_\+process\+\_\+case}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae8e5d5cfab7e78b13db9bddae9072960}{\+\_\+next\+\_\+token}} (self, tlist, idx=-\/1)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae80ac955678a16b823a6ca41b154bb36}{\+\_\+split\+\_\+kwds}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a3ea4e4dfdbefcbe959c08542b0d53201}{\+\_\+process\+\_\+default}} (self, tlist)
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ad998883fe7e7b68c6f4a789c37311b87}{\+\_\+process}} (self, tlist)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ad4be508f673513cb33ad301d3aa3b57f}{\+\_\+max\+\_\+kwd\+\_\+len}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae5a1cd21b6aa64050d5377a52b9ae370}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae5a1cd21b6aa64050d5377a52b9ae370} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{char = {\ttfamily \textquotesingle{}~\textquotesingle{}},  }\item[{}]{n = {\ttfamily \textquotesingle{}\textbackslash{}\mbox{\hyperlink{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a219a91a2c59e3b47d5719f3be0e0581a}{n}}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae8e5d5cfab7e78b13db9bddae9072960}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae8e5d5cfab7e78b13db9bddae9072960} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_next\_token@{\_next\_token}}
+\index{\_next\_token@{\_next\_token}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_next\_token()}{\_next\_token()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+next\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tlist,  }\item[{}]{idx = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ad998883fe7e7b68c6f4a789c37311b87}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ad998883fe7e7b68c6f4a789c37311b87} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_process@{\_process}}
+\index{\_process@{\_process}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process()}{\_process()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+process (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a86c5818f59fc0c33da38e4d776be62d0}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a86c5818f59fc0c33da38e4d776be62d0} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_process\_case@{\_process\_case}}
+\index{\_process\_case@{\_process\_case}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_case()}{\_process\_case()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+process\+\_\+case (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a3ea4e4dfdbefcbe959c08542b0d53201}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a3ea4e4dfdbefcbe959c08542b0d53201} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_process\_default@{\_process\_default}}
+\index{\_process\_default@{\_process\_default}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_default()}{\_process\_default()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+process\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_abcb7771d6ec4e8b27547d32b6ed5a464}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_abcb7771d6ec4e8b27547d32b6ed5a464} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_process\_identifierlist@{\_process\_identifierlist}}
+\index{\_process\_identifierlist@{\_process\_identifierlist}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_identifierlist()}{\_process\_identifierlist()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+process\+\_\+identifierlist (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a6434c8b95516841ceaa94618c9633ba8}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a6434c8b95516841ceaa94618c9633ba8} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_process\_parenthesis@{\_process\_parenthesis}}
+\index{\_process\_parenthesis@{\_process\_parenthesis}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_parenthesis()}{\_process\_parenthesis()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+process\+\_\+parenthesis (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0dc0e7f7d4e057c4840e8b0830e2e31e}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0dc0e7f7d4e057c4840e8b0830e2e31e} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_process\_statement@{\_process\_statement}}
+\index{\_process\_statement@{\_process\_statement}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_process\_statement()}{\_process\_statement()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+process\+\_\+statement (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae80ac955678a16b823a6ca41b154bb36}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ae80ac955678a16b823a6ca41b154bb36} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_split\_kwds@{\_split\_kwds}}
+\index{\_split\_kwds@{\_split\_kwds}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_split\_kwds()}{\_split\_kwds()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+split\+\_\+kwds (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tlist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0137da1c080d0ab864e01e6c9d70a2c8}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0137da1c080d0ab864e01e6c9d70a2c8} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!nl@{nl}}
+\index{nl@{nl}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{nl()}{nl()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+nl (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{offset = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a932c29e956eedefc82ac8c90ac4a46e0}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a932c29e956eedefc82ac8c90ac4a46e0} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!process@{process}}
+\index{process@{process}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+process (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stmt }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ad4be508f673513cb33ad301d3aa3b57f}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_ad4be508f673513cb33ad301d3aa3b57f} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!\_max\_kwd\_len@{\_max\_kwd\_len}}
+\index{\_max\_kwd\_len@{\_max\_kwd\_len}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{\_max\_kwd\_len}{\_max\_kwd\_len}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+\_\+max\+\_\+kwd\+\_\+len\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a9cf8d27bf5bde74854f10a51b329233c}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a9cf8d27bf5bde74854f10a51b329233c} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!by\_words@{by\_words}}
+\index{by\_words@{by\_words}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{by\_words}{by\_words}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+by\+\_\+words = r\textquotesingle{}(GROUP\texorpdfstring{$\vert$}{|}ORDER)\textbackslash{}s+BY\textbackslash{}b\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a9aa1f0bca443b9ce2b8efa2c55e80622}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a9aa1f0bca443b9ce2b8efa2c55e80622} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!by\_words@{by\_words}}
+\index{by\_words@{by\_words}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{by\_words}{by\_words}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+by\+\_\+words}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0a9abf2fbc1158db87aa4f714957bbf6}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0a9abf2fbc1158db87aa4f714957bbf6} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!char@{char}}
+\index{char@{char}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{char}{char}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+char}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_afcf0ad244117b6f1c75fc015452bf722}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_afcf0ad244117b6f1c75fc015452bf722} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!indent@{indent}}
+\index{indent@{indent}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{indent}{indent}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+indent}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_acfa81d6317cd5face462443a8eddb3e2}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_acfa81d6317cd5face462443a8eddb3e2} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!join\_words@{join\_words}}
+\index{join\_words@{join\_words}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{join\_words}{join\_words}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily tuple sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+join\+\_\+words\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{stringliteral}{r'((LEFT\(\backslash\)s+|RIGHT\(\backslash\)s+|FULL\(\backslash\)s+)?'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'(INNER\(\backslash\)s+|OUTER\(\backslash\)s+|STRAIGHT\(\backslash\)s+)?|'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'(CROSS\(\backslash\)s+|NATURAL\(\backslash\)s+)?)?JOIN\(\backslash\)b'})}
+
+\end{DoxyCode}
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0cac22a161e2f797f225508175edcd34}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0cac22a161e2f797f225508175edcd34} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!join\_words@{join\_words}}
+\index{join\_words@{join\_words}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{join\_words}{join\_words}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+join\+\_\+words}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a219a91a2c59e3b47d5719f3be0e0581a}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a219a91a2c59e3b47d5719f3be0e0581a} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!n@{n}}
+\index{n@{n}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+n}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a677ddc1da17c13e3f35bd69da2e53a16}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a677ddc1da17c13e3f35bd69da2e53a16} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!offset@{offset}}
+\index{offset@{offset}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+offset}
+
+\Hypertarget{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0337efed03c74fa48b8b3439e7b4c854}\label{classsqlparse_1_1filters_1_1aligned__indent_1_1AlignedIndentFilter_a0337efed03c74fa48b8b3439e7b4c854} 
+\index{sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}!split\_words@{split\_words}}
+\index{split\_words@{split\_words}!sqlparse.filters.aligned\_indent.AlignedIndentFilter@{sqlparse.filters.aligned\_indent.AlignedIndentFilter}}
+\doxysubsubsection{\texorpdfstring{split\_words}{split\_words}}
+{\footnotesize\ttfamily tuple sqlparse.\+filters.\+aligned\+\_\+indent.\+Aligned\+Indent\+Filter.\+split\+\_\+words\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{stringliteral}{'FROM'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ join\_words,\ \textcolor{stringliteral}{'ON'},\ by\_words,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'WHERE'},\ \textcolor{stringliteral}{'AND'},\ \textcolor{stringliteral}{'OR'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'HAVING'},\ \textcolor{stringliteral}{'LIMIT'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'UNION'},\ \textcolor{stringliteral}{'VALUES'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'SET'},\ \textcolor{stringliteral}{'BETWEEN'},\ \textcolor{stringliteral}{'EXCEPT'})}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/sqlparse/filters/\mbox{\hyperlink{aligned__indent_8py}{aligned\+\_\+indent.\+py}}\end{DoxyCompactItemize}

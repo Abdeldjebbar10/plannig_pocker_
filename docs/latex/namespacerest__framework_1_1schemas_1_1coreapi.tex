@@ -1,0 +1,104 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+schemas.\+coreapi}
+\hypertarget{namespacerest__framework_1_1schemas_1_1coreapi}{}\label{namespacerest__framework_1_1schemas_1_1coreapi}\index{rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1schemas_1_1coreapi_1_1AutoSchema}{Auto\+Schema}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1schemas_1_1coreapi_1_1LinkNode}{Link\+Node}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1schemas_1_1coreapi_1_1ManualSchema}{Manual\+Schema}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1schemas_1_1coreapi_1_1SchemaGenerator}{Schema\+Generator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1coreapi_a215759a230d5afd54ffb103e2c83658a}{common\+\_\+path}} (paths)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1coreapi_a549e9a431f555665b55666548d77b521}{is\+\_\+custom\+\_\+action}} (action)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1coreapi_a30ad586a7414c6c3fc11f2595c819a00}{distribute\+\_\+links}} (obj)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1coreapi_a2d6e6e5bfac6fa52f0fd812fe8797f6b}{insert\+\_\+into}} (target, keys, value)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1coreapi_ac5c4db512abf5f7093bda69701a073cc}{field\+\_\+to\+\_\+schema}} (field)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1coreapi_a9ef4492297885758a57d496c2cde89e5}{is\+\_\+enabled}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1coreapi_a3717a46ec2e4b38fe731cf425bf3a289}{INSERT\+\_\+\+INTO\+\_\+\+COLLISION\+\_\+\+FMT}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1schemas_1_1coreapi_a215759a230d5afd54ffb103e2c83658a}\label{namespacerest__framework_1_1schemas_1_1coreapi_a215759a230d5afd54ffb103e2c83658a} 
+\index{rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}!common\_path@{common\_path}}
+\index{common\_path@{common\_path}!rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}}
+\doxysubsubsection{\texorpdfstring{common\_path()}{common\_path()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+coreapi.\+common\+\_\+path (\begin{DoxyParamCaption}\item[{}]{paths }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1schemas_1_1coreapi_a30ad586a7414c6c3fc11f2595c819a00}\label{namespacerest__framework_1_1schemas_1_1coreapi_a30ad586a7414c6c3fc11f2595c819a00} 
+\index{rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}!distribute\_links@{distribute\_links}}
+\index{distribute\_links@{distribute\_links}!rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}}
+\doxysubsubsection{\texorpdfstring{distribute\_links()}{distribute\_links()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+coreapi.\+distribute\+\_\+links (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1schemas_1_1coreapi_ac5c4db512abf5f7093bda69701a073cc}\label{namespacerest__framework_1_1schemas_1_1coreapi_ac5c4db512abf5f7093bda69701a073cc} 
+\index{rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}!field\_to\_schema@{field\_to\_schema}}
+\index{field\_to\_schema@{field\_to\_schema}!rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}}
+\doxysubsubsection{\texorpdfstring{field\_to\_schema()}{field\_to\_schema()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+coreapi.\+field\+\_\+to\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{field }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1schemas_1_1coreapi_a2d6e6e5bfac6fa52f0fd812fe8797f6b}\label{namespacerest__framework_1_1schemas_1_1coreapi_a2d6e6e5bfac6fa52f0fd812fe8797f6b} 
+\index{rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}!insert\_into@{insert\_into}}
+\index{insert\_into@{insert\_into}!rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}}
+\doxysubsubsection{\texorpdfstring{insert\_into()}{insert\_into()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+coreapi.\+insert\+\_\+into (\begin{DoxyParamCaption}\item[{}]{target,  }\item[{}]{keys,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Nested dictionary insertion.
+
+>>> example = {}
+>>> insert_into(example, ['a', 'b', 'c'], 123)
+>>> example
+LinkNode({'a': LinkNode({'b': LinkNode({'c': LinkNode(links=[123])}}})))
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1schemas_1_1coreapi_a549e9a431f555665b55666548d77b521}\label{namespacerest__framework_1_1schemas_1_1coreapi_a549e9a431f555665b55666548d77b521} 
+\index{rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}!is\_custom\_action@{is\_custom\_action}}
+\index{is\_custom\_action@{is\_custom\_action}!rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}}
+\doxysubsubsection{\texorpdfstring{is\_custom\_action()}{is\_custom\_action()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+coreapi.\+is\+\_\+custom\+\_\+action (\begin{DoxyParamCaption}\item[{}]{action }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1schemas_1_1coreapi_a9ef4492297885758a57d496c2cde89e5}\label{namespacerest__framework_1_1schemas_1_1coreapi_a9ef4492297885758a57d496c2cde89e5} 
+\index{rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}!is\_enabled@{is\_enabled}}
+\index{is\_enabled@{is\_enabled}!rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}}
+\doxysubsubsection{\texorpdfstring{is\_enabled()}{is\_enabled()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+coreapi.\+is\+\_\+enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Is CoreAPI Mode enabled?\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1schemas_1_1coreapi_a3717a46ec2e4b38fe731cf425bf3a289}\label{namespacerest__framework_1_1schemas_1_1coreapi_a3717a46ec2e4b38fe731cf425bf3a289} 
+\index{rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}!INSERT\_INTO\_COLLISION\_FMT@{INSERT\_INTO\_COLLISION\_FMT}}
+\index{INSERT\_INTO\_COLLISION\_FMT@{INSERT\_INTO\_COLLISION\_FMT}!rest\_framework.schemas.coreapi@{rest\_framework.schemas.coreapi}}
+\doxysubsubsection{\texorpdfstring{INSERT\_INTO\_COLLISION\_FMT}{INSERT\_INTO\_COLLISION\_FMT}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+schemas.\+coreapi.\+INSERT\+\_\+\+INTO\+\_\+\+COLLISION\+\_\+\+FMT}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00002\ \textcolor{stringliteral}{Schema\ Naming\ Collision.}}
+\DoxyCodeLine{00003\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{00004\ \textcolor{stringliteral}{coreapi.Link\ for\ URL\ path\ \{value\_url\}\ cannot\ be\ inserted\ into\ schema.}}
+\DoxyCodeLine{00005\ \textcolor{stringliteral}{Position\ conflicts\ with\ coreapi.Link\ for\ URL\ path\ \{target\_url\}.}}
+\DoxyCodeLine{00006\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{00007\ \textcolor{stringliteral}{Attempted\ to\ insert\ link\ with\ keys:\ \{keys\}.}}
+\DoxyCodeLine{00008\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{00009\ \textcolor{stringliteral}{Adjust\ URLs\ to\ avoid\ naming\ collision\ or\ override\ \`{}SchemaGenerator.get\_keys()\`{}}}
+\DoxyCodeLine{00010\ \textcolor{stringliteral}{to\ customise\ schema\ structure.}}
+\DoxyCodeLine{00011\ \textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}

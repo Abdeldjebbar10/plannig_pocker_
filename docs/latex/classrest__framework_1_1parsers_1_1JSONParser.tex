@@ -1,0 +1,75 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+parsers.\+JSONParser}
+\hypertarget{classrest__framework_1_1parsers_1_1JSONParser}{}\label{classrest__framework_1_1parsers_1_1JSONParser}\index{rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+parsers.\+JSONParser\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+parsers.\+JSONParser\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1JSONParser_ad99d514a09e0a9e8747184a0fe79badc}{parse}} (self, stream, \mbox{\hyperlink{classrest__framework_1_1parsers_1_1JSONParser_a8874b01c87447b1c219c881a434414cd}{media\+\_\+type}}=None, parser\+\_\+context=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1parsers_1_1JSONParser_a8874b01c87447b1c219c881a434414cd}{media\+\_\+type}} = \textquotesingle{}application/json\textquotesingle{}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1JSONParser_addf3c8c5c5d29078e042abc2470871e0}{renderer\+\_\+class}} = \mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer}{renderers.\+JSONRenderer}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1JSONParser_a446cd8aa40d95315616d633556dfb9df}{strict}} = api\+\_\+settings.\+STRICT\+\_\+\+JSON
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser}{rest\+\_\+framework.\+parsers.\+Base\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser_a14d6a8b69cfd67f16ac0011d234371e5}{media\+\_\+type}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Parses JSON-serialized data.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1parsers_1_1JSONParser_ad99d514a09e0a9e8747184a0fe79badc}\label{classrest__framework_1_1parsers_1_1JSONParser_ad99d514a09e0a9e8747184a0fe79badc} 
+\index{rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}!parse@{parse}}
+\index{parse@{parse}!rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+parsers.\+JSONParser.\+parse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stream,  }\item[{}]{media\+\_\+type = {\ttfamily None},  }\item[{}]{parser\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses the incoming bytestream as JSON and returns the resulting data.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser_adfd4b23e013b564d2868388167dbb57e}{rest\+\_\+framework.\+parsers.\+Base\+Parser}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1parsers_1_1JSONParser_a8874b01c87447b1c219c881a434414cd}\label{classrest__framework_1_1parsers_1_1JSONParser_a8874b01c87447b1c219c881a434414cd} 
+\index{rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}!media\_type@{media\_type}}
+\index{media\_type@{media\_type}!rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}}
+\doxysubsubsection{\texorpdfstring{media\_type}{media\_type}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+parsers.\+JSONParser.\+media\+\_\+type = \textquotesingle{}application/json\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1parsers_1_1JSONParser_addf3c8c5c5d29078e042abc2470871e0}\label{classrest__framework_1_1parsers_1_1JSONParser_addf3c8c5c5d29078e042abc2470871e0} 
+\index{rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}!renderer\_class@{renderer\_class}}
+\index{renderer\_class@{renderer\_class}!rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}}
+\doxysubsubsection{\texorpdfstring{renderer\_class}{renderer\_class}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+parsers.\+JSONParser.\+renderer\+\_\+class = \mbox{\hyperlink{classrest__framework_1_1renderers_1_1JSONRenderer}{renderers.\+JSONRenderer}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1parsers_1_1JSONParser_a446cd8aa40d95315616d633556dfb9df}\label{classrest__framework_1_1parsers_1_1JSONParser_a446cd8aa40d95315616d633556dfb9df} 
+\index{rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}!strict@{strict}}
+\index{strict@{strict}!rest\_framework.parsers.JSONParser@{rest\_framework.parsers.JSONParser}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+parsers.\+JSONParser.\+strict = api\+\_\+settings.\+STRICT\+\_\+\+JSON\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{parsers_8py}{parsers.\+py}}\end{DoxyCompactItemize}

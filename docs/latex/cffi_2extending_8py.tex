@@ -1,0 +1,30 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/random/\+\_\+examples/cffi/extending.py}
+\hypertarget{cffi_2extending_8py}{}\label{cffi_2extending_8py}\index{env/lib/python3.12/site-\/packages/numpy/random/\_examples/cffi/extending.py@{env/lib/python3.12/site-\/packages/numpy/random/\_examples/cffi/extending.py}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceextending}{extending}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceextending_a1260e9bfdc58cf13ca4704655303cbdb}{extending.\+ffi}} = cffi.\+FFI()
+\item 
+\mbox{\hyperlink{namespaceextending_a2dba9dae3c59d687c64b2150f744bae8}{extending.\+inc\+\_\+dir}} = os.\+path.\+join(np.\+get\+\_\+include(), \textquotesingle{}numpy\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceextending_a739074a39dbaeee15319d4a1fffed0fb}{extending.\+lib}} = ffi.\+dlopen(np.\+random.\+\_\+generator.\+\_\+\+\_\+file\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespaceextending_a3a93d06c028a21ed5e3775c9d97b0437}{extending.\+bit\+\_\+gen}} = np.\+random.\+PCG64()
+\item 
+\mbox{\hyperlink{namespaceextending_af6793f8dd9d1232c132981cc1ac7a4e6}{extending.\+rng}} = np.\+random.\+Generator(\mbox{\hyperlink{namespaceextending_a3a93d06c028a21ed5e3775c9d97b0437}{bit\+\_\+gen}})
+\item 
+\mbox{\hyperlink{namespaceextending_a6228eb907acb00d4e6178f7b10aa3435}{extending.\+state}} = bit\+\_\+gen.\+state
+\item 
+\mbox{\hyperlink{namespaceextending_a8c23516950145d0b7258110b88945278}{extending.\+interface}} = rng.\+bit\+\_\+generator.\+cffi
+\item 
+int \mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{extending.\+n}} = 100
+\item 
+\mbox{\hyperlink{namespaceextending_aa5a6cdee379078157b1c777c60a9235c}{extending.\+vals\+\_\+cffi}} = ffi.\+new(\textquotesingle{}double\mbox{[}\%d\mbox{]}\textquotesingle{} \% \mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}})
+\item 
+\mbox{\hyperlink{namespaceextending_a67a4823006ed5c87ec37e99590e521b2}{extending.\+vals}} = rng.\+standard\+\_\+normal(\mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}})
+\end{DoxyCompactItemize}

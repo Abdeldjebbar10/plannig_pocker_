@@ -1,0 +1,128 @@
+\doxysection{Référence de la classe django.\+contrib.\+flatpages.\+models.\+Flat\+Page}
+\hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage}{}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage}\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+flatpages.\+models.\+Flat\+Page\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+flatpages.\+models.\+Flat\+Page\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_1_1Meta}{Meta}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a7b928f53b0e7b3c330c2e44fa35b4d2e}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ae7e604bb984f8921f77b603526f4a426}{get\+\_\+absolute\+\_\+url}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a30c952e9df12cda851289c083d48f1a7}{url}} = models.\+Char\+Field(\+\_\+("{}URL"{}), max\+\_\+length=100, db\+\_\+index=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ae8198ec05a3733ca519c62f3008d7794}{title}} = models.\+Char\+Field(\+\_\+("{}title"{}), max\+\_\+length=200)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ac7dcac866e833d1143fd6267efed99d6}{content}} = models.\+Text\+Field(\+\_\+("{}content"{}), blank=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a1193e9cdac1d12614bc545a8307f444d}{enable\+\_\+comments}} = models.\+Boolean\+Field(\+\_\+("{}enable comments"{}), default=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a5a449867a27b7637791493a5f954a470}{template\+\_\+name}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a6d9a0bb0733abba2427f4eb00b4c6865}{registration\+\_\+required}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a87e224b3bde6ecd86a02b7bbafd10fae}{sites}} = models.\+Many\+To\+Many\+Field(\mbox{\hyperlink{classdjango_1_1contrib_1_1sites_1_1models_1_1Site}{Site}}, verbose\+\_\+name=\+\_\+("{}sites"{}))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a7b928f53b0e7b3c330c2e44fa35b4d2e}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a7b928f53b0e7b3c330c2e44fa35b4d2e} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ae7e604bb984f8921f77b603526f4a426}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ae7e604bb984f8921f77b603526f4a426} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!get\_absolute\_url@{get\_absolute\_url}}
+\index{get\_absolute\_url@{get\_absolute\_url}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{get\_absolute\_url()}{get\_absolute\_url()}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+get\+\_\+absolute\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ac7dcac866e833d1143fd6267efed99d6}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ac7dcac866e833d1143fd6267efed99d6} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!content@{content}}
+\index{content@{content}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+content = models.\+Text\+Field(\+\_\+("{}content"{}), blank=True)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a1193e9cdac1d12614bc545a8307f444d}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a1193e9cdac1d12614bc545a8307f444d} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!enable\_comments@{enable\_comments}}
+\index{enable\_comments@{enable\_comments}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{enable\_comments}{enable\_comments}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+enable\+\_\+comments = models.\+Boolean\+Field(\+\_\+("{}enable comments"{}), default=False)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a6d9a0bb0733abba2427f4eb00b4c6865}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a6d9a0bb0733abba2427f4eb00b4c6865} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!registration\_required@{registration\_required}}
+\index{registration\_required@{registration\_required}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{registration\_required}{registration\_required}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+registration\+\_\+required\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ models.BooleanField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \_(\textcolor{stringliteral}{"{}registration\ required"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ help\_text=\_(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}If\ this\ is\ checked,\ only\ logged-\/in\ users\ will\ be\ able\ to\ view\ the\ page."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ default=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a87e224b3bde6ecd86a02b7bbafd10fae}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a87e224b3bde6ecd86a02b7bbafd10fae} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!sites@{sites}}
+\index{sites@{sites}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{sites}{sites}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+sites = models.\+Many\+To\+Many\+Field(\mbox{\hyperlink{classdjango_1_1contrib_1_1sites_1_1models_1_1Site}{Site}}, verbose\+\_\+name=\+\_\+("{}sites"{}))\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a5a449867a27b7637791493a5f954a470}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a5a449867a27b7637791493a5f954a470} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!template\_name@{template\_name}}
+\index{template\_name@{template\_name}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{template\_name}{template\_name}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+template\+\_\+name\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ models.CharField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \_(\textcolor{stringliteral}{"{}template\ name"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ max\_length=70,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ blank=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ help\_text=\_(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Example:\ “flatpages/contact\_page.html”.\ If\ this\ isn’t\ provided,\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}the\ system\ will\ use\ “flatpages/default.html”."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ae8198ec05a3733ca519c62f3008d7794}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_ae8198ec05a3733ca519c62f3008d7794} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!title@{title}}
+\index{title@{title}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+title = models.\+Char\+Field(\+\_\+("{}title"{}), max\+\_\+length=200)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a30c952e9df12cda851289c083d48f1a7}\label{classdjango_1_1contrib_1_1flatpages_1_1models_1_1FlatPage_a30c952e9df12cda851289c083d48f1a7} 
+\index{django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}!url@{url}}
+\index{url@{url}!django.contrib.flatpages.models.FlatPage@{django.contrib.flatpages.models.FlatPage}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily django.\+contrib.\+flatpages.\+models.\+Flat\+Page.\+url = models.\+Char\+Field(\+\_\+("{}URL"{}), max\+\_\+length=100, db\+\_\+index=True)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/flatpages/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2django_2contrib_2flatpages_2models_8py}{models.\+py}}\end{DoxyCompactItemize}

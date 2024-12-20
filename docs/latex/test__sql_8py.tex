@@ -1,0 +1,469 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/tests/io/test\+\_\+sql.py}
+\hypertarget{test__sql_8py}{}\label{test__sql_8py}\index{env/lib/python3.12/site-\/packages/pandas/tests/io/test\_sql.py@{env/lib/python3.12/site-\/packages/pandas/tests/io/test\_sql.py}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests}{pandas.\+tests}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1io}{pandas.\+tests.\+io}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql}{pandas.\+tests.\+io.\+test\+\_\+sql}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a417a8fa16731732abb01769a8f4bed40}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sql\+\_\+strings}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a6af01f34b8ed5257757b53a8173428e9}{pandas.\+tests.\+io.\+test\+\_\+sql.\+iris\+\_\+table\+\_\+metadata}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa8f0f79cd98c65bd77eec69fdf06417d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+create\+\_\+and\+\_\+load\+\_\+iris\+\_\+sqlite3}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, Path iris\+\_\+file)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_abbb660ecc755984b4e8996a11b3dcae0}{pandas.\+tests.\+io.\+test\+\_\+sql.\+create\+\_\+and\+\_\+load\+\_\+iris\+\_\+postgresql}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, Path iris\+\_\+file)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a59d3ea1891fd9d7842155c533ec247fd}{pandas.\+tests.\+io.\+test\+\_\+sql.\+create\+\_\+and\+\_\+load\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, Path iris\+\_\+file)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2707f45ed3348663d73dba0e2bff54de}{pandas.\+tests.\+io.\+test\+\_\+sql.\+create\+\_\+and\+\_\+load\+\_\+iris\+\_\+view}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aaec390a8323aa7614f0c51b550ef5cb4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+types\+\_\+table\+\_\+metadata}} (str dialect)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a0584511a434e4941bb761e89b2cf741f}{pandas.\+tests.\+io.\+test\+\_\+sql.\+create\+\_\+and\+\_\+load\+\_\+types\+\_\+sqlite3}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, list\mbox{[}dict\mbox{]} \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aacecb69b275501361768abe77dd0c693}{pandas.\+tests.\+io.\+test\+\_\+sql.\+create\+\_\+and\+\_\+load\+\_\+types\+\_\+postgresql}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, list\mbox{[}dict\mbox{]} \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad68504d919b42ec1002605ff93f63991}{pandas.\+tests.\+io.\+test\+\_\+sql.\+create\+\_\+and\+\_\+load\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, list\mbox{[}dict\mbox{]} \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}}, str dialect)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a334b6cd6e52b41dbed7a2eb716ddf1dc}{pandas.\+tests.\+io.\+test\+\_\+sql.\+create\+\_\+and\+\_\+load\+\_\+postgres\+\_\+datetz}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9d9df847e25e09754401fdc52d1006af}{pandas.\+tests.\+io.\+test\+\_\+sql.\+check\+\_\+iris\+\_\+frame}} (Data\+Frame frame)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9968b37a7b3a1bd1a3c36961d3c8d2b5}{pandas.\+tests.\+io.\+test\+\_\+sql.\+count\+\_\+rows}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, str table\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4293dbbad1da5f086f9fec095d2d8494}{pandas.\+tests.\+io.\+test\+\_\+sql.\+iris\+\_\+path}} (datapath)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{pandas.\+tests.\+io.\+test\+\_\+sql.\+types\+\_\+data}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9b7cbb2d1fdbc82ae503ea0fc3182bf6}{pandas.\+tests.\+io.\+test\+\_\+sql.\+types\+\_\+data\+\_\+frame}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+frame1}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a66e083449263ccd4c0d23a865fa84ce5}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+frame3}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_abab214f981043bf24c0edd93ef026b16}{pandas.\+tests.\+io.\+test\+\_\+sql.\+get\+\_\+all\+\_\+views}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a56971b2581edc3a41f8f9febc4b44c2f}{pandas.\+tests.\+io.\+test\+\_\+sql.\+get\+\_\+all\+\_\+tables}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_afec729459919cb0a9b61d4ce1395b449}{pandas.\+tests.\+io.\+test\+\_\+sql.\+drop\+\_\+table}} (str table\+\_\+name, sqlite3.\+Connection\texorpdfstring{$\vert$}{|}sqlalchemy.\+engine.\+Engine\texorpdfstring{$\vert$}{|}sqlalchemy.\+engine.\+Connection \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ab1c9b07f1e427826ec34e8593b765214}{pandas.\+tests.\+io.\+test\+\_\+sql.\+drop\+\_\+view}} (str view\+\_\+name, sqlite3.\+Connection\texorpdfstring{$\vert$}{|}sqlalchemy.\+engine.\+Engine\texorpdfstring{$\vert$}{|}sqlalchemy.\+engine.\+Connection \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4630aeec0676cf878a495641b24ccf3f}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+pymysql\+\_\+engine}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa387fed4d2f06bd626b0f739259dc575}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+pymysql\+\_\+engine\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4630aeec0676cf878a495641b24ccf3f}{mysql\+\_\+pymysql\+\_\+engine}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4293dbbad1da5f086f9fec095d2d8494}{iris\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a67c71cd9dbc42ef825cb5bc73eb42303}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+pymysql\+\_\+engine\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4630aeec0676cf878a495641b24ccf3f}{mysql\+\_\+pymysql\+\_\+engine}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae4b5af8fb202ebd54269b1ebc87c36c5}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+pymysql\+\_\+conn}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4630aeec0676cf878a495641b24ccf3f}{mysql\+\_\+pymysql\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad4e9d019e321569f7c0d19f6ff4477fa}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+pymysql\+\_\+conn\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa387fed4d2f06bd626b0f739259dc575}{mysql\+\_\+pymysql\+\_\+engine\+\_\+iris}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_afc88da2ef34112a293ae52cf8bcfd200}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+pymysql\+\_\+conn\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a67c71cd9dbc42ef825cb5bc73eb42303}{mysql\+\_\+pymysql\+\_\+engine\+\_\+types}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a75ad6a6d2297aa80cae3c80efdb4da85}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+psycopg2\+\_\+engine}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a18fa0110b157a4aad85cd55a6f8d6541}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+psycopg2\+\_\+engine\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a75ad6a6d2297aa80cae3c80efdb4da85}{postgresql\+\_\+psycopg2\+\_\+engine}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4293dbbad1da5f086f9fec095d2d8494}{iris\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a7f99cc60db09a4fb4635ad915ea729b6}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+psycopg2\+\_\+engine\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a75ad6a6d2297aa80cae3c80efdb4da85}{postgresql\+\_\+psycopg2\+\_\+engine}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a134236a36804d717c627c97ff803f76d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+psycopg2\+\_\+conn}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a75ad6a6d2297aa80cae3c80efdb4da85}{postgresql\+\_\+psycopg2\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a092b46ac16c2ddaff082910e1cb06a8b}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+adbc\+\_\+conn}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a47c10ae784964be2f1c7fb341eb245d6}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+adbc\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a092b46ac16c2ddaff082910e1cb06a8b}{postgresql\+\_\+adbc\+\_\+conn}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4293dbbad1da5f086f9fec095d2d8494}{iris\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa7fac311a6d1b1dd66cfa73366bd0096}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+adbc\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a092b46ac16c2ddaff082910e1cb06a8b}{postgresql\+\_\+adbc\+\_\+conn}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_abbfc682d14d02fbbbfc18b05cc0ed475}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+psycopg2\+\_\+conn\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a18fa0110b157a4aad85cd55a6f8d6541}{postgresql\+\_\+psycopg2\+\_\+engine\+\_\+iris}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a84d906de02ecb889a27ba40086cb9a98}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+psycopg2\+\_\+conn\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a7f99cc60db09a4fb4635ad915ea729b6}{postgresql\+\_\+psycopg2\+\_\+engine\+\_\+types}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5c9d8c7a54283bf9a1f78388871c3b55}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+str}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+engine}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5c9d8c7a54283bf9a1f78388871c3b55}{sqlite\+\_\+str}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a132fbf847586893dd9cf03ee4fc7a43e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+conn}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8d784cb120bcd989dfb32734227e9dc1}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+str\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5c9d8c7a54283bf9a1f78388871c3b55}{sqlite\+\_\+str}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4293dbbad1da5f086f9fec095d2d8494}{iris\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae9faced27472591ddc2e9821dccd1b1f}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+engine\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4293dbbad1da5f086f9fec095d2d8494}{iris\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a23b4c86f6d298d480dd45f606d9c19ce}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+conn\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae9faced27472591ddc2e9821dccd1b1f}{sqlite\+\_\+engine\+\_\+iris}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2c94c24cdc8e5ae0eb39fd1420089b7c}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+str\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5c9d8c7a54283bf9a1f78388871c3b55}{sqlite\+\_\+str}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aba525231194c271ec5255c679e701a97}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+engine\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_adde706b870539c21ce70885f059ccedc}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+conn\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aba525231194c271ec5255c679e701a97}{sqlite\+\_\+engine\+\_\+types}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9564b867651c0f1c6735645b75063305}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+adbc\+\_\+conn}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8f0f3b69dcad774f0115c157acbf8027}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+adbc\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9564b867651c0f1c6735645b75063305}{sqlite\+\_\+adbc\+\_\+conn}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4293dbbad1da5f086f9fec095d2d8494}{iris\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3291f73baa56f3cdc649b6e7b01ad097}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+adbc\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9564b867651c0f1c6735645b75063305}{sqlite\+\_\+adbc\+\_\+conn}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+buildin}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aec32cb5aa010e0df19044c05cb890534}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+buildin\+\_\+iris}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4293dbbad1da5f086f9fec095d2d8494}{iris\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a45fde721187895bf1b8993bb16fc9577}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+buildin\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aebbf77667ad7f8b054e332b20093250f}{types\+\_\+data}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aeea0ab2b888eb3f8f0a26d12286814dc}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+dataframe\+\_\+to\+\_\+sql}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a1e938c50c8c168f6b1d8edaf48671efb}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+dataframe\+\_\+to\+\_\+sql\+\_\+empty}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a1e8b0db1fffa4625c89604490a276433}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+dataframe\+\_\+to\+\_\+sql\+\_\+arrow\+\_\+dtypes}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_abe070197b257597150e105fab35e0467}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+dataframe\+\_\+to\+\_\+sql\+\_\+arrow\+\_\+dtypes\+\_\+missing}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, nulls\+\_\+fixture)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4b9bccbe56ca344caec79a675b63b5ae}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+to\+\_\+sql}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, method, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a7bc5bc3d215dd14f8b55b1fa4f45c546}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+to\+\_\+sql\+\_\+exist}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, mode, num\+\_\+row\+\_\+coef, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2a029030f52d50e28c3f70fac1d40d19}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+to\+\_\+sql\+\_\+exist\+\_\+fail}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a090b113fa50712cbbb46e0ca041a5ed8}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+iris\+\_\+query}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9d298bbbe6329583441d0e017b4aa2c4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+iris\+\_\+query\+\_\+chunksize}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5349efbee2711ba29fc0f76b75ac42fa}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+iris\+\_\+query\+\_\+expression\+\_\+with\+\_\+parameter}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a1eec8be9baf73fc0a73753743f9d6615}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+iris\+\_\+query\+\_\+string\+\_\+with\+\_\+parameter}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a417a8fa16731732abb01769a8f4bed40}{sql\+\_\+strings}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aeba6ee6c3517f2bfd77c0fa1b13b6614}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+iris\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a07854bc7ff4fac22cd093ac955c2a7dc}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+iris\+\_\+table\+\_\+chunksize}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a81b5eebd484efc43de4e04c4ca124419}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+to\+\_\+sql\+\_\+callable}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8149bccb90f810248641e5f75353a7fd}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+default\+\_\+type\+\_\+conversion}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a60ad807033a6435459ab9ff2acac6c1f}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+procedure}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ac3490aaf99bf2d5e8fbb735b5158a93e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+copy\+\_\+from\+\_\+callable\+\_\+insertion\+\_\+method}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, expected\+\_\+count, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a710503f63d8fd4148648d8cb81c49b6d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+insertion\+\_\+method\+\_\+on\+\_\+conflict\+\_\+do\+\_\+nothing}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a628b025878b8a31be67624cf2cc7a83e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+to\+\_\+sql\+\_\+on\+\_\+public\+\_\+schema}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a925954ad07eba45a90a80ac97fdd6d81}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+insertion\+\_\+method\+\_\+on\+\_\+conflict\+\_\+update}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aab37501d0f8a3f21f0d60d3ca31b0da4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+view\+\_\+postgres}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aa5c8b2f2490b080e7a84de2a567473}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+view\+\_\+sqlite}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a59b22a04f5efeb15360a62b94c9519b7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+execute\+\_\+typeerror}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae9faced27472591ddc2e9821dccd1b1f}{sqlite\+\_\+engine\+\_\+iris}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ac5b5a212bdbb4b8fa58d9199199cd8f7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+execute\+\_\+deprecated}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a23b4c86f6d298d480dd45f606d9c19ce}{sqlite\+\_\+conn\+\_\+iris}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_af1e05c37a0616193562984178ec23021}{pandas.\+tests.\+io.\+test\+\_\+sql.\+flavor}} (conn\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae1fd960b06dddea9ac80675b8f2971ac}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+iris\+\_\+parameter}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a417a8fa16731732abb01769a8f4bed40}{sql\+\_\+strings}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_adb5a6a4c954e2c95027fae40e8ac14a2}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+iris\+\_\+named\+\_\+parameter}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a417a8fa16731732abb01769a8f4bed40}{sql\+\_\+strings}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a50c35095b4e96ecd76625759a3403ff8}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+iris\+\_\+no\+\_\+parameter\+\_\+with\+\_\+percent}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a417a8fa16731732abb01769a8f4bed40}{sql\+\_\+strings}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9073a121674a75772e12549d7668be8a}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+read\+\_\+sql\+\_\+view}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_af296840e9968937c67eba4646576c3df}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+read\+\_\+sql\+\_\+with\+\_\+chunksize\+\_\+no\+\_\+result}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aca3f976efd76cc47ebb32eaaf8edfb60}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+to\+\_\+sql}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae3fd960db0798f56922fbc2d571ecb19}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+to\+\_\+sql\+\_\+fail}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a02597e5c34447d7570ba4cea32cdc143}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+to\+\_\+sql\+\_\+replace}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4e16b3bc8f690b177b2548bc448a5134}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+to\+\_\+sql\+\_\+append}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae222c3ad9efa13dfa973e878370dfee0}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+to\+\_\+sql\+\_\+type\+\_\+mapping}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a66e083449263ccd4c0d23a865fa84ce5}{test\+\_\+frame3}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2cced5ea284cf6ddae2770eac8361fa4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+to\+\_\+sql\+\_\+series}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5efcbba6b9c69ae8b21a0d4176ee730b}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+roundtrip}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3cd3cd653b868952a65a9a2f8272ccd2}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+roundtrip\+\_\+chunksize}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ac7575efe9df0a83b1be577c7e1136265}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+execute\+\_\+sql}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aaeeed9d826bf9bbb1e0a2c1e5d57b352}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+date\+\_\+parsing}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a237f7a7e465ecc23074fc534a780a0ab}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+custom\+\_\+dateparsing\+\_\+error}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, read\+\_\+sql, text, mode, error, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9b7cbb2d1fdbc82ae503ea0fc3182bf6}{types\+\_\+data\+\_\+frame}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5d23e35e882a9b29986bc4b53491d82d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+date\+\_\+and\+\_\+index}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a892e241e01a20225b6c88797af0950cf}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+timedelta}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a21e6d439396a2f4532d9ddb34c066a58}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+complex\+\_\+raises}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a569285e9e44b43ba434e8473cfc5cb76}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+to\+\_\+sql\+\_\+index\+\_\+label}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, index\+\_\+name, index\+\_\+label, expected)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_abbb3c096a43283f6c8adede85ee8f8da}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+to\+\_\+sql\+\_\+index\+\_\+label\+\_\+multiindex}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a33bc9202a73b0904f3ad767803094956}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+multiindex\+\_\+roundtrip}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a4e06f9dfe0482a235daa1215907b4c01}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+dtype\+\_\+argument}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, dtype)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8bd5849e4ea10865ee61716f3eb3415d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+integer\+\_\+col\+\_\+names}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ab30ec4c6458320a9bd671ddef70dcbf4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+get\+\_\+schema}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a36087376f064c0d778bd77cc1eb01b3e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+get\+\_\+schema\+\_\+with\+\_\+schema}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a501ad91aaf3df2bc1ace25962e542746}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+get\+\_\+schema\+\_\+dtypes}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae7f4714d8a55a1505546ab28361a11d6}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+get\+\_\+schema\+\_\+keys}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a53d37da8de2a5054b68ce9b7dcb0b55c}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+chunksize\+\_\+read}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a84c3b3298fa3cd09da2b31c19687bbbf}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+categorical}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa6d543d611f42a849826f5222945811e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+unicode\+\_\+column\+\_\+name}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ac0a29bd6f142f52528bc0dfc7047cade}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+escaped\+\_\+table\+\_\+name}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ac0a69be0790c2e6ea7307098ac44ad18}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+api\+\_\+read\+\_\+sql\+\_\+duplicate\+\_\+columns}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a148092c8ff18dda6393dad2f8a745488}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+table\+\_\+columns}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a57cf7c129742a73946d013ad6c4e5fb4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+table\+\_\+index\+\_\+col}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_af3c433e0acadd25719be6457158d81d1}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+delegate}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a679805a2b050b896e24360c5ce8987a7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+not\+\_\+reflect\+\_\+all\+\_\+tables}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a132fbf847586893dd9cf03ee4fc7a43e}{sqlite\+\_\+conn}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8a679000aa6b5935411237916568ea95}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+warning\+\_\+case\+\_\+insensitive\+\_\+table\+\_\+name}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a1960c10af25240aa524f68589231718e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlalchemy\+\_\+type\+\_\+mapping}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a34e003a3657fae6035606550be0c1009}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlalchemy\+\_\+integer\+\_\+mapping}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, integer, expected)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a491e9b4e8d37c553f7a4b7881381f9ed}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlalchemy\+\_\+integer\+\_\+overload\+\_\+mapping}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, integer)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a348a0e1aee9e90a0522dac585b293205}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+database\+\_\+uri\+\_\+string}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8d04bda89784e6d4a00fc7927a2f48a1}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+pg8000\+\_\+sqlalchemy\+\_\+passthrough\+\_\+error}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a49c89fc47e62e4bbcffc7da4dcb8ad0d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+query\+\_\+by\+\_\+text\+\_\+obj}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9b2fc37bf490a1b97d02f6f423dcb12d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+query\+\_\+by\+\_\+select\+\_\+obj}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae61dc1e658936ad5bc3607e788235e3e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+column\+\_\+with\+\_\+percentage}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad2f4da514afe0102919693650de39ced}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sql\+\_\+open\+\_\+close}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a66e083449263ccd4c0d23a865fa84ce5}{test\+\_\+frame3}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_af5600e9793bbc8c61f2dfefbf42aaaab}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+con\+\_\+string\+\_\+import\+\_\+error}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aaa0d4410dc3d8cf2c19c6e42adf2e289}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+con\+\_\+unknown\+\_\+dbapi2\+\_\+class\+\_\+does\+\_\+not\+\_\+error\+\_\+without\+\_\+sql\+\_\+alchemy\+\_\+installed}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a28d80a4c0ca05893182e61f7a23f25b1}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlite\+\_\+read\+\_\+sql\+\_\+delegate}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aec32cb5aa010e0df19044c05cb890534}{sqlite\+\_\+buildin\+\_\+iris}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a1d21ce3dde7ca58b342761a6bba8dd07}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+get\+\_\+schema2}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a20b08c6e40671c9eb714a2e0116f207e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlite\+\_\+type\+\_\+mapping}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a09745edac2fafab14b7f821ad372e91b}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+create\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ac7c56be9b1e13fc3638ab171d5488e25}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+drop\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3da3ecdf7f7258a271988c9f462db95c}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+roundtrip}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a55f9006eaa8b26e61b500edc5f9a9708}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+execute\+\_\+sql}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a6684c2609c2ac76404e9cd8900fd8afa}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlalchemy\+\_\+read\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad92bb74a443a8c34d140d6942857bae6}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlalchemy\+\_\+read\+\_\+table\+\_\+columns}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a854ce80f55ce115e8d03b92c63997bd4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+table\+\_\+absent\+\_\+raises}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a7485ccc25db69715598563ff460937c7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlalchemy\+\_\+default\+\_\+type\+\_\+conversion}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a0d38bff258f16dab285c7a485c8e189e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+bigint}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a49ca8412eb682c91a8b3bcb1ea174aca}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+default\+\_\+date\+\_\+load}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a7f1f4af36ae9c83e69bda8410be4d5fa}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+datetime\+\_\+with\+\_\+timezone\+\_\+query}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, parse\+\_\+dates)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a99f56da4b9b3957ca18a29985d2341bd}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+datetime\+\_\+with\+\_\+timezone\+\_\+query\+\_\+chunksize}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a41609d875d6df7bd9cad859c9f4b8601}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+datetime\+\_\+with\+\_\+timezone\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad1d855818d2b70e2d411d06f7b7a9f1c}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+datetime\+\_\+with\+\_\+timezone\+\_\+roundtrip}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_af81beb24e3ffca99ec0215c2a2c3690a}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+out\+\_\+of\+\_\+bounds\+\_\+datetime}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_abb05617c9d69a47dd2b1a8469a23fd56}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+naive\+\_\+datetimeindex\+\_\+roundtrip}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad7e1f2c10313d78229690e478e76648e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+date\+\_\+parsing}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3b8f230cf619f1c3f8e59f71b3f61383}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+datetime}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3c51b3be504ecae6a4704617c26964b6}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+datetime\+\_\+\+NaT}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_afc2006d70d51a264f008617280ca7fab}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+datetime\+\_\+date}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad57c1a5b5ff468f5860aba8affaf844d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+datetime\+\_\+time}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a7f4a4cd07486457e9b49f0930ae1a38c}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+mixed\+\_\+dtype\+\_\+insert}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_af98a0dca4bd487ddc6296d0f98f3480d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+nan\+\_\+numeric}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a991c18ade29a44255343740ea310bee2}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+nan\+\_\+fullcolumn}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_acc822414dd63e56748d2867e9843b9fd}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+nan\+\_\+string}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2e9a608179e3751d1a90b17c3e56de7b}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+to\+\_\+sql\+\_\+save\+\_\+index}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa27779668af2a6832fc37f9ef7d1ca3d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+transactions}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a77554e4891e9d0cb9f010c50113007f8}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+transaction\+\_\+rollback}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a1437c4b5b6aa50611091b6c6eeea46ed}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+get\+\_\+schema\+\_\+create\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a66e083449263ccd4c0d23a865fa84ce5}{test\+\_\+frame3}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a807b7f9ae44db8bf0951c5c31888e7f8}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+dtype}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a38247754eaa159d92b0b5841a4258236}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+notna\+\_\+dtype}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a15e87e3b40612513cbba1d8fe01e3e5d}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+double\+\_\+precision}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a0701a4618688a2d50a451c8446a21aea}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+connectable\+\_\+issue\+\_\+example}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a1b9c8dbaa536d595de6c793942950fe7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+to\+\_\+sql\+\_\+with\+\_\+negative\+\_\+npinf}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, input)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa80c5c1b0a7f13f9a59efcd14c52f9e5}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+temporary\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a754ffab73b80aab1b714c33a91c5962b}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+invalid\+\_\+engine}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aacd8e493d0feedf412be6f586a61adb4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+to\+\_\+sql\+\_\+with\+\_\+sql\+\_\+engine}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae9161c33b1852c096eedab12ee2701a7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+options\+\_\+sqlalchemy}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5ba9b49de2c5e027772f45bca11c1dd8}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+options\+\_\+auto}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a017cb2524d7ee369b1464c3267caba0d}{test\+\_\+frame1}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8f1de0ce07667eef33cac6750d105ae7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+options\+\_\+get\+\_\+engine}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ae4e68baaef5dc64cdce8d36df4850c55}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+get\+\_\+engine\+\_\+auto\+\_\+error\+\_\+message}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5d5b65091da2b131e606a0fe2f23a78e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+dtype\+\_\+backend}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, string\+\_\+storage, func, dtype\+\_\+backend, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aceebd07dbea0cf944f495405dc756a61}{dtype\+\_\+backend\+\_\+data}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aafac328571db58888430efa3a47223f7}{dtype\+\_\+backend\+\_\+expected}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2fde77eada219396899abb449c492321}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+dtype\+\_\+backend\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, string\+\_\+storage, func, dtype\+\_\+backend, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aceebd07dbea0cf944f495405dc756a61}{dtype\+\_\+backend\+\_\+data}}, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aafac328571db58888430efa3a47223f7}{dtype\+\_\+backend\+\_\+expected}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ab8d17919e47f94cc969d5e2954a2b7d9}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+invalid\+\_\+dtype\+\_\+backend\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, func, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aceebd07dbea0cf944f495405dc756a61}{dtype\+\_\+backend\+\_\+data}})
+\item 
+Data\+Frame \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aceebd07dbea0cf944f495405dc756a61}{pandas.\+tests.\+io.\+test\+\_\+sql.\+dtype\+\_\+backend\+\_\+data}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aafac328571db58888430efa3a47223f7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+dtype\+\_\+backend\+\_\+expected}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a847581a8c64a0def87ccc1a67abeb4e7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+chunksize\+\_\+empty\+\_\+dtypes}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a7b401e84d593ce0555166728f5491085}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+dtype}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, request, func, dtype\+\_\+backend)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a9b6df4e608393eaab7969ca89ee65300}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+keyword\+\_\+deprecation}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a994be380d2e3c9bd3ea2b800cec239cd}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+bigint\+\_\+warning}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ac378ebdde39e6f99e02cf5bfbbcfc9f3}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+valueerror\+\_\+exception}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a26be2f4d2b812f50689f0bb36fa8fa19}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+row\+\_\+object\+\_\+is\+\_\+named\+\_\+tuple}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad3e929c3226f9bedda8cf039d430fec7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+read\+\_\+sql\+\_\+string\+\_\+inference}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8712bd5510ea26ea93e2ffa1fe5c4f22}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+roundtripping\+\_\+datetimes}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_afb7c63819fc7911ab6405e25f89835ed}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+builtin\+\_\+detect\+\_\+types}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a6c41b20825476e339c248c603d07455c}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+roundtripping\+\_\+datetimes\+\_\+detect\+\_\+types}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_afb7c63819fc7911ab6405e25f89835ed}{sqlite\+\_\+builtin\+\_\+detect\+\_\+types}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a841d479909b315c8e680dc13e39be2a3}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+psycopg2\+\_\+schema\+\_\+support}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a75ad6a6d2297aa80cae3c80efdb4da85}{postgresql\+\_\+psycopg2\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a8956ae3307724efe34ed67a4a7a2b254}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+self\+\_\+join\+\_\+date\+\_\+columns}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a75ad6a6d2297aa80cae3c80efdb4da85}{postgresql\+\_\+psycopg2\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5f3e942751a4a76463abf5210140cb75}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+create\+\_\+and\+\_\+drop\+\_\+table}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a439fce462aed807052ddb191b4eac7d4}{sqlite\+\_\+engine}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a441cdefa9889fd1c764c44a8e6d94dbd}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlite\+\_\+datetime\+\_\+date}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a24cbe72b3d6bb664ddc56cc9035f6cbc}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlite\+\_\+datetime\+\_\+time}} (tz\+\_\+aware, \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a82348be6669b56fd89cd0dec93561045}{pandas.\+tests.\+io.\+test\+\_\+sql.\+get\+\_\+sqlite\+\_\+column\+\_\+type}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{conn}}, table, column)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_af6f99bb95c7a213b2fe816e99d48c85c}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlite\+\_\+test\+\_\+dtype}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ab02d460dca1e95e312aae81f84599cfb}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlite\+\_\+notna\+\_\+dtype}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a131b54b593aade6a81768ef472fecdaa}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+sqlite\+\_\+illegal\+\_\+names}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_addd8602b81942de42757d65f0a275cb6}{pandas.\+tests.\+io.\+test\+\_\+sql.\+format\+\_\+query}} (sql, \texorpdfstring{$\ast$}{*}args)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a052a7f3ab29c6877e339d55fdeff8729}{pandas.\+tests.\+io.\+test\+\_\+sql.\+tquery}} (query, con=None)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a7687448b1eeff4c30314d49162988551}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+basic}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a480159a3be1cdbd0f9a88452402cf875}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+write\+\_\+row\+\_\+by\+\_\+row}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ab4431e7b304d7d01608c323b51cf10f9}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+execute}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a14165c53022b5cef12f4ea1ed6321ba8}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+schema}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2258e28dc057a0027f78fe2edb66574e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+execute\+\_\+fail}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad0d1b497cdc7dee4996e3d573e23199b}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+execute\+\_\+closed\+\_\+connection}} ()
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad511780100ce0571e0bcbcc9d734e5c1}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+keyword\+\_\+as\+\_\+column\+\_\+names}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a1b98b337b423b6a3b19d91115a448ee7}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+onecolumn\+\_\+of\+\_\+integer}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a659a315dd26a97e28845531a90ac9ad0}{pandas.\+tests.\+io.\+test\+\_\+sql.\+test\+\_\+xsqlite\+\_\+if\+\_\+exists}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa1d963fcc09ff7ed16c5223e500f5eb9}{sqlite\+\_\+buildin}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ac71c3457ca64613518c6cb7b4372cbc6}{pandas.\+tests.\+io.\+test\+\_\+sql.\+pytestmark}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_acf9da8073fb8b9cb1a2ca2123eadecd4}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+connectable}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a33ad3b8d0f3bc36dc9b3d620ee222494}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+connectable\+\_\+iris}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad085c129436b5d3102c88b490dd18377}{pandas.\+tests.\+io.\+test\+\_\+sql.\+mysql\+\_\+connectable\+\_\+types}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a6922a4462c23ea7734780db689ec447a}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+connectable}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ad52e8903866648e77dd72384980aef2f}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+connectable\+\_\+iris}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a95c2882ef5711de6b556b468144a6221}{pandas.\+tests.\+io.\+test\+\_\+sql.\+postgresql\+\_\+connectable\+\_\+types}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5e750c97c8f8ad4c1d2ba853962bcdab}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+connectable}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2cbad5d12db941058d41b5bec2ad3bc1}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+connectable\+\_\+iris}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aa96f9f40c3c10f953bf7bb9ef6b9af89}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlite\+\_\+connectable\+\_\+types}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a0005efeaf02ad476fc81635e918a4ab5}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlalchemy\+\_\+connectable}} = \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_acf9da8073fb8b9cb1a2ca2123eadecd4}{mysql\+\_\+connectable}} + \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a6922a4462c23ea7734780db689ec447a}{postgresql\+\_\+connectable}} + \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5e750c97c8f8ad4c1d2ba853962bcdab}{sqlite\+\_\+connectable}}
+\item 
+tuple \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3819a8dbe293170b7fecf29ed56357d2}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlalchemy\+\_\+connectable\+\_\+iris}}
+\item 
+tuple \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a84cefdaaeea0fec9a6dbae9062d765e1}{pandas.\+tests.\+io.\+test\+\_\+sql.\+sqlalchemy\+\_\+connectable\+\_\+types}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2a46b0572e493dd78f1bbe70bbd46f7e}{pandas.\+tests.\+io.\+test\+\_\+sql.\+adbc\+\_\+connectable}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_aea3d3ac21361883286f14cf27a8f6994}{pandas.\+tests.\+io.\+test\+\_\+sql.\+adbc\+\_\+connectable\+\_\+iris}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_ada3694ceb0450c22e1254c84e81fcb10}{pandas.\+tests.\+io.\+test\+\_\+sql.\+adbc\+\_\+connectable\+\_\+types}}
+\item 
+list \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_abfa3e60ee7473a06ecdb26c95715c586}{pandas.\+tests.\+io.\+test\+\_\+sql.\+all\+\_\+connectable}} = \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a0005efeaf02ad476fc81635e918a4ab5}{sqlalchemy\+\_\+connectable}} + \mbox{[}"{}sqlite\+\_\+buildin"{}\mbox{]} + \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a2a46b0572e493dd78f1bbe70bbd46f7e}{adbc\+\_\+connectable}}
+\item 
+tuple \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_abf006ff3b136daa77aa73edbae645074}{pandas.\+tests.\+io.\+test\+\_\+sql.\+all\+\_\+connectable\+\_\+iris}}
+\item 
+tuple \mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a5d32a539ee8b5061236b6d0ec1a5a560}{pandas.\+tests.\+io.\+test\+\_\+sql.\+all\+\_\+connectable\+\_\+types}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1io_1_1test__sql_a3aca52dfadb7e76da0e9ba8ecb0931ce}{pandas.\+tests.\+io.\+test\+\_\+sql.\+conn}}
+\end{DoxyCompactItemize}

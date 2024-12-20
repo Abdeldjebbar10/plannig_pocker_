@@ -1,0 +1,561 @@
+\doxysection{Référence de la classe pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager}
+\hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager}{}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager}\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a912db06927a9d9ac0055ebcba45624f5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, list\mbox{[}np.\+ndarray\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa43a95f5f13cba4dc216934d7047a314}{arrays}}, list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa9524913eb907255d1680028505e0a01}{axes}}, bool verify\+\_\+integrity=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ab0da0412fee8c3a574a0ba4232a3d4ae}{make\+\_\+empty}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa9524913eb907255d1680028505e0a01}{axes}}=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a041daabe8c2e3e8372e7641e42016c8f}{items}} (self)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa9524913eb907255d1680028505e0a01}{axes}} (self)
+\item 
+tuple\mbox{[}int,...\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0ca90dff01af9c41fdf5abe9d296fdaa}{shape\+\_\+proper}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a76e36cbb37d4b62f22e6d3e2f06b02a4}{set\+\_\+axis}} (self, Axis\+Int axis, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} new\+\_\+labels)
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a9ec1df8a0d9cd29b9127faf73e54c461}{get\+\_\+dtypes}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ad341a519d9a0ee225ac4ac7a65f6ab10}{add\+\_\+references}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager}{Base\+Array\+Manager}} mgr)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ace0deaeded8722d3342b93a260a8c6a3}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a4d1eb03807dc898b127b498c97428d45}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ae8a1fb85b65bd17be13907bca76fed02}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a25ea671d1330ac9f9879facf336047b6}{apply}} (self, f, list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None align\+\_\+keys=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a29c1a46a6759679c79bd6af620c0a7ca}{apply\+\_\+with\+\_\+block}} (self, f, align\+\_\+keys=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a89ba5f4b2d91628f4fe71d8b21ce51b9}{setitem}} (self, indexer, value, bool warn=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0c5946ad99f9e9e7d500bb9dadd1b005}{diff}} (self, int n)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a7f5b96d5d5704731bbbc6345cef72dc2}{astype}} (self, dtype, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f}{copy}}=False, str errors="{}raise"{})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa5b6fd6a192aac3c0077fe2f6a60caef}{convert}} (self, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f}{copy}})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a19a0738b70b843c940346e0c1f62decd}{get\+\_\+values\+\_\+for\+\_\+csv}} (self, \texorpdfstring{$\ast$}{*}float\+\_\+format, date\+\_\+format, decimal, str na\+\_\+rep="{}nan"{}, quoting=None)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aea776ab9dddb9614b2aa6208c88287b9}{any\+\_\+extension\+\_\+types}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a8e2959eea5216f126fb2eec9d8d36ecf}{is\+\_\+view}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ac631183669a2fcc31dce2302ce0e64c5}{is\+\_\+single\+\_\+block}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0e2d3557b997b5ebcfb29070980e7568}{get\+\_\+bool\+\_\+data}} (self, bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f}{copy}}=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_adcce922baa89b498422821336314b3d9}{get\+\_\+numeric\+\_\+data}} (self, bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f}{copy}}=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f}{copy}} (self, bool\texorpdfstring{$\vert$}{|}Literal\mbox{[}"{}all"{}\mbox{]}\texorpdfstring{$\vert$}{|}None deep=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ab4461f8ee49d636813ec7941e8800e2c}{reindex\+\_\+indexer}} (self, new\+\_\+axis, indexer, Axis\+Int axis, fill\+\_\+value=None, bool allow\+\_\+dups=False, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f}{copy}}=True, bool only\+\_\+slice=False, bool use\+\_\+na\+\_\+proxy=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a39cb96853fb6d272ea4e90f5d5d7bab3}{take}} (self, npt.\+NDArray\mbox{[}np.\+intp\mbox{]} indexer, Axis\+Int axis=1, bool verify=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a421b7b9e29e2b2e51835759705c2e6e6}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_adff471f21a75460a04588d87bb4e1baa}{ndim}} (self)
+\item 
+Shape \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a8e8086a42386ca4f1b4a9df9a5cef2ab}{shape}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_aba58cf9903e830e842422086943ad3f0}{reindex\+\_\+axis}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} new\+\_\+index, Axis\+Int axis, fill\+\_\+value=None, bool only\+\_\+slice=False)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_aa30147ad1b074c028fd9646fe9870c7f}{equals}} (self, object other)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_aae8c4d91ad71a8293eb8fa89665c244a}{isna}} (self, func)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_aa3209c2535e397f584cef6f053a328a6}{fillna}} (self, value, int\texorpdfstring{$\vert$}{|}None limit, bool inplace, downcast)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a67eae919c5e4eed7b6f86a5d38cc7e6a}{where}} (self, other, cond, bool align)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_af26e7ef0079b00fab675762604724251}{putmask}} (self, mask, new, bool align=True, bool warn=True)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a82def08c47bebea15a3a8eb3095d53f0}{round}} (self, int decimals, bool using\+\_\+cow=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a600d4d900d208071df27f76310d2aec3}{replace}} (self, to\+\_\+replace, value, bool inplace)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_aa3767cb9ac0de59c73aed0f746488b7b}{replace\+\_\+regex}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a7b6828b48573cdfe26528ef4f7831494}{replace\+\_\+list}} (self, list\mbox{[}Any\mbox{]} src\+\_\+list, list\mbox{[}Any\mbox{]} dest\+\_\+list, bool inplace=False, bool regex=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a7a2d6191da795be4ff1206b3f7becc1b}{interpolate}} (self, bool inplace, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a6493df923651f5adb20c1c24aae9a6f3}{pad\+\_\+or\+\_\+backfill}} (self, bool inplace, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_aa81316e1f6dc1a45d2140d27425e62b6}{shift}} (self, int periods, fill\+\_\+value)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_ad23c36c11cccf6793d5413af8fd1a513}{is\+\_\+consolidated}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_aebebea236ebfa78245c96b9107e529bb}{consolidate}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_ad5b15e942fb2d2dcfb12fa1667404aeb}{\+\_\+\+\_\+sizeof\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_ac86361dc5b262c58dcdf818d410136e4}{\+\_\+\+\_\+dir\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0e00540c2571078e0fdff6a087eb30e8}{arrays}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af3e360caf5a04c2e1e75955182c77fbd}{ndim}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa43a95f5f13cba4dc216934d7047a314}{arrays}} \mbox{[}np.\+ndarray \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a3846f90005ffdb9e5320523a2ef2efa0}{\+\_\+get\+\_\+data\+\_\+subset}} (self, Callable predicate)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa8239152a4a5d9dd7f314bc212a40352}{\+\_\+reindex\+\_\+indexer}} (self, new\+\_\+axis, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\texorpdfstring{$\vert$}{|}None indexer, Axis\+Int axis, fill\+\_\+value=None, bool allow\+\_\+dups=False, bool\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f}{copy}}=True, bool use\+\_\+na\+\_\+proxy=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a922c3403ac47897d89212c8880a778a2}{\+\_\+make\+\_\+na\+\_\+array}} (self, fill\+\_\+value=None, bool use\+\_\+na\+\_\+proxy=False)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a923e43e15225d9f7c580ab502f33e362}{\+\_\+equal\+\_\+values}} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a09e70ed534dcd12d3beecfeb80c0a33e}{\+\_\+validate\+\_\+set\+\_\+axis}} (self, Axis\+Int axis, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} new\+\_\+labels)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a23c41486ac2cb49806a7d81fd0c7c4cd}{\+\_\+consolidate\+\_\+inplace}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a7b5112b72a8bafe13b1fa732bf1ea30d}{\+\_\+constructor}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a8a2b95a9e1e4befc5ad3cba09c3f3e68}{\+\_\+reset\+\_\+cache}} (self, str\texorpdfstring{$\vert$}{|}None key=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a3151f76f1b53042e9d13da3d3ef3cb92}{\+\_\+dir\+\_\+deletions}} (self)
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a8183d13494a720c8d4cc996826fd7323}{\+\_\+dir\+\_\+additions}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a73ed7060ad24bab9c74d2577dce6383f}{\+\_\+normalize\+\_\+axis}} (Axis\+Int axis)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a3dcfe3b13210c92d1fc8ad096a33f81b}{\+\_\+axes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a9dbe2533b98ea7ec7176ca9682dd42d0}{\+\_\+axes}} \mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a3972565a4ab5ff072118eda20364cd2c}{\+\_\+cache}} \mbox{[}str, Any\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a1e3f9f50e3532c77c3610c4b8fe27e6f}{\+\_\+accessors}} = set()
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a7b9c1894b79d330020bdc71ddc7126f0}{\+\_\+hidden\+\_\+attrs}} = frozenset()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Core internal data structure to implement DataFrame and Series.
+
+Alternative to the BlockManager, storing a list of 1D arrays instead of
+Blocks.
+
+This is *not* a public API class
+
+Parameters
+----------
+arrays : Sequence of arrays
+axes : Sequence of Index
+verify_integrity : bool, default True\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a912db06927a9d9ac0055ebcba45624f5}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a912db06927a9d9ac0055ebcba45624f5} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list\mbox{[}np.\+ndarray \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}\mbox{]}}]{arrays,  }\item[{list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]}}]{axes,  }\item[{bool }]{verify\+\_\+integrity = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1ArrayManager_a47119975c5a1609bc5ce5446ce1167d9}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Array\+Manager}}, et \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_ad3f7125baec12a87279eb9d4cd586948}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ace0deaeded8722d3342b93a260a8c6a3}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ace0deaeded8722d3342b93a260a8c6a3} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ae8a1fb85b65bd17be13907bca76fed02}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ae8a1fb85b65bd17be13907bca76fed02} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string representation for a particular object.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a417b85c7fda9b57f893ad25a764fcf36}{pandas.\+core.\+base.\+Pandas\+Object}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a4d1eb03807dc898b127b498c97428d45}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a4d1eb03807dc898b127b498c97428d45} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a923e43e15225d9f7c580ab502f33e362}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a923e43e15225d9f7c580ab502f33e362} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_equal\_values@{\_equal\_values}}
+\index{\_equal\_values@{\_equal\_values}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_equal\_values()}{\_equal\_values()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+equal\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Used in .equals defined in base class. Only check the column values
+assuming shape and indexes have already been checked.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a0794663a8643d8f700e39e430c631924}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a3846f90005ffdb9e5320523a2ef2efa0}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a3846f90005ffdb9e5320523a2ef2efa0} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_get\_data\_subset@{\_get\_data\_subset}}
+\index{\_get\_data\_subset@{\_get\_data\_subset}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_get\_data\_subset()}{\_get\_data\_subset()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+get\+\_\+data\+\_\+subset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Callable}]{predicate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_ae333adacb2bf9e5ca01ab85eed48e077}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a922c3403ac47897d89212c8880a778a2}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a922c3403ac47897d89212c8880a778a2} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_make\_na\_array@{\_make\_na\_array}}
+\index{\_make\_na\_array@{\_make\_na\_array}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_make\_na\_array()}{\_make\_na\_array()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+make\+\_\+na\+\_\+array (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fill\+\_\+value = {\ttfamily None},  }\item[{bool }]{use\+\_\+na\+\_\+proxy = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a73ed7060ad24bab9c74d2577dce6383f}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a73ed7060ad24bab9c74d2577dce6383f} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_normalize\_axis@{\_normalize\_axis}}
+\index{\_normalize\_axis@{\_normalize\_axis}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_normalize\_axis()}{\_normalize\_axis()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+normalize\+\_\+axis (\begin{DoxyParamCaption}\item[{Axis\+Int}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_a4b977fbf3516996da98917a16ff656a7}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa8239152a4a5d9dd7f314bc212a40352}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa8239152a4a5d9dd7f314bc212a40352} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_reindex\_indexer@{\_reindex\_indexer}}
+\index{\_reindex\_indexer@{\_reindex\_indexer}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_reindex\_indexer()}{\_reindex\_indexer()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+reindex\+\_\+indexer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{new\+\_\+axis,  }\item[{npt.\+NDArray\mbox{[}np.\+intp\mbox{]} \texorpdfstring{$\vert$}{|} None}]{indexer,  }\item[{Axis\+Int}]{axis,  }\item[{}]{fill\+\_\+value = {\ttfamily None},  }\item[{bool }]{allow\+\_\+dups = {\ttfamily False},  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{copy = {\ttfamily True},  }\item[{bool }]{use\+\_\+na\+\_\+proxy = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parameters
+----------
+new_axis : Index
+indexer : ndarray[intp] or None
+axis : int
+fill_value : object, default None
+allow_dups : bool, default False
+copy : bool, default True
+
+
+pandas-indexer with -1's only.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ad341a519d9a0ee225ac4ac7a65f6ab10}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ad341a519d9a0ee225ac4ac7a65f6ab10} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!add\_references@{add\_references}}
+\index{add\_references@{add\_references}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{add\_references()}{add\_references()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+add\+\_\+references (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager}{Base\+Array\+Manager}}}]{mgr }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Only implemented on the BlockManager level
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aea776ab9dddb9614b2aa6208c88287b9}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aea776ab9dddb9614b2aa6208c88287b9} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!any\_extension\_types@{any\_extension\_types}}
+\index{any\_extension\_types@{any\_extension\_types}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{any\_extension\_types()}{any\_extension\_types()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+any\+\_\+extension\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether any of the blocks in this manager are extension blocks\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a25ea671d1330ac9f9879facf336047b6}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a25ea671d1330ac9f9879facf336047b6} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!apply@{apply}}
+\index{apply@{apply}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f,  }\item[{list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{align\+\_\+keys = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over the arrays, collect and create a new ArrayManager.
+
+Parameters
+----------
+f : str or callable
+    Name of the Array method to apply.
+align_keys: List[str] or None, default None
+**kwargs
+    Keywords to pass to `f`
+
+Returns
+-------
+ArrayManager
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a85e5fa6d30d5fcd14e16b55ca77c62a4}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}.
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_a039172551fb6e2ab2b17f762fc103e6c}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a29c1a46a6759679c79bd6af620c0a7ca}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a29c1a46a6759679c79bd6af620c0a7ca} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!apply\_with\_block@{apply\_with\_block}}
+\index{apply\_with\_block@{apply\_with\_block}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{apply\_with\_block()}{apply\_with\_block()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+apply\+\_\+with\+\_\+block (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f,  }\item[{}]{align\+\_\+keys = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_ad31ca7f2d44ba8253ea9b183e564f85f}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a7f5b96d5d5704731bbbc6345cef72dc2}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a7f5b96d5d5704731bbbc6345cef72dc2} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!astype@{astype}}
+\index{astype@{astype}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{astype()}{astype()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+astype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype,  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{copy = {\ttfamily False},  }\item[{str }]{errors = {\ttfamily "{}raise"{}} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa9524913eb907255d1680028505e0a01}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa9524913eb907255d1680028505e0a01} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!axes@{axes}}
+\index{axes@{axes}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{axes()}{axes()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+axes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Axes is BlockManager-compatible order (columns, rows)\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_a961d8bfe89889f6e654a5135be1e4783}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}.
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_a461f06a8c9ecea9bd90084a2878f6b9b}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa5b6fd6a192aac3c0077fe2f6a60caef}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa5b6fd6a192aac3c0077fe2f6a60caef} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!convert@{convert}}
+\index{convert@{convert}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+convert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool \texorpdfstring{$\vert$}{|} None}]{copy }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af49b045bbee7e1e12eb420f531b20c5f} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!copy@{copy}}
+\index{copy@{copy}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+copy (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool \texorpdfstring{$\vert$}{|} Literal\mbox{[}"{}all"{}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{deep = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make deep or shallow copy of ArrayManager
+
+Parameters
+----------
+deep : bool or string, default True
+    If False, return shallow copy (do not copy data)
+    If 'all', copy data and a deep copy of the index
+
+Returns
+-------
+BlockManager
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0c5946ad99f9e9e7d500bb9dadd1b005}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0c5946ad99f9e9e7d500bb9dadd1b005} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!diff@{diff}}
+\index{diff@{diff}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{diff()}{diff()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+diff (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0e2d3557b997b5ebcfb29070980e7568}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0e2d3557b997b5ebcfb29070980e7568} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!get\_bool\_data@{get\_bool\_data}}
+\index{get\_bool\_data@{get\_bool\_data}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{get\_bool\_data()}{get\_bool\_data()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+get\+\_\+bool\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Select columns that are bool-dtype and object-dtype columns that are all-bool.
+
+Parameters
+----------
+copy : bool, default False
+    Whether to copy the blocks
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a9ec1df8a0d9cd29b9127faf73e54c461}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a9ec1df8a0d9cd29b9127faf73e54c461} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!get\_dtypes@{get\_dtypes}}
+\index{get\_dtypes@{get\_dtypes}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{get\_dtypes()}{get\_dtypes()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+get\+\_\+dtypes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_adcce922baa89b498422821336314b3d9}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_adcce922baa89b498422821336314b3d9} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!get\_numeric\_data@{get\_numeric\_data}}
+\index{get\_numeric\_data@{get\_numeric\_data}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{get\_numeric\_data()}{get\_numeric\_data()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+get\+\_\+numeric\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Select columns that have a numeric dtype.
+
+Parameters
+----------
+copy : bool, default False
+    Whether to copy the blocks
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a19a0738b70b843c940346e0c1f62decd}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a19a0738b70b843c940346e0c1f62decd} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!get\_values\_for\_csv@{get\_values\_for\_csv}}
+\index{get\_values\_for\_csv@{get\_values\_for\_csv}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{get\_values\_for\_csv()}{get\_values\_for\_csv()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+get\+\_\+values\+\_\+for\+\_\+csv (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{float\+\_\+format,  }\item[{}]{date\+\_\+format,  }\item[{}]{decimal,  }\item[{str }]{na\+\_\+rep = {\ttfamily "{}nan"{}},  }\item[{}]{quoting = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ac631183669a2fcc31dce2302ce0e64c5}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ac631183669a2fcc31dce2302ce0e64c5} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!is\_single\_block@{is\_single\_block}}
+\index{is\_single\_block@{is\_single\_block}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{is\_single\_block()}{is\_single\_block()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+is\+\_\+single\+\_\+block (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_aa1803a236649e7dcf9365faccc76d46c}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a8e2959eea5216f126fb2eec9d8d36ecf}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a8e2959eea5216f126fb2eec9d8d36ecf} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!is\_view@{is\_view}}
+\index{is\_view@{is\_view}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{is\_view()}{is\_view()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+is\+\_\+view (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a boolean if we are a single block and are a view\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a041daabe8c2e3e8372e7641e42016c8f}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a041daabe8c2e3e8372e7641e42016c8f} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!items@{items}}
+\index{items@{items}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{items()}{items()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+items (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_ad6da01044652a9325e8e42662b7f2d0c}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ab0da0412fee8c3a574a0ba4232a3d4ae}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ab0da0412fee8c3a574a0ba4232a3d4ae} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!make\_empty@{make\_empty}}
+\index{make\_empty@{make\_empty}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{make\_empty()}{make\_empty()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+make\+\_\+empty (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{axes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an empty ArrayManager with the items axis of len 0 (no columns)\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_a8e170130e20bba66102f5225848ceb38}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ab4461f8ee49d636813ec7941e8800e2c}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_ab4461f8ee49d636813ec7941e8800e2c} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!reindex\_indexer@{reindex\_indexer}}
+\index{reindex\_indexer@{reindex\_indexer}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{reindex\_indexer()}{reindex\_indexer()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+reindex\+\_\+indexer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{new\+\_\+axis,  }\item[{}]{indexer,  }\item[{Axis\+Int}]{axis,  }\item[{}]{fill\+\_\+value = {\ttfamily None},  }\item[{bool }]{allow\+\_\+dups = {\ttfamily False},  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{copy = {\ttfamily True},  }\item[{bool }]{only\+\_\+slice = {\ttfamily False},  }\item[{bool }]{use\+\_\+na\+\_\+proxy = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1base_1_1DataManager_af7cd90fd0e0739c7bf6acd230159586f}{pandas.\+core.\+internals.\+base.\+Data\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a76e36cbb37d4b62f22e6d3e2f06b02a4}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a76e36cbb37d4b62f22e6d3e2f06b02a4} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!set\_axis@{set\_axis}}
+\index{set\_axis@{set\_axis}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{set\_axis()}{set\_axis()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+set\+\_\+axis (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Axis\+Int}]{axis,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}}]{new\+\_\+labels }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a89ba5f4b2d91628f4fe71d8b21ce51b9}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a89ba5f4b2d91628f4fe71d8b21ce51b9} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!setitem@{setitem}}
+\index{setitem@{setitem}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{setitem()}{setitem()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+setitem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{indexer,  }\item[{}]{value,  }\item[{bool }]{warn = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_a0e9d88c1a56e8bb660780d95e793b705}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0ca90dff01af9c41fdf5abe9d296fdaa}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0ca90dff01af9c41fdf5abe9d296fdaa} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!shape\_proper@{shape\_proper}}
+\index{shape\_proper@{shape\_proper}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{shape\_proper()}{shape\_proper()}}
+{\footnotesize\ttfamily  tuple\mbox{[}int, ...\mbox{]} pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+shape\+\_\+proper (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a39cb96853fb6d272ea4e90f5d5d7bab3}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a39cb96853fb6d272ea4e90f5d5d7bab3} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!take@{take}}
+\index{take@{take}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{take()}{take()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+take (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{npt.\+NDArray\mbox{[}np.\+intp\mbox{]}}]{indexer,  }\item[{Axis\+Int }]{axis = {\ttfamily 1},  }\item[{bool }]{verify = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take items along any axis.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a9dbe2533b98ea7ec7176ca9682dd42d0}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a9dbe2533b98ea7ec7176ca9682dd42d0} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_axes@{\_axes}}
+\index{\_axes@{\_axes}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_axes}{\_axes}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily list pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+axes \mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a3dcfe3b13210c92d1fc8ad096a33f81b}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a3dcfe3b13210c92d1fc8ad096a33f81b} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!\_axes@{\_axes}}
+\index{\_axes@{\_axes}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{\_axes}{\_axes}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+\_\+axes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa43a95f5f13cba4dc216934d7047a314}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_aa43a95f5f13cba4dc216934d7047a314} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!arrays@{arrays}}
+\index{arrays@{arrays}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{arrays}{arrays}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily list pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+arrays \mbox{[}np.\+ndarray \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0e00540c2571078e0fdff6a087eb30e8}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_a0e00540c2571078e0fdff6a087eb30e8} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!arrays@{arrays}}
+\index{arrays@{arrays}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{arrays}{arrays}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+arrays}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af3e360caf5a04c2e1e75955182c77fbd}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1BaseArrayManager_af3e360caf5a04c2e1e75955182c77fbd} 
+\index{pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}!ndim@{ndim}}
+\index{ndim@{ndim}!pandas.core.internals.array\_manager.BaseArrayManager@{pandas.core.internals.array\_manager.BaseArrayManager}}
+\doxysubsubsection{\texorpdfstring{ndim}{ndim}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+array\+\_\+manager.\+Base\+Array\+Manager.\+ndim}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1ArrayManager_ab683937ec193e6e6b52596df9cb86424}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Array\+Manager}}, et \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1SingleArrayManager_a76fef97fbe325059129bbe2adfb05d54}{pandas.\+core.\+internals.\+array\+\_\+manager.\+Single\+Array\+Manager}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/internals/\mbox{\hyperlink{array__manager_8py}{array\+\_\+manager.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+rich.\+text.\+Span}
+\hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span}{}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span}\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+rich.\+text.\+Span\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+vendor.\+rich.\+text.\+Span\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ab7bfe47b091a6b1453a668aaf9ca0735}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a46697beb32db6e5087af9c77058189fa}{\+\_\+\+\_\+bool\+\_\+\+\_\+}} (self)
+\item 
+Tuple\mbox{[}"{}Span"{}, Optional\mbox{[}"{}Span"{}\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a9c49dd58fd7dd923cabb50069550f1a5}{split}} (self, int offset)
+\item 
+"{}Span"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a41f74b8eb0b73e6f16093256f2db059b}{move}} (self, int offset)
+\item 
+"{}Span"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a9ed4ebd5a79217b01870913219c77b95}{right\+\_\+crop}} (self, int offset)
+\item 
+"{}Span"{} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a7749be539e848789af6e8e10d9c09766}{extend}} (self, int cells)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a3157436bc18cf02b197f36073b9dfe68}{start}}
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ac2da3c56a05fc8ca5cab515d199adb8d}{end}}
+\item 
+Union \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ae6afde3c155c80338e18977c9187317b}{style}} \mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1Style}{Style}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A marked up region in some text.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a46697beb32db6e5087af9c77058189fa}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a46697beb32db6e5087af9c77058189fa} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!\_\_bool\_\_@{\_\_bool\_\_}}
+\index{\_\_bool\_\_@{\_\_bool\_\_}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{\_\_bool\_\_()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily  bool pip.\+\_\+vendor.\+rich.\+text.\+Span.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ab7bfe47b091a6b1453a668aaf9ca0735}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ab7bfe47b091a6b1453a668aaf9ca0735} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pip.\+\_\+vendor.\+rich.\+text.\+Span.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a7749be539e848789af6e8e10d9c09766}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a7749be539e848789af6e8e10d9c09766} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!extend@{extend}}
+\index{extend@{extend}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily  "{}Span"{} pip.\+\_\+vendor.\+rich.\+text.\+Span.\+extend (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{cells }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extend the span by the given number of cells.
+
+Args:
+    cells (int): Additional space to add to end of span.
+
+Returns:
+    Span: A span.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a41f74b8eb0b73e6f16093256f2db059b}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a41f74b8eb0b73e6f16093256f2db059b} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!move@{move}}
+\index{move@{move}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily  "{}Span"{} pip.\+\_\+vendor.\+rich.\+text.\+Span.\+move (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move start and end by a given offset.
+
+Args:
+    offset (int): Number of characters to add to start and end.
+
+Returns:
+    TextSpan: A new TextSpan with adjusted position.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a9ed4ebd5a79217b01870913219c77b95}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a9ed4ebd5a79217b01870913219c77b95} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!right\_crop@{right\_crop}}
+\index{right\_crop@{right\_crop}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{right\_crop()}{right\_crop()}}
+{\footnotesize\ttfamily  "{}Span"{} pip.\+\_\+vendor.\+rich.\+text.\+Span.\+right\+\_\+crop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Crop the span at the given offset.
+
+Args:
+    offset (int): A value between start and end.
+
+Returns:
+    Span: A new (possibly smaller) span.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a9c49dd58fd7dd923cabb50069550f1a5}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a9c49dd58fd7dd923cabb50069550f1a5} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!split@{split}}
+\index{split@{split}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily  Tuple\mbox{[}"{}Span"{}, Optional\mbox{[}"{}Span"{}\mbox{]}\mbox{]} pip.\+\_\+vendor.\+rich.\+text.\+Span.\+split (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split a span in to 2 from a given offset.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ac2da3c56a05fc8ca5cab515d199adb8d}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ac2da3c56a05fc8ca5cab515d199adb8d} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!end@{end}}
+\index{end@{end}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily int pip.\+\_\+vendor.\+rich.\+text.\+Span.\+end\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a3157436bc18cf02b197f36073b9dfe68}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_a3157436bc18cf02b197f36073b9dfe68} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!start@{start}}
+\index{start@{start}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily int pip.\+\_\+vendor.\+rich.\+text.\+Span.\+start\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ae6afde3c155c80338e18977c9187317b}\label{classpip_1_1__vendor_1_1rich_1_1text_1_1Span_ae6afde3c155c80338e18977c9187317b} 
+\index{pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}!style@{style}}
+\index{style@{style}!pip.\_vendor.rich.text.Span@{pip.\_vendor.rich.text.Span}}
+\doxysubsubsection{\texorpdfstring{style}{style}}
+{\footnotesize\ttfamily Union pip.\+\_\+vendor.\+rich.\+text.\+Span.\+style \mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1style_1_1Style}{Style}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/rich/\mbox{\hyperlink{pip_2__vendor_2rich_2text_8py}{text.\+py}}\end{DoxyCompactItemize}

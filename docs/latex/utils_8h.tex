@@ -1,0 +1,82 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/include/numpy/utils.h}
+\hypertarget{utils_8h}{}\label{utils_8h}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/utils.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/utils.h}}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{utils_8h_a436834436d2cb955bf5c29a7027f7fdc}{\+\_\+\+\_\+\+COMP\+\_\+\+NPY\+\_\+\+UNUSED}}
+\item 
+\#define \mbox{\hyperlink{utils_8h_a8c22c792ff3398228a025c7692539ddc}{NPY\+\_\+\+DECL\+\_\+\+ALIGNED}}(x)
+\item 
+\#define \mbox{\hyperlink{utils_8h_a6a7175227645a389ae84a4506a3eea03}{NPY\+\_\+\+UNUSED}}(x)~\+\_\+\+\_\+\+NPY\+\_\+\+UNUSED\+\_\+\+TAGGED \#\# x \mbox{\hyperlink{utils_8h_a436834436d2cb955bf5c29a7027f7fdc}{\+\_\+\+\_\+\+COMP\+\_\+\+NPY\+\_\+\+UNUSED}}
+\item 
+\#define \mbox{\hyperlink{utils_8h_a3b4cbe0e1f7a0ee43aa3b260be413fb8}{NPY\+\_\+\+EXPAND}}(x)~x
+\item 
+\#define \mbox{\hyperlink{utils_8h_a67d24937808ef8ecac520ddc59c9d6e1}{NPY\+\_\+\+STRINGIFY}}(x)~\#x
+\item 
+\#define \mbox{\hyperlink{utils_8h_a4f05da39e391bac35384d54c46010b6c}{NPY\+\_\+\+TOSTRING}}(x)~\mbox{\hyperlink{utils_8h_a67d24937808ef8ecac520ddc59c9d6e1}{NPY\+\_\+\+STRINGIFY}}(x)
+\item 
+\#define \mbox{\hyperlink{utils_8h_a5934c07fedc5bea775a0fedeea575695}{NPY\+\_\+\+CAT\+\_\+\+\_\+}}(a,  b)~a \#\# b
+\item 
+\#define \mbox{\hyperlink{utils_8h_a141264ac9c33de0fbd4933af7e64afe6}{NPY\+\_\+\+CAT\+\_\+}}(a,  b)~\mbox{\hyperlink{utils_8h_a5934c07fedc5bea775a0fedeea575695}{NPY\+\_\+\+CAT\+\_\+\+\_\+}}(a, b)
+\item 
+\#define \mbox{\hyperlink{utils_8h_ad746c4aae65768515b5a848c709d4092}{NPY\+\_\+\+CAT}}(a,  b)~\mbox{\hyperlink{utils_8h_a141264ac9c33de0fbd4933af7e64afe6}{NPY\+\_\+\+CAT\+\_\+}}(a, b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{utils_8h_a436834436d2cb955bf5c29a7027f7fdc}\label{utils_8h_a436834436d2cb955bf5c29a7027f7fdc} 
+\index{utils.h@{utils.h}!\_\_COMP\_NPY\_UNUSED@{\_\_COMP\_NPY\_UNUSED}}
+\index{\_\_COMP\_NPY\_UNUSED@{\_\_COMP\_NPY\_UNUSED}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{\_\_COMP\_NPY\_UNUSED}{\_\_COMP\_NPY\_UNUSED}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+COMP\+\_\+\+NPY\+\_\+\+UNUSED}
+
+\Hypertarget{utils_8h_ad746c4aae65768515b5a848c709d4092}\label{utils_8h_ad746c4aae65768515b5a848c709d4092} 
+\index{utils.h@{utils.h}!NPY\_CAT@{NPY\_CAT}}
+\index{NPY\_CAT@{NPY\_CAT}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_CAT}{NPY\_CAT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+CAT(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~\mbox{\hyperlink{utils_8h_a141264ac9c33de0fbd4933af7e64afe6}{NPY\+\_\+\+CAT\+\_\+}}(a, b)}
+
+\Hypertarget{utils_8h_a141264ac9c33de0fbd4933af7e64afe6}\label{utils_8h_a141264ac9c33de0fbd4933af7e64afe6} 
+\index{utils.h@{utils.h}!NPY\_CAT\_@{NPY\_CAT\_}}
+\index{NPY\_CAT\_@{NPY\_CAT\_}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_CAT\_}{NPY\_CAT\_}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+CAT\+\_\+(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~\mbox{\hyperlink{utils_8h_a5934c07fedc5bea775a0fedeea575695}{NPY\+\_\+\+CAT\+\_\+\+\_\+}}(a, b)}
+
+\Hypertarget{utils_8h_a5934c07fedc5bea775a0fedeea575695}\label{utils_8h_a5934c07fedc5bea775a0fedeea575695} 
+\index{utils.h@{utils.h}!NPY\_CAT\_\_@{NPY\_CAT\_\_}}
+\index{NPY\_CAT\_\_@{NPY\_CAT\_\_}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_CAT\_\_}{NPY\_CAT\_\_}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+CAT\+\_\+\+\_\+(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~a \#\# b}
+
+\Hypertarget{utils_8h_a8c22c792ff3398228a025c7692539ddc}\label{utils_8h_a8c22c792ff3398228a025c7692539ddc} 
+\index{utils.h@{utils.h}!NPY\_DECL\_ALIGNED@{NPY\_DECL\_ALIGNED}}
+\index{NPY\_DECL\_ALIGNED@{NPY\_DECL\_ALIGNED}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DECL\_ALIGNED}{NPY\_DECL\_ALIGNED}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DECL\+\_\+\+ALIGNED(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+\Hypertarget{utils_8h_a3b4cbe0e1f7a0ee43aa3b260be413fb8}\label{utils_8h_a3b4cbe0e1f7a0ee43aa3b260be413fb8} 
+\index{utils.h@{utils.h}!NPY\_EXPAND@{NPY\_EXPAND}}
+\index{NPY\_EXPAND@{NPY\_EXPAND}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_EXPAND}{NPY\_EXPAND}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+EXPAND(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~x}
+
+\Hypertarget{utils_8h_a67d24937808ef8ecac520ddc59c9d6e1}\label{utils_8h_a67d24937808ef8ecac520ddc59c9d6e1} 
+\index{utils.h@{utils.h}!NPY\_STRINGIFY@{NPY\_STRINGIFY}}
+\index{NPY\_STRINGIFY@{NPY\_STRINGIFY}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_STRINGIFY}{NPY\_STRINGIFY}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+STRINGIFY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\#x}
+
+\Hypertarget{utils_8h_a4f05da39e391bac35384d54c46010b6c}\label{utils_8h_a4f05da39e391bac35384d54c46010b6c} 
+\index{utils.h@{utils.h}!NPY\_TOSTRING@{NPY\_TOSTRING}}
+\index{NPY\_TOSTRING@{NPY\_TOSTRING}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_TOSTRING}{NPY\_TOSTRING}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+TOSTRING(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{utils_8h_a67d24937808ef8ecac520ddc59c9d6e1}{NPY\+\_\+\+STRINGIFY}}(x)}
+
+\Hypertarget{utils_8h_a6a7175227645a389ae84a4506a3eea03}\label{utils_8h_a6a7175227645a389ae84a4506a3eea03} 
+\index{utils.h@{utils.h}!NPY\_UNUSED@{NPY\_UNUSED}}
+\index{NPY\_UNUSED@{NPY\_UNUSED}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_UNUSED}{NPY\_UNUSED}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+UNUSED(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\+\_\+\+\_\+\+NPY\+\_\+\+UNUSED\+\_\+\+TAGGED \#\# x \mbox{\hyperlink{utils_8h_a436834436d2cb955bf5c29a7027f7fdc}{\+\_\+\+\_\+\+COMP\+\_\+\+NPY\+\_\+\+UNUSED}}}
+

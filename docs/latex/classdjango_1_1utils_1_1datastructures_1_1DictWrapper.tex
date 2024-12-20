@@ -1,0 +1,76 @@
+\doxysection{Référence de la classe django.\+utils.\+datastructures.\+Dict\+Wrapper}
+\hypertarget{classdjango_1_1utils_1_1datastructures_1_1DictWrapper}{}\label{classdjango_1_1utils_1_1datastructures_1_1DictWrapper}\index{django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+utils.\+datastructures.\+Dict\+Wrapper\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+utils.\+datastructures.\+Dict\+Wrapper\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_abf829cfc17743003ac362a75da36d98d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, data, \mbox{\hyperlink{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_af6060135b47ad0644c4d80cba5935d81}{func}}, \mbox{\hyperlink{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_a6a06e2fa2d5d1dc8682f96057c9760d2}{prefix}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_abf40be2424a11bcdd9352fb1ae03f698}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_af6060135b47ad0644c4d80cba5935d81}{func}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_a6a06e2fa2d5d1dc8682f96057c9760d2}{prefix}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Wrap accesses to a dictionary so that certain values (those starting with
+the specified prefix) are passed through a function before being returned.
+The prefix is removed before looking up the real value.
+
+Used by the SQL construction code to ensure that values are correctly
+quoted before being used.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_abf829cfc17743003ac362a75da36d98d}\label{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_abf829cfc17743003ac362a75da36d98d} 
+\index{django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+datastructures.\+Dict\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{func,  }\item[{}]{prefix }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_abf40be2424a11bcdd9352fb1ae03f698}\label{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_abf40be2424a11bcdd9352fb1ae03f698} 
+\index{django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+datastructures.\+Dict\+Wrapper.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the real value after stripping the prefix string (if
+present). If the prefix is present, pass the value through self.func
+before returning, otherwise return the raw value.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_af6060135b47ad0644c4d80cba5935d81}\label{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_af6060135b47ad0644c4d80cba5935d81} 
+\index{django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}!func@{func}}
+\index{func@{func}!django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}}
+\doxysubsubsection{\texorpdfstring{func}{func}}
+{\footnotesize\ttfamily django.\+utils.\+datastructures.\+Dict\+Wrapper.\+func}
+
+\Hypertarget{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_a6a06e2fa2d5d1dc8682f96057c9760d2}\label{classdjango_1_1utils_1_1datastructures_1_1DictWrapper_a6a06e2fa2d5d1dc8682f96057c9760d2} 
+\index{django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}!prefix@{prefix}}
+\index{prefix@{prefix}!django.utils.datastructures.DictWrapper@{django.utils.datastructures.DictWrapper}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily django.\+utils.\+datastructures.\+Dict\+Wrapper.\+prefix}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/utils/\mbox{\hyperlink{utils_2datastructures_8py}{datastructures.\+py}}\end{DoxyCompactItemize}

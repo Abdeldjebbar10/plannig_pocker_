@@ -1,0 +1,190 @@
+\doxysection{Référence de la classe test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated}
+\hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated}{}\label{classtest__indexing_1_1TestMultiIndexingAutomated}\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_ac2e33d34fff6cc4baf7c8e294b741040}{setup\+\_\+method}} (self)
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_ab8f13d0ef5d826dd7fdbf92f2c3d3598}{test\+\_\+boolean}} (self)
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_a408c7a7ddbe3cf316dc50b929bebb9ec}{test\+\_\+multidim}} (self)
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_abe6109f9d81f9e5df95bcc9bdaae0739}{test\+\_\+1d}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_a120882c9db9fba5726e755caad854218}{a}}
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_ac51c0a85ef5091f9d2f63e747b76cf3e}{b}}
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_a09bf67b0b4280ba7592d9b0cc56b7801}{complex\+\_\+indices}}
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_a12452c66e039ea4d648b8ccc3fb9f87a}{simple\+\_\+indices}}
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_a6aa11eb9df14701fa04fc17fffb616d5}{fill\+\_\+indices}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_a96f5279edda9dac1120f1308c027f247}{\+\_\+get\+\_\+multi\+\_\+index}} (self, arr, indices)
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_ae7c4298ce4210171a0cba71315bd6fcb}{\+\_\+check\+\_\+multi\+\_\+index}} (self, arr, index)
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_af5ef806c28c0b25c96b0fecd874e0b40}{\+\_\+check\+\_\+single\+\_\+index}} (self, arr, index)
+\item 
+\mbox{\hyperlink{classtest__indexing_1_1TestMultiIndexingAutomated_a2405e73dea720cbd51e706cc8a9a6ad7}{\+\_\+compare\+\_\+index\+\_\+result}} (self, arr, index, mimic\+\_\+get, no\+\_\+copy)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}These tests use code to mimic the C-Code indexing for selection.
+
+NOTE:
+
+    * This still lacks tests for complex item setting.
+    * If you change behavior of indexing, you might want to modify
+      these tests to try more combinations.
+    * Behavior was written to match numpy version 1.8. (though a
+      first version matched 1.7.)
+    * Only tuple indices are supported by the mimicking code.
+      (and tested as of writing this)
+    * Error types should match most of the time as long as there
+      is only one error. For multiple errors, what gets raised
+      will usually not be the same one. They are *not* tested.
+
+Update 2016-11-30: It is probably not worth maintaining this test
+indefinitely and it can be dropped if maintenance becomes a burden.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_ae7c4298ce4210171a0cba71315bd6fcb}\label{classtest__indexing_1_1TestMultiIndexingAutomated_ae7c4298ce4210171a0cba71315bd6fcb} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!\_check\_multi\_index@{\_check\_multi\_index}}
+\index{\_check\_multi\_index@{\_check\_multi\_index}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{\_check\_multi\_index()}{\_check\_multi\_index()}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+\_\+check\+\_\+multi\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arr,  }\item[{}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check a multi index item getting and simple setting.
+
+Parameters
+----------
+arr : ndarray
+    Array to be indexed, must be a reshaped arange.
+index : tuple of indexing objects
+    Index being tested.
+\end{DoxyVerb}
+ \Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_af5ef806c28c0b25c96b0fecd874e0b40}\label{classtest__indexing_1_1TestMultiIndexingAutomated_af5ef806c28c0b25c96b0fecd874e0b40} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!\_check\_single\_index@{\_check\_single\_index}}
+\index{\_check\_single\_index@{\_check\_single\_index}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{\_check\_single\_index()}{\_check\_single\_index()}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+\_\+check\+\_\+single\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arr,  }\item[{}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check a single index item getting and simple setting.
+
+Parameters
+----------
+arr : ndarray
+    Array to be indexed, must be an arange.
+index : indexing object
+    Index being tested. Must be a single index and not a tuple
+    of indexing objects (see also `_check_multi_index`).
+\end{DoxyVerb}
+ \Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_a2405e73dea720cbd51e706cc8a9a6ad7}\label{classtest__indexing_1_1TestMultiIndexingAutomated_a2405e73dea720cbd51e706cc8a9a6ad7} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!\_compare\_index\_result@{\_compare\_index\_result}}
+\index{\_compare\_index\_result@{\_compare\_index\_result}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{\_compare\_index\_result()}{\_compare\_index\_result()}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+\_\+compare\+\_\+index\+\_\+result (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arr,  }\item[{}]{index,  }\item[{}]{mimic\+\_\+get,  }\item[{}]{no\+\_\+copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Compare mimicked result to indexing result.
+\end{DoxyVerb}
+ \Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_a96f5279edda9dac1120f1308c027f247}\label{classtest__indexing_1_1TestMultiIndexingAutomated_a96f5279edda9dac1120f1308c027f247} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!\_get\_multi\_index@{\_get\_multi\_index}}
+\index{\_get\_multi\_index@{\_get\_multi\_index}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{\_get\_multi\_index()}{\_get\_multi\_index()}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+\_\+get\+\_\+multi\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arr,  }\item[{}]{indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Mimic multi dimensional indexing.
+
+Parameters
+----------
+arr : ndarray
+    Array to be indexed.
+indices : tuple of index objects
+
+Returns
+-------
+out : ndarray
+    An array equivalent to the indexing operation (but always a copy).
+    `arr[indices]` should be identical.
+no_copy : bool
+    Whether the indexing operation requires a copy. If this is `True`,
+    `np.may_share_memory(arr, arr[indices])` should be `True` (with
+    some exceptions for scalars and possibly 0-d arrays).
+
+Notes
+-----
+While the function may mostly match the errors of normal indexing this
+is generally not the case.
+\end{DoxyVerb}
+ \Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_ac2e33d34fff6cc4baf7c8e294b741040}\label{classtest__indexing_1_1TestMultiIndexingAutomated_ac2e33d34fff6cc4baf7c8e294b741040} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!setup\_method@{setup\_method}}
+\index{setup\_method@{setup\_method}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{setup\_method()}{setup\_method()}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+setup\+\_\+method (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_abe6109f9d81f9e5df95bcc9bdaae0739}\label{classtest__indexing_1_1TestMultiIndexingAutomated_abe6109f9d81f9e5df95bcc9bdaae0739} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!test\_1d@{test\_1d}}
+\index{test\_1d@{test\_1d}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{test\_1d()}{test\_1d()}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+test\+\_\+1d (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_ab8f13d0ef5d826dd7fdbf92f2c3d3598}\label{classtest__indexing_1_1TestMultiIndexingAutomated_ab8f13d0ef5d826dd7fdbf92f2c3d3598} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!test\_boolean@{test\_boolean}}
+\index{test\_boolean@{test\_boolean}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{test\_boolean()}{test\_boolean()}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+test\+\_\+boolean (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_a408c7a7ddbe3cf316dc50b929bebb9ec}\label{classtest__indexing_1_1TestMultiIndexingAutomated_a408c7a7ddbe3cf316dc50b929bebb9ec} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!test\_multidim@{test\_multidim}}
+\index{test\_multidim@{test\_multidim}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{test\_multidim()}{test\_multidim()}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+test\+\_\+multidim (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_a120882c9db9fba5726e755caad854218}\label{classtest__indexing_1_1TestMultiIndexingAutomated_a120882c9db9fba5726e755caad854218} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!a@{a}}
+\index{a@{a}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+a}
+
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_ac51c0a85ef5091f9d2f63e747b76cf3e}\label{classtest__indexing_1_1TestMultiIndexingAutomated_ac51c0a85ef5091f9d2f63e747b76cf3e} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!b@{b}}
+\index{b@{b}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+b}
+
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_a09bf67b0b4280ba7592d9b0cc56b7801}\label{classtest__indexing_1_1TestMultiIndexingAutomated_a09bf67b0b4280ba7592d9b0cc56b7801} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!complex\_indices@{complex\_indices}}
+\index{complex\_indices@{complex\_indices}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{complex\_indices}{complex\_indices}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+complex\+\_\+indices}
+
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_a6aa11eb9df14701fa04fc17fffb616d5}\label{classtest__indexing_1_1TestMultiIndexingAutomated_a6aa11eb9df14701fa04fc17fffb616d5} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!fill\_indices@{fill\_indices}}
+\index{fill\_indices@{fill\_indices}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{fill\_indices}{fill\_indices}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+fill\+\_\+indices}
+
+\Hypertarget{classtest__indexing_1_1TestMultiIndexingAutomated_a12452c66e039ea4d648b8ccc3fb9f87a}\label{classtest__indexing_1_1TestMultiIndexingAutomated_a12452c66e039ea4d648b8ccc3fb9f87a} 
+\index{test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}!simple\_indices@{simple\_indices}}
+\index{simple\_indices@{simple\_indices}!test\_indexing.TestMultiIndexingAutomated@{test\_indexing.TestMultiIndexingAutomated}}
+\doxysubsubsection{\texorpdfstring{simple\_indices}{simple\_indices}}
+{\footnotesize\ttfamily test\+\_\+indexing.\+Test\+Multi\+Indexing\+Automated.\+simple\+\_\+indices}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/tests/\mbox{\hyperlink{numpy_2__core_2tests_2test__indexing_8py}{test\+\_\+indexing.\+py}}\end{DoxyCompactItemize}

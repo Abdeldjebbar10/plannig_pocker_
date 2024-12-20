@@ -1,0 +1,156 @@
+\doxysection{Référence de la classe six.\+\_\+\+Six\+Meta\+Path\+Importer}
+\hypertarget{classsix_1_1__SixMetaPathImporter}{}\label{classsix_1_1__SixMetaPathImporter}\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+
+
+Graphe d\textquotesingle{}héritage de six.\+\_\+\+Six\+Meta\+Path\+Importer\+:
+% FIG 0
+
+
+Graphe de collaboration de six.\+\_\+\+Six\+Meta\+Path\+Importer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a4b18b96b53223bb45da1038d52a45fc0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, six\+\_\+module\+\_\+name)
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a37d1a9822a6764e23fb957fb6c673b83}{find\+\_\+module}} (self, fullname, path=None)
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a780fa7742bc847f818b8455331208e4f}{find\+\_\+spec}} (self, fullname, path, target=None)
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_aa225f5fdc8126c53ad6e59ca141bb026}{load\+\_\+module}} (self, fullname)
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a532fd2c9c475ad2721e2986aaf4ec23b}{is\+\_\+package}} (self, fullname)
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a6a5ed958d62defc45d03ec5bb8740ba7}{get\+\_\+code}} (self, fullname)
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a52a690e7b57d0945f852d6ca7a8034e7}{create\+\_\+module}} (self, spec)
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_ad58ddfe2d076d07b342fbfb742010409}{exec\+\_\+module}} (self, module)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_ab3f5fb09f8ab79a506e1d32303df0c7b}{name}}
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a3ea28c1798d43286a56ecb40e14ef106}{known\+\_\+modules}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a0b3f68544bd92fe7829e9ce96143aec6}{get\+\_\+source}} = \mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a6a5ed958d62defc45d03ec5bb8740ba7}{get\+\_\+code}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_aea9640a83c3eaab0df69c1b30e874fbe}{\+\_\+add\+\_\+module}} (self, mod, \texorpdfstring{$\ast$}{*}fullnames)
+\item 
+\mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a675fde2a66c2b4ed0426b36f4f5b57e9}{\+\_\+get\+\_\+module}} (self, fullname)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A meta path importer to import six.moves and its submodules.
+
+This class implements a PEP302 finder and loader. It should be compatible
+with Python 2.5 and all existing versions of Python3
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classsix_1_1__SixMetaPathImporter_a4b18b96b53223bb45da1038d52a45fc0}\label{classsix_1_1__SixMetaPathImporter_a4b18b96b53223bb45da1038d52a45fc0} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{six\+\_\+module\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classsix_1_1__SixMetaPathImporter_aea9640a83c3eaab0df69c1b30e874fbe}\label{classsix_1_1__SixMetaPathImporter_aea9640a83c3eaab0df69c1b30e874fbe} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!\_add\_module@{\_add\_module}}
+\index{\_add\_module@{\_add\_module}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{\_add\_module()}{\_add\_module()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+\_\+add\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mod,  }\item[{\texorpdfstring{$\ast$}{*}}]{fullnames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsix_1_1__SixMetaPathImporter_a675fde2a66c2b4ed0426b36f4f5b57e9}\label{classsix_1_1__SixMetaPathImporter_a675fde2a66c2b4ed0426b36f4f5b57e9} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!\_get\_module@{\_get\_module}}
+\index{\_get\_module@{\_get\_module}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{\_get\_module()}{\_get\_module()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+\_\+get\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fullname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classsix_1_1__SixMetaPathImporter_a52a690e7b57d0945f852d6ca7a8034e7}\label{classsix_1_1__SixMetaPathImporter_a52a690e7b57d0945f852d6ca7a8034e7} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!create\_module@{create\_module}}
+\index{create\_module@{create\_module}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{create\_module()}{create\_module()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+create\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{spec }\end{DoxyParamCaption})}
+
+\Hypertarget{classsix_1_1__SixMetaPathImporter_ad58ddfe2d076d07b342fbfb742010409}\label{classsix_1_1__SixMetaPathImporter_ad58ddfe2d076d07b342fbfb742010409} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!exec\_module@{exec\_module}}
+\index{exec\_module@{exec\_module}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{exec\_module()}{exec\_module()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+exec\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{module }\end{DoxyParamCaption})}
+
+\Hypertarget{classsix_1_1__SixMetaPathImporter_a37d1a9822a6764e23fb957fb6c673b83}\label{classsix_1_1__SixMetaPathImporter_a37d1a9822a6764e23fb957fb6c673b83} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!find\_module@{find\_module}}
+\index{find\_module@{find\_module}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{find\_module()}{find\_module()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+find\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fullname,  }\item[{}]{path = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classsix_1_1__SixMetaPathImporter_a780fa7742bc847f818b8455331208e4f}\label{classsix_1_1__SixMetaPathImporter_a780fa7742bc847f818b8455331208e4f} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!find\_spec@{find\_spec}}
+\index{find\_spec@{find\_spec}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{find\_spec()}{find\_spec()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+find\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fullname,  }\item[{}]{path,  }\item[{}]{target = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classsix_1_1__SixMetaPathImporter_a6a5ed958d62defc45d03ec5bb8740ba7}\label{classsix_1_1__SixMetaPathImporter_a6a5ed958d62defc45d03ec5bb8740ba7} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!get\_code@{get\_code}}
+\index{get\_code@{get\_code}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{get\_code()}{get\_code()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+get\+\_\+code (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fullname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return None
+
+Required, if is_package is implemented\end{DoxyVerb}
+ \Hypertarget{classsix_1_1__SixMetaPathImporter_a532fd2c9c475ad2721e2986aaf4ec23b}\label{classsix_1_1__SixMetaPathImporter_a532fd2c9c475ad2721e2986aaf4ec23b} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!is\_package@{is\_package}}
+\index{is\_package@{is\_package}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{is\_package()}{is\_package()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+is\+\_\+package (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fullname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true, if the named module is a package.
+
+We need this method to get correct spec objects with
+Python 3.4 (see PEP451)
+\end{DoxyVerb}
+ \Hypertarget{classsix_1_1__SixMetaPathImporter_aa225f5fdc8126c53ad6e59ca141bb026}\label{classsix_1_1__SixMetaPathImporter_aa225f5fdc8126c53ad6e59ca141bb026} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!load\_module@{load\_module}}
+\index{load\_module@{load\_module}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{load\_module()}{load\_module()}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+load\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fullname }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classsix_1_1__SixMetaPathImporter_a0b3f68544bd92fe7829e9ce96143aec6}\label{classsix_1_1__SixMetaPathImporter_a0b3f68544bd92fe7829e9ce96143aec6} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!get\_source@{get\_source}}
+\index{get\_source@{get\_source}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{get\_source}{get\_source}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+get\+\_\+source = \mbox{\hyperlink{classsix_1_1__SixMetaPathImporter_a6a5ed958d62defc45d03ec5bb8740ba7}{get\+\_\+code}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classsix_1_1__SixMetaPathImporter_a3ea28c1798d43286a56ecb40e14ef106}\label{classsix_1_1__SixMetaPathImporter_a3ea28c1798d43286a56ecb40e14ef106} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!known\_modules@{known\_modules}}
+\index{known\_modules@{known\_modules}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{known\_modules}{known\_modules}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+known\+\_\+modules}
+
+\Hypertarget{classsix_1_1__SixMetaPathImporter_ab3f5fb09f8ab79a506e1d32303df0c7b}\label{classsix_1_1__SixMetaPathImporter_ab3f5fb09f8ab79a506e1d32303df0c7b} 
+\index{six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}!name@{name}}
+\index{name@{name}!six.\_SixMetaPathImporter@{six.\_SixMetaPathImporter}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily six.\+\_\+\+Six\+Meta\+Path\+Importer.\+name}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/\mbox{\hyperlink{six_8py}{six.\+py}}\end{DoxyCompactItemize}

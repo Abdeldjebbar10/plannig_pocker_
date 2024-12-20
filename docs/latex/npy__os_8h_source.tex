@@ -1,0 +1,48 @@
+\doxysection{npy\+\_\+os.\+h}
+\hypertarget{npy__os_8h_source}{}\label{npy__os_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_os.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_os.h}}
+\mbox{\hyperlink{npy__os_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_OS\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_OS\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(linux)\ ||\ defined(\_\_linux)\ ||\ defined(\_\_linux\_\_)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_LINUX}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#elif\ defined(\_\_FreeBSD\_\_)\ ||\ defined(\_\_NetBSD\_\_)\ ||\ \(\backslash\)}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ defined(\_\_OpenBSD\_\_)\ ||\ defined(\_\_DragonFly\_\_)}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_BSD}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_\_FreeBSD\_\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OS\_FREEBSD}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(\_\_NetBSD\_\_)}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OS\_NETBSD}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(\_\_OpenBSD\_\_)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OS\_OPENBSD}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(\_\_DragonFly\_\_)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_OS\_DRAGONFLY}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#elif\ defined(sun)\ ||\ defined(\_\_sun)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_SOLARIS}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#elif\ defined(\_\_CYGWIN\_\_)}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_CYGWIN}}
+\DoxyCodeLine{00022\ \textcolor{comment}{/*\ We\ are\ on\ Windows.*/}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#elif\ defined(\_WIN32)}}
+\DoxyCodeLine{00024\ \ \ \textcolor{comment}{/*\ We\ are\ using\ MinGW\ (64-\/bit\ or\ 32-\/bit)*/}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\ \ \#if\ defined(\_\_MINGW32\_\_)\ ||\ defined(\_\_MINGW64\_\_)}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_MINGW}}
+\DoxyCodeLine{00027\ \ \ \textcolor{comment}{/*\ Otherwise,\ if\ \_WIN64\ is\ defined,\ we\ are\ targeting\ 64-\/bit\ Windows*/}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\ \ \#elif\ defined(\_WIN64)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_WIN64}}
+\DoxyCodeLine{00030\ \ \ \textcolor{comment}{/*\ Otherwise\ assume\ we\ are\ targeting\ 32-\/bit\ Windows*/}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\ \ \#else}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_WIN32}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#elif\ defined(\_\_APPLE\_\_)}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_DARWIN}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#elif\ defined(\_\_HAIKU\_\_)}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_HAIKU}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_OS\_UNKNOWN}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_OS\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,78 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions\+Or\+Anon\+Read\+Only}
+\hypertarget{classrest__framework_1_1permissions_1_1DjangoModelPermissionsOrAnonReadOnly}{}\label{classrest__framework_1_1permissions_1_1DjangoModelPermissionsOrAnonReadOnly}\index{rest\_framework.permissions.DjangoModelPermissionsOrAnonReadOnly@{rest\_framework.permissions.DjangoModelPermissionsOrAnonReadOnly}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions\+Or\+Anon\+Read\+Only\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions\+Or\+Anon\+Read\+Only\+:
+% FIG 1
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissionsOrAnonReadOnly_a6b39401eb96f1ba6f1c4c4c3596dfad0}{authenticated\+\_\+users\+\_\+only}} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_a607ae2cfb4ed9c350063c58b03647f29}{perms\+\_\+map}}
+\item 
+bool \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_af9fa196d0ec73d66d73d98a6a1822dce}{authenticated\+\_\+users\+\_\+only}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_a367aef39bac486b6f6416cda4af7b3b1}{get\+\_\+required\+\_\+permissions}} (self, method, model\+\_\+cls)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_ab9cae8f19952af43f8cbf7a8b4f2e95f}{has\+\_\+permission}} (self, request, view)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1BasePermission}{rest\+\_\+framework.\+permissions.\+Base\+Permission}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1BasePermission_ac6f38c43dc408cfcba919d5b7c8461f8}{has\+\_\+object\+\_\+permission}} (self, request, view, obj)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin}{rest\+\_\+framework.\+permissions.\+Operation\+Holder\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_af337164fa409ab2373ac7224f5ceb7c2}{\+\_\+\+\_\+and\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_a14db49354102898890bca17a753c4cf4}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_addd0cb823ec848ba61302a79840d7dac}{\+\_\+\+\_\+rand\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_a989a30a8e99529bdcd3d908415246ef8}{\+\_\+\+\_\+ror\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_ae0df4d0505b39f96ca827d6d07457e05}{\+\_\+\+\_\+invert\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_a8e125840b1d53cc17ad55cca2fe4638b}{authenticated\+\_\+users\+\_\+only}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_ad2bbeecdf3a30d8a053743162c7dbbbd}{\+\_\+queryset}} (self, view)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Similar to DjangoModelPermissions, except that anonymous users are
+allowed read-only access.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1permissions_1_1DjangoModelPermissionsOrAnonReadOnly_a6b39401eb96f1ba6f1c4c4c3596dfad0}\label{classrest__framework_1_1permissions_1_1DjangoModelPermissionsOrAnonReadOnly_a6b39401eb96f1ba6f1c4c4c3596dfad0} 
+\index{rest\_framework.permissions.DjangoModelPermissionsOrAnonReadOnly@{rest\_framework.permissions.DjangoModelPermissionsOrAnonReadOnly}!authenticated\_users\_only@{authenticated\_users\_only}}
+\index{authenticated\_users\_only@{authenticated\_users\_only}!rest\_framework.permissions.DjangoModelPermissionsOrAnonReadOnly@{rest\_framework.permissions.DjangoModelPermissionsOrAnonReadOnly}}
+\doxysubsubsection{\texorpdfstring{authenticated\_users\_only}{authenticated\_users\_only}}
+{\footnotesize\ttfamily bool rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions\+Or\+Anon\+Read\+Only.\+authenticated\+\_\+users\+\_\+only = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{permissions_8py}{permissions.\+py}}\end{DoxyCompactItemize}

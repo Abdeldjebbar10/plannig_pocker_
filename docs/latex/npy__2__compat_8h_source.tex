@@ -1,0 +1,255 @@
+\doxysection{npy\+\_\+2\+\_\+compat.\+h}
+\hypertarget{npy__2__compat_8h_source}{}\label{npy__2__compat_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_2\_compat.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_2\_compat.h}}
+\mbox{\hyperlink{npy__2__compat_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ This\ header\ file\ defines\ relevant\ features\ which:}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ -\/\ Require\ runtime\ inspection\ depending\ on\ the\ NumPy\ version.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ -\/\ May\ be\ needed\ when\ compiling\ with\ an\ older\ version\ of\ NumPy\ to\ allow}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ \ a\ smooth\ transition.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ As\ such,\ it\ is\ shipped\ with\ NumPy\ 2.0,\ but\ designed\ to\ be\ vendored\ in\ full}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ or\ parts\ by\ downstream\ projects.}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ It\ must\ be\ included\ after\ any\ other\ includes.\ \ \`{}import\_array()`\ must\ have}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ been\ called\ in\ the\ scope\ or\ version\ dependency\ will\ misbehave,\ even\ when}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ only\ \`{}PyUFunc\_`\ API\ is\ used.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ If\ required\ complicated\ defs\ (with\ inline\ functions)\ should\ be\ written\ as:}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ \ \ \ \#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ Simple\ definition\ when\ NumPy\ 2.0\ API\ is\ guaranteed.}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ \ \ \ \ \#else}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ static\ inline\ definition\ of\ a\ 1.x\ compatibility\ shim}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \#if\ NPY\_ABI\_VERSION\ <\ 0x02000000}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ Make\ 1.x\ compatibility\ shim\ the\ public\ API\ (1.x\ only\ branch)}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \#else}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ Runtime\ dispatched\ version\ (1.x\ or\ 2.x)}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \#endif}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \#endif}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ An\ internal\ build\ always\ passes\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_2\_COMPAT\_H\_}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_2\_COMPAT\_H\_}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ New\ macros\ for\ accessing\ real\ and\ complex\ part\ of\ a\ complex\ number\ can\ be}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ *\ found\ in\ "{}npy\_2\_complexcompat.h"{}.}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00040\ \textcolor{comment}{\ *\ This\ header\ is\ meant\ to\ be\ included\ by\ downstream\ directly\ for\ 1.x\ compat.}}
+\DoxyCodeLine{00041\ \textcolor{comment}{\ *\ In\ that\ case\ we\ need\ to\ ensure\ that\ users\ first\ included\ the\ full\ headers}}
+\DoxyCodeLine{00042\ \textcolor{comment}{\ *\ and\ not\ just\ \`{}ndarraytypes.h`.}}
+\DoxyCodeLine{00043\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#ifndef\ NPY\_FEATURE\_VERSION}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\ \ \#error\ "{}The\ NumPy\ 2\ compat\ header\ requires\ \`{}import\_array()`\ for\ which\ "{}\ \ \(\backslash\)}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ "{}the\ \`{}ndarraytypes.h`\ header\ include\ is\ not\ sufficient.\ \ Please\ "{}\ \ \(\backslash\)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ "{}include\ it\ after\ \`{}numpy/ndarrayobject.h`\ or\ similar.\(\backslash\)n"{}\ \ \(\backslash\)}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ "{}To\ simplify\ inclusion,\ you\ may\ use\ \`{}PyArray\_ImportNumPy()`\ "{}\ \(\backslash\)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ "{}which\ is\ defined\ in\ the\ compat\ header\ and\ is\ lightweight\ (can\ be)."{}}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#if\ NPY\_ABI\_VERSION\ <\ 0x02000000}}
+\DoxyCodeLine{00054\ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00055\ \textcolor{comment}{\ \ \ *\ Define\ 2.0\ feature\ version\ as\ it\ is\ needed\ below\ to\ decide\ whether\ we}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ \ \ *\ compile\ for\ both\ 1.x\ and\ 2.x\ (defining\ it\ guarantees\ 1.x\ only).}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ \ \ */}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\ \ \#define\ NPY\_2\_0\_API\_VERSION\ 0x00000012}}
+\DoxyCodeLine{00059\ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00060\ \textcolor{comment}{\ \ \ *\ If\ we\ are\ compiling\ with\ NumPy\ 1.x,\ PyArray\_RUNTIME\_VERSION\ so\ we}}
+\DoxyCodeLine{00061\ \textcolor{comment}{\ \ \ *\ pretend\ the\ \`{}PyArray\_RUNTIME\_VERSION`\ is\ \`{}NPY\_FEATURE\_VERSION`.}}
+\DoxyCodeLine{00062\ \textcolor{comment}{\ \ \ *\ This\ allows\ downstream\ to\ use\ \`{}PyArray\_RUNTIME\_VERSION`\ if\ they\ need\ to.}}
+\DoxyCodeLine{00063\ \textcolor{comment}{\ \ \ */}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\ \ \#define\ PyArray\_RUNTIME\_VERSION\ NPY\_FEATURE\_VERSION}}
+\DoxyCodeLine{00065\ \ \ \textcolor{comment}{/*\ Compiling\ on\ NumPy\ 1.x\ where\ these\ are\ the\ same:\ */}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\ \ \#define\ PyArray\_DescrProto\ PyArray\_Descr}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ *\ Define\ a\ better\ way\ to\ call\ \`{}\_import\_array()`\ to\ simplify\ backporting\ as}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ *\ we\ now\ require\ imports\ more\ often\ (necessary\ to\ make\ ABI\ flexible).}}
+\DoxyCodeLine{00073\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#ifdef\ import\_array1}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00077\ PyArray\_ImportNumPyAPI(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{00078\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{npy__common_8h_afe6ea5cd1976681172cfee558bbd2001}{NPY\_UNLIKELY}}(\mbox{\hyperlink{____multiarray__api_8c_a64c8929fe7a740b1dcfef248aaf89e28}{PyArray\_API}}\ ==\ NULL))\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{____multiarray__api_8h_a89a38c173e3893d469d5fb2e95d87943}{import\_array1}}(-\/1);}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00083\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ import\_array1\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00089\ \textcolor{comment}{\ *\ NPY\_DEFAULT\_INT}}
+\DoxyCodeLine{00090\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00091\ \textcolor{comment}{\ *\ The\ default\ integer\ has\ changed,\ \`{}NPY\_DEFAULT\_INT`\ is\ available\ at\ runtime}}
+\DoxyCodeLine{00092\ \textcolor{comment}{\ *\ for\ use\ as\ type\ number,\ e.g.\ \`{}PyArray\_DescrFromType(NPY\_DEFAULT\_INT)`.}}
+\DoxyCodeLine{00093\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00094\ \textcolor{comment}{\ *\ NPY\_RAVEL\_AXIS}}
+\DoxyCodeLine{00095\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00096\ \textcolor{comment}{\ *\ This\ was\ introduced\ in\ NumPy\ 2.0\ to\ allow\ indicating\ that\ an\ axis\ should\ be}}
+\DoxyCodeLine{00097\ \textcolor{comment}{\ *\ raveled\ in\ an\ operation.\ Before\ NumPy\ 2.0,\ NPY\_MAXDIMS\ was\ used\ for\ this\ purpose.}}
+\DoxyCodeLine{00098\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00099\ \textcolor{comment}{\ *\ NPY\_MAXDIMS}}
+\DoxyCodeLine{00100\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00101\ \textcolor{comment}{\ *\ A\ constant\ indicating\ the\ maximum\ number\ dimensions\ allowed\ when\ creating}}
+\DoxyCodeLine{00102\ \textcolor{comment}{\ *\ an\ ndarray.}}
+\DoxyCodeLine{00103\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00104\ \textcolor{comment}{\ *\ NPY\_NTYPES\_LEGACY}}
+\DoxyCodeLine{00105\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00106\ \textcolor{comment}{\ *\ The\ number\ of\ built-\/in\ NumPy\ dtypes.}}
+\DoxyCodeLine{00107\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_DEFAULT\_INT\ NPY\_INTP}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_RAVEL\_AXIS\ NPY\_MIN\_INT}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_MAXARGS\ 64}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#elif\ NPY\_ABI\_VERSION\ <\ 0x02000000}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_DEFAULT\_INT\ NPY\_LONG}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_RAVEL\_AXIS\ 32}}
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_MAXARGS\ 32}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{comment}{/*\ Aliases\ of\ 2.x\ names\ to\ 1.x\ only\ equivalent\ names\ */}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_NTYPES\ NPY\_NTYPES\_LEGACY}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\ \ \ \ \#define\ PyArray\_DescrProto\ PyArray\_Descr}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\ \ \ \ \#define\ \_PyArray\_LegacyDescr\ PyArray\_Descr}}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{comment}{/*\ NumPy\ 2\ definition\ always\ works,\ but\ add\ it\ for\ 1.x\ only\ */}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\ \ \ \ \#define\ PyDataType\_ISLEGACY(dtype)\ (1)}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_DEFAULT\_INT\ \ \(\backslash\)}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (PyArray\_RUNTIME\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION\ ?\ NPY\_INTP\ :\ NPY\_LONG)}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_RAVEL\_AXIS\ \ \(\backslash\)}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (PyArray\_RUNTIME\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION\ ?\ NPY\_MIN\_INT\ :\ 32)}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_MAXARGS\ \ \(\backslash\)}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ (PyArray\_RUNTIME\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION\ ?\ 64\ :\ 32)}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00135\ \textcolor{comment}{\ *\ Access\ inline\ functions\ for\ descriptor\ fields.\ \ Except\ for\ the\ first}}
+\DoxyCodeLine{00136\ \textcolor{comment}{\ *\ few\ fields,\ these\ needed\ to\ be\ moved\ (elsize,\ alignment)\ for}}
+\DoxyCodeLine{00137\ \textcolor{comment}{\ *\ additional\ space.\ \ Or\ they\ are\ descriptor\ specific\ and\ are\ not\ generally}}
+\DoxyCodeLine{00138\ \textcolor{comment}{\ *\ available\ anymore\ (metadata,\ c\_metadata,\ subarray,\ names,\ fields).}}
+\DoxyCodeLine{00139\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00140\ \textcolor{comment}{\ *\ Most\ of\ these\ are\ defined\ via\ the\ \`{}DESCR\_ACCESSOR`\ macro\ helper.}}
+\DoxyCodeLine{00141\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION\ ||\ NPY\_ABI\_VERSION\ <\ 0x02000000}}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{comment}{/*\ Compiling\ for\ 1.x\ or\ 2.x\ only,\ direct\ field\ access\ is\ OK:\ */}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00146\ \ \ \ \ PyDataType\_SET\_ELSIZE(\mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\mbox{\hyperlink{namespacedtype}{dtype}},\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ size)}
+\DoxyCodeLine{00147\ \ \ \ \ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacedtype}{dtype}}-\/>elsize\ =\ size;}
+\DoxyCodeLine{00149\ \ \ \ \ \}}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ npy\_uint64}
+\DoxyCodeLine{00152\ \ \ \ \ PyDataType\_FLAGS(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\mbox{\hyperlink{namespacedtype}{dtype}})}
+\DoxyCodeLine{00153\ \ \ \ \ \{}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\ \ \ \ \#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacedtype}{dtype}}-\/>flags;}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char})\mbox{\hyperlink{namespacedtype}{dtype}}-\/>flags;\ \ \textcolor{comment}{/*\ Need\ unsigned\ cast\ on\ 1.x\ */}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00159\ \ \ \ \ \}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\ \ \ \ \#define\ DESCR\_ACCESSOR(FIELD,\ field,\ type,\ legacy\_only)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ static\ inline\ type\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ PyDataType\_\#\#FIELD(const\ PyArray\_Descr\ *dtype)\ \{\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ if\ (legacy\_only\ \&\&\ !PyDataType\_ISLEGACY(dtype))\ \{\ \ \(\backslash\)}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ (type)0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ return\ ((\_PyArray\_LegacyDescr\ *)dtype)-\/>field;\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#else\ \ }\textcolor{comment}{/*\ compiling\ for\ both\ 1.x\ and\ 2.x\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00172\ \ \ \ \ PyDataType\_SET\_ELSIZE(\mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\mbox{\hyperlink{namespacedtype}{dtype}},\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ size)}
+\DoxyCodeLine{00173\ \ \ \ \ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{npy__2__compat_8h_ac938bd37bf6d7ce4b0491e8c731c138a}{PyArray\_RUNTIME\_VERSION}}\ >=\ \mbox{\hyperlink{npy__2__compat_8h_abbda2c90cb520b8918b0c7115e141025}{NPY\_2\_0\_API\_VERSION}})\ \{}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ ((\mbox{\hyperlink{struct__PyArray__DescrNumPy2}{\_PyArray\_DescrNumPy2}}\ *)\mbox{\hyperlink{namespacedtype}{dtype}})-\/>elsize\ =\ size;}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ ((\mbox{\hyperlink{structPyArray__DescrProto}{PyArray\_DescrProto}}\ *)\mbox{\hyperlink{namespacedtype}{dtype}})-\/>elsize\ =\ (int)size;}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00180\ \ \ \ \ \}}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ npy\_uint64}
+\DoxyCodeLine{00183\ \ \ \ \ PyDataType\_FLAGS(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\mbox{\hyperlink{namespacedtype}{dtype}})}
+\DoxyCodeLine{00184\ \ \ \ \ \{}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{npy__2__compat_8h_ac938bd37bf6d7ce4b0491e8c731c138a}{PyArray\_RUNTIME\_VERSION}}\ >=\ \mbox{\hyperlink{npy__2__compat_8h_abbda2c90cb520b8918b0c7115e141025}{NPY\_2\_0\_API\_VERSION}})\ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{struct__PyArray__DescrNumPy2}{\_PyArray\_DescrNumPy2}}\ *)\mbox{\hyperlink{namespacedtype}{dtype}})-\/>flags;}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char})((\mbox{\hyperlink{structPyArray__DescrProto}{PyArray\_DescrProto}}\ *)\mbox{\hyperlink{namespacedtype}{dtype}})-\/>flags;}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00191\ \ \ \ \ \}}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{comment}{/*\ Cast\ to\ LegacyDescr\ always\ fine\ but\ needed\ when\ \`{}legacy\_only`\ */}}
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\ \ \ \ \#define\ DESCR\_ACCESSOR(FIELD,\ field,\ type,\ legacy\_only)\ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00195\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ static\ inline\ type\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00196\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ PyDataType\_\#\#FIELD(const\ PyArray\_Descr\ *dtype)\ \{\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00197\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ if\ (legacy\_only\ \&\&\ !PyDataType\_ISLEGACY(dtype))\ \{\ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00198\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ (type)0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00199\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00200\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ if\ (PyArray\_RUNTIME\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION)\ \{\ \ \(\backslash\)}}
+\DoxyCodeLine{00201\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ ((\_PyArray\_LegacyDescr\ *)dtype)-\/>field;\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00202\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00203\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ else\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00204\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ ((PyArray\_DescrProto\ *)dtype)-\/>field;\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00205\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00206\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ \mbox{\hyperlink{npy__2__compat_8h_a7b4df01433d6f152e77de14a61e0a719}{DESCR\_ACCESSOR}}(ELSIZE,\ elsize,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ 0)}
+\DoxyCodeLine{00210\ \mbox{\hyperlink{npy__2__compat_8h_a7b4df01433d6f152e77de14a61e0a719}{DESCR\_ACCESSOR}}(ALIGNMENT,\ alignment,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ 0)}
+\DoxyCodeLine{00211\ \mbox{\hyperlink{npy__2__compat_8h_a7b4df01433d6f152e77de14a61e0a719}{DESCR\_ACCESSOR}}(METADATA,\ metadata,\ PyObject\ *,\ 1)}
+\DoxyCodeLine{00212\ \mbox{\hyperlink{npy__2__compat_8h_a7b4df01433d6f152e77de14a61e0a719}{DESCR\_ACCESSOR}}(SUBARRAY,\ subarray,\ \mbox{\hyperlink{struct__arr__descr}{PyArray\_ArrayDescr}}\ *,\ 1)}
+\DoxyCodeLine{00213\ \mbox{\hyperlink{npy__2__compat_8h_a7b4df01433d6f152e77de14a61e0a719}{DESCR\_ACCESSOR}}(NAMES,\ names,\ PyObject\ *,\ 1)}
+\DoxyCodeLine{00214\ \mbox{\hyperlink{npy__2__compat_8h_a7b4df01433d6f152e77de14a61e0a719}{DESCR\_ACCESSOR}}(FIELDS,\ fields,\ PyObject\ *,\ 1)}
+\DoxyCodeLine{00215\ \mbox{\hyperlink{npy__2__compat_8h_a7b4df01433d6f152e77de14a61e0a719}{DESCR\_ACCESSOR}}(C\_METADATA,\ c\_metadata,\ \mbox{\hyperlink{structNpyAuxData__tag}{NpyAuxData}}\ *,\ 1)}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00217\ \textcolor{preprocessor}{\#undef\ DESCR\_ACCESSOR}}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{preprocessor}{\#if\ !(defined(NPY\_INTERNAL\_BUILD)\ \&\&\ NPY\_INTERNAL\_BUILD)}}
+\DoxyCodeLine{00221\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00222\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structPyArray__ArrFuncs}{PyArray\_ArrFuncs}}\ *}
+\DoxyCodeLine{00223\ \ \ \ \ PyDataType\_GetArrFuncs(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *descr)}
+\DoxyCodeLine{00224\ \ \ \ \ \{}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{____multiarray__api_8h_a5d20bd4e88311ce2fa266b7ce5e379ab}{\_PyDataType\_GetArrFuncs}}(descr);}
+\DoxyCodeLine{00226\ \ \ \ \ \}}
+\DoxyCodeLine{00227\ \textcolor{preprocessor}{\#elif\ NPY\_ABI\_VERSION\ <\ 0x02000000}}
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structPyArray__ArrFuncs}{PyArray\_ArrFuncs}}\ *}
+\DoxyCodeLine{00229\ \ \ \ \ PyDataType\_GetArrFuncs(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *descr)}
+\DoxyCodeLine{00230\ \ \ \ \ \{}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ descr-\/>f;}
+\DoxyCodeLine{00232\ \ \ \ \ \}}
+\DoxyCodeLine{00233\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structPyArray__ArrFuncs}{PyArray\_ArrFuncs}}\ *}
+\DoxyCodeLine{00235\ \ \ \ \ PyDataType\_GetArrFuncs(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *descr)}
+\DoxyCodeLine{00236\ \ \ \ \ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{npy__2__compat_8h_ac938bd37bf6d7ce4b0491e8c731c138a}{PyArray\_RUNTIME\_VERSION}}\ >=\ \mbox{\hyperlink{npy__2__compat_8h_abbda2c90cb520b8918b0c7115e141025}{NPY\_2\_0\_API\_VERSION}})\ \{}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{____multiarray__api_8h_a5d20bd4e88311ce2fa266b7ce5e379ab}{\_PyDataType\_GetArrFuncs}}(descr);}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ((\mbox{\hyperlink{structPyArray__DescrProto}{PyArray\_DescrProto}}\ *)descr)-\/>f;}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00243\ \ \ \ \ \}}
+\DoxyCodeLine{00244\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ not\ internal\ build\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_2\_COMPAT\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

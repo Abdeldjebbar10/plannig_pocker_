@@ -1,0 +1,186 @@
+\doxysection{Référence de la classe django.\+utils.\+html.\+Urlizer}
+\hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer}{}\label{classdjango_1_1utils_1_1html_1_1Urlizer}\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+
+
+Graphe de collaboration de django.\+utils.\+html.\+Urlizer\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a5b18fdc65ef0e210754cee6d194d8ef9}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, text, trim\+\_\+url\+\_\+limit=None, nofollow=False, autoescape=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a5b14e41d5b2750ce24c1f4e52451fd1d}{handle\+\_\+word}} (self, word, \texorpdfstring{$\ast$}{*}safe\+\_\+input, trim\+\_\+url\+\_\+limit=None, nofollow=False, autoescape=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a6a00fe51a15948b0c0bdded0d2647393}{trim\+\_\+url}} (self, x, \texorpdfstring{$\ast$}{*}limit)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a6e1474a66473ac0825f42a8671df3eea}{wrapping\+\_\+punctuation\+\_\+openings}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a4d309ef3203e677e56e1fac88f9ca884}{trailing\+\_\+punctuation\+\_\+chars\+\_\+no\+\_\+semicolon}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a07bc23b8938ca7c67d47746f24f8d190}{trailing\+\_\+punctuation\+\_\+chars\+\_\+has\+\_\+semicolon}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_aefb45eebe6e1bc2d32b98f21ed92afbf}{trim\+\_\+punctuation}} (self, word)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_aa3878f6775a0343665e6499268b2ccb8}{is\+\_\+email\+\_\+simple}} (value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a51c06231917ed2835eb896106da1f709}{wrapping\+\_\+punctuation}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a69f925d47dddfac482d4b417e8c50c77}{trailing\+\_\+punctuation\+\_\+chars}} = "{}.,\+:;!"{}
+\item 
+list \mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_afa9f8416bfd9abb7edd29de3edae3279}{wrapping\+\_\+punctuation}} = \mbox{[}("{}("{}, "{})"{}), ("{}\mbox{[}"{}, "{}\mbox{]}"{})\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a432ef707f50df2a49da8b3a3221cdf54}{simple\+\_\+url\+\_\+re}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}https?\+://\textbackslash{}\mbox{[}?\textbackslash{}w"{}, re.\+IGNORECASE)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_af5e1d6987430165330f0de483ba4b56b}{simple\+\_\+url\+\_\+2\+\_\+re}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_aa812641d04f3ed8cc7940449ec7a38df}{word\+\_\+split\+\_\+re}} = \+\_\+lazy\+\_\+re\+\_\+compile()
+\item 
+str \mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a66b5e27fd885e683d9d5df78033bd63a}{mailto\+\_\+template}} = "{}mailto\+:\{local\}@\{domain\}"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1utils_1_1html_1_1Urlizer_a4e16dd0d1f54c4435a326c4eb8b2195c}{url\+\_\+template}} = \textquotesingle{}$<$a href="{}\{href\}"{}\{attrs\}$>$\{url\}$<$/a$>$\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Convert any URLs in text into clickable links.
+
+Work on http://, https://, www. links, and also on links ending in one of
+the original seven gTLDs (.com, .edu, .gov, .int, .mil, .net, and .org).
+Links can have trailing punctuation (periods, commas, close-parens) and
+leading punctuation (opening parens) and it'll still do the right thing.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a5b18fdc65ef0e210754cee6d194d8ef9}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a5b18fdc65ef0e210754cee6d194d8ef9} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text,  }\item[{}]{trim\+\_\+url\+\_\+limit = {\ttfamily None},  }\item[{}]{nofollow = {\ttfamily False},  }\item[{}]{autoescape = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If trim_url_limit is not None, truncate the URLs in the link text
+longer than this limit to trim_url_limit - 1 characters and append an
+ellipsis.
+
+If nofollow is True, give the links a rel="nofollow" attribute.
+
+If autoescape is True, autoescape the link text and URLs.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a5b14e41d5b2750ce24c1f4e52451fd1d}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a5b14e41d5b2750ce24c1f4e52451fd1d} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!handle\_word@{handle\_word}}
+\index{handle\_word@{handle\_word}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{handle\_word()}{handle\_word()}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+handle\+\_\+word (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{word,  }\item[{\texorpdfstring{$\ast$}{*}}]{safe\+\_\+input,  }\item[{}]{trim\+\_\+url\+\_\+limit = {\ttfamily None},  }\item[{}]{nofollow = {\ttfamily False},  }\item[{}]{autoescape = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_aa3878f6775a0343665e6499268b2ccb8}\label{classdjango_1_1utils_1_1html_1_1Urlizer_aa3878f6775a0343665e6499268b2ccb8} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!is\_email\_simple@{is\_email\_simple}}
+\index{is\_email\_simple@{is\_email\_simple}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{is\_email\_simple()}{is\_email\_simple()}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+is\+\_\+email\+\_\+simple (\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Return True if value looks like an email address.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a07bc23b8938ca7c67d47746f24f8d190}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a07bc23b8938ca7c67d47746f24f8d190} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!trailing\_punctuation\_chars\_has\_semicolon@{trailing\_punctuation\_chars\_has\_semicolon}}
+\index{trailing\_punctuation\_chars\_has\_semicolon@{trailing\_punctuation\_chars\_has\_semicolon}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{trailing\_punctuation\_chars\_has\_semicolon()}{trailing\_punctuation\_chars\_has\_semicolon()}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+trailing\+\_\+punctuation\+\_\+chars\+\_\+has\+\_\+semicolon (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a4d309ef3203e677e56e1fac88f9ca884}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a4d309ef3203e677e56e1fac88f9ca884} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!trailing\_punctuation\_chars\_no\_semicolon@{trailing\_punctuation\_chars\_no\_semicolon}}
+\index{trailing\_punctuation\_chars\_no\_semicolon@{trailing\_punctuation\_chars\_no\_semicolon}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{trailing\_punctuation\_chars\_no\_semicolon()}{trailing\_punctuation\_chars\_no\_semicolon()}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+trailing\+\_\+punctuation\+\_\+chars\+\_\+no\+\_\+semicolon (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_aefb45eebe6e1bc2d32b98f21ed92afbf}\label{classdjango_1_1utils_1_1html_1_1Urlizer_aefb45eebe6e1bc2d32b98f21ed92afbf} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!trim\_punctuation@{trim\_punctuation}}
+\index{trim\_punctuation@{trim\_punctuation}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{trim\_punctuation()}{trim\_punctuation()}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+trim\+\_\+punctuation (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{word }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Trim trailing and wrapping punctuation from `word`. Return the items of
+the new state.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a6a00fe51a15948b0c0bdded0d2647393}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a6a00fe51a15948b0c0bdded0d2647393} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!trim\_url@{trim\_url}}
+\index{trim\_url@{trim\_url}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{trim\_url()}{trim\_url()}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+trim\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{\texorpdfstring{$\ast$}{*}}]{limit }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a6e1474a66473ac0825f42a8671df3eea}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a6e1474a66473ac0825f42a8671df3eea} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!wrapping\_punctuation\_openings@{wrapping\_punctuation\_openings}}
+\index{wrapping\_punctuation\_openings@{wrapping\_punctuation\_openings}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{wrapping\_punctuation\_openings()}{wrapping\_punctuation\_openings()}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+wrapping\+\_\+punctuation\+\_\+openings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a66b5e27fd885e683d9d5df78033bd63a}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a66b5e27fd885e683d9d5df78033bd63a} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!mailto\_template@{mailto\_template}}
+\index{mailto\_template@{mailto\_template}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{mailto\_template}{mailto\_template}}
+{\footnotesize\ttfamily str django.\+utils.\+html.\+Urlizer.\+mailto\+\_\+template = "{}mailto\+:\{local\}@\{domain\}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_af5e1d6987430165330f0de483ba4b56b}\label{classdjango_1_1utils_1_1html_1_1Urlizer_af5e1d6987430165330f0de483ba4b56b} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!simple\_url\_2\_re@{simple\_url\_2\_re}}
+\index{simple\_url\_2\_re@{simple\_url\_2\_re}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{simple\_url\_2\_re}{simple\_url\_2\_re}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+simple\+\_\+url\+\_\+2\+\_\+re\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_lazy\_re\_compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}\string^www\(\backslash\).|\string^(?!http)\(\backslash\)w[\string^@]+\(\backslash\).(com|edu|gov|int|mil|net|org)(\$|/.*)\$"{}},\ re.IGNORECASE}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a432ef707f50df2a49da8b3a3221cdf54}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a432ef707f50df2a49da8b3a3221cdf54} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!simple\_url\_re@{simple\_url\_re}}
+\index{simple\_url\_re@{simple\_url\_re}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{simple\_url\_re}{simple\_url\_re}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+simple\+\_\+url\+\_\+re = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}https?\+://\textbackslash{}\mbox{[}?\textbackslash{}w"{}, re.\+IGNORECASE)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a69f925d47dddfac482d4b417e8c50c77}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a69f925d47dddfac482d4b417e8c50c77} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!trailing\_punctuation\_chars@{trailing\_punctuation\_chars}}
+\index{trailing\_punctuation\_chars@{trailing\_punctuation\_chars}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{trailing\_punctuation\_chars}{trailing\_punctuation\_chars}}
+{\footnotesize\ttfamily str django.\+utils.\+html.\+Urlizer.\+trailing\+\_\+punctuation\+\_\+chars = "{}.,\+:;!"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a4e16dd0d1f54c4435a326c4eb8b2195c}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a4e16dd0d1f54c4435a326c4eb8b2195c} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!url\_template@{url\_template}}
+\index{url\_template@{url\_template}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{url\_template}{url\_template}}
+{\footnotesize\ttfamily str django.\+utils.\+html.\+Urlizer.\+url\+\_\+template = \textquotesingle{}$<$a href="{}\{href\}"{}\{attrs\}$>$\{url\}$<$/a$>$\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_aa812641d04f3ed8cc7940449ec7a38df}\label{classdjango_1_1utils_1_1html_1_1Urlizer_aa812641d04f3ed8cc7940449ec7a38df} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!word\_split\_re@{word\_split\_re}}
+\index{word\_split\_re@{word\_split\_re}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{word\_split\_re}{word\_split\_re}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+word\+\_\+split\+\_\+re = \+\_\+lazy\+\_\+re\+\_\+compile()\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_afa9f8416bfd9abb7edd29de3edae3279}\label{classdjango_1_1utils_1_1html_1_1Urlizer_afa9f8416bfd9abb7edd29de3edae3279} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!wrapping\_punctuation@{wrapping\_punctuation}}
+\index{wrapping\_punctuation@{wrapping\_punctuation}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{wrapping\_punctuation}{wrapping\_punctuation}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily list django.\+utils.\+html.\+Urlizer.\+wrapping\+\_\+punctuation = \mbox{[}("{}("{}, "{})"{}), ("{}\mbox{[}"{}, "{}\mbox{]}"{})\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1html_1_1Urlizer_a51c06231917ed2835eb896106da1f709}\label{classdjango_1_1utils_1_1html_1_1Urlizer_a51c06231917ed2835eb896106da1f709} 
+\index{django.utils.html.Urlizer@{django.utils.html.Urlizer}!wrapping\_punctuation@{wrapping\_punctuation}}
+\index{wrapping\_punctuation@{wrapping\_punctuation}!django.utils.html.Urlizer@{django.utils.html.Urlizer}}
+\doxysubsubsection{\texorpdfstring{wrapping\_punctuation}{wrapping\_punctuation}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+utils.\+html.\+Urlizer.\+wrapping\+\_\+punctuation}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/utils/\mbox{\hyperlink{django_2utils_2html_8py}{html.\+py}}\end{DoxyCompactItemize}

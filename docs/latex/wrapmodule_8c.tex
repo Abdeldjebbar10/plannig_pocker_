@@ -1,0 +1,50 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/f2py/tests/src/array\+\_\+from\+\_\+pyobj/wrapmodule.c}
+\hypertarget{wrapmodule_8c}{}\label{wrapmodule_8c}\index{env/lib/python3.12/site-\/packages/numpy/f2py/tests/src/array\_from\_pyobj/wrapmodule.c@{env/lib/python3.12/site-\/packages/numpy/f2py/tests/src/array\_from\_pyobj/wrapmodule.c}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include "{}fortranobject.\+h"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Graphe des dépendances par inclusion de wrapmodule.\+c\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{wrapmodule_8c_ac9efdaac9411d0868b715edccca3269d}{PY\+\_\+\+SSIZE\+\_\+\+T\+\_\+\+CLEAN}}
+\item 
+\#define \mbox{\hyperlink{wrapmodule_8c_aec2bfa76efc2c87e5317a8041144946e}{ADDCONST}}(NAME,  CONST)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+Py\+MODINIT\+\_\+\+FUNC \mbox{\hyperlink{wrapmodule_8c_ad9fedb52b0a0fb7a516fdef0681cf46a}{Py\+Init\+\_\+test\+\_\+array\+\_\+from\+\_\+pyobj\+\_\+ext}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{wrapmodule_8c_aec2bfa76efc2c87e5317a8041144946e}\label{wrapmodule_8c_aec2bfa76efc2c87e5317a8041144946e} 
+\index{wrapmodule.c@{wrapmodule.c}!ADDCONST@{ADDCONST}}
+\index{ADDCONST@{ADDCONST}!wrapmodule.c@{wrapmodule.c}}
+\doxysubsubsection{\texorpdfstring{ADDCONST}{ADDCONST}}
+{\footnotesize\ttfamily \#define ADDCONST(\begin{DoxyParamCaption}\item[{}]{NAME,  }\item[{}]{CONST }\end{DoxyParamCaption})}
+
+{\bfseries Valeur \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ s\ =\ PyLong\_FromLong(CONST);\ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ PyDict\_SetItemString(d,\ NAME,\ s);\ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ Py\_DECREF(s)}
+
+\end{DoxyCode}
+\Hypertarget{wrapmodule_8c_ac9efdaac9411d0868b715edccca3269d}\label{wrapmodule_8c_ac9efdaac9411d0868b715edccca3269d} 
+\index{wrapmodule.c@{wrapmodule.c}!PY\_SSIZE\_T\_CLEAN@{PY\_SSIZE\_T\_CLEAN}}
+\index{PY\_SSIZE\_T\_CLEAN@{PY\_SSIZE\_T\_CLEAN}!wrapmodule.c@{wrapmodule.c}}
+\doxysubsubsection{\texorpdfstring{PY\_SSIZE\_T\_CLEAN}{PY\_SSIZE\_T\_CLEAN}}
+{\footnotesize\ttfamily \#define PY\+\_\+\+SSIZE\+\_\+\+T\+\_\+\+CLEAN}
+
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{wrapmodule_8c_ad9fedb52b0a0fb7a516fdef0681cf46a}\label{wrapmodule_8c_ad9fedb52b0a0fb7a516fdef0681cf46a} 
+\index{wrapmodule.c@{wrapmodule.c}!PyInit\_test\_array\_from\_pyobj\_ext@{PyInit\_test\_array\_from\_pyobj\_ext}}
+\index{PyInit\_test\_array\_from\_pyobj\_ext@{PyInit\_test\_array\_from\_pyobj\_ext}!wrapmodule.c@{wrapmodule.c}}
+\doxysubsubsection{\texorpdfstring{PyInit\_test\_array\_from\_pyobj\_ext()}{PyInit\_test\_array\_from\_pyobj\_ext()}}
+{\footnotesize\ttfamily Py\+MODINIT\+\_\+\+FUNC Py\+Init\+\_\+test\+\_\+array\+\_\+from\+\_\+pyobj\+\_\+ext (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

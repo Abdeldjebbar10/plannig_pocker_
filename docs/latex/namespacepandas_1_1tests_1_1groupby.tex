@@ -1,0 +1,90 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+tests.\+groupby}
+\hypertarget{namespacepandas_1_1tests_1_1groupby}{}\label{namespacepandas_1_1tests_1_1groupby}\index{pandas.tests.groupby@{pandas.tests.groupby}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1aggregate}{aggregate}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1conftest}{conftest}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1methods}{methods}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__all__methods}{test\+\_\+all\+\_\+methods}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__api}{test\+\_\+api}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__apply}{test\+\_\+apply}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__apply__mutate}{test\+\_\+apply\+\_\+mutate}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__bin__groupby}{test\+\_\+bin\+\_\+groupby}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__categorical}{test\+\_\+categorical}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__counting}{test\+\_\+counting}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__cumulative}{test\+\_\+cumulative}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__filters}{test\+\_\+filters}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__groupby}{test\+\_\+groupby}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__groupby__dropna}{test\+\_\+groupby\+\_\+dropna}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__groupby__subclass}{test\+\_\+groupby\+\_\+subclass}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__grouping}{test\+\_\+grouping}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__index__as__string}{test\+\_\+index\+\_\+as\+\_\+string}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__indexing}{test\+\_\+indexing}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__libgroupby}{test\+\_\+libgroupby}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__missing}{test\+\_\+missing}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__numba}{test\+\_\+numba}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__numeric__only}{test\+\_\+numeric\+\_\+only}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__pipe}{test\+\_\+pipe}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__raises}{test\+\_\+raises}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__reductions}{test\+\_\+reductions}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1test__timegrouper}{test\+\_\+timegrouper}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_1_1transform}{transform}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1groupby_ae28d3d96c3d4cfbe68483628c0919ff8}{get\+\_\+groupby\+\_\+method\+\_\+args}} (name, obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1tests_1_1groupby_ae28d3d96c3d4cfbe68483628c0919ff8}\label{namespacepandas_1_1tests_1_1groupby_ae28d3d96c3d4cfbe68483628c0919ff8} 
+\index{pandas.tests.groupby@{pandas.tests.groupby}!get\_groupby\_method\_args@{get\_groupby\_method\_args}}
+\index{get\_groupby\_method\_args@{get\_groupby\_method\_args}!pandas.tests.groupby@{pandas.tests.groupby}}
+\doxysubsubsection{\texorpdfstring{get\_groupby\_method\_args()}{get\_groupby\_method\_args()}}
+{\footnotesize\ttfamily pandas.\+tests.\+groupby.\+get\+\_\+groupby\+\_\+method\+\_\+args (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get required arguments for a groupby method.
+
+When parametrizing a test over groupby methods (e.g. "sum", "mean", "fillna"),
+it is often the case that arguments are required for certain methods.
+
+Parameters
+----------
+name: str
+    Name of the method.
+obj: Series or DataFrame
+    pandas object that is being grouped.
+
+Returns
+-------
+A tuple of required arguments for the method.
+\end{DoxyVerb}
+ 

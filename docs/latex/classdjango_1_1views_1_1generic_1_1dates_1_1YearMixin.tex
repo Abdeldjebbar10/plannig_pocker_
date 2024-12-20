@@ -1,0 +1,109 @@
+\doxysection{Référence de la classe django.\+views.\+generic.\+dates.\+Year\+Mixin}
+\hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin}{}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin}\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+views.\+generic.\+dates.\+Year\+Mixin\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+views.\+generic.\+dates.\+Year\+Mixin\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a20170452710ca941db36bdc90b490e50}{get\+\_\+year\+\_\+format}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a6e2e940e9853d71a94d5a41b71262ca3}{get\+\_\+year}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_ac970f78012ac3233740170af28e021eb}{get\+\_\+next\+\_\+year}} (self, date)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a99ae71d6387679b2f9e61d725c09f3ef}{get\+\_\+previous\+\_\+year}} (self, date)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a812fb3cbcb480737e093a4d277e63384}{year\+\_\+format}} = "{}\%Y"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_aa3dbcec73c8c69b389e3e233e795e048}{year}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_ac86336bf1194dbcbb48a246fb535358d}{\+\_\+get\+\_\+next\+\_\+year}} (self, date)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_aed791978a8c255d2ceb76eaad39a34ba}{\+\_\+get\+\_\+current\+\_\+year}} (self, date)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Mixin for views manipulating year-based data.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_aed791978a8c255d2ceb76eaad39a34ba}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_aed791978a8c255d2ceb76eaad39a34ba} 
+\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}!\_get\_current\_year@{\_get\_current\_year}}
+\index{\_get\_current\_year@{\_get\_current\_year}!django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_current\_year()}{\_get\_current\_year()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Year\+Mixin.\+\_\+get\+\_\+current\+\_\+year (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the start date of the current interval.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_ac86336bf1194dbcbb48a246fb535358d}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_ac86336bf1194dbcbb48a246fb535358d} 
+\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}!\_get\_next\_year@{\_get\_next\_year}}
+\index{\_get\_next\_year@{\_get\_next\_year}!django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_next\_year()}{\_get\_next\_year()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Year\+Mixin.\+\_\+get\+\_\+next\+\_\+year (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the start date of the next interval.
+
+The interval is defined by start date <= item date < next start date.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_ac970f78012ac3233740170af28e021eb}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_ac970f78012ac3233740170af28e021eb} 
+\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}!get\_next\_year@{get\_next\_year}}
+\index{get\_next\_year@{get\_next\_year}!django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+\doxysubsubsection{\texorpdfstring{get\_next\_year()}{get\_next\_year()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Year\+Mixin.\+get\+\_\+next\+\_\+year (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{date }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the next valid year.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a99ae71d6387679b2f9e61d725c09f3ef}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a99ae71d6387679b2f9e61d725c09f3ef} 
+\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}!get\_previous\_year@{get\_previous\_year}}
+\index{get\_previous\_year@{get\_previous\_year}!django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+\doxysubsubsection{\texorpdfstring{get\_previous\_year()}{get\_previous\_year()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Year\+Mixin.\+get\+\_\+previous\+\_\+year (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{date }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the previous valid year.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a6e2e940e9853d71a94d5a41b71262ca3}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a6e2e940e9853d71a94d5a41b71262ca3} 
+\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}!get\_year@{get\_year}}
+\index{get\_year@{get\_year}!django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+\doxysubsubsection{\texorpdfstring{get\_year()}{get\_year()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Year\+Mixin.\+get\+\_\+year (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the year for which this view should display data.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a20170452710ca941db36bdc90b490e50}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a20170452710ca941db36bdc90b490e50} 
+\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}!get\_year\_format@{get\_year\_format}}
+\index{get\_year\_format@{get\_year\_format}!django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+\doxysubsubsection{\texorpdfstring{get\_year\_format()}{get\_year\_format()}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Year\+Mixin.\+get\+\_\+year\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a year format string in strptime syntax to be used to parse the
+year from url variables.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_aa3dbcec73c8c69b389e3e233e795e048}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_aa3dbcec73c8c69b389e3e233e795e048} 
+\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}!year@{year}}
+\index{year@{year}!django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily django.\+views.\+generic.\+dates.\+Year\+Mixin.\+year = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a812fb3cbcb480737e093a4d277e63384}\label{classdjango_1_1views_1_1generic_1_1dates_1_1YearMixin_a812fb3cbcb480737e093a4d277e63384} 
+\index{django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}!year\_format@{year\_format}}
+\index{year\_format@{year\_format}!django.views.generic.dates.YearMixin@{django.views.generic.dates.YearMixin}}
+\doxysubsubsection{\texorpdfstring{year\_format}{year\_format}}
+{\footnotesize\ttfamily str django.\+views.\+generic.\+dates.\+Year\+Mixin.\+year\+\_\+format = "{}\%Y"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/views/generic/\mbox{\hyperlink{django_2views_2generic_2dates_8py}{dates.\+py}}\end{DoxyCompactItemize}

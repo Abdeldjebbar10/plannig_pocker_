@@ -1,0 +1,29 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Possible\+Precision\+Loss}
+\hypertarget{classpandas_1_1errors_1_1PossiblePrecisionLoss}{}\label{classpandas_1_1errors_1_1PossiblePrecisionLoss}\index{pandas.errors.PossiblePrecisionLoss@{pandas.errors.PossiblePrecisionLoss}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Possible\+Precision\+Loss\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Possible\+Precision\+Loss\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Warning raised by to_stata on a column with a value outside or equal to int64.
+
+When the column value is outside or equal to the int64 value the column is
+converted to a float64 dtype.
+
+Examples
+--------
+>>> df = pd.DataFrame({"s": pd.Series([1, 2**53], dtype=np.int64)})
+>>> df.to_stata('test') # doctest: +SKIP
+... # PossiblePrecisionLoss: Column converted from int64 to float64...
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

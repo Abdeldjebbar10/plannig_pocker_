@@ -1,0 +1,32 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage tutorial.\+urls}
+\hypertarget{namespacetutorial_1_1urls}{}\label{namespacetutorial_1_1urls}\index{tutorial.urls@{tutorial.urls}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetutorial_1_1urls_ac8f5b109e726a288d4cf380a1b027d17}{router}} = routers.\+Default\+Router()
+\item 
+list \mbox{\hyperlink{namespacetutorial_1_1urls_a3ac8d42ee877b957a41a3c98b7894745}{urlpatterns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacetutorial_1_1urls_ac8f5b109e726a288d4cf380a1b027d17}\label{namespacetutorial_1_1urls_ac8f5b109e726a288d4cf380a1b027d17} 
+\index{tutorial.urls@{tutorial.urls}!router@{router}}
+\index{router@{router}!tutorial.urls@{tutorial.urls}}
+\doxysubsubsection{\texorpdfstring{router}{router}}
+{\footnotesize\ttfamily tutorial.\+urls.\+router = routers.\+Default\+Router()}
+
+\Hypertarget{namespacetutorial_1_1urls_a3ac8d42ee877b957a41a3c98b7894745}\label{namespacetutorial_1_1urls_a3ac8d42ee877b957a41a3c98b7894745} 
+\index{tutorial.urls@{tutorial.urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!tutorial.urls@{tutorial.urls}}
+\doxysubsubsection{\texorpdfstring{urlpatterns}{urlpatterns}}
+{\footnotesize\ttfamily list tutorial.\+urls.\+urlpatterns}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ path(\textcolor{stringliteral}{'api'},\ views.Index.as\_view()),}
+\DoxyCodeLine{00003\ \ \ \ \ path(\textcolor{stringliteral}{'api-\/auth/'},\ include(\textcolor{stringliteral}{'rest\_framework.urls'},\ namespace=\textcolor{stringliteral}{'rest\_framework'}))}
+\DoxyCodeLine{00004\ ]}
+
+\end{DoxyCode}

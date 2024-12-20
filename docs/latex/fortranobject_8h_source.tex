@@ -1,0 +1,179 @@
+\doxysection{fortranobject.\+h}
+\hypertarget{fortranobject_8h_source}{}\label{fortranobject_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/f2py/src/fortranobject.h@{env/lib/python3.12/site-\/packages/numpy/f2py/src/fortranobject.h}}
+\mbox{\hyperlink{fortranobject_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ Py\_FORTRANOBJECT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ Py\_FORTRANOBJECT\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <Python.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ NPY\_NO\_DEPRECATED\_API}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ NPY\_NO\_DEPRECATED\_API\ NPY\_API\_VERSION}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifdef\ FORTRANOBJECT\_C}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ NO\_IMPORT\_ARRAY}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ PY\_ARRAY\_UNIQUE\_SYMBOL\ \_npy\_f2py\_ARRAY\_API}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{arrayobject_8h}{numpy/arrayobject.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{npy__3kcompat_8h}{numpy/npy\_3kcompat.h}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#ifdef\ F2PY\_REPORT\_ATEXIT}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <sys/timeb.h>}}
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ clang-\/format\ off}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_start\_clock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00023\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_stop\_clock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00024\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_start\_call\_clock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00025\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_stop\_call\_clock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00026\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_cb\_start\_clock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00027\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_cb\_stop\_clock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00028\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_cb\_start\_call\_clock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00029\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_cb\_stop\_call\_clock(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00030\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ f2py\_report\_on\_exit(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{void}\ *);}
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ clang-\/format\ on}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#ifdef\ DMALLOC}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ "{}dmalloc.h"{}}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{comment}{/*\ Fortran\ object\ interface\ */}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00041\ \textcolor{comment}{123456789-\/123456789-\/123456789-\/123456789-\/123456789-\/123456789-\/123456789-\/12}}
+\DoxyCodeLine{00042\ \textcolor{comment}{}}
+\DoxyCodeLine{00043\ \textcolor{comment}{PyFortranObject\ represents\ various\ Fortran\ objects:}}
+\DoxyCodeLine{00044\ \textcolor{comment}{Fortran\ (module)\ routines,\ COMMON\ blocks,\ module\ data.}}
+\DoxyCodeLine{00045\ \textcolor{comment}{}}
+\DoxyCodeLine{00046\ \textcolor{comment}{Author:\ Pearu\ Peterson\ <pearu@cens.ioc.ee>}}
+\DoxyCodeLine{00047\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ F2PY\_MAX\_DIMS\ 40}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ F2PY\_MESSAGE\_BUFFER\_SIZE\ 300\ \ }\textcolor{comment}{//\ Increase\ on\ "{}stack\ smashing\ detected"{}}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{fortranobject_8h_aa13fda1dafcecb976d92b48272dcec58}{f2py\_set\_data\_func}})(\textcolor{keywordtype}{char}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *);}
+\DoxyCodeLine{00053\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{fortranobject_8h_a7d9c08c3ea8cfdad0b1f0a0dc94f093b}{f2py\_void\_func}})(void);}
+\DoxyCodeLine{00054\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{fortranobject_8h_a4203d7c36757a4bec0b9fd5503e6af56}{f2py\_init\_func}})(\textcolor{keywordtype}{int}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *,\ \mbox{\hyperlink{fortranobject_8h_aa13fda1dafcecb976d92b48272dcec58}{f2py\_set\_data\_func}},\ \textcolor{keywordtype}{int}\ *);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{comment}{/*typedef\ void*\ (*f2py\_c\_func)(void*,...);*/}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{void}\ *(*f2pycfunc)(void);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structFortranDataDef_a92f20a73720f0cd46d9c062ecddb226c}{name}};\ \textcolor{comment}{/*\ attribute\ (array||routine)\ name\ */}}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structFortranDataDef_a5058ec159b7749be16aed072fd747512}{rank}};\ \ \ \textcolor{comment}{/*\ array\ rank,\ 0\ for\ scalar,\ max\ is\ F2PY\_MAX\_DIMS,}}
+\DoxyCodeLine{00063\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ||\ rank=-\/1\ for\ Fortran\ routine\ */}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ d[\mbox{\hyperlink{fortranobject_8h_aaa88fe438f1789d7e965ab6ad0ad3a10}{F2PY\_MAX\_DIMS}}];}
+\DoxyCodeLine{00066\ \ \ \ \ \}\ dims;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ dimensions\ of\ the\ array,\ ||\ not\ used\ */}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structFortranDataDef_af8064eaf55b569cc849e1b77f1e34abd}{type}};\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ PyArray\_<type>\ ||\ not\ used\ */}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structFortranDataDef_ac9d3d1fc25ef405f42cf8bf8989a0296}{elsize}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Element\ size\ ||\ not\ used\ */}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structFortranDataDef_a69aea5e156b0997db5e751e2726369b6}{data}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ pointer\ to\ array\ ||\ Fortran\ routine\ */}}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{fortranobject_8h_a4203d7c36757a4bec0b9fd5503e6af56}{f2py\_init\_func}}\ \mbox{\hyperlink{structFortranDataDef_a660c9e10cf3051d67216f583c5978760}{func}};\ \textcolor{comment}{/*\ initialization\ function\ for}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ allocatable\ arrays:}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ func(\&rank,dims,set\_ptr\_func,name,len(name))}}
+\DoxyCodeLine{00073\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ||\ C/API\ wrapper\ for\ Fortran\ routine\ */}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structFortranDataDef_a42e105111f776e93f511e629b165d270}{doc}};\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ documentation\ string;\ only\ recommended}}
+\DoxyCodeLine{00075\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ for\ routines.\ */}}
+\DoxyCodeLine{00076\ \}\ \mbox{\hyperlink{structFortranDataDef}{FortranDataDef}};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00079\ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPyFortranObject_aa31e81b5bef7f570614b69f5deb05032}{len}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Number\ of\ attributes\ */}}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{structFortranDataDef}{FortranDataDef}}\ *\mbox{\hyperlink{structPyFortranObject_a39f1d324e82b052b8d66d9e5e28f97d5}{defs}};\ \textcolor{comment}{/*\ An\ array\ of\ FortranDataDef's\ */}}
+\DoxyCodeLine{00082\ \ \ \ \ PyObject\ *\mbox{\hyperlink{structPyFortranObject_a8e589a13bed1070f68f8094e91a54bec}{dict}};\ \ \ \ \ \ \ \textcolor{comment}{/*\ Fortran\ object\ attribute\ dictionary\ */}}
+\DoxyCodeLine{00083\ \}\ \mbox{\hyperlink{structPyFortranObject}{PyFortranObject}};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#define\ PyFortran\_Check(op)\ (Py\_TYPE(op)\ ==\ \&PyFortran\_Type)}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#define\ PyFortran\_Check1(op)\ (0\ ==\ strcmp(Py\_TYPE(op)-\/>tp\_name,\ "{}fortran"{}))}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{extern}\ PyTypeObject\ \mbox{\hyperlink{fortranobject_8h_acaa417f3700e11ef00efbc9ccc0d81b6}{PyFortran\_Type}};}
+\DoxyCodeLine{00089\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00090\ \mbox{\hyperlink{fortranobject_8h_a4e850949e4434cff9bc2d34d95e67a1e}{F2PyDict\_SetItemString}}(PyObject\ *dict,\ \textcolor{keywordtype}{char}\ *name,\ PyObject\ *obj);}
+\DoxyCodeLine{00091\ \textcolor{keyword}{extern}\ PyObject\ *}
+\DoxyCodeLine{00092\ \mbox{\hyperlink{fortranobject_8h_aa42b9b4e168edf62851d172716ab7ada}{PyFortranObject\_New}}(\mbox{\hyperlink{structFortranDataDef}{FortranDataDef}}\ *defs,\ \mbox{\hyperlink{fortranobject_8h_a7d9c08c3ea8cfdad0b1f0a0dc94f093b}{f2py\_void\_func}}\ init);}
+\DoxyCodeLine{00093\ \textcolor{keyword}{extern}\ PyObject\ *}
+\DoxyCodeLine{00094\ \mbox{\hyperlink{fortranobject_8h_ad87110dbeba43e93f86c7fd83d66ef0d}{PyFortranObject\_NewAsAttr}}(\mbox{\hyperlink{structFortranDataDef}{FortranDataDef}}\ *defs);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ PyObject\ *}
+\DoxyCodeLine{00097\ \mbox{\hyperlink{fortranobject_8h_aa24e20aa1c550517fa26c771be84b76b}{F2PyCapsule\_FromVoidPtr}}(\textcolor{keywordtype}{void}\ *ptr,\ \textcolor{keywordtype}{void}\ (*dtor)(PyObject\ *));}
+\DoxyCodeLine{00098\ \textcolor{keywordtype}{void}\ *}
+\DoxyCodeLine{00099\ \mbox{\hyperlink{fortranobject_8h_a3e64a9fd51c06b1a965dffba02eed0cf}{F2PyCapsule\_AsVoidPtr}}(PyObject\ *obj);}
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00101\ \mbox{\hyperlink{fortranobject_8h_a688d507d78750d3bac202a3e9851cefd}{F2PyCapsule\_Check}}(PyObject\ *ptr);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ *}
+\DoxyCodeLine{00104\ \mbox{\hyperlink{fortranobject_8h_a0b60763e8c14d7179ac9da4831198a34}{F2PySwapThreadLocalCallbackPtr}}(\textcolor{keywordtype}{char}\ *key,\ \textcolor{keywordtype}{void}\ *ptr);}
+\DoxyCodeLine{00105\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ *}
+\DoxyCodeLine{00106\ \mbox{\hyperlink{fortranobject_8h_a58fa77bf00ad883bb4cc197baf8e0a8a}{F2PyGetThreadLocalCallbackPtr}}(\textcolor{keywordtype}{char}\ *key);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#define\ ISCONTIGUOUS(m)\ (PyArray\_FLAGS(m)\ \&\ NPY\_ARRAY\_C\_CONTIGUOUS)}}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_IN\ 1}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_INOUT\ 2}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_OUT\ 4}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_HIDE\ 8}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_CACHE\ 16}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_COPY\ 32}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_C\ 64}}
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#define\ F2PY\_OPTIONAL\ 128}}
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_INPLACE\ 256}}
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_ALIGNED4\ 512}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_ALIGNED8\ 1024}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#define\ F2PY\_INTENT\_ALIGNED16\ 2048}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#define\ ARRAY\_ISALIGNED(ARR,\ SIZE)\ ((size\_t)(PyArray\_DATA(ARR))\ \%\ (SIZE)\ ==\ 0)}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#define\ F2PY\_ALIGN4(intent)\ (intent\ \&\ F2PY\_INTENT\_ALIGNED4)}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#define\ F2PY\_ALIGN8(intent)\ (intent\ \&\ F2PY\_INTENT\_ALIGNED8)}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#define\ F2PY\_ALIGN16(intent)\ (intent\ \&\ F2PY\_INTENT\_ALIGNED16)}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#define\ F2PY\_GET\_ALIGNMENT(intent)\ \(\backslash\)}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\ \ \ \ (F2PY\_ALIGN4(intent)\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ ?\ 4\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ :\ (F2PY\_ALIGN8(intent)\ ?\ 8\ :\ (F2PY\_ALIGN16(intent)\ ?\ 16\ :\ 1)))}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#define\ F2PY\_CHECK\_ALIGNMENT(arr,\ intent)\ \(\backslash\)}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\ \ \ \ ARRAY\_ISALIGNED(arr,\ F2PY\_GET\_ALIGNMENT(intent))}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#define\ F2PY\_ARRAY\_IS\_CHARACTER\_COMPATIBLE(arr)\ ((PyArray\_DESCR(arr)-\/>type\_num\ ==\ NPY\_STRING\ \&\&\ PyArray\_ITEMSIZE(arr)\ >=\ 1)\ \(\backslash\)}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ||\ PyArray\_DESCR(arr)-\/>type\_num\ ==\ NPY\_UINT8)}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#define\ F2PY\_IS\_UNICODE\_ARRAY(arr)\ (PyArray\_DESCR(arr)-\/>type\_num\ ==\ NPY\_UNICODE)}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structtagPyArrayObject__fields}{PyArrayObject}}\ *}
+\DoxyCodeLine{00138\ \mbox{\hyperlink{fortranobject_8h_aaee88900d9af237ae6fba5609f95eb6e}{ndarray\_from\_pyobj}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ type\_num,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ elsize\_,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *dims,}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ rank,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ intent,\ PyObject\ *obj,}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *errmess);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structtagPyArrayObject__fields}{PyArrayObject}}\ *}
+\DoxyCodeLine{00143\ \mbox{\hyperlink{fortranobject_8h_aad5522ce659c013ca99dab8ce094b877}{array\_from\_pyobj}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ type\_num,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ *dims,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ rank,}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ intent,\ PyObject\ *obj);}
+\DoxyCodeLine{00145\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}}
+\DoxyCodeLine{00146\ \mbox{\hyperlink{fortranobject_8h_ab1e42af647781a22f1dab3db5e5f9ee2}{copy\_ND\_array}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structtagPyArrayObject__fields}{PyArrayObject}}\ *in,\ \mbox{\hyperlink{structtagPyArrayObject__fields}{PyArrayObject}}\ *out);}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\#ifdef\ DEBUG\_COPY\_ND\_ARRAY}}
+\DoxyCodeLine{00149\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00150\ dump\_attrs(\textcolor{keyword}{const}\ \mbox{\hyperlink{structtagPyArrayObject__fields}{PyArrayObject}}\ *arr);}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \ \ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{fortranobject_8h_a89806b3bcb5e349e1152fc58b4491289}{f2py\_describe}}(PyObject\ *obj,\ \textcolor{keywordtype}{char}\ *buf);}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \textcolor{comment}{/*\ Utility\ CPP\ macros\ and\ functions\ that\ can\ be\ used\ in\ signature\ file}}
+\DoxyCodeLine{00156\ \textcolor{comment}{\ \ \ \ \ expressions.\ See\ signature-\/file.rst\ for\ documentation.}}
+\DoxyCodeLine{00157\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#define\ f2py\_itemsize(var)\ (PyArray\_ITEMSIZE(capi\_\ \#\#\ var\ \#\#\ \_as\_array))}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\#define\ f2py\_size(var,\ ...)\ f2py\_size\_impl((PyArrayObject\ *)(capi\_\ \#\#\ var\ \#\#\ \_as\_array),\ \#\#\ \_\_VA\_ARGS\_\_,\ -\/1)}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\#define\ f2py\_rank(var)\ var\ \#\#\ \_Rank}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\#define\ f2py\_shape(var,dim)\ var\ \#\#\ \_Dims[dim]}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#define\ f2py\_len(var)\ f2py\_shape(var,0)}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#define\ f2py\_fshape(var,dim)\ f2py\_shape(var,rank(var)-\/dim-\/1)}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#define\ f2py\_flen(var)\ f2py\_fshape(var,0)}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#define\ f2py\_slen(var)\ capi\_\ \#\#\ var\ \#\#\ \_len}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \textcolor{keyword}{extern}\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ \mbox{\hyperlink{fortranobject_8h_a3bd5162c59169528b4cd86e41087b0bf}{f2py\_size\_impl}}(\mbox{\hyperlink{structtagPyArrayObject__fields}{PyArrayObject}}*\ var,\ ...);}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00171\ \}}
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !Py\_FORTRANOBJECT\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,86 @@
+\doxysection{Référence de la classe django.\+core.\+servers.\+basehttp.\+Server\+Handler}
+\hypertarget{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler}{}\label{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler}\index{django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+core.\+servers.\+basehttp.\+Server\+Handler\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+core.\+servers.\+basehttp.\+Server\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_ab4430b7248536aa4048e6edbd6261f5a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, stdin, stdout, stderr, environ, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_aee0d6adcd9981ec87531dcb43a064141}{cleanup\+\_\+headers}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a67022bc1dc85a75307901027d41a6a61}{close}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a8b2cc1c0f5c6fb94c32114112f896067}{finish\+\_\+response}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a90152f85e4c251370ba0187649cb5294}{result}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a7a49bdf1808c1bb6b48ba1d8244d378e}{http\+\_\+version}} = "{}1.\+1"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_ab4430b7248536aa4048e6edbd6261f5a}\label{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_ab4430b7248536aa4048e6edbd6261f5a} 
+\index{django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+core.\+servers.\+basehttp.\+Server\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stdin,  }\item[{}]{stdout,  }\item[{}]{stderr,  }\item[{}]{environ,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use a LimitedStream so that unread request data will be ignored at
+the end of the request. WSGIRequest uses a LimitedStream but it
+shouldn't discard the data since the upstream servers usually do this.
+This fix applies only for testserver/runserver.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_aee0d6adcd9981ec87531dcb43a064141}\label{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_aee0d6adcd9981ec87531dcb43a064141} 
+\index{django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}!cleanup\_headers@{cleanup\_headers}}
+\index{cleanup\_headers@{cleanup\_headers}!django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}}
+\doxysubsubsection{\texorpdfstring{cleanup\_headers()}{cleanup\_headers()}}
+{\footnotesize\ttfamily django.\+core.\+servers.\+basehttp.\+Server\+Handler.\+cleanup\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a67022bc1dc85a75307901027d41a6a61}\label{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a67022bc1dc85a75307901027d41a6a61} 
+\index{django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}!close@{close}}
+\index{close@{close}!django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily django.\+core.\+servers.\+basehttp.\+Server\+Handler.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a8b2cc1c0f5c6fb94c32114112f896067}\label{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a8b2cc1c0f5c6fb94c32114112f896067} 
+\index{django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}!finish\_response@{finish\_response}}
+\index{finish\_response@{finish\_response}!django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}}
+\doxysubsubsection{\texorpdfstring{finish\_response()}{finish\_response()}}
+{\footnotesize\ttfamily django.\+core.\+servers.\+basehttp.\+Server\+Handler.\+finish\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a7a49bdf1808c1bb6b48ba1d8244d378e}\label{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a7a49bdf1808c1bb6b48ba1d8244d378e} 
+\index{django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}!http\_version@{http\_version}}
+\index{http\_version@{http\_version}!django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}}
+\doxysubsubsection{\texorpdfstring{http\_version}{http\_version}}
+{\footnotesize\ttfamily str django.\+core.\+servers.\+basehttp.\+Server\+Handler.\+http\+\_\+version = "{}1.\+1"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a90152f85e4c251370ba0187649cb5294}\label{classdjango_1_1core_1_1servers_1_1basehttp_1_1ServerHandler_a90152f85e4c251370ba0187649cb5294} 
+\index{django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}!result@{result}}
+\index{result@{result}!django.core.servers.basehttp.ServerHandler@{django.core.servers.basehttp.ServerHandler}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily django.\+core.\+servers.\+basehttp.\+Server\+Handler.\+result}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/core/servers/\mbox{\hyperlink{basehttp_8py}{basehttp.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,175 @@
+\doxysection{numpyconfig.\+h}
+\hypertarget{numpyconfig_8h_source}{}\label{numpyconfig_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/numpyconfig.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/numpyconfig.h}}
+\mbox{\hyperlink{numpyconfig_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_NUMPYCONFIG\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_NUMPYCONFIG\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{__numpyconfig_8h}{\_numpyconfig.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ On\ Mac\ OS\ X,\ because\ there\ is\ only\ one\ configuration\ stage\ for\ all\ the\ archs}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ in\ universal\ builds,\ any\ macro\ which\ depends\ on\ the\ arch\ needs\ to\ be}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ hardcoded.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ Note\ that\ distutils/pip\ will\ attempt\ a\ universal2\ build\ when\ Python\ itself}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ is\ built\ as\ universal2,\ hence\ this\ hardcoding\ is\ needed\ even\ if\ we\ do\ not}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ support\ universal2\ wheels\ anymore\ (see\ gh-\/22796).}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ This\ code\ block\ can\ be\ removed\ after\ we\ have\ dropped\ the\ setup.py\ based}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ build\ completely.}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifdef\ \_\_APPLE\_\_}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#undef\ NPY\_SIZEOF\_LONG}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_\_LP64\_\_}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_LONG\ \ \ \ \ \ \ \ \ 8}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_LONG\ \ \ \ \ \ \ \ \ 4}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\ \ \ \ \#undef\ NPY\_SIZEOF\_LONGDOUBLE}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\ \ \ \ \#undef\ NPY\_SIZEOF\_COMPLEX\_LONGDOUBLE}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ HAVE\_LDOUBLE\_IEEE\_DOUBLE\_LE}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \#undef\ HAVE\_LDOUBLE\_IEEE\_DOUBLE\_LE}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ HAVE\_LDOUBLE\_INTEL\_EXTENDED\_16\_BYTES\_LE}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\ \ \ \ \ \ \#undef\ HAVE\_LDOUBLE\_INTEL\_EXTENDED\_16\_BYTES\_LE}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\ \ \ \ \#if\ defined(\_\_arm64\_\_)}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_LONGDOUBLE\ \ \ \ \ \ \ \ \ 8}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_COMPLEX\_LONGDOUBLE\ 16}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ HAVE\_LDOUBLE\_IEEE\_DOUBLE\_LE\ 1}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(\_\_x86\_64)}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_LONGDOUBLE\ \ \ \ \ \ \ \ \ 16}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_COMPLEX\_LONGDOUBLE\ 32}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ HAVE\_LDOUBLE\_INTEL\_EXTENDED\_16\_BYTES\_LE\ 1}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined\ (\_\_i386)}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_LONGDOUBLE\ \ \ \ \ \ \ \ \ 12}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_COMPLEX\_LONGDOUBLE\ 24}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\ \ \ \ \#elif\ defined(\_\_ppc\_\_)\ ||\ defined\ (\_\_ppc64\_\_)}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_LONGDOUBLE\ \ \ \ \ \ \ \ \ 16}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ NPY\_SIZEOF\_COMPLEX\_LONGDOUBLE\ 32}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#error\ "{}unknown\ architecture"{}}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#define\ NPY\_1\_7\_API\_VERSION\ 0x00000007}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ NPY\_1\_8\_API\_VERSION\ 0x00000008}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#define\ NPY\_1\_9\_API\_VERSION\ 0x00000009}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ NPY\_1\_10\_API\_VERSION\ 0x0000000a}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ NPY\_1\_11\_API\_VERSION\ 0x0000000a}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#define\ NPY\_1\_12\_API\_VERSION\ 0x0000000a}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ NPY\_1\_13\_API\_VERSION\ 0x0000000b}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ NPY\_1\_14\_API\_VERSION\ 0x0000000c}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ NPY\_1\_15\_API\_VERSION\ 0x0000000c}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ NPY\_1\_16\_API\_VERSION\ 0x0000000d}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ NPY\_1\_17\_API\_VERSION\ 0x0000000d}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#define\ NPY\_1\_18\_API\_VERSION\ 0x0000000d}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#define\ NPY\_1\_19\_API\_VERSION\ 0x0000000d}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ NPY\_1\_20\_API\_VERSION\ 0x0000000e}}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#define\ NPY\_1\_21\_API\_VERSION\ 0x0000000e}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#define\ NPY\_1\_22\_API\_VERSION\ 0x0000000f}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ NPY\_1\_23\_API\_VERSION\ 0x00000010}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#define\ NPY\_1\_24\_API\_VERSION\ 0x00000010}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ NPY\_1\_25\_API\_VERSION\ 0x00000011}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#define\ NPY\_2\_0\_API\_VERSION\ 0x00000012}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#define\ NPY\_2\_1\_API\_VERSION\ 0x00000013}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00088\ \textcolor{comment}{\ *\ Binary\ compatibility\ version\ number.\ \ This\ number\ is\ increased}}
+\DoxyCodeLine{00089\ \textcolor{comment}{\ *\ whenever\ the\ C-\/API\ is\ changed\ such\ that\ binary\ compatibility\ is}}
+\DoxyCodeLine{00090\ \textcolor{comment}{\ *\ broken,\ i.e.\ whenever\ a\ recompile\ of\ extension\ modules\ is\ needed.}}
+\DoxyCodeLine{00091\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#define\ NPY\_VERSION\ NPY\_ABI\_VERSION}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00095\ \textcolor{comment}{\ *\ Minor\ API\ version\ we\ are\ compiling\ to\ be\ compatible\ with.\ \ The\ version}}
+\DoxyCodeLine{00096\ \textcolor{comment}{\ *\ Number\ is\ always\ increased\ when\ the\ API\ changes\ via:\ \`{}NPY\_API\_VERSION`}}
+\DoxyCodeLine{00097\ \textcolor{comment}{\ *\ (and\ should\ maybe\ just\ track\ the\ NumPy\ version).}}
+\DoxyCodeLine{00098\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00099\ \textcolor{comment}{\ *\ If\ we\ have\ an\ internal\ build,\ we\ always\ target\ the\ current\ version\ of}}
+\DoxyCodeLine{00100\ \textcolor{comment}{\ *\ course.}}
+\DoxyCodeLine{00101\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00102\ \textcolor{comment}{\ *\ For\ downstream\ users,\ we\ default\ to\ an\ older\ version\ to\ provide\ them\ with}}
+\DoxyCodeLine{00103\ \textcolor{comment}{\ *\ maximum\ compatibility\ by\ default.\ \ Downstream\ can\ choose\ to\ extend\ that}}
+\DoxyCodeLine{00104\ \textcolor{comment}{\ *\ default,\ or\ narrow\ it\ down\ if\ they\ wish\ to\ use\ newer\ API.\ \ If\ you\ adjust}}
+\DoxyCodeLine{00105\ \textcolor{comment}{\ *\ this,\ consider\ the\ Python\ version\ support\ (example\ for\ 1.25.x):}}
+\DoxyCodeLine{00106\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00107\ \textcolor{comment}{\ *\ NumPy\ 1.25.x\ supports\ Python:\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 3.9\ \ 3.10\ \ 3.11\ \ (3.12)}}
+\DoxyCodeLine{00108\ \textcolor{comment}{\ *\ NumPy\ 1.19.x\ supports\ Python:\ \ \ \ \ \ 3.6\ \ 3.7\ \ 3.8\ \ 3.9}}
+\DoxyCodeLine{00109\ \textcolor{comment}{\ *\ NumPy\ 1.17.x\ supports\ Python:\ 3.5\ \ 3.6\ \ 3.7\ \ 3.8}}
+\DoxyCodeLine{00110\ \textcolor{comment}{\ *\ NumPy\ 1.15.x\ supports\ Python:\ ...\ \ 3.6\ \ 3.7}}
+\DoxyCodeLine{00111\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00112\ \textcolor{comment}{\ *\ Users\ of\ the\ stable\ ABI\ may\ wish\ to\ target\ the\ last\ Python\ that\ is\ not}}
+\DoxyCodeLine{00113\ \textcolor{comment}{\ *\ end\ of\ life.\ \ This\ would\ be\ 3.8\ at\ NumPy\ 1.25\ release\ time.}}
+\DoxyCodeLine{00114\ \textcolor{comment}{\ *\ 1.17\ as\ default\ was\ the\ choice\ of\ oldest-\/support-\/numpy\ at\ the\ time\ and}}
+\DoxyCodeLine{00115\ \textcolor{comment}{\ *\ has\ in\ practice\ no\ limit\ (compared\ to\ 1.19).\ \ Even\ earlier\ becomes\ legacy.}}
+\DoxyCodeLine{00116\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\#if\ defined(NPY\_INTERNAL\_BUILD)\ \&\&\ NPY\_INTERNAL\_BUILD}}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{comment}{/*\ NumPy\ internal\ build,\ always\ use\ current\ version.\ */}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\ NPY\_API\_VERSION}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#elif\ defined(NPY\_TARGET\_VERSION)\ \&\&\ NPY\_TARGET\_VERSION}}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{comment}{/*\ user\ provided\ a\ target\ version,\ use\ it\ */}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\ NPY\_TARGET\_VERSION}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{comment}{/*\ Use\ the\ default\ (increase\ when\ dropping\ Python\ 3.10\ support)\ */}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\ NPY\_1\_21\_API\_VERSION}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{comment}{/*\ Sanity\ check\ the\ (requested)\ feature\ version\ */}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ >\ NPY\_API\_VERSION}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\ \ \ \ \#error\ "{}NPY\_TARGET\_VERSION\ higher\ than\ NumPy\ headers!"{}}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ <\ NPY\_1\_15\_API\_VERSION}}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{comment}{/*\ No\ support\ for\ irrelevant\ old\ targets,\ no\ need\ for\ error,\ but\ warn.\ */}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\ \ \ \ \#ifndef\ \_MSC\_VER}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#warning\ "{}Requested\ NumPy\ target\ lower\ than\ supported\ NumPy\ 1.15."{}}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ \_WARN\_\_\_STR2\_\_(x)\ \#x}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ \_WARN\_\_\_STR1\_\_(x)\ \_WARN\_\_\_STR2\_\_(x)}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ \_WARN\_\_\_LOC\_\_\ \_\_FILE\_\_\ "{}("{}\ \_WARN\_\_\_STR1\_\_(\_\_LINE\_\_)\ "{})\ :\ Warning\ Msg:\ "{}}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#pragma\ message(\_WARN\_\_\_LOC\_\_"{}Requested\ NumPy\ target\ lower\ than\ supported\ NumPy\ 1.15."{})}}
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00144\ \textcolor{comment}{\ *\ We\ define\ a\ human\ readable\ translation\ to\ the\ Python\ version\ of\ NumPy}}
+\DoxyCodeLine{00145\ \textcolor{comment}{\ *\ for\ error\ messages\ (and\ also\ to\ allow\ grepping\ the\ binaries\ for\ conda).}}
+\DoxyCodeLine{00146\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#if\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_7\_API\_VERSION}}
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.7"{}}}
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_8\_API\_VERSION}}
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.8"{}}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_9\_API\_VERSION}}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.9"{}}}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_10\_API\_VERSION\ \ }\textcolor{comment}{/*\ also\ 1.11,\ 1.12\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.10"{}}}
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_13\_API\_VERSION}}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.13"{}}}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_14\_API\_VERSION\ \ }\textcolor{comment}{/*\ also\ 1.15\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.14"{}}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_16\_API\_VERSION\ \ }\textcolor{comment}{/*\ also\ 1.17,\ 1.18,\ 1.19\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.16"{}}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_20\_API\_VERSION\ \ }\textcolor{comment}{/*\ also\ 1.21\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.20"{}}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_22\_API\_VERSION}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.22"{}}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_23\_API\_VERSION\ \ }\textcolor{comment}{/*\ also\ 1.24\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.23"{}}}
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_1\_25\_API\_VERSION}}
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}1.25"{}}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_2\_0\_API\_VERSION}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}2.0"{}}}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\#elif\ NPY\_FEATURE\_VERSION\ ==\ NPY\_2\_1\_API\_VERSION}}
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\ \ \ \ \#define\ NPY\_FEATURE\_VERSION\_STRING\ "{}2.1"{}}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\ \ \ \ \#error\ "{}Missing\ version\ string\ define\ for\ new\ NumPy\ version."{}}}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_NUMPYCONFIG\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

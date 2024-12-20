@@ -1,0 +1,108 @@
+\doxysection{Référence de la classe pytz.\+\_\+\+Country\+Timezone\+Dict}
+\hypertarget{classpytz_1_1__CountryTimezoneDict}{}\label{classpytz_1_1__CountryTimezoneDict}\index{pytz.\_CountryTimezoneDict@{pytz.\_CountryTimezoneDict}}
+
+
+Graphe d\textquotesingle{}héritage de pytz.\+\_\+\+Country\+Timezone\+Dict\+:
+% FIG 0
+
+
+Graphe de collaboration de pytz.\+\_\+\+Country\+Timezone\+Dict\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpytz_1_1__CountryTimezoneDict_a0dd40326267d1d0b4dde3d9449d4ac61}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, iso3166\+\_\+code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpytz_1_1lazy_1_1LazyDict}{pytz.\+lazy.\+Lazy\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpytz_1_1lazy_1_1LazyDict_ab1058a1b3a378833c0138bf62017b1fe}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classpytz_1_1lazy_1_1LazyDict_ac7aef8767d3dd97f45caf5d08058a1ae}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classpytz_1_1lazy_1_1LazyDict_a33194335bd49a8f01f3ef4b2faf7c1e2}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpytz_1_1lazy_1_1LazyDict_a7603bb5e98e0fe6b8b8ace4c68c2add6}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpytz_1_1lazy_1_1LazyDict_ac505a9edb49b9aae822972cfc4c7beee}{keys}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpytz_1_1__CountryTimezoneDict_aab65f54e51e998a7d9142b38c005cf1c}{data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpytz_1_1__CountryTimezoneDict_af5b5be0a6c6fec52264cfe98bf6b1c7b}{\+\_\+fill}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classpytz_1_1lazy_1_1LazyDict}{pytz.\+lazy.\+Lazy\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpytz_1_1lazy_1_1LazyDict_ac1a1bcdec25eab43aa8603ddeb28e2ca}{data}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Map ISO 3166 country code to a list of timezone names commonly used
+in that country.
+
+iso3166_code is the two letter code used to identify the country.
+
+>>> def print_list(list_of_strings):
+...     'We use a helper so doctests work under Python 2.3 -> 3.x'
+...     for s in list_of_strings:
+...         print(s)
+
+>>> print_list(country_timezones['nz'])
+Pacific/Auckland
+Pacific/Chatham
+>>> print_list(country_timezones['ch'])
+Europe/Zurich
+>>> print_list(country_timezones['CH'])
+Europe/Zurich
+>>> print_list(country_timezones[unicode('ch')])
+Europe/Zurich
+>>> print_list(country_timezones['XXX'])
+Traceback (most recent call last):
+...
+KeyError: 'XXX'
+
+Previously, this information was exposed as a function rather than a
+dictionary. This is still supported::
+
+>>> print_list(country_timezones('nz'))
+Pacific/Auckland
+Pacific/Chatham
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpytz_1_1__CountryTimezoneDict_a0dd40326267d1d0b4dde3d9449d4ac61}\label{classpytz_1_1__CountryTimezoneDict_a0dd40326267d1d0b4dde3d9449d4ac61} 
+\index{pytz.\_CountryTimezoneDict@{pytz.\_CountryTimezoneDict}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pytz.\_CountryTimezoneDict@{pytz.\_CountryTimezoneDict}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily pytz.\+\_\+\+Country\+Timezone\+Dict.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{iso3166\+\_\+code }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Backwards compatibility.\end{DoxyVerb}
+ \Hypertarget{classpytz_1_1__CountryTimezoneDict_af5b5be0a6c6fec52264cfe98bf6b1c7b}\label{classpytz_1_1__CountryTimezoneDict_af5b5be0a6c6fec52264cfe98bf6b1c7b} 
+\index{pytz.\_CountryTimezoneDict@{pytz.\_CountryTimezoneDict}!\_fill@{\_fill}}
+\index{\_fill@{\_fill}!pytz.\_CountryTimezoneDict@{pytz.\_CountryTimezoneDict}}
+\doxysubsubsection{\texorpdfstring{\_fill()}{\_fill()}}
+{\footnotesize\ttfamily pytz.\+\_\+\+Country\+Timezone\+Dict.\+\_\+fill (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpytz_1_1__CountryTimezoneDict_aab65f54e51e998a7d9142b38c005cf1c}\label{classpytz_1_1__CountryTimezoneDict_aab65f54e51e998a7d9142b38c005cf1c} 
+\index{pytz.\_CountryTimezoneDict@{pytz.\_CountryTimezoneDict}!data@{data}}
+\index{data@{data}!pytz.\_CountryTimezoneDict@{pytz.\_CountryTimezoneDict}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily pytz.\+\_\+\+Country\+Timezone\+Dict.\+data}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pytz/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pytz_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

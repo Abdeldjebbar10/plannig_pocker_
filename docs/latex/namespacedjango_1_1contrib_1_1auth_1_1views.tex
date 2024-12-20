@@ -1,0 +1,73 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+contrib.\+auth.\+views}
+\hypertarget{namespacedjango_1_1contrib_1_1auth_1_1views}{}\label{namespacedjango_1_1contrib_1_1auth_1_1views}\index{django.contrib.auth.views@{django.contrib.auth.views}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1LoginView}{Login\+View}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1LogoutView}{Logout\+View}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1PasswordChangeDoneView}{Password\+Change\+Done\+View}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1PasswordChangeView}{Password\+Change\+View}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1PasswordContextMixin}{Password\+Context\+Mixin}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1PasswordResetCompleteView}{Password\+Reset\+Complete\+View}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1PasswordResetConfirmView}{Password\+Reset\+Confirm\+View}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1PasswordResetDoneView}{Password\+Reset\+Done\+View}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1PasswordResetView}{Password\+Reset\+View}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1views_1_1RedirectURLMixin}{Redirect\+URLMixin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_1_1views_ac8a531c0e1dd5986d080b53c2958b8d3}{logout\+\_\+then\+\_\+login}} (request, login\+\_\+url=None)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_1_1views_a1597177ac2b5ec6ca1b3836e57e5be43}{redirect\+\_\+to\+\_\+login}} (next, login\+\_\+url=None, redirect\+\_\+field\+\_\+name=REDIRECT\+\_\+\+FIELD\+\_\+\+NAME)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_1_1views_ac3c77db0dea1ea328fba6d66ce960f7f}{User\+Model}} = get\+\_\+user\+\_\+model()
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1contrib_1_1auth_1_1views_adf964f59a331beb6ed186ccfa458632a}{INTERNAL\+\_\+\+RESET\+\_\+\+SESSION\+\_\+\+TOKEN}} = "{}\+\_\+password\+\_\+reset\+\_\+token"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1views_ac8a531c0e1dd5986d080b53c2958b8d3}\label{namespacedjango_1_1contrib_1_1auth_1_1views_ac8a531c0e1dd5986d080b53c2958b8d3} 
+\index{django.contrib.auth.views@{django.contrib.auth.views}!logout\_then\_login@{logout\_then\_login}}
+\index{logout\_then\_login@{logout\_then\_login}!django.contrib.auth.views@{django.contrib.auth.views}}
+\doxysubsubsection{\texorpdfstring{logout\_then\_login()}{logout\_then\_login()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+views.\+logout\+\_\+then\+\_\+login (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{login\+\_\+url = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Log out the user if they are logged in. Then redirect to the login page.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1views_a1597177ac2b5ec6ca1b3836e57e5be43}\label{namespacedjango_1_1contrib_1_1auth_1_1views_a1597177ac2b5ec6ca1b3836e57e5be43} 
+\index{django.contrib.auth.views@{django.contrib.auth.views}!redirect\_to\_login@{redirect\_to\_login}}
+\index{redirect\_to\_login@{redirect\_to\_login}!django.contrib.auth.views@{django.contrib.auth.views}}
+\doxysubsubsection{\texorpdfstring{redirect\_to\_login()}{redirect\_to\_login()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+views.\+redirect\+\_\+to\+\_\+login (\begin{DoxyParamCaption}\item[{}]{next,  }\item[{}]{login\+\_\+url = {\ttfamily None},  }\item[{}]{redirect\+\_\+field\+\_\+name = {\ttfamily REDIRECT\+\_\+FIELD\+\_\+NAME} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Redirect the user to the login page, passing the given 'next' page.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1views_adf964f59a331beb6ed186ccfa458632a}\label{namespacedjango_1_1contrib_1_1auth_1_1views_adf964f59a331beb6ed186ccfa458632a} 
+\index{django.contrib.auth.views@{django.contrib.auth.views}!INTERNAL\_RESET\_SESSION\_TOKEN@{INTERNAL\_RESET\_SESSION\_TOKEN}}
+\index{INTERNAL\_RESET\_SESSION\_TOKEN@{INTERNAL\_RESET\_SESSION\_TOKEN}!django.contrib.auth.views@{django.contrib.auth.views}}
+\doxysubsubsection{\texorpdfstring{INTERNAL\_RESET\_SESSION\_TOKEN}{INTERNAL\_RESET\_SESSION\_TOKEN}}
+{\footnotesize\ttfamily str django.\+contrib.\+auth.\+views.\+INTERNAL\+\_\+\+RESET\+\_\+\+SESSION\+\_\+\+TOKEN = "{}\+\_\+password\+\_\+reset\+\_\+token"{}}
+
+\Hypertarget{namespacedjango_1_1contrib_1_1auth_1_1views_ac3c77db0dea1ea328fba6d66ce960f7f}\label{namespacedjango_1_1contrib_1_1auth_1_1views_ac3c77db0dea1ea328fba6d66ce960f7f} 
+\index{django.contrib.auth.views@{django.contrib.auth.views}!UserModel@{UserModel}}
+\index{UserModel@{UserModel}!django.contrib.auth.views@{django.contrib.auth.views}}
+\doxysubsubsection{\texorpdfstring{UserModel}{UserModel}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+views.\+User\+Model = get\+\_\+user\+\_\+model()}
+

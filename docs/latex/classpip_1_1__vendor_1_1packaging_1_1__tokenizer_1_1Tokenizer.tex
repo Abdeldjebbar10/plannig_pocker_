@@ -1,0 +1,131 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer}
+\hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer}{}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer}\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a655a2f1fb296e0f9f987fd205077dc65}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a72d365c01866e690b7fc748e59f5c6c1}{source}}, \texorpdfstring{$\ast$}{*}dict\mbox{[}str, str\texorpdfstring{$\vert$}{|}re.\+Pattern\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a5b9fd436bfeaf79f0ea7a30597bda04b}{rules}})
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a36b34635be299a61f51f37b739f8a87c}{consume}} (self, str name)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a68650b21616df83eec84130efb2d89ef}{check}} (self, str name, \texorpdfstring{$\ast$}{*}bool peek=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Token}{Token}} \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a1e940bf19b55fa7db5a9b05cfcca534f}{expect}} (self, str name, \texorpdfstring{$\ast$}{*}str expected)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Token}{Token}} \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a95ac9b64680745ce18fab5d3e5623d06}{read}} (self)
+\item 
+No\+Return \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a93a69f20b1d0a536dccee9284b7e6fa7}{raise\+\_\+syntax\+\_\+error}} (self, str message, \texorpdfstring{$\ast$}{*}int\texorpdfstring{$\vert$}{|}None span\+\_\+start=None, int\texorpdfstring{$\vert$}{|}None span\+\_\+end=None)
+\item 
+Iterator\mbox{[}None\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a1ae6dd7311952e725d86756ac0866727}{enclosing\+\_\+tokens}} (self, str open\+\_\+token, str close\+\_\+token, \texorpdfstring{$\ast$}{*}str around)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a72d365c01866e690b7fc748e59f5c6c1}{source}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_afde0377396cc77152f810035d31d052c}{position}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a5b9fd436bfeaf79f0ea7a30597bda04b}{rules}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a32c6fe609fe9da6273cb677e3ba4233f}{next\+\_\+token}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Context-sensitive token parsing.
+
+Provides methods to examine the input stream to check whether the next token
+matches.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a655a2f1fb296e0f9f987fd205077dc65}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a655a2f1fb296e0f9f987fd205077dc65} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{source,  }\item[{\texorpdfstring{$\ast$}{*}dict\mbox{[}str, str \texorpdfstring{$\vert$}{|} re.\+Pattern\mbox{[}str\mbox{]}\mbox{]}}]{rules }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a68650b21616df83eec84130efb2d89ef}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a68650b21616df83eec84130efb2d89ef} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!check@{check}}
+\index{check@{check}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily  bool pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+check (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{peek = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether the next token has the provided name.
+
+By default, if the check succeeds, the token *must* be read before
+another check. If `peek` is set to `True`, the token is not loaded and
+would need to be checked again.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a36b34635be299a61f51f37b739f8a87c}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a36b34635be299a61f51f37b739f8a87c} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!consume@{consume}}
+\index{consume@{consume}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+consume (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move beyond provided token name, if at current position.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a1ae6dd7311952e725d86756ac0866727}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a1ae6dd7311952e725d86756ac0866727} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!enclosing\_tokens@{enclosing\_tokens}}
+\index{enclosing\_tokens@{enclosing\_tokens}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{enclosing\_tokens()}{enclosing\_tokens()}}
+{\footnotesize\ttfamily  Iterator\mbox{[}None\mbox{]} pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+enclosing\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{open\+\_\+token,  }\item[{str}]{close\+\_\+token,  }\item[{\texorpdfstring{$\ast$}{*}str     }]{around }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a1e940bf19b55fa7db5a9b05cfcca534f}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a1e940bf19b55fa7db5a9b05cfcca534f} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!expect@{expect}}
+\index{expect@{expect}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{expect()}{expect()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Token}{Token}} pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+expect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{\texorpdfstring{$\ast$}{*}str}]{expected }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Expect a certain token name next, failing with a syntax error otherwise.
+
+The token is *not* read.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a93a69f20b1d0a536dccee9284b7e6fa7}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a93a69f20b1d0a536dccee9284b7e6fa7} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!raise\_syntax\_error@{raise\_syntax\_error}}
+\index{raise\_syntax\_error@{raise\_syntax\_error}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{raise\_syntax\_error()}{raise\_syntax\_error()}}
+{\footnotesize\ttfamily  No\+Return pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+raise\+\_\+syntax\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{message,  }\item[{\texorpdfstring{$\ast$}{*}int \texorpdfstring{$\vert$}{|} None }]{span\+\_\+start = {\ttfamily None},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{span\+\_\+end = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raise ParserSyntaxError at the given position.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a95ac9b64680745ce18fab5d3e5623d06}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a95ac9b64680745ce18fab5d3e5623d06} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!read@{read}}
+\index{read@{read}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Token}{Token}} pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+read (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Consume the next token and return it.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a32c6fe609fe9da6273cb677e3ba4233f}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a32c6fe609fe9da6273cb677e3ba4233f} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!next\_token@{next\_token}}
+\index{next\_token@{next\_token}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{next\_token}{next\_token}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+next\+\_\+token}
+
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_afde0377396cc77152f810035d31d052c}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_afde0377396cc77152f810035d31d052c} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!position@{position}}
+\index{position@{position}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+position}
+
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a5b9fd436bfeaf79f0ea7a30597bda04b}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a5b9fd436bfeaf79f0ea7a30597bda04b} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!rules@{rules}}
+\index{rules@{rules}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{rules}{rules}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+rules}
+
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a72d365c01866e690b7fc748e59f5c6c1}\label{classpip_1_1__vendor_1_1packaging_1_1__tokenizer_1_1Tokenizer_a72d365c01866e690b7fc748e59f5c6c1} 
+\index{pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}!source@{source}}
+\index{source@{source}!pip.\_vendor.packaging.\_tokenizer.Tokenizer@{pip.\_vendor.packaging.\_tokenizer.Tokenizer}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+packaging.\+\_\+tokenizer.\+Tokenizer.\+source}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/packaging/\mbox{\hyperlink{__tokenizer_8py}{\+\_\+tokenizer.\+py}}\end{DoxyCompactItemize}

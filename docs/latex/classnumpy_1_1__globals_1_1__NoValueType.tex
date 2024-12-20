@@ -1,0 +1,48 @@
+\doxysection{Référence de la classe numpy.\+\_\+globals.\+\_\+\+No\+Value\+Type}
+\hypertarget{classnumpy_1_1__globals_1_1__NoValueType}{}\label{classnumpy_1_1__globals_1_1__NoValueType}\index{numpy.\_globals.\_NoValueType@{numpy.\_globals.\_NoValueType}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__globals_1_1__NoValueType_a2f5e4d36cbe4f7bc92695df90a88fe68}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls)
+\item 
+\mbox{\hyperlink{classnumpy_1_1__globals_1_1__NoValueType_abec33356acbe0d9f6415a5cf845c5afa}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Special keyword value.
+
+The instance of this class may be used as the default value assigned to a
+keyword if no other obvious default (e.g., `None`) is suitable,
+
+Common reasons for using this keyword are:
+
+- A new keyword is added to a function, and that function forwards its
+  inputs to another function or method which can be defined outside of
+  NumPy. For example, ``np.std(x)`` calls ``x.std``, so when a ``keepdims``
+  keyword was added that could only be forwarded if the user explicitly
+  specified ``keepdims``; downstream array libraries may not have added
+  the same keyword, so adding ``x.std(..., keepdims=keepdims)``
+  unconditionally could have broken previously working code.
+- A keyword is being deprecated, and a deprecation warning must only be
+  emitted when the keyword is used.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1__globals_1_1__NoValueType_a2f5e4d36cbe4f7bc92695df90a88fe68}\label{classnumpy_1_1__globals_1_1__NoValueType_a2f5e4d36cbe4f7bc92695df90a88fe68} 
+\index{numpy.\_globals.\_NoValueType@{numpy.\_globals.\_NoValueType}!\_\_new\_\_@{\_\_new\_\_}}
+\index{\_\_new\_\_@{\_\_new\_\_}!numpy.\_globals.\_NoValueType@{numpy.\_globals.\_NoValueType}}
+\doxysubsubsection{\texorpdfstring{\_\_new\_\_()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily numpy.\+\_\+globals.\+\_\+\+No\+Value\+Type.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1__globals_1_1__NoValueType_abec33356acbe0d9f6415a5cf845c5afa}\label{classnumpy_1_1__globals_1_1__NoValueType_abec33356acbe0d9f6415a5cf845c5afa} 
+\index{numpy.\_globals.\_NoValueType@{numpy.\_globals.\_NoValueType}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!numpy.\_globals.\_NoValueType@{numpy.\_globals.\_NoValueType}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily numpy.\+\_\+globals.\+\_\+\+No\+Value\+Type.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\mbox{\hyperlink{__globals_8py}{\+\_\+globals.\+py}}\end{DoxyCompactItemize}

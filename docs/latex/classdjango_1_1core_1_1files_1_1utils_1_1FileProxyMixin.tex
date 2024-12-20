@@ -1,0 +1,211 @@
+\doxysection{Référence de la classe django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin}
+\hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin}{}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin}\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a7097b92b399b272f42604aa110a69938}{closed}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aaf40eb47899d1105405bcd0b00a1940e}{readable}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a95b6c94bed094596e1419164096af280}{writable}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aa4b9a0ee28adffe3258919c398d1b560}{seekable}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_ae16218e437b4bb6255492e6f594b880f}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a67c82591cf55b8a3797a03182c3e5b10}{file}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a7ea1db5816767647dd30aa6155baa673}{encoding}} = property(lambda self\+: self.\+file.\+encoding)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a948b0d02ffc87f32a0321d786695fb05}{fileno}} = property(lambda self\+: self.\+file.\+fileno)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a747e14d1fce7c7bbb09127e5206b8712}{flush}} = property(lambda self\+: self.\+file.\+flush)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aab7e8e8bde81a769ca11f9357d166e94}{isatty}} = property(lambda self\+: self.\+file.\+isatty)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a2300be0d37b542bb2841e8ab81e8b0c8}{newlines}} = property(lambda self\+: self.\+file.\+newlines)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a440ca74718e75ac41f37300935f86bb8}{read}} = property(lambda self\+: self.\+file.\+read)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a86b5aa16c03758456df58434954d1571}{readinto}} = property(lambda self\+: self.\+file.\+readinto)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a068e7174dbea55e1fbf82b9461b4fdf8}{readline}} = property(lambda self\+: self.\+file.\+readline)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a9e4112ad3a00b0613d67596bd064f2e0}{readlines}} = property(lambda self\+: self.\+file.\+readlines)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a66b8febae901daf22ac42884ee28c62e}{seek}} = property(lambda self\+: self.\+file.\+seek)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a6e420600310fe700957d4f0db81f58d9}{tell}} = property(lambda self\+: self.\+file.\+tell)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a08ce4b31cef3762a0150c9625fc0714c}{truncate}} = property(lambda self\+: self.\+file.\+truncate)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a927ff32c70b16adf583ceeb0459dac30}{write}} = property(lambda self\+: self.\+file.\+write)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_ac9f4b227c57aa82b268e4d65dae92e15}{writelines}} = property(lambda self\+: self.\+file.\+writelines)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A mixin class used to forward file methods to an underlying file
+object.  The internal file object has to be called "file"::
+
+    class FileProxy(FileProxyMixin):
+        def __init__(self, file):
+            self.file = file
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_ae16218e437b4bb6255492e6f594b880f}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_ae16218e437b4bb6255492e6f594b880f} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1base_1_1File_a94e9f6e2b4daf2db37d08c11ec8a4a7e}{django.\+core.\+files.\+base.\+File}}.
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a7097b92b399b272f42604aa110a69938}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a7097b92b399b272f42604aa110a69938} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!closed@{closed}}
+\index{closed@{closed}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+closed (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FieldFile_a0c14a11a66fa2d7051c0e18a92c3dc25}{django.\+db.\+models.\+fields.\+files.\+Field\+File}}.
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aaf40eb47899d1105405bcd0b00a1940e}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aaf40eb47899d1105405bcd0b00a1940e} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!readable@{readable}}
+\index{readable@{readable}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{readable()}{readable()}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+readable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aa4b9a0ee28adffe3258919c398d1b560}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aa4b9a0ee28adffe3258919c398d1b560} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!seekable@{seekable}}
+\index{seekable@{seekable}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{seekable()}{seekable()}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+seekable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a95b6c94bed094596e1419164096af280}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a95b6c94bed094596e1419164096af280} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!writable@{writable}}
+\index{writable@{writable}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{writable()}{writable()}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+writable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a67c82591cf55b8a3797a03182c3e5b10}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a67c82591cf55b8a3797a03182c3e5b10} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!file@{file}}
+\index{file@{file}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+file}
+
+
+
+\doxysubsection{Documentation des propriétés}
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a7ea1db5816767647dd30aa6155baa673}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a7ea1db5816767647dd30aa6155baa673} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!encoding@{encoding}}
+\index{encoding@{encoding}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+encoding = property(lambda self\+: self.\+file.\+encoding)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a948b0d02ffc87f32a0321d786695fb05}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a948b0d02ffc87f32a0321d786695fb05} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!fileno@{fileno}}
+\index{fileno@{fileno}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{fileno}{fileno}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+fileno = property(lambda self\+: self.\+file.\+fileno)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a747e14d1fce7c7bbb09127e5206b8712}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a747e14d1fce7c7bbb09127e5206b8712} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!flush@{flush}}
+\index{flush@{flush}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{flush}{flush}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+flush = property(lambda self\+: self.\+file.\+flush)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aab7e8e8bde81a769ca11f9357d166e94}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_aab7e8e8bde81a769ca11f9357d166e94} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!isatty@{isatty}}
+\index{isatty@{isatty}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{isatty}{isatty}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+isatty = property(lambda self\+: self.\+file.\+isatty)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a2300be0d37b542bb2841e8ab81e8b0c8}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a2300be0d37b542bb2841e8ab81e8b0c8} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!newlines@{newlines}}
+\index{newlines@{newlines}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{newlines}{newlines}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+newlines = property(lambda self\+: self.\+file.\+newlines)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a440ca74718e75ac41f37300935f86bb8}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a440ca74718e75ac41f37300935f86bb8} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!read@{read}}
+\index{read@{read}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{read}{read}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+read = property(lambda self\+: self.\+file.\+read)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a86b5aa16c03758456df58434954d1571}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a86b5aa16c03758456df58434954d1571} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!readinto@{readinto}}
+\index{readinto@{readinto}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{readinto}{readinto}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+readinto = property(lambda self\+: self.\+file.\+readinto)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a068e7174dbea55e1fbf82b9461b4fdf8}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a068e7174dbea55e1fbf82b9461b4fdf8} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!readline@{readline}}
+\index{readline@{readline}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{readline}{readline}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+readline = property(lambda self\+: self.\+file.\+readline)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a9e4112ad3a00b0613d67596bd064f2e0}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a9e4112ad3a00b0613d67596bd064f2e0} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!readlines@{readlines}}
+\index{readlines@{readlines}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{readlines}{readlines}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+readlines = property(lambda self\+: self.\+file.\+readlines)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a66b8febae901daf22ac42884ee28c62e}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a66b8febae901daf22ac42884ee28c62e} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!seek@{seek}}
+\index{seek@{seek}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{seek}{seek}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+seek = property(lambda self\+: self.\+file.\+seek)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a6e420600310fe700957d4f0db81f58d9}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a6e420600310fe700957d4f0db81f58d9} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!tell@{tell}}
+\index{tell@{tell}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{tell}{tell}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+tell = property(lambda self\+: self.\+file.\+tell)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a08ce4b31cef3762a0150c9625fc0714c}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a08ce4b31cef3762a0150c9625fc0714c} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!truncate@{truncate}}
+\index{truncate@{truncate}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{truncate}{truncate}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+truncate = property(lambda self\+: self.\+file.\+truncate)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a927ff32c70b16adf583ceeb0459dac30}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_a927ff32c70b16adf583ceeb0459dac30} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!write@{write}}
+\index{write@{write}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{write}{write}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+write = property(lambda self\+: self.\+file.\+write)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1base_1_1ContentFile_a5777a08a5be02c055680c8bcbb235c61}{django.\+core.\+files.\+base.\+Content\+File}}, et \mbox{\hyperlink{classdjango_1_1core_1_1files_1_1storage_1_1memory_1_1InMemoryFileNode_a0e630c96ce4523b3fbd453fa5789bc9e}{django.\+core.\+files.\+storage.\+memory.\+In\+Memory\+File\+Node}}.
+
+\Hypertarget{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_ac9f4b227c57aa82b268e4d65dae92e15}\label{classdjango_1_1core_1_1files_1_1utils_1_1FileProxyMixin_ac9f4b227c57aa82b268e4d65dae92e15} 
+\index{django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}!writelines@{writelines}}
+\index{writelines@{writelines}!django.core.files.utils.FileProxyMixin@{django.core.files.utils.FileProxyMixin}}
+\doxysubsubsection{\texorpdfstring{writelines}{writelines}}
+{\footnotesize\ttfamily django.\+core.\+files.\+utils.\+File\+Proxy\+Mixin.\+writelines = property(lambda self\+: self.\+file.\+writelines)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/core/files/\mbox{\hyperlink{django_2core_2files_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

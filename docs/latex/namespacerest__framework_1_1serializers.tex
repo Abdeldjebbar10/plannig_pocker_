@@ -1,0 +1,109 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+serializers}
+\hypertarget{namespacerest__framework_1_1serializers}{}\label{namespacerest__framework_1_1serializers}\index{rest\_framework.serializers@{rest\_framework.serializers}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1serializers_1_1BaseSerializer}{Base\+Serializer}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1serializers_1_1HyperlinkedModelSerializer}{Hyperlinked\+Model\+Serializer}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1serializers_1_1ListSerializer}{List\+Serializer}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1serializers_1_1ModelSerializer}{Model\+Serializer}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1serializers_1_1Serializer}{Serializer}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1serializers_1_1SerializerMetaclass}{Serializer\+Metaclass}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1serializers_aa2997e8816e2a0685b9fdfadbd638dda}{as\+\_\+serializer\+\_\+error}} (exc)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1serializers_ac081b50b51d1876ec9a5ce6702a90877}{raise\+\_\+errors\+\_\+on\+\_\+nested\+\_\+writes}} (method\+\_\+name, serializer, validated\+\_\+data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacerest__framework_1_1serializers_aa9e8d1b87478e94e7b1236e5d1445e0e}{LIST\+\_\+\+SERIALIZER\+\_\+\+KWARGS}}
+\item 
+tuple \mbox{\hyperlink{namespacerest__framework_1_1serializers_a52d17c586f939d253d8aef5558c00d95}{LIST\+\_\+\+SERIALIZER\+\_\+\+KWARGS\+\_\+\+REMOVE}} = (\textquotesingle{}allow\+\_\+empty\textquotesingle{}, \textquotesingle{}min\+\_\+length\textquotesingle{}, \textquotesingle{}max\+\_\+length\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespacerest__framework_1_1serializers_aab30326abedda8b59ce78057b12aeea1}{ALL\+\_\+\+FIELDS}} = \textquotesingle{}\+\_\+\+\_\+all\+\_\+\+\_\+\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Serializers and ModelSerializers are similar to Forms and ModelForms.
+Unlike forms, they are not constrained to dealing with HTML output, and
+form encoded input.
+
+Serialization in REST framework is a two-phase process:
+
+1. Serializers marshal between complex types like model instances, and
+python primitives.
+2. The process of marshalling between python primitives and request and
+response content is handled by parsers and renderers.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1serializers_aa2997e8816e2a0685b9fdfadbd638dda}\label{namespacerest__framework_1_1serializers_aa2997e8816e2a0685b9fdfadbd638dda} 
+\index{rest\_framework.serializers@{rest\_framework.serializers}!as\_serializer\_error@{as\_serializer\_error}}
+\index{as\_serializer\_error@{as\_serializer\_error}!rest\_framework.serializers@{rest\_framework.serializers}}
+\doxysubsubsection{\texorpdfstring{as\_serializer\_error()}{as\_serializer\_error()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+serializers.\+as\+\_\+serializer\+\_\+error (\begin{DoxyParamCaption}\item[{}]{exc }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1serializers_ac081b50b51d1876ec9a5ce6702a90877}\label{namespacerest__framework_1_1serializers_ac081b50b51d1876ec9a5ce6702a90877} 
+\index{rest\_framework.serializers@{rest\_framework.serializers}!raise\_errors\_on\_nested\_writes@{raise\_errors\_on\_nested\_writes}}
+\index{raise\_errors\_on\_nested\_writes@{raise\_errors\_on\_nested\_writes}!rest\_framework.serializers@{rest\_framework.serializers}}
+\doxysubsubsection{\texorpdfstring{raise\_errors\_on\_nested\_writes()}{raise\_errors\_on\_nested\_writes()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+serializers.\+raise\+\_\+errors\+\_\+on\+\_\+nested\+\_\+writes (\begin{DoxyParamCaption}\item[{}]{method\+\_\+name,  }\item[{}]{serializer,  }\item[{}]{validated\+\_\+data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Give explicit errors when users attempt to pass writable nested data.
+
+If we don't do this explicitly they'd get a less helpful error when
+calling `.save()` on the serializer.
+
+We don't *automatically* support these sorts of nested writes because
+there are too many ambiguities to define a default behavior.
+
+Eg. Suppose we have a `UserSerializer` with a nested profile. How should
+we handle the case of an update, where the `profile` relationship does
+not exist? Any of the following might be valid:
+
+* Raise an application error.
+* Silently ignore the nested part of the update.
+* Automatically create a profile instance.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1serializers_aab30326abedda8b59ce78057b12aeea1}\label{namespacerest__framework_1_1serializers_aab30326abedda8b59ce78057b12aeea1} 
+\index{rest\_framework.serializers@{rest\_framework.serializers}!ALL\_FIELDS@{ALL\_FIELDS}}
+\index{ALL\_FIELDS@{ALL\_FIELDS}!rest\_framework.serializers@{rest\_framework.serializers}}
+\doxysubsubsection{\texorpdfstring{ALL\_FIELDS}{ALL\_FIELDS}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+serializers.\+ALL\+\_\+\+FIELDS = \textquotesingle{}\+\_\+\+\_\+all\+\_\+\+\_\+\textquotesingle{}}
+
+\Hypertarget{namespacerest__framework_1_1serializers_aa9e8d1b87478e94e7b1236e5d1445e0e}\label{namespacerest__framework_1_1serializers_aa9e8d1b87478e94e7b1236e5d1445e0e} 
+\index{rest\_framework.serializers@{rest\_framework.serializers}!LIST\_SERIALIZER\_KWARGS@{LIST\_SERIALIZER\_KWARGS}}
+\index{LIST\_SERIALIZER\_KWARGS@{LIST\_SERIALIZER\_KWARGS}!rest\_framework.serializers@{rest\_framework.serializers}}
+\doxysubsubsection{\texorpdfstring{LIST\_SERIALIZER\_KWARGS}{LIST\_SERIALIZER\_KWARGS}}
+{\footnotesize\ttfamily tuple rest\+\_\+framework.\+serializers.\+LIST\+\_\+\+SERIALIZER\+\_\+\+KWARGS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'read\_only'},\ \textcolor{stringliteral}{'write\_only'},\ \textcolor{stringliteral}{'required'},\ \textcolor{stringliteral}{'default'},\ \textcolor{stringliteral}{'initial'},\ \textcolor{stringliteral}{'source'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'label'},\ \textcolor{stringliteral}{'help\_text'},\ \textcolor{stringliteral}{'style'},\ \textcolor{stringliteral}{'error\_messages'},\ \textcolor{stringliteral}{'allow\_empty'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'instance'},\ \textcolor{stringliteral}{'data'},\ \textcolor{stringliteral}{'partial'},\ \textcolor{stringliteral}{'context'},\ \textcolor{stringliteral}{'allow\_null'},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'max\_length'},\ \textcolor{stringliteral}{'min\_length'}}
+\DoxyCodeLine{00006\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacerest__framework_1_1serializers_a52d17c586f939d253d8aef5558c00d95}\label{namespacerest__framework_1_1serializers_a52d17c586f939d253d8aef5558c00d95} 
+\index{rest\_framework.serializers@{rest\_framework.serializers}!LIST\_SERIALIZER\_KWARGS\_REMOVE@{LIST\_SERIALIZER\_KWARGS\_REMOVE}}
+\index{LIST\_SERIALIZER\_KWARGS\_REMOVE@{LIST\_SERIALIZER\_KWARGS\_REMOVE}!rest\_framework.serializers@{rest\_framework.serializers}}
+\doxysubsubsection{\texorpdfstring{LIST\_SERIALIZER\_KWARGS\_REMOVE}{LIST\_SERIALIZER\_KWARGS\_REMOVE}}
+{\footnotesize\ttfamily tuple rest\+\_\+framework.\+serializers.\+LIST\+\_\+\+SERIALIZER\+\_\+\+KWARGS\+\_\+\+REMOVE = (\textquotesingle{}allow\+\_\+empty\textquotesingle{}, \textquotesingle{}min\+\_\+length\textquotesingle{}, \textquotesingle{}max\+\_\+length\textquotesingle{})}
+

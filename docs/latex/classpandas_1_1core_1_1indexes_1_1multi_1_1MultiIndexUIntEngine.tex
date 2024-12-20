@@ -1,0 +1,63 @@
+\doxysection{Référence de la classe pandas.\+core.\+indexes.\+multi.\+Multi\+Index\+UInt\+Engine}
+\hypertarget{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndexUIntEngine}{}\label{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndexUIntEngine}\index{pandas.core.indexes.multi.MultiIndexUIntEngine@{pandas.core.indexes.multi.MultiIndexUIntEngine}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+indexes.\+multi.\+Multi\+Index\+UInt\+Engine\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+indexes.\+multi.\+Multi\+Index\+UInt\+Engine\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndexUIntEngine_aacd401b61ec466bc083a940248db2710}{\+\_\+codes\+\_\+to\+\_\+ints}} (self, codes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndexUIntEngine_a61acc3210f7dad0823fb5463acebcf47}{\+\_\+base}} = libindex.\+UInt64\+Engine
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This class manages a MultiIndex by mapping label combinations to positive
+integers.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndexUIntEngine_aacd401b61ec466bc083a940248db2710}\label{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndexUIntEngine_aacd401b61ec466bc083a940248db2710} 
+\index{pandas.core.indexes.multi.MultiIndexUIntEngine@{pandas.core.indexes.multi.MultiIndexUIntEngine}!\_codes\_to\_ints@{\_codes\_to\_ints}}
+\index{\_codes\_to\_ints@{\_codes\_to\_ints}!pandas.core.indexes.multi.MultiIndexUIntEngine@{pandas.core.indexes.multi.MultiIndexUIntEngine}}
+\doxysubsubsection{\texorpdfstring{\_codes\_to\_ints()}{\_codes\_to\_ints()}}
+{\footnotesize\ttfamily pandas.\+core.\+indexes.\+multi.\+Multi\+Index\+UInt\+Engine.\+\_\+codes\+\_\+to\+\_\+ints (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{codes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Transform combination(s) of uint64 in one uint64 (each), in a strictly
+monotonic way (i.e. respecting the lexicographic order of integer
+combinations): see BaseMultiIndexCodesEngine documentation.
+
+Parameters
+----------
+codes : 1- or 2-dimensional array of dtype uint64
+    Combinations of integers (one per row)
+
+Returns
+-------
+scalar or 1-dimensional array, of dtype uint64
+    Integer(s) representing one combination (each).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndexUIntEngine_a61acc3210f7dad0823fb5463acebcf47}\label{classpandas_1_1core_1_1indexes_1_1multi_1_1MultiIndexUIntEngine_a61acc3210f7dad0823fb5463acebcf47} 
+\index{pandas.core.indexes.multi.MultiIndexUIntEngine@{pandas.core.indexes.multi.MultiIndexUIntEngine}!\_base@{\_base}}
+\index{\_base@{\_base}!pandas.core.indexes.multi.MultiIndexUIntEngine@{pandas.core.indexes.multi.MultiIndexUIntEngine}}
+\doxysubsubsection{\texorpdfstring{\_base}{\_base}}
+{\footnotesize\ttfamily pandas.\+core.\+indexes.\+multi.\+Multi\+Index\+UInt\+Engine.\+\_\+base = libindex.\+UInt64\+Engine\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/indexes/\mbox{\hyperlink{multi_8py}{multi.\+py}}\end{DoxyCompactItemize}

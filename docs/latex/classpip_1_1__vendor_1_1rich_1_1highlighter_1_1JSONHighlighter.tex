@@ -1,0 +1,114 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter}
+\hypertarget{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter}{}\label{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter}\index{pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a665c68339122738c84b124f04c00b206}{highlight}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Text}{Text}} text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1Highlighter}{pip.\+\_\+vendor.\+rich.\+highlighter.\+Highlighter}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Text}{Text}} \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1Highlighter_a485aa94446599d88d3936aee5472d21c}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, Union\mbox{[}str, \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Text}{Text}}\mbox{]} text)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_aa54ce6928954447d4d4d7aa7d07d977a}{JSON\+\_\+\+STR}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a41d220afa4da1d3ee7afaff006f295a3}{JSON\+\_\+\+STR}} = r"{}(?$<$!\mbox{[}\textbackslash{}\textbackslash{}\textbackslash{}w\mbox{]})(?P$<$str$>$b?\textbackslash{}"{}.\texorpdfstring{$\ast$}{*}?(?$<$!\textbackslash{}\textbackslash{})\textbackslash{}"{})"{}
+\item 
+dict \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a571b3dcd7e7787c6647e667d0b92053c}{JSON\+\_\+\+WHITESPACE}} = \{"{} "{}, "{}\textbackslash{}n"{}, "{}\textbackslash{}r"{}, "{}\textbackslash{}t"{}\}
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a4dc7d862369dbdd6b2323188252419c6}{base\+\_\+style}} = "{}json."{}
+\item 
+list \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_ac348a360b21b20f6de8b3b99b1f87ff5}{highlights}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1RegexHighlighter}{pip.\+\_\+vendor.\+rich.\+highlighter.\+Regex\+Highlighter}}}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1RegexHighlighter_a28b4b563535e606c219756e0b7c1a8ff}{highlights}} = \mbox{[}$\,$\mbox{]}
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1RegexHighlighter_ac788f30429333b397ff1f33d0370188f}{base\+\_\+style}} = "{}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Highlights JSON\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a665c68339122738c84b124f04c00b206}\label{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a665c68339122738c84b124f04c00b206} 
+\index{pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}!highlight@{highlight}}
+\index{highlight@{highlight}!pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}}
+\doxysubsubsection{\texorpdfstring{highlight()}{highlight()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter.\+highlight (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1text_1_1Text}{Text}}}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Highlight :class:`rich.text.Text` using regular expressions.
+
+Args:
+    text (~Text): Text to highlighted.\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1RegexHighlighter_aadd34eda287a4e0f866e7f2af4b01768}{pip.\+\_\+vendor.\+rich.\+highlighter.\+Regex\+Highlighter}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a4dc7d862369dbdd6b2323188252419c6}\label{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a4dc7d862369dbdd6b2323188252419c6} 
+\index{pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}!base\_style@{base\_style}}
+\index{base\_style@{base\_style}!pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}}
+\doxysubsubsection{\texorpdfstring{base\_style}{base\_style}}
+{\footnotesize\ttfamily str pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter.\+base\+\_\+style = "{}json."{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_ac348a360b21b20f6de8b3b99b1f87ff5}\label{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_ac348a360b21b20f6de8b3b99b1f87ff5} 
+\index{pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}!highlights@{highlights}}
+\index{highlights@{highlights}!pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}}
+\doxysubsubsection{\texorpdfstring{highlights}{highlights}}
+{\footnotesize\ttfamily list pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter.\+highlights\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \_combine\_regex(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(?P<brace>[\(\backslash\)\{\(\backslash\)[\(\backslash\)(\(\backslash\))\(\backslash\)]\(\backslash\)\}])"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}\(\backslash\)b(?P<bool\_true>true)\(\backslash\)b|\(\backslash\)b(?P<bool\_false>false)\(\backslash\)b|\(\backslash\)b(?P<null>null)\(\backslash\)b"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}(?P<number>(?<!\(\backslash\)w)\(\backslash\)-\/?[0-\/9]+\(\backslash\).?[0-\/9]*(e[\(\backslash\)-\/\(\backslash\)+]?\(\backslash\)d+?)?\(\backslash\)b|0x[0-\/9a-\/fA-\/F]*)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ JSON\_STR,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a41d220afa4da1d3ee7afaff006f295a3}\label{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a41d220afa4da1d3ee7afaff006f295a3} 
+\index{pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}!JSON\_STR@{JSON\_STR}}
+\index{JSON\_STR@{JSON\_STR}!pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}}
+\doxysubsubsection{\texorpdfstring{JSON\_STR}{JSON\_STR}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily str pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter.\+JSON\+\_\+\+STR = r"{}(?$<$!\mbox{[}\textbackslash{}\textbackslash{}\textbackslash{}w\mbox{]})(?P$<$str$>$b?\textbackslash{}"{}.\texorpdfstring{$\ast$}{*}?(?$<$!\textbackslash{}\textbackslash{})\textbackslash{}"{})"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_aa54ce6928954447d4d4d7aa7d07d977a}\label{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_aa54ce6928954447d4d4d7aa7d07d977a} 
+\index{pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}!JSON\_STR@{JSON\_STR}}
+\index{JSON\_STR@{JSON\_STR}!pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}}
+\doxysubsubsection{\texorpdfstring{JSON\_STR}{JSON\_STR}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter.\+JSON\+\_\+\+STR}
+
+\Hypertarget{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a571b3dcd7e7787c6647e667d0b92053c}\label{classpip_1_1__vendor_1_1rich_1_1highlighter_1_1JSONHighlighter_a571b3dcd7e7787c6647e667d0b92053c} 
+\index{pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}!JSON\_WHITESPACE@{JSON\_WHITESPACE}}
+\index{JSON\_WHITESPACE@{JSON\_WHITESPACE}!pip.\_vendor.rich.highlighter.JSONHighlighter@{pip.\_vendor.rich.highlighter.JSONHighlighter}}
+\doxysubsubsection{\texorpdfstring{JSON\_WHITESPACE}{JSON\_WHITESPACE}}
+{\footnotesize\ttfamily dict pip.\+\_\+vendor.\+rich.\+highlighter.\+JSONHighlighter.\+JSON\+\_\+\+WHITESPACE = \{"{} "{}, "{}\textbackslash{}n"{}, "{}\textbackslash{}r"{}, "{}\textbackslash{}t"{}\}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/rich/\mbox{\hyperlink{highlighter_8py}{highlighter.\+py}}\end{DoxyCompactItemize}

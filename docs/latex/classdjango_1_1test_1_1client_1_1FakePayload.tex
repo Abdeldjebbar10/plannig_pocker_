@@ -1,0 +1,86 @@
+\doxysection{Référence de la classe django.\+test.\+client.\+Fake\+Payload}
+\hypertarget{classdjango_1_1test_1_1client_1_1FakePayload}{}\label{classdjango_1_1test_1_1client_1_1FakePayload}\index{django.test.client.FakePayload@{django.test.client.FakePayload}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+test.\+client.\+Fake\+Payload\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+test.\+client.\+Fake\+Payload\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1FakePayload_abb7321fb4edef8215f58343ee0b121b7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, initial\+\_\+bytes=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1FakePayload_a9393adab69caec177bd1dad41c3a62c9}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1FakePayload_a4968728a37f7ecfa436f7156923f32fc}{read}} (self, size=-\/1)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1FakePayload_aac057df3f6b48708ea112c0f8b4ecd60}{readline}} (self, size=-\/1)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1FakePayload_a6a1dca1b58f77e75800bc2d738d3fd7e}{write}} (self, b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1client_1_1FakePayload_a61b194fafd894d365e6dbdf90e2fd216}{read\+\_\+started}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A wrapper around BytesIO that restricts what can be read since data from
+the network can't be sought and cannot be read outside of its content
+length. This makes sure that views can't do anything under the test client
+that wouldn't work in real life.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1test_1_1client_1_1FakePayload_abb7321fb4edef8215f58343ee0b121b7}\label{classdjango_1_1test_1_1client_1_1FakePayload_abb7321fb4edef8215f58343ee0b121b7} 
+\index{django.test.client.FakePayload@{django.test.client.FakePayload}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.test.client.FakePayload@{django.test.client.FakePayload}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+test.\+client.\+Fake\+Payload.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{initial\+\_\+bytes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1test_1_1client_1_1FakePayload_a9393adab69caec177bd1dad41c3a62c9}\label{classdjango_1_1test_1_1client_1_1FakePayload_a9393adab69caec177bd1dad41c3a62c9} 
+\index{django.test.client.FakePayload@{django.test.client.FakePayload}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!django.test.client.FakePayload@{django.test.client.FakePayload}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily django.\+test.\+client.\+Fake\+Payload.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1FakePayload_a4968728a37f7ecfa436f7156923f32fc}\label{classdjango_1_1test_1_1client_1_1FakePayload_a4968728a37f7ecfa436f7156923f32fc} 
+\index{django.test.client.FakePayload@{django.test.client.FakePayload}!read@{read}}
+\index{read@{read}!django.test.client.FakePayload@{django.test.client.FakePayload}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily django.\+test.\+client.\+Fake\+Payload.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1FakePayload_aac057df3f6b48708ea112c0f8b4ecd60}\label{classdjango_1_1test_1_1client_1_1FakePayload_aac057df3f6b48708ea112c0f8b4ecd60} 
+\index{django.test.client.FakePayload@{django.test.client.FakePayload}!readline@{readline}}
+\index{readline@{readline}!django.test.client.FakePayload@{django.test.client.FakePayload}}
+\doxysubsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily django.\+test.\+client.\+Fake\+Payload.\+readline (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1test_1_1client_1_1FakePayload_a6a1dca1b58f77e75800bc2d738d3fd7e}\label{classdjango_1_1test_1_1client_1_1FakePayload_a6a1dca1b58f77e75800bc2d738d3fd7e} 
+\index{django.test.client.FakePayload@{django.test.client.FakePayload}!write@{write}}
+\index{write@{write}!django.test.client.FakePayload@{django.test.client.FakePayload}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily django.\+test.\+client.\+Fake\+Payload.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1test_1_1client_1_1FakePayload_a61b194fafd894d365e6dbdf90e2fd216}\label{classdjango_1_1test_1_1client_1_1FakePayload_a61b194fafd894d365e6dbdf90e2fd216} 
+\index{django.test.client.FakePayload@{django.test.client.FakePayload}!read\_started@{read\_started}}
+\index{read\_started@{read\_started}!django.test.client.FakePayload@{django.test.client.FakePayload}}
+\doxysubsubsection{\texorpdfstring{read\_started}{read\_started}}
+{\footnotesize\ttfamily django.\+test.\+client.\+Fake\+Payload.\+read\+\_\+started}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/test/\mbox{\hyperlink{test_2client_8py}{client.\+py}}\end{DoxyCompactItemize}

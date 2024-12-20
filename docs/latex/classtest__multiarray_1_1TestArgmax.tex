@@ -1,0 +1,94 @@
+\doxysection{Référence de la classe test\+\_\+multiarray.\+Test\+Argmax}
+\hypertarget{classtest__multiarray_1_1TestArgmax}{}\label{classtest__multiarray_1_1TestArgmax}\index{test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__multiarray_1_1TestArgmax_a54482d2da5ea27b41e5eda187782e360}{test\+\_\+combinations}} (self, data)
+\item 
+\mbox{\hyperlink{classtest__multiarray_1_1TestArgmax_a269d453c29aaf6828eada8e196527efc}{test\+\_\+maximum\+\_\+signed\+\_\+integers}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classtest__multiarray_1_1TestArgmax_af8a8fd0865cad34cd14a2a7e51f1c20d}{usg\+\_\+data}}
+\item 
+list \mbox{\hyperlink{classtest__multiarray_1_1TestArgmax_ad45c0a79add5680812827d25c18e495f}{sg\+\_\+data}}
+\item 
+list \mbox{\hyperlink{classtest__multiarray_1_1TestArgmax_aa98e6ae0b61055b271d6e14a24863a59}{darr}}
+\item 
+list \mbox{\hyperlink{classtest__multiarray_1_1TestArgmax_ae17fe5a5f20708da30db663fc89bddaf}{nan\+\_\+arr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classtest__multiarray_1_1TestArgmax_a54482d2da5ea27b41e5eda187782e360}\label{classtest__multiarray_1_1TestArgmax_a54482d2da5ea27b41e5eda187782e360} 
+\index{test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}!test\_combinations@{test\_combinations}}
+\index{test\_combinations@{test\_combinations}!test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}}
+\doxysubsubsection{\texorpdfstring{test\_combinations()}{test\_combinations()}}
+{\footnotesize\ttfamily test\+\_\+multiarray.\+Test\+Argmax.\+test\+\_\+combinations (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__multiarray_1_1TestArgmax_a269d453c29aaf6828eada8e196527efc}\label{classtest__multiarray_1_1TestArgmax_a269d453c29aaf6828eada8e196527efc} 
+\index{test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}!test\_maximum\_signed\_integers@{test\_maximum\_signed\_integers}}
+\index{test\_maximum\_signed\_integers@{test\_maximum\_signed\_integers}!test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}}
+\doxysubsubsection{\texorpdfstring{test\_maximum\_signed\_integers()}{test\_maximum\_signed\_integers()}}
+{\footnotesize\ttfamily test\+\_\+multiarray.\+Test\+Argmax.\+test\+\_\+maximum\+\_\+signed\+\_\+integers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classtest__multiarray_1_1TestArgmax_aa98e6ae0b61055b271d6e14a24863a59}\label{classtest__multiarray_1_1TestArgmax_aa98e6ae0b61055b271d6e14a24863a59} 
+\index{test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}!darr@{darr}}
+\index{darr@{darr}!test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}}
+\doxysubsubsection{\texorpdfstring{darr}{darr}}
+{\footnotesize\ttfamily list test\+\_\+multiarray.\+Test\+Argmax.\+darr\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [(np.array(d[0],\ dtype=t),\ d[1])\ \textcolor{keywordflow}{for}\ d,\ t\ \textcolor{keywordflow}{in}\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ itertools.product(usg\_data,\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ np.uint8,\ np.uint16,\ np.uint32,\ np.uint64}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ))}
+\DoxyCodeLine{\ \ \ \ )]}
+
+\end{DoxyCode}
+\Hypertarget{classtest__multiarray_1_1TestArgmax_ae17fe5a5f20708da30db663fc89bddaf}\label{classtest__multiarray_1_1TestArgmax_ae17fe5a5f20708da30db663fc89bddaf} 
+\index{test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}!nan\_arr@{nan\_arr}}
+\index{nan\_arr@{nan\_arr}!test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}}
+\doxysubsubsection{\texorpdfstring{nan\_arr}{nan\_arr}}
+{\footnotesize\ttfamily list test\+\_\+multiarray.\+Test\+Argmax.\+nan\+\_\+arr\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtest__multiarray_1_1TestArgmax_ad45c0a79add5680812827d25c18e495f}\label{classtest__multiarray_1_1TestArgmax_ad45c0a79add5680812827d25c18e495f} 
+\index{test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}!sg\_data@{sg\_data}}
+\index{sg\_data@{sg\_data}!test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}}
+\doxysubsubsection{\texorpdfstring{sg\_data}{sg\_data}}
+{\footnotesize\ttfamily list test\+\_\+multiarray.\+Test\+Argmax.\+sg\+\_\+data\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ usg\_data\ +\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ([1,\ 2,\ 3,\ 4,\ -\/4,\ -\/3,\ -\/2,\ -\/1],\ 3),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ([1,\ 2,\ 3,\ 4,\ -\/1,\ -\/2,\ -\/3,\ -\/4],\ 3)}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classtest__multiarray_1_1TestArgmax_af8a8fd0865cad34cd14a2a7e51f1c20d}\label{classtest__multiarray_1_1TestArgmax_af8a8fd0865cad34cd14a2a7e51f1c20d} 
+\index{test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}!usg\_data@{usg\_data}}
+\index{usg\_data@{usg\_data}!test\_multiarray.TestArgmax@{test\_multiarray.TestArgmax}}
+\doxysubsubsection{\texorpdfstring{usg\_data}{usg\_data}}
+{\footnotesize\ttfamily list test\+\_\+multiarray.\+Test\+Argmax.\+usg\+\_\+data\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ([1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0],\ 0),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ([3,\ 3,\ 3,\ 3,\ \ 2,\ \ 2,\ \ 2,\ \ 2],\ 0),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ([0,\ 1,\ 2,\ 3,\ \ 4,\ \ 5,\ \ 6,\ \ 7],\ 7),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ([7,\ 6,\ 5,\ 4,\ \ 3,\ \ 2,\ \ 1,\ \ 0],\ 0)}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/tests/\mbox{\hyperlink{__core_2tests_2test__multiarray_8py}{test\+\_\+multiarray.\+py}}\end{DoxyCompactItemize}

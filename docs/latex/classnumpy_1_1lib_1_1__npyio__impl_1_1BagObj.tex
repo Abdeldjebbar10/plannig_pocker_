@@ -1,0 +1,87 @@
+\doxysection{Référence de la classe numpy.\+lib.\+\_\+npyio\+\_\+impl.\+Bag\+Obj}
+\hypertarget{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj}{}\label{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj}\index{numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_a4ad2a633e403c8677702fe77f2c1f86a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, obj)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_ae63a328ed934c61bde6ee88e332c26b1}{\+\_\+\+\_\+getattribute\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_af6c94c67bb29ebecb38b972418391aba}{\+\_\+\+\_\+dir\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_ae90c032e79f17214c42344c24044ca8d}{\+\_\+obj}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}BagObj(obj)
+
+Convert attribute look-ups to getitems on the object passed in.
+
+Parameters
+----------
+obj : class instance
+    Object on which attribute look-up is performed.
+
+Examples
+--------
+>>> import numpy as np
+>>> from numpy.lib._npyio_impl import BagObj as BO
+>>> class BagDemo:
+...     def __getitem__(self, key): # An instance of BagObj(BagDemo)
+...                                 # will call this method when any
+...                                 # attribute look-up is required
+...         result = "Doesn't matter what you want, "
+...         return result + "you're gonna get this"
+...
+>>> demo_obj = BagDemo()
+>>> bagobj = BO(demo_obj)
+>>> bagobj.hello_there
+"Doesn't matter what you want, you're gonna get this"
+>>> bagobj.I_can_be_anything
+"Doesn't matter what you want, you're gonna get this"\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_a4ad2a633e403c8677702fe77f2c1f86a}\label{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_a4ad2a633e403c8677702fe77f2c1f86a} 
+\index{numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+npyio\+\_\+impl.\+Bag\+Obj.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_af6c94c67bb29ebecb38b972418391aba}\label{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_af6c94c67bb29ebecb38b972418391aba} 
+\index{numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}!\_\_dir\_\_@{\_\_dir\_\_}}
+\index{\_\_dir\_\_@{\_\_dir\_\_}!numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}}
+\doxysubsubsection{\texorpdfstring{\_\_dir\_\_()}{\_\_dir\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+npyio\+\_\+impl.\+Bag\+Obj.\+\_\+\+\_\+dir\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enables dir(bagobj) to list the files in an NpzFile.
+
+This also enables tab-completion in an interpreter or IPython.
+\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_ae63a328ed934c61bde6ee88e332c26b1}\label{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_ae63a328ed934c61bde6ee88e332c26b1} 
+\index{numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}!\_\_getattribute\_\_@{\_\_getattribute\_\_}}
+\index{\_\_getattribute\_\_@{\_\_getattribute\_\_}!numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}}
+\doxysubsubsection{\texorpdfstring{\_\_getattribute\_\_()}{\_\_getattribute\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+npyio\+\_\+impl.\+Bag\+Obj.\+\_\+\+\_\+getattribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_ae90c032e79f17214c42344c24044ca8d}\label{classnumpy_1_1lib_1_1__npyio__impl_1_1BagObj_ae90c032e79f17214c42344c24044ca8d} 
+\index{numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}!\_obj@{\_obj}}
+\index{\_obj@{\_obj}!numpy.lib.\_npyio\_impl.BagObj@{numpy.lib.\_npyio\_impl.BagObj}}
+\doxysubsubsection{\texorpdfstring{\_obj}{\_obj}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+npyio\+\_\+impl.\+Bag\+Obj.\+\_\+obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/lib/\mbox{\hyperlink{__npyio__impl_8py}{\+\_\+npyio\+\_\+impl.\+py}}\end{DoxyCompactItemize}

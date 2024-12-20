@@ -1,0 +1,582 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+views.\+APIView}
+\hypertarget{classrest__framework_1_1views_1_1APIView}{}\label{classrest__framework_1_1views_1_1APIView}\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+views.\+APIView\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+views.\+APIView\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a895e54925ed88380e0dd3fe44f25b3bd}{as\+\_\+view}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}initkwargs)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a8f8df17438e360a16daf4aba461c8b8c}{allowed\+\_\+methods}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a8815ddaa0949c363df92cbdd813ff336}{default\+\_\+response\+\_\+headers}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a52ae534e1191e37c275e18b09bb5873b}{http\+\_\+method\+\_\+not\+\_\+allowed}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a42302d4d4e56a0bfa43193eb308a6ae5}{permission\+\_\+denied}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, message=None, code=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a047bb84a694e1a42f76ac78f09bd9429}{throttled}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, wait)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a1d815f9a973455313e88aa7206e96f07}{get\+\_\+authenticate\+\_\+header}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_aeea25c7cfd7e7b4172eeab7e035de506}{get\+\_\+parser\+\_\+context}} (self, http\+\_\+request)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a1c2269239c319914276b4bfcb3f494a1}{get\+\_\+renderer\+\_\+context}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a1ec9a3e0e08692f0f556deabbba767e0}{get\+\_\+exception\+\_\+handler\+\_\+context}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a9f66171e2143bd15f144eab87152027d}{get\+\_\+view\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a219c598cec2d1a927b14f2fa395621ae}{get\+\_\+view\+\_\+description}} (self, html=False)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ab7ffa335addc0cef4803e67ddf153c06}{get\+\_\+format\+\_\+suffix}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a174a2295d5dd5fc97f1e62690a3634c1}{get\+\_\+renderers}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a10ca7bd7a77e26f55cd61613cda40a55}{get\+\_\+parsers}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a8a3a179a485927b89025377a775fcb51}{get\+\_\+authenticators}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ac04c6fbcea3e31aa70ea5e702b04ff06}{get\+\_\+permissions}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_aa25902009c4b1a43a58ce79d34d38d84}{get\+\_\+throttles}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a9605e7c8ab9dba4d828eadf819376190}{get\+\_\+content\+\_\+negotiator}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a8cf020d307c638204cd9167a1c2dd9ee}{get\+\_\+exception\+\_\+handler}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_adb61332a30e5de6c203a76adfa0051ee}{perform\+\_\+content\+\_\+negotiation}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, force=False)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a50a94978861fef74b512efcbd19f3387}{perform\+\_\+authentication}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a3e256be31a40ffa61847dab959a7d1f9}{check\+\_\+permissions}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a30bfd48877198015aa6baa3180133f21}{check\+\_\+object\+\_\+permissions}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, obj)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ac7a751edfb486facbcb8cb3d0dff4e91}{check\+\_\+throttles}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a507fd68cbd251f9f03b9929abaf95401}{determine\+\_\+version}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_abceaaab7e2a1bb11a191f5a31db0d3df}{initialize\+\_\+request}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a99fe36d143ae01871df536bedbea0d14}{initial}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_adeea06dca4c4ad9485be5df630cc23cd}{finalize\+\_\+response}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_aa5c291f19167a8a55504d2ba82c97312}{response}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad6f42080af47a92443574ff15d8acd63}{handle\+\_\+exception}} (self, exc)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a19081c731c242c021379e0348dcbe123}{raise\+\_\+uncaught\+\_\+exception}} (self, exc)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad8e03c6b899e9b6020433ff32dd9a9d1}{dispatch}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad4cfea3fbfad78bdc9a9d9f685c5235f}{options}} (self, \mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View}{django.\+views.\+generic.\+base.\+View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a480ae50e2784818fa6c509838a46f4b1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a17043b13bf8e354cc6400308b77ab189}{kwargs}})
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a0e92b319e76c81a63da4e427bb191e37}{view\+\_\+is\+\_\+async}} (cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a3d093f712476480e224211b73ba9a89f}{setup}} (self, \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a61497a1ee8eda54df4ceb84ee0f079e2}{request}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a05f01f0e5f406dc49cf59879f7eed93b}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a17043b13bf8e354cc6400308b77ab189}{kwargs}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a1b9f26e10a94012be8082e78c81a6ccf}{allowed\+\_\+methods}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a1d6c419fa9aff67a857de8ff650c62e2}{format\+\_\+kwarg}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}{args}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}{kwargs}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}{request}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ab1b4a9a7f40c162b38b59af08b324b80}{headers}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ac5df3c377a0b11a9dc0ba13ce71b47d0}{http\+\_\+method\+\_\+not\+\_\+allowed}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_aa5c291f19167a8a55504d2ba82c97312}{response}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View}{django.\+views.\+generic.\+base.\+View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_ab066f5253475bf1b7c082383301497cd}{head}}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a61497a1ee8eda54df4ceb84ee0f079e2}{request}}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a05f01f0e5f406dc49cf59879f7eed93b}{args}}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a17043b13bf8e354cc6400308b77ab189}{kwargs}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ab001c99dd81e49f1cae0e5bdfc5377c6}{renderer\+\_\+classes}} = api\+\_\+settings.\+DEFAULT\+\_\+\+RENDERER\+\_\+\+CLASSES
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a798a149ef2de553e36f8c0378fc58947}{parser\+\_\+classes}} = api\+\_\+settings.\+DEFAULT\+\_\+\+PARSER\+\_\+\+CLASSES
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ad8b795af44b74e283cfff68b159118ac}{authentication\+\_\+classes}} = api\+\_\+settings.\+DEFAULT\+\_\+\+AUTHENTICATION\+\_\+\+CLASSES
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a52533917ba031560cdad69d52fb9e4d9}{throttle\+\_\+classes}} = api\+\_\+settings.\+DEFAULT\+\_\+\+THROTTLE\+\_\+\+CLASSES
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_acf7dcca589eea46d43d2c3cd28e93c51}{permission\+\_\+classes}} = api\+\_\+settings.\+DEFAULT\+\_\+\+PERMISSION\+\_\+\+CLASSES
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a4bab5a5b36764f738c467802427a74f5}{content\+\_\+negotiation\+\_\+class}} = api\+\_\+settings.\+DEFAULT\+\_\+\+CONTENT\+\_\+\+NEGOTIATION\+\_\+\+CLASS
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a7805998bb39d636ec3024b2ee811607c}{metadata\+\_\+class}} = api\+\_\+settings.\+DEFAULT\+\_\+\+METADATA\+\_\+\+CLASS
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_afe42950d8feb26a1baa2b719833564b6}{versioning\+\_\+class}} = api\+\_\+settings.\+DEFAULT\+\_\+\+VERSIONING\+\_\+\+CLASS
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ac164559535c2d3a6689da94a4ec29aac}{settings}} = api\+\_\+settings
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_a6be13ba10789d19d836d5afbf50c4a7a}{schema}} = \mbox{\hyperlink{classrest__framework_1_1schemas_1_1inspectors_1_1DefaultSchema}{Default\+Schema}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View}{django.\+views.\+generic.\+base.\+View}}}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_ae0a21a4d499b43f9d9bd5b34c60a25ea}{http\+\_\+method\+\_\+names}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1views_1_1APIView_ab3eaf932b58f1d010bbd0e890489ecdf}{\+\_\+negotiator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View}{django.\+views.\+generic.\+base.\+View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_ab69ab041e4ff134d0ea7b883cdb3cd2f}{\+\_\+allowed\+\_\+methods}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a8f8df17438e360a16daf4aba461c8b8c}\label{classrest__framework_1_1views_1_1APIView_a8f8df17438e360a16daf4aba461c8b8c} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!allowed\_methods@{allowed\_methods}}
+\index{allowed\_methods@{allowed\_methods}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{allowed\_methods()}{allowed\_methods()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+allowed\+\_\+methods (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrap Django's private `_allowed_methods` interface in a public property.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a895e54925ed88380e0dd3fe44f25b3bd}\label{classrest__framework_1_1views_1_1APIView_a895e54925ed88380e0dd3fe44f25b3bd} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!as\_view@{as\_view}}
+\index{as\_view@{as\_view}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{as\_view()}{as\_view()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+as\+\_\+view (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{initkwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Store the original class on the view function.
+
+This allows us to discover information about the view when we do URL
+reverse lookups.  Used for breadcrumb generation.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a84aeb44ead28d3965e5e2c15b3736bd1}{django.\+views.\+generic.\+base.\+View}}.
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a30bfd48877198015aa6baa3180133f21}\label{classrest__framework_1_1views_1_1APIView_a30bfd48877198015aa6baa3180133f21} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!check\_object\_permissions@{check\_object\_permissions}}
+\index{check\_object\_permissions@{check\_object\_permissions}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{check\_object\_permissions()}{check\_object\_permissions()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+check\+\_\+object\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the request should be permitted for a given object.
+Raises an appropriate exception if the request is not permitted.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a3e256be31a40ffa61847dab959a7d1f9}\label{classrest__framework_1_1views_1_1APIView_a3e256be31a40ffa61847dab959a7d1f9} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!check\_permissions@{check\_permissions}}
+\index{check\_permissions@{check\_permissions}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{check\_permissions()}{check\_permissions()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+check\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the request should be permitted.
+Raises an appropriate exception if the request is not permitted.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_ac7a751edfb486facbcb8cb3d0dff4e91}\label{classrest__framework_1_1views_1_1APIView_ac7a751edfb486facbcb8cb3d0dff4e91} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!check\_throttles@{check\_throttles}}
+\index{check\_throttles@{check\_throttles}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{check\_throttles()}{check\_throttles()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+check\+\_\+throttles (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if request should be throttled.
+Raises an appropriate exception if the request is throttled.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a8815ddaa0949c363df92cbdd813ff336}\label{classrest__framework_1_1views_1_1APIView_a8815ddaa0949c363df92cbdd813ff336} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!default\_response\_headers@{default\_response\_headers}}
+\index{default\_response\_headers@{default\_response\_headers}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{default\_response\_headers()}{default\_response\_headers()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+default\+\_\+response\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a507fd68cbd251f9f03b9929abaf95401}\label{classrest__framework_1_1views_1_1APIView_a507fd68cbd251f9f03b9929abaf95401} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!determine\_version@{determine\_version}}
+\index{determine\_version@{determine\_version}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{determine\_version()}{determine\_version()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+determine\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If versioning is being used, then determine any API version for the
+incoming request. Returns a two-tuple of (version, versioning_scheme)
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_ad8e03c6b899e9b6020433ff32dd9a9d1}\label{classrest__framework_1_1views_1_1APIView_ad8e03c6b899e9b6020433ff32dd9a9d1} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+dispatch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}`.dispatch()` is pretty much the same as Django's regular dispatch,
+but with extra hooks for startup, finalize, and exception handling.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_ab265f7b733f17fc086db27f63ab90f1d}{django.\+views.\+generic.\+base.\+View}}.
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_adeea06dca4c4ad9485be5df630cc23cd}\label{classrest__framework_1_1views_1_1APIView_adeea06dca4c4ad9485be5df630cc23cd} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!finalize\_response@{finalize\_response}}
+\index{finalize\_response@{finalize\_response}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{finalize\_response()}{finalize\_response()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+finalize\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{response,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the final response object.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a1d815f9a973455313e88aa7206e96f07}\label{classrest__framework_1_1views_1_1APIView_a1d815f9a973455313e88aa7206e96f07} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_authenticate\_header@{get\_authenticate\_header}}
+\index{get\_authenticate\_header@{get\_authenticate\_header}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_authenticate\_header()}{get\_authenticate\_header()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+authenticate\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If a request is unauthenticated, determine the WWW-Authenticate
+header to use for 401 responses, if any.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a8a3a179a485927b89025377a775fcb51}\label{classrest__framework_1_1views_1_1APIView_a8a3a179a485927b89025377a775fcb51} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_authenticators@{get\_authenticators}}
+\index{get\_authenticators@{get\_authenticators}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_authenticators()}{get\_authenticators()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+authenticators (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Instantiates and returns the list of authenticators that this view can use.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a9605e7c8ab9dba4d828eadf819376190}\label{classrest__framework_1_1views_1_1APIView_a9605e7c8ab9dba4d828eadf819376190} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_content\_negotiator@{get\_content\_negotiator}}
+\index{get\_content\_negotiator@{get\_content\_negotiator}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_content\_negotiator()}{get\_content\_negotiator()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+content\+\_\+negotiator (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Instantiate and return the content negotiation class to use.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a8cf020d307c638204cd9167a1c2dd9ee}\label{classrest__framework_1_1views_1_1APIView_a8cf020d307c638204cd9167a1c2dd9ee} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_exception\_handler@{get\_exception\_handler}}
+\index{get\_exception\_handler@{get\_exception\_handler}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_exception\_handler()}{get\_exception\_handler()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+exception\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the exception handler that this view uses.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a1ec9a3e0e08692f0f556deabbba767e0}\label{classrest__framework_1_1views_1_1APIView_a1ec9a3e0e08692f0f556deabbba767e0} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_exception\_handler\_context@{get\_exception\_handler\_context}}
+\index{get\_exception\_handler\_context@{get\_exception\_handler\_context}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_exception\_handler\_context()}{get\_exception\_handler\_context()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+exception\+\_\+handler\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a dict that is passed through to EXCEPTION_HANDLER,
+as the `context` argument.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_ab7ffa335addc0cef4803e67ddf153c06}\label{classrest__framework_1_1views_1_1APIView_ab7ffa335addc0cef4803e67ddf153c06} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_format\_suffix@{get\_format\_suffix}}
+\index{get\_format\_suffix@{get\_format\_suffix}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_format\_suffix()}{get\_format\_suffix()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+format\+\_\+suffix (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if the request includes a '.json' style format suffix
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_aeea25c7cfd7e7b4172eeab7e035de506}\label{classrest__framework_1_1views_1_1APIView_aeea25c7cfd7e7b4172eeab7e035de506} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_parser\_context@{get\_parser\_context}}
+\index{get\_parser\_context@{get\_parser\_context}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_parser\_context()}{get\_parser\_context()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+parser\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{http\+\_\+request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a dict that is passed through to Parser.parse(),
+as the `parser_context` keyword argument.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a10ca7bd7a77e26f55cd61613cda40a55}\label{classrest__framework_1_1views_1_1APIView_a10ca7bd7a77e26f55cd61613cda40a55} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_parsers@{get\_parsers}}
+\index{get\_parsers@{get\_parsers}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_parsers()}{get\_parsers()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+parsers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Instantiates and returns the list of parsers that this view can use.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_ac04c6fbcea3e31aa70ea5e702b04ff06}\label{classrest__framework_1_1views_1_1APIView_ac04c6fbcea3e31aa70ea5e702b04ff06} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_permissions@{get\_permissions}}
+\index{get\_permissions@{get\_permissions}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_permissions()}{get\_permissions()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Instantiates and returns the list of permissions that this view requires.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a1c2269239c319914276b4bfcb3f494a1}\label{classrest__framework_1_1views_1_1APIView_a1c2269239c319914276b4bfcb3f494a1} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_renderer\_context@{get\_renderer\_context}}
+\index{get\_renderer\_context@{get\_renderer\_context}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_renderer\_context()}{get\_renderer\_context()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+renderer\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a dict that is passed through to Renderer.render(),
+as the `renderer_context` keyword argument.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a174a2295d5dd5fc97f1e62690a3634c1}\label{classrest__framework_1_1views_1_1APIView_a174a2295d5dd5fc97f1e62690a3634c1} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_renderers@{get\_renderers}}
+\index{get\_renderers@{get\_renderers}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_renderers()}{get\_renderers()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+renderers (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Instantiates and returns the list of renderers that this view can use.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_aa25902009c4b1a43a58ce79d34d38d84}\label{classrest__framework_1_1views_1_1APIView_aa25902009c4b1a43a58ce79d34d38d84} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_throttles@{get\_throttles}}
+\index{get\_throttles@{get\_throttles}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_throttles()}{get\_throttles()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+throttles (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Instantiates and returns the list of throttles that this view uses.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a219c598cec2d1a927b14f2fa395621ae}\label{classrest__framework_1_1views_1_1APIView_a219c598cec2d1a927b14f2fa395621ae} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_view\_description@{get\_view\_description}}
+\index{get\_view\_description@{get\_view\_description}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_view\_description()}{get\_view\_description()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+view\+\_\+description (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{html = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return some descriptive text for the view, as used in OPTIONS responses
+and in the browsable API.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a9f66171e2143bd15f144eab87152027d}\label{classrest__framework_1_1views_1_1APIView_a9f66171e2143bd15f144eab87152027d} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!get\_view\_name@{get\_view\_name}}
+\index{get\_view\_name@{get\_view\_name}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{get\_view\_name()}{get\_view\_name()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+get\+\_\+view\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the view name, as used in OPTIONS responses and in the
+browsable API.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_ad6f42080af47a92443574ff15d8acd63}\label{classrest__framework_1_1views_1_1APIView_ad6f42080af47a92443574ff15d8acd63} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!handle\_exception@{handle\_exception}}
+\index{handle\_exception@{handle\_exception}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{handle\_exception()}{handle\_exception()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+handle\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle any exception that occurs, by returning an appropriate response,
+or re-raising the error.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1schemas_1_1views_1_1SchemaView_af932c8f6d082c9faee60b2374a194a46}{rest\+\_\+framework.\+schemas.\+views.\+Schema\+View}}.
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a52ae534e1191e37c275e18b09bb5873b}\label{classrest__framework_1_1views_1_1APIView_a52ae534e1191e37c275e18b09bb5873b} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!http\_method\_not\_allowed@{http\_method\_not\_allowed}}
+\index{http\_method\_not\_allowed@{http\_method\_not\_allowed}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{http\_method\_not\_allowed()}{http\_method\_not\_allowed()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+http\+\_\+method\+\_\+not\+\_\+allowed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If `request.method` does not correspond to a handler method,
+determine what kind of exception to raise.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a217d4215b12e45a69176f2c8c408c369}{django.\+views.\+generic.\+base.\+View}}.
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a99fe36d143ae01871df536bedbea0d14}\label{classrest__framework_1_1views_1_1APIView_a99fe36d143ae01871df536bedbea0d14} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!initial@{initial}}
+\index{initial@{initial}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{initial()}{initial()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+initial (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs anything that needs to occur prior to calling the method handler.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_abceaaab7e2a1bb11a191f5a31db0d3df}\label{classrest__framework_1_1views_1_1APIView_abceaaab7e2a1bb11a191f5a31db0d3df} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!initialize\_request@{initialize\_request}}
+\index{initialize\_request@{initialize\_request}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{initialize\_request()}{initialize\_request()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+initialize\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the initial request object.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_ad4cfea3fbfad78bdc9a9d9f685c5235f}\label{classrest__framework_1_1views_1_1APIView_ad4cfea3fbfad78bdc9a9d9f685c5235f} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!options@{options}}
+\index{options@{options}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+options (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handler method for HTTP 'OPTIONS' request.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1views_1_1generic_1_1base_1_1View_a4d1dc440a5bae11bd7859d20ca9948e1}{django.\+views.\+generic.\+base.\+View}}.
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a50a94978861fef74b512efcbd19f3387}\label{classrest__framework_1_1views_1_1APIView_a50a94978861fef74b512efcbd19f3387} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!perform\_authentication@{perform\_authentication}}
+\index{perform\_authentication@{perform\_authentication}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{perform\_authentication()}{perform\_authentication()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+perform\+\_\+authentication (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform authentication on the incoming request.
+
+Note that if you override this and simply 'pass', then authentication
+will instead be performed lazily, the first time either
+`request.user` or `request.auth` is accessed.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_adb61332a30e5de6c203a76adfa0051ee}\label{classrest__framework_1_1views_1_1APIView_adb61332a30e5de6c203a76adfa0051ee} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!perform\_content\_negotiation@{perform\_content\_negotiation}}
+\index{perform\_content\_negotiation@{perform\_content\_negotiation}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{perform\_content\_negotiation()}{perform\_content\_negotiation()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+perform\+\_\+content\+\_\+negotiation (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{force = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine which renderer and media type to use render the response.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a42302d4d4e56a0bfa43193eb308a6ae5}\label{classrest__framework_1_1views_1_1APIView_a42302d4d4e56a0bfa43193eb308a6ae5} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!permission\_denied@{permission\_denied}}
+\index{permission\_denied@{permission\_denied}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{permission\_denied()}{permission\_denied()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+permission\+\_\+denied (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{message = {\ttfamily None},  }\item[{}]{code = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If request is not permitted, determine what kind of exception to raise.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1views_1_1APIView_a19081c731c242c021379e0348dcbe123}\label{classrest__framework_1_1views_1_1APIView_a19081c731c242c021379e0348dcbe123} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!raise\_uncaught\_exception@{raise\_uncaught\_exception}}
+\index{raise\_uncaught\_exception@{raise\_uncaught\_exception}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{raise\_uncaught\_exception()}{raise\_uncaught\_exception()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+raise\+\_\+uncaught\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exc }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a047bb84a694e1a42f76ac78f09bd9429}\label{classrest__framework_1_1views_1_1APIView_a047bb84a694e1a42f76ac78f09bd9429} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!throttled@{throttled}}
+\index{throttled@{throttled}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{throttled()}{throttled()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+throttled (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{wait }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If request is throttled, determine what kind of exception to raise.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1views_1_1APIView_ab3eaf932b58f1d010bbd0e890489ecdf}\label{classrest__framework_1_1views_1_1APIView_ab3eaf932b58f1d010bbd0e890489ecdf} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!\_negotiator@{\_negotiator}}
+\index{\_negotiator@{\_negotiator}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{\_negotiator}{\_negotiator}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+\_\+negotiator\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a1b9f26e10a94012be8082e78c81a6ccf}\label{classrest__framework_1_1views_1_1APIView_a1b9f26e10a94012be8082e78c81a6ccf} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!allowed\_methods@{allowed\_methods}}
+\index{allowed\_methods@{allowed\_methods}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{allowed\_methods}{allowed\_methods}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+allowed\+\_\+methods}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab}\label{classrest__framework_1_1views_1_1APIView_ad23eaa81749724c74945b4f83a4a7bab} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!args@{args}}
+\index{args@{args}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+args}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_ad8b795af44b74e283cfff68b159118ac}\label{classrest__framework_1_1views_1_1APIView_ad8b795af44b74e283cfff68b159118ac} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!authentication\_classes@{authentication\_classes}}
+\index{authentication\_classes@{authentication\_classes}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{authentication\_classes}{authentication\_classes}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+authentication\+\_\+classes = api\+\_\+settings.\+DEFAULT\+\_\+\+AUTHENTICATION\+\_\+\+CLASSES\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a4bab5a5b36764f738c467802427a74f5}\label{classrest__framework_1_1views_1_1APIView_a4bab5a5b36764f738c467802427a74f5} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!content\_negotiation\_class@{content\_negotiation\_class}}
+\index{content\_negotiation\_class@{content\_negotiation\_class}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{content\_negotiation\_class}{content\_negotiation\_class}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+content\+\_\+negotiation\+\_\+class = api\+\_\+settings.\+DEFAULT\+\_\+\+CONTENT\+\_\+\+NEGOTIATION\+\_\+\+CLASS\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a1d6c419fa9aff67a857de8ff650c62e2}\label{classrest__framework_1_1views_1_1APIView_a1d6c419fa9aff67a857de8ff650c62e2} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!format\_kwarg@{format\_kwarg}}
+\index{format\_kwarg@{format\_kwarg}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{format\_kwarg}{format\_kwarg}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+format\+\_\+kwarg}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_ab1b4a9a7f40c162b38b59af08b324b80}\label{classrest__framework_1_1views_1_1APIView_ab1b4a9a7f40c162b38b59af08b324b80} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!headers@{headers}}
+\index{headers@{headers}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+headers}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_ac5df3c377a0b11a9dc0ba13ce71b47d0}\label{classrest__framework_1_1views_1_1APIView_ac5df3c377a0b11a9dc0ba13ce71b47d0} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!http\_method\_not\_allowed@{http\_method\_not\_allowed}}
+\index{http\_method\_not\_allowed@{http\_method\_not\_allowed}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{http\_method\_not\_allowed}{http\_method\_not\_allowed}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+http\+\_\+method\+\_\+not\+\_\+allowed}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d}\label{classrest__framework_1_1views_1_1APIView_a34fd51ba10ea944673a85a2b4103604d} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!kwargs@{kwargs}}
+\index{kwargs@{kwargs}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{kwargs}{kwargs}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+kwargs}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a7805998bb39d636ec3024b2ee811607c}\label{classrest__framework_1_1views_1_1APIView_a7805998bb39d636ec3024b2ee811607c} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!metadata\_class@{metadata\_class}}
+\index{metadata\_class@{metadata\_class}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{metadata\_class}{metadata\_class}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+metadata\+\_\+class = api\+\_\+settings.\+DEFAULT\+\_\+\+METADATA\+\_\+\+CLASS\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a798a149ef2de553e36f8c0378fc58947}\label{classrest__framework_1_1views_1_1APIView_a798a149ef2de553e36f8c0378fc58947} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!parser\_classes@{parser\_classes}}
+\index{parser\_classes@{parser\_classes}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{parser\_classes}{parser\_classes}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+parser\+\_\+classes = api\+\_\+settings.\+DEFAULT\+\_\+\+PARSER\+\_\+\+CLASSES\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_acf7dcca589eea46d43d2c3cd28e93c51}\label{classrest__framework_1_1views_1_1APIView_acf7dcca589eea46d43d2c3cd28e93c51} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!permission\_classes@{permission\_classes}}
+\index{permission\_classes@{permission\_classes}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{permission\_classes}{permission\_classes}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+permission\+\_\+classes = api\+\_\+settings.\+DEFAULT\+\_\+\+PERMISSION\+\_\+\+CLASSES\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_ab001c99dd81e49f1cae0e5bdfc5377c6}\label{classrest__framework_1_1views_1_1APIView_ab001c99dd81e49f1cae0e5bdfc5377c6} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!renderer\_classes@{renderer\_classes}}
+\index{renderer\_classes@{renderer\_classes}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{renderer\_classes}{renderer\_classes}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+renderer\+\_\+classes = api\+\_\+settings.\+DEFAULT\+\_\+\+RENDERER\+\_\+\+CLASSES\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005}\label{classrest__framework_1_1views_1_1APIView_a7527d93888b0b9d939c94dc22cf4e005} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!request@{request}}
+\index{request@{request}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+request}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_aa5c291f19167a8a55504d2ba82c97312}\label{classrest__framework_1_1views_1_1APIView_aa5c291f19167a8a55504d2ba82c97312} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!response@{response}}
+\index{response@{response}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+response}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a6be13ba10789d19d836d5afbf50c4a7a}\label{classrest__framework_1_1views_1_1APIView_a6be13ba10789d19d836d5afbf50c4a7a} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!schema@{schema}}
+\index{schema@{schema}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+schema = \mbox{\hyperlink{classrest__framework_1_1schemas_1_1inspectors_1_1DefaultSchema}{Default\+Schema}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_ac164559535c2d3a6689da94a4ec29aac}\label{classrest__framework_1_1views_1_1APIView_ac164559535c2d3a6689da94a4ec29aac} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!settings@{settings}}
+\index{settings@{settings}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+settings = api\+\_\+settings\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_a52533917ba031560cdad69d52fb9e4d9}\label{classrest__framework_1_1views_1_1APIView_a52533917ba031560cdad69d52fb9e4d9} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!throttle\_classes@{throttle\_classes}}
+\index{throttle\_classes@{throttle\_classes}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{throttle\_classes}{throttle\_classes}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+throttle\+\_\+classes = api\+\_\+settings.\+DEFAULT\+\_\+\+THROTTLE\+\_\+\+CLASSES\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1views_1_1APIView_afe42950d8feb26a1baa2b719833564b6}\label{classrest__framework_1_1views_1_1APIView_afe42950d8feb26a1baa2b719833564b6} 
+\index{rest\_framework.views.APIView@{rest\_framework.views.APIView}!versioning\_class@{versioning\_class}}
+\index{versioning\_class@{versioning\_class}!rest\_framework.views.APIView@{rest\_framework.views.APIView}}
+\doxysubsubsection{\texorpdfstring{versioning\_class}{versioning\_class}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+views.\+APIView.\+versioning\+\_\+class = api\+\_\+settings.\+DEFAULT\+\_\+\+VERSIONING\+\_\+\+CLASS\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2rest__framework_2views_8py}{views.\+py}}\end{DoxyCompactItemize}

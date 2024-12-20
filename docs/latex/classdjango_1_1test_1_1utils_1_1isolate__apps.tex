@@ -1,0 +1,121 @@
+\doxysection{Référence de la classe django.\+test.\+utils.\+isolate\+\_\+apps}
+\hypertarget{classdjango_1_1test_1_1utils_1_1isolate__apps}{}\label{classdjango_1_1test_1_1utils_1_1isolate__apps}\index{django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+test.\+utils.\+isolate\+\_\+apps\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+test.\+utils.\+isolate\+\_\+apps\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1isolate__apps_a5a21fd6f53514bf84b84eec359d9304b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1isolate__apps_ad7990ac44426d45c5bb0df8b5ad3af79}{installed\+\_\+apps}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1isolate__apps_a639cc719c79f1994c4b4855a982a78df}{enable}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1isolate__apps_aa6e861e7fb291eb6a411ad1b678389ac}{disable}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator}{django.\+test.\+utils.\+Test\+Context\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_aea42f5659d8876328a01329f699d0841}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a8e3dbed618318d4b97eb5621ed5640f7}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, traceback)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_ad812bd185e2d8ce65644fd891d244450}{decorate\+\_\+class}} (self, cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a0f4d75e7f06d7fb14aad743929746350}{decorate\+\_\+callable}} (self, func)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a1c98e4d22762e400f27efe3d3d05915f}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, decorated)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1isolate__apps_ad7990ac44426d45c5bb0df8b5ad3af79}{installed\+\_\+apps}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1isolate__apps_a3c8a59f8864fe21296a10f5c0e59d6d1}{old\+\_\+apps}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator}{django.\+test.\+utils.\+Test\+Context\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_ae8109355535929a3329c099c3ced6e5a}{attr\+\_\+name}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a1d6ce286c43a8b0a4219facd731154d0}{kwarg\+\_\+name}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a996c8f9905f440f3429a82ecd0990d38}{set\+Up}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Act as either a decorator or a context manager to register models defined
+in its wrapped context to an isolated registry.
+
+The list of installed apps the isolated registry should contain must be
+passed as arguments.
+
+Two optional keyword arguments can be specified:
+
+`attr_name`: attribute assigned the isolated registry if used as a class
+             decorator.
+
+`kwarg_name`: keyword argument passing the isolated registry if used as a
+              function decorator.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1test_1_1utils_1_1isolate__apps_a5a21fd6f53514bf84b84eec359d9304b}\label{classdjango_1_1test_1_1utils_1_1isolate__apps_a5a21fd6f53514bf84b84eec359d9304b} 
+\index{django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+isolate\+\_\+apps.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{installed\+\_\+apps,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a97c758ebee74c3460bc440644dd495ea}{django.\+test.\+utils.\+Test\+Context\+Decorator}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1test_1_1utils_1_1isolate__apps_aa6e861e7fb291eb6a411ad1b678389ac}\label{classdjango_1_1test_1_1utils_1_1isolate__apps_aa6e861e7fb291eb6a411ad1b678389ac} 
+\index{django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}!disable@{disable}}
+\index{disable@{disable}!django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+isolate\+\_\+apps.\+disable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a360167ff74af4a0bf9b931e4933f440f}{django.\+test.\+utils.\+Test\+Context\+Decorator}}.
+
+\Hypertarget{classdjango_1_1test_1_1utils_1_1isolate__apps_a639cc719c79f1994c4b4855a982a78df}\label{classdjango_1_1test_1_1utils_1_1isolate__apps_a639cc719c79f1994c4b4855a982a78df} 
+\index{django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}!enable@{enable}}
+\index{enable@{enable}!django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+isolate\+\_\+apps.\+enable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_aad9e1522d2a61288ef943008df3c8e6b}{django.\+test.\+utils.\+Test\+Context\+Decorator}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1test_1_1utils_1_1isolate__apps_ad7990ac44426d45c5bb0df8b5ad3af79}\label{classdjango_1_1test_1_1utils_1_1isolate__apps_ad7990ac44426d45c5bb0df8b5ad3af79} 
+\index{django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}!installed\_apps@{installed\_apps}}
+\index{installed\_apps@{installed\_apps}!django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}}
+\doxysubsubsection{\texorpdfstring{installed\_apps}{installed\_apps}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+isolate\+\_\+apps.\+installed\+\_\+apps}
+
+\Hypertarget{classdjango_1_1test_1_1utils_1_1isolate__apps_a3c8a59f8864fe21296a10f5c0e59d6d1}\label{classdjango_1_1test_1_1utils_1_1isolate__apps_a3c8a59f8864fe21296a10f5c0e59d6d1} 
+\index{django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}!old\_apps@{old\_apps}}
+\index{old\_apps@{old\_apps}!django.test.utils.isolate\_apps@{django.test.utils.isolate\_apps}}
+\doxysubsubsection{\texorpdfstring{old\_apps}{old\_apps}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+isolate\+\_\+apps.\+old\+\_\+apps}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/test/\mbox{\hyperlink{django_2test_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

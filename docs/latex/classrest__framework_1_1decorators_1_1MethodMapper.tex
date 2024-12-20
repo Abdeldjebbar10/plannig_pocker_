@@ -1,0 +1,139 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+decorators.\+Method\+Mapper}
+\hypertarget{classrest__framework_1_1decorators_1_1MethodMapper}{}\label{classrest__framework_1_1decorators_1_1MethodMapper}\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+decorators.\+Method\+Mapper\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+decorators.\+Method\+Mapper\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_adc3efde71a5db81384662386dc9c7191}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a6b2b2fdeee89d1c17caece793b337f9c}{action}}, methods)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_af773b9aae71921c157d6e54f5a6d67ff}{get}} (self, func)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a3e5e880eaa46fa75cb716e42c561cac8}{post}} (self, func)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a307e3e63a3f8380f91df7a3fc95faf31}{put}} (self, func)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_ae855779ff1855eb6bf6c47c72a8c50bb}{patch}} (self, func)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a5c8eb4618b386cbd9211290434716558}{delete}} (self, func)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a0b942612d9c0c189b68bc45694d64d12}{head}} (self, func)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a7cdf6441773b7b6dae45804078a355bd}{options}} (self, func)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a67841a2d73d0079f5141ce5492abb35c}{trace}} (self, func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a6b2b2fdeee89d1c17caece793b337f9c}{action}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper_a341e6f86d3bbdf0b76461adf08f6792f}{\+\_\+map}} (self, method, func)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Enables mapping HTTP methods to different ViewSet methods for a single,
+logical action.
+
+Example usage:
+
+    class MyViewSet(ViewSet):
+
+        @action(detail=False)
+        def example(self, request, **kwargs):
+            ...
+
+        @example.mapping.post
+        def create_example(self, request, **kwargs):
+            ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_adc3efde71a5db81384662386dc9c7191}\label{classrest__framework_1_1decorators_1_1MethodMapper_adc3efde71a5db81384662386dc9c7191} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{action,  }\item[{}]{methods }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_a341e6f86d3bbdf0b76461adf08f6792f}\label{classrest__framework_1_1decorators_1_1MethodMapper_a341e6f86d3bbdf0b76461adf08f6792f} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!\_map@{\_map}}
+\index{\_map@{\_map}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{\_map()}{\_map()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+\_\+map (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_a5c8eb4618b386cbd9211290434716558}\label{classrest__framework_1_1decorators_1_1MethodMapper_a5c8eb4618b386cbd9211290434716558} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!delete@{delete}}
+\index{delete@{delete}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_af773b9aae71921c157d6e54f5a6d67ff}\label{classrest__framework_1_1decorators_1_1MethodMapper_af773b9aae71921c157d6e54f5a6d67ff} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!get@{get}}
+\index{get@{get}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_a0b942612d9c0c189b68bc45694d64d12}\label{classrest__framework_1_1decorators_1_1MethodMapper_a0b942612d9c0c189b68bc45694d64d12} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!head@{head}}
+\index{head@{head}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{head()}{head()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+head (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_a7cdf6441773b7b6dae45804078a355bd}\label{classrest__framework_1_1decorators_1_1MethodMapper_a7cdf6441773b7b6dae45804078a355bd} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!options@{options}}
+\index{options@{options}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+options (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_ae855779ff1855eb6bf6c47c72a8c50bb}\label{classrest__framework_1_1decorators_1_1MethodMapper_ae855779ff1855eb6bf6c47c72a8c50bb} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!patch@{patch}}
+\index{patch@{patch}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+patch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_a3e5e880eaa46fa75cb716e42c561cac8}\label{classrest__framework_1_1decorators_1_1MethodMapper_a3e5e880eaa46fa75cb716e42c561cac8} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!post@{post}}
+\index{post@{post}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+post (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_a307e3e63a3f8380f91df7a3fc95faf31}\label{classrest__framework_1_1decorators_1_1MethodMapper_a307e3e63a3f8380f91df7a3fc95faf31} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!put@{put}}
+\index{put@{put}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+put (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_a67841a2d73d0079f5141ce5492abb35c}\label{classrest__framework_1_1decorators_1_1MethodMapper_a67841a2d73d0079f5141ce5492abb35c} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!trace@{trace}}
+\index{trace@{trace}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+trace (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1decorators_1_1MethodMapper_a6b2b2fdeee89d1c17caece793b337f9c}\label{classrest__framework_1_1decorators_1_1MethodMapper_a6b2b2fdeee89d1c17caece793b337f9c} 
+\index{rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}!action@{action}}
+\index{action@{action}!rest\_framework.decorators.MethodMapper@{rest\_framework.decorators.MethodMapper}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+Method\+Mapper.\+action}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2decorators_8py}{decorators.\+py}}\end{DoxyCompactItemize}

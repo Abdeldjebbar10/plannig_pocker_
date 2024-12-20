@@ -1,0 +1,48 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+generics}
+\hypertarget{namespacerest__framework_1_1generics}{}\label{namespacerest__framework_1_1generics}\index{rest\_framework.generics@{rest\_framework.generics}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1CreateAPIView}{Create\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1DestroyAPIView}{Destroy\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1GenericAPIView}{Generic\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1ListAPIView}{List\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1ListCreateAPIView}{List\+Create\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1RetrieveAPIView}{Retrieve\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1RetrieveDestroyAPIView}{Retrieve\+Destroy\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1RetrieveUpdateAPIView}{Retrieve\+Update\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1RetrieveUpdateDestroyAPIView}{Retrieve\+Update\+Destroy\+APIView}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1generics_1_1UpdateAPIView}{Update\+APIView}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1generics_ab05b798fd944e95b6ffffeb2423a9ade}{get\+\_\+object\+\_\+or\+\_\+404}} (queryset, \texorpdfstring{$\ast$}{*}filter\+\_\+args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}filter\+\_\+kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Generic views that provide commonly needed behaviour.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1generics_ab05b798fd944e95b6ffffeb2423a9ade}\label{namespacerest__framework_1_1generics_ab05b798fd944e95b6ffffeb2423a9ade} 
+\index{rest\_framework.generics@{rest\_framework.generics}!get\_object\_or\_404@{get\_object\_or\_404}}
+\index{get\_object\_or\_404@{get\_object\_or\_404}!rest\_framework.generics@{rest\_framework.generics}}
+\doxysubsubsection{\texorpdfstring{get\_object\_or\_404()}{get\_object\_or\_404()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+generics.\+get\+\_\+object\+\_\+or\+\_\+404 (\begin{DoxyParamCaption}\item[{}]{queryset,  }\item[{\texorpdfstring{$\ast$}{*}}]{filter\+\_\+args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{filter\+\_\+kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Same as Django's standard shortcut, but make sure to also raise 404
+if the filter_kwargs don't match the required types.
+\end{DoxyVerb}
+ 

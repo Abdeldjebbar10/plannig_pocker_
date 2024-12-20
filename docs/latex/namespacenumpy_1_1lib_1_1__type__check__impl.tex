@@ -1,0 +1,701 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl}
+\hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl}{}\label{namespacenumpy_1_1lib_1_1__type__check__impl}\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a7372969d5a26dc7a5366cf8430cbf5dc}{mintypecode}} (typechars, typeset=\textquotesingle{}GDFgdf\textquotesingle{}, default=\textquotesingle{}d\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a6693ce43526e34b6ed554a4709f86b1a}{\+\_\+real\+\_\+dispatcher}} (val)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a3881b0d63db11496cc0a625c5da2dfec}{real}} (val)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a663686f829256a77305581784769b46f}{\+\_\+imag\+\_\+dispatcher}} (val)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a2f3bde8cab6d41c0c1ca128f9939a036}{imag}} (val)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a3b808e99c423976e072a894d7d7f5641}{\+\_\+is\+\_\+type\+\_\+dispatcher}} (x)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_ac648ed0ae58fe8ac7df58a3aa2b266eb}{iscomplex}} (x)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a65c5448bb5125039bd1fd4c79795732f}{isreal}} (x)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a0f427858fb4b8a4bd2716ae9f7a59ea7}{iscomplexobj}} (x)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a8a08241b3b0d2145d5430c1ea81b2e76}{isrealobj}} (x)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_af4d5733cb9328a0b6931b8854f76559e}{\+\_\+getmaxmin}} (\mbox{\hyperlink{callback_2foo_8f_a50e16bc59be823d9ec58240a76a1a971}{t}})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_ab807c6c73342fb948093eee2099c5a7b}{\+\_\+nan\+\_\+to\+\_\+num\+\_\+dispatcher}} (x, copy=None, nan=None, posinf=None, neginf=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a83203d7e45bf712ac85884a3105cb2d0}{nan\+\_\+to\+\_\+num}} (x, copy=True, nan=0.\+0, posinf=None, neginf=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a36006e626d5c024ae2f8fc5859ae32d5}{\+\_\+real\+\_\+if\+\_\+close\+\_\+dispatcher}} (a, tol=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_ae3ecedfcdca4303b3ca9c924145fbec7}{real\+\_\+if\+\_\+close}} (a, tol=100)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a5faca9b1a0f2cbe2c5f8b0d90cb7c8e0}{typename}} (char)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a8a4ce4736bf0d2561266372f2f64c660}{\+\_\+common\+\_\+type\+\_\+dispatcher}} (\texorpdfstring{$\ast$}{*}arrays)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_ab7f1a6119942528867b9073bc504dfca}{common\+\_\+type}} (\texorpdfstring{$\ast$}{*}arrays)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_ab96ab772fa7a5fe267930d7f2ec11348}{array\+\_\+function\+\_\+dispatch}}
+\item 
+str \mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_abb28fbedcb3d307c354ee5fb4b16dca9}{\+\_\+typecodes\+\_\+by\+\_\+elsize}} = \textquotesingle{}GDFgdf\+Qq\+Ll\+Ii\+Hh\+Bb?\textquotesingle{}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a9e0de3e040fce84e85c9eb2289f3a023}{\+\_\+namefromtype}}
+\item 
+list \mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a1982a65907a2c1fe2c4dee0d92a3d835}{array\+\_\+type}}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1lib_1_1__type__check__impl_a8e280308a923bb08b3b74cfb73035a59}{array\+\_\+precision}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Automatically adapted for numpy Sep 19, 2005 by convertcode.py\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a8a4ce4736bf0d2561266372f2f64c660}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a8a4ce4736bf0d2561266372f2f64c660} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_common\_type\_dispatcher@{\_common\_type\_dispatcher}}
+\index{\_common\_type\_dispatcher@{\_common\_type\_dispatcher}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_common\_type\_dispatcher()}{\_common\_type\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+common\+\_\+type\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{arrays }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_af4d5733cb9328a0b6931b8854f76559e}\label{namespacenumpy_1_1lib_1_1__type__check__impl_af4d5733cb9328a0b6931b8854f76559e} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_getmaxmin@{\_getmaxmin}}
+\index{\_getmaxmin@{\_getmaxmin}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_getmaxmin()}{\_getmaxmin()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+getmaxmin (\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a663686f829256a77305581784769b46f}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a663686f829256a77305581784769b46f} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_imag\_dispatcher@{\_imag\_dispatcher}}
+\index{\_imag\_dispatcher@{\_imag\_dispatcher}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_imag\_dispatcher()}{\_imag\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+imag\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a3b808e99c423976e072a894d7d7f5641}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a3b808e99c423976e072a894d7d7f5641} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_is\_type\_dispatcher@{\_is\_type\_dispatcher}}
+\index{\_is\_type\_dispatcher@{\_is\_type\_dispatcher}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_is\_type\_dispatcher()}{\_is\_type\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+is\+\_\+type\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_ab807c6c73342fb948093eee2099c5a7b}\label{namespacenumpy_1_1lib_1_1__type__check__impl_ab807c6c73342fb948093eee2099c5a7b} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_nan\_to\_num\_dispatcher@{\_nan\_to\_num\_dispatcher}}
+\index{\_nan\_to\_num\_dispatcher@{\_nan\_to\_num\_dispatcher}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_nan\_to\_num\_dispatcher()}{\_nan\_to\_num\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+nan\+\_\+to\+\_\+num\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{copy = {\ttfamily None},  }\item[{}]{nan = {\ttfamily None},  }\item[{}]{posinf = {\ttfamily None},  }\item[{}]{neginf = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a6693ce43526e34b6ed554a4709f86b1a}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a6693ce43526e34b6ed554a4709f86b1a} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_real\_dispatcher@{\_real\_dispatcher}}
+\index{\_real\_dispatcher@{\_real\_dispatcher}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_real\_dispatcher()}{\_real\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+real\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a36006e626d5c024ae2f8fc5859ae32d5}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a36006e626d5c024ae2f8fc5859ae32d5} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_real\_if\_close\_dispatcher@{\_real\_if\_close\_dispatcher}}
+\index{\_real\_if\_close\_dispatcher@{\_real\_if\_close\_dispatcher}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_real\_if\_close\_dispatcher()}{\_real\_if\_close\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+real\+\_\+if\+\_\+close\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{tol = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_ab7f1a6119942528867b9073bc504dfca}\label{namespacenumpy_1_1lib_1_1__type__check__impl_ab7f1a6119942528867b9073bc504dfca} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!common\_type@{common\_type}}
+\index{common\_type@{common\_type}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{common\_type()}{common\_type()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+common\+\_\+type (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{arrays }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a scalar type which is common to the input arrays.
+
+The return type will always be an inexact (i.e. floating point) scalar
+type, even if all the arrays are integer arrays. If one of the inputs is
+an integer array, the minimum precision type that is returned is a
+64-bit floating point dtype.
+
+All input arrays except int64 and uint64 can be safely cast to the
+returned dtype without loss of information.
+
+Parameters
+----------
+array1, array2, ... : ndarrays
+    Input arrays.
+
+Returns
+-------
+out : data type code
+    Data type code.
+
+See Also
+--------
+dtype, mintypecode
+
+Examples
+--------
+>>> np.common_type(np.arange(2, dtype=np.float32))
+<class 'numpy.float32'>
+>>> np.common_type(np.arange(2, dtype=np.float32), np.arange(2))
+<class 'numpy.float64'>
+>>> np.common_type(np.arange(4), np.array([45, 6.j]), np.array([45.0]))
+<class 'numpy.complex128'>\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a2f3bde8cab6d41c0c1ca128f9939a036}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a2f3bde8cab6d41c0c1ca128f9939a036} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!imag@{imag}}
+\index{imag@{imag}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{imag()}{imag()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+imag (\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the imaginary part of the complex argument.
+
+Parameters
+----------
+val : array_like
+    Input array.
+
+Returns
+-------
+out : ndarray or scalar
+    The imaginary component of the complex argument. If `val` is real,
+    the type of `val` is used for the output.  If `val` has complex
+    elements, the returned type is float.
+
+See Also
+--------
+real, angle, real_if_close
+
+Examples
+--------
+>>> import numpy as np
+>>> a = np.array([1+2j, 3+4j, 5+6j])
+>>> a.imag
+array([2.,  4.,  6.])
+>>> a.imag = np.array([8, 10, 12])
+>>> a
+array([1. +8.j,  3.+10.j,  5.+12.j])
+>>> np.imag(1 + 1j)
+1.0\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_ac648ed0ae58fe8ac7df58a3aa2b266eb}\label{namespacenumpy_1_1lib_1_1__type__check__impl_ac648ed0ae58fe8ac7df58a3aa2b266eb} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!iscomplex@{iscomplex}}
+\index{iscomplex@{iscomplex}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{iscomplex()}{iscomplex()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+iscomplex (\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a bool array, where True if input element is complex.
+
+What is tested is whether the input has a non-zero imaginary part, not if
+the input type is complex.
+
+Parameters
+----------
+x : array_like
+    Input array.
+
+Returns
+-------
+out : ndarray of bools
+    Output array.
+
+See Also
+--------
+isreal
+iscomplexobj : Return True if x is a complex type or an array of complex
+               numbers.
+
+Examples
+--------
+>>> import numpy as np
+>>> np.iscomplex([1+1j, 1+0j, 4.5, 3, 2, 2j])
+array([ True, False, False, False, False,  True])\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a0f427858fb4b8a4bd2716ae9f7a59ea7}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a0f427858fb4b8a4bd2716ae9f7a59ea7} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!iscomplexobj@{iscomplexobj}}
+\index{iscomplexobj@{iscomplexobj}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{iscomplexobj()}{iscomplexobj()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+iscomplexobj (\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check for a complex type or an array of complex numbers.
+
+The type of the input is checked, not the value. Even if the input
+has an imaginary part equal to zero, `iscomplexobj` evaluates to True.
+
+Parameters
+----------
+x : any
+    The input can be of any type and shape.
+
+Returns
+-------
+iscomplexobj : bool
+    The return value, True if `x` is of a complex type or has at least
+    one complex element.
+
+See Also
+--------
+isrealobj, iscomplex
+
+Examples
+--------
+>>> import numpy as np
+>>> np.iscomplexobj(1)
+False
+>>> np.iscomplexobj(1+0j)
+True
+>>> np.iscomplexobj([3, 1+0j, True])
+True\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a65c5448bb5125039bd1fd4c79795732f}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a65c5448bb5125039bd1fd4c79795732f} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!isreal@{isreal}}
+\index{isreal@{isreal}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{isreal()}{isreal()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+isreal (\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a bool array, where True if input element is real.
+
+If element has complex type with zero imaginary part, the return value
+for that element is True.
+
+Parameters
+----------
+x : array_like
+    Input array.
+
+Returns
+-------
+out : ndarray, bool
+    Boolean array of same shape as `x`.
+
+Notes
+-----
+`isreal` may behave unexpectedly for string or object arrays (see examples)
+
+See Also
+--------
+iscomplex
+isrealobj : Return True if x is not a complex type.
+
+Examples
+--------
+>>> import numpy as np
+>>> a = np.array([1+1j, 1+0j, 4.5, 3, 2, 2j], dtype=complex)
+>>> np.isreal(a)
+array([False,  True,  True,  True,  True, False])
+
+The function does not work on string arrays.
+
+>>> a = np.array([2j, "a"], dtype="U")
+>>> np.isreal(a)  # Warns about non-elementwise comparison
+False
+
+Returns True for all elements in input array of ``dtype=object`` even if
+any of the elements is complex.
+
+>>> a = np.array([1, "2", 3+4j], dtype=object)
+>>> np.isreal(a)
+array([ True,  True,  True])
+
+isreal should not be used with object arrays
+
+>>> a = np.array([1+2j, 2+1j], dtype=object)
+>>> np.isreal(a)
+array([ True,  True])\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a8a08241b3b0d2145d5430c1ea81b2e76}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a8a08241b3b0d2145d5430c1ea81b2e76} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!isrealobj@{isrealobj}}
+\index{isrealobj@{isrealobj}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{isrealobj()}{isrealobj()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+isrealobj (\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if x is a not complex type or an array of complex numbers.
+
+The type of the input is checked, not the value. So even if the input
+has an imaginary part equal to zero, `isrealobj` evaluates to False
+if the data type is complex.
+
+Parameters
+----------
+x : any
+    The input can be of any type and shape.
+
+Returns
+-------
+y : bool
+    The return value, False if `x` is of a complex type.
+
+See Also
+--------
+iscomplexobj, isreal
+
+Notes
+-----
+The function is only meant for arrays with numerical values but it
+accepts all other objects. Since it assumes array input, the return
+value of other objects may be True.
+
+>>> np.isrealobj('A string')
+True
+>>> np.isrealobj(False)
+True
+>>> np.isrealobj(None)
+True
+
+Examples
+--------
+>>> import numpy as np
+>>> np.isrealobj(1)
+True
+>>> np.isrealobj(1+0j)
+False
+>>> np.isrealobj([3, 1+0j, True])
+False\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a7372969d5a26dc7a5366cf8430cbf5dc}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a7372969d5a26dc7a5366cf8430cbf5dc} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!mintypecode@{mintypecode}}
+\index{mintypecode@{mintypecode}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{mintypecode()}{mintypecode()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+mintypecode (\begin{DoxyParamCaption}\item[{}]{typechars,  }\item[{}]{typeset = {\ttfamily \textquotesingle{}GDFgdf\textquotesingle{}},  }\item[{}]{default = {\ttfamily \textquotesingle{}d\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the character for the minimum-size type to which given types can
+be safely cast.
+
+The returned type character must represent the smallest size dtype such
+that an array of the returned type can handle the data from an array of
+all types in `typechars` (or if `typechars` is an array, then its
+dtype.char).
+
+Parameters
+----------
+typechars : list of str or array_like
+    If a list of strings, each string should represent a dtype.
+    If array_like, the character representation of the array dtype is used.
+typeset : str or list of str, optional
+    The set of characters that the returned character is chosen from.
+    The default set is 'GDFgdf'.
+default : str, optional
+    The default character, this is returned if none of the characters in
+    `typechars` matches a character in `typeset`.
+
+Returns
+-------
+typechar : str
+    The character representing the minimum-size type that was found.
+
+See Also
+--------
+dtype
+
+Examples
+--------
+>>> import numpy as np
+>>> np.mintypecode(['d', 'f', 'S'])
+'d'
+>>> x = np.array([1.1, 2-3.j])
+>>> np.mintypecode(x)
+'D'
+
+>>> np.mintypecode('abceh', default='G')
+'G'\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a83203d7e45bf712ac85884a3105cb2d0}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a83203d7e45bf712ac85884a3105cb2d0} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!nan\_to\_num@{nan\_to\_num}}
+\index{nan\_to\_num@{nan\_to\_num}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{nan\_to\_num()}{nan\_to\_num()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+nan\+\_\+to\+\_\+num (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{copy = {\ttfamily True},  }\item[{}]{nan = {\ttfamily 0.0},  }\item[{}]{posinf = {\ttfamily None},  }\item[{}]{neginf = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace NaN with zero and infinity with large finite numbers (default
+behaviour) or with the numbers defined by the user using the `nan`,
+`posinf` and/or `neginf` keywords.
+
+If `x` is inexact, NaN is replaced by zero or by the user defined value in
+`nan` keyword, infinity is replaced by the largest finite floating point
+values representable by ``x.dtype`` or by the user defined value in
+`posinf` keyword and -infinity is replaced by the most negative finite
+floating point values representable by ``x.dtype`` or by the user defined
+value in `neginf` keyword.
+
+For complex dtypes, the above is applied to each of the real and
+imaginary components of `x` separately.
+
+If `x` is not inexact, then no replacements are made.
+
+Parameters
+----------
+x : scalar or array_like
+    Input data.
+copy : bool, optional
+    Whether to create a copy of `x` (True) or to replace values
+    in-place (False). The in-place operation only occurs if
+    casting to an array does not require a copy.
+    Default is True.
+nan : int, float, optional
+    Value to be used to fill NaN values. If no value is passed
+    then NaN values will be replaced with 0.0.
+posinf : int, float, optional
+    Value to be used to fill positive infinity values. If no value is
+    passed then positive infinity values will be replaced with a very
+    large number.
+neginf : int, float, optional
+    Value to be used to fill negative infinity values. If no value is
+    passed then negative infinity values will be replaced with a very
+    small (or negative) number.
+
+Returns
+-------
+out : ndarray
+    `x`, with the non-finite values replaced. If `copy` is False, this may
+    be `x` itself.
+
+See Also
+--------
+isinf : Shows which elements are positive or negative infinity.
+isneginf : Shows which elements are negative infinity.
+isposinf : Shows which elements are positive infinity.
+isnan : Shows which elements are Not a Number (NaN).
+isfinite : Shows which elements are finite (not NaN, not infinity)
+
+Notes
+-----
+NumPy uses the IEEE Standard for Binary Floating-Point for Arithmetic
+(IEEE 754). This means that Not a Number is not equivalent to infinity.
+
+Examples
+--------
+>>> import numpy as np
+>>> np.nan_to_num(np.inf)
+1.7976931348623157e+308
+>>> np.nan_to_num(-np.inf)
+-1.7976931348623157e+308
+>>> np.nan_to_num(np.nan)
+0.0
+>>> x = np.array([np.inf, -np.inf, np.nan, -128, 128])
+>>> np.nan_to_num(x)
+array([ 1.79769313e+308, -1.79769313e+308,  0.00000000e+000, # may vary
+       -1.28000000e+002,  1.28000000e+002])
+>>> np.nan_to_num(x, nan=-9999, posinf=33333333, neginf=33333333)
+array([ 3.3333333e+07,  3.3333333e+07, -9.9990000e+03,
+       -1.2800000e+02,  1.2800000e+02])
+>>> y = np.array([complex(np.inf, np.nan), np.nan, complex(np.nan, np.inf)])
+array([  1.79769313e+308,  -1.79769313e+308,   0.00000000e+000, # may vary
+     -1.28000000e+002,   1.28000000e+002])
+>>> np.nan_to_num(y)
+array([  1.79769313e+308 +0.00000000e+000j, # may vary
+         0.00000000e+000 +0.00000000e+000j,
+         0.00000000e+000 +1.79769313e+308j])
+>>> np.nan_to_num(y, nan=111111, posinf=222222)
+array([222222.+111111.j, 111111.     +0.j, 111111.+222222.j])
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a3881b0d63db11496cc0a625c5da2dfec}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a3881b0d63db11496cc0a625c5da2dfec} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!real@{real}}
+\index{real@{real}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{real()}{real()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+real (\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the real part of the complex argument.
+
+Parameters
+----------
+val : array_like
+    Input array.
+
+Returns
+-------
+out : ndarray or scalar
+    The real component of the complex argument. If `val` is real, the type
+    of `val` is used for the output.  If `val` has complex elements, the
+    returned type is float.
+
+See Also
+--------
+real_if_close, imag, angle
+
+Examples
+--------
+>>> import numpy as np
+>>> a = np.array([1+2j, 3+4j, 5+6j])
+>>> a.real
+array([1.,  3.,  5.])
+>>> a.real = 9
+>>> a
+array([9.+2.j,  9.+4.j,  9.+6.j])
+>>> a.real = np.array([9, 8, 7])
+>>> a
+array([9.+2.j,  8.+4.j,  7.+6.j])
+>>> np.real(1 + 1j)
+1.0\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_ae3ecedfcdca4303b3ca9c924145fbec7}\label{namespacenumpy_1_1lib_1_1__type__check__impl_ae3ecedfcdca4303b3ca9c924145fbec7} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!real\_if\_close@{real\_if\_close}}
+\index{real\_if\_close@{real\_if\_close}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{real\_if\_close()}{real\_if\_close()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+real\+\_\+if\+\_\+close (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{tol = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If input is complex with all imaginary parts close to zero, return
+real parts.
+
+"Close to zero" is defined as `tol` * (machine epsilon of the type for
+`a`).
+
+Parameters
+----------
+a : array_like
+    Input array.
+tol : float
+    Tolerance in machine epsilons for the complex part of the elements
+    in the array. If the tolerance is <=1, then the absolute tolerance
+    is used.
+
+Returns
+-------
+out : ndarray
+    If `a` is real, the type of `a` is used for the output.  If `a`
+    has complex elements, the returned type is float.
+
+See Also
+--------
+real, imag, angle
+
+Notes
+-----
+Machine epsilon varies from machine to machine and between data types
+but Python floats on most platforms have a machine epsilon equal to
+2.2204460492503131e-16.  You can use 'np.finfo(float).eps' to print
+out the machine epsilon for floats.
+
+Examples
+--------
+>>> import numpy as np
+>>> np.finfo(float).eps
+2.2204460492503131e-16 # may vary
+
+>>> np.real_if_close([2.1 + 4e-14j, 5.2 + 3e-15j], tol=1000)
+array([2.1, 5.2])
+>>> np.real_if_close([2.1 + 4e-13j, 5.2 + 3e-15j], tol=1000)
+array([2.1+4.e-13j, 5.2 + 3e-15j])\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a5faca9b1a0f2cbe2c5f8b0d90cb7c8e0}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a5faca9b1a0f2cbe2c5f8b0d90cb7c8e0} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!typename@{typename}}
+\index{typename@{typename}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{typename()}{typename()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+typename (\begin{DoxyParamCaption}\item[{}]{char }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a description for the given data type code.
+
+Parameters
+----------
+char : str
+    Data type code.
+
+Returns
+-------
+out : str
+    Description of the input data type code.
+
+See Also
+--------
+dtype
+
+Examples
+--------
+>>> import numpy as np
+>>> typechars = ['S1', '?', 'B', 'D', 'G', 'F', 'I', 'H', 'L', 'O', 'Q',
+...              'S', 'U', 'V', 'b', 'd', 'g', 'f', 'i', 'h', 'l', 'q']
+>>> for typechar in typechars:
+...     print(typechar, ' : ', np.typename(typechar))
+...
+S1  :  character
+?  :  bool
+B  :  unsigned char
+D  :  complex double precision
+G  :  complex long double precision
+F  :  complex single precision
+I  :  unsigned integer
+H  :  unsigned short
+L  :  unsigned long integer
+O  :  object
+Q  :  unsigned long long integer
+S  :  string
+U  :  unicode
+V  :  void
+b  :  signed char
+d  :  double precision
+g  :  long precision
+f  :  single precision
+i  :  integer
+h  :  short
+l  :  long integer
+q  :  long long integer\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a9e0de3e040fce84e85c9eb2289f3a023}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a9e0de3e040fce84e85c9eb2289f3a023} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_namefromtype@{\_namefromtype}}
+\index{\_namefromtype@{\_namefromtype}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_namefromtype}{\_namefromtype}}
+{\footnotesize\ttfamily dict numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+namefromtype\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{\textcolor{stringliteral}{'S1'}:\ \textcolor{stringliteral}{'character'},}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'?'}:\ \textcolor{stringliteral}{'bool'},}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'b'}:\ \textcolor{stringliteral}{'signed\ char'},}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'B'}:\ \textcolor{stringliteral}{'unsigned\ char'},}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'h'}:\ \textcolor{stringliteral}{'short'},}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'H'}:\ \textcolor{stringliteral}{'unsigned\ short'},}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'i'}:\ \textcolor{stringliteral}{'integer'},}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'I'}:\ \textcolor{stringliteral}{'unsigned\ integer'},}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'l'}:\ \textcolor{stringliteral}{'long\ integer'},}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'L'}:\ \textcolor{stringliteral}{'unsigned\ long\ integer'},}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'q'}:\ \textcolor{stringliteral}{'long\ long\ integer'},}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Q'}:\ \textcolor{stringliteral}{'unsigned\ long\ long\ integer'},}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'f'}:\ \textcolor{stringliteral}{'single\ precision'},}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'d'}:\ \textcolor{stringliteral}{'double\ precision'},}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'g'}:\ \textcolor{stringliteral}{'long\ precision'},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'F'}:\ \textcolor{stringliteral}{'complex\ single\ precision'},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'D'}:\ \textcolor{stringliteral}{'complex\ double\ precision'},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'G'}:\ \textcolor{stringliteral}{'complex\ long\ double\ precision'},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'S'}:\ \textcolor{stringliteral}{'string'},}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'U'}:\ \textcolor{stringliteral}{'unicode'},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'V'}:\ \textcolor{stringliteral}{'void'},}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'O'}:\ \textcolor{stringliteral}{'object'}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_abb28fbedcb3d307c354ee5fb4b16dca9}\label{namespacenumpy_1_1lib_1_1__type__check__impl_abb28fbedcb3d307c354ee5fb4b16dca9} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!\_typecodes\_by\_elsize@{\_typecodes\_by\_elsize}}
+\index{\_typecodes\_by\_elsize@{\_typecodes\_by\_elsize}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{\_typecodes\_by\_elsize}{\_typecodes\_by\_elsize}}
+{\footnotesize\ttfamily str numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+\_\+typecodes\+\_\+by\+\_\+elsize = \textquotesingle{}GDFgdf\+Qq\+Ll\+Ii\+Hh\+Bb?\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_ab96ab772fa7a5fe267930d7f2ec11348}\label{namespacenumpy_1_1lib_1_1__type__check__impl_ab96ab772fa7a5fe267930d7f2ec11348} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!array\_function\_dispatch@{array\_function\_dispatch}}
+\index{array\_function\_dispatch@{array\_function\_dispatch}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{array\_function\_dispatch}{array\_function\_dispatch}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+array\+\_\+function\+\_\+dispatch}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ functools.partial(}
+\DoxyCodeLine{00002\ \ \ \ \ overrides.array\_function\_dispatch,\ module=\textcolor{stringliteral}{'numpy'})}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a8e280308a923bb08b3b74cfb73035a59}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a8e280308a923bb08b3b74cfb73035a59} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!array\_precision@{array\_precision}}
+\index{array\_precision@{array\_precision}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{array\_precision}{array\_precision}}
+{\footnotesize\ttfamily dict numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+array\+\_\+precision}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{\_nx.float16:\ 0,}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_nx.float32:\ 1,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_nx.float64:\ 2,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_nx.longdouble:\ 3,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_nx.complex64:\ 1,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_nx.complex128:\ 2,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_nx.clongdouble:\ 3\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1lib_1_1__type__check__impl_a1982a65907a2c1fe2c4dee0d92a3d835}\label{namespacenumpy_1_1lib_1_1__type__check__impl_a1982a65907a2c1fe2c4dee0d92a3d835} 
+\index{numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}!array\_type@{array\_type}}
+\index{array\_type@{array\_type}!numpy.lib.\_type\_check\_impl@{numpy.lib.\_type\_check\_impl}}
+\doxysubsubsection{\texorpdfstring{array\_type}{array\_type}}
+{\footnotesize\ttfamily list numpy.\+lib.\+\_\+type\+\_\+check\+\_\+impl.\+array\+\_\+type}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [[\_nx.float16,\ \_nx.float32,\ \_nx.float64,\ \_nx.longdouble],}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{keywordtype}{None},\ \_nx.complex64,\ \_nx.complex128,\ \_nx.clongdouble]]}
+
+\end{DoxyCode}

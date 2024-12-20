@@ -1,0 +1,120 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+permissions.\+Django\+Object\+Permissions}
+\hypertarget{classrest__framework_1_1permissions_1_1DjangoObjectPermissions}{}\label{classrest__framework_1_1permissions_1_1DjangoObjectPermissions}\index{rest\_framework.permissions.DjangoObjectPermissions@{rest\_framework.permissions.DjangoObjectPermissions}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+permissions.\+Django\+Object\+Permissions\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+permissions.\+Django\+Object\+Permissions\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_aedabbfa5d0a245fdcb475d9c0d070754}{get\+\_\+required\+\_\+object\+\_\+permissions}} (self, method, model\+\_\+cls)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_a62f6a63677ed8687cbe61ffc73b01cb3}{has\+\_\+object\+\_\+permission}} (self, request, view, obj)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_a367aef39bac486b6f6416cda4af7b3b1}{get\+\_\+required\+\_\+permissions}} (self, method, model\+\_\+cls)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_ab9cae8f19952af43f8cbf7a8b4f2e95f}{has\+\_\+permission}} (self, request, view)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin}{rest\+\_\+framework.\+permissions.\+Operation\+Holder\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_af337164fa409ab2373ac7224f5ceb7c2}{\+\_\+\+\_\+and\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_a14db49354102898890bca17a753c4cf4}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_addd0cb823ec848ba61302a79840d7dac}{\+\_\+\+\_\+rand\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_a989a30a8e99529bdcd3d908415246ef8}{\+\_\+\+\_\+ror\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_ae0df4d0505b39f96ca827d6d07457e05}{\+\_\+\+\_\+invert\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_a8ffdb55c2de6ceed40b7c6319b29d412}{perms\+\_\+map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_a607ae2cfb4ed9c350063c58b03647f29}{perms\+\_\+map}}
+\item 
+bool \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_af9fa196d0ec73d66d73d98a6a1822dce}{authenticated\+\_\+users\+\_\+only}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_a8e125840b1d53cc17ad55cca2fe4638b}{authenticated\+\_\+users\+\_\+only}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_ad2bbeecdf3a30d8a053743162c7dbbbd}{\+\_\+queryset}} (self, view)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The request is authenticated using Django's object-level permissions.
+It requires an object-permissions-enabled backend, such as Django Guardian.
+
+It ensures that the user is authenticated, and has the appropriate
+`add`/`change`/`delete` permissions on the object using .has_perms.
+
+This permission can only be applied against view classes that
+provide a `.queryset` attribute.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_aedabbfa5d0a245fdcb475d9c0d070754}\label{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_aedabbfa5d0a245fdcb475d9c0d070754} 
+\index{rest\_framework.permissions.DjangoObjectPermissions@{rest\_framework.permissions.DjangoObjectPermissions}!get\_required\_object\_permissions@{get\_required\_object\_permissions}}
+\index{get\_required\_object\_permissions@{get\_required\_object\_permissions}!rest\_framework.permissions.DjangoObjectPermissions@{rest\_framework.permissions.DjangoObjectPermissions}}
+\doxysubsubsection{\texorpdfstring{get\_required\_object\_permissions()}{get\_required\_object\_permissions()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+permissions.\+Django\+Object\+Permissions.\+get\+\_\+required\+\_\+object\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{}]{model\+\_\+cls }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_a62f6a63677ed8687cbe61ffc73b01cb3}\label{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_a62f6a63677ed8687cbe61ffc73b01cb3} 
+\index{rest\_framework.permissions.DjangoObjectPermissions@{rest\_framework.permissions.DjangoObjectPermissions}!has\_object\_permission@{has\_object\_permission}}
+\index{has\_object\_permission@{has\_object\_permission}!rest\_framework.permissions.DjangoObjectPermissions@{rest\_framework.permissions.DjangoObjectPermissions}}
+\doxysubsubsection{\texorpdfstring{has\_object\_permission()}{has\_object\_permission()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+permissions.\+Django\+Object\+Permissions.\+has\+\_\+object\+\_\+permission (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{view,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return `True` if permission is granted, `False` otherwise.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1BasePermission_ac6f38c43dc408cfcba919d5b7c8461f8}{rest\+\_\+framework.\+permissions.\+Base\+Permission}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_a8ffdb55c2de6ceed40b7c6319b29d412}\label{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_a8ffdb55c2de6ceed40b7c6319b29d412} 
+\index{rest\_framework.permissions.DjangoObjectPermissions@{rest\_framework.permissions.DjangoObjectPermissions}!perms\_map@{perms\_map}}
+\index{perms\_map@{perms\_map}!rest\_framework.permissions.DjangoObjectPermissions@{rest\_framework.permissions.DjangoObjectPermissions}}
+\doxysubsubsection{\texorpdfstring{perms\_map}{perms\_map}}
+{\footnotesize\ttfamily dict rest\+\_\+framework.\+permissions.\+Django\+Object\+Permissions.\+perms\+\_\+map\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'GET'}:\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'OPTIONS'}:\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'HEAD'}:\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'POST'}:\ [\textcolor{stringliteral}{'\%(app\_label)s.add\_\%(model\_name)s'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'PUT'}:\ [\textcolor{stringliteral}{'\%(app\_label)s.change\_\%(model\_name)s'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'PATCH'}:\ [\textcolor{stringliteral}{'\%(app\_label)s.change\_\%(model\_name)s'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'DELETE'}:\ [\textcolor{stringliteral}{'\%(app\_label)s.delete\_\%(model\_name)s'}],}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{permissions_8py}{permissions.\+py}}\end{DoxyCompactItemize}

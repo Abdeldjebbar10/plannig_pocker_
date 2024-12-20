@@ -1,0 +1,73 @@
+\doxysection{Référence de la classe numpy.\+ctypeslib.\+\_\+concrete\+\_\+ndptr}
+\hypertarget{classnumpy_1_1ctypeslib_1_1__concrete__ndptr}{}\label{classnumpy_1_1ctypeslib_1_1__concrete__ndptr}\index{numpy.ctypeslib.\_concrete\_ndptr@{numpy.ctypeslib.\_concrete\_ndptr}}
+
+
+Graphe d\textquotesingle{}héritage de numpy.\+ctypeslib.\+\_\+concrete\+\_\+ndptr\+:
+% FIG 0
+
+
+Graphe de collaboration de numpy.\+ctypeslib.\+\_\+concrete\+\_\+ndptr\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__concrete__ndptr_ae88f0216b464127796f3d4e5e82a8ea0}{contents}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__ndptr}{numpy.\+ctypeslib.\+\_\+ndptr}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__ndptr_a8d0bb09ed4827b4ad03221349c50cab3}{from\+\_\+param}} (cls, obj)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__concrete__ndptr_aac39b7afcee82269c41dbd11cfb9b864}{\+\_\+check\+\_\+retval\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__ndptr}{numpy.\+ctypeslib.\+\_\+ndptr}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__ndptr_a532bcd1d7ff6832358c7113a5dd1717d}{\+\_\+dtype\+\_\+}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__ndptr_a53596c0a28d5f233cff847c10086a66a}{\+\_\+ndim\+\_\+}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__ndptr_a3be7d4b98ccd473c50f17fcbfe7da271}{\+\_\+shape\+\_\+}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1ctypeslib_1_1__ndptr_a4c43a71aea2c581ba0fdb00ed6d6aa71}{\+\_\+flags\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Like _ndptr, but with `_shape_` and `_dtype_` specified.
+
+Notably, this means the pointer has enough information to reconstruct
+the array, which is not generally true.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1ctypeslib_1_1__concrete__ndptr_aac39b7afcee82269c41dbd11cfb9b864}\label{classnumpy_1_1ctypeslib_1_1__concrete__ndptr_aac39b7afcee82269c41dbd11cfb9b864} 
+\index{numpy.ctypeslib.\_concrete\_ndptr@{numpy.ctypeslib.\_concrete\_ndptr}!\_check\_retval\_@{\_check\_retval\_}}
+\index{\_check\_retval\_@{\_check\_retval\_}!numpy.ctypeslib.\_concrete\_ndptr@{numpy.ctypeslib.\_concrete\_ndptr}}
+\doxysubsubsection{\texorpdfstring{\_check\_retval\_()}{\_check\_retval\_()}}
+{\footnotesize\ttfamily numpy.\+ctypeslib.\+\_\+concrete\+\_\+ndptr.\+\_\+check\+\_\+retval\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This method is called when this class is used as the .restype
+attribute for a shared-library function, to automatically wrap the
+pointer into an array.
+\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1ctypeslib_1_1__concrete__ndptr_ae88f0216b464127796f3d4e5e82a8ea0}\label{classnumpy_1_1ctypeslib_1_1__concrete__ndptr_ae88f0216b464127796f3d4e5e82a8ea0} 
+\index{numpy.ctypeslib.\_concrete\_ndptr@{numpy.ctypeslib.\_concrete\_ndptr}!contents@{contents}}
+\index{contents@{contents}!numpy.ctypeslib.\_concrete\_ndptr@{numpy.ctypeslib.\_concrete\_ndptr}}
+\doxysubsubsection{\texorpdfstring{contents()}{contents()}}
+{\footnotesize\ttfamily numpy.\+ctypeslib.\+\_\+concrete\+\_\+ndptr.\+contents (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get an ndarray viewing the data pointed to by this pointer.
+
+This mirrors the `contents` attribute of a normal ctypes pointer
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\mbox{\hyperlink{ctypeslib_8py}{ctypeslib.\+py}}\end{DoxyCompactItemize}

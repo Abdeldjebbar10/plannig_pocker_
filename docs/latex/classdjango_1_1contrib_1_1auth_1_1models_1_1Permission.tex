@@ -1,0 +1,121 @@
+\doxysection{Référence de la classe django.\+contrib.\+auth.\+models.\+Permission}
+\hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission}{}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission}\index{django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+auth.\+models.\+Permission\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+auth.\+models.\+Permission\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_1_1Meta}{Meta}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a40cf9085fbdbc1bac57e7c375c06ec5c}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_aa4f5b06a57c99a3bd143564cb477c67a}{natural\+\_\+key}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a20bd0eaa19fedf4f9066a4a981211a1e}{name}} = models.\+Char\+Field(\+\_\+("{}name"{}), max\+\_\+length=255)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_ab4811ccd7fb815b5d7e0062e932a5271}{content\+\_\+type}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a6f17e55ef3127be0dadda161771487b3}{codename}} = models.\+Char\+Field(\+\_\+("{}codename"{}), max\+\_\+length=100)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a90d50612a6997da5b717d87938e4da38}{objects}} = \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionManager}{Permission\+Manager}}()
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_adbf6dca9f7db44a38a6e19bfa12cd466}{dependencies}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The permissions system provides a way to assign permissions to specific
+users and groups of users.
+
+The permission system is used by the Django admin site, but may also be
+useful in your own code. The Django admin site uses permissions as follows:
+
+    - The "add" permission limits the user's ability to view the "add" form
+      and add an object.
+    - The "change" permission limits a user's ability to view the change
+      list, view the "change" form and change an object.
+    - The "delete" permission limits the ability to delete an object.
+    - The "view" permission limits the ability to view an object.
+
+Permissions are set globally per type of object, not per specific object
+instance. It is possible to say "Mary may change news stories," but it's
+not currently possible to say "Mary may change news stories, but only the
+ones she created herself" or "Mary may only change news stories that have a
+certain status or publication date."
+
+The permissions listed above are automatically created for each model.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a40cf9085fbdbc1bac57e7c375c06ec5c}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a40cf9085fbdbc1bac57e7c375c06ec5c} 
+\index{django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permission.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_aa4f5b06a57c99a3bd143564cb477c67a}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_aa4f5b06a57c99a3bd143564cb477c67a} 
+\index{django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}!natural\_key@{natural\_key}}
+\index{natural\_key@{natural\_key}!django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}}
+\doxysubsubsection{\texorpdfstring{natural\_key()}{natural\_key()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permission.\+natural\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a6f17e55ef3127be0dadda161771487b3}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a6f17e55ef3127be0dadda161771487b3} 
+\index{django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}!codename@{codename}}
+\index{codename@{codename}!django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}}
+\doxysubsubsection{\texorpdfstring{codename}{codename}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permission.\+codename = models.\+Char\+Field(\+\_\+("{}codename"{}), max\+\_\+length=100)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_ab4811ccd7fb815b5d7e0062e932a5271}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_ab4811ccd7fb815b5d7e0062e932a5271} 
+\index{django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}}
+\doxysubsubsection{\texorpdfstring{content\_type}{content\_type}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permission.\+content\+\_\+type\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ models.ForeignKey(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ContentType,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ models.CASCADE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ verbose\_name=\_(\textcolor{stringliteral}{"{}content\ type"{}}),}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_adbf6dca9f7db44a38a6e19bfa12cd466}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_adbf6dca9f7db44a38a6e19bfa12cd466} 
+\index{django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permission.\+dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a20bd0eaa19fedf4f9066a4a981211a1e}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a20bd0eaa19fedf4f9066a4a981211a1e} 
+\index{django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}!name@{name}}
+\index{name@{name}!django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permission.\+name = models.\+Char\+Field(\+\_\+("{}name"{}), max\+\_\+length=255)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a90d50612a6997da5b717d87938e4da38}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1Permission_a90d50612a6997da5b717d87938e4da38} 
+\index{django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}!objects@{objects}}
+\index{objects@{objects}!django.contrib.auth.models.Permission@{django.contrib.auth.models.Permission}}
+\doxysubsubsection{\texorpdfstring{objects}{objects}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permission.\+objects = \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionManager}{Permission\+Manager}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/auth/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2django_2contrib_2auth_2models_8py}{models.\+py}}\end{DoxyCompactItemize}

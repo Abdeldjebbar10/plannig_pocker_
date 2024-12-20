@@ -1,0 +1,88 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+test.\+Django\+Test\+Adapter}
+\hypertarget{classrest__framework_1_1test_1_1DjangoTestAdapter}{}\label{classrest__framework_1_1test_1_1DjangoTestAdapter}\index{rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+test.\+Django\+Test\+Adapter\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+test.\+Django\+Test\+Adapter\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1test_1_1DjangoTestAdapter_a41070db970c0f650a02d3eb9ff178362}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1test_1_1DjangoTestAdapter_a685d13a3386293f135f6c639c37cfb2f}{get\+\_\+environ}} (self, request)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1test_1_1DjangoTestAdapter_ab883956d47b4aeb9a9781cf063a8fd19}{send}} (self, request, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1test_1_1DjangoTestAdapter_ac123021efb10eb65ae8f294fb8ce0be3}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1test_1_1DjangoTestAdapter_a268966b7bf57f9f34fbe043692d6fad9}{app}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1test_1_1DjangoTestAdapter_a8e26afe0eb4fff967f9351a34607256f}{factory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A transport adapter for `requests`, that makes requests via the
+Django WSGI app, rather than making actual HTTP requests over the network.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1test_1_1DjangoTestAdapter_a41070db970c0f650a02d3eb9ff178362}\label{classrest__framework_1_1test_1_1DjangoTestAdapter_a41070db970c0f650a02d3eb9ff178362} 
+\index{rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+test.\+Django\+Test\+Adapter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1test_1_1DjangoTestAdapter_ac123021efb10eb65ae8f294fb8ce0be3}\label{classrest__framework_1_1test_1_1DjangoTestAdapter_ac123021efb10eb65ae8f294fb8ce0be3} 
+\index{rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}!close@{close}}
+\index{close@{close}!rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+test.\+Django\+Test\+Adapter.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1test_1_1DjangoTestAdapter_a685d13a3386293f135f6c639c37cfb2f}\label{classrest__framework_1_1test_1_1DjangoTestAdapter_a685d13a3386293f135f6c639c37cfb2f} 
+\index{rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}!get\_environ@{get\_environ}}
+\index{get\_environ@{get\_environ}!rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}}
+\doxysubsubsection{\texorpdfstring{get\_environ()}{get\_environ()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+test.\+Django\+Test\+Adapter.\+get\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a `requests.PreparedRequest` instance, return a WSGI environ dict.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1test_1_1DjangoTestAdapter_ab883956d47b4aeb9a9781cf063a8fd19}\label{classrest__framework_1_1test_1_1DjangoTestAdapter_ab883956d47b4aeb9a9781cf063a8fd19} 
+\index{rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}!send@{send}}
+\index{send@{send}!rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+test.\+Django\+Test\+Adapter.\+send (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make an outgoing request to the Django WSGI application.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1test_1_1DjangoTestAdapter_a268966b7bf57f9f34fbe043692d6fad9}\label{classrest__framework_1_1test_1_1DjangoTestAdapter_a268966b7bf57f9f34fbe043692d6fad9} 
+\index{rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}!app@{app}}
+\index{app@{app}!rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+test.\+Django\+Test\+Adapter.\+app}
+
+\Hypertarget{classrest__framework_1_1test_1_1DjangoTestAdapter_a8e26afe0eb4fff967f9351a34607256f}\label{classrest__framework_1_1test_1_1DjangoTestAdapter_a8e26afe0eb4fff967f9351a34607256f} 
+\index{rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}!factory@{factory}}
+\index{factory@{factory}!rest\_framework.test.DjangoTestAdapter@{rest\_framework.test.DjangoTestAdapter}}
+\doxysubsubsection{\texorpdfstring{factory}{factory}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+test.\+Django\+Test\+Adapter.\+factory}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2test_8py}{test.\+py}}\end{DoxyCompactItemize}

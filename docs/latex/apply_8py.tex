@@ -1,0 +1,62 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/core/apply.py}
+\hypertarget{apply_8py}{}\label{apply_8py}\index{env/lib/python3.12/site-\/packages/pandas/core/apply.py@{env/lib/python3.12/site-\/packages/pandas/core/apply.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1Apply}{pandas.\+core.\+apply.\+Apply}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1NDFrameApply}{pandas.\+core.\+apply.\+NDFrame\+Apply}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1FrameApply}{pandas.\+core.\+apply.\+Frame\+Apply}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1FrameRowApply}{pandas.\+core.\+apply.\+Frame\+Row\+Apply}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1FrameColumnApply}{pandas.\+core.\+apply.\+Frame\+Column\+Apply}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1SeriesApply}{pandas.\+core.\+apply.\+Series\+Apply}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1GroupByApply}{pandas.\+core.\+apply.\+Group\+By\+Apply}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1ResamplerWindowApply}{pandas.\+core.\+apply.\+Resampler\+Window\+Apply}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core}{pandas.\+core}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core_1_1apply}{pandas.\+core.\+apply}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1apply_1_1FrameApply}{Frame\+Apply}} \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a5a9dcc7662a15dcebb82072cb5c5191f}{pandas.\+core.\+apply.\+frame\+\_\+apply}} (Data\+Frame obj, Agg\+Func\+Type func, Axis axis=0, bool raw=False, str\texorpdfstring{$\vert$}{|}None result\+\_\+type=None, Literal\mbox{[}False, "{}compat"{}\mbox{]} by\+\_\+row="{}compat"{}, str engine="{}python"{}, dict\mbox{[}str, bool\mbox{]}\texorpdfstring{$\vert$}{|}None engine\+\_\+kwargs=None, args=None, kwargs=None)
+\item 
+tuple\mbox{[}bool, Agg\+Func\+Type, tuple\mbox{[}str,...\mbox{]}\texorpdfstring{$\vert$}{|}None, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\texorpdfstring{$\vert$}{|}None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a0ec8f522a35a9a55f9563b54c736520e}{pandas.\+core.\+apply.\+reconstruct\+\_\+func}} (Agg\+Func\+Type\texorpdfstring{$\vert$}{|}None func, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_ab72420b66d3d3a68d5785d5238a269aa}{pandas.\+core.\+apply.\+is\+\_\+multi\+\_\+agg\+\_\+with\+\_\+relabel}} (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+tuple\mbox{[} Mutable\+Mapping\mbox{[}Hashable, list\mbox{[}Agg\+Func\+Type\+Base\mbox{]}\mbox{]}, tuple\mbox{[}str,...\mbox{]}, npt.\+NDArray\mbox{[}np.\+intp\mbox{]},\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a4d8f1922059737b3275f1e1a48056fdf}{pandas.\+core.\+apply.\+normalize\+\_\+keyword\+\_\+aggregation}} (dict kwargs)
+\item 
+Sequence\mbox{[}tuple\mbox{[}Any, Any\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_ad562c053905e8fc7d7073d851e8f308a}{pandas.\+core.\+apply.\+\_\+make\+\_\+unique\+\_\+kwarg\+\_\+list}} (Sequence\mbox{[}tuple\mbox{[}Any, Any\mbox{]}\mbox{]} seq)
+\item 
+dict\mbox{[}Hashable, Series\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a572f9f92d9ffff4667bc4bb2f0708cff}{pandas.\+core.\+apply.\+relabel\+\_\+result}} (Data\+Frame\texorpdfstring{$\vert$}{|}Series result, dict\mbox{[}str, list\mbox{[}Callable\texorpdfstring{$\vert$}{|}str\mbox{]}\mbox{]} func, Iterable\mbox{[}Hashable\mbox{]} columns, Iterable\mbox{[}int\mbox{]} order)
+\item 
+Data\+Frame\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_ac048e6a9790770801295bc10709a2fbf}{pandas.\+core.\+apply.\+reconstruct\+\_\+and\+\_\+relabel\+\_\+result}} (result, func, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Sequence\mbox{[}Any\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a7188c8cf8013009da186e4f04e9edfbb}{pandas.\+core.\+apply.\+\_\+managle\+\_\+lambda\+\_\+list}} (Sequence\mbox{[}Any\mbox{]} aggfuncs)
+\item 
+Any \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a92d3b98fd771ce19d1d3cfdae0ab5623}{pandas.\+core.\+apply.\+maybe\+\_\+mangle\+\_\+lambdas}} (Any agg\+\_\+spec)
+\item 
+tuple\mbox{[}list\mbox{[}str\mbox{]}, list\mbox{[}str\texorpdfstring{$\vert$}{|}Callable\mbox{[}..., Any\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a432f2473b653042571d7e8e9bc2ae42a}{pandas.\+core.\+apply.\+validate\+\_\+func\+\_\+kwargs}} (dict kwargs)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a9e89a83a836eb713603c22802dda357f}{pandas.\+core.\+apply.\+include\+\_\+axis}} (Literal\mbox{[}"{}agg"{}, "{}apply"{}\mbox{]} op\+\_\+name, Series\texorpdfstring{$\vert$}{|}Data\+Frame colg)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1core_1_1apply_a02c6f3edbd9eb57149cc2b42049816bf}{pandas.\+core.\+apply.\+warn\+\_\+alias\+\_\+replacement}} (Agg\+Obj\+Type obj, Callable func, str alias)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1apply_aa116995ff61ef4fed4bd2f7036d6ce42}{pandas.\+core.\+apply.\+Res\+Type}} = dict\mbox{[}int, Any\mbox{]}
+\end{DoxyCompactItemize}

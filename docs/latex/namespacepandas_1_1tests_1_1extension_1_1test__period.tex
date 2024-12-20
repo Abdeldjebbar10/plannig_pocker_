@@ -1,0 +1,78 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+tests.\+extension.\+test\+\_\+period}
+\hypertarget{namespacepandas_1_1tests_1_1extension_1_1test__period}{}\label{namespacepandas_1_1tests_1_1extension_1_1test__period}\index{pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1test__period_1_1Test2DCompat}{Test2\+DCompat}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1tests_1_1extension_1_1test__period_1_1TestPeriodArray}{Test\+Period\+Array}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a709b04e8ba8645c7f36cb79eaac46158}{dtype}} (request)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a914818af9570aaae83838f9781fc3e43}{data}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a709b04e8ba8645c7f36cb79eaac46158}{dtype}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a9e0557634375fac8fc266b0ae0394993}{data\+\_\+for\+\_\+sorting}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a709b04e8ba8645c7f36cb79eaac46158}{dtype}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a0ae058f3309df6ef64d3b298c815dc0a}{data\+\_\+missing}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a709b04e8ba8645c7f36cb79eaac46158}{dtype}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a11f4d83f36865ebd3b25c535c7ae667b}{data\+\_\+missing\+\_\+for\+\_\+sorting}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a709b04e8ba8645c7f36cb79eaac46158}{dtype}})
+\item 
+\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a81e9c705d4696e9a6e9b166124c2c63a}{data\+\_\+for\+\_\+grouping}} (\mbox{\hyperlink{namespacepandas_1_1tests_1_1extension_1_1test__period_a709b04e8ba8645c7f36cb79eaac46158}{dtype}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This file contains a minimal set of tests for compliance with the extension
+array interface test suite, and should contain no other tests.
+The test suite for the full functionality of the array is located in
+`pandas/tests/arrays/`.
+
+The tests in this file are inherited from the BaseExtensionTests, and only
+minimal tweaks should be applied to get the tests passing (by overwriting a
+parent method).
+
+Additional tests should either be added to one of the BaseExtensionTests
+classes (if they are relevant for the extension interface for all dtypes), or
+be added to the array-specific tests in `pandas/tests/arrays/`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1tests_1_1extension_1_1test__period_a914818af9570aaae83838f9781fc3e43}\label{namespacepandas_1_1tests_1_1extension_1_1test__period_a914818af9570aaae83838f9781fc3e43} 
+\index{pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}!data@{data}}
+\index{data@{data}!pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily pandas.\+tests.\+extension.\+test\+\_\+period.\+data (\begin{DoxyParamCaption}\item[{}]{dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1extension_1_1test__period_a81e9c705d4696e9a6e9b166124c2c63a}\label{namespacepandas_1_1tests_1_1extension_1_1test__period_a81e9c705d4696e9a6e9b166124c2c63a} 
+\index{pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}!data\_for\_grouping@{data\_for\_grouping}}
+\index{data\_for\_grouping@{data\_for\_grouping}!pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}}
+\doxysubsubsection{\texorpdfstring{data\_for\_grouping()}{data\_for\_grouping()}}
+{\footnotesize\ttfamily pandas.\+tests.\+extension.\+test\+\_\+period.\+data\+\_\+for\+\_\+grouping (\begin{DoxyParamCaption}\item[{}]{dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1extension_1_1test__period_a9e0557634375fac8fc266b0ae0394993}\label{namespacepandas_1_1tests_1_1extension_1_1test__period_a9e0557634375fac8fc266b0ae0394993} 
+\index{pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}!data\_for\_sorting@{data\_for\_sorting}}
+\index{data\_for\_sorting@{data\_for\_sorting}!pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}}
+\doxysubsubsection{\texorpdfstring{data\_for\_sorting()}{data\_for\_sorting()}}
+{\footnotesize\ttfamily pandas.\+tests.\+extension.\+test\+\_\+period.\+data\+\_\+for\+\_\+sorting (\begin{DoxyParamCaption}\item[{}]{dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1extension_1_1test__period_a0ae058f3309df6ef64d3b298c815dc0a}\label{namespacepandas_1_1tests_1_1extension_1_1test__period_a0ae058f3309df6ef64d3b298c815dc0a} 
+\index{pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}!data\_missing@{data\_missing}}
+\index{data\_missing@{data\_missing}!pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}}
+\doxysubsubsection{\texorpdfstring{data\_missing()}{data\_missing()}}
+{\footnotesize\ttfamily pandas.\+tests.\+extension.\+test\+\_\+period.\+data\+\_\+missing (\begin{DoxyParamCaption}\item[{}]{dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1extension_1_1test__period_a11f4d83f36865ebd3b25c535c7ae667b}\label{namespacepandas_1_1tests_1_1extension_1_1test__period_a11f4d83f36865ebd3b25c535c7ae667b} 
+\index{pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}!data\_missing\_for\_sorting@{data\_missing\_for\_sorting}}
+\index{data\_missing\_for\_sorting@{data\_missing\_for\_sorting}!pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}}
+\doxysubsubsection{\texorpdfstring{data\_missing\_for\_sorting()}{data\_missing\_for\_sorting()}}
+{\footnotesize\ttfamily pandas.\+tests.\+extension.\+test\+\_\+period.\+data\+\_\+missing\+\_\+for\+\_\+sorting (\begin{DoxyParamCaption}\item[{}]{dtype }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1tests_1_1extension_1_1test__period_a709b04e8ba8645c7f36cb79eaac46158}\label{namespacepandas_1_1tests_1_1extension_1_1test__period_a709b04e8ba8645c7f36cb79eaac46158} 
+\index{pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}!dtype@{dtype}}
+\index{dtype@{dtype}!pandas.tests.extension.test\_period@{pandas.tests.extension.test\_period}}
+\doxysubsubsection{\texorpdfstring{dtype()}{dtype()}}
+{\footnotesize\ttfamily pandas.\+tests.\+extension.\+test\+\_\+period.\+dtype (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+

@@ -1,0 +1,133 @@
+\doxysection{Référence de la classe django.\+template.\+backends.\+jinja2.\+Jinja2}
+\hypertarget{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2}{}\label{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2}\index{django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+template.\+backends.\+jinja2.\+Jinja2\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+template.\+backends.\+jinja2.\+Jinja2\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a5c86d9a5752c55cae80837cdec9f0574}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, params)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_ac6bd7ef1752b1fd673c8bdb0ae0487ab}{from\+\_\+string}} (self, template\+\_\+code)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a9265545a8f140b3d6554426b83cb56ec}{get\+\_\+template}} (self, template\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a830abe1a2706dd01e0c9176758f13b49}{template\+\_\+context\+\_\+processors}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine}{django.\+template.\+backends.\+base.\+Base\+Engine}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_abc4ebe0b7468ad6fac21dde24e7ed9d6}{check}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_a359f8bbc04e58a3bcbd48cd3b003212a}{app\+\_\+dirname}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_aef1cd02712cee24dc478170df86d3c07}{template\+\_\+dirs}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_ac5c2585236a3a5b39439f7f33f96f79f}{iter\+\_\+template\+\_\+filenames}} (self, template\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_aed8c3993431ab78e0ae03a5f28f84998}{context\+\_\+processors}}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a2eb96f3f60120a0d30d10e74ac3c463a}{env}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine}{django.\+template.\+backends.\+base.\+Base\+Engine}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_a97ca039be43da643ed299b71b58e439a}{name}}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_a3c301ae2d18ddbdee624f6a3f6863ea5}{dirs}}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_a67240b310a7cab046abb264bf4ebf072}{app\+\_\+dirs}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_af846570db8af865c909e4434f8f3b764}{app\+\_\+dirname}} = "{}jinja2"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a5c86d9a5752c55cae80837cdec9f0574}\label{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a5c86d9a5752c55cae80837cdec9f0574} 
+\index{django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+template.\+backends.\+jinja2.\+Jinja2.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{params }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize the template engine.
+
+`params` is a dict of configuration settings.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_aeeba3a8f910bc9674e00f3287f039fe7}{django.\+template.\+backends.\+base.\+Base\+Engine}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_ac6bd7ef1752b1fd673c8bdb0ae0487ab}\label{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_ac6bd7ef1752b1fd673c8bdb0ae0487ab} 
+\index{django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}!from\_string@{from\_string}}
+\index{from\_string@{from\_string}!django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}}
+\doxysubsubsection{\texorpdfstring{from\_string()}{from\_string()}}
+{\footnotesize\ttfamily django.\+template.\+backends.\+jinja2.\+Jinja2.\+from\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{template\+\_\+code }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and return a template for the given source code.
+
+This method is optional.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_aa047f154b01efc7e7d67882712a836f6}{django.\+template.\+backends.\+base.\+Base\+Engine}}.
+
+\Hypertarget{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a9265545a8f140b3d6554426b83cb56ec}\label{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a9265545a8f140b3d6554426b83cb56ec} 
+\index{django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}!get\_template@{get\_template}}
+\index{get\_template@{get\_template}!django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}}
+\doxysubsubsection{\texorpdfstring{get\_template()}{get\_template()}}
+{\footnotesize\ttfamily django.\+template.\+backends.\+jinja2.\+Jinja2.\+get\+\_\+template (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{template\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load and return a template for the given name.
+
+Raise TemplateDoesNotExist if no such template exists.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1template_1_1backends_1_1base_1_1BaseEngine_af16cb78f114391f20662f290630e9f2b}{django.\+template.\+backends.\+base.\+Base\+Engine}}.
+
+\Hypertarget{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a830abe1a2706dd01e0c9176758f13b49}\label{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a830abe1a2706dd01e0c9176758f13b49} 
+\index{django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}!template\_context\_processors@{template\_context\_processors}}
+\index{template\_context\_processors@{template\_context\_processors}!django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}}
+\doxysubsubsection{\texorpdfstring{template\_context\_processors()}{template\_context\_processors()}}
+{\footnotesize\ttfamily django.\+template.\+backends.\+jinja2.\+Jinja2.\+template\+\_\+context\+\_\+processors (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_af846570db8af865c909e4434f8f3b764}\label{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_af846570db8af865c909e4434f8f3b764} 
+\index{django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}!app\_dirname@{app\_dirname}}
+\index{app\_dirname@{app\_dirname}!django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}}
+\doxysubsubsection{\texorpdfstring{app\_dirname}{app\_dirname}}
+{\footnotesize\ttfamily str django.\+template.\+backends.\+jinja2.\+Jinja2.\+app\+\_\+dirname = "{}jinja2"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_aed8c3993431ab78e0ae03a5f28f84998}\label{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_aed8c3993431ab78e0ae03a5f28f84998} 
+\index{django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}!context\_processors@{context\_processors}}
+\index{context\_processors@{context\_processors}!django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}}
+\doxysubsubsection{\texorpdfstring{context\_processors}{context\_processors}}
+{\footnotesize\ttfamily django.\+template.\+backends.\+jinja2.\+Jinja2.\+context\+\_\+processors}
+
+\Hypertarget{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a2eb96f3f60120a0d30d10e74ac3c463a}\label{classdjango_1_1template_1_1backends_1_1jinja2_1_1Jinja2_a2eb96f3f60120a0d30d10e74ac3c463a} 
+\index{django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}!env@{env}}
+\index{env@{env}!django.template.backends.jinja2.Jinja2@{django.template.backends.jinja2.Jinja2}}
+\doxysubsubsection{\texorpdfstring{env}{env}}
+{\footnotesize\ttfamily django.\+template.\+backends.\+jinja2.\+Jinja2.\+env}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/template/backends/\mbox{\hyperlink{jinja2_8py}{jinja2.\+py}}\end{DoxyCompactItemize}

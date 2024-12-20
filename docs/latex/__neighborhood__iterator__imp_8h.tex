@@ -1,0 +1,30 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/include/numpy/\+\_\+neighborhood\+\_\+iterator\+\_\+imp.h}
+\hypertarget{__neighborhood__iterator__imp_8h}{}\label{__neighborhood__iterator__imp_8h}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/\_neighborhood\_iterator\_imp.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/\_neighborhood\_iterator\_imp.h}}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{__neighborhood__iterator__imp_8h_a72d549c5d237a2f8a410fa5ca22d3edb}{\+\_\+\+UPDATE\+\_\+\+COORD\+\_\+\+ITER}}(c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{__neighborhood__iterator__imp_8h_a72d549c5d237a2f8a410fa5ca22d3edb}\label{__neighborhood__iterator__imp_8h_a72d549c5d237a2f8a410fa5ca22d3edb} 
+\index{\_neighborhood\_iterator\_imp.h@{\_neighborhood\_iterator\_imp.h}!\_UPDATE\_COORD\_ITER@{\_UPDATE\_COORD\_ITER}}
+\index{\_UPDATE\_COORD\_ITER@{\_UPDATE\_COORD\_ITER}!\_neighborhood\_iterator\_imp.h@{\_neighborhood\_iterator\_imp.h}}
+\doxysubsubsection{\texorpdfstring{\_UPDATE\_COORD\_ITER}{\_UPDATE\_COORD\_ITER}}
+{\footnotesize\ttfamily \#define \+\_\+\+UPDATE\+\_\+\+COORD\+\_\+\+ITER(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+{\bfseries Valeur \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ wb\ =\ iter-\/>coordinates[c]\ <\ iter-\/>bounds[c][1];\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (wb)\ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ iter-\/>coordinates[c]\ +=\ 1;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ iter-\/>coordinates[c]\ =\ iter-\/>bounds[c][0];\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}

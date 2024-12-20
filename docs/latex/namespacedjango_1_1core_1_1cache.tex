@@ -1,0 +1,74 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+core.\+cache}
+\hypertarget{namespacedjango_1_1core_1_1cache}{}\label{namespacedjango_1_1core_1_1cache}\index{django.core.cache@{django.core.cache}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends}{backends}}
+\item 
+namespace \mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1utils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1CacheHandler}{Cache\+Handler}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_af981377a5795f52dfcac410934946359}{close\+\_\+caches}} (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1core_1_1cache_ae1676307e20a63fd8ba3c4ee10b64c55}{DEFAULT\+\_\+\+CACHE\+\_\+\+ALIAS}} = "{}default"{}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_ad429b3dc5ead3912a038bd41c8aec684}{caches}} = \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1CacheHandler}{Cache\+Handler}}()
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_a97b79f06b6eb571380acecc199db0bb5}{cache}} = \mbox{\hyperlink{classdjango_1_1utils_1_1connection_1_1ConnectionProxy}{Connection\+Proxy}}(\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_ad429b3dc5ead3912a038bd41c8aec684}{caches}}, \mbox{\hyperlink{namespacedjango_1_1core_1_1cache_ae1676307e20a63fd8ba3c4ee10b64c55}{DEFAULT\+\_\+\+CACHE\+\_\+\+ALIAS}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Caching framework.
+
+This package defines set of cache backends that all conform to a simple API.
+In a nutshell, a cache is a set of values -- which can be any object that
+may be pickled -- identified by string keys.  For the complete API, see
+the abstract BaseCache class in django.core.cache.backends.base.
+
+Client code should use the `cache` variable defined here to access the default
+cache backend and look up non-default cache backends in the `caches` dict-like
+object.
+
+See docs/topics/cache.txt for information on the public API.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1core_1_1cache_af981377a5795f52dfcac410934946359}\label{namespacedjango_1_1core_1_1cache_af981377a5795f52dfcac410934946359} 
+\index{django.core.cache@{django.core.cache}!close\_caches@{close\_caches}}
+\index{close\_caches@{close\_caches}!django.core.cache@{django.core.cache}}
+\doxysubsubsection{\texorpdfstring{close\_caches()}{close\_caches()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+close\+\_\+caches (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1core_1_1cache_a97b79f06b6eb571380acecc199db0bb5}\label{namespacedjango_1_1core_1_1cache_a97b79f06b6eb571380acecc199db0bb5} 
+\index{django.core.cache@{django.core.cache}!cache@{cache}}
+\index{cache@{cache}!django.core.cache@{django.core.cache}}
+\doxysubsubsection{\texorpdfstring{cache}{cache}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+cache = \mbox{\hyperlink{classdjango_1_1utils_1_1connection_1_1ConnectionProxy}{Connection\+Proxy}}(\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_ad429b3dc5ead3912a038bd41c8aec684}{caches}}, \mbox{\hyperlink{namespacedjango_1_1core_1_1cache_ae1676307e20a63fd8ba3c4ee10b64c55}{DEFAULT\+\_\+\+CACHE\+\_\+\+ALIAS}})}
+
+\Hypertarget{namespacedjango_1_1core_1_1cache_ad429b3dc5ead3912a038bd41c8aec684}\label{namespacedjango_1_1core_1_1cache_ad429b3dc5ead3912a038bd41c8aec684} 
+\index{django.core.cache@{django.core.cache}!caches@{caches}}
+\index{caches@{caches}!django.core.cache@{django.core.cache}}
+\doxysubsubsection{\texorpdfstring{caches}{caches}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+caches = \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1CacheHandler}{Cache\+Handler}}()}
+
+\Hypertarget{namespacedjango_1_1core_1_1cache_ae1676307e20a63fd8ba3c4ee10b64c55}\label{namespacedjango_1_1core_1_1cache_ae1676307e20a63fd8ba3c4ee10b64c55} 
+\index{django.core.cache@{django.core.cache}!DEFAULT\_CACHE\_ALIAS@{DEFAULT\_CACHE\_ALIAS}}
+\index{DEFAULT\_CACHE\_ALIAS@{DEFAULT\_CACHE\_ALIAS}!django.core.cache@{django.core.cache}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_CACHE\_ALIAS}{DEFAULT\_CACHE\_ALIAS}}
+{\footnotesize\ttfamily str django.\+core.\+cache.\+DEFAULT\+\_\+\+CACHE\+\_\+\+ALIAS = "{}default"{}}
+

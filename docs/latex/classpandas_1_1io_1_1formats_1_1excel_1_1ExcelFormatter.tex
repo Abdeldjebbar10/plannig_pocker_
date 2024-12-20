@@ -1,0 +1,311 @@
+\doxysection{Référence de la classe pandas.\+io.\+formats.\+excel.\+Excel\+Formatter}
+\hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter}{}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter}\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+
+
+Graphe de collaboration de pandas.\+io.\+formats.\+excel.\+Excel\+Formatter\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab33c711ac5f53de6bb0f4c37f280bdc9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab20510f0fb4d3cdddc7b1a8bc1bb388f}{df}}, str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a13c0d9e6a423ea582c9e478a1d5b6a11}{na\+\_\+rep}}="{}"{}, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ac94187d75ffa00c30e9e18bdafd341e1}{float\+\_\+format}}=None, Sequence\mbox{[}Hashable\mbox{]}\texorpdfstring{$\vert$}{|}None cols=None, Sequence\mbox{[}Hashable\mbox{]}\texorpdfstring{$\vert$}{|}bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_afcb59f9690c597f4beea9b615e8ea0c6}{header}}=True, bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a3edca9a889df9cbe40e92495896dbf10}{index}}=True, Index\+Label\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af45a9f4a743e24bb134f23e813973d0a}{index\+\_\+label}}=None, bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_aba902634a4e39441655fe576f43faa82}{merge\+\_\+cells}}=False, str \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ae0821f212e1c2edaf5e9c58e153f560b}{inf\+\_\+rep}}="{}inf"{}, Callable\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a5810765a366ff720d1b6563dff07599f}{style\+\_\+converter}}=None)
+\item 
+dict\mbox{[}str, dict\mbox{[}str, str\texorpdfstring{$\vert$}{|}bool\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a591be6079a1ff78aa543cfb740c0ea4e}{header\+\_\+style}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a38ff893e96d9858e1270b89eb47c5431}{get\+\_\+formatted\+\_\+cells}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a3e99dc8374aa77dd07529e2e57bd3bd5}{write}} (self, File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteExcelBuffer}{Write\+Excel\+Buffer}}\texorpdfstring{$\vert$}{|}Excel\+Writer writer, str sheet\+\_\+name="{}Sheet1"{}, int startrow=0, int startcol=0, tuple\mbox{[}int, int\mbox{]}\texorpdfstring{$\vert$}{|}None freeze\+\_\+panes=None, str\texorpdfstring{$\vert$}{|}None engine=None, Storage\+Options\texorpdfstring{$\vert$}{|}None storage\+\_\+options=None, dict\texorpdfstring{$\vert$}{|}None engine\+\_\+kwargs=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ad4ce358cc6b541f629b9d23959469270}{rowcounter}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a13c0d9e6a423ea582c9e478a1d5b6a11}{na\+\_\+rep}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a436dc7b79dbea4b8d565aa0cb399a10e}{styler}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a5810765a366ff720d1b6563dff07599f}{style\+\_\+converter}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab20510f0fb4d3cdddc7b1a8bc1bb388f}{df}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a350dff90e622f292de1774a62120d60f}{columns}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ac94187d75ffa00c30e9e18bdafd341e1}{float\+\_\+format}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a3edca9a889df9cbe40e92495896dbf10}{index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af45a9f4a743e24bb134f23e813973d0a}{index\+\_\+label}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_afcb59f9690c597f4beea9b615e8ea0c6}{header}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_aba902634a4e39441655fe576f43faa82}{merge\+\_\+cells}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ae0821f212e1c2edaf5e9c58e153f560b}{inf\+\_\+rep}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_acb1d0acfd721e76c3f12f26c619c3fbf}{header\+\_\+style}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a05a268ddede3ecaf84a45ee06eaff523}{max\+\_\+rows}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}20
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a161950b30219ab35cdbda249b263f969}{max\+\_\+cols}} = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}14
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a8e629d9ce3018bb7bfb6d608d687f994}{\+\_\+format\+\_\+value}} (self, val)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab1ccba7dae59de487340c9c74c20d3c3}{\+\_\+format\+\_\+header\+\_\+mi}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a38b5ed469658fef07b194e3bc5708727}{\+\_\+format\+\_\+header\+\_\+regular}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af962c3f02e93908aceed522952f1e10f}{\+\_\+format\+\_\+header}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a55d3c270f0dd77b39ca5117a579a9b08}{\+\_\+format\+\_\+body}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_aea1875fb853fbabf0b2f7bde5ce110fe}{\+\_\+format\+\_\+regular\+\_\+rows}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af4403a04102787be30f6f56d514300af}{\+\_\+format\+\_\+hierarchical\+\_\+rows}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a0f939b5a24f142dac3df35d7c95b1090}{\+\_\+has\+\_\+aliases}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a4b1f3743ef089ad98c1c72ab34d5286b}{\+\_\+generate\+\_\+body}} (self, int coloffset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Class for formatting a DataFrame to a list of ExcelCells,
+
+Parameters
+----------
+df : DataFrame or Styler
+na_rep: na representation
+float_format : str, default None
+    Format string for floating point numbers
+cols : sequence, optional
+    Columns to write
+header : bool or sequence of str, default True
+    Write out column names. If a list of string is given it is
+    assumed to be aliases for the column names
+index : bool, default True
+    output row names (index)
+index_label : str or sequence, default None
+    Column label for index column(s) if desired. If None is given, and
+    `header` and `index` are True, then the index names are used. A
+    sequence should be given if the DataFrame uses MultiIndex.
+merge_cells : bool, default False
+    Format MultiIndex and Hierarchical Rows as merged cells.
+inf_rep : str, default `'inf'`
+    representation for np.inf values (which aren't representable in Excel)
+    A `'-'` sign will be added in front of -inf.
+style_converter : callable, optional
+    This translates Styler styles (CSS) into ExcelWriter styles.
+    Defaults to ``CSSToExcelConverter()``.
+    It should have signature css_declarations string -> excel style.
+    This is only called for body cells.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab33c711ac5f53de6bb0f4c37f280bdc9}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab33c711ac5f53de6bb0f4c37f280bdc9} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{df,  }\item[{str }]{na\+\_\+rep = {\ttfamily "{}"{}},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{float\+\_\+format = {\ttfamily None},  }\item[{Sequence\mbox{[}Hashable\mbox{]} \texorpdfstring{$\vert$}{|} None }]{cols = {\ttfamily None},  }\item[{Sequence\mbox{[}Hashable\mbox{]} \texorpdfstring{$\vert$}{|} bool }]{header = {\ttfamily True},  }\item[{bool }]{index = {\ttfamily True},  }\item[{Index\+Label \texorpdfstring{$\vert$}{|} None }]{index\+\_\+label = {\ttfamily None},  }\item[{bool }]{merge\+\_\+cells = {\ttfamily False},  }\item[{str }]{inf\+\_\+rep = {\ttfamily "{}inf"{}},  }\item[{Callable \texorpdfstring{$\vert$}{|} None }]{style\+\_\+converter = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a55d3c270f0dd77b39ca5117a579a9b08}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a55d3c270f0dd77b39ca5117a579a9b08} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_format\_body@{\_format\_body}}
+\index{\_format\_body@{\_format\_body}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_format\_body()}{\_format\_body()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+format\+\_\+body (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af962c3f02e93908aceed522952f1e10f}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af962c3f02e93908aceed522952f1e10f} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_format\_header@{\_format\_header}}
+\index{\_format\_header@{\_format\_header}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_format\_header()}{\_format\_header()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+format\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab1ccba7dae59de487340c9c74c20d3c3}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab1ccba7dae59de487340c9c74c20d3c3} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_format\_header\_mi@{\_format\_header\_mi}}
+\index{\_format\_header\_mi@{\_format\_header\_mi}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_format\_header\_mi()}{\_format\_header\_mi()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+format\+\_\+header\+\_\+mi (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a38b5ed469658fef07b194e3bc5708727}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a38b5ed469658fef07b194e3bc5708727} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_format\_header\_regular@{\_format\_header\_regular}}
+\index{\_format\_header\_regular@{\_format\_header\_regular}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_format\_header\_regular()}{\_format\_header\_regular()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+format\+\_\+header\+\_\+regular (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af4403a04102787be30f6f56d514300af}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af4403a04102787be30f6f56d514300af} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_format\_hierarchical\_rows@{\_format\_hierarchical\_rows}}
+\index{\_format\_hierarchical\_rows@{\_format\_hierarchical\_rows}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_format\_hierarchical\_rows()}{\_format\_hierarchical\_rows()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+format\+\_\+hierarchical\+\_\+rows (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_aea1875fb853fbabf0b2f7bde5ce110fe}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_aea1875fb853fbabf0b2f7bde5ce110fe} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_format\_regular\_rows@{\_format\_regular\_rows}}
+\index{\_format\_regular\_rows@{\_format\_regular\_rows}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_format\_regular\_rows()}{\_format\_regular\_rows()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+format\+\_\+regular\+\_\+rows (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a8e629d9ce3018bb7bfb6d608d687f994}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a8e629d9ce3018bb7bfb6d608d687f994} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_format\_value@{\_format\_value}}
+\index{\_format\_value@{\_format\_value}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_format\_value()}{\_format\_value()}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+format\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a4b1f3743ef089ad98c1c72ab34d5286b}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a4b1f3743ef089ad98c1c72ab34d5286b} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_generate\_body@{\_generate\_body}}
+\index{\_generate\_body@{\_generate\_body}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_generate\_body()}{\_generate\_body()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+generate\+\_\+body (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{coloffset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a0f939b5a24f142dac3df35d7c95b1090}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a0f939b5a24f142dac3df35d7c95b1090} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!\_has\_aliases@{\_has\_aliases}}
+\index{\_has\_aliases@{\_has\_aliases}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{\_has\_aliases()}{\_has\_aliases()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+\_\+has\+\_\+aliases (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Whether the aliases for column names are present.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a38ff893e96d9858e1270b89eb47c5431}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a38ff893e96d9858e1270b89eb47c5431} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!get\_formatted\_cells@{get\_formatted\_cells}}
+\index{get\_formatted\_cells@{get\_formatted\_cells}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{get\_formatted\_cells()}{get\_formatted\_cells()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelCell}{Excel\+Cell}}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+get\+\_\+formatted\+\_\+cells (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a591be6079a1ff78aa543cfb740c0ea4e}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a591be6079a1ff78aa543cfb740c0ea4e} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!header\_style@{header\_style}}
+\index{header\_style@{header\_style}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{header\_style()}{header\_style()}}
+{\footnotesize\ttfamily  dict\mbox{[}str, dict\mbox{[}str, str \texorpdfstring{$\vert$}{|} bool\mbox{]}\mbox{]} pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+header\+\_\+style (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a3e99dc8374aa77dd07529e2e57bd3bd5}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a3e99dc8374aa77dd07529e2e57bd3bd5} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!write@{write}}
+\index{write@{write}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{File\+Path \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1WriteExcelBuffer}{Write\+Excel\+Buffer}} \texorpdfstring{$\vert$}{|} Excel\+Writer}]{writer,  }\item[{str }]{sheet\+\_\+name = {\ttfamily "{}Sheet1"{}},  }\item[{int }]{startrow = {\ttfamily 0},  }\item[{int }]{startcol = {\ttfamily 0},  }\item[{tuple\mbox{[}int, int\mbox{]} \texorpdfstring{$\vert$}{|} None }]{freeze\+\_\+panes = {\ttfamily None},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{engine = {\ttfamily None},  }\item[{Storage\+Options \texorpdfstring{$\vert$}{|} None }]{storage\+\_\+options = {\ttfamily None},  }\item[{dict \texorpdfstring{$\vert$}{|} None }]{engine\+\_\+kwargs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}writer : path-like, file-like, or ExcelWriter object
+    File path or existing ExcelWriter
+sheet_name : str, default 'Sheet1'
+    Name of sheet which will contain DataFrame
+startrow :
+    upper left cell row to dump data frame
+startcol :
+    upper left cell column to dump data frame
+freeze_panes : tuple of integer (length 2), default None
+    Specifies the one-based bottommost row and rightmost column that
+    is to be frozen
+engine : string, default None
+    write engine to use if writer is a path - you can also set this
+    via the options ``io.excel.xlsx.writer``,
+    or ``io.excel.xlsm.writer``.
+
+{storage_options}
+
+engine_kwargs: dict, optional
+    Arbitrary keyword arguments passed to excel engine.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a350dff90e622f292de1774a62120d60f}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a350dff90e622f292de1774a62120d60f} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!columns@{columns}}
+\index{columns@{columns}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{columns}{columns}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+columns}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab20510f0fb4d3cdddc7b1a8bc1bb388f}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ab20510f0fb4d3cdddc7b1a8bc1bb388f} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!df@{df}}
+\index{df@{df}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{df}{df}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+df}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ac94187d75ffa00c30e9e18bdafd341e1}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ac94187d75ffa00c30e9e18bdafd341e1} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!float\_format@{float\_format}}
+\index{float\_format@{float\_format}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{float\_format}{float\_format}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+float\+\_\+format}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_afcb59f9690c597f4beea9b615e8ea0c6}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_afcb59f9690c597f4beea9b615e8ea0c6} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!header@{header}}
+\index{header@{header}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+header}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_acb1d0acfd721e76c3f12f26c619c3fbf}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_acb1d0acfd721e76c3f12f26c619c3fbf} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!header\_style@{header\_style}}
+\index{header\_style@{header\_style}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{header\_style}{header\_style}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+header\+\_\+style}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a3edca9a889df9cbe40e92495896dbf10}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a3edca9a889df9cbe40e92495896dbf10} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!index@{index}}
+\index{index@{index}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+index}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af45a9f4a743e24bb134f23e813973d0a}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_af45a9f4a743e24bb134f23e813973d0a} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!index\_label@{index\_label}}
+\index{index\_label@{index\_label}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{index\_label}{index\_label}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+index\+\_\+label}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ae0821f212e1c2edaf5e9c58e153f560b}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ae0821f212e1c2edaf5e9c58e153f560b} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!inf\_rep@{inf\_rep}}
+\index{inf\_rep@{inf\_rep}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{inf\_rep}{inf\_rep}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+inf\+\_\+rep}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a161950b30219ab35cdbda249b263f969}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a161950b30219ab35cdbda249b263f969} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!max\_cols@{max\_cols}}
+\index{max\_cols@{max\_cols}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{max\_cols}{max\_cols}}
+{\footnotesize\ttfamily int pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+max\+\_\+cols = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}14\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a05a268ddede3ecaf84a45ee06eaff523}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a05a268ddede3ecaf84a45ee06eaff523} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!max\_rows@{max\_rows}}
+\index{max\_rows@{max\_rows}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{max\_rows}{max\_rows}}
+{\footnotesize\ttfamily int pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+max\+\_\+rows = 2\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}20\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_aba902634a4e39441655fe576f43faa82}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_aba902634a4e39441655fe576f43faa82} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!merge\_cells@{merge\_cells}}
+\index{merge\_cells@{merge\_cells}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{merge\_cells}{merge\_cells}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+merge\+\_\+cells}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a13c0d9e6a423ea582c9e478a1d5b6a11}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a13c0d9e6a423ea582c9e478a1d5b6a11} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!na\_rep@{na\_rep}}
+\index{na\_rep@{na\_rep}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{na\_rep}{na\_rep}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+na\+\_\+rep}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ad4ce358cc6b541f629b9d23959469270}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_ad4ce358cc6b541f629b9d23959469270} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!rowcounter@{rowcounter}}
+\index{rowcounter@{rowcounter}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{rowcounter}{rowcounter}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+rowcounter}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a5810765a366ff720d1b6563dff07599f}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a5810765a366ff720d1b6563dff07599f} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!style\_converter@{style\_converter}}
+\index{style\_converter@{style\_converter}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{style\_converter}{style\_converter}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+style\+\_\+converter}
+
+\Hypertarget{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a436dc7b79dbea4b8d565aa0cb399a10e}\label{classpandas_1_1io_1_1formats_1_1excel_1_1ExcelFormatter_a436dc7b79dbea4b8d565aa0cb399a10e} 
+\index{pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}!styler@{styler}}
+\index{styler@{styler}!pandas.io.formats.excel.ExcelFormatter@{pandas.io.formats.excel.ExcelFormatter}}
+\doxysubsubsection{\texorpdfstring{styler}{styler}}
+{\footnotesize\ttfamily pandas.\+io.\+formats.\+excel.\+Excel\+Formatter.\+styler}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/formats/\mbox{\hyperlink{excel_8py}{excel.\+py}}\end{DoxyCompactItemize}

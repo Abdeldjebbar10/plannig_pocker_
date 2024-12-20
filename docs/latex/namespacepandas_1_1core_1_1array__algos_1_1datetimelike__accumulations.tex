@@ -1,0 +1,56 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+core.\+array\+\_\+algos.\+datetimelike\+\_\+accumulations}
+\hypertarget{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations}{}\label{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations}\index{pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a2bcba355471f48ea5bbb09206fd80590}{\+\_\+cum\+\_\+func}} (Callable func, np.\+ndarray values, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\item 
+np.\+ndarray \mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a7aab39a25dd0b25a2d15c6f361ac5e43}{cumsum}} (np.\+ndarray values, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a71fe684c004776b160a47adc90a27f39}{cummin}} (np.\+ndarray values, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_abc074c97b68d9949daf803cfd5a93cf9}{cummax}} (np.\+ndarray values, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}datetimelke_accumulations.py is for accumulations of datetimelike extension arrays
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a2bcba355471f48ea5bbb09206fd80590}\label{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a2bcba355471f48ea5bbb09206fd80590} 
+\index{pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}!\_cum\_func@{\_cum\_func}}
+\index{\_cum\_func@{\_cum\_func}!pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}}
+\doxysubsubsection{\texorpdfstring{\_cum\_func()}{\_cum\_func()}}
+{\footnotesize\ttfamily pandas.\+core.\+array\+\_\+algos.\+datetimelike\+\_\+accumulations.\+\_\+cum\+\_\+func (\begin{DoxyParamCaption}\item[{Callable}]{func,  }\item[{np.\+ndarray}]{values,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Accumulations for 1D datetimelike arrays.
+
+Parameters
+----------
+func : np.cumsum, np.maximum.accumulate, np.minimum.accumulate
+values : np.ndarray
+    Numpy array with the values (can be of any dtype that support the
+    operation). Values is changed is modified inplace.
+skipna : bool, default True
+    Whether to skip NA.
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_abc074c97b68d9949daf803cfd5a93cf9}\label{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_abc074c97b68d9949daf803cfd5a93cf9} 
+\index{pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}!cummax@{cummax}}
+\index{cummax@{cummax}!pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}}
+\doxysubsubsection{\texorpdfstring{cummax()}{cummax()}}
+{\footnotesize\ttfamily pandas.\+core.\+array\+\_\+algos.\+datetimelike\+\_\+accumulations.\+cummax (\begin{DoxyParamCaption}\item[{np.\+ndarray}]{values,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a71fe684c004776b160a47adc90a27f39}\label{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a71fe684c004776b160a47adc90a27f39} 
+\index{pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}!cummin@{cummin}}
+\index{cummin@{cummin}!pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}}
+\doxysubsubsection{\texorpdfstring{cummin()}{cummin()}}
+{\footnotesize\ttfamily pandas.\+core.\+array\+\_\+algos.\+datetimelike\+\_\+accumulations.\+cummin (\begin{DoxyParamCaption}\item[{np.\+ndarray}]{values,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a7aab39a25dd0b25a2d15c6f361ac5e43}\label{namespacepandas_1_1core_1_1array__algos_1_1datetimelike__accumulations_a7aab39a25dd0b25a2d15c6f361ac5e43} 
+\index{pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}!cumsum@{cumsum}}
+\index{cumsum@{cumsum}!pandas.core.array\_algos.datetimelike\_accumulations@{pandas.core.array\_algos.datetimelike\_accumulations}}
+\doxysubsubsection{\texorpdfstring{cumsum()}{cumsum()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+array\+\_\+algos.\+datetimelike\+\_\+accumulations.\+cumsum (\begin{DoxyParamCaption}\item[{np.\+ndarray}]{values,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})}
+

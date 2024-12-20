@@ -1,0 +1,31 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/io/parquet.py}
+\hypertarget{parquet_8py}{}\label{parquet_8py}\index{env/lib/python3.12/site-\/packages/pandas/io/parquet.py@{env/lib/python3.12/site-\/packages/pandas/io/parquet.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1parquet_1_1BaseImpl}{pandas.\+io.\+parquet.\+Base\+Impl}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1parquet_1_1PyArrowImpl}{pandas.\+io.\+parquet.\+Py\+Arrow\+Impl}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1parquet_1_1FastParquetImpl}{pandas.\+io.\+parquet.\+Fast\+Parquet\+Impl}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1io}{pandas.\+io}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1io_1_1parquet}{pandas.\+io.\+parquet}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1parquet_1_1BaseImpl}{Base\+Impl}} \mbox{\hyperlink{namespacepandas_1_1io_1_1parquet_adc1392a3fb2d187d2c24e4701a44dccb}{pandas.\+io.\+parquet.\+get\+\_\+engine}} (str engine)
+\item 
+tuple\mbox{[} File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]}, \mbox{\hyperlink{classpandas_1_1io_1_1common_1_1IOHandles}{IOHandles}}\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}None, Any\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1parquet_a7d58c3c77e286e5ef9406f09dc191037}{pandas.\+io.\+parquet.\+\_\+get\+\_\+path\+\_\+or\+\_\+handle}} (File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]} path, Any fs, Storage\+Options\texorpdfstring{$\vert$}{|}None storage\+\_\+options=None, str mode="{}rb"{}, bool is\+\_\+dir=False)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacepandas_1_1io_1_1parquet_a75e45db1dca53a76f90e741e7b9380b8}{pandas.\+io.\+parquet.\+to\+\_\+parquet}} (Data\+Frame df, File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}bytes\mbox{]}\texorpdfstring{$\vert$}{|}None path=None, str engine="{}auto"{}, str\texorpdfstring{$\vert$}{|}None compression="{}snappy"{}, bool\texorpdfstring{$\vert$}{|}None index=None, Storage\+Options\texorpdfstring{$\vert$}{|}None storage\+\_\+options=None, list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None partition\+\_\+cols=None, Any filesystem=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+Data\+Frame \mbox{\hyperlink{namespacepandas_1_1io_1_1parquet_a4cd913323e224abd56500d0d5571be09}{pandas.\+io.\+parquet.\+read\+\_\+parquet}} (File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}bytes\mbox{]} path, str engine="{}auto"{}, list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None columns=None, Storage\+Options\texorpdfstring{$\vert$}{|}None storage\+\_\+options=None, bool\texorpdfstring{$\vert$}{|}lib.\+No\+Default use\+\_\+nullable\+\_\+dtypes=lib.\+no\+\_\+default, Dtype\+Backend\texorpdfstring{$\vert$}{|}lib.\+No\+Default dtype\+\_\+backend=lib.\+no\+\_\+default, Any filesystem=None, list\mbox{[}tuple\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}list\mbox{[}tuple\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None filters=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}

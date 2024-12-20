@@ -1,0 +1,90 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+parsers.\+File\+Upload\+Parser}
+\hypertarget{classrest__framework_1_1parsers_1_1FileUploadParser}{}\label{classrest__framework_1_1parsers_1_1FileUploadParser}\index{rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+parsers.\+File\+Upload\+Parser\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+parsers.\+File\+Upload\+Parser\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1FileUploadParser_a73bac056ed9b575943bbc7631eeee991}{parse}} (self, stream, \mbox{\hyperlink{classrest__framework_1_1parsers_1_1FileUploadParser_a4dbf2250d203cb78c030db5cb65fcdf9}{media\+\_\+type}}=None, parser\+\_\+context=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1FileUploadParser_acb031bd98bef35b9d94b04937cd71017}{get\+\_\+filename}} (self, stream, \mbox{\hyperlink{classrest__framework_1_1parsers_1_1FileUploadParser_a4dbf2250d203cb78c030db5cb65fcdf9}{media\+\_\+type}}, parser\+\_\+context)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1parsers_1_1FileUploadParser_a4dbf2250d203cb78c030db5cb65fcdf9}{media\+\_\+type}} = \textquotesingle{}\texorpdfstring{$\ast$}{*}/\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+dict \mbox{\hyperlink{classrest__framework_1_1parsers_1_1FileUploadParser_a4b50552f558e25cf52ecfc303812fb41}{errors}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser}{rest\+\_\+framework.\+parsers.\+Base\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser_a14d6a8b69cfd67f16ac0011d234371e5}{media\+\_\+type}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Parser for file upload data.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1parsers_1_1FileUploadParser_acb031bd98bef35b9d94b04937cd71017}\label{classrest__framework_1_1parsers_1_1FileUploadParser_acb031bd98bef35b9d94b04937cd71017} 
+\index{rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}!get\_filename@{get\_filename}}
+\index{get\_filename@{get\_filename}!rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}}
+\doxysubsubsection{\texorpdfstring{get\_filename()}{get\_filename()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+parsers.\+File\+Upload\+Parser.\+get\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stream,  }\item[{}]{media\+\_\+type,  }\item[{}]{parser\+\_\+context }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Detects the uploaded file name. First searches a 'filename' url kwarg.
+Then tries to parse Content-Disposition header.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1parsers_1_1FileUploadParser_a73bac056ed9b575943bbc7631eeee991}\label{classrest__framework_1_1parsers_1_1FileUploadParser_a73bac056ed9b575943bbc7631eeee991} 
+\index{rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}!parse@{parse}}
+\index{parse@{parse}!rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+parsers.\+File\+Upload\+Parser.\+parse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stream,  }\item[{}]{media\+\_\+type = {\ttfamily None},  }\item[{}]{parser\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Treats the incoming bytestream as a raw file upload and returns
+a `DataAndFiles` object.
+
+`.data` will be None (we expect request body to be a file content).
+`.files` will be a `QueryDict` containing one 'file' element.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser_adfd4b23e013b564d2868388167dbb57e}{rest\+\_\+framework.\+parsers.\+Base\+Parser}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1parsers_1_1FileUploadParser_a4b50552f558e25cf52ecfc303812fb41}\label{classrest__framework_1_1parsers_1_1FileUploadParser_a4b50552f558e25cf52ecfc303812fb41} 
+\index{rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}!errors@{errors}}
+\index{errors@{errors}!rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}}
+\doxysubsubsection{\texorpdfstring{errors}{errors}}
+{\footnotesize\ttfamily dict rest\+\_\+framework.\+parsers.\+File\+Upload\+Parser.\+errors\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unhandled'}:\ \textcolor{stringliteral}{'FileUpload\ parse\ error\ -\/\ none\ of\ upload\ handlers\ can\ handle\ the\ stream'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'no\_filename'}:\ \textcolor{stringliteral}{'Missing\ filename.\ Request\ should\ include\ a\ Content-\/Disposition\ header\ with\ a\ filename\ parameter.'},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classrest__framework_1_1parsers_1_1FileUploadParser_a4dbf2250d203cb78c030db5cb65fcdf9}\label{classrest__framework_1_1parsers_1_1FileUploadParser_a4dbf2250d203cb78c030db5cb65fcdf9} 
+\index{rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}!media\_type@{media\_type}}
+\index{media\_type@{media\_type}!rest\_framework.parsers.FileUploadParser@{rest\_framework.parsers.FileUploadParser}}
+\doxysubsubsection{\texorpdfstring{media\_type}{media\_type}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+parsers.\+File\+Upload\+Parser.\+media\+\_\+type = \textquotesingle{}\texorpdfstring{$\ast$}{*}/\texorpdfstring{$\ast$}{*}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{parsers_8py}{parsers.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage myapp.\+views}
+\hypertarget{namespacemyapp_1_1views}{}\label{namespacemyapp_1_1views}\index{myapp.views@{myapp.views}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_ad7e68a9d7188abb87015412adea049ec}{liste\+\_\+parties}} (request)
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_aca9d883555d577ec36b8ce59c53bab97}{creer\+\_\+partie}} (request)
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_af215ba5c7da7f6392ad7d44961791ed3}{detail\+\_\+partie}} (request, id)
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_a202510b370b710b032193d7a1190109e}{reprendre\+\_\+partie}} (request, partie\+\_\+id)
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_a217401c52930d4de6c21eb2525f8b3be}{creer\+\_\+participant}} (request)
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_a367efd1e4ea0e520c94247bfd2ae8edc}{menu\+\_\+principal}} (request)
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_a1310364d7e5b7d0c161c6405fc1ac063}{liste\+\_\+participants}} (request)
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_aa7b09c803e7ff62a087a387e91ac6e15}{lancer\+\_\+partie}} (request, partie\+\_\+id)
+\item 
+\mbox{\hyperlink{namespacemyapp_1_1views_a1201351ddafc309fe68dea27a72f3861}{demarrer\+\_\+vote}} (request, partie\+\_\+id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacemyapp_1_1views_a217401c52930d4de6c21eb2525f8b3be}\label{namespacemyapp_1_1views_a217401c52930d4de6c21eb2525f8b3be} 
+\index{myapp.views@{myapp.views}!creer\_participant@{creer\_participant}}
+\index{creer\_participant@{creer\_participant}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{creer\_participant()}{creer\_participant()}}
+{\footnotesize\ttfamily myapp.\+views.\+creer\+\_\+participant (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn creer_participant
+@brief Vue pour créer un nouveau participant.
+@param request Objet de requête HTTP.
+@return Réponse HTTP après la création du participant.
+\end{DoxyVerb}
+ \Hypertarget{namespacemyapp_1_1views_aca9d883555d577ec36b8ce59c53bab97}\label{namespacemyapp_1_1views_aca9d883555d577ec36b8ce59c53bab97} 
+\index{myapp.views@{myapp.views}!creer\_partie@{creer\_partie}}
+\index{creer\_partie@{creer\_partie}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{creer\_partie()}{creer\_partie()}}
+{\footnotesize\ttfamily myapp.\+views.\+creer\+\_\+partie (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn creer_partie
+@brief Vue pour créer une nouvelle partie.
+@param request Objet de requête HTTP.
+@return Réponse HTTP après la création de la partie.
+\end{DoxyVerb}
+ \Hypertarget{namespacemyapp_1_1views_a1201351ddafc309fe68dea27a72f3861}\label{namespacemyapp_1_1views_a1201351ddafc309fe68dea27a72f3861} 
+\index{myapp.views@{myapp.views}!demarrer\_vote@{demarrer\_vote}}
+\index{demarrer\_vote@{demarrer\_vote}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{demarrer\_vote()}{demarrer\_vote()}}
+{\footnotesize\ttfamily myapp.\+views.\+demarrer\+\_\+vote (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{partie\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn demarrer_vote
+@brief Vue pour démarrer le vote pour une partie.
+@param request Objet de requête HTTP.
+@param partie_id Identifiant de la partie.
+@return Réponse HTTP pour démarrer le vote.
+\end{DoxyVerb}
+ \Hypertarget{namespacemyapp_1_1views_af215ba5c7da7f6392ad7d44961791ed3}\label{namespacemyapp_1_1views_af215ba5c7da7f6392ad7d44961791ed3} 
+\index{myapp.views@{myapp.views}!detail\_partie@{detail\_partie}}
+\index{detail\_partie@{detail\_partie}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{detail\_partie()}{detail\_partie()}}
+{\footnotesize\ttfamily myapp.\+views.\+detail\+\_\+partie (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn detail_partie
+@brief Vue pour afficher les détails d'une partie.
+@param request Objet de requête HTTP.
+@param id Identifiant de la partie.
+@return Réponse HTTP avec les détails de la partie.
+\end{DoxyVerb}
+ \Hypertarget{namespacemyapp_1_1views_aa7b09c803e7ff62a087a387e91ac6e15}\label{namespacemyapp_1_1views_aa7b09c803e7ff62a087a387e91ac6e15} 
+\index{myapp.views@{myapp.views}!lancer\_partie@{lancer\_partie}}
+\index{lancer\_partie@{lancer\_partie}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{lancer\_partie()}{lancer\_partie()}}
+{\footnotesize\ttfamily myapp.\+views.\+lancer\+\_\+partie (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{partie\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn lancer_partie
+@brief Vue pour lancer une partie.
+@param request Objet de requête HTTP.
+@param partie_id Identifiant de la partie.
+@return Réponse HTTP après le lancement de la partie.
+\end{DoxyVerb}
+ \Hypertarget{namespacemyapp_1_1views_a1310364d7e5b7d0c161c6405fc1ac063}\label{namespacemyapp_1_1views_a1310364d7e5b7d0c161c6405fc1ac063} 
+\index{myapp.views@{myapp.views}!liste\_participants@{liste\_participants}}
+\index{liste\_participants@{liste\_participants}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{liste\_participants()}{liste\_participants()}}
+{\footnotesize\ttfamily myapp.\+views.\+liste\+\_\+participants (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn liste_participants
+@brief Vue pour afficher la liste des participants.
+@param request Objet de requête HTTP.
+@return Réponse HTTP avec la liste des participants.
+\end{DoxyVerb}
+ \Hypertarget{namespacemyapp_1_1views_ad7e68a9d7188abb87015412adea049ec}\label{namespacemyapp_1_1views_ad7e68a9d7188abb87015412adea049ec} 
+\index{myapp.views@{myapp.views}!liste\_parties@{liste\_parties}}
+\index{liste\_parties@{liste\_parties}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{liste\_parties()}{liste\_parties()}}
+{\footnotesize\ttfamily myapp.\+views.\+liste\+\_\+parties (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn liste_parties
+@brief Vue pour afficher toutes les parties.
+@param request Objet de requête HTTP.
+@return Réponse HTTP avec la liste des parties.
+\end{DoxyVerb}
+ \Hypertarget{namespacemyapp_1_1views_a367efd1e4ea0e520c94247bfd2ae8edc}\label{namespacemyapp_1_1views_a367efd1e4ea0e520c94247bfd2ae8edc} 
+\index{myapp.views@{myapp.views}!menu\_principal@{menu\_principal}}
+\index{menu\_principal@{menu\_principal}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{menu\_principal()}{menu\_principal()}}
+{\footnotesize\ttfamily myapp.\+views.\+menu\+\_\+principal (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn menu_principal
+@brief Vue pour afficher le menu principal.
+@param request Objet de requête HTTP.
+@return Réponse HTTP avec le menu principal.
+\end{DoxyVerb}
+ \Hypertarget{namespacemyapp_1_1views_a202510b370b710b032193d7a1190109e}\label{namespacemyapp_1_1views_a202510b370b710b032193d7a1190109e} 
+\index{myapp.views@{myapp.views}!reprendre\_partie@{reprendre\_partie}}
+\index{reprendre\_partie@{reprendre\_partie}!myapp.views@{myapp.views}}
+\doxysubsubsection{\texorpdfstring{reprendre\_partie()}{reprendre\_partie()}}
+{\footnotesize\ttfamily myapp.\+views.\+reprendre\+\_\+partie (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{partie\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@fn reprendre_partie
+@brief Vue pour reprendre une partie existante.
+@param request Objet de requête HTTP.
+@param partie_id Identifiant de la partie.
+@return Réponse HTTP après la reprise de la partie.
+\end{DoxyVerb}
+ 

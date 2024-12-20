@@ -1,0 +1,79 @@
+\doxysection{Référence de la classe django.\+db.\+models.\+fields.\+files.\+File\+Descriptor}
+\hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor}{}\label{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor}\index{django.db.models.fields.files.FileDescriptor@{django.db.models.fields.files.FileDescriptor}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+models.\+fields.\+files.\+File\+Descriptor\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+db.\+models.\+fields.\+files.\+File\+Descriptor\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor_a82e0ca1d59a76b7595fb329bc65749f4}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, instance, cls=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor_a56bad85a8e94a04c1d9c47244e2fab76}{\+\_\+\+\_\+set\+\_\+\+\_\+}} (self, instance, value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute}{django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a99a0e22b325d108ce2acd67c37726713}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a3c5f4df8e3b5ef265d59581d9cbffa51}{field}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute}{django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a3c5f4df8e3b5ef265d59581d9cbffa51}{field}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute}{django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a8da719c3826b539c32773da45df966e2}{\+\_\+check\+\_\+parent\+\_\+chain}} (self, instance)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The descriptor for the file attribute on the model instance. Return a
+FieldFile when accessed so you can write code like::
+
+    >>> from myapp.models import MyModel
+    >>> instance = MyModel.objects.get(pk=1)
+    >>> instance.file.size
+
+Assign a file object on assignment so you can do::
+
+    >>> with open('/path/to/hello.world') as f:
+    ...     instance.file = File(f)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor_a82e0ca1d59a76b7595fb329bc65749f4}\label{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor_a82e0ca1d59a76b7595fb329bc65749f4} 
+\index{django.db.models.fields.files.FileDescriptor@{django.db.models.fields.files.FileDescriptor}!\_\_get\_\_@{\_\_get\_\_}}
+\index{\_\_get\_\_@{\_\_get\_\_}!django.db.models.fields.files.FileDescriptor@{django.db.models.fields.files.FileDescriptor}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_\_()}{\_\_get\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+files.\+File\+Descriptor.\+\_\+\+\_\+get\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance,  }\item[{}]{cls = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve and caches the value from the datastore on the first lookup.
+Return the cached value.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_affae19d6f5cc338c1589837770d9be53}{django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor_a56bad85a8e94a04c1d9c47244e2fab76}\label{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor_a56bad85a8e94a04c1d9c47244e2fab76} 
+\index{django.db.models.fields.files.FileDescriptor@{django.db.models.fields.files.FileDescriptor}!\_\_set\_\_@{\_\_set\_\_}}
+\index{\_\_set\_\_@{\_\_set\_\_}!django.db.models.fields.files.FileDescriptor@{django.db.models.fields.files.FileDescriptor}}
+\doxysubsubsection{\texorpdfstring{\_\_set\_\_()}{\_\_set\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+files.\+File\+Descriptor.\+\_\+\+\_\+set\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1ImageFileDescriptor_aec92014630b266f32efe1a68bda151f1}{django.\+db.\+models.\+fields.\+files.\+Image\+File\+Descriptor}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/models/fields/\mbox{\hyperlink{db_2models_2fields_2files_8py}{files.\+py}}\end{DoxyCompactItemize}

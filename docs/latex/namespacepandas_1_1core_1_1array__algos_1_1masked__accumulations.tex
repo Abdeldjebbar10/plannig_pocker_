@@ -1,0 +1,69 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+core.\+array\+\_\+algos.\+masked\+\_\+accumulations}
+\hypertarget{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations}{}\label{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations}\index{pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_ad99d7878855f37b38e93421b2d2b0226}{\+\_\+cum\+\_\+func}} (Callable func, np.\+ndarray values, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_a769401c197bf378db52d765134fda2cb}{cumsum}} (np.\+ndarray values, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_aa7e597d14d88857a5ecdd24152fae790}{cumprod}} (np.\+ndarray values, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_a840ee0cf7a32c2504fbfc4b23767f6d7}{cummin}} (np.\+ndarray values, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_ad9715d33ce0726be9e2296b0a7c95d85}{cummax}} (np.\+ndarray values, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, \texorpdfstring{$\ast$}{*}bool skipna=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}masked_accumulations.py is for accumulation algorithms using a mask-based approach
+for missing values.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_ad99d7878855f37b38e93421b2d2b0226}\label{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_ad99d7878855f37b38e93421b2d2b0226} 
+\index{pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}!\_cum\_func@{\_cum\_func}}
+\index{\_cum\_func@{\_cum\_func}!pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}}
+\doxysubsubsection{\texorpdfstring{\_cum\_func()}{\_cum\_func()}}
+{\footnotesize\ttfamily pandas.\+core.\+array\+\_\+algos.\+masked\+\_\+accumulations.\+\_\+cum\+\_\+func (\begin{DoxyParamCaption}\item[{Callable}]{func,  }\item[{np.\+ndarray}]{values,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}}]{mask,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Accumulations for 1D masked array.
+
+We will modify values in place to replace NAs with the appropriate fill value.
+
+Parameters
+----------
+func : np.cumsum, np.cumprod, np.maximum.accumulate, np.minimum.accumulate
+values : np.ndarray
+    Numpy array with the values (can be of any dtype that support the
+    operation).
+mask : np.ndarray
+    Boolean numpy array (True values indicate missing values).
+skipna : bool, default True
+    Whether to skip NA.
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_ad9715d33ce0726be9e2296b0a7c95d85}\label{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_ad9715d33ce0726be9e2296b0a7c95d85} 
+\index{pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}!cummax@{cummax}}
+\index{cummax@{cummax}!pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}}
+\doxysubsubsection{\texorpdfstring{cummax()}{cummax()}}
+{\footnotesize\ttfamily pandas.\+core.\+array\+\_\+algos.\+masked\+\_\+accumulations.\+cummax (\begin{DoxyParamCaption}\item[{np.\+ndarray}]{values,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}}]{mask,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_a840ee0cf7a32c2504fbfc4b23767f6d7}\label{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_a840ee0cf7a32c2504fbfc4b23767f6d7} 
+\index{pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}!cummin@{cummin}}
+\index{cummin@{cummin}!pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}}
+\doxysubsubsection{\texorpdfstring{cummin()}{cummin()}}
+{\footnotesize\ttfamily pandas.\+core.\+array\+\_\+algos.\+masked\+\_\+accumulations.\+cummin (\begin{DoxyParamCaption}\item[{np.\+ndarray}]{values,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}}]{mask,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_aa7e597d14d88857a5ecdd24152fae790}\label{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_aa7e597d14d88857a5ecdd24152fae790} 
+\index{pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}!cumprod@{cumprod}}
+\index{cumprod@{cumprod}!pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}}
+\doxysubsubsection{\texorpdfstring{cumprod()}{cumprod()}}
+{\footnotesize\ttfamily pandas.\+core.\+array\+\_\+algos.\+masked\+\_\+accumulations.\+cumprod (\begin{DoxyParamCaption}\item[{np.\+ndarray}]{values,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}}]{mask,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_a769401c197bf378db52d765134fda2cb}\label{namespacepandas_1_1core_1_1array__algos_1_1masked__accumulations_a769401c197bf378db52d765134fda2cb} 
+\index{pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}!cumsum@{cumsum}}
+\index{cumsum@{cumsum}!pandas.core.array\_algos.masked\_accumulations@{pandas.core.array\_algos.masked\_accumulations}}
+\doxysubsubsection{\texorpdfstring{cumsum()}{cumsum()}}
+{\footnotesize\ttfamily pandas.\+core.\+array\+\_\+algos.\+masked\+\_\+accumulations.\+cumsum (\begin{DoxyParamCaption}\item[{np.\+ndarray}]{values,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}}]{mask,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{skipna = {\ttfamily True} }\end{DoxyParamCaption})}
+

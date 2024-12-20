@@ -1,0 +1,202 @@
+\doxysection{arrayscalars.\+h}
+\hypertarget{arrayscalars_8h_source}{}\label{arrayscalars_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/arrayscalars.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/arrayscalars.h}}
+\mbox{\hyperlink{arrayscalars_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_ARRAYSCALARS\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_ARRAYSCALARS\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ \_MULTIARRAYMODULE}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ \mbox{\hyperlink{structPyBoolScalarObject_a5a0a26b1f60e58289812124abf5271f7}{obval}};}
+\DoxyCodeLine{00008\ \}\ \mbox{\hyperlink{structPyBoolScalarObject}{PyBoolScalarObject}};}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structPyByteScalarObject_aa696cbf2e62bfcf23743872d4a30c37a}{obval}};}
+\DoxyCodeLine{00015\ \}\ \mbox{\hyperlink{structPyByteScalarObject}{PyByteScalarObject}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{structPyShortScalarObject_a04ed52238be1cd69f5805374267b454e}{obval}};}
+\DoxyCodeLine{00021\ \}\ \mbox{\hyperlink{structPyShortScalarObject}{PyShortScalarObject}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPyIntScalarObject_af7a16e9e7e6e25e465c3233756b8fbac}{obval}};}
+\DoxyCodeLine{00027\ \}\ \mbox{\hyperlink{structPyIntScalarObject}{PyIntScalarObject}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{structPyLongScalarObject_a34888744cd25d4bd8e4d902e8ea6875e}{obval}};}
+\DoxyCodeLine{00033\ \}\ \mbox{\hyperlink{structPyLongScalarObject}{PyLongScalarObject}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\_longlong}}\ \mbox{\hyperlink{structPyLongLongScalarObject_a019fab57ecf553654c7f5465a88bce91}{obval}};}
+\DoxyCodeLine{00039\ \}\ \mbox{\hyperlink{structPyLongLongScalarObject}{PyLongLongScalarObject}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structPyUByteScalarObject_a2229fc75dac09ac91c657c6929cb04a1}{obval}};}
+\DoxyCodeLine{00045\ \}\ \mbox{\hyperlink{structPyUByteScalarObject}{PyUByteScalarObject}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{structPyUShortScalarObject_aa415447f5b75742410c88f9257172377}{obval}};}
+\DoxyCodeLine{00051\ \}\ \mbox{\hyperlink{structPyUShortScalarObject}{PyUShortScalarObject}};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPyUIntScalarObject_a42442bf5cb2f6345805d698865242ecc}{obval}};}
+\DoxyCodeLine{00057\ \}\ \mbox{\hyperlink{structPyUIntScalarObject}{PyUIntScalarObject}};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{structPyULongScalarObject_a65b062c9b4c186a154cde4a4de96d1e5}{obval}};}
+\DoxyCodeLine{00063\ \}\ \mbox{\hyperlink{structPyULongScalarObject}{PyULongScalarObject}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\_ulonglong}}\ \mbox{\hyperlink{structPyULongLongScalarObject_ae3f675eab855fcb593fee7bc9876d14f}{obval}};}
+\DoxyCodeLine{00069\ \}\ \mbox{\hyperlink{structPyULongLongScalarObject}{PyULongLongScalarObject}};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\_half}}\ \mbox{\hyperlink{structPyHalfScalarObject_a5841dce6e3b8e487e79805423e06a620}{obval}};}
+\DoxyCodeLine{00075\ \}\ \mbox{\hyperlink{structPyHalfScalarObject}{PyHalfScalarObject}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structPyFloatScalarObject_a0f07f8f0f03a6da07b1ec109592d8a2b}{obval}};}
+\DoxyCodeLine{00081\ \}\ \mbox{\hyperlink{structPyFloatScalarObject}{PyFloatScalarObject}};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structPyDoubleScalarObject_a34c69251a2327a2a4ffb932da026a65c}{obval}};}
+\DoxyCodeLine{00087\ \}\ \mbox{\hyperlink{structPyDoubleScalarObject}{PyDoubleScalarObject}};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\_longdouble}}\ \mbox{\hyperlink{structPyLongDoubleScalarObject_ab0651e8c5a31d24d2672e45c3f206fee}{obval}};}
+\DoxyCodeLine{00093\ \}\ \mbox{\hyperlink{structPyLongDoubleScalarObject}{PyLongDoubleScalarObject}};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\_cfloat}}\ \mbox{\hyperlink{structPyCFloatScalarObject_a02ecbc17085431ac73cb6f073a363641}{obval}};}
+\DoxyCodeLine{00099\ \}\ \mbox{\hyperlink{structPyCFloatScalarObject}{PyCFloatScalarObject}};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\_cdouble}}\ \mbox{\hyperlink{structPyCDoubleScalarObject_ab1fabad1121738df8e8eeeb6f751d1a3}{obval}};}
+\DoxyCodeLine{00105\ \}\ \mbox{\hyperlink{structPyCDoubleScalarObject}{PyCDoubleScalarObject}};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\_clongdouble}}\ \mbox{\hyperlink{structPyCLongDoubleScalarObject_a91bc86b790e256fc93c1dcfb241fbf43}{obval}};}
+\DoxyCodeLine{00111\ \}\ \mbox{\hyperlink{structPyCLongDoubleScalarObject}{PyCLongDoubleScalarObject}};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ PyObject\ *\ \mbox{\hyperlink{structPyObjectScalarObject_a2ca55faccab9f5bd81f36ffe1cef278e}{obval}};}
+\DoxyCodeLine{00117\ \}\ \mbox{\hyperlink{structPyObjectScalarObject}{PyObjectScalarObject}};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a346c4c4fa39422a1cb2137423d407bbb}{npy\_datetime}}\ \mbox{\hyperlink{structPyDatetimeScalarObject_ab6f01dd90796ef8b7261ed646f7831cf}{obval}};}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DatetimeMetaData}{PyArray\_DatetimeMetaData}}\ \mbox{\hyperlink{structPyDatetimeScalarObject_a3d73c2416837a6061328c8ecb3e2b4d3}{obmeta}};}
+\DoxyCodeLine{00123\ \}\ \mbox{\hyperlink{structPyDatetimeScalarObject}{PyDatetimeScalarObject}};}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a37d0380d114c93c437279e4ed3e8fdf8}{npy\_timedelta}}\ \mbox{\hyperlink{structPyTimedeltaScalarObject_a44e85d0dc4d7671e44ebd573614f7170}{obval}};}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structPyArray__DatetimeMetaData}{PyArray\_DatetimeMetaData}}\ \mbox{\hyperlink{structPyTimedeltaScalarObject_a2eae1afd3d2801865e719c6100099e00}{obmeta}};}
+\DoxyCodeLine{00129\ \}\ \mbox{\hyperlink{structPyTimedeltaScalarObject}{PyTimedeltaScalarObject}};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ PyObject\_HEAD}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structPyScalarObject_abbf52293ec85e1cffa4b340860410461}{obval}};}
+\DoxyCodeLine{00135\ \}\ \mbox{\hyperlink{structPyScalarObject}{PyScalarObject}};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#define\ PyStringScalarObject\ PyBytesObject}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#ifndef\ Py\_LIMITED\_API}}
+\DoxyCodeLine{00139\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ note\ that\ the\ PyObject\_HEAD\ macro\ lives\ right\ here\ */}}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ PyUnicodeObject\ \mbox{\hyperlink{structPyUnicodeScalarObject_a93140abcf981ac659e121983a5cf08d8}{base}};}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ Py\_UCS4\ *\mbox{\hyperlink{structPyUnicodeScalarObject_a7d420a7a2c357b6313ec47b4f29af53d}{obval}};}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\ \ \ \ \#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_1\_20\_API\_VERSION}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structPyUnicodeScalarObject_a4861b16722a8bd165905f9fcd18be51d}{buffer\_fmt}};}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00146\ \}\ \mbox{\hyperlink{structPyUnicodeScalarObject}{PyUnicodeScalarObject}};}
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ PyObject\_VAR\_HEAD}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structPyVoidScalarObject_af7db74c44246f091c473bf87de502622}{obval}};}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\#if\ defined(NPY\_INTERNAL\_BUILD)\ \&\&\ NPY\_INTERNAL\_BUILD}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Internally\ use\ the\ subclass\ to\ allow\ accessing\ names/fields\ */}}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__LegacyDescr}{\_PyArray\_LegacyDescr}}\ *descr;}
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct__PyArray__Descr}{PyArray\_Descr}}\ *\mbox{\hyperlink{structPyVoidScalarObject_adcb0a313704a27f06142e94a80dbc6ef}{descr}};}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structPyVoidScalarObject_a0dafb5132b2d92c88b2d17eb9b390a16}{flags}};}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ PyObject\ *\mbox{\hyperlink{structPyVoidScalarObject_a998543bf14e835300105d6e3155dbc56}{base}};}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\ \ \ \ \#if\ NPY\_FEATURE\_VERSION\ >=\ NPY\_1\_20\_API\_VERSION}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *\mbox{\hyperlink{structPyVoidScalarObject_a9415ad09d4bdc2b8373aebb27fd096cb}{\_buffer\_info}};\ \ \textcolor{comment}{/*\ private\ buffer\ info,\ tagged\ to\ allow\ warning\ */}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00164\ \}\ \mbox{\hyperlink{structPyVoidScalarObject}{PyVoidScalarObject}};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \textcolor{comment}{/*\ Macros}}
+\DoxyCodeLine{00167\ \textcolor{comment}{\ \ \ \ \ Py<Cls><bitsize>ScalarObject}}
+\DoxyCodeLine{00168\ \textcolor{comment}{\ \ \ \ \ Py<Cls><bitsize>ArrType\_Type}}
+\DoxyCodeLine{00169\ \textcolor{comment}{\ \ \ are\ defined\ in\ ndarrayobject.h}}
+\DoxyCodeLine{00170\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_False\ ((PyObject\ *)(\&(\_PyArrayScalar\_BoolValues[0])))}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_True\ ((PyObject\ *)(\&(\_PyArrayScalar\_BoolValues[1])))}}
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_FromLong(i)\ \(\backslash\)}}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ((PyObject\ *)(\&(\_PyArrayScalar\_BoolValues[((i)!=0)])))}}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_RETURN\_BOOL\_FROM\_LONG(i)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00177\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ return\ Py\_INCREF(PyArrayScalar\_FromLong(i)),\ \(\backslash\)}}
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PyArrayScalar\_FromLong(i)}}
+\DoxyCodeLine{00179\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_RETURN\_FALSE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00180\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ return\ Py\_INCREF(PyArrayScalar\_False),\ \ \(\backslash\)}}
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PyArrayScalar\_False}}
+\DoxyCodeLine{00182\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_RETURN\_TRUE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00183\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ return\ Py\_INCREF(PyArrayScalar\_True),\ \ \ \(\backslash\)}}
+\DoxyCodeLine{00184\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PyArrayScalar\_True}}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_New(cls)\ \(\backslash\)}}
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ Py\#\#cls\#\#ArrType\_Type.tp\_alloc(\&Py\#\#cls\#\#ArrType\_Type,\ 0)}}
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#ifndef\ Py\_LIMITED\_API}}
+\DoxyCodeLine{00189\ \textcolor{comment}{/*\ For\ the\ limited\ API,\ use\ PyArray\_ScalarAsCtype\ instead\ */}}
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_VAL(obj,\ cls)\ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ((Py\#\#cls\#\#ScalarObject\ *)obj)-\/>obval}}
+\DoxyCodeLine{00192\ \textcolor{preprocessor}{\#define\ PyArrayScalar\_ASSIGN(obj,\ cls,\ val)\ \(\backslash\)}}
+\DoxyCodeLine{00193\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ PyArrayScalar\_VAL(obj,\ cls)\ =\ val}}
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_ARRAYSCALARS\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

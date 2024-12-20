@@ -1,0 +1,182 @@
+\doxysection{Référence de la classe pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar}
+\hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar}{}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar}\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a35a487f44be26cdfcd3f7e4607af5ef0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a1188d7b7b420f40ead2d9ef7187edb0b}{name}}="{}"{}, \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a8f281e5ec992f9a766747accabb52e64}{rules}}=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a7691e1e00df6a4820fa3c5a93275b8d8}{rule\+\_\+from\+\_\+name}} (self, str \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a1188d7b7b420f40ead2d9ef7187edb0b}{name}})
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_aa58fc68767aa8bdb389975355b276b69}{holidays}} (self, start=None, end=None, bool return\+\_\+name=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a4e5f31cffe128afdd72501c8d1b45d6f}{merge}} (self, other, bool inplace=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1HolidayCalendarMetaClass}{pandas.\+tseries.\+holiday.\+Holiday\+Calendar\+Meta\+Class}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1HolidayCalendarMetaClass_afa7ae74135d044da39c0e7ae713cdd99}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, str clsname, bases, attrs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a9c016aa6ebace08aa4c126d6c56b084d}{merge\+\_\+class}} (base, other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a1188d7b7b420f40ead2d9ef7187edb0b}{name}}
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a54fcc4a95304f4267ed81146a69c0fd4}{rules}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a8f281e5ec992f9a766747accabb52e64}{rules}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a0a27a0ab87e8c9291ea952cab393d765}{start\+\_\+date}} = Timestamp(datetime(1970, 1, 1))
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a30f14064c4061c5ee45cbe73364cd073}{end\+\_\+date}} = Timestamp(datetime(2200, 12, 31))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_aa3206a6ddd6f72ad147154e1f3794209}{\+\_\+cache}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Abstract interface to create holidays following certain rules.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a35a487f44be26cdfcd3f7e4607af5ef0}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a35a487f44be26cdfcd3f7e4607af5ef0} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{name = {\ttfamily "{}"{}},  }\item[{}]{rules = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes holiday object with a given set a rules.  Normally
+classes just have the rules defined within them.
+
+Parameters
+----------
+name : str
+    Name of the holiday calendar, defaults to class name
+rules : array of Holiday objects
+    A set of rules used to create the holidays.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_aa58fc68767aa8bdb389975355b276b69}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_aa58fc68767aa8bdb389975355b276b69} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!holidays@{holidays}}
+\index{holidays@{holidays}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{holidays()}{holidays()}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+holidays (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{start = {\ttfamily None},  }\item[{}]{end = {\ttfamily None},  }\item[{bool }]{return\+\_\+name = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a curve with holidays between start_date and end_date
+
+Parameters
+----------
+start : starting date, datetime-like, optional
+end : ending date, datetime-like, optional
+return_name : bool, optional
+    If True, return a series that has dates and holiday names.
+    False will only return a DatetimeIndex of dates.
+
+Returns
+-------
+    DatetimeIndex of holidays
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a4e5f31cffe128afdd72501c8d1b45d6f}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a4e5f31cffe128afdd72501c8d1b45d6f} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!merge@{merge}}
+\index{merge@{merge}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+merge (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other,  }\item[{bool }]{inplace = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Merge holiday calendars together.  The caller's class
+rules take precedence.  The merge will be done
+based on each holiday's name.
+
+Parameters
+----------
+other : holiday calendar
+inplace : bool (default=False)
+    If True set rule_table to holidays, else return array of Holidays
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a9c016aa6ebace08aa4c126d6c56b084d}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a9c016aa6ebace08aa4c126d6c56b084d} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!merge\_class@{merge\_class}}
+\index{merge\_class@{merge\_class}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{merge\_class()}{merge\_class()}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+merge\+\_\+class (\begin{DoxyParamCaption}\item[{}]{base,  }\item[{}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Merge holiday calendars together. The base calendar
+will take precedence to other. The merge will be done
+based on each holiday's name.
+
+Parameters
+----------
+base : AbstractHolidayCalendar
+  instance/subclass or array of Holiday objects
+other : AbstractHolidayCalendar
+  instance/subclass or array of Holiday objects
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a7691e1e00df6a4820fa3c5a93275b8d8}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a7691e1e00df6a4820fa3c5a93275b8d8} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!rule\_from\_name@{rule\_from\_name}}
+\index{rule\_from\_name@{rule\_from\_name}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{rule\_from\_name()}{rule\_from\_name()}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+rule\+\_\+from\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_aa3206a6ddd6f72ad147154e1f3794209}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_aa3206a6ddd6f72ad147154e1f3794209} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!\_cache@{\_cache}}
+\index{\_cache@{\_cache}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{\_cache}{\_cache}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+\_\+cache = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a30f14064c4061c5ee45cbe73364cd073}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a30f14064c4061c5ee45cbe73364cd073} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!end\_date@{end\_date}}
+\index{end\_date@{end\_date}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{end\_date}{end\_date}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+end\+\_\+date = Timestamp(datetime(2200, 12, 31))\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a1188d7b7b420f40ead2d9ef7187edb0b}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a1188d7b7b420f40ead2d9ef7187edb0b} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!name@{name}}
+\index{name@{name}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+name}
+
+\Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a8f281e5ec992f9a766747accabb52e64}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a8f281e5ec992f9a766747accabb52e64} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!rules@{rules}}
+\index{rules@{rules}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{rules}{rules}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily list pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+rules = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a54fcc4a95304f4267ed81146a69c0fd4}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a54fcc4a95304f4267ed81146a69c0fd4} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!rules@{rules}}
+\index{rules@{rules}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{rules}{rules}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+rules}
+
+\Hypertarget{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a0a27a0ab87e8c9291ea952cab393d765}\label{classpandas_1_1tseries_1_1holiday_1_1AbstractHolidayCalendar_a0a27a0ab87e8c9291ea952cab393d765} 
+\index{pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}!start\_date@{start\_date}}
+\index{start\_date@{start\_date}!pandas.tseries.holiday.AbstractHolidayCalendar@{pandas.tseries.holiday.AbstractHolidayCalendar}}
+\doxysubsubsection{\texorpdfstring{start\_date}{start\_date}}
+{\footnotesize\ttfamily pandas.\+tseries.\+holiday.\+Abstract\+Holiday\+Calendar.\+start\+\_\+date = Timestamp(datetime(1970, 1, 1))\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/tseries/\mbox{\hyperlink{holiday_8py}{holiday.\+py}}\end{DoxyCompactItemize}

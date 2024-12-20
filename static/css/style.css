@@ -1,0 +1,31 @@
+.carte-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espacement entre les cartes */
+}
+
+.carte-container label {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.carte-container img {
+    width: 100px; /* Réduit la taille des cartes */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carte-container label:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carte-container input[type="radio"]:checked + img {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.5);
+    border: 2px solid #007bff;
+}

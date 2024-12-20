@@ -1,0 +1,163 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage test\+\_\+simd}
+\hypertarget{namespacetest__simd}{}\label{namespacetest__simd}\index{test\_simd@{test\_simd}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__ALL}{\+\_\+\+SIMD\+\_\+\+ALL}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__BOOL}{\+\_\+\+SIMD\+\_\+\+BOOL}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__FP}{\+\_\+\+SIMD\+\_\+\+FP}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__FP32}{\+\_\+\+SIMD\+\_\+\+FP32}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__FP64}{\+\_\+\+SIMD\+\_\+\+FP64}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__INT}{\+\_\+\+SIMD\+\_\+\+INT}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__Test__Utility}{\+\_\+\+Test\+\_\+\+Utility}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__simd_af38daf012b038b87a203a78396f8af77}{check\+\_\+floatstatus}} (divbyzero=False, overflow=False, underflow=False, invalid=False, all=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_a812291aa3161af5d1bf98389ba213c9c}{bool\+\_\+sfx}} = ("{}b8"{}, "{}b16"{}, "{}b32"{}, "{}b64"{})
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_a63f95d844f93b2b5fc296619b93e5bb9}{int\+\_\+sfx}} = ("{}u8"{}, "{}s8"{}, "{}u16"{}, "{}s16"{}, "{}u32"{}, "{}s32"{}, "{}u64"{}, "{}s64"{})
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_acec6ebd718a2ba557d788594ab73035b}{fp\+\_\+sfx}} = ("{}f32"{}, "{}f64"{})
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_ae4eb35cc7cadbc00f80963f8f81b9c0e}{all\+\_\+sfx}} = \mbox{\hyperlink{namespacetest__simd_a63f95d844f93b2b5fc296619b93e5bb9}{int\+\_\+sfx}} + \mbox{\hyperlink{namespacetest__simd_acec6ebd718a2ba557d788594ab73035b}{fp\+\_\+sfx}}
+\item 
+dict \mbox{\hyperlink{namespacetest__simd_aaa538a2d213b78f016f97c06053ffb3b}{tests\+\_\+registry}}
+\item 
+str \mbox{\hyperlink{namespacetest__simd_a71fdbc3b15a3550b9c4714c1589fcca6}{simd\+\_\+width}} = npyv.\+simd if npyv else \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetest__simd_a0e3019510b2220973e15ad2493f2de54}{pretty\+\_\+name}} = target\+\_\+name.\+split(\textquotesingle{}\+\_\+\+\_\+\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespacetest__simd_a28a0d2394342da64163f1c3511ca363d}{skip}} = "{}"{}
+\item 
+\mbox{\hyperlink{namespacetest__simd_ab5acb5dc08aa7c9c7448955e2767fc65}{skip\+\_\+sfx}} = dict()
+\item 
+\mbox{\hyperlink{namespacetest__simd_a13e82546f67e73ddf106912247892891}{skip\+\_\+m}} = skip\+\_\+sfx.\+get(sfx, \mbox{\hyperlink{namespacetest__simd_a28a0d2394342da64163f1c3511ca363d}{skip}})
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_a1255284f9e6d9d7577a62f83e35d2ce9}{inhr}} = (cls,)
+\item 
+\mbox{\hyperlink{namespacetest__simd_ad776208a8eae1c4fce14fdb923c84c82}{attr}} = dict(npyv=targets\mbox{[}target\+\_\+name\mbox{]}, sfx=sfx, target\+\_\+name=target\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacetest__simd_a2e94632aa93893cd27dbc4690f31a0a5}{tcls}} = type(f"{}\+Test\{cls.\+\_\+\+\_\+name\+\_\+\+\_\+\}\+\_\+\{\mbox{\hyperlink{namespacetest__simd_a71fdbc3b15a3550b9c4714c1589fcca6}{simd\+\_\+width}}\}\+\_\+\{target\+\_\+name\}\+\_\+\{sfx\}"{}, inhr, \mbox{\hyperlink{namespacetest__simd_ad776208a8eae1c4fce14fdb923c84c82}{attr}})
+\item 
+\mbox{\hyperlink{namespacetest__simd_a5a8bcbfbd668bb82b72d9369354ac08f}{reason}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacetest__simd_af38daf012b038b87a203a78396f8af77}\label{namespacetest__simd_af38daf012b038b87a203a78396f8af77} 
+\index{test\_simd@{test\_simd}!check\_floatstatus@{check\_floatstatus}}
+\index{check\_floatstatus@{check\_floatstatus}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{check\_floatstatus()}{check\_floatstatus()}}
+{\footnotesize\ttfamily test\+\_\+simd.\+check\+\_\+floatstatus (\begin{DoxyParamCaption}\item[{}]{divbyzero = {\ttfamily False},  }\item[{}]{overflow = {\ttfamily False},  }\item[{}]{underflow = {\ttfamily False},  }\item[{}]{invalid = {\ttfamily False},  }\item[{}]{all = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacetest__simd_ae4eb35cc7cadbc00f80963f8f81b9c0e}\label{namespacetest__simd_ae4eb35cc7cadbc00f80963f8f81b9c0e} 
+\index{test\_simd@{test\_simd}!all\_sfx@{all\_sfx}}
+\index{all\_sfx@{all\_sfx}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{all\_sfx}{all\_sfx}}
+{\footnotesize\ttfamily tuple test\+\_\+simd.\+all\+\_\+sfx = \mbox{\hyperlink{namespacetest__simd_a63f95d844f93b2b5fc296619b93e5bb9}{int\+\_\+sfx}} + \mbox{\hyperlink{namespacetest__simd_acec6ebd718a2ba557d788594ab73035b}{fp\+\_\+sfx}}}
+
+\Hypertarget{namespacetest__simd_ad776208a8eae1c4fce14fdb923c84c82}\label{namespacetest__simd_ad776208a8eae1c4fce14fdb923c84c82} 
+\index{test\_simd@{test\_simd}!attr@{attr}}
+\index{attr@{attr}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{attr}{attr}}
+{\footnotesize\ttfamily test\+\_\+simd.\+attr = dict(npyv=targets\mbox{[}target\+\_\+name\mbox{]}, sfx=sfx, target\+\_\+name=target\+\_\+name)}
+
+\Hypertarget{namespacetest__simd_a812291aa3161af5d1bf98389ba213c9c}\label{namespacetest__simd_a812291aa3161af5d1bf98389ba213c9c} 
+\index{test\_simd@{test\_simd}!bool\_sfx@{bool\_sfx}}
+\index{bool\_sfx@{bool\_sfx}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{bool\_sfx}{bool\_sfx}}
+{\footnotesize\ttfamily tuple test\+\_\+simd.\+bool\+\_\+sfx = ("{}b8"{}, "{}b16"{}, "{}b32"{}, "{}b64"{})}
+
+\Hypertarget{namespacetest__simd_acec6ebd718a2ba557d788594ab73035b}\label{namespacetest__simd_acec6ebd718a2ba557d788594ab73035b} 
+\index{test\_simd@{test\_simd}!fp\_sfx@{fp\_sfx}}
+\index{fp\_sfx@{fp\_sfx}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{fp\_sfx}{fp\_sfx}}
+{\footnotesize\ttfamily tuple test\+\_\+simd.\+fp\+\_\+sfx = ("{}f32"{}, "{}f64"{})}
+
+\Hypertarget{namespacetest__simd_a1255284f9e6d9d7577a62f83e35d2ce9}\label{namespacetest__simd_a1255284f9e6d9d7577a62f83e35d2ce9} 
+\index{test\_simd@{test\_simd}!inhr@{inhr}}
+\index{inhr@{inhr}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{inhr}{inhr}}
+{\footnotesize\ttfamily tuple test\+\_\+simd.\+inhr = (cls,)}
+
+\Hypertarget{namespacetest__simd_a63f95d844f93b2b5fc296619b93e5bb9}\label{namespacetest__simd_a63f95d844f93b2b5fc296619b93e5bb9} 
+\index{test\_simd@{test\_simd}!int\_sfx@{int\_sfx}}
+\index{int\_sfx@{int\_sfx}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{int\_sfx}{int\_sfx}}
+{\footnotesize\ttfamily tuple test\+\_\+simd.\+int\+\_\+sfx = ("{}u8"{}, "{}s8"{}, "{}u16"{}, "{}s16"{}, "{}u32"{}, "{}s32"{}, "{}u64"{}, "{}s64"{})}
+
+\Hypertarget{namespacetest__simd_a0e3019510b2220973e15ad2493f2de54}\label{namespacetest__simd_a0e3019510b2220973e15ad2493f2de54} 
+\index{test\_simd@{test\_simd}!pretty\_name@{pretty\_name}}
+\index{pretty\_name@{pretty\_name}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{pretty\_name}{pretty\_name}}
+{\footnotesize\ttfamily str test\+\_\+simd.\+pretty\+\_\+name = target\+\_\+name.\+split(\textquotesingle{}\+\_\+\+\_\+\textquotesingle{})}
+
+\Hypertarget{namespacetest__simd_a5a8bcbfbd668bb82b72d9369354ac08f}\label{namespacetest__simd_a5a8bcbfbd668bb82b72d9369354ac08f} 
+\index{test\_simd@{test\_simd}!reason@{reason}}
+\index{reason@{reason}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{reason}{reason}}
+{\footnotesize\ttfamily test\+\_\+simd.\+reason}
+
+\Hypertarget{namespacetest__simd_a71fdbc3b15a3550b9c4714c1589fcca6}\label{namespacetest__simd_a71fdbc3b15a3550b9c4714c1589fcca6} 
+\index{test\_simd@{test\_simd}!simd\_width@{simd\_width}}
+\index{simd\_width@{simd\_width}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{simd\_width}{simd\_width}}
+{\footnotesize\ttfamily str test\+\_\+simd.\+simd\+\_\+width = npyv.\+simd if npyv else \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{namespacetest__simd_a28a0d2394342da64163f1c3511ca363d}\label{namespacetest__simd_a28a0d2394342da64163f1c3511ca363d} 
+\index{test\_simd@{test\_simd}!skip@{skip}}
+\index{skip@{skip}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{skip}{skip}}
+{\footnotesize\ttfamily str test\+\_\+simd.\+skip = "{}"{}}
+
+\Hypertarget{namespacetest__simd_a13e82546f67e73ddf106912247892891}\label{namespacetest__simd_a13e82546f67e73ddf106912247892891} 
+\index{test\_simd@{test\_simd}!skip\_m@{skip\_m}}
+\index{skip\_m@{skip\_m}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{skip\_m}{skip\_m}}
+{\footnotesize\ttfamily test\+\_\+simd.\+skip\+\_\+m = skip\+\_\+sfx.\+get(sfx, \mbox{\hyperlink{namespacetest__simd_a28a0d2394342da64163f1c3511ca363d}{skip}})}
+
+\Hypertarget{namespacetest__simd_ab5acb5dc08aa7c9c7448955e2767fc65}\label{namespacetest__simd_ab5acb5dc08aa7c9c7448955e2767fc65} 
+\index{test\_simd@{test\_simd}!skip\_sfx@{skip\_sfx}}
+\index{skip\_sfx@{skip\_sfx}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{skip\_sfx}{skip\_sfx}}
+{\footnotesize\ttfamily test\+\_\+simd.\+skip\+\_\+sfx = dict()}
+
+\Hypertarget{namespacetest__simd_a2e94632aa93893cd27dbc4690f31a0a5}\label{namespacetest__simd_a2e94632aa93893cd27dbc4690f31a0a5} 
+\index{test\_simd@{test\_simd}!tcls@{tcls}}
+\index{tcls@{tcls}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{tcls}{tcls}}
+{\footnotesize\ttfamily test\+\_\+simd.\+tcls = type(f"{}\+Test\{cls.\+\_\+\+\_\+name\+\_\+\+\_\+\}\+\_\+\{\mbox{\hyperlink{namespacetest__simd_a71fdbc3b15a3550b9c4714c1589fcca6}{simd\+\_\+width}}\}\+\_\+\{target\+\_\+name\}\+\_\+\{sfx\}"{}, inhr, \mbox{\hyperlink{namespacetest__simd_ad776208a8eae1c4fce14fdb923c84c82}{attr}})}
+
+\Hypertarget{namespacetest__simd_aaa538a2d213b78f016f97c06053ffb3b}\label{namespacetest__simd_aaa538a2d213b78f016f97c06053ffb3b} 
+\index{test\_simd@{test\_simd}!tests\_registry@{tests\_registry}}
+\index{tests\_registry@{tests\_registry}!test\_simd@{test\_simd}}
+\doxysubsubsection{\texorpdfstring{tests\_registry}{tests\_registry}}
+{\footnotesize\ttfamily dict test\+\_\+simd.\+tests\+\_\+registry}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ bool\_sfx:\ \_SIMD\_BOOL,}
+\DoxyCodeLine{00003\ \ \ \ \ int\_sfx\ :\ \_SIMD\_INT,}
+\DoxyCodeLine{00004\ \ \ \ \ fp\_sfx\ \ :\ \_SIMD\_FP,}
+\DoxyCodeLine{00005\ \ \ \ \ (\textcolor{stringliteral}{"{}f32"{}},):\ \_SIMD\_FP32,}
+\DoxyCodeLine{00006\ \ \ \ \ (\textcolor{stringliteral}{"{}f64"{}},):\ \_SIMD\_FP64,}
+\DoxyCodeLine{00007\ \ \ \ \ all\_sfx\ :\ \_SIMD\_ALL}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}

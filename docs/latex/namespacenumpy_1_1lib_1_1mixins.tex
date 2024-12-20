@@ -1,0 +1,73 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+lib.\+mixins}
+\hypertarget{namespacenumpy_1_1lib_1_1mixins}{}\label{namespacenumpy_1_1lib_1_1mixins}\index{numpy.lib.mixins@{numpy.lib.mixins}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1lib_1_1mixins_1_1NDArrayOperatorsMixin}{NDArray\+Operators\+Mixin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1mixins_ad243cbc7bfed2556e55d9b552e44b39d}{\+\_\+disables\+\_\+array\+\_\+ufunc}} (obj)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1mixins_a5d947872d887a9be5c9650de6374a72f}{\+\_\+binary\+\_\+method}} (\mbox{\hyperlink{structufunc}{ufunc}}, name)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1mixins_a47d948dce46fd92cf8ccf5bfb01cc0a2}{\+\_\+reflected\+\_\+binary\+\_\+method}} (\mbox{\hyperlink{structufunc}{ufunc}}, name)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1mixins_a13352ede57374394ad86e5072b97e520}{\+\_\+inplace\+\_\+binary\+\_\+method}} (\mbox{\hyperlink{structufunc}{ufunc}}, name)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1mixins_a4e8c055b321992664314c7296fc08948}{\+\_\+numeric\+\_\+methods}} (\mbox{\hyperlink{structufunc}{ufunc}}, name)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1mixins_a549a44a160edf7f1ff1fc17588c44d5a}{\+\_\+unary\+\_\+method}} (\mbox{\hyperlink{structufunc}{ufunc}}, name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Mixin classes for custom array types that don't inherit from ndarray.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1lib_1_1mixins_a5d947872d887a9be5c9650de6374a72f}\label{namespacenumpy_1_1lib_1_1mixins_a5d947872d887a9be5c9650de6374a72f} 
+\index{numpy.lib.mixins@{numpy.lib.mixins}!\_binary\_method@{\_binary\_method}}
+\index{\_binary\_method@{\_binary\_method}!numpy.lib.mixins@{numpy.lib.mixins}}
+\doxysubsubsection{\texorpdfstring{\_binary\_method()}{\_binary\_method()}}
+{\footnotesize\ttfamily numpy.\+lib.\+mixins.\+\_\+binary\+\_\+method (\begin{DoxyParamCaption}\item[{}]{ufunc,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Implement a forward binary method with a ufunc, e.g., __add__.\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1mixins_ad243cbc7bfed2556e55d9b552e44b39d}\label{namespacenumpy_1_1lib_1_1mixins_ad243cbc7bfed2556e55d9b552e44b39d} 
+\index{numpy.lib.mixins@{numpy.lib.mixins}!\_disables\_array\_ufunc@{\_disables\_array\_ufunc}}
+\index{\_disables\_array\_ufunc@{\_disables\_array\_ufunc}!numpy.lib.mixins@{numpy.lib.mixins}}
+\doxysubsubsection{\texorpdfstring{\_disables\_array\_ufunc()}{\_disables\_array\_ufunc()}}
+{\footnotesize\ttfamily numpy.\+lib.\+mixins.\+\_\+disables\+\_\+array\+\_\+ufunc (\begin{DoxyParamCaption}\item[{}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}True when __array_ufunc__ is set to None.\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1mixins_a13352ede57374394ad86e5072b97e520}\label{namespacenumpy_1_1lib_1_1mixins_a13352ede57374394ad86e5072b97e520} 
+\index{numpy.lib.mixins@{numpy.lib.mixins}!\_inplace\_binary\_method@{\_inplace\_binary\_method}}
+\index{\_inplace\_binary\_method@{\_inplace\_binary\_method}!numpy.lib.mixins@{numpy.lib.mixins}}
+\doxysubsubsection{\texorpdfstring{\_inplace\_binary\_method()}{\_inplace\_binary\_method()}}
+{\footnotesize\ttfamily numpy.\+lib.\+mixins.\+\_\+inplace\+\_\+binary\+\_\+method (\begin{DoxyParamCaption}\item[{}]{ufunc,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Implement an in-place binary method with a ufunc, e.g., __iadd__.\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1mixins_a4e8c055b321992664314c7296fc08948}\label{namespacenumpy_1_1lib_1_1mixins_a4e8c055b321992664314c7296fc08948} 
+\index{numpy.lib.mixins@{numpy.lib.mixins}!\_numeric\_methods@{\_numeric\_methods}}
+\index{\_numeric\_methods@{\_numeric\_methods}!numpy.lib.mixins@{numpy.lib.mixins}}
+\doxysubsubsection{\texorpdfstring{\_numeric\_methods()}{\_numeric\_methods()}}
+{\footnotesize\ttfamily numpy.\+lib.\+mixins.\+\_\+numeric\+\_\+methods (\begin{DoxyParamCaption}\item[{}]{ufunc,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Implement forward, reflected and inplace binary methods with a ufunc.\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1mixins_a47d948dce46fd92cf8ccf5bfb01cc0a2}\label{namespacenumpy_1_1lib_1_1mixins_a47d948dce46fd92cf8ccf5bfb01cc0a2} 
+\index{numpy.lib.mixins@{numpy.lib.mixins}!\_reflected\_binary\_method@{\_reflected\_binary\_method}}
+\index{\_reflected\_binary\_method@{\_reflected\_binary\_method}!numpy.lib.mixins@{numpy.lib.mixins}}
+\doxysubsubsection{\texorpdfstring{\_reflected\_binary\_method()}{\_reflected\_binary\_method()}}
+{\footnotesize\ttfamily numpy.\+lib.\+mixins.\+\_\+reflected\+\_\+binary\+\_\+method (\begin{DoxyParamCaption}\item[{}]{ufunc,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Implement a reflected binary method with a ufunc, e.g., __radd__.\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1mixins_a549a44a160edf7f1ff1fc17588c44d5a}\label{namespacenumpy_1_1lib_1_1mixins_a549a44a160edf7f1ff1fc17588c44d5a} 
+\index{numpy.lib.mixins@{numpy.lib.mixins}!\_unary\_method@{\_unary\_method}}
+\index{\_unary\_method@{\_unary\_method}!numpy.lib.mixins@{numpy.lib.mixins}}
+\doxysubsubsection{\texorpdfstring{\_unary\_method()}{\_unary\_method()}}
+{\footnotesize\ttfamily numpy.\+lib.\+mixins.\+\_\+unary\+\_\+method (\begin{DoxyParamCaption}\item[{}]{ufunc,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Implement a unary special method with a ufunc.\end{DoxyVerb}
+ 

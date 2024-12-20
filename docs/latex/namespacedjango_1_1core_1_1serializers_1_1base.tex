@@ -1,0 +1,75 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+core.\+serializers.\+base}
+\hypertarget{namespacedjango_1_1core_1_1serializers_1_1base}{}\label{namespacedjango_1_1core_1_1serializers_1_1base}\index{django.core.serializers.base@{django.core.serializers.base}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializationError}{Deserialization\+Error}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject}{Deserialized\+Object}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1Deserializer}{Deserializer}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1M2MDeserializationError}{M2\+MDeserialization\+Error}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1ProgressBar}{Progress\+Bar}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1SerializationError}{Serialization\+Error}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1Serializer}{Serializer}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1SerializerDoesNotExist}{Serializer\+Does\+Not\+Exist}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1serializers_1_1base_a15d89cf1bd9c077462a3ba20cf621958}{build\+\_\+instance}} (Model, data, db)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1serializers_1_1base_a3646f0cf40ba083a887a522fd0d852de}{deserialize\+\_\+m2m\+\_\+values}} (field, field\+\_\+value, using, handle\+\_\+forward\+\_\+references)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1serializers_1_1base_a3f1c45351c2010debca0f3cedbdd0178}{deserialize\+\_\+fk\+\_\+value}} (field, field\+\_\+value, using, handle\+\_\+forward\+\_\+references)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1serializers_1_1base_a95a90804a35c496f09abffc1b49d8b03}{DEFER\+\_\+\+FIELD}} = object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Module for abstract serializer/unserializer base classes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1core_1_1serializers_1_1base_a15d89cf1bd9c077462a3ba20cf621958}\label{namespacedjango_1_1core_1_1serializers_1_1base_a15d89cf1bd9c077462a3ba20cf621958} 
+\index{django.core.serializers.base@{django.core.serializers.base}!build\_instance@{build\_instance}}
+\index{build\_instance@{build\_instance}!django.core.serializers.base@{django.core.serializers.base}}
+\doxysubsubsection{\texorpdfstring{build\_instance()}{build\_instance()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+build\+\_\+instance (\begin{DoxyParamCaption}\item[{}]{Model,  }\item[{}]{data,  }\item[{}]{db }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a model instance.
+
+If the model instance doesn't have a primary key and the model supports
+natural keys, try to retrieve it from the database.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1serializers_1_1base_a3f1c45351c2010debca0f3cedbdd0178}\label{namespacedjango_1_1core_1_1serializers_1_1base_a3f1c45351c2010debca0f3cedbdd0178} 
+\index{django.core.serializers.base@{django.core.serializers.base}!deserialize\_fk\_value@{deserialize\_fk\_value}}
+\index{deserialize\_fk\_value@{deserialize\_fk\_value}!django.core.serializers.base@{django.core.serializers.base}}
+\doxysubsubsection{\texorpdfstring{deserialize\_fk\_value()}{deserialize\_fk\_value()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+deserialize\+\_\+fk\+\_\+value (\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{field\+\_\+value,  }\item[{}]{using,  }\item[{}]{handle\+\_\+forward\+\_\+references }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1serializers_1_1base_a3646f0cf40ba083a887a522fd0d852de}\label{namespacedjango_1_1core_1_1serializers_1_1base_a3646f0cf40ba083a887a522fd0d852de} 
+\index{django.core.serializers.base@{django.core.serializers.base}!deserialize\_m2m\_values@{deserialize\_m2m\_values}}
+\index{deserialize\_m2m\_values@{deserialize\_m2m\_values}!django.core.serializers.base@{django.core.serializers.base}}
+\doxysubsubsection{\texorpdfstring{deserialize\_m2m\_values()}{deserialize\_m2m\_values()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+deserialize\+\_\+m2m\+\_\+values (\begin{DoxyParamCaption}\item[{}]{field,  }\item[{}]{field\+\_\+value,  }\item[{}]{using,  }\item[{}]{handle\+\_\+forward\+\_\+references }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1core_1_1serializers_1_1base_a95a90804a35c496f09abffc1b49d8b03}\label{namespacedjango_1_1core_1_1serializers_1_1base_a95a90804a35c496f09abffc1b49d8b03} 
+\index{django.core.serializers.base@{django.core.serializers.base}!DEFER\_FIELD@{DEFER\_FIELD}}
+\index{DEFER\_FIELD@{DEFER\_FIELD}!django.core.serializers.base@{django.core.serializers.base}}
+\doxysubsubsection{\texorpdfstring{DEFER\_FIELD}{DEFER\_FIELD}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+DEFER\+\_\+\+FIELD = object()}
+

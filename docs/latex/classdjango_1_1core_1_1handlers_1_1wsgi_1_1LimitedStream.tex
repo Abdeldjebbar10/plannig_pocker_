@@ -1,0 +1,97 @@
+\doxysection{Référence de la classe django.\+core.\+handlers.\+wsgi.\+Limited\+Stream}
+\hypertarget{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream}{}\label{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream}\index{django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+core.\+handlers.\+wsgi.\+Limited\+Stream\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+core.\+handlers.\+wsgi.\+Limited\+Stream\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a70d21459f47706ebb801152a141d4191}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, stream, \mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a712ca8d9e5f8fb9ec356b9dd5c4b392a}{limit}})
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a01766186550a2bafd2a0c0cac1117797}{read}} (self, size=-\/1)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a4703d4270b270eb89fc39953e96e5448}{readline}} (self, size=-\/1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a712ca8d9e5f8fb9ec356b9dd5c4b392a}{limit}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a7a58bafbbf00683a95ad8dd1d749c78f}{\+\_\+read}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a39992d4a510ca44f886c8a0af85a238a}{\+\_\+readline}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a270e4c38fbc349745b2ee48c2566a77d}{\+\_\+pos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Wrap another stream to disallow reading it past a number of bytes.
+
+Based on the implementation from werkzeug.wsgi.LimitedStream
+See https://github.com/pallets/werkzeug/blob/dbf78f67/src/werkzeug/wsgi.py#L828
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a70d21459f47706ebb801152a141d4191}\label{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a70d21459f47706ebb801152a141d4191} 
+\index{django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+wsgi.\+Limited\+Stream.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stream,  }\item[{}]{limit }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a01766186550a2bafd2a0c0cac1117797}\label{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a01766186550a2bafd2a0c0cac1117797} 
+\index{django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}!read@{read}}
+\index{read@{read}!django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+wsgi.\+Limited\+Stream.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a4703d4270b270eb89fc39953e96e5448}\label{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a4703d4270b270eb89fc39953e96e5448} 
+\index{django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}!readline@{readline}}
+\index{readline@{readline}!django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+wsgi.\+Limited\+Stream.\+readline (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a270e4c38fbc349745b2ee48c2566a77d}\label{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a270e4c38fbc349745b2ee48c2566a77d} 
+\index{django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}!\_pos@{\_pos}}
+\index{\_pos@{\_pos}!django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{\_pos}{\_pos}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+wsgi.\+Limited\+Stream.\+\_\+pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a7a58bafbbf00683a95ad8dd1d749c78f}\label{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a7a58bafbbf00683a95ad8dd1d749c78f} 
+\index{django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}!\_read@{\_read}}
+\index{\_read@{\_read}!django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{\_read}{\_read}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+wsgi.\+Limited\+Stream.\+\_\+read\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a39992d4a510ca44f886c8a0af85a238a}\label{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a39992d4a510ca44f886c8a0af85a238a} 
+\index{django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}!\_readline@{\_readline}}
+\index{\_readline@{\_readline}!django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{\_readline}{\_readline}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+wsgi.\+Limited\+Stream.\+\_\+readline\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a712ca8d9e5f8fb9ec356b9dd5c4b392a}\label{classdjango_1_1core_1_1handlers_1_1wsgi_1_1LimitedStream_a712ca8d9e5f8fb9ec356b9dd5c4b392a} 
+\index{django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}!limit@{limit}}
+\index{limit@{limit}!django.core.handlers.wsgi.LimitedStream@{django.core.handlers.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{limit}{limit}}
+{\footnotesize\ttfamily django.\+core.\+handlers.\+wsgi.\+Limited\+Stream.\+limit}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/core/handlers/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2django_2core_2handlers_2wsgi_8py}{wsgi.\+py}}\end{DoxyCompactItemize}

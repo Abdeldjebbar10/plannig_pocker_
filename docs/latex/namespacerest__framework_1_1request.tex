@@ -1,0 +1,74 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+request}
+\hypertarget{namespacerest__framework_1_1request}{}\label{namespacerest__framework_1_1request}\index{rest\_framework.request@{rest\_framework.request}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1request_1_1Empty}{Empty}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1request_1_1ForcedAuthentication}{Forced\+Authentication}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1request_1_1override__method}{override\+\_\+method}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1request_1_1Request}{Request}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1request_1_1WrappedAttributeError}{Wrapped\+Attribute\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1request_aa3bdbfab76872a682a481359e47efefb}{is\+\_\+form\+\_\+media\+\_\+type}} (media\+\_\+type)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1request_a4132986556643590ec40ddbede0ac773}{wrap\+\_\+attributeerrors}} ()
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1request_a16ce15bd8fe1088e8dd512f76db792d0}{\+\_\+hasattr}} (obj, name)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1request_a32da80edacd80fb43e8623f4e7a9fcac}{clone\+\_\+request}} (request, method)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The Request class is used as a wrapper around the standard request object.
+
+The wrapped request then offers a richer API, in particular :
+
+    - content automatically parsed according to `Content-Type` header,
+      and available as `request.data`
+    - full support of PUT method, including support for file uploads
+    - form overloading of HTTP method, content type and content
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1request_a16ce15bd8fe1088e8dd512f76db792d0}\label{namespacerest__framework_1_1request_a16ce15bd8fe1088e8dd512f76db792d0} 
+\index{rest\_framework.request@{rest\_framework.request}!\_hasattr@{\_hasattr}}
+\index{\_hasattr@{\_hasattr}!rest\_framework.request@{rest\_framework.request}}
+\doxysubsubsection{\texorpdfstring{\_hasattr()}{\_hasattr()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+request.\+\_\+hasattr (\begin{DoxyParamCaption}\item[{}]{obj,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerest__framework_1_1request_a32da80edacd80fb43e8623f4e7a9fcac}\label{namespacerest__framework_1_1request_a32da80edacd80fb43e8623f4e7a9fcac} 
+\index{rest\_framework.request@{rest\_framework.request}!clone\_request@{clone\_request}}
+\index{clone\_request@{clone\_request}!rest\_framework.request@{rest\_framework.request}}
+\doxysubsubsection{\texorpdfstring{clone\_request()}{clone\_request()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+request.\+clone\+\_\+request (\begin{DoxyParamCaption}\item[{}]{request,  }\item[{}]{method }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Internal helper method to clone a request, replacing with a different
+HTTP method.  Used for checking permissions against other methods.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1request_aa3bdbfab76872a682a481359e47efefb}\label{namespacerest__framework_1_1request_aa3bdbfab76872a682a481359e47efefb} 
+\index{rest\_framework.request@{rest\_framework.request}!is\_form\_media\_type@{is\_form\_media\_type}}
+\index{is\_form\_media\_type@{is\_form\_media\_type}!rest\_framework.request@{rest\_framework.request}}
+\doxysubsubsection{\texorpdfstring{is\_form\_media\_type()}{is\_form\_media\_type()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+request.\+is\+\_\+form\+\_\+media\+\_\+type (\begin{DoxyParamCaption}\item[{}]{media\+\_\+type }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the media type is a valid form media type.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1request_a4132986556643590ec40ddbede0ac773}\label{namespacerest__framework_1_1request_a4132986556643590ec40ddbede0ac773} 
+\index{rest\_framework.request@{rest\_framework.request}!wrap\_attributeerrors@{wrap\_attributeerrors}}
+\index{wrap\_attributeerrors@{wrap\_attributeerrors}!rest\_framework.request@{rest\_framework.request}}
+\doxysubsubsection{\texorpdfstring{wrap\_attributeerrors()}{wrap\_attributeerrors()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+request.\+wrap\+\_\+attributeerrors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used to re-raise AttributeErrors caught during authentication, preventing
+these errors from otherwise being handled by the attribute access protocol.
+\end{DoxyVerb}
+ 

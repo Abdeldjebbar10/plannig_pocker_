@@ -1,0 +1,60 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/tests/test\+\_\+simd.py}
+\hypertarget{test__simd_8py}{}\label{test__simd_8py}\index{env/lib/python3.12/site-\/packages/numpy/\_core/tests/test\_simd.py@{env/lib/python3.12/site-\/packages/numpy/\_core/tests/test\_simd.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__Test__Utility}{test\+\_\+simd.\+\_\+\+Test\+\_\+\+Utility}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__BOOL}{test\+\_\+simd.\+\_\+\+SIMD\+\_\+\+BOOL}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__INT}{test\+\_\+simd.\+\_\+\+SIMD\+\_\+\+INT}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__FP32}{test\+\_\+simd.\+\_\+\+SIMD\+\_\+\+FP32}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__FP64}{test\+\_\+simd.\+\_\+\+SIMD\+\_\+\+FP64}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__FP}{test\+\_\+simd.\+\_\+\+SIMD\+\_\+\+FP}}
+\item 
+class \mbox{\hyperlink{classtest__simd_1_1__SIMD__ALL}{test\+\_\+simd.\+\_\+\+SIMD\+\_\+\+ALL}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetest__simd}{test\+\_\+simd}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__simd_af38daf012b038b87a203a78396f8af77}{test\+\_\+simd.\+check\+\_\+floatstatus}} (divbyzero=False, overflow=False, underflow=False, invalid=False, all=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_a812291aa3161af5d1bf98389ba213c9c}{test\+\_\+simd.\+bool\+\_\+sfx}} = ("{}b8"{}, "{}b16"{}, "{}b32"{}, "{}b64"{})
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_a63f95d844f93b2b5fc296619b93e5bb9}{test\+\_\+simd.\+int\+\_\+sfx}} = ("{}u8"{}, "{}s8"{}, "{}u16"{}, "{}s16"{}, "{}u32"{}, "{}s32"{}, "{}u64"{}, "{}s64"{})
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_acec6ebd718a2ba557d788594ab73035b}{test\+\_\+simd.\+fp\+\_\+sfx}} = ("{}f32"{}, "{}f64"{})
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_ae4eb35cc7cadbc00f80963f8f81b9c0e}{test\+\_\+simd.\+all\+\_\+sfx}} = \mbox{\hyperlink{namespacetest__simd_a63f95d844f93b2b5fc296619b93e5bb9}{int\+\_\+sfx}} + \mbox{\hyperlink{namespacetest__simd_acec6ebd718a2ba557d788594ab73035b}{fp\+\_\+sfx}}
+\item 
+dict \mbox{\hyperlink{namespacetest__simd_aaa538a2d213b78f016f97c06053ffb3b}{test\+\_\+simd.\+tests\+\_\+registry}}
+\item 
+str \mbox{\hyperlink{namespacetest__simd_a71fdbc3b15a3550b9c4714c1589fcca6}{test\+\_\+simd.\+simd\+\_\+width}} = npyv.\+simd if npyv else \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetest__simd_a0e3019510b2220973e15ad2493f2de54}{test\+\_\+simd.\+pretty\+\_\+name}} = target\+\_\+name.\+split(\textquotesingle{}\+\_\+\+\_\+\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespacetest__simd_a28a0d2394342da64163f1c3511ca363d}{test\+\_\+simd.\+skip}} = "{}"{}
+\item 
+\mbox{\hyperlink{namespacetest__simd_ab5acb5dc08aa7c9c7448955e2767fc65}{test\+\_\+simd.\+skip\+\_\+sfx}} = dict()
+\item 
+\mbox{\hyperlink{namespacetest__simd_a13e82546f67e73ddf106912247892891}{test\+\_\+simd.\+skip\+\_\+m}} = skip\+\_\+sfx.\+get(sfx, \mbox{\hyperlink{namespacetest__simd_a28a0d2394342da64163f1c3511ca363d}{skip}})
+\item 
+tuple \mbox{\hyperlink{namespacetest__simd_a1255284f9e6d9d7577a62f83e35d2ce9}{test\+\_\+simd.\+inhr}} = (cls,)
+\item 
+\mbox{\hyperlink{namespacetest__simd_ad776208a8eae1c4fce14fdb923c84c82}{test\+\_\+simd.\+attr}} = dict(npyv=targets\mbox{[}target\+\_\+name\mbox{]}, sfx=sfx, target\+\_\+name=target\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacetest__simd_a2e94632aa93893cd27dbc4690f31a0a5}{test\+\_\+simd.\+tcls}} = type(f"{}\+Test\{cls.\+\_\+\+\_\+name\+\_\+\+\_\+\}\+\_\+\{\mbox{\hyperlink{namespacetest__simd_a71fdbc3b15a3550b9c4714c1589fcca6}{simd\+\_\+width}}\}\+\_\+\{target\+\_\+name\}\+\_\+\{sfx\}"{}, inhr, \mbox{\hyperlink{namespacetest__simd_ad776208a8eae1c4fce14fdb923c84c82}{attr}})
+\item 
+\mbox{\hyperlink{namespacetest__simd_a5a8bcbfbd668bb82b72d9369354ac08f}{test\+\_\+simd.\+reason}}
+\end{DoxyCompactItemize}

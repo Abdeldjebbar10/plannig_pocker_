@@ -1,0 +1,94 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+\_\+\+\_\+config\+\_\+\+\_\+}
+\hypertarget{namespacenumpy_1_1____config____}{}\label{namespacenumpy_1_1____config____}\index{numpy.\_\_config\_\_@{numpy.\_\_config\_\_}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1____config_____1_1DisplayModes}{Display\+Modes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1____config_____a109789463e9c2975b42d0deb4e8eb26e}{\+\_\+cleanup}} (d)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1____config_____ab99297de195562e8d62f78de2402b035}{\+\_\+check\+\_\+pyyaml}} ()
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1____config_____a583a265afcf7be9299471ec35173e7fd}{show}} (mode=Display\+Modes.\+stdout.\+value)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1____config_____ad08affc592b9fb7c83018b9dadfb3422}{show\+\_\+config}} (mode=Display\+Modes.\+stdout.\+value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacenumpy_1_1____config_____abbe21324383611fe0588b193905ea4eb}{\+\_\+built\+\_\+with\+\_\+meson}} = True
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1____config_____a0d96587fa6963b10ec983740a3e93f10}{CONFIG}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1____config_____ab99297de195562e8d62f78de2402b035}\label{namespacenumpy_1_1____config_____ab99297de195562e8d62f78de2402b035} 
+\index{numpy.\_\_config\_\_@{numpy.\_\_config\_\_}!\_check\_pyyaml@{\_check\_pyyaml}}
+\index{\_check\_pyyaml@{\_check\_pyyaml}!numpy.\_\_config\_\_@{numpy.\_\_config\_\_}}
+\doxysubsubsection{\texorpdfstring{\_check\_pyyaml()}{\_check\_pyyaml()}}
+{\footnotesize\ttfamily numpy.\+\_\+\+\_\+config\+\_\+\+\_\+.\+\_\+check\+\_\+pyyaml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1____config_____a109789463e9c2975b42d0deb4e8eb26e}\label{namespacenumpy_1_1____config_____a109789463e9c2975b42d0deb4e8eb26e} 
+\index{numpy.\_\_config\_\_@{numpy.\_\_config\_\_}!\_cleanup@{\_cleanup}}
+\index{\_cleanup@{\_cleanup}!numpy.\_\_config\_\_@{numpy.\_\_config\_\_}}
+\doxysubsubsection{\texorpdfstring{\_cleanup()}{\_cleanup()}}
+{\footnotesize\ttfamily numpy.\+\_\+\+\_\+config\+\_\+\+\_\+.\+\_\+cleanup (\begin{DoxyParamCaption}\item[{}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Removes empty values in a `dict` recursively
+This ensures we remove values that Meson could not provide to CONFIG
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1____config_____a583a265afcf7be9299471ec35173e7fd}\label{namespacenumpy_1_1____config_____a583a265afcf7be9299471ec35173e7fd} 
+\index{numpy.\_\_config\_\_@{numpy.\_\_config\_\_}!show@{show}}
+\index{show@{show}!numpy.\_\_config\_\_@{numpy.\_\_config\_\_}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily numpy.\+\_\+\+\_\+config\+\_\+\+\_\+.\+show (\begin{DoxyParamCaption}\item[{}]{mode = {\ttfamily DisplayModes.stdout.value} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Show libraries and system information on which NumPy was built
+and is being used
+
+Parameters
+----------
+mode : {`'stdout'`, `'dicts'`}, optional.
+    Indicates how to display the config information.
+    `'stdout'` prints to console, `'dicts'` returns a dictionary
+    of the configuration.
+
+Returns
+-------
+out : {`dict`, `None`}
+    If mode is `'dicts'`, a dict is returned, else None
+
+See Also
+--------
+get_include : Returns the directory containing NumPy C
+              header files.
+
+Notes
+-----
+1. The `'stdout'` mode will give more readable
+   output if ``pyyaml`` is installed\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1____config_____ad08affc592b9fb7c83018b9dadfb3422}\label{namespacenumpy_1_1____config_____ad08affc592b9fb7c83018b9dadfb3422} 
+\index{numpy.\_\_config\_\_@{numpy.\_\_config\_\_}!show\_config@{show\_config}}
+\index{show\_config@{show\_config}!numpy.\_\_config\_\_@{numpy.\_\_config\_\_}}
+\doxysubsubsection{\texorpdfstring{show\_config()}{show\_config()}}
+{\footnotesize\ttfamily numpy.\+\_\+\+\_\+config\+\_\+\+\_\+.\+show\+\_\+config (\begin{DoxyParamCaption}\item[{}]{mode = {\ttfamily DisplayModes.stdout.value} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1____config_____abbe21324383611fe0588b193905ea4eb}\label{namespacenumpy_1_1____config_____abbe21324383611fe0588b193905ea4eb} 
+\index{numpy.\_\_config\_\_@{numpy.\_\_config\_\_}!\_built\_with\_meson@{\_built\_with\_meson}}
+\index{\_built\_with\_meson@{\_built\_with\_meson}!numpy.\_\_config\_\_@{numpy.\_\_config\_\_}}
+\doxysubsubsection{\texorpdfstring{\_built\_with\_meson}{\_built\_with\_meson}}
+{\footnotesize\ttfamily bool numpy.\+\_\+\+\_\+config\+\_\+\+\_\+.\+\_\+built\+\_\+with\+\_\+meson = True\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1____config_____a0d96587fa6963b10ec983740a3e93f10}\label{namespacenumpy_1_1____config_____a0d96587fa6963b10ec983740a3e93f10} 
+\index{numpy.\_\_config\_\_@{numpy.\_\_config\_\_}!CONFIG@{CONFIG}}
+\index{CONFIG@{CONFIG}!numpy.\_\_config\_\_@{numpy.\_\_config\_\_}}
+\doxysubsubsection{\texorpdfstring{CONFIG}{CONFIG}}
+{\footnotesize\ttfamily numpy.\+\_\+\+\_\+config\+\_\+\+\_\+.\+CONFIG}
+

@@ -1,0 +1,118 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pytz.\+reference}
+\hypertarget{namespacepytz_1_1reference}{}\label{namespacepytz_1_1reference}\index{pytz.reference@{pytz.reference}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpytz_1_1reference_1_1FixedOffset}{Fixed\+Offset}}
+\item 
+class \mbox{\hyperlink{classpytz_1_1reference_1_1LocalTimezone}{Local\+Timezone}}
+\item 
+class \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_a368c0f487e87228c9af4d409e953a68e}{first\+\_\+sunday\+\_\+on\+\_\+or\+\_\+after}} (dt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_a54ca1e3402b61d051a99ec0c8871e40d}{STDOFFSET}} = timedelta(seconds=-\/\+\_\+time.\+timezone)
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_a062e39b1194fb05a32cda232862c57d0}{DSTOFFSET}} = timedelta(seconds=-\/\+\_\+time.\+altzone)
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_ac0b06133f0adeb56b6b1774b1270855b}{DSTDIFF}} = \mbox{\hyperlink{namespacepytz_1_1reference_a062e39b1194fb05a32cda232862c57d0}{DSTOFFSET}} -\/ \mbox{\hyperlink{namespacepytz_1_1reference_a54ca1e3402b61d051a99ec0c8871e40d}{STDOFFSET}}
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_a422b1da8a1a7ad49b80a1f2c4a8e0117}{Local}} = \mbox{\hyperlink{classpytz_1_1reference_1_1LocalTimezone}{Local\+Timezone}}()
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_a1655c724e110ba032b3459872e1a249f}{DSTSTART}} = datetime(1, 4, 1, 2)
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_a69710670d0725a857016a5377464e775}{DSTEND}} = datetime(1, 10, 25, 1)
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_ace6026fa056147f306e3989cf17e4e64}{Eastern}} = \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}(-\/5, "{}Eastern"{}, "{}EST"{}, "{}EDT"{})
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_afa66b887c50c4d73210b805cadd4b8f0}{Central}} = \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}(-\/6, "{}Central"{}, "{}CST"{}, "{}CDT"{})
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_a3ffbdc38bd14f361c0ed4510c9769739}{Mountain}} = \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}(-\/7, "{}Mountain"{}, "{}MST"{}, "{}MDT"{})
+\item 
+\mbox{\hyperlink{namespacepytz_1_1reference_aaf642fe1899ee8a2143d773bdda35cb8}{Pacific}} = \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}(-\/8, "{}Pacific"{}, "{}PST"{}, "{}PDT"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Reference tzinfo implementations from the Python docs.
+Used for testing against as they are only correct for the years
+1987 to 2006. Do not use these for real code.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepytz_1_1reference_a368c0f487e87228c9af4d409e953a68e}\label{namespacepytz_1_1reference_a368c0f487e87228c9af4d409e953a68e} 
+\index{pytz.reference@{pytz.reference}!first\_sunday\_on\_or\_after@{first\_sunday\_on\_or\_after}}
+\index{first\_sunday\_on\_or\_after@{first\_sunday\_on\_or\_after}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{first\_sunday\_on\_or\_after()}{first\_sunday\_on\_or\_after()}}
+{\footnotesize\ttfamily pytz.\+reference.\+first\+\_\+sunday\+\_\+on\+\_\+or\+\_\+after (\begin{DoxyParamCaption}\item[{}]{dt }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepytz_1_1reference_afa66b887c50c4d73210b805cadd4b8f0}\label{namespacepytz_1_1reference_afa66b887c50c4d73210b805cadd4b8f0} 
+\index{pytz.reference@{pytz.reference}!Central@{Central}}
+\index{Central@{Central}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{Central}{Central}}
+{\footnotesize\ttfamily pytz.\+reference.\+Central = \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}(-\/6, "{}Central"{}, "{}CST"{}, "{}CDT"{})}
+
+\Hypertarget{namespacepytz_1_1reference_ac0b06133f0adeb56b6b1774b1270855b}\label{namespacepytz_1_1reference_ac0b06133f0adeb56b6b1774b1270855b} 
+\index{pytz.reference@{pytz.reference}!DSTDIFF@{DSTDIFF}}
+\index{DSTDIFF@{DSTDIFF}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{DSTDIFF}{DSTDIFF}}
+{\footnotesize\ttfamily pytz.\+reference.\+DSTDIFF = \mbox{\hyperlink{namespacepytz_1_1reference_a062e39b1194fb05a32cda232862c57d0}{DSTOFFSET}} -\/ \mbox{\hyperlink{namespacepytz_1_1reference_a54ca1e3402b61d051a99ec0c8871e40d}{STDOFFSET}}}
+
+\Hypertarget{namespacepytz_1_1reference_a69710670d0725a857016a5377464e775}\label{namespacepytz_1_1reference_a69710670d0725a857016a5377464e775} 
+\index{pytz.reference@{pytz.reference}!DSTEND@{DSTEND}}
+\index{DSTEND@{DSTEND}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{DSTEND}{DSTEND}}
+{\footnotesize\ttfamily pytz.\+reference.\+DSTEND = datetime(1, 10, 25, 1)}
+
+\Hypertarget{namespacepytz_1_1reference_a062e39b1194fb05a32cda232862c57d0}\label{namespacepytz_1_1reference_a062e39b1194fb05a32cda232862c57d0} 
+\index{pytz.reference@{pytz.reference}!DSTOFFSET@{DSTOFFSET}}
+\index{DSTOFFSET@{DSTOFFSET}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{DSTOFFSET}{DSTOFFSET}}
+{\footnotesize\ttfamily pytz.\+reference.\+DSTOFFSET = timedelta(seconds=-\/\+\_\+time.\+altzone)}
+
+\Hypertarget{namespacepytz_1_1reference_a1655c724e110ba032b3459872e1a249f}\label{namespacepytz_1_1reference_a1655c724e110ba032b3459872e1a249f} 
+\index{pytz.reference@{pytz.reference}!DSTSTART@{DSTSTART}}
+\index{DSTSTART@{DSTSTART}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{DSTSTART}{DSTSTART}}
+{\footnotesize\ttfamily pytz.\+reference.\+DSTSTART = datetime(1, 4, 1, 2)}
+
+\Hypertarget{namespacepytz_1_1reference_ace6026fa056147f306e3989cf17e4e64}\label{namespacepytz_1_1reference_ace6026fa056147f306e3989cf17e4e64} 
+\index{pytz.reference@{pytz.reference}!Eastern@{Eastern}}
+\index{Eastern@{Eastern}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{Eastern}{Eastern}}
+{\footnotesize\ttfamily pytz.\+reference.\+Eastern = \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}(-\/5, "{}Eastern"{}, "{}EST"{}, "{}EDT"{})}
+
+\Hypertarget{namespacepytz_1_1reference_a422b1da8a1a7ad49b80a1f2c4a8e0117}\label{namespacepytz_1_1reference_a422b1da8a1a7ad49b80a1f2c4a8e0117} 
+\index{pytz.reference@{pytz.reference}!Local@{Local}}
+\index{Local@{Local}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{Local}{Local}}
+{\footnotesize\ttfamily pytz.\+reference.\+Local = \mbox{\hyperlink{classpytz_1_1reference_1_1LocalTimezone}{Local\+Timezone}}()}
+
+\Hypertarget{namespacepytz_1_1reference_a3ffbdc38bd14f361c0ed4510c9769739}\label{namespacepytz_1_1reference_a3ffbdc38bd14f361c0ed4510c9769739} 
+\index{pytz.reference@{pytz.reference}!Mountain@{Mountain}}
+\index{Mountain@{Mountain}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{Mountain}{Mountain}}
+{\footnotesize\ttfamily pytz.\+reference.\+Mountain = \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}(-\/7, "{}Mountain"{}, "{}MST"{}, "{}MDT"{})}
+
+\Hypertarget{namespacepytz_1_1reference_aaf642fe1899ee8a2143d773bdda35cb8}\label{namespacepytz_1_1reference_aaf642fe1899ee8a2143d773bdda35cb8} 
+\index{pytz.reference@{pytz.reference}!Pacific@{Pacific}}
+\index{Pacific@{Pacific}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{Pacific}{Pacific}}
+{\footnotesize\ttfamily pytz.\+reference.\+Pacific = \mbox{\hyperlink{classpytz_1_1reference_1_1USTimeZone}{USTime\+Zone}}(-\/8, "{}Pacific"{}, "{}PST"{}, "{}PDT"{})}
+
+\Hypertarget{namespacepytz_1_1reference_a54ca1e3402b61d051a99ec0c8871e40d}\label{namespacepytz_1_1reference_a54ca1e3402b61d051a99ec0c8871e40d} 
+\index{pytz.reference@{pytz.reference}!STDOFFSET@{STDOFFSET}}
+\index{STDOFFSET@{STDOFFSET}!pytz.reference@{pytz.reference}}
+\doxysubsubsection{\texorpdfstring{STDOFFSET}{STDOFFSET}}
+{\footnotesize\ttfamily pytz.\+reference.\+STDOFFSET = timedelta(seconds=-\/\+\_\+time.\+timezone)}
+

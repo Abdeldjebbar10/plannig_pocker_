@@ -1,0 +1,100 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+http.\+multipartparser}
+\hypertarget{namespacedjango_1_1http_1_1multipartparser}{}\label{namespacedjango_1_1http_1_1multipartparser}\index{django.http.multipartparser@{django.http.multipartparser}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1BoundaryIter}{Boundary\+Iter}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1ChunkIter}{Chunk\+Iter}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1InputStreamExhausted}{Input\+Stream\+Exhausted}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1InterBoundaryIter}{Inter\+Boundary\+Iter}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1LazyStream}{Lazy\+Stream}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser}{Multi\+Part\+Parser}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParserError}{Multi\+Part\+Parser\+Error}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1Parser}{Parser}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_a5d26258b4ffcf586b8909fc2124d9c27}{exhaust}} (stream\+\_\+or\+\_\+iterable)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_ab6a21e7ace8d546de4e8cd48310fb4c7}{parse\+\_\+boundary\+\_\+stream}} (stream, max\+\_\+header\+\_\+size)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_a15aae25e9431749ddb5cb448afa47f75}{RAW}} = "{}raw"{}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_ad008d1c4642e39a9f94ff26a9a5f2c2d}{FILE}} = "{}file"{}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_abb8827c6a0190bb1a5c631e0c5420bcc}{FIELD}} = "{}field"{}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_ab260ab143961d991f2ecf6b54d2a4695}{FIELD\+\_\+\+TYPES}} = frozenset(\mbox{[}\mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_abb8827c6a0190bb1a5c631e0c5420bcc}{FIELD}}, \mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_a15aae25e9431749ddb5cb448afa47f75}{RAW}}\mbox{]})
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_a8d741247bc81d1635e93e58a8298f9ed}{MAX\+\_\+\+TOTAL\+\_\+\+HEADER\+\_\+\+SIZE}} = 1024
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Multi-part parsing for file uploads.
+
+Exposes one class, ``MultiPartParser``, which feeds chunks of uploaded data to
+file upload handlers for processing.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1http_1_1multipartparser_a5d26258b4ffcf586b8909fc2124d9c27}\label{namespacedjango_1_1http_1_1multipartparser_a5d26258b4ffcf586b8909fc2124d9c27} 
+\index{django.http.multipartparser@{django.http.multipartparser}!exhaust@{exhaust}}
+\index{exhaust@{exhaust}!django.http.multipartparser@{django.http.multipartparser}}
+\doxysubsubsection{\texorpdfstring{exhaust()}{exhaust()}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+exhaust (\begin{DoxyParamCaption}\item[{}]{stream\+\_\+or\+\_\+iterable }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Exhaust an iterator or stream.\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1http_1_1multipartparser_ab6a21e7ace8d546de4e8cd48310fb4c7}\label{namespacedjango_1_1http_1_1multipartparser_ab6a21e7ace8d546de4e8cd48310fb4c7} 
+\index{django.http.multipartparser@{django.http.multipartparser}!parse\_boundary\_stream@{parse\_boundary\_stream}}
+\index{parse\_boundary\_stream@{parse\_boundary\_stream}!django.http.multipartparser@{django.http.multipartparser}}
+\doxysubsubsection{\texorpdfstring{parse\_boundary\_stream()}{parse\_boundary\_stream()}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+parse\+\_\+boundary\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{stream,  }\item[{}]{max\+\_\+header\+\_\+size }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse one and exactly one stream that encapsulates a boundary.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1http_1_1multipartparser_abb8827c6a0190bb1a5c631e0c5420bcc}\label{namespacedjango_1_1http_1_1multipartparser_abb8827c6a0190bb1a5c631e0c5420bcc} 
+\index{django.http.multipartparser@{django.http.multipartparser}!FIELD@{FIELD}}
+\index{FIELD@{FIELD}!django.http.multipartparser@{django.http.multipartparser}}
+\doxysubsubsection{\texorpdfstring{FIELD}{FIELD}}
+{\footnotesize\ttfamily str django.\+http.\+multipartparser.\+FIELD = "{}field"{}}
+
+\Hypertarget{namespacedjango_1_1http_1_1multipartparser_ab260ab143961d991f2ecf6b54d2a4695}\label{namespacedjango_1_1http_1_1multipartparser_ab260ab143961d991f2ecf6b54d2a4695} 
+\index{django.http.multipartparser@{django.http.multipartparser}!FIELD\_TYPES@{FIELD\_TYPES}}
+\index{FIELD\_TYPES@{FIELD\_TYPES}!django.http.multipartparser@{django.http.multipartparser}}
+\doxysubsubsection{\texorpdfstring{FIELD\_TYPES}{FIELD\_TYPES}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+FIELD\+\_\+\+TYPES = frozenset(\mbox{[}\mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_abb8827c6a0190bb1a5c631e0c5420bcc}{FIELD}}, \mbox{\hyperlink{namespacedjango_1_1http_1_1multipartparser_a15aae25e9431749ddb5cb448afa47f75}{RAW}}\mbox{]})}
+
+\Hypertarget{namespacedjango_1_1http_1_1multipartparser_ad008d1c4642e39a9f94ff26a9a5f2c2d}\label{namespacedjango_1_1http_1_1multipartparser_ad008d1c4642e39a9f94ff26a9a5f2c2d} 
+\index{django.http.multipartparser@{django.http.multipartparser}!FILE@{FILE}}
+\index{FILE@{FILE}!django.http.multipartparser@{django.http.multipartparser}}
+\doxysubsubsection{\texorpdfstring{FILE}{FILE}}
+{\footnotesize\ttfamily str django.\+http.\+multipartparser.\+FILE = "{}file"{}}
+
+\Hypertarget{namespacedjango_1_1http_1_1multipartparser_a8d741247bc81d1635e93e58a8298f9ed}\label{namespacedjango_1_1http_1_1multipartparser_a8d741247bc81d1635e93e58a8298f9ed} 
+\index{django.http.multipartparser@{django.http.multipartparser}!MAX\_TOTAL\_HEADER\_SIZE@{MAX\_TOTAL\_HEADER\_SIZE}}
+\index{MAX\_TOTAL\_HEADER\_SIZE@{MAX\_TOTAL\_HEADER\_SIZE}!django.http.multipartparser@{django.http.multipartparser}}
+\doxysubsubsection{\texorpdfstring{MAX\_TOTAL\_HEADER\_SIZE}{MAX\_TOTAL\_HEADER\_SIZE}}
+{\footnotesize\ttfamily int django.\+http.\+multipartparser.\+MAX\+\_\+\+TOTAL\+\_\+\+HEADER\+\_\+\+SIZE = 1024}
+
+\Hypertarget{namespacedjango_1_1http_1_1multipartparser_a15aae25e9431749ddb5cb448afa47f75}\label{namespacedjango_1_1http_1_1multipartparser_a15aae25e9431749ddb5cb448afa47f75} 
+\index{django.http.multipartparser@{django.http.multipartparser}!RAW@{RAW}}
+\index{RAW@{RAW}!django.http.multipartparser@{django.http.multipartparser}}
+\doxysubsubsection{\texorpdfstring{RAW}{RAW}}
+{\footnotesize\ttfamily str django.\+http.\+multipartparser.\+RAW = "{}raw"{}}
+

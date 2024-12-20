@@ -1,0 +1,133 @@
+\doxysection{Référence de la classe dateutil.\+tz.\+tz.\+tzutc}
+\hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc}{}\label{classdateutil_1_1tz_1_1tz_1_1tzutc}\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+
+
+Graphe d\textquotesingle{}héritage de dateutil.\+tz.\+tz.\+tzutc\+:
+% FIG 0
+
+
+Graphe de collaboration de dateutil.\+tz.\+tz.\+tzutc\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_ae2c7e749a81a27a7607a3e0d82e92b11}{utcoffset}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_a56ab6d8d8cadcaf5a2921c5b7cec8ff7}{dst}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_ab1c807c4fc42748860ba1aff4ca9fe08}{tzname}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_a4d1d7603acc77b75c4bfd34b409bf9c1}{is\+\_\+ambiguous}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_aa02a46c13841fd22d7881ae81edbe953}{fromutc}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_aae3029bd278136b9f43031bb41578074}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_abe3b480497f137a535f5c78ed4c5f651}{\+\_\+\+\_\+ne\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzutc_af72e29ec5da266ce64406cec175f10aa}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This is a tzinfo object that represents the UTC time zone.
+
+**Examples:**
+
+.. doctest::
+
+    >>> from datetime import *
+    >>> from dateutil.tz import *
+
+    >>> datetime.now()
+    datetime.datetime(2003, 9, 27, 9, 40, 1, 521290)
+
+    >>> datetime.now(tzutc())
+    datetime.datetime(2003, 9, 27, 12, 40, 12, 156379, tzinfo=tzutc())
+
+    >>> datetime.now(tzutc()).tzname()
+    'UTC'
+
+.. versionchanged:: 2.7.0
+    ``tzutc()`` is now a singleton, so the result of ``tzutc()`` will
+    always return the same object.
+
+    .. doctest::
+
+        >>> from dateutil.tz import tzutc, UTC
+        >>> tzutc() is tzutc()
+        True
+        >>> tzutc() is UTC
+        True
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_aae3029bd278136b9f43031bb41578074}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_aae3029bd278136b9f43031bb41578074} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzutc.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_abe3b480497f137a535f5c78ed4c5f651}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_abe3b480497f137a535f5c78ed4c5f651} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!\_\_ne\_\_@{\_\_ne\_\_}}
+\index{\_\_ne\_\_@{\_\_ne\_\_}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{\_\_ne\_\_()}{\_\_ne\_\_()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzutc.\+\_\+\+\_\+ne\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_af72e29ec5da266ce64406cec175f10aa}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_af72e29ec5da266ce64406cec175f10aa} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzutc.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_a56ab6d8d8cadcaf5a2921c5b7cec8ff7}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_a56ab6d8d8cadcaf5a2921c5b7cec8ff7} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!dst@{dst}}
+\index{dst@{dst}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{dst()}{dst()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzutc.\+dst (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_aa02a46c13841fd22d7881ae81edbe953}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_aa02a46c13841fd22d7881ae81edbe953} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!fromutc@{fromutc}}
+\index{fromutc@{fromutc}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{fromutc()}{fromutc()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzutc.\+fromutc (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fast track version of fromutc() returns the original ``dt`` object for
+any valid :py:class:`datetime.datetime` object.
+\end{DoxyVerb}
+ \Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_a4d1d7603acc77b75c4bfd34b409bf9c1}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_a4d1d7603acc77b75c4bfd34b409bf9c1} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!is\_ambiguous@{is\_ambiguous}}
+\index{is\_ambiguous@{is\_ambiguous}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{is\_ambiguous()}{is\_ambiguous()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzutc.\+is\+\_\+ambiguous (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether or not the "wall time" of a given datetime is ambiguous in this
+zone.
+
+:param dt:
+    A :py:class:`datetime.datetime`, naive or time zone aware.
+
+
+:return:
+    Returns ``True`` if ambiguous, ``False`` otherwise.
+
+.. versionadded:: 2.6.0
+\end{DoxyVerb}
+ \Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_ab1c807c4fc42748860ba1aff4ca9fe08}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_ab1c807c4fc42748860ba1aff4ca9fe08} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!tzname@{tzname}}
+\index{tzname@{tzname}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{tzname()}{tzname()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzutc.\+tzname (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzutc_ae2c7e749a81a27a7607a3e0d82e92b11}\label{classdateutil_1_1tz_1_1tz_1_1tzutc_ae2c7e749a81a27a7607a3e0d82e92b11} 
+\index{dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}!utcoffset@{utcoffset}}
+\index{utcoffset@{utcoffset}!dateutil.tz.tz.tzutc@{dateutil.tz.tz.tzutc}}
+\doxysubsubsection{\texorpdfstring{utcoffset()}{utcoffset()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzutc.\+utcoffset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/dateutil/tz/\mbox{\hyperlink{dateutil_2tz_2tz_8py}{tz.\+py}}\end{DoxyCompactItemize}

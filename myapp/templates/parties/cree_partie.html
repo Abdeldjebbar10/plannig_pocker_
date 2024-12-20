@@ -1,0 +1,71 @@
+{% extends 'base_generic.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+    <h1 class="mt-5">Créer une nouvelle Partie</h1>
+
+    {% if success_message %}
+        <div class="alert alert-success">{{ success_message }}</div>
+    {% endif %}
+    <form method="post" class="mt-3">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="id_nom" class="form-label">Nom de la partie :</label>
+            {{ form.nom|add_class:"form-control" }}
+            <div class="text-danger">
+                {{ form.nom.errors }}
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="id_mode_jeu" class="form-label">Mode de jeu :</label>
+            {{ form.mode_jeu|add_class:"form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="id_administrateur" class="form-label">Administrateur :</label>
+            {{ form.administrateur|add_class:"form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="id_participants" class="form-label">Participants :</label>
+            <div class="form-check">
+                {{ form.participants }}
+            </div>
+        </div>
+    
+        <button type="submit" class="btn btn-success">Créer la Partie</button>
+    </form>
+    <a href="{% url 'lister_parties' %}" class="btn btn-secondary mt-3">Retour à la liste des parties</a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const adminSelect = document.getElementById('id_administrateur'); // Sélecteur pour l'administrateur
+            const participantCheckboxes = document.querySelectorAll('#id_participants input[type="checkbox"]'); // Sélecteur pour les cases des participants
+        
+            function updateParticipants() {
+                const selectedAdmin = adminSelect.value; // Récupère la valeur de l'administrateur sélectionné
+        
+                // Si aucun administrateur n'est sélectionné, on quitte la fonction
+                if (!selectedAdmin) return;
+        
+                // Parcourt les cases à cocher des participants
+                participantCheckboxes.forEach(function (checkbox) {
+                    if (checkbox.value === selectedAdmin) {
+                        checkbox.checked = true; // Coche automatiquement la case du participant administrateur
+                        checkbox.disabled = true; // Désactive la case pour éviter des modifications
+                    } else {
+                        checkbox.disabled = false; // Réactive les autres cases si besoin
+                    }
+                });
+            }
+        
+            // Ajoute un événement pour mettre à jour les participants lorsque l'administrateur change
+            adminSelect.addEventListener('change', updateParticipants);
+        
+            // Met à jour les participants au chargement initial
+            updateParticipants();
+        });
+        </script>
+        
+{% endblock %}
+
+
+
+

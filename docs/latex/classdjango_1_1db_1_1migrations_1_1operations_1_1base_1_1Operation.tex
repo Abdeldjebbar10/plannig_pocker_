@@ -1,0 +1,288 @@
+\doxysection{Référence de la classe django.\+db.\+migrations.\+operations.\+base.\+Operation}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation}{}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation}\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+migrations.\+operations.\+base.\+Operation\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+db.\+migrations.\+operations.\+base.\+Operation\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a0e75a153578c0aa184cef917cbc50cdf}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7a97aba5207d742bdaa2e7562714a062}{deconstruct}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7cfbfb963b7c74653191ffb9afa52ff8}{state\+\_\+forwards}} (self, app\+\_\+label, state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a8bf567418dd297ce8046c221cb7da5dc}{database\+\_\+forwards}} (self, app\+\_\+label, schema\+\_\+editor, from\+\_\+state, to\+\_\+state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_aa4a0bdd6d640b1a39bdf7bbb5a04b877}{database\+\_\+backwards}} (self, app\+\_\+label, schema\+\_\+editor, from\+\_\+state, to\+\_\+state)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a5c8477a9c9a49746db7edf2e3eb56210}{describe}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a4ce9082f85e6bf28b1e968470a333f4a}{formatted\+\_\+description}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a380e32b8eb8c0e61bab998746a0a7910}{migration\+\_\+name\+\_\+fragment}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a5396b814a7639a8ee3368d3312979d8e}{references\+\_\+model}} (self, name, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_aed3a6bc67e958f889fd3553ca2c6d19a}{references\+\_\+field}} (self, model\+\_\+name, name, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ae9ccd8dda6ac5380e583c6c53ed66445}{allow\+\_\+migrate\+\_\+model}} (self, connection\+\_\+alias, model)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ae3b7e3a7ba01cef6a928878476347231}{reduce}} (self, operation, app\+\_\+label)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ab835a78e8583a6fd71f5e5ba9b5403e4}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ab4f74d8a379cefdb3ac5a26072517869}{reversible}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7f1390e35429f9b3d6c9f1571fe562e9}{reduces\+\_\+to\+\_\+sql}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a4e983956ee508f5c19674a20a2bb2500}{atomic}} = False
+\item 
+bool \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a46d9b82039c84b5c0031914e70498082}{elidable}} = False
+\item 
+list \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a278729637550e4f4e403a3554ef16292}{serialization\+\_\+expand\+\_\+args}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a278ba5cdf0f89e99193f05f823a141f0}{category}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ad9ff164e630ee6d56c9dab906471c813}{\+\_\+constructor\+\_\+args}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Base class for migration operations.
+
+It's responsible for both mutating the in-memory model state
+(see db/migrations/state.py) to represent what it performs, as well
+as actually performing it against a live database.
+
+Note that some operations won't modify memory state at all (e.g. data
+copying operations), and some will need their modifications to be
+optionally specified by the user (e.g. custom Python code snippets)
+
+Due to the way this class deals with deconstruction, it should be
+considered immutable.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a0e75a153578c0aa184cef917cbc50cdf}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a0e75a153578c0aa184cef917cbc50cdf} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!\_\_new\_\_@{\_\_new\_\_}}
+\index{\_\_new\_\_@{\_\_new\_\_}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{\_\_new\_\_()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ab835a78e8583a6fd71f5e5ba9b5403e4}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ab835a78e8583a6fd71f5e5ba9b5403e4} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ae9ccd8dda6ac5380e583c6c53ed66445}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ae9ccd8dda6ac5380e583c6c53ed66445} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!allow\_migrate\_model@{allow\_migrate\_model}}
+\index{allow\_migrate\_model@{allow\_migrate\_model}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{allow\_migrate\_model()}{allow\_migrate\_model()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+allow\+\_\+migrate\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{connection\+\_\+alias,  }\item[{}]{model }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether or not a model may be migrated.
+
+This is a thin wrapper around router.allow_migrate_model() that
+preemptively rejects any proxy, swapped out, or unmanaged model.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_aa4a0bdd6d640b1a39bdf7bbb5a04b877}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_aa4a0bdd6d640b1a39bdf7bbb5a04b877} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!database\_backwards@{database\_backwards}}
+\index{database\_backwards@{database\_backwards}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{database\_backwards()}{database\_backwards()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+database\+\_\+backwards (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app\+\_\+label,  }\item[{}]{schema\+\_\+editor,  }\item[{}]{from\+\_\+state,  }\item[{}]{to\+\_\+state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the mutation on the database schema in the reverse
+direction - e.g. if this were CreateModel, it would in fact
+drop the model's table.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateExtension_a72f313466c20ff9c3102c5f03518fae7}{django.\+contrib.\+postgres.\+operations.\+Create\+Extension}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1AddIndexConcurrently_af21e81c4c8073e6ce6da2490487f417f}{django.\+contrib.\+postgres.\+operations.\+Add\+Index\+Concurrently}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1RemoveIndexConcurrently_ab5ec0fb73cfee85b45d4bd176b042ca5}{django.\+contrib.\+postgres.\+operations.\+Remove\+Index\+Concurrently}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateCollation_aea8c5a6104c9defed9a8456c9c3de7a7}{django.\+contrib.\+postgres.\+operations.\+Create\+Collation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1RemoveCollation_a7befd38dd9b4d1decc714f7794bfe53d}{django.\+contrib.\+postgres.\+operations.\+Remove\+Collation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1ValidateConstraint_a29d7c5379204d3c063554e2699191770}{django.\+contrib.\+postgres.\+operations.\+Validate\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AddField_a617772ae0d09e12f38c6f7ec32d1a6ac}{django.\+db.\+migrations.\+operations.\+fields.\+Add\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RemoveField_a1dd705c5296e9926b982be76a8c3593a}{django.\+db.\+migrations.\+operations.\+fields.\+Remove\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AlterField_af41d306fe640bb14569cf43fe8b41af3}{django.\+db.\+migrations.\+operations.\+fields.\+Alter\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RenameField_a542122d5bebf16241d407d5e672609dd}{django.\+db.\+migrations.\+operations.\+fields.\+Rename\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1CreateModel_abdab1b0c6b789f4417f4bc04b8cc976a}{django.\+db.\+migrations.\+operations.\+models.\+Create\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1DeleteModel_a9a17b1cdfdd4e4d2f52b54d172fb1da7}{django.\+db.\+migrations.\+operations.\+models.\+Delete\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameModel_af39a4cbe59898ce10d3f2eb26d8cdbf2}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTable_a6c3c31781797b433b002963aeedc15b5}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTableComment_ad61c31d6692ba43f6244968bd46c66bc}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table\+Comment}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterTogetherOptionOperation_a83db8cf03bf5eaf62f5c3193adb0a231}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Together\+Option\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterOrderWithRespectTo_a358586d3cb9f6d1bed1eddacdd7372c1}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Order\+With\+Respect\+To}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelOptions_a7fac183dee369722233b3b0ea139bbd2}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Options}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelManagers_a609741c64dd4a99480c70a9b5c9dea2d}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Managers}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddIndex_a8bf2b8a59248b5f1e13a4f93f478d5fc}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveIndex_a9f448190a82560df3de24ac76c50e63d}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameIndex_ab734f7cec553b10fdabd1a191347c046}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddConstraint_a3ca96f52475d231669cb7a33c12fd62c}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveConstraint_a0e17e967c6d8962c9710d45917e38648}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1SeparateDatabaseAndState_a22f2f8f93398d9b54a5f90b20ebe8d09}{django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunSQL_aa9597c58f253f4d1d424e19482658fb1}{django.\+db.\+migrations.\+operations.\+special.\+Run\+SQL}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a701d8607c100a76c2cb16f7ae94bc867}{django.\+db.\+migrations.\+operations.\+special.\+Run\+Python}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a8bf567418dd297ce8046c221cb7da5dc}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a8bf567418dd297ce8046c221cb7da5dc} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!database\_forwards@{database\_forwards}}
+\index{database\_forwards@{database\_forwards}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{database\_forwards()}{database\_forwards()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+database\+\_\+forwards (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app\+\_\+label,  }\item[{}]{schema\+\_\+editor,  }\item[{}]{from\+\_\+state,  }\item[{}]{to\+\_\+state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform the mutation on the database schema in the normal
+(forwards) direction.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateExtension_a6ba13e4a803368f8d6332c4c3afad3ad}{django.\+contrib.\+postgres.\+operations.\+Create\+Extension}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1AddIndexConcurrently_a8ec012821c529fb57013caf48384ee76}{django.\+contrib.\+postgres.\+operations.\+Add\+Index\+Concurrently}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1RemoveIndexConcurrently_a17722bad27bd8f0d156f78f97b3dfaaa}{django.\+contrib.\+postgres.\+operations.\+Remove\+Index\+Concurrently}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateCollation_a4d3fa74744dd3025fc25fa11af2e0f52}{django.\+contrib.\+postgres.\+operations.\+Create\+Collation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1RemoveCollation_abcb8fce976a0bd92d62d4c4790542e25}{django.\+contrib.\+postgres.\+operations.\+Remove\+Collation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1AddConstraintNotValid_afbf3234c4884fc267a11e5ac5e484570}{django.\+contrib.\+postgres.\+operations.\+Add\+Constraint\+Not\+Valid}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1ValidateConstraint_ab798a6a173e826d06d2816b0c5468760}{django.\+contrib.\+postgres.\+operations.\+Validate\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AddField_adf3924e3df09a234aeb61de2490105ac}{django.\+db.\+migrations.\+operations.\+fields.\+Add\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RemoveField_ac4572aea0b6ef3a12e8d3c2f237c411a}{django.\+db.\+migrations.\+operations.\+fields.\+Remove\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AlterField_ad61960942f8bf4e2b42434aa43389d9b}{django.\+db.\+migrations.\+operations.\+fields.\+Alter\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RenameField_a9e66c07705fccd0aa47e8b41ca80d52f}{django.\+db.\+migrations.\+operations.\+fields.\+Rename\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1CreateModel_ac83eb27642b612cff8a10d40aa5160a4}{django.\+db.\+migrations.\+operations.\+models.\+Create\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1DeleteModel_aaa1256c5c07e7d45ff686b0f30df043c}{django.\+db.\+migrations.\+operations.\+models.\+Delete\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameModel_af2a38bfdfb767e9f8837087b5c66ba07}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTable_ac970e63f457eca5ea9e39a6f2339dac8}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTableComment_a21d27efbaf1822f6eb3d7a312a41025e}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table\+Comment}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterTogetherOptionOperation_a0c22a821e9eda96c8ddd38e3035a5f63}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Together\+Option\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterOrderWithRespectTo_a4e17e9e20ef204f594d92752c4471448}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Order\+With\+Respect\+To}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelOptions_a0b13c78618e4e78094226011ad57d9c2}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Options}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelManagers_a782e2515ac033858902aedafe4c6c5b3}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Managers}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddIndex_a494d51a94cc4a5de6355df751929c35d}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveIndex_a29c212a45763a50978dcf074512ea75b}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameIndex_a3896b4dc591125e33958936776e4ddd1}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddConstraint_a480337b0117ef1689eedeaf3a4d2d184}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveConstraint_a62e07ee362dceae6903230414631cccc}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1SeparateDatabaseAndState_a1459975dd87428399c3af694c2b20649}{django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunSQL_adff59e44359e7dd627e448871fdc4aa9}{django.\+db.\+migrations.\+operations.\+special.\+Run\+SQL}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a75a28b1ebb8ddd75cb5620ccaa943309}{django.\+db.\+migrations.\+operations.\+special.\+Run\+Python}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7a97aba5207d742bdaa2e7562714a062}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7a97aba5207d742bdaa2e7562714a062} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!deconstruct@{deconstruct}}
+\index{deconstruct@{deconstruct}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{deconstruct()}{deconstruct()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+deconstruct (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a 3-tuple of class import path (or just name if it lives
+under django.db.migrations), positional arguments, and keyword
+arguments.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CollationOperation_a753776f223e6bb85fb991ae598a9c67f}{django.\+contrib.\+postgres.\+operations.\+Collation\+Operation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1ValidateConstraint_a6dc0b2612c92acca0d9e2a23b0a2499e}{django.\+contrib.\+postgres.\+operations.\+Validate\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AddField_ad90ff2d44c1d75e84d935f73d096c185}{django.\+db.\+migrations.\+operations.\+fields.\+Add\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RemoveField_abc65085f00d28f3ae0fbb5884352ccd6}{django.\+db.\+migrations.\+operations.\+fields.\+Remove\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AlterField_acf97f698af9bfb34b19eac8130c0aa75}{django.\+db.\+migrations.\+operations.\+fields.\+Alter\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RenameField_a1394eb8a54a66c0e3075c5651f9124b7}{django.\+db.\+migrations.\+operations.\+fields.\+Rename\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1CreateModel_a97c0edba25e3ef0d56f0890d87945aaa}{django.\+db.\+migrations.\+operations.\+models.\+Create\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1DeleteModel_a178b3871af7f9676d37bd1c99a961cc0}{django.\+db.\+migrations.\+operations.\+models.\+Delete\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameModel_afbdafdf5fc4a5cab17fdce022811a77b}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTable_abc80de93145750cb809812402d1cb91a}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTableComment_a3d99f2c0c06aeadc207b7cac30414134}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table\+Comment}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterTogetherOptionOperation_a65ec7e543708b3a133b3b5b655937f94}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Together\+Option\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterOrderWithRespectTo_adc2ed00c4fb3fefc5420c5560c688f2b}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Order\+With\+Respect\+To}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelOptions_a365a6e4ecf4bf3827f3bfdad7ce9e261}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Options}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelManagers_a18a01041b80255943dce85c5da7e8571}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Managers}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddIndex_a0a2edbeacf2565de84f867b03b9b5beb}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveIndex_adb6e4c14e05ba5ec18143f36390b4a26}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameIndex_a89c68d8ab090ad3591d70162a0240254}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddConstraint_ae9926e77db210a7f2e249060eea2d083}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveConstraint_a6297f9331abf1d8f6b5fa50dc262a86f}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1SeparateDatabaseAndState_a87b4caac9f552a62c27420a00515a533}{django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunSQL_ad4e79e8ce8a30cd2c0bb2ab91e2d0ef2}{django.\+db.\+migrations.\+operations.\+special.\+Run\+SQL}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a3ebffa7aae0aa0af2f1949bc22b757aa}{django.\+db.\+migrations.\+operations.\+special.\+Run\+Python}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a5c8477a9c9a49746db7edf2e3eb56210}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a5c8477a9c9a49746db7edf2e3eb56210} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!describe@{describe}}
+\index{describe@{describe}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{describe()}{describe()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+describe (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Output a brief summary of what the action does.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateExtension_a8bda728b5ab28520f953dd1794eb1a29}{django.\+contrib.\+postgres.\+operations.\+Create\+Extension}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1AddIndexConcurrently_a84138b3c8346c4ba80783811dce25059}{django.\+contrib.\+postgres.\+operations.\+Add\+Index\+Concurrently}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1RemoveIndexConcurrently_afa7ae3303e9d7470872e701e7de09036}{django.\+contrib.\+postgres.\+operations.\+Remove\+Index\+Concurrently}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateCollation_a16be008c7bb006b9bdfa2e3f698e4dd0}{django.\+contrib.\+postgres.\+operations.\+Create\+Collation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1RemoveCollation_a0a39bc71cbad3f118ff161908dcc50dd}{django.\+contrib.\+postgres.\+operations.\+Remove\+Collation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1AddConstraintNotValid_aa66f107cb766b675729d0da24921daaf}{django.\+contrib.\+postgres.\+operations.\+Add\+Constraint\+Not\+Valid}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1ValidateConstraint_aad511454076b182df728281585600438}{django.\+contrib.\+postgres.\+operations.\+Validate\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AddField_a18a051ffc94d00a07a1663a5ce88ef43}{django.\+db.\+migrations.\+operations.\+fields.\+Add\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RemoveField_a95e17952ffb36db2ec4bb93c555a357f}{django.\+db.\+migrations.\+operations.\+fields.\+Remove\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AlterField_ab8dc163745cf8326e95f0a5c67ec2eab}{django.\+db.\+migrations.\+operations.\+fields.\+Alter\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RenameField_a0012fdc5c632c34d3fd58abf341dc22f}{django.\+db.\+migrations.\+operations.\+fields.\+Rename\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1CreateModel_ab9b2919d28b5d911b5d76a2161ba4330}{django.\+db.\+migrations.\+operations.\+models.\+Create\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1DeleteModel_a93c4aac3d9fd718ed8d4e0361a122fdb}{django.\+db.\+migrations.\+operations.\+models.\+Delete\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameModel_acc050fde21560c6ac851abf4b120bc9b}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTable_a89e58be4b41b2a022fd0b32289ccf8d6}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTableComment_a46b443e571c92a303b285e5a30fdd39c}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table\+Comment}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterTogetherOptionOperation_a6ad5134506e1cec8859ddb38cd7bf35f}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Together\+Option\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterOrderWithRespectTo_adc0f360d55f1d73b66185b5a69cd1db7}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Order\+With\+Respect\+To}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelOptions_a5dd2462f02d335f8a3dfdaf373953f69}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Options}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelManagers_a94762de8f5be231899a44894bf4ab988}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Managers}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddIndex_af600940898d33e0479390c3fdcb3fdb0}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveIndex_a25801dc2c3d6ff9e0e6a1ce71b91652e}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameIndex_a16773a616c753c60f508092a1df5507e}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddConstraint_a672dd7b76f7223c270c36119b6c3ff13}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveConstraint_a2dd545a63a96197b6a2abb07b24baf3a}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1SeparateDatabaseAndState_a7cbb551b5c69a2ee357f5d951503f09e}{django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunSQL_a9a9e3670440f515e41b50d84db52ca42}{django.\+db.\+migrations.\+operations.\+special.\+Run\+SQL}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a1ce76077cbc085ef6d0ae71f78077fc1}{django.\+db.\+migrations.\+operations.\+special.\+Run\+Python}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a4ce9082f85e6bf28b1e968470a333f4a}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a4ce9082f85e6bf28b1e968470a333f4a} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!formatted\_description@{formatted\_description}}
+\index{formatted\_description@{formatted\_description}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{formatted\_description()}{formatted\_description()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+formatted\+\_\+description (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Output a description prefixed by a category symbol.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a380e32b8eb8c0e61bab998746a0a7910}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a380e32b8eb8c0e61bab998746a0a7910} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!migration\_name\_fragment@{migration\_name\_fragment}}
+\index{migration\_name\_fragment@{migration\_name\_fragment}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{migration\_name\_fragment()}{migration\_name\_fragment()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+migration\+\_\+name\+\_\+fragment (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A filename part suitable for automatically naming a migration
+containing this operation, or None if not applicable.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateExtension_a821fea1b15f096b90d4e73933a582d39}{django.\+contrib.\+postgres.\+operations.\+Create\+Extension}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateCollation_a3d8220ee852678098f392ce5fb9be457}{django.\+contrib.\+postgres.\+operations.\+Create\+Collation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1RemoveCollation_ae16641eeef560413e14a42686fdd7bc4}{django.\+contrib.\+postgres.\+operations.\+Remove\+Collation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1AddConstraintNotValid_adabdcca0f2d17988eee3cf043b1beafc}{django.\+contrib.\+postgres.\+operations.\+Add\+Constraint\+Not\+Valid}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1ValidateConstraint_a627fc1094229ddc8e1b5c6217fb6bd7b}{django.\+contrib.\+postgres.\+operations.\+Validate\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AddField_a4b5de7c4572d3951bc5672a8c7f89dad}{django.\+db.\+migrations.\+operations.\+fields.\+Add\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RemoveField_abf5e63a5be3d546e5ca0248845cee8cf}{django.\+db.\+migrations.\+operations.\+fields.\+Remove\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AlterField_ad5e42c823867ff4abd5488935e734bd1}{django.\+db.\+migrations.\+operations.\+fields.\+Alter\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RenameField_a855e5aa491d45dbc55d4685fe6e73ad2}{django.\+db.\+migrations.\+operations.\+fields.\+Rename\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1CreateModel_af53699d56897568d64ee7164c78c9149}{django.\+db.\+migrations.\+operations.\+models.\+Create\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1DeleteModel_a86785268ea43b5d0d73b4ee137a16c60}{django.\+db.\+migrations.\+operations.\+models.\+Delete\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameModel_a008ec3128b64470195ff36810696813f}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTable_a44686f3b54cbeaec57b956e51cc1ad35}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTableComment_aef1edeedc0f5f8790b3186b6a3c07a36}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table\+Comment}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterTogetherOptionOperation_aa55dd306f3879a59b21cea04b4a82db0}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Together\+Option\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterOrderWithRespectTo_a8d5f0c177274d3341de46590e6ed3005}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Order\+With\+Respect\+To}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelOptions_a366f508e01f2c13b2b54a2dbf834752f}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Options}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelManagers_af70cfceadd5e279ec90bbeae2fedf0a2}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Managers}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddIndex_af97c1557b00ac3df386dce39dca6d62a}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveIndex_a059b508e32f523613baee364177d1497}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameIndex_a030d689ea8c4ba29673f384f08598967}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddConstraint_ac826deec60208317d2d8d68cc0ee73f2}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Constraint}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveConstraint_aff9a2a415813c06011c3c1925ed26924}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Constraint}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ae3b7e3a7ba01cef6a928878476347231}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ae3b7e3a7ba01cef6a928878476347231} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!reduce@{reduce}}
+\index{reduce@{reduce}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+reduce (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{operation,  }\item[{}]{app\+\_\+label }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return either a list of operations the actual operation should be
+replaced with or a boolean that indicates whether or not the specified
+operation can be optimized across.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1FieldOperation_abcf73b9f6a6b2d738108376c7411b6fe}{django.\+db.\+migrations.\+operations.\+fields.\+Field\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AddField_ae88e7b11b4f96c3045bee3847ca8d530}{django.\+db.\+migrations.\+operations.\+fields.\+Add\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RemoveField_a25fc93ffee41ea1fba3d0f2c68f27269}{django.\+db.\+migrations.\+operations.\+fields.\+Remove\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AlterField_a08f985b55f0ca16d8bddefe5a6d49588}{django.\+db.\+migrations.\+operations.\+fields.\+Alter\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RenameField_a6c85f3773b2e43e4aa30947de668b3e2}{django.\+db.\+migrations.\+operations.\+fields.\+Rename\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1ModelOperation_a224323cb373706176d152bcb53b45b55}{django.\+db.\+migrations.\+operations.\+models.\+Model\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1CreateModel_ac51ea915099a1341c10910f46b685309}{django.\+db.\+migrations.\+operations.\+models.\+Create\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameModel_abc55728549241590b3f2d45faaad7c42}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1ModelOptionOperation_ada90f2342c63a7994692364c82d74e6a}{django.\+db.\+migrations.\+operations.\+models.\+Model\+Option\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddIndex_afcdc7f78bcf2f61f33d6ac5e8d99d768}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameIndex_adfb4947aba717877b7f5aebf6face325}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Index}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddConstraint_aefa091c22bef2155b8ac9b94f984ceb5}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Constraint}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_aed3a6bc67e958f889fd3553ca2c6d19a}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_aed3a6bc67e958f889fd3553ca2c6d19a} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!references\_field@{references\_field}}
+\index{references\_field@{references\_field}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{references\_field()}{references\_field()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+references\+\_\+field (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model\+\_\+name,  }\item[{}]{name,  }\item[{}]{app\+\_\+label }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if there is a chance this operation references the given
+field name, with an app label for accuracy.
+
+Used for optimization. If in doubt, return True.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1FieldOperation_a82a46589a4305c4357013fbcc8894762}{django.\+db.\+migrations.\+operations.\+fields.\+Field\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RenameField_a7212c6ac4b727dfd343fba13b9e1b84a}{django.\+db.\+migrations.\+operations.\+fields.\+Rename\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterTogetherOptionOperation_ae2b91b7b711a868e6e2d5de840b59e23}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Together\+Option\+Operation}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterOrderWithRespectTo_a49556c60cf2d0721727065d66138ca42}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Order\+With\+Respect\+To}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a5396b814a7639a8ee3368d3312979d8e}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a5396b814a7639a8ee3368d3312979d8e} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!references\_model@{references\_model}}
+\index{references\_model@{references\_model}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{references\_model()}{references\_model()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+references\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{app\+\_\+label }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if there is a chance this operation references the given
+model name (as a string), with an app label for accuracy.
+
+Used for optimization. If in doubt, return True;
+returning a false positive will merely make the optimizer a little
+less efficient, while returning a false negative may result in an
+unusable optimized migration.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1FieldOperation_aa3ebf3a1dfe078a014d3675e065854b9}{django.\+db.\+migrations.\+operations.\+fields.\+Field\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1ModelOperation_a47918daf19ac8f57721f2f12710a10ef}{django.\+db.\+migrations.\+operations.\+models.\+Model\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1CreateModel_ab5bfedbb6b71da3462502ab109401bd0}{django.\+db.\+migrations.\+operations.\+models.\+Create\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1DeleteModel_ad9a1334be40f36a16730ee0ac3688a13}{django.\+db.\+migrations.\+operations.\+models.\+Delete\+Model}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameModel_a2e9e0a4fcc6fcf773f780ca251432fc4}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Model}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7cfbfb963b7c74653191ffb9afa52ff8}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7cfbfb963b7c74653191ffb9afa52ff8} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!state\_forwards@{state\_forwards}}
+\index{state\_forwards@{state\_forwards}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{state\_forwards()}{state\_forwards()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+state\+\_\+forwards (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app\+\_\+label,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take the state from the previous migration, and mutate it
+so that it matches what this migration would perform.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CreateExtension_a86acb0e4bc44fb0dd6dfe2af29978e7d}{django.\+contrib.\+postgres.\+operations.\+Create\+Extension}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1CollationOperation_a7502f5668658a0bb2e2634f4e6068982}{django.\+contrib.\+postgres.\+operations.\+Collation\+Operation}}, \mbox{\hyperlink{classdjango_1_1contrib_1_1postgres_1_1operations_1_1ValidateConstraint_ad0d6c0a834406fe1ef408d32027fef87}{django.\+contrib.\+postgres.\+operations.\+Validate\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AddField_a34dd7dc3929715dde7eccaf76bdaa558}{django.\+db.\+migrations.\+operations.\+fields.\+Add\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RemoveField_a689c43c9a893ab889c1cc7684b5dc70f}{django.\+db.\+migrations.\+operations.\+fields.\+Remove\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1AlterField_a386220d97f75598c250e39fd9d49818d}{django.\+db.\+migrations.\+operations.\+fields.\+Alter\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1fields_1_1RenameField_a74c99203e2aaf0974c6aa833db808225}{django.\+db.\+migrations.\+operations.\+fields.\+Rename\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1CreateModel_a3d014a7e28652503662755e558b66ba9}{django.\+db.\+migrations.\+operations.\+models.\+Create\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1DeleteModel_ae279fb2f68b9d682d20c7988aa206922}{django.\+db.\+migrations.\+operations.\+models.\+Delete\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameModel_a515307ad2504299fd768baa7a7ced06a}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Model}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTable_a8202c1334b4372f5e16af4f3a9cf7756}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelTableComment_a4ee77922a5a214fec617442c2e7ff1d6}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Table\+Comment}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterTogetherOptionOperation_ae4a50b160fc91d6d7d17bb8fb73645a0}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Together\+Option\+Operation}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterOrderWithRespectTo_a71e76efe98ba12216e8ab0fa3a82302c}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Order\+With\+Respect\+To}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelOptions_a95739ac2c292a1673965dcc9a6f56f5d}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Options}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AlterModelManagers_ad42dc313929b3fe1ebbee3260a1dfc3d}{django.\+db.\+migrations.\+operations.\+models.\+Alter\+Model\+Managers}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddIndex_ad3aa9898dac09ec6d5b866c5cd49f2cc}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveIndex_a1c5a0e33d57eab0d961cf1f9ac80d1a7}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RenameIndex_ac6b3c619ab50104ee3655a3b31cb70d9}{django.\+db.\+migrations.\+operations.\+models.\+Rename\+Index}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1AddConstraint_a4f613e92a38039ff88f1ad7c713bf459}{django.\+db.\+migrations.\+operations.\+models.\+Add\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1models_1_1RemoveConstraint_a398c7e100e7a7893dbba0940b533ea10}{django.\+db.\+migrations.\+operations.\+models.\+Remove\+Constraint}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1SeparateDatabaseAndState_a6b82502b65e89ff7f2840a9f48fbf572}{django.\+db.\+migrations.\+operations.\+special.\+Separate\+Database\+And\+State}}, \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunSQL_a3b28af0952dfc40ba4c471b9598d6251}{django.\+db.\+migrations.\+operations.\+special.\+Run\+SQL}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_aa5b8fef3fbced0b20a819b15ad58ae23}{django.\+db.\+migrations.\+operations.\+special.\+Run\+Python}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ad9ff164e630ee6d56c9dab906471c813}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ad9ff164e630ee6d56c9dab906471c813} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!\_constructor\_args@{\_constructor\_args}}
+\index{\_constructor\_args@{\_constructor\_args}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{\_constructor\_args}{\_constructor\_args}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+\_\+constructor\+\_\+args\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a4e983956ee508f5c19674a20a2bb2500}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a4e983956ee508f5c19674a20a2bb2500} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!atomic@{atomic}}
+\index{atomic@{atomic}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{atomic}{atomic}}
+{\footnotesize\ttfamily bool django.\+db.\+migrations.\+operations.\+base.\+Operation.\+atomic = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a278ba5cdf0f89e99193f05f823a141f0}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a278ba5cdf0f89e99193f05f823a141f0} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!category@{category}}
+\index{category@{category}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{category}{category}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+operations.\+base.\+Operation.\+category = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a46d9b82039c84b5c0031914e70498082}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a46d9b82039c84b5c0031914e70498082} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!elidable@{elidable}}
+\index{elidable@{elidable}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{elidable}{elidable}}
+{\footnotesize\ttfamily bool django.\+db.\+migrations.\+operations.\+base.\+Operation.\+elidable = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7f1390e35429f9b3d6c9f1571fe562e9}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a7f1390e35429f9b3d6c9f1571fe562e9} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!reduces\_to\_sql@{reduces\_to\_sql}}
+\index{reduces\_to\_sql@{reduces\_to\_sql}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{reduces\_to\_sql}{reduces\_to\_sql}}
+{\footnotesize\ttfamily bool django.\+db.\+migrations.\+operations.\+base.\+Operation.\+reduces\+\_\+to\+\_\+sql = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ab4f74d8a379cefdb3ac5a26072517869}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_ab4f74d8a379cefdb3ac5a26072517869} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!reversible@{reversible}}
+\index{reversible@{reversible}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{reversible}{reversible}}
+{\footnotesize\ttfamily bool django.\+db.\+migrations.\+operations.\+base.\+Operation.\+reversible = True\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunSQL_a1de300880347e2c0d8957ab4c5322215}{django.\+db.\+migrations.\+operations.\+special.\+Run\+SQL}}, et \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1operations_1_1special_1_1RunPython_a5d731b89cb66ff18a45301222402f5e6}{django.\+db.\+migrations.\+operations.\+special.\+Run\+Python}}.
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a278729637550e4f4e403a3554ef16292}\label{classdjango_1_1db_1_1migrations_1_1operations_1_1base_1_1Operation_a278729637550e4f4e403a3554ef16292} 
+\index{django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}!serialization\_expand\_args@{serialization\_expand\_args}}
+\index{serialization\_expand\_args@{serialization\_expand\_args}!django.db.migrations.operations.base.Operation@{django.db.migrations.operations.base.Operation}}
+\doxysubsubsection{\texorpdfstring{serialization\_expand\_args}{serialization\_expand\_args}}
+{\footnotesize\ttfamily list django.\+db.\+migrations.\+operations.\+base.\+Operation.\+serialization\+\_\+expand\+\_\+args = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/migrations/operations/\mbox{\hyperlink{django_2db_2migrations_2operations_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

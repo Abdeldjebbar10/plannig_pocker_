@@ -1,0 +1,59 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+\_\+core.\+printoptions}
+\hypertarget{namespacenumpy_1_1__core_1_1printoptions}{}\label{namespacenumpy_1_1__core_1_1printoptions}\index{numpy.\_core.printoptions@{numpy.\_core.printoptions}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1printoptions_a64882735e50ed0cd6feb45091fc5bee9}{default\+\_\+format\+\_\+options\+\_\+dict}}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1printoptions_a01a2a0595787f7701bb804868896db0e}{format\+\_\+options}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Stores and defines the low-level format_options context variable.
+
+This is defined in its own file outside of the arrayprint module
+so we can import it from C while initializing the multiarray
+C module during import without introducing circular dependencies.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1__core_1_1printoptions_a64882735e50ed0cd6feb45091fc5bee9}\label{namespacenumpy_1_1__core_1_1printoptions_a64882735e50ed0cd6feb45091fc5bee9} 
+\index{numpy.\_core.printoptions@{numpy.\_core.printoptions}!default\_format\_options\_dict@{default\_format\_options\_dict}}
+\index{default\_format\_options\_dict@{default\_format\_options\_dict}!numpy.\_core.printoptions@{numpy.\_core.printoptions}}
+\doxysubsubsection{\texorpdfstring{default\_format\_options\_dict}{default\_format\_options\_dict}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+printoptions.\+default\+\_\+format\+\_\+options\+\_\+dict}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}edgeitems"{}}:\ 3,\ \ \textcolor{comment}{\#\ repr\ N\ leading\ and\ trailing\ items\ of\ each\ dimension}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}threshold"{}}:\ 1000,\ \ \textcolor{comment}{\#\ total\ items\ >\ triggers\ array\ summarization}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}floatmode"{}}:\ \textcolor{stringliteral}{"{}maxprec"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}precision"{}}:\ 8,\ \ \textcolor{comment}{\#\ precision\ of\ floating\ point\ representations}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}suppress"{}}:\ \textcolor{keyword}{False},\ \ \textcolor{comment}{\#\ suppress\ printing\ small\ floating\ values\ in\ exp\ format}}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}linewidth"{}}:\ 75,}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}nanstr"{}}:\ \textcolor{stringliteral}{"{}nan"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}infstr"{}}:\ \textcolor{stringliteral}{"{}inf"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}sign"{}}:\ \textcolor{stringliteral}{"{}-\/"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}formatter"{}}:\ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{\#\ Internally\ stored\ as\ an\ int\ to\ simplify\ comparisons;\ converted\ from/to}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{\#\ str/False\ on\ the\ way\ in/out.}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{'legacy'}:\ sys.maxsize,}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{'override\_repr'}:\ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{00016\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1__core_1_1printoptions_a01a2a0595787f7701bb804868896db0e}\label{namespacenumpy_1_1__core_1_1printoptions_a01a2a0595787f7701bb804868896db0e} 
+\index{numpy.\_core.printoptions@{numpy.\_core.printoptions}!format\_options@{format\_options}}
+\index{format\_options@{format\_options}!numpy.\_core.printoptions@{numpy.\_core.printoptions}}
+\doxysubsubsection{\texorpdfstring{format\_options}{format\_options}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+printoptions.\+format\+\_\+options}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ ContextVar(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}format\_options"{}},\ default=default\_format\_options\_dict.copy())}
+
+\end{DoxyCode}

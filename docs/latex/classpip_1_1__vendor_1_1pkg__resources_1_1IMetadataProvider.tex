@@ -1,0 +1,78 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider}
+\hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider}{}\label{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider}\index{pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a0fcc7089e0cadee8d60b5ef3e5f05736}{has\+\_\+metadata}} (self, str name)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a6aa14aa67b8beb2bf5248717b0fe6f17}{get\+\_\+metadata}} (self, str name)
+\item 
+Iterator\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_ac119fd660fdf690f959e005c5ca04133}{get\+\_\+metadata\+\_\+lines}} (self, str name)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_ab24f08c1482aa80c702aacb4b0c8529c}{metadata\+\_\+isdir}} (self, str name)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a1fbcc47bb9c65760ca6b677f4baf83ea}{metadata\+\_\+listdir}} (self, str name)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_aebba9a6c7ff49ab8f583e88b4bf17e37}{run\+\_\+script}} (self, str script\+\_\+name, dict\mbox{[}str, Any\mbox{]} namespace)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a6aa14aa67b8beb2bf5248717b0fe6f17}\label{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a6aa14aa67b8beb2bf5248717b0fe6f17} 
+\index{pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}!get\_metadata@{get\_metadata}}
+\index{get\_metadata@{get\_metadata}!pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}}
+\doxysubsubsection{\texorpdfstring{get\_metadata()}{get\_metadata()}}
+{\footnotesize\ttfamily  str pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider.\+get\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The named metadata resource as a string\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_ac119fd660fdf690f959e005c5ca04133}\label{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_ac119fd660fdf690f959e005c5ca04133} 
+\index{pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}!get\_metadata\_lines@{get\_metadata\_lines}}
+\index{get\_metadata\_lines@{get\_metadata\_lines}!pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}}
+\doxysubsubsection{\texorpdfstring{get\_metadata\_lines()}{get\_metadata\_lines()}}
+{\footnotesize\ttfamily  Iterator\mbox{[}str\mbox{]} pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider.\+get\+\_\+metadata\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield named metadata resource as list of non-blank non-comment lines
+
+Leading and trailing whitespace is stripped from each line, and lines
+with ``#`` as the first non-blank character are omitted.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a0fcc7089e0cadee8d60b5ef3e5f05736}\label{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a0fcc7089e0cadee8d60b5ef3e5f05736} 
+\index{pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}!has\_metadata@{has\_metadata}}
+\index{has\_metadata@{has\_metadata}!pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}}
+\doxysubsubsection{\texorpdfstring{has\_metadata()}{has\_metadata()}}
+{\footnotesize\ttfamily  bool pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider.\+has\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Does the package's distribution contain the named metadata?\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_ab24f08c1482aa80c702aacb4b0c8529c}\label{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_ab24f08c1482aa80c702aacb4b0c8529c} 
+\index{pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}!metadata\_isdir@{metadata\_isdir}}
+\index{metadata\_isdir@{metadata\_isdir}!pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}}
+\doxysubsubsection{\texorpdfstring{metadata\_isdir()}{metadata\_isdir()}}
+{\footnotesize\ttfamily  bool pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider.\+metadata\+\_\+isdir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Is the named metadata a directory?  (like ``os.path.isdir()``)\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a1fbcc47bb9c65760ca6b677f4baf83ea}\label{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_a1fbcc47bb9c65760ca6b677f4baf83ea} 
+\index{pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}!metadata\_listdir@{metadata\_listdir}}
+\index{metadata\_listdir@{metadata\_listdir}!pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}}
+\doxysubsubsection{\texorpdfstring{metadata\_listdir()}{metadata\_listdir()}}
+{\footnotesize\ttfamily  list\mbox{[}str\mbox{]} pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider.\+metadata\+\_\+listdir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List of metadata names in the directory (like ``os.listdir()``)\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_aebba9a6c7ff49ab8f583e88b4bf17e37}\label{classpip_1_1__vendor_1_1pkg__resources_1_1IMetadataProvider_aebba9a6c7ff49ab8f583e88b4bf17e37} 
+\index{pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}!run\_script@{run\_script}}
+\index{run\_script@{run\_script}!pip.\_vendor.pkg\_resources.IMetadataProvider@{pip.\_vendor.pkg\_resources.IMetadataProvider}}
+\doxysubsubsection{\texorpdfstring{run\_script()}{run\_script()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+pkg\+\_\+resources.\+IMetadata\+Provider.\+run\+\_\+script (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{script\+\_\+name,  }\item[{dict\mbox{[}str, Any\mbox{]}}]{namespace }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execute the named script in the supplied namespace dictionary\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/pkg\+\_\+resources/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pip_2__vendor_2pkg__resources_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

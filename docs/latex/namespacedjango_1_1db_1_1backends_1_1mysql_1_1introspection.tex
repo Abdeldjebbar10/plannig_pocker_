@@ -1,0 +1,55 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+db.\+backends.\+mysql.\+introspection}
+\hypertarget{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection}{}\label{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection}\index{django.db.backends.mysql.introspection@{django.db.backends.mysql.introspection}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1db_1_1backends_1_1mysql_1_1introspection_1_1DatabaseIntrospection}{Database\+Introspection}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_abafa88ba70d7bae7bd335d3485bfdf48}{Field\+Info}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_a841118f961fcb39f4764999736025f4c}{Info\+Line}}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_a191e8af8d6d853592a5d61e62dacd0ab}{Table\+Info}} = namedtuple("{}Table\+Info"{}, Base\+Table\+Info.\+\_\+fields + ("{}comment"{},))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_abafa88ba70d7bae7bd335d3485bfdf48}\label{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_abafa88ba70d7bae7bd335d3485bfdf48} 
+\index{django.db.backends.mysql.introspection@{django.db.backends.mysql.introspection}!FieldInfo@{FieldInfo}}
+\index{FieldInfo@{FieldInfo}!django.db.backends.mysql.introspection@{django.db.backends.mysql.introspection}}
+\doxysubsubsection{\texorpdfstring{FieldInfo}{FieldInfo}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+introspection.\+Field\+Info}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ namedtuple(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}FieldInfo"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ BaseFieldInfo.\_fields}
+\DoxyCodeLine{00004\ \ \ \ \ +\ (\textcolor{stringliteral}{"{}extra"{}},\ \textcolor{stringliteral}{"{}is\_unsigned"{}},\ \textcolor{stringliteral}{"{}has\_json\_constraint"{}},\ \textcolor{stringliteral}{"{}comment"{}},\ \textcolor{stringliteral}{"{}data\_type"{}}),}
+\DoxyCodeLine{00005\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_a841118f961fcb39f4764999736025f4c}\label{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_a841118f961fcb39f4764999736025f4c} 
+\index{django.db.backends.mysql.introspection@{django.db.backends.mysql.introspection}!InfoLine@{InfoLine}}
+\index{InfoLine@{InfoLine}!django.db.backends.mysql.introspection@{django.db.backends.mysql.introspection}}
+\doxysubsubsection{\texorpdfstring{InfoLine}{InfoLine}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+introspection.\+Info\+Line}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ namedtuple(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}InfoLine"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}col\_name\ data\_type\ max\_len\ num\_prec\ num\_scale\ extra\ column\_default\ "{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}collation\ is\_unsigned\ comment"{}},}
+\DoxyCodeLine{00005\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_a191e8af8d6d853592a5d61e62dacd0ab}\label{namespacedjango_1_1db_1_1backends_1_1mysql_1_1introspection_a191e8af8d6d853592a5d61e62dacd0ab} 
+\index{django.db.backends.mysql.introspection@{django.db.backends.mysql.introspection}!TableInfo@{TableInfo}}
+\index{TableInfo@{TableInfo}!django.db.backends.mysql.introspection@{django.db.backends.mysql.introspection}}
+\doxysubsubsection{\texorpdfstring{TableInfo}{TableInfo}}
+{\footnotesize\ttfamily django.\+db.\+backends.\+mysql.\+introspection.\+Table\+Info = namedtuple("{}Table\+Info"{}, Base\+Table\+Info.\+\_\+fields + ("{}comment"{},))}
+

@@ -1,0 +1,190 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+\_\+core.\+\_\+type\+\_\+aliases}
+\hypertarget{namespacenumpy_1_1__core_1_1__type__aliases}{}\label{namespacenumpy_1_1__core_1_1__type__aliases}\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a81a6983c3dd50aeeb2463c4d6969d8c1}{sctype\+Dict}} = \{\}
+\begin{DoxyCompactList}\small\item\em Building {\ttfamily sctype\+Dict} and {\ttfamily all\+Types} \end{DoxyCompactList}\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a4b189bedece7334731decf2920d710dc}{all\+Types}} = \{\}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a9a29d5ad9edb98ccee3b315042b677cb}{c\+\_\+names\+\_\+dict}} = \{\}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_aa0d627f8752f3c899b921a88a5f87803}{\+\_\+abstract\+\_\+type\+\_\+names}}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a6f4f41598333da3415433e86984bcf83}{concrete\+\_\+type}} = v.\+type
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a03f6e8a019d52c22d3ceac95f264a2ea}{\+\_\+aliases}}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a44029e2a733d1c5b0eb71488fb47d7f4}{\+\_\+extra\+\_\+aliases}}
+\item 
+type \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_aa7a974b31304c341b6d30bf03a20e6e1}{longdouble\+\_\+type}} = \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a4b189bedece7334731decf2920d710dc}{all\+Types}}\mbox{[}full\+\_\+name\mbox{]}
+\item 
+int \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a5827b3f36bdf1da1d2e877a5ebff443d}{bits}} = dtype(\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_aa7a974b31304c341b6d30bf03a20e6e1}{longdouble\+\_\+type}}).itemsize \texorpdfstring{$\ast$}{*} 8
+\item 
+str \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_ab86480dc59658c3b50b490bea03147ed}{base\+\_\+name}} = "{}complex"{} if is\+\_\+complex else "{}float"{}
+\item 
+str \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a62f47bb3a902e59a3d7abeb358e40e5b}{extended\+\_\+prec\+\_\+name}} = f"{}\{\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_ab86480dc59658c3b50b490bea03147ed}{base\+\_\+name}}\}\{\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a5827b3f36bdf1da1d2e877a5ebff443d}{bits}}\}"{}
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a5404d67671c21cb8a72bb320d64611ca}{sctypes}}
+\begin{DoxyCompactList}\small\item\em Building {\ttfamily sctypes} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_affb0be89e90dc090bbb7f2193088b9c7}{sctype\+\_\+list}} = list(\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a5404d67671c21cb8a72bb320d64611ca}{sctypes}}\mbox{[}sctype\+\_\+key\mbox{]})
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_aa196f0562838640a568581fb4444a72b}{key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Due to compatibility, numpy has a very large number of different naming
+conventions for the scalar types (those subclassing from `numpy.generic`).
+This file produces a convoluted set of dictionaries mapping names to types,
+and sometimes other mappings too.
+
+.. data:: allTypes
+    A dictionary of names to types that will be exposed as attributes through
+    ``np._core.numerictypes.*``
+
+.. data:: sctypeDict
+    Similar to `allTypes`, but maps a broader set of aliases to their types.
+
+.. data:: sctypes
+    A dictionary keyed by a "type group" string, providing a list of types
+    under that group.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_aa0d627f8752f3c899b921a88a5f87803}\label{namespacenumpy_1_1__core_1_1__type__aliases_aa0d627f8752f3c899b921a88a5f87803} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!\_abstract\_type\_names@{\_abstract\_type\_names}}
+\index{\_abstract\_type\_names@{\_abstract\_type\_names}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{\_abstract\_type\_names}{\_abstract\_type\_names}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+\_\+abstract\+\_\+type\+\_\+names\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}generic"{}},\ \textcolor{stringliteral}{"{}integer"{}},\ \textcolor{stringliteral}{"{}inexact"{}},\ \textcolor{stringliteral}{"{}floating"{}},\ \textcolor{stringliteral}{"{}number"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}flexible"{}},\ \textcolor{stringliteral}{"{}character"{}},\ \textcolor{stringliteral}{"{}complexfloating"{}},\ \textcolor{stringliteral}{"{}unsignedinteger"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}signedinteger"{}}}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a03f6e8a019d52c22d3ceac95f264a2ea}\label{namespacenumpy_1_1__core_1_1__type__aliases_a03f6e8a019d52c22d3ceac95f264a2ea} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!\_aliases@{\_aliases}}
+\index{\_aliases@{\_aliases}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{\_aliases}{\_aliases}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+\_\+aliases\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}double"{}}:\ \textcolor{stringliteral}{"{}float64"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}cdouble"{}}:\ \textcolor{stringliteral}{"{}complex128"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}single"{}}:\ \textcolor{stringliteral}{"{}float32"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}csingle"{}}:\ \textcolor{stringliteral}{"{}complex64"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}half"{}}:\ \textcolor{stringliteral}{"{}float16"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}bool\_"{}}:\ \textcolor{stringliteral}{"{}bool"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{\#\ Default\ integer:}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}int\_"{}}:\ \textcolor{stringliteral}{"{}intp"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}uint"{}}:\ \textcolor{stringliteral}{"{}uintp"{}},}
+\DoxyCodeLine{00011\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a44029e2a733d1c5b0eb71488fb47d7f4}\label{namespacenumpy_1_1__core_1_1__type__aliases_a44029e2a733d1c5b0eb71488fb47d7f4} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!\_extra\_aliases@{\_extra\_aliases}}
+\index{\_extra\_aliases@{\_extra\_aliases}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{\_extra\_aliases}{\_extra\_aliases}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+\_\+extra\+\_\+aliases\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}float"{}}:\ \textcolor{stringliteral}{"{}float64"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}complex"{}}:\ \textcolor{stringliteral}{"{}complex128"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}object"{}}:\ \textcolor{stringliteral}{"{}object\_"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}bytes"{}}:\ \textcolor{stringliteral}{"{}bytes\_"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}a"{}}:\ \textcolor{stringliteral}{"{}bytes\_"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}int"{}}:\ \textcolor{stringliteral}{"{}int\_"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}str"{}}:\ \textcolor{stringliteral}{"{}str\_"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}unicode"{}}:\ \textcolor{stringliteral}{"{}str\_"{}},}
+\DoxyCodeLine{00010\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a4b189bedece7334731decf2920d710dc}\label{namespacenumpy_1_1__core_1_1__type__aliases_a4b189bedece7334731decf2920d710dc} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!allTypes@{allTypes}}
+\index{allTypes@{allTypes}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{allTypes}{allTypes}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+all\+Types = \{\}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_ab86480dc59658c3b50b490bea03147ed}\label{namespacenumpy_1_1__core_1_1__type__aliases_ab86480dc59658c3b50b490bea03147ed} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!base\_name@{base\_name}}
+\index{base\_name@{base\_name}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{base\_name}{base\_name}}
+{\footnotesize\ttfamily str numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+base\+\_\+name = "{}complex"{} if is\+\_\+complex else "{}float"{}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a5827b3f36bdf1da1d2e877a5ebff443d}\label{namespacenumpy_1_1__core_1_1__type__aliases_a5827b3f36bdf1da1d2e877a5ebff443d} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!bits@{bits}}
+\index{bits@{bits}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{bits}{bits}}
+{\footnotesize\ttfamily int numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+bits = dtype(\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_aa7a974b31304c341b6d30bf03a20e6e1}{longdouble\+\_\+type}}).itemsize \texorpdfstring{$\ast$}{*} 8}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a9a29d5ad9edb98ccee3b315042b677cb}\label{namespacenumpy_1_1__core_1_1__type__aliases_a9a29d5ad9edb98ccee3b315042b677cb} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!c\_names\_dict@{c\_names\_dict}}
+\index{c\_names\_dict@{c\_names\_dict}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{c\_names\_dict}{c\_names\_dict}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+c\+\_\+names\+\_\+dict = \{\}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a6f4f41598333da3415433e86984bcf83}\label{namespacenumpy_1_1__core_1_1__type__aliases_a6f4f41598333da3415433e86984bcf83} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!concrete\_type@{concrete\_type}}
+\index{concrete\_type@{concrete\_type}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{concrete\_type}{concrete\_type}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+concrete\+\_\+type = v.\+type}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a62f47bb3a902e59a3d7abeb358e40e5b}\label{namespacenumpy_1_1__core_1_1__type__aliases_a62f47bb3a902e59a3d7abeb358e40e5b} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!extended\_prec\_name@{extended\_prec\_name}}
+\index{extended\_prec\_name@{extended\_prec\_name}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{extended\_prec\_name}{extended\_prec\_name}}
+{\footnotesize\ttfamily str numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+extended\+\_\+prec\+\_\+name = f"{}\{\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_ab86480dc59658c3b50b490bea03147ed}{base\+\_\+name}}\}\{\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a5827b3f36bdf1da1d2e877a5ebff443d}{bits}}\}"{}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_aa196f0562838640a568581fb4444a72b}\label{namespacenumpy_1_1__core_1_1__type__aliases_aa196f0562838640a568581fb4444a72b} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!key@{key}}
+\index{key@{key}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+key}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_aa7a974b31304c341b6d30bf03a20e6e1}\label{namespacenumpy_1_1__core_1_1__type__aliases_aa7a974b31304c341b6d30bf03a20e6e1} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!longdouble\_type@{longdouble\_type}}
+\index{longdouble\_type@{longdouble\_type}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{longdouble\_type}{longdouble\_type}}
+{\footnotesize\ttfamily type numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+longdouble\+\_\+type = \mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a4b189bedece7334731decf2920d710dc}{all\+Types}}\mbox{[}full\+\_\+name\mbox{]}}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_affb0be89e90dc090bbb7f2193088b9c7}\label{namespacenumpy_1_1__core_1_1__type__aliases_affb0be89e90dc090bbb7f2193088b9c7} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!sctype\_list@{sctype\_list}}
+\index{sctype\_list@{sctype\_list}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{sctype\_list}{sctype\_list}}
+{\footnotesize\ttfamily numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+sctype\+\_\+list = list(\mbox{\hyperlink{namespacenumpy_1_1__core_1_1__type__aliases_a5404d67671c21cb8a72bb320d64611ca}{sctypes}}\mbox{[}sctype\+\_\+key\mbox{]})}
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a81a6983c3dd50aeeb2463c4d6969d8c1}\label{namespacenumpy_1_1__core_1_1__type__aliases_a81a6983c3dd50aeeb2463c4d6969d8c1} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!sctypeDict@{sctypeDict}}
+\index{sctypeDict@{sctypeDict}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{sctypeDict}{sctypeDict}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+sctype\+Dict = \{\}}
+
+
+
+Building {\ttfamily sctype\+Dict} and {\ttfamily all\+Types} 
+
+\Hypertarget{namespacenumpy_1_1__core_1_1__type__aliases_a5404d67671c21cb8a72bb320d64611ca}\label{namespacenumpy_1_1__core_1_1__type__aliases_a5404d67671c21cb8a72bb320d64611ca} 
+\index{numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}!sctypes@{sctypes}}
+\index{sctypes@{sctypes}!numpy.\_core.\_type\_aliases@{numpy.\_core.\_type\_aliases}}
+\doxysubsubsection{\texorpdfstring{sctypes}{sctypes}}
+{\footnotesize\ttfamily dict numpy.\+\_\+core.\+\_\+type\+\_\+aliases.\+sctypes}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{\textcolor{stringliteral}{"{}int"{}}:\ set(),\ \textcolor{stringliteral}{"{}uint"{}}:\ set(),\ \textcolor{stringliteral}{"{}float"{}}:\ set(),}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}complex"{}}:\ set(),\ \textcolor{stringliteral}{"{}others"{}}:\ set()\}}
+
+\end{DoxyCode}
+
+
+Building {\ttfamily sctypes} 
+

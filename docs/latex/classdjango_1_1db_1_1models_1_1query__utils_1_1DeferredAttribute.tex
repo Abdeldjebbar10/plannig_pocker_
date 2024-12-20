@@ -1,0 +1,82 @@
+\doxysection{Référence de la classe django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute}
+\hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute}{}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute}\index{django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a99a0e22b325d108ce2acd67c37726713}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a3c5f4df8e3b5ef265d59581d9cbffa51}{field}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_affae19d6f5cc338c1589837770d9be53}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, instance, cls=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a3c5f4df8e3b5ef265d59581d9cbffa51}{field}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a8da719c3826b539c32773da45df966e2}{\+\_\+check\+\_\+parent\+\_\+chain}} (self, instance)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a99a0e22b325d108ce2acd67c37726713}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a99a0e22b325d108ce2acd67c37726713} 
+\index{django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{field }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1models_1_1proxy_1_1SpatialProxy_a0c4776ad29e6449665693c7af1008681}{django.\+contrib.\+gis.\+db.\+models.\+proxy.\+Spatial\+Proxy}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_affae19d6f5cc338c1589837770d9be53}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_affae19d6f5cc338c1589837770d9be53} 
+\index{django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}!\_\_get\_\_@{\_\_get\_\_}}
+\index{\_\_get\_\_@{\_\_get\_\_}!django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_\_()}{\_\_get\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute.\+\_\+\+\_\+get\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance,  }\item[{}]{cls = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve and caches the value from the datastore on the first lookup.
+Return the cached value.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1db_1_1models_1_1proxy_1_1SpatialProxy_aeea4dcda94f580eb0b7df4c8e05173bc}{django.\+contrib.\+gis.\+db.\+models.\+proxy.\+Spatial\+Proxy}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1files_1_1FileDescriptor_a82e0ca1d59a76b7595fb329bc65749f4}{django.\+db.\+models.\+fields.\+files.\+File\+Descriptor}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a8da719c3826b539c32773da45df966e2}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a8da719c3826b539c32773da45df966e2} 
+\index{django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}!\_check\_parent\_chain@{\_check\_parent\_chain}}
+\index{\_check\_parent\_chain@{\_check\_parent\_chain}!django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}}
+\doxysubsubsection{\texorpdfstring{\_check\_parent\_chain()}{\_check\_parent\_chain()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute.\+\_\+check\+\_\+parent\+\_\+chain (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if the field value can be fetched from a parent field already
+loaded in the instance. This can be done if the to-be fetched
+field is a primary key field.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a3c5f4df8e3b5ef265d59581d9cbffa51}\label{classdjango_1_1db_1_1models_1_1query__utils_1_1DeferredAttribute_a3c5f4df8e3b5ef265d59581d9cbffa51} 
+\index{django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}!field@{field}}
+\index{field@{field}!django.db.models.query\_utils.DeferredAttribute@{django.db.models.query\_utils.DeferredAttribute}}
+\doxysubsubsection{\texorpdfstring{field}{field}}
+{\footnotesize\ttfamily django.\+db.\+models.\+query\+\_\+utils.\+Deferred\+Attribute.\+field}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/models/\mbox{\hyperlink{query__utils_8py}{query\+\_\+utils.\+py}}\end{DoxyCompactItemize}

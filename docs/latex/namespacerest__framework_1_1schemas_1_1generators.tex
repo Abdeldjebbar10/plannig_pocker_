@@ -1,0 +1,69 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+schemas.\+generators}
+\hypertarget{namespacerest__framework_1_1schemas_1_1generators}{}\label{namespacerest__framework_1_1schemas_1_1generators}\index{rest\_framework.schemas.generators@{rest\_framework.schemas.generators}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator}{Base\+Schema\+Generator}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator}{Endpoint\+Enumerator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1generators_a8e9ecd58dfec1af0b3e68fcc43f6389c}{get\+\_\+pk\+\_\+name}} (model)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1generators_ac7cf459094a5e6d5146d946f812117d2}{is\+\_\+api\+\_\+view}} (callback)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1generators_a218283fd6f0a85c4ebde1fa35465758c}{endpoint\+\_\+ordering}} (endpoint)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1schemas_1_1generators_a44438373a33a103548bb3c7e0883e21c}{\+\_\+\+PATH\+\_\+\+PARAMETER\+\_\+\+COMPONENT\+\_\+\+RE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}generators.py   # Top-down schema generation
+
+See schemas.__init__.py for package overview.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1schemas_1_1generators_a218283fd6f0a85c4ebde1fa35465758c}\label{namespacerest__framework_1_1schemas_1_1generators_a218283fd6f0a85c4ebde1fa35465758c} 
+\index{rest\_framework.schemas.generators@{rest\_framework.schemas.generators}!endpoint\_ordering@{endpoint\_ordering}}
+\index{endpoint\_ordering@{endpoint\_ordering}!rest\_framework.schemas.generators@{rest\_framework.schemas.generators}}
+\doxysubsubsection{\texorpdfstring{endpoint\_ordering()}{endpoint\_ordering()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+endpoint\+\_\+ordering (\begin{DoxyParamCaption}\item[{}]{endpoint }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1schemas_1_1generators_a8e9ecd58dfec1af0b3e68fcc43f6389c}\label{namespacerest__framework_1_1schemas_1_1generators_a8e9ecd58dfec1af0b3e68fcc43f6389c} 
+\index{rest\_framework.schemas.generators@{rest\_framework.schemas.generators}!get\_pk\_name@{get\_pk\_name}}
+\index{get\_pk\_name@{get\_pk\_name}!rest\_framework.schemas.generators@{rest\_framework.schemas.generators}}
+\doxysubsubsection{\texorpdfstring{get\_pk\_name()}{get\_pk\_name()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+get\+\_\+pk\+\_\+name (\begin{DoxyParamCaption}\item[{}]{model }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1schemas_1_1generators_ac7cf459094a5e6d5146d946f812117d2}\label{namespacerest__framework_1_1schemas_1_1generators_ac7cf459094a5e6d5146d946f812117d2} 
+\index{rest\_framework.schemas.generators@{rest\_framework.schemas.generators}!is\_api\_view@{is\_api\_view}}
+\index{is\_api\_view@{is\_api\_view}!rest\_framework.schemas.generators@{rest\_framework.schemas.generators}}
+\doxysubsubsection{\texorpdfstring{is\_api\_view()}{is\_api\_view()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+is\+\_\+api\+\_\+view (\begin{DoxyParamCaption}\item[{}]{callback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return `True` if the given view callback is a REST framework view/viewset.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1schemas_1_1generators_a44438373a33a103548bb3c7e0883e21c}\label{namespacerest__framework_1_1schemas_1_1generators_a44438373a33a103548bb3c7e0883e21c} 
+\index{rest\_framework.schemas.generators@{rest\_framework.schemas.generators}!\_PATH\_PARAMETER\_COMPONENT\_RE@{\_PATH\_PARAMETER\_COMPONENT\_RE}}
+\index{\_PATH\_PARAMETER\_COMPONENT\_RE@{\_PATH\_PARAMETER\_COMPONENT\_RE}!rest\_framework.schemas.generators@{rest\_framework.schemas.generators}}
+\doxysubsubsection{\texorpdfstring{\_PATH\_PARAMETER\_COMPONENT\_RE}{\_PATH\_PARAMETER\_COMPONENT\_RE}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+\_\+\+PATH\+\_\+\+PARAMETER\+\_\+\+COMPONENT\+\_\+\+RE\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ re.compile(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{r'<(?:(?P<converter>[\string^>:]+):)?(?P<parameter>\(\backslash\)w+)>'}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

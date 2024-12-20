@@ -1,0 +1,69 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+utils.\+dateformat}
+\hypertarget{namespacedjango_1_1utils_1_1dateformat}{}\label{namespacedjango_1_1utils_1_1dateformat}\index{django.utils.dateformat@{django.utils.dateformat}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1dateformat_1_1DateFormat}{Date\+Format}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1dateformat_1_1Formatter}{Formatter}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1dateformat_1_1TimeFormat}{Time\+Format}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1dateformat_ac4eb13b495e052d4012f9b24b2a97b47}{format}} (value, format\+\_\+string)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1dateformat_aa0d8a3d11881183818f2049ac6c683e5}{time\+\_\+format}} (value, format\+\_\+string)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1dateformat_a86cfe22aea08446333ad7808ea0bf717}{re\+\_\+formatchars}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}(?$<$!\textbackslash{}\textbackslash{})(\mbox{[}a\+Abcd\+De\+Ef\+Fg\+Gh\+Hi\+Ijl\+Lm\+Mn\+No\+OPrs\+St\+TUuw\+Wy\+YzZ\mbox{]})"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1dateformat_a7ec1d3476b44ef6b996fd893ab5625be}{re\+\_\+escaped}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\textbackslash{}\textbackslash{}(.)"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}PHP date() style date formatting
+See https://www.php.net/date for format strings
+
+Usage:
+>>> from datetime import datetime
+>>> d = datetime.now()
+>>> df = DateFormat(d)
+>>> print(df.format('jS F Y H:i'))
+7th October 2003 11:39
+>>>
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1utils_1_1dateformat_ac4eb13b495e052d4012f9b24b2a97b47}\label{namespacedjango_1_1utils_1_1dateformat_ac4eb13b495e052d4012f9b24b2a97b47} 
+\index{django.utils.dateformat@{django.utils.dateformat}!format@{format}}
+\index{format@{format}!django.utils.dateformat@{django.utils.dateformat}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily django.\+utils.\+dateformat.\+format (\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{format\+\_\+string }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1dateformat_aa0d8a3d11881183818f2049ac6c683e5}\label{namespacedjango_1_1utils_1_1dateformat_aa0d8a3d11881183818f2049ac6c683e5} 
+\index{django.utils.dateformat@{django.utils.dateformat}!time\_format@{time\_format}}
+\index{time\_format@{time\_format}!django.utils.dateformat@{django.utils.dateformat}}
+\doxysubsubsection{\texorpdfstring{time\_format()}{time\_format()}}
+{\footnotesize\ttfamily django.\+utils.\+dateformat.\+time\+\_\+format (\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{format\+\_\+string }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1utils_1_1dateformat_a7ec1d3476b44ef6b996fd893ab5625be}\label{namespacedjango_1_1utils_1_1dateformat_a7ec1d3476b44ef6b996fd893ab5625be} 
+\index{django.utils.dateformat@{django.utils.dateformat}!re\_escaped@{re\_escaped}}
+\index{re\_escaped@{re\_escaped}!django.utils.dateformat@{django.utils.dateformat}}
+\doxysubsubsection{\texorpdfstring{re\_escaped}{re\_escaped}}
+{\footnotesize\ttfamily django.\+utils.\+dateformat.\+re\+\_\+escaped = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\textbackslash{}\textbackslash{}(.)"{})}
+
+\Hypertarget{namespacedjango_1_1utils_1_1dateformat_a86cfe22aea08446333ad7808ea0bf717}\label{namespacedjango_1_1utils_1_1dateformat_a86cfe22aea08446333ad7808ea0bf717} 
+\index{django.utils.dateformat@{django.utils.dateformat}!re\_formatchars@{re\_formatchars}}
+\index{re\_formatchars@{re\_formatchars}!django.utils.dateformat@{django.utils.dateformat}}
+\doxysubsubsection{\texorpdfstring{re\_formatchars}{re\_formatchars}}
+{\footnotesize\ttfamily django.\+utils.\+dateformat.\+re\+\_\+formatchars = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}(?$<$!\textbackslash{}\textbackslash{})(\mbox{[}a\+Abcd\+De\+Ef\+Fg\+Gh\+Hi\+Ijl\+Lm\+Mn\+No\+OPrs\+St\+TUuw\+Wy\+YzZ\mbox{]})"{})}
+

@@ -1,0 +1,73 @@
+\doxysection{Référence de la classe test\+\_\+numerictypes.\+Test\+Is\+DType}
+\hypertarget{classtest__numerictypes_1_1TestIsDType}{}\label{classtest__numerictypes_1_1TestIsDType}\index{test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__numerictypes_1_1TestIsDType_ab34472998e076dcc5a4dd069fe3cbfb8}{test\+\_\+isdtype}} (self, dtype, close\+\_\+dtype, dtype\+\_\+group)
+\item 
+\mbox{\hyperlink{classtest__numerictypes_1_1TestIsDType_a1aadbcf76c1ae04669a574d442c7bfcc}{test\+\_\+isdtype\+\_\+invalid\+\_\+args}} (self)
+\item 
+\mbox{\hyperlink{classtest__numerictypes_1_1TestIsDType_a7d6ea9f4fd793cc3966ef2329365ff99}{test\+\_\+sctypes\+\_\+complete}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtest__numerictypes_1_1TestIsDType_a038ce594ce92d6ab211f4c77fa3696db}{dtype\+\_\+group\+\_\+dict}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Check correctness of `np.isdtype`. The test considers different argument
+configurations: `np.isdtype(dtype, k1)` and `np.isdtype(dtype, (k1, k2))`
+with concrete dtypes and dtype groups.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classtest__numerictypes_1_1TestIsDType_ab34472998e076dcc5a4dd069fe3cbfb8}\label{classtest__numerictypes_1_1TestIsDType_ab34472998e076dcc5a4dd069fe3cbfb8} 
+\index{test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}!test\_isdtype@{test\_isdtype}}
+\index{test\_isdtype@{test\_isdtype}!test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}}
+\doxysubsubsection{\texorpdfstring{test\_isdtype()}{test\_isdtype()}}
+{\footnotesize\ttfamily test\+\_\+numerictypes.\+Test\+Is\+DType.\+test\+\_\+isdtype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype,  }\item[{}]{close\+\_\+dtype,  }\item[{}]{dtype\+\_\+group }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__numerictypes_1_1TestIsDType_a1aadbcf76c1ae04669a574d442c7bfcc}\label{classtest__numerictypes_1_1TestIsDType_a1aadbcf76c1ae04669a574d442c7bfcc} 
+\index{test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}!test\_isdtype\_invalid\_args@{test\_isdtype\_invalid\_args}}
+\index{test\_isdtype\_invalid\_args@{test\_isdtype\_invalid\_args}!test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}}
+\doxysubsubsection{\texorpdfstring{test\_isdtype\_invalid\_args()}{test\_isdtype\_invalid\_args()}}
+{\footnotesize\ttfamily test\+\_\+numerictypes.\+Test\+Is\+DType.\+test\+\_\+isdtype\+\_\+invalid\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classtest__numerictypes_1_1TestIsDType_a7d6ea9f4fd793cc3966ef2329365ff99}\label{classtest__numerictypes_1_1TestIsDType_a7d6ea9f4fd793cc3966ef2329365ff99} 
+\index{test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}!test\_sctypes\_complete@{test\_sctypes\_complete}}
+\index{test\_sctypes\_complete@{test\_sctypes\_complete}!test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}}
+\doxysubsubsection{\texorpdfstring{test\_sctypes\_complete()}{test\_sctypes\_complete()}}
+{\footnotesize\ttfamily test\+\_\+numerictypes.\+Test\+Is\+DType.\+test\+\_\+sctypes\+\_\+complete (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classtest__numerictypes_1_1TestIsDType_a038ce594ce92d6ab211f4c77fa3696db}\label{classtest__numerictypes_1_1TestIsDType_a038ce594ce92d6ab211f4c77fa3696db} 
+\index{test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}!dtype\_group\_dict@{dtype\_group\_dict}}
+\index{dtype\_group\_dict@{dtype\_group\_dict}!test\_numerictypes.TestIsDType@{test\_numerictypes.TestIsDType}}
+\doxysubsubsection{\texorpdfstring{dtype\_group\_dict}{dtype\_group\_dict}}
+{\footnotesize\ttfamily dict test\+\_\+numerictypes.\+Test\+Is\+DType.\+dtype\+\_\+group\+\_\+dict\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}signed\ integer"{}}:\ sctypes[\textcolor{stringliteral}{"{}int"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}unsigned\ integer"{}}:\ sctypes[\textcolor{stringliteral}{"{}uint"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}integral"{}}:\ sctypes[\textcolor{stringliteral}{"{}int"{}}]\ +\ sctypes[\textcolor{stringliteral}{"{}uint"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}real\ floating"{}}:\ sctypes[\textcolor{stringliteral}{"{}float"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}complex\ floating"{}}:\ sctypes[\textcolor{stringliteral}{"{}complex"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}numeric"{}}:\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ sctypes[\textcolor{stringliteral}{"{}int"{}}]\ +\ sctypes[\textcolor{stringliteral}{"{}uint"{}}]\ +\ sctypes[\textcolor{stringliteral}{"{}float"{}}]\ +}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ sctypes[\textcolor{stringliteral}{"{}complex"{}}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/tests/\mbox{\hyperlink{test__numerictypes_8py}{test\+\_\+numerictypes.\+py}}\end{DoxyCompactItemize}

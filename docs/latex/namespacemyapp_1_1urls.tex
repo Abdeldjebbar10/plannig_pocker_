@@ -1,0 +1,40 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage myapp.\+urls}
+\hypertarget{namespacemyapp_1_1urls}{}\label{namespacemyapp_1_1urls}\index{myapp.urls@{myapp.urls}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacemyapp_1_1urls_a1329ad1b980e0fce630d2472be8417ac}{urlpatterns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacemyapp_1_1urls_a1329ad1b980e0fce630d2472be8417ac}\label{namespacemyapp_1_1urls_a1329ad1b980e0fce630d2472be8417ac} 
+\index{myapp.urls@{myapp.urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!myapp.urls@{myapp.urls}}
+\doxysubsubsection{\texorpdfstring{urlpatterns}{urlpatterns}}
+{\footnotesize\ttfamily list myapp.\+urls.\+urlpatterns}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ path(\textcolor{stringliteral}{'partie/<int:partie\_id>/reprendre/'},\ views.reprendre\_partie,\ name=\textcolor{stringliteral}{'reprendre\_partie'}),}
+\DoxyCodeLine{00003\ \ \ \ \ }
+\DoxyCodeLine{00004\ \ \ \ \ path(\textcolor{stringliteral}{'partie/<int:id>/'},\ views.detail\_partie,\ name=\textcolor{stringliteral}{'detail\_partie'}),}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \ \ \ \ path(\textcolor{stringliteral}{''},\ views.menu\_principal,\ name=\textcolor{stringliteral}{'menu\_principal'}),\ \ \textcolor{comment}{\#\ Menu\ principal}}
+\DoxyCodeLine{00007\ \ \ \ \ path(\textcolor{stringliteral}{'creer/'},\ views.creer\_partie,\ name=\textcolor{stringliteral}{'creer\_partie'}),}
+\DoxyCodeLine{00008\ \ \ \ \ path(\textcolor{stringliteral}{'parties/'},\ views.liste\_parties,\ name=\textcolor{stringliteral}{'lister\_parties'}),\ }
+\DoxyCodeLine{00009\ \ \ \ \ path(\textcolor{stringliteral}{'reprendre/'},\ views.reprendre\_partie,\ name=\textcolor{stringliteral}{'reprendre\_partie'}),}
+\DoxyCodeLine{00010\ \ \ \ \ }
+\DoxyCodeLine{00011\ \ \ \ \ path(\textcolor{stringliteral}{'creer\_participant/'},\ views.creer\_participant,\ name=\textcolor{stringliteral}{'creer\_participant'}),\ \ \textcolor{comment}{\#\ Créer\ un\ participant}}
+\DoxyCodeLine{00012\ \ \ \ \ path(\textcolor{stringliteral}{'lister\_participants/'},\ views.liste\_participants,\ name=\textcolor{stringliteral}{'lister\_participants'}),\ \ \textcolor{comment}{\#\ Lister\ les\ participants}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ path(\textcolor{stringliteral}{'partie/<int:partie\_id>/lancer/'},\ views.lancer\_partie,\ name=\textcolor{stringliteral}{'lancer\_partie'}),}
+\DoxyCodeLine{00015\ \ \ \ \ path(\textcolor{stringliteral}{'partie/<int:partie\_id>/reprendre/'},\ views.reprendre\_partie,\ name=\textcolor{stringliteral}{'reprendre\_partie'}),}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ path(\textcolor{stringliteral}{'partie/<int:partie\_id>/vote/'},\ views.demarrer\_vote,\ name=\textcolor{stringliteral}{'demarrer\_vote'}),}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ ]}
+
+\end{DoxyCode}

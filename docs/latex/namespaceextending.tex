@@ -1,0 +1,219 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage extending}
+\hypertarget{namespaceextending}{}\label{namespaceextending}\index{extending@{extending}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceextending_a9a9aace441e9a42f1db8065c82ad001a}{normals}} (\mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}}, \mbox{\hyperlink{namespaceextending_a6228eb907acb00d4e6178f7b10aa3435}{state}})
+\item 
+\mbox{\hyperlink{namespaceextending_a7accbb8d2ccd935aba7fce8451b70c64}{numbacall}} ()
+\item 
+\mbox{\hyperlink{namespaceextending_a6a107c27b04709bb121e79e0fb1c5c3f}{numpycall}} ()
+\item 
+\mbox{\hyperlink{namespaceextending_ad1a68c0f75162ccb607018ff9b3ec5d9}{bounded\+\_\+uint}} (lb, ub, \mbox{\hyperlink{namespaceextending_a6228eb907acb00d4e6178f7b10aa3435}{state}})
+\item 
+\mbox{\hyperlink{namespaceextending_a0b891440cd656b7aabc8e45e28627a45}{bounded\+\_\+uints}} (lb, ub, \mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}}, \mbox{\hyperlink{namespaceextending_a6228eb907acb00d4e6178f7b10aa3435}{state}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceextending_a1260e9bfdc58cf13ca4704655303cbdb}{ffi}} = cffi.\+FFI()
+\item 
+\mbox{\hyperlink{namespaceextending_a2dba9dae3c59d687c64b2150f744bae8}{inc\+\_\+dir}} = os.\+path.\+join(np.\+get\+\_\+include(), \textquotesingle{}numpy\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceextending_a739074a39dbaeee15319d4a1fffed0fb}{lib}} = ffi.\+dlopen(np.\+random.\+\_\+generator.\+\_\+\+\_\+file\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespaceextending_a3a93d06c028a21ed5e3775c9d97b0437}{bit\+\_\+gen}} = np.\+random.\+PCG64()
+\item 
+\mbox{\hyperlink{namespaceextending_af6793f8dd9d1232c132981cc1ac7a4e6}{rng}} = np.\+random.\+Generator(\mbox{\hyperlink{namespaceextending_a3a93d06c028a21ed5e3775c9d97b0437}{bit\+\_\+gen}})
+\item 
+\mbox{\hyperlink{namespaceextending_a6228eb907acb00d4e6178f7b10aa3435}{state}} = bit\+\_\+gen.\+state
+\item 
+\mbox{\hyperlink{namespaceextending_a8c23516950145d0b7258110b88945278}{interface}} = rng.\+bit\+\_\+generator.\+cffi
+\item 
+int \mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}} = 100
+\item 
+\mbox{\hyperlink{namespaceextending_aa5a6cdee379078157b1c777c60a9235c}{vals\+\_\+cffi}} = ffi.\+new(\textquotesingle{}double\mbox{[}\%d\mbox{]}\textquotesingle{} \% \mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}})
+\item 
+\mbox{\hyperlink{namespaceextending_a67a4823006ed5c87ec37e99590e521b2}{vals}} = rng.\+standard\+\_\+normal(\mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}})
+\item 
+\mbox{\hyperlink{namespaceextending_a84443d08eb187429ae515173a0132283}{next\+\_\+d}} = bit\+\_\+gen.\+cffi.\+next\+\_\+double
+\item 
+\mbox{\hyperlink{namespaceextending_a79235899bb282ae6cc6b6f2869b98830}{state\+\_\+addr}} = bit\+\_\+gen.\+cffi.\+state\+\_\+address
+\item 
+\mbox{\hyperlink{namespaceextending_aae65bc609fd94964e24a47ed7a1cf427}{normalsj}} = nb.\+jit(\mbox{\hyperlink{namespaceextending_a9a9aace441e9a42f1db8065c82ad001a}{normals}}, nopython=True)
+\item 
+\mbox{\hyperlink{namespaceextending_a23b7fd556719b72083b19f889811859a}{rg}} = np.\+random.\+Generator(PCG64())
+\item 
+\mbox{\hyperlink{namespaceextending_a0a0a5510a2fc1072298e2e2ff82f7600}{r1}} = \mbox{\hyperlink{namespaceextending_a7accbb8d2ccd935aba7fce8451b70c64}{numbacall}}()
+\item 
+\mbox{\hyperlink{namespaceextending_af3234096f74075afd11ae47cddd8e301}{r2}} = \mbox{\hyperlink{namespaceextending_a6a107c27b04709bb121e79e0fb1c5c3f}{numpycall}}()
+\item 
+\mbox{\hyperlink{namespaceextending_afedbc937e92d45d9761b1155d735cbef}{t1}} = timeit(\mbox{\hyperlink{namespaceextending_a7accbb8d2ccd935aba7fce8451b70c64}{numbacall}}, number=1000)
+\item 
+\mbox{\hyperlink{namespaceextending_ad742a73782498dea3dc0129460544ea1}{t2}} = timeit(\mbox{\hyperlink{namespaceextending_a6a107c27b04709bb121e79e0fb1c5c3f}{numpycall}}, number=1000)
+\item 
+\mbox{\hyperlink{namespaceextending_ae4eeff5c3ac19e037f0c44c2dc767701}{next\+\_\+u32}} = bit\+\_\+gen.\+ctypes.\+next\+\_\+uint32
+\item 
+\mbox{\hyperlink{namespaceextending_a1d6b667e2d9ab824d12cb794b1960b1d}{ctypes\+\_\+state}} = bit\+\_\+gen.\+ctypes.\+state
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Use cffi to access any of the underlying C functions from distributions.h
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespaceextending_ad1a68c0f75162ccb607018ff9b3ec5d9}\label{namespaceextending_ad1a68c0f75162ccb607018ff9b3ec5d9} 
+\index{extending@{extending}!bounded\_uint@{bounded\_uint}}
+\index{bounded\_uint@{bounded\_uint}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{bounded\_uint()}{bounded\_uint()}}
+{\footnotesize\ttfamily extending.\+bounded\+\_\+uint (\begin{DoxyParamCaption}\item[{}]{lb,  }\item[{}]{ub,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceextending_a0b891440cd656b7aabc8e45e28627a45}\label{namespaceextending_a0b891440cd656b7aabc8e45e28627a45} 
+\index{extending@{extending}!bounded\_uints@{bounded\_uints}}
+\index{bounded\_uints@{bounded\_uints}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{bounded\_uints()}{bounded\_uints()}}
+{\footnotesize\ttfamily extending.\+bounded\+\_\+uints (\begin{DoxyParamCaption}\item[{}]{lb,  }\item[{}]{ub,  }\item[{}]{n,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceextending_a9a9aace441e9a42f1db8065c82ad001a}\label{namespaceextending_a9a9aace441e9a42f1db8065c82ad001a} 
+\index{extending@{extending}!normals@{normals}}
+\index{normals@{normals}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{normals()}{normals()}}
+{\footnotesize\ttfamily extending.\+normals (\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{state }\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceextending_a7accbb8d2ccd935aba7fce8451b70c64}\label{namespaceextending_a7accbb8d2ccd935aba7fce8451b70c64} 
+\index{extending@{extending}!numbacall@{numbacall}}
+\index{numbacall@{numbacall}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{numbacall()}{numbacall()}}
+{\footnotesize\ttfamily extending.\+numbacall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceextending_a6a107c27b04709bb121e79e0fb1c5c3f}\label{namespaceextending_a6a107c27b04709bb121e79e0fb1c5c3f} 
+\index{extending@{extending}!numpycall@{numpycall}}
+\index{numpycall@{numpycall}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{numpycall()}{numpycall()}}
+{\footnotesize\ttfamily extending.\+numpycall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespaceextending_a3a93d06c028a21ed5e3775c9d97b0437}\label{namespaceextending_a3a93d06c028a21ed5e3775c9d97b0437} 
+\index{extending@{extending}!bit\_gen@{bit\_gen}}
+\index{bit\_gen@{bit\_gen}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{bit\_gen}{bit\_gen}}
+{\footnotesize\ttfamily extending.\+bit\+\_\+gen = np.\+random.\+PCG64()}
+
+\Hypertarget{namespaceextending_a1d6b667e2d9ab824d12cb794b1960b1d}\label{namespaceextending_a1d6b667e2d9ab824d12cb794b1960b1d} 
+\index{extending@{extending}!ctypes\_state@{ctypes\_state}}
+\index{ctypes\_state@{ctypes\_state}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{ctypes\_state}{ctypes\_state}}
+{\footnotesize\ttfamily extending.\+ctypes\+\_\+state = bit\+\_\+gen.\+ctypes.\+state}
+
+\Hypertarget{namespaceextending_a1260e9bfdc58cf13ca4704655303cbdb}\label{namespaceextending_a1260e9bfdc58cf13ca4704655303cbdb} 
+\index{extending@{extending}!ffi@{ffi}}
+\index{ffi@{ffi}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{ffi}{ffi}}
+{\footnotesize\ttfamily extending.\+ffi = cffi.\+FFI()}
+
+\Hypertarget{namespaceextending_a2dba9dae3c59d687c64b2150f744bae8}\label{namespaceextending_a2dba9dae3c59d687c64b2150f744bae8} 
+\index{extending@{extending}!inc\_dir@{inc\_dir}}
+\index{inc\_dir@{inc\_dir}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{inc\_dir}{inc\_dir}}
+{\footnotesize\ttfamily extending.\+inc\+\_\+dir = os.\+path.\+join(np.\+get\+\_\+include(), \textquotesingle{}numpy\textquotesingle{})}
+
+\Hypertarget{namespaceextending_a8c23516950145d0b7258110b88945278}\label{namespaceextending_a8c23516950145d0b7258110b88945278} 
+\index{extending@{extending}!interface@{interface}}
+\index{interface@{interface}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{interface}{interface}}
+{\footnotesize\ttfamily extending.\+interface = rng.\+bit\+\_\+generator.\+cffi}
+
+\Hypertarget{namespaceextending_a739074a39dbaeee15319d4a1fffed0fb}\label{namespaceextending_a739074a39dbaeee15319d4a1fffed0fb} 
+\index{extending@{extending}!lib@{lib}}
+\index{lib@{lib}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{lib}{lib}}
+{\footnotesize\ttfamily extending.\+lib = ffi.\+dlopen(np.\+random.\+\_\+generator.\+\_\+\+\_\+file\+\_\+\+\_\+)}
+
+\Hypertarget{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}\label{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2} 
+\index{extending@{extending}!n@{n}}
+\index{n@{n}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily int extending.\+n = 100}
+
+\Hypertarget{namespaceextending_a84443d08eb187429ae515173a0132283}\label{namespaceextending_a84443d08eb187429ae515173a0132283} 
+\index{extending@{extending}!next\_d@{next\_d}}
+\index{next\_d@{next\_d}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{next\_d}{next\_d}}
+{\footnotesize\ttfamily extending.\+next\+\_\+d = bit\+\_\+gen.\+cffi.\+next\+\_\+double}
+
+\Hypertarget{namespaceextending_ae4eeff5c3ac19e037f0c44c2dc767701}\label{namespaceextending_ae4eeff5c3ac19e037f0c44c2dc767701} 
+\index{extending@{extending}!next\_u32@{next\_u32}}
+\index{next\_u32@{next\_u32}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{next\_u32}{next\_u32}}
+{\footnotesize\ttfamily extending.\+next\+\_\+u32 = bit\+\_\+gen.\+ctypes.\+next\+\_\+uint32}
+
+\Hypertarget{namespaceextending_aae65bc609fd94964e24a47ed7a1cf427}\label{namespaceextending_aae65bc609fd94964e24a47ed7a1cf427} 
+\index{extending@{extending}!normalsj@{normalsj}}
+\index{normalsj@{normalsj}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{normalsj}{normalsj}}
+{\footnotesize\ttfamily extending.\+normalsj = nb.\+jit(\mbox{\hyperlink{namespaceextending_a9a9aace441e9a42f1db8065c82ad001a}{normals}}, nopython=True)}
+
+\Hypertarget{namespaceextending_a0a0a5510a2fc1072298e2e2ff82f7600}\label{namespaceextending_a0a0a5510a2fc1072298e2e2ff82f7600} 
+\index{extending@{extending}!r1@{r1}}
+\index{r1@{r1}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{r1}{r1}}
+{\footnotesize\ttfamily extending.\+r1 = \mbox{\hyperlink{namespaceextending_a7accbb8d2ccd935aba7fce8451b70c64}{numbacall}}()}
+
+\Hypertarget{namespaceextending_af3234096f74075afd11ae47cddd8e301}\label{namespaceextending_af3234096f74075afd11ae47cddd8e301} 
+\index{extending@{extending}!r2@{r2}}
+\index{r2@{r2}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{r2}{r2}}
+{\footnotesize\ttfamily extending.\+r2 = \mbox{\hyperlink{namespaceextending_a6a107c27b04709bb121e79e0fb1c5c3f}{numpycall}}()}
+
+\Hypertarget{namespaceextending_a23b7fd556719b72083b19f889811859a}\label{namespaceextending_a23b7fd556719b72083b19f889811859a} 
+\index{extending@{extending}!rg@{rg}}
+\index{rg@{rg}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{rg}{rg}}
+{\footnotesize\ttfamily extending.\+rg = np.\+random.\+Generator(PCG64())}
+
+\Hypertarget{namespaceextending_af6793f8dd9d1232c132981cc1ac7a4e6}\label{namespaceextending_af6793f8dd9d1232c132981cc1ac7a4e6} 
+\index{extending@{extending}!rng@{rng}}
+\index{rng@{rng}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{rng}{rng}}
+{\footnotesize\ttfamily extending.\+rng = np.\+random.\+Generator(\mbox{\hyperlink{namespaceextending_a3a93d06c028a21ed5e3775c9d97b0437}{bit\+\_\+gen}})}
+
+\Hypertarget{namespaceextending_a6228eb907acb00d4e6178f7b10aa3435}\label{namespaceextending_a6228eb907acb00d4e6178f7b10aa3435} 
+\index{extending@{extending}!state@{state}}
+\index{state@{state}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily extending.\+state = bit\+\_\+gen.\+state}
+
+\Hypertarget{namespaceextending_a79235899bb282ae6cc6b6f2869b98830}\label{namespaceextending_a79235899bb282ae6cc6b6f2869b98830} 
+\index{extending@{extending}!state\_addr@{state\_addr}}
+\index{state\_addr@{state\_addr}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{state\_addr}{state\_addr}}
+{\footnotesize\ttfamily extending.\+state\+\_\+addr = bit\+\_\+gen.\+cffi.\+state\+\_\+address}
+
+\Hypertarget{namespaceextending_afedbc937e92d45d9761b1155d735cbef}\label{namespaceextending_afedbc937e92d45d9761b1155d735cbef} 
+\index{extending@{extending}!t1@{t1}}
+\index{t1@{t1}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{t1}{t1}}
+{\footnotesize\ttfamily extending.\+t1 = timeit(\mbox{\hyperlink{namespaceextending_a7accbb8d2ccd935aba7fce8451b70c64}{numbacall}}, number=1000)}
+
+\Hypertarget{namespaceextending_ad742a73782498dea3dc0129460544ea1}\label{namespaceextending_ad742a73782498dea3dc0129460544ea1} 
+\index{extending@{extending}!t2@{t2}}
+\index{t2@{t2}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{t2}{t2}}
+{\footnotesize\ttfamily extending.\+t2 = timeit(\mbox{\hyperlink{namespaceextending_a6a107c27b04709bb121e79e0fb1c5c3f}{numpycall}}, number=1000)}
+
+\Hypertarget{namespaceextending_a67a4823006ed5c87ec37e99590e521b2}\label{namespaceextending_a67a4823006ed5c87ec37e99590e521b2} 
+\index{extending@{extending}!vals@{vals}}
+\index{vals@{vals}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{vals}{vals}}
+{\footnotesize\ttfamily extending.\+vals = rng.\+standard\+\_\+normal(\mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}})}
+
+\Hypertarget{namespaceextending_aa5a6cdee379078157b1c777c60a9235c}\label{namespaceextending_aa5a6cdee379078157b1c777c60a9235c} 
+\index{extending@{extending}!vals\_cffi@{vals\_cffi}}
+\index{vals\_cffi@{vals\_cffi}!extending@{extending}}
+\doxysubsubsection{\texorpdfstring{vals\_cffi}{vals\_cffi}}
+{\footnotesize\ttfamily extending.\+vals\+\_\+cffi = ffi.\+new(\textquotesingle{}double\mbox{[}\%d\mbox{]}\textquotesingle{} \% \mbox{\hyperlink{namespaceextending_a424fa7bd1b7eb8da0e796fdac17975c2}{n}})}
+

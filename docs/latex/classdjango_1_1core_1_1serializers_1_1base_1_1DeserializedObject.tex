@@ -1,0 +1,90 @@
+\doxysection{Référence de la classe django.\+core.\+serializers.\+base.\+Deserialized\+Object}
+\hypertarget{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject}{}\label{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject}\index{django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_afe485b45042200a68f7d0db49da0066c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, obj, \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a298353a34f4482f3299a50a04fc280b9}{m2m\+\_\+data}}=None, \mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a37b9ab700bdda1700e3090144176c000}{deferred\+\_\+fields}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a3b437c2d15f8549b50ced9d4f82c270c}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a5fb472f0c3227b9d8cc0727cc311ed7a}{save}} (self, save\+\_\+m2m=True, using=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a2fd4269d14e2f58fda59335c79a582f5}{save\+\_\+deferred\+\_\+fields}} (self, using=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a6901820be67e416183ebaa81db0906fd}{object}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a298353a34f4482f3299a50a04fc280b9}{m2m\+\_\+data}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a37b9ab700bdda1700e3090144176c000}{deferred\+\_\+fields}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A deserialized model.
+
+Basically a container for holding the pre-saved deserialized data along
+with the many-to-many data saved with the object.
+
+Call ``save()`` to save the object (with the many-to-many data) to the
+database; call ``save(save_m2m=False)`` to save just the object fields
+(and not touch the many-to-many stuff.)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_afe485b45042200a68f7d0db49da0066c}\label{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_afe485b45042200a68f7d0db49da0066c} 
+\index{django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+Deserialized\+Object.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj,  }\item[{}]{m2m\+\_\+data = {\ttfamily None},  }\item[{}]{deferred\+\_\+fields = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a3b437c2d15f8549b50ced9d4f82c270c}\label{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a3b437c2d15f8549b50ced9d4f82c270c} 
+\index{django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+Deserialized\+Object.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a5fb472f0c3227b9d8cc0727cc311ed7a}\label{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a5fb472f0c3227b9d8cc0727cc311ed7a} 
+\index{django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}!save@{save}}
+\index{save@{save}!django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+Deserialized\+Object.\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{save\+\_\+m2m = {\ttfamily True},  }\item[{}]{using = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a2fd4269d14e2f58fda59335c79a582f5}\label{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a2fd4269d14e2f58fda59335c79a582f5} 
+\index{django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}!save\_deferred\_fields@{save\_deferred\_fields}}
+\index{save\_deferred\_fields@{save\_deferred\_fields}!django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}}
+\doxysubsubsection{\texorpdfstring{save\_deferred\_fields()}{save\_deferred\_fields()}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+Deserialized\+Object.\+save\+\_\+deferred\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{using = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a37b9ab700bdda1700e3090144176c000}\label{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a37b9ab700bdda1700e3090144176c000} 
+\index{django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}!deferred\_fields@{deferred\_fields}}
+\index{deferred\_fields@{deferred\_fields}!django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}}
+\doxysubsubsection{\texorpdfstring{deferred\_fields}{deferred\_fields}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+Deserialized\+Object.\+deferred\+\_\+fields}
+
+\Hypertarget{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a298353a34f4482f3299a50a04fc280b9}\label{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a298353a34f4482f3299a50a04fc280b9} 
+\index{django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}!m2m\_data@{m2m\_data}}
+\index{m2m\_data@{m2m\_data}!django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}}
+\doxysubsubsection{\texorpdfstring{m2m\_data}{m2m\_data}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+Deserialized\+Object.\+m2m\+\_\+data}
+
+\Hypertarget{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a6901820be67e416183ebaa81db0906fd}\label{classdjango_1_1core_1_1serializers_1_1base_1_1DeserializedObject_a6901820be67e416183ebaa81db0906fd} 
+\index{django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}!object@{object}}
+\index{object@{object}!django.core.serializers.base.DeserializedObject@{django.core.serializers.base.DeserializedObject}}
+\doxysubsubsection{\texorpdfstring{object}{object}}
+{\footnotesize\ttfamily django.\+core.\+serializers.\+base.\+Deserialized\+Object.\+object}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/core/serializers/\mbox{\hyperlink{django_2core_2serializers_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

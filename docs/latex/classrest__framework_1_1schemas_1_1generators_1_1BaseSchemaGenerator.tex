@@ -1,0 +1,178 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator}
+\hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator}{}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator}\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a7339d832b97c34508b6704c6404ece84}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0c82ed14aeb7d37c98fb508bc94a05db}{title}}=None, \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a7d285cca1830ad8d7ca30254a8d7c233}{url}}=None, \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a119d7103dcdd42c1b4929564aa26f3d9}{description}}=None, \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_adf0a73f4d2016bd172d79801e492ba88}{patterns}}=None, \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a05169e95077c91bf34021b749cad67b1}{urlconf}}=None, \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0a3ca1e76612b3826ecc7946fd18ef7d}{version}}=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a75e064e9efa562eabb8f3c105b9a3633}{create\+\_\+view}} (self, callback, method, request=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a407a84f764960471f68a943c0c3f6b15}{coerce\+\_\+path}} (self, path, method, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_adca582edf02861a251e52e27f67438f5}{get\+\_\+schema}} (self, request=None, public=False)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a84875f4464a12aa176289de8a49af502}{has\+\_\+view\+\_\+permissions}} (self, path, method, view)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_adf0a73f4d2016bd172d79801e492ba88}{patterns}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a05169e95077c91bf34021b749cad67b1}{urlconf}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0c82ed14aeb7d37c98fb508bc94a05db}{title}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a119d7103dcdd42c1b4929564aa26f3d9}{description}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0a3ca1e76612b3826ecc7946fd18ef7d}{version}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a7d285cca1830ad8d7ca30254a8d7c233}{url}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a948dff02dcfd3c48e5555c2d68b0fd5d}{endpoints}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0dbb636d9514781922e972f7e55cdc52}{endpoint\+\_\+inspector\+\_\+cls}} = \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator}{Endpoint\+Enumerator}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a78d65bbbd8ddf02e37a5ee67f3993def}{coerce\+\_\+path\+\_\+pk}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a76a199670e45f7d7bb1137cf136e0f67}{\+\_\+initialise\+\_\+endpoints}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a579f53f5b573a765a91f571535f31b12}{\+\_\+get\+\_\+paths\+\_\+and\+\_\+endpoints}} (self, request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a7339d832b97c34508b6704c6404ece84}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a7339d832b97c34508b6704c6404ece84} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{title = {\ttfamily None},  }\item[{}]{url = {\ttfamily None},  }\item[{}]{description = {\ttfamily None},  }\item[{}]{patterns = {\ttfamily None},  }\item[{}]{urlconf = {\ttfamily None},  }\item[{}]{version = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1schemas_1_1coreapi_1_1SchemaGenerator_aae767742a0c624d8db55f3c643029c21}{rest\+\_\+framework.\+schemas.\+coreapi.\+Schema\+Generator}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a579f53f5b573a765a91f571535f31b12}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a579f53f5b573a765a91f571535f31b12} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!\_get\_paths\_and\_endpoints@{\_get\_paths\_and\_endpoints}}
+\index{\_get\_paths\_and\_endpoints@{\_get\_paths\_and\_endpoints}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{\_get\_paths\_and\_endpoints()}{\_get\_paths\_and\_endpoints()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+\_\+get\+\_\+paths\+\_\+and\+\_\+endpoints (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Generate (path, method, view) given (path, method, callback) for paths.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a76a199670e45f7d7bb1137cf136e0f67}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a76a199670e45f7d7bb1137cf136e0f67} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!\_initialise\_endpoints@{\_initialise\_endpoints}}
+\index{\_initialise\_endpoints@{\_initialise\_endpoints}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{\_initialise\_endpoints()}{\_initialise\_endpoints()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+\_\+initialise\+\_\+endpoints (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a407a84f764960471f68a943c0c3f6b15}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a407a84f764960471f68a943c0c3f6b15} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!coerce\_path@{coerce\_path}}
+\index{coerce\_path@{coerce\_path}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{coerce\_path()}{coerce\_path()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+coerce\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{method,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Coerce {pk} path arguments into the name of the model field,
+where possible. This is cleaner for an external representation.
+(Ie. "this is an identifier", not "this is a database primary key")
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a75e064e9efa562eabb8f3c105b9a3633}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a75e064e9efa562eabb8f3c105b9a3633} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!create\_view@{create\_view}}
+\index{create\_view@{create\_view}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{create\_view()}{create\_view()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+create\+\_\+view (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{callback,  }\item[{}]{method,  }\item[{}]{request = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a callback, return an actual view instance.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_adca582edf02861a251e52e27f67438f5}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_adca582edf02861a251e52e27f67438f5} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!get\_schema@{get\_schema}}
+\index{get\_schema@{get\_schema}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{get\_schema()}{get\_schema()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+get\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request = {\ttfamily None},  }\item[{}]{public = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1schemas_1_1coreapi_1_1SchemaGenerator_a09427cdc1a7072628a5f18c7abbb8c2d}{rest\+\_\+framework.\+schemas.\+coreapi.\+Schema\+Generator}}, et \mbox{\hyperlink{classrest__framework_1_1schemas_1_1openapi_1_1SchemaGenerator_a11dc2dc8bbac2c3ca94a0d3631087c3e}{rest\+\_\+framework.\+schemas.\+openapi.\+Schema\+Generator}}.
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a84875f4464a12aa176289de8a49af502}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a84875f4464a12aa176289de8a49af502} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!has\_view\_permissions@{has\_view\_permissions}}
+\index{has\_view\_permissions@{has\_view\_permissions}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{has\_view\_permissions()}{has\_view\_permissions()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+has\+\_\+view\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{method,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return `True` if the incoming request has the correct view permissions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a78d65bbbd8ddf02e37a5ee67f3993def}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a78d65bbbd8ddf02e37a5ee67f3993def} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!coerce\_path\_pk@{coerce\_path\_pk}}
+\index{coerce\_path\_pk@{coerce\_path\_pk}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{coerce\_path\_pk}{coerce\_path\_pk}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+coerce\+\_\+path\+\_\+pk = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a119d7103dcdd42c1b4929564aa26f3d9}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a119d7103dcdd42c1b4929564aa26f3d9} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!description@{description}}
+\index{description@{description}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+description}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0dbb636d9514781922e972f7e55cdc52}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0dbb636d9514781922e972f7e55cdc52} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!endpoint\_inspector\_cls@{endpoint\_inspector\_cls}}
+\index{endpoint\_inspector\_cls@{endpoint\_inspector\_cls}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{endpoint\_inspector\_cls}{endpoint\_inspector\_cls}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+endpoint\+\_\+inspector\+\_\+cls = \mbox{\hyperlink{classrest__framework_1_1schemas_1_1generators_1_1EndpointEnumerator}{Endpoint\+Enumerator}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a948dff02dcfd3c48e5555c2d68b0fd5d}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a948dff02dcfd3c48e5555c2d68b0fd5d} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!endpoints@{endpoints}}
+\index{endpoints@{endpoints}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{endpoints}{endpoints}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+endpoints}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_adf0a73f4d2016bd172d79801e492ba88}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_adf0a73f4d2016bd172d79801e492ba88} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!patterns@{patterns}}
+\index{patterns@{patterns}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{patterns}{patterns}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+patterns}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0c82ed14aeb7d37c98fb508bc94a05db}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0c82ed14aeb7d37c98fb508bc94a05db} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!title@{title}}
+\index{title@{title}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+title}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a7d285cca1830ad8d7ca30254a8d7c233}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a7d285cca1830ad8d7ca30254a8d7c233} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!url@{url}}
+\index{url@{url}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+url}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a05169e95077c91bf34021b749cad67b1}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a05169e95077c91bf34021b749cad67b1} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!urlconf@{urlconf}}
+\index{urlconf@{urlconf}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{urlconf}{urlconf}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+urlconf}
+
+\Hypertarget{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0a3ca1e76612b3826ecc7946fd18ef7d}\label{classrest__framework_1_1schemas_1_1generators_1_1BaseSchemaGenerator_a0a3ca1e76612b3826ecc7946fd18ef7d} 
+\index{rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}!version@{version}}
+\index{version@{version}!rest\_framework.schemas.generators.BaseSchemaGenerator@{rest\_framework.schemas.generators.BaseSchemaGenerator}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+schemas.\+generators.\+Base\+Schema\+Generator.\+version}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/schemas/\mbox{\hyperlink{generators_8py}{generators.\+py}}\end{DoxyCompactItemize}

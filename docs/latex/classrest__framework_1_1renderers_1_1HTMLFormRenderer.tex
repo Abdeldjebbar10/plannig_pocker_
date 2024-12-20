@@ -1,0 +1,120 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer}
+\hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer}{}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer}\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a8b8fa3dc9e9df2dce4a5cbde314740bb}{render\+\_\+field}} (self, field, parent\+\_\+style)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_ae92f9a12710e8a997ab4d0ee9cda85dc}{render}} (self, data, accepted\+\_\+media\+\_\+type=None, renderer\+\_\+context=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a1f1bcae0df6852fd949e89ec22ba67b8}{media\+\_\+type}} = \textquotesingle{}text/html\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a6cbdf54c921b3a7b5e9c32ef0f0b9cd1}{format}} = \textquotesingle{}form\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a7dceb6a7ffcf8034f9030786a655d386}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_af5b4983f366fa9c2a3525eb19d94e97a}{template\+\_\+pack}} = \textquotesingle{}rest\+\_\+framework/vertical/\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_ae003b4ba2c58d3ba1b949d05aaf90ca8}{base\+\_\+template}} = \textquotesingle{}form.\+html\textquotesingle{}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a382a94ed8cfcd0dbf055d9303f62de97}{default\+\_\+style}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer}{rest\+\_\+framework.\+renderers.\+Base\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a4b069d932469c3bbded458f53752216f}{media\+\_\+type}} = None
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_ae5e3a1c630b0a2fe8313136879445163}{format}} = None
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a6b2cb330c059e96c05e436f1f113154d}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a9395a7164e794d61f52bcad01cf4e3ed}{render\+\_\+style}} = \textquotesingle{}text\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Renderers serializer data into an HTML form.
+
+If the serializer was instantiated without an object then this will
+return an HTML form not bound to any object,
+otherwise it will return an HTML form with the appropriate initial data
+populated from the object.
+
+Note that rendering of field and form errors is not currently supported.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer_ae92f9a12710e8a997ab4d0ee9cda85dc}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer_ae92f9a12710e8a997ab4d0ee9cda85dc} 
+\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}!render@{render}}
+\index{render@{render}!rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer.\+render (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{accepted\+\_\+media\+\_\+type = {\ttfamily None},  }\item[{}]{renderer\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render serializer data and return an HTML form, as a string.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a5a896320e27ee4c3cd59b9b75816b26e}{rest\+\_\+framework.\+renderers.\+Base\+Renderer}}.
+
+\Hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a8b8fa3dc9e9df2dce4a5cbde314740bb}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a8b8fa3dc9e9df2dce4a5cbde314740bb} 
+\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}!render\_field@{render\_field}}
+\index{render\_field@{render\_field}!rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+\doxysubsubsection{\texorpdfstring{render\_field()}{render\_field()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer.\+render\+\_\+field (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{field,  }\item[{}]{parent\+\_\+style }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer_ae003b4ba2c58d3ba1b949d05aaf90ca8}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer_ae003b4ba2c58d3ba1b949d05aaf90ca8} 
+\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}!base\_template@{base\_template}}
+\index{base\_template@{base\_template}!rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+\doxysubsubsection{\texorpdfstring{base\_template}{base\_template}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer.\+base\+\_\+template = \textquotesingle{}form.\+html\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a7dceb6a7ffcf8034f9030786a655d386}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a7dceb6a7ffcf8034f9030786a655d386} 
+\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}!charset@{charset}}
+\index{charset@{charset}!rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+\doxysubsubsection{\texorpdfstring{charset}{charset}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer.\+charset = \textquotesingle{}utf-\/8\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a382a94ed8cfcd0dbf055d9303f62de97}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a382a94ed8cfcd0dbf055d9303f62de97} 
+\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}!default\_style@{default\_style}}
+\index{default\_style@{default\_style}!rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+\doxysubsubsection{\texorpdfstring{default\_style}{default\_style}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer.\+default\+\_\+style\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a6cbdf54c921b3a7b5e9c32ef0f0b9cd1}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a6cbdf54c921b3a7b5e9c32ef0f0b9cd1} 
+\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}!format@{format}}
+\index{format@{format}!rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer.\+format = \textquotesingle{}form\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a1f1bcae0df6852fd949e89ec22ba67b8}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer_a1f1bcae0df6852fd949e89ec22ba67b8} 
+\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}!media\_type@{media\_type}}
+\index{media\_type@{media\_type}!rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+\doxysubsubsection{\texorpdfstring{media\_type}{media\_type}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer.\+media\+\_\+type = \textquotesingle{}text/html\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1HTMLFormRenderer_af5b4983f366fa9c2a3525eb19d94e97a}\label{classrest__framework_1_1renderers_1_1HTMLFormRenderer_af5b4983f366fa9c2a3525eb19d94e97a} 
+\index{rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}!template\_pack@{template\_pack}}
+\index{template\_pack@{template\_pack}!rest\_framework.renderers.HTMLFormRenderer@{rest\_framework.renderers.HTMLFormRenderer}}
+\doxysubsubsection{\texorpdfstring{template\_pack}{template\_pack}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+HTMLForm\+Renderer.\+template\+\_\+pack = \textquotesingle{}rest\+\_\+framework/vertical/\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2renderers_8py}{renderers.\+py}}\end{DoxyCompactItemize}

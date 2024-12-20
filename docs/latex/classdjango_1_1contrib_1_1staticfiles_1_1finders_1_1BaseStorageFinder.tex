@@ -1,0 +1,89 @@
+\doxysection{Référence de la classe django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder}
+\hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder}{}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder}\index{django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_aa9c5eedb3330eba97438f4c327e22c20}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_aaee5bd77ad575cb61a9c2ce78133f286}{storage}}=None, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_a080b68ead50b505f8c529bc619c2c9b3}{find}} (self, path, all=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_a5944bb958ceeab7f7a4c4cf086856349}{list}} (self, ignore\+\_\+patterns)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder}{django.\+contrib.\+staticfiles.\+finders.\+Base\+Finder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_ab92c4f7950eea18b75fdb93463b0d29d}{check}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_aaee5bd77ad575cb61a9c2ce78133f286}{storage}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A base static files finder to be used to extended
+with an own storage class.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_aa9c5eedb3330eba97438f4c327e22c20}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_aa9c5eedb3330eba97438f4c327e22c20} 
+\index{django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{storage = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1DefaultStorageFinder_aea1f6fe0f6c0b1e47de989f8d75dc29d}{django.\+contrib.\+staticfiles.\+finders.\+Default\+Storage\+Finder}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_a080b68ead50b505f8c529bc619c2c9b3}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_a080b68ead50b505f8c529bc619c2c9b3} 
+\index{django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}!find@{find}}
+\index{find@{find}!django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder.\+find (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{all = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Look for files in the default file storage, if it's local.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_afaa9cba6db6b2813a159ed3fb953750a}{django.\+contrib.\+staticfiles.\+finders.\+Base\+Finder}}.
+
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_a5944bb958ceeab7f7a4c4cf086856349}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_a5944bb958ceeab7f7a4c4cf086856349} 
+\index{django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}!list@{list}}
+\index{list@{list}!django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder.\+list (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ignore\+\_\+patterns }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List all files of the storage.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseFinder_a59a058cd5dcda8895b5465dd412a6e18}{django.\+contrib.\+staticfiles.\+finders.\+Base\+Finder}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_aaee5bd77ad575cb61a9c2ce78133f286}\label{classdjango_1_1contrib_1_1staticfiles_1_1finders_1_1BaseStorageFinder_aaee5bd77ad575cb61a9c2ce78133f286} 
+\index{django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}!storage@{storage}}
+\index{storage@{storage}!django.contrib.staticfiles.finders.BaseStorageFinder@{django.contrib.staticfiles.finders.BaseStorageFinder}}
+\doxysubsubsection{\texorpdfstring{storage}{storage}}
+{\footnotesize\ttfamily django.\+contrib.\+staticfiles.\+finders.\+Base\+Storage\+Finder.\+storage = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/staticfiles/\mbox{\hyperlink{finders_8py}{finders.\+py}}\end{DoxyCompactItemize}

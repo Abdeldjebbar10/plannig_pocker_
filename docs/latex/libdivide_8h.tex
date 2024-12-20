@@ -1,0 +1,131 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/include/numpy/random/libdivide.h}
+\hypertarget{libdivide_8h}{}\label{libdivide_8h}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/random/libdivide.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/random/libdivide.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Graphe des dépendances par inclusion de libdivide.\+h\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structlibdivide__u32__t}{libdivide\+\_\+u32\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structlibdivide__s32__t}{libdivide\+\_\+s32\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structlibdivide__u64__t}{libdivide\+\_\+u64\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structlibdivide__s64__t}{libdivide\+\_\+s64\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structlibdivide__u32__branchfree__t}{libdivide\+\_\+u32\+\_\+branchfree\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structlibdivide__s32__branchfree__t}{libdivide\+\_\+s32\+\_\+branchfree\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structlibdivide__u64__branchfree__t}{libdivide\+\_\+u64\+\_\+branchfree\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structlibdivide__s64__branchfree__t}{libdivide\+\_\+s64\+\_\+branchfree\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{libdivide_8h_afea7496d814d47d939fb03f146c39e86}{LIBDIVIDE\+\_\+\+VERSION}}~"{}3.\+0"{}
+\item 
+\#define \mbox{\hyperlink{libdivide_8h_a52953a91d56c150fe6a0fe49680c1b8c}{LIBDIVIDE\+\_\+\+VERSION\+\_\+\+MAJOR}}~3
+\item 
+\#define \mbox{\hyperlink{libdivide_8h_a3069dee77fcb624a9a83d6f403d1996d}{LIBDIVIDE\+\_\+\+VERSION\+\_\+\+MINOR}}~0
+\item 
+\#define \mbox{\hyperlink{libdivide_8h_a447121dcab4275b7839a56082b7a1ab8}{\+\_\+\+\_\+has\+\_\+builtin}}(x)~0
+\item 
+\#define \mbox{\hyperlink{libdivide_8h_a57fac61ec161780695eb84df8fbb04ff}{LIBDIVIDE\+\_\+\+FUNCTION}}~\+\_\+\+\_\+func\+\_\+\+\_\+
+\item 
+\#define \mbox{\hyperlink{libdivide_8h_aacb0e97f82b56dd708c353befb39ca5f}{LIBDIVIDE\+\_\+\+ERROR}}(msg)
+\item 
+\#define \mbox{\hyperlink{libdivide_8h_a573d25cbb1b3a4d71aba30ed56943f50}{LIBDIVIDE\+\_\+\+ASSERT}}(x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5a31e93da68da4af8002cf874901f33f38}{LIBDIVIDE\+\_\+32\+\_\+\+SHIFT\+\_\+\+MASK}} = 0x1F
+, \mbox{\hyperlink{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5a8e6e23fc0cb5eac1c2e147f05f6801ab}{LIBDIVIDE\+\_\+64\+\_\+\+SHIFT\+\_\+\+MASK}} = 0x3F
+, \mbox{\hyperlink{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5ad4337dd80edbfb4e10c06144ec912a97}{LIBDIVIDE\+\_\+\+ADD\+\_\+\+MARKER}} = 0x40
+, \mbox{\hyperlink{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5afdc2ab30d56b8729183dfbc28b8e8e6a}{LIBDIVIDE\+\_\+\+NEGATIVE\+\_\+\+DIVISOR}} = 0x80
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{libdivide_8h_a447121dcab4275b7839a56082b7a1ab8}\label{libdivide_8h_a447121dcab4275b7839a56082b7a1ab8} 
+\index{libdivide.h@{libdivide.h}!\_\_has\_builtin@{\_\_has\_builtin}}
+\index{\_\_has\_builtin@{\_\_has\_builtin}!libdivide.h@{libdivide.h}}
+\doxysubsubsection{\texorpdfstring{\_\_has\_builtin}{\_\_has\_builtin}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+has\+\_\+builtin(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~0}
+
+\Hypertarget{libdivide_8h_a573d25cbb1b3a4d71aba30ed56943f50}\label{libdivide_8h_a573d25cbb1b3a4d71aba30ed56943f50} 
+\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_ASSERT@{LIBDIVIDE\_ASSERT}}
+\index{LIBDIVIDE\_ASSERT@{LIBDIVIDE\_ASSERT}!libdivide.h@{libdivide.h}}
+\doxysubsubsection{\texorpdfstring{LIBDIVIDE\_ASSERT}{LIBDIVIDE\_ASSERT}}
+{\footnotesize\ttfamily \#define LIBDIVIDE\+\_\+\+ASSERT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+\Hypertarget{libdivide_8h_aacb0e97f82b56dd708c353befb39ca5f}\label{libdivide_8h_aacb0e97f82b56dd708c353befb39ca5f} 
+\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_ERROR@{LIBDIVIDE\_ERROR}}
+\index{LIBDIVIDE\_ERROR@{LIBDIVIDE\_ERROR}!libdivide.h@{libdivide.h}}
+\doxysubsubsection{\texorpdfstring{LIBDIVIDE\_ERROR}{LIBDIVIDE\_ERROR}}
+{\footnotesize\ttfamily \#define LIBDIVIDE\+\_\+\+ERROR(\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+{\bfseries Valeur \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{do}\ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}libdivide.h:\%d:\ \%s():\ Error:\ \%s\(\backslash\)n"{}},\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \_\_LINE\_\_,\ \mbox{\hyperlink{libdivide_8h_a57fac61ec161780695eb84df8fbb04ff}{LIBDIVIDE\_FUNCTION}},\ msg);\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ abort();\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+\Hypertarget{libdivide_8h_a57fac61ec161780695eb84df8fbb04ff}\label{libdivide_8h_a57fac61ec161780695eb84df8fbb04ff} 
+\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_FUNCTION@{LIBDIVIDE\_FUNCTION}}
+\index{LIBDIVIDE\_FUNCTION@{LIBDIVIDE\_FUNCTION}!libdivide.h@{libdivide.h}}
+\doxysubsubsection{\texorpdfstring{LIBDIVIDE\_FUNCTION}{LIBDIVIDE\_FUNCTION}}
+{\footnotesize\ttfamily \#define LIBDIVIDE\+\_\+\+FUNCTION~\+\_\+\+\_\+func\+\_\+\+\_\+}
+
+\Hypertarget{libdivide_8h_afea7496d814d47d939fb03f146c39e86}\label{libdivide_8h_afea7496d814d47d939fb03f146c39e86} 
+\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_VERSION@{LIBDIVIDE\_VERSION}}
+\index{LIBDIVIDE\_VERSION@{LIBDIVIDE\_VERSION}!libdivide.h@{libdivide.h}}
+\doxysubsubsection{\texorpdfstring{LIBDIVIDE\_VERSION}{LIBDIVIDE\_VERSION}}
+{\footnotesize\ttfamily \#define LIBDIVIDE\+\_\+\+VERSION~"{}3.\+0"{}}
+
+\Hypertarget{libdivide_8h_a52953a91d56c150fe6a0fe49680c1b8c}\label{libdivide_8h_a52953a91d56c150fe6a0fe49680c1b8c} 
+\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_VERSION\_MAJOR@{LIBDIVIDE\_VERSION\_MAJOR}}
+\index{LIBDIVIDE\_VERSION\_MAJOR@{LIBDIVIDE\_VERSION\_MAJOR}!libdivide.h@{libdivide.h}}
+\doxysubsubsection{\texorpdfstring{LIBDIVIDE\_VERSION\_MAJOR}{LIBDIVIDE\_VERSION\_MAJOR}}
+{\footnotesize\ttfamily \#define LIBDIVIDE\+\_\+\+VERSION\+\_\+\+MAJOR~3}
+
+\Hypertarget{libdivide_8h_a3069dee77fcb624a9a83d6f403d1996d}\label{libdivide_8h_a3069dee77fcb624a9a83d6f403d1996d} 
+\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_VERSION\_MINOR@{LIBDIVIDE\_VERSION\_MINOR}}
+\index{LIBDIVIDE\_VERSION\_MINOR@{LIBDIVIDE\_VERSION\_MINOR}!libdivide.h@{libdivide.h}}
+\doxysubsubsection{\texorpdfstring{LIBDIVIDE\_VERSION\_MINOR}{LIBDIVIDE\_VERSION\_MINOR}}
+{\footnotesize\ttfamily \#define LIBDIVIDE\+\_\+\+VERSION\+\_\+\+MINOR~0}
+
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\Hypertarget{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5}\label{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIBDIVIDE\_32\_SHIFT\_MASK@{LIBDIVIDE\_32\_SHIFT\_MASK}!libdivide.h@{libdivide.h}}\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_32\_SHIFT\_MASK@{LIBDIVIDE\_32\_SHIFT\_MASK}}}\Hypertarget{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5a31e93da68da4af8002cf874901f33f38}\label{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5a31e93da68da4af8002cf874901f33f38} 
+LIBDIVIDE\+\_\+32\+\_\+\+SHIFT\+\_\+\+MASK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIBDIVIDE\_64\_SHIFT\_MASK@{LIBDIVIDE\_64\_SHIFT\_MASK}!libdivide.h@{libdivide.h}}\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_64\_SHIFT\_MASK@{LIBDIVIDE\_64\_SHIFT\_MASK}}}\Hypertarget{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5a8e6e23fc0cb5eac1c2e147f05f6801ab}\label{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5a8e6e23fc0cb5eac1c2e147f05f6801ab} 
+LIBDIVIDE\+\_\+64\+\_\+\+SHIFT\+\_\+\+MASK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIBDIVIDE\_ADD\_MARKER@{LIBDIVIDE\_ADD\_MARKER}!libdivide.h@{libdivide.h}}\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_ADD\_MARKER@{LIBDIVIDE\_ADD\_MARKER}}}\Hypertarget{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5ad4337dd80edbfb4e10c06144ec912a97}\label{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5ad4337dd80edbfb4e10c06144ec912a97} 
+LIBDIVIDE\+\_\+\+ADD\+\_\+\+MARKER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIBDIVIDE\_NEGATIVE\_DIVISOR@{LIBDIVIDE\_NEGATIVE\_DIVISOR}!libdivide.h@{libdivide.h}}\index{libdivide.h@{libdivide.h}!LIBDIVIDE\_NEGATIVE\_DIVISOR@{LIBDIVIDE\_NEGATIVE\_DIVISOR}}}\Hypertarget{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5afdc2ab30d56b8729183dfbc28b8e8e6a}\label{libdivide_8h_a99fb83031ce9923c84392b4e92f956b5afdc2ab30d56b8729183dfbc28b8e8e6a} 
+LIBDIVIDE\+\_\+\+NEGATIVE\+\_\+\+DIVISOR&\\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,70 @@
+\doxysection{Référence de la classe django.\+db.\+migrations.\+serializer.\+Serializer}
+\hypertarget{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer}{}\label{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer}\index{django.db.migrations.serializer.Serializer@{django.db.migrations.serializer.Serializer}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_a90223211da7c29df025a183f5f7b580c}{register}} (cls, type\+\_\+, serializer)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_a2576b8514731a28194f21f5f07baf963}{unregister}} (cls, type\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_ae20fb98e8fcb06570c4dd70d99b90a98}{\+\_\+registry}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_a90223211da7c29df025a183f5f7b580c}\label{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_a90223211da7c29df025a183f5f7b580c} 
+\index{django.db.migrations.serializer.Serializer@{django.db.migrations.serializer.Serializer}!register@{register}}
+\index{register@{register}!django.db.migrations.serializer.Serializer@{django.db.migrations.serializer.Serializer}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+serializer.\+Serializer.\+register (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{type\+\_\+,  }\item[{}]{serializer }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_a2576b8514731a28194f21f5f07baf963}\label{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_a2576b8514731a28194f21f5f07baf963} 
+\index{django.db.migrations.serializer.Serializer@{django.db.migrations.serializer.Serializer}!unregister@{unregister}}
+\index{unregister@{unregister}!django.db.migrations.serializer.Serializer@{django.db.migrations.serializer.Serializer}}
+\doxysubsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily django.\+db.\+migrations.\+serializer.\+Serializer.\+unregister (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{type\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_ae20fb98e8fcb06570c4dd70d99b90a98}\label{classdjango_1_1db_1_1migrations_1_1serializer_1_1Serializer_ae20fb98e8fcb06570c4dd70d99b90a98} 
+\index{django.db.migrations.serializer.Serializer@{django.db.migrations.serializer.Serializer}!\_registry@{\_registry}}
+\index{\_registry@{\_registry}!django.db.migrations.serializer.Serializer@{django.db.migrations.serializer.Serializer}}
+\doxysubsubsection{\texorpdfstring{\_registry}{\_registry}}
+{\footnotesize\ttfamily dict django.\+db.\+migrations.\+serializer.\+Serializer.\+\_\+registry\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{\#\ Some\ of\ these\ are\ order-\/dependent.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ frozenset:\ FrozensetSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ list:\ SequenceSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ set:\ SetSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ tuple:\ TupleSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dict:\ DictionarySerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ models.Choices:\ ChoicesSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ enum.Enum:\ EnumSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ datetime.datetime:\ DatetimeDatetimeSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (datetime.date,\ datetime.timedelta,\ datetime.time):\ DateTimeSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ SettingsReference:\ SettingsReferenceSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ float:\ FloatSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (bool,\ int,\ types.NoneType,\ bytes,\ str,\ range):\ BaseSimpleSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ decimal.Decimal:\ DecimalSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (functools.partial,\ functools.partialmethod):\ FunctoolsPartialSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ FUNCTION\_TYPES:\ FunctionTypeSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ collections.abc.Iterable:\ IterableSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (COMPILED\_REGEX\_TYPE,\ RegexObject):\ RegexSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ uuid.UUID:\ UUIDSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ pathlib.PurePath:\ PathSerializer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ os.PathLike:\ PathLikeSerializer,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/migrations/\mbox{\hyperlink{serializer_8py}{serializer.\+py}}\end{DoxyCompactItemize}

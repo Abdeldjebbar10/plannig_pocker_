@@ -1,0 +1,88 @@
+\doxysection{Référence de la classe django.\+contrib.\+sessions.\+models.\+Session}
+\hypertarget{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session}{}\label{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session}\index{django.contrib.sessions.models.Session@{django.contrib.sessions.models.Session}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+sessions.\+models.\+Session\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+sessions.\+models.\+Session\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session_1_1Meta}{Meta}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session_add3012dafda2ef151c2cb587ea5a9118}{get\+\_\+session\+\_\+store\+\_\+class}} (cls)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession}{django.\+contrib.\+sessions.\+base\+\_\+session.\+Abstract\+Base\+Session}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession_ad04f7a6536d18552ec3d272e1c2dbb68}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession_ae5c3d153d49f6f9417b9a4fe9a21b552}{get\+\_\+decoded}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session_ac24d48fb66aeca164f5906f1a0deedc8}{objects}} = \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1models_1_1SessionManager}{Session\+Manager}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession}{django.\+contrib.\+sessions.\+base\+\_\+session.\+Abstract\+Base\+Session}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession_a12dd98dfbebfe3b9ae7dbe03936f63c8}{session\+\_\+key}} = models.\+Char\+Field(\+\_\+("{}session key"{}), max\+\_\+length=40, primary\+\_\+key=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession_a097d8d7b25b3ae8021bb3c80190edae3}{session\+\_\+data}} = models.\+Text\+Field(\+\_\+("{}session data"{}))
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession_a8db202eeaa74fe530eb56e44ff431bc4}{expire\+\_\+date}} = models.\+Date\+Time\+Field(\+\_\+("{}expire date"{}), db\+\_\+index=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession_ad57fd275dff49d5e6cd5c7bb7d707191}{objects}} = \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1BaseSessionManager}{Base\+Session\+Manager}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Django provides full support for anonymous sessions. The session
+framework lets you store and retrieve arbitrary data on a
+per-site-visitor basis. It stores data on the server side and
+abstracts the sending and receiving of cookies. Cookies contain a
+session ID -- not the data itself.
+
+The Django sessions framework is entirely cookie-based. It does
+not fall back to putting session IDs in URLs. This is an intentional
+design decision. Not only does that behavior make URLs ugly, it makes
+your site vulnerable to session-ID theft via the "Referer" header.
+
+For complete documentation on using Sessions in your code, consult
+the sessions documentation that is shipped with Django (also available
+on the Django web site).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session_add3012dafda2ef151c2cb587ea5a9118}\label{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session_add3012dafda2ef151c2cb587ea5a9118} 
+\index{django.contrib.sessions.models.Session@{django.contrib.sessions.models.Session}!get\_session\_store\_class@{get\_session\_store\_class}}
+\index{get\_session\_store\_class@{get\_session\_store\_class}!django.contrib.sessions.models.Session@{django.contrib.sessions.models.Session}}
+\doxysubsubsection{\texorpdfstring{get\_session\_store\_class()}{get\_session\_store\_class()}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+models.\+Session.\+get\+\_\+session\+\_\+store\+\_\+class (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1base__session_1_1AbstractBaseSession_a6c0dccdae040250fcfe7b21eb2391948}{django.\+contrib.\+sessions.\+base\+\_\+session.\+Abstract\+Base\+Session}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session_ac24d48fb66aeca164f5906f1a0deedc8}\label{classdjango_1_1contrib_1_1sessions_1_1models_1_1Session_ac24d48fb66aeca164f5906f1a0deedc8} 
+\index{django.contrib.sessions.models.Session@{django.contrib.sessions.models.Session}!objects@{objects}}
+\index{objects@{objects}!django.contrib.sessions.models.Session@{django.contrib.sessions.models.Session}}
+\doxysubsubsection{\texorpdfstring{objects}{objects}}
+{\footnotesize\ttfamily django.\+contrib.\+sessions.\+models.\+Session.\+objects = \mbox{\hyperlink{classdjango_1_1contrib_1_1sessions_1_1models_1_1SessionManager}{Session\+Manager}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/sessions/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2django_2contrib_2sessions_2models_8py}{models.\+py}}\end{DoxyCompactItemize}

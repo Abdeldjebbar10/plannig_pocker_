@@ -1,0 +1,145 @@
+\doxysection{Référence de la classe numpy.\+lib.\+\_\+iotools.\+Line\+Splitter}
+\hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter}{}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter}\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a3b2cd6789a2f77aa6fdbe10324c74091}{autostrip}} (self, method)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a4a72cd8703ab093013be25389ca232dd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_afbb2e93502c225065a527672baba0aea}{delimiter}}=None, \mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_acac01271b5da3339deedb3d537952a73}{comments}}=\textquotesingle{}\#\textquotesingle{}, \mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a3b2cd6789a2f77aa6fdbe10324c74091}{autostrip}}=True, \mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a76cfbcd674a65e718a45e1944255cf20}{encoding}}=None)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a716f74cd545a6a188bfc958a336f1f79}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, line)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_acac01271b5da3339deedb3d537952a73}{comments}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_afbb2e93502c225065a527672baba0aea}{delimiter}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a76cfbcd674a65e718a45e1944255cf20}{encoding}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a9d7ee0cfbab95152c66481c89b2ef387}{\+\_\+delimited\+\_\+splitter}} (self, line)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a64daee14457db2a5a0c90c81afd02be6}{\+\_\+fixedwidth\+\_\+splitter}} (self, line)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a2f35b4414e9a8dbfca064b7f69f91c19}{\+\_\+variablewidth\+\_\+splitter}} (self, line)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a68a9adf94e90e6e96c607c80106c3d52}{\+\_\+fixedwidth\+\_\+splitter}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a4be1fd3a26091ba5ebb4fd4b54228577}{\+\_\+handyman}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Object to split a string at a given delimiter or at given places.
+
+Parameters
+----------
+delimiter : str, int, or sequence of ints, optional
+    If a string, character used to delimit consecutive fields.
+    If an integer or a sequence of integers, width(s) of each field.
+comments : str, optional
+    Character used to mark the beginning of a comment. Default is '#'.
+autostrip : bool, optional
+    Whether to strip each individual field. Default is True.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a4a72cd8703ab093013be25389ca232dd}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a4a72cd8703ab093013be25389ca232dd} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{delimiter = {\ttfamily None},  }\item[{}]{comments = {\ttfamily \textquotesingle{}\#\textquotesingle{}},  }\item[{}]{autostrip = {\ttfamily True},  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a716f74cd545a6a188bfc958a336f1f79}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a716f74cd545a6a188bfc958a336f1f79} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})}
+
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a9d7ee0cfbab95152c66481c89b2ef387}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a9d7ee0cfbab95152c66481c89b2ef387} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!\_delimited\_splitter@{\_delimited\_splitter}}
+\index{\_delimited\_splitter@{\_delimited\_splitter}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{\_delimited\_splitter()}{\_delimited\_splitter()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+\_\+delimited\+\_\+splitter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Chop off comments, strip, and split at delimiter. \end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a64daee14457db2a5a0c90c81afd02be6}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a64daee14457db2a5a0c90c81afd02be6} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!\_fixedwidth\_splitter@{\_fixedwidth\_splitter}}
+\index{\_fixedwidth\_splitter@{\_fixedwidth\_splitter}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{\_fixedwidth\_splitter()}{\_fixedwidth\_splitter()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+\_\+fixedwidth\+\_\+splitter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a2f35b4414e9a8dbfca064b7f69f91c19}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a2f35b4414e9a8dbfca064b7f69f91c19} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!\_variablewidth\_splitter@{\_variablewidth\_splitter}}
+\index{\_variablewidth\_splitter@{\_variablewidth\_splitter}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{\_variablewidth\_splitter()}{\_variablewidth\_splitter()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+\_\+variablewidth\+\_\+splitter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a3b2cd6789a2f77aa6fdbe10324c74091}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a3b2cd6789a2f77aa6fdbe10324c74091} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!autostrip@{autostrip}}
+\index{autostrip@{autostrip}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{autostrip()}{autostrip()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+autostrip (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrapper to strip each member of the output of `method`.
+
+Parameters
+----------
+method : function
+    Function that takes a single argument and returns a sequence of
+    strings.
+
+Returns
+-------
+wrapped : function
+    The result of wrapping `method`. `wrapped` takes a single input
+    argument and returns a list of strings that are stripped of
+    white-space.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a68a9adf94e90e6e96c607c80106c3d52}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a68a9adf94e90e6e96c607c80106c3d52} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!\_fixedwidth\_splitter@{\_fixedwidth\_splitter}}
+\index{\_fixedwidth\_splitter@{\_fixedwidth\_splitter}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{\_fixedwidth\_splitter}{\_fixedwidth\_splitter}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+\_\+fixedwidth\+\_\+splitter\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a4be1fd3a26091ba5ebb4fd4b54228577}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a4be1fd3a26091ba5ebb4fd4b54228577} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!\_handyman@{\_handyman}}
+\index{\_handyman@{\_handyman}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{\_handyman}{\_handyman}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+\_\+handyman\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_acac01271b5da3339deedb3d537952a73}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_acac01271b5da3339deedb3d537952a73} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!comments@{comments}}
+\index{comments@{comments}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{comments}{comments}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+comments}
+
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_afbb2e93502c225065a527672baba0aea}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_afbb2e93502c225065a527672baba0aea} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!delimiter@{delimiter}}
+\index{delimiter@{delimiter}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{delimiter}{delimiter}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+delimiter}
+
+\Hypertarget{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a76cfbcd674a65e718a45e1944255cf20}\label{classnumpy_1_1lib_1_1__iotools_1_1LineSplitter_a76cfbcd674a65e718a45e1944255cf20} 
+\index{numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}!encoding@{encoding}}
+\index{encoding@{encoding}!numpy.lib.\_iotools.LineSplitter@{numpy.lib.\_iotools.LineSplitter}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+iotools.\+Line\+Splitter.\+encoding}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/lib/\mbox{\hyperlink{__iotools_8py}{\+\_\+iotools.\+py}}\end{DoxyCompactItemize}

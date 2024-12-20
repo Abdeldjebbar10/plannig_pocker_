@@ -1,0 +1,88 @@
+\doxysection{Référence de la classe django.\+utils.\+archive.\+Base\+Archive}
+\hypertarget{classdjango_1_1utils_1_1archive_1_1BaseArchive}{}\label{classdjango_1_1utils_1_1archive_1_1BaseArchive}\index{django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+utils.\+archive.\+Base\+Archive\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1BaseArchive_a5a809bae5854418c3605572dd98b4a0a}{split\+\_\+leading\+\_\+dir}} (self, path)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1BaseArchive_a15105bf68db0c8391312f722fbfd6500}{has\+\_\+leading\+\_\+dir}} (self, paths)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1BaseArchive_aabe0f971eaaec4184e4e4cd14f8bc777}{target\+\_\+filename}} (self, to\+\_\+path, name)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1BaseArchive_a5eb4b059af8761e026bc170f4debfe68}{extract}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1BaseArchive_a71df44ecd22e19e277154d9319f41c30}{list}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1BaseArchive_a8db437f36eef823fc4f30392fa236f7a}{\+\_\+copy\+\_\+permissions}} (mode, filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Base Archive class.  Implementations should inherit this class.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1utils_1_1archive_1_1BaseArchive_a8db437f36eef823fc4f30392fa236f7a}\label{classdjango_1_1utils_1_1archive_1_1BaseArchive_a8db437f36eef823fc4f30392fa236f7a} 
+\index{django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}!\_copy\_permissions@{\_copy\_permissions}}
+\index{\_copy\_permissions@{\_copy\_permissions}!django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}}
+\doxysubsubsection{\texorpdfstring{\_copy\_permissions()}{\_copy\_permissions()}}
+{\footnotesize\ttfamily django.\+utils.\+archive.\+Base\+Archive.\+\_\+copy\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{mode,  }\item[{}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}If the file in the archive has some permissions (this assumes a file
+won't be writable/executable without being readable), apply those
+permissions to the unarchived file.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1archive_1_1BaseArchive_a5eb4b059af8761e026bc170f4debfe68}\label{classdjango_1_1utils_1_1archive_1_1BaseArchive_a5eb4b059af8761e026bc170f4debfe68} 
+\index{django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}!extract@{extract}}
+\index{extract@{extract}!django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}}
+\doxysubsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily django.\+utils.\+archive.\+Base\+Archive.\+extract (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1TarArchive_a39b213990a21178e6711db696d4b1ba4}{django.\+utils.\+archive.\+Tar\+Archive}}, et \mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1ZipArchive_a2c5557958bfb48da011f0aaed8326b4b}{django.\+utils.\+archive.\+Zip\+Archive}}.
+
+\Hypertarget{classdjango_1_1utils_1_1archive_1_1BaseArchive_a15105bf68db0c8391312f722fbfd6500}\label{classdjango_1_1utils_1_1archive_1_1BaseArchive_a15105bf68db0c8391312f722fbfd6500} 
+\index{django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}!has\_leading\_dir@{has\_leading\_dir}}
+\index{has\_leading\_dir@{has\_leading\_dir}!django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}}
+\doxysubsubsection{\texorpdfstring{has\_leading\_dir()}{has\_leading\_dir()}}
+{\footnotesize\ttfamily django.\+utils.\+archive.\+Base\+Archive.\+has\+\_\+leading\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{paths }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if all the paths have the same leading path name
+(i.e., everything is in one subdirectory in an archive).
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1archive_1_1BaseArchive_a71df44ecd22e19e277154d9319f41c30}\label{classdjango_1_1utils_1_1archive_1_1BaseArchive_a71df44ecd22e19e277154d9319f41c30} 
+\index{django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}!list@{list}}
+\index{list@{list}!django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily django.\+utils.\+archive.\+Base\+Archive.\+list (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1TarArchive_a1f672adea963acdb94bf935a9babbbcd}{django.\+utils.\+archive.\+Tar\+Archive}}, et \mbox{\hyperlink{classdjango_1_1utils_1_1archive_1_1ZipArchive_a20a7b8f90c70cdfd93cf0d1018797ecd}{django.\+utils.\+archive.\+Zip\+Archive}}.
+
+\Hypertarget{classdjango_1_1utils_1_1archive_1_1BaseArchive_a5a809bae5854418c3605572dd98b4a0a}\label{classdjango_1_1utils_1_1archive_1_1BaseArchive_a5a809bae5854418c3605572dd98b4a0a} 
+\index{django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}!split\_leading\_dir@{split\_leading\_dir}}
+\index{split\_leading\_dir@{split\_leading\_dir}!django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}}
+\doxysubsubsection{\texorpdfstring{split\_leading\_dir()}{split\_leading\_dir()}}
+{\footnotesize\ttfamily django.\+utils.\+archive.\+Base\+Archive.\+split\+\_\+leading\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1archive_1_1BaseArchive_aabe0f971eaaec4184e4e4cd14f8bc777}\label{classdjango_1_1utils_1_1archive_1_1BaseArchive_aabe0f971eaaec4184e4e4cd14f8bc777} 
+\index{django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}!target\_filename@{target\_filename}}
+\index{target\_filename@{target\_filename}!django.utils.archive.BaseArchive@{django.utils.archive.BaseArchive}}
+\doxysubsubsection{\texorpdfstring{target\_filename()}{target\_filename()}}
+{\footnotesize\ttfamily django.\+utils.\+archive.\+Base\+Archive.\+target\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{to\+\_\+path,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/utils/\mbox{\hyperlink{archive_8py}{archive.\+py}}\end{DoxyCompactItemize}

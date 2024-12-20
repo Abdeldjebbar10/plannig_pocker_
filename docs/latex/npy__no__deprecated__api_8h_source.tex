@@ -1,0 +1,26 @@
+\doxysection{npy\+\_\+no\+\_\+deprecated\+\_\+api.\+h}
+\hypertarget{npy__no__deprecated__api_8h_source}{}\label{npy__no__deprecated__api_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_no\_deprecated\_api.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_no\_deprecated\_api.h}}
+\mbox{\hyperlink{npy__no__deprecated__api_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ This\ include\ file\ is\ provided\ for\ inclusion\ in\ Cython\ *.pyd\ files\ where}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ one\ would\ like\ to\ define\ the\ NPY\_NO\_DEPRECATED\_API\ macro.\ It\ can\ be}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ included\ by}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ cdef\ extern\ from\ "{}npy\_no\_deprecated\_api.h"{}:\ pass}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ NPY\_NO\_DEPRECATED\_API}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{/*\ put\ this\ check\ here\ since\ there\ may\ be\ multiple\ includes\ in\ C\ extensions.\ */}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#if\ defined(NUMPY\_CORE\_INCLUDE\_NUMPY\_NDARRAYTYPES\_H\_)\ ||\ \(\backslash\)}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ defined(NUMPY\_CORE\_INCLUDE\_NUMPY\_NPY\_DEPRECATED\_API\_H)\ ||\ \(\backslash\)}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ defined(NUMPY\_CORE\_INCLUDE\_NUMPY\_OLD\_DEFINES\_H\_)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#error\ "{}npy\_no\_deprecated\_api.h"{}\ must\ be\ first\ among\ numpy\ includes.}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ NPY\_NO\_DEPRECATED\_API\ NPY\_API\_VERSION}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NPY\_NO\_DEPRECATED\_API\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,192 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+core.\+indexes.\+api}
+\hypertarget{namespacepandas_1_1core_1_1indexes_1_1api}{}\label{namespacepandas_1_1core_1_1indexes_1_1api}\index{pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_a1afe898de81b849fd7ea08c4bfe75ec0}{get\+\_\+objs\+\_\+combined\+\_\+axis}} (objs, bool intersect=False, Axis axis=0, bool sort=True, bool copy=False)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_a2cadca9c71d3acfbf6d2773ef8e01e78}{\+\_\+get\+\_\+distinct\+\_\+objs}} (list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} objs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_a5828322fedb76f17b4c32a91c4723d0f}{\+\_\+get\+\_\+combined\+\_\+index}} (list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} indexes, bool intersect=False, bool sort=False, bool copy=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_a04bf399b32522e33038769dbfe3b6259}{safe\+\_\+sort\+\_\+index}} (\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} index)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} \mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_a067d66a9b2f4e0b609bb2b6385547602}{union\+\_\+indexes}} (indexes, bool\texorpdfstring{$\vert$}{|}None sort=True)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_a69679f32f1a614147c6331f573e19010}{\+\_\+sanitize\+\_\+and\+\_\+check}} (indexes)
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_aab0b026874bd0588d354b8190cac55c5}{all\+\_\+indexes\+\_\+same}} (indexes)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1range_1_1RangeIndex}{Range\+Index}} \mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_a00a582fd797797bdf30af0a198f6473f}{default\+\_\+index}} (int n)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1indexes_1_1api_a582411542c099392f6c31cc77867d6d3}{\+\_\+sort\+\_\+msg}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_a5828322fedb76f17b4c32a91c4723d0f}\label{namespacepandas_1_1core_1_1indexes_1_1api_a5828322fedb76f17b4c32a91c4723d0f} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!\_get\_combined\_index@{\_get\_combined\_index}}
+\index{\_get\_combined\_index@{\_get\_combined\_index}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{\_get\_combined\_index()}{\_get\_combined\_index()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} pandas.\+core.\+indexes.\+api.\+\_\+get\+\_\+combined\+\_\+index (\begin{DoxyParamCaption}\item[{list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]}}]{indexes,  }\item[{bool }]{intersect = {\ttfamily False},  }\item[{bool }]{sort = {\ttfamily False},  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the union or intersection of indexes.
+
+Parameters
+----------
+indexes : list of Index or list objects
+    When intersect=True, do not accept list of lists.
+intersect : bool, default False
+    If True, calculate the intersection between indexes. Otherwise,
+    calculate the union.
+sort : bool, default False
+    Whether the result index should come out sorted or not.
+copy : bool, default False
+    If True, return a copy of the combined index.
+
+Returns
+-------
+Index
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_a2cadca9c71d3acfbf6d2773ef8e01e78}\label{namespacepandas_1_1core_1_1indexes_1_1api_a2cadca9c71d3acfbf6d2773ef8e01e78} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!\_get\_distinct\_objs@{\_get\_distinct\_objs}}
+\index{\_get\_distinct\_objs@{\_get\_distinct\_objs}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{\_get\_distinct\_objs()}{\_get\_distinct\_objs()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]} pandas.\+core.\+indexes.\+api.\+\_\+get\+\_\+distinct\+\_\+objs (\begin{DoxyParamCaption}\item[{list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}\mbox{]}}]{objs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a list with distinct elements of "objs" (different ids).
+Preserves order.
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_a69679f32f1a614147c6331f573e19010}\label{namespacepandas_1_1core_1_1indexes_1_1api_a69679f32f1a614147c6331f573e19010} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!\_sanitize\_and\_check@{\_sanitize\_and\_check}}
+\index{\_sanitize\_and\_check@{\_sanitize\_and\_check}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{\_sanitize\_and\_check()}{\_sanitize\_and\_check()}}
+{\footnotesize\ttfamily pandas.\+core.\+indexes.\+api.\+\_\+sanitize\+\_\+and\+\_\+check (\begin{DoxyParamCaption}\item[{}]{indexes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Verify the type of indexes and convert lists to Index.
+
+Cases:
+
+- [list, list, ...]: Return ([list, list, ...], 'list')
+- [list, Index, ...]: Return _sanitize_and_check([Index, Index, ...])
+    Lists are sorted and converted to Index.
+- [Index, Index, ...]: Return ([Index, Index, ...], TYPE)
+    TYPE = 'special' if at least one special type, 'array' otherwise.
+
+Parameters
+----------
+indexes : list of Index or list objects
+
+Returns
+-------
+sanitized_indexes : list of Index or list objects
+type : {'list', 'array', 'special'}
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_aab0b026874bd0588d354b8190cac55c5}\label{namespacepandas_1_1core_1_1indexes_1_1api_aab0b026874bd0588d354b8190cac55c5} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!all\_indexes\_same@{all\_indexes\_same}}
+\index{all\_indexes\_same@{all\_indexes\_same}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{all\_indexes\_same()}{all\_indexes\_same()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+indexes.\+api.\+all\+\_\+indexes\+\_\+same (\begin{DoxyParamCaption}\item[{}]{indexes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if all indexes contain the same elements.
+
+Parameters
+----------
+indexes : iterable of Index objects
+
+Returns
+-------
+bool
+    True if all indexes contain the same elements, False otherwise.
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_a00a582fd797797bdf30af0a198f6473f}\label{namespacepandas_1_1core_1_1indexes_1_1api_a00a582fd797797bdf30af0a198f6473f} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!default\_index@{default\_index}}
+\index{default\_index@{default\_index}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{default\_index()}{default\_index()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1range_1_1RangeIndex}{Range\+Index}} pandas.\+core.\+indexes.\+api.\+default\+\_\+index (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_a1afe898de81b849fd7ea08c4bfe75ec0}\label{namespacepandas_1_1core_1_1indexes_1_1api_a1afe898de81b849fd7ea08c4bfe75ec0} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!get\_objs\_combined\_axis@{get\_objs\_combined\_axis}}
+\index{get\_objs\_combined\_axis@{get\_objs\_combined\_axis}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{get\_objs\_combined\_axis()}{get\_objs\_combined\_axis()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} pandas.\+core.\+indexes.\+api.\+get\+\_\+objs\+\_\+combined\+\_\+axis (\begin{DoxyParamCaption}\item[{}]{objs,  }\item[{bool }]{intersect = {\ttfamily False},  }\item[{Axis }]{axis = {\ttfamily 0},  }\item[{bool }]{sort = {\ttfamily True},  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract combined index: return intersection or union (depending on the
+value of "intersect") of indexes on given axis, or None if all objects
+lack indexes (e.g. they are numpy arrays).
+
+Parameters
+----------
+objs : list
+    Series or DataFrame objects, may be mix of the two.
+intersect : bool, default False
+    If True, calculate the intersection between indexes. Otherwise,
+    calculate the union.
+axis : {0 or 'index', 1 or 'outer'}, default 0
+    The axis to extract indexes from.
+sort : bool, default True
+    Whether the result index should come out sorted or not.
+copy : bool, default False
+    If True, return a copy of the combined index.
+
+Returns
+-------
+Index
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_a04bf399b32522e33038769dbfe3b6259}\label{namespacepandas_1_1core_1_1indexes_1_1api_a04bf399b32522e33038769dbfe3b6259} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!safe\_sort\_index@{safe\_sort\_index}}
+\index{safe\_sort\_index@{safe\_sort\_index}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{safe\_sort\_index()}{safe\_sort\_index()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} pandas.\+core.\+indexes.\+api.\+safe\+\_\+sort\+\_\+index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}}]{index }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the sorted index
+
+We keep the dtypes and the name attributes.
+
+Parameters
+----------
+index : an Index
+
+Returns
+-------
+Index
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_a067d66a9b2f4e0b609bb2b6385547602}\label{namespacepandas_1_1core_1_1indexes_1_1api_a067d66a9b2f4e0b609bb2b6385547602} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!union\_indexes@{union\_indexes}}
+\index{union\_indexes@{union\_indexes}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{union\_indexes()}{union\_indexes()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} pandas.\+core.\+indexes.\+api.\+union\+\_\+indexes (\begin{DoxyParamCaption}\item[{}]{indexes,  }\item[{bool \texorpdfstring{$\vert$}{|} None }]{sort = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the union of indexes.
+
+The behavior of sort and names is not consistent.
+
+Parameters
+----------
+indexes : list of Index or list objects
+sort : bool, default True
+    Whether the result index should come out sorted or not.
+
+Returns
+-------
+Index
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepandas_1_1core_1_1indexes_1_1api_a582411542c099392f6c31cc77867d6d3}\label{namespacepandas_1_1core_1_1indexes_1_1api_a582411542c099392f6c31cc77867d6d3} 
+\index{pandas.core.indexes.api@{pandas.core.indexes.api}!\_sort\_msg@{\_sort\_msg}}
+\index{\_sort\_msg@{\_sort\_msg}!pandas.core.indexes.api@{pandas.core.indexes.api}}
+\doxysubsubsection{\texorpdfstring{\_sort\_msg}{\_sort\_msg}}
+{\footnotesize\ttfamily pandas.\+core.\+indexes.\+api.\+\_\+sort\+\_\+msg\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ textwrap.dedent(}
+\DoxyCodeLine{00002\ \ \ \ \ }
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

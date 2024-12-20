@@ -1,0 +1,101 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage test\+\_\+cpu\+\_\+features}
+\hypertarget{namespacetest__cpu__features}{}\label{namespacetest__cpu__features}\index{test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__cpu__features_1_1AbstractTest}{Abstract\+Test}}
+\item 
+class \mbox{\hyperlink{classtest__cpu__features_1_1Test__ARM__Features}{Test\+\_\+\+ARM\+\_\+\+Features}}
+\item 
+class \mbox{\hyperlink{classtest__cpu__features_1_1Test__POWER__Features}{Test\+\_\+\+POWER\+\_\+\+Features}}
+\item 
+class \mbox{\hyperlink{classtest__cpu__features_1_1Test__X86__Features}{Test\+\_\+\+X86\+\_\+\+Features}}
+\item 
+class \mbox{\hyperlink{classtest__cpu__features_1_1Test__ZARCH__Features}{Test\+\_\+\+ZARCH\+\_\+\+Features}}
+\item 
+class \mbox{\hyperlink{classtest__cpu__features_1_1TestEnvPrivation}{Test\+Env\+Privation}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_ae48a63cbbef7876d3115e19f8cadfa0d}{assert\+\_\+features\+\_\+equal}} (actual, desired, fname)
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_a837af4161603ae43d00dfd45243d1d3e}{\+\_\+text\+\_\+to\+\_\+list}} (txt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_ad0ddc86cc8c4a8a681b7fbe607c1d727}{is\+\_\+linux}} = sys.\+platform.\+startswith(\textquotesingle{}linux\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_a7b47c835f4038b729570baef01b355fc}{is\+\_\+cygwin}} = sys.\+platform.\+startswith(\textquotesingle{}cygwin\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_a45e674b78792783708cec039c41ac74b}{machine}} = platform.\+machine()
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_a0f692d2a47dc29b5ba17807f1ae07a1b}{is\+\_\+x86}} = re.\+match("{}\texorpdfstring{$^\wedge$}{\string^}(amd64\texorpdfstring{$\vert$}{|}x86\texorpdfstring{$\vert$}{|}i386\texorpdfstring{$\vert$}{|}i686)"{}, machine, re.\+IGNORECASE)
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_a6898633af0ab3ba107420dd98e5d2010}{is\+\_\+power}} = re.\+match("{}\texorpdfstring{$^\wedge$}{\string^}(powerpc\texorpdfstring{$\vert$}{|}ppc)64"{}, machine, re.\+IGNORECASE)
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_a6b4fa391cf0a999264ee2624750cd622}{is\+\_\+zarch}} = re.\+match("{}\texorpdfstring{$^\wedge$}{\string^}(s390x)"{}, machine, re.\+IGNORECASE)
+\item 
+\mbox{\hyperlink{namespacetest__cpu__features_a2a048951ba57d3e578a6fcf7fea69bb9}{is\+\_\+arm}} = re.\+match("{}\texorpdfstring{$^\wedge$}{\string^}(arm\texorpdfstring{$\vert$}{|}aarch64)"{}, machine, re.\+IGNORECASE)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacetest__cpu__features_a837af4161603ae43d00dfd45243d1d3e}\label{namespacetest__cpu__features_a837af4161603ae43d00dfd45243d1d3e} 
+\index{test\_cpu\_features@{test\_cpu\_features}!\_text\_to\_list@{\_text\_to\_list}}
+\index{\_text\_to\_list@{\_text\_to\_list}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{\_text\_to\_list()}{\_text\_to\_list()}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+\_\+text\+\_\+to\+\_\+list (\begin{DoxyParamCaption}\item[{}]{txt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetest__cpu__features_ae48a63cbbef7876d3115e19f8cadfa0d}\label{namespacetest__cpu__features_ae48a63cbbef7876d3115e19f8cadfa0d} 
+\index{test\_cpu\_features@{test\_cpu\_features}!assert\_features\_equal@{assert\_features\_equal}}
+\index{assert\_features\_equal@{assert\_features\_equal}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{assert\_features\_equal()}{assert\_features\_equal()}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+assert\+\_\+features\+\_\+equal (\begin{DoxyParamCaption}\item[{}]{actual,  }\item[{}]{desired,  }\item[{}]{fname }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacetest__cpu__features_a2a048951ba57d3e578a6fcf7fea69bb9}\label{namespacetest__cpu__features_a2a048951ba57d3e578a6fcf7fea69bb9} 
+\index{test\_cpu\_features@{test\_cpu\_features}!is\_arm@{is\_arm}}
+\index{is\_arm@{is\_arm}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{is\_arm}{is\_arm}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+is\+\_\+arm = re.\+match("{}\texorpdfstring{$^\wedge$}{\string^}(arm\texorpdfstring{$\vert$}{|}aarch64)"{}, machine, re.\+IGNORECASE)}
+
+\Hypertarget{namespacetest__cpu__features_a7b47c835f4038b729570baef01b355fc}\label{namespacetest__cpu__features_a7b47c835f4038b729570baef01b355fc} 
+\index{test\_cpu\_features@{test\_cpu\_features}!is\_cygwin@{is\_cygwin}}
+\index{is\_cygwin@{is\_cygwin}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{is\_cygwin}{is\_cygwin}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+is\+\_\+cygwin = sys.\+platform.\+startswith(\textquotesingle{}cygwin\textquotesingle{})}
+
+\Hypertarget{namespacetest__cpu__features_ad0ddc86cc8c4a8a681b7fbe607c1d727}\label{namespacetest__cpu__features_ad0ddc86cc8c4a8a681b7fbe607c1d727} 
+\index{test\_cpu\_features@{test\_cpu\_features}!is\_linux@{is\_linux}}
+\index{is\_linux@{is\_linux}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{is\_linux}{is\_linux}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+is\+\_\+linux = sys.\+platform.\+startswith(\textquotesingle{}linux\textquotesingle{})}
+
+\Hypertarget{namespacetest__cpu__features_a6898633af0ab3ba107420dd98e5d2010}\label{namespacetest__cpu__features_a6898633af0ab3ba107420dd98e5d2010} 
+\index{test\_cpu\_features@{test\_cpu\_features}!is\_power@{is\_power}}
+\index{is\_power@{is\_power}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{is\_power}{is\_power}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+is\+\_\+power = re.\+match("{}\texorpdfstring{$^\wedge$}{\string^}(powerpc\texorpdfstring{$\vert$}{|}ppc)64"{}, machine, re.\+IGNORECASE)}
+
+\Hypertarget{namespacetest__cpu__features_a0f692d2a47dc29b5ba17807f1ae07a1b}\label{namespacetest__cpu__features_a0f692d2a47dc29b5ba17807f1ae07a1b} 
+\index{test\_cpu\_features@{test\_cpu\_features}!is\_x86@{is\_x86}}
+\index{is\_x86@{is\_x86}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{is\_x86}{is\_x86}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+is\+\_\+x86 = re.\+match("{}\texorpdfstring{$^\wedge$}{\string^}(amd64\texorpdfstring{$\vert$}{|}x86\texorpdfstring{$\vert$}{|}i386\texorpdfstring{$\vert$}{|}i686)"{}, machine, re.\+IGNORECASE)}
+
+\Hypertarget{namespacetest__cpu__features_a6b4fa391cf0a999264ee2624750cd622}\label{namespacetest__cpu__features_a6b4fa391cf0a999264ee2624750cd622} 
+\index{test\_cpu\_features@{test\_cpu\_features}!is\_zarch@{is\_zarch}}
+\index{is\_zarch@{is\_zarch}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{is\_zarch}{is\_zarch}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+is\+\_\+zarch = re.\+match("{}\texorpdfstring{$^\wedge$}{\string^}(s390x)"{}, machine, re.\+IGNORECASE)}
+
+\Hypertarget{namespacetest__cpu__features_a45e674b78792783708cec039c41ac74b}\label{namespacetest__cpu__features_a45e674b78792783708cec039c41ac74b} 
+\index{test\_cpu\_features@{test\_cpu\_features}!machine@{machine}}
+\index{machine@{machine}!test\_cpu\_features@{test\_cpu\_features}}
+\doxysubsubsection{\texorpdfstring{machine}{machine}}
+{\footnotesize\ttfamily test\+\_\+cpu\+\_\+features.\+machine = platform.\+machine()}
+

@@ -1,0 +1,77 @@
+\doxysection{Référence de la classe pandas.\+core.\+arrays.\+datetimelike.\+Datelike\+Ops}
+\hypertarget{classpandas_1_1core_1_1arrays_1_1datetimelike_1_1DatelikeOps}{}\label{classpandas_1_1core_1_1arrays_1_1datetimelike_1_1DatelikeOps}\index{pandas.core.arrays.datetimelike.DatelikeOps@{pandas.core.arrays.datetimelike.DatelikeOps}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+arrays.\+datetimelike.\+Datelike\+Ops\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+arrays.\+datetimelike.\+Datelike\+Ops\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1datetimelike_1_1DatelikeOps_ab2988c67a9bbea18207ae308efa3b2a2}{strftime}} (self, str date\+\_\+format)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Common ops for DatetimeIndex/PeriodIndex, but not TimedeltaIndex.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1arrays_1_1datetimelike_1_1DatelikeOps_ab2988c67a9bbea18207ae308efa3b2a2}\label{classpandas_1_1core_1_1arrays_1_1datetimelike_1_1DatelikeOps_ab2988c67a9bbea18207ae308efa3b2a2} 
+\index{pandas.core.arrays.datetimelike.DatelikeOps@{pandas.core.arrays.datetimelike.DatelikeOps}!strftime@{strftime}}
+\index{strftime@{strftime}!pandas.core.arrays.datetimelike.DatelikeOps@{pandas.core.arrays.datetimelike.DatelikeOps}}
+\doxysubsubsection{\texorpdfstring{strftime()}{strftime()}}
+{\footnotesize\ttfamily  npt.\+NDArray\mbox{[}np.\+object\+\_\+\mbox{]} pandas.\+core.\+arrays.\+datetimelike.\+Datelike\+Ops.\+strftime (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{date\+\_\+format }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert to Index using specified date_format.
+
+Return an Index of formatted strings specified by date_format, which
+supports the same string format as the python standard library. Details
+of the string format can be found in `python string format
+doc <%(URL)s>`__.
+
+Formats supported by the C `strftime` API but not by the python string format
+doc (such as `"%%R"`, `"%%r"`) are not officially supported and should be
+preferably replaced with their supported equivalents (such as `"%%H:%%M"`,
+`"%%I:%%M:%%S %%p"`).
+
+Note that `PeriodIndex` support additional directives, detailed in
+`Period.strftime`.
+
+Parameters
+----------
+date_format : str
+    Date format string (e.g. "%%Y-%%m-%%d").
+
+Returns
+-------
+ndarray[object]
+    NumPy ndarray of formatted strings.
+
+See Also
+--------
+to_datetime : Convert the given argument to datetime.
+DatetimeIndex.normalize : Return DatetimeIndex with times to midnight.
+DatetimeIndex.round : Round the DatetimeIndex to the specified freq.
+DatetimeIndex.floor : Floor the DatetimeIndex to the specified freq.
+Timestamp.strftime : Format a single Timestamp.
+Period.strftime : Format a single Period.
+
+Examples
+--------
+>>> rng = pd.date_range(pd.Timestamp("2018-03-10 09:00"),
+...                     periods=3, freq='s')
+>>> rng.strftime('%%B %%d, %%Y, %%r')
+Index(['March 10, 2018, 09:00:00 AM', 'March 10, 2018, 09:00:01 AM',
+       'March 10, 2018, 09:00:02 AM'],
+      dtype='object')
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/arrays/\mbox{\hyperlink{arrays_2datetimelike_8py}{datetimelike.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,1125 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/numpy/\+\_\+core/include/numpy/npy\+\_\+common.h}
+\hypertarget{npy__common_8h}{}\label{npy__common_8h}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_common.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/npy\_common.h}}
+{\ttfamily \#include $<$Python.\+h$>$}\newline
+{\ttfamily \#include "{}numpyconfig.\+h"{}}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$complex.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+Graphe des dépendances par inclusion de npy\+\_\+common.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_abe5bcc66fca27d09b9d97559e9a73696}{NPY\+\_\+\+INLINE\+\_\+\+MATH}}~0
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ab676bf8e03be8d672c484943bd577b10}{NPY\+\_\+\+GCC\+\_\+\+UNROLL\+\_\+\+LOOPS}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aa03a60ec62f7eb4b1b9df729c5e645bf}{NPY\+\_\+\+GCC\+\_\+\+OPT\+\_\+3}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a933bcdd7a088a39695c78f1f31167aaf}{NPY\+\_\+\+GCC\+\_\+\+NONNULL}}(n)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a22ec66478b3a2f639effba9971739bda}{NPY\+\_\+\+LIKELY}}(x)~(x)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_afe6ea5cd1976681172cfee558bbd2001}{NPY\+\_\+\+UNLIKELY}}(x)~(x)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a602abcff512ac2a4cc7e1c537e392ccf}{NPY\+\_\+\+PREFETCH}}(x,  rw,  loc)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a393b364032c46841399790de0c2a6946}{NPY\+\_\+\+INLINE}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ad2063df402e3d0c46101871b830ac92b}{NPY\+\_\+\+FINLINE}}~static
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aadb7f69f63e91c01e30ef6c64f81d339}{NPY\+\_\+\+NOINLINE}}~static
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_af98b362378f8c664130628aada5f7ebc}{NPY\+\_\+\+TLS}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a45a9b9afdf1ec9a1abc340fc71836a7b}{NPY\+\_\+\+RETURNS\+\_\+\+BORROWED\+\_\+\+REF}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aa99b616b509473803faea06470edcf61}{NPY\+\_\+\+STEALS\+\_\+\+REF\+\_\+\+TO\+\_\+\+ARG}}(n)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aa35ae2cf96048df4cf705f11e5b39a4d}{npy\+\_\+fseek}}~fseek
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_adf95a2c8b6a04975fe5ed42fcd9ebc3f}{npy\+\_\+ftell}}~ftell
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a0c73b77289e9040154c9fe1a7ccb4c7a}{npy\+\_\+lseek}}~lseek
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a6331835f6c44e91726875e641ea8ec26}{npy\+\_\+off\+\_\+t}}~off\+\_\+t
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a2c334df626cc5e8f0cc231c82d8f1e31}{NPY\+\_\+\+OFF\+\_\+\+T\+\_\+\+PYFMT}}~"{}l"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_af50d77826a127b6924fd563b421aa879}{NPY\+\_\+\+SIZEOF\+\_\+\+CHAR}}~1
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a432b27365313e2eb6982b04f31931014}{NPY\+\_\+\+SIZEOF\+\_\+\+BYTE}}~1
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a14e0bee5427cb96e7206ab9c7b295aab}{NPY\+\_\+\+SIZEOF\+\_\+\+DATETIME}}~8
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a0705d3896d501b8e7ca01aa97156286b}{NPY\+\_\+\+SIZEOF\+\_\+\+TIMEDELTA}}~8
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aecd9bdc07f55e5bdd5a3775d4ccf3e8a}{NPY\+\_\+\+SIZEOF\+\_\+\+HALF}}~2
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ade4ae46b90987bf9dc71e0a636b3feb6}{NPY\+\_\+\+SIZEOF\+\_\+\+CFLOAT}}~\mbox{\hyperlink{__numpyconfig_8h_a1d4461aa023a7172aa71d23f74629fd5}{NPY\+\_\+\+SIZEOF\+\_\+\+COMPLEX\+\_\+\+FLOAT}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a0620f2b5eb6eed33da5c51d7b57df18e}{NPY\+\_\+\+SIZEOF\+\_\+\+CDOUBLE}}~\mbox{\hyperlink{__numpyconfig_8h_a6e2bfa2800b4a9f3fc7e1ccc5668715d}{NPY\+\_\+\+SIZEOF\+\_\+\+COMPLEX\+\_\+\+DOUBLE}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a09c156ad9a042a7471ac161e08c5217b}{NPY\+\_\+\+SIZEOF\+\_\+\+CLONGDOUBLE}}~\mbox{\hyperlink{__numpyconfig_8h_a3d31bec6a6e87501492bd6ea335d0ba3}{NPY\+\_\+\+SIZEOF\+\_\+\+COMPLEX\+\_\+\+LONGDOUBLE}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a1240acc0d14f70a1f480cb6501166536}{NPY\+\_\+\+SSIZE\+\_\+\+T\+\_\+\+PYFMT}}~"{}n"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ac86aae0a4683f36a8715529902dabe12}{constchar}}~char
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a0620c2d6dabf1464b067f04c92ee3cfb}{NPY\+\_\+\+INTP}}~\mbox{\hyperlink{ndarraytypes_8h_ae15cea9045111facdbe2293eac040e56afce185c362b58e9916c1f204d46bfb30}{NPY\+\_\+\+LONG}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a25c8725e27aae21fdad244634e90a119}{NPY\+\_\+\+UINTP}}~\mbox{\hyperlink{ndarraytypes_8h_ae15cea9045111facdbe2293eac040e56a8d17f124bb2e31e2b0fc132ab73863ee}{NPY\+\_\+\+ULONG}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a4242c4fafbe8a553892c9aaee6df0966}{Py\+Intp\+Arr\+Type\+\_\+\+Type}}~\mbox{\hyperlink{____multiarray__api_8h_affcab738212e03d0bff885cd7c3ae045}{Py\+Long\+Arr\+Type\+\_\+\+Type}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a53433ad1ae364ae11bd7f4edd274095d}{Py\+UIntp\+Arr\+Type\+\_\+\+Type}}~\mbox{\hyperlink{____multiarray__api_8h_a627005c2c10f2fd4e80b86ad8a633d29}{Py\+ULong\+Arr\+Type\+\_\+\+Type}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aee6daac3395340ea1edf5e1d63756031}{NPY\+\_\+\+MAX\+\_\+\+INTP}}~\mbox{\hyperlink{npy__common_8h_abd9cf9d493c4d203814ca8eb3221c42d}{NPY\+\_\+\+MAX\+\_\+\+LONG}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a20423f04a6e690d59256c8a4f3fb093e}{NPY\+\_\+\+MIN\+\_\+\+INTP}}~\mbox{\hyperlink{npy__common_8h_aa60269d4c672db073f1473ba4bcd3e66}{NPY\+\_\+\+MIN\+\_\+\+LONG}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a03dc6c7981329dd21a22a95a059bc0c8}{NPY\+\_\+\+MAX\+\_\+\+UINTP}}~\mbox{\hyperlink{npy__common_8h_ac6054280e5ff710824e4a456f31218aa}{NPY\+\_\+\+MAX\+\_\+\+ULONG}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aeab65972ff5d7c371b1d80c6e28453c9}{NPY\+\_\+\+INTP\+\_\+\+FMT}}~"{}ld"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a909bb58b14763c00c057ea017b16dfdb}{NPY\+\_\+\+BYTE\+\_\+\+FMT}}~"{}hhd"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ac6a8869d6892db8315afbbadc981e880}{NPY\+\_\+\+UBYTE\+\_\+\+FMT}}~"{}hhu"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ab1c20b106690cf93937614ab9c0a2e43}{NPY\+\_\+\+SHORT\+\_\+\+FMT}}~"{}hd"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a4a59a9674613219bc5ac5a0538b54294}{NPY\+\_\+\+USHORT\+\_\+\+FMT}}~"{}hu"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a05110692f7549b97bc743b2a2ec630f0}{NPY\+\_\+\+INT\+\_\+\+FMT}}~"{}d"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a628067a7ea41095654cc6bd2e7b8b7b1}{NPY\+\_\+\+UINT\+\_\+\+FMT}}~"{}u"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a25e91b12d0ef8071d61e7ac19a8f804a}{NPY\+\_\+\+LONG\+\_\+\+FMT}}~"{}ld"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a2510129b1cf560d6aa6b6bdfd10c1596}{NPY\+\_\+\+ULONG\+\_\+\+FMT}}~"{}lu"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a11792b8550f976fa6a1a25befb5be9e8}{NPY\+\_\+\+HALF\+\_\+\+FMT}}~"{}g"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ab70f169a89e0f0452ada5eab1527674b}{NPY\+\_\+\+FLOAT\+\_\+\+FMT}}~"{}g"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a4a90b5a08fb4637b47b5d6c5840b1316}{NPY\+\_\+\+DOUBLE\+\_\+\+FMT}}~"{}g"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(x)~(x\#\#L)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2}{NPY\+\_\+\+ULONGLONG\+\_\+\+SUFFIX}}(x)~(x\#\#UL)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a64242e1b37c87754b81412462a20f4a1}{NPY\+\_\+\+FALSE}}~0
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a2c4563216f21af5c8f5898f24519bc46}{NPY\+\_\+\+TRUE}}~1
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a2480af0f310284766c914c237bcd5212}{NPY\+\_\+\+LONGDOUBLE\+\_\+\+FMT}}~"{}Lg"{}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a39faf3438c1d3a8f3d3f0b85ed700734}{longdouble\+\_\+t}}~long double
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a9b2c6c6d327b54ead159e0a03c6e80b2}{NPY\+\_\+\+SIZEOF\+\_\+\+HASH\+\_\+T}}~\mbox{\hyperlink{__numpyconfig_8h_af2b42b17740bde446d4d623bd5af9e11}{NPY\+\_\+\+SIZEOF\+\_\+\+INTP}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_acba2e251d4b1db5ac7c735361f525b68}{NPY\+\_\+\+MAX\+\_\+\+INT8}}~127
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a972733722607db61c1711da62efba988}{NPY\+\_\+\+MIN\+\_\+\+INT8}}~-\/128
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a080e9776daa266f4aca5b0a89c47d533}{NPY\+\_\+\+MAX\+\_\+\+UINT8}}~255
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_af13ee29d812421688bc97e68577e981a}{NPY\+\_\+\+MAX\+\_\+\+INT16}}~32767
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a051a0a22975b7d42b9c51a669a32deda}{NPY\+\_\+\+MIN\+\_\+\+INT16}}~-\/32768
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a8b6c1e14fe912cfd1dcc33c1bb014884}{NPY\+\_\+\+MAX\+\_\+\+UINT16}}~65535
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ae79fb580548e295697977daf8c6c148d}{NPY\+\_\+\+MAX\+\_\+\+INT32}}~2147483647
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_adac70bd547726cf547ae28344ddf73ae}{NPY\+\_\+\+MIN\+\_\+\+INT32}}~(-\/\mbox{\hyperlink{npy__common_8h_ae79fb580548e295697977daf8c6c148d}{NPY\+\_\+\+MAX\+\_\+\+INT32}} -\/ 1)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ad72bb9df388751f8e8ff8a217d6ca32e}{NPY\+\_\+\+MAX\+\_\+\+UINT32}}~4294967295U
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a8153bd351544e1b364fd2840d7e58553}{NPY\+\_\+\+MAX\+\_\+\+INT64}}~\mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(9223372036854775807)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a7dd2b7637b09a22e126161507089effa}{NPY\+\_\+\+MIN\+\_\+\+INT64}}~(-\/\mbox{\hyperlink{npy__common_8h_a8153bd351544e1b364fd2840d7e58553}{NPY\+\_\+\+MAX\+\_\+\+INT64}} -\/ \mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(1))
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a30c023dd6d03e90797fb9f04baec62fa}{NPY\+\_\+\+MAX\+\_\+\+UINT64}}~\mbox{\hyperlink{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2}{NPY\+\_\+\+ULONGLONG\+\_\+\+SUFFIX}}(18446744073709551615)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_abc6144ab0aeca6fc5afa8504f645933a}{NPY\+\_\+\+MAX\+\_\+\+INT128}}~\mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(85070591730234615865843651857942052864)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a735d25cfda1c4cc1e4d46f7d02d3a22d}{NPY\+\_\+\+MIN\+\_\+\+INT128}}~(-\/\mbox{\hyperlink{npy__common_8h_abc6144ab0aeca6fc5afa8504f645933a}{NPY\+\_\+\+MAX\+\_\+\+INT128}} -\/ \mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(1))
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a4c2601da3e693410fc5fa2f70527740b}{NPY\+\_\+\+MAX\+\_\+\+UINT128}}~\mbox{\hyperlink{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2}{NPY\+\_\+\+ULONGLONG\+\_\+\+SUFFIX}}(170141183460469231731687303715884105728)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a18f073000588d65142b4eefb5140ae80}{NPY\+\_\+\+MAX\+\_\+\+INT256}}~\mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(57896044618658097711785492504343953926634992332820282019728792003956564819967)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a04249b2a2d8db05ea29891e111d8d7fc}{NPY\+\_\+\+MIN\+\_\+\+INT256}}~(-\/\mbox{\hyperlink{npy__common_8h_a18f073000588d65142b4eefb5140ae80}{NPY\+\_\+\+MAX\+\_\+\+INT256}} -\/ \mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(1))
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aad3a29cc09e8425e595d91d85c42e469}{NPY\+\_\+\+MAX\+\_\+\+UINT256}}~\mbox{\hyperlink{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2}{NPY\+\_\+\+ULONGLONG\+\_\+\+SUFFIX}}(115792089237316195423570985008687907853269984665640564039457584007913129639935)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aaab311d8c10418aad1f0c35faec18ae2}{NPY\+\_\+\+MIN\+\_\+\+DATETIME}}~\mbox{\hyperlink{npy__common_8h_a7dd2b7637b09a22e126161507089effa}{NPY\+\_\+\+MIN\+\_\+\+INT64}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ad9c65120f32ceb8aa540e8c4f2cd5f9e}{NPY\+\_\+\+MAX\+\_\+\+DATETIME}}~\mbox{\hyperlink{npy__common_8h_a8153bd351544e1b364fd2840d7e58553}{NPY\+\_\+\+MAX\+\_\+\+INT64}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a82b403211b715477d21d8feb2bbd1fe6}{NPY\+\_\+\+MIN\+\_\+\+TIMEDELTA}}~\mbox{\hyperlink{npy__common_8h_a7dd2b7637b09a22e126161507089effa}{NPY\+\_\+\+MIN\+\_\+\+INT64}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a5fb6db38d0da605e54e9d303257e05b2}{NPY\+\_\+\+MAX\+\_\+\+TIMEDELTA}}~\mbox{\hyperlink{npy__common_8h_a8153bd351544e1b364fd2840d7e58553}{NPY\+\_\+\+MAX\+\_\+\+INT64}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_af905a99f8154c31c820c818cedf740b6}{NPY\+\_\+\+MAX\+\_\+\+BYTE}}~SCHAR\+\_\+\+MAX
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a668b4c5809ac3f3bac921b44ebe6fc53}{NPY\+\_\+\+MIN\+\_\+\+BYTE}}~SCHAR\+\_\+\+MIN
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a286fe1094db435e033cf2790fc5a75cd}{NPY\+\_\+\+MAX\+\_\+\+UBYTE}}~UCHAR\+\_\+\+MAX
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a414beafc19efbccfec3196e6cb9ca0de}{NPY\+\_\+\+MAX\+\_\+\+SHORT}}~SHRT\+\_\+\+MAX
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a645e01b0daf2ce78add96008af70ced2}{NPY\+\_\+\+MIN\+\_\+\+SHORT}}~SHRT\+\_\+\+MIN
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a0c912ddd7e8ed2dc6da8fed06d96cf61}{NPY\+\_\+\+MAX\+\_\+\+USHORT}}~USHRT\+\_\+\+MAX
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a041c4ffa2864255bff4c3c46ebfc7b82}{NPY\+\_\+\+MAX\+\_\+\+INT}}~INT\+\_\+\+MAX
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a21658776274b3d146c674318b635a334}{INT\+\_\+\+MIN}}~(-\/INT\+\_\+\+MAX -\/ 1)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a0d68fa7a8fbd383c154177f8007cef2e}{NPY\+\_\+\+MIN\+\_\+\+INT}}~\mbox{\hyperlink{npy__common_8h_a21658776274b3d146c674318b635a334}{INT\+\_\+\+MIN}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aafd8a9691ded784ce716e2ac2666e6ea}{NPY\+\_\+\+MAX\+\_\+\+UINT}}~UINT\+\_\+\+MAX
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_abd9cf9d493c4d203814ca8eb3221c42d}{NPY\+\_\+\+MAX\+\_\+\+LONG}}~LONG\+\_\+\+MAX
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aa60269d4c672db073f1473ba4bcd3e66}{NPY\+\_\+\+MIN\+\_\+\+LONG}}~LONG\+\_\+\+MIN
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ac6054280e5ff710824e4a456f31218aa}{NPY\+\_\+\+MAX\+\_\+\+ULONG}}~ULONG\+\_\+\+MAX
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a96d2700f0c8d33f19109774435f42c03}{NPY\+\_\+\+BITSOF\+\_\+\+BOOL}}~(sizeof(\mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\+\_\+bool}}) \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a46f482d61da6e159f1eecbb6eb71712d}{NPY\+\_\+\+BITSOF\+\_\+\+CHAR}}~CHAR\+\_\+\+BIT
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a5930751caf658c827ddf141468aeae5e}{NPY\+\_\+\+BITSOF\+\_\+\+BYTE}}~(\mbox{\hyperlink{npy__common_8h_a432b27365313e2eb6982b04f31931014}{NPY\+\_\+\+SIZEOF\+\_\+\+BYTE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_af5c5e8f09b77ef075c245368e3ed1e5e}{NPY\+\_\+\+BITSOF\+\_\+\+SHORT}}~(\mbox{\hyperlink{__numpyconfig_8h_a2ead189c7aef6249248f12d76eb084b6}{NPY\+\_\+\+SIZEOF\+\_\+\+SHORT}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_aca1bbfdeda86ebb41d55a7c74cc2c5e9}{NPY\+\_\+\+BITSOF\+\_\+\+INT}}~(\mbox{\hyperlink{__numpyconfig_8h_ae53de8dfe524e6f3f9e0aeaceedf5515}{NPY\+\_\+\+SIZEOF\+\_\+\+INT}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a3bc3ef13861167d1c7df4b3ecc91c1e1}{NPY\+\_\+\+BITSOF\+\_\+\+LONG}}~(\mbox{\hyperlink{__numpyconfig_8h_a5362035c038cba2f8a6ba16f7fb15987}{NPY\+\_\+\+SIZEOF\+\_\+\+LONG}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a586f3c288162045b9709581749238402}{NPY\+\_\+\+BITSOF\+\_\+\+LONGLONG}}~(\mbox{\hyperlink{__numpyconfig_8h_a49de850a52752f3cd077c98f5cbc16b3}{NPY\+\_\+\+SIZEOF\+\_\+\+LONGLONG}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a5a70e3f892952de38bfd82aeab1300b7}{NPY\+\_\+\+BITSOF\+\_\+\+INTP}}~(\mbox{\hyperlink{__numpyconfig_8h_af2b42b17740bde446d4d623bd5af9e11}{NPY\+\_\+\+SIZEOF\+\_\+\+INTP}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a10821929f9c7b45f9348f8975eef1c5c}{NPY\+\_\+\+BITSOF\+\_\+\+HALF}}~(\mbox{\hyperlink{npy__common_8h_aecd9bdc07f55e5bdd5a3775d4ccf3e8a}{NPY\+\_\+\+SIZEOF\+\_\+\+HALF}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a9fb7361d69f25bfcab27689f1fd771ea}{NPY\+\_\+\+BITSOF\+\_\+\+FLOAT}}~(\mbox{\hyperlink{__numpyconfig_8h_abaa171d68128f24de939d0b5c5bae4e4}{NPY\+\_\+\+SIZEOF\+\_\+\+FLOAT}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a9c525a106ad6993fe3a261f4f7342be7}{NPY\+\_\+\+BITSOF\+\_\+\+DOUBLE}}~(\mbox{\hyperlink{__numpyconfig_8h_a93588c7dc1a5fd268bbfabaa7650cda3}{NPY\+\_\+\+SIZEOF\+\_\+\+DOUBLE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_afe9f4af3aa8d011521dabb8adfda9f40}{NPY\+\_\+\+BITSOF\+\_\+\+LONGDOUBLE}}~(\mbox{\hyperlink{__numpyconfig_8h_a17caa35bd5b7caf978691c571e2c3229}{NPY\+\_\+\+SIZEOF\+\_\+\+LONGDOUBLE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_af33931f7ff61d28c09aa2166347cd996}{NPY\+\_\+\+BITSOF\+\_\+\+CFLOAT}}~(\mbox{\hyperlink{npy__common_8h_ade4ae46b90987bf9dc71e0a636b3feb6}{NPY\+\_\+\+SIZEOF\+\_\+\+CFLOAT}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_af663284659db8d2dbafde3dfa213257b}{NPY\+\_\+\+BITSOF\+\_\+\+CDOUBLE}}~(\mbox{\hyperlink{npy__common_8h_a0620f2b5eb6eed33da5c51d7b57df18e}{NPY\+\_\+\+SIZEOF\+\_\+\+CDOUBLE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a9083173528477ec8a6a94f390f2f1480}{NPY\+\_\+\+BITSOF\+\_\+\+CLONGDOUBLE}}~(\mbox{\hyperlink{npy__common_8h_a09c156ad9a042a7471ac161e08c5217b}{NPY\+\_\+\+SIZEOF\+\_\+\+CLONGDOUBLE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a72ecdbb54bba80d41e0da8c2d363a5af}{NPY\+\_\+\+BITSOF\+\_\+\+DATETIME}}~(\mbox{\hyperlink{npy__common_8h_a14e0bee5427cb96e7206ab9c7b295aab}{NPY\+\_\+\+SIZEOF\+\_\+\+DATETIME}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a6a64864f7644e20b8cec478247eb14a1}{NPY\+\_\+\+BITSOF\+\_\+\+TIMEDELTA}}~(\mbox{\hyperlink{npy__common_8h_a0705d3896d501b8e7ca01aa97156286b}{NPY\+\_\+\+SIZEOF\+\_\+\+TIMEDELTA}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a368beaae75cd7d6d4b624d8d70d1595f}{NPY\+\_\+\+FLOAT16}}~\mbox{\hyperlink{ndarraytypes_8h_ae15cea9045111facdbe2293eac040e56a139d1611ab1819f0210a1392631de411}{NPY\+\_\+\+HALF}}
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_a40ba5724cb22231048340529fd7e0126}{NPY\+\_\+\+DATETIME\+\_\+\+FMT}}~NPY\+\_\+\+INT64\+\_\+\+FMT
+\item 
+\#define \mbox{\hyperlink{npy__common_8h_ae2c5f946fa80882e216501364d7d32b9}{NPY\+\_\+\+TIMEDELTA\+\_\+\+FMT}}~NPY\+\_\+\+INT64\+\_\+\+FMT
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef Py\+\_\+ssize\+\_\+t \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}}
+\item 
+typedef size\+\_\+t \mbox{\hyperlink{npy__common_8h_a8e60b20d57b3d6104defffd697ec49b3}{npy\+\_\+uintp}}
+\item 
+typedef long \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\+\_\+longlong}}
+\item 
+typedef unsigned long \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\+\_\+ulonglong}}
+\item 
+typedef unsigned char \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\+\_\+bool}}
+\item 
+typedef long double \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\+\_\+longdouble}}
+\item 
+typedef signed char \mbox{\hyperlink{npy__common_8h_a7c32d9fb5de5c653356ab8a16d17df0c}{npy\+\_\+byte}}
+\item 
+typedef unsigned char \mbox{\hyperlink{npy__common_8h_af34f2c87eebcdb73e4e2df6a48059bcc}{npy\+\_\+ubyte}}
+\item 
+typedef unsigned short \mbox{\hyperlink{npy__common_8h_acdbe6a86372d5fcb5e0c406535e418ae}{npy\+\_\+ushort}}
+\item 
+typedef unsigned int \mbox{\hyperlink{npy__common_8h_ae5708d3e6443a009e9fbed0ebc5c36f0}{npy\+\_\+uint}}
+\item 
+typedef unsigned long \mbox{\hyperlink{npy__common_8h_ab298757dfcc9aae2e4b7b741d8f302db}{npy\+\_\+ulong}}
+\item 
+typedef char \mbox{\hyperlink{npy__common_8h_a2bea94c86e38a39d14d325fdf76a12b5}{npy\+\_\+char}}
+\item 
+typedef short \mbox{\hyperlink{npy__common_8h_ad8967d29d649f64194e9e9fc1ae89e13}{npy\+\_\+short}}
+\item 
+typedef int \mbox{\hyperlink{npy__common_8h_a9dc06ece12b0e1ecf7c2f14642e301ce}{npy\+\_\+int}}
+\item 
+typedef long \mbox{\hyperlink{npy__common_8h_a8fa5103df1ff2ae9c06f5554d59994c2}{npy\+\_\+long}}
+\item 
+typedef float \mbox{\hyperlink{npy__common_8h_accf4b4138e3ad7733f72c9d807523960}{npy\+\_\+float}}
+\item 
+typedef double \mbox{\hyperlink{npy__common_8h_a3da6390b6404eca157c556043bc3535c}{npy\+\_\+double}}
+\item 
+typedef Py\+\_\+hash\+\_\+t \mbox{\hyperlink{npy__common_8h_a8e19510dec13243663db068bf658112c}{npy\+\_\+hash\+\_\+t}}
+\item 
+typedef double \+\_\+\+Complex \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\+\_\+cdouble}}
+\item 
+typedef float \+\_\+\+Complex \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\+\_\+cfloat}}
+\item 
+typedef \mbox{\hyperlink{npy__common_8h_a39faf3438c1d3a8f3d3f0b85ed700734}{longdouble\+\_\+t}} \+\_\+\+Complex \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\+\_\+clongdouble}}
+\item 
+typedef npy\+\_\+uint16 \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}
+\item 
+typedef \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \mbox{\hyperlink{npy__common_8h_ab18340bd2dbf6badd67c7e8030b4f516}{npy\+\_\+float16}}
+\item 
+typedef npy\+\_\+int64 \mbox{\hyperlink{npy__common_8h_a37d0380d114c93c437279e4ed3e8fdf8}{npy\+\_\+timedelta}}
+\item 
+typedef npy\+\_\+int64 \mbox{\hyperlink{npy__common_8h_a346c4c4fa39422a1cb2137423d407bbb}{npy\+\_\+datetime}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a948c37bbd7bba691292c792be93464eb}{NPY\+\_\+\+CPU\+\_\+\+UNKNOWN\+\_\+\+ENDIAN}}
+, \mbox{\hyperlink{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a58970ab57b982f090c7160a36b5e95ec}{NPY\+\_\+\+CPU\+\_\+\+LITTLE}}
+, \mbox{\hyperlink{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a062359f8fdb2cecf9de5fd24d25680b2}{NPY\+\_\+\+CPU\+\_\+\+BIG}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des macros}
+\Hypertarget{npy__common_8h_ac86aae0a4683f36a8715529902dabe12}\label{npy__common_8h_ac86aae0a4683f36a8715529902dabe12} 
+\index{npy\_common.h@{npy\_common.h}!constchar@{constchar}}
+\index{constchar@{constchar}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{constchar}{constchar}}
+{\footnotesize\ttfamily \#define constchar~char}
+
+\Hypertarget{npy__common_8h_a21658776274b3d146c674318b635a334}\label{npy__common_8h_a21658776274b3d146c674318b635a334} 
+\index{npy\_common.h@{npy\_common.h}!INT\_MIN@{INT\_MIN}}
+\index{INT\_MIN@{INT\_MIN}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{INT\_MIN}{INT\_MIN}}
+{\footnotesize\ttfamily \#define INT\+\_\+\+MIN~(-\/INT\+\_\+\+MAX -\/ 1)}
+
+\Hypertarget{npy__common_8h_a39faf3438c1d3a8f3d3f0b85ed700734}\label{npy__common_8h_a39faf3438c1d3a8f3d3f0b85ed700734} 
+\index{npy\_common.h@{npy\_common.h}!longdouble\_t@{longdouble\_t}}
+\index{longdouble\_t@{longdouble\_t}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{longdouble\_t}{longdouble\_t}}
+{\footnotesize\ttfamily \#define longdouble\+\_\+t~long double}
+
+\Hypertarget{npy__common_8h_a96d2700f0c8d33f19109774435f42c03}\label{npy__common_8h_a96d2700f0c8d33f19109774435f42c03} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_BOOL@{NPY\_BITSOF\_BOOL}}
+\index{NPY\_BITSOF\_BOOL@{NPY\_BITSOF\_BOOL}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_BOOL}{NPY\_BITSOF\_BOOL}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+BOOL~(sizeof(\mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\+\_\+bool}}) \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a5930751caf658c827ddf141468aeae5e}\label{npy__common_8h_a5930751caf658c827ddf141468aeae5e} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_BYTE@{NPY\_BITSOF\_BYTE}}
+\index{NPY\_BITSOF\_BYTE@{NPY\_BITSOF\_BYTE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_BYTE}{NPY\_BITSOF\_BYTE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+BYTE~(\mbox{\hyperlink{npy__common_8h_a432b27365313e2eb6982b04f31931014}{NPY\+\_\+\+SIZEOF\+\_\+\+BYTE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_af663284659db8d2dbafde3dfa213257b}\label{npy__common_8h_af663284659db8d2dbafde3dfa213257b} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_CDOUBLE@{NPY\_BITSOF\_CDOUBLE}}
+\index{NPY\_BITSOF\_CDOUBLE@{NPY\_BITSOF\_CDOUBLE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_CDOUBLE}{NPY\_BITSOF\_CDOUBLE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+CDOUBLE~(\mbox{\hyperlink{npy__common_8h_a0620f2b5eb6eed33da5c51d7b57df18e}{NPY\+\_\+\+SIZEOF\+\_\+\+CDOUBLE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_af33931f7ff61d28c09aa2166347cd996}\label{npy__common_8h_af33931f7ff61d28c09aa2166347cd996} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_CFLOAT@{NPY\_BITSOF\_CFLOAT}}
+\index{NPY\_BITSOF\_CFLOAT@{NPY\_BITSOF\_CFLOAT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_CFLOAT}{NPY\_BITSOF\_CFLOAT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+CFLOAT~(\mbox{\hyperlink{npy__common_8h_ade4ae46b90987bf9dc71e0a636b3feb6}{NPY\+\_\+\+SIZEOF\+\_\+\+CFLOAT}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a46f482d61da6e159f1eecbb6eb71712d}\label{npy__common_8h_a46f482d61da6e159f1eecbb6eb71712d} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_CHAR@{NPY\_BITSOF\_CHAR}}
+\index{NPY\_BITSOF\_CHAR@{NPY\_BITSOF\_CHAR}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_CHAR}{NPY\_BITSOF\_CHAR}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+CHAR~CHAR\+\_\+\+BIT}
+
+\Hypertarget{npy__common_8h_a9083173528477ec8a6a94f390f2f1480}\label{npy__common_8h_a9083173528477ec8a6a94f390f2f1480} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_CLONGDOUBLE@{NPY\_BITSOF\_CLONGDOUBLE}}
+\index{NPY\_BITSOF\_CLONGDOUBLE@{NPY\_BITSOF\_CLONGDOUBLE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_CLONGDOUBLE}{NPY\_BITSOF\_CLONGDOUBLE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+CLONGDOUBLE~(\mbox{\hyperlink{npy__common_8h_a09c156ad9a042a7471ac161e08c5217b}{NPY\+\_\+\+SIZEOF\+\_\+\+CLONGDOUBLE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a72ecdbb54bba80d41e0da8c2d363a5af}\label{npy__common_8h_a72ecdbb54bba80d41e0da8c2d363a5af} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_DATETIME@{NPY\_BITSOF\_DATETIME}}
+\index{NPY\_BITSOF\_DATETIME@{NPY\_BITSOF\_DATETIME}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_DATETIME}{NPY\_BITSOF\_DATETIME}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+DATETIME~(\mbox{\hyperlink{npy__common_8h_a14e0bee5427cb96e7206ab9c7b295aab}{NPY\+\_\+\+SIZEOF\+\_\+\+DATETIME}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a9c525a106ad6993fe3a261f4f7342be7}\label{npy__common_8h_a9c525a106ad6993fe3a261f4f7342be7} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_DOUBLE@{NPY\_BITSOF\_DOUBLE}}
+\index{NPY\_BITSOF\_DOUBLE@{NPY\_BITSOF\_DOUBLE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_DOUBLE}{NPY\_BITSOF\_DOUBLE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+DOUBLE~(\mbox{\hyperlink{__numpyconfig_8h_a93588c7dc1a5fd268bbfabaa7650cda3}{NPY\+\_\+\+SIZEOF\+\_\+\+DOUBLE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a9fb7361d69f25bfcab27689f1fd771ea}\label{npy__common_8h_a9fb7361d69f25bfcab27689f1fd771ea} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_FLOAT@{NPY\_BITSOF\_FLOAT}}
+\index{NPY\_BITSOF\_FLOAT@{NPY\_BITSOF\_FLOAT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_FLOAT}{NPY\_BITSOF\_FLOAT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+FLOAT~(\mbox{\hyperlink{__numpyconfig_8h_abaa171d68128f24de939d0b5c5bae4e4}{NPY\+\_\+\+SIZEOF\+\_\+\+FLOAT}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a10821929f9c7b45f9348f8975eef1c5c}\label{npy__common_8h_a10821929f9c7b45f9348f8975eef1c5c} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_HALF@{NPY\_BITSOF\_HALF}}
+\index{NPY\_BITSOF\_HALF@{NPY\_BITSOF\_HALF}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_HALF}{NPY\_BITSOF\_HALF}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+HALF~(\mbox{\hyperlink{npy__common_8h_aecd9bdc07f55e5bdd5a3775d4ccf3e8a}{NPY\+\_\+\+SIZEOF\+\_\+\+HALF}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_aca1bbfdeda86ebb41d55a7c74cc2c5e9}\label{npy__common_8h_aca1bbfdeda86ebb41d55a7c74cc2c5e9} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_INT@{NPY\_BITSOF\_INT}}
+\index{NPY\_BITSOF\_INT@{NPY\_BITSOF\_INT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_INT}{NPY\_BITSOF\_INT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+INT~(\mbox{\hyperlink{__numpyconfig_8h_ae53de8dfe524e6f3f9e0aeaceedf5515}{NPY\+\_\+\+SIZEOF\+\_\+\+INT}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a5a70e3f892952de38bfd82aeab1300b7}\label{npy__common_8h_a5a70e3f892952de38bfd82aeab1300b7} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_INTP@{NPY\_BITSOF\_INTP}}
+\index{NPY\_BITSOF\_INTP@{NPY\_BITSOF\_INTP}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_INTP}{NPY\_BITSOF\_INTP}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+INTP~(\mbox{\hyperlink{__numpyconfig_8h_af2b42b17740bde446d4d623bd5af9e11}{NPY\+\_\+\+SIZEOF\+\_\+\+INTP}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a3bc3ef13861167d1c7df4b3ecc91c1e1}\label{npy__common_8h_a3bc3ef13861167d1c7df4b3ecc91c1e1} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_LONG@{NPY\_BITSOF\_LONG}}
+\index{NPY\_BITSOF\_LONG@{NPY\_BITSOF\_LONG}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_LONG}{NPY\_BITSOF\_LONG}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+LONG~(\mbox{\hyperlink{__numpyconfig_8h_a5362035c038cba2f8a6ba16f7fb15987}{NPY\+\_\+\+SIZEOF\+\_\+\+LONG}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_afe9f4af3aa8d011521dabb8adfda9f40}\label{npy__common_8h_afe9f4af3aa8d011521dabb8adfda9f40} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_LONGDOUBLE@{NPY\_BITSOF\_LONGDOUBLE}}
+\index{NPY\_BITSOF\_LONGDOUBLE@{NPY\_BITSOF\_LONGDOUBLE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_LONGDOUBLE}{NPY\_BITSOF\_LONGDOUBLE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+LONGDOUBLE~(\mbox{\hyperlink{__numpyconfig_8h_a17caa35bd5b7caf978691c571e2c3229}{NPY\+\_\+\+SIZEOF\+\_\+\+LONGDOUBLE}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a586f3c288162045b9709581749238402}\label{npy__common_8h_a586f3c288162045b9709581749238402} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_LONGLONG@{NPY\_BITSOF\_LONGLONG}}
+\index{NPY\_BITSOF\_LONGLONG@{NPY\_BITSOF\_LONGLONG}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_LONGLONG}{NPY\_BITSOF\_LONGLONG}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+LONGLONG~(\mbox{\hyperlink{__numpyconfig_8h_a49de850a52752f3cd077c98f5cbc16b3}{NPY\+\_\+\+SIZEOF\+\_\+\+LONGLONG}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_af5c5e8f09b77ef075c245368e3ed1e5e}\label{npy__common_8h_af5c5e8f09b77ef075c245368e3ed1e5e} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_SHORT@{NPY\_BITSOF\_SHORT}}
+\index{NPY\_BITSOF\_SHORT@{NPY\_BITSOF\_SHORT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_SHORT}{NPY\_BITSOF\_SHORT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+SHORT~(\mbox{\hyperlink{__numpyconfig_8h_a2ead189c7aef6249248f12d76eb084b6}{NPY\+\_\+\+SIZEOF\+\_\+\+SHORT}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a6a64864f7644e20b8cec478247eb14a1}\label{npy__common_8h_a6a64864f7644e20b8cec478247eb14a1} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BITSOF\_TIMEDELTA@{NPY\_BITSOF\_TIMEDELTA}}
+\index{NPY\_BITSOF\_TIMEDELTA@{NPY\_BITSOF\_TIMEDELTA}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BITSOF\_TIMEDELTA}{NPY\_BITSOF\_TIMEDELTA}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BITSOF\+\_\+\+TIMEDELTA~(\mbox{\hyperlink{npy__common_8h_a0705d3896d501b8e7ca01aa97156286b}{NPY\+\_\+\+SIZEOF\+\_\+\+TIMEDELTA}} \texorpdfstring{$\ast$}{*} CHAR\+\_\+\+BIT)}
+
+\Hypertarget{npy__common_8h_a909bb58b14763c00c057ea017b16dfdb}\label{npy__common_8h_a909bb58b14763c00c057ea017b16dfdb} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_BYTE\_FMT@{NPY\_BYTE\_FMT}}
+\index{NPY\_BYTE\_FMT@{NPY\_BYTE\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_BYTE\_FMT}{NPY\_BYTE\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+BYTE\+\_\+\+FMT~"{}hhd"{}}
+
+\Hypertarget{npy__common_8h_a40ba5724cb22231048340529fd7e0126}\label{npy__common_8h_a40ba5724cb22231048340529fd7e0126} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_DATETIME\_FMT@{NPY\_DATETIME\_FMT}}
+\index{NPY\_DATETIME\_FMT@{NPY\_DATETIME\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DATETIME\_FMT}{NPY\_DATETIME\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DATETIME\+\_\+\+FMT~NPY\+\_\+\+INT64\+\_\+\+FMT}
+
+\Hypertarget{npy__common_8h_a4a90b5a08fb4637b47b5d6c5840b1316}\label{npy__common_8h_a4a90b5a08fb4637b47b5d6c5840b1316} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_DOUBLE\_FMT@{NPY\_DOUBLE\_FMT}}
+\index{NPY\_DOUBLE\_FMT@{NPY\_DOUBLE\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_DOUBLE\_FMT}{NPY\_DOUBLE\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+DOUBLE\+\_\+\+FMT~"{}g"{}}
+
+\Hypertarget{npy__common_8h_a64242e1b37c87754b81412462a20f4a1}\label{npy__common_8h_a64242e1b37c87754b81412462a20f4a1} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_FALSE@{NPY\_FALSE}}
+\index{NPY\_FALSE@{NPY\_FALSE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_FALSE}{NPY\_FALSE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+FALSE~0}
+
+\Hypertarget{npy__common_8h_ad2063df402e3d0c46101871b830ac92b}\label{npy__common_8h_ad2063df402e3d0c46101871b830ac92b} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_FINLINE@{NPY\_FINLINE}}
+\index{NPY\_FINLINE@{NPY\_FINLINE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_FINLINE}{NPY\_FINLINE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+FINLINE~static}
+
+\Hypertarget{npy__common_8h_a368beaae75cd7d6d4b624d8d70d1595f}\label{npy__common_8h_a368beaae75cd7d6d4b624d8d70d1595f} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_FLOAT16@{NPY\_FLOAT16}}
+\index{NPY\_FLOAT16@{NPY\_FLOAT16}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_FLOAT16}{NPY\_FLOAT16}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+FLOAT16~\mbox{\hyperlink{ndarraytypes_8h_ae15cea9045111facdbe2293eac040e56a139d1611ab1819f0210a1392631de411}{NPY\+\_\+\+HALF}}}
+
+\Hypertarget{npy__common_8h_ab70f169a89e0f0452ada5eab1527674b}\label{npy__common_8h_ab70f169a89e0f0452ada5eab1527674b} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_FLOAT\_FMT@{NPY\_FLOAT\_FMT}}
+\index{NPY\_FLOAT\_FMT@{NPY\_FLOAT\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_FLOAT\_FMT}{NPY\_FLOAT\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+FLOAT\+\_\+\+FMT~"{}g"{}}
+
+\Hypertarget{npy__common_8h_aa35ae2cf96048df4cf705f11e5b39a4d}\label{npy__common_8h_aa35ae2cf96048df4cf705f11e5b39a4d} 
+\index{npy\_common.h@{npy\_common.h}!npy\_fseek@{npy\_fseek}}
+\index{npy\_fseek@{npy\_fseek}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_fseek}{npy\_fseek}}
+{\footnotesize\ttfamily \#define npy\+\_\+fseek~fseek}
+
+\Hypertarget{npy__common_8h_adf95a2c8b6a04975fe5ed42fcd9ebc3f}\label{npy__common_8h_adf95a2c8b6a04975fe5ed42fcd9ebc3f} 
+\index{npy\_common.h@{npy\_common.h}!npy\_ftell@{npy\_ftell}}
+\index{npy\_ftell@{npy\_ftell}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_ftell}{npy\_ftell}}
+{\footnotesize\ttfamily \#define npy\+\_\+ftell~ftell}
+
+\Hypertarget{npy__common_8h_a933bcdd7a088a39695c78f1f31167aaf}\label{npy__common_8h_a933bcdd7a088a39695c78f1f31167aaf} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_GCC\_NONNULL@{NPY\_GCC\_NONNULL}}
+\index{NPY\_GCC\_NONNULL@{NPY\_GCC\_NONNULL}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_GCC\_NONNULL}{NPY\_GCC\_NONNULL}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+GCC\+\_\+\+NONNULL(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\Hypertarget{npy__common_8h_aa03a60ec62f7eb4b1b9df729c5e645bf}\label{npy__common_8h_aa03a60ec62f7eb4b1b9df729c5e645bf} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_GCC\_OPT\_3@{NPY\_GCC\_OPT\_3}}
+\index{NPY\_GCC\_OPT\_3@{NPY\_GCC\_OPT\_3}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_GCC\_OPT\_3}{NPY\_GCC\_OPT\_3}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+GCC\+\_\+\+OPT\+\_\+3}
+
+\Hypertarget{npy__common_8h_ab676bf8e03be8d672c484943bd577b10}\label{npy__common_8h_ab676bf8e03be8d672c484943bd577b10} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_GCC\_UNROLL\_LOOPS@{NPY\_GCC\_UNROLL\_LOOPS}}
+\index{NPY\_GCC\_UNROLL\_LOOPS@{NPY\_GCC\_UNROLL\_LOOPS}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_GCC\_UNROLL\_LOOPS}{NPY\_GCC\_UNROLL\_LOOPS}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+GCC\+\_\+\+UNROLL\+\_\+\+LOOPS}
+
+\Hypertarget{npy__common_8h_a11792b8550f976fa6a1a25befb5be9e8}\label{npy__common_8h_a11792b8550f976fa6a1a25befb5be9e8} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_HALF\_FMT@{NPY\_HALF\_FMT}}
+\index{NPY\_HALF\_FMT@{NPY\_HALF\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_HALF\_FMT}{NPY\_HALF\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+HALF\+\_\+\+FMT~"{}g"{}}
+
+\Hypertarget{npy__common_8h_a393b364032c46841399790de0c2a6946}\label{npy__common_8h_a393b364032c46841399790de0c2a6946} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_INLINE@{NPY\_INLINE}}
+\index{NPY\_INLINE@{NPY\_INLINE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_INLINE}{NPY\_INLINE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+INLINE}
+
+\Hypertarget{npy__common_8h_abe5bcc66fca27d09b9d97559e9a73696}\label{npy__common_8h_abe5bcc66fca27d09b9d97559e9a73696} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_INLINE\_MATH@{NPY\_INLINE\_MATH}}
+\index{NPY\_INLINE\_MATH@{NPY\_INLINE\_MATH}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_INLINE\_MATH}{NPY\_INLINE\_MATH}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+INLINE\+\_\+\+MATH~0}
+
+\Hypertarget{npy__common_8h_a05110692f7549b97bc743b2a2ec630f0}\label{npy__common_8h_a05110692f7549b97bc743b2a2ec630f0} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_INT\_FMT@{NPY\_INT\_FMT}}
+\index{NPY\_INT\_FMT@{NPY\_INT\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_INT\_FMT}{NPY\_INT\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+INT\+\_\+\+FMT~"{}d"{}}
+
+\Hypertarget{npy__common_8h_a0620c2d6dabf1464b067f04c92ee3cfb}\label{npy__common_8h_a0620c2d6dabf1464b067f04c92ee3cfb} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_INTP@{NPY\_INTP}}
+\index{NPY\_INTP@{NPY\_INTP}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_INTP}{NPY\_INTP}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+INTP~\mbox{\hyperlink{ndarraytypes_8h_ae15cea9045111facdbe2293eac040e56afce185c362b58e9916c1f204d46bfb30}{NPY\+\_\+\+LONG}}}
+
+\Hypertarget{npy__common_8h_aeab65972ff5d7c371b1d80c6e28453c9}\label{npy__common_8h_aeab65972ff5d7c371b1d80c6e28453c9} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_INTP\_FMT@{NPY\_INTP\_FMT}}
+\index{NPY\_INTP\_FMT@{NPY\_INTP\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_INTP\_FMT}{NPY\_INTP\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+INTP\+\_\+\+FMT~"{}ld"{}}
+
+\Hypertarget{npy__common_8h_a22ec66478b3a2f639effba9971739bda}\label{npy__common_8h_a22ec66478b3a2f639effba9971739bda} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_LIKELY@{NPY\_LIKELY}}
+\index{NPY\_LIKELY@{NPY\_LIKELY}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_LIKELY}{NPY\_LIKELY}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+LIKELY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(x)}
+
+\Hypertarget{npy__common_8h_a25e91b12d0ef8071d61e7ac19a8f804a}\label{npy__common_8h_a25e91b12d0ef8071d61e7ac19a8f804a} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_LONG\_FMT@{NPY\_LONG\_FMT}}
+\index{NPY\_LONG\_FMT@{NPY\_LONG\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_LONG\_FMT}{NPY\_LONG\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+LONG\+\_\+\+FMT~"{}ld"{}}
+
+\Hypertarget{npy__common_8h_a2480af0f310284766c914c237bcd5212}\label{npy__common_8h_a2480af0f310284766c914c237bcd5212} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_LONGDOUBLE\_FMT@{NPY\_LONGDOUBLE\_FMT}}
+\index{NPY\_LONGDOUBLE\_FMT@{NPY\_LONGDOUBLE\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_LONGDOUBLE\_FMT}{NPY\_LONGDOUBLE\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+LONGDOUBLE\+\_\+\+FMT~"{}Lg"{}}
+
+\Hypertarget{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}\label{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_LONGLONG\_SUFFIX@{NPY\_LONGLONG\_SUFFIX}}
+\index{NPY\_LONGLONG\_SUFFIX@{NPY\_LONGLONG\_SUFFIX}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_LONGLONG\_SUFFIX}{NPY\_LONGLONG\_SUFFIX}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(x\#\#L)}
+
+\Hypertarget{npy__common_8h_a0c73b77289e9040154c9fe1a7ccb4c7a}\label{npy__common_8h_a0c73b77289e9040154c9fe1a7ccb4c7a} 
+\index{npy\_common.h@{npy\_common.h}!npy\_lseek@{npy\_lseek}}
+\index{npy\_lseek@{npy\_lseek}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_lseek}{npy\_lseek}}
+{\footnotesize\ttfamily \#define npy\+\_\+lseek~lseek}
+
+\Hypertarget{npy__common_8h_af905a99f8154c31c820c818cedf740b6}\label{npy__common_8h_af905a99f8154c31c820c818cedf740b6} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_BYTE@{NPY\_MAX\_BYTE}}
+\index{NPY\_MAX\_BYTE@{NPY\_MAX\_BYTE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_BYTE}{NPY\_MAX\_BYTE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+BYTE~SCHAR\+\_\+\+MAX}
+
+\Hypertarget{npy__common_8h_ad9c65120f32ceb8aa540e8c4f2cd5f9e}\label{npy__common_8h_ad9c65120f32ceb8aa540e8c4f2cd5f9e} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_DATETIME@{NPY\_MAX\_DATETIME}}
+\index{NPY\_MAX\_DATETIME@{NPY\_MAX\_DATETIME}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_DATETIME}{NPY\_MAX\_DATETIME}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+DATETIME~\mbox{\hyperlink{npy__common_8h_a8153bd351544e1b364fd2840d7e58553}{NPY\+\_\+\+MAX\+\_\+\+INT64}}}
+
+\Hypertarget{npy__common_8h_a041c4ffa2864255bff4c3c46ebfc7b82}\label{npy__common_8h_a041c4ffa2864255bff4c3c46ebfc7b82} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_INT@{NPY\_MAX\_INT}}
+\index{NPY\_MAX\_INT@{NPY\_MAX\_INT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_INT}{NPY\_MAX\_INT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+INT~INT\+\_\+\+MAX}
+
+\Hypertarget{npy__common_8h_abc6144ab0aeca6fc5afa8504f645933a}\label{npy__common_8h_abc6144ab0aeca6fc5afa8504f645933a} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_INT128@{NPY\_MAX\_INT128}}
+\index{NPY\_MAX\_INT128@{NPY\_MAX\_INT128}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_INT128}{NPY\_MAX\_INT128}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+INT128~\mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(85070591730234615865843651857942052864)}
+
+\Hypertarget{npy__common_8h_af13ee29d812421688bc97e68577e981a}\label{npy__common_8h_af13ee29d812421688bc97e68577e981a} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_INT16@{NPY\_MAX\_INT16}}
+\index{NPY\_MAX\_INT16@{NPY\_MAX\_INT16}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_INT16}{NPY\_MAX\_INT16}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+INT16~32767}
+
+\Hypertarget{npy__common_8h_a18f073000588d65142b4eefb5140ae80}\label{npy__common_8h_a18f073000588d65142b4eefb5140ae80} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_INT256@{NPY\_MAX\_INT256}}
+\index{NPY\_MAX\_INT256@{NPY\_MAX\_INT256}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_INT256}{NPY\_MAX\_INT256}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+INT256~\mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(57896044618658097711785492504343953926634992332820282019728792003956564819967)}
+
+\Hypertarget{npy__common_8h_ae79fb580548e295697977daf8c6c148d}\label{npy__common_8h_ae79fb580548e295697977daf8c6c148d} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_INT32@{NPY\_MAX\_INT32}}
+\index{NPY\_MAX\_INT32@{NPY\_MAX\_INT32}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_INT32}{NPY\_MAX\_INT32}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+INT32~2147483647}
+
+\Hypertarget{npy__common_8h_a8153bd351544e1b364fd2840d7e58553}\label{npy__common_8h_a8153bd351544e1b364fd2840d7e58553} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_INT64@{NPY\_MAX\_INT64}}
+\index{NPY\_MAX\_INT64@{NPY\_MAX\_INT64}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_INT64}{NPY\_MAX\_INT64}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+INT64~\mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(9223372036854775807)}
+
+\Hypertarget{npy__common_8h_acba2e251d4b1db5ac7c735361f525b68}\label{npy__common_8h_acba2e251d4b1db5ac7c735361f525b68} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_INT8@{NPY\_MAX\_INT8}}
+\index{NPY\_MAX\_INT8@{NPY\_MAX\_INT8}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_INT8}{NPY\_MAX\_INT8}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+INT8~127}
+
+\Hypertarget{npy__common_8h_aee6daac3395340ea1edf5e1d63756031}\label{npy__common_8h_aee6daac3395340ea1edf5e1d63756031} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_INTP@{NPY\_MAX\_INTP}}
+\index{NPY\_MAX\_INTP@{NPY\_MAX\_INTP}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_INTP}{NPY\_MAX\_INTP}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+INTP~\mbox{\hyperlink{npy__common_8h_abd9cf9d493c4d203814ca8eb3221c42d}{NPY\+\_\+\+MAX\+\_\+\+LONG}}}
+
+\Hypertarget{npy__common_8h_abd9cf9d493c4d203814ca8eb3221c42d}\label{npy__common_8h_abd9cf9d493c4d203814ca8eb3221c42d} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_LONG@{NPY\_MAX\_LONG}}
+\index{NPY\_MAX\_LONG@{NPY\_MAX\_LONG}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_LONG}{NPY\_MAX\_LONG}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+LONG~LONG\+\_\+\+MAX}
+
+\Hypertarget{npy__common_8h_a414beafc19efbccfec3196e6cb9ca0de}\label{npy__common_8h_a414beafc19efbccfec3196e6cb9ca0de} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_SHORT@{NPY\_MAX\_SHORT}}
+\index{NPY\_MAX\_SHORT@{NPY\_MAX\_SHORT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_SHORT}{NPY\_MAX\_SHORT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+SHORT~SHRT\+\_\+\+MAX}
+
+\Hypertarget{npy__common_8h_a5fb6db38d0da605e54e9d303257e05b2}\label{npy__common_8h_a5fb6db38d0da605e54e9d303257e05b2} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_TIMEDELTA@{NPY\_MAX\_TIMEDELTA}}
+\index{NPY\_MAX\_TIMEDELTA@{NPY\_MAX\_TIMEDELTA}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_TIMEDELTA}{NPY\_MAX\_TIMEDELTA}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+TIMEDELTA~\mbox{\hyperlink{npy__common_8h_a8153bd351544e1b364fd2840d7e58553}{NPY\+\_\+\+MAX\+\_\+\+INT64}}}
+
+\Hypertarget{npy__common_8h_a286fe1094db435e033cf2790fc5a75cd}\label{npy__common_8h_a286fe1094db435e033cf2790fc5a75cd} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UBYTE@{NPY\_MAX\_UBYTE}}
+\index{NPY\_MAX\_UBYTE@{NPY\_MAX\_UBYTE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UBYTE}{NPY\_MAX\_UBYTE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UBYTE~UCHAR\+\_\+\+MAX}
+
+\Hypertarget{npy__common_8h_aafd8a9691ded784ce716e2ac2666e6ea}\label{npy__common_8h_aafd8a9691ded784ce716e2ac2666e6ea} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UINT@{NPY\_MAX\_UINT}}
+\index{NPY\_MAX\_UINT@{NPY\_MAX\_UINT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UINT}{NPY\_MAX\_UINT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UINT~UINT\+\_\+\+MAX}
+
+\Hypertarget{npy__common_8h_a4c2601da3e693410fc5fa2f70527740b}\label{npy__common_8h_a4c2601da3e693410fc5fa2f70527740b} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UINT128@{NPY\_MAX\_UINT128}}
+\index{NPY\_MAX\_UINT128@{NPY\_MAX\_UINT128}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UINT128}{NPY\_MAX\_UINT128}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UINT128~\mbox{\hyperlink{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2}{NPY\+\_\+\+ULONGLONG\+\_\+\+SUFFIX}}(170141183460469231731687303715884105728)}
+
+\Hypertarget{npy__common_8h_a8b6c1e14fe912cfd1dcc33c1bb014884}\label{npy__common_8h_a8b6c1e14fe912cfd1dcc33c1bb014884} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UINT16@{NPY\_MAX\_UINT16}}
+\index{NPY\_MAX\_UINT16@{NPY\_MAX\_UINT16}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UINT16}{NPY\_MAX\_UINT16}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UINT16~65535}
+
+\Hypertarget{npy__common_8h_aad3a29cc09e8425e595d91d85c42e469}\label{npy__common_8h_aad3a29cc09e8425e595d91d85c42e469} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UINT256@{NPY\_MAX\_UINT256}}
+\index{NPY\_MAX\_UINT256@{NPY\_MAX\_UINT256}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UINT256}{NPY\_MAX\_UINT256}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UINT256~\mbox{\hyperlink{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2}{NPY\+\_\+\+ULONGLONG\+\_\+\+SUFFIX}}(115792089237316195423570985008687907853269984665640564039457584007913129639935)}
+
+\Hypertarget{npy__common_8h_ad72bb9df388751f8e8ff8a217d6ca32e}\label{npy__common_8h_ad72bb9df388751f8e8ff8a217d6ca32e} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UINT32@{NPY\_MAX\_UINT32}}
+\index{NPY\_MAX\_UINT32@{NPY\_MAX\_UINT32}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UINT32}{NPY\_MAX\_UINT32}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UINT32~4294967295U}
+
+\Hypertarget{npy__common_8h_a30c023dd6d03e90797fb9f04baec62fa}\label{npy__common_8h_a30c023dd6d03e90797fb9f04baec62fa} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UINT64@{NPY\_MAX\_UINT64}}
+\index{NPY\_MAX\_UINT64@{NPY\_MAX\_UINT64}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UINT64}{NPY\_MAX\_UINT64}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UINT64~\mbox{\hyperlink{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2}{NPY\+\_\+\+ULONGLONG\+\_\+\+SUFFIX}}(18446744073709551615)}
+
+\Hypertarget{npy__common_8h_a080e9776daa266f4aca5b0a89c47d533}\label{npy__common_8h_a080e9776daa266f4aca5b0a89c47d533} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UINT8@{NPY\_MAX\_UINT8}}
+\index{NPY\_MAX\_UINT8@{NPY\_MAX\_UINT8}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UINT8}{NPY\_MAX\_UINT8}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UINT8~255}
+
+\Hypertarget{npy__common_8h_a03dc6c7981329dd21a22a95a059bc0c8}\label{npy__common_8h_a03dc6c7981329dd21a22a95a059bc0c8} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_UINTP@{NPY\_MAX\_UINTP}}
+\index{NPY\_MAX\_UINTP@{NPY\_MAX\_UINTP}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_UINTP}{NPY\_MAX\_UINTP}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+UINTP~\mbox{\hyperlink{npy__common_8h_ac6054280e5ff710824e4a456f31218aa}{NPY\+\_\+\+MAX\+\_\+\+ULONG}}}
+
+\Hypertarget{npy__common_8h_ac6054280e5ff710824e4a456f31218aa}\label{npy__common_8h_ac6054280e5ff710824e4a456f31218aa} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_ULONG@{NPY\_MAX\_ULONG}}
+\index{NPY\_MAX\_ULONG@{NPY\_MAX\_ULONG}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_ULONG}{NPY\_MAX\_ULONG}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+ULONG~ULONG\+\_\+\+MAX}
+
+\Hypertarget{npy__common_8h_a0c912ddd7e8ed2dc6da8fed06d96cf61}\label{npy__common_8h_a0c912ddd7e8ed2dc6da8fed06d96cf61} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MAX\_USHORT@{NPY\_MAX\_USHORT}}
+\index{NPY\_MAX\_USHORT@{NPY\_MAX\_USHORT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MAX\_USHORT}{NPY\_MAX\_USHORT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MAX\+\_\+\+USHORT~USHRT\+\_\+\+MAX}
+
+\Hypertarget{npy__common_8h_a668b4c5809ac3f3bac921b44ebe6fc53}\label{npy__common_8h_a668b4c5809ac3f3bac921b44ebe6fc53} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_BYTE@{NPY\_MIN\_BYTE}}
+\index{NPY\_MIN\_BYTE@{NPY\_MIN\_BYTE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_BYTE}{NPY\_MIN\_BYTE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+BYTE~SCHAR\+\_\+\+MIN}
+
+\Hypertarget{npy__common_8h_aaab311d8c10418aad1f0c35faec18ae2}\label{npy__common_8h_aaab311d8c10418aad1f0c35faec18ae2} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_DATETIME@{NPY\_MIN\_DATETIME}}
+\index{NPY\_MIN\_DATETIME@{NPY\_MIN\_DATETIME}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_DATETIME}{NPY\_MIN\_DATETIME}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+DATETIME~\mbox{\hyperlink{npy__common_8h_a7dd2b7637b09a22e126161507089effa}{NPY\+\_\+\+MIN\+\_\+\+INT64}}}
+
+\Hypertarget{npy__common_8h_a0d68fa7a8fbd383c154177f8007cef2e}\label{npy__common_8h_a0d68fa7a8fbd383c154177f8007cef2e} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_INT@{NPY\_MIN\_INT}}
+\index{NPY\_MIN\_INT@{NPY\_MIN\_INT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_INT}{NPY\_MIN\_INT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+INT~\mbox{\hyperlink{npy__common_8h_a21658776274b3d146c674318b635a334}{INT\+\_\+\+MIN}}}
+
+\Hypertarget{npy__common_8h_a735d25cfda1c4cc1e4d46f7d02d3a22d}\label{npy__common_8h_a735d25cfda1c4cc1e4d46f7d02d3a22d} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_INT128@{NPY\_MIN\_INT128}}
+\index{NPY\_MIN\_INT128@{NPY\_MIN\_INT128}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_INT128}{NPY\_MIN\_INT128}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+INT128~(-\/\mbox{\hyperlink{npy__common_8h_abc6144ab0aeca6fc5afa8504f645933a}{NPY\+\_\+\+MAX\+\_\+\+INT128}} -\/ \mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(1))}
+
+\Hypertarget{npy__common_8h_a051a0a22975b7d42b9c51a669a32deda}\label{npy__common_8h_a051a0a22975b7d42b9c51a669a32deda} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_INT16@{NPY\_MIN\_INT16}}
+\index{NPY\_MIN\_INT16@{NPY\_MIN\_INT16}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_INT16}{NPY\_MIN\_INT16}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+INT16~-\/32768}
+
+\Hypertarget{npy__common_8h_a04249b2a2d8db05ea29891e111d8d7fc}\label{npy__common_8h_a04249b2a2d8db05ea29891e111d8d7fc} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_INT256@{NPY\_MIN\_INT256}}
+\index{NPY\_MIN\_INT256@{NPY\_MIN\_INT256}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_INT256}{NPY\_MIN\_INT256}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+INT256~(-\/\mbox{\hyperlink{npy__common_8h_a18f073000588d65142b4eefb5140ae80}{NPY\+\_\+\+MAX\+\_\+\+INT256}} -\/ \mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(1))}
+
+\Hypertarget{npy__common_8h_adac70bd547726cf547ae28344ddf73ae}\label{npy__common_8h_adac70bd547726cf547ae28344ddf73ae} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_INT32@{NPY\_MIN\_INT32}}
+\index{NPY\_MIN\_INT32@{NPY\_MIN\_INT32}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_INT32}{NPY\_MIN\_INT32}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+INT32~(-\/\mbox{\hyperlink{npy__common_8h_ae79fb580548e295697977daf8c6c148d}{NPY\+\_\+\+MAX\+\_\+\+INT32}} -\/ 1)}
+
+\Hypertarget{npy__common_8h_a7dd2b7637b09a22e126161507089effa}\label{npy__common_8h_a7dd2b7637b09a22e126161507089effa} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_INT64@{NPY\_MIN\_INT64}}
+\index{NPY\_MIN\_INT64@{NPY\_MIN\_INT64}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_INT64}{NPY\_MIN\_INT64}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+INT64~(-\/\mbox{\hyperlink{npy__common_8h_a8153bd351544e1b364fd2840d7e58553}{NPY\+\_\+\+MAX\+\_\+\+INT64}} -\/ \mbox{\hyperlink{npy__common_8h_a5ad118a62bb10d9bf9be3d9cf0c3cd5c}{NPY\+\_\+\+LONGLONG\+\_\+\+SUFFIX}}(1))}
+
+\Hypertarget{npy__common_8h_a972733722607db61c1711da62efba988}\label{npy__common_8h_a972733722607db61c1711da62efba988} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_INT8@{NPY\_MIN\_INT8}}
+\index{NPY\_MIN\_INT8@{NPY\_MIN\_INT8}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_INT8}{NPY\_MIN\_INT8}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+INT8~-\/128}
+
+\Hypertarget{npy__common_8h_a20423f04a6e690d59256c8a4f3fb093e}\label{npy__common_8h_a20423f04a6e690d59256c8a4f3fb093e} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_INTP@{NPY\_MIN\_INTP}}
+\index{NPY\_MIN\_INTP@{NPY\_MIN\_INTP}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_INTP}{NPY\_MIN\_INTP}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+INTP~\mbox{\hyperlink{npy__common_8h_aa60269d4c672db073f1473ba4bcd3e66}{NPY\+\_\+\+MIN\+\_\+\+LONG}}}
+
+\Hypertarget{npy__common_8h_aa60269d4c672db073f1473ba4bcd3e66}\label{npy__common_8h_aa60269d4c672db073f1473ba4bcd3e66} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_LONG@{NPY\_MIN\_LONG}}
+\index{NPY\_MIN\_LONG@{NPY\_MIN\_LONG}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_LONG}{NPY\_MIN\_LONG}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+LONG~LONG\+\_\+\+MIN}
+
+\Hypertarget{npy__common_8h_a645e01b0daf2ce78add96008af70ced2}\label{npy__common_8h_a645e01b0daf2ce78add96008af70ced2} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_SHORT@{NPY\_MIN\_SHORT}}
+\index{NPY\_MIN\_SHORT@{NPY\_MIN\_SHORT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_SHORT}{NPY\_MIN\_SHORT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+SHORT~SHRT\+\_\+\+MIN}
+
+\Hypertarget{npy__common_8h_a82b403211b715477d21d8feb2bbd1fe6}\label{npy__common_8h_a82b403211b715477d21d8feb2bbd1fe6} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_MIN\_TIMEDELTA@{NPY\_MIN\_TIMEDELTA}}
+\index{NPY\_MIN\_TIMEDELTA@{NPY\_MIN\_TIMEDELTA}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_MIN\_TIMEDELTA}{NPY\_MIN\_TIMEDELTA}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+MIN\+\_\+\+TIMEDELTA~\mbox{\hyperlink{npy__common_8h_a7dd2b7637b09a22e126161507089effa}{NPY\+\_\+\+MIN\+\_\+\+INT64}}}
+
+\Hypertarget{npy__common_8h_aadb7f69f63e91c01e30ef6c64f81d339}\label{npy__common_8h_aadb7f69f63e91c01e30ef6c64f81d339} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_NOINLINE@{NPY\_NOINLINE}}
+\index{NPY\_NOINLINE@{NPY\_NOINLINE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_NOINLINE}{NPY\_NOINLINE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+NOINLINE~static}
+
+\Hypertarget{npy__common_8h_a6331835f6c44e91726875e641ea8ec26}\label{npy__common_8h_a6331835f6c44e91726875e641ea8ec26} 
+\index{npy\_common.h@{npy\_common.h}!npy\_off\_t@{npy\_off\_t}}
+\index{npy\_off\_t@{npy\_off\_t}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_off\_t}{npy\_off\_t}}
+{\footnotesize\ttfamily \#define npy\+\_\+off\+\_\+t~off\+\_\+t}
+
+\Hypertarget{npy__common_8h_a2c334df626cc5e8f0cc231c82d8f1e31}\label{npy__common_8h_a2c334df626cc5e8f0cc231c82d8f1e31} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_OFF\_T\_PYFMT@{NPY\_OFF\_T\_PYFMT}}
+\index{NPY\_OFF\_T\_PYFMT@{NPY\_OFF\_T\_PYFMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_OFF\_T\_PYFMT}{NPY\_OFF\_T\_PYFMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+OFF\+\_\+\+T\+\_\+\+PYFMT~"{}l"{}}
+
+\Hypertarget{npy__common_8h_a602abcff512ac2a4cc7e1c537e392ccf}\label{npy__common_8h_a602abcff512ac2a4cc7e1c537e392ccf} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_PREFETCH@{NPY\_PREFETCH}}
+\index{NPY\_PREFETCH@{NPY\_PREFETCH}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_PREFETCH}{NPY\_PREFETCH}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+PREFETCH(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{rw,  }\item[{}]{loc }\end{DoxyParamCaption})}
+
+\Hypertarget{npy__common_8h_a45a9b9afdf1ec9a1abc340fc71836a7b}\label{npy__common_8h_a45a9b9afdf1ec9a1abc340fc71836a7b} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_RETURNS\_BORROWED\_REF@{NPY\_RETURNS\_BORROWED\_REF}}
+\index{NPY\_RETURNS\_BORROWED\_REF@{NPY\_RETURNS\_BORROWED\_REF}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_RETURNS\_BORROWED\_REF}{NPY\_RETURNS\_BORROWED\_REF}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+RETURNS\+\_\+\+BORROWED\+\_\+\+REF}
+
+\Hypertarget{npy__common_8h_ab1c20b106690cf93937614ab9c0a2e43}\label{npy__common_8h_ab1c20b106690cf93937614ab9c0a2e43} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SHORT\_FMT@{NPY\_SHORT\_FMT}}
+\index{NPY\_SHORT\_FMT@{NPY\_SHORT\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SHORT\_FMT}{NPY\_SHORT\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SHORT\+\_\+\+FMT~"{}hd"{}}
+
+\Hypertarget{npy__common_8h_a432b27365313e2eb6982b04f31931014}\label{npy__common_8h_a432b27365313e2eb6982b04f31931014} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_BYTE@{NPY\_SIZEOF\_BYTE}}
+\index{NPY\_SIZEOF\_BYTE@{NPY\_SIZEOF\_BYTE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_BYTE}{NPY\_SIZEOF\_BYTE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+BYTE~1}
+
+\Hypertarget{npy__common_8h_a0620f2b5eb6eed33da5c51d7b57df18e}\label{npy__common_8h_a0620f2b5eb6eed33da5c51d7b57df18e} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_CDOUBLE@{NPY\_SIZEOF\_CDOUBLE}}
+\index{NPY\_SIZEOF\_CDOUBLE@{NPY\_SIZEOF\_CDOUBLE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_CDOUBLE}{NPY\_SIZEOF\_CDOUBLE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+CDOUBLE~\mbox{\hyperlink{__numpyconfig_8h_a6e2bfa2800b4a9f3fc7e1ccc5668715d}{NPY\+\_\+\+SIZEOF\+\_\+\+COMPLEX\+\_\+\+DOUBLE}}}
+
+\Hypertarget{npy__common_8h_ade4ae46b90987bf9dc71e0a636b3feb6}\label{npy__common_8h_ade4ae46b90987bf9dc71e0a636b3feb6} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_CFLOAT@{NPY\_SIZEOF\_CFLOAT}}
+\index{NPY\_SIZEOF\_CFLOAT@{NPY\_SIZEOF\_CFLOAT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_CFLOAT}{NPY\_SIZEOF\_CFLOAT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+CFLOAT~\mbox{\hyperlink{__numpyconfig_8h_a1d4461aa023a7172aa71d23f74629fd5}{NPY\+\_\+\+SIZEOF\+\_\+\+COMPLEX\+\_\+\+FLOAT}}}
+
+\Hypertarget{npy__common_8h_af50d77826a127b6924fd563b421aa879}\label{npy__common_8h_af50d77826a127b6924fd563b421aa879} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_CHAR@{NPY\_SIZEOF\_CHAR}}
+\index{NPY\_SIZEOF\_CHAR@{NPY\_SIZEOF\_CHAR}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_CHAR}{NPY\_SIZEOF\_CHAR}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+CHAR~1}
+
+\Hypertarget{npy__common_8h_a09c156ad9a042a7471ac161e08c5217b}\label{npy__common_8h_a09c156ad9a042a7471ac161e08c5217b} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_CLONGDOUBLE@{NPY\_SIZEOF\_CLONGDOUBLE}}
+\index{NPY\_SIZEOF\_CLONGDOUBLE@{NPY\_SIZEOF\_CLONGDOUBLE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_CLONGDOUBLE}{NPY\_SIZEOF\_CLONGDOUBLE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+CLONGDOUBLE~\mbox{\hyperlink{__numpyconfig_8h_a3d31bec6a6e87501492bd6ea335d0ba3}{NPY\+\_\+\+SIZEOF\+\_\+\+COMPLEX\+\_\+\+LONGDOUBLE}}}
+
+\Hypertarget{npy__common_8h_a14e0bee5427cb96e7206ab9c7b295aab}\label{npy__common_8h_a14e0bee5427cb96e7206ab9c7b295aab} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_DATETIME@{NPY\_SIZEOF\_DATETIME}}
+\index{NPY\_SIZEOF\_DATETIME@{NPY\_SIZEOF\_DATETIME}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_DATETIME}{NPY\_SIZEOF\_DATETIME}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+DATETIME~8}
+
+\Hypertarget{npy__common_8h_aecd9bdc07f55e5bdd5a3775d4ccf3e8a}\label{npy__common_8h_aecd9bdc07f55e5bdd5a3775d4ccf3e8a} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_HALF@{NPY\_SIZEOF\_HALF}}
+\index{NPY\_SIZEOF\_HALF@{NPY\_SIZEOF\_HALF}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_HALF}{NPY\_SIZEOF\_HALF}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+HALF~2}
+
+\Hypertarget{npy__common_8h_a9b2c6c6d327b54ead159e0a03c6e80b2}\label{npy__common_8h_a9b2c6c6d327b54ead159e0a03c6e80b2} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_HASH\_T@{NPY\_SIZEOF\_HASH\_T}}
+\index{NPY\_SIZEOF\_HASH\_T@{NPY\_SIZEOF\_HASH\_T}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_HASH\_T}{NPY\_SIZEOF\_HASH\_T}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+HASH\+\_\+T~\mbox{\hyperlink{__numpyconfig_8h_af2b42b17740bde446d4d623bd5af9e11}{NPY\+\_\+\+SIZEOF\+\_\+\+INTP}}}
+
+\Hypertarget{npy__common_8h_a0705d3896d501b8e7ca01aa97156286b}\label{npy__common_8h_a0705d3896d501b8e7ca01aa97156286b} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SIZEOF\_TIMEDELTA@{NPY\_SIZEOF\_TIMEDELTA}}
+\index{NPY\_SIZEOF\_TIMEDELTA@{NPY\_SIZEOF\_TIMEDELTA}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SIZEOF\_TIMEDELTA}{NPY\_SIZEOF\_TIMEDELTA}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SIZEOF\+\_\+\+TIMEDELTA~8}
+
+\Hypertarget{npy__common_8h_a1240acc0d14f70a1f480cb6501166536}\label{npy__common_8h_a1240acc0d14f70a1f480cb6501166536} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_SSIZE\_T\_PYFMT@{NPY\_SSIZE\_T\_PYFMT}}
+\index{NPY\_SSIZE\_T\_PYFMT@{NPY\_SSIZE\_T\_PYFMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_SSIZE\_T\_PYFMT}{NPY\_SSIZE\_T\_PYFMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+SSIZE\+\_\+\+T\+\_\+\+PYFMT~"{}n"{}}
+
+\Hypertarget{npy__common_8h_aa99b616b509473803faea06470edcf61}\label{npy__common_8h_aa99b616b509473803faea06470edcf61} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_STEALS\_REF\_TO\_ARG@{NPY\_STEALS\_REF\_TO\_ARG}}
+\index{NPY\_STEALS\_REF\_TO\_ARG@{NPY\_STEALS\_REF\_TO\_ARG}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_STEALS\_REF\_TO\_ARG}{NPY\_STEALS\_REF\_TO\_ARG}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+STEALS\+\_\+\+REF\+\_\+\+TO\+\_\+\+ARG(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\Hypertarget{npy__common_8h_ae2c5f946fa80882e216501364d7d32b9}\label{npy__common_8h_ae2c5f946fa80882e216501364d7d32b9} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_TIMEDELTA\_FMT@{NPY\_TIMEDELTA\_FMT}}
+\index{NPY\_TIMEDELTA\_FMT@{NPY\_TIMEDELTA\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_TIMEDELTA\_FMT}{NPY\_TIMEDELTA\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+TIMEDELTA\+\_\+\+FMT~NPY\+\_\+\+INT64\+\_\+\+FMT}
+
+\Hypertarget{npy__common_8h_af98b362378f8c664130628aada5f7ebc}\label{npy__common_8h_af98b362378f8c664130628aada5f7ebc} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_TLS@{NPY\_TLS}}
+\index{NPY\_TLS@{NPY\_TLS}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_TLS}{NPY\_TLS}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+TLS}
+
+\Hypertarget{npy__common_8h_a2c4563216f21af5c8f5898f24519bc46}\label{npy__common_8h_a2c4563216f21af5c8f5898f24519bc46} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_TRUE@{NPY\_TRUE}}
+\index{NPY\_TRUE@{NPY\_TRUE}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_TRUE}{NPY\_TRUE}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+TRUE~1}
+
+\Hypertarget{npy__common_8h_ac6a8869d6892db8315afbbadc981e880}\label{npy__common_8h_ac6a8869d6892db8315afbbadc981e880} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_UBYTE\_FMT@{NPY\_UBYTE\_FMT}}
+\index{NPY\_UBYTE\_FMT@{NPY\_UBYTE\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_UBYTE\_FMT}{NPY\_UBYTE\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+UBYTE\+\_\+\+FMT~"{}hhu"{}}
+
+\Hypertarget{npy__common_8h_a628067a7ea41095654cc6bd2e7b8b7b1}\label{npy__common_8h_a628067a7ea41095654cc6bd2e7b8b7b1} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_UINT\_FMT@{NPY\_UINT\_FMT}}
+\index{NPY\_UINT\_FMT@{NPY\_UINT\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_UINT\_FMT}{NPY\_UINT\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+UINT\+\_\+\+FMT~"{}u"{}}
+
+\Hypertarget{npy__common_8h_a25c8725e27aae21fdad244634e90a119}\label{npy__common_8h_a25c8725e27aae21fdad244634e90a119} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_UINTP@{NPY\_UINTP}}
+\index{NPY\_UINTP@{NPY\_UINTP}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_UINTP}{NPY\_UINTP}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+UINTP~\mbox{\hyperlink{ndarraytypes_8h_ae15cea9045111facdbe2293eac040e56a8d17f124bb2e31e2b0fc132ab73863ee}{NPY\+\_\+\+ULONG}}}
+
+\Hypertarget{npy__common_8h_a2510129b1cf560d6aa6b6bdfd10c1596}\label{npy__common_8h_a2510129b1cf560d6aa6b6bdfd10c1596} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_ULONG\_FMT@{NPY\_ULONG\_FMT}}
+\index{NPY\_ULONG\_FMT@{NPY\_ULONG\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_ULONG\_FMT}{NPY\_ULONG\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+ULONG\+\_\+\+FMT~"{}lu"{}}
+
+\Hypertarget{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2}\label{npy__common_8h_a941477d93c6ef4035414c3b5d69360e2} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_ULONGLONG\_SUFFIX@{NPY\_ULONGLONG\_SUFFIX}}
+\index{NPY\_ULONGLONG\_SUFFIX@{NPY\_ULONGLONG\_SUFFIX}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_ULONGLONG\_SUFFIX}{NPY\_ULONGLONG\_SUFFIX}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+ULONGLONG\+\_\+\+SUFFIX(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(x\#\#UL)}
+
+\Hypertarget{npy__common_8h_afe6ea5cd1976681172cfee558bbd2001}\label{npy__common_8h_afe6ea5cd1976681172cfee558bbd2001} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_UNLIKELY@{NPY\_UNLIKELY}}
+\index{NPY\_UNLIKELY@{NPY\_UNLIKELY}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_UNLIKELY}{NPY\_UNLIKELY}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+UNLIKELY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(x)}
+
+\Hypertarget{npy__common_8h_a4a59a9674613219bc5ac5a0538b54294}\label{npy__common_8h_a4a59a9674613219bc5ac5a0538b54294} 
+\index{npy\_common.h@{npy\_common.h}!NPY\_USHORT\_FMT@{NPY\_USHORT\_FMT}}
+\index{NPY\_USHORT\_FMT@{NPY\_USHORT\_FMT}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{NPY\_USHORT\_FMT}{NPY\_USHORT\_FMT}}
+{\footnotesize\ttfamily \#define NPY\+\_\+\+USHORT\+\_\+\+FMT~"{}hu"{}}
+
+\Hypertarget{npy__common_8h_a4242c4fafbe8a553892c9aaee6df0966}\label{npy__common_8h_a4242c4fafbe8a553892c9aaee6df0966} 
+\index{npy\_common.h@{npy\_common.h}!PyIntpArrType\_Type@{PyIntpArrType\_Type}}
+\index{PyIntpArrType\_Type@{PyIntpArrType\_Type}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{PyIntpArrType\_Type}{PyIntpArrType\_Type}}
+{\footnotesize\ttfamily \#define Py\+Intp\+Arr\+Type\+\_\+\+Type~\mbox{\hyperlink{____multiarray__api_8h_affcab738212e03d0bff885cd7c3ae045}{Py\+Long\+Arr\+Type\+\_\+\+Type}}}
+
+\Hypertarget{npy__common_8h_a53433ad1ae364ae11bd7f4edd274095d}\label{npy__common_8h_a53433ad1ae364ae11bd7f4edd274095d} 
+\index{npy\_common.h@{npy\_common.h}!PyUIntpArrType\_Type@{PyUIntpArrType\_Type}}
+\index{PyUIntpArrType\_Type@{PyUIntpArrType\_Type}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{PyUIntpArrType\_Type}{PyUIntpArrType\_Type}}
+{\footnotesize\ttfamily \#define Py\+UIntp\+Arr\+Type\+\_\+\+Type~\mbox{\hyperlink{____multiarray__api_8h_a627005c2c10f2fd4e80b86ad8a633d29}{Py\+ULong\+Arr\+Type\+\_\+\+Type}}}
+
+
+
+\doxysubsection{Documentation des définitions de type}
+\Hypertarget{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}\label{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6} 
+\index{npy\_common.h@{npy\_common.h}!npy\_bool@{npy\_bool}}
+\index{npy\_bool@{npy\_bool}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_bool}{npy\_bool}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\+\_\+bool}}}
+
+\Hypertarget{npy__common_8h_a7c32d9fb5de5c653356ab8a16d17df0c}\label{npy__common_8h_a7c32d9fb5de5c653356ab8a16d17df0c} 
+\index{npy\_common.h@{npy\_common.h}!npy\_byte@{npy\_byte}}
+\index{npy\_byte@{npy\_byte}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_byte}{npy\_byte}}
+{\footnotesize\ttfamily typedef signed char \mbox{\hyperlink{npy__common_8h_a7c32d9fb5de5c653356ab8a16d17df0c}{npy\+\_\+byte}}}
+
+\Hypertarget{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}\label{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636} 
+\index{npy\_common.h@{npy\_common.h}!npy\_cdouble@{npy\_cdouble}}
+\index{npy\_cdouble@{npy\_cdouble}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_cdouble}{npy\_cdouble}}
+{\footnotesize\ttfamily typedef double \+\_\+\+Complex \mbox{\hyperlink{npy__common_8h_a7c17aff45ef1691afd3d3b66d0b21636}{npy\+\_\+cdouble}}}
+
+\Hypertarget{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}\label{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2} 
+\index{npy\_common.h@{npy\_common.h}!npy\_cfloat@{npy\_cfloat}}
+\index{npy\_cfloat@{npy\_cfloat}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_cfloat}{npy\_cfloat}}
+{\footnotesize\ttfamily typedef float \+\_\+\+Complex \mbox{\hyperlink{npy__common_8h_ae5a8bdd36de699587f0dd698358ed7e2}{npy\+\_\+cfloat}}}
+
+\Hypertarget{npy__common_8h_a2bea94c86e38a39d14d325fdf76a12b5}\label{npy__common_8h_a2bea94c86e38a39d14d325fdf76a12b5} 
+\index{npy\_common.h@{npy\_common.h}!npy\_char@{npy\_char}}
+\index{npy\_char@{npy\_char}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_char}{npy\_char}}
+{\footnotesize\ttfamily typedef char \mbox{\hyperlink{npy__common_8h_a2bea94c86e38a39d14d325fdf76a12b5}{npy\+\_\+char}}}
+
+\Hypertarget{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}\label{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201} 
+\index{npy\_common.h@{npy\_common.h}!npy\_clongdouble@{npy\_clongdouble}}
+\index{npy\_clongdouble@{npy\_clongdouble}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_clongdouble}{npy\_clongdouble}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{npy__common_8h_a39faf3438c1d3a8f3d3f0b85ed700734}{longdouble\+\_\+t}} \+\_\+\+Complex \mbox{\hyperlink{npy__common_8h_afaa0aca2f3e2c82d28cad02c36edd201}{npy\+\_\+clongdouble}}}
+
+\Hypertarget{npy__common_8h_a346c4c4fa39422a1cb2137423d407bbb}\label{npy__common_8h_a346c4c4fa39422a1cb2137423d407bbb} 
+\index{npy\_common.h@{npy\_common.h}!npy\_datetime@{npy\_datetime}}
+\index{npy\_datetime@{npy\_datetime}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_datetime}{npy\_datetime}}
+{\footnotesize\ttfamily typedef npy\+\_\+int64 \mbox{\hyperlink{npy__common_8h_a346c4c4fa39422a1cb2137423d407bbb}{npy\+\_\+datetime}}}
+
+\Hypertarget{npy__common_8h_a3da6390b6404eca157c556043bc3535c}\label{npy__common_8h_a3da6390b6404eca157c556043bc3535c} 
+\index{npy\_common.h@{npy\_common.h}!npy\_double@{npy\_double}}
+\index{npy\_double@{npy\_double}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_double}{npy\_double}}
+{\footnotesize\ttfamily typedef double \mbox{\hyperlink{npy__common_8h_a3da6390b6404eca157c556043bc3535c}{npy\+\_\+double}}}
+
+\Hypertarget{npy__common_8h_accf4b4138e3ad7733f72c9d807523960}\label{npy__common_8h_accf4b4138e3ad7733f72c9d807523960} 
+\index{npy\_common.h@{npy\_common.h}!npy\_float@{npy\_float}}
+\index{npy\_float@{npy\_float}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_float}{npy\_float}}
+{\footnotesize\ttfamily typedef float \mbox{\hyperlink{npy__common_8h_accf4b4138e3ad7733f72c9d807523960}{npy\+\_\+float}}}
+
+\Hypertarget{npy__common_8h_ab18340bd2dbf6badd67c7e8030b4f516}\label{npy__common_8h_ab18340bd2dbf6badd67c7e8030b4f516} 
+\index{npy\_common.h@{npy\_common.h}!npy\_float16@{npy\_float16}}
+\index{npy\_float16@{npy\_float16}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_float16}{npy\_float16}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}} \mbox{\hyperlink{npy__common_8h_ab18340bd2dbf6badd67c7e8030b4f516}{npy\+\_\+float16}}}
+
+\Hypertarget{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}\label{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b} 
+\index{npy\_common.h@{npy\_common.h}!npy\_half@{npy\_half}}
+\index{npy\_half@{npy\_half}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_half}{npy\_half}}
+{\footnotesize\ttfamily typedef npy\+\_\+uint16 \mbox{\hyperlink{npy__common_8h_a8e9ae8f3f82735dc5fd266e614ab2d0b}{npy\+\_\+half}}}
+
+\Hypertarget{npy__common_8h_a8e19510dec13243663db068bf658112c}\label{npy__common_8h_a8e19510dec13243663db068bf658112c} 
+\index{npy\_common.h@{npy\_common.h}!npy\_hash\_t@{npy\_hash\_t}}
+\index{npy\_hash\_t@{npy\_hash\_t}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_hash\_t}{npy\_hash\_t}}
+{\footnotesize\ttfamily typedef Py\+\_\+hash\+\_\+t \mbox{\hyperlink{npy__common_8h_a8e19510dec13243663db068bf658112c}{npy\+\_\+hash\+\_\+t}}}
+
+\Hypertarget{npy__common_8h_a9dc06ece12b0e1ecf7c2f14642e301ce}\label{npy__common_8h_a9dc06ece12b0e1ecf7c2f14642e301ce} 
+\index{npy\_common.h@{npy\_common.h}!npy\_int@{npy\_int}}
+\index{npy\_int@{npy\_int}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_int}{npy\_int}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{npy__common_8h_a9dc06ece12b0e1ecf7c2f14642e301ce}{npy\+\_\+int}}}
+
+\Hypertarget{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}\label{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4} 
+\index{npy\_common.h@{npy\_common.h}!npy\_intp@{npy\_intp}}
+\index{npy\_intp@{npy\_intp}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_intp}{npy\_intp}}
+{\footnotesize\ttfamily typedef Py\+\_\+ssize\+\_\+t \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\+\_\+intp}}}
+
+\Hypertarget{npy__common_8h_a8fa5103df1ff2ae9c06f5554d59994c2}\label{npy__common_8h_a8fa5103df1ff2ae9c06f5554d59994c2} 
+\index{npy\_common.h@{npy\_common.h}!npy\_long@{npy\_long}}
+\index{npy\_long@{npy\_long}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_long}{npy\_long}}
+{\footnotesize\ttfamily typedef long \mbox{\hyperlink{npy__common_8h_a8fa5103df1ff2ae9c06f5554d59994c2}{npy\+\_\+long}}}
+
+\Hypertarget{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}\label{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa} 
+\index{npy\_common.h@{npy\_common.h}!npy\_longdouble@{npy\_longdouble}}
+\index{npy\_longdouble@{npy\_longdouble}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_longdouble}{npy\_longdouble}}
+{\footnotesize\ttfamily typedef long double \mbox{\hyperlink{npy__common_8h_ad677a4063faf32de2fe57fdf0fbbf1fa}{npy\+\_\+longdouble}}}
+
+\Hypertarget{npy__common_8h_a76415457b972c826fabd23b1295a000b}\label{npy__common_8h_a76415457b972c826fabd23b1295a000b} 
+\index{npy\_common.h@{npy\_common.h}!npy\_longlong@{npy\_longlong}}
+\index{npy\_longlong@{npy\_longlong}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_longlong}{npy\_longlong}}
+{\footnotesize\ttfamily typedef long \mbox{\hyperlink{npy__common_8h_a76415457b972c826fabd23b1295a000b}{npy\+\_\+longlong}}}
+
+\Hypertarget{npy__common_8h_ad8967d29d649f64194e9e9fc1ae89e13}\label{npy__common_8h_ad8967d29d649f64194e9e9fc1ae89e13} 
+\index{npy\_common.h@{npy\_common.h}!npy\_short@{npy\_short}}
+\index{npy\_short@{npy\_short}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_short}{npy\_short}}
+{\footnotesize\ttfamily typedef short \mbox{\hyperlink{npy__common_8h_ad8967d29d649f64194e9e9fc1ae89e13}{npy\+\_\+short}}}
+
+\Hypertarget{npy__common_8h_a37d0380d114c93c437279e4ed3e8fdf8}\label{npy__common_8h_a37d0380d114c93c437279e4ed3e8fdf8} 
+\index{npy\_common.h@{npy\_common.h}!npy\_timedelta@{npy\_timedelta}}
+\index{npy\_timedelta@{npy\_timedelta}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_timedelta}{npy\_timedelta}}
+{\footnotesize\ttfamily typedef npy\+\_\+int64 \mbox{\hyperlink{npy__common_8h_a37d0380d114c93c437279e4ed3e8fdf8}{npy\+\_\+timedelta}}}
+
+\Hypertarget{npy__common_8h_af34f2c87eebcdb73e4e2df6a48059bcc}\label{npy__common_8h_af34f2c87eebcdb73e4e2df6a48059bcc} 
+\index{npy\_common.h@{npy\_common.h}!npy\_ubyte@{npy\_ubyte}}
+\index{npy\_ubyte@{npy\_ubyte}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_ubyte}{npy\_ubyte}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{npy__common_8h_af34f2c87eebcdb73e4e2df6a48059bcc}{npy\+\_\+ubyte}}}
+
+\Hypertarget{npy__common_8h_ae5708d3e6443a009e9fbed0ebc5c36f0}\label{npy__common_8h_ae5708d3e6443a009e9fbed0ebc5c36f0} 
+\index{npy\_common.h@{npy\_common.h}!npy\_uint@{npy\_uint}}
+\index{npy\_uint@{npy\_uint}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_uint}{npy\_uint}}
+{\footnotesize\ttfamily typedef unsigned int \mbox{\hyperlink{npy__common_8h_ae5708d3e6443a009e9fbed0ebc5c36f0}{npy\+\_\+uint}}}
+
+\Hypertarget{npy__common_8h_a8e60b20d57b3d6104defffd697ec49b3}\label{npy__common_8h_a8e60b20d57b3d6104defffd697ec49b3} 
+\index{npy\_common.h@{npy\_common.h}!npy\_uintp@{npy\_uintp}}
+\index{npy\_uintp@{npy\_uintp}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_uintp}{npy\_uintp}}
+{\footnotesize\ttfamily typedef size\+\_\+t \mbox{\hyperlink{npy__common_8h_a8e60b20d57b3d6104defffd697ec49b3}{npy\+\_\+uintp}}}
+
+\Hypertarget{npy__common_8h_ab298757dfcc9aae2e4b7b741d8f302db}\label{npy__common_8h_ab298757dfcc9aae2e4b7b741d8f302db} 
+\index{npy\_common.h@{npy\_common.h}!npy\_ulong@{npy\_ulong}}
+\index{npy\_ulong@{npy\_ulong}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_ulong}{npy\_ulong}}
+{\footnotesize\ttfamily typedef unsigned long \mbox{\hyperlink{npy__common_8h_ab298757dfcc9aae2e4b7b741d8f302db}{npy\+\_\+ulong}}}
+
+\Hypertarget{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}\label{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a} 
+\index{npy\_common.h@{npy\_common.h}!npy\_ulonglong@{npy\_ulonglong}}
+\index{npy\_ulonglong@{npy\_ulonglong}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_ulonglong}{npy\_ulonglong}}
+{\footnotesize\ttfamily typedef unsigned long \mbox{\hyperlink{npy__common_8h_a35c6a5dca1af8aedac67ca555323300a}{npy\+\_\+ulonglong}}}
+
+\Hypertarget{npy__common_8h_acdbe6a86372d5fcb5e0c406535e418ae}\label{npy__common_8h_acdbe6a86372d5fcb5e0c406535e418ae} 
+\index{npy\_common.h@{npy\_common.h}!npy\_ushort@{npy\_ushort}}
+\index{npy\_ushort@{npy\_ushort}!npy\_common.h@{npy\_common.h}}
+\doxysubsubsection{\texorpdfstring{npy\_ushort}{npy\_ushort}}
+{\footnotesize\ttfamily typedef unsigned short \mbox{\hyperlink{npy__common_8h_acdbe6a86372d5fcb5e0c406535e418ae}{npy\+\_\+ushort}}}
+
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\Hypertarget{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7}\label{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPY\_CPU\_UNKNOWN\_ENDIAN@{NPY\_CPU\_UNKNOWN\_ENDIAN}!npy\_common.h@{npy\_common.h}}\index{npy\_common.h@{npy\_common.h}!NPY\_CPU\_UNKNOWN\_ENDIAN@{NPY\_CPU\_UNKNOWN\_ENDIAN}}}\Hypertarget{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a948c37bbd7bba691292c792be93464eb}\label{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a948c37bbd7bba691292c792be93464eb} 
+NPY\+\_\+\+CPU\+\_\+\+UNKNOWN\+\_\+\+ENDIAN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPY\_CPU\_LITTLE@{NPY\_CPU\_LITTLE}!npy\_common.h@{npy\_common.h}}\index{npy\_common.h@{npy\_common.h}!NPY\_CPU\_LITTLE@{NPY\_CPU\_LITTLE}}}\Hypertarget{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a58970ab57b982f090c7160a36b5e95ec}\label{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a58970ab57b982f090c7160a36b5e95ec} 
+NPY\+\_\+\+CPU\+\_\+\+LITTLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NPY\_CPU\_BIG@{NPY\_CPU\_BIG}!npy\_common.h@{npy\_common.h}}\index{npy\_common.h@{npy\_common.h}!NPY\_CPU\_BIG@{NPY\_CPU\_BIG}}}\Hypertarget{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a062359f8fdb2cecf9de5fd24d25680b2}\label{npy__common_8h_adf764cbdea00d65edcd07bb9953ad2b7a062359f8fdb2cecf9de5fd24d25680b2} 
+NPY\+\_\+\+CPU\+\_\+\+BIG&\\
+\hline
+
+\end{DoxyEnumFields}

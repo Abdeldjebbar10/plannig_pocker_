@@ -1,0 +1,1683 @@
+\doxysection{Référence de la classe pandas.\+core.\+resample.\+Resampler}
+\hypertarget{classpandas_1_1core_1_1resample_1_1Resampler}{}\label{classpandas_1_1core_1_1resample_1_1Resampler}\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+resample.\+Resampler\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+resample.\+Resampler\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ae06813309390af2ac43a2cec9f458fc1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1generic_1_1NDFrame}{NDFrame}} \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aa86e7c2c3e0e91c976c350ff74815670}{obj}}, \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1TimeGrouper}{Time\+Grouper}} timegrouper, Axis \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_af92e0aeb7078633e9e383016af714e4b}{axis}}=0, \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a9de97167ec0ae5e3f4410008df20ff64}{kind}}=None, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} gpr\+\_\+index, bool \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a49c6903b7fbd6988ae98a373ffa87f4f}{group\+\_\+keys}}=False, selection=None, bool \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1b10ce09e0c296ea0ad43808c4c7be32}{include\+\_\+groups}}=True)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a0db67e5f19c82aea45da5a8543c36838}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a7f599b6b626fa2e14a18a854cc8c2c59}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str attr)
+\item 
+T \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a431c855366df2ea18449b85ee31aa6e0}{pipe}} (self, Callable\mbox{[}..., T\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}Callable\mbox{[}..., T\mbox{]}, str\mbox{]} func, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1ff1448c5b8b5b187fe859fa9af69dc3}{aggregate}} (self, func=None, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aade8f3c061d19df56f3df2d41d92ad00}{transform}} (self, arg, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a2eea33aacb4da0e3ef154baadef851e3}{ffill}} (self, int\texorpdfstring{$\vert$}{|}None limit=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a12051f3743b2222204e1810e1bf397a4}{nearest}} (self, int\texorpdfstring{$\vert$}{|}None limit=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a4e541a8dcaea8bc8b4dafdb0950dc56a}{bfill}} (self, int\texorpdfstring{$\vert$}{|}None limit=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ae195580c498ae13c0777ecb4cd682322}{fillna}} (self, method, int\texorpdfstring{$\vert$}{|}None limit=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_af407466aded175dd855478ddaa7ed433}{interpolate}} (self, Interpolate\+Options method="{}linear"{}, \texorpdfstring{$\ast$}{*}Axis \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_af92e0aeb7078633e9e383016af714e4b}{axis}}=0, int\texorpdfstring{$\vert$}{|}None limit=None, bool inplace=False, Literal\mbox{[}"{}forward"{}, "{}backward"{}, "{}both"{}\mbox{]} limit\+\_\+direction="{}forward"{}, limit\+\_\+area=None, downcast=lib.\+no\+\_\+default, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a6afba6cf61c56f2d441279f327c325f3}{asfreq}} (self, fill\+\_\+value=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a5afc7d77fc56a6643358d1ca133b2625}{sum}} (self, bool numeric\+\_\+only=False, int min\+\_\+count=0, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ae51e6ca60c8ba328be6956880c94d6c9}{prod}} (self, bool numeric\+\_\+only=False, int min\+\_\+count=0, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_adeb347c0a1c1bcf1970907c95781c8cc}{min}} (self, bool numeric\+\_\+only=False, int min\+\_\+count=0, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a174afcd738f89b4b7d430de421cdb942}{max}} (self, bool numeric\+\_\+only=False, int min\+\_\+count=0, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_abe0621c05411d5960e35eb878ea21237}{first}} (self, bool numeric\+\_\+only=False, int min\+\_\+count=0, bool skipna=True, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a47859776c6c8f0f902e822d794240828}{last}} (self, bool numeric\+\_\+only=False, int min\+\_\+count=0, bool skipna=True, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ac903b5a4fa60620b46713a120c22ac95}{median}} (self, bool numeric\+\_\+only=False, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ac55c90006b0d966b64ff46692856adad}{mean}} (self, bool numeric\+\_\+only=False, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a405fd999b7c25d4ebcb8acee4678d85c}{std}} (self, int ddof=1, bool numeric\+\_\+only=False, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a85dc5bb9f16f1633be534bb802106603}{var}} (self, int ddof=1, bool numeric\+\_\+only=False, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a3bd6f42e897366da880273313f9d145c}{sem}} (self, int ddof=1, bool numeric\+\_\+only=False, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1094044401224f82c9967ee64c14ab29}{ohlc}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a8bc02db44b7b8f1e1122bcb5d1e72421}{nunique}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aa66b7f7ffca04d8a6fa97867ba4e2473}{size}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a200bac96ede56f18842fed0153f6d24d}{count}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1b4ca1dd908d71914781fe975c44836a}{quantile}} (self, float\texorpdfstring{$\vert$}{|}list\mbox{[}float\mbox{]}\texorpdfstring{$\vert$}{|}Any\+Array\+Like q=0.\+5, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8337410d52f544362ee647ab1a502b01}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8b952c92d9fdda32cdcd7b6db3eb3fa8}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BaseGrouper}{ops.\+Base\+Grouper}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_adf4d053fd1818e6c37fdbac7960e413c}{grouper}} (self)
+\item 
+dict\mbox{[}Hashable, np.\+ndarray\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a4bd0a55d97fcab26f8df25e67e9bea0b}{groups}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a10aae1b1de1e558515d979282899845c}{ngroups}} (self)
+\item 
+dict\mbox{[}Hashable, npt.\+NDArray\mbox{[}np.\+intp\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a69170c122250520eae9635882820c3d3}{indices}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1frame_1_1DataFrame}{Data\+Frame}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1series_1_1Series}{Series}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_af91fe7eafca224e3204260639512406d}{get\+\_\+group}} (self, name, \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aac4094c67077964fa95bb915942d224c}{obj}}=None)
+\item 
+Iterator\mbox{[}tuple\mbox{[}Hashable, NDFrameT\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a9e47304f229dd92531696371b9be253e}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_ad5b15e942fb2d2dcfb12fa1667404aeb}{\+\_\+\+\_\+sizeof\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_ac86361dc5b262c58dcdf818d410136e4}{\+\_\+\+\_\+dir\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}{ndim}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_aad3c986de316f6c45ec1d2f161b001a1}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a146992804d261f8e86d77708b165a972}{keys}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aa022c3af5e44ce1e18f623211716fba7}{sort}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_af92e0aeb7078633e9e383016af714e4b}{axis}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a9de97167ec0ae5e3f4410008df20ff64}{kind}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a49c6903b7fbd6988ae98a373ffa87f4f}{group\+\_\+keys}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_afdc4d4161b96a53d4c29053a57d84928}{as\+\_\+index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1b10ce09e0c296ea0ad43808c4c7be32}{include\+\_\+groups}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aa86e7c2c3e0e91c976c350ff74815670}{obj}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a52daf2306eff013718486ecbc3f722ac}{ax}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ac3538017c3209ae7718b79ceb2df885e}{binner}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a15c0e7cb5584d1abb0f68f1cd12fae87}{exclusions}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a8cd00befecc935b7ab0c04017fa5f4a7}{groups}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a382def7764ebcaf70d26e83645db0e59}{indices}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aac4094c67077964fa95bb915942d224c}{obj}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a5207a79fc68d7810cc3a907a49eaf556}{obj}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a740e931e362229a193cc2b827ac039e7}{exclusions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1datetimes_1_1DatetimeIndex}{Datetime\+Index}} \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a9572fadd18a41640949dca34865612ce}{binner}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1timedeltas_1_1TimedeltaIndex}{Timedelta\+Index}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1period_1_1PeriodIndex}{Period\+Index}}
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a28ed0fe94be7b839e814d53d7772a574}{exclusions}} = frozenset()
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ac385dca96830a1e3edf97409498a8c77}{agg}} = \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1ff1448c5b8b5b187fe859fa9af69dc3}{aggregate}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a28d3b49e0378a4762c96c72025d458b0}{apply}} = \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1ff1448c5b8b5b187fe859fa9af69dc3}{aggregate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}}
+\begin{DoxyCompactItemize}
+\item 
+Axis\+Int \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad7c87829c4f7e644366e65163289ad63}{axis}}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1groupby_1_1groupby_a34ab6708bf412008a6c49f719c219280}{\+\_\+\+Keys\+Arg\+Type}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a03ac204416264c8e1af84f43300bba61}{keys}} = None
+\item 
+Index\+Label \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a37f1cb20ca08f02bc9e136da76182383}{level}} = None
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad6a78667f6d1b18a9ea35fd12c878380}{group\+\_\+keys}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a35b32ba83d07b2d612b80a3bb8b54c40}{obj}}
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a1eee2f6959c9fcab6d8b57d166c81d45}{exclusions}} \mbox{[}Hashable\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a1f3539bc11e3abeff5e0f5a31bfbc5c7}{agg}} = \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}{aggregate}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a3417ec8a9474e99bcb484b03f523582c}{\+\_\+from\+\_\+selection}} (self)
+\item 
+NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a4a29383ec18106272a813720431ea215}{\+\_\+convert\+\_\+obj}} (self, NDFrameT \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aa86e7c2c3e0e91c976c350ff74815670}{obj}})
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a8b0e34382fd35221cbd14923c3505635}{\+\_\+get\+\_\+binner\+\_\+for\+\_\+time}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a79832312c268aa42ac269ebaece9f54e}{\+\_\+get\+\_\+binner}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_af482dc4fefb4bafd82c2cacc18b7a7f2}{\+\_\+downsample}} (self, f, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a12ec416d43e2f72ab518aaa0267158db}{\+\_\+upsample}} (self, f, int\texorpdfstring{$\vert$}{|}None limit=None, fill\+\_\+value=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aa4494de6abea74ed158352e6ff4c8cac}{\+\_\+gotitem}} (self, key, int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae71168779b11e49ff704d8e1252625ba}{ndim}}, subset=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aaa0925384e1cf04ff54c10c2bd36f6f1}{\+\_\+groupby\+\_\+and\+\_\+aggregate}} (self, how, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_abc979ee3fbe2734906a260eddceecee9}{\+\_\+get\+\_\+resampler\+\_\+for\+\_\+grouping}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1GroupBy}{Group\+By}} groupby, key, bool \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1b10ce09e0c296ea0ad43808c4c7be32}{include\+\_\+groups}}=True)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a9835fb4cbd7e6bdbf0b847310e07aacf}{\+\_\+wrap\+\_\+result}} (self, result)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_accd950a40bfd15bc8696bf3a9ca76f38}{\+\_\+get\+\_\+indices}} (self, names)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a3542def8e404156a3457e499c8583842}{\+\_\+get\+\_\+index}} (self, name)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_aa8d7f37c3e7e01e9a624bfcdb9ca795f}{\+\_\+selected\+\_\+obj}} (self)
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_ad7cad65657392c7742cfa69fdb2fadbb}{\+\_\+dir\+\_\+additions}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a7b5112b72a8bafe13b1fa732bf1ea30d}{\+\_\+constructor}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a8a2b95a9e1e4befc5ad3cba09c3f3e68}{\+\_\+reset\+\_\+cache}} (self, str\texorpdfstring{$\vert$}{|}None key=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a3151f76f1b53042e9d13da3d3ef3cb92}{\+\_\+dir\+\_\+deletions}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a84ab5b21406fb07629293d56ffc9f98a}{\+\_\+selection\+\_\+list}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_acd6785b162f9f2a0f0a8a279201346db}{\+\_\+obj\+\_\+with\+\_\+exclusions}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ad1591a6bbb00dfcef714413e1389278c}{\+\_\+infer\+\_\+selection}} (self, key, Series\texorpdfstring{$\vert$}{|}Data\+Frame subset)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin}{pandas.\+core.\+groupby.\+indexing.\+Group\+By\+Indexing\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector}{Group\+By\+Positional\+Selector}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a8058dd6f140a9da6b0f02e823cce9159}{\+\_\+positional\+\_\+selector}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a1544259469e017dd36d79d395ed5f15e}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+positional\+\_\+indexer}} (self, Positional\+Indexer\texorpdfstring{$\vert$}{|}tuple arg)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a919beb972b6e2651679c1ab45f0d0f63}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+int}} (self, int arg)
+\item 
+bool\texorpdfstring{$\vert$}{|}np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a1d0259da6f314c77dd123353e9812c97}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+list}} (self, Iterable\mbox{[}int\mbox{]} args)
+\item 
+bool\texorpdfstring{$\vert$}{|}np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a6fd469858a37bce644e9d3beafbe7ff1}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+tuple}} (self, tuple args)
+\item 
+bool\texorpdfstring{$\vert$}{|}np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a3816900101ed8903025bb3c5e4e29f1a}{\+\_\+make\+\_\+mask\+\_\+from\+\_\+slice}} (self, slice arg)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_aea8a626dbf481c3b532e4479cb8b040c}{\+\_\+ascending\+\_\+count}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_aad474a847bbcdd0cadf7ca3edce7bcbb}{\+\_\+descending\+\_\+count}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a96b9cc880ee8d08c627030e2bfe77f82}{\+\_\+timegrouper}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a309df32e74342db0a8f14fca64cc23aa}{\+\_\+indexer}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a4bbf30d75dcb57389fd161b1458983d8}{\+\_\+grouper}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ab07c47da90e8bbf3640310e0b57b2a3d}{\+\_\+selection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a88200cadb55a17f5cfbb144b228762f7}{\+\_\+selection}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a4b377ecea0956413cc4e45a77d887ac5}{\+\_\+selection}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a8690d2c7cd02cf083a1e6bafa899eab6}{\+\_\+selection\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin}{pandas.\+core.\+groupby.\+indexing.\+Group\+By\+Indexing\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a783cac517cedcd04929c9306b10f99f7}{\+\_\+ascending\+\_\+count}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByIndexingMixin_a9035f1c6ded6d3a8a4be99f8bcdc819e}{\+\_\+descending\+\_\+count}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper}{Bin\+Grouper}} \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ad8af3f3d548b2c1955db8455822db9b1}{\+\_\+grouper}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1TimeGrouper}{Time\+Grouper}} \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a2131f77b73326ce66c26d497221f0e52}{\+\_\+timegrouper}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ac47acdd5ac31c6178e7c98c22a54181c}{\+\_\+internal\+\_\+names\+\_\+set}} = set(\{"{}obj"{}, "{}ax"{}, "{}\+\_\+indexer"{}\})
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_aaff348a4e8a4a13eb741c4820594dcf5}{\+\_\+attributes}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a058d4a92a44954448cf885a6e798fe7c}{\+\_\+agg\+\_\+see\+\_\+also\+\_\+doc}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_ae282446b52cb8bf3fe74b78a0b9a2417}{\+\_\+agg\+\_\+examples\+\_\+doc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a792c142e01aa4fc5640ed6e0211d3c5f}{\+\_\+hidden\+\_\+attrs}}
+\item 
+ops \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a40f94745c7c0b54221efcb23f6c5de5c}{\+\_\+grouper}} .Base\+Grouper
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a3972565a4ab5ff072118eda20364cd2c}{\+\_\+cache}} \mbox{[}str, Any\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a1e3f9f50e3532c77c3610c4b8fe27e6f}{\+\_\+accessors}} = set()
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a7b9c1894b79d330020bdc71ddc7126f0}{\+\_\+hidden\+\_\+attrs}} = frozenset()
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin}{pandas.\+core.\+base.\+Selection\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+Index\+Label \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_aa329bea9aae5a514a109fd19b39e4d51}{\+\_\+selection}} = None
+\item 
+list \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}} = \mbox{[}"{}\+\_\+cache"{}, "{}\+\_\+\+\_\+setstate\+\_\+\+\_\+"{}\mbox{]}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a4df1b01fd09955430d448bf0a173a2f5}{\+\_\+internal\+\_\+names\+\_\+set}} = set(\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae5fff6c63df1250ed6784ad633fe03f4}{\+\_\+internal\+\_\+names}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Class for resampling datetimelike data, a groupby-like operation.
+See aggregate, transform, and apply functions on this object.
+
+It's easiest to use obj.resample(...) to use Resampler.
+
+Parameters
+----------
+obj : Series or DataFrame
+groupby : TimeGrouper
+axis : int, default 0
+kind : str or None
+    'period', 'timestamp' to override default index treatment
+
+Returns
+-------
+a Resampler of the appropriate type
+
+Notes
+-----
+After resampling, see aggregate, apply, and transform functions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ae06813309390af2ac43a2cec9f458fc1}\label{classpandas_1_1core_1_1resample_1_1Resampler_ae06813309390af2ac43a2cec9f458fc1} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+resample.\+Resampler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1generic_1_1NDFrame}{NDFrame}}}]{obj,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1TimeGrouper}{Time\+Grouper}}}]{timegrouper,  }\item[{Axis }]{axis = {\ttfamily 0},  }\item[{}]{kind = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}}}]{gpr\+\_\+index,  }\item[{bool }]{group\+\_\+keys = {\ttfamily False},  }\item[{}]{selection = {\ttfamily None},  }\item[{bool }]{include\+\_\+groups = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a7f599b6b626fa2e14a18a854cc8c2c59}\label{classpandas_1_1core_1_1resample_1_1Resampler_a7f599b6b626fa2e14a18a854cc8c2c59} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{attr }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a0db67e5f19c82aea45da5a8543c36838}\label{classpandas_1_1core_1_1resample_1_1Resampler_a0db67e5f19c82aea45da5a8543c36838} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+resample.\+Resampler.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Provide a nice str repr of our rolling object.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a4a29383ec18106272a813720431ea215}\label{classpandas_1_1core_1_1resample_1_1Resampler_a4a29383ec18106272a813720431ea215} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_convert\_obj@{\_convert\_obj}}
+\index{\_convert\_obj@{\_convert\_obj}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_convert\_obj()}{\_convert\_obj()}}
+{\footnotesize\ttfamily  NDFrameT pandas.\+core.\+resample.\+Resampler.\+\_\+convert\+\_\+obj (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{NDFrameT}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Provide any conversions for the object in order to correctly handle.
+
+Parameters
+----------
+obj : Series or DataFrame
+
+Returns
+-------
+Series or DataFrame
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1PeriodIndexResampler_a0abbd9d69376f6f3d17ceb3f69f52268}{pandas.\+core.\+resample.\+Period\+Index\+Resampler}}.
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_af482dc4fefb4bafd82c2cacc18b7a7f2}\label{classpandas_1_1core_1_1resample_1_1Resampler_af482dc4fefb4bafd82c2cacc18b7a7f2} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_downsample@{\_downsample}}
+\index{\_downsample@{\_downsample}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_downsample()}{\_downsample()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+downsample (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1DatetimeIndexResampler_acb8c074ae4d2fc432149da3258235223}{pandas.\+core.\+resample.\+Datetime\+Index\+Resampler}}, et \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1PeriodIndexResampler_a863d2353ba8d5f76539069a865fc33ae}{pandas.\+core.\+resample.\+Period\+Index\+Resampler}}.
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a3417ec8a9474e99bcb484b03f523582c}\label{classpandas_1_1core_1_1resample_1_1Resampler_a3417ec8a9474e99bcb484b03f523582c} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_from\_selection@{\_from\_selection}}
+\index{\_from\_selection@{\_from\_selection}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_from\_selection()}{\_from\_selection()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+resample.\+Resampler.\+\_\+from\+\_\+selection (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Is the resampling from a DataFrame column or MultiIndex level.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a79832312c268aa42ac269ebaece9f54e}\label{classpandas_1_1core_1_1resample_1_1Resampler_a79832312c268aa42ac269ebaece9f54e} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_get\_binner@{\_get\_binner}}
+\index{\_get\_binner@{\_get\_binner}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_get\_binner()}{\_get\_binner()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+get\+\_\+binner (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create the BinGrouper, assume that self.set_grouper(obj)
+has already been called.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a8b0e34382fd35221cbd14923c3505635}\label{classpandas_1_1core_1_1resample_1_1Resampler_a8b0e34382fd35221cbd14923c3505635} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_get\_binner\_for\_time@{\_get\_binner\_for\_time}}
+\index{\_get\_binner\_for\_time@{\_get\_binner\_for\_time}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_get\_binner\_for\_time()}{\_get\_binner\_for\_time()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+get\+\_\+binner\+\_\+for\+\_\+time (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1DatetimeIndexResampler_a7f9fee39f6bfdb50ed7c02f2e6175995}{pandas.\+core.\+resample.\+Datetime\+Index\+Resampler}}, \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1PeriodIndexResampler_ac15c96df444f2930f695837557a9f178}{pandas.\+core.\+resample.\+Period\+Index\+Resampler}}, et \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1TimedeltaIndexResampler_a7f9836746c96c42d1e80252dd173cc98}{pandas.\+core.\+resample.\+Timedelta\+Index\+Resampler}}.
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_abc979ee3fbe2734906a260eddceecee9}\label{classpandas_1_1core_1_1resample_1_1Resampler_abc979ee3fbe2734906a260eddceecee9} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_get\_resampler\_for\_grouping@{\_get\_resampler\_for\_grouping}}
+\index{\_get\_resampler\_for\_grouping@{\_get\_resampler\_for\_grouping}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_get\_resampler\_for\_grouping()}{\_get\_resampler\_for\_grouping()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+get\+\_\+resampler\+\_\+for\+\_\+grouping (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1GroupBy}{Group\+By}}}]{groupby,  }\item[{}]{key,  }\item[{bool }]{include\+\_\+groups = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the correct class for resampling with groupby.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_aa4494de6abea74ed158352e6ff4c8cac}\label{classpandas_1_1core_1_1resample_1_1Resampler_aa4494de6abea74ed158352e6ff4c8cac} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_gotitem@{\_gotitem}}
+\index{\_gotitem@{\_gotitem}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_gotitem()}{\_gotitem()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+gotitem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{int}]{ndim,  }\item[{}]{subset = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Sub-classes to define. Return a sliced object.
+
+Parameters
+----------
+key : string / list of selections
+ndim : {1, 2}
+    requested ndim of result
+subset : object, default None
+    subset to act on
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_a9f3d118b3cd8f40293932a1487962d18}{pandas.\+core.\+base.\+Selection\+Mixin}}.
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_aaa0925384e1cf04ff54c10c2bd36f6f1}\label{classpandas_1_1core_1_1resample_1_1Resampler_aaa0925384e1cf04ff54c10c2bd36f6f1} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_groupby\_and\_aggregate@{\_groupby\_and\_aggregate}}
+\index{\_groupby\_and\_aggregate@{\_groupby\_and\_aggregate}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_groupby\_and\_aggregate()}{\_groupby\_and\_aggregate()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+groupby\+\_\+and\+\_\+aggregate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{how,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Re-evaluate the obj with a groupby aggregation.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a12ec416d43e2f72ab518aaa0267158db}\label{classpandas_1_1core_1_1resample_1_1Resampler_a12ec416d43e2f72ab518aaa0267158db} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_upsample@{\_upsample}}
+\index{\_upsample@{\_upsample}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_upsample()}{\_upsample()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+upsample (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{f,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None},  }\item[{}]{fill\+\_\+value = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1DatetimeIndexResampler_a3199f8be99504aa9fae28a3fc610300d}{pandas.\+core.\+resample.\+Datetime\+Index\+Resampler}}, et \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1PeriodIndexResampler_a6d7ca844e10c2083984a17645262f916}{pandas.\+core.\+resample.\+Period\+Index\+Resampler}}.
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a9835fb4cbd7e6bdbf0b847310e07aacf}\label{classpandas_1_1core_1_1resample_1_1Resampler_a9835fb4cbd7e6bdbf0b847310e07aacf} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_wrap\_result@{\_wrap\_result}}
+\index{\_wrap\_result@{\_wrap\_result}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_wrap\_result()}{\_wrap\_result()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+wrap\+\_\+result (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Potentially wrap any results.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1DatetimeIndexResampler_a80537083929d67e61b95578389e6d1f4}{pandas.\+core.\+resample.\+Datetime\+Index\+Resampler}}.
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a1ff1448c5b8b5b187fe859fa9af69dc3}\label{classpandas_1_1core_1_1resample_1_1Resampler_a1ff1448c5b8b5b187fe859fa9af69dc3} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!aggregate@{aggregate}}
+\index{aggregate@{aggregate}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{aggregate()}{aggregate()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+aggregate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1SelectionMixin_ae485d4e476e4284dee050eb5245f4862}{pandas.\+core.\+base.\+Selection\+Mixin}}.
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a6afba6cf61c56f2d441279f327c325f3}\label{classpandas_1_1core_1_1resample_1_1Resampler_a6afba6cf61c56f2d441279f327c325f3} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!asfreq@{asfreq}}
+\index{asfreq@{asfreq}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{asfreq()}{asfreq()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+asfreq (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fill\+\_\+value = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the values at the new freq, essentially a reindex.
+
+Parameters
+----------
+fill_value : scalar, optional
+    Value to use for missing values, applied during upsampling (note
+    this does not fill NaNs that already were present).
+
+Returns
+-------
+DataFrame or Series
+    Values at the specified freq.
+
+See Also
+--------
+Series.asfreq: Convert TimeSeries to specified frequency.
+DataFrame.asfreq: Convert TimeSeries to specified frequency.
+
+Examples
+--------
+
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-31', '2023-02-01', '2023-02-28']))
+>>> ser
+2023-01-01    1
+2023-01-31    2
+2023-02-01    3
+2023-02-28    4
+dtype: int64
+>>> ser.resample('MS').asfreq()
+2023-01-01    1
+2023-02-01    3
+Freq: MS, dtype: int64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a4e541a8dcaea8bc8b4dafdb0950dc56a}\label{classpandas_1_1core_1_1resample_1_1Resampler_a4e541a8dcaea8bc8b4dafdb0950dc56a} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!bfill@{bfill}}
+\index{bfill@{bfill}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{bfill()}{bfill()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+bfill (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Backward fill the new missing values in the resampled data.
+
+In statistics, imputation is the process of replacing missing data with
+substituted values [1]_. When resampling data, missing values may
+appear (e.g., when the resampling frequency is higher than the original
+frequency). The backward fill will replace NaN values that appeared in
+the resampled data with the next value in the original sequence.
+Missing values that existed in the original data will not be modified.
+
+Parameters
+----------
+limit : int, optional
+    Limit of how many values to fill.
+
+Returns
+-------
+Series, DataFrame
+    An upsampled Series or DataFrame with backward filled NaN values.
+
+See Also
+--------
+bfill : Alias of backfill.
+fillna : Fill NaN values using the specified method, which can be
+    'backfill'.
+nearest : Fill NaN values with nearest neighbor starting from center.
+ffill : Forward fill NaN values.
+Series.fillna : Fill NaN values in the Series using the
+    specified method, which can be 'backfill'.
+DataFrame.fillna : Fill NaN values in the DataFrame using the
+    specified method, which can be 'backfill'.
+
+References
+----------
+.. [1] https://en.wikipedia.org/wiki/Imputation_(statistics)
+
+Examples
+--------
+Resampling a Series:
+
+>>> s = pd.Series([1, 2, 3],
+...               index=pd.date_range('20180101', periods=3, freq='h'))
+>>> s
+2018-01-01 00:00:00    1
+2018-01-01 01:00:00    2
+2018-01-01 02:00:00    3
+Freq: h, dtype: int64
+
+>>> s.resample('30min').bfill()
+2018-01-01 00:00:00    1
+2018-01-01 00:30:00    2
+2018-01-01 01:00:00    2
+2018-01-01 01:30:00    3
+2018-01-01 02:00:00    3
+Freq: 30min, dtype: int64
+
+>>> s.resample('15min').bfill(limit=2)
+2018-01-01 00:00:00    1.0
+2018-01-01 00:15:00    NaN
+2018-01-01 00:30:00    2.0
+2018-01-01 00:45:00    2.0
+2018-01-01 01:00:00    2.0
+2018-01-01 01:15:00    NaN
+2018-01-01 01:30:00    3.0
+2018-01-01 01:45:00    3.0
+2018-01-01 02:00:00    3.0
+Freq: 15min, dtype: float64
+
+Resampling a DataFrame that has missing values:
+
+>>> df = pd.DataFrame({'a': [2, np.nan, 6], 'b': [1, 3, 5]},
+...                   index=pd.date_range('20180101', periods=3,
+...                                       freq='h'))
+>>> df
+                       a  b
+2018-01-01 00:00:00  2.0  1
+2018-01-01 01:00:00  NaN  3
+2018-01-01 02:00:00  6.0  5
+
+>>> df.resample('30min').bfill()
+                       a  b
+2018-01-01 00:00:00  2.0  1
+2018-01-01 00:30:00  NaN  3
+2018-01-01 01:00:00  NaN  3
+2018-01-01 01:30:00  6.0  5
+2018-01-01 02:00:00  6.0  5
+
+>>> df.resample('15min').bfill(limit=2)
+                       a    b
+2018-01-01 00:00:00  2.0  1.0
+2018-01-01 00:15:00  NaN  NaN
+2018-01-01 00:30:00  NaN  3.0
+2018-01-01 00:45:00  NaN  3.0
+2018-01-01 01:00:00  NaN  3.0
+2018-01-01 01:15:00  NaN  NaN
+2018-01-01 01:30:00  6.0  5.0
+2018-01-01 01:45:00  6.0  5.0
+2018-01-01 02:00:00  6.0  5.0
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a200bac96ede56f18842fed0153f6d24d}\label{classpandas_1_1core_1_1resample_1_1Resampler_a200bac96ede56f18842fed0153f6d24d} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!count@{count}}
+\index{count@{count}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+count (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a2eea33aacb4da0e3ef154baadef851e3}\label{classpandas_1_1core_1_1resample_1_1Resampler_a2eea33aacb4da0e3ef154baadef851e3} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!ffill@{ffill}}
+\index{ffill@{ffill}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{ffill()}{ffill()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+ffill (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forward fill the values.
+
+Parameters
+----------
+limit : int, optional
+    Limit of how many values to fill.
+
+Returns
+-------
+An upsampled Series.
+
+See Also
+--------
+Series.fillna: Fill NA/NaN values using the specified method.
+DataFrame.fillna: Fill NA/NaN values using the specified method.
+
+Examples
+--------
+Here we only create a ``Series``.
+
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+
+Example for ``ffill`` with downsampling (we have fewer dates after resampling):
+
+>>> ser.resample('MS').ffill()
+2023-01-01    1
+2023-02-01    3
+Freq: MS, dtype: int64
+
+Example for ``ffill`` with upsampling (fill the new dates with
+the previous value):
+
+>>> ser.resample('W').ffill()
+2023-01-01    1
+2023-01-08    1
+2023-01-15    2
+2023-01-22    2
+2023-01-29    2
+2023-02-05    3
+2023-02-12    3
+2023-02-19    4
+Freq: W-SUN, dtype: int64
+
+With upsampling and limiting (only fill the first new date with the
+previous value):
+
+>>> ser.resample('W').ffill(limit=1)
+2023-01-01    1.0
+2023-01-08    1.0
+2023-01-15    2.0
+2023-01-22    2.0
+2023-01-29    NaN
+2023-02-05    3.0
+2023-02-12    NaN
+2023-02-19    4.0
+Freq: W-SUN, dtype: float64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ae195580c498ae13c0777ecb4cd682322}\label{classpandas_1_1core_1_1resample_1_1Resampler_ae195580c498ae13c0777ecb4cd682322} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!fillna@{fillna}}
+\index{fillna@{fillna}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{fillna()}{fillna()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+fillna (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{method,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fill missing values introduced by upsampling.
+
+In statistics, imputation is the process of replacing missing data with
+substituted values [1]_. When resampling data, missing values may
+appear (e.g., when the resampling frequency is higher than the original
+frequency).
+
+Missing values that existed in the original data will
+not be modified.
+
+Parameters
+----------
+method : {'pad', 'backfill', 'ffill', 'bfill', 'nearest'}
+    Method to use for filling holes in resampled data
+
+    * 'pad' or 'ffill': use previous valid observation to fill gap
+      (forward fill).
+    * 'backfill' or 'bfill': use next valid observation to fill gap.
+    * 'nearest': use nearest valid observation to fill gap.
+
+limit : int, optional
+    Limit of how many consecutive missing values to fill.
+
+Returns
+-------
+Series or DataFrame
+    An upsampled Series or DataFrame with missing values filled.
+
+See Also
+--------
+bfill : Backward fill NaN values in the resampled data.
+ffill : Forward fill NaN values in the resampled data.
+nearest : Fill NaN values in the resampled data
+    with nearest neighbor starting from center.
+interpolate : Fill NaN values using interpolation.
+Series.fillna : Fill NaN values in the Series using the
+    specified method, which can be 'bfill' and 'ffill'.
+DataFrame.fillna : Fill NaN values in the DataFrame using the
+    specified method, which can be 'bfill' and 'ffill'.
+
+References
+----------
+.. [1] https://en.wikipedia.org/wiki/Imputation_(statistics)
+
+Examples
+--------
+Resampling a Series:
+
+>>> s = pd.Series([1, 2, 3],
+...               index=pd.date_range('20180101', periods=3, freq='h'))
+>>> s
+2018-01-01 00:00:00    1
+2018-01-01 01:00:00    2
+2018-01-01 02:00:00    3
+Freq: h, dtype: int64
+
+Without filling the missing values you get:
+
+>>> s.resample("30min").asfreq()
+2018-01-01 00:00:00    1.0
+2018-01-01 00:30:00    NaN
+2018-01-01 01:00:00    2.0
+2018-01-01 01:30:00    NaN
+2018-01-01 02:00:00    3.0
+Freq: 30min, dtype: float64
+
+>>> s.resample('30min').fillna("backfill")
+2018-01-01 00:00:00    1
+2018-01-01 00:30:00    2
+2018-01-01 01:00:00    2
+2018-01-01 01:30:00    3
+2018-01-01 02:00:00    3
+Freq: 30min, dtype: int64
+
+>>> s.resample('15min').fillna("backfill", limit=2)
+2018-01-01 00:00:00    1.0
+2018-01-01 00:15:00    NaN
+2018-01-01 00:30:00    2.0
+2018-01-01 00:45:00    2.0
+2018-01-01 01:00:00    2.0
+2018-01-01 01:15:00    NaN
+2018-01-01 01:30:00    3.0
+2018-01-01 01:45:00    3.0
+2018-01-01 02:00:00    3.0
+Freq: 15min, dtype: float64
+
+>>> s.resample('30min').fillna("pad")
+2018-01-01 00:00:00    1
+2018-01-01 00:30:00    1
+2018-01-01 01:00:00    2
+2018-01-01 01:30:00    2
+2018-01-01 02:00:00    3
+Freq: 30min, dtype: int64
+
+>>> s.resample('30min').fillna("nearest")
+2018-01-01 00:00:00    1
+2018-01-01 00:30:00    2
+2018-01-01 01:00:00    2
+2018-01-01 01:30:00    3
+2018-01-01 02:00:00    3
+Freq: 30min, dtype: int64
+
+Missing values present before the upsampling are not affected.
+
+>>> sm = pd.Series([1, None, 3],
+...                index=pd.date_range('20180101', periods=3, freq='h'))
+>>> sm
+2018-01-01 00:00:00    1.0
+2018-01-01 01:00:00    NaN
+2018-01-01 02:00:00    3.0
+Freq: h, dtype: float64
+
+>>> sm.resample('30min').fillna('backfill')
+2018-01-01 00:00:00    1.0
+2018-01-01 00:30:00    NaN
+2018-01-01 01:00:00    NaN
+2018-01-01 01:30:00    3.0
+2018-01-01 02:00:00    3.0
+Freq: 30min, dtype: float64
+
+>>> sm.resample('30min').fillna('pad')
+2018-01-01 00:00:00    1.0
+2018-01-01 00:30:00    1.0
+2018-01-01 01:00:00    NaN
+2018-01-01 01:30:00    NaN
+2018-01-01 02:00:00    3.0
+Freq: 30min, dtype: float64
+
+>>> sm.resample('30min').fillna('nearest')
+2018-01-01 00:00:00    1.0
+2018-01-01 00:30:00    NaN
+2018-01-01 01:00:00    NaN
+2018-01-01 01:30:00    3.0
+2018-01-01 02:00:00    3.0
+Freq: 30min, dtype: float64
+
+DataFrame resampling is done column-wise. All the same options are
+available.
+
+>>> df = pd.DataFrame({'a': [2, np.nan, 6], 'b': [1, 3, 5]},
+...                   index=pd.date_range('20180101', periods=3,
+...                                       freq='h'))
+>>> df
+                       a  b
+2018-01-01 00:00:00  2.0  1
+2018-01-01 01:00:00  NaN  3
+2018-01-01 02:00:00  6.0  5
+
+>>> df.resample('30min').fillna("bfill")
+                       a  b
+2018-01-01 00:00:00  2.0  1
+2018-01-01 00:30:00  NaN  3
+2018-01-01 01:00:00  NaN  3
+2018-01-01 01:30:00  6.0  5
+2018-01-01 02:00:00  6.0  5
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_abe0621c05411d5960e35eb878ea21237}\label{classpandas_1_1core_1_1resample_1_1Resampler_abe0621c05411d5960e35eb878ea21237} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!first@{first}}
+\index{first@{first}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+first (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{int }]{min\+\_\+count = {\ttfamily 0},  }\item[{bool }]{skipna = {\ttfamily True},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_af407466aded175dd855478ddaa7ed433}\label{classpandas_1_1core_1_1resample_1_1Resampler_af407466aded175dd855478ddaa7ed433} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{interpolate()}{interpolate()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+interpolate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Interpolate\+Options }]{method = {\ttfamily "{}linear"{}},  }\item[{\texorpdfstring{$\ast$}{*}Axis }]{axis = {\ttfamily 0},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None},  }\item[{bool }]{inplace = {\ttfamily False},  }\item[{Literal\mbox{[}"{}forward"{}, "{}backward"{}, "{}both"{}\mbox{]} }]{limit\+\_\+direction = {\ttfamily "{}forward"{}},  }\item[{}]{limit\+\_\+area = {\ttfamily None},  }\item[{}]{downcast = {\ttfamily lib.no\+\_\+default},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Interpolate values between target timestamps according to different methods.
+
+The original index is first reindexed to target timestamps
+(see :meth:`core.resample.Resampler.asfreq`),
+then the interpolation of ``NaN`` values via :meth:`DataFrame.interpolate`
+happens.
+
+Parameters
+----------
+method : str, default 'linear'
+    Interpolation technique to use. One of:
+
+    * 'linear': Ignore the index and treat the values as equally
+      spaced. This is the only method supported on MultiIndexes.
+    * 'time': Works on daily and higher resolution data to interpolate
+      given length of interval.
+    * 'index', 'values': use the actual numerical values of the index.
+    * 'pad': Fill in NaNs using existing values.
+    * 'nearest', 'zero', 'slinear', 'quadratic', 'cubic',
+      'barycentric', 'polynomial': Passed to
+      `scipy.interpolate.interp1d`, whereas 'spline' is passed to
+      `scipy.interpolate.UnivariateSpline`. These methods use the numerical
+      values of the index.  Both 'polynomial' and 'spline' require that
+      you also specify an `order` (int), e.g.
+      ``df.interpolate(method='polynomial', order=5)``. Note that,
+      `slinear` method in Pandas refers to the Scipy first order `spline`
+      instead of Pandas first order `spline`.
+    * 'krogh', 'piecewise_polynomial', 'spline', 'pchip', 'akima',
+      'cubicspline': Wrappers around the SciPy interpolation methods of
+      similar names. See `Notes`.
+    * 'from_derivatives': Refers to
+      `scipy.interpolate.BPoly.from_derivatives`.
+
+axis : {{0 or 'index', 1 or 'columns', None}}, default None
+    Axis to interpolate along. For `Series` this parameter is unused
+    and defaults to 0.
+limit : int, optional
+    Maximum number of consecutive NaNs to fill. Must be greater than
+    0.
+inplace : bool, default False
+    Update the data in place if possible.
+limit_direction : {{'forward', 'backward', 'both'}}, Optional
+    Consecutive NaNs will be filled in this direction.
+
+    If limit is specified:
+        * If 'method' is 'pad' or 'ffill', 'limit_direction' must be 'forward'.
+        * If 'method' is 'backfill' or 'bfill', 'limit_direction' must be
+          'backwards'.
+
+    If 'limit' is not specified:
+        * If 'method' is 'backfill' or 'bfill', the default is 'backward'
+        * else the default is 'forward'
+
+        raises ValueError if `limit_direction` is 'forward' or 'both' and
+            method is 'backfill' or 'bfill'.
+        raises ValueError if `limit_direction` is 'backward' or 'both' and
+            method is 'pad' or 'ffill'.
+
+limit_area : {{`None`, 'inside', 'outside'}}, default None
+    If limit is specified, consecutive NaNs will be filled with this
+    restriction.
+
+    * ``None``: No fill restriction.
+    * 'inside': Only fill NaNs surrounded by valid values
+      (interpolate).
+    * 'outside': Only fill NaNs outside valid values (extrapolate).
+
+downcast : optional, 'infer' or None, defaults to None
+    Downcast dtypes if possible.
+
+    .. deprecated:: 2.1.0
+
+``**kwargs`` : optional
+    Keyword arguments to pass on to the interpolating function.
+
+Returns
+-------
+DataFrame or Series
+    Interpolated values at the specified freq.
+
+See Also
+--------
+core.resample.Resampler.asfreq: Return the values at the new freq,
+    essentially a reindex.
+DataFrame.interpolate: Fill NaN values using an interpolation method.
+
+Notes
+-----
+For high-frequent or non-equidistant time-series with timestamps
+the reindexing followed by interpolation may lead to information loss
+as shown in the last example.
+
+Examples
+--------
+
+>>> start = "2023-03-01T07:00:00"
+>>> timesteps = pd.date_range(start, periods=5, freq="s")
+>>> series = pd.Series(data=[1, -1, 2, 1, 3], index=timesteps)
+>>> series
+2023-03-01 07:00:00    1
+2023-03-01 07:00:01   -1
+2023-03-01 07:00:02    2
+2023-03-01 07:00:03    1
+2023-03-01 07:00:04    3
+Freq: s, dtype: int64
+
+Upsample the dataframe to 0.5Hz by providing the period time of 2s.
+
+>>> series.resample("2s").interpolate("linear")
+2023-03-01 07:00:00    1
+2023-03-01 07:00:02    2
+2023-03-01 07:00:04    3
+Freq: 2s, dtype: int64
+
+Downsample the dataframe to 2Hz by providing the period time of 500ms.
+
+>>> series.resample("500ms").interpolate("linear")
+2023-03-01 07:00:00.000    1.0
+2023-03-01 07:00:00.500    0.0
+2023-03-01 07:00:01.000   -1.0
+2023-03-01 07:00:01.500    0.5
+2023-03-01 07:00:02.000    2.0
+2023-03-01 07:00:02.500    1.5
+2023-03-01 07:00:03.000    1.0
+2023-03-01 07:00:03.500    2.0
+2023-03-01 07:00:04.000    3.0
+Freq: 500ms, dtype: float64
+
+Internal reindexing with ``asfreq()`` prior to interpolation leads to
+an interpolated timeseries on the basis the reindexed timestamps (anchors).
+Since not all datapoints from original series become anchors,
+it can lead to misleading interpolation results as in the following example:
+
+>>> series.resample("400ms").interpolate("linear")
+2023-03-01 07:00:00.000    1.0
+2023-03-01 07:00:00.400    1.2
+2023-03-01 07:00:00.800    1.4
+2023-03-01 07:00:01.200    1.6
+2023-03-01 07:00:01.600    1.8
+2023-03-01 07:00:02.000    2.0
+2023-03-01 07:00:02.400    2.2
+2023-03-01 07:00:02.800    2.4
+2023-03-01 07:00:03.200    2.6
+2023-03-01 07:00:03.600    2.8
+2023-03-01 07:00:04.000    3.0
+Freq: 400ms, dtype: float64
+
+Note that the series erroneously increases between two anchors
+``07:00:00`` and ``07:00:02``.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a47859776c6c8f0f902e822d794240828}\label{classpandas_1_1core_1_1resample_1_1Resampler_a47859776c6c8f0f902e822d794240828} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!last@{last}}
+\index{last@{last}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+last (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{int }]{min\+\_\+count = {\ttfamily 0},  }\item[{bool }]{skipna = {\ttfamily True},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a174afcd738f89b4b7d430de421cdb942}\label{classpandas_1_1core_1_1resample_1_1Resampler_a174afcd738f89b4b7d430de421cdb942} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!max@{max}}
+\index{max@{max}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+max (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{int }]{min\+\_\+count = {\ttfamily 0},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute max value of group.
+
+Returns
+-------
+Series or DataFrame
+
+Examples
+--------
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> ser.resample('MS').max()
+2023-01-01    2
+2023-02-01    4
+Freq: MS, dtype: int64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ac55c90006b0d966b64ff46692856adad}\label{classpandas_1_1core_1_1resample_1_1Resampler_ac55c90006b0d966b64ff46692856adad} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!mean@{mean}}
+\index{mean@{mean}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{mean()}{mean()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+mean (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute mean of groups, excluding missing values.
+
+Parameters
+----------
+numeric_only : bool, default False
+    Include only `float`, `int` or `boolean` data.
+
+    .. versionchanged:: 2.0.0
+
+        numeric_only now defaults to ``False``.
+
+Returns
+-------
+DataFrame or Series
+    Mean of values within each group.
+
+Examples
+--------
+
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> ser.resample('MS').mean()
+2023-01-01    1.5
+2023-02-01    3.5
+Freq: MS, dtype: float64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ac903b5a4fa60620b46713a120c22ac95}\label{classpandas_1_1core_1_1resample_1_1Resampler_ac903b5a4fa60620b46713a120c22ac95} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!median@{median}}
+\index{median@{median}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{median()}{median()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+median (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_adeb347c0a1c1bcf1970907c95781c8cc}\label{classpandas_1_1core_1_1resample_1_1Resampler_adeb347c0a1c1bcf1970907c95781c8cc} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!min@{min}}
+\index{min@{min}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+min (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{int }]{min\+\_\+count = {\ttfamily 0},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute min value of group.
+
+Returns
+-------
+Series or DataFrame
+
+Examples
+--------
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> ser.resample('MS').min()
+2023-01-01    1
+2023-02-01    3
+Freq: MS, dtype: int64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a12051f3743b2222204e1810e1bf397a4}\label{classpandas_1_1core_1_1resample_1_1Resampler_a12051f3743b2222204e1810e1bf397a4} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!nearest@{nearest}}
+\index{nearest@{nearest}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{nearest()}{nearest()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+nearest (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resample by using the nearest value.
+
+When resampling data, missing values may appear (e.g., when the
+resampling frequency is higher than the original frequency).
+The `nearest` method will replace ``NaN`` values that appeared in
+the resampled data with the value from the nearest member of the
+sequence, based on the index value.
+Missing values that existed in the original data will not be modified.
+If `limit` is given, fill only this many values in each direction for
+each of the original values.
+
+Parameters
+----------
+limit : int, optional
+    Limit of how many values to fill.
+
+Returns
+-------
+Series or DataFrame
+    An upsampled Series or DataFrame with ``NaN`` values filled with
+    their nearest value.
+
+See Also
+--------
+backfill : Backward fill the new missing values in the resampled data.
+pad : Forward fill ``NaN`` values.
+
+Examples
+--------
+>>> s = pd.Series([1, 2],
+...               index=pd.date_range('20180101',
+...                                   periods=2,
+...                                   freq='1h'))
+>>> s
+2018-01-01 00:00:00    1
+2018-01-01 01:00:00    2
+Freq: h, dtype: int64
+
+>>> s.resample('15min').nearest()
+2018-01-01 00:00:00    1
+2018-01-01 00:15:00    1
+2018-01-01 00:30:00    2
+2018-01-01 00:45:00    2
+2018-01-01 01:00:00    2
+Freq: 15min, dtype: int64
+
+Limit the number of upsampled values imputed by the nearest:
+
+>>> s.resample('15min').nearest(limit=1)
+2018-01-01 00:00:00    1.0
+2018-01-01 00:15:00    1.0
+2018-01-01 00:30:00    NaN
+2018-01-01 00:45:00    2.0
+2018-01-01 01:00:00    2.0
+Freq: 15min, dtype: float64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a8bc02db44b7b8f1e1122bcb5d1e72421}\label{classpandas_1_1core_1_1resample_1_1Resampler_a8bc02db44b7b8f1e1122bcb5d1e72421} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!nunique@{nunique}}
+\index{nunique@{nunique}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{nunique()}{nunique()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+nunique (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a1094044401224f82c9967ee64c14ab29}\label{classpandas_1_1core_1_1resample_1_1Resampler_a1094044401224f82c9967ee64c14ab29} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!ohlc@{ohlc}}
+\index{ohlc@{ohlc}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{ohlc()}{ohlc()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+ohlc (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a431c855366df2ea18449b85ee31aa6e0}\label{classpandas_1_1core_1_1resample_1_1Resampler_a431c855366df2ea18449b85ee31aa6e0} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!pipe@{pipe}}
+\index{pipe@{pipe}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{pipe()}{pipe()}}
+{\footnotesize\ttfamily  T pandas.\+core.\+resample.\+Resampler.\+pipe (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Callable\mbox{[}..., T\mbox{]} \texorpdfstring{$\vert$}{|} tuple\mbox{[}Callable\mbox{[}..., T\mbox{]}, str\mbox{]}}]{func,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1BaseGroupBy_a9f305e6758cd10d99d0389bf68b45011}{pandas.\+core.\+groupby.\+groupby.\+Base\+Group\+By}}.
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ae51e6ca60c8ba328be6956880c94d6c9}\label{classpandas_1_1core_1_1resample_1_1Resampler_ae51e6ca60c8ba328be6956880c94d6c9} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!prod@{prod}}
+\index{prod@{prod}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{prod()}{prod()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+prod (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{int }]{min\+\_\+count = {\ttfamily 0},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute prod of group values.
+
+Parameters
+----------
+numeric_only : bool, default False
+    Include only float, int, boolean columns.
+
+    .. versionchanged:: 2.0.0
+
+        numeric_only no longer accepts ``None``.
+
+min_count : int, default 0
+    The required number of valid values to perform the operation. If fewer
+    than ``min_count`` non-NA values are present the result will be NA.
+
+Returns
+-------
+Series or DataFrame
+    Computed prod of values within each group.
+
+Examples
+--------
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> ser.resample('MS').prod()
+2023-01-01    2
+2023-02-01   12
+Freq: MS, dtype: int64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a1b4ca1dd908d71914781fe975c44836a}\label{classpandas_1_1core_1_1resample_1_1Resampler_a1b4ca1dd908d71914781fe975c44836a} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!quantile@{quantile}}
+\index{quantile@{quantile}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{quantile()}{quantile()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+quantile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float \texorpdfstring{$\vert$}{|} list\mbox{[}float\mbox{]} \texorpdfstring{$\vert$}{|} Any\+Array\+Like }]{q = {\ttfamily 0.5},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return value at the given quantile.
+
+Parameters
+----------
+q : float or array-like, default 0.5 (50% quantile)
+
+Returns
+-------
+DataFrame or Series
+    Quantile of values within each group.
+
+See Also
+--------
+Series.quantile
+    Return a series, where the index is q and the values are the quantiles.
+DataFrame.quantile
+    Return a DataFrame, where the columns are the columns of self,
+    and the values are the quantiles.
+DataFrameGroupBy.quantile
+    Return a DataFrame, where the columns are groupby columns,
+    and the values are its quantiles.
+
+Examples
+--------
+
+>>> ser = pd.Series([1, 3, 2, 4, 3, 8],
+...                 index=pd.DatetimeIndex(['2023-01-01',
+...                                         '2023-01-10',
+...                                         '2023-01-15',
+...                                         '2023-02-01',
+...                                         '2023-02-10',
+...                                         '2023-02-15']))
+>>> ser.resample('MS').quantile()
+2023-01-01    2.0
+2023-02-01    4.0
+Freq: MS, dtype: float64
+
+>>> ser.resample('MS').quantile(.25)
+2023-01-01    1.5
+2023-02-01    3.5
+Freq: MS, dtype: float64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a3bd6f42e897366da880273313f9d145c}\label{classpandas_1_1core_1_1resample_1_1Resampler_a3bd6f42e897366da880273313f9d145c} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!sem@{sem}}
+\index{sem@{sem}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{sem()}{sem()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+sem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int }]{ddof = {\ttfamily 1},  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_aa66b7f7ffca04d8a6fa97867ba4e2473}\label{classpandas_1_1core_1_1resample_1_1Resampler_aa66b7f7ffca04d8a6fa97867ba4e2473} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!size@{size}}
+\index{size@{size}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+size (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a405fd999b7c25d4ebcb8acee4678d85c}\label{classpandas_1_1core_1_1resample_1_1Resampler_a405fd999b7c25d4ebcb8acee4678d85c} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!std@{std}}
+\index{std@{std}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{std()}{std()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+std (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int }]{ddof = {\ttfamily 1},  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute standard deviation of groups, excluding missing values.
+
+Parameters
+----------
+ddof : int, default 1
+    Degrees of freedom.
+numeric_only : bool, default False
+    Include only `float`, `int` or `boolean` data.
+
+    .. versionadded:: 1.5.0
+
+    .. versionchanged:: 2.0.0
+
+        numeric_only now defaults to ``False``.
+
+Returns
+-------
+DataFrame or Series
+    Standard deviation of values within each group.
+
+Examples
+--------
+
+>>> ser = pd.Series([1, 3, 2, 4, 3, 8],
+...                 index=pd.DatetimeIndex(['2023-01-01',
+...                                         '2023-01-10',
+...                                         '2023-01-15',
+...                                         '2023-02-01',
+...                                         '2023-02-10',
+...                                         '2023-02-15']))
+>>> ser.resample('MS').std()
+2023-01-01    1.000000
+2023-02-01    2.645751
+Freq: MS, dtype: float64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a5afc7d77fc56a6643358d1ca133b2625}\label{classpandas_1_1core_1_1resample_1_1Resampler_a5afc7d77fc56a6643358d1ca133b2625} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!sum@{sum}}
+\index{sum@{sum}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+sum (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{int }]{min\+\_\+count = {\ttfamily 0},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute sum of group values.
+
+Parameters
+----------
+numeric_only : bool, default False
+    Include only float, int, boolean columns.
+
+    .. versionchanged:: 2.0.0
+
+        numeric_only no longer accepts ``None``.
+
+min_count : int, default 0
+    The required number of valid values to perform the operation. If fewer
+    than ``min_count`` non-NA values are present the result will be NA.
+
+Returns
+-------
+Series or DataFrame
+    Computed sum of values within each group.
+
+Examples
+--------
+>>> ser = pd.Series([1, 2, 3, 4], index=pd.DatetimeIndex(
+...                 ['2023-01-01', '2023-01-15', '2023-02-01', '2023-02-15']))
+>>> ser
+2023-01-01    1
+2023-01-15    2
+2023-02-01    3
+2023-02-15    4
+dtype: int64
+>>> ser.resample('MS').sum()
+2023-01-01    3
+2023-02-01    7
+Freq: MS, dtype: int64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_aade8f3c061d19df56f3df2d41d92ad00}\label{classpandas_1_1core_1_1resample_1_1Resampler_aade8f3c061d19df56f3df2d41d92ad00} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!transform@{transform}}
+\index{transform@{transform}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+transform (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{arg,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call function producing a like-indexed Series on each group.
+
+Return a Series with the transformed values.
+
+Parameters
+----------
+arg : function
+    To apply to each group. Should return a Series with the same index.
+
+Returns
+-------
+Series
+
+Examples
+--------
+>>> s = pd.Series([1, 2],
+...               index=pd.date_range('20180101',
+...                                   periods=2,
+...                                   freq='1h'))
+>>> s
+2018-01-01 00:00:00    1
+2018-01-01 01:00:00    2
+Freq: h, dtype: int64
+
+>>> resampled = s.resample('15min')
+>>> resampled.transform(lambda x: (x - x.mean()) / x.std())
+2018-01-01 00:00:00   NaN
+2018-01-01 01:00:00   NaN
+Freq: h, dtype: float64
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a85dc5bb9f16f1633be534bb802106603}\label{classpandas_1_1core_1_1resample_1_1Resampler_a85dc5bb9f16f1633be534bb802106603} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!var@{var}}
+\index{var@{var}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{var()}{var()}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+var (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int }]{ddof = {\ttfamily 1},  }\item[{bool }]{numeric\+\_\+only = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute variance of groups, excluding missing values.
+
+Parameters
+----------
+ddof : int, default 1
+    Degrees of freedom.
+
+numeric_only : bool, default False
+    Include only `float`, `int` or `boolean` data.
+
+    .. versionadded:: 1.5.0
+
+    .. versionchanged:: 2.0.0
+
+        numeric_only now defaults to ``False``.
+
+Returns
+-------
+DataFrame or Series
+    Variance of values within each group.
+
+Examples
+--------
+
+>>> ser = pd.Series([1, 3, 2, 4, 3, 8],
+...                 index=pd.DatetimeIndex(['2023-01-01',
+...                                         '2023-01-10',
+...                                         '2023-01-15',
+...                                         '2023-02-01',
+...                                         '2023-02-10',
+...                                         '2023-02-15']))
+>>> ser.resample('MS').var()
+2023-01-01    1.0
+2023-02-01    7.0
+Freq: MS, dtype: float64
+
+>>> ser.resample('MS').var(ddof=0)
+2023-01-01    0.666667
+2023-02-01    4.666667
+Freq: MS, dtype: float64
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ae282446b52cb8bf3fe74b78a0b9a2417}\label{classpandas_1_1core_1_1resample_1_1Resampler_ae282446b52cb8bf3fe74b78a0b9a2417} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_agg\_examples\_doc@{\_agg\_examples\_doc}}
+\index{\_agg\_examples\_doc@{\_agg\_examples\_doc}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_agg\_examples\_doc}{\_agg\_examples\_doc}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+agg\+\_\+examples\+\_\+doc\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ dedent(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a058d4a92a44954448cf885a6e798fe7c}\label{classpandas_1_1core_1_1resample_1_1Resampler_a058d4a92a44954448cf885a6e798fe7c} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_agg\_see\_also\_doc@{\_agg\_see\_also\_doc}}
+\index{\_agg\_see\_also\_doc@{\_agg\_see\_also\_doc}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_agg\_see\_also\_doc}{\_agg\_see\_also\_doc}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+agg\+\_\+see\+\_\+also\+\_\+doc\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ dedent(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_aaff348a4e8a4a13eb741c4820594dcf5}\label{classpandas_1_1core_1_1resample_1_1Resampler_aaff348a4e8a4a13eb741c4820594dcf5} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_attributes@{\_attributes}}
+\index{\_attributes@{\_attributes}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_attributes}{\_attributes}}
+{\footnotesize\ttfamily list pandas.\+core.\+resample.\+Resampler.\+\_\+attributes\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}freq"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}axis"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}closed"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}label"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}convention"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}kind"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}origin"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}offset"{}},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ad8af3f3d548b2c1955db8455822db9b1}\label{classpandas_1_1core_1_1resample_1_1Resampler_ad8af3f3d548b2c1955db8455822db9b1} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_grouper@{\_grouper}}
+\index{\_grouper@{\_grouper}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_grouper}{\_grouper}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1BinGrouper}{Bin\+Grouper}} pandas.\+core.\+resample.\+Resampler.\+\_\+grouper\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a4bbf30d75dcb57389fd161b1458983d8}\label{classpandas_1_1core_1_1resample_1_1Resampler_a4bbf30d75dcb57389fd161b1458983d8} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_grouper@{\_grouper}}
+\index{\_grouper@{\_grouper}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_grouper}{\_grouper}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+grouper\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a309df32e74342db0a8f14fca64cc23aa}\label{classpandas_1_1core_1_1resample_1_1Resampler_a309df32e74342db0a8f14fca64cc23aa} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_indexer@{\_indexer}}
+\index{\_indexer@{\_indexer}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_indexer}{\_indexer}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+indexer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ac47acdd5ac31c6178e7c98c22a54181c}\label{classpandas_1_1core_1_1resample_1_1Resampler_ac47acdd5ac31c6178e7c98c22a54181c} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_internal\_names\_set@{\_internal\_names\_set}}
+\index{\_internal\_names\_set@{\_internal\_names\_set}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_internal\_names\_set}{\_internal\_names\_set}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+internal\+\_\+names\+\_\+set = set(\{"{}obj"{}, "{}ax"{}, "{}\+\_\+indexer"{}\})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ab07c47da90e8bbf3640310e0b57b2a3d}\label{classpandas_1_1core_1_1resample_1_1Resampler_ab07c47da90e8bbf3640310e0b57b2a3d} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_selection@{\_selection}}
+\index{\_selection@{\_selection}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_selection}{\_selection}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+selection\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a2131f77b73326ce66c26d497221f0e52}\label{classpandas_1_1core_1_1resample_1_1Resampler_a2131f77b73326ce66c26d497221f0e52} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_timegrouper@{\_timegrouper}}
+\index{\_timegrouper@{\_timegrouper}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_timegrouper}{\_timegrouper}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1TimeGrouper}{Time\+Grouper}} pandas.\+core.\+resample.\+Resampler.\+\_\+timegrouper\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a96b9cc880ee8d08c627030e2bfe77f82}\label{classpandas_1_1core_1_1resample_1_1Resampler_a96b9cc880ee8d08c627030e2bfe77f82} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!\_timegrouper@{\_timegrouper}}
+\index{\_timegrouper@{\_timegrouper}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{\_timegrouper}{\_timegrouper}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+\_\+timegrouper\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ac385dca96830a1e3edf97409498a8c77}\label{classpandas_1_1core_1_1resample_1_1Resampler_ac385dca96830a1e3edf97409498a8c77} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!agg@{agg}}
+\index{agg@{agg}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{agg}{agg}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+agg = \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1ff1448c5b8b5b187fe859fa9af69dc3}{aggregate}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a28d3b49e0378a4762c96c72025d458b0}\label{classpandas_1_1core_1_1resample_1_1Resampler_a28d3b49e0378a4762c96c72025d458b0} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!apply@{apply}}
+\index{apply@{apply}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{apply}{apply}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+apply = \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler_a1ff1448c5b8b5b187fe859fa9af69dc3}{aggregate}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_afdc4d4161b96a53d4c29053a57d84928}\label{classpandas_1_1core_1_1resample_1_1Resampler_afdc4d4161b96a53d4c29053a57d84928} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!as\_index@{as\_index}}
+\index{as\_index@{as\_index}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{as\_index}{as\_index}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+as\+\_\+index}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a52daf2306eff013718486ecbc3f722ac}\label{classpandas_1_1core_1_1resample_1_1Resampler_a52daf2306eff013718486ecbc3f722ac} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!ax@{ax}}
+\index{ax@{ax}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{ax}{ax}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+ax}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_af92e0aeb7078633e9e383016af714e4b}\label{classpandas_1_1core_1_1resample_1_1Resampler_af92e0aeb7078633e9e383016af714e4b} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!axis@{axis}}
+\index{axis@{axis}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{axis}{axis}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+axis}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a9572fadd18a41640949dca34865612ce}\label{classpandas_1_1core_1_1resample_1_1Resampler_a9572fadd18a41640949dca34865612ce} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!binner@{binner}}
+\index{binner@{binner}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{binner}{binner}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1datetimes_1_1DatetimeIndex}{Datetime\+Index}} pandas.\+core.\+resample.\+Resampler.\+binner \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1timedeltas_1_1TimedeltaIndex}{Timedelta\+Index}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1period_1_1PeriodIndex}{Period\+Index}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_ac3538017c3209ae7718b79ceb2df885e}\label{classpandas_1_1core_1_1resample_1_1Resampler_ac3538017c3209ae7718b79ceb2df885e} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!binner@{binner}}
+\index{binner@{binner}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{binner}{binner}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+binner}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a28ed0fe94be7b839e814d53d7772a574}\label{classpandas_1_1core_1_1resample_1_1Resampler_a28ed0fe94be7b839e814d53d7772a574} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!exclusions@{exclusions}}
+\index{exclusions@{exclusions}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{exclusions}{exclusions}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily frozenset pandas.\+core.\+resample.\+Resampler.\+exclusions = frozenset()\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a15c0e7cb5584d1abb0f68f1cd12fae87}\label{classpandas_1_1core_1_1resample_1_1Resampler_a15c0e7cb5584d1abb0f68f1cd12fae87} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!exclusions@{exclusions}}
+\index{exclusions@{exclusions}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{exclusions}{exclusions}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+exclusions}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a49c6903b7fbd6988ae98a373ffa87f4f}\label{classpandas_1_1core_1_1resample_1_1Resampler_a49c6903b7fbd6988ae98a373ffa87f4f} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!group\_keys@{group\_keys}}
+\index{group\_keys@{group\_keys}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{group\_keys}{group\_keys}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+group\+\_\+keys}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a1b10ce09e0c296ea0ad43808c4c7be32}\label{classpandas_1_1core_1_1resample_1_1Resampler_a1b10ce09e0c296ea0ad43808c4c7be32} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!include\_groups@{include\_groups}}
+\index{include\_groups@{include\_groups}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{include\_groups}{include\_groups}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+include\+\_\+groups}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a146992804d261f8e86d77708b165a972}\label{classpandas_1_1core_1_1resample_1_1Resampler_a146992804d261f8e86d77708b165a972} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!keys@{keys}}
+\index{keys@{keys}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+keys}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_a9de97167ec0ae5e3f4410008df20ff64}\label{classpandas_1_1core_1_1resample_1_1Resampler_a9de97167ec0ae5e3f4410008df20ff64} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!kind@{kind}}
+\index{kind@{kind}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{kind}{kind}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+kind}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_aa86e7c2c3e0e91c976c350ff74815670}\label{classpandas_1_1core_1_1resample_1_1Resampler_aa86e7c2c3e0e91c976c350ff74815670} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!obj@{obj}}
+\index{obj@{obj}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+obj}
+
+\Hypertarget{classpandas_1_1core_1_1resample_1_1Resampler_aa022c3af5e44ce1e18f623211716fba7}\label{classpandas_1_1core_1_1resample_1_1Resampler_aa022c3af5e44ce1e18f623211716fba7} 
+\index{pandas.core.resample.Resampler@{pandas.core.resample.Resampler}!sort@{sort}}
+\index{sort@{sort}!pandas.core.resample.Resampler@{pandas.core.resample.Resampler}}
+\doxysubsubsection{\texorpdfstring{sort}{sort}}
+{\footnotesize\ttfamily pandas.\+core.\+resample.\+Resampler.\+sort}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/\mbox{\hyperlink{resample_8py}{resample.\+py}}\end{DoxyCompactItemize}

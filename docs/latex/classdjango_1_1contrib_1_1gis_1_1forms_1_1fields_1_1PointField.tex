@@ -1,0 +1,117 @@
+\doxysection{Référence de la classe django.\+contrib.\+gis.\+forms.\+fields.\+Point\+Field}
+\hypertarget{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1PointField}{}\label{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1PointField}\index{django.contrib.gis.forms.fields.PointField@{django.contrib.gis.forms.fields.PointField}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+gis.\+forms.\+fields.\+Point\+Field\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+gis.\+forms.\+fields.\+Point\+Field\+:
+% FIG 1
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1PointField_a75cd940ee808ee2d9d71a1b7e35658dd}{geom\+\_\+type}} = "{}POINT"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField}{django.\+contrib.\+gis.\+forms.\+fields.\+Geometry\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a313274f69fbb138c84c82f91a70806f4}{widget}} = \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1widgets_1_1OpenLayersWidget}{Open\+Layers\+Widget}}
+\item 
+str \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a99e081cdd1bfc7538b5bab73bb7a229d}{geom\+\_\+type}} = "{}GEOMETRY"{}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a60a0f0e002db8f98ab4691c1acdf27c3}{default\+\_\+error\+\_\+messages}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field}{django.\+forms.\+fields.\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a7952e3bdcd699b74a8ed804296ea5bad}{widget}} = \mbox{\hyperlink{classdjango_1_1forms_1_1widgets_1_1TextInput}{Text\+Input}}
+\item 
+tuple \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a975f4f041ba5f4a56341be8b10b10726}{hidden\+\_\+widget}}
+\item 
+list \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_ae91c67e5668924a67a2d128346e0c6f0}{default\+\_\+validators}} = \mbox{[}$\,$\mbox{]}
+\item 
+dict \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a4a7d41930128e931c08dfdc386fba355}{default\+\_\+error\+\_\+messages}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a6d56142046377f42093decc2eed11969}{empty\+\_\+values}} = list(validators.\+EMPTY\+\_\+\+VALUES)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField}{django.\+contrib.\+gis.\+forms.\+fields.\+Geometry\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a88b960bdbec80b1d8d3ecc310a5c1a73}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a14ca6131d46bc00e7c3072af6f5ba906}{srid}}=None, \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a99e081cdd1bfc7538b5bab73bb7a229d}{geom\+\_\+type}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_ae019e0c55ed9c72aeb2ee653c689cd36}{to\+\_\+python}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a63084801f88f56d55aed024be093f164}{clean}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a1eea909ca0f411c76fe71d42177c8fdd}{has\+\_\+changed}} (self, \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a6464b191527c5b055566e5ca89c272be}{initial}}, data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field}{django.\+forms.\+fields.\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_ae209db8bfaddaf8bcd2f68ab29a8edc3}{prepare\+\_\+value}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_ac90b34ce03cad26c45f156bef750ff99}{validate}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_afabe16615bb15391e5ac65617f6cc570}{run\+\_\+validators}} (self, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a65d04ad9b63ee4592bfbec274a951483}{bound\+\_\+data}} (self, data, \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a6464b191527c5b055566e5ca89c272be}{initial}})
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a657b6503d815103efeeec5926de4a134}{widget\+\_\+attrs}} (self, \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a7952e3bdcd699b74a8ed804296ea5bad}{widget}})
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a6e6ab322a24c8b9a2d42f19b176decb1}{get\+\_\+bound\+\_\+field}} (self, form, field\+\_\+name)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a7165973a8c42c910d9ecaaa56999eddc}{\+\_\+\+\_\+deepcopy\+\_\+\+\_\+}} (self, memo)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField}{django.\+contrib.\+gis.\+forms.\+fields.\+Geometry\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_a14ca6131d46bc00e7c3072af6f5ba906}{srid}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1GeometryField_afc936d0e43db631a2a0df1d3d1fac0cc}{geom\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field}{django.\+forms.\+fields.\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a49e678fa63bd57ce436ddf01d4b9e7d1}{required}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a9de09dc779383def4ddad13aa1bc0577}{label}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a6464b191527c5b055566e5ca89c272be}{initial}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a8ae6b43d5416dfee0a6ef32fa1ea3be4}{show\+\_\+hidden\+\_\+initial}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a7f3f6048f641c0ab150ebe36cc16877a}{help\+\_\+text}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a38a1159e3de94d460741316c18aaa82b}{disabled}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_aaec051edfdd197b98bc5b984749a4f5c}{label\+\_\+suffix}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a09ed5aa430cff9d6975f2f336d8fd874}{localize}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a4132a790dfd4ca6a68f22658b67a108d}{error\+\_\+messages}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a2d61343b9e935f1decb3efca978e02cc}{validators}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_a35457171fe1dc109bac47c93e34102d9}{template\+\_\+name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field}{django.\+forms.\+fields.\+Field}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1fields_1_1Field_aebcde8dff44cf590a622d4979e95d865}{\+\_\+clean\+\_\+bound\+\_\+field}} (self, bf)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1PointField_a75cd940ee808ee2d9d71a1b7e35658dd}\label{classdjango_1_1contrib_1_1gis_1_1forms_1_1fields_1_1PointField_a75cd940ee808ee2d9d71a1b7e35658dd} 
+\index{django.contrib.gis.forms.fields.PointField@{django.contrib.gis.forms.fields.PointField}!geom\_type@{geom\_type}}
+\index{geom\_type@{geom\_type}!django.contrib.gis.forms.fields.PointField@{django.contrib.gis.forms.fields.PointField}}
+\doxysubsubsection{\texorpdfstring{geom\_type}{geom\_type}}
+{\footnotesize\ttfamily str django.\+contrib.\+gis.\+forms.\+fields.\+Point\+Field.\+geom\+\_\+type = "{}POINT"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/gis/forms/\mbox{\hyperlink{django_2contrib_2gis_2forms_2fields_8py}{fields.\+py}}\end{DoxyCompactItemize}

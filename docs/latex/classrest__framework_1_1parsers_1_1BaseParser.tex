@@ -1,0 +1,53 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+parsers.\+Base\+Parser}
+\hypertarget{classrest__framework_1_1parsers_1_1BaseParser}{}\label{classrest__framework_1_1parsers_1_1BaseParser}\index{rest\_framework.parsers.BaseParser@{rest\_framework.parsers.BaseParser}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+parsers.\+Base\+Parser\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser_adfd4b23e013b564d2868388167dbb57e}{parse}} (self, stream, \mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser_a14d6a8b69cfd67f16ac0011d234371e5}{media\+\_\+type}}=None, parser\+\_\+context=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1parsers_1_1BaseParser_a14d6a8b69cfd67f16ac0011d234371e5}{media\+\_\+type}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}All parsers should extend `BaseParser`, specifying a `media_type`
+attribute, and overriding the `.parse()` method.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1parsers_1_1BaseParser_adfd4b23e013b564d2868388167dbb57e}\label{classrest__framework_1_1parsers_1_1BaseParser_adfd4b23e013b564d2868388167dbb57e} 
+\index{rest\_framework.parsers.BaseParser@{rest\_framework.parsers.BaseParser}!parse@{parse}}
+\index{parse@{parse}!rest\_framework.parsers.BaseParser@{rest\_framework.parsers.BaseParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+parsers.\+Base\+Parser.\+parse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stream,  }\item[{}]{media\+\_\+type = {\ttfamily None},  }\item[{}]{parser\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a stream to read from, return the parsed representation.
+Should return parsed data, or a `DataAndFiles` object consisting of the
+parsed data and files.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1parsers_1_1JSONParser_ad99d514a09e0a9e8747184a0fe79badc}{rest\+\_\+framework.\+parsers.\+JSONParser}}, \mbox{\hyperlink{classrest__framework_1_1parsers_1_1FormParser_a6f1c331e8a54e4b7cb923f60b688e481}{rest\+\_\+framework.\+parsers.\+Form\+Parser}}, \mbox{\hyperlink{classrest__framework_1_1parsers_1_1MultiPartParser_a0043d7b72c9e37757c3bf2f902d35fcd}{rest\+\_\+framework.\+parsers.\+Multi\+Part\+Parser}}, et \mbox{\hyperlink{classrest__framework_1_1parsers_1_1FileUploadParser_a73bac056ed9b575943bbc7631eeee991}{rest\+\_\+framework.\+parsers.\+File\+Upload\+Parser}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1parsers_1_1BaseParser_a14d6a8b69cfd67f16ac0011d234371e5}\label{classrest__framework_1_1parsers_1_1BaseParser_a14d6a8b69cfd67f16ac0011d234371e5} 
+\index{rest\_framework.parsers.BaseParser@{rest\_framework.parsers.BaseParser}!media\_type@{media\_type}}
+\index{media\_type@{media\_type}!rest\_framework.parsers.BaseParser@{rest\_framework.parsers.BaseParser}}
+\doxysubsubsection{\texorpdfstring{media\_type}{media\_type}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+parsers.\+Base\+Parser.\+media\+\_\+type = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{parsers_8py}{parsers.\+py}}\end{DoxyCompactItemize}

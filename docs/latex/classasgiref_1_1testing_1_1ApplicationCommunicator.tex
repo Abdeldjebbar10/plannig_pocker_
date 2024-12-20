@@ -1,0 +1,132 @@
+\doxysection{Référence de la classe asgiref.\+testing.\+Application\+Communicator}
+\hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator}{}\label{classasgiref_1_1testing_1_1ApplicationCommunicator}\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_aba4def005464e08541bc77a56dcc7e92}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a1c2059862ff4ca6e0f97a6482770ee9c}{application}}, \mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a4883f966ebed5d656b997251ab1ee965}{scope}})
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a47cf307481c0cf7f07ce93e988b2a280}{wait}} (self, \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout}{timeout}}=1)
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a09e3351f93043027db0ddb53bc6d4dfb}{stop}} (self, exceptions=True)
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_ad1e7504202fc0e77462288ef0d24f12d}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a7c5caeb5c8a59f7ff640b4d3cc3bd92a}{send\+\_\+input}} (self, message)
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a39f7da7d3144462999e806c165b1bb0b}{receive\+\_\+output}} (self, \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout}{timeout}}=1)
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a62822cebc33e0ba87af0b7426e8a818d}{receive\+\_\+nothing}} (self, \mbox{\hyperlink{classasgiref_1_1timeout_1_1timeout}{timeout}}=0.\+1, interval=0.\+01)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a1c2059862ff4ca6e0f97a6482770ee9c}{application}}
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a4883f966ebed5d656b997251ab1ee965}{scope}}
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a17ff69951808812bb7d50eade6446723}{input\+\_\+queue}}
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_ac2eab70bb6d7e62d229ff61fcd4f82fd}{output\+\_\+queue}}
+\item 
+\mbox{\hyperlink{classasgiref_1_1testing_1_1ApplicationCommunicator_a0a5a51f9ed5b1037488a1b8212723f2b}{future}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Runs an ASGI application in a test mode, allowing sending of
+messages to it and retrieval of messages it sends.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_aba4def005464e08541bc77a56dcc7e92}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_aba4def005464e08541bc77a56dcc7e92} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{application,  }\item[{}]{scope }\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_ad1e7504202fc0e77462288ef0d24f12d}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_ad1e7504202fc0e77462288ef0d24f12d} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a62822cebc33e0ba87af0b7426e8a818d}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a62822cebc33e0ba87af0b7426e8a818d} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!receive\_nothing@{receive\_nothing}}
+\index{receive\_nothing@{receive\_nothing}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{receive\_nothing()}{receive\_nothing()}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+receive\+\_\+nothing (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily 0.1},  }\item[{}]{interval = {\ttfamily 0.01} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks that there is no message to receive in the given time.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a39f7da7d3144462999e806c165b1bb0b}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a39f7da7d3144462999e806c165b1bb0b} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!receive\_output@{receive\_output}}
+\index{receive\_output@{receive\_output}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{receive\_output()}{receive\_output()}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+receive\+\_\+output (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Receives a single message from the application, with optional timeout.
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a7c5caeb5c8a59f7ff640b4d3cc3bd92a}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a7c5caeb5c8a59f7ff640b4d3cc3bd92a} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!send\_input@{send\_input}}
+\index{send\_input@{send\_input}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{send\_input()}{send\_input()}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+send\+\_\+input (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{message }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sends a single message to the application
+\end{DoxyVerb}
+ \Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a09e3351f93043027db0ddb53bc6d4dfb}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a09e3351f93043027db0ddb53bc6d4dfb} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!stop@{stop}}
+\index{stop@{stop}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+stop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exceptions = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a47cf307481c0cf7f07ce93e988b2a280}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a47cf307481c0cf7f07ce93e988b2a280} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!wait@{wait}}
+\index{wait@{wait}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+wait (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timeout = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Waits for the application to stop itself and returns any exceptions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a1c2059862ff4ca6e0f97a6482770ee9c}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a1c2059862ff4ca6e0f97a6482770ee9c} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!application@{application}}
+\index{application@{application}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{application}{application}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+application}
+
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a0a5a51f9ed5b1037488a1b8212723f2b}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a0a5a51f9ed5b1037488a1b8212723f2b} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!future@{future}}
+\index{future@{future}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{future}{future}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+future}
+
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a17ff69951808812bb7d50eade6446723}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a17ff69951808812bb7d50eade6446723} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!input\_queue@{input\_queue}}
+\index{input\_queue@{input\_queue}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{input\_queue}{input\_queue}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+input\+\_\+queue}
+
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_ac2eab70bb6d7e62d229ff61fcd4f82fd}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_ac2eab70bb6d7e62d229ff61fcd4f82fd} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!output\_queue@{output\_queue}}
+\index{output\_queue@{output\_queue}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{output\_queue}{output\_queue}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+output\+\_\+queue}
+
+\Hypertarget{classasgiref_1_1testing_1_1ApplicationCommunicator_a4883f966ebed5d656b997251ab1ee965}\label{classasgiref_1_1testing_1_1ApplicationCommunicator_a4883f966ebed5d656b997251ab1ee965} 
+\index{asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}!scope@{scope}}
+\index{scope@{scope}!asgiref.testing.ApplicationCommunicator@{asgiref.testing.ApplicationCommunicator}}
+\doxysubsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily asgiref.\+testing.\+Application\+Communicator.\+scope}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/asgiref/\mbox{\hyperlink{asgiref_2testing_8py}{testing.\+py}}\end{DoxyCompactItemize}

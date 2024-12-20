@@ -1,0 +1,18 @@
+digraph "django.db.backends.postgresql.features.DatabaseFeatures"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="django.db.backends.postgresql.features.\lDatabaseFeatures",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge7_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="django.db.backends.base.features.\lBaseDatabaseFeatures",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdjango_1_1db_1_1backends_1_1base_1_1features_1_1BaseDatabaseFeatures.html",tooltip=" "];
+  Node3 -> Node2 [id="edge8_Node000002_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" allow_sliced_subqueries\l_with_in\nallows_auto_pk_0\nallows_group_by_lob\nallows_group_by_select\l_index\nallows_group_by_selected\l_pks\nallows_multiple_constraints\l_on_same_fields\natomic_transactions\ncan_clone_databases\ncan_create_inline_fk\ncan_defer_constraint_checks\n...",fontcolor="grey" ];
+  Node3 [id="Node000003",label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [id="edge9_Node000002_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" bare_select_suffix",fontcolor="grey" ];
+  Node4 [id="Node000004",label="str",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [id="edge10_Node000002_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" time_cast_precision",fontcolor="grey" ];
+  Node5 [id="Node000005",label="int",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [id="edge11_Node000001_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" allows_group_by_selected\l_pks\ncan_clone_databases\ncan_defer_constraint\l_checks\ncan_distinct_on_fields\ncan_introspect_materialized\l_views\ncan_release_savepoints\ncan_rename_index\ncan_return_columns_from\l_insert\ncan_return_rows_from\l_bulk_insert\ncan_rollback_ddl\n...",fontcolor="grey" ];
+  Node4 -> Node1 [id="edge12_Node000001_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" create_test_procedure\l_with_int_param_sql\ncreate_test_procedure\l_without_params_sql\ncreate_test_table_with\l_composite_primary_key\ninsert_test_table_with\l_defaults\ntest_now_utc_template",fontcolor="grey" ];
+}

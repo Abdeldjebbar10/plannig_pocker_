@@ -1,0 +1,129 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+validators.\+Unique\+Validator}
+\hypertarget{classrest__framework_1_1validators_1_1UniqueValidator}{}\label{classrest__framework_1_1validators_1_1UniqueValidator}\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+
+
+Graphe de collaboration de rest\+\_\+framework.\+validators.\+Unique\+Validator\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_ad5483ec06a4fca9a3ad885e0d027df21}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a4b0afbafbf4a96ed8a5a6026b5571921}{queryset}}, \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a5275863c814bf2dab7aa30aeb89f0a7d}{message}}=None, \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a385470dcf84eca79fc573607ced4262c}{lookup}}=\textquotesingle{}exact\textquotesingle{})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a86af67930bf680181f55e52b5f3dafe3}{filter\+\_\+queryset}} (self, value, \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a4b0afbafbf4a96ed8a5a6026b5571921}{queryset}}, field\+\_\+name)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_acc53b56b119d4c6c29e697cfaf03cd63}{exclude\+\_\+current\+\_\+instance}} (self, \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a4b0afbafbf4a96ed8a5a6026b5571921}{queryset}}, instance)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_aa6bd428380c89cdff587d628112a120e}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, value, serializer\+\_\+field)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_ac888f3e42efec1673c154527087deea0}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_ad660401180488a9b038306ae420696bd}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a4b0afbafbf4a96ed8a5a6026b5571921}{queryset}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a385470dcf84eca79fc573607ced4262c}{lookup}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a9ebe66c8cc59362dda9d93c41feb535b}{requires\+\_\+context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_a5275863c814bf2dab7aa30aeb89f0a7d}{message}} = \+\_\+(\textquotesingle{}This field must be unique.\textquotesingle{})
+\item 
+bool \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator_ad32a9234bf444f99649068372d1837a2}{requires\+\_\+context}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Validator that corresponds to `unique=True` on a model field.
+
+Should be applied to an individual field on the serializer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_ad5483ec06a4fca9a3ad885e0d027df21}\label{classrest__framework_1_1validators_1_1UniqueValidator_ad5483ec06a4fca9a3ad885e0d027df21} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{queryset,  }\item[{}]{message = {\ttfamily None},  }\item[{}]{lookup = {\ttfamily \textquotesingle{}exact\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_aa6bd428380c89cdff587d628112a120e}\label{classrest__framework_1_1validators_1_1UniqueValidator_aa6bd428380c89cdff587d628112a120e} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value,  }\item[{}]{serializer\+\_\+field }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_ad660401180488a9b038306ae420696bd}\label{classrest__framework_1_1validators_1_1UniqueValidator_ad660401180488a9b038306ae420696bd} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_ac888f3e42efec1673c154527087deea0}\label{classrest__framework_1_1validators_1_1UniqueValidator_ac888f3e42efec1673c154527087deea0} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_acc53b56b119d4c6c29e697cfaf03cd63}\label{classrest__framework_1_1validators_1_1UniqueValidator_acc53b56b119d4c6c29e697cfaf03cd63} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!exclude\_current\_instance@{exclude\_current\_instance}}
+\index{exclude\_current\_instance@{exclude\_current\_instance}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{exclude\_current\_instance()}{exclude\_current\_instance()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+exclude\+\_\+current\+\_\+instance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{queryset,  }\item[{}]{instance }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If an instance is being updated, then do not include
+that instance itself as a uniqueness conflict.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_a86af67930bf680181f55e52b5f3dafe3}\label{classrest__framework_1_1validators_1_1UniqueValidator_a86af67930bf680181f55e52b5f3dafe3} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!filter\_queryset@{filter\_queryset}}
+\index{filter\_queryset@{filter\_queryset}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{filter\_queryset()}{filter\_queryset()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+filter\+\_\+queryset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value,  }\item[{}]{queryset,  }\item[{}]{field\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filter the queryset to all instances matching the given attribute.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_a385470dcf84eca79fc573607ced4262c}\label{classrest__framework_1_1validators_1_1UniqueValidator_a385470dcf84eca79fc573607ced4262c} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!lookup@{lookup}}
+\index{lookup@{lookup}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{lookup}{lookup}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+lookup}
+
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_a5275863c814bf2dab7aa30aeb89f0a7d}\label{classrest__framework_1_1validators_1_1UniqueValidator_a5275863c814bf2dab7aa30aeb89f0a7d} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!message@{message}}
+\index{message@{message}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+message = \+\_\+(\textquotesingle{}This field must be unique.\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_a4b0afbafbf4a96ed8a5a6026b5571921}\label{classrest__framework_1_1validators_1_1UniqueValidator_a4b0afbafbf4a96ed8a5a6026b5571921} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!queryset@{queryset}}
+\index{queryset@{queryset}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{queryset}{queryset}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+queryset}
+
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_ad32a9234bf444f99649068372d1837a2}\label{classrest__framework_1_1validators_1_1UniqueValidator_ad32a9234bf444f99649068372d1837a2} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!requires\_context@{requires\_context}}
+\index{requires\_context@{requires\_context}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{requires\_context}{requires\_context}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool rest\+\_\+framework.\+validators.\+Unique\+Validator.\+requires\+\_\+context = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1validators_1_1UniqueValidator_a9ebe66c8cc59362dda9d93c41feb535b}\label{classrest__framework_1_1validators_1_1UniqueValidator_a9ebe66c8cc59362dda9d93c41feb535b} 
+\index{rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}!requires\_context@{requires\_context}}
+\index{requires\_context@{requires\_context}!rest\_framework.validators.UniqueValidator@{rest\_framework.validators.UniqueValidator}}
+\doxysubsubsection{\texorpdfstring{requires\_context}{requires\_context}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+Unique\+Validator.\+requires\+\_\+context}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2validators_8py}{validators.\+py}}\end{DoxyCompactItemize}

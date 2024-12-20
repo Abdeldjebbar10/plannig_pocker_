@@ -1,0 +1,52 @@
+\doxysection{Référence de la classe numpy.\+typing.\+mypy\+\_\+plugin.\+\_\+\+Numpy\+Plugin}
+\hypertarget{classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin}{}\label{classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin}\index{numpy.typing.mypy\_plugin.\_NumpyPlugin@{numpy.typing.mypy\_plugin.\_NumpyPlugin}}
+
+
+Graphe d\textquotesingle{}héritage de numpy.\+typing.\+mypy\+\_\+plugin.\+\_\+\+Numpy\+Plugin\+:
+% FIG 0
+
+
+Graphe de collaboration de numpy.\+typing.\+mypy\+\_\+plugin.\+\_\+\+Numpy\+Plugin\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{namespacenumpy_1_1typing_1_1mypy__plugin_a5304063134bb1ee95e12cc552e6b08d9}{\+\_\+\+Hook\+Func}} \mbox{\hyperlink{classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin_a4967b77f75dea6a515185a772d238f5a}{get\+\_\+type\+\_\+analyze\+\_\+hook}} (self, str fullname)
+\item 
+list\mbox{[}tuple\mbox{[}int, str, int\mbox{]}\mbox{]} \mbox{\hyperlink{classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin_aefd5b3ba0d2a0b910bf6b3b2c6563bef}{get\+\_\+additional\+\_\+deps}} (self, Mypy\+File file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A mypy plugin for handling versus numpy-specific typing tasks.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin_aefd5b3ba0d2a0b910bf6b3b2c6563bef}\label{classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin_aefd5b3ba0d2a0b910bf6b3b2c6563bef} 
+\index{numpy.typing.mypy\_plugin.\_NumpyPlugin@{numpy.typing.mypy\_plugin.\_NumpyPlugin}!get\_additional\_deps@{get\_additional\_deps}}
+\index{get\_additional\_deps@{get\_additional\_deps}!numpy.typing.mypy\_plugin.\_NumpyPlugin@{numpy.typing.mypy\_plugin.\_NumpyPlugin}}
+\doxysubsubsection{\texorpdfstring{get\_additional\_deps()}{get\_additional\_deps()}}
+{\footnotesize\ttfamily  list\mbox{[}tuple\mbox{[}int, str, int\mbox{]}\mbox{]} numpy.\+typing.\+mypy\+\_\+plugin.\+\_\+\+Numpy\+Plugin.\+get\+\_\+additional\+\_\+deps (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Mypy\+File         }]{file }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle all import-based overrides.
+
+* Import platform-specific extended-precision `numpy.number`
+  subclasses (*e.g.* `numpy.float96`, `numpy.float128` and
+  `numpy.complex256`).
+* Import the appropriate `ctypes` equivalent to `numpy.intp`.\end{DoxyVerb}
+ \Hypertarget{classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin_a4967b77f75dea6a515185a772d238f5a}\label{classnumpy_1_1typing_1_1mypy__plugin_1_1__NumpyPlugin_a4967b77f75dea6a515185a772d238f5a} 
+\index{numpy.typing.mypy\_plugin.\_NumpyPlugin@{numpy.typing.mypy\_plugin.\_NumpyPlugin}!get\_type\_analyze\_hook@{get\_type\_analyze\_hook}}
+\index{get\_type\_analyze\_hook@{get\_type\_analyze\_hook}!numpy.typing.mypy\_plugin.\_NumpyPlugin@{numpy.typing.mypy\_plugin.\_NumpyPlugin}}
+\doxysubsubsection{\texorpdfstring{get\_type\_analyze\_hook()}{get\_type\_analyze\_hook()}}
+{\footnotesize\ttfamily  None \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{namespacenumpy_1_1typing_1_1mypy__plugin_a5304063134bb1ee95e12cc552e6b08d9}{\+\_\+\+Hook\+Func}} numpy.\+typing.\+mypy\+\_\+plugin.\+\_\+\+Numpy\+Plugin.\+get\+\_\+type\+\_\+analyze\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{fullname }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the precision of platform-specific `numpy.number`
+subclasses.
+
+For example: `numpy.int_`, `numpy.longlong` and `numpy.longdouble`.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/typing/\mbox{\hyperlink{mypy__plugin_8py}{mypy\+\_\+plugin.\+py}}\end{DoxyCompactItemize}

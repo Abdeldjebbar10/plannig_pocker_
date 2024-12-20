@@ -1,0 +1,92 @@
+\doxysection{Référence de la classe pandas.\+core.\+internals.\+array\+\_\+manager.\+Null\+Array\+Proxy}
+\hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy}{}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy}\index{pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}}
+
+
+Graphe de collaboration de pandas.\+core.\+internals.\+array\+\_\+manager.\+Null\+Array\+Proxy\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_ae5e54c69a2b24f64a34e461d27a57497}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_abe776023a2b273386ec20ce3a887e489}{n}})
+\item 
+tuple\mbox{[}int\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a70602685c23859a4f80aa0cd2f2fb968}{shape}} (self)
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a8ecce83750251d11b477f6682fdb13c5}{to\+\_\+array}} (self, Dtype\+Obj dtype)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_abe776023a2b273386ec20ce3a887e489}{n}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a4a7427c9b5cdb48e0cb56276f455b198}{ndim}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Proxy object for an all-NA array.
+
+Only stores the length of the array, and not the dtype. The dtype
+will only be known when actually concatenating (after determining the
+common dtype, for which this proxy is ignored).
+Using this object avoids that the internals/concat.py needs to determine
+the proper dtype and array type.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_ae5e54c69a2b24f64a34e461d27a57497}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_ae5e54c69a2b24f64a34e461d27a57497} 
+\index{pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+internals.\+array\+\_\+manager.\+Null\+Array\+Proxy.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a70602685c23859a4f80aa0cd2f2fb968}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a70602685c23859a4f80aa0cd2f2fb968} 
+\index{pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}!shape@{shape}}
+\index{shape@{shape}!pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily  tuple\mbox{[}int\mbox{]} pandas.\+core.\+internals.\+array\+\_\+manager.\+Null\+Array\+Proxy.\+shape (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a8ecce83750251d11b477f6682fdb13c5}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a8ecce83750251d11b477f6682fdb13c5} 
+\index{pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}!to\_array@{to\_array}}
+\index{to\_array@{to\_array}!pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}}
+\doxysubsubsection{\texorpdfstring{to\_array()}{to\_array()}}
+{\footnotesize\ttfamily  Array\+Like pandas.\+core.\+internals.\+array\+\_\+manager.\+Null\+Array\+Proxy.\+to\+\_\+array (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Dtype\+Obj}]{dtype }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper function to create the actual all-NA array from the NullArrayProxy
+object.
+
+Parameters
+----------
+arr : NullArrayProxy
+dtype : the dtype for the resulting array
+
+Returns
+-------
+np.ndarray or ExtensionArray
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_abe776023a2b273386ec20ce3a887e489}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_abe776023a2b273386ec20ce3a887e489} 
+\index{pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}!n@{n}}
+\index{n@{n}!pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+array\+\_\+manager.\+Null\+Array\+Proxy.\+n}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a4a7427c9b5cdb48e0cb56276f455b198}\label{classpandas_1_1core_1_1internals_1_1array__manager_1_1NullArrayProxy_a4a7427c9b5cdb48e0cb56276f455b198} 
+\index{pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}!ndim@{ndim}}
+\index{ndim@{ndim}!pandas.core.internals.array\_manager.NullArrayProxy@{pandas.core.internals.array\_manager.NullArrayProxy}}
+\doxysubsubsection{\texorpdfstring{ndim}{ndim}}
+{\footnotesize\ttfamily int pandas.\+core.\+internals.\+array\+\_\+manager.\+Null\+Array\+Proxy.\+ndim = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/internals/\mbox{\hyperlink{array__manager_8py}{array\+\_\+manager.\+py}}\end{DoxyCompactItemize}

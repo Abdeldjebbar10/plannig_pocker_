@@ -1,0 +1,77 @@
+\doxysection{Référence de la classe django.\+db.\+models.\+fields.\+mixins.\+Field\+Cache\+Mixin}
+\hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin}{}\label{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin}\index{django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+models.\+fields.\+mixins.\+Field\+Cache\+Mixin\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_afec8116613cd756c6b9ef1dfc0a170a5}{get\+\_\+cache\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a9c64c6b6944f928ee9d7ccf42a26f9b0}{cache\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a65351bef708d80dd2e17b6ffd986daca}{get\+\_\+cached\+\_\+value}} (self, instance, default=\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1NOT__PROVIDED}{NOT\+\_\+\+PROVIDED}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_ac56a717e5cc2cfa34a83040b25e350b7}{is\+\_\+cached}} (self, instance)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_acc3d46ea7bacc6edbefd699ad7315c23}{set\+\_\+cached\+\_\+value}} (self, instance, value)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a547e06e85e149d7987d79b78051da706}{delete\+\_\+cached\+\_\+value}} (self, instance)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An API for working with the model's fields value cache.
+
+Subclasses must set self.cache_name to a unique entry for the cache -
+typically the field’s name.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a9c64c6b6944f928ee9d7ccf42a26f9b0}\label{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a9c64c6b6944f928ee9d7ccf42a26f9b0} 
+\index{django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}!cache\_name@{cache\_name}}
+\index{cache\_name@{cache\_name}!django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}}
+\doxysubsubsection{\texorpdfstring{cache\_name()}{cache\_name()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+mixins.\+Field\+Cache\+Mixin.\+cache\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1contrib_1_1contenttypes_1_1fields_1_1GenericForeignKey_a6abf9cb3efb95c137ca644eda3fa3be0}{django.\+contrib.\+contenttypes.\+fields.\+Generic\+Foreign\+Key}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1related_1_1RelatedField_a62562cd00aa087cbaa8ec396ecc35249}{django.\+db.\+models.\+fields.\+related.\+Related\+Field}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1reverse__related_1_1ForeignObjectRel_ac7c8ba72e5021fac78138f1667b6bbd7}{django.\+db.\+models.\+fields.\+reverse\+\_\+related.\+Foreign\+Object\+Rel}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a547e06e85e149d7987d79b78051da706}\label{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a547e06e85e149d7987d79b78051da706} 
+\index{django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}!delete\_cached\_value@{delete\_cached\_value}}
+\index{delete\_cached\_value@{delete\_cached\_value}!django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}}
+\doxysubsubsection{\texorpdfstring{delete\_cached\_value()}{delete\_cached\_value()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+mixins.\+Field\+Cache\+Mixin.\+delete\+\_\+cached\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_afec8116613cd756c6b9ef1dfc0a170a5}\label{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_afec8116613cd756c6b9ef1dfc0a170a5} 
+\index{django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}!get\_cache\_name@{get\_cache\_name}}
+\index{get\_cache\_name@{get\_cache\_name}!django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}}
+\doxysubsubsection{\texorpdfstring{get\_cache\_name()}{get\_cache\_name()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+mixins.\+Field\+Cache\+Mixin.\+get\+\_\+cache\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a65351bef708d80dd2e17b6ffd986daca}\label{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_a65351bef708d80dd2e17b6ffd986daca} 
+\index{django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}!get\_cached\_value@{get\_cached\_value}}
+\index{get\_cached\_value@{get\_cached\_value}!django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}}
+\doxysubsubsection{\texorpdfstring{get\_cached\_value()}{get\_cached\_value()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+mixins.\+Field\+Cache\+Mixin.\+get\+\_\+cached\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance,  }\item[{}]{default = {\ttfamily \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1NOT__PROVIDED}{NOT\+\_\+\+PROVIDED}}} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_ac56a717e5cc2cfa34a83040b25e350b7}\label{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_ac56a717e5cc2cfa34a83040b25e350b7} 
+\index{django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}!is\_cached@{is\_cached}}
+\index{is\_cached@{is\_cached}!django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}}
+\doxysubsubsection{\texorpdfstring{is\_cached()}{is\_cached()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+mixins.\+Field\+Cache\+Mixin.\+is\+\_\+cached (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_acc3d46ea7bacc6edbefd699ad7315c23}\label{classdjango_1_1db_1_1models_1_1fields_1_1mixins_1_1FieldCacheMixin_acc3d46ea7bacc6edbefd699ad7315c23} 
+\index{django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}!set\_cached\_value@{set\_cached\_value}}
+\index{set\_cached\_value@{set\_cached\_value}!django.db.models.fields.mixins.FieldCacheMixin@{django.db.models.fields.mixins.FieldCacheMixin}}
+\doxysubsubsection{\texorpdfstring{set\_cached\_value()}{set\_cached\_value()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+mixins.\+Field\+Cache\+Mixin.\+set\+\_\+cached\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{instance,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/models/fields/\mbox{\hyperlink{django_2db_2models_2fields_2mixins_8py}{mixins.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+\doxysection{Référence de la classe django.\+db.\+models.\+fields.\+Date\+Time\+Check\+Mixin}
+\hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin}{}\label{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin}\index{django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+models.\+fields.\+Date\+Time\+Check\+Mixin\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_ab7287b8bf80b28f6f50dec25d9a67a3a}{check}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a82d4cc11756bdea9ceff2b2aec2222db}{auto\+\_\+now\+\_\+add}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a4d25c5dffd892e67d77531b7bd456535}{auto\+\_\+now}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a92401df93106353f4f8547054f7c4310}{\+\_\+check\+\_\+mutually\+\_\+exclusive\+\_\+options}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a7aa0b31ccc273993a055e1e2d5c0b51f}{\+\_\+check\+\_\+fix\+\_\+default\+\_\+value}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a52fe11faba9f07b16add4cf388b5c8a3}{\+\_\+check\+\_\+if\+\_\+value\+\_\+fixed}} (self, value, now=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a7aa0b31ccc273993a055e1e2d5c0b51f}\label{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a7aa0b31ccc273993a055e1e2d5c0b51f} 
+\index{django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}!\_check\_fix\_default\_value@{\_check\_fix\_default\_value}}
+\index{\_check\_fix\_default\_value@{\_check\_fix\_default\_value}!django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}}
+\doxysubsubsection{\texorpdfstring{\_check\_fix\_default\_value()}{\_check\_fix\_default\_value()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Date\+Time\+Check\+Mixin.\+\_\+check\+\_\+fix\+\_\+default\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1DateField_acad312c8267ad6a4d6daa17634ce3da0}{django.\+db.\+models.\+fields.\+Date\+Field}}, \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeField_ad2a42e7bb3198c3bcf251d42b7c58dbe}{django.\+db.\+models.\+fields.\+Date\+Time\+Field}}, et \mbox{\hyperlink{classdjango_1_1db_1_1models_1_1fields_1_1TimeField_a2a7453f98dddad5b61e3b89f26582997}{django.\+db.\+models.\+fields.\+Time\+Field}}.
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a52fe11faba9f07b16add4cf388b5c8a3}\label{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a52fe11faba9f07b16add4cf388b5c8a3} 
+\index{django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}!\_check\_if\_value\_fixed@{\_check\_if\_value\_fixed}}
+\index{\_check\_if\_value\_fixed@{\_check\_if\_value\_fixed}!django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}}
+\doxysubsubsection{\texorpdfstring{\_check\_if\_value\_fixed()}{\_check\_if\_value\_fixed()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Date\+Time\+Check\+Mixin.\+\_\+check\+\_\+if\+\_\+value\+\_\+fixed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value,  }\item[{}]{now = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if the given value appears to have been provided as a "fixed"
+time value, and include a warning in the returned list if it does. The
+value argument must be a date object or aware/naive datetime object. If
+now is provided, it must be a naive datetime object.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a92401df93106353f4f8547054f7c4310}\label{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a92401df93106353f4f8547054f7c4310} 
+\index{django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}!\_check\_mutually\_exclusive\_options@{\_check\_mutually\_exclusive\_options}}
+\index{\_check\_mutually\_exclusive\_options@{\_check\_mutually\_exclusive\_options}!django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}}
+\doxysubsubsection{\texorpdfstring{\_check\_mutually\_exclusive\_options()}{\_check\_mutually\_exclusive\_options()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Date\+Time\+Check\+Mixin.\+\_\+check\+\_\+mutually\+\_\+exclusive\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_ab7287b8bf80b28f6f50dec25d9a67a3a}\label{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_ab7287b8bf80b28f6f50dec25d9a67a3a} 
+\index{django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}!check@{check}}
+\index{check@{check}!django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Date\+Time\+Check\+Mixin.\+check (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a4d25c5dffd892e67d77531b7bd456535}\label{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a4d25c5dffd892e67d77531b7bd456535} 
+\index{django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}!auto\_now@{auto\_now}}
+\index{auto\_now@{auto\_now}!django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}}
+\doxysubsubsection{\texorpdfstring{auto\_now}{auto\_now}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Date\+Time\+Check\+Mixin.\+auto\+\_\+now}
+
+\Hypertarget{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a82d4cc11756bdea9ceff2b2aec2222db}\label{classdjango_1_1db_1_1models_1_1fields_1_1DateTimeCheckMixin_a82d4cc11756bdea9ceff2b2aec2222db} 
+\index{django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}!auto\_now\_add@{auto\_now\_add}}
+\index{auto\_now\_add@{auto\_now\_add}!django.db.models.fields.DateTimeCheckMixin@{django.db.models.fields.DateTimeCheckMixin}}
+\doxysubsubsection{\texorpdfstring{auto\_now\_add}{auto\_now\_add}}
+{\footnotesize\ttfamily django.\+db.\+models.\+fields.\+Date\+Time\+Check\+Mixin.\+auto\+\_\+now\+\_\+add}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/models/fields/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2django_2db_2models_2fields_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

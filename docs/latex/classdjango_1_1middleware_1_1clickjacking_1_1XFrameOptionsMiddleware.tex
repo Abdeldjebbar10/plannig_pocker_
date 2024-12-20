@@ -1,0 +1,88 @@
+\doxysection{Référence de la classe django.\+middleware.\+clickjacking.\+XFrame\+Options\+Middleware}
+\hypertarget{classdjango_1_1middleware_1_1clickjacking_1_1XFrameOptionsMiddleware}{}\label{classdjango_1_1middleware_1_1clickjacking_1_1XFrameOptionsMiddleware}\index{django.middleware.clickjacking.XFrameOptionsMiddleware@{django.middleware.clickjacking.XFrameOptionsMiddleware}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+middleware.\+clickjacking.\+XFrame\+Options\+Middleware\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+middleware.\+clickjacking.\+XFrame\+Options\+Middleware\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1clickjacking_1_1XFrameOptionsMiddleware_a897494fa8e510cd1e2d1df1c212574fd}{process\+\_\+response}} (self, request, response)
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1clickjacking_1_1XFrameOptionsMiddleware_a644d80d2690ff91b2c14234c4282a98b}{get\+\_\+xframe\+\_\+options\+\_\+value}} (self, request, response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_af9a244ed255c796c1c58a80dc67e4885}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a64f13ae6e5dd3d9df63d75d994b729ae}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a7d9fe62fd0c073a7c43189eede078db5}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a42b3ff600ff2b1e403a5b25fc6d1bbd7}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_acc62ec82889232ae5413c3b9c919c03b}{async\+\_\+mode}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a35f7a3f08af1e0be61e235354d12e038}{process\+\_\+request}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a94f14adc0a9ab43e39794903fd0ce8d8}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_ab0f1eb2f91f83acdf0655a20e0f277af}{async\+\_\+capable}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Set the X-Frame-Options HTTP header in HTTP responses.
+
+Do not set the header if it's already set or if the response contains
+a xframe_options_exempt value set to True.
+
+By default, set the X-Frame-Options header to 'DENY', meaning the response
+cannot be displayed in a frame, regardless of the site attempting to do so.
+To enable the response to be loaded on a frame within the same site, set
+X_FRAME_OPTIONS in your project's Django settings to 'SAMEORIGIN'.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1middleware_1_1clickjacking_1_1XFrameOptionsMiddleware_a644d80d2690ff91b2c14234c4282a98b}\label{classdjango_1_1middleware_1_1clickjacking_1_1XFrameOptionsMiddleware_a644d80d2690ff91b2c14234c4282a98b} 
+\index{django.middleware.clickjacking.XFrameOptionsMiddleware@{django.middleware.clickjacking.XFrameOptionsMiddleware}!get\_xframe\_options\_value@{get\_xframe\_options\_value}}
+\index{get\_xframe\_options\_value@{get\_xframe\_options\_value}!django.middleware.clickjacking.XFrameOptionsMiddleware@{django.middleware.clickjacking.XFrameOptionsMiddleware}}
+\doxysubsubsection{\texorpdfstring{get\_xframe\_options\_value()}{get\_xframe\_options\_value()}}
+{\footnotesize\ttfamily django.\+middleware.\+clickjacking.\+XFrame\+Options\+Middleware.\+get\+\_\+xframe\+\_\+options\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the value to set for the X_FRAME_OPTIONS header. Use the value from
+the X_FRAME_OPTIONS setting, or 'DENY' if not set.
+
+This method can be overridden if needed, allowing it to vary based on
+the request or response.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1middleware_1_1clickjacking_1_1XFrameOptionsMiddleware_a897494fa8e510cd1e2d1df1c212574fd}\label{classdjango_1_1middleware_1_1clickjacking_1_1XFrameOptionsMiddleware_a897494fa8e510cd1e2d1df1c212574fd} 
+\index{django.middleware.clickjacking.XFrameOptionsMiddleware@{django.middleware.clickjacking.XFrameOptionsMiddleware}!process\_response@{process\_response}}
+\index{process\_response@{process\_response}!django.middleware.clickjacking.XFrameOptionsMiddleware@{django.middleware.clickjacking.XFrameOptionsMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_response()}{process\_response()}}
+{\footnotesize\ttfamily django.\+middleware.\+clickjacking.\+XFrame\+Options\+Middleware.\+process\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a3873eda3e7ccef4087b100268d60f9f7}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/middleware/\mbox{\hyperlink{middleware_2clickjacking_8py}{clickjacking.\+py}}\end{DoxyCompactItemize}

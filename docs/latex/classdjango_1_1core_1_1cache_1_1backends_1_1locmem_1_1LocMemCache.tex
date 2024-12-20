@@ -1,0 +1,306 @@
+\doxysection{Référence de la classe django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache}
+\hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache}{}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache}\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a5a3504a51986e5f48d6757e63cd49fe6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, params)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a6c454b0a21a7ef56bac23c2c47a767a9}{add}} (self, key, value, timeout=DEFAULT\+\_\+\+TIMEOUT, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_aeb7aff9d132188d4b106f42045eaf803}{get}} (self, key, default=None, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a257e45a1dc910ee163a95cabdb410e9e}{set}} (self, key, value, timeout=DEFAULT\+\_\+\+TIMEOUT, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a20b36ddc0873e4b5f0a5b2f1c93f396c}{touch}} (self, key, timeout=DEFAULT\+\_\+\+TIMEOUT, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a3ab3b12146a8144a5e580ff4e852635d}{incr}} (self, key, delta=1, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_aeb6759ed9e4eb6930bb77452e453ef5c}{has\+\_\+key}} (self, key, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ae4e405d2ee12f7daa88bdfc864a67106}{delete}} (self, key, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a929bad1fce4b534e368548b4dee5698f}{clear}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a15f7c98ceca7a51785520e8ca101912d}{get\+\_\+backend\+\_\+timeout}} (self, timeout=\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends_1_1base_a2c0af6fa0cd7d6e4dd2d8e90da072b92}{DEFAULT\+\_\+\+TIMEOUT}})
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a5f0fc765671e4fe6607242a26c62c4ba}{make\+\_\+key}} (self, key, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a801be55d320e7b60bb6e2b712a20ee7d}{validate\+\_\+key}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a167e3a6c65f782f011f4a0f4da30d4f5}{make\+\_\+and\+\_\+validate\+\_\+key}} (self, key, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a240bc0a74bf625120792a7f977c7f309}{aadd}} (self, key, value, timeout=\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends_1_1base_a2c0af6fa0cd7d6e4dd2d8e90da072b92}{DEFAULT\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a4898d2d71994eefd0d00cd68c8a5739e}{aget}} (self, key, default=None, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7682df8a975b22b91bc58afec5a3d20c}{aset}} (self, key, value, timeout=\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends_1_1base_a2c0af6fa0cd7d6e4dd2d8e90da072b92}{DEFAULT\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a4e446759fabe15831a63693235cc09c8}{atouch}} (self, key, timeout=\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends_1_1base_a2c0af6fa0cd7d6e4dd2d8e90da072b92}{DEFAULT\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_aed114ca4abffeb420c99b3dc76164f6c}{adelete}} (self, key, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a1d156ab9ced75cecfa673cbee3ac9053}{get\+\_\+many}} (self, keys, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a3c847d4834342dafb281572bbd38e3dd}{aget\+\_\+many}} (self, keys, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_ac478d532b4c2b74987f49ff8291e5343}{get\+\_\+or\+\_\+set}} (self, key, default, timeout=\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends_1_1base_a2c0af6fa0cd7d6e4dd2d8e90da072b92}{DEFAULT\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_aab65dc42c1b5c9f9ef8ea0cdc0478571}{aget\+\_\+or\+\_\+set}} (self, key, default, timeout=\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends_1_1base_a2c0af6fa0cd7d6e4dd2d8e90da072b92}{DEFAULT\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a502444f000456a86ba7e0792bb3d12cb}{ahas\+\_\+key}} (self, key, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a93da7f052049e28c2c74318554aedd2a}{aincr}} (self, key, delta=1, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_abf791b174fbbbaf6694afb37b9f5d8c5}{decr}} (self, key, delta=1, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_ae45565205961a013c3c8632d1d25e450}{adecr}} (self, key, delta=1, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a67da14731a8cddcb89cf68fb6f43cc96}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a148a79bde32c256a462b4a55b1d8b659}{set\+\_\+many}} (self, data, timeout=\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends_1_1base_a2c0af6fa0cd7d6e4dd2d8e90da072b92}{DEFAULT\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a1c8473ed6a57bfec93597de681584dfa}{aset\+\_\+many}} (self, data, timeout=\mbox{\hyperlink{namespacedjango_1_1core_1_1cache_1_1backends_1_1base_a2c0af6fa0cd7d6e4dd2d8e90da072b92}{DEFAULT\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a560226c6c5f05daec8c96ade18aa752b}{delete\+\_\+many}} (self, keys, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a2a5e118c4b4a06f328bcf48a59f73a01}{adelete\+\_\+many}} (self, keys, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a86497d389e3ca57940a7d37120752a67}{aclear}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a3ac7d74ffcfca67e2afee86ecf858b34}{incr\+\_\+version}} (self, key, delta=1, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a5bdde3e56edd5e24f410210663fe1ae3}{aincr\+\_\+version}} (self, key, delta=1, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a26e7d5f60e8c6180922a5ece9fca51ef}{decr\+\_\+version}} (self, key, delta=1, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_ae6123c950ffd55ff9a9bca126abcca9b}{adecr\+\_\+version}} (self, key, delta=1, \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_ae5d10e57a1ab2b99171e943370da8cf3}{close}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_aefc14513a1dcc61988f3447b5f8757ab}{aclose}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a3b6322233591584d7bcf36aa3f2a3ce1}{pickle\+\_\+protocol}} = pickle.\+HIGHEST\+\_\+\+PROTOCOL
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ab9cee357e6913c83895c5a3ac3690f44}{\+\_\+set}} (self, key, value, timeout=DEFAULT\+\_\+\+TIMEOUT)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ad1c92f7bd9d52c5d737090b6cd797ca7}{\+\_\+has\+\_\+expired}} (self, key)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_adf2164454ea6cd90cb637564c5214357}{\+\_\+cull}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a35a0476d20943eec2733379c5bbdaab6}{\+\_\+delete}} (self, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ab300ab1de55119d50bc5646e9e6e8d0d}{\+\_\+cache}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a7de28019ffef59adacbf3ec2fc463592}{\+\_\+expire\+\_\+info}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a0170b25d13334c1fb14fbf3f4dad21a8}{\+\_\+lock}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a52702e00ce0260d76f9e1ff1c86fb05f}{\+\_\+cull\+\_\+frequency}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a2986f95e0e20b07ea03a3b7205b099de}{\+\_\+max\+\_\+entries}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a0b35a53cc811665191b283b31e3f35e6}{\+\_\+cull\+\_\+frequency}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a4fe017dc4f5a09fd29548706cdea145a}{default\+\_\+timeout}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_ab96e0616974c176d521612703727f0bd}{key\+\_\+prefix}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7862c131e536225df3819b9e17bed66a}{version}}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a16f67e600f57cab16f8a80076f86e518}{key\+\_\+func}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_abd44543d1a94ce327f08ab0796deb872}{\+\_\+missing\+\_\+key}} = object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a5a3504a51986e5f48d6757e63cd49fe6}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a5a3504a51986e5f48d6757e63cd49fe6} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{params }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a0c11ea93a0dd286288703ee47e921b4a}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_adf2164454ea6cd90cb637564c5214357}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_adf2164454ea6cd90cb637564c5214357} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_cull@{\_cull}}
+\index{\_cull@{\_cull}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_cull()}{\_cull()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+cull (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a35a0476d20943eec2733379c5bbdaab6}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a35a0476d20943eec2733379c5bbdaab6} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_delete@{\_delete}}
+\index{\_delete@{\_delete}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_delete()}{\_delete()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ad1c92f7bd9d52c5d737090b6cd797ca7}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ad1c92f7bd9d52c5d737090b6cd797ca7} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_has\_expired@{\_has\_expired}}
+\index{\_has\_expired@{\_has\_expired}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_has\_expired()}{\_has\_expired()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+has\+\_\+expired (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ab9cee357e6913c83895c5a3ac3690f44}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ab9cee357e6913c83895c5a3ac3690f44} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_set@{\_set}}
+\index{\_set@{\_set}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_set()}{\_set()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+set (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value,  }\item[{}]{timeout = {\ttfamily DEFAULT\+\_\+TIMEOUT} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a6c454b0a21a7ef56bac23c2c47a767a9}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a6c454b0a21a7ef56bac23c2c47a767a9} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!add@{add}}
+\index{add@{add}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value,  }\item[{}]{timeout = {\ttfamily DEFAULT\+\_\+TIMEOUT},  }\item[{}]{version = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a7f036f842f113548d9477044753cf90d}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a929bad1fce4b534e368548b4dee5698f}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a929bad1fce4b534e368548b4dee5698f} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!clear@{clear}}
+\index{clear@{clear}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_ab2a80dfb0afd392f4d4988e84fd08141}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ae4e405d2ee12f7daa88bdfc864a67106}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ae4e405d2ee12f7daa88bdfc864a67106} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!delete@{delete}}
+\index{delete@{delete}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{version = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_ae500d1351016784f7f7bd128da3f6ed9}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_aeb7aff9d132188d4b106f42045eaf803}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_aeb7aff9d132188d4b106f42045eaf803} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!get@{get}}
+\index{get@{get}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{default = {\ttfamily None},  }\item[{}]{version = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a0b62d7ee9db018b58ddd1eb8711f894f}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_aeb6759ed9e4eb6930bb77452e453ef5c}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_aeb6759ed9e4eb6930bb77452e453ef5c} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!has\_key@{has\_key}}
+\index{has\_key@{has\_key}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{has\_key()}{has\_key()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+has\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{version = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the key is in the cache and has not expired.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a2d06a56d17661d63648e1ec13ae93d3b}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a3ab3b12146a8144a5e580ff4e852635d}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a3ab3b12146a8144a5e580ff4e852635d} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!incr@{incr}}
+\index{incr@{incr}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{incr()}{incr()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+incr (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{delta = {\ttfamily 1},  }\item[{}]{version = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add delta to value in the cache. If the key does not exist, raise a
+ValueError exception.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_ab502f06a18e16d3d1495fdf1dca28831}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a257e45a1dc910ee163a95cabdb410e9e}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a257e45a1dc910ee163a95cabdb410e9e} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!set@{set}}
+\index{set@{set}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+set (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value,  }\item[{}]{timeout = {\ttfamily DEFAULT\+\_\+TIMEOUT},  }\item[{}]{version = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a8614ddc467466b68f3ce8e867a0f0fb1}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a20b36ddc0873e4b5f0a5b2f1c93f396c}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a20b36ddc0873e4b5f0a5b2f1c93f396c} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!touch@{touch}}
+\index{touch@{touch}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{touch()}{touch()}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+touch (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{timeout = {\ttfamily DEFAULT\+\_\+TIMEOUT},  }\item[{}]{version = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1core_1_1cache_1_1backends_1_1base_1_1BaseCache_a378d4da958be716a55ae78ecfd6f9952}{django.\+core.\+cache.\+backends.\+base.\+Base\+Cache}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ab300ab1de55119d50bc5646e9e6e8d0d}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_ab300ab1de55119d50bc5646e9e6e8d0d} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_cache@{\_cache}}
+\index{\_cache@{\_cache}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_cache}{\_cache}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+cache\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a52702e00ce0260d76f9e1ff1c86fb05f}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a52702e00ce0260d76f9e1ff1c86fb05f} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_cull\_frequency@{\_cull\_frequency}}
+\index{\_cull\_frequency@{\_cull\_frequency}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_cull\_frequency}{\_cull\_frequency}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+cull\+\_\+frequency\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a7de28019ffef59adacbf3ec2fc463592}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a7de28019ffef59adacbf3ec2fc463592} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_expire\_info@{\_expire\_info}}
+\index{\_expire\_info@{\_expire\_info}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_expire\_info}{\_expire\_info}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+expire\+\_\+info\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a0170b25d13334c1fb14fbf3f4dad21a8}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a0170b25d13334c1fb14fbf3f4dad21a8} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!\_lock@{\_lock}}
+\index{\_lock@{\_lock}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{\_lock}{\_lock}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+\_\+lock\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a3b6322233591584d7bcf36aa3f2a3ce1}\label{classdjango_1_1core_1_1cache_1_1backends_1_1locmem_1_1LocMemCache_a3b6322233591584d7bcf36aa3f2a3ce1} 
+\index{django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}!pickle\_protocol@{pickle\_protocol}}
+\index{pickle\_protocol@{pickle\_protocol}!django.core.cache.backends.locmem.LocMemCache@{django.core.cache.backends.locmem.LocMemCache}}
+\doxysubsubsection{\texorpdfstring{pickle\_protocol}{pickle\_protocol}}
+{\footnotesize\ttfamily django.\+core.\+cache.\+backends.\+locmem.\+Loc\+Mem\+Cache.\+pickle\+\_\+protocol = pickle.\+HIGHEST\+\_\+\+PROTOCOL\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/core/cache/backends/\mbox{\hyperlink{core_2cache_2backends_2locmem_8py}{locmem.\+py}}\end{DoxyCompactItemize}

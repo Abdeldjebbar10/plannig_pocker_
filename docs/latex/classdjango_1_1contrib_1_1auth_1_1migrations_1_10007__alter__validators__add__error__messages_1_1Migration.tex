@@ -1,0 +1,65 @@
+\doxysection{Référence de la classe django.\+contrib.\+auth.\+migrations.0007\+\_\+alter\+\_\+validators\+\_\+add\+\_\+error\+\_\+messages.\+Migration}
+\hypertarget{classdjango_1_1contrib_1_1auth_1_1migrations_1_10007__alter__validators__add__error__messages_1_1Migration}{}\label{classdjango_1_1contrib_1_1auth_1_1migrations_1_10007__alter__validators__add__error__messages_1_1Migration}\index{django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration@{django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+auth.\+migrations.0007\+\_\+alter\+\_\+validators\+\_\+add\+\_\+error\+\_\+messages.\+Migration\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+auth.\+migrations.0007\+\_\+alter\+\_\+validators\+\_\+add\+\_\+error\+\_\+messages.\+Migration\+:
+% FIG 1
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1migrations_1_10007__alter__validators__add__error__messages_1_1Migration_abaa9f94d6a6ecb9cbfd4e60b32e162c4}{dependencies}}
+\item 
+list \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1migrations_1_10007__alter__validators__add__error__messages_1_1Migration_a95c9bf8c239ba4317a5c4a7ef38d2e1a}{operations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1migrations_1_10007__alter__validators__add__error__messages_1_1Migration_abaa9f94d6a6ecb9cbfd4e60b32e162c4}\label{classdjango_1_1contrib_1_1auth_1_1migrations_1_10007__alter__validators__add__error__messages_1_1Migration_abaa9f94d6a6ecb9cbfd4e60b32e162c4} 
+\index{django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration@{django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration@{django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list django.\+contrib.\+auth.\+migrations.\+0007\+\_\+alter\+\_\+validators\+\_\+add\+\_\+error\+\_\+messages.\+Migration.\+dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}auth"{}},\ \textcolor{stringliteral}{"{}0006\_require\_contenttypes\_0002"{}}),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1migrations_1_10007__alter__validators__add__error__messages_1_1Migration_a95c9bf8c239ba4317a5c4a7ef38d2e1a}\label{classdjango_1_1contrib_1_1auth_1_1migrations_1_10007__alter__validators__add__error__messages_1_1Migration_a95c9bf8c239ba4317a5c4a7ef38d2e1a} 
+\index{django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration@{django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration}!operations@{operations}}
+\index{operations@{operations}!django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration@{django.contrib.auth.migrations.0007\_alter\_validators\_add\_error\_messages.Migration}}
+\doxysubsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list django.\+contrib.\+auth.\+migrations.\+0007\+\_\+alter\+\_\+validators\+\_\+add\+\_\+error\+\_\+messages.\+Migration.\+operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ migrations.AlterField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ model\_name=\textcolor{stringliteral}{"{}user"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ name=\textcolor{stringliteral}{"{}username"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ field=models.CharField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ error\_messages=\{\textcolor{stringliteral}{"{}unique"{}}:\ \textcolor{stringliteral}{"{}A\ user\ with\ that\ username\ already\ exists."{}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ help\_text=(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Required.\ 30\ characters\ or\ fewer.\ Letters,\ digits\ and\ @/./+/-\//\_\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}only."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ max\_length=30,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unique=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ validators=[validators.UnicodeUsernameValidator()],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ verbose\_name=\textcolor{stringliteral}{"{}username"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/auth/migrations/\mbox{\hyperlink{0007__alter__validators__add__error__messages_8py}{0007\+\_\+alter\+\_\+validators\+\_\+add\+\_\+error\+\_\+messages.\+py}}\end{DoxyCompactItemize}

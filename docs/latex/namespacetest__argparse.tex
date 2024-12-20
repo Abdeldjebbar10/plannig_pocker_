@@ -1,0 +1,78 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage test\+\_\+argparse}
+\hypertarget{namespacetest__argparse}{}\label{namespacetest__argparse}\index{test\_argparse@{test\_argparse}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__argparse_a4ef03202caaa352d21df27f897ec882f}{test\+\_\+thread\+\_\+safe\+\_\+argparse\+\_\+cache}} ()
+\item 
+\mbox{\hyperlink{namespacetest__argparse_a70218347fddc27b6ad9003187b0108d1}{test\+\_\+invalid\+\_\+integers}} ()
+\item 
+\mbox{\hyperlink{namespacetest__argparse_a244dd4598abb4742f1c8ad8d83da3422}{test\+\_\+missing\+\_\+arguments}} ()
+\item 
+\mbox{\hyperlink{namespacetest__argparse_acef4f015490130093b106916d2c6ca28}{test\+\_\+too\+\_\+many\+\_\+positional}} ()
+\item 
+\mbox{\hyperlink{namespacetest__argparse_a8882bc84d828c1e59d032e2713d6be85}{test\+\_\+multiple\+\_\+values}} ()
+\item 
+\mbox{\hyperlink{namespacetest__argparse_ab50ae75a3758736249ef507ca492fe09}{test\+\_\+string\+\_\+fallbacks}} ()
+\item 
+\mbox{\hyperlink{namespacetest__argparse_a71a36500dbce324d5211ef88e3cb2c58}{test\+\_\+too\+\_\+many\+\_\+arguments\+\_\+method\+\_\+forwarding}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Tests for the private NumPy argument parsing functionality.
+They mainly exists to ensure good test coverage without having to try the
+weirder cases on actual numpy functions but test them in one place.
+
+The test function is defined in C to be equivalent to (errors may not always
+match exactly, and could be adjusted):
+
+    def func(arg1, /, arg2, *, arg3):
+        i = integer(arg1)  # reproducing the 'i' parsing in Python.
+        return None
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacetest__argparse_a70218347fddc27b6ad9003187b0108d1}\label{namespacetest__argparse_a70218347fddc27b6ad9003187b0108d1} 
+\index{test\_argparse@{test\_argparse}!test\_invalid\_integers@{test\_invalid\_integers}}
+\index{test\_invalid\_integers@{test\_invalid\_integers}!test\_argparse@{test\_argparse}}
+\doxysubsubsection{\texorpdfstring{test\_invalid\_integers()}{test\_invalid\_integers()}}
+{\footnotesize\ttfamily test\+\_\+argparse.\+test\+\_\+invalid\+\_\+integers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__argparse_a244dd4598abb4742f1c8ad8d83da3422}\label{namespacetest__argparse_a244dd4598abb4742f1c8ad8d83da3422} 
+\index{test\_argparse@{test\_argparse}!test\_missing\_arguments@{test\_missing\_arguments}}
+\index{test\_missing\_arguments@{test\_missing\_arguments}!test\_argparse@{test\_argparse}}
+\doxysubsubsection{\texorpdfstring{test\_missing\_arguments()}{test\_missing\_arguments()}}
+{\footnotesize\ttfamily test\+\_\+argparse.\+test\+\_\+missing\+\_\+arguments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__argparse_a8882bc84d828c1e59d032e2713d6be85}\label{namespacetest__argparse_a8882bc84d828c1e59d032e2713d6be85} 
+\index{test\_argparse@{test\_argparse}!test\_multiple\_values@{test\_multiple\_values}}
+\index{test\_multiple\_values@{test\_multiple\_values}!test\_argparse@{test\_argparse}}
+\doxysubsubsection{\texorpdfstring{test\_multiple\_values()}{test\_multiple\_values()}}
+{\footnotesize\ttfamily test\+\_\+argparse.\+test\+\_\+multiple\+\_\+values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__argparse_ab50ae75a3758736249ef507ca492fe09}\label{namespacetest__argparse_ab50ae75a3758736249ef507ca492fe09} 
+\index{test\_argparse@{test\_argparse}!test\_string\_fallbacks@{test\_string\_fallbacks}}
+\index{test\_string\_fallbacks@{test\_string\_fallbacks}!test\_argparse@{test\_argparse}}
+\doxysubsubsection{\texorpdfstring{test\_string\_fallbacks()}{test\_string\_fallbacks()}}
+{\footnotesize\ttfamily test\+\_\+argparse.\+test\+\_\+string\+\_\+fallbacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__argparse_a4ef03202caaa352d21df27f897ec882f}\label{namespacetest__argparse_a4ef03202caaa352d21df27f897ec882f} 
+\index{test\_argparse@{test\_argparse}!test\_thread\_safe\_argparse\_cache@{test\_thread\_safe\_argparse\_cache}}
+\index{test\_thread\_safe\_argparse\_cache@{test\_thread\_safe\_argparse\_cache}!test\_argparse@{test\_argparse}}
+\doxysubsubsection{\texorpdfstring{test\_thread\_safe\_argparse\_cache()}{test\_thread\_safe\_argparse\_cache()}}
+{\footnotesize\ttfamily test\+\_\+argparse.\+test\+\_\+thread\+\_\+safe\+\_\+argparse\+\_\+cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__argparse_a71a36500dbce324d5211ef88e3cb2c58}\label{namespacetest__argparse_a71a36500dbce324d5211ef88e3cb2c58} 
+\index{test\_argparse@{test\_argparse}!test\_too\_many\_arguments\_method\_forwarding@{test\_too\_many\_arguments\_method\_forwarding}}
+\index{test\_too\_many\_arguments\_method\_forwarding@{test\_too\_many\_arguments\_method\_forwarding}!test\_argparse@{test\_argparse}}
+\doxysubsubsection{\texorpdfstring{test\_too\_many\_arguments\_method\_forwarding()}{test\_too\_many\_arguments\_method\_forwarding()}}
+{\footnotesize\ttfamily test\+\_\+argparse.\+test\+\_\+too\+\_\+many\+\_\+arguments\+\_\+method\+\_\+forwarding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__argparse_acef4f015490130093b106916d2c6ca28}\label{namespacetest__argparse_acef4f015490130093b106916d2c6ca28} 
+\index{test\_argparse@{test\_argparse}!test\_too\_many\_positional@{test\_too\_many\_positional}}
+\index{test\_too\_many\_positional@{test\_too\_many\_positional}!test\_argparse@{test\_argparse}}
+\doxysubsubsection{\texorpdfstring{test\_too\_many\_positional()}{test\_too\_many\_positional()}}
+{\footnotesize\ttfamily test\+\_\+argparse.\+test\+\_\+too\+\_\+many\+\_\+positional (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

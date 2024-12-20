@@ -1,0 +1,104 @@
+\doxysection{Référence de la classe django.\+contrib.\+auth.\+middleware.\+Login\+Required\+Middleware}
+\hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware}{}\label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware}\index{django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+auth.\+middleware.\+Login\+Required\+Middleware\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+auth.\+middleware.\+Login\+Required\+Middleware\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a766892abc3764a81c774676d6450009f}{process\+\_\+view}} (self, request, view\+\_\+func, view\+\_\+args, view\+\_\+kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a3f42d2613933d49634b6e6ff078b6fd4}{get\+\_\+login\+\_\+url}} (self, view\+\_\+func)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_aaea56ff06db5296af4424b13f4b46ff9}{get\+\_\+redirect\+\_\+field\+\_\+name}} (self, view\+\_\+func)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a8d678a2cdd1a40a630d1b77dae6f8c00}{handle\+\_\+no\+\_\+permission}} (self, request, view\+\_\+func)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_af9a244ed255c796c1c58a80dc67e4885}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a64f13ae6e5dd3d9df63d75d994b729ae}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a7d9fe62fd0c073a7c43189eede078db5}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a42b3ff600ff2b1e403a5b25fc6d1bbd7}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a727bb2e5735290ebee4900b429123ac9}{redirect\+\_\+field\+\_\+name}} = REDIRECT\+\_\+\+FIELD\+\_\+\+NAME
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a94f14adc0a9ab43e39794903fd0ce8d8}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_ab0f1eb2f91f83acdf0655a20e0f277af}{async\+\_\+capable}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_acc62ec82889232ae5413c3b9c919c03b}{async\+\_\+mode}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a35f7a3f08af1e0be61e235354d12e038}{process\+\_\+request}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a3873eda3e7ccef4087b100268d60f9f7}{process\+\_\+response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Middleware that redirects all unauthenticated requests to a login page.
+
+Views using the login_not_required decorator will not be redirected.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a3f42d2613933d49634b6e6ff078b6fd4}\label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a3f42d2613933d49634b6e6ff078b6fd4} 
+\index{django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}!get\_login\_url@{get\_login\_url}}
+\index{get\_login\_url@{get\_login\_url}!django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}}
+\doxysubsubsection{\texorpdfstring{get\_login\_url()}{get\_login\_url()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+middleware.\+Login\+Required\+Middleware.\+get\+\_\+login\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{view\+\_\+func }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_aaea56ff06db5296af4424b13f4b46ff9}\label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_aaea56ff06db5296af4424b13f4b46ff9} 
+\index{django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}!get\_redirect\_field\_name@{get\_redirect\_field\_name}}
+\index{get\_redirect\_field\_name@{get\_redirect\_field\_name}!django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}}
+\doxysubsubsection{\texorpdfstring{get\_redirect\_field\_name()}{get\_redirect\_field\_name()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+middleware.\+Login\+Required\+Middleware.\+get\+\_\+redirect\+\_\+field\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{view\+\_\+func }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a8d678a2cdd1a40a630d1b77dae6f8c00}\label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a8d678a2cdd1a40a630d1b77dae6f8c00} 
+\index{django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}!handle\_no\_permission@{handle\_no\_permission}}
+\index{handle\_no\_permission@{handle\_no\_permission}!django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}}
+\doxysubsubsection{\texorpdfstring{handle\_no\_permission()}{handle\_no\_permission()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+middleware.\+Login\+Required\+Middleware.\+handle\+\_\+no\+\_\+permission (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{view\+\_\+func }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a766892abc3764a81c774676d6450009f}\label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a766892abc3764a81c774676d6450009f} 
+\index{django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}!process\_view@{process\_view}}
+\index{process\_view@{process\_view}!django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_view()}{process\_view()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+middleware.\+Login\+Required\+Middleware.\+process\+\_\+view (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{view\+\_\+func,  }\item[{}]{view\+\_\+args,  }\item[{}]{view\+\_\+kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a727bb2e5735290ebee4900b429123ac9}\label{classdjango_1_1contrib_1_1auth_1_1middleware_1_1LoginRequiredMiddleware_a727bb2e5735290ebee4900b429123ac9} 
+\index{django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}!redirect\_field\_name@{redirect\_field\_name}}
+\index{redirect\_field\_name@{redirect\_field\_name}!django.contrib.auth.middleware.LoginRequiredMiddleware@{django.contrib.auth.middleware.LoginRequiredMiddleware}}
+\doxysubsubsection{\texorpdfstring{redirect\_field\_name}{redirect\_field\_name}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+middleware.\+Login\+Required\+Middleware.\+redirect\+\_\+field\+\_\+name = REDIRECT\+\_\+\+FIELD\+\_\+\+NAME\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/auth/\mbox{\hyperlink{django_2contrib_2auth_2middleware_8py}{middleware.\+py}}\end{DoxyCompactItemize}

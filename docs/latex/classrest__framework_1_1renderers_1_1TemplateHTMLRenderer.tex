@@ -1,0 +1,162 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer}
+\hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer}{}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer}\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ab09c2323ddfa06e84a17c67beaecc935}{render}} (self, data, accepted\+\_\+media\+\_\+type=None, renderer\+\_\+context=None)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_abbc0a27f9f8b73908ea03751d1ced23f}{resolve\+\_\+template}} (self, template\+\_\+names)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ad6425c285f5042d096327d19aa6af9a8}{get\+\_\+template\+\_\+context}} (self, data, renderer\+\_\+context)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_aa2224b90d92fd0f1cc9ff6c5e38fbfcc}{get\+\_\+template\+\_\+names}} (self, response, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a5abe1d3a3c7181b1ec05a66dea62e1e5}{get\+\_\+exception\+\_\+template}} (self, response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_af043e2920f1fe8884495fffcb88d4696}{media\+\_\+type}} = \textquotesingle{}text/html\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a5a9f8c2e38aa9a7be14157753f0276ea}{format}} = \textquotesingle{}html\textquotesingle{}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a7f88bbfcb5c931e11daea93883e93768}{template\+\_\+name}} = None
+\item 
+list \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a06f6aef5dee9ff0a3d3302997fe6b2cf}{exception\+\_\+template\+\_\+names}}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a01bdbb54f4b779fd5674cef3d31de551}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer}{rest\+\_\+framework.\+renderers.\+Base\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a4b069d932469c3bbded458f53752216f}{media\+\_\+type}} = None
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_ae5e3a1c630b0a2fe8313136879445163}{format}} = None
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a6b2cb330c059e96c05e436f1f113154d}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a9395a7164e794d61f52bcad01cf4e3ed}{render\+\_\+style}} = \textquotesingle{}text\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An HTML renderer for use with templates.
+
+The data supplied to the Response object should be a dictionary that will
+be used as context for the template.
+
+The template name is determined by (in order of preference):
+
+1. An explicit `.template_name` attribute set on the response.
+2. An explicit `.template_name` attribute set on this class.
+3. The return result of calling `view.get_template_names()`.
+
+For example:
+    data = {'users': User.objects.all()}
+    return Response(data, template_name='users.html')
+
+For pre-rendered HTML, see StaticHTMLRenderer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a5abe1d3a3c7181b1ec05a66dea62e1e5}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a5abe1d3a3c7181b1ec05a66dea62e1e5} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!get\_exception\_template@{get\_exception\_template}}
+\index{get\_exception\_template@{get\_exception\_template}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{get\_exception\_template()}{get\_exception\_template()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+get\+\_\+exception\+\_\+template (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ad6425c285f5042d096327d19aa6af9a8}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ad6425c285f5042d096327d19aa6af9a8} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!get\_template\_context@{get\_template\_context}}
+\index{get\_template\_context@{get\_template\_context}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{get\_template\_context()}{get\_template\_context()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+get\+\_\+template\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{renderer\+\_\+context }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_aa2224b90d92fd0f1cc9ff6c5e38fbfcc}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_aa2224b90d92fd0f1cc9ff6c5e38fbfcc} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!get\_template\_names@{get\_template\_names}}
+\index{get\_template\_names@{get\_template\_names}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{get\_template\_names()}{get\_template\_names()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+get\+\_\+template\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{response,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ab09c2323ddfa06e84a17c67beaecc935}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ab09c2323ddfa06e84a17c67beaecc935} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!render@{render}}
+\index{render@{render}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+render (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{accepted\+\_\+media\+\_\+type = {\ttfamily None},  }\item[{}]{renderer\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Renders data to HTML, using Django's standard template rendering.
+
+The template name is determined by (in order of preference):
+
+1. An explicit .template_name set on the response.
+2. An explicit .template_name set on this class.
+3. The return result of calling view.get_template_names().
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a5a896320e27ee4c3cd59b9b75816b26e}{rest\+\_\+framework.\+renderers.\+Base\+Renderer}}.
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a82352a7cb58f7d98ae85decec9f6ea1b}{rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer}}.
+
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_abbc0a27f9f8b73908ea03751d1ced23f}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_abbc0a27f9f8b73908ea03751d1ced23f} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!resolve\_template@{resolve\_template}}
+\index{resolve\_template@{resolve\_template}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{resolve\_template()}{resolve\_template()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+resolve\+\_\+template (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{template\+\_\+names }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a01bdbb54f4b779fd5674cef3d31de551}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a01bdbb54f4b779fd5674cef3d31de551} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!charset@{charset}}
+\index{charset@{charset}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{charset}{charset}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+charset = \textquotesingle{}utf-\/8\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a06f6aef5dee9ff0a3d3302997fe6b2cf}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a06f6aef5dee9ff0a3d3302997fe6b2cf} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!exception\_template\_names@{exception\_template\_names}}
+\index{exception\_template\_names@{exception\_template\_names}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{exception\_template\_names}{exception\_template\_names}}
+{\footnotesize\ttfamily list rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+exception\+\_\+template\+\_\+names\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%(status\_code)s.html'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'api\_exception.html'}}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a5a9f8c2e38aa9a7be14157753f0276ea}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a5a9f8c2e38aa9a7be14157753f0276ea} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!format@{format}}
+\index{format@{format}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+format = \textquotesingle{}html\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_af043e2920f1fe8884495fffcb88d4696}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_af043e2920f1fe8884495fffcb88d4696} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!media\_type@{media\_type}}
+\index{media\_type@{media\_type}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{media\_type}{media\_type}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+media\+\_\+type = \textquotesingle{}text/html\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a7f88bbfcb5c931e11daea93883e93768}\label{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a7f88bbfcb5c931e11daea93883e93768} 
+\index{rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}!template\_name@{template\_name}}
+\index{template\_name@{template\_name}!rest\_framework.renderers.TemplateHTMLRenderer@{rest\_framework.renderers.TemplateHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{template\_name}{template\_name}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer.\+template\+\_\+name = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2renderers_8py}{renderers.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+authentication.\+Remote\+User\+Authentication}
+\hypertarget{classrest__framework_1_1authentication_1_1RemoteUserAuthentication}{}\label{classrest__framework_1_1authentication_1_1RemoteUserAuthentication}\index{rest\_framework.authentication.RemoteUserAuthentication@{rest\_framework.authentication.RemoteUserAuthentication}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+authentication.\+Remote\+User\+Authentication\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+authentication.\+Remote\+User\+Authentication\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1RemoteUserAuthentication_ad8ce42bf5a003f76052815e4abab2d85}{authenticate}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication}{rest\+\_\+framework.\+authentication.\+Base\+Authentication}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication_a9bca2891f519f47ceeecad0d1c02333a}{authenticate\+\_\+header}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1authentication_1_1RemoteUserAuthentication_aa1e843ffede55e9a3cb775b70942e14c}{header}} = "{}REMOTE\+\_\+\+USER"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}REMOTE_USER authentication.
+
+To use this, set up your web server to perform authentication, which will
+set the REMOTE_USER environment variable. You will need to have
+'django.contrib.auth.backends.RemoteUserBackend in your
+AUTHENTICATION_BACKENDS setting
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1authentication_1_1RemoteUserAuthentication_ad8ce42bf5a003f76052815e4abab2d85}\label{classrest__framework_1_1authentication_1_1RemoteUserAuthentication_ad8ce42bf5a003f76052815e4abab2d85} 
+\index{rest\_framework.authentication.RemoteUserAuthentication@{rest\_framework.authentication.RemoteUserAuthentication}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!rest\_framework.authentication.RemoteUserAuthentication@{rest\_framework.authentication.RemoteUserAuthentication}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+Remote\+User\+Authentication.\+authenticate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Authenticate the request and return a two-tuple of (user, token).
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication_ae3bb4add98312b6937c33b263feae691}{rest\+\_\+framework.\+authentication.\+Base\+Authentication}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1authentication_1_1RemoteUserAuthentication_aa1e843ffede55e9a3cb775b70942e14c}\label{classrest__framework_1_1authentication_1_1RemoteUserAuthentication_aa1e843ffede55e9a3cb775b70942e14c} 
+\index{rest\_framework.authentication.RemoteUserAuthentication@{rest\_framework.authentication.RemoteUserAuthentication}!header@{header}}
+\index{header@{header}!rest\_framework.authentication.RemoteUserAuthentication@{rest\_framework.authentication.RemoteUserAuthentication}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+authentication.\+Remote\+User\+Authentication.\+header = "{}REMOTE\+\_\+\+USER"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{authentication_8py}{authentication.\+py}}\end{DoxyCompactItemize}

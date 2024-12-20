@@ -1,0 +1,130 @@
+\doxysection{Référence de la classe django.\+db.\+transaction.\+Atomic}
+\hypertarget{classdjango_1_1db_1_1transaction_1_1Atomic}{}\label{classdjango_1_1db_1_1transaction_1_1Atomic}\index{django.db.transaction.Atomic@{django.db.transaction.Atomic}}
+
+
+Decorators / context managers \#.  
+
+
+
+
+Graphe d\textquotesingle{}héritage de django.\+db.\+transaction.\+Atomic\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+db.\+transaction.\+Atomic\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_ad728f8d8a3b1af85dfb8f6cc7c8a431a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_aa12519438a82a78208b7f3cd2f6463c2}{using}}, \mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_a01e2bc011605d4d7a107d77ba299ed23}{savepoint}}, \mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_a7def218b3dfe9ee22e3a5e4cb5736156}{durable}})
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_ad19b841c87b4bff436a8f622adee1882}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_a20a8651ff8b8eb8555f3066c32af902a}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, traceback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_aa12519438a82a78208b7f3cd2f6463c2}{using}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_a01e2bc011605d4d7a107d77ba299ed23}{savepoint}}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_a7def218b3dfe9ee22e3a5e4cb5736156}{durable}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1db_1_1transaction_1_1Atomic_a803dd630eff0d142eb0653b00943018e}{\+\_\+from\+\_\+testcase}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Decorators / context managers \#. 
+
+\begin{DoxyVerb}Guarantee the atomic execution of a given block.
+
+An instance can be used either as a decorator or as a context manager.
+
+When it's used as a decorator, __call__ wraps the execution of the
+decorated function in the instance itself, used as a context manager.
+
+When it's used as a context manager, __enter__ creates a transaction or a
+savepoint, depending on whether a transaction is already in progress, and
+__exit__ commits the transaction or releases the savepoint on normal exit,
+and rolls back the transaction or to the savepoint on exceptions.
+
+It's possible to disable the creation of savepoints if the goal is to
+ensure that some code runs within a transaction without creating overhead.
+
+A stack of savepoints identifiers is maintained as an attribute of the
+connection. None denotes the absence of a savepoint.
+
+This allows reentrancy even if the same AtomicWrapper is reused. For
+example, it's possible to define `oa = atomic('other')` and use `@oa` or
+`with oa:` multiple times.
+
+Since database connections are thread-local, this is thread-safe.
+
+An atomic block can be tagged as durable. In this case, raise a
+RuntimeError if it's nested within another atomic block. This guarantees
+that database changes in a durable block are committed to the database when
+the block exists without error.
+
+This is a private API.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1db_1_1transaction_1_1Atomic_ad728f8d8a3b1af85dfb8f6cc7c8a431a}\label{classdjango_1_1db_1_1transaction_1_1Atomic_ad728f8d8a3b1af85dfb8f6cc7c8a431a} 
+\index{django.db.transaction.Atomic@{django.db.transaction.Atomic}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.db.transaction.Atomic@{django.db.transaction.Atomic}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+transaction.\+Atomic.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{using,  }\item[{}]{savepoint,  }\item[{}]{durable }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1db_1_1transaction_1_1Atomic_ad19b841c87b4bff436a8f622adee1882}\label{classdjango_1_1db_1_1transaction_1_1Atomic_ad19b841c87b4bff436a8f622adee1882} 
+\index{django.db.transaction.Atomic@{django.db.transaction.Atomic}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!django.db.transaction.Atomic@{django.db.transaction.Atomic}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+transaction.\+Atomic.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1db_1_1transaction_1_1Atomic_a20a8651ff8b8eb8555f3066c32af902a}\label{classdjango_1_1db_1_1transaction_1_1Atomic_a20a8651ff8b8eb8555f3066c32af902a} 
+\index{django.db.transaction.Atomic@{django.db.transaction.Atomic}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!django.db.transaction.Atomic@{django.db.transaction.Atomic}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily django.\+db.\+transaction.\+Atomic.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exc\+\_\+type,  }\item[{}]{exc\+\_\+value,  }\item[{}]{traceback }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1db_1_1transaction_1_1Atomic_a803dd630eff0d142eb0653b00943018e}\label{classdjango_1_1db_1_1transaction_1_1Atomic_a803dd630eff0d142eb0653b00943018e} 
+\index{django.db.transaction.Atomic@{django.db.transaction.Atomic}!\_from\_testcase@{\_from\_testcase}}
+\index{\_from\_testcase@{\_from\_testcase}!django.db.transaction.Atomic@{django.db.transaction.Atomic}}
+\doxysubsubsection{\texorpdfstring{\_from\_testcase}{\_from\_testcase}}
+{\footnotesize\ttfamily django.\+db.\+transaction.\+Atomic.\+\_\+from\+\_\+testcase\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1db_1_1transaction_1_1Atomic_a7def218b3dfe9ee22e3a5e4cb5736156}\label{classdjango_1_1db_1_1transaction_1_1Atomic_a7def218b3dfe9ee22e3a5e4cb5736156} 
+\index{django.db.transaction.Atomic@{django.db.transaction.Atomic}!durable@{durable}}
+\index{durable@{durable}!django.db.transaction.Atomic@{django.db.transaction.Atomic}}
+\doxysubsubsection{\texorpdfstring{durable}{durable}}
+{\footnotesize\ttfamily django.\+db.\+transaction.\+Atomic.\+durable}
+
+\Hypertarget{classdjango_1_1db_1_1transaction_1_1Atomic_a01e2bc011605d4d7a107d77ba299ed23}\label{classdjango_1_1db_1_1transaction_1_1Atomic_a01e2bc011605d4d7a107d77ba299ed23} 
+\index{django.db.transaction.Atomic@{django.db.transaction.Atomic}!savepoint@{savepoint}}
+\index{savepoint@{savepoint}!django.db.transaction.Atomic@{django.db.transaction.Atomic}}
+\doxysubsubsection{\texorpdfstring{savepoint}{savepoint}}
+{\footnotesize\ttfamily django.\+db.\+transaction.\+Atomic.\+savepoint}
+
+\Hypertarget{classdjango_1_1db_1_1transaction_1_1Atomic_aa12519438a82a78208b7f3cd2f6463c2}\label{classdjango_1_1db_1_1transaction_1_1Atomic_aa12519438a82a78208b7f3cd2f6463c2} 
+\index{django.db.transaction.Atomic@{django.db.transaction.Atomic}!using@{using}}
+\index{using@{using}!django.db.transaction.Atomic@{django.db.transaction.Atomic}}
+\doxysubsubsection{\texorpdfstring{using}{using}}
+{\footnotesize\ttfamily django.\+db.\+transaction.\+Atomic.\+using}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/db/\mbox{\hyperlink{transaction_8py}{transaction.\+py}}\end{DoxyCompactItemize}

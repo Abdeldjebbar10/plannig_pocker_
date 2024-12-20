@@ -1,0 +1,26 @@
+digraph "django.contrib.gis.db.models.lookups.BBContainsLookup"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="django.contrib.gis.db.models.lookups.\lBBContainsLookup",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge11_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="django.contrib.gis.db.models.lookups.\lGISLookup",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdjango_1_1contrib_1_1gis_1_1db_1_1models_1_1lookups_1_1GISLookup.html",tooltip=" "];
+  Node3 -> Node2 [id="edge12_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="django.db.models.lookups.\lLookup",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdjango_1_1db_1_1models_1_1lookups_1_1Lookup.html",tooltip=" "];
+  Node4 -> Node3 [id="edge13_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="django.db.models.expressions.\lExpression",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdjango_1_1db_1_1models_1_1expressions_1_1Expression.html",tooltip=" "];
+  Node5 -> Node4 [id="edge14_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="django.db.models.expressions.\lBaseExpression",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdjango_1_1db_1_1models_1_1expressions_1_1BaseExpression.html",tooltip=" "];
+  Node6 -> Node5 [id="edge15_Node000005_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" _output_field_resolved\l_to_none\nallowed_default\nconstraint_validation\l_compatible\nfilterable\nis_summary\nwindow_compatible",fontcolor="grey" ];
+  Node6 [id="Node000006",label="bool",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node4 [id="edge16_Node000004_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="django.db.models.expressions.\lCombinable",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdjango_1_1db_1_1models_1_1expressions_1_1Combinable.html",tooltip=" "];
+  Node8 -> Node7 [id="edge17_Node000007_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" ADD\nBITAND\nBITLEFTSHIFT\nBITOR\nBITRIGHTSHIFT\nBITXOR\nDIV\nMOD\nMUL\nPOW\n...",fontcolor="grey" ];
+  Node8 [id="Node000008",label="str",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node3 [id="edge18_Node000003_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" can_use_none_as_rhs\nprepare_rhs",fontcolor="grey" ];
+  Node6 -> Node2 [id="edge19_Node000002_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" distance",fontcolor="grey" ];
+  Node8 -> Node1 [id="edge20_Node000001_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" lookup_name",fontcolor="grey" ];
+}

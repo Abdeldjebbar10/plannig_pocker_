@@ -1,0 +1,63 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+throttling.\+Base\+Throttle}
+\hypertarget{classrest__framework_1_1throttling_1_1BaseThrottle}{}\label{classrest__framework_1_1throttling_1_1BaseThrottle}\index{rest\_framework.throttling.BaseThrottle@{rest\_framework.throttling.BaseThrottle}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+throttling.\+Base\+Throttle\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1BaseThrottle_a5248b8c89b2b927e53d55573de712d76}{allow\+\_\+request}} (self, request, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1BaseThrottle_a11bd4cabe5a620a88c69e0b89eda0bb0}{get\+\_\+ident}} (self, request)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1throttling_1_1BaseThrottle_a455737b32e1aa740572507aa5aa1f408}{wait}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Rate throttling of requests.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1throttling_1_1BaseThrottle_a5248b8c89b2b927e53d55573de712d76}\label{classrest__framework_1_1throttling_1_1BaseThrottle_a5248b8c89b2b927e53d55573de712d76} 
+\index{rest\_framework.throttling.BaseThrottle@{rest\_framework.throttling.BaseThrottle}!allow\_request@{allow\_request}}
+\index{allow\_request@{allow\_request}!rest\_framework.throttling.BaseThrottle@{rest\_framework.throttling.BaseThrottle}}
+\doxysubsubsection{\texorpdfstring{allow\_request()}{allow\_request()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Base\+Throttle.\+allow\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return `True` if the request should be allowed, `False` otherwise.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a5625c445eb86931df5a6e79b8d44fbb6}{rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle}}, et \mbox{\hyperlink{classrest__framework_1_1throttling_1_1ScopedRateThrottle_a29691987e63bfeb0b1dbe7b75f3ebdfb}{rest\+\_\+framework.\+throttling.\+Scoped\+Rate\+Throttle}}.
+
+\Hypertarget{classrest__framework_1_1throttling_1_1BaseThrottle_a11bd4cabe5a620a88c69e0b89eda0bb0}\label{classrest__framework_1_1throttling_1_1BaseThrottle_a11bd4cabe5a620a88c69e0b89eda0bb0} 
+\index{rest\_framework.throttling.BaseThrottle@{rest\_framework.throttling.BaseThrottle}!get\_ident@{get\_ident}}
+\index{get\_ident@{get\_ident}!rest\_framework.throttling.BaseThrottle@{rest\_framework.throttling.BaseThrottle}}
+\doxysubsubsection{\texorpdfstring{get\_ident()}{get\_ident()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Base\+Throttle.\+get\+\_\+ident (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Identify the machine making the request by parsing HTTP_X_FORWARDED_FOR
+if present and number of proxies is > 0. If not use all of
+HTTP_X_FORWARDED_FOR if it is available, if not use REMOTE_ADDR.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1throttling_1_1BaseThrottle_a455737b32e1aa740572507aa5aa1f408}\label{classrest__framework_1_1throttling_1_1BaseThrottle_a455737b32e1aa740572507aa5aa1f408} 
+\index{rest\_framework.throttling.BaseThrottle@{rest\_framework.throttling.BaseThrottle}!wait@{wait}}
+\index{wait@{wait}!rest\_framework.throttling.BaseThrottle@{rest\_framework.throttling.BaseThrottle}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+throttling.\+Base\+Throttle.\+wait (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Optionally, return a recommended number of seconds to wait before
+the next request.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1throttling_1_1SimpleRateThrottle_a9650bbced4ad828d89252fecf8b65544}{rest\+\_\+framework.\+throttling.\+Simple\+Rate\+Throttle}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{throttling_8py}{throttling.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\doxysection{Référence de la classe django.\+middleware.\+gzip.\+GZip\+Middleware}
+\hypertarget{classdjango_1_1middleware_1_1gzip_1_1GZipMiddleware}{}\label{classdjango_1_1middleware_1_1gzip_1_1GZipMiddleware}\index{django.middleware.gzip.GZipMiddleware@{django.middleware.gzip.GZipMiddleware}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+middleware.\+gzip.\+GZip\+Middleware\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+middleware.\+gzip.\+GZip\+Middleware\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1middleware_1_1gzip_1_1GZipMiddleware_a14fee1bba7f81944997beedbe1c5cd12}{process\+\_\+response}} (self, request, response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_af9a244ed255c796c1c58a80dc67e4885}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a64f13ae6e5dd3d9df63d75d994b729ae}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a7d9fe62fd0c073a7c43189eede078db5}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, request)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a42b3ff600ff2b1e403a5b25fc6d1bbd7}{\+\_\+\+\_\+acall\+\_\+\+\_\+}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classdjango_1_1middleware_1_1gzip_1_1GZipMiddleware_a6d1bcbd8b0847cfe83309506af331a6a}{max\+\_\+random\+\_\+bytes}} = 100
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a94f14adc0a9ab43e39794903fd0ce8d8}{sync\+\_\+capable}} = True
+\item 
+bool \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_ab0f1eb2f91f83acdf0655a20e0f277af}{async\+\_\+capable}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a9db25d7bd5bb8bfb109abf6dca82c9d6}{get\+\_\+response}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_acc62ec82889232ae5413c3b9c919c03b}{async\+\_\+mode}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a35f7a3f08af1e0be61e235354d12e038}{process\+\_\+request}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Compress content if the browser allows gzip compression.
+Set the Vary header accordingly, so that caches will base their storage
+on the Accept-Encoding header.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1middleware_1_1gzip_1_1GZipMiddleware_a14fee1bba7f81944997beedbe1c5cd12}\label{classdjango_1_1middleware_1_1gzip_1_1GZipMiddleware_a14fee1bba7f81944997beedbe1c5cd12} 
+\index{django.middleware.gzip.GZipMiddleware@{django.middleware.gzip.GZipMiddleware}!process\_response@{process\_response}}
+\index{process\_response@{process\_response}!django.middleware.gzip.GZipMiddleware@{django.middleware.gzip.GZipMiddleware}}
+\doxysubsubsection{\texorpdfstring{process\_response()}{process\_response()}}
+{\footnotesize\ttfamily django.\+middleware.\+gzip.\+GZip\+Middleware.\+process\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{response }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1utils_1_1deprecation_1_1MiddlewareMixin_a3873eda3e7ccef4087b100268d60f9f7}{django.\+utils.\+deprecation.\+Middleware\+Mixin}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1middleware_1_1gzip_1_1GZipMiddleware_a6d1bcbd8b0847cfe83309506af331a6a}\label{classdjango_1_1middleware_1_1gzip_1_1GZipMiddleware_a6d1bcbd8b0847cfe83309506af331a6a} 
+\index{django.middleware.gzip.GZipMiddleware@{django.middleware.gzip.GZipMiddleware}!max\_random\_bytes@{max\_random\_bytes}}
+\index{max\_random\_bytes@{max\_random\_bytes}!django.middleware.gzip.GZipMiddleware@{django.middleware.gzip.GZipMiddleware}}
+\doxysubsubsection{\texorpdfstring{max\_random\_bytes}{max\_random\_bytes}}
+{\footnotesize\ttfamily int django.\+middleware.\+gzip.\+GZip\+Middleware.\+max\+\_\+random\+\_\+bytes = 100\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/middleware/\mbox{\hyperlink{middleware_2gzip_8py}{gzip.\+py}}\end{DoxyCompactItemize}

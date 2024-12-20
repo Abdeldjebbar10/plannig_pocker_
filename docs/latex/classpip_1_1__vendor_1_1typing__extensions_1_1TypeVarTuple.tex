@@ -1,0 +1,171 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple}
+\hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple}{}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple}\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_aeb6728c436e3491022ff8c2fec4482d9}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, name, \texorpdfstring{$\ast$}{*}default=\mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a87a72849e56055001c20d5f4cedb589f}{No\+Default}})
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a4212c2baca8c437ad2b80151a5dcb27a}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ac97cad7a810ba322cda679d1b6c2aeea}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ab5298a2f0c576fa6c5de9046b5b7e6c3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, \texorpdfstring{$\ast$}{*}default=\mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a87a72849e56055001c20d5f4cedb589f}{No\+Default}})
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ae9d1ebdf12edb62ff2668a631bb27241}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a368d619f280d2ab00def172ffd7c1f1f}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a274c2cc497b542c49a73e477c051b902}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ad277504b1e82a5bd2b3cdc58bcd6c41a}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a4212c2baca8c437ad2b80151a5dcb27a}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1__TypeVarLikeMeta}{pip.\+\_\+vendor.\+typing\+\_\+extensions.\+\_\+\+Type\+Var\+Like\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1__TypeVarLikeMeta_aeed0f4e4c367fca44a226a0aa96b9aa9}{\+\_\+\+\_\+instancecheck\+\_\+\+\_\+}} (cls, \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1Any}{Any}} \+\_\+\+\_\+instance)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a2ea24531a8301d4e0ca14f3729eda3e0}{\+\_\+backported\+\_\+typevarlike}} = typing.\+Type\+Var\+Tuple
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1__TypeVarLikeMeta}{pip.\+\_\+vendor.\+typing\+\_\+extensions.\+\_\+\+Type\+Var\+Like\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1__TypeVarLikeMeta_a0cafe7587a4c967ce8a420e68d8b9488}{\+\_\+backported\+\_\+typevarlike}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Type variable tuple.\end{DoxyVerb}
+
+
+\begin{DoxyVerb}Type variable tuple.
+
+Usage::
+
+    Ts = TypeVarTuple('Ts')
+
+In the same way that a normal type variable is a stand-in for a single
+type such as ``int``, a type variable *tuple* is a stand-in for a *tuple*
+type such as ``Tuple[int, str]``.
+
+Type variable tuples can be used in ``Generic`` declarations.
+Consider the following example::
+
+    class Array(Generic[*Ts]): ...
+
+The ``Ts`` type variable tuple here behaves like ``tuple[T1, T2]``,
+where ``T1`` and ``T2`` are type variables. To use these type variables
+as type parameters of ``Array``, we must *unpack* the type variable tuple using
+the star operator: ``*Ts``. The signature of ``Array`` then behaves
+as if we had simply written ``class Array(Generic[T1, T2]): ...``.
+In contrast to ``Generic[T1, T2]``, however, ``Generic[*Shape]`` allows
+us to parameterise the class with an *arbitrary* number of type parameters.
+
+Type variable tuples can be used anywhere a normal ``TypeVar`` can.
+This includes class definitions, as shown above, as well as function
+signatures and variable annotations::
+
+    class Array(Generic[*Ts]):
+
+        def __init__(self, shape: Tuple[*Ts]):
+            self._shape: Tuple[*Ts] = shape
+
+        def get_shape(self) -> Tuple[*Ts]:
+            return self._shape
+
+    shape = (Height(480), Width(640))
+    x: Array[Height, Width] = Array(shape)
+    y = abs(x)  # Inferred type is Array[Height, Width]
+    z = x + x   #        ...    is Array[Height, Width]
+    x.get_shape()  #     ...    is tuple[Height, Width]\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ab5298a2f0c576fa6c5de9046b5b7e6c3}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ab5298a2f0c576fa6c5de9046b5b7e6c3} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{\texorpdfstring{$\ast$}{*}}]{default = {\ttfamily \mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a87a72849e56055001c20d5f4cedb589f}{No\+Default}}} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1__DefaultMixin}{pip.\+\_\+vendor.\+typing\+\_\+extensions.\+\_\+\+Default\+Mixin}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a274c2cc497b542c49a73e477c051b902}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a274c2cc497b542c49a73e477c051b902} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a368d619f280d2ab00def172ffd7c1f1f}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a368d619f280d2ab00def172ffd7c1f1f} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a4212c2baca8c437ad2b80151a5dcb27a}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a4212c2baca8c437ad2b80151a5dcb27a} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}}
+\index{\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_subclass\_\_()}{\_\_init\_subclass\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a4212c2baca8c437ad2b80151a5dcb27a}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a4212c2baca8c437ad2b80151a5dcb27a} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}}
+\index{\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_subclass\_\_()}{\_\_init\_subclass\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ac97cad7a810ba322cda679d1b6c2aeea}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ac97cad7a810ba322cda679d1b6c2aeea} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_aeb6728c436e3491022ff8c2fec4482d9}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_aeb6728c436e3491022ff8c2fec4482d9} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_new\_\_@{\_\_new\_\_}}
+\index{\_\_new\_\_@{\_\_new\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_new\_\_()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{name,  }\item[{\texorpdfstring{$\ast$}{*}}]{default = {\ttfamily \mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a87a72849e56055001c20d5f4cedb589f}{No\+Default}}} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ad277504b1e82a5bd2b3cdc58bcd6c41a}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ad277504b1e82a5bd2b3cdc58bcd6c41a} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ae9d1ebdf12edb62ff2668a631bb27241}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_ae9d1ebdf12edb62ff2668a631bb27241} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a2ea24531a8301d4e0ca14f3729eda3e0}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeVarTuple_a2ea24531a8301d4e0ca14f3729eda3e0} 
+\index{pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}!\_backported\_typevarlike@{\_backported\_typevarlike}}
+\index{\_backported\_typevarlike@{\_backported\_typevarlike}!pip.\_vendor.typing\_extensions.TypeVarTuple@{pip.\_vendor.typing\_extensions.TypeVarTuple}}
+\doxysubsubsection{\texorpdfstring{\_backported\_typevarlike}{\_backported\_typevarlike}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Var\+Tuple.\+\_\+backported\+\_\+typevarlike = typing.\+Type\+Var\+Tuple\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/\mbox{\hyperlink{typing__extensions_8py}{typing\+\_\+extensions.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\doxysection{Référence de la classe pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser}
+\hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser}{}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser}\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a8d29a8f6e7050ce9744202bf770fa3df}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a50077696ec4a329b94ecd6d6415c4d3b}{name}}, bool isolated=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Any \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a703e3a5126750b2444766096e15a3499}{check\+\_\+default}} (self, optparse.\+Option option, str key, Any val)
+\item 
+optparse.\+Values \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_aff915d1d53a78aebbe03e5d55d6c2278}{get\+\_\+default\+\_\+values}} (self)
+\item 
+No\+Return \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a0c791d7ac87a65ea64ee799417ccc3b8}{error}} (self, str msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1CustomOptionParser}{pip.\+\_\+internal.\+cli.\+parser.\+Custom\+Option\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+optparse.\+Option\+Group \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1CustomOptionParser_a29d8d4894512324bb6516b53b2cc357e}{insert\+\_\+option\+\_\+group}} (self, int idx, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+List\mbox{[}optparse.\+Option\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1CustomOptionParser_a850ba4e08f21ffc936662e4ce2a364f2}{option\+\_\+list\+\_\+all}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a50077696ec4a329b94ecd6d6415c4d3b}{name}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a1cf5a282cc6116237cbf18d56470e7d7}{config}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_ace7a0a42524f9997e642af86efc487bf}{values}}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_af209ec791afa5ce2b2095d31b66a9698}{defaults}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+Generator\mbox{[}Tuple\mbox{[}str, Any\mbox{]}, None, None\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a921932cc3773c736de5103ff396a9eed}{\+\_\+get\+\_\+ordered\+\_\+configuration\+\_\+items}} (self)
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_ab88f2448e76bcf54ad2951a8dfc962b5}{\+\_\+update\+\_\+defaults}} (self, Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_af209ec791afa5ce2b2095d31b66a9698}{defaults}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Custom option parser which updates its defaults by checking the
+configuration files and environmental variables\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a8d29a8f6e7050ce9744202bf770fa3df}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a8d29a8f6e7050ce9744202bf770fa3df} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}Any}]{args,  }\item[{str}]{name,  }\item[{bool }]{isolated = {\ttfamily False},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a921932cc3773c736de5103ff396a9eed}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a921932cc3773c736de5103ff396a9eed} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!\_get\_ordered\_configuration\_items@{\_get\_ordered\_configuration\_items}}
+\index{\_get\_ordered\_configuration\_items@{\_get\_ordered\_configuration\_items}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{\_get\_ordered\_configuration\_items()}{\_get\_ordered\_configuration\_items()}}
+{\footnotesize\ttfamily  Generator\mbox{[}Tuple\mbox{[}str, Any\mbox{]}, None, None\mbox{]} pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+\_\+get\+\_\+ordered\+\_\+configuration\+\_\+items (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_ab88f2448e76bcf54ad2951a8dfc962b5}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_ab88f2448e76bcf54ad2951a8dfc962b5} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!\_update\_defaults@{\_update\_defaults}}
+\index{\_update\_defaults@{\_update\_defaults}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{\_update\_defaults()}{\_update\_defaults()}}
+{\footnotesize\ttfamily  Dict\mbox{[}str, Any\mbox{]} pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+\_\+update\+\_\+defaults (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Dict\mbox{[}str, Any\mbox{]}}]{defaults }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Updates the given defaults with values from the config files and
+the environ. Does a little special handling for certain types of
+options (lists).\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a703e3a5126750b2444766096e15a3499}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a703e3a5126750b2444766096e15a3499} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!check\_default@{check\_default}}
+\index{check\_default@{check\_default}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{check\_default()}{check\_default()}}
+{\footnotesize\ttfamily  Any pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+check\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{optparse.\+Option}]{option,  }\item[{str}]{key,  }\item[{Any}]{val }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a0c791d7ac87a65ea64ee799417ccc3b8}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a0c791d7ac87a65ea64ee799417ccc3b8} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!error@{error}}
+\index{error@{error}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily  No\+Return pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{msg }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_aff915d1d53a78aebbe03e5d55d6c2278}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_aff915d1d53a78aebbe03e5d55d6c2278} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!get\_default\_values@{get\_default\_values}}
+\index{get\_default\_values@{get\_default\_values}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{get\_default\_values()}{get\_default\_values()}}
+{\footnotesize\ttfamily  optparse.\+Values pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+get\+\_\+default\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overriding to make updating the defaults after instantiation of
+the option parser possible, _update_defaults() does the dirty work.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a1cf5a282cc6116237cbf18d56470e7d7}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a1cf5a282cc6116237cbf18d56470e7d7} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!config@{config}}
+\index{config@{config}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+config}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_af209ec791afa5ce2b2095d31b66a9698}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_af209ec791afa5ce2b2095d31b66a9698} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!defaults@{defaults}}
+\index{defaults@{defaults}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{defaults}{defaults}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+defaults}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a50077696ec4a329b94ecd6d6415c4d3b}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_a50077696ec4a329b94ecd6d6415c4d3b} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!name@{name}}
+\index{name@{name}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+name}
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_ace7a0a42524f9997e642af86efc487bf}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1ConfigOptionParser_ace7a0a42524f9997e642af86efc487bf} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!values@{values}}
+\index{values@{values}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+values}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+internal/cli/\mbox{\hyperlink{parser_8py}{parser.\+py}}\end{DoxyCompactItemize}

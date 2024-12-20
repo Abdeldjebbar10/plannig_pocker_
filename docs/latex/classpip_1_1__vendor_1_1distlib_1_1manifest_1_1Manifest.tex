@@ -1,0 +1,245 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest}
+\hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest}{}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest}\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a06a7f5eb668aab6c3a8294a5d807a571}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a43fff3e16d28486e91714013e90019a0}{base}}=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a2e22ec74bc45ee885fc4bb7923628809}{findall}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_aae84ea0f83bcc2cbb7d5a31fc767120f}{add}} (self, item)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_aedd3a1430fdbbc656b0c203b798ad944}{add\+\_\+many}} (self, items)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a5d52796ec0da0284e13756b60934b972}{sorted}} (self, wantdirs=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a415875ee7b2fe97d61f871a97e4ca891}{clear}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a9f44d6d6f47fad2d4fa9d780039d56da}{process\+\_\+directive}} (self, directive)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a43fff3e16d28486e91714013e90019a0}{base}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a82926f98537d20efa20ee0bce22871b4}{prefix}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a8749228dc0f36749217a77e12828c329}{allfiles}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_acea04fe9e5d68a4d49fcb9294ae029c5}{files}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a714ee313b64a47a43749135553a90c56}{\+\_\+parse\+\_\+directive}} (self, directive)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a4599dc42a99e1cee1644e6b2d97e7103}{\+\_\+include\+\_\+pattern}} (self, pattern, anchor=True, \mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a82926f98537d20efa20ee0bce22871b4}{prefix}}=None, is\+\_\+regex=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a4bd92bd408c6f080795a5c18bb2c6030}{\+\_\+exclude\+\_\+pattern}} (self, pattern, anchor=True, \mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a82926f98537d20efa20ee0bce22871b4}{prefix}}=None, is\+\_\+regex=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_ab660d1fa72adf8c11c15e599c3815c5e}{\+\_\+translate\+\_\+pattern}} (self, pattern, anchor=True, \mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a82926f98537d20efa20ee0bce22871b4}{prefix}}=None, is\+\_\+regex=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_abf8bff31ff01609493a57e8b7ccb3be5}{\+\_\+glob\+\_\+to\+\_\+re}} (self, pattern)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A list of files built by exploring the filesystem and filtered by applying various
+patterns to what we find there.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a06a7f5eb668aab6c3a8294a5d807a571}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a06a7f5eb668aab6c3a8294a5d807a571} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{base = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialise an instance.
+
+:param base: The base directory to explore under.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a4bd92bd408c6f080795a5c18bb2c6030}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a4bd92bd408c6f080795a5c18bb2c6030} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!\_exclude\_pattern@{\_exclude\_pattern}}
+\index{\_exclude\_pattern@{\_exclude\_pattern}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{\_exclude\_pattern()}{\_exclude\_pattern()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+\_\+exclude\+\_\+pattern (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pattern,  }\item[{}]{anchor = {\ttfamily True},  }\item[{}]{prefix = {\ttfamily None},  }\item[{}]{is\+\_\+regex = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Remove strings (presumably filenames) from 'files' that match
+'pattern'.
+
+Other parameters are the same as for 'include_pattern()', above.
+The list 'self.files' is modified in place. Return True if files are
+found.
+
+This API is public to allow e.g. exclusion of SCM subdirs, e.g. when
+packaging source distributions
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_abf8bff31ff01609493a57e8b7ccb3be5}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_abf8bff31ff01609493a57e8b7ccb3be5} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!\_glob\_to\_re@{\_glob\_to\_re}}
+\index{\_glob\_to\_re@{\_glob\_to\_re}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{\_glob\_to\_re()}{\_glob\_to\_re()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+\_\+glob\+\_\+to\+\_\+re (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Translate a shell-like glob pattern to a regular expression.
+
+Return a string containing the regex.  Differs from
+'fnmatch.translate()' in that '*' does not match "special characters"
+(which are platform-specific).
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a4599dc42a99e1cee1644e6b2d97e7103}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a4599dc42a99e1cee1644e6b2d97e7103} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!\_include\_pattern@{\_include\_pattern}}
+\index{\_include\_pattern@{\_include\_pattern}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{\_include\_pattern()}{\_include\_pattern()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+\_\+include\+\_\+pattern (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pattern,  }\item[{}]{anchor = {\ttfamily True},  }\item[{}]{prefix = {\ttfamily None},  }\item[{}]{is\+\_\+regex = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Select strings (presumably filenames) from 'self.files' that
+match 'pattern', a Unix-style wildcard (glob) pattern.
+
+Patterns are not quite the same as implemented by the 'fnmatch'
+module: '*' and '?'  match non-special characters, where "special"
+is platform-dependent: slash on Unix; colon, slash, and backslash on
+DOS/Windows; and colon on Mac OS.
+
+If 'anchor' is true (the default), then the pattern match is more
+stringent: "*.py" will match "foo.py" but not "foo/bar.py".  If
+'anchor' is false, both of these will match.
+
+If 'prefix' is supplied, then only filenames starting with 'prefix'
+(itself a pattern) and ending with 'pattern', with anything in between
+them, will match.  'anchor' is ignored in this case.
+
+If 'is_regex' is true, 'anchor' and 'prefix' are ignored, and
+'pattern' is assumed to be either a string containing a regex or a
+regex object -- no translation is done, the regex is just compiled
+and used as-is.
+
+Selected strings will be added to self.files.
+
+Return True if files are found.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a714ee313b64a47a43749135553a90c56}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a714ee313b64a47a43749135553a90c56} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!\_parse\_directive@{\_parse\_directive}}
+\index{\_parse\_directive@{\_parse\_directive}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{\_parse\_directive()}{\_parse\_directive()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+\_\+parse\+\_\+directive (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{directive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Validate a directive.
+:param directive: The directive to validate.
+:return: A tuple of action, patterns, thedir, dir_patterns
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_ab660d1fa72adf8c11c15e599c3815c5e}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_ab660d1fa72adf8c11c15e599c3815c5e} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!\_translate\_pattern@{\_translate\_pattern}}
+\index{\_translate\_pattern@{\_translate\_pattern}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{\_translate\_pattern()}{\_translate\_pattern()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+\_\+translate\+\_\+pattern (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pattern,  }\item[{}]{anchor = {\ttfamily True},  }\item[{}]{prefix = {\ttfamily None},  }\item[{}]{is\+\_\+regex = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Translate a shell-like wildcard pattern to a compiled regular
+expression.
+
+Return the compiled regex.  If 'is_regex' true,
+then 'pattern' is directly compiled to a regex (if it's a string)
+or just returned as-is (assumes it's a regex object).
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_aae84ea0f83bcc2cbb7d5a31fc767120f}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_aae84ea0f83bcc2cbb7d5a31fc767120f} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!add@{add}}
+\index{add@{add}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a file to the manifest.
+
+:param item: The pathname to add. This can be relative to the base.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_aedd3a1430fdbbc656b0c203b798ad944}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_aedd3a1430fdbbc656b0c203b798ad944} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!add\_many@{add\_many}}
+\index{add\_many@{add\_many}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{add\_many()}{add\_many()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+add\+\_\+many (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{items }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a list of files to the manifest.
+
+:param items: The pathnames to add. These can be relative to the base.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a415875ee7b2fe97d61f871a97e4ca891}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a415875ee7b2fe97d61f871a97e4ca891} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!clear@{clear}}
+\index{clear@{clear}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear all collected files.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a2e22ec74bc45ee885fc4bb7923628809}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a2e22ec74bc45ee885fc4bb7923628809} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!findall@{findall}}
+\index{findall@{findall}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{findall()}{findall()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+findall (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find all files under the base and set ``allfiles`` to the absolute
+pathnames of files found.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a9f44d6d6f47fad2d4fa9d780039d56da}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a9f44d6d6f47fad2d4fa9d780039d56da} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!process\_directive@{process\_directive}}
+\index{process\_directive@{process\_directive}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{process\_directive()}{process\_directive()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+process\+\_\+directive (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{directive }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process a directive which either adds some files from ``allfiles`` to
+``files``, or removes some files from ``files``.
+
+:param directive: The directive to process. This should be in a format
+             compatible with distutils ``MANIFEST.in`` files:
+
+             http://docs.python.org/distutils/sourcedist.html#commands
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a5d52796ec0da0284e13756b60934b972}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a5d52796ec0da0284e13756b60934b972} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!sorted@{sorted}}
+\index{sorted@{sorted}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{sorted()}{sorted()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+sorted (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{wantdirs = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return sorted files in directory order
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a8749228dc0f36749217a77e12828c329}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a8749228dc0f36749217a77e12828c329} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!allfiles@{allfiles}}
+\index{allfiles@{allfiles}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{allfiles}{allfiles}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+allfiles}
+
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a43fff3e16d28486e91714013e90019a0}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a43fff3e16d28486e91714013e90019a0} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!base@{base}}
+\index{base@{base}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+base}
+
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_acea04fe9e5d68a4d49fcb9294ae029c5}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_acea04fe9e5d68a4d49fcb9294ae029c5} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!files@{files}}
+\index{files@{files}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+files}
+
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a82926f98537d20efa20ee0bce22871b4}\label{classpip_1_1__vendor_1_1distlib_1_1manifest_1_1Manifest_a82926f98537d20efa20ee0bce22871b4} 
+\index{pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}!prefix@{prefix}}
+\index{prefix@{prefix}!pip.\_vendor.distlib.manifest.Manifest@{pip.\_vendor.distlib.manifest.Manifest}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+manifest.\+Manifest.\+prefix}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/distlib/\mbox{\hyperlink{manifest_8py}{manifest.\+py}}\end{DoxyCompactItemize}

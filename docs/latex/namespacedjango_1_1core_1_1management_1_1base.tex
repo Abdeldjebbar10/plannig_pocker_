@@ -1,0 +1,68 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+core.\+management.\+base}
+\hypertarget{namespacedjango_1_1core_1_1management_1_1base}{}\label{namespacedjango_1_1core_1_1management_1_1base}\index{django.core.management.base@{django.core.management.base}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1AppCommand}{App\+Command}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1BaseCommand}{Base\+Command}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1CommandError}{Command\+Error}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1CommandParser}{Command\+Parser}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1DjangoHelpFormatter}{Django\+Help\+Formatter}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1LabelCommand}{Label\+Command}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1OutputWrapper}{Output\+Wrapper}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1base_1_1SystemCheckError}{System\+Check\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1base_a0a950bd8f193ceeedf3c0f963e11ce55}{handle\+\_\+default\+\_\+options}} (options)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1base_ac4a632fac9f4a64084ba07043824dda6}{no\+\_\+translations}} (handle\+\_\+func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1base_aa33fe1713dbc9d682d186838ae7f4153}{ALL\+\_\+\+CHECKS}} = "{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Base classes for writing management commands (named commands which can
+be executed through ``django-admin`` or ``manage.py``).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1base_a0a950bd8f193ceeedf3c0f963e11ce55}\label{namespacedjango_1_1core_1_1management_1_1base_a0a950bd8f193ceeedf3c0f963e11ce55} 
+\index{django.core.management.base@{django.core.management.base}!handle\_default\_options@{handle\_default\_options}}
+\index{handle\_default\_options@{handle\_default\_options}!django.core.management.base@{django.core.management.base}}
+\doxysubsubsection{\texorpdfstring{handle\_default\_options()}{handle\_default\_options()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+base.\+handle\+\_\+default\+\_\+options (\begin{DoxyParamCaption}\item[{}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Include any default options that all commands should accept here
+so that ManagementUtility can handle them before searching for
+user commands.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1base_ac4a632fac9f4a64084ba07043824dda6}\label{namespacedjango_1_1core_1_1management_1_1base_ac4a632fac9f4a64084ba07043824dda6} 
+\index{django.core.management.base@{django.core.management.base}!no\_translations@{no\_translations}}
+\index{no\_translations@{no\_translations}!django.core.management.base@{django.core.management.base}}
+\doxysubsubsection{\texorpdfstring{no\_translations()}{no\_translations()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+base.\+no\+\_\+translations (\begin{DoxyParamCaption}\item[{}]{handle\+\_\+func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator that forces a command to run with translations deactivated.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1base_aa33fe1713dbc9d682d186838ae7f4153}\label{namespacedjango_1_1core_1_1management_1_1base_aa33fe1713dbc9d682d186838ae7f4153} 
+\index{django.core.management.base@{django.core.management.base}!ALL\_CHECKS@{ALL\_CHECKS}}
+\index{ALL\_CHECKS@{ALL\_CHECKS}!django.core.management.base@{django.core.management.base}}
+\doxysubsubsection{\texorpdfstring{ALL\_CHECKS}{ALL\_CHECKS}}
+{\footnotesize\ttfamily str django.\+core.\+management.\+base.\+ALL\+\_\+\+CHECKS = "{}\+\_\+\+\_\+all\+\_\+\+\_\+"{}}
+

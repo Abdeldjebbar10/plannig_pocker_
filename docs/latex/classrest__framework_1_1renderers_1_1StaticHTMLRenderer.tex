@@ -1,0 +1,120 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer}
+\hypertarget{classrest__framework_1_1renderers_1_1StaticHTMLRenderer}{}\label{classrest__framework_1_1renderers_1_1StaticHTMLRenderer}\index{rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a82352a7cb58f7d98ae85decec9f6ea1b}{render}} (self, data, accepted\+\_\+media\+\_\+type=None, renderer\+\_\+context=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer}{rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_abbc0a27f9f8b73908ea03751d1ced23f}{resolve\+\_\+template}} (self, template\+\_\+names)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ad6425c285f5042d096327d19aa6af9a8}{get\+\_\+template\+\_\+context}} (self, data, renderer\+\_\+context)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_aa2224b90d92fd0f1cc9ff6c5e38fbfcc}{get\+\_\+template\+\_\+names}} (self, response, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a5abe1d3a3c7181b1ec05a66dea62e1e5}{get\+\_\+exception\+\_\+template}} (self, response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a12a9e7db3988560cee8a3941a90265cb}{media\+\_\+type}} = \textquotesingle{}text/html\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a2a9ecc62aae59aa13f58f2cb7ebdafb1}{format}} = \textquotesingle{}html\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a9e1ffb41c6e736f4203fa20e577bd49c}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer}{rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_af043e2920f1fe8884495fffcb88d4696}{media\+\_\+type}} = \textquotesingle{}text/html\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a5a9f8c2e38aa9a7be14157753f0276ea}{format}} = \textquotesingle{}html\textquotesingle{}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a7f88bbfcb5c931e11daea93883e93768}{template\+\_\+name}} = None
+\item 
+list \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a06f6aef5dee9ff0a3d3302997fe6b2cf}{exception\+\_\+template\+\_\+names}}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_a01bdbb54f4b779fd5674cef3d31de551}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer}{rest\+\_\+framework.\+renderers.\+Base\+Renderer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a4b069d932469c3bbded458f53752216f}{media\+\_\+type}} = None
+\item 
+\mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_ae5e3a1c630b0a2fe8313136879445163}{format}} = None
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a6b2cb330c059e96c05e436f1f113154d}{charset}} = \textquotesingle{}utf-\/8\textquotesingle{}
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1renderers_1_1BaseRenderer_a9395a7164e794d61f52bcad01cf4e3ed}{render\+\_\+style}} = \textquotesingle{}text\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An HTML renderer class that simply returns pre-rendered HTML.
+
+The data supplied to the Response object should be a string representing
+the pre-rendered HTML content.
+
+For example:
+    data = '<html><body>example</body></html>'
+    return Response(data)
+
+For template rendered HTML, see TemplateHTMLRenderer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a82352a7cb58f7d98ae85decec9f6ea1b}\label{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a82352a7cb58f7d98ae85decec9f6ea1b} 
+\index{rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}!render@{render}}
+\index{render@{render}!rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer.\+render (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{accepted\+\_\+media\+\_\+type = {\ttfamily None},  }\item[{}]{renderer\+\_\+context = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Renders data to HTML, using Django's standard template rendering.
+
+The template name is determined by (in order of preference):
+
+1. An explicit .template_name set on the response.
+2. An explicit .template_name set on this class.
+3. The return result of calling view.get_template_names().
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1renderers_1_1TemplateHTMLRenderer_ab09c2323ddfa06e84a17c67beaecc935}{rest\+\_\+framework.\+renderers.\+Template\+HTMLRenderer}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a9e1ffb41c6e736f4203fa20e577bd49c}\label{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a9e1ffb41c6e736f4203fa20e577bd49c} 
+\index{rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}!charset@{charset}}
+\index{charset@{charset}!rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{charset}{charset}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer.\+charset = \textquotesingle{}utf-\/8\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a2a9ecc62aae59aa13f58f2cb7ebdafb1}\label{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a2a9ecc62aae59aa13f58f2cb7ebdafb1} 
+\index{rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}!format@{format}}
+\index{format@{format}!rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer.\+format = \textquotesingle{}html\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a12a9e7db3988560cee8a3941a90265cb}\label{classrest__framework_1_1renderers_1_1StaticHTMLRenderer_a12a9e7db3988560cee8a3941a90265cb} 
+\index{rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}!media\_type@{media\_type}}
+\index{media\_type@{media\_type}!rest\_framework.renderers.StaticHTMLRenderer@{rest\_framework.renderers.StaticHTMLRenderer}}
+\doxysubsubsection{\texorpdfstring{media\_type}{media\_type}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+renderers.\+Static\+HTMLRenderer.\+media\+\_\+type = \textquotesingle{}text/html\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2renderers_8py}{renderers.\+py}}\end{DoxyCompactItemize}

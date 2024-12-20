@@ -1,0 +1,56 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+utils.\+mediatypes}
+\hypertarget{namespacerest__framework_1_1utils_1_1mediatypes}{}\label{namespacerest__framework_1_1utils_1_1mediatypes}\index{rest\_framework.utils.mediatypes@{rest\_framework.utils.mediatypes}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1utils_1_1mediatypes_1_1__MediaType}{\+\_\+\+Media\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1mediatypes_a3d8118cff320fbfc21dcd6de3f2ff70a}{media\+\_\+type\+\_\+matches}} (lhs, rhs)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1mediatypes_a9b3bf6874f23f605c8cc89658a9693bb}{order\+\_\+by\+\_\+precedence}} (media\+\_\+type\+\_\+lst)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Handling of media types, as found in HTTP Content-Type and Accept headers.
+
+See https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.7
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1utils_1_1mediatypes_a3d8118cff320fbfc21dcd6de3f2ff70a}\label{namespacerest__framework_1_1utils_1_1mediatypes_a3d8118cff320fbfc21dcd6de3f2ff70a} 
+\index{rest\_framework.utils.mediatypes@{rest\_framework.utils.mediatypes}!media\_type\_matches@{media\_type\_matches}}
+\index{media\_type\_matches@{media\_type\_matches}!rest\_framework.utils.mediatypes@{rest\_framework.utils.mediatypes}}
+\doxysubsubsection{\texorpdfstring{media\_type\_matches()}{media\_type\_matches()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+mediatypes.\+media\+\_\+type\+\_\+matches (\begin{DoxyParamCaption}\item[{}]{lhs,  }\item[{}]{rhs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns ``True`` if the media type in the first argument <= the
+media type in the second argument.  The media types are strings
+as described by the HTTP spec.
+
+Valid media type strings include:
+
+'application/json; indent=4'
+'application/json'
+'text/*'
+'*/*'
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1mediatypes_a9b3bf6874f23f605c8cc89658a9693bb}\label{namespacerest__framework_1_1utils_1_1mediatypes_a9b3bf6874f23f605c8cc89658a9693bb} 
+\index{rest\_framework.utils.mediatypes@{rest\_framework.utils.mediatypes}!order\_by\_precedence@{order\_by\_precedence}}
+\index{order\_by\_precedence@{order\_by\_precedence}!rest\_framework.utils.mediatypes@{rest\_framework.utils.mediatypes}}
+\doxysubsubsection{\texorpdfstring{order\_by\_precedence()}{order\_by\_precedence()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+mediatypes.\+order\+\_\+by\+\_\+precedence (\begin{DoxyParamCaption}\item[{}]{media\+\_\+type\+\_\+lst }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of sets of media type strings, ordered by precedence.
+Precedence is determined by how specific a media type is:
+
+3. 'type/subtype; param=val'
+2. 'type/subtype'
+1. 'type/*'
+0. '*/*'
+\end{DoxyVerb}
+ 

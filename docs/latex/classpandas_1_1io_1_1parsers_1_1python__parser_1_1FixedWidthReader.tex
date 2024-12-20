@@ -1,0 +1,128 @@
+\doxysection{Référence de la classe pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader}
+\hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader}{}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader}\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_af9fa5e9e3d4311a779a6de413d8b205d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, IO\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1ReadCsvBuffer}{Read\+Csv\+Buffer}}\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_ab80c6cd139d7eef4a7875e1c8aa8154f}{f}}, list\mbox{[}tuple\mbox{[}int, int\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}Literal\mbox{[}"{}infer"{}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_af7dfeb483cedee8585d021e08e37c46c}{colspecs}}, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a066b7b0db97cadb33ba0bb0d110ce34d}{delimiter}}, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a5dd13d3d4e1ae50973942099e92261f9}{comment}}, set\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None skiprows=None, int infer\+\_\+nrows=100)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_aba870640212a616d6d3d2885dfba6721}{get\+\_\+rows}} (self, int infer\+\_\+nrows, set\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None skiprows=None)
+\item 
+list\mbox{[}tuple\mbox{[}int, int\mbox{]}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_acd1d120a26ac3b8238a3f9a2e830a55e}{detect\+\_\+colspecs}} (self, int infer\+\_\+nrows=100, set\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None skiprows=None)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_ae7328ca964d8ffb5892a37ac8417dc3b}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_ab80c6cd139d7eef4a7875e1c8aa8154f}{f}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a066b7b0db97cadb33ba0bb0d110ce34d}{delimiter}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a5dd13d3d4e1ae50973942099e92261f9}{comment}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_af7dfeb483cedee8585d021e08e37c46c}{colspecs}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a5f11c5368672ce86cefa549ebc4b8fb6}{buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A reader of fixed-width lines.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_af9fa5e9e3d4311a779a6de413d8b205d}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_af9fa5e9e3d4311a779a6de413d8b205d} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{IO\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1ReadCsvBuffer}{Read\+Csv\+Buffer}}\mbox{[}str\mbox{]}}]{f,  }\item[{list\mbox{[}tuple\mbox{[}int, int\mbox{]}\mbox{]} \texorpdfstring{$\vert$}{|} Literal\mbox{[}"{}infer"{}\mbox{]}}]{colspecs,  }\item[{str \texorpdfstring{$\vert$}{|} None}]{delimiter,  }\item[{str \texorpdfstring{$\vert$}{|} None}]{comment,  }\item[{set\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} None }]{skiprows = {\ttfamily None},  }\item[{int }]{infer\+\_\+nrows = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_ae7328ca964d8ffb5892a37ac8417dc3b}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_ae7328ca964d8ffb5892a37ac8417dc3b} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily  list\mbox{[}str\mbox{]} pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_acd1d120a26ac3b8238a3f9a2e830a55e}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_acd1d120a26ac3b8238a3f9a2e830a55e} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!detect\_colspecs@{detect\_colspecs}}
+\index{detect\_colspecs@{detect\_colspecs}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{detect\_colspecs()}{detect\_colspecs()}}
+{\footnotesize\ttfamily  list\mbox{[}tuple\mbox{[}int, int\mbox{]}\mbox{]} pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+detect\+\_\+colspecs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int }]{infer\+\_\+nrows = {\ttfamily 100},  }\item[{set\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} None }]{skiprows = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_aba870640212a616d6d3d2885dfba6721}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_aba870640212a616d6d3d2885dfba6721} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!get\_rows@{get\_rows}}
+\index{get\_rows@{get\_rows}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{get\_rows()}{get\_rows()}}
+{\footnotesize\ttfamily  list\mbox{[}str\mbox{]} pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+get\+\_\+rows (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{infer\+\_\+nrows,  }\item[{set\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} None }]{skiprows = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read rows from self.f, skipping as specified.
+
+We distinguish buffer_rows (the first <= infer_nrows
+lines) from the rows returned to detect_colspecs
+because it's simpler to leave the other locations
+with skiprows logic alone than to modify them to
+deal with the fact we skipped some rows here as
+well.
+
+Parameters
+----------
+infer_nrows : int
+    Number of rows to read from self.f, not counting
+    rows that are skipped.
+skiprows: set, optional
+    Indices of rows to skip.
+
+Returns
+-------
+detect_rows : list of str
+    A list containing the rows to read.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a5f11c5368672ce86cefa549ebc4b8fb6}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a5f11c5368672ce86cefa549ebc4b8fb6} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!buffer@{buffer}}
+\index{buffer@{buffer}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+buffer}
+
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_af7dfeb483cedee8585d021e08e37c46c}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_af7dfeb483cedee8585d021e08e37c46c} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!colspecs@{colspecs}}
+\index{colspecs@{colspecs}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{colspecs}{colspecs}}
+{\footnotesize\ttfamily pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+colspecs}
+
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a5dd13d3d4e1ae50973942099e92261f9}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a5dd13d3d4e1ae50973942099e92261f9} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!comment@{comment}}
+\index{comment@{comment}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{comment}{comment}}
+{\footnotesize\ttfamily pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+comment}
+
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a066b7b0db97cadb33ba0bb0d110ce34d}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_a066b7b0db97cadb33ba0bb0d110ce34d} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!delimiter@{delimiter}}
+\index{delimiter@{delimiter}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{delimiter}{delimiter}}
+{\footnotesize\ttfamily pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+delimiter}
+
+\Hypertarget{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_ab80c6cd139d7eef4a7875e1c8aa8154f}\label{classpandas_1_1io_1_1parsers_1_1python__parser_1_1FixedWidthReader_ab80c6cd139d7eef4a7875e1c8aa8154f} 
+\index{pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}!f@{f}}
+\index{f@{f}!pandas.io.parsers.python\_parser.FixedWidthReader@{pandas.io.parsers.python\_parser.FixedWidthReader}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily pandas.\+io.\+parsers.\+python\+\_\+parser.\+Fixed\+Width\+Reader.\+f}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/parsers/\mbox{\hyperlink{python__parser_8py}{python\+\_\+parser.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,990 @@
+\doxysection{Référence de la classe pandas.\+core.\+internals.\+blocks.\+Block}
+\hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+internals.\+blocks.\+Block\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+internals.\+blocks.\+Block\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac9f70f5fa78d8d5c5fcc685d967e275e}{is\+\_\+object}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a49f49e88aa8a6e784b987eaed45f5e18}{is\+\_\+extension}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a367a9e3a78e93522e3e89ea64e65863e}{is\+\_\+bool}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa9cd64e65042eac7fc7cb099e8faf1ab}{external\+\_\+values}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5755d64fa81e50c56f2f26013155435b}{fill\+\_\+value}} (self)
+\item 
+Block\+Placement \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a897de9495d36365fab1b536bac78832d}{mgr\+\_\+locs}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aeacb4fbf9230688605d27104fe939a50}{mgr\+\_\+locs}} (self, Block\+Placement new\+\_\+mgr\+\_\+locs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1af84c66660433b60cb9ee024660cae3}{make\+\_\+block}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afced09be80a1f6b11907c835332cf2a0}{values}}, Block\+Placement\texorpdfstring{$\vert$}{|}None placement=None, Block\+Values\+Refs\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa5f736aaf27e62ef88496583cd2956f3}{refs}}=None)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a34b292592effc378d3c4c6866e178e5e}{make\+\_\+block\+\_\+same\+\_\+class}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afced09be80a1f6b11907c835332cf2a0}{values}}, Block\+Placement\texorpdfstring{$\vert$}{|}None placement=None, Block\+Values\+Refs\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa5f736aaf27e62ef88496583cd2956f3}{refs}}=None)
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9a3cb1ba533c66cb426c8975e5eacfa7}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ad45660a4059c57db5d6d00c35be974a4}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a46b36357b80214b6834a940b48b69f49}{slice\+\_\+block\+\_\+columns}} (self, slice slc)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a3844953648518185ea3327d9cf02312d}{take\+\_\+block\+\_\+columns}} (self, npt.\+NDArray\mbox{[}np.\+intp\mbox{]} indices)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae6a63128fc7402fad20578a0c80aab09}{getitem\+\_\+block\+\_\+columns}} (self, slice slicer, Block\+Placement new\+\_\+mgr\+\_\+locs, bool ref\+\_\+inplace\+\_\+op=False)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abaf810d0c9b859d9d5ccd2841d7e4703}{should\+\_\+store}} (self, Array\+Like value)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a448386acd8f5675f8b4a5de49c693aa6}{apply}} (self, func, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a2a0c5958b97b80afca916d82f4e4dc34}{reduce}} (self, func)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a63ed91096020fe396b76e9546bf915bb}{split\+\_\+and\+\_\+operate}} (self, func, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ab27781bca5b9ed6d8b41566532550509}{coerce\+\_\+to\+\_\+target\+\_\+dtype}} (self, other, bool warn\+\_\+on\+\_\+upcast=False)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a816f49fd40022c142da6cc48902e1899}{convert}} (self, \texorpdfstring{$\ast$}{*}bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae978dbb1e2e405df7bbb486b71654683}{copy}}=True, bool using\+\_\+cow=False)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a45e6d1895e71560aae483a6bba15e383}{convert\+\_\+dtypes}} (self, bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae978dbb1e2e405df7bbb486b71654683}{copy}}, bool using\+\_\+cow, bool infer\+\_\+objects=True, bool convert\+\_\+string=True, bool convert\+\_\+integer=True, bool convert\+\_\+boolean=True, bool convert\+\_\+floating=True, Dtype\+Backend dtype\+\_\+backend="{}numpy\+\_\+nullable"{})
+\item 
+Dtype\+Obj \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abf94fa12fcb85c4a185eea43a22533b2}{dtype}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5a43a2af14f43fa9a87163ffd1b69835}{astype}} (self, Dtype\+Obj \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5f6bda5a8697e4fe4a7884eddd22b162}{dtype}}, bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae978dbb1e2e405df7bbb486b71654683}{copy}}=False, Ignore\+Raise errors="{}raise"{}, bool using\+\_\+cow=False, bool squeeze=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac4f1496b3825c0127d2db71a7ab084c2}{get\+\_\+values\+\_\+for\+\_\+csv}} (self, \texorpdfstring{$\ast$}{*}float\+\_\+format, date\+\_\+format, decimal, str na\+\_\+rep="{}nan"{}, quoting=None)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae978dbb1e2e405df7bbb486b71654683}{copy}} (self, bool deep=True)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a2f703a032fd5983c9950d4a30f8678b9}{replace}} (self, to\+\_\+replace, value, bool inplace=False, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}\texorpdfstring{$\vert$}{|}None mask=None, bool using\+\_\+cow=False, already\+\_\+warned=None)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_adac1ec0100942cc1a7f7160ca3a22730}{replace\+\_\+list}} (self, Iterable\mbox{[}Any\mbox{]} src\+\_\+list, Sequence\mbox{[}Any\mbox{]} dest\+\_\+list, bool inplace=False, bool regex=False, bool using\+\_\+cow=False, already\+\_\+warned=None)
+\item 
+Shape \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a0f3c7634a63e1d5b7461bc3ad878eafd}{shape}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a73c9ddfcfe5678fb75eb756cf1a3690d}{iget}} (self, int\texorpdfstring{$\vert$}{|}tuple\mbox{[}int, int\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}slice, int\mbox{]} i)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a60f222a401929c2b8a827c242e834789}{set\+\_\+inplace}} (self, locs, Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afced09be80a1f6b11907c835332cf2a0}{values}}, bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae978dbb1e2e405df7bbb486b71654683}{copy}}=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac8980870d11df5971798e51888d11286}{take\+\_\+nd}} (self, npt.\+NDArray\mbox{[}np.\+intp\mbox{]} indexer, Axis\+Int axis, Block\+Placement\texorpdfstring{$\vert$}{|}None new\+\_\+mgr\+\_\+locs=None, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5755d64fa81e50c56f2f26013155435b}{fill\+\_\+value}}=lib.\+no\+\_\+default)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a90ea0de3c1ac76c8ba8c514b651570ff}{setitem}} (self, indexer, value, bool using\+\_\+cow=False)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abeec0b5ba7fb60062113b5f0b9a2e7ed}{putmask}} (self, mask, new, bool using\+\_\+cow=False, already\+\_\+warned=None)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae0b57364a73cc0d72554dd87a66e66fb}{where}} (self, other, cond, str\texorpdfstring{$\vert$}{|}bool \+\_\+downcast="{}infer"{}, bool using\+\_\+cow=False)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae7953e2f1d4c0b73b8bb28560dccc425}{fillna}} (self, value, int\texorpdfstring{$\vert$}{|}None limit=None, bool inplace=False, downcast=None, bool using\+\_\+cow=False, already\+\_\+warned=None)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a3c8ce03c4e9b6f8df9ea17524faafe67}{pad\+\_\+or\+\_\+backfill}} (self, \texorpdfstring{$\ast$}{*}Fillna\+Options method, Axis\+Int axis=0, bool inplace=False, int\texorpdfstring{$\vert$}{|}None limit=None, Literal\mbox{[}"{}inside"{}, "{}outside"{}\mbox{]}\texorpdfstring{$\vert$}{|}None limit\+\_\+area=None, Literal\mbox{[}"{}infer"{}\mbox{]}\texorpdfstring{$\vert$}{|}None downcast=None, bool using\+\_\+cow=False, already\+\_\+warned=None)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ade99ca7cd5777150c265811abf46e5cd}{interpolate}} (self, \texorpdfstring{$\ast$}{*}Interpolate\+Options method, Index index, bool inplace=False, int\texorpdfstring{$\vert$}{|}None limit=None, Literal\mbox{[}"{}forward"{}, "{}backward"{}, "{}both"{}\mbox{]} limit\+\_\+direction="{}forward"{}, Literal\mbox{[}"{}inside"{}, "{}outside"{}\mbox{]}\texorpdfstring{$\vert$}{|}None limit\+\_\+area=None, Literal\mbox{[}"{}infer"{}\mbox{]}\texorpdfstring{$\vert$}{|}None downcast=None, bool using\+\_\+cow=False, already\+\_\+warned=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a075577ce0f6639ad9f5b3e7c727bc194}{diff}} (self, int n)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a23696a0a2f9870e99f529b52bb20e6aa}{shift}} (self, int periods, Any \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5755d64fa81e50c56f2f26013155435b}{fill\+\_\+value}}=None)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8e3ce4b6fd5a3d70ec1b8d6e9d6afc57}{quantile}} (self, Index qs, Quantile\+Interpolation interpolation="{}linear"{})
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac19aaf1ec2494475c3123a99e189b190}{round}} (self, int decimals, bool using\+\_\+cow=False)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa56a8fef518ec941579e55814f0f3fae}{delete}} (self, loc)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7e231314f10e40c58f9348a3e1586a8d}{is\+\_\+view}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1567514123b3f4fa25020f48d310e991}{array\+\_\+values}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a00726f5e572d6cd323088885029ca596}{get\+\_\+values}} (self, Dtype\+Obj\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5f6bda5a8697e4fe4a7884eddd22b162}{dtype}}=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_ad5b15e942fb2d2dcfb12fa1667404aeb}{\+\_\+\+\_\+sizeof\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_ac86361dc5b262c58dcdf818d410136e4}{\+\_\+\+\_\+dir\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7188570dbbb8dae346c2aa862b1f9e37}{values}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5f6bda5a8697e4fe4a7884eddd22b162}{dtype}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac7bc5d50e02b4dab0811f9e3c5647ff3}{ndim}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+np \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afced09be80a1f6b11907c835332cf2a0}{values}} .ndarray \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7f4ba375127dd149193e48c6783451e6}{ndim}}
+\item 
+Block\+Values\+Refs \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa5f736aaf27e62ef88496583cd2956f3}{refs}}
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5bb685417eaaf30de5935f50da27c35a}{is\+\_\+numeric}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a44ffff4610f245f573ee6942604b3344}{\+\_\+validate\+\_\+ndim}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abe1777d96fbd6037dd69530125670df7}{\+\_\+can\+\_\+consolidate}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_af13ae18f747cddc9d32585d61bb54d41}{\+\_\+consolidate\+\_\+key}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1cf96551b46185f8c12d507ba8178b3e}{\+\_\+can\+\_\+hold\+\_\+na}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a06f9958d4cd75a881e86c53ca9bac8a4}{\+\_\+standardize\+\_\+fill\+\_\+value}} (self, value)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a6dc919275dcb428c3aaccaa6b06bb50e}{\+\_\+can\+\_\+hold\+\_\+element}} (self, Any element)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a6a7281063dd18dae90c8a4c57962e468}{\+\_\+split\+\_\+op\+\_\+result}} (self, Array\+Like result)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8b35074d89b60ba3a9b0ec5200a6b24a}{\+\_\+split}} (self)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a030047b8405039d7dbceb54bc766aea8}{\+\_\+maybe\+\_\+downcast}} (self, list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} blocks, downcast, bool using\+\_\+cow, str caller)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8a9dbd3268b1f49eb27a26bfaa0ee25a}{\+\_\+downcast\+\_\+2d}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5f6bda5a8697e4fe4a7884eddd22b162}{dtype}}, bool using\+\_\+cow=False)
+\item 
+Self \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_af3b5f344bcb8098958eae8595024780a}{\+\_\+maybe\+\_\+copy}} (self, bool using\+\_\+cow, bool inplace)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9e5d6cbd1f19222debea6c0e2ef3f67c}{\+\_\+get\+\_\+refs\+\_\+and\+\_\+copy}} (self, bool using\+\_\+cow, bool inplace)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9359bc30253c0560e98ac5139314501b}{\+\_\+replace\+\_\+regex}} (self, to\+\_\+replace, value, bool inplace=False, mask=None, bool using\+\_\+cow=False, already\+\_\+warned=None)
+\item 
+list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ad3f73e0b56b07b4d2579daef92ead92f}{\+\_\+replace\+\_\+coerce}} (self, to\+\_\+replace, value, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} mask, bool inplace=True, bool regex=False, bool using\+\_\+cow=False)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a76c67019785b474ad436ffcc4dd2d398}{\+\_\+maybe\+\_\+squeeze\+\_\+arg}} (self, np.\+ndarray arg)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abe0cc948ceea105530d8afce7ecdbd15}{\+\_\+unwrap\+\_\+setitem\+\_\+indexer}} (self, indexer)
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a31e446a0346289840211859de2da085e}{\+\_\+slice}} (self, slice\texorpdfstring{$\vert$}{|}npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}\texorpdfstring{$\vert$}{|}npt.\+NDArray\mbox{[}np.\+intp\mbox{]} slicer)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afd54b416c5887e606eabc7d04fb172b4}{\+\_\+unstack}} (self, unstacker, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5755d64fa81e50c56f2f26013155435b}{fill\+\_\+value}}, npt.\+NDArray\mbox{[}np.\+intp\mbox{]} new\+\_\+placement, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} needs\+\_\+masking)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a7b5112b72a8bafe13b1fa732bf1ea30d}{\+\_\+constructor}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a8a2b95a9e1e4befc5ad3cba09c3f3e68}{\+\_\+reset\+\_\+cache}} (self, str\texorpdfstring{$\vert$}{|}None key=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a3151f76f1b53042e9d13da3d3ef3cb92}{\+\_\+dir\+\_\+deletions}} (self)
+\item 
+set\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a8183d13494a720c8d4cc996826fd7323}{\+\_\+dir\+\_\+additions}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a31b254afbac25cedaeb82f59c9f09b98}{\+\_\+can\+\_\+consolidate}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ada1e9bbddc4c54321a2c6d609392f0c4}{\+\_\+mgr\+\_\+locs}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject}{pandas.\+core.\+base.\+Pandas\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a3972565a4ab5ff072118eda20364cd2c}{\+\_\+cache}} \mbox{[}str, Any\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin}{pandas.\+core.\+accessor.\+Dir\+Names\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+set \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a1e3f9f50e3532c77c3610c4b8fe27e6f}{\+\_\+accessors}} = set()
+\item 
+frozenset \mbox{\hyperlink{classpandas_1_1core_1_1accessor_1_1DirNamesMixin_a7b9c1894b79d330020bdc71ddc7126f0}{\+\_\+hidden\+\_\+attrs}} = frozenset()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Canonical n-dimensional unit of homogeneous dtype contained in a pandas
+data structure
+
+Index-ignorant; let the container take care of that
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ad45660a4059c57db5d6d00c35be974a4}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ad45660a4059c57db5d6d00c35be974a4} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9a3cb1ba533c66cb426c8975e5eacfa7}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9a3cb1ba533c66cb426c8975e5eacfa7} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string representation for a particular object.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1core_1_1base_1_1PandasObject_a417b85c7fda9b57f893ad25a764fcf36}{pandas.\+core.\+base.\+Pandas\+Object}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abe1777d96fbd6037dd69530125670df7}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abe1777d96fbd6037dd69530125670df7} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_can\_consolidate@{\_can\_consolidate}}
+\index{\_can\_consolidate@{\_can\_consolidate}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_can\_consolidate()}{\_can\_consolidate()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+can\+\_\+consolidate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a6dc919275dcb428c3aaccaa6b06bb50e}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a6dc919275dcb428c3aaccaa6b06bb50e} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_can\_hold\_element@{\_can\_hold\_element}}
+\index{\_can\_hold\_element@{\_can\_hold\_element}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_can\_hold\_element()}{\_can\_hold\_element()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+can\+\_\+hold\+\_\+element (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Any}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}require the same dtype as ourselves\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1cf96551b46185f8c12d507ba8178b3e}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1cf96551b46185f8c12d507ba8178b3e} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_can\_hold\_na@{\_can\_hold\_na}}
+\index{\_can\_hold\_na@{\_can\_hold\_na}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_can\_hold\_na()}{\_can\_hold\_na()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+can\+\_\+hold\+\_\+na (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Can we store NA values in this Block?
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_af13ae18f747cddc9d32585d61bb54d41}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_af13ae18f747cddc9d32585d61bb54d41} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_consolidate\_key@{\_consolidate\_key}}
+\index{\_consolidate\_key@{\_consolidate\_key}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_consolidate\_key()}{\_consolidate\_key()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+consolidate\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8a9dbd3268b1f49eb27a26bfaa0ee25a}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8a9dbd3268b1f49eb27a26bfaa0ee25a} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_downcast\_2d@{\_downcast\_2d}}
+\index{\_downcast\_2d@{\_downcast\_2d}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_downcast\_2d()}{\_downcast\_2d()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+downcast\+\_\+2d (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dtype,  }\item[{bool }]{using\+\_\+cow = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}downcast specialized to 2D case post-validation.
+
+Refactored to allow use of maybe_split.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9e5d6cbd1f19222debea6c0e2ef3f67c}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9e5d6cbd1f19222debea6c0e2ef3f67c} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_get\_refs\_and\_copy@{\_get\_refs\_and\_copy}}
+\index{\_get\_refs\_and\_copy@{\_get\_refs\_and\_copy}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_get\_refs\_and\_copy()}{\_get\_refs\_and\_copy()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+get\+\_\+refs\+\_\+and\+\_\+copy (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{using\+\_\+cow,  }\item[{bool}]{inplace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_af3b5f344bcb8098958eae8595024780a}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_af3b5f344bcb8098958eae8595024780a} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_maybe\_copy@{\_maybe\_copy}}
+\index{\_maybe\_copy@{\_maybe\_copy}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_maybe\_copy()}{\_maybe\_copy()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+maybe\+\_\+copy (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{using\+\_\+cow,  }\item[{bool}]{inplace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a030047b8405039d7dbceb54bc766aea8}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a030047b8405039d7dbceb54bc766aea8} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_maybe\_downcast@{\_maybe\_downcast}}
+\index{\_maybe\_downcast@{\_maybe\_downcast}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_maybe\_downcast()}{\_maybe\_downcast()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+maybe\+\_\+downcast (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]}}]{blocks,  }\item[{}]{downcast,  }\item[{bool}]{using\+\_\+cow,  }\item[{str}]{caller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a76c67019785b474ad436ffcc4dd2d398}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a76c67019785b474ad436ffcc4dd2d398} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_maybe\_squeeze\_arg@{\_maybe\_squeeze\_arg}}
+\index{\_maybe\_squeeze\_arg@{\_maybe\_squeeze\_arg}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_maybe\_squeeze\_arg()}{\_maybe\_squeeze\_arg()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+maybe\+\_\+squeeze\+\_\+arg (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+ndarray}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}For compatibility with 1D-only ExtensionArrays.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_afb8bf0360750e8812dae9bd09a915525}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ad3f73e0b56b07b4d2579daef92ead92f}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ad3f73e0b56b07b4d2579daef92ead92f} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_replace\_coerce@{\_replace\_coerce}}
+\index{\_replace\_coerce@{\_replace\_coerce}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_replace\_coerce()}{\_replace\_coerce()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+replace\+\_\+coerce (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{to\+\_\+replace,  }\item[{}]{value,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}}]{mask,  }\item[{bool }]{inplace = {\ttfamily True},  }\item[{bool }]{regex = {\ttfamily False},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Replace value corresponding to the given boolean array with another
+value.
+
+Parameters
+----------
+to_replace : object or pattern
+    Scalar to replace or regular expression to match.
+value : object
+    Replacement object.
+mask : np.ndarray[bool]
+    True indicate corresponding element is ignored.
+inplace : bool, default True
+    Perform inplace modification.
+regex : bool, default False
+    If true, perform regular expression substitution.
+
+Returns
+-------
+List[Block]
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9359bc30253c0560e98ac5139314501b}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a9359bc30253c0560e98ac5139314501b} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_replace\_regex@{\_replace\_regex}}
+\index{\_replace\_regex@{\_replace\_regex}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_replace\_regex()}{\_replace\_regex()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+replace\+\_\+regex (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{to\+\_\+replace,  }\item[{}]{value,  }\item[{bool }]{inplace = {\ttfamily False},  }\item[{}]{mask = {\ttfamily None},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False},  }\item[{}]{already\+\_\+warned = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Replace elements by the given value.
+
+Parameters
+----------
+to_replace : object or pattern
+    Scalar to replace or regular expression to match.
+value : object
+    Replacement object.
+inplace : bool, default False
+    Perform inplace modification.
+mask : array-like of bool, optional
+    True indicate corresponding element is ignored.
+using_cow: bool, default False
+    Specifying if copy on write is enabled.
+
+Returns
+-------
+List[Block]
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a31e446a0346289840211859de2da085e}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a31e446a0346289840211859de2da085e} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_slice@{\_slice}}
+\index{\_slice@{\_slice}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_slice()}{\_slice()}}
+{\footnotesize\ttfamily  Array\+Like pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+slice (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{slice \texorpdfstring{$\vert$}{|} npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \texorpdfstring{$\vert$}{|} npt.\+NDArray\mbox{[}np.\+intp\mbox{]}     }]{slicer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}return a slice of my values\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_aacb60d794529f514f887b6fe4db7235d}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8b35074d89b60ba3a9b0ec5200a6b24a}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8b35074d89b60ba3a9b0ec5200a6b24a} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_split@{\_split}}
+\index{\_split@{\_split}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_split()}{\_split()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+split (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Split a block into a list of single-column blocks.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a6a7281063dd18dae90c8a4c57962e468}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a6a7281063dd18dae90c8a4c57962e468} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_split\_op\_result@{\_split\_op\_result}}
+\index{\_split\_op\_result@{\_split\_op\_result}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_split\_op\_result()}{\_split\_op\_result()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+split\+\_\+op\+\_\+result (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Array\+Like}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a06f9958d4cd75a881e86c53ca9bac8a4}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a06f9958d4cd75a881e86c53ca9bac8a4} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_standardize\_fill\_value@{\_standardize\_fill\_value}}
+\index{\_standardize\_fill\_value@{\_standardize\_fill\_value}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_standardize\_fill\_value()}{\_standardize\_fill\_value()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+standardize\+\_\+fill\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afd54b416c5887e606eabc7d04fb172b4}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afd54b416c5887e606eabc7d04fb172b4} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_unstack@{\_unstack}}
+\index{\_unstack@{\_unstack}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_unstack()}{\_unstack()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+unstack (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{unstacker,  }\item[{}]{fill\+\_\+value,  }\item[{npt.\+NDArray\mbox{[}np.\+intp\mbox{]}}]{new\+\_\+placement,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}}]{needs\+\_\+masking }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a list of unstacked blocks of self
+
+Parameters
+----------
+unstacker : reshape._Unstacker
+fill_value : int
+    Only used in ExtensionBlock._unstack
+new_placement : np.ndarray[np.intp]
+allow_fill : bool
+needs_masking : np.ndarray[bool]
+
+Returns
+-------
+blocks : list of Block
+    New blocks of unstacked values.
+mask : array-like of bool
+    The mask of columns of `blocks` we should keep.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_ae799fe4f3097671f63b271ea0a9fb854}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abe0cc948ceea105530d8afce7ecdbd15}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abe0cc948ceea105530d8afce7ecdbd15} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_unwrap\_setitem\_indexer@{\_unwrap\_setitem\_indexer}}
+\index{\_unwrap\_setitem\_indexer@{\_unwrap\_setitem\_indexer}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_unwrap\_setitem\_indexer()}{\_unwrap\_setitem\_indexer()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+unwrap\+\_\+setitem\+\_\+indexer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{indexer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}For compatibility with 1D-only ExtensionArrays.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_a9344e5f25355823779765bc9ee9474ee}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a44ffff4610f245f573ee6942604b3344}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a44ffff4610f245f573ee6942604b3344} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_validate\_ndim@{\_validate\_ndim}}
+\index{\_validate\_ndim@{\_validate\_ndim}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_validate\_ndim()}{\_validate\_ndim()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+validate\+\_\+ndim (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}We validate dimension for blocks that can hold 2D values, which for now
+means numpy dtypes or DatetimeTZDtype.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a448386acd8f5675f8b4a5de49c693aa6}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a448386acd8f5675f8b4a5de49c693aa6} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!apply@{apply}}
+\index{apply@{apply}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+apply (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}apply the function to my values; return a block if we are not
+one
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1567514123b3f4fa25020f48d310e991}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1567514123b3f4fa25020f48d310e991} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!array\_values@{array\_values}}
+\index{array\_values@{array\_values}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{array\_values()}{array\_values()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}} pandas.\+core.\+internals.\+blocks.\+Block.\+array\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The array that Series.array returns. Always an ExtensionArray.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1EABackedBlock_a09cd3c4548163c7ffe999dd285897c69}{pandas.\+core.\+internals.\+blocks.\+EABacked\+Block}}, et \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1NumpyBlock_a2913e4ffb3089b12e21bae50b1694ab7}{pandas.\+core.\+internals.\+blocks.\+Numpy\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5a43a2af14f43fa9a87163ffd1b69835}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5a43a2af14f43fa9a87163ffd1b69835} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!astype@{astype}}
+\index{astype@{astype}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{astype()}{astype()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} pandas.\+core.\+internals.\+blocks.\+Block.\+astype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Dtype\+Obj}]{dtype,  }\item[{bool }]{copy = {\ttfamily False},  }\item[{Ignore\+Raise }]{errors = {\ttfamily "{}raise"{}},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False},  }\item[{bool }]{squeeze = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Coerce to the new dtype.
+
+Parameters
+----------
+dtype : np.dtype or ExtensionDtype
+copy : bool, default False
+    copy if indicated
+errors : str, {'raise', 'ignore'}, default 'raise'
+    - ``raise`` : allow exceptions to be raised
+    - ``ignore`` : suppress exceptions. On error return original object
+using_cow: bool, default False
+    Signaling if copy on write copy logic is used.
+squeeze : bool, default False
+    squeeze values to ndim=1 if only one column is given
+
+Returns
+-------
+Block
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ab27781bca5b9ed6d8b41566532550509}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ab27781bca5b9ed6d8b41566532550509} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!coerce\_to\_target\_dtype@{coerce\_to\_target\_dtype}}
+\index{coerce\_to\_target\_dtype@{coerce\_to\_target\_dtype}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{coerce\_to\_target\_dtype()}{coerce\_to\_target\_dtype()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} pandas.\+core.\+internals.\+blocks.\+Block.\+coerce\+\_\+to\+\_\+target\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other,  }\item[{bool }]{warn\+\_\+on\+\_\+upcast = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}coerce the current block to a dtype compat for other
+we will return a block, possibly object, and not raise
+
+we can also safely try to coerce to the same dtype
+and will receive the same block
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a816f49fd40022c142da6cc48902e1899}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a816f49fd40022c142da6cc48902e1899} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!convert@{convert}}
+\index{convert@{convert}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+convert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}bool }]{copy = {\ttfamily True},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt to coerce any object types to better types. Return a copy
+of the block (if copy = True).
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a45e6d1895e71560aae483a6bba15e383}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a45e6d1895e71560aae483a6bba15e383} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!convert\_dtypes@{convert\_dtypes}}
+\index{convert\_dtypes@{convert\_dtypes}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{convert\_dtypes()}{convert\_dtypes()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+convert\+\_\+dtypes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{copy,  }\item[{bool}]{using\+\_\+cow,  }\item[{bool }]{infer\+\_\+objects = {\ttfamily True},  }\item[{bool }]{convert\+\_\+string = {\ttfamily True},  }\item[{bool }]{convert\+\_\+integer = {\ttfamily True},  }\item[{bool }]{convert\+\_\+boolean = {\ttfamily True},  }\item[{bool }]{convert\+\_\+floating = {\ttfamily True},  }\item[{Dtype\+Backend }]{dtype\+\_\+backend = {\ttfamily "{}numpy\+\_\+nullable"{}} }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae978dbb1e2e405df7bbb486b71654683}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae978dbb1e2e405df7bbb486b71654683} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!copy@{copy}}
+\index{copy@{copy}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+blocks.\+Block.\+copy (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{deep = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}copy constructor\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa56a8fef518ec941579e55814f0f3fae}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa56a8fef518ec941579e55814f0f3fae} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!delete@{delete}}
+\index{delete@{delete}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{loc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deletes the locs from the block.
+
+We split the block to avoid copying the underlying data. We create new
+blocks for every connected segment of the initial block that is not deleted.
+The new blocks point to the initial array.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1EABackedBlock_a87bcb07c4c2b494896c410d4dada1271}{pandas.\+core.\+internals.\+blocks.\+EABacked\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a075577ce0f6639ad9f5b3e7c727bc194}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a075577ce0f6639ad9f5b3e7c727bc194} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!diff@{diff}}
+\index{diff@{diff}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{diff()}{diff()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+diff (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return block for the diff of the values\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abf94fa12fcb85c4a185eea43a22533b2}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abf94fa12fcb85c4a185eea43a22533b2} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!dtype@{dtype}}
+\index{dtype@{dtype}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{dtype()}{dtype()}}
+{\footnotesize\ttfamily  Dtype\+Obj pandas.\+core.\+internals.\+blocks.\+Block.\+dtype (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa9cd64e65042eac7fc7cb099e8faf1ab}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa9cd64e65042eac7fc7cb099e8faf1ab} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!external\_values@{external\_values}}
+\index{external\_values@{external\_values}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{external\_values()}{external\_values()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+external\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5755d64fa81e50c56f2f26013155435b}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5755d64fa81e50c56f2f26013155435b} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!fill\_value@{fill\_value}}
+\index{fill\_value@{fill\_value}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{fill\_value()}{fill\_value()}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+fill\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae7953e2f1d4c0b73b8bb28560dccc425}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae7953e2f1d4c0b73b8bb28560dccc425} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!fillna@{fillna}}
+\index{fillna@{fillna}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{fillna()}{fillna()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+fillna (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{value,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None},  }\item[{bool }]{inplace = {\ttfamily False},  }\item[{}]{downcast = {\ttfamily None},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False},  }\item[{}]{already\+\_\+warned = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}fillna on the block with the value. If we fail, then convert to
+block to hold objects instead and try again
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_a3420ee92dd0bcd07a05a60aaf7d10f14}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a00726f5e572d6cd323088885029ca596}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a00726f5e572d6cd323088885029ca596} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!get\_values@{get\_values}}
+\index{get\_values@{get\_values}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{get\_values()}{get\_values()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+internals.\+blocks.\+Block.\+get\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Dtype\+Obj \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return an internal format, currently just the ndarray
+this is often overridden to handle to_dense like operations
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1EABackedBlock_a6ec1aebd82cfd4ab5b7cd1ae0a030861}{pandas.\+core.\+internals.\+blocks.\+EABacked\+Block}}, et \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1NumpyBlock_a986aacbf98d65afdb932954d9ecb348f}{pandas.\+core.\+internals.\+blocks.\+Numpy\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac4f1496b3825c0127d2db71a7ab084c2}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac4f1496b3825c0127d2db71a7ab084c2} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!get\_values\_for\_csv@{get\_values\_for\_csv}}
+\index{get\_values\_for\_csv@{get\_values\_for\_csv}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{get\_values\_for\_csv()}{get\_values\_for\_csv()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} pandas.\+core.\+internals.\+blocks.\+Block.\+get\+\_\+values\+\_\+for\+\_\+csv (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{float\+\_\+format,  }\item[{}]{date\+\_\+format,  }\item[{}]{decimal,  }\item[{str }]{na\+\_\+rep = {\ttfamily "{}nan"{}},  }\item[{}]{quoting = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}convert to our native types format\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae6a63128fc7402fad20578a0c80aab09}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae6a63128fc7402fad20578a0c80aab09} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!getitem\_block\_columns@{getitem\_block\_columns}}
+\index{getitem\_block\_columns@{getitem\_block\_columns}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{getitem\_block\_columns()}{getitem\_block\_columns()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+blocks.\+Block.\+getitem\+\_\+block\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{slice}]{slicer,  }\item[{Block\+Placement}]{new\+\_\+mgr\+\_\+locs,  }\item[{bool }]{ref\+\_\+inplace\+\_\+op = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform __getitem__-like, return result as block.
+
+Only supports slices that preserve dimensionality.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a73c9ddfcfe5678fb75eb756cf1a3690d}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a73c9ddfcfe5678fb75eb756cf1a3690d} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!iget@{iget}}
+\index{iget@{iget}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{iget()}{iget()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+internals.\+blocks.\+Block.\+iget (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} tuple\mbox{[}int, int\mbox{]} \texorpdfstring{$\vert$}{|} tuple\mbox{[}slice, int\mbox{]}}]{i }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_aac1c23c28e716dcd7351c3ef573ce1c1}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ade99ca7cd5777150c265811abf46e5cd}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ade99ca7cd5777150c265811abf46e5cd} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{interpolate()}{interpolate()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+interpolate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}Interpolate\+Options}]{method,  }\item[{Index}]{index,  }\item[{bool }]{inplace = {\ttfamily False},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None},  }\item[{Literal\mbox{[}"{}forward"{}, "{}backward"{}, "{}both"{}\mbox{]} }]{limit\+\_\+direction = {\ttfamily "{}forward"{}},  }\item[{Literal\mbox{[}"{}inside"{}, "{}outside"{}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{limit\+\_\+area = {\ttfamily None},  }\item[{Literal\mbox{[}"{}infer"{}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{downcast = {\ttfamily None},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False},  }\item[{}]{already\+\_\+warned = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a367a9e3a78e93522e3e89ea64e65863e}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a367a9e3a78e93522e3e89ea64e65863e} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!is\_bool@{is\_bool}}
+\index{is\_bool@{is\_bool}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{is\_bool()}{is\_bool()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+is\+\_\+bool (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}We can be bool if a) we are bool dtype or b) object dtype with bool objects.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a49f49e88aa8a6e784b987eaed45f5e18}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a49f49e88aa8a6e784b987eaed45f5e18} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!is\_extension@{is\_extension}}
+\index{is\_extension@{is\_extension}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{is\_extension()}{is\_extension()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+is\+\_\+extension (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac9f70f5fa78d8d5c5fcc685d967e275e}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac9f70f5fa78d8d5c5fcc685d967e275e} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!is\_object@{is\_object}}
+\index{is\_object@{is\_object}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{is\_object()}{is\_object()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+is\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7e231314f10e40c58f9348a3e1586a8d}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7e231314f10e40c58f9348a3e1586a8d} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!is\_view@{is\_view}}
+\index{is\_view@{is\_view}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{is\_view()}{is\_view()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+is\+\_\+view (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return a boolean if I am possibly a view\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_abc0aa3e3cbdb09aa33f303c6ad7c50fe}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}, \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1NumpyBlock_a0babaa3f2cdb49857aef652e44401fce}{pandas.\+core.\+internals.\+blocks.\+Numpy\+Block}}, et \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1NDArrayBackedExtensionBlock_a416ebdea6cbea6e5690bd63fbf0aeef5}{pandas.\+core.\+internals.\+blocks.\+NDArray\+Backed\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1af84c66660433b60cb9ee024660cae3}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a1af84c66660433b60cb9ee024660cae3} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!make\_block@{make\_block}}
+\index{make\_block@{make\_block}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{make\_block()}{make\_block()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} pandas.\+core.\+internals.\+blocks.\+Block.\+make\+\_\+block (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{values,  }\item[{Block\+Placement \texorpdfstring{$\vert$}{|} None }]{placement = {\ttfamily None},  }\item[{Block\+Values\+Refs \texorpdfstring{$\vert$}{|} None }]{refs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new block, with type inference propagate any values that are
+not specified
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a34b292592effc378d3c4c6866e178e5e}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a34b292592effc378d3c4c6866e178e5e} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!make\_block\_same\_class@{make\_block\_same\_class}}
+\index{make\_block\_same\_class@{make\_block\_same\_class}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{make\_block\_same\_class()}{make\_block\_same\_class()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+blocks.\+Block.\+make\+\_\+block\+\_\+same\+\_\+class (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{values,  }\item[{Block\+Placement \texorpdfstring{$\vert$}{|} None }]{placement = {\ttfamily None},  }\item[{Block\+Values\+Refs \texorpdfstring{$\vert$}{|} None }]{refs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrap given values in a block of same type as self.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a897de9495d36365fab1b536bac78832d}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a897de9495d36365fab1b536bac78832d} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!mgr\_locs@{mgr\_locs}}
+\index{mgr\_locs@{mgr\_locs}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{mgr\_locs()}{mgr\_locs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily  Block\+Placement pandas.\+core.\+internals.\+blocks.\+Block.\+mgr\+\_\+locs (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aeacb4fbf9230688605d27104fe939a50}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aeacb4fbf9230688605d27104fe939a50} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!mgr\_locs@{mgr\_locs}}
+\index{mgr\_locs@{mgr\_locs}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{mgr\_locs()}{mgr\_locs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily  None pandas.\+core.\+internals.\+blocks.\+Block.\+mgr\+\_\+locs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Block\+Placement}]{new\+\_\+mgr\+\_\+locs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a3c8ce03c4e9b6f8df9ea17524faafe67}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a3c8ce03c4e9b6f8df9ea17524faafe67} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!pad\_or\_backfill@{pad\_or\_backfill}}
+\index{pad\_or\_backfill@{pad\_or\_backfill}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{pad\_or\_backfill()}{pad\_or\_backfill()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+pad\+\_\+or\+\_\+backfill (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}Fillna\+Options}]{method,  }\item[{Axis\+Int }]{axis = {\ttfamily 0},  }\item[{bool }]{inplace = {\ttfamily False},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{limit = {\ttfamily None},  }\item[{Literal\mbox{[}"{}inside"{}, "{}outside"{}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{limit\+\_\+area = {\ttfamily None},  }\item[{Literal\mbox{[}"{}infer"{}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{downcast = {\ttfamily None},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False},  }\item[{}]{already\+\_\+warned = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1EABackedBlock_a23aea721a2fd80c4570ae01ede906400}{pandas.\+core.\+internals.\+blocks.\+EABacked\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abeec0b5ba7fb60062113b5f0b9a2e7ed}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abeec0b5ba7fb60062113b5f0b9a2e7ed} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!putmask@{putmask}}
+\index{putmask@{putmask}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{putmask()}{putmask()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+putmask (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mask,  }\item[{}]{new,  }\item[{bool }]{using\+\_\+cow = {\ttfamily False},  }\item[{}]{already\+\_\+warned = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}putmask the data to the block; it is possible that we may create a
+new dtype of block
+
+Return the resulting block(s).
+
+Parameters
+----------
+mask : np.ndarray[bool], SparseArray[bool], or BooleanArray
+new : a ndarray/object
+using_cow: bool, default False
+
+Returns
+-------
+List[Block]
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1EABackedBlock_a180ad68c236d1fc25bdf06156fbf6768}{pandas.\+core.\+internals.\+blocks.\+EABacked\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8e3ce4b6fd5a3d70ec1b8d6e9d6afc57}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a8e3ce4b6fd5a3d70ec1b8d6e9d6afc57} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!quantile@{quantile}}
+\index{quantile@{quantile}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{quantile()}{quantile()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} pandas.\+core.\+internals.\+blocks.\+Block.\+quantile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Index}]{qs,  }\item[{Quantile\+Interpolation }]{interpolation = {\ttfamily "{}linear"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}compute the quantiles of the
+
+Parameters
+----------
+qs : Index
+    The quantiles to be computed in float64.
+interpolation : str, default 'linear'
+    Type of interpolation.
+
+Returns
+-------
+Block
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a2a0c5958b97b80afca916d82f4e4dc34}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a2a0c5958b97b80afca916d82f4e4dc34} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!reduce@{reduce}}
+\index{reduce@{reduce}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+reduce (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a2f703a032fd5983c9950d4a30f8678b9}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a2f703a032fd5983c9950d4a30f8678b9} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!replace@{replace}}
+\index{replace@{replace}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+replace (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{to\+\_\+replace,  }\item[{}]{value,  }\item[{bool }]{inplace = {\ttfamily False},  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \texorpdfstring{$\vert$}{|} None }]{mask = {\ttfamily None},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False},  }\item[{}]{already\+\_\+warned = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}replace the to_replace value with value, possible to create new
+blocks here this is just a call to putmask.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_adac1ec0100942cc1a7f7160ca3a22730}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_adac1ec0100942cc1a7f7160ca3a22730} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!replace\_list@{replace\_list}}
+\index{replace\_list@{replace\_list}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{replace\_list()}{replace\_list()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+replace\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Iterable\mbox{[}Any\mbox{]}}]{src\+\_\+list,  }\item[{Sequence\mbox{[}Any\mbox{]}}]{dest\+\_\+list,  }\item[{bool }]{inplace = {\ttfamily False},  }\item[{bool }]{regex = {\ttfamily False},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False},  }\item[{}]{already\+\_\+warned = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}See BlockManager.replace_list docstring.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac19aaf1ec2494475c3123a99e189b190}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac19aaf1ec2494475c3123a99e189b190} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!round@{round}}
+\index{round@{round}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{round()}{round()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+blocks.\+Block.\+round (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{decimals,  }\item[{bool }]{using\+\_\+cow = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rounds the values.
+If the block is not of an integer or float dtype, nothing happens.
+This is consistent with DataFrame.round behavivor.
+(Note: Series.round would raise)
+
+Parameters
+----------
+decimals: int,
+    Number of decimal places to round to.
+    Caller is responsible for validating this
+using_cow: bool,
+    Whether Copy on Write is enabled right now
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a60f222a401929c2b8a827c242e834789}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a60f222a401929c2b8a827c242e834789} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!set\_inplace@{set\_inplace}}
+\index{set\_inplace@{set\_inplace}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{set\_inplace()}{set\_inplace()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+internals.\+blocks.\+Block.\+set\+\_\+inplace (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{locs,  }\item[{Array\+Like}]{values,  }\item[{bool }]{copy = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Modify block values in-place with new item value.
+
+If copy=True, first copy the underlying values in place before modifying
+(for Copy-on-Write).
+
+Notes
+-----
+`set_inplace` never creates a new array or new Block, whereas `setitem`
+_may_ create a new array and always creates a new Block.
+
+Caller is responsible for checking values.dtype == self.dtype.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_a62174f94362b746a2b67ed7d37a89574}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a90ea0de3c1ac76c8ba8c514b651570ff}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a90ea0de3c1ac76c8ba8c514b651570ff} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!setitem@{setitem}}
+\index{setitem@{setitem}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{setitem()}{setitem()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} pandas.\+core.\+internals.\+blocks.\+Block.\+setitem (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{indexer,  }\item[{}]{value,  }\item[{bool }]{using\+\_\+cow = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempt self.values[indexer] = value, possibly creating a new array.
+
+Parameters
+----------
+indexer : tuple, list-like, array-like, slice, int
+    The subset of self.values to set
+value : object
+    The value being set
+using_cow: bool, default False
+    Signaling if CoW is used.
+
+Returns
+-------
+Block
+
+Notes
+-----
+`indexer` is a direct slice/positional indexer. `value` must
+be a compatible shape.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1EABackedBlock_a0614255dc3353cab2905990ca9464d58}{pandas.\+core.\+internals.\+blocks.\+EABacked\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a0f3c7634a63e1d5b7461bc3ad878eafd}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a0f3c7634a63e1d5b7461bc3ad878eafd} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!shape@{shape}}
+\index{shape@{shape}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily  Shape pandas.\+core.\+internals.\+blocks.\+Block.\+shape (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_a58c2976e4cc18cc46629c730e154f413}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a23696a0a2f9870e99f529b52bb20e6aa}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a23696a0a2f9870e99f529b52bb20e6aa} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!shift@{shift}}
+\index{shift@{shift}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{shift()}{shift()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+shift (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{periods,  }\item[{Any }]{fill\+\_\+value = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}shift the block by periods, possibly upcast\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1EABackedBlock_a3b9c6a6e16718fe716e963657dd69ca0}{pandas.\+core.\+internals.\+blocks.\+EABacked\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abaf810d0c9b859d9d5ccd2841d7e4703}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_abaf810d0c9b859d9d5ccd2841d7e4703} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!should\_store@{should\_store}}
+\index{should\_store@{should\_store}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{should\_store()}{should\_store()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+internals.\+blocks.\+Block.\+should\+\_\+store (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Array\+Like}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Should we set self.values[indexer] = value inplace or do we need to cast?
+
+Parameters
+----------
+value : np.ndarray or ExtensionArray
+
+Returns
+-------
+bool
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a46b36357b80214b6834a940b48b69f49}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a46b36357b80214b6834a940b48b69f49} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!slice\_block\_columns@{slice\_block\_columns}}
+\index{slice\_block\_columns@{slice\_block\_columns}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{slice\_block\_columns()}{slice\_block\_columns()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+blocks.\+Block.\+slice\+\_\+block\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{slice}]{slc }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform __getitem__-like, return result as block.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a63ed91096020fe396b76e9546bf915bb}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a63ed91096020fe396b76e9546bf915bb} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!split\_and\_operate@{split\_and\_operate}}
+\index{split\_and\_operate@{split\_and\_operate}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{split\_and\_operate()}{split\_and\_operate()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+split\+\_\+and\+\_\+operate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split the block and apply func column-by-column.
+
+Parameters
+----------
+func : Block method
+*args
+**kwargs
+
+Returns
+-------
+List[Block]
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a3844953648518185ea3327d9cf02312d}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a3844953648518185ea3327d9cf02312d} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!take\_block\_columns@{take\_block\_columns}}
+\index{take\_block\_columns@{take\_block\_columns}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{take\_block\_columns()}{take\_block\_columns()}}
+{\footnotesize\ttfamily  Self pandas.\+core.\+internals.\+blocks.\+Block.\+take\+\_\+block\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{npt.\+NDArray\mbox{[}np.\+intp\mbox{]}}]{indices }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform __getitem__-like, return result as block.
+
+Only supports slices that preserve dimensionality.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac8980870d11df5971798e51888d11286}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac8980870d11df5971798e51888d11286} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!take\_nd@{take\_nd}}
+\index{take\_nd@{take\_nd}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{take\_nd()}{take\_nd()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}} pandas.\+core.\+internals.\+blocks.\+Block.\+take\+\_\+nd (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{npt.\+NDArray\mbox{[}np.\+intp\mbox{]}}]{indexer,  }\item[{Axis\+Int}]{axis,  }\item[{Block\+Placement \texorpdfstring{$\vert$}{|} None }]{new\+\_\+mgr\+\_\+locs = {\ttfamily None},  }\item[{}]{fill\+\_\+value = {\ttfamily lib.no\+\_\+default} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take values according to indexer and return them as a block.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae0b57364a73cc0d72554dd87a66e66fb}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ae0b57364a73cc0d72554dd87a66e66fb} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!where@{where}}
+\index{where@{where}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{where()}{where()}}
+{\footnotesize\ttfamily  list\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1Block}{Block}}\mbox{]} pandas.\+core.\+internals.\+blocks.\+Block.\+where (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other,  }\item[{}]{cond,  }\item[{str \texorpdfstring{$\vert$}{|} bool }]{\+\_\+downcast = {\ttfamily "{}infer"{}},  }\item[{bool }]{using\+\_\+cow = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}evaluate the block; return result block(s) from the result
+
+Parameters
+----------
+other : a ndarray/object
+cond : np.ndarray[bool], SparseArray[bool], or BooleanArray
+_downcast : str or None, default "infer"
+    Private because we only specify it when calling from fillna.
+
+Returns
+-------
+List[Block]
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1EABackedBlock_a96cfcdfc388ed20f3914114ff772a2bb}{pandas.\+core.\+internals.\+blocks.\+EABacked\+Block}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a31b254afbac25cedaeb82f59c9f09b98}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a31b254afbac25cedaeb82f59c9f09b98} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_can\_consolidate@{\_can\_consolidate}}
+\index{\_can\_consolidate@{\_can\_consolidate}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_can\_consolidate}{\_can\_consolidate}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+can\+\_\+consolidate\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ada1e9bbddc4c54321a2c6d609392f0c4}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ada1e9bbddc4c54321a2c6d609392f0c4} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!\_mgr\_locs@{\_mgr\_locs}}
+\index{\_mgr\_locs@{\_mgr\_locs}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{\_mgr\_locs}{\_mgr\_locs}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+\_\+mgr\+\_\+locs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5f6bda5a8697e4fe4a7884eddd22b162}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5f6bda5a8697e4fe4a7884eddd22b162} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!dtype@{dtype}}
+\index{dtype@{dtype}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{dtype}{dtype}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+dtype}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5bb685417eaaf30de5935f50da27c35a}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a5bb685417eaaf30de5935f50da27c35a} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!is\_numeric@{is\_numeric}}
+\index{is\_numeric@{is\_numeric}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{is\_numeric}{is\_numeric}}
+{\footnotesize\ttfamily bool pandas.\+core.\+internals.\+blocks.\+Block.\+is\+\_\+numeric = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1ExtensionBlock_a35169a140dce778392ebb5d857a0078c}{pandas.\+core.\+internals.\+blocks.\+Extension\+Block}}, et \mbox{\hyperlink{classpandas_1_1core_1_1internals_1_1blocks_1_1NumpyBlock_a0790dce01d372f28aeec2c590e71bfa9}{pandas.\+core.\+internals.\+blocks.\+Numpy\+Block}}.
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7f4ba375127dd149193e48c6783451e6}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7f4ba375127dd149193e48c6783451e6} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!ndim@{ndim}}
+\index{ndim@{ndim}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{ndim}{ndim}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int pandas.\+core.\+internals.\+blocks.\+Block.\+ndim\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac7bc5d50e02b4dab0811f9e3c5647ff3}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_ac7bc5d50e02b4dab0811f9e3c5647ff3} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!ndim@{ndim}}
+\index{ndim@{ndim}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{ndim}{ndim}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+ndim}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa5f736aaf27e62ef88496583cd2956f3}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_aa5f736aaf27e62ef88496583cd2956f3} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!refs@{refs}}
+\index{refs@{refs}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{refs}{refs}}
+{\footnotesize\ttfamily Block\+Values\+Refs pandas.\+core.\+internals.\+blocks.\+Block.\+refs\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afced09be80a1f6b11907c835332cf2a0}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_afced09be80a1f6b11907c835332cf2a0} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!values@{values}}
+\index{values@{values}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{values}{values}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily np pandas.\+core.\+internals.\+blocks.\+Block.\+values .ndarray \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1base_1_1ExtensionArray}{Extension\+Array}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7188570dbbb8dae346c2aa862b1f9e37}\label{classpandas_1_1core_1_1internals_1_1blocks_1_1Block_a7188570dbbb8dae346c2aa862b1f9e37} 
+\index{pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}!values@{values}}
+\index{values@{values}!pandas.core.internals.blocks.Block@{pandas.core.internals.blocks.Block}}
+\doxysubsubsection{\texorpdfstring{values}{values}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+core.\+internals.\+blocks.\+Block.\+values}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/internals/\mbox{\hyperlink{blocks_8py}{blocks.\+py}}\end{DoxyCompactItemize}

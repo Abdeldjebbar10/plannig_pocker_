@@ -1,0 +1,52 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+authentication.\+Base\+Authentication}
+\hypertarget{classrest__framework_1_1authentication_1_1BaseAuthentication}{}\label{classrest__framework_1_1authentication_1_1BaseAuthentication}\index{rest\_framework.authentication.BaseAuthentication@{rest\_framework.authentication.BaseAuthentication}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+authentication.\+Base\+Authentication\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication_ae3bb4add98312b6937c33b263feae691}{authenticate}} (self, request)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication_a9bca2891f519f47ceeecad0d1c02333a}{authenticate\+\_\+header}} (self, request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}All authentication classes should extend BaseAuthentication.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1authentication_1_1BaseAuthentication_ae3bb4add98312b6937c33b263feae691}\label{classrest__framework_1_1authentication_1_1BaseAuthentication_ae3bb4add98312b6937c33b263feae691} 
+\index{rest\_framework.authentication.BaseAuthentication@{rest\_framework.authentication.BaseAuthentication}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!rest\_framework.authentication.BaseAuthentication@{rest\_framework.authentication.BaseAuthentication}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+Base\+Authentication.\+authenticate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Authenticate the request and return a two-tuple of (user, token).
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BasicAuthentication_a83f9d2b45cb9589112f00fb6bb6370a2}{rest\+\_\+framework.\+authentication.\+Basic\+Authentication}}, \mbox{\hyperlink{classrest__framework_1_1authentication_1_1SessionAuthentication_a31820e718d0d4e072499a574879d7731}{rest\+\_\+framework.\+authentication.\+Session\+Authentication}}, \mbox{\hyperlink{classrest__framework_1_1authentication_1_1TokenAuthentication_a500dd6f15c84a6d56a148e9a784e8381}{rest\+\_\+framework.\+authentication.\+Token\+Authentication}}, et \mbox{\hyperlink{classrest__framework_1_1authentication_1_1RemoteUserAuthentication_ad8ce42bf5a003f76052815e4abab2d85}{rest\+\_\+framework.\+authentication.\+Remote\+User\+Authentication}}.
+
+\Hypertarget{classrest__framework_1_1authentication_1_1BaseAuthentication_a9bca2891f519f47ceeecad0d1c02333a}\label{classrest__framework_1_1authentication_1_1BaseAuthentication_a9bca2891f519f47ceeecad0d1c02333a} 
+\index{rest\_framework.authentication.BaseAuthentication@{rest\_framework.authentication.BaseAuthentication}!authenticate\_header@{authenticate\_header}}
+\index{authenticate\_header@{authenticate\_header}!rest\_framework.authentication.BaseAuthentication@{rest\_framework.authentication.BaseAuthentication}}
+\doxysubsubsection{\texorpdfstring{authenticate\_header()}{authenticate\_header()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+Base\+Authentication.\+authenticate\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string to be used as the value of the `WWW-Authenticate`
+header in a `401 Unauthenticated` response, or `None` if the
+authentication scheme should return `403 Permission Denied` responses.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BasicAuthentication_addc6dde321da95fdf1080cfe4903d7f9}{rest\+\_\+framework.\+authentication.\+Basic\+Authentication}}, et \mbox{\hyperlink{classrest__framework_1_1authentication_1_1TokenAuthentication_a58bbf9150849a522c1de300336f43290}{rest\+\_\+framework.\+authentication.\+Token\+Authentication}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{authentication_8py}{authentication.\+py}}\end{DoxyCompactItemize}

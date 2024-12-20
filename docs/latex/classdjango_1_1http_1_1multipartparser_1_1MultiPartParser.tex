@@ -1,0 +1,202 @@
+\doxysection{Référence de la classe django.\+http.\+multipartparser.\+Multi\+Part\+Parser}
+\hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser}{}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser}\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a97da3e8cd4259ce36cfbfa7ca633a275}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, META, input\+\_\+data, upload\+\_\+handlers, encoding=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a667ea5d068bbd9626987acee5a9105c9}{parse}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ae2d409a1443e7ee23596ab9966f25410}{handle\+\_\+file\+\_\+complete}} (self, old\+\_\+field\+\_\+name, counters)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a6b98b1ebf4b17fd51649e2748b198ca0}{sanitize\+\_\+file\+\_\+name}} (self, file\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a17ee32189b3b2d59539183bab821bf8e}{boundary\+\_\+re}} = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\mbox{[} -\/\texorpdfstring{$\sim$}{\string~}\mbox{]}\{0,200\}\mbox{[}!-\/\texorpdfstring{$\sim$}{\string~}\mbox{]}"{})
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ab8c14f9e4e1c34dbc4616e17e2ca6058}{IE\+\_\+sanitize}} = \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a6b98b1ebf4b17fd51649e2748b198ca0}{sanitize\+\_\+file\+\_\+name}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_adb07bed95c15670985ba7e9222bc071f}{\+\_\+parse}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a744ca7a938368d25b0ed9b2b54a815ec}{\+\_\+close\+\_\+files}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a7973a22c4df1a4d9c0ed18df26837303}{\+\_\+boundary}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a941ba978b7ba5bccd6457e3e201c2524}{\+\_\+input\+\_\+data}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ac6411c864ffa5b661bf250f62fb2a963}{\+\_\+chunk\+\_\+size}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a5cc02e86c5bb07617210614995fb6598}{\+\_\+meta}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a67097417cf2d0ed8c602ddfaaf91e24e}{\+\_\+encoding}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ae0b7e42d965e1e2bd2e014c53eaa498f}{\+\_\+content\+\_\+length}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a9c267f867dece24db29dae12d7943f4b}{\+\_\+upload\+\_\+handlers}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ac1bc0718da8752ef5fdbe18264cbdf8d}{\+\_\+post}}
+\item 
+\mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_adaaad35302caaef808ec5af4f42685ae}{\+\_\+files}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An RFC 7578 multipart/form-data parser.
+
+``MultiValueDict.parse()`` reads the input stream in ``chunk_size`` chunks
+and returns a tuple of ``(MultiValueDict(POST), MultiValueDict(FILES))``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a97da3e8cd4259ce36cfbfa7ca633a275}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a97da3e8cd4259ce36cfbfa7ca633a275} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{META,  }\item[{}]{input\+\_\+data,  }\item[{}]{upload\+\_\+handlers,  }\item[{}]{encoding = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize the MultiPartParser object.
+
+:META:
+    The standard ``META`` dictionary in Django request objects.
+:input_data:
+    The raw post data, as a file-like object.
+:upload_handlers:
+    A list of UploadHandler instances that perform operations on the
+    uploaded data.
+:encoding:
+    The encoding with which to treat the incoming data.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a744ca7a938368d25b0ed9b2b54a815ec}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a744ca7a938368d25b0ed9b2b54a815ec} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_close\_files@{\_close\_files}}
+\index{\_close\_files@{\_close\_files}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_close\_files()}{\_close\_files()}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+close\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_adb07bed95c15670985ba7e9222bc071f}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_adb07bed95c15670985ba7e9222bc071f} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_parse@{\_parse}}
+\index{\_parse@{\_parse}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_parse()}{\_parse()}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+parse (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parse the POST data and break it into a FILES MultiValueDict and a POST
+MultiValueDict.
+
+Return a tuple containing the POST and FILES dictionary, respectively.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ae2d409a1443e7ee23596ab9966f25410}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ae2d409a1443e7ee23596ab9966f25410} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!handle\_file\_complete@{handle\_file\_complete}}
+\index{handle\_file\_complete@{handle\_file\_complete}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{handle\_file\_complete()}{handle\_file\_complete()}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+handle\+\_\+file\+\_\+complete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{old\+\_\+field\+\_\+name,  }\item[{}]{counters }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle all the signaling that takes place when a file is complete.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a667ea5d068bbd9626987acee5a9105c9}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a667ea5d068bbd9626987acee5a9105c9} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!parse@{parse}}
+\index{parse@{parse}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+parse (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a6b98b1ebf4b17fd51649e2748b198ca0}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a6b98b1ebf4b17fd51649e2748b198ca0} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!sanitize\_file\_name@{sanitize\_file\_name}}
+\index{sanitize\_file\_name@{sanitize\_file\_name}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{sanitize\_file\_name()}{sanitize\_file\_name()}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+sanitize\+\_\+file\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sanitize the filename of an upload.
+
+Remove all possible path separators, even though that might remove more
+than actually required by the target system. Filenames that could
+potentially cause problems (current/parent dir) are also discarded.
+
+It should be noted that this function could still return a "filepath"
+like "C:some_file.txt" which is handled later on by the storage layer.
+So while this function does sanitize filenames to some extent, the
+resulting filename should still be considered as untrusted user input.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a7973a22c4df1a4d9c0ed18df26837303}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a7973a22c4df1a4d9c0ed18df26837303} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_boundary@{\_boundary}}
+\index{\_boundary@{\_boundary}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_boundary}{\_boundary}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+boundary\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ac6411c864ffa5b661bf250f62fb2a963}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ac6411c864ffa5b661bf250f62fb2a963} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_chunk\_size@{\_chunk\_size}}
+\index{\_chunk\_size@{\_chunk\_size}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_chunk\_size}{\_chunk\_size}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+chunk\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ae0b7e42d965e1e2bd2e014c53eaa498f}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ae0b7e42d965e1e2bd2e014c53eaa498f} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_content\_length@{\_content\_length}}
+\index{\_content\_length@{\_content\_length}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_content\_length}{\_content\_length}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+content\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a67097417cf2d0ed8c602ddfaaf91e24e}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a67097417cf2d0ed8c602ddfaaf91e24e} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_encoding@{\_encoding}}
+\index{\_encoding@{\_encoding}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_encoding}{\_encoding}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+encoding\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_adaaad35302caaef808ec5af4f42685ae}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_adaaad35302caaef808ec5af4f42685ae} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_files@{\_files}}
+\index{\_files@{\_files}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_files}{\_files}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+files\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a941ba978b7ba5bccd6457e3e201c2524}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a941ba978b7ba5bccd6457e3e201c2524} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_input\_data@{\_input\_data}}
+\index{\_input\_data@{\_input\_data}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_input\_data}{\_input\_data}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+input\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a5cc02e86c5bb07617210614995fb6598}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a5cc02e86c5bb07617210614995fb6598} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_meta@{\_meta}}
+\index{\_meta@{\_meta}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_meta}{\_meta}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+meta\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ac1bc0718da8752ef5fdbe18264cbdf8d}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ac1bc0718da8752ef5fdbe18264cbdf8d} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_post@{\_post}}
+\index{\_post@{\_post}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_post}{\_post}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+post\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a9c267f867dece24db29dae12d7943f4b}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a9c267f867dece24db29dae12d7943f4b} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!\_upload\_handlers@{\_upload\_handlers}}
+\index{\_upload\_handlers@{\_upload\_handlers}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_upload\_handlers}{\_upload\_handlers}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+\_\+upload\+\_\+handlers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a17ee32189b3b2d59539183bab821bf8e}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a17ee32189b3b2d59539183bab821bf8e} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!boundary\_re@{boundary\_re}}
+\index{boundary\_re@{boundary\_re}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{boundary\_re}{boundary\_re}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+boundary\+\_\+re = \+\_\+lazy\+\_\+re\+\_\+compile(r"{}\mbox{[} -\/\texorpdfstring{$\sim$}{\string~}\mbox{]}\{0,200\}\mbox{[}!-\/\texorpdfstring{$\sim$}{\string~}\mbox{]}"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ab8c14f9e4e1c34dbc4616e17e2ca6058}\label{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_ab8c14f9e4e1c34dbc4616e17e2ca6058} 
+\index{django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}!IE\_sanitize@{IE\_sanitize}}
+\index{IE\_sanitize@{IE\_sanitize}!django.http.multipartparser.MultiPartParser@{django.http.multipartparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{IE\_sanitize}{IE\_sanitize}}
+{\footnotesize\ttfamily django.\+http.\+multipartparser.\+Multi\+Part\+Parser.\+IE\+\_\+sanitize = \mbox{\hyperlink{classdjango_1_1http_1_1multipartparser_1_1MultiPartParser_a6b98b1ebf4b17fd51649e2748b198ca0}{sanitize\+\_\+file\+\_\+name}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/http/\mbox{\hyperlink{multipartparser_8py}{multipartparser.\+py}}\end{DoxyCompactItemize}

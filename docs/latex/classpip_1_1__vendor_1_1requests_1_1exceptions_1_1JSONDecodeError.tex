@@ -1,0 +1,80 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+requests.\+exceptions.\+JSONDecode\+Error}
+\hypertarget{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError}{}\label{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError}\index{pip.\_vendor.requests.exceptions.JSONDecodeError@{pip.\_vendor.requests.exceptions.JSONDecodeError}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+requests.\+exceptions.\+JSONDecode\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+vendor.\+requests.\+exceptions.\+JSONDecode\+Error\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_acbba1e7007ddfce47bf65ca4f3b98676}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_ad349e360c39b63c30bdc5e479930fa35}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_aa08945ad9ef749226d9a09b35fda21a0}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_ad349e360c39b63c30bdc5e479930fa35}{args}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1RequestException}{pip.\+\_\+vendor.\+requests.\+exceptions.\+Request\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1RequestException_a0e345d98e65e24f94ef4336d2c6384d2}{response}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1RequestException_a68a0b2dcf4804bbd26c9b61ae90e34a2}{request}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Couldn't decode the text into json\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_acbba1e7007ddfce47bf65ca4f3b98676}\label{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_acbba1e7007ddfce47bf65ca4f3b98676} 
+\index{pip.\_vendor.requests.exceptions.JSONDecodeError@{pip.\_vendor.requests.exceptions.JSONDecodeError}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.requests.exceptions.JSONDecodeError@{pip.\_vendor.requests.exceptions.JSONDecodeError}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+requests.\+exceptions.\+JSONDecode\+Error.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct the JSONDecodeError instance first with all
+args. Then use it's args to construct the IOError so that
+the json specific args aren't used as IOError specific args
+and the error message from JSONDecodeError is preserved.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1RequestException_a329f73867c7c147953f1e150703875e5}{pip.\+\_\+vendor.\+requests.\+exceptions.\+Request\+Exception}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_aa08945ad9ef749226d9a09b35fda21a0}\label{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_aa08945ad9ef749226d9a09b35fda21a0} 
+\index{pip.\_vendor.requests.exceptions.JSONDecodeError@{pip.\_vendor.requests.exceptions.JSONDecodeError}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!pip.\_vendor.requests.exceptions.JSONDecodeError@{pip.\_vendor.requests.exceptions.JSONDecodeError}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+requests.\+exceptions.\+JSONDecode\+Error.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The __reduce__ method called when pickling the object must
+be the one from the JSONDecodeError (be it json/simplejson)
+as it expects all the arguments for instantiation, not just
+one like the IOError, and the MRO would by default call the
+__reduce__ method from the IOError due to the inheritance order.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_ad349e360c39b63c30bdc5e479930fa35}\label{classpip_1_1__vendor_1_1requests_1_1exceptions_1_1JSONDecodeError_ad349e360c39b63c30bdc5e479930fa35} 
+\index{pip.\_vendor.requests.exceptions.JSONDecodeError@{pip.\_vendor.requests.exceptions.JSONDecodeError}!args@{args}}
+\index{args@{args}!pip.\_vendor.requests.exceptions.JSONDecodeError@{pip.\_vendor.requests.exceptions.JSONDecodeError}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+requests.\+exceptions.\+JSONDecode\+Error.\+args}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/requests/\mbox{\hyperlink{pip_2__vendor_2requests_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

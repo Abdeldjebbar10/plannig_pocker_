@@ -1,0 +1,762 @@
+\doxysection{Référence de la classe pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader}
+\hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader}{}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader}\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5c262b535cae942c85eb9dac40c5b539}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}bytes\mbox{]} path\+\_\+or\+\_\+buf, \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad4394d6a2eeca102d9771044b580d0c2}{index}}=None, bool \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a52ae0a746a2951250bf35e1bf8eed6c1}{convert\+\_\+dates}}=True, bool \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a848f069c4c88914004d6a265db4f3b71}{blank\+\_\+missing}}=True, int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a132a61e9d3de8aafe8b50bcd04108157}{chunksize}}=None, str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a77e4c4f6ec43afafa0e600bfa5304ee1}{encoding}}=None, bool \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a801e111585d9229239cf61c319dce47d}{convert\+\_\+text}}=True, bool \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae30e3557d8d54724196e14cc011a9f59}{convert\+\_\+header\+\_\+text}}=True, Compression\+Options \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a859e2e0a0f96697da7200dab77a2fb21}{compression}}="{}infer"{})
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac5daeb97c5c09b069b94c0a29edc5874}{column\+\_\+data\+\_\+lengths}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aca5f1932e3ffc3d2e7efaa349dcef08d}{column\+\_\+data\+\_\+offsets}} (self)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a74b0d695bcd55102f5387b90d064a931}{column\+\_\+types}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7dd700e9fa778e1b46234c2710269a08}{close}} (self)
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a02e3a8fe339997392da8a4067e67148d}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae5e6d5be51c65ce8aa425d14e9dc64ac}{read}} (self, int\texorpdfstring{$\vert$}{|}None nrows=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sasreader_1_1ReaderBase}{pandas.\+io.\+sas.\+sasreader.\+Reader\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+Self \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sasreader_1_1ReaderBase_aa6149b0c95a3fa746f5274595e5bd4d1}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sasreader_1_1ReaderBase_a0286673db09156010efee2aa0865c58d}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type\mbox{[}Base\+Exception\mbox{]}\texorpdfstring{$\vert$}{|}None exc\+\_\+type, Base\+Exception\texorpdfstring{$\vert$}{|}None exc\+\_\+value, Traceback\+Type\texorpdfstring{$\vert$}{|}None traceback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad4394d6a2eeca102d9771044b580d0c2}{index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a52ae0a746a2951250bf35e1bf8eed6c1}{convert\+\_\+dates}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a848f069c4c88914004d6a265db4f3b71}{blank\+\_\+missing}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a132a61e9d3de8aafe8b50bcd04108157}{chunksize}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a77e4c4f6ec43afafa0e600bfa5304ee1}{encoding}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a801e111585d9229239cf61c319dce47d}{convert\+\_\+text}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae30e3557d8d54724196e14cc011a9f59}{convert\+\_\+header\+\_\+text}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a2e73904d5b88f28cecad8afbfc89c6ef}{default\+\_\+encoding}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a859e2e0a0f96697da7200dab77a2fb21}{compression}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a961fecfa180b6328b4286542f3582548}{handles}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a60c4d5f758d6a02941f653ec66710832}{U64}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af5a490b077ab68c41f61047f7fe1db13}{byte\+\_\+order}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab0c20c7b57ccd395ac3f4ef1bee14793}{need\+\_\+byteswap}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a47714852fc20cee6e4807cb7a0c3d6ab}{inferred\+\_\+encoding}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_adc054662a2a9c69d6403e9a2144529e8}{date\+\_\+created}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a2cea2963221b84eedb50f5a0ea9c26fa}{date\+\_\+modified}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a99b1f6297b2d7ec8ba633d477e89c9a8}{header\+\_\+length}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab0454f48931f474a4ddbe785046f04dc}{row\+\_\+length}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac1f12787daaa1e787e734ee1fc7d3232}{row\+\_\+count}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad9145ed1759829a7ab3287b6ce3f36b0}{col\+\_\+count\+\_\+p1}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa82e660a460642fc4a59fb80f159a4a4}{col\+\_\+count\+\_\+p2}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a35dddf8c04479eb78a0e2be70f49463f}{column\+\_\+count}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab40f33da698a0a60f25909b2830535fe}{column\+\_\+names\+\_\+raw}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5b53ebed213ffc4177d200537828fd3a}{creator\+\_\+proc}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aed1f87112441b22f167aca6a0302f82d}{\+\_\+get\+\_\+properties}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a567661a29cac40400e35281e6fedb4aa}{\+\_\+read\+\_\+float}} (self, int offset, int width)
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_adfdd1d56635e0fcb710af2ade3dbc611}{\+\_\+read\+\_\+uint}} (self, int offset, int width)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a8cf2db8e015e1cf062d2d337a1c6f39b}{\+\_\+read\+\_\+bytes}} (self, int offset, int length)
+\item 
+str\texorpdfstring{$\vert$}{|}bytes \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a13ac59ddb5a8740a4e05522a65ea72d8}{\+\_\+read\+\_\+and\+\_\+convert\+\_\+header\+\_\+text}} (self, int offset, int length)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a804b1d9ace0e140efa45a8c6dd975feb}{\+\_\+parse\+\_\+metadata}} (self)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7c80537a4c878dd2a9a41218851451c7}{\+\_\+process\+\_\+page\+\_\+meta}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_abf819454c1e10d6cc2b7a2845282a6a4}{\+\_\+read\+\_\+page\+\_\+header}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab687aaab269e1005fe92264d252f1243}{\+\_\+process\+\_\+page\+\_\+metadata}} (self)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a29625608cb5873301cd99cc041f4955a}{\+\_\+process\+\_\+rowsize\+\_\+subheader}} (self, int offset, int length)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a401f6003e78bc331c31d92798cf6d515}{\+\_\+process\+\_\+columnsize\+\_\+subheader}} (self, int offset, int length)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad209162c0455eceecf500a5882664f66}{\+\_\+process\+\_\+subheader\+\_\+counts}} (self, int offset, int length)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af8ce2b3520ffe4d78877d0b432cbbaa6}{\+\_\+process\+\_\+columntext\+\_\+subheader}} (self, int offset, int length)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a6ad3c6586876121c939bb57fc6afaafe}{\+\_\+process\+\_\+columnname\+\_\+subheader}} (self, int offset, int length)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aeb1109cf034f80bfffb198547828d671}{\+\_\+process\+\_\+columnattributes\+\_\+subheader}} (self, int offset, int length)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac3289abdd54bcdd77d7fb568332066a1}{\+\_\+process\+\_\+columnlist\+\_\+subheader}} (self, int offset, int length)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3128b71c0cf9b11bdeecfe3fb7e85f96}{\+\_\+process\+\_\+format\+\_\+subheader}} (self, int offset, int length)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a739d42d08a18b451e3cac0e163d16ebc}{\+\_\+read\+\_\+next\+\_\+page}} (self)
+\item 
+Data\+Frame \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab7eca5b0fa94b73bf9cb4ad7b0a15646}{\+\_\+chunk\+\_\+to\+\_\+dataframe}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3eaf07ceb70c1296bd4c774696a15e4f}{\+\_\+decode\+\_\+string}} (self, b)
+\item 
+str\texorpdfstring{$\vert$}{|}bytes \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acf3a1cc2052b1c72de0bc98b0d7d739f}{\+\_\+convert\+\_\+header\+\_\+text}} (self, bytes b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a53a21da170f1f2ce8f91989983d3e409}{\+\_\+cached\+\_\+page}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aeec47e6743fc8d09ff2533dd0bd291f9}{\+\_\+current\+\_\+row\+\_\+in\+\_\+file\+\_\+index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa091ec1a2f2e616d205ae5a29215b112}{\+\_\+current\+\_\+row\+\_\+on\+\_\+page\+\_\+index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5439ff36d0e67fabd04bc6404c2ba277}{\+\_\+path\+\_\+or\+\_\+buf}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac9e4842d7c5b92bc32646835b6fefecd}{\+\_\+subheader\+\_\+processors}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acda6284efc6a9e77e9273317420d357c}{\+\_\+process\+\_\+rowsize\+\_\+subheader}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a66f11d2f4b0f7dee3b6cbae445bdb8ae}{\+\_\+process\+\_\+columnsize\+\_\+subheader}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a1a620663fb2917bcc7b3f6a145a56683}{\+\_\+process\+\_\+subheader\+\_\+counts}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac2f802e5a342222ad7a0a8ad6163b4a4}{\+\_\+process\+\_\+columntext\+\_\+subheader}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae575de6ff5d8d5dd4792059746b1536b}{\+\_\+process\+\_\+columnname\+\_\+subheader}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a0146b2ed4bfd32aed6f2521d494eabf0}{\+\_\+process\+\_\+columnattributes\+\_\+subheader}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acb3d1405d441ca09257213aaae69028a}{\+\_\+process\+\_\+format\+\_\+subheader}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a14ac93827cad21b13ad8b0dfec82d360}{\+\_\+process\+\_\+columnlist\+\_\+subheader}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a92576be4ef11f8d72655ae5d4e9168e3}{\+\_\+column\+\_\+data\+\_\+lengths}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af2ea15d824fe28e9a81dc23c0b13bb3f}{\+\_\+column\+\_\+data\+\_\+offsets}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a490df7cc276a5a863409342a9971885d}{\+\_\+column\+\_\+types}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a250950261439db39086691104b398a52}{\+\_\+int\+\_\+length}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac96d513f40ffcbbd9f40e14955bbb10b}{\+\_\+page\+\_\+bit\+\_\+offset}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_afba7aca1cfdaa1ebd84a1439ed50b91f}{\+\_\+subheader\+\_\+pointer\+\_\+length}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aec33a590b31a4fc8087df72b1b418624}{\+\_\+page\+\_\+length}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3300a5f1f32e8279688bcf46f7533f14}{\+\_\+current\+\_\+page\+\_\+type}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab230f917c66a686f88d0d9d702116f18}{\+\_\+current\+\_\+page\+\_\+block\+\_\+count}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa715d129ff4efe24e57838e134aa86a2}{\+\_\+current\+\_\+page\+\_\+subheaders\+\_\+count}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad737a47293887a3b5cd764839956144f}{\+\_\+mix\+\_\+page\+\_\+row\+\_\+count}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab9c43a7d88ee7bd62f0cd2f35eeee16c}{\+\_\+lcs}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3adb563c9ec1a7113d5d21cb4b9fb564}{\+\_\+lcp}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5c9c7c529f719a4197787c3483942cd3}{\+\_\+string\+\_\+chunk}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa223050d6cc177b5c7246f9972aa91b2}{\+\_\+byte\+\_\+chunk}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a799c750e406c41208b8c27f1c0b4642c}{\+\_\+current\+\_\+row\+\_\+in\+\_\+chunk\+\_\+index}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a4c4b04e39104083c6521d291512258d3}{\+\_\+current\+\_\+page\+\_\+data\+\_\+subheader\+\_\+pointers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7b5fc204a418e4b7ae2ca86ea76d5ad6}{\+\_\+int\+\_\+length}}
+\item 
+bytes \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae6892785fef8efa7b15e151e0d393232}{\+\_\+cached\+\_\+page}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Read SAS files in SAS7BDAT format.
+
+Parameters
+----------
+path_or_buf : path name or buffer
+    Name of SAS file or file-like object pointing to SAS file
+    contents.
+index : column identifier, defaults to None
+    Column to use as index.
+convert_dates : bool, defaults to True
+    Attempt to convert dates to Pandas datetime values.  Note that
+    some rarely used SAS date formats may be unsupported.
+blank_missing : bool, defaults to True
+    Convert empty strings to missing values (SAS uses blanks to
+    indicate missing character variables).
+chunksize : int, defaults to None
+    Return SAS7BDATReader object for iterations, returns chunks
+    with given number of lines.
+encoding : str, 'infer', defaults to None
+    String encoding acc. to Python standard encodings,
+    encoding='infer' tries to detect the encoding from the file header,
+    encoding=None will leave the data in binary format.
+convert_text : bool, defaults to True
+    If False, text variables are left as raw bytes.
+convert_header_text : bool, defaults to True
+    If False, header text, including column names, are left as raw
+    bytes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5c262b535cae942c85eb9dac40c5b539}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5c262b535cae942c85eb9dac40c5b539} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{File\+Path \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classpandas_1_1__typing_1_1ReadBuffer}{Read\+Buffer}}\mbox{[}bytes\mbox{]}}]{path\+\_\+or\+\_\+buf,  }\item[{}]{index = {\ttfamily None},  }\item[{bool }]{convert\+\_\+dates = {\ttfamily True},  }\item[{bool }]{blank\+\_\+missing = {\ttfamily True},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{chunksize = {\ttfamily None},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding = {\ttfamily None},  }\item[{bool }]{convert\+\_\+text = {\ttfamily True},  }\item[{bool }]{convert\+\_\+header\+\_\+text = {\ttfamily True},  }\item[{Compression\+Options }]{compression = {\ttfamily "{}infer"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a02e3a8fe339997392da8a4067e67148d}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a02e3a8fe339997392da8a4067e67148d} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily  Data\+Frame pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab7eca5b0fa94b73bf9cb4ad7b0a15646}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab7eca5b0fa94b73bf9cb4ad7b0a15646} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_chunk\_to\_dataframe@{\_chunk\_to\_dataframe}}
+\index{\_chunk\_to\_dataframe@{\_chunk\_to\_dataframe}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_chunk\_to\_dataframe()}{\_chunk\_to\_dataframe()}}
+{\footnotesize\ttfamily  Data\+Frame pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+chunk\+\_\+to\+\_\+dataframe (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acf3a1cc2052b1c72de0bc98b0d7d739f}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acf3a1cc2052b1c72de0bc98b0d7d739f} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_convert\_header\_text@{\_convert\_header\_text}}
+\index{\_convert\_header\_text@{\_convert\_header\_text}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_convert\_header\_text()}{\_convert\_header\_text()}}
+{\footnotesize\ttfamily  str \texorpdfstring{$\vert$}{|} bytes pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+convert\+\_\+header\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bytes}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3eaf07ceb70c1296bd4c774696a15e4f}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3eaf07ceb70c1296bd4c774696a15e4f} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_decode\_string@{\_decode\_string}}
+\index{\_decode\_string@{\_decode\_string}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_decode\_string()}{\_decode\_string()}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+decode\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aed1f87112441b22f167aca6a0302f82d}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aed1f87112441b22f167aca6a0302f82d} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_get\_properties@{\_get\_properties}}
+\index{\_get\_properties@{\_get\_properties}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_get\_properties()}{\_get\_properties()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+get\+\_\+properties (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a804b1d9ace0e140efa45a8c6dd975feb}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a804b1d9ace0e140efa45a8c6dd975feb} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_parse\_metadata@{\_parse\_metadata}}
+\index{\_parse\_metadata@{\_parse\_metadata}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_parse\_metadata()}{\_parse\_metadata()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+parse\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aeb1109cf034f80bfffb198547828d671}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aeb1109cf034f80bfffb198547828d671} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columnattributes\_subheader@{\_process\_columnattributes\_subheader}}
+\index{\_process\_columnattributes\_subheader@{\_process\_columnattributes\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columnattributes\_subheader()}{\_process\_columnattributes\_subheader()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columnattributes\+\_\+subheader (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac3289abdd54bcdd77d7fb568332066a1}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac3289abdd54bcdd77d7fb568332066a1} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columnlist\_subheader@{\_process\_columnlist\_subheader}}
+\index{\_process\_columnlist\_subheader@{\_process\_columnlist\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columnlist\_subheader()}{\_process\_columnlist\_subheader()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columnlist\+\_\+subheader (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a6ad3c6586876121c939bb57fc6afaafe}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a6ad3c6586876121c939bb57fc6afaafe} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columnname\_subheader@{\_process\_columnname\_subheader}}
+\index{\_process\_columnname\_subheader@{\_process\_columnname\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columnname\_subheader()}{\_process\_columnname\_subheader()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columnname\+\_\+subheader (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a401f6003e78bc331c31d92798cf6d515}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a401f6003e78bc331c31d92798cf6d515} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columnsize\_subheader@{\_process\_columnsize\_subheader}}
+\index{\_process\_columnsize\_subheader@{\_process\_columnsize\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columnsize\_subheader()}{\_process\_columnsize\_subheader()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columnsize\+\_\+subheader (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af8ce2b3520ffe4d78877d0b432cbbaa6}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af8ce2b3520ffe4d78877d0b432cbbaa6} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columntext\_subheader@{\_process\_columntext\_subheader}}
+\index{\_process\_columntext\_subheader@{\_process\_columntext\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columntext\_subheader()}{\_process\_columntext\_subheader()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columntext\+\_\+subheader (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3128b71c0cf9b11bdeecfe3fb7e85f96}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3128b71c0cf9b11bdeecfe3fb7e85f96} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_format\_subheader@{\_process\_format\_subheader}}
+\index{\_process\_format\_subheader@{\_process\_format\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_format\_subheader()}{\_process\_format\_subheader()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+format\+\_\+subheader (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7c80537a4c878dd2a9a41218851451c7}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7c80537a4c878dd2a9a41218851451c7} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_page\_meta@{\_process\_page\_meta}}
+\index{\_process\_page\_meta@{\_process\_page\_meta}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_page\_meta()}{\_process\_page\_meta()}}
+{\footnotesize\ttfamily  bool pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+page\+\_\+meta (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab687aaab269e1005fe92264d252f1243}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab687aaab269e1005fe92264d252f1243} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_page\_metadata@{\_process\_page\_metadata}}
+\index{\_process\_page\_metadata@{\_process\_page\_metadata}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_page\_metadata()}{\_process\_page\_metadata()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+page\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a29625608cb5873301cd99cc041f4955a}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a29625608cb5873301cd99cc041f4955a} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_rowsize\_subheader@{\_process\_rowsize\_subheader}}
+\index{\_process\_rowsize\_subheader@{\_process\_rowsize\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_rowsize\_subheader()}{\_process\_rowsize\_subheader()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+rowsize\+\_\+subheader (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad209162c0455eceecf500a5882664f66}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad209162c0455eceecf500a5882664f66} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_subheader\_counts@{\_process\_subheader\_counts}}
+\index{\_process\_subheader\_counts@{\_process\_subheader\_counts}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_subheader\_counts()}{\_process\_subheader\_counts()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+subheader\+\_\+counts (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a13ac59ddb5a8740a4e05522a65ea72d8}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a13ac59ddb5a8740a4e05522a65ea72d8} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_read\_and\_convert\_header\_text@{\_read\_and\_convert\_header\_text}}
+\index{\_read\_and\_convert\_header\_text@{\_read\_and\_convert\_header\_text}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_and\_convert\_header\_text()}{\_read\_and\_convert\_header\_text()}}
+{\footnotesize\ttfamily  str \texorpdfstring{$\vert$}{|} bytes pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+read\+\_\+and\+\_\+convert\+\_\+header\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a8cf2db8e015e1cf062d2d337a1c6f39b}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a8cf2db8e015e1cf062d2d337a1c6f39b} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_read\_bytes@{\_read\_bytes}}
+\index{\_read\_bytes@{\_read\_bytes}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_bytes()}{\_read\_bytes()}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+read\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a567661a29cac40400e35281e6fedb4aa}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a567661a29cac40400e35281e6fedb4aa} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_read\_float@{\_read\_float}}
+\index{\_read\_float@{\_read\_float}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_float()}{\_read\_float()}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+read\+\_\+float (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a739d42d08a18b451e3cac0e163d16ebc}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a739d42d08a18b451e3cac0e163d16ebc} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_read\_next\_page@{\_read\_next\_page}}
+\index{\_read\_next\_page@{\_read\_next\_page}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_next\_page()}{\_read\_next\_page()}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+read\+\_\+next\+\_\+page (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_abf819454c1e10d6cc2b7a2845282a6a4}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_abf819454c1e10d6cc2b7a2845282a6a4} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_read\_page\_header@{\_read\_page\_header}}
+\index{\_read\_page\_header@{\_read\_page\_header}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_page\_header()}{\_read\_page\_header()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+read\+\_\+page\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_adfdd1d56635e0fcb710af2ade3dbc611}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_adfdd1d56635e0fcb710af2ade3dbc611} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_read\_uint@{\_read\_uint}}
+\index{\_read\_uint@{\_read\_uint}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_uint()}{\_read\_uint()}}
+{\footnotesize\ttfamily  int pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+read\+\_\+uint (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{offset,  }\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7dd700e9fa778e1b46234c2710269a08}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7dd700e9fa778e1b46234c2710269a08} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!close@{close}}
+\index{close@{close}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sasreader_1_1ReaderBase_af12c43029a631e72c2ac21200c674d89}{pandas.\+io.\+sas.\+sasreader.\+Reader\+Base}}.
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac5daeb97c5c09b069b94c0a29edc5874}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac5daeb97c5c09b069b94c0a29edc5874} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!column\_data\_lengths@{column\_data\_lengths}}
+\index{column\_data\_lengths@{column\_data\_lengths}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{column\_data\_lengths()}{column\_data\_lengths()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+column\+\_\+data\+\_\+lengths (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a numpy int64 array of the column data lengths\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aca5f1932e3ffc3d2e7efaa349dcef08d}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aca5f1932e3ffc3d2e7efaa349dcef08d} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!column\_data\_offsets@{column\_data\_offsets}}
+\index{column\_data\_offsets@{column\_data\_offsets}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{column\_data\_offsets()}{column\_data\_offsets()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+column\+\_\+data\+\_\+offsets (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a numpy int64 array of the column offsets\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a74b0d695bcd55102f5387b90d064a931}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a74b0d695bcd55102f5387b90d064a931} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!column\_types@{column\_types}}
+\index{column\_types@{column\_types}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{column\_types()}{column\_types()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+column\+\_\+types (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a numpy character array of the column types:
+   s (string) or d (double)
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae5e6d5be51c65ce8aa425d14e9dc64ac}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae5e6d5be51c65ce8aa425d14e9dc64ac} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!read@{read}}
+\index{read@{read}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily  Data\+Frame pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{nrows = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpandas_1_1io_1_1sas_1_1sasreader_1_1ReaderBase_a65789fba6cf429d676cb7f25564b5645}{pandas.\+io.\+sas.\+sasreader.\+Reader\+Base}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa223050d6cc177b5c7246f9972aa91b2}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa223050d6cc177b5c7246f9972aa91b2} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_byte\_chunk@{\_byte\_chunk}}
+\index{\_byte\_chunk@{\_byte\_chunk}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_byte\_chunk}{\_byte\_chunk}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+byte\+\_\+chunk\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae6892785fef8efa7b15e151e0d393232}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae6892785fef8efa7b15e151e0d393232} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_cached\_page@{\_cached\_page}}
+\index{\_cached\_page@{\_cached\_page}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_cached\_page}{\_cached\_page}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bytes pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+cached\+\_\+page \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a53a21da170f1f2ce8f91989983d3e409}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a53a21da170f1f2ce8f91989983d3e409} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_cached\_page@{\_cached\_page}}
+\index{\_cached\_page@{\_cached\_page}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_cached\_page}{\_cached\_page}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+cached\+\_\+page\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a92576be4ef11f8d72655ae5d4e9168e3}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a92576be4ef11f8d72655ae5d4e9168e3} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_column\_data\_lengths@{\_column\_data\_lengths}}
+\index{\_column\_data\_lengths@{\_column\_data\_lengths}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_column\_data\_lengths}{\_column\_data\_lengths}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+column\+\_\+data\+\_\+lengths\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af2ea15d824fe28e9a81dc23c0b13bb3f}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af2ea15d824fe28e9a81dc23c0b13bb3f} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_column\_data\_offsets@{\_column\_data\_offsets}}
+\index{\_column\_data\_offsets@{\_column\_data\_offsets}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_column\_data\_offsets}{\_column\_data\_offsets}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+column\+\_\+data\+\_\+offsets\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a490df7cc276a5a863409342a9971885d}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a490df7cc276a5a863409342a9971885d} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_column\_types@{\_column\_types}}
+\index{\_column\_types@{\_column\_types}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_column\_types}{\_column\_types}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+column\+\_\+types\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab230f917c66a686f88d0d9d702116f18}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab230f917c66a686f88d0d9d702116f18} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_current\_page\_block\_count@{\_current\_page\_block\_count}}
+\index{\_current\_page\_block\_count@{\_current\_page\_block\_count}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_current\_page\_block\_count}{\_current\_page\_block\_count}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+current\+\_\+page\+\_\+block\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a4c4b04e39104083c6521d291512258d3}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a4c4b04e39104083c6521d291512258d3} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_current\_page\_data\_subheader\_pointers@{\_current\_page\_data\_subheader\_pointers}}
+\index{\_current\_page\_data\_subheader\_pointers@{\_current\_page\_data\_subheader\_pointers}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_current\_page\_data\_subheader\_pointers}{\_current\_page\_data\_subheader\_pointers}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+current\+\_\+page\+\_\+data\+\_\+subheader\+\_\+pointers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa715d129ff4efe24e57838e134aa86a2}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa715d129ff4efe24e57838e134aa86a2} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_current\_page\_subheaders\_count@{\_current\_page\_subheaders\_count}}
+\index{\_current\_page\_subheaders\_count@{\_current\_page\_subheaders\_count}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_current\_page\_subheaders\_count}{\_current\_page\_subheaders\_count}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+current\+\_\+page\+\_\+subheaders\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3300a5f1f32e8279688bcf46f7533f14}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3300a5f1f32e8279688bcf46f7533f14} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_current\_page\_type@{\_current\_page\_type}}
+\index{\_current\_page\_type@{\_current\_page\_type}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_current\_page\_type}{\_current\_page\_type}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+current\+\_\+page\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a799c750e406c41208b8c27f1c0b4642c}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a799c750e406c41208b8c27f1c0b4642c} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_current\_row\_in\_chunk\_index@{\_current\_row\_in\_chunk\_index}}
+\index{\_current\_row\_in\_chunk\_index@{\_current\_row\_in\_chunk\_index}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_current\_row\_in\_chunk\_index}{\_current\_row\_in\_chunk\_index}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+current\+\_\+row\+\_\+in\+\_\+chunk\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aeec47e6743fc8d09ff2533dd0bd291f9}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aeec47e6743fc8d09ff2533dd0bd291f9} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_current\_row\_in\_file\_index@{\_current\_row\_in\_file\_index}}
+\index{\_current\_row\_in\_file\_index@{\_current\_row\_in\_file\_index}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_current\_row\_in\_file\_index}{\_current\_row\_in\_file\_index}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+current\+\_\+row\+\_\+in\+\_\+file\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa091ec1a2f2e616d205ae5a29215b112}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa091ec1a2f2e616d205ae5a29215b112} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_current\_row\_on\_page\_index@{\_current\_row\_on\_page\_index}}
+\index{\_current\_row\_on\_page\_index@{\_current\_row\_on\_page\_index}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_current\_row\_on\_page\_index}{\_current\_row\_on\_page\_index}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+current\+\_\+row\+\_\+on\+\_\+page\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7b5fc204a418e4b7ae2ca86ea76d5ad6}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a7b5fc204a418e4b7ae2ca86ea76d5ad6} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_int\_length@{\_int\_length}}
+\index{\_int\_length@{\_int\_length}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_int\_length}{\_int\_length}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+int\+\_\+length\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a250950261439db39086691104b398a52}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a250950261439db39086691104b398a52} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_int\_length@{\_int\_length}}
+\index{\_int\_length@{\_int\_length}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_int\_length}{\_int\_length}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+int\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3adb563c9ec1a7113d5d21cb4b9fb564}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a3adb563c9ec1a7113d5d21cb4b9fb564} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_lcp@{\_lcp}}
+\index{\_lcp@{\_lcp}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_lcp}{\_lcp}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+lcp\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab9c43a7d88ee7bd62f0cd2f35eeee16c}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab9c43a7d88ee7bd62f0cd2f35eeee16c} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_lcs@{\_lcs}}
+\index{\_lcs@{\_lcs}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_lcs}{\_lcs}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+lcs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad737a47293887a3b5cd764839956144f}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad737a47293887a3b5cd764839956144f} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_mix\_page\_row\_count@{\_mix\_page\_row\_count}}
+\index{\_mix\_page\_row\_count@{\_mix\_page\_row\_count}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_mix\_page\_row\_count}{\_mix\_page\_row\_count}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+mix\+\_\+page\+\_\+row\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac96d513f40ffcbbd9f40e14955bbb10b}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac96d513f40ffcbbd9f40e14955bbb10b} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_page\_bit\_offset@{\_page\_bit\_offset}}
+\index{\_page\_bit\_offset@{\_page\_bit\_offset}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_page\_bit\_offset}{\_page\_bit\_offset}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+page\+\_\+bit\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aec33a590b31a4fc8087df72b1b418624}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aec33a590b31a4fc8087df72b1b418624} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_page\_length@{\_page\_length}}
+\index{\_page\_length@{\_page\_length}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_page\_length}{\_page\_length}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+page\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5439ff36d0e67fabd04bc6404c2ba277}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5439ff36d0e67fabd04bc6404c2ba277} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_path\_or\_buf@{\_path\_or\_buf}}
+\index{\_path\_or\_buf@{\_path\_or\_buf}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_path\_or\_buf}{\_path\_or\_buf}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+path\+\_\+or\+\_\+buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a0146b2ed4bfd32aed6f2521d494eabf0}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a0146b2ed4bfd32aed6f2521d494eabf0} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columnattributes\_subheader@{\_process\_columnattributes\_subheader}}
+\index{\_process\_columnattributes\_subheader@{\_process\_columnattributes\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columnattributes\_subheader}{\_process\_columnattributes\_subheader}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columnattributes\+\_\+subheader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a14ac93827cad21b13ad8b0dfec82d360}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a14ac93827cad21b13ad8b0dfec82d360} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columnlist\_subheader@{\_process\_columnlist\_subheader}}
+\index{\_process\_columnlist\_subheader@{\_process\_columnlist\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columnlist\_subheader}{\_process\_columnlist\_subheader}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columnlist\+\_\+subheader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae575de6ff5d8d5dd4792059746b1536b}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae575de6ff5d8d5dd4792059746b1536b} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columnname\_subheader@{\_process\_columnname\_subheader}}
+\index{\_process\_columnname\_subheader@{\_process\_columnname\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columnname\_subheader}{\_process\_columnname\_subheader}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columnname\+\_\+subheader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a66f11d2f4b0f7dee3b6cbae445bdb8ae}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a66f11d2f4b0f7dee3b6cbae445bdb8ae} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columnsize\_subheader@{\_process\_columnsize\_subheader}}
+\index{\_process\_columnsize\_subheader@{\_process\_columnsize\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columnsize\_subheader}{\_process\_columnsize\_subheader}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columnsize\+\_\+subheader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac2f802e5a342222ad7a0a8ad6163b4a4}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac2f802e5a342222ad7a0a8ad6163b4a4} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_columntext\_subheader@{\_process\_columntext\_subheader}}
+\index{\_process\_columntext\_subheader@{\_process\_columntext\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_columntext\_subheader}{\_process\_columntext\_subheader}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+columntext\+\_\+subheader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acb3d1405d441ca09257213aaae69028a}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acb3d1405d441ca09257213aaae69028a} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_format\_subheader@{\_process\_format\_subheader}}
+\index{\_process\_format\_subheader@{\_process\_format\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_format\_subheader}{\_process\_format\_subheader}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+format\+\_\+subheader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acda6284efc6a9e77e9273317420d357c}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_acda6284efc6a9e77e9273317420d357c} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_rowsize\_subheader@{\_process\_rowsize\_subheader}}
+\index{\_process\_rowsize\_subheader@{\_process\_rowsize\_subheader}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_rowsize\_subheader}{\_process\_rowsize\_subheader}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+rowsize\+\_\+subheader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a1a620663fb2917bcc7b3f6a145a56683}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a1a620663fb2917bcc7b3f6a145a56683} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_process\_subheader\_counts@{\_process\_subheader\_counts}}
+\index{\_process\_subheader\_counts@{\_process\_subheader\_counts}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_process\_subheader\_counts}{\_process\_subheader\_counts}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+process\+\_\+subheader\+\_\+counts\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5c9c7c529f719a4197787c3483942cd3}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5c9c7c529f719a4197787c3483942cd3} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_string\_chunk@{\_string\_chunk}}
+\index{\_string\_chunk@{\_string\_chunk}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_string\_chunk}{\_string\_chunk}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+string\+\_\+chunk\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_afba7aca1cfdaa1ebd84a1439ed50b91f}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_afba7aca1cfdaa1ebd84a1439ed50b91f} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_subheader\_pointer\_length@{\_subheader\_pointer\_length}}
+\index{\_subheader\_pointer\_length@{\_subheader\_pointer\_length}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_subheader\_pointer\_length}{\_subheader\_pointer\_length}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+subheader\+\_\+pointer\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac9e4842d7c5b92bc32646835b6fefecd}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac9e4842d7c5b92bc32646835b6fefecd} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!\_subheader\_processors@{\_subheader\_processors}}
+\index{\_subheader\_processors@{\_subheader\_processors}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{\_subheader\_processors}{\_subheader\_processors}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+\_\+subheader\+\_\+processors\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a848f069c4c88914004d6a265db4f3b71}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a848f069c4c88914004d6a265db4f3b71} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!blank\_missing@{blank\_missing}}
+\index{blank\_missing@{blank\_missing}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{blank\_missing}{blank\_missing}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+blank\+\_\+missing}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af5a490b077ab68c41f61047f7fe1db13}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_af5a490b077ab68c41f61047f7fe1db13} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!byte\_order@{byte\_order}}
+\index{byte\_order@{byte\_order}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{byte\_order}{byte\_order}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+byte\+\_\+order}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a132a61e9d3de8aafe8b50bcd04108157}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a132a61e9d3de8aafe8b50bcd04108157} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!chunksize@{chunksize}}
+\index{chunksize@{chunksize}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{chunksize}{chunksize}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+chunksize}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad9145ed1759829a7ab3287b6ce3f36b0}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad9145ed1759829a7ab3287b6ce3f36b0} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!col\_count\_p1@{col\_count\_p1}}
+\index{col\_count\_p1@{col\_count\_p1}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{col\_count\_p1}{col\_count\_p1}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+col\+\_\+count\+\_\+p1}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa82e660a460642fc4a59fb80f159a4a4}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_aa82e660a460642fc4a59fb80f159a4a4} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!col\_count\_p2@{col\_count\_p2}}
+\index{col\_count\_p2@{col\_count\_p2}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{col\_count\_p2}{col\_count\_p2}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+col\+\_\+count\+\_\+p2}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a35dddf8c04479eb78a0e2be70f49463f}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a35dddf8c04479eb78a0e2be70f49463f} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!column\_count@{column\_count}}
+\index{column\_count@{column\_count}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{column\_count}{column\_count}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+column\+\_\+count}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab40f33da698a0a60f25909b2830535fe}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab40f33da698a0a60f25909b2830535fe} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!column\_names\_raw@{column\_names\_raw}}
+\index{column\_names\_raw@{column\_names\_raw}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{column\_names\_raw}{column\_names\_raw}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+column\+\_\+names\+\_\+raw}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a859e2e0a0f96697da7200dab77a2fb21}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a859e2e0a0f96697da7200dab77a2fb21} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!compression@{compression}}
+\index{compression@{compression}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{compression}{compression}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+compression}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a52ae0a746a2951250bf35e1bf8eed6c1}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a52ae0a746a2951250bf35e1bf8eed6c1} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!convert\_dates@{convert\_dates}}
+\index{convert\_dates@{convert\_dates}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{convert\_dates}{convert\_dates}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+convert\+\_\+dates}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae30e3557d8d54724196e14cc011a9f59}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ae30e3557d8d54724196e14cc011a9f59} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!convert\_header\_text@{convert\_header\_text}}
+\index{convert\_header\_text@{convert\_header\_text}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{convert\_header\_text}{convert\_header\_text}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+convert\+\_\+header\+\_\+text}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a801e111585d9229239cf61c319dce47d}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a801e111585d9229239cf61c319dce47d} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!convert\_text@{convert\_text}}
+\index{convert\_text@{convert\_text}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{convert\_text}{convert\_text}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+convert\+\_\+text}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5b53ebed213ffc4177d200537828fd3a}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a5b53ebed213ffc4177d200537828fd3a} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!creator\_proc@{creator\_proc}}
+\index{creator\_proc@{creator\_proc}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{creator\_proc}{creator\_proc}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+creator\+\_\+proc}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_adc054662a2a9c69d6403e9a2144529e8}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_adc054662a2a9c69d6403e9a2144529e8} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!date\_created@{date\_created}}
+\index{date\_created@{date\_created}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{date\_created}{date\_created}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+date\+\_\+created}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a2cea2963221b84eedb50f5a0ea9c26fa}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a2cea2963221b84eedb50f5a0ea9c26fa} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!date\_modified@{date\_modified}}
+\index{date\_modified@{date\_modified}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{date\_modified}{date\_modified}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+date\+\_\+modified}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a2e73904d5b88f28cecad8afbfc89c6ef}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a2e73904d5b88f28cecad8afbfc89c6ef} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!default\_encoding@{default\_encoding}}
+\index{default\_encoding@{default\_encoding}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{default\_encoding}{default\_encoding}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+default\+\_\+encoding}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a77e4c4f6ec43afafa0e600bfa5304ee1}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a77e4c4f6ec43afafa0e600bfa5304ee1} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!encoding@{encoding}}
+\index{encoding@{encoding}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+encoding}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a961fecfa180b6328b4286542f3582548}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a961fecfa180b6328b4286542f3582548} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!handles@{handles}}
+\index{handles@{handles}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{handles}{handles}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+handles}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a99b1f6297b2d7ec8ba633d477e89c9a8}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a99b1f6297b2d7ec8ba633d477e89c9a8} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!header\_length@{header\_length}}
+\index{header\_length@{header\_length}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{header\_length}{header\_length}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+header\+\_\+length}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad4394d6a2eeca102d9771044b580d0c2}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ad4394d6a2eeca102d9771044b580d0c2} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!index@{index}}
+\index{index@{index}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+index}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a47714852fc20cee6e4807cb7a0c3d6ab}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a47714852fc20cee6e4807cb7a0c3d6ab} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!inferred\_encoding@{inferred\_encoding}}
+\index{inferred\_encoding@{inferred\_encoding}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{inferred\_encoding}{inferred\_encoding}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+inferred\+\_\+encoding}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab0c20c7b57ccd395ac3f4ef1bee14793}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab0c20c7b57ccd395ac3f4ef1bee14793} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!need\_byteswap@{need\_byteswap}}
+\index{need\_byteswap@{need\_byteswap}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{need\_byteswap}{need\_byteswap}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+need\+\_\+byteswap}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac1f12787daaa1e787e734ee1fc7d3232}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ac1f12787daaa1e787e734ee1fc7d3232} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!row\_count@{row\_count}}
+\index{row\_count@{row\_count}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{row\_count}{row\_count}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+row\+\_\+count}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab0454f48931f474a4ddbe785046f04dc}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_ab0454f48931f474a4ddbe785046f04dc} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!row\_length@{row\_length}}
+\index{row\_length@{row\_length}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{row\_length}{row\_length}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+row\+\_\+length}
+
+\Hypertarget{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a60c4d5f758d6a02941f653ec66710832}\label{classpandas_1_1io_1_1sas_1_1sas7bdat_1_1SAS7BDATReader_a60c4d5f758d6a02941f653ec66710832} 
+\index{pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}!U64@{U64}}
+\index{U64@{U64}!pandas.io.sas.sas7bdat.SAS7BDATReader@{pandas.io.sas.sas7bdat.SAS7BDATReader}}
+\doxysubsubsection{\texorpdfstring{U64}{U64}}
+{\footnotesize\ttfamily pandas.\+io.\+sas.\+sas7bdat.\+SAS7\+BDATReader.\+U64}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/sas/\mbox{\hyperlink{sas7bdat_8py}{sas7bdat.\+py}}\end{DoxyCompactItemize}

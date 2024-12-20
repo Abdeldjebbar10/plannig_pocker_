@@ -1,0 +1,66 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+exceptions}
+\hypertarget{namespacenumpy_1_1exceptions}{}\label{namespacenumpy_1_1exceptions}\index{numpy.exceptions@{numpy.exceptions}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1exceptions_1_1AxisError}{Axis\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1exceptions_1_1ComplexWarning}{Complex\+Warning}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1exceptions_1_1DTypePromotionError}{DType\+Promotion\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1exceptions_1_1ModuleDeprecationWarning}{Module\+Deprecation\+Warning}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1exceptions_1_1RankWarning}{Rank\+Warning}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1exceptions_1_1TooHardError}{Too\+Hard\+Error}}
+\item 
+class \mbox{\hyperlink{classnumpy_1_1exceptions_1_1VisibleDeprecationWarning}{Visible\+Deprecation\+Warning}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacenumpy_1_1exceptions_a3c6ad83d1df18ff67de2102bfb84f7ef}{\+\_\+is\+\_\+loaded}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exceptions and Warnings (:mod:`numpy.exceptions`)
+=================================================
+
+General exceptions used by NumPy.  Note that some exceptions may be module
+specific, such as linear algebra errors.
+
+.. versionadded:: NumPy 1.25
+
+    The exceptions module is new in NumPy 1.25.  Older exceptions remain
+    available through the main NumPy namespace for compatibility.
+
+.. currentmodule:: numpy.exceptions
+
+Warnings
+--------
+.. autosummary::
+   :toctree: generated/
+
+   ComplexWarning             Given when converting complex to real.
+   VisibleDeprecationWarning  Same as a DeprecationWarning, but more visible.
+   RankWarning                Issued when the design matrix is rank deficient.
+
+Exceptions
+----------
+.. autosummary::
+   :toctree: generated/
+
+    AxisError          Given when an axis was invalid.
+    DTypePromotionError   Given when no common dtype could be found.
+    TooHardError       Error specific to `numpy.shares_memory`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1exceptions_a3c6ad83d1df18ff67de2102bfb84f7ef}\label{namespacenumpy_1_1exceptions_a3c6ad83d1df18ff67de2102bfb84f7ef} 
+\index{numpy.exceptions@{numpy.exceptions}!\_is\_loaded@{\_is\_loaded}}
+\index{\_is\_loaded@{\_is\_loaded}!numpy.exceptions@{numpy.exceptions}}
+\doxysubsubsection{\texorpdfstring{\_is\_loaded}{\_is\_loaded}}
+{\footnotesize\ttfamily bool numpy.\+exceptions.\+\_\+is\+\_\+loaded = True\hspace{0.3cm}{\ttfamily [protected]}}
+

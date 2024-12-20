@@ -1,0 +1,75 @@
+\doxysection{Référence de la classe pandas.\+core.\+groupby.\+indexing.\+Group\+By\+Positional\+Selector}
+\hypertarget{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector}{}\label{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector}\index{pandas.core.groupby.indexing.GroupByPositionalSelector@{pandas.core.groupby.indexing.GroupByPositionalSelector}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_a597fe6f764c88b3e4210abf27ccc2e58}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1GroupBy}{groupby.\+Group\+By}} \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_a4f124854fc5ef54614c8f7920a599d83}{groupby\+\_\+object}})
+\item 
+Data\+Frame\texorpdfstring{$\vert$}{|}Series \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_aafb13e0987ebd0dd3bde444fdae7c133}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, Positional\+Indexer\texorpdfstring{$\vert$}{|}tuple arg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_a4f124854fc5ef54614c8f7920a599d83}{groupby\+\_\+object}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_a597fe6f764c88b3e4210abf27ccc2e58}\label{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_a597fe6f764c88b3e4210abf27ccc2e58} 
+\index{pandas.core.groupby.indexing.GroupByPositionalSelector@{pandas.core.groupby.indexing.GroupByPositionalSelector}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.groupby.indexing.GroupByPositionalSelector@{pandas.core.groupby.indexing.GroupByPositionalSelector}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+groupby.\+indexing.\+Group\+By\+Positional\+Selector.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1GroupBy}{groupby.\+Group\+By}}}]{groupby\+\_\+object }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_aafb13e0987ebd0dd3bde444fdae7c133}\label{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_aafb13e0987ebd0dd3bde444fdae7c133} 
+\index{pandas.core.groupby.indexing.GroupByPositionalSelector@{pandas.core.groupby.indexing.GroupByPositionalSelector}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!pandas.core.groupby.indexing.GroupByPositionalSelector@{pandas.core.groupby.indexing.GroupByPositionalSelector}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily  Data\+Frame \texorpdfstring{$\vert$}{|} Series pandas.\+core.\+groupby.\+indexing.\+Group\+By\+Positional\+Selector.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Positional\+Indexer \texorpdfstring{$\vert$}{|} tuple}]{arg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Select by positional index per group.
+
+Implements GroupBy._positional_selector
+
+Parameters
+----------
+arg : PositionalIndexer | tuple
+    Allowed values are:
+    - int
+    - int valued iterable such as list or range
+    - slice with step either None or positive
+    - tuple of integers and slices
+
+Returns
+-------
+Series
+    The filtered subset of the original groupby Series.
+DataFrame
+    The filtered subset of the original groupby DataFrame.
+
+See Also
+--------
+DataFrame.iloc : Integer-location based indexing for selection by position.
+GroupBy.head : Return first n rows of each group.
+GroupBy.tail : Return last n rows of each group.
+GroupBy._positional_selector : Return positional selection for each group.
+GroupBy.nth : Take the nth row from each group if n is an int, or a
+    subset of rows, if n is a list of ints.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_a4f124854fc5ef54614c8f7920a599d83}\label{classpandas_1_1core_1_1groupby_1_1indexing_1_1GroupByPositionalSelector_a4f124854fc5ef54614c8f7920a599d83} 
+\index{pandas.core.groupby.indexing.GroupByPositionalSelector@{pandas.core.groupby.indexing.GroupByPositionalSelector}!groupby\_object@{groupby\_object}}
+\index{groupby\_object@{groupby\_object}!pandas.core.groupby.indexing.GroupByPositionalSelector@{pandas.core.groupby.indexing.GroupByPositionalSelector}}
+\doxysubsubsection{\texorpdfstring{groupby\_object}{groupby\_object}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+indexing.\+Group\+By\+Positional\+Selector.\+groupby\+\_\+object}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/groupby/\mbox{\hyperlink{groupby_2indexing_8py}{indexing.\+py}}\end{DoxyCompactItemize}

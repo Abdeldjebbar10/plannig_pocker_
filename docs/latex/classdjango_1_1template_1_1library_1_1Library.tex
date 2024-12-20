@@ -1,0 +1,121 @@
+\doxysection{Référence de la classe django.\+template.\+library.\+Library}
+\hypertarget{classdjango_1_1template_1_1library_1_1Library}{}\label{classdjango_1_1template_1_1library_1_1Library}\index{django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_a9a659bdc5b99d714fc24415290bcd1d4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_a3a42e8a0a94b6f4b0949819bfbdfcb3d}{tag}} (self, name=None, compile\+\_\+function=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_aacbd68c7da45960b97517adcdb9c302a}{tag\+\_\+function}} (self, func)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_ac67bb1211ffc0354d5bf33029a58aa43}{filter}} (self, name=None, filter\+\_\+func=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}flags)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_ac31ca4b9799430f0623aea9d177a04dc}{filter\+\_\+function}} (self, func, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}flags)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_ad0dc37c1ec2e808b9ecdd968f939f53d}{simple\+\_\+tag}} (self, func=None, takes\+\_\+context=None, name=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_acdeb8197d95976943db754f44360aa0e}{inclusion\+\_\+tag}} (self, filename, func=None, takes\+\_\+context=None, name=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_ac97222067cc0ae12c1a0dc84e35c0da9}{filters}}
+\item 
+\mbox{\hyperlink{classdjango_1_1template_1_1library_1_1Library_aec0bac4c073730fa35868243433d5b9c}{tags}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A class for registering template tags and filters. Compiled filter and
+template tag functions are stored in the filters and tags attributes.
+The filter, simple_tag, and inclusion_tag methods provide a convenient
+way to register callables as tags.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1template_1_1library_1_1Library_a9a659bdc5b99d714fc24415290bcd1d4}\label{classdjango_1_1template_1_1library_1_1Library_a9a659bdc5b99d714fc24415290bcd1d4} 
+\index{django.template.library.Library@{django.template.library.Library}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1template_1_1library_1_1Library_ac67bb1211ffc0354d5bf33029a58aa43}\label{classdjango_1_1template_1_1library_1_1Library_ac67bb1211ffc0354d5bf33029a58aa43} 
+\index{django.template.library.Library@{django.template.library.Library}!filter@{filter}}
+\index{filter@{filter}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name = {\ttfamily None},  }\item[{}]{filter\+\_\+func = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{flags }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a callable as a template filter. Example:
+
+@register.filter
+def lower(value):
+    return value.lower()
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1template_1_1library_1_1Library_ac31ca4b9799430f0623aea9d177a04dc}\label{classdjango_1_1template_1_1library_1_1Library_ac31ca4b9799430f0623aea9d177a04dc} 
+\index{django.template.library.Library@{django.template.library.Library}!filter\_function@{filter\_function}}
+\index{filter\_function@{filter\_function}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{filter\_function()}{filter\_function()}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+filter\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{flags }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1library_1_1Library_acdeb8197d95976943db754f44360aa0e}\label{classdjango_1_1template_1_1library_1_1Library_acdeb8197d95976943db754f44360aa0e} 
+\index{django.template.library.Library@{django.template.library.Library}!inclusion\_tag@{inclusion\_tag}}
+\index{inclusion\_tag@{inclusion\_tag}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{inclusion\_tag()}{inclusion\_tag()}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+inclusion\+\_\+tag (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{func = {\ttfamily None},  }\item[{}]{takes\+\_\+context = {\ttfamily None},  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a callable as an inclusion tag:
+
+@register.inclusion_tag('results.html')
+def show_results(poll):
+    choices = poll.choice_set.all()
+    return {'choices': choices}
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1template_1_1library_1_1Library_ad0dc37c1ec2e808b9ecdd968f939f53d}\label{classdjango_1_1template_1_1library_1_1Library_ad0dc37c1ec2e808b9ecdd968f939f53d} 
+\index{django.template.library.Library@{django.template.library.Library}!simple\_tag@{simple\_tag}}
+\index{simple\_tag@{simple\_tag}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{simple\_tag()}{simple\_tag()}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+simple\+\_\+tag (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func = {\ttfamily None},  }\item[{}]{takes\+\_\+context = {\ttfamily None},  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a callable as a compiled template tag. Example:
+
+@register.simple_tag
+def hello(*args, **kwargs):
+    return 'world'
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1template_1_1library_1_1Library_a3a42e8a0a94b6f4b0949819bfbdfcb3d}\label{classdjango_1_1template_1_1library_1_1Library_a3a42e8a0a94b6f4b0949819bfbdfcb3d} 
+\index{django.template.library.Library@{django.template.library.Library}!tag@{tag}}
+\index{tag@{tag}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{tag()}{tag()}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+tag (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name = {\ttfamily None},  }\item[{}]{compile\+\_\+function = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1template_1_1library_1_1Library_aacbd68c7da45960b97517adcdb9c302a}\label{classdjango_1_1template_1_1library_1_1Library_aacbd68c7da45960b97517adcdb9c302a} 
+\index{django.template.library.Library@{django.template.library.Library}!tag\_function@{tag\_function}}
+\index{tag\_function@{tag\_function}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{tag\_function()}{tag\_function()}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+tag\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1template_1_1library_1_1Library_ac97222067cc0ae12c1a0dc84e35c0da9}\label{classdjango_1_1template_1_1library_1_1Library_ac97222067cc0ae12c1a0dc84e35c0da9} 
+\index{django.template.library.Library@{django.template.library.Library}!filters@{filters}}
+\index{filters@{filters}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{filters}{filters}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+filters}
+
+\Hypertarget{classdjango_1_1template_1_1library_1_1Library_aec0bac4c073730fa35868243433d5b9c}\label{classdjango_1_1template_1_1library_1_1Library_aec0bac4c073730fa35868243433d5b9c} 
+\index{django.template.library.Library@{django.template.library.Library}!tags@{tags}}
+\index{tags@{tags}!django.template.library.Library@{django.template.library.Library}}
+\doxysubsubsection{\texorpdfstring{tags}{tags}}
+{\footnotesize\ttfamily django.\+template.\+library.\+Library.\+tags}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/template/\mbox{\hyperlink{library_8py}{library.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage pandas.\+core.\+util.\+numba\+\_\+}
+\hypertarget{namespacepandas_1_1core_1_1util_1_1numba__}{}\label{namespacepandas_1_1core_1_1util_1_1numba__}\index{pandas.core.util.numba\_@{pandas.core.util.numba\_}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1util_1_1numba___a167829045a1d7b55b782aa9b2ac2385e}{maybe\+\_\+use\+\_\+numba}} (str\texorpdfstring{$\vert$}{|}None engine)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1core_1_1util_1_1numba___a965068d31ba727dadc4c125cc372bd1f}{set\+\_\+use\+\_\+numba}} (bool enable=False)
+\item 
+dict\mbox{[}str, bool\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1util_1_1numba___aa570de6e292924e3fd047ba01c716456}{get\+\_\+jit\+\_\+arguments}} (dict\mbox{[}str, bool\mbox{]}\texorpdfstring{$\vert$}{|}None engine\+\_\+kwargs=None, dict\texorpdfstring{$\vert$}{|}None kwargs=None)
+\item 
+Callable \mbox{\hyperlink{namespacepandas_1_1core_1_1util_1_1numba___a3c6d34ef0485a7954f6c0af4de8f2fb8}{jit\+\_\+user\+\_\+function}} (Callable func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1core_1_1util_1_1numba___a313ae0c58a8abdfed3c84126ab60b541}{GLOBAL\+\_\+\+USE\+\_\+\+NUMBA}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Common utilities for Numba operations\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacepandas_1_1core_1_1util_1_1numba___aa570de6e292924e3fd047ba01c716456}\label{namespacepandas_1_1core_1_1util_1_1numba___aa570de6e292924e3fd047ba01c716456} 
+\index{pandas.core.util.numba\_@{pandas.core.util.numba\_}!get\_jit\_arguments@{get\_jit\_arguments}}
+\index{get\_jit\_arguments@{get\_jit\_arguments}!pandas.core.util.numba\_@{pandas.core.util.numba\_}}
+\doxysubsubsection{\texorpdfstring{get\_jit\_arguments()}{get\_jit\_arguments()}}
+{\footnotesize\ttfamily  dict\mbox{[}str, bool\mbox{]} pandas.\+core.\+util.\+numba\+\_\+.\+get\+\_\+jit\+\_\+arguments (\begin{DoxyParamCaption}\item[{dict\mbox{[}str, bool\mbox{]} \texorpdfstring{$\vert$}{|} None }]{engine\+\_\+kwargs = {\ttfamily None},  }\item[{dict \texorpdfstring{$\vert$}{|} None }]{kwargs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return arguments to pass to numba.JIT, falling back on pandas default JIT settings.
+
+Parameters
+----------
+engine_kwargs : dict, default None
+    user passed keyword arguments for numba.JIT
+kwargs : dict, default None
+    user passed keyword arguments to pass into the JITed function
+
+Returns
+-------
+dict[str, bool]
+    nopython, nogil, parallel
+
+Raises
+------
+NumbaUtilError
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1util_1_1numba___a3c6d34ef0485a7954f6c0af4de8f2fb8}\label{namespacepandas_1_1core_1_1util_1_1numba___a3c6d34ef0485a7954f6c0af4de8f2fb8} 
+\index{pandas.core.util.numba\_@{pandas.core.util.numba\_}!jit\_user\_function@{jit\_user\_function}}
+\index{jit\_user\_function@{jit\_user\_function}!pandas.core.util.numba\_@{pandas.core.util.numba\_}}
+\doxysubsubsection{\texorpdfstring{jit\_user\_function()}{jit\_user\_function()}}
+{\footnotesize\ttfamily  Callable pandas.\+core.\+util.\+numba\+\_\+.\+jit\+\_\+user\+\_\+function (\begin{DoxyParamCaption}\item[{Callable}]{func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If user function is not jitted already, mark the user's function
+as jitable.
+
+Parameters
+----------
+func : function
+    user defined function
+
+Returns
+-------
+function
+    Numba JITed function, or function marked as JITable by numba
+\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1util_1_1numba___a167829045a1d7b55b782aa9b2ac2385e}\label{namespacepandas_1_1core_1_1util_1_1numba___a167829045a1d7b55b782aa9b2ac2385e} 
+\index{pandas.core.util.numba\_@{pandas.core.util.numba\_}!maybe\_use\_numba@{maybe\_use\_numba}}
+\index{maybe\_use\_numba@{maybe\_use\_numba}!pandas.core.util.numba\_@{pandas.core.util.numba\_}}
+\doxysubsubsection{\texorpdfstring{maybe\_use\_numba()}{maybe\_use\_numba()}}
+{\footnotesize\ttfamily  bool pandas.\+core.\+util.\+numba\+\_\+.\+maybe\+\_\+use\+\_\+numba (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None}]{engine }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Signal whether to use numba routines.\end{DoxyVerb}
+ \Hypertarget{namespacepandas_1_1core_1_1util_1_1numba___a965068d31ba727dadc4c125cc372bd1f}\label{namespacepandas_1_1core_1_1util_1_1numba___a965068d31ba727dadc4c125cc372bd1f} 
+\index{pandas.core.util.numba\_@{pandas.core.util.numba\_}!set\_use\_numba@{set\_use\_numba}}
+\index{set\_use\_numba@{set\_use\_numba}!pandas.core.util.numba\_@{pandas.core.util.numba\_}}
+\doxysubsubsection{\texorpdfstring{set\_use\_numba()}{set\_use\_numba()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+util.\+numba\+\_\+.\+set\+\_\+use\+\_\+numba (\begin{DoxyParamCaption}\item[{bool }]{enable = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacepandas_1_1core_1_1util_1_1numba___a313ae0c58a8abdfed3c84126ab60b541}\label{namespacepandas_1_1core_1_1util_1_1numba___a313ae0c58a8abdfed3c84126ab60b541} 
+\index{pandas.core.util.numba\_@{pandas.core.util.numba\_}!GLOBAL\_USE\_NUMBA@{GLOBAL\_USE\_NUMBA}}
+\index{GLOBAL\_USE\_NUMBA@{GLOBAL\_USE\_NUMBA}!pandas.core.util.numba\_@{pandas.core.util.numba\_}}
+\doxysubsubsection{\texorpdfstring{GLOBAL\_USE\_NUMBA}{GLOBAL\_USE\_NUMBA}}
+{\footnotesize\ttfamily bool pandas.\+core.\+util.\+numba\+\_\+.\+GLOBAL\+\_\+\+USE\+\_\+\+NUMBA = False}
+

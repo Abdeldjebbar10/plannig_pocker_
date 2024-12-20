@@ -1,0 +1,200 @@
+\doxysection{Référence de la classe django.\+utils.\+tree.\+Node}
+\hypertarget{classdjango_1_1utils_1_1tree_1_1Node}{}\label{classdjango_1_1utils_1_1tree_1_1Node}\index{django.utils.tree.Node@{django.utils.tree.Node}}
+
+
+Graphe de collaboration de django.\+utils.\+tree.\+Node\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_aa8ddb9f11176ebc0d3e956ad8e716dc6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_aa7a314d55e8fa4a69d243da91606a04f}{children}}=None, \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a077571eed3d2dd22b7b7448595b6a033}{connector}}=None, \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a35e7ace3d2afa8b32010b269d30c5796}{negated}}=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_aad005cf8ada5103830a8d3161ca8e705}{create}} (cls, \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_aa7a314d55e8fa4a69d243da91606a04f}{children}}=None, \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a077571eed3d2dd22b7b7448595b6a033}{connector}}=None, \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a35e7ace3d2afa8b32010b269d30c5796}{negated}}=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_af5edff9bf0b3238652c57425e2eda469}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_ac9b25d8da0160c307c26454ce812a278}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_abae878f6b4500b8b241c23d8fac46e63}{\+\_\+\+\_\+copy\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a38840c46ded3963808edbeec90765d6b}{\+\_\+\+\_\+deepcopy\+\_\+\+\_\+}} (self, memodict)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_adfb069350f968cc822337df8dd3972cd}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a70a56e9492f929d850eebc44de75e25c}{\+\_\+\+\_\+bool\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_ab55c47b46f14e5fde108b1c3cf95d93a}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a0004316d098c61c046aef21dece2cce8}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_ad90478bdeb4e4284385a20cb629f5b9c}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a2c883d105b5c9cfd32bff72c7469f18c}{add}} (self, data, conn\+\_\+type)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a30380917368619e5597853d572a4c591}{negate}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_aa7a314d55e8fa4a69d243da91606a04f}{children}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a077571eed3d2dd22b7b7448595b6a033}{connector}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_a35e7ace3d2afa8b32010b269d30c5796}{negated}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_abf949326eef1b0d591ddb5877b63ffb4}{default}} = "{}DEFAULT"{}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_ac312617bfba56f8563ef8fe5a127a46d}{copy}} = \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_abae878f6b4500b8b241c23d8fac46e63}{\+\_\+\+\_\+copy\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A single internal node in the tree graph. A Node should be viewed as a
+connection (the root) with the children being either leaf nodes or other
+Node instances.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_aa8ddb9f11176ebc0d3e956ad8e716dc6}\label{classdjango_1_1utils_1_1tree_1_1Node_aa8ddb9f11176ebc0d3e956ad8e716dc6} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{children = {\ttfamily None},  }\item[{}]{connector = {\ttfamily None},  }\item[{}]{negated = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct a new Node. If no connector is given, use the default.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_a70a56e9492f929d850eebc44de75e25c}\label{classdjango_1_1utils_1_1tree_1_1Node_a70a56e9492f929d850eebc44de75e25c} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_bool\_\_@{\_\_bool\_\_}}
+\index{\_\_bool\_\_@{\_\_bool\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_bool\_\_()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether or not this node has children.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_ab55c47b46f14e5fde108b1c3cf95d93a}\label{classdjango_1_1utils_1_1tree_1_1Node_ab55c47b46f14e5fde108b1c3cf95d93a} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if 'other' is a direct child of this instance.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_abae878f6b4500b8b241c23d8fac46e63}\label{classdjango_1_1utils_1_1tree_1_1Node_abae878f6b4500b8b241c23d8fac46e63} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_copy\_\_@{\_\_copy\_\_}}
+\index{\_\_copy\_\_@{\_\_copy\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_copy\_\_()}{\_\_copy\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+copy\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_a38840c46ded3963808edbeec90765d6b}\label{classdjango_1_1utils_1_1tree_1_1Node_a38840c46ded3963808edbeec90765d6b} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_deepcopy\_\_@{\_\_deepcopy\_\_}}
+\index{\_\_deepcopy\_\_@{\_\_deepcopy\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_deepcopy\_\_()}{\_\_deepcopy\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+deepcopy\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{memodict }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_a0004316d098c61c046aef21dece2cce8}\label{classdjango_1_1utils_1_1tree_1_1Node_a0004316d098c61c046aef21dece2cce8} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_ad90478bdeb4e4284385a20cb629f5b9c}\label{classdjango_1_1utils_1_1tree_1_1Node_ad90478bdeb4e4284385a20cb629f5b9c} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_adfb069350f968cc822337df8dd3972cd}\label{classdjango_1_1utils_1_1tree_1_1Node_adfb069350f968cc822337df8dd3972cd} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the number of children this node has.\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_ac9b25d8da0160c307c26454ce812a278}\label{classdjango_1_1utils_1_1tree_1_1Node_ac9b25d8da0160c307c26454ce812a278} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_af5edff9bf0b3238652c57425e2eda469}\label{classdjango_1_1utils_1_1tree_1_1Node_af5edff9bf0b3238652c57425e2eda469} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_a2c883d105b5c9cfd32bff72c7469f18c}\label{classdjango_1_1utils_1_1tree_1_1Node_a2c883d105b5c9cfd32bff72c7469f18c} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!add@{add}}
+\index{add@{add}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{conn\+\_\+type }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Combine this tree and the data represented by data using the
+connector conn_type. The combine is done by squashing the node other
+away if possible.
+
+This tree (self) will never be pushed to a child node of the
+combined tree, nor will the connector or negated properties change.
+
+Return a node which can be used in place of data regardless if the
+node other got squashed or not.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_aad005cf8ada5103830a8d3161ca8e705}\label{classdjango_1_1utils_1_1tree_1_1Node_aad005cf8ada5103830a8d3161ca8e705} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!create@{create}}
+\index{create@{create}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+create (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{children = {\ttfamily None},  }\item[{}]{connector = {\ttfamily None},  }\item[{}]{negated = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new instance using Node() instead of __init__() as some
+subclasses, e.g. django.db.models.query_utils.Q, may implement a custom
+__init__() with a signature that conflicts with the one defined in
+Node.__init__().
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_a30380917368619e5597853d572a4c591}\label{classdjango_1_1utils_1_1tree_1_1Node_a30380917368619e5597853d572a4c591} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!negate@{negate}}
+\index{negate@{negate}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{negate()}{negate()}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+negate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Negate the sense of the root connector.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_aa7a314d55e8fa4a69d243da91606a04f}\label{classdjango_1_1utils_1_1tree_1_1Node_aa7a314d55e8fa4a69d243da91606a04f} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!children@{children}}
+\index{children@{children}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{children}{children}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+children}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_a077571eed3d2dd22b7b7448595b6a033}\label{classdjango_1_1utils_1_1tree_1_1Node_a077571eed3d2dd22b7b7448595b6a033} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!connector@{connector}}
+\index{connector@{connector}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{connector}{connector}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+connector}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_ac312617bfba56f8563ef8fe5a127a46d}\label{classdjango_1_1utils_1_1tree_1_1Node_ac312617bfba56f8563ef8fe5a127a46d} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!copy@{copy}}
+\index{copy@{copy}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{copy}{copy}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+copy = \mbox{\hyperlink{classdjango_1_1utils_1_1tree_1_1Node_abae878f6b4500b8b241c23d8fac46e63}{\+\_\+\+\_\+copy\+\_\+\+\_\+}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_abf949326eef1b0d591ddb5877b63ffb4}\label{classdjango_1_1utils_1_1tree_1_1Node_abf949326eef1b0d591ddb5877b63ffb4} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!default@{default}}
+\index{default@{default}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily str django.\+utils.\+tree.\+Node.\+default = "{}DEFAULT"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1tree_1_1Node_a35e7ace3d2afa8b32010b269d30c5796}\label{classdjango_1_1utils_1_1tree_1_1Node_a35e7ace3d2afa8b32010b269d30c5796} 
+\index{django.utils.tree.Node@{django.utils.tree.Node}!negated@{negated}}
+\index{negated@{negated}!django.utils.tree.Node@{django.utils.tree.Node}}
+\doxysubsubsection{\texorpdfstring{negated}{negated}}
+{\footnotesize\ttfamily django.\+utils.\+tree.\+Node.\+negated}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/utils/\mbox{\hyperlink{django_2utils_2tree_8py}{tree.\+py}}\end{DoxyCompactItemize}

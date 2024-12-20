@@ -1,0 +1,88 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/io/formats/format.py}
+\hypertarget{pandas_2io_2formats_2format_8py}{}\label{pandas_2io_2formats_2format_8py}\index{env/lib/python3.12/site-\/packages/pandas/io/formats/format.py@{env/lib/python3.12/site-\/packages/pandas/io/formats/format.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1SeriesFormatter}{pandas.\+io.\+formats.\+format.\+Series\+Formatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1DataFrameFormatter}{pandas.\+io.\+formats.\+format.\+Data\+Frame\+Formatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1DataFrameRenderer}{pandas.\+io.\+formats.\+format.\+Data\+Frame\+Renderer}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1__GenericArrayFormatter}{pandas.\+io.\+formats.\+format.\+\_\+\+Generic\+Array\+Formatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1FloatArrayFormatter}{pandas.\+io.\+formats.\+format.\+Float\+Array\+Formatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1__IntArrayFormatter}{pandas.\+io.\+formats.\+format.\+\_\+\+Int\+Array\+Formatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1__Datetime64Formatter}{pandas.\+io.\+formats.\+format.\+\_\+\+Datetime64\+Formatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1__ExtensionArrayFormatter}{pandas.\+io.\+formats.\+format.\+\_\+\+Extension\+Array\+Formatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1__Datetime64TZFormatter}{pandas.\+io.\+formats.\+format.\+\_\+\+Datetime64\+TZFormatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1__Timedelta64Formatter}{pandas.\+io.\+formats.\+format.\+\_\+\+Timedelta64\+Formatter}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1format_1_1EngFormatter}{pandas.\+io.\+formats.\+format.\+Eng\+Formatter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1io}{pandas.\+io}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1io_1_1formats}{pandas.\+io.\+formats}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format}{pandas.\+io.\+formats.\+format}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_ac3b976333ad0b51a497324074f1f2c0b}{pandas.\+io.\+formats.\+format.\+get\+\_\+dataframe\+\_\+repr\+\_\+params}} ()
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_afe4bd1092a43f83b5567dccad603cec5}{pandas.\+io.\+formats.\+format.\+get\+\_\+series\+\_\+repr\+\_\+params}} ()
+\item 
+str\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a788f3693e64f99b526404578d2e823f9}{pandas.\+io.\+formats.\+format.\+save\+\_\+to\+\_\+buffer}} (str string, File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None buf=None, str\texorpdfstring{$\vert$}{|}None encoding=None)
+\item 
+Generator\mbox{[}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]}, None, None\mbox{]}\texorpdfstring{$\vert$}{|}Generator\mbox{[}String\+IO, None, None\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a18caf4ceb1d2361b9949899f536237b0}{pandas.\+io.\+formats.\+format.\+\_\+get\+\_\+buffer}} (File\+Path\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None buf, str\texorpdfstring{$\vert$}{|}None encoding=None)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_aa57422b9840be22a18653cc2b7e8ed3a}{pandas.\+io.\+formats.\+format.\+format\+\_\+array}} (Array\+Like values, Callable\texorpdfstring{$\vert$}{|}None formatter, Float\+Format\+Type\texorpdfstring{$\vert$}{|}None float\+\_\+format=None, str na\+\_\+rep="{}Na\+N"{}, int\texorpdfstring{$\vert$}{|}None digits=None, str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}None space=None, str justify="{}right"{}, str decimal="{}."{}, bool\texorpdfstring{$\vert$}{|}None leading\+\_\+space=True, int\texorpdfstring{$\vert$}{|}None quoting=None, Callable\texorpdfstring{$\vert$}{|}None fallback\+\_\+formatter=None)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_afa5f346adc58867ccdd1ca383afb6d9f}{pandas.\+io.\+formats.\+format.\+format\+\_\+percentiles}} ((np.\+ndarray\texorpdfstring{$\vert$}{|}Sequence\mbox{[}float\mbox{]}) percentiles)
+\item 
+int \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a2559fdc1110d4492fab35d06ca2cdf4f}{pandas.\+io.\+formats.\+format.\+get\+\_\+precision}} (np.\+ndarray\texorpdfstring{$\vert$}{|}Sequence\mbox{[}float\mbox{]} array)
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_af68d7652aba8a5cbc269f492de7bd46c}{pandas.\+io.\+formats.\+format.\+\_\+format\+\_\+datetime64}} (Na\+TType\texorpdfstring{$\vert$}{|}Timestamp x, str nat\+\_\+rep="{}Na\+T"{})
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_aa15cbdc333d3dda86f412d4f80989121}{pandas.\+io.\+formats.\+format.\+\_\+format\+\_\+datetime64\+\_\+dateonly}} (Na\+TType\texorpdfstring{$\vert$}{|}Timestamp x, str nat\+\_\+rep="{}Na\+T"{}, str\texorpdfstring{$\vert$}{|}None date\+\_\+format=None)
+\item 
+Callable \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a5915d461de62cb118397dbae68be3ecf}{pandas.\+io.\+formats.\+format.\+get\+\_\+format\+\_\+datetime64}} (bool is\+\_\+dates\+\_\+only, str nat\+\_\+rep="{}Na\+T"{}, str\texorpdfstring{$\vert$}{|}None date\+\_\+format=None)
+\item 
+Callable \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a0880791711bc4605c60e15d859b6c493}{pandas.\+io.\+formats.\+format.\+get\+\_\+format\+\_\+timedelta64}} (\mbox{\hyperlink{classpandas_1_1core_1_1arrays_1_1timedeltas_1_1TimedeltaArray}{Timedelta\+Array}} values, str\texorpdfstring{$\vert$}{|}float nat\+\_\+rep="{}Na\+T"{}, bool box=False)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a0fd85d3b4d6f198a231481e0cc750ada}{pandas.\+io.\+formats.\+format.\+\_\+make\+\_\+fixed\+\_\+width}} (list\mbox{[}str\mbox{]} strings, str justify="{}right"{}, int\texorpdfstring{$\vert$}{|}None minimum=None, \mbox{\hyperlink{classpandas_1_1io_1_1formats_1_1printing_1_1__TextAdjustment}{printing.\+\_\+\+Text\+Adjustment}}\texorpdfstring{$\vert$}{|}None adj=None)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a2dcedb701044b56ced83e9dbc38d7a97}{pandas.\+io.\+formats.\+format.\+\_\+trim\+\_\+zeros\+\_\+complex}} (Array\+Like str\+\_\+complexes, str decimal="{}."{})
+\item 
+str \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_aed0b23aa11add4873c4f951b9c6c2c2a}{pandas.\+io.\+formats.\+format.\+\_\+trim\+\_\+zeros\+\_\+single\+\_\+float}} (str str\+\_\+float)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a38fb93378441dbd7a2a39faced7774d2}{pandas.\+io.\+formats.\+format.\+\_\+trim\+\_\+zeros\+\_\+float}} (Array\+Like\texorpdfstring{$\vert$}{|}list\mbox{[}str\mbox{]} str\+\_\+floats, str decimal="{}."{})
+\item 
+bool \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a69de7b37b4cbbc9347ce2d63a086e848}{pandas.\+io.\+formats.\+format.\+\_\+has\+\_\+names}} (\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} index)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a11e8499d9806ed7d2efdff473ac5150a}{pandas.\+io.\+formats.\+format.\+set\+\_\+eng\+\_\+float\+\_\+format}} (int accuracy=3, bool use\+\_\+eng\+\_\+prefix=False)
+\item 
+list\mbox{[}dict\mbox{[}int, int\mbox{]}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a8c729f3b754262720c1c930730a1abf3}{pandas.\+io.\+formats.\+format.\+get\+\_\+level\+\_\+lengths}} (Any levels, bool\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}str sentinel="{}"{})
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a3c8c9f18ce68a7247145c11979f17108}{pandas.\+io.\+formats.\+format.\+buffer\+\_\+put\+\_\+lines}} (\mbox{\hyperlink{classpandas_1_1__typing_1_1WriteBuffer}{Write\+Buffer}}\mbox{[}str\mbox{]} buf, list\mbox{[}str\mbox{]} lines)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Final \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a875f8941353ee2b5c55741e0d3f7b5c9}{pandas.\+io.\+formats.\+format.\+common\+\_\+docstring}}
+\item 
+tuple \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a7b98e8c67edaa408e1d57d0ef6532c78}{pandas.\+io.\+formats.\+format.\+VALID\+\_\+\+JUSTIFY\+\_\+\+PARAMETERS}}
+\item 
+Final \mbox{\hyperlink{namespacepandas_1_1io_1_1formats_1_1format_a34200aca3ee0788bcbea29feba2b84e9}{pandas.\+io.\+formats.\+format.\+return\+\_\+docstring}}
+\end{DoxyCompactItemize}

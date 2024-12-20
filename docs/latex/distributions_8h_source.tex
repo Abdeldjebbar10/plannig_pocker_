@@ -1,0 +1,215 @@
+\doxysection{distributions.\+h}
+\hypertarget{distributions_8h_source}{}\label{distributions_8h_source}\index{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/random/distributions.h@{env/lib/python3.12/site-\/packages/numpy/\_core/include/numpy/random/distributions.h}}
+\mbox{\hyperlink{distributions_8h}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUMPY\_CORE\_INCLUDE\_NUMPY\_RANDOM\_DISTRIBUTIONS\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NUMPY\_CORE\_INCLUDE\_NUMPY\_RANDOM\_DISTRIBUTIONS\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <Python.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{npy__common_8h}{numpy/npy\_common.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{npy__math_8h}{numpy/npy\_math.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bitgen_8h}{numpy/random/bitgen.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ RAND\_INT\_TYPE\ is\ used\ to\ share\ integer\ generators\ with\ RandomState\ which}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ used\ long\ in\ place\ of\ int64\_t.\ If\ changing\ a\ distribution\ that\ uses}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ RAND\_INT\_TYPE,\ then\ the\ original\ unmodified\ copy\ must\ be\ retained\ for}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ use\ in\ RandomState\ by\ copying\ to\ the\ legacy\ distributions\ source\ file.}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#ifdef\ NP\_RANDOM\_LEGACY}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ RAND\_INT\_TYPE\ long}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ RAND\_INT\_MAX\ LONG\_MAX}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ RAND\_INT\_TYPE\ int64\_t}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ RAND\_INT\_MAX\ INT64\_MAX}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#ifdef\ \_MSC\_VER}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ DECLDIR\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ DECLDIR\ extern}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#ifndef\ MIN}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ MIN(x,\ y)\ (((x)\ <\ (y))\ ?\ x\ :\ y)}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ MAX(x,\ y)\ (((x)\ >\ (y))\ ?\ x\ :\ y)}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#ifndef\ M\_PI}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ M\_PI\ 3.14159265358979323846264338328}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structs__binomial__t}{s\_binomial\_t}}\ \{}
+\DoxyCodeLine{00047\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structs__binomial__t_acc4ed1e192697a3c1af55dd220ff5075}{has\_binomial}};\ \textcolor{comment}{/*\ !=0:\ following\ parameters\ initialized\ for\ binomial\ */}}
+\DoxyCodeLine{00048\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_a5b1f2c8074174da67f37b6cf5f25cfb5}{psave}};}
+\DoxyCodeLine{00049\ \ \ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ \mbox{\hyperlink{structs__binomial__t_ad612b6c73e041619663755718caffe0a}{nsave}};}
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_a56efaaffc56c06b02f19339db2ef3cd8}{r}};}
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_af16e9bb2043cc62b28e35607cc89eab0}{q}};}
+\DoxyCodeLine{00052\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_acc645f57b50188a99c9c969a1a3a1761}{fm}};}
+\DoxyCodeLine{00053\ \ \ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ \mbox{\hyperlink{structs__binomial__t_a6a12cbd2767cacc07a0a25d9b2c6a7d6}{m}};}
+\DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_ab7286bb608f8169950b54b2b48046742}{p1}};}
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_ab136362574228316fc915f4ffd747cda}{xm}};}
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_aa46efb684fd21a1b8a8d7a5268b65371}{xl}};}
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_af6cd0e49cf8b3b345557099657953c03}{xr}};}
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_a8af46f7444803e94db890eaea3d4a09b}{c}};}
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_a7142c279779d180ec646d0cfe65b10b7}{laml}};}
+\DoxyCodeLine{00060\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_a7997d8558e162f89a135b1f65d9bb207}{lamr}};}
+\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_ae915d87bff728fec24730a8f801c6a5c}{p2}};}
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_a9bba690c15a623de0cd922724c554abd}{p3}};}
+\DoxyCodeLine{00063\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structs__binomial__t_ac053b18f68feddec4049857410dffbe2}{p4}};}
+\DoxyCodeLine{00064\ \}\ \mbox{\hyperlink{distributions_8h_aaa44241c293b244615bfa7ae151d30d8}{binomial\_t}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{distributions_8h_a069f3dcd781c72409758d351a413b19a}{random\_standard\_uniform\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00067\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_ad6d522c564ad7dab25088e9e69849135}{random\_standard\_uniform}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00068\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_a364dbd98ec4a891c263a7c9880bbcfd7}{random\_standard\_uniform\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ \textcolor{keywordtype}{double}\ *);}
+\DoxyCodeLine{00069\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_ade2e249581d21b00f980c5bb89f916ae}{random\_standard\_uniform\_fill\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ \textcolor{keywordtype}{float}\ *);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ int64\_t\ \mbox{\hyperlink{distributions_8h_a5d2641c1b12fb02dc0482b177fe3e79a}{random\_positive\_int64}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00072\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ int32\_t\ \mbox{\hyperlink{distributions_8h_ac301e707d6408ea3852627b90283cf88}{random\_positive\_int32}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00073\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ int64\_t\ \mbox{\hyperlink{distributions_8h_af74c54c692759fdf85f8c476c8cf621f}{random\_positive\_int}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00074\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ uint64\_t\ \mbox{\hyperlink{distributions_8h_af34dc866b9e91a91f945b70027682c00}{random\_uint}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_ac4d14065e9681ac433d31c22ecdebaaf}{random\_standard\_exponential}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00077\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{distributions_8h_a1da2b33809dd9a4e448eef257f2018d7}{random\_standard\_exponential\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00078\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_a3ce88bfa0ff011b81a726fda571fb8bb}{random\_standard\_exponential\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ \textcolor{keywordtype}{double}\ *);}
+\DoxyCodeLine{00079\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_a67af2ca82d105bee485aa946ee61e2f2}{random\_standard\_exponential\_fill\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ \textcolor{keywordtype}{float}\ *);}
+\DoxyCodeLine{00080\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_a83de904b1951b21c227985ff2293f47c}{random\_standard\_exponential\_inv\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ \textcolor{keywordtype}{double}\ *);}
+\DoxyCodeLine{00081\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_a561d418a2b7bf8dd99f90b97da1f75ff}{random\_standard\_exponential\_inv\_fill\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ \textcolor{keywordtype}{float}\ *);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a969519ed3d12d4a4522a2252752652f9}{random\_standard\_normal}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00084\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{distributions_8h_a58c7ed79f5384dd9a1f331d2c0e012cf}{random\_standard\_normal\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00085\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_a4086be8bc643d0eb46150e62588a814e}{random\_standard\_normal\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ \textcolor{keywordtype}{double}\ *);}
+\DoxyCodeLine{00086\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_a4d3a9d3fce58e8175c06fd8940ec79cb}{random\_standard\_normal\_fill\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}},\ \textcolor{keywordtype}{float}\ *);}
+\DoxyCodeLine{00087\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_ae04dc46f04b1d5262c1f64f73e5ccc83}{random\_standard\_gamma}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespaceshape}{shape}});}
+\DoxyCodeLine{00088\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{distributions_8h_aba194a3012632fb35e8a9b19e15cde2a}{random\_standard\_gamma\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespaceshape}{shape}});}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_aa7cdfffc2d5128355aec1785a491384c}{random\_normal}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ loc,\ \textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a0a82e21ce645965c7a25886e6d3f4c50}{random\_gamma}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespaceshape}{shape}},\ \textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00093\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{distributions_8h_a08ba6bf5f5aebc02361643aab0fd904d}{random\_gamma\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespaceshape}{shape}},\ \textcolor{keywordtype}{float}\ scale);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a08fcc617155fba1b9d7db7c0da511270}{random\_exponential}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00096\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a602d2b0552799a7f535b314facae94ad}{random\_uniform}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ lower,\ \textcolor{keywordtype}{double}\ range);}
+\DoxyCodeLine{00097\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a83bbc6d4f2aea0eaada33b1299f5af6a}{random\_beta}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ a,\ \textcolor{keywordtype}{double}\ b);}
+\DoxyCodeLine{00098\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_ac8f16b6fc6a1969c2bd1b2646997c379}{random\_chisquare}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ df);}
+\DoxyCodeLine{00099\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a924c05c19a887376c961bacc8b36fa71}{random\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ dfnum,\ \textcolor{keywordtype}{double}\ dfden);}
+\DoxyCodeLine{00100\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a373e0324af1a8e2d284c92c694ad4da9}{random\_standard\_cauchy}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state);}
+\DoxyCodeLine{00101\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_ab49cdd9176ea1b460a6edb2ec36eec0b}{random\_pareto}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00102\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a86df8f881824ae83110b4adabbda5372}{random\_weibull}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00103\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a7602d10cfde3d5182c3cdcd98b1f42aa}{random\_power}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00104\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a6d89f546f6c96fdf5315c1a8ea4f7c8d}{random\_laplace}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ loc,\ \textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00105\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a79f32568f5678fb4d22cb0af869d4086}{random\_gumbel}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ loc,\ \textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00106\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a5a6514bf7925cf87dbbf35f4ac3e22a5}{random\_logistic}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ loc,\ \textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00107\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a1072302c25ced1eb0a27e23c801a4246}{random\_lognormal}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ mean,\ \textcolor{keywordtype}{double}\ sigma);}
+\DoxyCodeLine{00108\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a862e4ad4dc0f98a18d0a31c3d47f723f}{random\_rayleigh}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ mode);}
+\DoxyCodeLine{00109\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a63a517342b960230b4d0fcbd276cbc57}{random\_standard\_t}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ df);}
+\DoxyCodeLine{00110\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a8cde4b3f08ffa38d87420c42ed1f27bd}{random\_noncentral\_chisquare}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ df,}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ nonc);}
+\DoxyCodeLine{00112\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a484686542177cfda9776183b474fbc5f}{random\_noncentral\_f}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ dfnum,}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ dfden,\ \textcolor{keywordtype}{double}\ nonc);}
+\DoxyCodeLine{00114\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_affdba9f710402030acab2e080148f89c}{random\_wald}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ mean,\ \textcolor{keywordtype}{double}\ scale);}
+\DoxyCodeLine{00115\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a591927fca1902ec47fcc4feb901b82c3}{random\_vonmises}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ mu,\ \textcolor{keywordtype}{double}\ kappa);}
+\DoxyCodeLine{00116\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a19f5ac43d0e09f9d798786eb5d1069dd}{random\_triangular}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ left,\ \textcolor{keywordtype}{double}\ mode,}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ right);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ \mbox{\hyperlink{distributions_8h_a2abb9ae2c09869773b739cf993ada645}{random\_poisson}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ lam);}
+\DoxyCodeLine{00120\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ \mbox{\hyperlink{distributions_8h_a847de0497db3a69b8052ef5f5d4e1b89}{random\_negative\_binomial}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ n,}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ p);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ int64\_t\ \mbox{\hyperlink{distributions_8h_ae3c94b70e8703a1e4360745ad33e96af}{random\_binomial}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ p,}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ n,\ \mbox{\hyperlink{structs__binomial__t}{binomial\_t}}\ *binomial);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ int64\_t\ \mbox{\hyperlink{distributions_8h_ab0f0b77605490caa665ec8cf5b424d78}{random\_logseries}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ p);}
+\DoxyCodeLine{00127\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ int64\_t\ \mbox{\hyperlink{distributions_8h_a1434e320018e5716462f75994cdbd828}{random\_geometric}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ p);}
+\DoxyCodeLine{00128\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ \mbox{\hyperlink{distributions_8h_ab2da02bcae61a4e2e5d47f0d065b7431}{random\_geometric\_search}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ p);}
+\DoxyCodeLine{00129\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ \mbox{\hyperlink{distributions_8h_a8277e8e70966e5decc1c891bed7d5912}{random\_zipf}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00130\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ int64\_t\ \mbox{\hyperlink{distributions_8h_a48d994a9a789aa24cc344eb1b71aa0cc}{random\_hypergeometric}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ good,\ int64\_t\ bad,\ int64\_t\ sample);}
+\DoxyCodeLine{00132\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ uint64\_t\ \mbox{\hyperlink{distributions_8h_a4a3bb4695df5a293bb00614bbf6a4c83}{random\_interval}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ uint64\_t\ max);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{comment}{/*\ Generate\ random\ uint64\ numbers\ in\ closed\ interval\ [off,\ off\ +\ rng].\ */}}
+\DoxyCodeLine{00135\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ uint64\_t\ \mbox{\hyperlink{distributions_8h_a9c5727c6a66f3d9f75559ff29a259a1a}{random\_bounded\_uint64}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ uint64\_t\ off,}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint64\_t\ rng,\ uint64\_t\ mask,}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ use\_masked);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{comment}{/*\ Generate\ random\ uint32\ numbers\ in\ closed\ interval\ [off,\ off\ +\ rng].\ */}}
+\DoxyCodeLine{00140\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ uint32\_t\ \mbox{\hyperlink{distributions_8h_a9c60864843f63bbf9791b7a754e83701}{random\_buffered\_bounded\_uint32}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ off,\ uint32\_t\ rng,}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ mask,\ \textcolor{keywordtype}{bool}\ use\_masked,}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *bcnt,\ uint32\_t\ *buf);}
+\DoxyCodeLine{00144\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ uint16\_t\ \mbox{\hyperlink{distributions_8h_af5b3f4d27ec58435302ae124a4707cc1}{random\_buffered\_bounded\_uint16}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint16\_t\ off,\ uint16\_t\ rng,}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint16\_t\ mask,\ \textcolor{keywordtype}{bool}\ use\_masked,}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *bcnt,\ uint32\_t\ *buf);}
+\DoxyCodeLine{00148\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ uint8\_t\ \mbox{\hyperlink{distributions_8h_aa722714572c2ddf340901a493766d558}{random\_buffered\_bounded\_uint8}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ uint8\_t\ off,}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ rng,\ uint8\_t\ mask,}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ use\_masked,\ \textcolor{keywordtype}{int}\ *bcnt,}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ *buf);}
+\DoxyCodeLine{00152\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ \mbox{\hyperlink{distributions_8h_a6d68ca8f43b632acce64954969352c60}{random\_buffered\_bounded\_bool}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ off,}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ rng,\ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ mask,}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ use\_masked,\ \textcolor{keywordtype}{int}\ *bcnt,}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ *buf);}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_ab45f9165201dbe620c4feeb2996d0670}{random\_bounded\_uint64\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ uint64\_t\ off,}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint64\_t\ rng,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ cnt,}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ use\_masked,\ uint64\_t\ *out);}
+\DoxyCodeLine{00160\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_ab544de3791ec1fb290d750f5c2b00960}{random\_bounded\_uint32\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ uint32\_t\ off,}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ rng,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ cnt,}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ use\_masked,\ uint32\_t\ *out);}
+\DoxyCodeLine{00163\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_a9a3daa164f9752f5f57d45af967de18c}{random\_bounded\_uint16\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ uint16\_t\ off,}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint16\_t\ rng,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ cnt,}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ use\_masked,\ uint16\_t\ *out);}
+\DoxyCodeLine{00166\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_ae9105d6d55b2ba2a24e1437863f4ada1}{random\_bounded\_uint8\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ uint8\_t\ off,}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\_t\ rng,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ cnt,}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ use\_masked,\ uint8\_t\ *out);}
+\DoxyCodeLine{00169\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_af9fd5c222fd19a17cb4a6de42b4f2e07}{random\_bounded\_bool\_fill}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ off,}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ rng,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ cnt,}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ use\_masked,\ \mbox{\hyperlink{npy__common_8h_a95307a629b2747f357f81b3853c5d1b6}{npy\_bool}}\ *out);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_ab8c3be690d270e395dc50a68e0c01316}{random\_multinomial}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,\ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ n,\ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ *mnix,}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ *pix,\ \mbox{\hyperlink{npy__common_8h_a966a45719c0ab85ba9ce27d0b41310f4}{npy\_intp}}\ d,\ \mbox{\hyperlink{structs__binomial__t}{binomial\_t}}\ *binomial);}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \textcolor{comment}{/*\ multivariate\ hypergeometric,\ "{}count"{}\ method\ */}}
+\DoxyCodeLine{00177\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{distributions_8h_a643c3f6eefd582d35200304ca6d19ab3}{random\_multivariate\_hypergeometric\_count}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ total,}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ num\_colors,\ int64\_t\ *colors,}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ nsample,}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ num\_variates,\ int64\_t\ *variates);}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \textcolor{comment}{/*\ multivariate\ hypergeometric,\ "{}marginals"{}\ method\ */}}
+\DoxyCodeLine{00184\ \mbox{\hyperlink{distributions_8h_a6b6635274dbcf57e29a0140cd8cf0305}{DECLDIR}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{distributions_8h_af829d638562c4cdb48842c86c8d787c3}{random\_multivariate\_hypergeometric\_marginals}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ total,}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ num\_colors,\ int64\_t\ *colors,}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ nsample,}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ num\_variates,\ int64\_t\ *variates);}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \textcolor{comment}{/*\ Common\ to\ legacy-\/distributions.c\ and\ distributions.c\ but\ not\ exported\ */}}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ \mbox{\hyperlink{distributions_8h_a06af66f6940352641d6305adc60aa96b}{random\_binomial\_btpe}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ n,}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ p,}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structs__binomial__t}{binomial\_t}}\ *binomial);}
+\DoxyCodeLine{00196\ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ \mbox{\hyperlink{distributions_8h_ad1fa26048367cd36dba81b0d20d1cafe}{random\_binomial\_inversion}}(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state,}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{distributions_8h_abfa1397c653784f9b040ba5bcb0448a2}{RAND\_INT\_TYPE}}\ n,}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ p,}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structs__binomial__t}{binomial\_t}}\ *binomial);}
+\DoxyCodeLine{00200\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{distributions_8h_a0c15ae3b92c8982b3086f1170859b632}{random\_loggam}}(\textcolor{keywordtype}{double}\ x);}
+\DoxyCodeLine{00201\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ next\_double(\mbox{\hyperlink{structbitgen}{bitgen\_t}}\ *bitgen\_state)\ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordflow}{return}\ bitgen\_state-\/>\mbox{\hyperlink{structbitgen_a3eb1c225ec9b12db9c318196e98be47a}{next\_double}}(bitgen\_state-\/>\mbox{\hyperlink{structbitgen_ab733f37992eaa4df15d6bbffe866921e}{state}});}
+\DoxyCodeLine{00203\ \}}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00206\ \}}
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ NUMPY\_CORE\_INCLUDE\_NUMPY\_RANDOM\_DISTRIBUTIONS\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

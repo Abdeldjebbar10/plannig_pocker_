@@ -1,0 +1,81 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+distlib.\+util.\+Cache}
+\hypertarget{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache}{}\label{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache}\index{pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+distlib.\+util.\+Cache\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+vendor.\+distlib.\+util.\+Cache\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a06cf8bbeafed3bdc548edfad8e45c989}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a8c4d3c27a776a3caeb0efa0db1b1d7da}{base}})
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a550f49088bf655ec929f5b2d064f570e}{prefix\+\_\+to\+\_\+dir}} (self, prefix, use\+\_\+abspath=True)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a18b1028244493764ba547e8b2eddfd15}{clear}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a8c4d3c27a776a3caeb0efa0db1b1d7da}{base}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A class implementing a cache for resources that need to live in the file system
+e.g. shared libraries. This class was moved from resources to here because it
+could be used by other modules, e.g. the wheel module.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a06cf8bbeafed3bdc548edfad8e45c989}\label{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a06cf8bbeafed3bdc548edfad8e45c989} 
+\index{pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+util.\+Cache.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{base }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialise an instance.
+
+:param base: The base directory where the cache should be located.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1resources_1_1ResourceCache_ace3e5689ef97b456e38736cf201dde02}{pip.\+\_\+vendor.\+distlib.\+resources.\+Resource\+Cache}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a18b1028244493764ba547e8b2eddfd15}\label{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a18b1028244493764ba547e8b2eddfd15} 
+\index{pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}!clear@{clear}}
+\index{clear@{clear}!pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+util.\+Cache.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear the cache.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a550f49088bf655ec929f5b2d064f570e}\label{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a550f49088bf655ec929f5b2d064f570e} 
+\index{pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}!prefix\_to\_dir@{prefix\_to\_dir}}
+\index{prefix\_to\_dir@{prefix\_to\_dir}!pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}}
+\doxysubsubsection{\texorpdfstring{prefix\_to\_dir()}{prefix\_to\_dir()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+util.\+Cache.\+prefix\+\_\+to\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{prefix,  }\item[{}]{use\+\_\+abspath = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts a resource prefix to a directory name in the cache.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a8c4d3c27a776a3caeb0efa0db1b1d7da}\label{classpip_1_1__vendor_1_1distlib_1_1util_1_1Cache_a8c4d3c27a776a3caeb0efa0db1b1d7da} 
+\index{pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}!base@{base}}
+\index{base@{base}!pip.\_vendor.distlib.util.Cache@{pip.\_vendor.distlib.util.Cache}}
+\doxysubsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+distlib.\+util.\+Cache.\+base}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/distlib/\mbox{\hyperlink{pip_2__vendor_2distlib_2util_8py}{util.\+py}}\end{DoxyCompactItemize}

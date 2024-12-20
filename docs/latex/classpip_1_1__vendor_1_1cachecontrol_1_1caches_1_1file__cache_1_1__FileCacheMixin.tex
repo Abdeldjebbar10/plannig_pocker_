@@ -1,0 +1,134 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin}
+\hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin}{}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin}\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a9f4746dc766c0bce929257fcf40532d1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}Path \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_abd315f893b83509e498d1ed277791b02}{directory}}, bool \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a65f24ac0ba2ae9c94f169f56ea54776f}{forever}}=False, int \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_aa5230199174cae3fc2e874bbe0e572c0}{filemode}}=0o0600, int \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a8a76cd37305537c90cd61d20891a4cde}{dirmode}}=0o0700, type\mbox{[}Base\+File\+Lock\mbox{]}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_af11798a4af7f612a8dedb4db535025a9}{lock\+\_\+class}}=None)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_afef88044f42ddd480be90e94a50e07bc}{get}} (self, str key)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_ae8a7588fc5a71680756743e05deeea9b}{set}} (self, str key, bytes value, int\texorpdfstring{$\vert$}{|}datetime\texorpdfstring{$\vert$}{|}None expires=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_aeae959f7f51e1fcae81aa78cf60b3e9a}{encode}} (str x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_abd315f893b83509e498d1ed277791b02}{directory}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a65f24ac0ba2ae9c94f169f56ea54776f}{forever}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_aa5230199174cae3fc2e874bbe0e572c0}{filemode}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a8a76cd37305537c90cd61d20891a4cde}{dirmode}}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_af11798a4af7f612a8dedb4db535025a9}{lock\+\_\+class}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a8e94253502ca252f8c8ca1e4921fd42f}{\+\_\+fn}} (self, str name)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a887060bd54ecd995958f2e490756d05b}{\+\_\+write}} (self, str path, bytes data)
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a0ebc930693f8386cf1231d4ab04fb800}{\+\_\+delete}} (self, str key, str suffix)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Shared implementation for both FileCache variants.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a9f4746dc766c0bce929257fcf40532d1}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a9f4746dc766c0bce929257fcf40532d1} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str \texorpdfstring{$\vert$}{|} Path}]{directory,  }\item[{bool }]{forever = {\ttfamily False},  }\item[{int }]{filemode = {\ttfamily 0o0600},  }\item[{int }]{dirmode = {\ttfamily 0o0700},  }\item[{type\mbox{[}Base\+File\+Lock\mbox{]} \texorpdfstring{$\vert$}{|} None }]{lock\+\_\+class = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a0ebc930693f8386cf1231d4ab04fb800}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a0ebc930693f8386cf1231d4ab04fb800} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!\_delete@{\_delete}}
+\index{\_delete@{\_delete}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{\_delete()}{\_delete()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key,  }\item[{str}]{suffix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a8e94253502ca252f8c8ca1e4921fd42f}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a8e94253502ca252f8c8ca1e4921fd42f} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!\_fn@{\_fn}}
+\index{\_fn@{\_fn}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{\_fn()}{\_fn()}}
+{\footnotesize\ttfamily  str pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+\_\+fn (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a887060bd54ecd995958f2e490756d05b}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a887060bd54ecd995958f2e490756d05b} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!\_write@{\_write}}
+\index{\_write@{\_write}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{\_write()}{\_write()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+\_\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{path,  }\item[{bytes}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Safely write the data to the given path.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_aeae959f7f51e1fcae81aa78cf60b3e9a}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_aeae959f7f51e1fcae81aa78cf60b3e9a} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!encode@{encode}}
+\index{encode@{encode}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily  str pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+encode (\begin{DoxyParamCaption}\item[{str}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_afef88044f42ddd480be90e94a50e07bc}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_afef88044f42ddd480be90e94a50e07bc} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!get@{get}}
+\index{get@{get}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily  bytes \texorpdfstring{$\vert$}{|} None pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_ae8a7588fc5a71680756743e05deeea9b}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_ae8a7588fc5a71680756743e05deeea9b} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!set@{set}}
+\index{set@{set}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+set (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{key,  }\item[{bytes}]{value,  }\item[{int \texorpdfstring{$\vert$}{|} datetime \texorpdfstring{$\vert$}{|} None }]{expires = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_abd315f893b83509e498d1ed277791b02}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_abd315f893b83509e498d1ed277791b02} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!directory@{directory}}
+\index{directory@{directory}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{directory}{directory}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+directory}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a8a76cd37305537c90cd61d20891a4cde}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a8a76cd37305537c90cd61d20891a4cde} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!dirmode@{dirmode}}
+\index{dirmode@{dirmode}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{dirmode}{dirmode}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+dirmode}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_aa5230199174cae3fc2e874bbe0e572c0}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_aa5230199174cae3fc2e874bbe0e572c0} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!filemode@{filemode}}
+\index{filemode@{filemode}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{filemode}{filemode}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+filemode}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a65f24ac0ba2ae9c94f169f56ea54776f}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_a65f24ac0ba2ae9c94f169f56ea54776f} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!forever@{forever}}
+\index{forever@{forever}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{forever}{forever}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+forever}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_af11798a4af7f612a8dedb4db535025a9}\label{classpip_1_1__vendor_1_1cachecontrol_1_1caches_1_1file__cache_1_1__FileCacheMixin_af11798a4af7f612a8dedb4db535025a9} 
+\index{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}!lock\_class@{lock\_class}}
+\index{lock\_class@{lock\_class}!pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin@{pip.\_vendor.cachecontrol.caches.file\_cache.\_FileCacheMixin}}
+\doxysubsubsection{\texorpdfstring{lock\_class}{lock\_class}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+cachecontrol.\+caches.\+file\+\_\+cache.\+\_\+\+File\+Cache\+Mixin.\+lock\+\_\+class}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/cachecontrol/caches/\mbox{\hyperlink{file__cache_8py}{file\+\_\+cache.\+py}}\end{DoxyCompactItemize}

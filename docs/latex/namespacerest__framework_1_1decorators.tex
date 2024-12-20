@@ -1,0 +1,110 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+decorators}
+\hypertarget{namespacerest__framework_1_1decorators}{}\label{namespacerest__framework_1_1decorators}\index{rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1decorators_1_1MethodMapper}{Method\+Mapper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1decorators_ac8bd05965ace6eef9dfd228996047231}{api\+\_\+view}} (http\+\_\+method\+\_\+names=None)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1decorators_a70a610f8dbb2ccbdbe11f89044b9e0d3}{renderer\+\_\+classes}} (renderer\+\_\+classes)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1decorators_a20fcf16d984d4741d379d245bdab41c0}{parser\+\_\+classes}} (parser\+\_\+classes)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1decorators_ac1d88864266067f3c3bf49d09b5ba62d}{authentication\+\_\+classes}} (authentication\+\_\+classes)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1decorators_a8edf633e770e6c6d5d79064ac984c3ae}{throttle\+\_\+classes}} (throttle\+\_\+classes)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1decorators_adfd01884c247a2fe075418faab3a7be1}{permission\+\_\+classes}} (permission\+\_\+classes)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1decorators_a1933a279fb7703e40057d2cbf429d5ea}{schema}} (view\+\_\+inspector)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1decorators_a0d4777fce737bd12196a47c7c1cde6ac}{action}} (methods=None, detail=None, url\+\_\+path=None, url\+\_\+name=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The most important decorator in this module is `@api_view`, which is used
+for writing function-based views with REST framework.
+
+There are also various decorators for setting the API policies on function
+based views, as well as the `@action` decorator, which is used to annotate
+methods on viewsets that should be included by routers.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1decorators_a0d4777fce737bd12196a47c7c1cde6ac}\label{namespacerest__framework_1_1decorators_a0d4777fce737bd12196a47c7c1cde6ac} 
+\index{rest\_framework.decorators@{rest\_framework.decorators}!action@{action}}
+\index{action@{action}!rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+action (\begin{DoxyParamCaption}\item[{}]{methods = {\ttfamily None},  }\item[{}]{detail = {\ttfamily None},  }\item[{}]{url\+\_\+path = {\ttfamily None},  }\item[{}]{url\+\_\+name = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Mark a ViewSet method as a routable action.
+
+`@action`-decorated functions will be endowed with a `mapping` property,
+a `MethodMapper` that can be used to add additional method-based behaviors
+on the routed action.
+
+:param methods: A list of HTTP method names this action responds to.
+                Defaults to GET only.
+:param detail: Required. Determines whether this action applies to
+               instance/detail requests or collection/list requests.
+:param url_path: Define the URL segment for this action. Defaults to the
+                 name of the method decorated.
+:param url_name: Define the internal (`reverse`) URL name for this action.
+                 Defaults to the name of the method decorated with underscores
+                 replaced with dashes.
+:param kwargs: Additional properties to set on the view.  This can be used
+               to override viewset-level *_classes settings, equivalent to
+               how the `@renderer_classes` etc. decorators work for function-
+               based API views.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1decorators_ac8bd05965ace6eef9dfd228996047231}\label{namespacerest__framework_1_1decorators_ac8bd05965ace6eef9dfd228996047231} 
+\index{rest\_framework.decorators@{rest\_framework.decorators}!api\_view@{api\_view}}
+\index{api\_view@{api\_view}!rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection{\texorpdfstring{api\_view()}{api\_view()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+api\+\_\+view (\begin{DoxyParamCaption}\item[{}]{http\+\_\+method\+\_\+names = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator that converts a function-based view into an APIView subclass.
+Takes a list of allowed methods for the view as an argument.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1decorators_ac1d88864266067f3c3bf49d09b5ba62d}\label{namespacerest__framework_1_1decorators_ac1d88864266067f3c3bf49d09b5ba62d} 
+\index{rest\_framework.decorators@{rest\_framework.decorators}!authentication\_classes@{authentication\_classes}}
+\index{authentication\_classes@{authentication\_classes}!rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection{\texorpdfstring{authentication\_classes()}{authentication\_classes()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+authentication\+\_\+classes (\begin{DoxyParamCaption}\item[{}]{authentication\+\_\+classes }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1decorators_a20fcf16d984d4741d379d245bdab41c0}\label{namespacerest__framework_1_1decorators_a20fcf16d984d4741d379d245bdab41c0} 
+\index{rest\_framework.decorators@{rest\_framework.decorators}!parser\_classes@{parser\_classes}}
+\index{parser\_classes@{parser\_classes}!rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection{\texorpdfstring{parser\_classes()}{parser\_classes()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+parser\+\_\+classes (\begin{DoxyParamCaption}\item[{}]{parser\+\_\+classes }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1decorators_adfd01884c247a2fe075418faab3a7be1}\label{namespacerest__framework_1_1decorators_adfd01884c247a2fe075418faab3a7be1} 
+\index{rest\_framework.decorators@{rest\_framework.decorators}!permission\_classes@{permission\_classes}}
+\index{permission\_classes@{permission\_classes}!rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection{\texorpdfstring{permission\_classes()}{permission\_classes()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+permission\+\_\+classes (\begin{DoxyParamCaption}\item[{}]{permission\+\_\+classes }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1decorators_a70a610f8dbb2ccbdbe11f89044b9e0d3}\label{namespacerest__framework_1_1decorators_a70a610f8dbb2ccbdbe11f89044b9e0d3} 
+\index{rest\_framework.decorators@{rest\_framework.decorators}!renderer\_classes@{renderer\_classes}}
+\index{renderer\_classes@{renderer\_classes}!rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection{\texorpdfstring{renderer\_classes()}{renderer\_classes()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+renderer\+\_\+classes (\begin{DoxyParamCaption}\item[{}]{renderer\+\_\+classes }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1decorators_a1933a279fb7703e40057d2cbf429d5ea}\label{namespacerest__framework_1_1decorators_a1933a279fb7703e40057d2cbf429d5ea} 
+\index{rest\_framework.decorators@{rest\_framework.decorators}!schema@{schema}}
+\index{schema@{schema}!rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection{\texorpdfstring{schema()}{schema()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+schema (\begin{DoxyParamCaption}\item[{}]{view\+\_\+inspector }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1decorators_a8edf633e770e6c6d5d79064ac984c3ae}\label{namespacerest__framework_1_1decorators_a8edf633e770e6c6d5d79064ac984c3ae} 
+\index{rest\_framework.decorators@{rest\_framework.decorators}!throttle\_classes@{throttle\_classes}}
+\index{throttle\_classes@{throttle\_classes}!rest\_framework.decorators@{rest\_framework.decorators}}
+\doxysubsubsection{\texorpdfstring{throttle\_classes()}{throttle\_classes()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+decorators.\+throttle\+\_\+classes (\begin{DoxyParamCaption}\item[{}]{throttle\+\_\+classes }\end{DoxyParamCaption})}
+

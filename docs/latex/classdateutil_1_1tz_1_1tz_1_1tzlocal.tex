@@ -1,0 +1,188 @@
+\doxysection{Référence de la classe dateutil.\+tz.\+tz.\+tzlocal}
+\hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal}{}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal}\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+
+
+Graphe d\textquotesingle{}héritage de dateutil.\+tz.\+tz.\+tzlocal\+:
+% FIG 0
+
+
+Graphe de collaboration de dateutil.\+tz.\+tz.\+tzlocal\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a175cb9ff0116db67b6fcb44e9b27a955}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a604d0f8871744e64d89e87ad3e1660c3}{utcoffset}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a44b82af26e48efe9239c7512bafc7b52}{dst}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a722c8bed08658aba41e390ec77e73742}{tzname}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a987d13ca536f3229952b43b2f108fc02}{is\+\_\+ambiguous}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a8f3d494d5314a174b8a31827323956b7}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_aa5ce6897cba522000e7b85645d9d37d2}{\+\_\+\+\_\+ne\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a54c04b55302eabaf9c22b7cc9023e8e3}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_a7b5b6da0e26f32649d199f23e4ce293c}{fromutc}} (self, dt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_af3a21c28f349cc941cea2d1f9262b79e}{\+\_\+naive\+\_\+is\+\_\+dst}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a5c505696b7b437c5d6ffd0fd6c76bab8}{\+\_\+isdst}} (self, dt, fold\+\_\+naive=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_ae7e407e0576eae35c159484562f1b188}{\+\_\+fold\+\_\+status}} (self, dt\+\_\+utc, dt\+\_\+wall)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_aaa7215f73d9a24131b68c9ee3508518b}{\+\_\+fold}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_aab9e45aceaf243524a55eafd2cb81bb8}{\+\_\+fromutc}} (self, dt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a4f274632aaa4d54612b402c3a6df84a7}{\+\_\+std\+\_\+offset}}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a0e6d3c423b3d1e799b363aab7ae56cda}{\+\_\+dst\+\_\+offset}}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_aeb0ae38484553f3a0d5114344b0a7f18}{\+\_\+dst\+\_\+saved}}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a375ca875a3433ee2d83582ed96a1cbf4}{\+\_\+hasdst}}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzlocal_a0d2b056a5c65c3a9c65a4d7d318aa0d4}{\+\_\+tznames}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A :class:`tzinfo` subclass built around the ``time`` timezone functions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a175cb9ff0116db67b6fcb44e9b27a955}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a175cb9ff0116db67b6fcb44e9b27a955} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a8f3d494d5314a174b8a31827323956b7}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a8f3d494d5314a174b8a31827323956b7} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_aa5ce6897cba522000e7b85645d9d37d2}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_aa5ce6897cba522000e7b85645d9d37d2} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_\_ne\_\_@{\_\_ne\_\_}}
+\index{\_\_ne\_\_@{\_\_ne\_\_}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_\_ne\_\_()}{\_\_ne\_\_()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+\+\_\+ne\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a54c04b55302eabaf9c22b7cc9023e8e3}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a54c04b55302eabaf9c22b7cc9023e8e3} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a5c505696b7b437c5d6ffd0fd6c76bab8}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a5c505696b7b437c5d6ffd0fd6c76bab8} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_isdst@{\_isdst}}
+\index{\_isdst@{\_isdst}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_isdst()}{\_isdst()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+isdst (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt,  }\item[{}]{fold\+\_\+naive = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_af3a21c28f349cc941cea2d1f9262b79e}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_af3a21c28f349cc941cea2d1f9262b79e} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_naive\_is\_dst@{\_naive\_is\_dst}}
+\index{\_naive\_is\_dst@{\_naive\_is\_dst}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_naive\_is\_dst()}{\_naive\_is\_dst()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+naive\+\_\+is\+\_\+dst (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a44b82af26e48efe9239c7512bafc7b52}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a44b82af26e48efe9239c7512bafc7b52} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!dst@{dst}}
+\index{dst@{dst}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{dst()}{dst()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+dst (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a987d13ca536f3229952b43b2f108fc02}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a987d13ca536f3229952b43b2f108fc02} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!is\_ambiguous@{is\_ambiguous}}
+\index{is\_ambiguous@{is\_ambiguous}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{is\_ambiguous()}{is\_ambiguous()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+is\+\_\+ambiguous (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether or not the "wall time" of a given datetime is ambiguous in this
+zone.
+
+:param dt:
+    A :py:class:`datetime.datetime`, naive or time zone aware.
+
+
+:return:
+    Returns ``True`` if ambiguous, ``False`` otherwise.
+
+.. versionadded:: 2.6.0
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_acf05ceef19d7f4a48bf8fa814ef7ca74}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}.
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a722c8bed08658aba41e390ec77e73742}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a722c8bed08658aba41e390ec77e73742} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!tzname@{tzname}}
+\index{tzname@{tzname}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{tzname()}{tzname()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+tzname (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a604d0f8871744e64d89e87ad3e1660c3}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a604d0f8871744e64d89e87ad3e1660c3} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!utcoffset@{utcoffset}}
+\index{utcoffset@{utcoffset}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{utcoffset()}{utcoffset()}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+utcoffset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{dt }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a0e6d3c423b3d1e799b363aab7ae56cda}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a0e6d3c423b3d1e799b363aab7ae56cda} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_dst\_offset@{\_dst\_offset}}
+\index{\_dst\_offset@{\_dst\_offset}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_dst\_offset}{\_dst\_offset}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+dst\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_aeb0ae38484553f3a0d5114344b0a7f18}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_aeb0ae38484553f3a0d5114344b0a7f18} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_dst\_saved@{\_dst\_saved}}
+\index{\_dst\_saved@{\_dst\_saved}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_dst\_saved}{\_dst\_saved}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+dst\+\_\+saved\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a375ca875a3433ee2d83582ed96a1cbf4}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a375ca875a3433ee2d83582ed96a1cbf4} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_hasdst@{\_hasdst}}
+\index{\_hasdst@{\_hasdst}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_hasdst}{\_hasdst}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+hasdst\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a4f274632aaa4d54612b402c3a6df84a7}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a4f274632aaa4d54612b402c3a6df84a7} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_std\_offset@{\_std\_offset}}
+\index{\_std\_offset@{\_std\_offset}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_std\_offset}{\_std\_offset}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+std\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzlocal_a0d2b056a5c65c3a9c65a4d7d318aa0d4}\label{classdateutil_1_1tz_1_1tz_1_1tzlocal_a0d2b056a5c65c3a9c65a4d7d318aa0d4} 
+\index{dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}!\_tznames@{\_tznames}}
+\index{\_tznames@{\_tznames}!dateutil.tz.tz.tzlocal@{dateutil.tz.tz.tzlocal}}
+\doxysubsubsection{\texorpdfstring{\_tznames}{\_tznames}}
+{\footnotesize\ttfamily dateutil.\+tz.\+tz.\+tzlocal.\+\_\+tznames\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/dateutil/tz/\mbox{\hyperlink{dateutil_2tz_2tz_8py}{tz.\+py}}\end{DoxyCompactItemize}

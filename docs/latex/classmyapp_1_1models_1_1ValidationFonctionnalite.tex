@@ -1,0 +1,91 @@
+\doxysection{Référence de la classe myapp.\+models.\+Validation\+Fonctionnalite}
+\hypertarget{classmyapp_1_1models_1_1ValidationFonctionnalite}{}\label{classmyapp_1_1models_1_1ValidationFonctionnalite}\index{myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}}
+
+
+Graphe d\textquotesingle{}héritage de myapp.\+models.\+Validation\+Fonctionnalite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classmyapp_1_1models_1_1ValidationFonctionnalite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de myapp.\+models.\+Validation\+Fonctionnalite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classmyapp_1_1models_1_1ValidationFonctionnalite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1ValidationFonctionnalite_a9c07423279e07f84abf3ac214362f57a}{valider\+\_\+fonctionnalite\+\_\+strict}} (self)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1ValidationFonctionnalite_a91f1f1b645cf4797b5beff3c982aa5e0}{valider\+\_\+fonctionnalite\+\_\+autres\+\_\+modes}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1ValidationFonctionnalite_a0d0f5fd84980a1f5ec737f0d5eb4b268}{fonctionnalite}} = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Fonctionnalite}{Fonctionnalite}}, on\+\_\+delete=models.\+CASCADE)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1ValidationFonctionnalite_a5d09e849bb3d4255098aca04cbe86d71}{partie}} = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Partie}{Partie}}, on\+\_\+delete=models.\+CASCADE)
+\item 
+\mbox{\hyperlink{classmyapp_1_1models_1_1ValidationFonctionnalite_ad8df3102257cb527133b532e3ef0ec8f}{validée}} = models.\+Boolean\+Field(default=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}@class ValidationFonctionnalite
+@brief Modèle pour suivre l'état du vote et valider la fonctionnalité selon le mode de jeu.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classmyapp_1_1models_1_1ValidationFonctionnalite_a91f1f1b645cf4797b5beff3c982aa5e0}\label{classmyapp_1_1models_1_1ValidationFonctionnalite_a91f1f1b645cf4797b5beff3c982aa5e0} 
+\index{myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}!valider\_fonctionnalite\_autres\_modes@{valider\_fonctionnalite\_autres\_modes}}
+\index{valider\_fonctionnalite\_autres\_modes@{valider\_fonctionnalite\_autres\_modes}!myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}}
+\doxysubsubsection{\texorpdfstring{valider\_fonctionnalite\_autres\_modes()}{valider\_fonctionnalite\_autres\_modes()}}
+{\footnotesize\ttfamily myapp.\+models.\+Validation\+Fonctionnalite.\+valider\+\_\+fonctionnalite\+\_\+autres\+\_\+modes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Validation des votes pour d'autres modes (Moyenne, Médiane, etc.).
+@return False pour l'instant, à implémenter selon les modes de validation.
+\end{DoxyVerb}
+ \Hypertarget{classmyapp_1_1models_1_1ValidationFonctionnalite_a9c07423279e07f84abf3ac214362f57a}\label{classmyapp_1_1models_1_1ValidationFonctionnalite_a9c07423279e07f84abf3ac214362f57a} 
+\index{myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}!valider\_fonctionnalite\_strict@{valider\_fonctionnalite\_strict}}
+\index{valider\_fonctionnalite\_strict@{valider\_fonctionnalite\_strict}!myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}}
+\doxysubsubsection{\texorpdfstring{valider\_fonctionnalite\_strict()}{valider\_fonctionnalite\_strict()}}
+{\footnotesize\ttfamily myapp.\+models.\+Validation\+Fonctionnalite.\+valider\+\_\+fonctionnalite\+\_\+strict (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Validation des votes en mode strict : Unanimité.
+@return True si la fonctionnalité est validée, sinon False.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classmyapp_1_1models_1_1ValidationFonctionnalite_a0d0f5fd84980a1f5ec737f0d5eb4b268}\label{classmyapp_1_1models_1_1ValidationFonctionnalite_a0d0f5fd84980a1f5ec737f0d5eb4b268} 
+\index{myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}!fonctionnalite@{fonctionnalite}}
+\index{fonctionnalite@{fonctionnalite}!myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}}
+\doxysubsubsection{\texorpdfstring{fonctionnalite}{fonctionnalite}}
+{\footnotesize\ttfamily myapp.\+models.\+Validation\+Fonctionnalite.\+fonctionnalite = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Fonctionnalite}{Fonctionnalite}}, on\+\_\+delete=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1ValidationFonctionnalite_a5d09e849bb3d4255098aca04cbe86d71}\label{classmyapp_1_1models_1_1ValidationFonctionnalite_a5d09e849bb3d4255098aca04cbe86d71} 
+\index{myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}!partie@{partie}}
+\index{partie@{partie}!myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}}
+\doxysubsubsection{\texorpdfstring{partie}{partie}}
+{\footnotesize\ttfamily myapp.\+models.\+Validation\+Fonctionnalite.\+partie = models.\+Foreign\+Key(\mbox{\hyperlink{classmyapp_1_1models_1_1Partie}{Partie}}, on\+\_\+delete=models.\+CASCADE)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmyapp_1_1models_1_1ValidationFonctionnalite_ad8df3102257cb527133b532e3ef0ec8f}\label{classmyapp_1_1models_1_1ValidationFonctionnalite_ad8df3102257cb527133b532e3ef0ec8f} 
+\index{myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}!validée@{validée}}
+\index{validée@{validée}!myapp.models.ValidationFonctionnalite@{myapp.models.ValidationFonctionnalite}}
+\doxysubsubsection{\texorpdfstring{validée}{validée}}
+{\footnotesize\ttfamily myapp.\+models.\+Validation\+Fonctionnalite.\+validée = models.\+Boolean\+Field(default=False)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+myapp/\mbox{\hyperlink{models_8py}{models.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,30 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Null\+Frequency\+Error}
+\hypertarget{classpandas_1_1errors_1_1NullFrequencyError}{}\label{classpandas_1_1errors_1_1NullFrequencyError}\index{pandas.errors.NullFrequencyError@{pandas.errors.NullFrequencyError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Null\+Frequency\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Null\+Frequency\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Exception raised when a ``freq`` cannot be null.
+
+Particularly ``DatetimeIndex.shift``, ``TimedeltaIndex.shift``,
+``PeriodIndex.shift``.
+
+Examples
+--------
+>>> df = pd.DatetimeIndex(["2011-01-01 10:00", "2011-01-01"], freq=None)
+>>> df.shift(2)
+Traceback (most recent call last):
+NullFrequencyError: Cannot shift with no freq
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

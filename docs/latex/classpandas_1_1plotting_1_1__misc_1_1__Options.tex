@@ -1,0 +1,157 @@
+\doxysection{Référence de la classe pandas.\+plotting.\+\_\+misc.\+\_\+\+Options}
+\hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options}{}\label{classpandas_1_1plotting_1_1__misc_1_1__Options}\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+plotting.\+\_\+misc.\+\_\+\+Options\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+plotting.\+\_\+misc.\+\_\+\+Options\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_a1d21f82c82ac98fea4ad42e244dca4fa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bool deprecated=False)
+\item 
+\mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_af0ab3828d49ebee4b9bb008ae89ba84c}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+None \mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_ad33feb73cd60f31e84a13a1c9ceecac7}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, value)
+\item 
+None \mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_aba4aefe9d0f60832371dcc6b4f515df0}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, key)
+\item 
+bool \mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_a2ef9192d1c2f8d6da8a72bb898b86c2e}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, key)
+\item 
+None \mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_a0850a4157c3f465e2bdfa484d45e80c4}{reset}} (self)
+\item 
+Generator\mbox{[}\mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options}{\+\_\+\+Options}}, None, None\mbox{]} \mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_a2a87c098c96620321012a3c78532ba5d}{use}} (self, key, value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_aa83bcc0403f0df1333c5d3aa1009afdc}{\+\_\+get\+\_\+canonical\+\_\+key}} (self, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_add6182c2beb2ca3ef752a99c184aa138}{\+\_\+deprecated}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_a0306f827a0b5f84825125dfc2ca4319a}{\+\_\+\+ALIASES}} = \{"{}x\+\_\+compat"{}\+: "{}xaxis.\+compat"{}\}
+\item 
+list \mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options_a07c48a9942b5479a515e862522ac71b2}{\+\_\+\+DEFAULT\+\_\+\+KEYS}} = \mbox{[}"{}xaxis.\+compat"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Stores pandas plotting options.
+
+Allows for parameter aliasing so you can just use parameter names that are
+the same as the plot function parameters, but is stored in a canonical
+format that makes it easy to breakdown into groups later.
+
+Examples
+--------
+
+.. plot::
+        :context: close-figs
+
+         >>> np.random.seed(42)
+         >>> df = pd.DataFrame({'A': np.random.randn(10),
+         ...                   'B': np.random.randn(10)},
+         ...                   index=pd.date_range("1/1/2000",
+         ...                   freq='4MS', periods=10))
+         >>> with pd.plotting.plot_params.use("x_compat", True):
+         ...     _ = df["A"].plot(color="r")
+         ...     _ = df["B"].plot(color="g")
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_a1d21f82c82ac98fea4ad42e244dca4fa}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_a1d21f82c82ac98fea4ad42e244dca4fa} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{deprecated = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_a2ef9192d1c2f8d6da8a72bb898b86c2e}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_a2ef9192d1c2f8d6da8a72bb898b86c2e} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily  bool pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_aba4aefe9d0f60832371dcc6b4f515df0}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_aba4aefe9d0f60832371dcc6b4f515df0} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_af0ab3828d49ebee4b9bb008ae89ba84c}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_af0ab3828d49ebee4b9bb008ae89ba84c} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_ad33feb73cd60f31e84a13a1c9ceecac7}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_ad33feb73cd60f31e84a13a1c9ceecac7} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_aa83bcc0403f0df1333c5d3aa1009afdc}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_aa83bcc0403f0df1333c5d3aa1009afdc} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_get\_canonical\_key@{\_get\_canonical\_key}}
+\index{\_get\_canonical\_key@{\_get\_canonical\_key}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_get\_canonical\_key()}{\_get\_canonical\_key()}}
+{\footnotesize\ttfamily pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+get\+\_\+canonical\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_a0850a4157c3f465e2bdfa484d45e80c4}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_a0850a4157c3f465e2bdfa484d45e80c4} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!reset@{reset}}
+\index{reset@{reset}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily  None pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the option store to its initial state
+
+Returns
+-------
+None
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_a2a87c098c96620321012a3c78532ba5d}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_a2a87c098c96620321012a3c78532ba5d} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!use@{use}}
+\index{use@{use}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily  Generator\mbox{[}\mbox{\hyperlink{classpandas_1_1plotting_1_1__misc_1_1__Options}{\+\_\+\+Options}}, None, None\mbox{]} pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+use (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Temporarily set a parameter value using the with statement.
+Aliasing allowed.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_a0306f827a0b5f84825125dfc2ca4319a}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_a0306f827a0b5f84825125dfc2ca4319a} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_ALIASES@{\_ALIASES}}
+\index{\_ALIASES@{\_ALIASES}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_ALIASES}{\_ALIASES}}
+{\footnotesize\ttfamily dict pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+\+ALIASES = \{"{}x\+\_\+compat"{}\+: "{}xaxis.\+compat"{}\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_a07c48a9942b5479a515e862522ac71b2}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_a07c48a9942b5479a515e862522ac71b2} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_DEFAULT\_KEYS@{\_DEFAULT\_KEYS}}
+\index{\_DEFAULT\_KEYS@{\_DEFAULT\_KEYS}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_DEFAULT\_KEYS}{\_DEFAULT\_KEYS}}
+{\footnotesize\ttfamily list pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+\+DEFAULT\+\_\+\+KEYS = \mbox{[}"{}xaxis.\+compat"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1plotting_1_1__misc_1_1__Options_add6182c2beb2ca3ef752a99c184aa138}\label{classpandas_1_1plotting_1_1__misc_1_1__Options_add6182c2beb2ca3ef752a99c184aa138} 
+\index{pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}!\_deprecated@{\_deprecated}}
+\index{\_deprecated@{\_deprecated}!pandas.plotting.\_misc.\_Options@{pandas.plotting.\_misc.\_Options}}
+\doxysubsubsection{\texorpdfstring{\_deprecated}{\_deprecated}}
+{\footnotesize\ttfamily pandas.\+plotting.\+\_\+misc.\+\_\+\+Options.\+\_\+deprecated\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/plotting/\mbox{\hyperlink{__misc_8py}{\+\_\+misc.\+py}}\end{DoxyCompactItemize}

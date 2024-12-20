@@ -1,0 +1,81 @@
+\doxysection{Référence de la classe pip.\+\_\+internal.\+cli.\+parser.\+Updating\+Defaults\+Help\+Formatter}
+\hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1UpdatingDefaultsHelpFormatter}{}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1UpdatingDefaultsHelpFormatter}\index{pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter@{pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+internal.\+cli.\+parser.\+Updating\+Defaults\+Help\+Formatter\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+internal.\+cli.\+parser.\+Updating\+Defaults\+Help\+Formatter\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1UpdatingDefaultsHelpFormatter_a32c2fa54d1407762ff23c1a2d50370a7}{expand\+\_\+default}} (self, optparse.\+Option option)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter}{pip.\+\_\+internal.\+cli.\+parser.\+Pretty\+Help\+Formatter}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_a0272f5eb4dd01251c76bec5cbb9f32ef}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_ab2866ba1e62bfe8955c40570069dfdd5}{format\+\_\+option\+\_\+strings}} (self, optparse.\+Option option)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_a1b9064eaf84e305af8894691d18b7292}{format\+\_\+heading}} (self, str heading)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_af51742b7ae0565bf16937b783af62fb1}{format\+\_\+usage}} (self, str usage)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_a22b33ef3c1faa085b88e67bd449fcd57}{format\+\_\+description}} (self, Optional\mbox{[}str\mbox{]} description)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_a5c203afe19b640af90e720eacccd1609}{format\+\_\+epilog}} (self, Optional\mbox{[}str\mbox{]} epilog)
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_aff7c640d960887731811a57f930f99b9}{indent\+\_\+lines}} (self, str text, str indent)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1UpdatingDefaultsHelpFormatter_a77e4d7a56a07190b6349793cea83f2a8}{parser}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter}{pip.\+\_\+internal.\+cli.\+parser.\+Pretty\+Help\+Formatter}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_aabff74eafd0ab7f884b0e0bdfc57c1d1}{parser}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter}{pip.\+\_\+internal.\+cli.\+parser.\+Pretty\+Help\+Formatter}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1PrettyHelpFormatter_a06c6244af87ebb4c4c8f2e9ac83a8b94}{\+\_\+format\+\_\+option\+\_\+strings}} (self, optparse.\+Option option, str mvarfmt="{} $<$\{\}$>$"{}, str optsep="{}, "{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Custom help formatter for use in ConfigOptionParser.
+
+This is updates the defaults before expanding them, allowing
+them to show up correctly in the help listing.
+
+Also redact auth from url type options
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1UpdatingDefaultsHelpFormatter_a32c2fa54d1407762ff23c1a2d50370a7}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1UpdatingDefaultsHelpFormatter_a32c2fa54d1407762ff23c1a2d50370a7} 
+\index{pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter@{pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter}!expand\_default@{expand\_default}}
+\index{expand\_default@{expand\_default}!pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter@{pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter}}
+\doxysubsubsection{\texorpdfstring{expand\_default()}{expand\_default()}}
+{\footnotesize\ttfamily  str pip.\+\_\+internal.\+cli.\+parser.\+Updating\+Defaults\+Help\+Formatter.\+expand\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{optparse.\+Option}]{option }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1UpdatingDefaultsHelpFormatter_a77e4d7a56a07190b6349793cea83f2a8}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1UpdatingDefaultsHelpFormatter_a77e4d7a56a07190b6349793cea83f2a8} 
+\index{pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter@{pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter}!parser@{parser}}
+\index{parser@{parser}!pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter@{pip.\_internal.cli.parser.UpdatingDefaultsHelpFormatter}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+parser.\+Updating\+Defaults\+Help\+Formatter.\+parser}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+internal/cli/\mbox{\hyperlink{parser_8py}{parser.\+py}}\end{DoxyCompactItemize}

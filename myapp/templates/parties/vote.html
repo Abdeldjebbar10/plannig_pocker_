@@ -1,0 +1,60 @@
+{% extends 'base_generic.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Votez pour : {{ fonctionnalite_en_cours.name }}</h1>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">
+            <h3>{{ partie.nom }}</h3>
+        </div>
+        <div class="card-body">
+            <p><strong>Mode de jeu :</strong> 
+                {% if partie.mode_jeu == "strict" %}
+                    <span class="badge bg-danger">Strict</span>
+                {% elif partie.mode_jeu == "moyenne" %}
+                    <span class="badge bg-success">Moyenne</span>
+                {% endif %}
+            </p>
+            <p><strong>Description :</strong> {{ fonctionnalite_en_cours.description }}</p>
+            <p><strong>Participant actuel :</strong> {{ participant_en_cours.pseudo }}</p>
+        </div>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <h3 class="text-center">Choisissez une Carte :</h3>
+        <div class="carte-container text-center">
+            {% for carte in cartes %}
+            <label class="mx-2">
+                <input type="radio" name="vote" value="{{ carte }}" required hidden>
+                <img src="{% static 'cartes_' %}{{ carte }}.svg" alt="Carte {{ carte }}" class="img-fluid rounded shadow-sm" style="cursor: pointer; width: 100px;">
+            </label>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success">Soumettre le Vote</button>
+        </div>
+    </form>
+</div>
+
+{% if messages and partie.mode_jeu == "moyenne" %}
+<div class="alert alert-info text-center">
+    <strong>Temps de discussion activé :</strong> <span id="chrono">10</span> secondes.
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let timeLeft = 10;
+        const timerDisplay = document.getElementById('chrono');
+        const timer = setInterval(function () {
+            timerDisplay.textContent = timeLeft--;
+            if (timeLeft < 0) clearInterval(timer);
+        }, 1000);
+    });
+</script>
+{% endif %}
+
+
+{% endblock %}

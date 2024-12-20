@@ -1,0 +1,65 @@
+\doxysection{Référence de la classe django.\+contrib.\+auth.\+migrations.0004\+\_\+alter\+\_\+user\+\_\+username\+\_\+opts.\+Migration}
+\hypertarget{classdjango_1_1contrib_1_1auth_1_1migrations_1_10004__alter__user__username__opts_1_1Migration}{}\label{classdjango_1_1contrib_1_1auth_1_1migrations_1_10004__alter__user__username__opts_1_1Migration}\index{django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration@{django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+auth.\+migrations.0004\+\_\+alter\+\_\+user\+\_\+username\+\_\+opts.\+Migration\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+auth.\+migrations.0004\+\_\+alter\+\_\+user\+\_\+username\+\_\+opts.\+Migration\+:
+% FIG 1
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1migrations_1_10004__alter__user__username__opts_1_1Migration_ad5f9bf5261d8b56c319c2c0c7ce7daf9}{dependencies}}
+\item 
+list \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1migrations_1_10004__alter__user__username__opts_1_1Migration_abdd664d13d3e8ed180817123cde3b2bd}{operations}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1migrations_1_10004__alter__user__username__opts_1_1Migration_ad5f9bf5261d8b56c319c2c0c7ce7daf9}\label{classdjango_1_1contrib_1_1auth_1_1migrations_1_10004__alter__user__username__opts_1_1Migration_ad5f9bf5261d8b56c319c2c0c7ce7daf9} 
+\index{django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration@{django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration@{django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily list django.\+contrib.\+auth.\+migrations.\+0004\+\_\+alter\+\_\+user\+\_\+username\+\_\+opts.\+Migration.\+dependencies\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}auth"{}},\ \textcolor{stringliteral}{"{}0003\_alter\_user\_email\_max\_length"{}}),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1migrations_1_10004__alter__user__username__opts_1_1Migration_abdd664d13d3e8ed180817123cde3b2bd}\label{classdjango_1_1contrib_1_1auth_1_1migrations_1_10004__alter__user__username__opts_1_1Migration_abdd664d13d3e8ed180817123cde3b2bd} 
+\index{django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration@{django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration}!operations@{operations}}
+\index{operations@{operations}!django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration@{django.contrib.auth.migrations.0004\_alter\_user\_username\_opts.Migration}}
+\doxysubsubsection{\texorpdfstring{operations}{operations}}
+{\footnotesize\ttfamily list django.\+contrib.\+auth.\+migrations.\+0004\+\_\+alter\+\_\+user\+\_\+username\+\_\+opts.\+Migration.\+operations\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ migrations.AlterField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ model\_name=\textcolor{stringliteral}{"{}user"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ name=\textcolor{stringliteral}{"{}username"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ field=models.CharField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ error\_messages=\{\textcolor{stringliteral}{"{}unique"{}}:\ \textcolor{stringliteral}{"{}A\ user\ with\ that\ username\ already\ exists."{}}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ max\_length=30,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ validators=[validators.UnicodeUsernameValidator()],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ help\_text=(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Required.\ 30\ characters\ or\ fewer.\ Letters,\ digits\ and\ @/./+/-\//\_\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}only."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unique=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ verbose\_name=\textcolor{stringliteral}{"{}username"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/auth/migrations/\mbox{\hyperlink{0004__alter__user__username__opts_8py}{0004\+\_\+alter\+\_\+user\+\_\+username\+\_\+opts.\+py}}\end{DoxyCompactItemize}

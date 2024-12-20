@@ -1,0 +1,67 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+permissions.\+Base\+Permission}
+\hypertarget{classrest__framework_1_1permissions_1_1BasePermission}{}\label{classrest__framework_1_1permissions_1_1BasePermission}\index{rest\_framework.permissions.BasePermission@{rest\_framework.permissions.BasePermission}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+permissions.\+Base\+Permission\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+permissions.\+Base\+Permission\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1BasePermission_af14fb9c91263bac70dd38795cbd84fa0}{has\+\_\+permission}} (self, request, view)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1BasePermission_ac6f38c43dc408cfcba919d5b7c8461f8}{has\+\_\+object\+\_\+permission}} (self, request, view, obj)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin}{rest\+\_\+framework.\+permissions.\+Operation\+Holder\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_af337164fa409ab2373ac7224f5ceb7c2}{\+\_\+\+\_\+and\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_a14db49354102898890bca17a753c4cf4}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_addd0cb823ec848ba61302a79840d7dac}{\+\_\+\+\_\+rand\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_a989a30a8e99529bdcd3d908415246ef8}{\+\_\+\+\_\+ror\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1permissions_1_1OperationHolderMixin_ae0df4d0505b39f96ca827d6d07457e05}{\+\_\+\+\_\+invert\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A base class from which all permission classes should inherit.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1permissions_1_1BasePermission_ac6f38c43dc408cfcba919d5b7c8461f8}\label{classrest__framework_1_1permissions_1_1BasePermission_ac6f38c43dc408cfcba919d5b7c8461f8} 
+\index{rest\_framework.permissions.BasePermission@{rest\_framework.permissions.BasePermission}!has\_object\_permission@{has\_object\_permission}}
+\index{has\_object\_permission@{has\_object\_permission}!rest\_framework.permissions.BasePermission@{rest\_framework.permissions.BasePermission}}
+\doxysubsubsection{\texorpdfstring{has\_object\_permission()}{has\_object\_permission()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+permissions.\+Base\+Permission.\+has\+\_\+object\+\_\+permission (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{view,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return `True` if permission is granted, `False` otherwise.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoObjectPermissions_a62f6a63677ed8687cbe61ffc73b01cb3}{rest\+\_\+framework.\+permissions.\+Django\+Object\+Permissions}}.
+
+\Hypertarget{classrest__framework_1_1permissions_1_1BasePermission_af14fb9c91263bac70dd38795cbd84fa0}\label{classrest__framework_1_1permissions_1_1BasePermission_af14fb9c91263bac70dd38795cbd84fa0} 
+\index{rest\_framework.permissions.BasePermission@{rest\_framework.permissions.BasePermission}!has\_permission@{has\_permission}}
+\index{has\_permission@{has\_permission}!rest\_framework.permissions.BasePermission@{rest\_framework.permissions.BasePermission}}
+\doxysubsubsection{\texorpdfstring{has\_permission()}{has\_permission()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+permissions.\+Base\+Permission.\+has\+\_\+permission (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{}]{view }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return `True` if permission is granted, `False` otherwise.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classrest__framework_1_1permissions_1_1AllowAny_a696389f802cb5e6cd26eeb5071f7dcce}{rest\+\_\+framework.\+permissions.\+Allow\+Any}}, \mbox{\hyperlink{classrest__framework_1_1permissions_1_1IsAuthenticated_a5591574858ca42e0f1f93872f9e03e01}{rest\+\_\+framework.\+permissions.\+Is\+Authenticated}}, \mbox{\hyperlink{classrest__framework_1_1permissions_1_1IsAdminUser_aecdfbde9b3865bd85edf30f89b567088}{rest\+\_\+framework.\+permissions.\+Is\+Admin\+User}}, \mbox{\hyperlink{classrest__framework_1_1permissions_1_1IsAuthenticatedOrReadOnly_a17ada5835c47c1b1af0fdb46700d16a2}{rest\+\_\+framework.\+permissions.\+Is\+Authenticated\+Or\+Read\+Only}}, et \mbox{\hyperlink{classrest__framework_1_1permissions_1_1DjangoModelPermissions_ab9cae8f19952af43f8cbf7a8b4f2e95f}{rest\+\_\+framework.\+permissions.\+Django\+Model\+Permissions}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{permissions_8py}{permissions.\+py}}\end{DoxyCompactItemize}

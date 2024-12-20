@@ -1,0 +1,33 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+core.\+files.\+move}
+\hypertarget{namespacedjango_1_1core_1_1files_1_1move}{}\label{namespacedjango_1_1core_1_1files_1_1move}\index{django.core.files.move@{django.core.files.move}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1files_1_1move_a390d04b538125be1b95b4fdd459b8c99}{file\+\_\+move\+\_\+safe}} (old\+\_\+file\+\_\+name, new\+\_\+file\+\_\+name, chunk\+\_\+size=1024 \texorpdfstring{$\ast$}{*}64, allow\+\_\+overwrite=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Move a file in the safest way possible::
+
+    >>> from django.core.files.move import file_move_safe
+    >>> file_move_safe("/tmp/old_file", "/tmp/new_file")
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1core_1_1files_1_1move_a390d04b538125be1b95b4fdd459b8c99}\label{namespacedjango_1_1core_1_1files_1_1move_a390d04b538125be1b95b4fdd459b8c99} 
+\index{django.core.files.move@{django.core.files.move}!file\_move\_safe@{file\_move\_safe}}
+\index{file\_move\_safe@{file\_move\_safe}!django.core.files.move@{django.core.files.move}}
+\doxysubsubsection{\texorpdfstring{file\_move\_safe()}{file\_move\_safe()}}
+{\footnotesize\ttfamily django.\+core.\+files.\+move.\+file\+\_\+move\+\_\+safe (\begin{DoxyParamCaption}\item[{}]{old\+\_\+file\+\_\+name,  }\item[{}]{new\+\_\+file\+\_\+name,  }\item[{}]{chunk\+\_\+size = {\ttfamily 1024~\texorpdfstring{$\ast$}{*}~64},  }\item[{}]{allow\+\_\+overwrite = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move a file from one location to another in the safest way possible.
+
+First, try ``os.rename``, which is simple but will break across filesystems.
+If that fails, stream manually from one file to another in pure Python.
+
+If the destination file exists and ``allow_overwrite`` is ``False``, raise
+``FileExistsError``.
+\end{DoxyVerb}
+ 

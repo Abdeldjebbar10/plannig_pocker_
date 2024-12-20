@@ -1,0 +1,81 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Doc}
+\hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1Doc}{}\label{classpip_1_1__vendor_1_1typing__extensions_1_1Doc}\index{pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_a2569b71d6dbd7ab9a2855c52561f1aeb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_adc182d88ea730fe52e456d72a8c633a3}{documentation}})
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_aa700d35fe4dd1be33eccae24fb559d32}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_ad53d089e3f5ac07908019251c1814326}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+bool \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_a39a2519b455a74667849fd351c517201}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_adc182d88ea730fe52e456d72a8c633a3}{documentation}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Define the documentation of a type annotation using ``Annotated``, to be
+ used in class attributes, function and method parameters, return values,
+ and variables.
+
+The value should be a positional-only string literal to allow static tools
+like editors and documentation generators to use it.
+
+This complements docstrings.
+
+The string value passed is available in the attribute ``documentation``.
+
+Example::
+
+    >>> from typing_extensions import Annotated, Doc
+    >>> def hi(to: Annotated[str, Doc("Who to say hi to")]) -> None: ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_a2569b71d6dbd7ab9a2855c52561f1aeb}\label{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_a2569b71d6dbd7ab9a2855c52561f1aeb} 
+\index{pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Doc.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{documentation }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_a39a2519b455a74667849fd351c517201}\label{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_a39a2519b455a74667849fd351c517201} 
+\index{pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily  bool pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Doc.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{object}]{other }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_ad53d089e3f5ac07908019251c1814326}\label{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_ad53d089e3f5ac07908019251c1814326} 
+\index{pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily  int pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Doc.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_aa700d35fe4dd1be33eccae24fb559d32}\label{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_aa700d35fe4dd1be33eccae24fb559d32} 
+\index{pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Doc.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_adc182d88ea730fe52e456d72a8c633a3}\label{classpip_1_1__vendor_1_1typing__extensions_1_1Doc_adc182d88ea730fe52e456d72a8c633a3} 
+\index{pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}!documentation@{documentation}}
+\index{documentation@{documentation}!pip.\_vendor.typing\_extensions.Doc@{pip.\_vendor.typing\_extensions.Doc}}
+\doxysubsubsection{\texorpdfstring{documentation}{documentation}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Doc.\+documentation}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/\mbox{\hyperlink{typing__extensions_8py}{typing\+\_\+extensions.\+py}}\end{DoxyCompactItemize}

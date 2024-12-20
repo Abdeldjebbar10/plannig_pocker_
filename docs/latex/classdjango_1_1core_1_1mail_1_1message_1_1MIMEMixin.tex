@@ -1,0 +1,47 @@
+\doxysection{Référence de la classe django.\+core.\+mail.\+message.\+MIMEMixin}
+\hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin}{}\label{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin}\index{django.core.mail.message.MIMEMixin@{django.core.mail.message.MIMEMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+core.\+mail.\+message.\+MIMEMixin\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin_a5a8dae67cb420cf97d6906cdd6d9efee}{as\+\_\+string}} (self, unixfrom=False, linesep="{}\textbackslash{}n"{})
+\item 
+\mbox{\hyperlink{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin_a62c540fa7d23a3d18bc7cf1beed504eb}{as\+\_\+bytes}} (self, unixfrom=False, linesep="{}\textbackslash{}n"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin_a62c540fa7d23a3d18bc7cf1beed504eb}\label{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin_a62c540fa7d23a3d18bc7cf1beed504eb} 
+\index{django.core.mail.message.MIMEMixin@{django.core.mail.message.MIMEMixin}!as\_bytes@{as\_bytes}}
+\index{as\_bytes@{as\_bytes}!django.core.mail.message.MIMEMixin@{django.core.mail.message.MIMEMixin}}
+\doxysubsubsection{\texorpdfstring{as\_bytes()}{as\_bytes()}}
+{\footnotesize\ttfamily django.\+core.\+mail.\+message.\+MIMEMixin.\+as\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{unixfrom = {\ttfamily False},  }\item[{}]{linesep = {\ttfamily "{}\textbackslash{}n"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the entire formatted message as bytes.
+Optional `unixfrom' when True, means include the Unix From_ envelope
+header.
+
+This overrides the default as_bytes() implementation to not mangle
+lines that begin with 'From '. See bug #13433 for details.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin_a5a8dae67cb420cf97d6906cdd6d9efee}\label{classdjango_1_1core_1_1mail_1_1message_1_1MIMEMixin_a5a8dae67cb420cf97d6906cdd6d9efee} 
+\index{django.core.mail.message.MIMEMixin@{django.core.mail.message.MIMEMixin}!as\_string@{as\_string}}
+\index{as\_string@{as\_string}!django.core.mail.message.MIMEMixin@{django.core.mail.message.MIMEMixin}}
+\doxysubsubsection{\texorpdfstring{as\_string()}{as\_string()}}
+{\footnotesize\ttfamily django.\+core.\+mail.\+message.\+MIMEMixin.\+as\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{unixfrom = {\ttfamily False},  }\item[{}]{linesep = {\ttfamily "{}\textbackslash{}n"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the entire formatted message as a string.
+Optional `unixfrom' when True, means include the Unix From_ envelope
+header.
+
+This overrides the default as_string() implementation to not mangle
+lines that begin with 'From '. See bug #13433 for details.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/core/mail/\mbox{\hyperlink{message_8py}{message.\+py}}\end{DoxyCompactItemize}

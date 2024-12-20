@@ -1,0 +1,30 @@
+{% extends 'base_generic.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Créer un Participant</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                
+                <div class="mb-3">
+                    {{ form.pseudo.label_tag }}
+                    {{ form.pseudo|add_class:"form-control" }}
+                </div>
+                
+                <div class="form-check mb-3">
+                    {{ form.est_admin }}
+                    {{ form.est_admin.label_tag }}
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Ajouter Participant</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

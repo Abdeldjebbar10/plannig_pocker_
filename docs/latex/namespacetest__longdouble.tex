@@ -1,0 +1,209 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage test\+\_\+longdouble}
+\hypertarget{namespacetest__longdouble}{}\label{namespacetest__longdouble}\index{test\_longdouble@{test\_longdouble}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__longdouble_1_1TestCommaDecimalPointLocale}{Test\+Comma\+Decimal\+Point\+Locale}}
+\item 
+class \mbox{\hyperlink{classtest__longdouble_1_1TestFileBased}{Test\+File\+Based}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_abecc728cb1e407e9f4314bf8c0b0d62b}{test\+\_\+scalar\+\_\+extraction}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a5c1c66c9539b1f1b581205c99fd83b50}{test\+\_\+str\+\_\+roundtrip}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a02372df916b3e87c93c1af311dff6d73}{test\+\_\+str\+\_\+roundtrip\+\_\+bytes}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a8144ebcc578b64d9dc5adc6febe6aed1}{test\+\_\+array\+\_\+and\+\_\+stringlike\+\_\+roundtrip}} (strtype)
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a22733d1713a66bc9bf1b4e053f7ba5ff}{test\+\_\+bogus\+\_\+string}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a61c0fe62b6c87efaa84bed6182dac04f}{test\+\_\+fromstring}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_ab84e1a2b6dcee987e9d108c84c46ebdb}{test\+\_\+fromstring\+\_\+complex}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a9ed2f3b915e4b9b3b7d6ad8bddd871ad}{test\+\_\+fromstring\+\_\+bogus}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a40180501f64d185157a6f72a9030b192}{test\+\_\+fromstring\+\_\+empty}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a5777af53851788fc0fca1ccd7fa41ca9}{test\+\_\+fromstring\+\_\+missing}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a4ac8f43d59683a543dd9cd3296352b21}{test\+\_\+str\+\_\+exact}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_aefe4f29c912011c02f38b44312f967e4}{test\+\_\+format}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a217c8fd2f30996c45efea00e7ffd8a5b}{test\+\_\+percent}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_ab41793636522f563cbc61eca3a3b2de1}{test\+\_\+array\+\_\+repr}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_aedd06ea42fedd0553045e0525850f111}{test\+\_\+longdouble\+\_\+from\+\_\+int}} (int\+\_\+val)
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_a8e1ab250a5504514fa97e7437cec1062}{test\+\_\+longdouble\+\_\+from\+\_\+bool}} (bool\+\_\+val)
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_aa009ed0028b5f312135bae8eb50d6163}{test\+\_\+musllinux\+\_\+x86\+\_\+64\+\_\+signature}} ()
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_ae2acd730af6ef5ddaf2e2303fd3945ed}{test\+\_\+eps\+\_\+positive}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_ad23c61590fc5bea4adce3be8955d1995}{LD\+\_\+\+INFO}} = np.\+finfo(np.\+longdouble)
+\item 
+tuple \mbox{\hyperlink{namespacetest__longdouble_af360718ff9d65e9868c171c0c6547feb}{longdouble\+\_\+longer\+\_\+than\+\_\+double}} = (LD\+\_\+\+INFO.\+eps $<$ np.\+finfo(np.\+double).eps)
+\item 
+int \mbox{\hyperlink{namespacetest__longdouble_aed880c7235bb038128981b96fd6bdf8c}{\+\_\+o}} = 1 + LD\+\_\+\+INFO.\+eps
+\item 
+tuple \mbox{\hyperlink{namespacetest__longdouble_a00096c4a6a2223e5f02dd325696c55f0}{string\+\_\+to\+\_\+longdouble\+\_\+inaccurate}} = (\mbox{\hyperlink{namespacetest__longdouble_aed880c7235bb038128981b96fd6bdf8c}{\+\_\+o}} != np.\+longdouble(str(\mbox{\hyperlink{namespacetest__longdouble_aed880c7235bb038128981b96fd6bdf8c}{\+\_\+o}})))
+\item 
+\mbox{\hyperlink{namespacetest__longdouble_adbbc6dd4c36cd503cedf28805e29d64b}{repr\+\_\+precision}} = len(repr(np.\+longdouble(0.\+1)))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacetest__longdouble_a8144ebcc578b64d9dc5adc6febe6aed1}\label{namespacetest__longdouble_a8144ebcc578b64d9dc5adc6febe6aed1} 
+\index{test\_longdouble@{test\_longdouble}!test\_array\_and\_stringlike\_roundtrip@{test\_array\_and\_stringlike\_roundtrip}}
+\index{test\_array\_and\_stringlike\_roundtrip@{test\_array\_and\_stringlike\_roundtrip}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_array\_and\_stringlike\_roundtrip()}{test\_array\_and\_stringlike\_roundtrip()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+array\+\_\+and\+\_\+stringlike\+\_\+roundtrip (\begin{DoxyParamCaption}\item[{}]{strtype }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Test that string representations of long-double roundtrip both
+for array casting and scalar coercion, see also gh-15608.
+\end{DoxyVerb}
+ \Hypertarget{namespacetest__longdouble_ab41793636522f563cbc61eca3a3b2de1}\label{namespacetest__longdouble_ab41793636522f563cbc61eca3a3b2de1} 
+\index{test\_longdouble@{test\_longdouble}!test\_array\_repr@{test\_array\_repr}}
+\index{test\_array\_repr@{test\_array\_repr}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_array\_repr()}{test\_array\_repr()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+array\+\_\+repr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a22733d1713a66bc9bf1b4e053f7ba5ff}\label{namespacetest__longdouble_a22733d1713a66bc9bf1b4e053f7ba5ff} 
+\index{test\_longdouble@{test\_longdouble}!test\_bogus\_string@{test\_bogus\_string}}
+\index{test\_bogus\_string@{test\_bogus\_string}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_bogus\_string()}{test\_bogus\_string()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+bogus\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_ae2acd730af6ef5ddaf2e2303fd3945ed}\label{namespacetest__longdouble_ae2acd730af6ef5ddaf2e2303fd3945ed} 
+\index{test\_longdouble@{test\_longdouble}!test\_eps\_positive@{test\_eps\_positive}}
+\index{test\_eps\_positive@{test\_eps\_positive}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_eps\_positive()}{test\_eps\_positive()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+eps\+\_\+positive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_aefe4f29c912011c02f38b44312f967e4}\label{namespacetest__longdouble_aefe4f29c912011c02f38b44312f967e4} 
+\index{test\_longdouble@{test\_longdouble}!test\_format@{test\_format}}
+\index{test\_format@{test\_format}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_format()}{test\_format()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a61c0fe62b6c87efaa84bed6182dac04f}\label{namespacetest__longdouble_a61c0fe62b6c87efaa84bed6182dac04f} 
+\index{test\_longdouble@{test\_longdouble}!test\_fromstring@{test\_fromstring}}
+\index{test\_fromstring@{test\_fromstring}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_fromstring()}{test\_fromstring()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+fromstring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a9ed2f3b915e4b9b3b7d6ad8bddd871ad}\label{namespacetest__longdouble_a9ed2f3b915e4b9b3b7d6ad8bddd871ad} 
+\index{test\_longdouble@{test\_longdouble}!test\_fromstring\_bogus@{test\_fromstring\_bogus}}
+\index{test\_fromstring\_bogus@{test\_fromstring\_bogus}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_fromstring\_bogus()}{test\_fromstring\_bogus()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+fromstring\+\_\+bogus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_ab84e1a2b6dcee987e9d108c84c46ebdb}\label{namespacetest__longdouble_ab84e1a2b6dcee987e9d108c84c46ebdb} 
+\index{test\_longdouble@{test\_longdouble}!test\_fromstring\_complex@{test\_fromstring\_complex}}
+\index{test\_fromstring\_complex@{test\_fromstring\_complex}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_fromstring\_complex()}{test\_fromstring\_complex()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+fromstring\+\_\+complex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a40180501f64d185157a6f72a9030b192}\label{namespacetest__longdouble_a40180501f64d185157a6f72a9030b192} 
+\index{test\_longdouble@{test\_longdouble}!test\_fromstring\_empty@{test\_fromstring\_empty}}
+\index{test\_fromstring\_empty@{test\_fromstring\_empty}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_fromstring\_empty()}{test\_fromstring\_empty()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+fromstring\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a5777af53851788fc0fca1ccd7fa41ca9}\label{namespacetest__longdouble_a5777af53851788fc0fca1ccd7fa41ca9} 
+\index{test\_longdouble@{test\_longdouble}!test\_fromstring\_missing@{test\_fromstring\_missing}}
+\index{test\_fromstring\_missing@{test\_fromstring\_missing}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_fromstring\_missing()}{test\_fromstring\_missing()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+fromstring\+\_\+missing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a8e1ab250a5504514fa97e7437cec1062}\label{namespacetest__longdouble_a8e1ab250a5504514fa97e7437cec1062} 
+\index{test\_longdouble@{test\_longdouble}!test\_longdouble\_from\_bool@{test\_longdouble\_from\_bool}}
+\index{test\_longdouble\_from\_bool@{test\_longdouble\_from\_bool}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_longdouble\_from\_bool()}{test\_longdouble\_from\_bool()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+longdouble\+\_\+from\+\_\+bool (\begin{DoxyParamCaption}\item[{}]{bool\+\_\+val }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_aedd06ea42fedd0553045e0525850f111}\label{namespacetest__longdouble_aedd06ea42fedd0553045e0525850f111} 
+\index{test\_longdouble@{test\_longdouble}!test\_longdouble\_from\_int@{test\_longdouble\_from\_int}}
+\index{test\_longdouble\_from\_int@{test\_longdouble\_from\_int}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_longdouble\_from\_int()}{test\_longdouble\_from\_int()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+longdouble\+\_\+from\+\_\+int (\begin{DoxyParamCaption}\item[{}]{int\+\_\+val }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_aa009ed0028b5f312135bae8eb50d6163}\label{namespacetest__longdouble_aa009ed0028b5f312135bae8eb50d6163} 
+\index{test\_longdouble@{test\_longdouble}!test\_musllinux\_x86\_64\_signature@{test\_musllinux\_x86\_64\_signature}}
+\index{test\_musllinux\_x86\_64\_signature@{test\_musllinux\_x86\_64\_signature}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_musllinux\_x86\_64\_signature()}{test\_musllinux\_x86\_64\_signature()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+musllinux\+\_\+x86\+\_\+64\+\_\+signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a217c8fd2f30996c45efea00e7ffd8a5b}\label{namespacetest__longdouble_a217c8fd2f30996c45efea00e7ffd8a5b} 
+\index{test\_longdouble@{test\_longdouble}!test\_percent@{test\_percent}}
+\index{test\_percent@{test\_percent}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_percent()}{test\_percent()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+percent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_abecc728cb1e407e9f4314bf8c0b0d62b}\label{namespacetest__longdouble_abecc728cb1e407e9f4314bf8c0b0d62b} 
+\index{test\_longdouble@{test\_longdouble}!test\_scalar\_extraction@{test\_scalar\_extraction}}
+\index{test\_scalar\_extraction@{test\_scalar\_extraction}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_scalar\_extraction()}{test\_scalar\_extraction()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+scalar\+\_\+extraction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Confirm that extracting a value doesn't convert to python float\end{DoxyVerb}
+ \Hypertarget{namespacetest__longdouble_a4ac8f43d59683a543dd9cd3296352b21}\label{namespacetest__longdouble_a4ac8f43d59683a543dd9cd3296352b21} 
+\index{test\_longdouble@{test\_longdouble}!test\_str\_exact@{test\_str\_exact}}
+\index{test\_str\_exact@{test\_str\_exact}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_str\_exact()}{test\_str\_exact()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+str\+\_\+exact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a5c1c66c9539b1f1b581205c99fd83b50}\label{namespacetest__longdouble_a5c1c66c9539b1f1b581205c99fd83b50} 
+\index{test\_longdouble@{test\_longdouble}!test\_str\_roundtrip@{test\_str\_roundtrip}}
+\index{test\_str\_roundtrip@{test\_str\_roundtrip}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_str\_roundtrip()}{test\_str\_roundtrip()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+str\+\_\+roundtrip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__longdouble_a02372df916b3e87c93c1af311dff6d73}\label{namespacetest__longdouble_a02372df916b3e87c93c1af311dff6d73} 
+\index{test\_longdouble@{test\_longdouble}!test\_str\_roundtrip\_bytes@{test\_str\_roundtrip\_bytes}}
+\index{test\_str\_roundtrip\_bytes@{test\_str\_roundtrip\_bytes}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{test\_str\_roundtrip\_bytes()}{test\_str\_roundtrip\_bytes()}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+test\+\_\+str\+\_\+roundtrip\+\_\+bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacetest__longdouble_aed880c7235bb038128981b96fd6bdf8c}\label{namespacetest__longdouble_aed880c7235bb038128981b96fd6bdf8c} 
+\index{test\_longdouble@{test\_longdouble}!\_o@{\_o}}
+\index{\_o@{\_o}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{\_o}{\_o}}
+{\footnotesize\ttfamily int test\+\_\+longdouble.\+\_\+o = 1 + LD\+\_\+\+INFO.\+eps\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetest__longdouble_ad23c61590fc5bea4adce3be8955d1995}\label{namespacetest__longdouble_ad23c61590fc5bea4adce3be8955d1995} 
+\index{test\_longdouble@{test\_longdouble}!LD\_INFO@{LD\_INFO}}
+\index{LD\_INFO@{LD\_INFO}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{LD\_INFO}{LD\_INFO}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+LD\+\_\+\+INFO = np.\+finfo(np.\+longdouble)}
+
+\Hypertarget{namespacetest__longdouble_af360718ff9d65e9868c171c0c6547feb}\label{namespacetest__longdouble_af360718ff9d65e9868c171c0c6547feb} 
+\index{test\_longdouble@{test\_longdouble}!longdouble\_longer\_than\_double@{longdouble\_longer\_than\_double}}
+\index{longdouble\_longer\_than\_double@{longdouble\_longer\_than\_double}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{longdouble\_longer\_than\_double}{longdouble\_longer\_than\_double}}
+{\footnotesize\ttfamily tuple test\+\_\+longdouble.\+longdouble\+\_\+longer\+\_\+than\+\_\+double = (LD\+\_\+\+INFO.\+eps $<$ np.\+finfo(np.\+double).eps)}
+
+\Hypertarget{namespacetest__longdouble_adbbc6dd4c36cd503cedf28805e29d64b}\label{namespacetest__longdouble_adbbc6dd4c36cd503cedf28805e29d64b} 
+\index{test\_longdouble@{test\_longdouble}!repr\_precision@{repr\_precision}}
+\index{repr\_precision@{repr\_precision}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{repr\_precision}{repr\_precision}}
+{\footnotesize\ttfamily test\+\_\+longdouble.\+repr\+\_\+precision = len(repr(np.\+longdouble(0.\+1)))}
+
+\Hypertarget{namespacetest__longdouble_a00096c4a6a2223e5f02dd325696c55f0}\label{namespacetest__longdouble_a00096c4a6a2223e5f02dd325696c55f0} 
+\index{test\_longdouble@{test\_longdouble}!string\_to\_longdouble\_inaccurate@{string\_to\_longdouble\_inaccurate}}
+\index{string\_to\_longdouble\_inaccurate@{string\_to\_longdouble\_inaccurate}!test\_longdouble@{test\_longdouble}}
+\doxysubsubsection{\texorpdfstring{string\_to\_longdouble\_inaccurate}{string\_to\_longdouble\_inaccurate}}
+{\footnotesize\ttfamily tuple test\+\_\+longdouble.\+string\+\_\+to\+\_\+longdouble\+\_\+inaccurate = (\mbox{\hyperlink{namespacetest__longdouble_aed880c7235bb038128981b96fd6bdf8c}{\+\_\+o}} != np.\+longdouble(str(\mbox{\hyperlink{namespacetest__longdouble_aed880c7235bb038128981b96fd6bdf8c}{\+\_\+o}})))}
+

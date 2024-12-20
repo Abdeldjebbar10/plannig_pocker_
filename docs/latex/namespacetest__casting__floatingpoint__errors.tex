@@ -1,0 +1,43 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage test\+\_\+casting\+\_\+floatingpoint\+\_\+errors}
+\hypertarget{namespacetest__casting__floatingpoint__errors}{}\label{namespacetest__casting__floatingpoint__errors}\index{test\_casting\_floatingpoint\_errors@{test\_casting\_floatingpoint\_errors}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__casting__floatingpoint__errors_a1e3833d9650ba924bbe2e05f97651901}{values\+\_\+and\+\_\+dtypes}} ()
+\item 
+\mbox{\hyperlink{namespacetest__casting__floatingpoint__errors_ada7124b0113173e07c131d7eef3fa175}{check\+\_\+operations}} (dtype, value)
+\item 
+\mbox{\hyperlink{namespacetest__casting__floatingpoint__errors_ab52396892f3ad786b00bfdf1891ba2c5}{test\+\_\+floatingpoint\+\_\+errors\+\_\+casting}} (dtype, value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacetest__casting__floatingpoint__errors_ada7124b0113173e07c131d7eef3fa175}\label{namespacetest__casting__floatingpoint__errors_ada7124b0113173e07c131d7eef3fa175} 
+\index{test\_casting\_floatingpoint\_errors@{test\_casting\_floatingpoint\_errors}!check\_operations@{check\_operations}}
+\index{check\_operations@{check\_operations}!test\_casting\_floatingpoint\_errors@{test\_casting\_floatingpoint\_errors}}
+\doxysubsubsection{\texorpdfstring{check\_operations()}{check\_operations()}}
+{\footnotesize\ttfamily test\+\_\+casting\+\_\+floatingpoint\+\_\+errors.\+check\+\_\+operations (\begin{DoxyParamCaption}\item[{}]{dtype,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}There are many dedicated paths in NumPy which cast and should check for
+floating point errors which occurred during those casts.
+\end{DoxyVerb}
+ \Hypertarget{namespacetest__casting__floatingpoint__errors_ab52396892f3ad786b00bfdf1891ba2c5}\label{namespacetest__casting__floatingpoint__errors_ab52396892f3ad786b00bfdf1891ba2c5} 
+\index{test\_casting\_floatingpoint\_errors@{test\_casting\_floatingpoint\_errors}!test\_floatingpoint\_errors\_casting@{test\_floatingpoint\_errors\_casting}}
+\index{test\_floatingpoint\_errors\_casting@{test\_floatingpoint\_errors\_casting}!test\_casting\_floatingpoint\_errors@{test\_casting\_floatingpoint\_errors}}
+\doxysubsubsection{\texorpdfstring{test\_floatingpoint\_errors\_casting()}{test\_floatingpoint\_errors\_casting()}}
+{\footnotesize\ttfamily test\+\_\+casting\+\_\+floatingpoint\+\_\+errors.\+test\+\_\+floatingpoint\+\_\+errors\+\_\+casting (\begin{DoxyParamCaption}\item[{}]{dtype,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetest__casting__floatingpoint__errors_a1e3833d9650ba924bbe2e05f97651901}\label{namespacetest__casting__floatingpoint__errors_a1e3833d9650ba924bbe2e05f97651901} 
+\index{test\_casting\_floatingpoint\_errors@{test\_casting\_floatingpoint\_errors}!values\_and\_dtypes@{values\_and\_dtypes}}
+\index{values\_and\_dtypes@{values\_and\_dtypes}!test\_casting\_floatingpoint\_errors@{test\_casting\_floatingpoint\_errors}}
+\doxysubsubsection{\texorpdfstring{values\_and\_dtypes()}{values\_and\_dtypes()}}
+{\footnotesize\ttfamily test\+\_\+casting\+\_\+floatingpoint\+\_\+errors.\+values\+\_\+and\+\_\+dtypes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate value+dtype pairs that generate floating point errors during
+casts.  The invalid casts to integers will generate "invalid" value
+warnings, the float casts all generate "overflow".
+
+(The Python int/float paths don't need to get tested in all the same
+situations, but it does not hurt.)
+\end{DoxyVerb}
+ 

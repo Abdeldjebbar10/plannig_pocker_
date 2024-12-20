@@ -1,0 +1,141 @@
+\doxysection{Référence de la classe pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution}
+\hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution}{}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution}\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+
+
+Graphe d\textquotesingle{}héritage de pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution\+:
+% FIG 0
+
+
+Graphe de collaboration de pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ae7b33488d7169663ee17c0ed39679964}{build\+\_\+tracker\+\_\+id}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseDistribution}{Base\+Distribution}} \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a8ce668d3c2b1c4e3cf9a955af8e4ed9e}{get\+\_\+metadata\+\_\+distribution}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_aa6942309f47332af595cab8e754bb834}{prepare\+\_\+distribution\+\_\+metadata}} (self, "{}Package\+Finder"{} finder, bool build\+\_\+isolation, bool check\+\_\+build\+\_\+deps)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1base_1_1AbstractDistribution}{pip.\+\_\+internal.\+distributions.\+base.\+Abstract\+Distribution}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1base_1_1AbstractDistribution_a1cfd19328ee4967ab599632143fa62c2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1InstallRequirement}{Install\+Requirement}} \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1base_1_1AbstractDistribution_a4e0f5834a91b4f3ab6be563959652df9}{req}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ab50126572e726a36f87215819dfdab77}{req}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1base_1_1AbstractDistribution}{pip.\+\_\+internal.\+distributions.\+base.\+Abstract\+Distribution}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1base_1_1AbstractDistribution_a4e0f5834a91b4f3ab6be563959652df9}{req}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ab7b2992dd6c84a8e0c76b2476a9b6dd7}{\+\_\+prepare\+\_\+build\+\_\+backend}} (self, "{}Package\+Finder"{} finder)
+\item 
+Iterable\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a5fed118cd2b54d7cbfd02f4d16c55f19}{\+\_\+get\+\_\+build\+\_\+requires\+\_\+wheel}} (self)
+\item 
+Iterable\mbox{[}str\mbox{]} \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a767ac65c7de655e53991d2efcc1effcd}{\+\_\+get\+\_\+build\+\_\+requires\+\_\+editable}} (self)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a675a8e5aa20fef15eecc6021640d3504}{\+\_\+install\+\_\+build\+\_\+reqs}} (self, "{}Package\+Finder"{} finder)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a56fa75bcaddc6f241f8eddb69bd788dc}{\+\_\+raise\+\_\+conflicts}} (self, str conflicting\+\_\+with, Set\mbox{[}Tuple\mbox{[}str, str\mbox{]}\mbox{]} conflicting\+\_\+reqs)
+\item 
+None \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a57f011a3669ef603409f383eb31e62a9}{\+\_\+raise\+\_\+missing\+\_\+reqs}} (self, Set\mbox{[}str\mbox{]} missing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Represents a source distribution.
+
+The preparation step for these needs metadata for the packages to be
+generated, either using PEP 517 or using the legacy `setup.py egg_info`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a767ac65c7de655e53991d2efcc1effcd}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a767ac65c7de655e53991d2efcc1effcd} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!\_get\_build\_requires\_editable@{\_get\_build\_requires\_editable}}
+\index{\_get\_build\_requires\_editable@{\_get\_build\_requires\_editable}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{\_get\_build\_requires\_editable()}{\_get\_build\_requires\_editable()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}str\mbox{]} pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+\_\+get\+\_\+build\+\_\+requires\+\_\+editable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a5fed118cd2b54d7cbfd02f4d16c55f19}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a5fed118cd2b54d7cbfd02f4d16c55f19} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!\_get\_build\_requires\_wheel@{\_get\_build\_requires\_wheel}}
+\index{\_get\_build\_requires\_wheel@{\_get\_build\_requires\_wheel}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{\_get\_build\_requires\_wheel()}{\_get\_build\_requires\_wheel()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}str\mbox{]} pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+\_\+get\+\_\+build\+\_\+requires\+\_\+wheel (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a675a8e5aa20fef15eecc6021640d3504}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a675a8e5aa20fef15eecc6021640d3504} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!\_install\_build\_reqs@{\_install\_build\_reqs}}
+\index{\_install\_build\_reqs@{\_install\_build\_reqs}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{\_install\_build\_reqs()}{\_install\_build\_reqs()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+\_\+install\+\_\+build\+\_\+reqs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{"{}Package\+Finder"{}}]{finder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ab7b2992dd6c84a8e0c76b2476a9b6dd7}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ab7b2992dd6c84a8e0c76b2476a9b6dd7} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!\_prepare\_build\_backend@{\_prepare\_build\_backend}}
+\index{\_prepare\_build\_backend@{\_prepare\_build\_backend}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{\_prepare\_build\_backend()}{\_prepare\_build\_backend()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+\_\+prepare\+\_\+build\+\_\+backend (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{"{}Package\+Finder"{}}]{finder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a56fa75bcaddc6f241f8eddb69bd788dc}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a56fa75bcaddc6f241f8eddb69bd788dc} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!\_raise\_conflicts@{\_raise\_conflicts}}
+\index{\_raise\_conflicts@{\_raise\_conflicts}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{\_raise\_conflicts()}{\_raise\_conflicts()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+\_\+raise\+\_\+conflicts (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{conflicting\+\_\+with,  }\item[{Set\mbox{[}Tuple\mbox{[}str, str\mbox{]}\mbox{]}     }]{conflicting\+\_\+reqs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a57f011a3669ef603409f383eb31e62a9}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a57f011a3669ef603409f383eb31e62a9} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!\_raise\_missing\_reqs@{\_raise\_missing\_reqs}}
+\index{\_raise\_missing\_reqs@{\_raise\_missing\_reqs}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{\_raise\_missing\_reqs()}{\_raise\_missing\_reqs()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+\_\+raise\+\_\+missing\+\_\+reqs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Set\mbox{[}str\mbox{]}}]{missing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ae7b33488d7169663ee17c0ed39679964}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ae7b33488d7169663ee17c0ed39679964} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!build\_tracker\_id@{build\_tracker\_id}}
+\index{build\_tracker\_id@{build\_tracker\_id}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{build\_tracker\_id()}{build\_tracker\_id()}}
+{\footnotesize\ttfamily  Optional\mbox{[}str\mbox{]} pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+build\+\_\+tracker\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Identify this requirement uniquely by its link.\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1base_1_1AbstractDistribution_a5b4ed500201f999a71d1704352c57fc4}{pip.\+\_\+internal.\+distributions.\+base.\+Abstract\+Distribution}}.
+
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a8ce668d3c2b1c4e3cf9a955af8e4ed9e}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_a8ce668d3c2b1c4e3cf9a955af8e4ed9e} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!get\_metadata\_distribution@{get\_metadata\_distribution}}
+\index{get\_metadata\_distribution@{get\_metadata\_distribution}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{get\_metadata\_distribution()}{get\_metadata\_distribution()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1BaseDistribution}{Base\+Distribution}} pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+get\+\_\+metadata\+\_\+distribution (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1base_1_1AbstractDistribution_a8a9045d38e8e4cc04e6d69f7b254a29b}{pip.\+\_\+internal.\+distributions.\+base.\+Abstract\+Distribution}}.
+
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_aa6942309f47332af595cab8e754bb834}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_aa6942309f47332af595cab8e754bb834} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!prepare\_distribution\_metadata@{prepare\_distribution\_metadata}}
+\index{prepare\_distribution\_metadata@{prepare\_distribution\_metadata}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{prepare\_distribution\_metadata()}{prepare\_distribution\_metadata()}}
+{\footnotesize\ttfamily  None pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+prepare\+\_\+distribution\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{"{}Package\+Finder"{}}]{finder,  }\item[{bool}]{build\+\_\+isolation,  }\item[{bool}]{check\+\_\+build\+\_\+deps }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classpip_1_1__internal_1_1distributions_1_1base_1_1AbstractDistribution_aaf54e190d24531d716ba79450c64369b}{pip.\+\_\+internal.\+distributions.\+base.\+Abstract\+Distribution}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ab50126572e726a36f87215819dfdab77}\label{classpip_1_1__internal_1_1distributions_1_1sdist_1_1SourceDistribution_ab50126572e726a36f87215819dfdab77} 
+\index{pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}!req@{req}}
+\index{req@{req}!pip.\_internal.distributions.sdist.SourceDistribution@{pip.\_internal.distributions.sdist.SourceDistribution}}
+\doxysubsubsection{\texorpdfstring{req}{req}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+distributions.\+sdist.\+Source\+Distribution.\+req}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+internal/distributions/\mbox{\hyperlink{sdist_8py}{sdist.\+py}}\end{DoxyCompactItemize}

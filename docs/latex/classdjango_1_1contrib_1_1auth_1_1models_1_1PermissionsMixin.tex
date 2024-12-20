@@ -1,0 +1,169 @@
+\doxysection{Référence de la classe django.\+contrib.\+auth.\+models.\+Permissions\+Mixin}
+\hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin}{}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin}\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+contrib.\+auth.\+models.\+Permissions\+Mixin\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+contrib.\+auth.\+models.\+Permissions\+Mixin\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_1_1Meta}{Meta}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ab1dfafd9fdbc03890b9cc99f77c2574e}{get\+\_\+user\+\_\+permissions}} (self, obj=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ad388ebc3987f6b65b737d4c6cfa79009}{get\+\_\+group\+\_\+permissions}} (self, obj=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a9a3d36741779a96f8ba89718a3df98f2}{get\+\_\+all\+\_\+permissions}} (self, obj=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ae066b3b02537b4279928ac34f4fbf57e}{has\+\_\+perm}} (self, perm, obj=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_aa483fb13a59402aff876b601b03fde3d}{has\+\_\+perms}} (self, perm\+\_\+list, obj=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a48e272f227e8212e6840ac1aa73e64a0}{has\+\_\+module\+\_\+perms}} (self, app\+\_\+label)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a889ea7fbdda4735d3f3d05e59b9ba605}{is\+\_\+superuser}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a8446e98a032cc37c51e4d2dd383e2055}{groups}}
+\item 
+\mbox{\hyperlink{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a94d22c91491d0daa916e83955ba085c3}{user\+\_\+permissions}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Add the fields and methods necessary to support the Group and Permission
+models using the ModelBackend.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a9a3d36741779a96f8ba89718a3df98f2}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a9a3d36741779a96f8ba89718a3df98f2} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!get\_all\_permissions@{get\_all\_permissions}}
+\index{get\_all\_permissions@{get\_all\_permissions}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{get\_all\_permissions()}{get\_all\_permissions()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+get\+\_\+all\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ad388ebc3987f6b65b737d4c6cfa79009}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ad388ebc3987f6b65b737d4c6cfa79009} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!get\_group\_permissions@{get\_group\_permissions}}
+\index{get\_group\_permissions@{get\_group\_permissions}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{get\_group\_permissions()}{get\_group\_permissions()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+get\+\_\+group\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of permission strings that this user has through their
+groups. Query all available auth backends. If an object is passed in,
+return only permissions matching this object.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ab1dfafd9fdbc03890b9cc99f77c2574e}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ab1dfafd9fdbc03890b9cc99f77c2574e} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!get\_user\_permissions@{get\_user\_permissions}}
+\index{get\_user\_permissions@{get\_user\_permissions}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{get\_user\_permissions()}{get\_user\_permissions()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+get\+\_\+user\+\_\+permissions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of permission strings that this user has directly.
+Query all available auth backends. If an object is passed in,
+return only permissions matching this object.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a48e272f227e8212e6840ac1aa73e64a0}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a48e272f227e8212e6840ac1aa73e64a0} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!has\_module\_perms@{has\_module\_perms}}
+\index{has\_module\_perms@{has\_module\_perms}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{has\_module\_perms()}{has\_module\_perms()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+has\+\_\+module\+\_\+perms (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{app\+\_\+label }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the user has any permissions in the given app label.
+Use similar logic as has_perm(), above.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ae066b3b02537b4279928ac34f4fbf57e}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_ae066b3b02537b4279928ac34f4fbf57e} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!has\_perm@{has\_perm}}
+\index{has\_perm@{has\_perm}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{has\_perm()}{has\_perm()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+has\+\_\+perm (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{perm,  }\item[{}]{obj = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the user has the specified permission. Query all
+available auth backends, but return immediately if any backend returns
+True. Thus, a user who has permission from a single auth backend is
+assumed to have permission in general. If an object is provided, check
+permissions for that object.
+\end{DoxyVerb}
+ \Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_aa483fb13a59402aff876b601b03fde3d}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_aa483fb13a59402aff876b601b03fde3d} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!has\_perms@{has\_perms}}
+\index{has\_perms@{has\_perms}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{has\_perms()}{has\_perms()}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+has\+\_\+perms (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{perm\+\_\+list,  }\item[{}]{obj = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the user has each of the specified permissions. If
+object is passed, check if the user has all required perms for it.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a8446e98a032cc37c51e4d2dd383e2055}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a8446e98a032cc37c51e4d2dd383e2055} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!groups@{groups}}
+\index{groups@{groups}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{groups}{groups}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+groups\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ models.ManyToManyField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Group,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ verbose\_name=\_(\textcolor{stringliteral}{"{}groups"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ blank=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ help\_text=\_(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ groups\ this\ user\ belongs\ to.\ A\ user\ will\ get\ all\ permissions\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}granted\ to\ each\ of\ their\ groups."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ related\_name=\textcolor{stringliteral}{"{}user\_set"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ related\_query\_name=\textcolor{stringliteral}{"{}user"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a889ea7fbdda4735d3f3d05e59b9ba605}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a889ea7fbdda4735d3f3d05e59b9ba605} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!is\_superuser@{is\_superuser}}
+\index{is\_superuser@{is\_superuser}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{is\_superuser}{is\_superuser}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+is\+\_\+superuser\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ models.BooleanField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \_(\textcolor{stringliteral}{"{}superuser\ status"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ default=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ help\_text=\_(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Designates\ that\ this\ user\ has\ all\ permissions\ without\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}explicitly\ assigning\ them."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a94d22c91491d0daa916e83955ba085c3}\label{classdjango_1_1contrib_1_1auth_1_1models_1_1PermissionsMixin_a94d22c91491d0daa916e83955ba085c3} 
+\index{django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}!user\_permissions@{user\_permissions}}
+\index{user\_permissions@{user\_permissions}!django.contrib.auth.models.PermissionsMixin@{django.contrib.auth.models.PermissionsMixin}}
+\doxysubsubsection{\texorpdfstring{user\_permissions}{user\_permissions}}
+{\footnotesize\ttfamily django.\+contrib.\+auth.\+models.\+Permissions\+Mixin.\+user\+\_\+permissions\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ models.ManyToManyField(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Permission,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ verbose\_name=\_(\textcolor{stringliteral}{"{}user\ permissions"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ blank=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ help\_text=\_(\textcolor{stringliteral}{"{}Specific\ permissions\ for\ this\ user."{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ related\_name=\textcolor{stringliteral}{"{}user\_set"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ related\_query\_name=\textcolor{stringliteral}{"{}user"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/contrib/auth/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2django_2contrib_2auth_2models_8py}{models.\+py}}\end{DoxyCompactItemize}

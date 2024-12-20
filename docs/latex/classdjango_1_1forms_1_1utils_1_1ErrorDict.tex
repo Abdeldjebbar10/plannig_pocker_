@@ -1,0 +1,129 @@
+\doxysection{Référence de la classe django.\+forms.\+utils.\+Error\+Dict}
+\hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict}{}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict}\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+forms.\+utils.\+Error\+Dict\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+forms.\+utils.\+Error\+Dict\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_ac32acf81bdea080c88ea2d4da2881ef9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_aa22f810c0f50fbe5216bf3363a8e245a}{renderer}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_a95761ac05a7d995e649a90afa49c30e2}{as\+\_\+data}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_a6c52e5a5f4afb00e3bc823c572805189}{get\+\_\+json\+\_\+data}} (self, escape\+\_\+html=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_aac62bf2f41f8416bc07de37d7c9d63d2}{get\+\_\+context}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableErrorMixin}{django.\+forms.\+utils.\+Renderable\+Error\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableErrorMixin_ab4d413009d7bfe326989d1683a24fc27}{as\+\_\+json}} (self, escape\+\_\+html=False)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableErrorMixin_a4f55782c8599bc113b9fc057db62e8b4}{as\+\_\+text}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableErrorMixin_a8537eaa90de34ece16764913e91e80ff}{as\+\_\+ul}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableMixin}{django.\+forms.\+utils.\+Renderable\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableMixin_acdc73a3b1da7190ea3c6e0e2cb22e297}{render}} (self, template\+\_\+name=None, context=None, renderer=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_aa22f810c0f50fbe5216bf3363a8e245a}{renderer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableErrorMixin}{django.\+forms.\+utils.\+Renderable\+Error\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableErrorMixin_a0aa5f28c3015b96126676a381d5da2a1}{template\+\_\+name\+\_\+text}}
+\item 
+\mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableErrorMixin_a81dae8577f6bde1b9f5622c81ec9a3bd}{template\+\_\+name\+\_\+ul}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_a0a1a4823f358b363c04226131c202615}{template\+\_\+name}} = "{}django/forms/errors/dict/default.\+html"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_add81939620cdfd26d9635cb9592378db}{template\+\_\+name\+\_\+text}} = "{}django/forms/errors/dict/text.\+txt"{}
+\item 
+str \mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1ErrorDict_a3347fcc865883f1ee2fa874c4e76a08b}{template\+\_\+name\+\_\+ul}} = "{}django/forms/errors/dict/ul.\+html"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A collection of errors that knows how to display itself in various formats.
+
+The dictionary keys are the field names, and the values are the errors.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict_ac32acf81bdea080c88ea2d4da2881ef9}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict_ac32acf81bdea080c88ea2d4da2881ef9} 
+\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+forms.\+utils.\+Error\+Dict.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{}]{renderer = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict_a95761ac05a7d995e649a90afa49c30e2}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict_a95761ac05a7d995e649a90afa49c30e2} 
+\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}!as\_data@{as\_data}}
+\index{as\_data@{as\_data}!django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+\doxysubsubsection{\texorpdfstring{as\_data()}{as\_data()}}
+{\footnotesize\ttfamily django.\+forms.\+utils.\+Error\+Dict.\+as\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict_aac62bf2f41f8416bc07de37d7c9d63d2}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict_aac62bf2f41f8416bc07de37d7c9d63d2} 
+\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}!get\_context@{get\_context}}
+\index{get\_context@{get\_context}!django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+\doxysubsubsection{\texorpdfstring{get\_context()}{get\_context()}}
+{\footnotesize\ttfamily django.\+forms.\+utils.\+Error\+Dict.\+get\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1forms_1_1utils_1_1RenderableMixin_a61987d5dfba84f823a789c05533ebab2}{django.\+forms.\+utils.\+Renderable\+Mixin}}.
+
+\Hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict_a6c52e5a5f4afb00e3bc823c572805189}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict_a6c52e5a5f4afb00e3bc823c572805189} 
+\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}!get\_json\_data@{get\_json\_data}}
+\index{get\_json\_data@{get\_json\_data}!django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+\doxysubsubsection{\texorpdfstring{get\_json\_data()}{get\_json\_data()}}
+{\footnotesize\ttfamily django.\+forms.\+utils.\+Error\+Dict.\+get\+\_\+json\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{escape\+\_\+html = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict_aa22f810c0f50fbe5216bf3363a8e245a}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict_aa22f810c0f50fbe5216bf3363a8e245a} 
+\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}!renderer@{renderer}}
+\index{renderer@{renderer}!django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily django.\+forms.\+utils.\+Error\+Dict.\+renderer}
+
+\Hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict_a0a1a4823f358b363c04226131c202615}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict_a0a1a4823f358b363c04226131c202615} 
+\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}!template\_name@{template\_name}}
+\index{template\_name@{template\_name}!django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+\doxysubsubsection{\texorpdfstring{template\_name}{template\_name}}
+{\footnotesize\ttfamily str django.\+forms.\+utils.\+Error\+Dict.\+template\+\_\+name = "{}django/forms/errors/dict/default.\+html"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict_add81939620cdfd26d9635cb9592378db}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict_add81939620cdfd26d9635cb9592378db} 
+\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}!template\_name\_text@{template\_name\_text}}
+\index{template\_name\_text@{template\_name\_text}!django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+\doxysubsubsection{\texorpdfstring{template\_name\_text}{template\_name\_text}}
+{\footnotesize\ttfamily str django.\+forms.\+utils.\+Error\+Dict.\+template\+\_\+name\+\_\+text = "{}django/forms/errors/dict/text.\+txt"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1forms_1_1utils_1_1ErrorDict_a3347fcc865883f1ee2fa874c4e76a08b}\label{classdjango_1_1forms_1_1utils_1_1ErrorDict_a3347fcc865883f1ee2fa874c4e76a08b} 
+\index{django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}!template\_name\_ul@{template\_name\_ul}}
+\index{template\_name\_ul@{template\_name\_ul}!django.forms.utils.ErrorDict@{django.forms.utils.ErrorDict}}
+\doxysubsubsection{\texorpdfstring{template\_name\_ul}{template\_name\_ul}}
+{\footnotesize\ttfamily str django.\+forms.\+utils.\+Error\+Dict.\+template\+\_\+name\+\_\+ul = "{}django/forms/errors/dict/ul.\+html"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/forms/\mbox{\hyperlink{django_2forms_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

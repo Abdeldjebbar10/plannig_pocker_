@@ -1,0 +1,83 @@
+\doxysection{Référence de la classe django.\+utils.\+timezone.\+override}
+\hypertarget{classdjango_1_1utils_1_1timezone_1_1override}{}\label{classdjango_1_1utils_1_1timezone_1_1override}\index{django.utils.timezone.override@{django.utils.timezone.override}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+utils.\+timezone.\+override\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+utils.\+timezone.\+override\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1timezone_1_1override_ae3c9faf724117de602e899329b1774b4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1utils_1_1timezone_1_1override_a47f1d2199bb8654c06096f16f934c822}{timezone}})
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1timezone_1_1override_a0e1bb08c1ac4ce13077f2a9ceab72bf4}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1timezone_1_1override_a8cfafbb3bc7c21c29e7cea2bbe76f60c}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, traceback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1timezone_1_1override_a47f1d2199bb8654c06096f16f934c822}{timezone}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1timezone_1_1override_ad665f5237f551b795cfecef8a98935b9}{old\+\_\+timezone}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Temporarily set the time zone for the current thread.
+
+This is a context manager that uses django.utils.timezone.activate()
+to set the timezone on entry and restores the previously active timezone
+on exit.
+
+The ``timezone`` argument must be an instance of a ``tzinfo`` subclass, a
+time zone name, or ``None``. If it is ``None``, Django enables the default
+time zone.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1utils_1_1timezone_1_1override_ae3c9faf724117de602e899329b1774b4}\label{classdjango_1_1utils_1_1timezone_1_1override_ae3c9faf724117de602e899329b1774b4} 
+\index{django.utils.timezone.override@{django.utils.timezone.override}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.utils.timezone.override@{django.utils.timezone.override}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+timezone.\+override.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timezone }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1utils_1_1timezone_1_1override_a0e1bb08c1ac4ce13077f2a9ceab72bf4}\label{classdjango_1_1utils_1_1timezone_1_1override_a0e1bb08c1ac4ce13077f2a9ceab72bf4} 
+\index{django.utils.timezone.override@{django.utils.timezone.override}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!django.utils.timezone.override@{django.utils.timezone.override}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+timezone.\+override.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1timezone_1_1override_a8cfafbb3bc7c21c29e7cea2bbe76f60c}\label{classdjango_1_1utils_1_1timezone_1_1override_a8cfafbb3bc7c21c29e7cea2bbe76f60c} 
+\index{django.utils.timezone.override@{django.utils.timezone.override}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!django.utils.timezone.override@{django.utils.timezone.override}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily django.\+utils.\+timezone.\+override.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exc\+\_\+type,  }\item[{}]{exc\+\_\+value,  }\item[{}]{traceback }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1utils_1_1timezone_1_1override_ad665f5237f551b795cfecef8a98935b9}\label{classdjango_1_1utils_1_1timezone_1_1override_ad665f5237f551b795cfecef8a98935b9} 
+\index{django.utils.timezone.override@{django.utils.timezone.override}!old\_timezone@{old\_timezone}}
+\index{old\_timezone@{old\_timezone}!django.utils.timezone.override@{django.utils.timezone.override}}
+\doxysubsubsection{\texorpdfstring{old\_timezone}{old\_timezone}}
+{\footnotesize\ttfamily django.\+utils.\+timezone.\+override.\+old\+\_\+timezone}
+
+\Hypertarget{classdjango_1_1utils_1_1timezone_1_1override_a47f1d2199bb8654c06096f16f934c822}\label{classdjango_1_1utils_1_1timezone_1_1override_a47f1d2199bb8654c06096f16f934c822} 
+\index{django.utils.timezone.override@{django.utils.timezone.override}!timezone@{timezone}}
+\index{timezone@{timezone}!django.utils.timezone.override@{django.utils.timezone.override}}
+\doxysubsubsection{\texorpdfstring{timezone}{timezone}}
+{\footnotesize\ttfamily django.\+utils.\+timezone.\+override.\+timezone}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/utils/\mbox{\hyperlink{django_2utils_2timezone_8py}{timezone.\+py}}\end{DoxyCompactItemize}

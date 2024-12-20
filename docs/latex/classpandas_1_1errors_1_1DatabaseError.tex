@@ -1,0 +1,27 @@
+\doxysection{Référence de la classe pandas.\+errors.\+Database\+Error}
+\hypertarget{classpandas_1_1errors_1_1DatabaseError}{}\label{classpandas_1_1errors_1_1DatabaseError}\index{pandas.errors.DatabaseError@{pandas.errors.DatabaseError}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+errors.\+Database\+Error\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+errors.\+Database\+Error\+:
+% FIG 1
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Error is raised when executing sql with bad syntax or sql that throws an error.
+
+Examples
+--------
+>>> from sqlite3 import connect
+>>> conn = connect(':memory:')
+>>> pd.read_sql('select * test', conn) # doctest: +SKIP
+... # DatabaseError: Execution failed on sql 'test': near "test": syntax error
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/errors/\mbox{\hyperlink{env_2lib_2python3_812_2site-packages_2pandas_2errors_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

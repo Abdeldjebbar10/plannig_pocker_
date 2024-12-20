@@ -1,0 +1,95 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+core.\+management.\+commands.\+makemessages}
+\hypertarget{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages}{}\label{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages}\index{django.core.management.commands.makemessages@{django.core.management.commands.makemessages}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1BuildFile}{Build\+File}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1Command}{Command}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1core_1_1management_1_1commands_1_1makemessages_1_1TranslatableFile}{Translatable\+File}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a09a9b3ab5da9e80fcc295358d2238809}{check\+\_\+programs}} (\texorpdfstring{$\ast$}{*}programs)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_ab490bd282f5cf0854af443aee36fb2a2}{is\+\_\+valid\+\_\+locale}} (locale)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a2dafee440848d6896648d024c5d34a33}{normalize\+\_\+eols}} (raw\+\_\+contents)
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a8a16399609e58c41ac8faa2f5fa3c387}{write\+\_\+pot\+\_\+file}} (potfile, msgs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a6ee00b384243bc7f963926cc58223d39}{plural\+\_\+forms\+\_\+re}}
+\item 
+int \mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_af533c0dbde556b4d1661bc2479905e32}{STATUS\+\_\+\+OK}} = 0
+\item 
+\mbox{\hyperlink{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_ab354cbacb9dcb3923176f1d42886f56c}{NO\+\_\+\+LOCALE\+\_\+\+DIR}} = object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a09a9b3ab5da9e80fcc295358d2238809}\label{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a09a9b3ab5da9e80fcc295358d2238809} 
+\index{django.core.management.commands.makemessages@{django.core.management.commands.makemessages}!check\_programs@{check\_programs}}
+\index{check\_programs@{check\_programs}!django.core.management.commands.makemessages@{django.core.management.commands.makemessages}}
+\doxysubsubsection{\texorpdfstring{check\_programs()}{check\_programs()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+makemessages.\+check\+\_\+programs (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{programs }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_ab490bd282f5cf0854af443aee36fb2a2}\label{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_ab490bd282f5cf0854af443aee36fb2a2} 
+\index{django.core.management.commands.makemessages@{django.core.management.commands.makemessages}!is\_valid\_locale@{is\_valid\_locale}}
+\index{is\_valid\_locale@{is\_valid\_locale}!django.core.management.commands.makemessages@{django.core.management.commands.makemessages}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_locale()}{is\_valid\_locale()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+makemessages.\+is\+\_\+valid\+\_\+locale (\begin{DoxyParamCaption}\item[{}]{locale }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a2dafee440848d6896648d024c5d34a33}\label{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a2dafee440848d6896648d024c5d34a33} 
+\index{django.core.management.commands.makemessages@{django.core.management.commands.makemessages}!normalize\_eols@{normalize\_eols}}
+\index{normalize\_eols@{normalize\_eols}!django.core.management.commands.makemessages@{django.core.management.commands.makemessages}}
+\doxysubsubsection{\texorpdfstring{normalize\_eols()}{normalize\_eols()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+makemessages.\+normalize\+\_\+eols (\begin{DoxyParamCaption}\item[{}]{raw\+\_\+contents }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take a block of raw text that will be passed through str.splitlines() to
+get universal newlines treatment.
+
+Return the resulting block of text with normalized `\n` EOL sequences ready
+to be written to disk using current platform's native EOLs.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a8a16399609e58c41ac8faa2f5fa3c387}\label{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a8a16399609e58c41ac8faa2f5fa3c387} 
+\index{django.core.management.commands.makemessages@{django.core.management.commands.makemessages}!write\_pot\_file@{write\_pot\_file}}
+\index{write\_pot\_file@{write\_pot\_file}!django.core.management.commands.makemessages@{django.core.management.commands.makemessages}}
+\doxysubsubsection{\texorpdfstring{write\_pot\_file()}{write\_pot\_file()}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+makemessages.\+write\+\_\+pot\+\_\+file (\begin{DoxyParamCaption}\item[{}]{potfile,  }\item[{}]{msgs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write the `potfile` with the `msgs` contents, making sure its format is
+valid.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_ab354cbacb9dcb3923176f1d42886f56c}\label{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_ab354cbacb9dcb3923176f1d42886f56c} 
+\index{django.core.management.commands.makemessages@{django.core.management.commands.makemessages}!NO\_LOCALE\_DIR@{NO\_LOCALE\_DIR}}
+\index{NO\_LOCALE\_DIR@{NO\_LOCALE\_DIR}!django.core.management.commands.makemessages@{django.core.management.commands.makemessages}}
+\doxysubsubsection{\texorpdfstring{NO\_LOCALE\_DIR}{NO\_LOCALE\_DIR}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+makemessages.\+NO\+\_\+\+LOCALE\+\_\+\+DIR = object()}
+
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a6ee00b384243bc7f963926cc58223d39}\label{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_a6ee00b384243bc7f963926cc58223d39} 
+\index{django.core.management.commands.makemessages@{django.core.management.commands.makemessages}!plural\_forms\_re@{plural\_forms\_re}}
+\index{plural\_forms\_re@{plural\_forms\_re}!django.core.management.commands.makemessages@{django.core.management.commands.makemessages}}
+\doxysubsubsection{\texorpdfstring{plural\_forms\_re}{plural\_forms\_re}}
+{\footnotesize\ttfamily django.\+core.\+management.\+commands.\+makemessages.\+plural\+\_\+forms\+\_\+re}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \_lazy\_re\_compile(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{r'\string^(?P<value>"{}Plural-\/Forms.+?\(\backslash\)\(\backslash\)n"{})\(\backslash\)s*\$'},\ re.MULTILINE\ |\ re.DOTALL}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_af533c0dbde556b4d1661bc2479905e32}\label{namespacedjango_1_1core_1_1management_1_1commands_1_1makemessages_af533c0dbde556b4d1661bc2479905e32} 
+\index{django.core.management.commands.makemessages@{django.core.management.commands.makemessages}!STATUS\_OK@{STATUS\_OK}}
+\index{STATUS\_OK@{STATUS\_OK}!django.core.management.commands.makemessages@{django.core.management.commands.makemessages}}
+\doxysubsubsection{\texorpdfstring{STATUS\_OK}{STATUS\_OK}}
+{\footnotesize\ttfamily int django.\+core.\+management.\+commands.\+makemessages.\+STATUS\+\_\+\+OK = 0}
+

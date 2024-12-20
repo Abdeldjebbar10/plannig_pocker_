@@ -1,0 +1,41 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+authentication}
+\hypertarget{namespacerest__framework_1_1authentication}{}\label{namespacerest__framework_1_1authentication}\index{rest\_framework.authentication@{rest\_framework.authentication}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BaseAuthentication}{Base\+Authentication}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1authentication_1_1BasicAuthentication}{Basic\+Authentication}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1authentication_1_1CSRFCheck}{CSRFCheck}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1authentication_1_1RemoteUserAuthentication}{Remote\+User\+Authentication}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1authentication_1_1SessionAuthentication}{Session\+Authentication}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1authentication_1_1TokenAuthentication}{Token\+Authentication}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1authentication_a608f378587d7fc89b26a01b9484cecd6}{get\+\_\+authorization\+\_\+header}} (request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Provides various authentication policies.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1authentication_a608f378587d7fc89b26a01b9484cecd6}\label{namespacerest__framework_1_1authentication_a608f378587d7fc89b26a01b9484cecd6} 
+\index{rest\_framework.authentication@{rest\_framework.authentication}!get\_authorization\_header@{get\_authorization\_header}}
+\index{get\_authorization\_header@{get\_authorization\_header}!rest\_framework.authentication@{rest\_framework.authentication}}
+\doxysubsubsection{\texorpdfstring{get\_authorization\_header()}{get\_authorization\_header()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+authentication.\+get\+\_\+authorization\+\_\+header (\begin{DoxyParamCaption}\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return request's 'Authorization:' header, as a bytestring.
+
+Hide some test client ickyness where the header can be unicode.
+\end{DoxyVerb}
+ 

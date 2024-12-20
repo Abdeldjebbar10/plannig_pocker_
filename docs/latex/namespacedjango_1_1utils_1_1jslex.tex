@@ -1,0 +1,49 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+utils.\+jslex}
+\hypertarget{namespacedjango_1_1utils_1_1jslex}{}\label{namespacedjango_1_1utils_1_1jslex}\index{django.utils.jslex@{django.utils.jslex}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1jslex_1_1JsLexer}{Js\+Lexer}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1jslex_1_1Lexer}{Lexer}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1utils_1_1jslex_1_1Tok}{Tok}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1jslex_ae18690f27d1266d4ee6bd208bc769baf}{literals}} (choices, prefix="{}"{}, suffix="{}"{})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1utils_1_1jslex_a0f3eb1baeb637b447b928e5bcbab3e64}{prepare\+\_\+js\+\_\+for\+\_\+gettext}} (js)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}JsLex: a lexer for JavaScript\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1utils_1_1jslex_ae18690f27d1266d4ee6bd208bc769baf}\label{namespacedjango_1_1utils_1_1jslex_ae18690f27d1266d4ee6bd208bc769baf} 
+\index{django.utils.jslex@{django.utils.jslex}!literals@{literals}}
+\index{literals@{literals}!django.utils.jslex@{django.utils.jslex}}
+\doxysubsubsection{\texorpdfstring{literals()}{literals()}}
+{\footnotesize\ttfamily django.\+utils.\+jslex.\+literals (\begin{DoxyParamCaption}\item[{}]{choices,  }\item[{}]{prefix = {\ttfamily "{}"{}},  }\item[{}]{suffix = {\ttfamily "{}"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a regex from a space-separated list of literal `choices`.
+
+If provided, `prefix` and `suffix` will be attached to each choice
+individually.
+\end{DoxyVerb}
+ \Hypertarget{namespacedjango_1_1utils_1_1jslex_a0f3eb1baeb637b447b928e5bcbab3e64}\label{namespacedjango_1_1utils_1_1jslex_a0f3eb1baeb637b447b928e5bcbab3e64} 
+\index{django.utils.jslex@{django.utils.jslex}!prepare\_js\_for\_gettext@{prepare\_js\_for\_gettext}}
+\index{prepare\_js\_for\_gettext@{prepare\_js\_for\_gettext}!django.utils.jslex@{django.utils.jslex}}
+\doxysubsubsection{\texorpdfstring{prepare\_js\_for\_gettext()}{prepare\_js\_for\_gettext()}}
+{\footnotesize\ttfamily django.\+utils.\+jslex.\+prepare\+\_\+js\+\_\+for\+\_\+gettext (\begin{DoxyParamCaption}\item[{}]{js }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the JavaScript source `js` into something resembling C for
+xgettext.
+
+What actually happens is that all the regex literals are replaced with
+"REGEX".
+\end{DoxyVerb}
+ 

@@ -1,0 +1,180 @@
+\doxysection{Référence de la classe pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame}
+\hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame}{}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame}\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab6663b702f04f57aee06c8f9ecb1b782}{\+\_\+\+\_\+dataframe\+\_\+\+\_\+}} (self, bool nan\+\_\+as\+\_\+null=False, bool allow\+\_\+copy=True)
+\item 
+dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a7b89a5f9c985f3234f277cf0a4e4591b}{metadata}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_aed2d83ec1ad641a577f3b3333075bbf7}{num\+\_\+columns}} (self)
+\item 
+int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab8f694b97fb4cea08536fec82618e2ff}{num\+\_\+rows}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a206557f9c2aa6a80b449987166bfbef2}{num\+\_\+chunks}} (self)
+\item 
+Iterable\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a497f60b0243e2b3d926d713b5b6d281d}{column\+\_\+names}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1Column}{Column}} \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ada7cf19116a87f7e82b3cc89340bbf14}{get\+\_\+column}} (self, int i)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1Column}{Column}} \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab4373bc769bcf286517b363a4412c51c}{get\+\_\+column\+\_\+by\+\_\+name}} (self, str name)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1Column}{Column}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a174944cbc2a0a08ed6b22b1a4aba6c48}{get\+\_\+columns}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a05450f59fa1e821a56fcd2ffd36965ae}{select\+\_\+columns}} (self, Sequence\mbox{[}int\mbox{]} indices)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame}{Data\+Frame}} \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab82379f92496f20ac02b72431062022e}{select\+\_\+columns\+\_\+by\+\_\+name}} (self, Sequence\mbox{[}str\mbox{]} names)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame}{Data\+Frame}}\mbox{]} \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_aa4081704f00000568e8c79bad5441c31}{get\+\_\+chunks}} (self, int\texorpdfstring{$\vert$}{|}None n\+\_\+chunks=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab9a378932d609a0825c17bb3796fa2fc}{version}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A data frame class, with only the methods required by the interchange
+protocol defined.
+
+A "data frame" represents an ordered collection of named columns.
+A column's "name" must be a unique string.
+Columns may be accessed by name or by position.
+
+This could be a public data frame class, or an object with the methods and
+attributes defined on this DataFrame class could be returned from the
+``__dataframe__`` method of a public data frame class in a library adhering
+to the dataframe interchange protocol specification.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab6663b702f04f57aee06c8f9ecb1b782}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab6663b702f04f57aee06c8f9ecb1b782} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!\_\_dataframe\_\_@{\_\_dataframe\_\_}}
+\index{\_\_dataframe\_\_@{\_\_dataframe\_\_}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{\_\_dataframe\_\_()}{\_\_dataframe\_\_()}}
+{\footnotesize\ttfamily pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+\_\+\+\_\+dataframe\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool }]{nan\+\_\+as\+\_\+null = {\ttfamily False},  }\item[{bool }]{allow\+\_\+copy = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct a new interchange object, potentially changing the parameters.\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a497f60b0243e2b3d926d713b5b6d281d}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a497f60b0243e2b3d926d713b5b6d281d} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!column\_names@{column\_names}}
+\index{column\_names@{column\_names}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{column\_names()}{column\_names()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}str\mbox{]} pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+column\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator yielding the column names.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_aa4081704f00000568e8c79bad5441c31}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_aa4081704f00000568e8c79bad5441c31} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!get\_chunks@{get\_chunks}}
+\index{get\_chunks@{get\_chunks}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{get\_chunks()}{get\_chunks()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame}{Data\+Frame}}\mbox{]} pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+get\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{n\+\_\+chunks = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator yielding the chunks.
+
+By default (None), yields the chunks that the data is stored as by the
+producer. If given, ``n_chunks`` must be a multiple of
+``self.num_chunks()``, meaning the producer must subdivide each chunk
+before yielding it.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ada7cf19116a87f7e82b3cc89340bbf14}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ada7cf19116a87f7e82b3cc89340bbf14} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!get\_column@{get\_column}}
+\index{get\_column@{get\_column}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{get\_column()}{get\_column()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1Column}{Column}} pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+get\+\_\+column (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the column at the indicated position.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab4373bc769bcf286517b363a4412c51c}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab4373bc769bcf286517b363a4412c51c} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!get\_column\_by\_name@{get\_column\_by\_name}}
+\index{get\_column\_by\_name@{get\_column\_by\_name}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{get\_column\_by\_name()}{get\_column\_by\_name()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1Column}{Column}} pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+get\+\_\+column\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the column whose name is the indicated name.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a174944cbc2a0a08ed6b22b1a4aba6c48}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a174944cbc2a0a08ed6b22b1a4aba6c48} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!get\_columns@{get\_columns}}
+\index{get\_columns@{get\_columns}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{get\_columns()}{get\_columns()}}
+{\footnotesize\ttfamily  Iterable\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1Column}{Column}}\mbox{]} pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+get\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator yielding the columns.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a7b89a5f9c985f3234f277cf0a4e4591b}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a7b89a5f9c985f3234f277cf0a4e4591b} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!metadata@{metadata}}
+\index{metadata@{metadata}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{metadata()}{metadata()}}
+{\footnotesize\ttfamily  dict\mbox{[}str, Any\mbox{]} pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+metadata (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The metadata for the data frame, as a dictionary with string keys. The
+contents of `metadata` may be anything, they are meant for a library
+to store information that it needs to, e.g., roundtrip losslessly or
+for two implementations to share data that is not (yet) part of the
+interchange protocol specification. For avoiding collisions with other
+entries, please add name the keys with the name of the library
+followed by a period and the desired name, e.g, ``pandas.indexcol``.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a206557f9c2aa6a80b449987166bfbef2}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a206557f9c2aa6a80b449987166bfbef2} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!num\_chunks@{num\_chunks}}
+\index{num\_chunks@{num\_chunks}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{num\_chunks()}{num\_chunks()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+num\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the number of chunks the DataFrame consists of.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_aed2d83ec1ad641a577f3b3333075bbf7}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_aed2d83ec1ad641a577f3b3333075bbf7} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!num\_columns@{num\_columns}}
+\index{num\_columns@{num\_columns}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{num\_columns()}{num\_columns()}}
+{\footnotesize\ttfamily  int pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+num\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the number of columns in the DataFrame.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab8f694b97fb4cea08536fec82618e2ff}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab8f694b97fb4cea08536fec82618e2ff} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!num\_rows@{num\_rows}}
+\index{num\_rows@{num\_rows}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{num\_rows()}{num\_rows()}}
+{\footnotesize\ttfamily  int \texorpdfstring{$\vert$}{|} None pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+num\+\_\+rows (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the number of rows in the DataFrame, if available.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a05450f59fa1e821a56fcd2ffd36965ae}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_a05450f59fa1e821a56fcd2ffd36965ae} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!select\_columns@{select\_columns}}
+\index{select\_columns@{select\_columns}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{select\_columns()}{select\_columns()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame}{Data\+Frame}} pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+select\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Sequence\mbox{[}int\mbox{]}}]{indices }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new DataFrame by selecting a subset of columns by index.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab82379f92496f20ac02b72431062022e}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab82379f92496f20ac02b72431062022e} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!select\_columns\_by\_name@{select\_columns\_by\_name}}
+\index{select\_columns\_by\_name@{select\_columns\_by\_name}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{select\_columns\_by\_name()}{select\_columns\_by\_name()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame}{Data\+Frame}} pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+select\+\_\+columns\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Sequence\mbox{[}str\mbox{]}}]{names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new DataFrame by selecting a subset of columns by name.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab9a378932d609a0825c17bb3796fa2fc}\label{classpandas_1_1core_1_1interchange_1_1dataframe__protocol_1_1DataFrame_ab9a378932d609a0825c17bb3796fa2fc} 
+\index{pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}!version@{version}}
+\index{version@{version}!pandas.core.interchange.dataframe\_protocol.DataFrame@{pandas.core.interchange.dataframe\_protocol.DataFrame}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily int pandas.\+core.\+interchange.\+dataframe\+\_\+protocol.\+Data\+Frame.\+version = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/interchange/\mbox{\hyperlink{dataframe__protocol_8py}{dataframe\+\_\+protocol.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,244 @@
+\doxysection{Référence de la classe pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op}
+\hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp}{}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp}\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad433e7241af481a8f2ca7c6eb1457d9d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a9fdff04f1550db6ab49b26d867c6c37e}{kind}}, str \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a942f252adb10ac74e964f53965163bc3}{how}}, bool \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a6fe613dbbcda46983d8303faf4f493e0}{has\+\_\+dropped\+\_\+na}})
+\item 
+str \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a0a868f1332ec17a875e7fc4c27ed80f2}{get\+\_\+kind\+\_\+from\+\_\+how}} (cls, str \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a942f252adb10ac74e964f53965163bc3}{how}})
+\item 
+Array\+Like \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a674673c141d0ed6674a243c8fd9b7075}{cython\+\_\+operation}} (self, \texorpdfstring{$\ast$}{*}Array\+Like values, Axis\+Int axis, int min\+\_\+count=-\/1, np.\+ndarray comp\+\_\+ids, int ngroups, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a9fdff04f1550db6ab49b26d867c6c37e}{kind}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a942f252adb10ac74e964f53965163bc3}{how}}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a6fe613dbbcda46983d8303faf4f493e0}{has\+\_\+dropped\+\_\+na}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad0f3389a1cd8f1820d3933844fd82dea}{cast\+\_\+blocklist}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ada6793c3df8fbe7405a922bf9311a59e}{\+\_\+get\+\_\+cython\+\_\+function}} (cls, str \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a9fdff04f1550db6ab49b26d867c6c37e}{kind}}, str \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a942f252adb10ac74e964f53965163bc3}{how}}, np.\+dtype dtype, bool is\+\_\+numeric)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aa7ec1961fbeeb4add84790ee9e1cbb63}{\+\_\+get\+\_\+cython\+\_\+vals}} (self, np.\+ndarray values)
+\item 
+Shape \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aad194f79e004c7e68c98e6cd43821e60}{\+\_\+get\+\_\+output\+\_\+shape}} (self, int ngroups, np.\+ndarray values)
+\item 
+np.\+dtype \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a8ac75db758ba63263f34f0975c2acfa1}{\+\_\+get\+\_\+out\+\_\+dtype}} (self, np.\+dtype dtype)
+\item 
+np.\+dtype \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a8b47be723862b53a59e413365ea10c3f}{\+\_\+get\+\_\+result\+\_\+dtype}} (self, np.\+dtype dtype)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aad5ed19c6946c0bfdacb3e9d311072fe}{\+\_\+cython\+\_\+op\+\_\+ndim\+\_\+compat}} (self, np.\+ndarray values, \texorpdfstring{$\ast$}{*}int min\+\_\+count, int ngroups, np.\+ndarray comp\+\_\+ids, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}\texorpdfstring{$\vert$}{|}None mask=None, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}\texorpdfstring{$\vert$}{|}None result\+\_\+mask=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+np.\+ndarray \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a4d42167de56d03f08b2818cb074bcf8e}{\+\_\+call\+\_\+cython\+\_\+op}} (self, np.\+ndarray values, \texorpdfstring{$\ast$}{*}int min\+\_\+count, int ngroups, np.\+ndarray comp\+\_\+ids, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}\texorpdfstring{$\vert$}{|}None mask, npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]}\texorpdfstring{$\vert$}{|}None result\+\_\+mask, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+None \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a7b0ffc1732bda1ccb9366eb69422eeb0}{\+\_\+validate\+\_\+axis}} (self, Axis\+Int axis, Array\+Like values)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a9ac192dc484fee25c33a84ed4795ef86}{\+\_\+\+CYTHON\+\_\+\+FUNCTIONS}}
+\item 
+dict \mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad1ab9191873e6fb0ad1b9632aacef136}{\+\_\+cython\+\_\+arity}} = \{"{}ohlc"{}\+: 4\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Dispatch logic for functions defined in _libs.groupby
+
+Parameters
+----------
+kind: str
+    Whether the operation is an aggregate or transform.
+how: str
+    Operation name, e.g. "mean".
+has_dropped_na: bool
+    True precisely when dropna=True and the grouper contains a null value.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad433e7241af481a8f2ca7c6eb1457d9d}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad433e7241af481a8f2ca7c6eb1457d9d} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{kind,  }\item[{str}]{how,  }\item[{bool}]{has\+\_\+dropped\+\_\+na }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a4d42167de56d03f08b2818cb074bcf8e}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a4d42167de56d03f08b2818cb074bcf8e} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_call\_cython\_op@{\_call\_cython\_op}}
+\index{\_call\_cython\_op@{\_call\_cython\_op}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_call\_cython\_op()}{\_call\_cython\_op()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+call\+\_\+cython\+\_\+op (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+ndarray}]{values,  }\item[{\texorpdfstring{$\ast$}{*}int}]{min\+\_\+count,  }\item[{int}]{ngroups,  }\item[{np.\+ndarray}]{comp\+\_\+ids,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \texorpdfstring{$\vert$}{|} None}]{mask,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \texorpdfstring{$\vert$}{|} None}]{result\+\_\+mask,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aad5ed19c6946c0bfdacb3e9d311072fe}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aad5ed19c6946c0bfdacb3e9d311072fe} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_cython\_op\_ndim\_compat@{\_cython\_op\_ndim\_compat}}
+\index{\_cython\_op\_ndim\_compat@{\_cython\_op\_ndim\_compat}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_cython\_op\_ndim\_compat()}{\_cython\_op\_ndim\_compat()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+cython\+\_\+op\+\_\+ndim\+\_\+compat (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+ndarray}]{values,  }\item[{\texorpdfstring{$\ast$}{*}int}]{min\+\_\+count,  }\item[{int}]{ngroups,  }\item[{np.\+ndarray}]{comp\+\_\+ids,  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \texorpdfstring{$\vert$}{|} None }]{mask = {\ttfamily None},  }\item[{npt.\+NDArray\mbox{[}np.\+bool\+\_\+\mbox{]} \texorpdfstring{$\vert$}{|} None }]{result\+\_\+mask = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ada6793c3df8fbe7405a922bf9311a59e}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ada6793c3df8fbe7405a922bf9311a59e} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_get\_cython\_function@{\_get\_cython\_function}}
+\index{\_get\_cython\_function@{\_get\_cython\_function}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_get\_cython\_function()}{\_get\_cython\_function()}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+get\+\_\+cython\+\_\+function (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{str}]{kind,  }\item[{str}]{how,  }\item[{np.\+dtype}]{dtype,  }\item[{bool     }]{is\+\_\+numeric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aa7ec1961fbeeb4add84790ee9e1cbb63}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aa7ec1961fbeeb4add84790ee9e1cbb63} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_get\_cython\_vals@{\_get\_cython\_vals}}
+\index{\_get\_cython\_vals@{\_get\_cython\_vals}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_get\_cython\_vals()}{\_get\_cython\_vals()}}
+{\footnotesize\ttfamily  np.\+ndarray pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+get\+\_\+cython\+\_\+vals (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+ndarray}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Cast numeric dtypes to float64 for functions that only support that.
+
+Parameters
+----------
+values : np.ndarray
+
+Returns
+-------
+values : np.ndarray
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a8ac75db758ba63263f34f0975c2acfa1}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a8ac75db758ba63263f34f0975c2acfa1} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_get\_out\_dtype@{\_get\_out\_dtype}}
+\index{\_get\_out\_dtype@{\_get\_out\_dtype}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_get\_out\_dtype()}{\_get\_out\_dtype()}}
+{\footnotesize\ttfamily  np.\+dtype pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+get\+\_\+out\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+dtype}]{dtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aad194f79e004c7e68c98e6cd43821e60}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_aad194f79e004c7e68c98e6cd43821e60} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_get\_output\_shape@{\_get\_output\_shape}}
+\index{\_get\_output\_shape@{\_get\_output\_shape}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_get\_output\_shape()}{\_get\_output\_shape()}}
+{\footnotesize\ttfamily  Shape pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+get\+\_\+output\+\_\+shape (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{ngroups,  }\item[{np.\+ndarray}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a8b47be723862b53a59e413365ea10c3f}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a8b47be723862b53a59e413365ea10c3f} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_get\_result\_dtype@{\_get\_result\_dtype}}
+\index{\_get\_result\_dtype@{\_get\_result\_dtype}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_get\_result\_dtype()}{\_get\_result\_dtype()}}
+{\footnotesize\ttfamily  np.\+dtype pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+get\+\_\+result\+\_\+dtype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+dtype}]{dtype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get the desired dtype of a result based on the
+input dtype and how it was computed.
+
+Parameters
+----------
+dtype : np.dtype
+
+Returns
+-------
+np.dtype
+    The desired dtype of the result.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a7b0ffc1732bda1ccb9366eb69422eeb0}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a7b0ffc1732bda1ccb9366eb69422eeb0} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_validate\_axis@{\_validate\_axis}}
+\index{\_validate\_axis@{\_validate\_axis}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_validate\_axis()}{\_validate\_axis()}}
+{\footnotesize\ttfamily  None pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+validate\+\_\+axis (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Axis\+Int}]{axis,  }\item[{Array\+Like}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a674673c141d0ed6674a243c8fd9b7075}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a674673c141d0ed6674a243c8fd9b7075} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!cython\_operation@{cython\_operation}}
+\index{cython\_operation@{cython\_operation}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{cython\_operation()}{cython\_operation()}}
+{\footnotesize\ttfamily  Array\+Like pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+cython\+\_\+operation (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\texorpdfstring{$\ast$}{*}Array\+Like}]{values,  }\item[{Axis\+Int}]{axis,  }\item[{int }]{min\+\_\+count = {\ttfamily -\/1},  }\item[{np.\+ndarray}]{comp\+\_\+ids,  }\item[{int}]{ngroups,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call our cython function, with appropriate pre- and post- processing.
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a0a868f1332ec17a875e7fc4c27ed80f2}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a0a868f1332ec17a875e7fc4c27ed80f2} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!get\_kind\_from\_how@{get\_kind\_from\_how}}
+\index{get\_kind\_from\_how@{get\_kind\_from\_how}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{get\_kind\_from\_how()}{get\_kind\_from\_how()}}
+{\footnotesize\ttfamily  str pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+get\+\_\+kind\+\_\+from\+\_\+how (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{str}]{how }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad1ab9191873e6fb0ad1b9632aacef136}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad1ab9191873e6fb0ad1b9632aacef136} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_cython\_arity@{\_cython\_arity}}
+\index{\_cython\_arity@{\_cython\_arity}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_cython\_arity}{\_cython\_arity}}
+{\footnotesize\ttfamily dict pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+cython\+\_\+arity = \{"{}ohlc"{}\+: 4\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a9ac192dc484fee25c33a84ed4795ef86}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a9ac192dc484fee25c33a84ed4795ef86} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!\_CYTHON\_FUNCTIONS@{\_CYTHON\_FUNCTIONS}}
+\index{\_CYTHON\_FUNCTIONS@{\_CYTHON\_FUNCTIONS}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{\_CYTHON\_FUNCTIONS}{\_CYTHON\_FUNCTIONS}}
+{\footnotesize\ttfamily dict pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+\_\+\+CYTHON\+\_\+\+FUNCTIONS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}aggregate"{}}:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}any"{}}:\ functools.partial(libgroupby.group\_any\_all,\ val\_test=\textcolor{stringliteral}{"{}any"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}all"{}}:\ functools.partial(libgroupby.group\_any\_all,\ val\_test=\textcolor{stringliteral}{"{}all"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}sum"{}}:\ \textcolor{stringliteral}{"{}group\_sum"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}prod"{}}:\ \textcolor{stringliteral}{"{}group\_prod"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}idxmin"{}}:\ functools.partial(libgroupby.group\_idxmin\_idxmax,\ name=\textcolor{stringliteral}{"{}idxmin"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}idxmax"{}}:\ functools.partial(libgroupby.group\_idxmin\_idxmax,\ name=\textcolor{stringliteral}{"{}idxmax"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}min"{}}:\ \textcolor{stringliteral}{"{}group\_min"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}max"{}}:\ \textcolor{stringliteral}{"{}group\_max"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}mean"{}}:\ \textcolor{stringliteral}{"{}group\_mean"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}median"{}}:\ \textcolor{stringliteral}{"{}group\_median\_float64"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}var"{}}:\ \textcolor{stringliteral}{"{}group\_var"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}std"{}}:\ functools.partial(libgroupby.group\_var,\ name=\textcolor{stringliteral}{"{}std"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}sem"{}}:\ functools.partial(libgroupby.group\_var,\ name=\textcolor{stringliteral}{"{}sem"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}skew"{}}:\ \textcolor{stringliteral}{"{}group\_skew"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}first"{}}:\ \textcolor{stringliteral}{"{}group\_nth"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}last"{}}:\ \textcolor{stringliteral}{"{}group\_last"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}ohlc"{}}:\ \textcolor{stringliteral}{"{}group\_ohlc"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}transform"{}}:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}cumprod"{}}:\ \textcolor{stringliteral}{"{}group\_cumprod"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}cumsum"{}}:\ \textcolor{stringliteral}{"{}group\_cumsum"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}cummin"{}}:\ \textcolor{stringliteral}{"{}group\_cummin"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}cummax"{}}:\ \textcolor{stringliteral}{"{}group\_cummax"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}rank"{}}:\ \textcolor{stringliteral}{"{}group\_rank"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad0f3389a1cd8f1820d3933844fd82dea}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_ad0f3389a1cd8f1820d3933844fd82dea} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!cast\_blocklist@{cast\_blocklist}}
+\index{cast\_blocklist@{cast\_blocklist}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{cast\_blocklist}{cast\_blocklist}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+cast\+\_\+blocklist\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ frozenset(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}any"{}},\ \textcolor{stringliteral}{"{}all"{}},\ \textcolor{stringliteral}{"{}rank"{}},\ \textcolor{stringliteral}{"{}count"{}},\ \textcolor{stringliteral}{"{}size"{}},\ \textcolor{stringliteral}{"{}idxmin"{}},\ \textcolor{stringliteral}{"{}idxmax"{}}]}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a6fe613dbbcda46983d8303faf4f493e0}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a6fe613dbbcda46983d8303faf4f493e0} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!has\_dropped\_na@{has\_dropped\_na}}
+\index{has\_dropped\_na@{has\_dropped\_na}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{has\_dropped\_na}{has\_dropped\_na}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+has\+\_\+dropped\+\_\+na}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a942f252adb10ac74e964f53965163bc3}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a942f252adb10ac74e964f53965163bc3} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!how@{how}}
+\index{how@{how}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{how}{how}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+how}
+
+\Hypertarget{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a9fdff04f1550db6ab49b26d867c6c37e}\label{classpandas_1_1core_1_1groupby_1_1ops_1_1WrappedCythonOp_a9fdff04f1550db6ab49b26d867c6c37e} 
+\index{pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}!kind@{kind}}
+\index{kind@{kind}!pandas.core.groupby.ops.WrappedCythonOp@{pandas.core.groupby.ops.WrappedCythonOp}}
+\doxysubsubsection{\texorpdfstring{kind}{kind}}
+{\footnotesize\ttfamily pandas.\+core.\+groupby.\+ops.\+Wrapped\+Cython\+Op.\+kind}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/core/groupby/\mbox{\hyperlink{core_2groupby_2ops_8py}{ops.\+py}}\end{DoxyCompactItemize}

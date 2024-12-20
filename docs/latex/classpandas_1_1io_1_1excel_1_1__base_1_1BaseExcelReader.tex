@@ -1,0 +1,241 @@
+\doxysection{Référence de la classe pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader}
+\hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader}{}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader}\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+
+
+Graphe d\textquotesingle{}héritage de pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader\+:
+% FIG 0
+
+
+Graphe de collaboration de pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac442294ef02b97562e1b741ab82a8a6b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, filepath\+\_\+or\+\_\+buffer, Storage\+Options\texorpdfstring{$\vert$}{|}None storage\+\_\+options=None, dict\texorpdfstring{$\vert$}{|}None engine\+\_\+kwargs=None)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1io_1_1excel_1_1__base_a7d31fa3d0358e92f4fa45a73649a0312}{\+\_\+\+WorkbookT}} \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aca523cdb817250058ff6468faefdc616}{load\+\_\+workbook}} (self, filepath\+\_\+or\+\_\+buffer, engine\+\_\+kwargs)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac6cd3ff94db173459ff313298a080e55}{close}} (self)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a996a582ac14e0dd305371985a5eedded}{sheet\+\_\+names}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a8cab417a14a996bd6f9ef3da8fa53f5f}{get\+\_\+sheet\+\_\+by\+\_\+name}} (self, str name)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a1069e280e62f0c441bc4e2b3c1be8562}{get\+\_\+sheet\+\_\+by\+\_\+index}} (self, int index)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac7e422deb757b04cb94d630de26db3d7}{get\+\_\+sheet\+\_\+data}} (self, sheet, int\texorpdfstring{$\vert$}{|}None rows=None)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aae66137fbbe4b4c9479bdd04c96d6e5f}{raise\+\_\+if\+\_\+bad\+\_\+sheet\+\_\+by\+\_\+index}} (self, int index)
+\item 
+None \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a5ad871c4c71a7dffa875df73c9d70fa1}{raise\+\_\+if\+\_\+bad\+\_\+sheet\+\_\+by\+\_\+name}} (self, str name)
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a201713b7bd9c9fac6a1f6e80cced4673}{parse}} (self, str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}list\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}list\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None sheet\+\_\+name=0, int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None header=0, \mbox{\hyperlink{classpandas_1_1__typing_1_1SequenceNotStr}{Sequence\+Not\+Str}}\mbox{[}Hashable\mbox{]}\texorpdfstring{$\vert$}{|}range\texorpdfstring{$\vert$}{|}None names=None, int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None index\+\_\+col=None, usecols=None, Dtype\+Arg\texorpdfstring{$\vert$}{|}None dtype=None, Iterable\mbox{[}Hashable\mbox{]}\texorpdfstring{$\vert$}{|}None true\+\_\+values=None, Iterable\mbox{[}Hashable\mbox{]}\texorpdfstring{$\vert$}{|}None false\+\_\+values=None, Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}Callable\mbox{[}\mbox{[}int\mbox{]}, object\mbox{]}\texorpdfstring{$\vert$}{|}None skiprows=None, int\texorpdfstring{$\vert$}{|}None nrows=None, na\+\_\+values=None, bool verbose=False, list\texorpdfstring{$\vert$}{|}dict\texorpdfstring{$\vert$}{|}bool parse\+\_\+dates=False, Callable\texorpdfstring{$\vert$}{|}lib.\+No\+Default date\+\_\+parser=lib.\+no\+\_\+default, dict\mbox{[}Hashable, str\mbox{]}\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None date\+\_\+format=None, str\texorpdfstring{$\vert$}{|}None thousands=None, str decimal="{}."{}, str\texorpdfstring{$\vert$}{|}None comment=None, int skipfooter=0, Dtype\+Backend\texorpdfstring{$\vert$}{|}lib.\+No\+Default dtype\+\_\+backend=lib.\+no\+\_\+default, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a6ba7b588d702fb40d7e438610ca764df}{handles}}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_af3c8cd799fe9fae595c7b9ed08e1eaba}{book}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1io_1_1excel_1_1__base_a7d31fa3d0358e92f4fa45a73649a0312}{\+\_\+\+WorkbookT}} \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac4e381a57f639de36925562f3d650617}{book}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+type\mbox{[}\mbox{\hyperlink{namespacepandas_1_1io_1_1excel_1_1__base_a7d31fa3d0358e92f4fa45a73649a0312}{\+\_\+\+WorkbookT}}\mbox{]} \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aa506d3035fb4828e86b87a34ef53bd11}{\+\_\+workbook\+\_\+class}} (self)
+\item 
+int \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a433d1052a246b92b4e067122eff661d9}{\+\_\+check\+\_\+skiprows\+\_\+func}} (self, Callable skiprows, int rows\+\_\+to\+\_\+use)
+\item 
+int\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac02359a11367ddb3fcb4d002fcfffe43}{\+\_\+calc\+\_\+rows}} (self, int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None header, int\texorpdfstring{$\vert$}{|}Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}None index\+\_\+col, Sequence\mbox{[}int\mbox{]}\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}Callable\mbox{[}\mbox{[}int\mbox{]}, object\mbox{]}\texorpdfstring{$\vert$}{|}None skiprows, int\texorpdfstring{$\vert$}{|}None nrows)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_afc0e75e67b635fe6966b84bf8a45a5ba}{\+\_\+workbook\+\_\+class}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac442294ef02b97562e1b741ab82a8a6b}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac442294ef02b97562e1b741ab82a8a6b} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filepath\+\_\+or\+\_\+buffer,  }\item[{Storage\+Options \texorpdfstring{$\vert$}{|} None }]{storage\+\_\+options = {\ttfamily None},  }\item[{dict \texorpdfstring{$\vert$}{|} None }]{engine\+\_\+kwargs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__xlrd_1_1XlrdReader_a26231235d10ea2f36361e3dc8d1876e1}{pandas.\+io.\+excel.\+\_\+xlrd.\+Xlrd\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__calamine_1_1CalamineReader_a9005a60337ec4681cb6e92d2ef003681}{pandas.\+io.\+excel.\+\_\+calamine.\+Calamine\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__odfreader_1_1ODFReader_ab911a12030aba276cafc1ee3b40d1671}{pandas.\+io.\+excel.\+\_\+odfreader.\+ODFReader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__openpyxl_1_1OpenpyxlReader_aa91afd9a7146c2b4996d69ba6bec8082}{pandas.\+io.\+excel.\+\_\+openpyxl.\+Openpyxl\+Reader}}, et \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__pyxlsb_1_1PyxlsbReader_a706077aa2587f8fa53b61f951e89570e}{pandas.\+io.\+excel.\+\_\+pyxlsb.\+Pyxlsb\+Reader}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac02359a11367ddb3fcb4d002fcfffe43}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac02359a11367ddb3fcb4d002fcfffe43} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!\_calc\_rows@{\_calc\_rows}}
+\index{\_calc\_rows@{\_calc\_rows}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{\_calc\_rows()}{\_calc\_rows()}}
+{\footnotesize\ttfamily  int \texorpdfstring{$\vert$}{|} None pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+\_\+calc\+\_\+rows (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int \texorpdfstring{$\vert$}{|} Sequence\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} None}]{header,  }\item[{int \texorpdfstring{$\vert$}{|} Sequence\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} None}]{index\+\_\+col,  }\item[{Sequence\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} Callable\mbox{[}\mbox{[}int\mbox{]}, object\mbox{]} \texorpdfstring{$\vert$}{|} None}]{skiprows,  }\item[{int \texorpdfstring{$\vert$}{|} None}]{nrows }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}If nrows specified, find the number of rows needed from the
+file, otherwise return None.
+
+
+Parameters
+----------
+header : int, list of int, or None
+    See read_excel docstring.
+index_col : int, str, list of int, or None
+    See read_excel docstring.
+skiprows : list-like, int, callable, or None
+    See read_excel docstring.
+nrows : int or None
+    See read_excel docstring.
+
+Returns
+-------
+int or None
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a433d1052a246b92b4e067122eff661d9}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a433d1052a246b92b4e067122eff661d9} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!\_check\_skiprows\_func@{\_check\_skiprows\_func}}
+\index{\_check\_skiprows\_func@{\_check\_skiprows\_func}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{\_check\_skiprows\_func()}{\_check\_skiprows\_func()}}
+{\footnotesize\ttfamily  int pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+\_\+check\+\_\+skiprows\+\_\+func (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Callable}]{skiprows,  }\item[{int}]{rows\+\_\+to\+\_\+use }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Determine how many file rows are required to obtain `nrows` data
+rows when `skiprows` is a function.
+
+Parameters
+----------
+skiprows : function
+    The function passed to read_excel by the user.
+rows_to_use : int
+    The number of rows that will be needed for the header and
+    the data.
+
+Returns
+-------
+int
+\end{DoxyVerb}
+ \Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aa506d3035fb4828e86b87a34ef53bd11}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aa506d3035fb4828e86b87a34ef53bd11} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!\_workbook\_class@{\_workbook\_class}}
+\index{\_workbook\_class@{\_workbook\_class}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{\_workbook\_class()}{\_workbook\_class()}}
+{\footnotesize\ttfamily  type\mbox{[}\mbox{\hyperlink{namespacepandas_1_1io_1_1excel_1_1__base_a7d31fa3d0358e92f4fa45a73649a0312}{\+\_\+\+WorkbookT}}\mbox{]} pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+\_\+workbook\+\_\+class (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__calamine_1_1CalamineReader_ac65624355a42304d085a9e27e110ba60}{pandas.\+io.\+excel.\+\_\+calamine.\+Calamine\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__odfreader_1_1ODFReader_a71e8ae2e8337a4188e5b43d62981a805}{pandas.\+io.\+excel.\+\_\+odfreader.\+ODFReader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__openpyxl_1_1OpenpyxlReader_ab4c5811022a3644f1c4397387dcc50ba}{pandas.\+io.\+excel.\+\_\+openpyxl.\+Openpyxl\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__pyxlsb_1_1PyxlsbReader_a0268a82d065599504ff3a240bb391b75}{pandas.\+io.\+excel.\+\_\+pyxlsb.\+Pyxlsb\+Reader}}, et \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__xlrd_1_1XlrdReader_afa4a71d425de0c82cc6416ac2b3cf2ae}{pandas.\+io.\+excel.\+\_\+xlrd.\+Xlrd\+Reader}}.
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac6cd3ff94db173459ff313298a080e55}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac6cd3ff94db173459ff313298a080e55} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!close@{close}}
+\index{close@{close}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a1069e280e62f0c441bc4e2b3c1be8562}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a1069e280e62f0c441bc4e2b3c1be8562} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!get\_sheet\_by\_index@{get\_sheet\_by\_index}}
+\index{get\_sheet\_by\_index@{get\_sheet\_by\_index}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{get\_sheet\_by\_index()}{get\_sheet\_by\_index()}}
+{\footnotesize\ttfamily pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+get\+\_\+sheet\+\_\+by\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__xlrd_1_1XlrdReader_a2991bc65d59d607ce8335ef4dff78509}{pandas.\+io.\+excel.\+\_\+xlrd.\+Xlrd\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__calamine_1_1CalamineReader_aa6df7c39e5edee734246663e27475839}{pandas.\+io.\+excel.\+\_\+calamine.\+Calamine\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__odfreader_1_1ODFReader_acbe4f331222589c2ff21554f0c19039f}{pandas.\+io.\+excel.\+\_\+odfreader.\+ODFReader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__openpyxl_1_1OpenpyxlReader_a83e4b063f4a8e7e3f1ba5b5128f5556f}{pandas.\+io.\+excel.\+\_\+openpyxl.\+Openpyxl\+Reader}}, et \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__pyxlsb_1_1PyxlsbReader_a5c6e994ae6903d50763676f8cf3bfc1d}{pandas.\+io.\+excel.\+\_\+pyxlsb.\+Pyxlsb\+Reader}}.
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a8cab417a14a996bd6f9ef3da8fa53f5f}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a8cab417a14a996bd6f9ef3da8fa53f5f} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!get\_sheet\_by\_name@{get\_sheet\_by\_name}}
+\index{get\_sheet\_by\_name@{get\_sheet\_by\_name}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{get\_sheet\_by\_name()}{get\_sheet\_by\_name()}}
+{\footnotesize\ttfamily pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+get\+\_\+sheet\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__xlrd_1_1XlrdReader_ad8c34469793823ea266008478e30930b}{pandas.\+io.\+excel.\+\_\+xlrd.\+Xlrd\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__calamine_1_1CalamineReader_aaaa4a1afe0b229725a4ac384cd51c025}{pandas.\+io.\+excel.\+\_\+calamine.\+Calamine\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__odfreader_1_1ODFReader_a99ac36796023c689a106495e4b910db0}{pandas.\+io.\+excel.\+\_\+odfreader.\+ODFReader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__openpyxl_1_1OpenpyxlReader_a35263a0fd9f9804d167e31e1b92c346c}{pandas.\+io.\+excel.\+\_\+openpyxl.\+Openpyxl\+Reader}}, et \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__pyxlsb_1_1PyxlsbReader_a2452acdc8f8b4f961891fb1595b481dd}{pandas.\+io.\+excel.\+\_\+pyxlsb.\+Pyxlsb\+Reader}}.
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac7e422deb757b04cb94d630de26db3d7}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac7e422deb757b04cb94d630de26db3d7} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!get\_sheet\_data@{get\_sheet\_data}}
+\index{get\_sheet\_data@{get\_sheet\_data}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{get\_sheet\_data()}{get\_sheet\_data()}}
+{\footnotesize\ttfamily pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+get\+\_\+sheet\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sheet,  }\item[{int \texorpdfstring{$\vert$}{|} None }]{rows = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__calamine_1_1CalamineReader_a43fa867d7f129023b3c5ff99b410b280}{pandas.\+io.\+excel.\+\_\+calamine.\+Calamine\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__odfreader_1_1ODFReader_af94dd5cf317e27a1a17f30151ecd8976}{pandas.\+io.\+excel.\+\_\+odfreader.\+ODFReader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__openpyxl_1_1OpenpyxlReader_a7b12fa9aef5b31e9743b3fada750c392}{pandas.\+io.\+excel.\+\_\+openpyxl.\+Openpyxl\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__pyxlsb_1_1PyxlsbReader_af5d5b1f3ff8f7a1afdec9f34af492c85}{pandas.\+io.\+excel.\+\_\+pyxlsb.\+Pyxlsb\+Reader}}, et \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__xlrd_1_1XlrdReader_a9506ba4684cb807d474166bdcdaf40c2}{pandas.\+io.\+excel.\+\_\+xlrd.\+Xlrd\+Reader}}.
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aca523cdb817250058ff6468faefdc616}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aca523cdb817250058ff6468faefdc616} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!load\_workbook@{load\_workbook}}
+\index{load\_workbook@{load\_workbook}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{load\_workbook()}{load\_workbook()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{namespacepandas_1_1io_1_1excel_1_1__base_a7d31fa3d0358e92f4fa45a73649a0312}{\+\_\+\+WorkbookT}} pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+load\+\_\+workbook (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filepath\+\_\+or\+\_\+buffer,  }\item[{}]{engine\+\_\+kwargs }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__xlrd_1_1XlrdReader_a1b4d31644cf945b0f66e405069fc46c5}{pandas.\+io.\+excel.\+\_\+xlrd.\+Xlrd\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__calamine_1_1CalamineReader_a933e4f37c06601d951dc0df78b8940a7}{pandas.\+io.\+excel.\+\_\+calamine.\+Calamine\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__odfreader_1_1ODFReader_adaf226be3b06937c8c92297917a0a9f6}{pandas.\+io.\+excel.\+\_\+odfreader.\+ODFReader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__openpyxl_1_1OpenpyxlReader_a6d2024f36686ef50af96011517ffb14b}{pandas.\+io.\+excel.\+\_\+openpyxl.\+Openpyxl\+Reader}}, et \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__pyxlsb_1_1PyxlsbReader_afebc3fa22dbfc7273fd1a661b61edca6}{pandas.\+io.\+excel.\+\_\+pyxlsb.\+Pyxlsb\+Reader}}.
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a201713b7bd9c9fac6a1f6e80cced4673}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a201713b7bd9c9fac6a1f6e80cced4673} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!parse@{parse}}
+\index{parse@{parse}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+parse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} list\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} list\mbox{[}str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{sheet\+\_\+name = {\ttfamily 0},  }\item[{int \texorpdfstring{$\vert$}{|} Sequence\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} None }]{header = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classpandas_1_1__typing_1_1SequenceNotStr}{Sequence\+Not\+Str}}\mbox{[}Hashable\mbox{]} \texorpdfstring{$\vert$}{|} range \texorpdfstring{$\vert$}{|} None }]{names = {\ttfamily None},  }\item[{int \texorpdfstring{$\vert$}{|} Sequence\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} None }]{index\+\_\+col = {\ttfamily None},  }\item[{}]{usecols = {\ttfamily None},  }\item[{Dtype\+Arg \texorpdfstring{$\vert$}{|} None }]{dtype = {\ttfamily None},  }\item[{Iterable\mbox{[}Hashable\mbox{]} \texorpdfstring{$\vert$}{|} None }]{true\+\_\+values = {\ttfamily None},  }\item[{Iterable\mbox{[}Hashable\mbox{]} \texorpdfstring{$\vert$}{|} None }]{false\+\_\+values = {\ttfamily None},  }\item[{Sequence\mbox{[}int\mbox{]} \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} Callable\mbox{[}\mbox{[}int\mbox{]}, object\mbox{]} \texorpdfstring{$\vert$}{|} None }]{skiprows = {\ttfamily None},  }\item[{int \texorpdfstring{$\vert$}{|} None }]{nrows = {\ttfamily None},  }\item[{}]{na\+\_\+values = {\ttfamily None},  }\item[{bool }]{verbose = {\ttfamily False},  }\item[{list \texorpdfstring{$\vert$}{|} dict \texorpdfstring{$\vert$}{|} bool }]{parse\+\_\+dates = {\ttfamily False},  }\item[{Callable \texorpdfstring{$\vert$}{|} lib.\+No\+Default }]{date\+\_\+parser = {\ttfamily lib.no\+\_\+default},  }\item[{dict\mbox{[}Hashable, str\mbox{]} \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{date\+\_\+format = {\ttfamily None},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{thousands = {\ttfamily None},  }\item[{str }]{decimal = {\ttfamily "{}."{}},  }\item[{str \texorpdfstring{$\vert$}{|} None }]{comment = {\ttfamily None},  }\item[{int }]{skipfooter = {\ttfamily 0},  }\item[{Dtype\+Backend \texorpdfstring{$\vert$}{|} lib.\+No\+Default }]{dtype\+\_\+backend = {\ttfamily lib.no\+\_\+default},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aae66137fbbe4b4c9479bdd04c96d6e5f}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_aae66137fbbe4b4c9479bdd04c96d6e5f} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!raise\_if\_bad\_sheet\_by\_index@{raise\_if\_bad\_sheet\_by\_index}}
+\index{raise\_if\_bad\_sheet\_by\_index@{raise\_if\_bad\_sheet\_by\_index}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{raise\_if\_bad\_sheet\_by\_index()}{raise\_if\_bad\_sheet\_by\_index()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+raise\+\_\+if\+\_\+bad\+\_\+sheet\+\_\+by\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a5ad871c4c71a7dffa875df73c9d70fa1}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a5ad871c4c71a7dffa875df73c9d70fa1} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!raise\_if\_bad\_sheet\_by\_name@{raise\_if\_bad\_sheet\_by\_name}}
+\index{raise\_if\_bad\_sheet\_by\_name@{raise\_if\_bad\_sheet\_by\_name}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{raise\_if\_bad\_sheet\_by\_name()}{raise\_if\_bad\_sheet\_by\_name()}}
+{\footnotesize\ttfamily  None pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+raise\+\_\+if\+\_\+bad\+\_\+sheet\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a996a582ac14e0dd305371985a5eedded}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a996a582ac14e0dd305371985a5eedded} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!sheet\_names@{sheet\_names}}
+\index{sheet\_names@{sheet\_names}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{sheet\_names()}{sheet\_names()}}
+{\footnotesize\ttfamily  list\mbox{[}str\mbox{]} pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+sheet\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__calamine_1_1CalamineReader_a142bab7740b2b0ccecad5ff93b880b33}{pandas.\+io.\+excel.\+\_\+calamine.\+Calamine\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__odfreader_1_1ODFReader_ab15cd1e0dae86fb8063095a9dc022a42}{pandas.\+io.\+excel.\+\_\+odfreader.\+ODFReader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__openpyxl_1_1OpenpyxlReader_adde786d8077cc7770919583d738e797b}{pandas.\+io.\+excel.\+\_\+openpyxl.\+Openpyxl\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__pyxlsb_1_1PyxlsbReader_a13e80c7da5bbe104177b38ba39dd3209}{pandas.\+io.\+excel.\+\_\+pyxlsb.\+Pyxlsb\+Reader}}, et \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__xlrd_1_1XlrdReader_af6c17ea3d935fb387ce70aefd90a4566}{pandas.\+io.\+excel.\+\_\+xlrd.\+Xlrd\+Reader}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_afc0e75e67b635fe6966b84bf8a45a5ba}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_afc0e75e67b635fe6966b84bf8a45a5ba} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!\_workbook\_class@{\_workbook\_class}}
+\index{\_workbook\_class@{\_workbook\_class}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{\_workbook\_class}{\_workbook\_class}}
+{\footnotesize\ttfamily pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+\_\+workbook\+\_\+class\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__calamine_1_1CalamineReader_ac65624355a42304d085a9e27e110ba60}{pandas.\+io.\+excel.\+\_\+calamine.\+Calamine\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__odfreader_1_1ODFReader_a71e8ae2e8337a4188e5b43d62981a805}{pandas.\+io.\+excel.\+\_\+odfreader.\+ODFReader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__openpyxl_1_1OpenpyxlReader_ab4c5811022a3644f1c4397387dcc50ba}{pandas.\+io.\+excel.\+\_\+openpyxl.\+Openpyxl\+Reader}}, \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__pyxlsb_1_1PyxlsbReader_a0268a82d065599504ff3a240bb391b75}{pandas.\+io.\+excel.\+\_\+pyxlsb.\+Pyxlsb\+Reader}}, et \mbox{\hyperlink{classpandas_1_1io_1_1excel_1_1__xlrd_1_1XlrdReader_afa4a71d425de0c82cc6416ac2b3cf2ae}{pandas.\+io.\+excel.\+\_\+xlrd.\+Xlrd\+Reader}}.
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac4e381a57f639de36925562f3d650617}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_ac4e381a57f639de36925562f3d650617} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!book@{book}}
+\index{book@{book}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{book}{book}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepandas_1_1io_1_1excel_1_1__base_a7d31fa3d0358e92f4fa45a73649a0312}{\+\_\+\+WorkbookT}} pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+book\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_af3c8cd799fe9fae595c7b9ed08e1eaba}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_af3c8cd799fe9fae595c7b9ed08e1eaba} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!book@{book}}
+\index{book@{book}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{book}{book}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+book}
+
+\Hypertarget{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a6ba7b588d702fb40d7e438610ca764df}\label{classpandas_1_1io_1_1excel_1_1__base_1_1BaseExcelReader_a6ba7b588d702fb40d7e438610ca764df} 
+\index{pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}!handles@{handles}}
+\index{handles@{handles}!pandas.io.excel.\_base.BaseExcelReader@{pandas.io.excel.\_base.BaseExcelReader}}
+\doxysubsubsection{\texorpdfstring{handles}{handles}}
+{\footnotesize\ttfamily pandas.\+io.\+excel.\+\_\+base.\+Base\+Excel\+Reader.\+handles}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pandas/io/excel/\mbox{\hyperlink{__base_8py}{\+\_\+base.\+py}}\end{DoxyCompactItemize}

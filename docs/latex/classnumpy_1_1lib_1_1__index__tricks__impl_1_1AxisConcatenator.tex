@@ -1,0 +1,120 @@
+\doxysection{Référence de la classe numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator}
+\hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator}{}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator}\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+
+
+Graphe d\textquotesingle{}héritage de numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a0a1607b01b6b904d8acaa3c2237a5162}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_adba6b2ab24f4e694fa9f60d4e096f4b4}{axis}}=0, \mbox{\hyperlink{classnumpy_1_1matrixlib_1_1defmatrix_1_1matrix}{matrix}}=False, \mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a604e34a94ea65bc233a324a7c92a360a}{ndmin}}=1, \mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a99a734c5dfa2ab9d403939fcaec25d37}{trans1d}}=-\/1)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a4023ec123386b9bf2d4b1d058af08612}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a6fea830b4a3ddfb5425a15bedab96ad0}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_adba6b2ab24f4e694fa9f60d4e096f4b4}{axis}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a4b0ef21bf88e169a79b847c1d6af10fc}{matrix}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a99a734c5dfa2ab9d403939fcaec25d37}{trans1d}}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a604e34a94ea65bc233a324a7c92a360a}{ndmin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_ae93b52d340b8cc8b99722bf29063a8ca}{concatenate}} = staticmethod(\+\_\+nx.\+concatenate)
+\item 
+\mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_ab03b875c48d623e0dd0eeed02a81d1a7}{makemat}} = staticmethod(\mbox{\hyperlink{classnumpy_1_1matrixlib_1_1defmatrix_1_1matrix}{matrixlib.\+matrix}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Translates slice objects to concatenation along an axis.
+
+For detailed documentation on usage, see `r_`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a0a1607b01b6b904d8acaa3c2237a5162}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a0a1607b01b6b904d8acaa3c2237a5162} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{axis = {\ttfamily 0},  }\item[{}]{matrix = {\ttfamily False},  }\item[{}]{ndmin = {\ttfamily 1},  }\item[{}]{trans1d = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1RClass_a4535fe6c131ecc3159b1df0dbeb6709a}{numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+RClass}}, \mbox{\hyperlink{classnumpy_1_1lib_1_1__index__tricks__impl_1_1CClass_a43ff12fddca97c64ebd80560fec3cd7c}{numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+CClass}}, et \mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1mr__class_a343045ad4c879c9c115c4f6e315b611b}{numpy.\+ma.\+extras.\+mr\+\_\+class}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a4023ec123386b9bf2d4b1d058af08612}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a4023ec123386b9bf2d4b1d058af08612} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1MAxisConcatenator_a795645dbfdc7e28b81a2fbbb58fe3666}{numpy.\+ma.\+extras.\+MAxis\+Concatenator}}.
+
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a6fea830b4a3ddfb5425a15bedab96ad0}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a6fea830b4a3ddfb5425a15bedab96ad0} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_adba6b2ab24f4e694fa9f60d4e096f4b4}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_adba6b2ab24f4e694fa9f60d4e096f4b4} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!axis@{axis}}
+\index{axis@{axis}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{axis}{axis}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+axis}
+
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_ae93b52d340b8cc8b99722bf29063a8ca}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_ae93b52d340b8cc8b99722bf29063a8ca} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!concatenate@{concatenate}}
+\index{concatenate@{concatenate}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{concatenate}{concatenate}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+concatenate = staticmethod(\+\_\+nx.\+concatenate)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_ab03b875c48d623e0dd0eeed02a81d1a7}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_ab03b875c48d623e0dd0eeed02a81d1a7} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!makemat@{makemat}}
+\index{makemat@{makemat}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{makemat}{makemat}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+makemat = staticmethod(\mbox{\hyperlink{classnumpy_1_1matrixlib_1_1defmatrix_1_1matrix}{matrixlib.\+matrix}})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classnumpy_1_1ma_1_1extras_1_1MAxisConcatenator_a69e019305c02dc331b74be1c0efbb514}{numpy.\+ma.\+extras.\+MAxis\+Concatenator}}.
+
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a4b0ef21bf88e169a79b847c1d6af10fc}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a4b0ef21bf88e169a79b847c1d6af10fc} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!matrix@{matrix}}
+\index{matrix@{matrix}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+matrix}
+
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a604e34a94ea65bc233a324a7c92a360a}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a604e34a94ea65bc233a324a7c92a360a} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!ndmin@{ndmin}}
+\index{ndmin@{ndmin}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{ndmin}{ndmin}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+ndmin}
+
+\Hypertarget{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a99a734c5dfa2ab9d403939fcaec25d37}\label{classnumpy_1_1lib_1_1__index__tricks__impl_1_1AxisConcatenator_a99a734c5dfa2ab9d403939fcaec25d37} 
+\index{numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}!trans1d@{trans1d}}
+\index{trans1d@{trans1d}!numpy.lib.\_index\_tricks\_impl.AxisConcatenator@{numpy.lib.\_index\_tricks\_impl.AxisConcatenator}}
+\doxysubsubsection{\texorpdfstring{trans1d}{trans1d}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+index\+\_\+tricks\+\_\+impl.\+Axis\+Concatenator.\+trans1d}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/lib/\mbox{\hyperlink{__index__tricks__impl_8py}{\+\_\+index\+\_\+tricks\+\_\+impl.\+py}}\end{DoxyCompactItemize}

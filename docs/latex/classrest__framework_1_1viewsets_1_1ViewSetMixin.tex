@@ -1,0 +1,178 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin}
+\hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin}{}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin}\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin\+:
+% FIG 0
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a32f1cedadaf3b3c74006c618ca335b79}{as\+\_\+view}} (cls, actions=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}initkwargs)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_aae29efd7be01bf2169e46e6b1a78d0c4}{initialize\+\_\+request}} (self, \mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a213b1d5af7a7d9c922ccb7f8f40af30f}{request}}, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a9d987953d463e057444c3eaf8011d2fb}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a2eaa651f97f49bfe358de8bcadc3cde1}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_ab40d84858f913934b3708e174dafaf28}{reverse\+\_\+action}} (self, url\+\_\+name, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a9d987953d463e057444c3eaf8011d2fb}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a2eaa651f97f49bfe358de8bcadc3cde1}{kwargs}})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a916a08b7c0031033742c76b0aa68a68d}{get\+\_\+extra\+\_\+actions}} (cls)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a28b95f3bd62097e9d685869dff8ea07e}{get\+\_\+extra\+\_\+action\+\_\+url\+\_\+map}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_ab70587743f4ab14c6fbb04f587b19f36}{name}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a728e0685429cde228f59694098fa24bc}{description}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a1106e6f043341b9af01c195b78c5c323}{suffix}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_ace723a26c4747520dbc329d91e5caeb3}{detail}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_af2a1fc291c57836a5c44c44c63f0171a}{basename}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a913fb94fa1031060541151b2c47ed754}{action\+\_\+map}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a213b1d5af7a7d9c922ccb7f8f40af30f}{request}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a9d987953d463e057444c3eaf8011d2fb}{args}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a2eaa651f97f49bfe358de8bcadc3cde1}{kwargs}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a7e2ee085bd5026632f686706f24eb70f}{dispatch}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1viewsets_1_1ViewSetMixin_a26222d2aae094059f6f50d5b4ddb8613}{action}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This is the magic.
+
+Overrides `.as_view()` so that it takes an `actions` keyword that performs
+the binding of HTTP methods to actions on the Resource.
+
+For example, to create a concrete view binding the 'GET' and 'POST' methods
+to the 'list' and 'create' actions...
+
+view = MyViewSet.as_view({'get': 'list', 'post': 'create'})
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a32f1cedadaf3b3c74006c618ca335b79}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a32f1cedadaf3b3c74006c618ca335b79} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!as\_view@{as\_view}}
+\index{as\_view@{as\_view}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{as\_view()}{as\_view()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+as\+\_\+view (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{actions = {\ttfamily None},  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{initkwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Because of the way class based views create a closure around the
+instantiated view, we need to totally reimplement `.as_view`,
+and slightly modify the view function that is created and returned.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a28b95f3bd62097e9d685869dff8ea07e}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a28b95f3bd62097e9d685869dff8ea07e} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!get\_extra\_action\_url\_map@{get\_extra\_action\_url\_map}}
+\index{get\_extra\_action\_url\_map@{get\_extra\_action\_url\_map}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{get\_extra\_action\_url\_map()}{get\_extra\_action\_url\_map()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+get\+\_\+extra\+\_\+action\+\_\+url\+\_\+map (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a map of {names: urls} for the extra actions.
+
+This method will noop if `detail` was not provided as a view initkwarg.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a916a08b7c0031033742c76b0aa68a68d}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a916a08b7c0031033742c76b0aa68a68d} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!get\_extra\_actions@{get\_extra\_actions}}
+\index{get\_extra\_actions@{get\_extra\_actions}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{get\_extra\_actions()}{get\_extra\_actions()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+get\+\_\+extra\+\_\+actions (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the methods that are marked as an extra ViewSet `@action`.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_aae29efd7be01bf2169e46e6b1a78d0c4}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_aae29efd7be01bf2169e46e6b1a78d0c4} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!initialize\_request@{initialize\_request}}
+\index{initialize\_request@{initialize\_request}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{initialize\_request()}{initialize\_request()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+initialize\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the `.action` attribute on the view, depending on the request method.
+\end{DoxyVerb}
+ \Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_ab40d84858f913934b3708e174dafaf28}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_ab40d84858f913934b3708e174dafaf28} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!reverse\_action@{reverse\_action}}
+\index{reverse\_action@{reverse\_action}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{reverse\_action()}{reverse\_action()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+reverse\+\_\+action (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{url\+\_\+name,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reverse the action for the given `url_name`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a26222d2aae094059f6f50d5b4ddb8613}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a26222d2aae094059f6f50d5b4ddb8613} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!action@{action}}
+\index{action@{action}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+action}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a913fb94fa1031060541151b2c47ed754}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a913fb94fa1031060541151b2c47ed754} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!action\_map@{action\_map}}
+\index{action\_map@{action\_map}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{action\_map}{action\_map}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+action\+\_\+map}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a9d987953d463e057444c3eaf8011d2fb}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a9d987953d463e057444c3eaf8011d2fb} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!args@{args}}
+\index{args@{args}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+args}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_af2a1fc291c57836a5c44c44c63f0171a}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_af2a1fc291c57836a5c44c44c63f0171a} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!basename@{basename}}
+\index{basename@{basename}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{basename}{basename}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+basename}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a728e0685429cde228f59694098fa24bc}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a728e0685429cde228f59694098fa24bc} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!description@{description}}
+\index{description@{description}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+description}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_ace723a26c4747520dbc329d91e5caeb3}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_ace723a26c4747520dbc329d91e5caeb3} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!detail@{detail}}
+\index{detail@{detail}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{detail}{detail}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+detail}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a7e2ee085bd5026632f686706f24eb70f}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a7e2ee085bd5026632f686706f24eb70f} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{dispatch}{dispatch}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+dispatch}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a2eaa651f97f49bfe358de8bcadc3cde1}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a2eaa651f97f49bfe358de8bcadc3cde1} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!kwargs@{kwargs}}
+\index{kwargs@{kwargs}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{kwargs}{kwargs}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+kwargs}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_ab70587743f4ab14c6fbb04f587b19f36}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_ab70587743f4ab14c6fbb04f587b19f36} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!name@{name}}
+\index{name@{name}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+name}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a213b1d5af7a7d9c922ccb7f8f40af30f}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a213b1d5af7a7d9c922ccb7f8f40af30f} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!request@{request}}
+\index{request@{request}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+request}
+
+\Hypertarget{classrest__framework_1_1viewsets_1_1ViewSetMixin_a1106e6f043341b9af01c195b78c5c323}\label{classrest__framework_1_1viewsets_1_1ViewSetMixin_a1106e6f043341b9af01c195b78c5c323} 
+\index{rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}!suffix@{suffix}}
+\index{suffix@{suffix}!rest\_framework.viewsets.ViewSetMixin@{rest\_framework.viewsets.ViewSetMixin}}
+\doxysubsubsection{\texorpdfstring{suffix}{suffix}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+viewsets.\+View\+Set\+Mixin.\+suffix}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{viewsets_8py}{viewsets.\+py}}\end{DoxyCompactItemize}

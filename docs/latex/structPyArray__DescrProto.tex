@@ -1,0 +1,141 @@
+\doxysection{Référence de la structure Py\+Array\+\_\+\+Descr\+Proto}
+\hypertarget{structPyArray__DescrProto}{}\label{structPyArray__DescrProto}\index{PyArray\_DescrProto@{PyArray\_DescrProto}}
+
+
+{\ttfamily \#include $<$ndarraytypes.\+h$>$}
+
+
+
+Graphe de collaboration de Py\+Array\+\_\+\+Descr\+Proto\+:
+% FIG 0
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+Py\+Object\+\_\+\+HEAD Py\+Type\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyArray__DescrProto_ad00cb096d3ed762f9695f323d24a30cb}{typeobj}}
+\item 
+char \mbox{\hyperlink{structPyArray__DescrProto_a6fb68fbc7ae3666f585dc8379d9de20a}{kind}}
+\item 
+char \mbox{\hyperlink{structPyArray__DescrProto_a47194b4d11d11c86b689559e8054b9a5}{type}}
+\item 
+char \mbox{\hyperlink{structPyArray__DescrProto_aae59778eac0f8d1824c91006e3673f36}{byteorder}}
+\item 
+char \mbox{\hyperlink{structPyArray__DescrProto_a12a425be0257b44607cdc7a0804cbce3}{flags}}
+\item 
+int \mbox{\hyperlink{structPyArray__DescrProto_a9dd72d6d07e2a5c3cf1099971962ab54}{type\+\_\+num}}
+\item 
+int \mbox{\hyperlink{structPyArray__DescrProto_aa3d76dac63d342a807e298ce26b6efc3}{elsize}}
+\item 
+int \mbox{\hyperlink{structPyArray__DescrProto_a52adc153c8d0b4c5fc624160b61bf436}{alignment}}
+\item 
+struct \mbox{\hyperlink{struct__arr__descr}{\+\_\+arr\+\_\+descr}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyArray__DescrProto_a18529b8935b89b75fe434425bb977204}{subarray}}
+\item 
+Py\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyArray__DescrProto_abfa8d53a40028c8ebabbfc4ea950d0a5}{fields}}
+\item 
+Py\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyArray__DescrProto_ae5a3bb5822515fe8a92393aca3757c7f}{names}}
+\item 
+\mbox{\hyperlink{structPyArray__ArrFuncs}{Py\+Array\+\_\+\+Arr\+Funcs}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyArray__DescrProto_a11777fd27dd0a8cee2590d6f869b5709}{f}}
+\item 
+Py\+Object \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyArray__DescrProto_a4865eb1698310fbb34ec0feb14a42820}{metadata}}
+\item 
+\mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structPyArray__DescrProto_ace0d28e8eadc4fecd4b8d9d7a460fc06}{c\+\_\+metadata}}
+\item 
+\mbox{\hyperlink{npy__common_8h_a8e19510dec13243663db068bf658112c}{npy\+\_\+hash\+\_\+t}} \mbox{\hyperlink{structPyArray__DescrProto_a9b9c0417c7feabd6202b831f687883ee}{hash}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{structPyArray__DescrProto_a52adc153c8d0b4c5fc624160b61bf436}\label{structPyArray__DescrProto_a52adc153c8d0b4c5fc624160b61bf436} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!alignment@{alignment}}
+\index{alignment@{alignment}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{alignment}{alignment}}
+{\footnotesize\ttfamily int Py\+Array\+\_\+\+Descr\+Proto\+::alignment}
+
+\Hypertarget{structPyArray__DescrProto_aae59778eac0f8d1824c91006e3673f36}\label{structPyArray__DescrProto_aae59778eac0f8d1824c91006e3673f36} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!byteorder@{byteorder}}
+\index{byteorder@{byteorder}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{byteorder}{byteorder}}
+{\footnotesize\ttfamily char Py\+Array\+\_\+\+Descr\+Proto\+::byteorder}
+
+\Hypertarget{structPyArray__DescrProto_ace0d28e8eadc4fecd4b8d9d7a460fc06}\label{structPyArray__DescrProto_ace0d28e8eadc4fecd4b8d9d7a460fc06} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!c\_metadata@{c\_metadata}}
+\index{c\_metadata@{c\_metadata}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{c\_metadata}{c\_metadata}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ndarraytypes_8h_a1f4020347b3c55cf6320697d1a3dca83}{Npy\+Aux\+Data}}\texorpdfstring{$\ast$}{*} Py\+Array\+\_\+\+Descr\+Proto\+::c\+\_\+metadata}
+
+\Hypertarget{structPyArray__DescrProto_aa3d76dac63d342a807e298ce26b6efc3}\label{structPyArray__DescrProto_aa3d76dac63d342a807e298ce26b6efc3} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!elsize@{elsize}}
+\index{elsize@{elsize}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{elsize}{elsize}}
+{\footnotesize\ttfamily int Py\+Array\+\_\+\+Descr\+Proto\+::elsize}
+
+\Hypertarget{structPyArray__DescrProto_a11777fd27dd0a8cee2590d6f869b5709}\label{structPyArray__DescrProto_a11777fd27dd0a8cee2590d6f869b5709} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!f@{f}}
+\index{f@{f}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPyArray__ArrFuncs}{Py\+Array\+\_\+\+Arr\+Funcs}}\texorpdfstring{$\ast$}{*} Py\+Array\+\_\+\+Descr\+Proto\+::f}
+
+\Hypertarget{structPyArray__DescrProto_abfa8d53a40028c8ebabbfc4ea950d0a5}\label{structPyArray__DescrProto_abfa8d53a40028c8ebabbfc4ea950d0a5} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!fields@{fields}}
+\index{fields@{fields}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{fields}{fields}}
+{\footnotesize\ttfamily Py\+Object\texorpdfstring{$\ast$}{*} Py\+Array\+\_\+\+Descr\+Proto\+::fields}
+
+\Hypertarget{structPyArray__DescrProto_a12a425be0257b44607cdc7a0804cbce3}\label{structPyArray__DescrProto_a12a425be0257b44607cdc7a0804cbce3} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!flags@{flags}}
+\index{flags@{flags}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily char Py\+Array\+\_\+\+Descr\+Proto\+::flags}
+
+\Hypertarget{structPyArray__DescrProto_a9b9c0417c7feabd6202b831f687883ee}\label{structPyArray__DescrProto_a9b9c0417c7feabd6202b831f687883ee} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!hash@{hash}}
+\index{hash@{hash}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{hash}{hash}}
+{\footnotesize\ttfamily \mbox{\hyperlink{npy__common_8h_a8e19510dec13243663db068bf658112c}{npy\+\_\+hash\+\_\+t}} Py\+Array\+\_\+\+Descr\+Proto\+::hash}
+
+\Hypertarget{structPyArray__DescrProto_a6fb68fbc7ae3666f585dc8379d9de20a}\label{structPyArray__DescrProto_a6fb68fbc7ae3666f585dc8379d9de20a} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!kind@{kind}}
+\index{kind@{kind}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{kind}{kind}}
+{\footnotesize\ttfamily char Py\+Array\+\_\+\+Descr\+Proto\+::kind}
+
+\Hypertarget{structPyArray__DescrProto_a4865eb1698310fbb34ec0feb14a42820}\label{structPyArray__DescrProto_a4865eb1698310fbb34ec0feb14a42820} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!metadata@{metadata}}
+\index{metadata@{metadata}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{metadata}{metadata}}
+{\footnotesize\ttfamily Py\+Object\texorpdfstring{$\ast$}{*} Py\+Array\+\_\+\+Descr\+Proto\+::metadata}
+
+\Hypertarget{structPyArray__DescrProto_ae5a3bb5822515fe8a92393aca3757c7f}\label{structPyArray__DescrProto_ae5a3bb5822515fe8a92393aca3757c7f} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!names@{names}}
+\index{names@{names}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily Py\+Object\texorpdfstring{$\ast$}{*} Py\+Array\+\_\+\+Descr\+Proto\+::names}
+
+\Hypertarget{structPyArray__DescrProto_a18529b8935b89b75fe434425bb977204}\label{structPyArray__DescrProto_a18529b8935b89b75fe434425bb977204} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!subarray@{subarray}}
+\index{subarray@{subarray}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{subarray}{subarray}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct__arr__descr}{\+\_\+arr\+\_\+descr}}\texorpdfstring{$\ast$}{*} Py\+Array\+\_\+\+Descr\+Proto\+::subarray}
+
+\Hypertarget{structPyArray__DescrProto_a47194b4d11d11c86b689559e8054b9a5}\label{structPyArray__DescrProto_a47194b4d11d11c86b689559e8054b9a5} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!type@{type}}
+\index{type@{type}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily char Py\+Array\+\_\+\+Descr\+Proto\+::type}
+
+\Hypertarget{structPyArray__DescrProto_a9dd72d6d07e2a5c3cf1099971962ab54}\label{structPyArray__DescrProto_a9dd72d6d07e2a5c3cf1099971962ab54} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!type\_num@{type\_num}}
+\index{type\_num@{type\_num}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{type\_num}{type\_num}}
+{\footnotesize\ttfamily int Py\+Array\+\_\+\+Descr\+Proto\+::type\+\_\+num}
+
+\Hypertarget{structPyArray__DescrProto_ad00cb096d3ed762f9695f323d24a30cb}\label{structPyArray__DescrProto_ad00cb096d3ed762f9695f323d24a30cb} 
+\index{PyArray\_DescrProto@{PyArray\_DescrProto}!typeobj@{typeobj}}
+\index{typeobj@{typeobj}!PyArray\_DescrProto@{PyArray\_DescrProto}}
+\doxysubsubsection{\texorpdfstring{typeobj}{typeobj}}
+{\footnotesize\ttfamily Py\+Object\+\_\+\+HEAD Py\+Type\+Object\texorpdfstring{$\ast$}{*} Py\+Array\+\_\+\+Descr\+Proto\+::typeobj}
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\+\_\+core/include/numpy/\mbox{\hyperlink{ndarraytypes_8h}{ndarraytypes.\+h}}\end{DoxyCompactItemize}

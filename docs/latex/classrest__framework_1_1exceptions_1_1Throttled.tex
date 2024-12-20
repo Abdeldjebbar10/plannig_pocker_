@@ -1,0 +1,113 @@
+\doxysection{Référence de la classe rest\+\_\+framework.\+exceptions.\+Throttled}
+\hypertarget{classrest__framework_1_1exceptions_1_1Throttled}{}\label{classrest__framework_1_1exceptions_1_1Throttled}\index{rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}}
+
+
+Graphe d\textquotesingle{}héritage de rest\+\_\+framework.\+exceptions.\+Throttled\+:
+% FIG 0
+
+
+Graphe de collaboration de rest\+\_\+framework.\+exceptions.\+Throttled\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_a98192761d99733ef2acb04a2dd15761f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_ab1cc6fd06319f90593cd8e6050375bbc}{wait}}=None, \mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_afba14d7a8dc23685b5be5818491f9329}{detail}}=None, code=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException}{rest\+\_\+framework.\+exceptions.\+APIException}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_a53de5dda083b6e376de525b99418a174}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_ae6fd5642270650f56ef4a05e5b1b6a9a}{get\+\_\+codes}} (self)
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_ab5c66521eb5500a24ac569caa6f228d8}{get\+\_\+full\+\_\+details}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_ab1cc6fd06319f90593cd8e6050375bbc}{wait}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException}{rest\+\_\+framework.\+exceptions.\+APIException}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_afba14d7a8dc23685b5be5818491f9329}{detail}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_a42100503132bb6b5e10f1a23acef7e51}{status\+\_\+code}} = \mbox{\hyperlink{namespacerest__framework_1_1status_a32176dc12cc69efe9a60b1b17db78f18}{status.\+HTTP\+\_\+429\+\_\+\+TOO\+\_\+\+MANY\+\_\+\+REQUESTS}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_a0da7aaae10566b4cb74090ecba13512f}{default\+\_\+detail}} = \+\_\+(\textquotesingle{}Request was throttled.\textquotesingle{})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_a13cc8bb05e4d9337353e66ac2ccd2d70}{extra\+\_\+detail\+\_\+singular}} = \+\_\+(\textquotesingle{}Expected available in \{\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_ab1cc6fd06319f90593cd8e6050375bbc}{wait}}\} second.\textquotesingle{})
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_ac69d6b6daf8ca3e116bc87a7d186ca21}{extra\+\_\+detail\+\_\+plural}} = \+\_\+(\textquotesingle{}Expected available in \{\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_ab1cc6fd06319f90593cd8e6050375bbc}{wait}}\} seconds.\textquotesingle{})
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_acce1d4482d8ef81858c67558f2ea47aa}{default\+\_\+code}} = \textquotesingle{}throttled\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException}{rest\+\_\+framework.\+exceptions.\+APIException}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_a698de7fd577e089f5ea9ac24451a3760}{status\+\_\+code}} = \mbox{\hyperlink{namespacerest__framework_1_1status_a13acad5a6292efe67685e37a64c1b439}{status.\+HTTP\+\_\+500\+\_\+\+INTERNAL\+\_\+\+SERVER\+\_\+\+ERROR}}
+\item 
+\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_a1e865e3fa5f6fb96b82ab3ab97f37fda}{default\+\_\+detail}} = \+\_\+(\textquotesingle{}A server error occurred.\textquotesingle{})
+\item 
+str \mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_a6b330f69e1b2c968a4624da51ccdcb08}{default\+\_\+code}} = \textquotesingle{}error\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classrest__framework_1_1exceptions_1_1Throttled_a98192761d99733ef2acb04a2dd15761f}\label{classrest__framework_1_1exceptions_1_1Throttled_a98192761d99733ef2acb04a2dd15761f} 
+\index{rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+exceptions.\+Throttled.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{wait = {\ttfamily None},  }\item[{}]{detail = {\ttfamily None},  }\item[{}]{code = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classrest__framework_1_1exceptions_1_1APIException_a9b2b34376af153af334ba2a2c4d39ae7}{rest\+\_\+framework.\+exceptions.\+APIException}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classrest__framework_1_1exceptions_1_1Throttled_acce1d4482d8ef81858c67558f2ea47aa}\label{classrest__framework_1_1exceptions_1_1Throttled_acce1d4482d8ef81858c67558f2ea47aa} 
+\index{rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}!default\_code@{default\_code}}
+\index{default\_code@{default\_code}!rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}}
+\doxysubsubsection{\texorpdfstring{default\_code}{default\_code}}
+{\footnotesize\ttfamily str rest\+\_\+framework.\+exceptions.\+Throttled.\+default\+\_\+code = \textquotesingle{}throttled\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1exceptions_1_1Throttled_a0da7aaae10566b4cb74090ecba13512f}\label{classrest__framework_1_1exceptions_1_1Throttled_a0da7aaae10566b4cb74090ecba13512f} 
+\index{rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}!default\_detail@{default\_detail}}
+\index{default\_detail@{default\_detail}!rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}}
+\doxysubsubsection{\texorpdfstring{default\_detail}{default\_detail}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+exceptions.\+Throttled.\+default\+\_\+detail = \+\_\+(\textquotesingle{}Request was throttled.\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1exceptions_1_1Throttled_ac69d6b6daf8ca3e116bc87a7d186ca21}\label{classrest__framework_1_1exceptions_1_1Throttled_ac69d6b6daf8ca3e116bc87a7d186ca21} 
+\index{rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}!extra\_detail\_plural@{extra\_detail\_plural}}
+\index{extra\_detail\_plural@{extra\_detail\_plural}!rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}}
+\doxysubsubsection{\texorpdfstring{extra\_detail\_plural}{extra\_detail\_plural}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+exceptions.\+Throttled.\+extra\+\_\+detail\+\_\+plural = \+\_\+(\textquotesingle{}Expected available in \{\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_ab1cc6fd06319f90593cd8e6050375bbc}{wait}}\} seconds.\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1exceptions_1_1Throttled_a13cc8bb05e4d9337353e66ac2ccd2d70}\label{classrest__framework_1_1exceptions_1_1Throttled_a13cc8bb05e4d9337353e66ac2ccd2d70} 
+\index{rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}!extra\_detail\_singular@{extra\_detail\_singular}}
+\index{extra\_detail\_singular@{extra\_detail\_singular}!rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}}
+\doxysubsubsection{\texorpdfstring{extra\_detail\_singular}{extra\_detail\_singular}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+exceptions.\+Throttled.\+extra\+\_\+detail\+\_\+singular = \+\_\+(\textquotesingle{}Expected available in \{\mbox{\hyperlink{classrest__framework_1_1exceptions_1_1Throttled_ab1cc6fd06319f90593cd8e6050375bbc}{wait}}\} second.\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1exceptions_1_1Throttled_a42100503132bb6b5e10f1a23acef7e51}\label{classrest__framework_1_1exceptions_1_1Throttled_a42100503132bb6b5e10f1a23acef7e51} 
+\index{rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}!status\_code@{status\_code}}
+\index{status\_code@{status\_code}!rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}}
+\doxysubsubsection{\texorpdfstring{status\_code}{status\_code}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+exceptions.\+Throttled.\+status\+\_\+code = \mbox{\hyperlink{namespacerest__framework_1_1status_a32176dc12cc69efe9a60b1b17db78f18}{status.\+HTTP\+\_\+429\+\_\+\+TOO\+\_\+\+MANY\+\_\+\+REQUESTS}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classrest__framework_1_1exceptions_1_1Throttled_ab1cc6fd06319f90593cd8e6050375bbc}\label{classrest__framework_1_1exceptions_1_1Throttled_ab1cc6fd06319f90593cd8e6050375bbc} 
+\index{rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}!wait@{wait}}
+\index{wait@{wait}!rest\_framework.exceptions.Throttled@{rest\_framework.exceptions.Throttled}}
+\doxysubsubsection{\texorpdfstring{wait}{wait}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+exceptions.\+Throttled.\+wait}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/rest\+\_\+framework/\mbox{\hyperlink{rest__framework_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

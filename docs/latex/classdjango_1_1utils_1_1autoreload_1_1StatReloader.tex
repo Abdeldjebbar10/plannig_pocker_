@@ -1,0 +1,118 @@
+\doxysection{Référence de la classe django.\+utils.\+autoreload.\+Stat\+Reloader}
+\hypertarget{classdjango_1_1utils_1_1autoreload_1_1StatReloader}{}\label{classdjango_1_1utils_1_1autoreload_1_1StatReloader}\index{django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+utils.\+autoreload.\+Stat\+Reloader\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+utils.\+autoreload.\+Stat\+Reloader\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a5b8d00c4715fb877f0217b136015d946}{tick}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a2e75303ae660070b5888947ffb32dedf}{snapshot\+\_\+files}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1StatReloader_ad8615127570024bcf7b10272e3285767}{check\+\_\+availability}} (cls)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader}{django.\+utils.\+autoreload.\+Base\+Reloader}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a4e7397e0bc085c53bb55e4c6296d34cc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a1e7a969168fb4168d41d822b0a8c585c}{watch\+\_\+dir}} (self, path, glob)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a44cc512c784a69e15c4423e83a8857db}{watched\+\_\+files}} (self, include\+\_\+globs=True)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a1c8d3de2da68ebcd2adbf287bce7af26}{wait\+\_\+for\+\_\+apps\+\_\+ready}} (self, app\+\_\+reg, django\+\_\+main\+\_\+thread)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a8f41bae7838778077d1462c25ddd2048}{run}} (self, django\+\_\+main\+\_\+thread)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_adf37478a8396b4fa7298f2bd03f738cf}{run\+\_\+loop}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_aef33ab5c778efc9e30a84a4f4c177421}{notify\+\_\+file\+\_\+changed}} (self, path)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a796cb852dcc0ef0aa4b0b295796d630b}{should\+\_\+stop}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_ac73bcf6fa32e3ef394bb7d34b02a8cc1}{stop}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a0e3724763ef53cb1c9dd0e63b0bba3a1}{SLEEP\+\_\+\+TIME}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader}{django.\+utils.\+autoreload.\+Base\+Reloader}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a3bb7b758461e9946320341d1a48642bb}{extra\+\_\+files}}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a51910e347e441dac473c5d6d9450804b}{directory\+\_\+globs}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a8afdc5241616307d80fc44058d4d5d94}{SLEEP\+\_\+\+TIME}} = 1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader}{django.\+utils.\+autoreload.\+Base\+Reloader}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a15d1f1210a798dea3e035592900bed69}{\+\_\+stop\+\_\+condition}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1StatReloader_ad8615127570024bcf7b10272e3285767}\label{classdjango_1_1utils_1_1autoreload_1_1StatReloader_ad8615127570024bcf7b10272e3285767} 
+\index{django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}!check\_availability@{check\_availability}}
+\index{check\_availability@{check\_availability}!django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}}
+\doxysubsubsection{\texorpdfstring{check\_availability()}{check\_availability()}}
+{\footnotesize\ttfamily django.\+utils.\+autoreload.\+Stat\+Reloader.\+check\+\_\+availability (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_aa0fdb5ff8e98e7d1216d21702e63639f}{django.\+utils.\+autoreload.\+Base\+Reloader}}.
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a2e75303ae660070b5888947ffb32dedf}\label{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a2e75303ae660070b5888947ffb32dedf} 
+\index{django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}!snapshot\_files@{snapshot\_files}}
+\index{snapshot\_files@{snapshot\_files}!django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}}
+\doxysubsubsection{\texorpdfstring{snapshot\_files()}{snapshot\_files()}}
+{\footnotesize\ttfamily django.\+utils.\+autoreload.\+Stat\+Reloader.\+snapshot\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a5b8d00c4715fb877f0217b136015d946}\label{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a5b8d00c4715fb877f0217b136015d946} 
+\index{django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}!tick@{tick}}
+\index{tick@{tick}!django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily django.\+utils.\+autoreload.\+Stat\+Reloader.\+tick (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This generator is called in a loop from run_loop. It's important that
+the method takes care of pausing or otherwise waiting for a period of
+time. This split between run_loop() and tick() is to improve the
+testability of the reloader implementations by decoupling the work they
+do from the loop.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1utils_1_1autoreload_1_1BaseReloader_a192ec4b665a916412b10c050d597701a}{django.\+utils.\+autoreload.\+Base\+Reloader}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a8afdc5241616307d80fc44058d4d5d94}\label{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a8afdc5241616307d80fc44058d4d5d94} 
+\index{django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}!SLEEP\_TIME@{SLEEP\_TIME}}
+\index{SLEEP\_TIME@{SLEEP\_TIME}!django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}}
+\doxysubsubsection{\texorpdfstring{SLEEP\_TIME}{SLEEP\_TIME}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int django.\+utils.\+autoreload.\+Stat\+Reloader.\+SLEEP\+\_\+\+TIME = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a0e3724763ef53cb1c9dd0e63b0bba3a1}\label{classdjango_1_1utils_1_1autoreload_1_1StatReloader_a0e3724763ef53cb1c9dd0e63b0bba3a1} 
+\index{django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}!SLEEP\_TIME@{SLEEP\_TIME}}
+\index{SLEEP\_TIME@{SLEEP\_TIME}!django.utils.autoreload.StatReloader@{django.utils.autoreload.StatReloader}}
+\doxysubsubsection{\texorpdfstring{SLEEP\_TIME}{SLEEP\_TIME}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily django.\+utils.\+autoreload.\+Stat\+Reloader.\+SLEEP\+\_\+\+TIME}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/utils/\mbox{\hyperlink{utils_2autoreload_8py}{autoreload.\+py}}\end{DoxyCompactItemize}

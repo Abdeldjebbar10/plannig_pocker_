@@ -1,0 +1,134 @@
+\doxysection{Référence de la classe pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type}
+\hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType}{}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType}\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a1daf71e38a1fe9381b9bd936ccc2c66f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str name, value, \texorpdfstring{$\ast$}{*}type\+\_\+params=())
+\item 
+None \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_ac594e7e219f4369b0b972b3a0ab44513}{\+\_\+\+\_\+setattr\+\_\+\+\_\+}} (self, str name, object value)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a1dcf8e1cc7ccbb2350e8aa1e68f79127}{Never}} \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a74a754d8e673c9ebb4528e8bb0f013bc}{\+\_\+\+\_\+delattr\+\_\+\+\_\+}} (self, str name)
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_addb99dfc3ac89f92bde54e7efca88cbd}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_aba974ec24ff72c73bf4289ce945eb48d}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, parameters)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a3bae21bdbabf1147f5007493718a2fc5}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a41e2efc1f7e0f3a2616a69b99c6f2722}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_afc1f89bde1d1898049978a4b0d354a10}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a17e7cdcd82307930f5eb3f29d72467fb}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, right)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_ae2aba034092b3ac19baab80d25b425a9}{\+\_\+\+\_\+ror\+\_\+\+\_\+}} (self, left)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a1dcf8e1cc7ccbb2350e8aa1e68f79127}{Never}} \mbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a5222da51c069223b951c8cc492d67d12}{\+\_\+raise\+\_\+attribute\+\_\+error}} (self, str name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Create named, parameterized type aliases.
+
+This provides a backport of the new `type` statement in Python 3.12:
+
+    type ListOrSet[T] = list[T] | set[T]
+
+is equivalent to:
+
+    T = TypeVar("T")
+    ListOrSet = TypeAliasType("ListOrSet", list[T] | set[T], type_params=(T,))
+
+The name ListOrSet can then be used as an alias for the type it refers to.
+
+The type_params argument should contain all the type parameters used
+in the value of the type alias. If the alias is not generic, this
+argument is omitted.
+
+Static type checkers should only support type aliases declared using
+TypeAliasType that follow these rules:
+
+- The first argument (the name) must be a string literal.
+- The TypeAliasType instance must be immediately assigned to a variable
+  of the same name. (For example, 'X = TypeAliasType("Y", int)' is invalid,
+  as is 'X, Y = TypeAliasType("X", int), TypeAliasType("Y", int)').\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a1daf71e38a1fe9381b9bd936ccc2c66f}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a1daf71e38a1fe9381b9bd936ccc2c66f} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{}]{value,  }\item[{\texorpdfstring{$\ast$}{*}}]{type\+\_\+params = {\ttfamily ()} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_afc1f89bde1d1898049978a4b0d354a10}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_afc1f89bde1d1898049978a4b0d354a10} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a74a754d8e673c9ebb4528e8bb0f013bc}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a74a754d8e673c9ebb4528e8bb0f013bc} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_delattr\_\_@{\_\_delattr\_\_}}
+\index{\_\_delattr\_\_@{\_\_delattr\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_delattr\_\_()}{\_\_delattr\_\_()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a1dcf8e1cc7ccbb2350e8aa1e68f79127}{Never}} pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+delattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_aba974ec24ff72c73bf4289ce945eb48d}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_aba974ec24ff72c73bf4289ce945eb48d} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parameters }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a41e2efc1f7e0f3a2616a69b99c6f2722}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a41e2efc1f7e0f3a2616a69b99c6f2722} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}}
+\index{\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_subclass\_\_()}{\_\_init\_subclass\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{\texorpdfstring{$\ast$}{*}}]{args,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a17e7cdcd82307930f5eb3f29d72467fb}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a17e7cdcd82307930f5eb3f29d72467fb} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_or\_\_@{\_\_or\_\_}}
+\index{\_\_or\_\_@{\_\_or\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_or\_\_()}{\_\_or\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+or\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{right }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a3bae21bdbabf1147f5007493718a2fc5}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a3bae21bdbabf1147f5007493718a2fc5} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_addb99dfc3ac89f92bde54e7efca88cbd}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_addb99dfc3ac89f92bde54e7efca88cbd} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_ae2aba034092b3ac19baab80d25b425a9}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_ae2aba034092b3ac19baab80d25b425a9} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_ror\_\_@{\_\_ror\_\_}}
+\index{\_\_ror\_\_@{\_\_ror\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_ror\_\_()}{\_\_ror\_\_()}}
+{\footnotesize\ttfamily pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+ror\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{left }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_ac594e7e219f4369b0b972b3a0ab44513}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_ac594e7e219f4369b0b972b3a0ab44513} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_\_setattr\_\_@{\_\_setattr\_\_}}
+\index{\_\_setattr\_\_@{\_\_setattr\_\_}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_\_setattr\_\_()}{\_\_setattr\_\_()}}
+{\footnotesize\ttfamily  None pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+\+\_\+setattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name,  }\item[{object}]{value }\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a5222da51c069223b951c8cc492d67d12}\label{classpip_1_1__vendor_1_1typing__extensions_1_1TypeAliasType_a5222da51c069223b951c8cc492d67d12} 
+\index{pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}!\_raise\_attribute\_error@{\_raise\_attribute\_error}}
+\index{\_raise\_attribute\_error@{\_raise\_attribute\_error}!pip.\_vendor.typing\_extensions.TypeAliasType@{pip.\_vendor.typing\_extensions.TypeAliasType}}
+\doxysubsubsection{\texorpdfstring{\_raise\_attribute\_error()}{\_raise\_attribute\_error()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a1dcf8e1cc7ccbb2350e8aa1e68f79127}{Never}} pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Type\+Alias\+Type.\+\_\+raise\+\_\+attribute\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/pip/\+\_\+vendor/\mbox{\hyperlink{typing__extensions_8py}{typing\+\_\+extensions.\+py}}\end{DoxyCompactItemize}

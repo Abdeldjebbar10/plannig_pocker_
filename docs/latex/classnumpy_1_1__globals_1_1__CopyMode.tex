@@ -1,0 +1,76 @@
+\doxysection{Référence de la classe numpy.\+\_\+globals.\+\_\+\+Copy\+Mode}
+\hypertarget{classnumpy_1_1__globals_1_1__CopyMode}{}\label{classnumpy_1_1__globals_1_1__CopyMode}\index{numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}}
+
+
+Graphe d\textquotesingle{}héritage de numpy.\+\_\+globals.\+\_\+\+Copy\+Mode\+:
+% FIG 0
+
+
+Graphe de collaboration de numpy.\+\_\+globals.\+\_\+\+Copy\+Mode\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnumpy_1_1__globals_1_1__CopyMode_a21f6ccde281f63f3446352cb6b7d11b3}{\+\_\+\+\_\+bool\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classnumpy_1_1__globals_1_1__CopyMode_a3d95a8a287a8f49842b8f92b95e8eb84}{ALWAYS}} = True
+\item 
+bool \mbox{\hyperlink{classnumpy_1_1__globals_1_1__CopyMode_a58035b9b2a2c7837411404cebbd37ca9}{NEVER}} = False
+\item 
+int \mbox{\hyperlink{classnumpy_1_1__globals_1_1__CopyMode_a39f79dfee0f6b18a9ec87e6cf3743d66}{IF\+\_\+\+NEEDED}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An enumeration for the copy modes supported
+by numpy.copy() and numpy.array(). The following three modes are supported,
+
+- ALWAYS: This means that a deep copy of the input
+          array will always be taken.
+- IF_NEEDED: This means that a deep copy of the input
+             array will be taken only if necessary.
+- NEVER: This means that the deep copy will never be taken.
+         If a copy cannot be avoided then a `ValueError` will be
+         raised.
+
+Note that the buffer-protocol could in theory do copies.  NumPy currently
+assumes an object exporting the buffer protocol will never do this.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classnumpy_1_1__globals_1_1__CopyMode_a21f6ccde281f63f3446352cb6b7d11b3}\label{classnumpy_1_1__globals_1_1__CopyMode_a21f6ccde281f63f3446352cb6b7d11b3} 
+\index{numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}!\_\_bool\_\_@{\_\_bool\_\_}}
+\index{\_\_bool\_\_@{\_\_bool\_\_}!numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}}
+\doxysubsubsection{\texorpdfstring{\_\_bool\_\_()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily numpy.\+\_\+globals.\+\_\+\+Copy\+Mode.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classnumpy_1_1__globals_1_1__CopyMode_a3d95a8a287a8f49842b8f92b95e8eb84}\label{classnumpy_1_1__globals_1_1__CopyMode_a3d95a8a287a8f49842b8f92b95e8eb84} 
+\index{numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}!ALWAYS@{ALWAYS}}
+\index{ALWAYS@{ALWAYS}!numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}}
+\doxysubsubsection{\texorpdfstring{ALWAYS}{ALWAYS}}
+{\footnotesize\ttfamily bool numpy.\+\_\+globals.\+\_\+\+Copy\+Mode.\+ALWAYS = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnumpy_1_1__globals_1_1__CopyMode_a39f79dfee0f6b18a9ec87e6cf3743d66}\label{classnumpy_1_1__globals_1_1__CopyMode_a39f79dfee0f6b18a9ec87e6cf3743d66} 
+\index{numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}!IF\_NEEDED@{IF\_NEEDED}}
+\index{IF\_NEEDED@{IF\_NEEDED}!numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}}
+\doxysubsubsection{\texorpdfstring{IF\_NEEDED}{IF\_NEEDED}}
+{\footnotesize\ttfamily int numpy.\+\_\+globals.\+\_\+\+Copy\+Mode.\+IF\+\_\+\+NEEDED = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnumpy_1_1__globals_1_1__CopyMode_a58035b9b2a2c7837411404cebbd37ca9}\label{classnumpy_1_1__globals_1_1__CopyMode_a58035b9b2a2c7837411404cebbd37ca9} 
+\index{numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}!NEVER@{NEVER}}
+\index{NEVER@{NEVER}!numpy.\_globals.\_CopyMode@{numpy.\_globals.\_CopyMode}}
+\doxysubsubsection{\texorpdfstring{NEVER}{NEVER}}
+{\footnotesize\ttfamily bool numpy.\+\_\+globals.\+\_\+\+Copy\+Mode.\+NEVER = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/numpy/\mbox{\hyperlink{__globals_8py}{\+\_\+globals.\+py}}\end{DoxyCompactItemize}

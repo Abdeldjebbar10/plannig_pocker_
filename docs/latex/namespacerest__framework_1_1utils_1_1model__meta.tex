@@ -1,0 +1,145 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+utils.\+model\+\_\+meta}
+\hypertarget{namespacerest__framework_1_1utils_1_1model__meta}{}\label{namespacerest__framework_1_1utils_1_1model__meta}\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_a2e5da7794bb91ae343ad24779ce1883d}{get\+\_\+field\+\_\+info}} (model)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_a62412e6123196ecde5d19270da5ed907}{\+\_\+get\+\_\+pk}} (opts)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_a2c418dc90acda677a312c8d08ac1f0b4}{\+\_\+get\+\_\+fields}} (opts)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_a48c51dbe22401a609f0baa6e63b87d8d}{\+\_\+get\+\_\+to\+\_\+field}} (field)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_a004f923ed4a6839dd99964369426349d}{\+\_\+get\+\_\+forward\+\_\+relationships}} (opts)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_a1e850bd490ae7a18d5656d4d2a291275}{\+\_\+get\+\_\+reverse\+\_\+relationships}} (opts)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_a48fe9c23655f65987037e179776be923}{\+\_\+merge\+\_\+fields\+\_\+and\+\_\+pk}} (pk, fields)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_aaeea3f534bf1b9d17a2b68b043a1846f}{\+\_\+merge\+\_\+relationships}} (forward\+\_\+relations, reverse\+\_\+relations)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_ac10b2898c1ed981120b4c0e93641f8a7}{is\+\_\+abstract\+\_\+model}} (model)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_adbb845cb295d2c42b880910fffb655fb}{Field\+Info}}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1utils_1_1model__meta_a330c2665631fe02421c69ded28150128}{Relation\+Info}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Helper function for returning the field information that is associated
+with a model class. This includes returning all the forward and reverse
+relationships and their associated metadata.
+
+Usage: `get_field_info(model)` returns a `FieldInfo` instance.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_a2c418dc90acda677a312c8d08ac1f0b4}\label{namespacerest__framework_1_1utils_1_1model__meta_a2c418dc90acda677a312c8d08ac1f0b4} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!\_get\_fields@{\_get\_fields}}
+\index{\_get\_fields@{\_get\_fields}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{\_get\_fields()}{\_get\_fields()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+\_\+get\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{opts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_a004f923ed4a6839dd99964369426349d}\label{namespacerest__framework_1_1utils_1_1model__meta_a004f923ed4a6839dd99964369426349d} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!\_get\_forward\_relationships@{\_get\_forward\_relationships}}
+\index{\_get\_forward\_relationships@{\_get\_forward\_relationships}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{\_get\_forward\_relationships()}{\_get\_forward\_relationships()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+\_\+get\+\_\+forward\+\_\+relationships (\begin{DoxyParamCaption}\item[{}]{opts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns a dict of field names to `RelationInfo`.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_a62412e6123196ecde5d19270da5ed907}\label{namespacerest__framework_1_1utils_1_1model__meta_a62412e6123196ecde5d19270da5ed907} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!\_get\_pk@{\_get\_pk}}
+\index{\_get\_pk@{\_get\_pk}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{\_get\_pk()}{\_get\_pk()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+\_\+get\+\_\+pk (\begin{DoxyParamCaption}\item[{}]{opts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_a1e850bd490ae7a18d5656d4d2a291275}\label{namespacerest__framework_1_1utils_1_1model__meta_a1e850bd490ae7a18d5656d4d2a291275} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!\_get\_reverse\_relationships@{\_get\_reverse\_relationships}}
+\index{\_get\_reverse\_relationships@{\_get\_reverse\_relationships}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{\_get\_reverse\_relationships()}{\_get\_reverse\_relationships()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+\_\+get\+\_\+reverse\+\_\+relationships (\begin{DoxyParamCaption}\item[{}]{opts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns a dict of field names to `RelationInfo`.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_a48c51dbe22401a609f0baa6e63b87d8d}\label{namespacerest__framework_1_1utils_1_1model__meta_a48c51dbe22401a609f0baa6e63b87d8d} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!\_get\_to\_field@{\_get\_to\_field}}
+\index{\_get\_to\_field@{\_get\_to\_field}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{\_get\_to\_field()}{\_get\_to\_field()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+\_\+get\+\_\+to\+\_\+field (\begin{DoxyParamCaption}\item[{}]{field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_a48fe9c23655f65987037e179776be923}\label{namespacerest__framework_1_1utils_1_1model__meta_a48fe9c23655f65987037e179776be923} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!\_merge\_fields\_and\_pk@{\_merge\_fields\_and\_pk}}
+\index{\_merge\_fields\_and\_pk@{\_merge\_fields\_and\_pk}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{\_merge\_fields\_and\_pk()}{\_merge\_fields\_and\_pk()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+\_\+merge\+\_\+fields\+\_\+and\+\_\+pk (\begin{DoxyParamCaption}\item[{}]{pk,  }\item[{}]{fields }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_aaeea3f534bf1b9d17a2b68b043a1846f}\label{namespacerest__framework_1_1utils_1_1model__meta_aaeea3f534bf1b9d17a2b68b043a1846f} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!\_merge\_relationships@{\_merge\_relationships}}
+\index{\_merge\_relationships@{\_merge\_relationships}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{\_merge\_relationships()}{\_merge\_relationships()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+\_\+merge\+\_\+relationships (\begin{DoxyParamCaption}\item[{}]{forward\+\_\+relations,  }\item[{}]{reverse\+\_\+relations }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_a2e5da7794bb91ae343ad24779ce1883d}\label{namespacerest__framework_1_1utils_1_1model__meta_a2e5da7794bb91ae343ad24779ce1883d} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!get\_field\_info@{get\_field\_info}}
+\index{get\_field\_info@{get\_field\_info}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{get\_field\_info()}{get\_field\_info()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+get\+\_\+field\+\_\+info (\begin{DoxyParamCaption}\item[{}]{model }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a model class, returns a `FieldInfo` instance, which is a
+`namedtuple`, containing metadata about the various field types on the model
+including information about their relationships.
+\end{DoxyVerb}
+ \Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_ac10b2898c1ed981120b4c0e93641f8a7}\label{namespacerest__framework_1_1utils_1_1model__meta_ac10b2898c1ed981120b4c0e93641f8a7} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!is\_abstract\_model@{is\_abstract\_model}}
+\index{is\_abstract\_model@{is\_abstract\_model}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{is\_abstract\_model()}{is\_abstract\_model()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+is\+\_\+abstract\+\_\+model (\begin{DoxyParamCaption}\item[{}]{model }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a model class, returns a boolean True if it is abstract and False if it is not.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_adbb845cb295d2c42b880910fffb655fb}\label{namespacerest__framework_1_1utils_1_1model__meta_adbb845cb295d2c42b880910fffb655fb} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!FieldInfo@{FieldInfo}}
+\index{FieldInfo@{FieldInfo}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{FieldInfo}{FieldInfo}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+Field\+Info}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ namedtuple(\textcolor{stringliteral}{'FieldInfo'},\ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'pk'},\ \ \textcolor{comment}{\#\ Model\ field\ instance}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'fields'},\ \ \textcolor{comment}{\#\ Dict\ of\ field\ name\ -\/>\ model\ field\ instance}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'forward\_relations'},\ \ \textcolor{comment}{\#\ Dict\ of\ field\ name\ -\/>\ RelationInfo}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'reverse\_relations'},\ \ \textcolor{comment}{\#\ Dict\ of\ field\ name\ -\/>\ RelationInfo}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'fields\_and\_pk'},\ \ \textcolor{comment}{\#\ Shortcut\ for\ 'pk'\ +\ 'fields'}}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{'relations'}\ \ \textcolor{comment}{\#\ Shortcut\ for\ 'forward\_relations'\ +\ 'reverse\_relations'}}
+\DoxyCodeLine{00008\ ])}
+
+\end{DoxyCode}
+\Hypertarget{namespacerest__framework_1_1utils_1_1model__meta_a330c2665631fe02421c69ded28150128}\label{namespacerest__framework_1_1utils_1_1model__meta_a330c2665631fe02421c69ded28150128} 
+\index{rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}!RelationInfo@{RelationInfo}}
+\index{RelationInfo@{RelationInfo}!rest\_framework.utils.model\_meta@{rest\_framework.utils.model\_meta}}
+\doxysubsubsection{\texorpdfstring{RelationInfo}{RelationInfo}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+utils.\+model\+\_\+meta.\+Relation\+Info}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ namedtuple(\textcolor{stringliteral}{'RelationInfo'},\ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'model\_field'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'related\_model'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'to\_many'},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'to\_field'},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'has\_through\_model'},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{'reverse'}}
+\DoxyCodeLine{00008\ ])}
+
+\end{DoxyCode}

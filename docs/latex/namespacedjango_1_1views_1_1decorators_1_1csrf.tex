@@ -1,0 +1,54 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage django.\+views.\+decorators.\+csrf}
+\hypertarget{namespacedjango_1_1views_1_1decorators_1_1csrf}{}\label{namespacedjango_1_1views_1_1decorators_1_1csrf}\index{django.views.decorators.csrf@{django.views.decorators.csrf}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1__EnsureCsrfCookie}{\+\_\+\+Ensure\+Csrf\+Cookie}}
+\item 
+class \mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1__EnsureCsrfToken}{\+\_\+\+Ensure\+Csrf\+Token}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1csrf_a0a4c1e8e1c488c31185f7d7976e052b3}{csrf\+\_\+exempt}} (view\+\_\+func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1csrf_a247cf214e5c3301469f916888742d81e}{csrf\+\_\+protect}} = decorator\+\_\+from\+\_\+middleware(\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1CsrfViewMiddleware}{Csrf\+View\+Middleware}})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1csrf_a18e2102c914a637b92038820e328fede}{requires\+\_\+csrf\+\_\+token}} = decorator\+\_\+from\+\_\+middleware(\mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1__EnsureCsrfToken}{\+\_\+\+Ensure\+Csrf\+Token}})
+\item 
+\mbox{\hyperlink{namespacedjango_1_1views_1_1decorators_1_1csrf_af44e09c446bf579eb56d3b4c6936c3d8}{ensure\+\_\+csrf\+\_\+cookie}} = decorator\+\_\+from\+\_\+middleware(\mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1__EnsureCsrfCookie}{\+\_\+\+Ensure\+Csrf\+Cookie}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1csrf_a0a4c1e8e1c488c31185f7d7976e052b3}\label{namespacedjango_1_1views_1_1decorators_1_1csrf_a0a4c1e8e1c488c31185f7d7976e052b3} 
+\index{django.views.decorators.csrf@{django.views.decorators.csrf}!csrf\_exempt@{csrf\_exempt}}
+\index{csrf\_exempt@{csrf\_exempt}!django.views.decorators.csrf@{django.views.decorators.csrf}}
+\doxysubsubsection{\texorpdfstring{csrf\_exempt()}{csrf\_exempt()}}
+{\footnotesize\ttfamily django.\+views.\+decorators.\+csrf.\+csrf\+\_\+exempt (\begin{DoxyParamCaption}\item[{}]{view\+\_\+func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Mark a view function as being exempt from the CSRF view protection.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1csrf_a247cf214e5c3301469f916888742d81e}\label{namespacedjango_1_1views_1_1decorators_1_1csrf_a247cf214e5c3301469f916888742d81e} 
+\index{django.views.decorators.csrf@{django.views.decorators.csrf}!csrf\_protect@{csrf\_protect}}
+\index{csrf\_protect@{csrf\_protect}!django.views.decorators.csrf@{django.views.decorators.csrf}}
+\doxysubsubsection{\texorpdfstring{csrf\_protect}{csrf\_protect}}
+{\footnotesize\ttfamily django.\+views.\+decorators.\+csrf.\+csrf\+\_\+protect = decorator\+\_\+from\+\_\+middleware(\mbox{\hyperlink{classdjango_1_1middleware_1_1csrf_1_1CsrfViewMiddleware}{Csrf\+View\+Middleware}})}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1csrf_af44e09c446bf579eb56d3b4c6936c3d8}\label{namespacedjango_1_1views_1_1decorators_1_1csrf_af44e09c446bf579eb56d3b4c6936c3d8} 
+\index{django.views.decorators.csrf@{django.views.decorators.csrf}!ensure\_csrf\_cookie@{ensure\_csrf\_cookie}}
+\index{ensure\_csrf\_cookie@{ensure\_csrf\_cookie}!django.views.decorators.csrf@{django.views.decorators.csrf}}
+\doxysubsubsection{\texorpdfstring{ensure\_csrf\_cookie}{ensure\_csrf\_cookie}}
+{\footnotesize\ttfamily django.\+views.\+decorators.\+csrf.\+ensure\+\_\+csrf\+\_\+cookie = decorator\+\_\+from\+\_\+middleware(\mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1__EnsureCsrfCookie}{\+\_\+\+Ensure\+Csrf\+Cookie}})}
+
+\Hypertarget{namespacedjango_1_1views_1_1decorators_1_1csrf_a18e2102c914a637b92038820e328fede}\label{namespacedjango_1_1views_1_1decorators_1_1csrf_a18e2102c914a637b92038820e328fede} 
+\index{django.views.decorators.csrf@{django.views.decorators.csrf}!requires\_csrf\_token@{requires\_csrf\_token}}
+\index{requires\_csrf\_token@{requires\_csrf\_token}!django.views.decorators.csrf@{django.views.decorators.csrf}}
+\doxysubsubsection{\texorpdfstring{requires\_csrf\_token}{requires\_csrf\_token}}
+{\footnotesize\ttfamily django.\+views.\+decorators.\+csrf.\+requires\+\_\+csrf\+\_\+token = decorator\+\_\+from\+\_\+middleware(\mbox{\hyperlink{classdjango_1_1views_1_1decorators_1_1csrf_1_1__EnsureCsrfToken}{\+\_\+\+Ensure\+Csrf\+Token}})}
+

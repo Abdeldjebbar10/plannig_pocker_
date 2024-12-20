@@ -1,0 +1,775 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage numpy.\+lib.\+\_\+histograms\+\_\+impl}
+\hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl}{}\label{namespacenumpy_1_1lib_1_1__histograms__impl}\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a752c6788fb455d588e62d88511312be3}{\+\_\+ptp}} (x)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a393ede15616e6039d7717ecf2a851cbb}{\+\_\+hist\+\_\+bin\+\_\+sqrt}} (x, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a9248938faf5de6ddad36edd82ca62809}{\+\_\+hist\+\_\+bin\+\_\+sturges}} (x, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_ab655fc41559e2a4381142c2f3546891a}{\+\_\+hist\+\_\+bin\+\_\+rice}} (x, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a87b37366fe2b8e49b6fb1b6a12bebbaa}{\+\_\+hist\+\_\+bin\+\_\+scott}} (x, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a051087d42f8a529c841deaf425ccf992}{\+\_\+hist\+\_\+bin\+\_\+stone}} (x, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a8e355459c7f79c165600edbd721722ec}{\+\_\+hist\+\_\+bin\+\_\+doane}} (x, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a7944ab07140b9c8ee66310852d769275}{\+\_\+hist\+\_\+bin\+\_\+fd}} (x, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_af3b6202ba7369b26ba06288d67db7b4c}{\+\_\+hist\+\_\+bin\+\_\+auto}} (x, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a96eb4b371dcafaeacb366761cbe9a135}{\+\_\+ravel\+\_\+and\+\_\+check\+\_\+weights}} (a, weights)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a5d663ca41fa129dd39ed1194b0f540f3}{\+\_\+get\+\_\+outer\+\_\+edges}} (a, range)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a765f35faacde2810fb33f315e18d0770}{\+\_\+unsigned\+\_\+subtract}} (a, b)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_afae1a6ebf962f1d164df170d7a39672e}{\+\_\+get\+\_\+bin\+\_\+edges}} (a, bins, range, weights)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_ac2604ec1863db58c67d25175d9b66e64}{\+\_\+search\+\_\+sorted\+\_\+inclusive}} (a, v)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a4d49205c6262dcdd6651071628d9d9c3}{\+\_\+histogram\+\_\+bin\+\_\+edges\+\_\+dispatcher}} (a, bins=None, range=None, weights=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_ac51057a50e69d76e5b2386f6c8eb629e}{histogram\+\_\+bin\+\_\+edges}} (a, bins=10, range=None, weights=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_ae1e9f773e5a6df4a460945939be5fd0e}{\+\_\+histogram\+\_\+dispatcher}} (a, bins=None, range=None, density=None, weights=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a894f7b95fbd0cdd3f767a34e4cfd0404}{histogram}} (a, bins=10, range=None, density=None, weights=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_ab7e04dff9d879c259561560f22eccb8e}{\+\_\+histogramdd\+\_\+dispatcher}} (sample, bins=None, range=None, density=None, weights=None)
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_afe2d4e68469d198d8c88629aa12d5ad5}{histogramdd}} (sample, bins=10, range=None, density=None, weights=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_ab2bbbe2bb543a1f8d4c19dc7bdf68a44}{array\+\_\+function\+\_\+dispatch}}
+\item 
+\mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a1b5a4ab2be217cbc2ef194db28d75ca7}{\+\_\+range}} = range
+\item 
+dict \mbox{\hyperlink{namespacenumpy_1_1lib_1_1__histograms__impl_a83bcb0f024ef4bcf1baf9390c6aab174}{\+\_\+hist\+\_\+bin\+\_\+selectors}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Histogram-related functions
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_afae1a6ebf962f1d164df170d7a39672e}\label{namespacenumpy_1_1lib_1_1__histograms__impl_afae1a6ebf962f1d164df170d7a39672e} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_get\_bin\_edges@{\_get\_bin\_edges}}
+\index{\_get\_bin\_edges@{\_get\_bin\_edges}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_get\_bin\_edges()}{\_get\_bin\_edges()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+get\+\_\+bin\+\_\+edges (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{bins,  }\item[{}]{range,  }\item[{}]{weights }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Computes the bins used internally by `histogram`.
+
+Parameters
+==========
+a : ndarray
+    Ravelled data array
+bins, range
+    Forwarded arguments from `histogram`.
+weights : ndarray, optional
+    Ravelled weights array, or None
+
+Returns
+=======
+bin_edges : ndarray
+    Array of bin edges
+uniform_bins : (Number, Number, int):
+    The upper bound, lowerbound, and number of bins, used in the optimized
+    implementation of `histogram` that works on uniform bins.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a5d663ca41fa129dd39ed1194b0f540f3}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a5d663ca41fa129dd39ed1194b0f540f3} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_get\_outer\_edges@{\_get\_outer\_edges}}
+\index{\_get\_outer\_edges@{\_get\_outer\_edges}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_get\_outer\_edges()}{\_get\_outer\_edges()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+get\+\_\+outer\+\_\+edges (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Determine the outer bin edges to use, from either the data or the range
+argument
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_af3b6202ba7369b26ba06288d67db7b4c}\label{namespacenumpy_1_1lib_1_1__histograms__impl_af3b6202ba7369b26ba06288d67db7b4c} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_auto@{\_hist\_bin\_auto}}
+\index{\_hist\_bin\_auto@{\_hist\_bin\_auto}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_auto()}{\_hist\_bin\_auto()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+auto (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Histogram bin estimator that uses the minimum width of the
+Freedman-Diaconis and Sturges estimators if the FD bin width is non-zero.
+If the bin width from the FD estimator is 0, the Sturges estimator is used.
+
+The FD estimator is usually the most robust method, but its width
+estimate tends to be too large for small `x` and bad for data with limited
+variance. The Sturges estimator is quite good for small (<1000) datasets
+and is the default in the R language. This method gives good off-the-shelf
+behaviour.
+
+If there is limited variance the IQR can be 0, which results in the
+FD bin width being 0 too. This is not a valid bin width, so
+``np.histogram_bin_edges`` chooses 1 bin instead, which may not be optimal.
+If the IQR is 0, it's unlikely any variance-based estimators will be of
+use, so we revert to the Sturges estimator, which only uses the size of the
+dataset in its calculation.
+
+Parameters
+----------
+x : array_like
+    Input data that is to be histogrammed, trimmed to range. May not
+    be empty.
+
+Returns
+-------
+h : An estimate of the optimal bin width for the given data.
+
+See Also
+--------
+_hist_bin_fd, _hist_bin_sturges
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a8e355459c7f79c165600edbd721722ec}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a8e355459c7f79c165600edbd721722ec} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_doane@{\_hist\_bin\_doane}}
+\index{\_hist\_bin\_doane@{\_hist\_bin\_doane}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_doane()}{\_hist\_bin\_doane()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+doane (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Doane's histogram bin estimator.
+
+Improved version of Sturges' formula which works better for
+non-normal data. See
+stats.stackexchange.com/questions/55134/doanes-formula-for-histogram-binning
+
+Parameters
+----------
+x : array_like
+    Input data that is to be histogrammed, trimmed to range. May not
+    be empty.
+
+Returns
+-------
+h : An estimate of the optimal bin width for the given data.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a7944ab07140b9c8ee66310852d769275}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a7944ab07140b9c8ee66310852d769275} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_fd@{\_hist\_bin\_fd}}
+\index{\_hist\_bin\_fd@{\_hist\_bin\_fd}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_fd()}{\_hist\_bin\_fd()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+fd (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}The Freedman-Diaconis histogram bin estimator.
+
+The Freedman-Diaconis rule uses interquartile range (IQR) to
+estimate binwidth. It is considered a variation of the Scott rule
+with more robustness as the IQR is less affected by outliers than
+the standard deviation. However, the IQR depends on fewer points
+than the standard deviation, so it is less accurate, especially for
+long tailed distributions.
+
+If the IQR is 0, this function returns 0 for the bin width.
+Binwidth is inversely proportional to the cube root of data size
+(asymptotically optimal).
+
+Parameters
+----------
+x : array_like
+    Input data that is to be histogrammed, trimmed to range. May not
+    be empty.
+
+Returns
+-------
+h : An estimate of the optimal bin width for the given data.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_ab655fc41559e2a4381142c2f3546891a}\label{namespacenumpy_1_1lib_1_1__histograms__impl_ab655fc41559e2a4381142c2f3546891a} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_rice@{\_hist\_bin\_rice}}
+\index{\_hist\_bin\_rice@{\_hist\_bin\_rice}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_rice()}{\_hist\_bin\_rice()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+rice (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Rice histogram bin estimator.
+
+Another simple estimator with no normality assumption. It has better
+performance for large data than Sturges, but tends to overestimate
+the number of bins. The number of bins is proportional to the cube
+root of data size (asymptotically optimal). The estimate depends
+only on size of the data.
+
+Parameters
+----------
+x : array_like
+    Input data that is to be histogrammed, trimmed to range. May not
+    be empty.
+
+Returns
+-------
+h : An estimate of the optimal bin width for the given data.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a87b37366fe2b8e49b6fb1b6a12bebbaa}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a87b37366fe2b8e49b6fb1b6a12bebbaa} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_scott@{\_hist\_bin\_scott}}
+\index{\_hist\_bin\_scott@{\_hist\_bin\_scott}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_scott()}{\_hist\_bin\_scott()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+scott (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Scott histogram bin estimator.
+
+The binwidth is proportional to the standard deviation of the data
+and inversely proportional to the cube root of data size
+(asymptotically optimal).
+
+Parameters
+----------
+x : array_like
+    Input data that is to be histogrammed, trimmed to range. May not
+    be empty.
+
+Returns
+-------
+h : An estimate of the optimal bin width for the given data.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a393ede15616e6039d7717ecf2a851cbb}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a393ede15616e6039d7717ecf2a851cbb} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_sqrt@{\_hist\_bin\_sqrt}}
+\index{\_hist\_bin\_sqrt@{\_hist\_bin\_sqrt}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_sqrt()}{\_hist\_bin\_sqrt()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+sqrt (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Square root histogram bin estimator.
+
+Bin width is inversely proportional to the data size. Used by many
+programs for its simplicity.
+
+Parameters
+----------
+x : array_like
+    Input data that is to be histogrammed, trimmed to range. May not
+    be empty.
+
+Returns
+-------
+h : An estimate of the optimal bin width for the given data.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a051087d42f8a529c841deaf425ccf992}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a051087d42f8a529c841deaf425ccf992} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_stone@{\_hist\_bin\_stone}}
+\index{\_hist\_bin\_stone@{\_hist\_bin\_stone}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_stone()}{\_hist\_bin\_stone()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+stone (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Histogram bin estimator based on minimizing the estimated integrated squared error (ISE).
+
+The number of bins is chosen by minimizing the estimated ISE against the unknown true distribution.
+The ISE is estimated using cross-validation and can be regarded as a generalization of Scott's rule.
+https://en.wikipedia.org/wiki/Histogram#Scott.27s_normal_reference_rule
+
+This paper by Stone appears to be the origination of this rule.
+https://digitalassets.lib.berkeley.edu/sdtr/ucb/text/34.pdf
+
+Parameters
+----------
+x : array_like
+    Input data that is to be histogrammed, trimmed to range. May not
+    be empty.
+range : (float, float)
+    The lower and upper range of the bins.
+
+Returns
+-------
+h : An estimate of the optimal bin width for the given data.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a9248938faf5de6ddad36edd82ca62809}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a9248938faf5de6ddad36edd82ca62809} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_sturges@{\_hist\_bin\_sturges}}
+\index{\_hist\_bin\_sturges@{\_hist\_bin\_sturges}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_sturges()}{\_hist\_bin\_sturges()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+sturges (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Sturges histogram bin estimator.
+
+A very simplistic estimator based on the assumption of normality of
+the data. This estimator has poor performance for non-normal data,
+which becomes especially obvious for large data sets. The estimate
+depends only on size of the data.
+
+Parameters
+----------
+x : array_like
+    Input data that is to be histogrammed, trimmed to range. May not
+    be empty.
+
+Returns
+-------
+h : An estimate of the optimal bin width for the given data.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a4d49205c6262dcdd6651071628d9d9c3}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a4d49205c6262dcdd6651071628d9d9c3} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_histogram\_bin\_edges\_dispatcher@{\_histogram\_bin\_edges\_dispatcher}}
+\index{\_histogram\_bin\_edges\_dispatcher@{\_histogram\_bin\_edges\_dispatcher}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_histogram\_bin\_edges\_dispatcher()}{\_histogram\_bin\_edges\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+histogram\+\_\+bin\+\_\+edges\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{bins = {\ttfamily None},  }\item[{}]{range = {\ttfamily None},  }\item[{}]{weights = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_ae1e9f773e5a6df4a460945939be5fd0e}\label{namespacenumpy_1_1lib_1_1__histograms__impl_ae1e9f773e5a6df4a460945939be5fd0e} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_histogram\_dispatcher@{\_histogram\_dispatcher}}
+\index{\_histogram\_dispatcher@{\_histogram\_dispatcher}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_histogram\_dispatcher()}{\_histogram\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+histogram\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{bins = {\ttfamily None},  }\item[{}]{range = {\ttfamily None},  }\item[{}]{density = {\ttfamily None},  }\item[{}]{weights = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_ab7e04dff9d879c259561560f22eccb8e}\label{namespacenumpy_1_1lib_1_1__histograms__impl_ab7e04dff9d879c259561560f22eccb8e} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_histogramdd\_dispatcher@{\_histogramdd\_dispatcher}}
+\index{\_histogramdd\_dispatcher@{\_histogramdd\_dispatcher}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_histogramdd\_dispatcher()}{\_histogramdd\_dispatcher()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+histogramdd\+\_\+dispatcher (\begin{DoxyParamCaption}\item[{}]{sample,  }\item[{}]{bins = {\ttfamily None},  }\item[{}]{range = {\ttfamily None},  }\item[{}]{density = {\ttfamily None},  }\item[{}]{weights = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a752c6788fb455d588e62d88511312be3}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a752c6788fb455d588e62d88511312be3} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_ptp@{\_ptp}}
+\index{\_ptp@{\_ptp}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_ptp()}{\_ptp()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+ptp (\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Peak-to-peak value of x.
+
+This implementation avoids the problem of signed integer arrays having a
+peak-to-peak value that cannot be represented with the array's data type.
+This function returns an unsigned value for signed integer arrays.
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a96eb4b371dcafaeacb366761cbe9a135}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a96eb4b371dcafaeacb366761cbe9a135} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_ravel\_and\_check\_weights@{\_ravel\_and\_check\_weights}}
+\index{\_ravel\_and\_check\_weights@{\_ravel\_and\_check\_weights}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_ravel\_and\_check\_weights()}{\_ravel\_and\_check\_weights()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+ravel\+\_\+and\+\_\+check\+\_\+weights (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{weights }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Check a and weights have matching shapes, and ravel both \end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_ac2604ec1863db58c67d25175d9b66e64}\label{namespacenumpy_1_1lib_1_1__histograms__impl_ac2604ec1863db58c67d25175d9b66e64} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_search\_sorted\_inclusive@{\_search\_sorted\_inclusive}}
+\index{\_search\_sorted\_inclusive@{\_search\_sorted\_inclusive}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_search\_sorted\_inclusive()}{\_search\_sorted\_inclusive()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+search\+\_\+sorted\+\_\+inclusive (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Like `searchsorted`, but where the last item in `v` is placed on the right.
+
+In the context of a histogram, this makes the last bin edge inclusive
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a765f35faacde2810fb33f315e18d0770}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a765f35faacde2810fb33f315e18d0770} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_unsigned\_subtract@{\_unsigned\_subtract}}
+\index{\_unsigned\_subtract@{\_unsigned\_subtract}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_unsigned\_subtract()}{\_unsigned\_subtract()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+unsigned\+\_\+subtract (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Subtract two values where a >= b, and produce an unsigned result
+
+This is needed when finding the difference between the upper and lower
+bound of an int16 histogram
+\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a894f7b95fbd0cdd3f767a34e4cfd0404}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a894f7b95fbd0cdd3f767a34e4cfd0404} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!histogram@{histogram}}
+\index{histogram@{histogram}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{histogram()}{histogram()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+histogram (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{bins = {\ttfamily 10},  }\item[{}]{range = {\ttfamily None},  }\item[{}]{density = {\ttfamily None},  }\item[{}]{weights = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the histogram of a dataset.
+
+Parameters
+----------
+a : array_like
+    Input data. The histogram is computed over the flattened array.
+bins : int or sequence of scalars or str, optional
+    If `bins` is an int, it defines the number of equal-width
+    bins in the given range (10, by default). If `bins` is a
+    sequence, it defines a monotonically increasing array of bin edges,
+    including the rightmost edge, allowing for non-uniform bin widths.
+
+    If `bins` is a string, it defines the method used to calculate the
+    optimal bin width, as defined by `histogram_bin_edges`.
+
+range : (float, float), optional
+    The lower and upper range of the bins.  If not provided, range
+    is simply ``(a.min(), a.max())``.  Values outside the range are
+    ignored. The first element of the range must be less than or
+    equal to the second. `range` affects the automatic bin
+    computation as well. While bin width is computed to be optimal
+    based on the actual data within `range`, the bin count will fill
+    the entire range including portions containing no data.
+weights : array_like, optional
+    An array of weights, of the same shape as `a`.  Each value in
+    `a` only contributes its associated weight towards the bin count
+    (instead of 1). If `density` is True, the weights are
+    normalized, so that the integral of the density over the range
+    remains 1.
+    Please note that the ``dtype`` of `weights` will also become the
+    ``dtype`` of the returned accumulator (`hist`), so it must be
+    large enough to hold accumulated values as well.
+density : bool, optional
+    If ``False``, the result will contain the number of samples in
+    each bin. If ``True``, the result is the value of the
+    probability *density* function at the bin, normalized such that
+    the *integral* over the range is 1. Note that the sum of the
+    histogram values will not be equal to 1 unless bins of unity
+    width are chosen; it is not a probability *mass* function.
+
+Returns
+-------
+hist : array
+    The values of the histogram. See `density` and `weights` for a
+    description of the possible semantics.  If `weights` are given,
+    ``hist.dtype`` will be taken from `weights`.
+bin_edges : array of dtype float
+    Return the bin edges ``(length(hist)+1)``.
+
+
+See Also
+--------
+histogramdd, bincount, searchsorted, digitize, histogram_bin_edges
+
+Notes
+-----
+All but the last (righthand-most) bin is half-open.  In other words,
+if `bins` is::
+
+  [1, 2, 3, 4]
+
+then the first bin is ``[1, 2)`` (including 1, but excluding 2) and
+the second ``[2, 3)``.  The last bin, however, is ``[3, 4]``, which
+*includes* 4.
+
+
+Examples
+--------
+>>> import numpy as np
+>>> np.histogram([1, 2, 1], bins=[0, 1, 2, 3])
+(array([0, 2, 1]), array([0, 1, 2, 3]))
+>>> np.histogram(np.arange(4), bins=np.arange(5), density=True)
+(array([0.25, 0.25, 0.25, 0.25]), array([0, 1, 2, 3, 4]))
+>>> np.histogram([[1, 2, 1], [1, 0, 1]], bins=[0,1,2,3])
+(array([1, 4, 1]), array([0, 1, 2, 3]))
+
+>>> a = np.arange(5)
+>>> hist, bin_edges = np.histogram(a, density=True)
+>>> hist
+array([0.5, 0. , 0.5, 0. , 0. , 0.5, 0. , 0.5, 0. , 0.5])
+>>> hist.sum()
+2.4999999999999996
+>>> np.sum(hist * np.diff(bin_edges))
+1.0
+
+Automated Bin Selection Methods example, using 2 peak random data
+with 2000 points.
+
+.. plot::
+    :include-source:
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    rng = np.random.RandomState(10)  # deterministic random data
+    a = np.hstack((rng.normal(size=1000),
+                   rng.normal(loc=5, scale=2, size=1000)))
+    plt.hist(a, bins='auto')  # arguments are passed to np.histogram
+    plt.title("Histogram with 'auto' bins")
+    plt.show()\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_ac51057a50e69d76e5b2386f6c8eb629e}\label{namespacenumpy_1_1lib_1_1__histograms__impl_ac51057a50e69d76e5b2386f6c8eb629e} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!histogram\_bin\_edges@{histogram\_bin\_edges}}
+\index{histogram\_bin\_edges@{histogram\_bin\_edges}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{histogram\_bin\_edges()}{histogram\_bin\_edges()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+histogram\+\_\+bin\+\_\+edges (\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{bins = {\ttfamily 10},  }\item[{}]{range = {\ttfamily None},  }\item[{}]{weights = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to calculate only the edges of the bins used by the `histogram`
+function.
+
+Parameters
+----------
+a : array_like
+    Input data. The histogram is computed over the flattened array.
+bins : int or sequence of scalars or str, optional
+    If `bins` is an int, it defines the number of equal-width
+    bins in the given range (10, by default). If `bins` is a
+    sequence, it defines the bin edges, including the rightmost
+    edge, allowing for non-uniform bin widths.
+
+    If `bins` is a string from the list below, `histogram_bin_edges` will
+    use the method chosen to calculate the optimal bin width and
+    consequently the number of bins (see the Notes section for more detail
+    on the estimators) from the data that falls within the requested range.
+    While the bin width will be optimal for the actual data
+    in the range, the number of bins will be computed to fill the
+    entire range, including the empty portions. For visualisation,
+    using the 'auto' option is suggested. Weighted data is not
+    supported for automated bin size selection.
+
+    'auto'
+        Minimum bin width between the 'sturges' and 'fd' estimators.
+        Provides good all-around performance.
+
+    'fd' (Freedman Diaconis Estimator)
+        Robust (resilient to outliers) estimator that takes into
+        account data variability and data size.
+
+    'doane'
+        An improved version of Sturges' estimator that works better
+        with non-normal datasets.
+
+    'scott'
+        Less robust estimator that takes into account data variability
+        and data size.
+
+    'stone'
+        Estimator based on leave-one-out cross-validation estimate of
+        the integrated squared error. Can be regarded as a generalization
+        of Scott's rule.
+
+    'rice'
+        Estimator does not take variability into account, only data
+        size. Commonly overestimates number of bins required.
+
+    'sturges'
+        R's default method, only accounts for data size. Only
+        optimal for gaussian data and underestimates number of bins
+        for large non-gaussian datasets.
+
+    'sqrt'
+        Square root (of data size) estimator, used by Excel and
+        other programs for its speed and simplicity.
+
+range : (float, float), optional
+    The lower and upper range of the bins.  If not provided, range
+    is simply ``(a.min(), a.max())``.  Values outside the range are
+    ignored. The first element of the range must be less than or
+    equal to the second. `range` affects the automatic bin
+    computation as well. While bin width is computed to be optimal
+    based on the actual data within `range`, the bin count will fill
+    the entire range including portions containing no data.
+
+weights : array_like, optional
+    An array of weights, of the same shape as `a`.  Each value in
+    `a` only contributes its associated weight towards the bin count
+    (instead of 1). This is currently not used by any of the bin estimators,
+    but may be in the future.
+
+Returns
+-------
+bin_edges : array of dtype float
+    The edges to pass into `histogram`
+
+See Also
+--------
+histogram
+
+Notes
+-----
+The methods to estimate the optimal number of bins are well founded
+in literature, and are inspired by the choices R provides for
+histogram visualisation. Note that having the number of bins
+proportional to :math:`n^{1/3}` is asymptotically optimal, which is
+why it appears in most estimators. These are simply plug-in methods
+that give good starting points for number of bins. In the equations
+below, :math:`h` is the binwidth and :math:`n_h` is the number of
+bins. All estimators that compute bin counts are recast to bin width
+using the `ptp` of the data. The final bin count is obtained from
+``np.round(np.ceil(range / h))``. The final bin width is often less
+than what is returned by the estimators below.
+
+'auto' (minimum bin width of the 'sturges' and 'fd' estimators)
+    A compromise to get a good value. For small datasets the Sturges
+    value will usually be chosen, while larger datasets will usually
+    default to FD.  Avoids the overly conservative behaviour of FD
+    and Sturges for small and large datasets respectively.
+    Switchover point is usually :math:`a.size \approx 1000`.
+
+'fd' (Freedman Diaconis Estimator)
+    .. math:: h = 2 \frac{IQR}{n^{1/3}}
+
+    The binwidth is proportional to the interquartile range (IQR)
+    and inversely proportional to cube root of a.size. Can be too
+    conservative for small datasets, but is quite good for large
+    datasets. The IQR is very robust to outliers.
+
+'scott'
+    .. math:: h = \sigma \sqrt[3]{\frac{24 \sqrt{\pi}}{n}}
+
+    The binwidth is proportional to the standard deviation of the
+    data and inversely proportional to cube root of ``x.size``. Can
+    be too conservative for small datasets, but is quite good for
+    large datasets. The standard deviation is not very robust to
+    outliers. Values are very similar to the Freedman-Diaconis
+    estimator in the absence of outliers.
+
+'rice'
+    .. math:: n_h = 2n^{1/3}
+
+    The number of bins is only proportional to cube root of
+    ``a.size``. It tends to overestimate the number of bins and it
+    does not take into account data variability.
+
+'sturges'
+    .. math:: n_h = \log _{2}(n) + 1
+
+    The number of bins is the base 2 log of ``a.size``.  This
+    estimator assumes normality of data and is too conservative for
+    larger, non-normal datasets. This is the default method in R's
+    ``hist`` method.
+
+'doane'
+    .. math:: n_h = 1 + \log_{2}(n) +
+                    \log_{2}\left(1 + \frac{|g_1|}{\sigma_{g_1}}\right)
+
+        g_1 = mean\left[\left(\frac{x - \mu}{\sigma}\right)^3\right]
+
+        \sigma_{g_1} = \sqrt{\frac{6(n - 2)}{(n + 1)(n + 3)}}
+
+    An improved version of Sturges' formula that produces better
+    estimates for non-normal datasets. This estimator attempts to
+    account for the skew of the data.
+
+'sqrt'
+    .. math:: n_h = \sqrt n
+
+    The simplest and fastest estimator. Only takes into account the
+    data size.
+
+Additionally, if the data is of integer dtype, then the binwidth will never
+be less than 1.
+
+Examples
+--------
+>>> import numpy as np
+>>> arr = np.array([0, 0, 0, 1, 2, 3, 3, 4, 5])
+>>> np.histogram_bin_edges(arr, bins='auto', range=(0, 1))
+array([0.  , 0.25, 0.5 , 0.75, 1.  ])
+>>> np.histogram_bin_edges(arr, bins=2)
+array([0. , 2.5, 5. ])
+
+For consistency with histogram, an array of pre-computed bins is
+passed through unmodified:
+
+>>> np.histogram_bin_edges(arr, [1, 2])
+array([1, 2])
+
+This function allows one set of bins to be computed, and reused across
+multiple histograms:
+
+>>> shared_bins = np.histogram_bin_edges(arr, bins='auto')
+>>> shared_bins
+array([0., 1., 2., 3., 4., 5.])
+
+>>> group_id = np.array([0, 1, 1, 0, 1, 1, 0, 1, 1])
+>>> hist_0, _ = np.histogram(arr[group_id == 0], bins=shared_bins)
+>>> hist_1, _ = np.histogram(arr[group_id == 1], bins=shared_bins)
+
+>>> hist_0; hist_1
+array([1, 1, 0, 1, 0])
+array([2, 0, 1, 1, 2])
+
+Which gives more easily comparable results than using separate bins for
+each histogram:
+
+>>> hist_0, bins_0 = np.histogram(arr[group_id == 0], bins='auto')
+>>> hist_1, bins_1 = np.histogram(arr[group_id == 1], bins='auto')
+>>> hist_0; hist_1
+array([1, 1, 1])
+array([2, 1, 1, 2])
+>>> bins_0; bins_1
+array([0., 1., 2., 3.])
+array([0.  , 1.25, 2.5 , 3.75, 5.  ])\end{DoxyVerb}
+ \Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_afe2d4e68469d198d8c88629aa12d5ad5}\label{namespacenumpy_1_1lib_1_1__histograms__impl_afe2d4e68469d198d8c88629aa12d5ad5} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!histogramdd@{histogramdd}}
+\index{histogramdd@{histogramdd}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{histogramdd()}{histogramdd()}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+histogramdd (\begin{DoxyParamCaption}\item[{}]{sample,  }\item[{}]{bins = {\ttfamily 10},  }\item[{}]{range = {\ttfamily None},  }\item[{}]{density = {\ttfamily None},  }\item[{}]{weights = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the multidimensional histogram of some data.
+
+Parameters
+----------
+sample : (N, D) array, or (N, D) array_like
+    The data to be histogrammed.
+
+    Note the unusual interpretation of sample when an array_like:
+
+    * When an array, each row is a coordinate in a D-dimensional space -
+      such as ``histogramdd(np.array([p1, p2, p3]))``.
+    * When an array_like, each element is the list of values for single
+      coordinate - such as ``histogramdd((X, Y, Z))``.
+
+    The first form should be preferred.
+
+bins : sequence or int, optional
+    The bin specification:
+
+    * A sequence of arrays describing the monotonically increasing bin
+      edges along each dimension.
+    * The number of bins for each dimension (nx, ny, ... =bins)
+    * The number of bins for all dimensions (nx=ny=...=bins).
+
+range : sequence, optional
+    A sequence of length D, each an optional (lower, upper) tuple giving
+    the outer bin edges to be used if the edges are not given explicitly in
+    `bins`.
+    An entry of None in the sequence results in the minimum and maximum
+    values being used for the corresponding dimension.
+    The default, None, is equivalent to passing a tuple of D None values.
+density : bool, optional
+    If False, the default, returns the number of samples in each bin.
+    If True, returns the probability *density* function at the bin,
+    ``bin_count / sample_count / bin_volume``.
+weights : (N,) array_like, optional
+    An array of values `w_i` weighing each sample `(x_i, y_i, z_i, ...)`.
+    Weights are normalized to 1 if density is True. If density is False,
+    the values of the returned histogram are equal to the sum of the
+    weights belonging to the samples falling into each bin.
+
+Returns
+-------
+H : ndarray
+    The multidimensional histogram of sample x. See density and weights
+    for the different possible semantics.
+edges : tuple of ndarrays
+    A tuple of D arrays describing the bin edges for each dimension.
+
+See Also
+--------
+histogram: 1-D histogram
+histogram2d: 2-D histogram
+
+Examples
+--------
+>>> import numpy as np
+>>> rng = np.random.default_rng()
+>>> r = rng.normal(size=(100,3))
+>>> H, edges = np.histogramdd(r, bins = (5, 8, 4))
+>>> H.shape, edges[0].size, edges[1].size, edges[2].size
+((5, 8, 4), 6, 9, 5)\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a83bcb0f024ef4bcf1baf9390c6aab174}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a83bcb0f024ef4bcf1baf9390c6aab174} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_hist\_bin\_selectors@{\_hist\_bin\_selectors}}
+\index{\_hist\_bin\_selectors@{\_hist\_bin\_selectors}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_hist\_bin\_selectors}{\_hist\_bin\_selectors}}
+{\footnotesize\ttfamily dict numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+hist\+\_\+bin\+\_\+selectors\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{\textcolor{stringliteral}{'stone'}:\ \_hist\_bin\_stone,}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'auto'}:\ \_hist\_bin\_auto,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'doane'}:\ \_hist\_bin\_doane,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'fd'}:\ \_hist\_bin\_fd,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'rice'}:\ \_hist\_bin\_rice,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'scott'}:\ \_hist\_bin\_scott,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'sqrt'}:\ \_hist\_bin\_sqrt,}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'sturges'}:\ \_hist\_bin\_sturges\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_a1b5a4ab2be217cbc2ef194db28d75ca7}\label{namespacenumpy_1_1lib_1_1__histograms__impl_a1b5a4ab2be217cbc2ef194db28d75ca7} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!\_range@{\_range}}
+\index{\_range@{\_range}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{\_range}{\_range}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+\_\+range = range\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacenumpy_1_1lib_1_1__histograms__impl_ab2bbbe2bb543a1f8d4c19dc7bdf68a44}\label{namespacenumpy_1_1lib_1_1__histograms__impl_ab2bbbe2bb543a1f8d4c19dc7bdf68a44} 
+\index{numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}!array\_function\_dispatch@{array\_function\_dispatch}}
+\index{array\_function\_dispatch@{array\_function\_dispatch}!numpy.lib.\_histograms\_impl@{numpy.lib.\_histograms\_impl}}
+\doxysubsubsection{\texorpdfstring{array\_function\_dispatch}{array\_function\_dispatch}}
+{\footnotesize\ttfamily numpy.\+lib.\+\_\+histograms\+\_\+impl.\+array\+\_\+function\+\_\+dispatch}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ functools.partial(}
+\DoxyCodeLine{00002\ \ \ \ \ overrides.array\_function\_dispatch,\ module=\textcolor{stringliteral}{'numpy'})}
+
+\end{DoxyCode}

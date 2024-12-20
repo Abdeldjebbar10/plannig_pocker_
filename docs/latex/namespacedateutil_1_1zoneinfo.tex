@@ -1,0 +1,132 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage dateutil.\+zoneinfo}
+\hypertarget{namespacedateutil_1_1zoneinfo}{}\label{namespacedateutil_1_1zoneinfo}\index{dateutil.zoneinfo@{dateutil.zoneinfo}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedateutil_1_1zoneinfo_1_1rebuild}{rebuild}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdateutil_1_1zoneinfo_1_1tzfile}{tzfile}}
+\item 
+class \mbox{\hyperlink{classdateutil_1_1zoneinfo_1_1ZoneInfoFile}{Zone\+Info\+File}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedateutil_1_1zoneinfo_a90ea7ffa5f279a1c5e1dd7e9bd6559a5}{getzoneinfofile\+\_\+stream}} ()
+\item 
+\mbox{\hyperlink{namespacedateutil_1_1zoneinfo_a7c7e953053295c7d349bdf2835a99d43}{get\+\_\+zonefile\+\_\+instance}} (new\+\_\+instance=False)
+\item 
+\mbox{\hyperlink{namespacedateutil_1_1zoneinfo_a65cd092add1e47860e139736648bd992}{gettz}} (name)
+\item 
+\mbox{\hyperlink{namespacedateutil_1_1zoneinfo_aba4447727edb8ab59df102aa061b60d9}{gettz\+\_\+db\+\_\+metadata}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedateutil_1_1zoneinfo_a04651aac3bf95c85d68e7ad4fbd169b2}{ZONEFILENAME}} = "{}dateutil-\/zoneinfo.\+tar.\+gz"{}
+\item 
+str \mbox{\hyperlink{namespacedateutil_1_1zoneinfo_a3cb663829fe7c8e498057c99d70396a5}{METADATA\+\_\+\+FN}} = \textquotesingle{}METADATA\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacedateutil_1_1zoneinfo_a48ec3957b6bbf8efcbc3f5415d860d40}{\+\_\+\+CLASS\+\_\+\+ZONE\+\_\+\+INSTANCE}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacedateutil_1_1zoneinfo_a7c7e953053295c7d349bdf2835a99d43}\label{namespacedateutil_1_1zoneinfo_a7c7e953053295c7d349bdf2835a99d43} 
+\index{dateutil.zoneinfo@{dateutil.zoneinfo}!get\_zonefile\_instance@{get\_zonefile\_instance}}
+\index{get\_zonefile\_instance@{get\_zonefile\_instance}!dateutil.zoneinfo@{dateutil.zoneinfo}}
+\doxysubsubsection{\texorpdfstring{get\_zonefile\_instance()}{get\_zonefile\_instance()}}
+{\footnotesize\ttfamily dateutil.\+zoneinfo.\+get\+\_\+zonefile\+\_\+instance (\begin{DoxyParamCaption}\item[{}]{new\+\_\+instance = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is a convenience function which provides a :class:`ZoneInfoFile`
+instance using the data provided by the ``dateutil`` package. By default, it
+caches a single instance of the ZoneInfoFile object and returns that.
+
+:param new_instance:
+    If ``True``, a new instance of :class:`ZoneInfoFile` is instantiated and
+    used as the cached instance for the next call. Otherwise, new instances
+    are created only as necessary.
+
+:return:
+    Returns a :class:`ZoneInfoFile` object.
+
+.. versionadded:: 2.6
+\end{DoxyVerb}
+ \Hypertarget{namespacedateutil_1_1zoneinfo_a65cd092add1e47860e139736648bd992}\label{namespacedateutil_1_1zoneinfo_a65cd092add1e47860e139736648bd992} 
+\index{dateutil.zoneinfo@{dateutil.zoneinfo}!gettz@{gettz}}
+\index{gettz@{gettz}!dateutil.zoneinfo@{dateutil.zoneinfo}}
+\doxysubsubsection{\texorpdfstring{gettz()}{gettz()}}
+{\footnotesize\ttfamily dateutil.\+zoneinfo.\+gettz (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This retrieves a time zone from the local zoneinfo tarball that is packaged
+with dateutil.
+
+:param name:
+    An IANA-style time zone name, as found in the zoneinfo file.
+
+:return:
+    Returns a :class:`dateutil.tz.tzfile` time zone object.
+
+.. warning::
+    It is generally inadvisable to use this function, and it is only
+    provided for API compatibility with earlier versions. This is *not*
+    equivalent to ``dateutil.tz.gettz()``, which selects an appropriate
+    time zone based on the inputs, favoring system zoneinfo. This is ONLY
+    for accessing the dateutil-specific zoneinfo (which may be out of
+    date compared to the system zoneinfo).
+
+.. deprecated:: 2.6
+    If you need to use a specific zoneinfofile over the system zoneinfo,
+    instantiate a :class:`dateutil.zoneinfo.ZoneInfoFile` object and call
+    :func:`dateutil.zoneinfo.ZoneInfoFile.get(name)` instead.
+
+    Use :func:`get_zonefile_instance` to retrieve an instance of the
+    dateutil-provided zoneinfo.
+\end{DoxyVerb}
+ \Hypertarget{namespacedateutil_1_1zoneinfo_aba4447727edb8ab59df102aa061b60d9}\label{namespacedateutil_1_1zoneinfo_aba4447727edb8ab59df102aa061b60d9} 
+\index{dateutil.zoneinfo@{dateutil.zoneinfo}!gettz\_db\_metadata@{gettz\_db\_metadata}}
+\index{gettz\_db\_metadata@{gettz\_db\_metadata}!dateutil.zoneinfo@{dateutil.zoneinfo}}
+\doxysubsubsection{\texorpdfstring{gettz\_db\_metadata()}{gettz\_db\_metadata()}}
+{\footnotesize\ttfamily dateutil.\+zoneinfo.\+gettz\+\_\+db\+\_\+metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Get the zonefile metadata
+
+See `zonefile_metadata`_
+
+:returns:
+    A dictionary with the database metadata
+
+.. deprecated:: 2.6
+    See deprecation warning in :func:`zoneinfo.gettz`. To get metadata,
+    query the attribute ``zoneinfo.ZoneInfoFile.metadata``.
+\end{DoxyVerb}
+ \Hypertarget{namespacedateutil_1_1zoneinfo_a90ea7ffa5f279a1c5e1dd7e9bd6559a5}\label{namespacedateutil_1_1zoneinfo_a90ea7ffa5f279a1c5e1dd7e9bd6559a5} 
+\index{dateutil.zoneinfo@{dateutil.zoneinfo}!getzoneinfofile\_stream@{getzoneinfofile\_stream}}
+\index{getzoneinfofile\_stream@{getzoneinfofile\_stream}!dateutil.zoneinfo@{dateutil.zoneinfo}}
+\doxysubsubsection{\texorpdfstring{getzoneinfofile\_stream()}{getzoneinfofile\_stream()}}
+{\footnotesize\ttfamily dateutil.\+zoneinfo.\+getzoneinfofile\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespacedateutil_1_1zoneinfo_a48ec3957b6bbf8efcbc3f5415d860d40}\label{namespacedateutil_1_1zoneinfo_a48ec3957b6bbf8efcbc3f5415d860d40} 
+\index{dateutil.zoneinfo@{dateutil.zoneinfo}!\_CLASS\_ZONE\_INSTANCE@{\_CLASS\_ZONE\_INSTANCE}}
+\index{\_CLASS\_ZONE\_INSTANCE@{\_CLASS\_ZONE\_INSTANCE}!dateutil.zoneinfo@{dateutil.zoneinfo}}
+\doxysubsubsection{\texorpdfstring{\_CLASS\_ZONE\_INSTANCE}{\_CLASS\_ZONE\_INSTANCE}}
+{\footnotesize\ttfamily list dateutil.\+zoneinfo.\+\_\+\+CLASS\+\_\+\+ZONE\+\_\+\+INSTANCE = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacedateutil_1_1zoneinfo_a3cb663829fe7c8e498057c99d70396a5}\label{namespacedateutil_1_1zoneinfo_a3cb663829fe7c8e498057c99d70396a5} 
+\index{dateutil.zoneinfo@{dateutil.zoneinfo}!METADATA\_FN@{METADATA\_FN}}
+\index{METADATA\_FN@{METADATA\_FN}!dateutil.zoneinfo@{dateutil.zoneinfo}}
+\doxysubsubsection{\texorpdfstring{METADATA\_FN}{METADATA\_FN}}
+{\footnotesize\ttfamily str dateutil.\+zoneinfo.\+METADATA\+\_\+\+FN = \textquotesingle{}METADATA\textquotesingle{}}
+
+\Hypertarget{namespacedateutil_1_1zoneinfo_a04651aac3bf95c85d68e7ad4fbd169b2}\label{namespacedateutil_1_1zoneinfo_a04651aac3bf95c85d68e7ad4fbd169b2} 
+\index{dateutil.zoneinfo@{dateutil.zoneinfo}!ZONEFILENAME@{ZONEFILENAME}}
+\index{ZONEFILENAME@{ZONEFILENAME}!dateutil.zoneinfo@{dateutil.zoneinfo}}
+\doxysubsubsection{\texorpdfstring{ZONEFILENAME}{ZONEFILENAME}}
+{\footnotesize\ttfamily str dateutil.\+zoneinfo.\+ZONEFILENAME = "{}dateutil-\/zoneinfo.\+tar.\+gz"{}}
+

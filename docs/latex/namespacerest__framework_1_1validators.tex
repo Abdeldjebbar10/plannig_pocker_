@@ -1,0 +1,51 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage rest\+\_\+framework.\+validators}
+\hypertarget{namespacerest__framework_1_1validators}{}\label{namespacerest__framework_1_1validators}\index{rest\_framework.validators@{rest\_framework.validators}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1validators_1_1BaseUniqueForValidator}{Base\+Unique\+For\+Validator}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1validators_1_1ProhibitSurrogateCharactersValidator}{Prohibit\+Surrogate\+Characters\+Validator}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueForDateValidator}{Unique\+For\+Date\+Validator}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueForMonthValidator}{Unique\+For\+Month\+Validator}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueForYearValidator}{Unique\+For\+Year\+Validator}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueTogetherValidator}{Unique\+Together\+Validator}}
+\item 
+class \mbox{\hyperlink{classrest__framework_1_1validators_1_1UniqueValidator}{Unique\+Validator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1validators_a932e68bb6fc57f8f2b2186dc4fa91cd8}{qs\+\_\+exists}} (queryset)
+\item 
+\mbox{\hyperlink{namespacerest__framework_1_1validators_ad9104cba196862860ee3a90c8e6f56aa}{qs\+\_\+filter}} (queryset, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}We perform uniqueness checks explicitly on the serializer class, rather
+the using Django's `.full_clean()`.
+
+This gives us better separation of concerns, allows us to use single-step
+object creation, and makes it possible to switch between using the implicit
+`ModelSerializer` class and an equivalent explicit `Serializer` class.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespacerest__framework_1_1validators_a932e68bb6fc57f8f2b2186dc4fa91cd8}\label{namespacerest__framework_1_1validators_a932e68bb6fc57f8f2b2186dc4fa91cd8} 
+\index{rest\_framework.validators@{rest\_framework.validators}!qs\_exists@{qs\_exists}}
+\index{qs\_exists@{qs\_exists}!rest\_framework.validators@{rest\_framework.validators}}
+\doxysubsubsection{\texorpdfstring{qs\_exists()}{qs\_exists()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+qs\+\_\+exists (\begin{DoxyParamCaption}\item[{}]{queryset }\end{DoxyParamCaption})}
+
+\Hypertarget{namespacerest__framework_1_1validators_ad9104cba196862860ee3a90c8e6f56aa}\label{namespacerest__framework_1_1validators_ad9104cba196862860ee3a90c8e6f56aa} 
+\index{rest\_framework.validators@{rest\_framework.validators}!qs\_filter@{qs\_filter}}
+\index{qs\_filter@{qs\_filter}!rest\_framework.validators@{rest\_framework.validators}}
+\doxysubsubsection{\texorpdfstring{qs\_filter()}{qs\_filter()}}
+{\footnotesize\ttfamily rest\+\_\+framework.\+validators.\+qs\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{queryset,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+

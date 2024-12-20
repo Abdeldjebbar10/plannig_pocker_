@@ -1,0 +1,135 @@
+\doxysection{Référence de la classe django.\+test.\+utils.\+override\+\_\+system\+\_\+checks}
+\hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks}{}\label{classdjango_1_1test_1_1utils_1_1override__system__checks}\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+
+
+Graphe d\textquotesingle{}héritage de django.\+test.\+utils.\+override\+\_\+system\+\_\+checks\+:
+% FIG 0
+
+
+Graphe de collaboration de django.\+test.\+utils.\+override\+\_\+system\+\_\+checks\+:
+% FIG 1
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_a30657d19cbd1224ad17ae4396f89cab4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_af5345d12704c0d11d24d397923ee99bc}{new\+\_\+checks}}, \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_a104f078735d7e138e31e7103c52caeca}{deployment\+\_\+checks}}=None)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_a5a4c8cc23ec5c207142c6171d1760c4a}{enable}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_a09c8d27c17f549e99207253090f4573d}{disable}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator}{django.\+test.\+utils.\+Test\+Context\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_aea42f5659d8876328a01329f699d0841}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a8e3dbed618318d4b97eb5621ed5640f7}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, traceback)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_ad812bd185e2d8ce65644fd891d244450}{decorate\+\_\+class}} (self, cls)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a0f4d75e7f06d7fb14aad743929746350}{decorate\+\_\+callable}} (self, func)
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a1c98e4d22762e400f27efe3d3d05915f}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, decorated)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_ad4dc0c28ee831ab7839ff2a7afb8368f}{registry}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_af5345d12704c0d11d24d397923ee99bc}{new\+\_\+checks}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_a104f078735d7e138e31e7103c52caeca}{deployment\+\_\+checks}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_a41c27705c9086b35a23d6217eaf8e5fd}{old\+\_\+checks}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1override__system__checks_a924f4d1f7568c0bf2ff06138a25c3640}{old\+\_\+deployment\+\_\+checks}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator}{django.\+test.\+utils.\+Test\+Context\+Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_ae8109355535929a3329c099c3ced6e5a}{attr\+\_\+name}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a1d6ce286c43a8b0a4219facd731154d0}{kwarg\+\_\+name}}
+\item 
+\mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a996c8f9905f440f3429a82ecd0990d38}{set\+Up}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Act as a decorator. Override list of registered system checks.
+Useful when you override `INSTALLED_APPS`, e.g. if you exclude `auth` app,
+you also need to exclude its system checks.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks_a30657d19cbd1224ad17ae4396f89cab4}\label{classdjango_1_1test_1_1utils_1_1override__system__checks_a30657d19cbd1224ad17ae4396f89cab4} 
+\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+override\+\_\+system\+\_\+checks.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{new\+\_\+checks,  }\item[{}]{deployment\+\_\+checks = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a97c758ebee74c3460bc440644dd495ea}{django.\+test.\+utils.\+Test\+Context\+Decorator}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks_a09c8d27c17f549e99207253090f4573d}\label{classdjango_1_1test_1_1utils_1_1override__system__checks_a09c8d27c17f549e99207253090f4573d} 
+\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}!disable@{disable}}
+\index{disable@{disable}!django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+override\+\_\+system\+\_\+checks.\+disable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_a360167ff74af4a0bf9b931e4933f440f}{django.\+test.\+utils.\+Test\+Context\+Decorator}}.
+
+\Hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks_a5a4c8cc23ec5c207142c6171d1760c4a}\label{classdjango_1_1test_1_1utils_1_1override__system__checks_a5a4c8cc23ec5c207142c6171d1760c4a} 
+\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}!enable@{enable}}
+\index{enable@{enable}!django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+override\+\_\+system\+\_\+checks.\+enable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classdjango_1_1test_1_1utils_1_1TestContextDecorator_aad9e1522d2a61288ef943008df3c8e6b}{django.\+test.\+utils.\+Test\+Context\+Decorator}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks_a104f078735d7e138e31e7103c52caeca}\label{classdjango_1_1test_1_1utils_1_1override__system__checks_a104f078735d7e138e31e7103c52caeca} 
+\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}!deployment\_checks@{deployment\_checks}}
+\index{deployment\_checks@{deployment\_checks}!django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+\doxysubsubsection{\texorpdfstring{deployment\_checks}{deployment\_checks}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+override\+\_\+system\+\_\+checks.\+deployment\+\_\+checks}
+
+\Hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks_af5345d12704c0d11d24d397923ee99bc}\label{classdjango_1_1test_1_1utils_1_1override__system__checks_af5345d12704c0d11d24d397923ee99bc} 
+\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}!new\_checks@{new\_checks}}
+\index{new\_checks@{new\_checks}!django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+\doxysubsubsection{\texorpdfstring{new\_checks}{new\_checks}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+override\+\_\+system\+\_\+checks.\+new\+\_\+checks}
+
+\Hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks_a41c27705c9086b35a23d6217eaf8e5fd}\label{classdjango_1_1test_1_1utils_1_1override__system__checks_a41c27705c9086b35a23d6217eaf8e5fd} 
+\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}!old\_checks@{old\_checks}}
+\index{old\_checks@{old\_checks}!django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+\doxysubsubsection{\texorpdfstring{old\_checks}{old\_checks}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+override\+\_\+system\+\_\+checks.\+old\+\_\+checks}
+
+\Hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks_a924f4d1f7568c0bf2ff06138a25c3640}\label{classdjango_1_1test_1_1utils_1_1override__system__checks_a924f4d1f7568c0bf2ff06138a25c3640} 
+\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}!old\_deployment\_checks@{old\_deployment\_checks}}
+\index{old\_deployment\_checks@{old\_deployment\_checks}!django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+\doxysubsubsection{\texorpdfstring{old\_deployment\_checks}{old\_deployment\_checks}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+override\+\_\+system\+\_\+checks.\+old\+\_\+deployment\+\_\+checks}
+
+\Hypertarget{classdjango_1_1test_1_1utils_1_1override__system__checks_ad4dc0c28ee831ab7839ff2a7afb8368f}\label{classdjango_1_1test_1_1utils_1_1override__system__checks_ad4dc0c28ee831ab7839ff2a7afb8368f} 
+\index{django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}!registry@{registry}}
+\index{registry@{registry}!django.test.utils.override\_system\_checks@{django.test.utils.override\_system\_checks}}
+\doxysubsubsection{\texorpdfstring{registry}{registry}}
+{\footnotesize\ttfamily django.\+test.\+utils.\+override\+\_\+system\+\_\+checks.\+registry}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+env/lib/python3.\+12/site-\/packages/django/test/\mbox{\hyperlink{django_2test_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

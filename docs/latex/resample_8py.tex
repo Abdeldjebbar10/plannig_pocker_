@@ -1,0 +1,64 @@
+\doxysection{Référence du fichier env/lib/python3.12/site-\/packages/pandas/core/resample.py}
+\hypertarget{resample_8py}{}\label{resample_8py}\index{env/lib/python3.12/site-\/packages/pandas/core/resample.py@{env/lib/python3.12/site-\/packages/pandas/core/resample.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler}{pandas.\+core.\+resample.\+Resampler}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1__GroupByMixin}{pandas.\+core.\+resample.\+\_\+\+Group\+By\+Mixin}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1DatetimeIndexResampler}{pandas.\+core.\+resample.\+Datetime\+Index\+Resampler}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1DatetimeIndexResamplerGroupby}{pandas.\+core.\+resample.\+Datetime\+Index\+Resampler\+Groupby}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1PeriodIndexResampler}{pandas.\+core.\+resample.\+Period\+Index\+Resampler}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1PeriodIndexResamplerGroupby}{pandas.\+core.\+resample.\+Period\+Index\+Resampler\+Groupby}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1TimedeltaIndexResampler}{pandas.\+core.\+resample.\+Timedelta\+Index\+Resampler}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1TimedeltaIndexResamplerGroupby}{pandas.\+core.\+resample.\+Timedelta\+Index\+Resampler\+Groupby}}
+\item 
+class \mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1TimeGrouper}{pandas.\+core.\+resample.\+Time\+Grouper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepandas}{pandas}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core}{pandas.\+core}}
+\item 
+namespace \mbox{\hyperlink{namespacepandas_1_1core_1_1resample}{pandas.\+core.\+resample}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1resample_a6e0c7544dc5542c6895fc5d89363a1f1}{pandas.\+core.\+resample.\+\_\+resampler\+\_\+cls}} (self)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler}{Resampler}} \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_adf5dbb180188fe0c556605769f4d19b9}{pandas.\+core.\+resample.\+get\+\_\+resampler}} (Series\texorpdfstring{$\vert$}{|}Data\+Frame obj, kind=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{classpandas_1_1core_1_1resample_1_1Resampler}{Resampler}} \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_a976c5aa2ed43f6a92bf23bde57a6aacf}{pandas.\+core.\+resample.\+get\+\_\+resampler\+\_\+for\+\_\+grouping}} (\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1GroupBy}{Group\+By}} groupby, rule, how=None, fill\+\_\+method=None, int\texorpdfstring{$\vert$}{|}None limit=None, kind=None, on=None, bool include\+\_\+groups=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+NDFrameT \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_a4fa67be9cdc63983e07dd7a7c399a4bb}{pandas.\+core.\+resample.\+\_\+take\+\_\+new\+\_\+index}} (NDFrameT obj, npt.\+NDArray\mbox{[}np.\+intp\mbox{]} indexer, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1base_1_1Index}{Index}} new\+\_\+index, Axis\+Int axis=0)
+\item 
+tuple\mbox{[}Timestamp, Timestamp\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_ab125ed4e5c81acff48941babcbf98fe6}{pandas.\+core.\+resample.\+\_\+get\+\_\+timestamp\+\_\+range\+\_\+edges}} (Timestamp first, Timestamp last, Base\+Offset freq, str unit, Literal\mbox{[}"{}right"{}, "{}left"{}\mbox{]} closed="{}left"{}, Time\+Grouper\+Origin origin="{}start\+\_\+day"{}, Timedelta\texorpdfstring{$\vert$}{|}None offset=None)
+\item 
+tuple\mbox{[}Period, Period\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_ab12d20c016a1d6cc80b36d191e1ce82a}{pandas.\+core.\+resample.\+\_\+get\+\_\+period\+\_\+range\+\_\+edges}} (Period first, Period last, Base\+Offset freq, Literal\mbox{[}"{}right"{}, "{}left"{}\mbox{]} closed="{}left"{}, Time\+Grouper\+Origin origin="{}start\+\_\+day"{}, Timedelta\texorpdfstring{$\vert$}{|}None offset=None)
+\item 
+tuple\mbox{[}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1period_1_1PeriodIndex}{Period\+Index}}, np.\+ndarray, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1period_1_1PeriodIndex}{Period\+Index}}\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_abe5cdb7d5d6e89cf9d455bc209269a9b}{pandas.\+core.\+resample.\+\_\+insert\+\_\+nat\+\_\+bin}} (\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1period_1_1PeriodIndex}{Period\+Index}} binner, np.\+ndarray bins, \mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1period_1_1PeriodIndex}{Period\+Index}} labels, int nat\+\_\+count)
+\item 
+tuple\mbox{[}Timestamp, Timestamp\mbox{]} \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_aacf8af0e6d48ce74246384fbf583c0e8}{pandas.\+core.\+resample.\+\_\+adjust\+\_\+dates\+\_\+anchored}} (Timestamp first, Timestamp last, Tick freq, Literal\mbox{[}"{}right"{}, "{}left"{}\mbox{]} closed="{}right"{}, Time\+Grouper\+Origin origin="{}start\+\_\+day"{}, Timedelta\texorpdfstring{$\vert$}{|}None offset=None, str unit="{}ns"{})
+\item 
+NDFrameT \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_a6f71e73f4bef3d6ebc2c99aa98058153}{pandas.\+core.\+resample.\+asfreq}} (NDFrameT obj, freq, method=None, how=None, bool normalize=False, fill\+\_\+value=None)
+\item 
+\mbox{\hyperlink{namespacepandas_1_1core_1_1resample_aaff89c4c1c84678ba7c506da401808b5}{pandas.\+core.\+resample.\+\_\+asfreq\+\_\+compat}} (\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1datetimes_1_1DatetimeIndex}{Datetime\+Index}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1period_1_1PeriodIndex}{Period\+Index}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classpandas_1_1core_1_1indexes_1_1timedeltas_1_1TimedeltaIndex}{Timedelta\+Index}} index, freq)
+\item 
+None \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_abca0a5e37af868daf8d86355436c5895}{pandas.\+core.\+resample.\+maybe\+\_\+warn\+\_\+args\+\_\+and\+\_\+kwargs}} (cls, str kernel, args, kwargs)
+\item 
+Data\+Frame \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_af6c383976644416e3145e3d64a643290}{pandas.\+core.\+resample.\+\_\+apply}} (\mbox{\hyperlink{classpandas_1_1core_1_1groupby_1_1groupby_1_1GroupBy}{Group\+By}} grouped, Callable how, \texorpdfstring{$\ast$}{*}args, bool include\+\_\+groups, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacepandas_1_1core_1_1resample_afe210555541d01f1f06a9a3ffbed3c75}{pandas.\+core.\+resample.\+\_\+shared\+\_\+docs\+\_\+kwargs}} = \{\}
+\end{DoxyCompactItemize}
